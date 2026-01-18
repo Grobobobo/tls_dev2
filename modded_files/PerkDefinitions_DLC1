@@ -1111,7 +1111,7 @@
             </Events>
             <Effects>
                <CastSkill SkillId="CollateralDamageSkill">
-                  <PerkTargeting TargetingReference="Caster" TargetingMethod="DamageablesInRange" Amount="1" Range="Module.CastSkillEffect.Skill.MaxRange">
+                  <PerkTargeting TargetingReference="Caster" TargetingMethod="DamageablesInRange" Amount="2" Range="Module.CastSkillEffect.Skill.MaxRange">
                      <DamageableTarget Type="Enemy"/>
                      <DamageableTarget Type="Boss"/>
                   </PerkTargeting>

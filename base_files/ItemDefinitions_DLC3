@@ -1,0 +1,884 @@
+<ItemDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../ItemDefinitions.xsd">
+
+	<ItemDefinition Id="SwordUnique">
+		<Category>MeleeWeapon</Category>
+		<Tags>
+			<Tag>Sword</Tag>
+		</Tags>
+		<Hands>OneHand</Hands>
+		<IsUnique>true</IsUnique>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="83 * (1 + PlayableUnitLevel/10)" Max="102 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BasePrice>10</BasePrice>
+				<Skills>
+					<Skill>SliceUnique</Skill>
+					<Skill>SlashUnique</Skill>
+					<Skill>BladeRushUnique</Skill>
+				</Skills>
+            <Perks>
+               <Perk>SwordUniquePerk</Perk>
+            </Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+   <ItemDefinition Id="HammerUnique">
+      <Category>MeleeWeapon</Category>
+      <Tags>
+         <Tag>Hammer</Tag>
+         <Tag>HammerUnique</Tag>
+      </Tags>
+      <Hands>OneHand</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="160 * (1 + PlayableUnitLevel/10)" Max="186 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>10</BasePrice>
+            <Skills>
+               <Skill>Bash</Skill>
+               <Skill>Crush</Skill>
+               <Skill>Stomp</Skill>
+            </Skills>
+            <Perks>
+               <Perk>HammerUniquePerk</Perk>
+            </Perks>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="AxeUnique">
+      <Category>MeleeWeapon</Category>
+      <Tags>
+         <Tag>Axe</Tag>
+         <Tag>AxeUnique</Tag>
+      </Tags>
+      <Hands>OneHand</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="87 * (1 + PlayableUnitLevel/10)" Max="156 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>58</BasePrice>
+            <BaseStatBonuses>
+               <BaseStatBonus Stat="OpportunisticAttacks">19</BaseStatBonus>
+            </BaseStatBonuses>
+            <Skills>
+               <Skill>Shred</Skill>
+               <Skill>IntimidatingScream</Skill>
+               <Skill>AxeBoomerang</Skill>
+            </Skills>
+            <Perks>
+               <Perk>AxeUniquePerk</Perk>
+            </Perks>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+	<ItemDefinition Id="DaggerUnique">
+		<Category>MeleeWeapon</Category>
+		<Tags>
+			<Tag>Dagger</Tag>
+         <Tag>DaggerUnique</Tag>
+		</Tags>
+		<Hands>OneHand</Hands>
+		<IsUnique>true</IsUnique>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="83 * (1 + PlayableUnitLevel/10)" Max="109 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BasePrice>10</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">3</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>Backstab</Skill>
+					<Skill>DaggerThrow</Skill>
+					<Skill>ThrowingDaggers</Skill>
+				</Skills>
+            <Perks>
+               <Perk>DaggerUniquePerk</Perk>
+            </Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+   <ItemDefinition Id="2HSwordUnique">
+      <Category>MeleeWeapon</Category>
+      <Tags>
+         <Tag>2HSword</Tag>
+      </Tags>
+      <Hands>TwoHands</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="144 * (1 + PlayableUnitLevel/10)" Max="191 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>10</BasePrice>
+            <Skills>
+               <Skill>Thrust</Skill>
+               <Skill>DashAttack</Skill>
+               <Skill>Charge</Skill>
+               <Skill>SwordBlast</Skill>
+            </Skills>
+            <Perks>
+               <Perk>2HSwordUniquePerk</Perk>
+            </Perks>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="2HHammerUnique">
+      <Category>MeleeWeapon</Category>
+      <Tags>
+         <Tag>2HHammer</Tag>
+         <Tag>2HHammerUnique</Tag>
+      </Tags>
+      <Hands>TwoHands</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="142 * (1 + PlayableUnitLevel/10)" Max="185 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>10</BasePrice>
+            <Skills>
+               <Skill>HammerStrike</Skill>
+               <Skill>FollowUp</Skill>
+               <Skill>MegaStomp</Skill>
+               <Skill>GroundSmash</Skill>
+            </Skills>
+            <Perks>
+               <Perk>2HHammerUniquePerk</Perk>
+            </Perks>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="2HAxeUnique">
+      <Category>MeleeWeapon</Category>
+      <Tags>
+         <Tag>2HAxe</Tag>
+         <Tag>2HAxeUnique</Tag>
+      </Tags>
+      <Hands>TwoHands</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="97 * (1 + PlayableUnitLevel/10)" Max="181 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>10</BasePrice>
+            <Skills>
+               <Skill>Swing</Skill>
+               <Skill>Leap</Skill>
+               <Skill>Rage5</Skill>
+               <Skill>SuperSpin</Skill>
+            </Skills>
+            <Perks>
+               <Perk>2HAxeUniquePerk</Perk>
+            </Perks>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="SpearUnique">
+      <Category>MeleeWeapon</Category>
+      <Tags>
+         <Tag>Spear</Tag>
+         <Tag>SpearUnique</Tag>
+      </Tags>
+      <Hands>TwoHands</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="115 * (1 + PlayableUnitLevel/10)" Max="157 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>10</BasePrice>
+            <Skills>
+               <Skill>Impale</Skill>
+               <Skill>Rush</Skill>
+               <Skill>Skewer</Skill>
+               <Skill>TripleSwipe</Skill>
+            </Skills>
+            <Perks>
+               <Perk>SpearUniquePerk</Perk> 
+            </Perks>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+   
+   <ItemDefinition Id="HandCrossbowUnique">
+      <Category>RangeWeapon</Category>
+      <Tags>
+         <Tag>HandCrossbow</Tag>
+         <Tag>HandCrossbowUnique</Tag>
+      </Tags>
+      <Hands>OneHand</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="61 * (1 + PlayableUnitLevel/10)" Max="71 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>10</BasePrice>
+            <Skills>
+               <Skill>QuickShot</Skill>
+               <Skill>SlowDeath</Skill>
+               <Skill>Blaze</Skill>
+            </Skills>
+            <Perks>
+               <Perk>HandCrossbowUniquePerk</Perk>
+            </Perks>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+   
+   <ItemDefinition Id="PistolUnique">
+      <Category>RangeWeapon</Category>
+      <Tags>
+         <Tag>Pistol</Tag>
+      </Tags>
+      <Hands>OneHand</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="87 * (1 + PlayableUnitLevel/10)" Max="105 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>10</BasePrice>
+            <BaseStatBonuses>
+               <BaseStatBonus Stat="CriticalPower">10</BaseStatBonus>
+            </BaseStatBonuses>
+            <Skills>
+               <Skill>PistolShot</Skill>
+               <Skill>GrapplinShot</Skill>
+               <Skill>Grapeshot</Skill>
+            </Skills>
+            <Perks>
+               <Perk>PistolUniquePerk</Perk>
+            </Perks>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="ShortbowUnique">
+      <Category>RangeWeapon</Category>
+      <Tags>
+         <Tag>Shortbow</Tag>
+      </Tags>
+      <Hands>TwoHands</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="92 * (1 + PlayableUnitLevel/10)" Max="152 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>10</BasePrice>
+            <Skills>
+               <Skill>PreciseShotUnique</Skill>
+               <Skill>PowerShotUnique</Skill>
+               <Skill>TightVolleyUnique</Skill>
+               <Skill>RainOfArrowsUnique</Skill>
+            </Skills>
+            <Perks>
+               <Perk>ShortbowUniquePerk</Perk>
+            </Perks>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="LongbowUnique">
+		<Category>RangeWeapon</Category>
+		<Tags>
+         <Tag>Longbow</Tag>
+         <Tag>LongbowUnique</Tag>
+		</Tags>
+		<Hands>TwoHands</Hands>
+		<IsUnique>true</IsUnique>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="85 * (1 + PlayableUnitLevel/10)" Max="154 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BasePrice>10</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Reliability">-10</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>LongShot</Skill>
+					<Skill>TakeAim5</Skill>
+					<Skill>SnipeShot</Skill>
+					<Skill>ExplosiveArrow</Skill>
+				</Skills>
+            <Perks>
+               <Perk>LongbowUniquePerk</Perk>
+            </Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+   <ItemDefinition Id="CrossbowUnique">
+      <Category>RangeWeapon</Category>
+      <Tags>
+         <Tag>Crossbow</Tag>
+         <Tag>CrossbowUnique</Tag>
+      </Tags>
+      <Hands>TwoHands</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="123 * (1 + PlayableUnitLevel/10)" Max="159 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>10</BasePrice>
+            <Skills>
+               <Skill>StraightShot5</Skill>
+               <Skill>HeavyBolt</Skill>
+               <Skill>ImpalingBolt</Skill>
+               <Skill>ExplosiveBolt</Skill>
+            </Skills>
+            <Perks>
+               <Perk>CrossbowUniquePerk</Perk>
+            </Perks>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="RifleUnique">
+      <Category>RangeWeapon</Category>
+      <Tags>
+         <Tag>Rifle</Tag>
+         <Tag>RifleUnique</Tag>
+      </Tags>
+      <Hands>TwoHands</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="179 * (1 + PlayableUnitLevel/10)" Max="228 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>10</BasePrice>
+            <BaseStatBonuses>
+               <BaseStatBonus Stat="PropagationDamage">-25</BaseStatBonus>
+            </BaseStatBonuses>
+            <Skills>
+               <Skill>RifleShot</Skill>
+               <Skill>SmallRifleShot</Skill>
+               <Skill>SuppressiveFire5</Skill>
+               <Skill>Assassinate</Skill>
+            </Skills>
+            <Perks>
+               <Perk>RifleUniquePerk</Perk>
+            </Perks>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+   
+   <ItemDefinition Id="MagicWandUnique">
+      <Category>MagicWeapon</Category>
+      <Tags>
+         <Tag>MagicWand</Tag>
+         <Tag>MagicWandUnique</Tag>
+      </Tags>
+      <Hands>OneHand</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="91 * (1 + PlayableUnitLevel/10)" Max="129 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>10</BasePrice>
+            <Skills>
+					<Skill>SwordOfDamocles</Skill>
+					<Skill>Transfer5</Skill>
+					<Skill>MagicMissilesUnique</Skill>
+            </Skills>
+            <Perks>
+               <Perk>MagicWandUniquePerk</Perk>
+            </Perks>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+   
+   <ItemDefinition Id="MagicScepterUnique">
+      <Category>MagicWeapon</Category>
+      <Tags>
+         <Tag>MagicScepter</Tag>
+      </Tags>
+      <Hands>OneHand</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="78 * (1 + PlayableUnitLevel/10)" Max="102 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>10</BasePrice>
+            <Skills>
+					<Skill>MagicBash</Skill>
+					<Skill>WindWalk5</Skill>
+					<Skill>HammerOfFaith</Skill>
+            </Skills>
+            <Perks>
+               <Perk>MagicScepterUniquePerk</Perk>
+            </Perks>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="MagicOrbUnique">
+      <Category>MagicWeapon</Category>
+      <Tags>
+         <Tag>MagicOrb</Tag>
+         <Tag>MagicOrbUnique</Tag>
+      </Tags>
+      <Hands>OneHand</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="87 * (1 + PlayableUnitLevel/10)" Max="114 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>10</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">-25</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>Infect</Skill>
+					<Skill>PutridBall</Skill>
+					<Skill>DeathRay</Skill>
+				</Skills>
+            <Perks>
+               <Perk>MagicOrbUniquePerk</Perk>
+            </Perks>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+   
+   <ItemDefinition Id="MagicStaffUnique">
+      <Category>MagicWeapon</Category>
+      <Tags>
+         <Tag>MagicStaff</Tag>
+      </Tags>
+      <Hands>TwoHands</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="110 * (1 + PlayableUnitLevel/10)" Max="142 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>10</BasePrice>
+				<Skills>
+					<Skill>PillarOfLight5</Skill>
+					<Skill>StunningEntrance</Skill>
+					<Skill>ScorchingWave</Skill>
+					<Skill>FireThrower</Skill>
+				</Skills>
+            <Perks>
+               <Perk>MagicStaffUniquePerk</Perk>
+            </Perks>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>   
+
+	<ItemDefinition Id="TomeOfMagicUnique">
+		<Category>MagicWeapon</Category>
+		<Tags>
+			<Tag>TomeOfMagic</Tag>
+		</Tags>
+		<Hands>TwoHands</Hands>
+		<IsUnique>true</IsUnique>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="82 * (1 + PlayableUnitLevel/10)" Max="144 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BasePrice>10</BasePrice>
+				<Skills>
+					<Skill>ShadowBolt</Skill>
+					<Skill>WeakeningTouch</Skill>
+					<Skill>Fireball</Skill>
+					<Skill>LightningStrike</Skill>
+				</Skills>
+            <Perks>
+               <Perk>TomeOfMagicUniquePerk</Perk>
+            </Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="DruidicStaffUnique">
+		<Category>MagicWeapon</Category>
+		<Tags>
+			<Tag>DruidicStaff</Tag>
+		</Tags>
+		<Hands>TwoHands</Hands>
+		<IsUnique>true</IsUnique>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="78 * (1 + PlayableUnitLevel/10)" Max="100 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BasePrice>10</BasePrice>
+				<Skills>
+					<Skill>Flytrap</Skill>
+					<Skill>Entangle</Skill>
+					<Skill>AcidSpray5</Skill>
+					<Skill>BeeSting</Skill>
+				</Skills>
+            <Perks>
+               <Perk>DruidicStaffUniquePerk</Perk>
+            </Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+   
+	<ItemDefinition Id="WarShieldUnique">
+		<Category>MeleeWeapon</Category>
+		<Tags>
+			<Tag>WarShield</Tag>
+         <Tag>WarshieldUnique</Tag>
+		</Tags>
+		<Hands>TwoHands</Hands>
+		<IsUnique>true</IsUnique>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="101 * (1 + PlayableUnitLevel/10)" Max="133 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BasePrice>10</BasePrice>
+				<Skills>
+					<Skill>Breach</Skill>
+					<Skill>ShieldUp5</Skill>
+					<Skill>MovingWall</Skill>
+					<Skill>WallsOfPain</Skill>
+				</Skills>
+				<Perks>
+					<Perk>PerfectGuardUnique</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+   
+	<ItemDefinition Id="CannonUnique">
+		<Category>RangeWeapon</Category>
+		<Tags>
+			<Tag>Cannon</Tag>
+         <Tag>CannonUnique</Tag>
+		</Tags>
+		<Hands>TwoHands</Hands>
+		<IsUnique>true</IsUnique>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="136 * (1 + PlayableUnitLevel/10)" Max="225 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BasePrice>10</BasePrice>
+				<Skills>
+					<Skill>CannonBall</Skill>
+					<Skill>RocketJump</Skill>
+					<Skill>Mortar</Skill>
+					<Skill>Armageddon</Skill>
+				</Skills>
+				<Perks>
+					<Perk>OverheatUniquePerk</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="GauntletUnique">
+		<Category>MagicWeapon</Category>
+		<Tags>
+			<Tag>Gauntlet</Tag>
+         <Tag>GauntletUnique</Tag>
+		</Tags>
+		<Hands>OneHand</Hands>
+		<IsUnique>true</IsUnique>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="114 * (1 + PlayableUnitLevel/10)" Max="138 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BasePrice>10</BasePrice>
+				<Skills>
+					<Skill>Snap5</Skill>
+					<Skill>Shockwave</Skill>
+					<Skill>GeoCannon</Skill>
+				</Skills>
+				<Perks>
+					<Perk>GeoReservoir</Perk>
+               <Perk>GauntletUniquePerk</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+   <ItemDefinition Id="ClawsUnique">
+		<Category>MeleeWeapon</Category>
+		<Tags>
+			<Tag>Claws</Tag>
+		</Tags>
+		<Hands>TwoHands</Hands>
+		<IsUnique>true</IsUnique>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="71 * (1 + PlayableUnitLevel/10)" Max="135 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BasePrice>10</BasePrice>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws5</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinkerUnique</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+   
+   <ItemDefinition Id="BoomerangUnique">
+		<Category>RangeWeapon</Category>
+		<Tags>
+			<Tag>Boomerang</Tag>
+		</Tags>
+		<Hands>OneHand</Hands>
+		<IsUnique>true</IsUnique>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="59 * (1 + PlayableUnitLevel/10)" Max="88 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BasePrice>10</BasePrice>
+				<Skills>
+					<Skill>PreciseTargettingUnique</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrowUnique</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+   
+   <ItemDefinition Id="ManaFlowerUnique">
+		<Category>MagicWeapon</Category>
+		<Tags>
+			<Tag>ManaFlower</Tag>
+		</Tags>
+		<Hands>TwoHands</Hands>
+		<IsUnique>true</IsUnique>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="114 * (1 + PlayableUnitLevel/10)" Max="160 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BasePrice>10</BasePrice>
+            <BaseStatBonuses>
+               <BaseStatBonus Stat="HealthTotal">400</BaseStatBonus>
+            </BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoanUnique</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+   <ItemDefinition Id="HarpyOffHandUnique">
+      <Category>MagicWeapon</Category>
+      <Hands>OffHand</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="59 * (1 + PlayableUnitLevel/10)" Max="88 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>0</BasePrice>
+            <Skills>
+               <Skill>PlayerFlyingAssault</Skill>
+            </Skills>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="CetusiaOffHandUnique">
+      <Category>MagicWeapon</Category>
+      <Hands>OffHand</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="59 * (1 + PlayableUnitLevel/10)" Max="88 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>0</BasePrice>
+            <Skills>
+               <Skill>PlayerHeadSplash</Skill>
+            </Skills>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="DryadOffHandUnique">
+      <Category>MagicWeapon</Category>
+      <Hands>OffHand</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BasePrice>0</BasePrice>
+            <Skills>
+               <Skill OverallUsesCount="3">PlayerFortress</Skill>
+            </Skills>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="ArchivistOffHandUnique">
+      <Category>MagicWeapon</Category>
+      <Hands>OffHand</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="59 * (1 + PlayableUnitLevel/10)" Max="88 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>0</BasePrice>
+            <Skills>
+               <Skill OverallUsesCount="2">PlayerEternalFlame</Skill>
+            </Skills>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="SchadenOffHandUnique">
+      <Category>MagicWeapon</Category>
+      <Hands>OffHand</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="59 * (1 + PlayableUnitLevel/10)" Max="88 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>0</BasePrice>
+            <Skills>
+               <Skill OverallUsesCount="1">PlayerSchadenKill</Skill>
+            </Skills>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="FreudeOffHandUnique">
+      <Category>MagicWeapon</Category>
+      <Hands>OffHand</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="59 * (1 + PlayableUnitLevel/10)" Max="88 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>0</BasePrice>
+            <Skills>
+               <Skill OverallUsesCount="2">PlayerFreudeOffenseBuff</Skill>
+            </Skills>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="DwarfStatueOffhandUnique">
+      <Category>MagicWeapon</Category>
+      <Hands>OffHand</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BasePrice>0</BasePrice>
+            <Skills>
+               <Skill OverallUsesCount="3">PlayerRunestone</Skill>
+            </Skills>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="FleshcloudOffHandUnique">
+      <Category>MagicWeapon</Category>
+      <Hands>OffHand</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="59 * (1 + PlayableUnitLevel/10)" Max="88 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BasePrice>0</BasePrice>
+            <Skills>
+               <Skill OverallUsesCount="1">PlayerZeppelinExplosion</Skill>
+            </Skills>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <!-- Items with portable skills -->
+   <ItemDefinition Id="PortableWatchtowerUnique">
+      <Category>MagicWeapon</Category>
+      <Hands>OffHand</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="0" Max="0"/>
+            <BasePrice>94</BasePrice>
+            <Skills>
+               <Skill OverallUsesCount="2">PortableWatchtowerSkill</Skill>
+            </Skills>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="PortableBridgeUnique">
+      <Category>MagicWeapon</Category>
+      <Hands>OffHand</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="0" Max="0"/>
+            <BasePrice>94</BasePrice>
+            <Skills>
+               <Skill OverallUsesCount="8">PortableBridgeSkill</Skill>
+            </Skills>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="PortableSproutUnique">
+      <Category>MagicWeapon</Category>
+      <Hands>OffHand</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="0" Max="0"/>
+            <BasePrice>94</BasePrice>
+            <Skills>
+               <Skill OverallUsesCount="4">PortableBallistaSproutSkill</Skill>
+            </Skills>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="PortableBarricadeUnique">
+      <Category>MagicWeapon</Category>
+      <Hands>OffHand</Hands>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="0" Max="0"/>
+            <BasePrice>94</BasePrice>
+            <Skills>
+               <Skill>PortableBarricadeSkill</Skill>
+            </Skills>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="EngineerTrinketUnique">
+      <Category>Trinket</Category>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <BaseDamage Min="0" Max="0"/>
+            <BasePrice>94</BasePrice>
+            <Skills>
+               <Skill OverallUsesCount="6">PortableBallistaSkill</Skill>
+            </Skills>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+   
+   <ItemDefinition Id="PoisonTrinketUnique">
+      <Category>Trinket</Category>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <Skills>
+               <Skill OverallUsesCount="2">UltimatePoison</Skill>
+            </Skills>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="AssassinTrinketUnique">
+      <Category>Trinket</Category>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <Skills>
+               <Skill OverallUsesCount="2">UltimateAssassin</Skill>
+            </Skills>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+   <ItemDefinition Id="DebuffTrinketUnique">
+      <Category>Trinket</Category>
+      <IsUnique>true</IsUnique>
+      <LevelVariations>
+         <Level Id="0">
+            <Skills>
+               <Skill OverallUsesCount="2">UltimateDebuff</Skill>
+            </Skills>
+         </Level>
+      </LevelVariations>
+   </ItemDefinition>
+
+
+</ItemDefinitions>

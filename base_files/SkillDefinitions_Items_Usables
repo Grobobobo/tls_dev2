@@ -1,0 +1,1317 @@
+﻿<!--<SkillDefinitions xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+                  xs:noNamespaceSchemaLocation="http://cccp-dev.cblue.be/tmp/tls/SkillDefinitions.xsd">-->
+
+<!--
+  - SkillDefinition
+    - Element ValidTargets (optional) :
+        If not specified, all targets are valid.
+        If specified, only mentioned targets are targetable.
+        Usable targets : PlayableUnits, EnemyUnits, EmptyTiles, Building Id="BuildingId", SlotEffect Id="SlotEffectId".
+        Example : 
+        <ValidTargets>
+          <SlotEffect Id="FillEffectGauge"></SlotEffect>
+        </ValidTargets>
+    - Element AttackEffects (optional) :
+        Example :
+        <AttackEffects>
+          <AttackEffect Id="ArmorPiercing"/>
+          <AttackEffect Id="NoBlock"/>
+        </AttackEffects>
+    - Element Conditions (optional) :
+        If not specified, the skill will always be displayed
+        If specified, all conditions need to be valid
+        Usable conditions : InWatchtower, TargetInRange, OnlyDuringPhase (Production OR Deployment OR Night. In the following example, the skill will be available 
+         during the production phase OR the night AND if the target is in range)
+        Example : 
+        <Conditions>
+          <OnlyDuringPhase>
+            <Production/>
+            <Night/>
+          </OnlyDuringPhase>
+          <TargetInRange/>
+        </Conditions>
+-->
+
+<SkillDefinitions xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+                  xs:noNamespaceSchemaLocation="SkillDefinitions.xsd">
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- Potions -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <SkillDefinition Id="HealthPotion">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <Range Min="0" Max="3" Modifiable="true"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <RegenStat>
+                  <Stat Id="Health"/>
+                  <Bonus>13</Bonus>
+               </RegenStat>
+               <RemoveStatus>
+                  <BaseChance>1</BaseChance>
+                  <Status>AllNegative</Status>
+               </RemoveStatus>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/Heal_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="HealthPotion1" TemplateId="HealthPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <RegenStat>
+                  <Stat Id="Health"/>
+                  <Bonus>18</Bonus>
+               </RegenStat>
+               <RemoveStatus>
+                  <BaseChance>1</BaseChance>
+                  <Status>AllNegative</Status>
+               </RemoveStatus>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="HealthPotion2" TemplateId="HealthPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <RegenStat>
+                  <Stat Id="Health"/>
+                  <Bonus>22</Bonus>
+               </RegenStat>
+               <RemoveStatus>
+                  <BaseChance>1</BaseChance>
+                  <Status>AllNegative</Status>
+               </RemoveStatus>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="ManaPotion">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <Range Min="0" Max="3" Modifiable="true"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <RegenStat>
+                  <Stat Id="Mana"/>
+                  <Bonus>2</Bonus>
+               </RegenStat>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HealMana_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="ManaPotion1" TemplateId="ManaPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <RegenStat>
+                  <Stat Id="Mana"/>
+                  <Bonus>3</Bonus>
+               </RegenStat>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+   
+   <SkillDefinition Id="ManaPotion2" TemplateId="ManaPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <RegenStat>
+                  <Stat Id="Mana"/>
+                  <Bonus>4</Bonus>
+               </RegenStat>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="EnergyPotion">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <Range Min="0" Max="3" Modifiable="true"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <RegenStat>
+                  <Stat Id="ActionPoints"/>
+                  <Bonus>1</Bonus>
+               </RegenStat>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <!--<VisualEffect>
+            <Paths>
+               <Path>00_Others/HealMana_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>-->
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="EnergyPotion1" TemplateId="EnergyPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <RegenStat>
+                  <Stat Id="ActionPoints"/>
+                  <Bonus>2</Bonus>
+               </RegenStat>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   
+   <SkillDefinition Id="EnergyPotion2" TemplateId="EnergyPotion"> <!-- Unused, kept for potential retrocompat reasons -->
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <RegenStat>
+                  <Stat Id="ActionPoints"/>
+                  <Bonus>3</Bonus>
+               </RegenStat>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   
+   <SkillDefinition Id="EnergyPotion3" TemplateId="EnergyPotion"> <!-- Unused, kept for potential retrocompat reasons -->
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <RegenStat>
+                  <Stat Id="ActionPoints"/>
+                  <Bonus>4</Bonus>
+               </RegenStat>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="SpeedPotion">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <Range Min="0" Max="3" Modifiable="true"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <RegenStat>
+                  <Stat Id="MovePoints"/>
+                  <Bonus>2</Bonus>
+               </RegenStat>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <!--<VisualEffect>
+            <Paths>
+               <Path>00_Others/HealMana_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>-->
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="SpeedPotion1" TemplateId="SpeedPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <RegenStat>
+                  <Stat Id="MovePoints"/>
+                  <Bonus>3</Bonus>
+               </RegenStat>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="SpeedPotion2" TemplateId="SpeedPotion"> <!-- Unused, kept for potential retrocompat reasons -->
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <RegenStat>
+                  <Stat Id="MovePoints"/>
+                  <Bonus>4</Bonus>
+               </RegenStat>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="SpeedPotion3" TemplateId="SpeedPotion"> <!-- Unused, kept for potential retrocompat reasons -->
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <RegenStat>
+                  <Stat Id="MovePoints"/>
+                  <Bonus>5</Bonus>
+               </RegenStat>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="InvisibilityPotion">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="3" Modifiable="true"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="Dodge"/>
+                  <Bonus>24</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+   
+   <SkillDefinition Id="InvisibilityPotion1" TemplateId="InvisibilityPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="Dodge"/>
+                  <Bonus>31</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   
+   <SkillDefinition Id="InvisibilityPotion2" TemplateId="InvisibilityPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="Dodge"/>
+                  <Bonus>37</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   
+   <SkillDefinition Id="InvisibilityPotion3" TemplateId="InvisibilityPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="Dodge"/>
+                  <Bonus>42</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="InvisibilityPotion4" TemplateId="InvisibilityPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="Dodge"/>
+                  <Bonus>46</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="StonePotion">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="3" Modifiable="true"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="Block"/>
+                  <Bonus>10</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+   
+   <SkillDefinition Id="StonePotion1" TemplateId="StonePotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="Block"/>
+                  <Bonus>15</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="StonePotion2" TemplateId="StonePotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="Block"/>
+                  <Bonus>20</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="StonePotion3" TemplateId="StonePotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="Block"/>
+                  <Bonus>25</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="StonePotion4" TemplateId="StonePotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="Block"/>
+                  <Bonus>30</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="StrengthPotion">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="3" Modifiable="true"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="OverallDamage"/>
+                  <Bonus>10</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="StrengthPotion1" TemplateId="StrengthPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="OverallDamage"/>
+                  <Bonus>15</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="StrengthPotion2" TemplateId="StrengthPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="OverallDamage"/>
+                  <Bonus>20</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="StrengthPotion3" TemplateId="StrengthPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="OverallDamage"/>
+                  <Bonus>25</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="StrengthPotion4" TemplateId="StrengthPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="OverallDamage"/>
+                  <Bonus>30</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+   
+   <SkillDefinition Id="DispelPotion">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <Range Min="0" Max="3" Modifiable="true"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <NegativeStatusImmunityEffect>
+                  <Type Id="AllNegative"/>
+                  <TurnsCount>1</TurnsCount>
+               </NegativeStatusImmunityEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/Heal_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="DispelPotion1" TemplateId="DispelPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <NegativeStatusImmunityEffect>
+                  <Type Id="AllNegative"/>
+                  <TurnsCount>2</TurnsCount>
+               </NegativeStatusImmunityEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- Scrolls -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <SkillDefinition Id="AxeBoomerangScroll" TemplateId="AxeBoomerang">
+      <OverrideLocalizationId>AxeBoomerangScroll</OverrideLocalizationId>
+      <ActionPointsCost>0</ActionPointsCost>
+      <ManaCost>2</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="AxeBoomerangScroll1" TemplateId="AxeBoomerangScroll">
+      <ManaCost>3</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="AxeBoomerangScroll2" TemplateId="AxeBoomerangScroll">
+      <ManaCost>4</ManaCost>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="ThrowingDaggersScroll" TemplateId="ThrowingDaggers">
+      <OverrideLocalizationId>ThrowingDaggersScroll</OverrideLocalizationId>
+      <ActionPointsCost>0</ActionPointsCost>
+      <ManaCost>2</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <MultiHit HitsCount="4"/>
+               <Poison>
+                  <BaseChance>1</BaseChance>
+                  <DamagePerTurn>30</DamagePerTurn>
+                  <TurnsCount>3</TurnsCount>
+               </Poison>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="ThrowingDaggersScroll1" TemplateId="ThrowingDaggersScroll">
+      <ManaCost>3</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="ThrowingDaggersScroll2" TemplateId="ThrowingDaggersScroll">
+      <ManaCost>4</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="ChargeScroll" TemplateId="Charge">
+      <OverrideLocalizationId>ChargeScroll</OverrideLocalizationId>
+      <ActionPointsCost>0</ActionPointsCost>
+      <MovePointsCost>0</MovePointsCost>
+      <ManaCost>1</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <Maneuver/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="ChargeScroll1" TemplateId="ChargeScroll">
+      <ManaCost>2</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="ChargeScroll2" TemplateId="ChargeScroll">
+      <ManaCost>3</ManaCost>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="SwordBlastScroll" TemplateId="SwordBlast">
+      <OverrideLocalizationId>SwordBlastScroll</OverrideLocalizationId>
+      <ActionPointsCost>0</ActionPointsCost>
+      <MovePointsCost>0</MovePointsCost>
+      <ManaCost>2</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <Momentum>
+                  <DamageBonusPerTile>0.10</DamageBonusPerTile>
+               </Momentum>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="SwordBlastScroll1" TemplateId="SwordBlastScroll">
+      <ManaCost>3</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="SwordBlastScroll2" TemplateId="SwordBlastScroll">
+      <ManaCost>4</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="SuperSpinScroll" TemplateId="SuperSpin">
+      <OverrideLocalizationId>SuperSpinScroll</OverrideLocalizationId>
+      <ActionPointsCost>0</ActionPointsCost>
+      <ManaCost>2</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <CasterEffect>
+                  <RemoveStatus>
+                     <BaseChance>1</BaseChance>
+                     <Status>Debuff</Status>
+                  </RemoveStatus>
+               </CasterEffect>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="SuperSpinScroll1" TemplateId="SuperSpinScroll">
+      <ManaCost>3</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="SuperSpinScroll2" TemplateId="SuperSpinScroll">
+      <ManaCost>4</ManaCost>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="GroundSmashScroll" TemplateId="GroundSmash">
+      <OverrideLocalizationId>GroundSmashScroll</OverrideLocalizationId>
+      <ActionPointsCost>0</ActionPointsCost>
+      <ManaCost>2</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <NoDodge></NoDodge>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="GroundSmashScroll1" TemplateId="GroundSmashScroll">
+      <ManaCost>3</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="GroundSmashScroll2" TemplateId="GroundSmashScroll">
+      <ManaCost>4</ManaCost>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="TripleSwipeScroll" TemplateId="TripleSwipe">
+      <OverrideLocalizationId>TripleSwipeScroll</OverrideLocalizationId>
+      <ActionPointsCost>0</ActionPointsCost>
+      <ManaCost>4</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="TripleSwipeScroll1" TemplateId="TripleSwipeScroll">
+      <ManaCost>5</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="TripleSwipeScroll2" TemplateId="TripleSwipeScroll">
+      <ManaCost>6</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="GrapeshotScroll" TemplateId="Grapeshot">
+      <OverrideLocalizationId>GrapeshotScroll</OverrideLocalizationId>
+      <ActionPointsCost>0</ActionPointsCost>
+      <ManaCost>3</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Ranged</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <NoDodge/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="GrapeshotScroll1" TemplateId="GrapeshotScroll">
+      <ManaCost>4</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="GrapeshotScroll2" TemplateId="GrapeshotScroll">
+      <ManaCost>5</ManaCost>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="RainOfArrowsScroll" TemplateId="RainOfArrows">
+      <OverrideLocalizationId>RainOfArrowsScroll</OverrideLocalizationId>
+      <ActionPointsCost>0</ActionPointsCost>
+      <ManaCost>3</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Ranged</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <IgnoreLineOfSight/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="RainOfArrowsScroll1" TemplateId="RainOfArrowsScroll">
+      <ManaCost>4</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="RainOfArrowsScroll2" TemplateId="RainOfArrowsScroll">
+      <ManaCost>5</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="ExplosiveBoltScroll" TemplateId="ExplosiveBolt">
+      <OverrideLocalizationId>ExplosiveBoltScroll</OverrideLocalizationId>
+      <ActionPointsCost>0</ActionPointsCost>
+      <ManaCost>2</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Ranged</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="ExplosiveBoltScroll1" TemplateId="ExplosiveBoltScroll">
+      <ManaCost>3</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="ExplosiveBoltScroll2" TemplateId="ExplosiveBoltScroll">
+      <ManaCost>4</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="AssassinateScroll" TemplateId="Assassinate">
+      <OverrideLocalizationId>AssassinateScroll</OverrideLocalizationId>
+      <ActionPointsCost>0</ActionPointsCost>
+      <MovePointsCost>0</MovePointsCost>
+      <ManaCost>2</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Ranged</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <Isolated>
+                  <DamageMultiplier>1.5</DamageMultiplier>
+               </Isolated>
+               <NoBlock/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="AssassinateScroll1" TemplateId="AssassinateScroll">
+      <ManaCost>3</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="AssassinateScroll2" TemplateId="AssassinateScroll">
+      <ManaCost>4</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="MagicMissilesScroll" TemplateId="MagicMissiles">
+      <OverrideLocalizationId>MagicMissilesScroll</OverrideLocalizationId>
+      <ActionPointsCost>0</ActionPointsCost>
+      <ManaCost>3</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <MultiHit HitsCount="4"/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="MagicMissilesScroll1" TemplateId="MagicMissilesScroll">
+      <ManaCost>4</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="MagicMissilesScroll2" TemplateId="MagicMissilesScroll">
+      <ManaCost>5</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="HammerOfFaithScroll" TemplateId="HammerOfFaith">
+      <OverrideLocalizationId>HammerOfFaithScroll</OverrideLocalizationId>
+      <ActionPointsCost>0</ActionPointsCost>
+      <ManaCost>2</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <Stun>
+                  <BaseChance>0.6</BaseChance>
+               </Stun>
+               <Propagation PropagationsCount="6"/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="HammerOfFaithScroll1" TemplateId="HammerOfFaithScroll">
+      <ManaCost>3</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="HammerOfFaithScroll2" TemplateId="HammerOfFaithScroll">
+      <ManaCost>4</ManaCost>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="DeathRayScroll" TemplateId="DeathRay">
+      <OverrideLocalizationId>DeathRayScroll</OverrideLocalizationId>
+      <ActionPointsCost>0</ActionPointsCost>
+      <ManaCost>5</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <NoDodge/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="DeathRayScroll1" TemplateId="DeathRayScroll">
+      <ManaCost>6</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="DeathRayScroll2" TemplateId="DeathRayScroll">
+      <ManaCost>7</ManaCost>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="ScorchingWaveScroll" TemplateId="ScorchingWave"> <!-- Unused, kept for potential retrocompat reasons -->
+      <OverrideLocalizationId>ScorchingWaveScroll</OverrideLocalizationId>
+      <ActionPointsCost>0</ActionPointsCost>
+      <ManaCost>3</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <Opportunistic>
+                  <DamageMultiplier>2</DamageMultiplier>
+               </Opportunistic>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="FireThrowerScroll" TemplateId="FireThrower">
+      <OverrideLocalizationId>FireThrowerScroll</OverrideLocalizationId>
+      <ActionPointsCost>0</ActionPointsCost>
+      <ManaCost>4</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="FireThrowerScroll1" TemplateId="FireThrowerScroll">
+      <ManaCost>5</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="FireThrowerScroll2" TemplateId="FireThrowerScroll">
+      <ManaCost>6</ManaCost>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="FireballScroll" TemplateId="Fireball">
+      <OverrideLocalizationId>FireballScroll</OverrideLocalizationId>
+      <ActionPointsCost>0</ActionPointsCost>
+      <ManaCost>3</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <ArmorPiercing/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="FireballScroll1" TemplateId="FireballScroll">
+      <ManaCost>4</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="FireballScroll2" TemplateId="FireballScroll">
+      <ManaCost>5</ManaCost>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="LightningStrikeScroll" TemplateId="LightningStrike">
+      <OverrideLocalizationId>LightningStrikeScroll</OverrideLocalizationId>
+      <ActionPointsCost>0</ActionPointsCost>
+      <ManaCost>5</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <Propagation PropagationsCount="9"/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="LightningStrikeScroll1" TemplateId="LightningStrikeScroll">
+      <ManaCost>6</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="LightningStrikeScroll2" TemplateId="LightningStrikeScroll">
+      <ManaCost>7</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="BeeStingScroll" TemplateId="BeeSting">
+      <OverrideLocalizationId>BeeStingScroll</OverrideLocalizationId>
+      <ActionPointsCost>0</ActionPointsCost>
+      <ManaCost>2</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <Poison>
+                  <BaseChance>1</BaseChance>
+                  <DamagePerTurn>30</DamagePerTurn>
+                  <TurnsCount>3</TurnsCount>
+               </Poison>
+               <Propagation PropagationsCount="5"/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="BeeStingScroll1" TemplateId="BeeStingScroll">
+      <ManaCost>3</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="BeeStingScroll2" TemplateId="BeeStingScroll">
+      <ManaCost>4</ManaCost>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="TeleportationScroll" TemplateId="Teleportation">
+      <OverrideLocalizationId>TeleportationScroll</OverrideLocalizationId>
+      <ActionPointsCost>0</ActionPointsCost>
+      <ManaCost>2</ManaCost>
+      <Range Min="1" Max="5" CardinalDirectionOnly="false"/>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="TeleportationScroll1" TemplateId="TeleportationScroll">
+      <ManaCost>3</ManaCost>
+      <Range Min="1" Max="7" CardinalDirectionOnly="false"/>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="TeleportationScroll2" TemplateId="TeleportationScroll">
+      <ManaCost>4</ManaCost>
+      <Range Min="1" Max="9" CardinalDirectionOnly="false"/>
+   </SkillDefinition>
+   
+   
+</SkillDefinitions>

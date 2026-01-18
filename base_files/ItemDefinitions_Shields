@@ -1,0 +1,307 @@
+<ItemDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../ItemDefinitions.xsd">
+
+<!-- ******************************************************************* -->
+<!-- Generated from "macro_items2.xlsm" => "Shields" tab. Count = 6 items. -->
+<!-- ******************************************************************* -->
+
+	<ItemDefinition Id="Shield0">
+		<Category>Shield</Category>
+		<Hands>OffHand</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Block">7</MainStatBonus>
+				<BasePrice>10</BasePrice>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Block">8</MainStatBonus>
+				<BasePrice>15</BasePrice>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Block">9</MainStatBonus>
+				<BasePrice>24</BasePrice>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Block">11</MainStatBonus>
+				<BasePrice>38</BasePrice>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Block">13</MainStatBonus>
+				<BasePrice>58</BasePrice>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Block">15</MainStatBonus>
+				<BasePrice>85</BasePrice>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Shield1">
+		<Category>Shield</Category>
+		<Hands>OffHand</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Block">7</MainStatBonus>
+				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Block">8</MainStatBonus>
+				<BasePrice>17</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Block">9</MainStatBonus>
+				<BasePrice>26</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Block">11</MainStatBonus>
+				<BasePrice>40</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Block">13</MainStatBonus>
+				<BasePrice>60</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Block">15</MainStatBonus>
+				<BasePrice>87</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Shield2">
+		<Category>Shield</Category>
+		<Hands>OffHand</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Block">7</MainStatBonus>
+				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Block">8</MainStatBonus>
+				<BasePrice>17</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Block">9</MainStatBonus>
+				<BasePrice>26</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Block">11</MainStatBonus>
+				<BasePrice>40</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Block">13</MainStatBonus>
+				<BasePrice>60</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Block">15</MainStatBonus>
+				<BasePrice>87</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Shield3">
+		<Category>Shield</Category>
+		<Hands>OffHand</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Block">8</MainStatBonus>
+				<BasePrice>15</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">10</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">-5</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">15</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Block">9</MainStatBonus>
+				<BasePrice>21</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">15</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">-8</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">20</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Block">11</MainStatBonus>
+				<BasePrice>31</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">20</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">-11</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">25</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Block">13</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">25</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">-14</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">30</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Block">16</MainStatBonus>
+				<BasePrice>67</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">30</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">-17</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">35</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Block">19</MainStatBonus>
+				<BasePrice>95</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">35</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">-20</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">40</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Shield4">
+		<Category>Shield</Category>
+		<Hands>OffHand</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Block">8</MainStatBonus>
+				<BasePrice>15</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="OverallDamage">4</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Block">9</MainStatBonus>
+				<BasePrice>21</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="OverallDamage">6</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Block">11</MainStatBonus>
+				<BasePrice>31</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Block">13</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="OverallDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Block">16</MainStatBonus>
+				<BasePrice>67</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="OverallDamage">12</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Block">19</MainStatBonus>
+				<BasePrice>95</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="OverallDamage">14</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Shield5">
+		<Category>Shield</Category>
+		<Hands>OffHand</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Block">8</MainStatBonus>
+				<BasePrice>15</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">24</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Block">9</MainStatBonus>
+				<BasePrice>21</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">34</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Block">11</MainStatBonus>
+				<BasePrice>31</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">44</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Block">13</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">54</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Block">16</MainStatBonus>
+				<BasePrice>67</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">64</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Block">19</MainStatBonus>
+				<BasePrice>95</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">74</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+</ItemDefinitions>

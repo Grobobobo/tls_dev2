@@ -1,0 +1,2412 @@
+<ItemDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../ItemDefinitions.xsd">
+
+<!-- ******************************************************************* -->
+<!-- Generated from "macro_items2.xlsm" => "Helmets" tab. Count = 25 items. -->
+<!-- ******************************************************************* -->
+
+	<ItemDefinition Id="Helmet0">
+		<Category>ClothHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Dodge">5</MainStatBonus>
+				<BasePrice>12</BasePrice>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Dodge">7</MainStatBonus>
+				<BasePrice>17</BasePrice>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Dodge">9</MainStatBonus>
+				<BasePrice>26</BasePrice>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Dodge">11</MainStatBonus>
+				<BasePrice>40</BasePrice>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Dodge">13</MainStatBonus>
+				<BasePrice>60</BasePrice>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Dodge">15</MainStatBonus>
+				<BasePrice>87</BasePrice>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Dodge">16</MainStatBonus>
+				<BasePrice>122</BasePrice>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Dodge">17</MainStatBonus>
+				<BasePrice>167</BasePrice>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Dodge">18</MainStatBonus>
+				<BasePrice>224</BasePrice>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Dodge">19</MainStatBonus>
+				<BasePrice>296</BasePrice>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Dodge">20</MainStatBonus>
+				<BasePrice>385</BasePrice>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Helmet1">
+		<Category>LightHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">3</MainStatBonus>
+				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">4</MainStatBonus>
+				<BasePrice>17</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>26</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>40</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>60</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>87</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>122</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>167</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>224</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>296</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>385</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">14</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Helmet2">
+		<Category>MediumHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">3</MainStatBonus>
+				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">4</MainStatBonus>
+				<BasePrice>17</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">15</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>26</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">20</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>40</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">25</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>60</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">30</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>87</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">35</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>122</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">40</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>167</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">45</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>224</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">50</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>296</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">55</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>385</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">60</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Helmet3">
+		<Category>HeavyHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">3</MainStatBonus>
+				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">4</MainStatBonus>
+				<BasePrice>17</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>26</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>40</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>60</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>87</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>122</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>167</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">14</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>224</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">16</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>296</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">18</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>385</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">20</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Helmet4">
+		<Category>MediumHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">6</MainStatBonus>
+				<BasePrice>17</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">14</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>26</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">22</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>40</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">28</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>60</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">34</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>87</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">40</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>122</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">46</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>167</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">52</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>224</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">58</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>296</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">64</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">23</MainStatBonus>
+				<BasePrice>385</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">70</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Helmet5">
+		<Category>MediumHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">6</MainStatBonus>
+				<BasePrice>17</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>26</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>40</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>60</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>87</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>122</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>167</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>224</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>296</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">23</MainStatBonus>
+				<BasePrice>385</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="MagicianHelmet">
+		<Category>ClothHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">5</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-5</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">6</MainStatBonus>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">6</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-5</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>32</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">7</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-5</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>47</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">8</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-5</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>68</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-5</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>97</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">12</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-5</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>134</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">9</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-5</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>182</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-5</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>242</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">11</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-5</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>317</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">12</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-5</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">23</MainStatBonus>
+				<BasePrice>410</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">13</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-5</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="FallenLordHelmet">
+		<Category>LightHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">2</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">5</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">6</MainStatBonus>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">4</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">6</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>32</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">6</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">7</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>47</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">7</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">8</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>68</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">10</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>97</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">9</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">12</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>134</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">10</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">9</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>182</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">11</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">10</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>242</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">12</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">11</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>317</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">13</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">12</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">23</MainStatBonus>
+				<BasePrice>410</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">14</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">13</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="PriestHelmet">
+		<Category>ClothHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">5</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">8</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">6</MainStatBonus>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">7</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">9</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>32</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">9</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">10</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>47</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">11</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">11</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>68</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">13</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">13</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>97</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">15</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">15</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>134</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">16</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">11</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>182</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">17</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">12</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>242</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">18</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">13</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>317</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">19</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">14</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">23</MainStatBonus>
+				<BasePrice>410</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">20</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">15</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Eyepatch">
+		<Category>MediumHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">3</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ActionPointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">4</MainStatBonus>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ActionPointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>32</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ActionPointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>47</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ActionPointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>68</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ActionPointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>97</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ActionPointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>134</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ActionPointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>182</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ActionPointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>242</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ActionPointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>317</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ActionPointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>410</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ActionPointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="PreciousScarfHelmet">
+		<Category>LightHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">5</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">6</MainStatBonus>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">7</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>32</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">9</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>47</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">11</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">16</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>68</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">13</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">19</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>97</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">15</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">22</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>134</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">16</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">28</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>182</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">17</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">31</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>242</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">18</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">34</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>317</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">19</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">37</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">23</MainStatBonus>
+				<BasePrice>410</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">20</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">40</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="ThiefHelmet">
+		<Category>LightHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">3</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">2</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">4</MainStatBonus>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">4</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>32</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">6</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>47</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">7</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>68</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>97</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">9</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>134</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">10</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">14</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>182</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">11</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">15</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>242</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">12</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">16</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>317</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">13</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">17</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>410</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">14</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">18</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="TheShamanHelmet">
+		<Category>ClothHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">3</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">5</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">3</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">15</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">4</MainStatBonus>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">7</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">3</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">20</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>32</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">9</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">4</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">25</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>47</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">11</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">4</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">30</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>68</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">13</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">5</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">35</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>97</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">15</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">6</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">40</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>134</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">16</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">9</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">45</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>182</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">17</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">10</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">50</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>242</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">18</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">11</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">55</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>317</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">19</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">12</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">60</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>410</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">20</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">13</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">65</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="ChildOfTheForestHelmet">
+		<Category>ClothHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">3</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">2</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">4</MainStatBonus>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">4</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>32</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">6</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>47</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>68</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">10</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>97</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">12</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>134</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">14</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>182</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">16</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>242</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">18</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>317</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">20</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>410</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">22</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="LoneWolfHelmet">
+		<Category>MediumHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">3</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">20</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">4</MainStatBonus>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">25</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">15</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>32</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">30</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">20</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>47</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">35</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">25</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>68</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">40</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">30</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>97</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">45</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">33</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>134</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">50</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">36</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>182</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">55</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">39</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>242</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">42</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>317</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">45</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>410</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">70</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">48</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="PorkEpicHelmet">
+		<Category>HeavyHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">3</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">3</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">4</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">4</MainStatBonus>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">4</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">6</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>32</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">5</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>47</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">7</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>68</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">8</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">12</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>97</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">11</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">14</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>134</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">12</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">16</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>182</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">14</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">18</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">14</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>242</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">16</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">20</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">15</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>317</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">18</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">22</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">16</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>410</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">20</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">24</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">17</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="DarknessHelmet">
+		<Category>HeavyHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">3</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">5</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">8</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">3</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">4</MainStatBonus>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">6</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">9</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">4</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>32</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">7</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">10</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">5</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>47</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">9</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">11</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">6</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>68</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">11</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">13</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">7</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>97</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">13</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">15</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>134</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">15</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">11</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">9</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>182</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">17</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">12</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>242</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">19</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">13</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">11</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>317</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">21</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">14</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">12</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>410</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">23</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">15</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">13</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="TheMountainHelmet">
+		<Category>HeavyHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="ArmorTotal">24</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">3</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="ArmorTotal">34</MainStatBonus>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">4</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="ArmorTotal">44</MainStatBonus>
+				<BasePrice>32</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">5</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="ArmorTotal">54</MainStatBonus>
+				<BasePrice>47</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">7</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="ArmorTotal">64</MainStatBonus>
+				<BasePrice>68</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">8</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="ArmorTotal">74</MainStatBonus>
+				<BasePrice>97</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">11</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">15</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="ArmorTotal">84</MainStatBonus>
+				<BasePrice>134</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">12</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">16</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="ArmorTotal">94</MainStatBonus>
+				<BasePrice>182</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">14</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">17</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="ArmorTotal">104</MainStatBonus>
+				<BasePrice>242</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">16</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">18</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="ArmorTotal">114</MainStatBonus>
+				<BasePrice>317</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">18</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">19</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="ArmorTotal">124</MainStatBonus>
+				<BasePrice>410</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">20</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">20</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="WingedHelmet">
+		<Category>HeavyHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">3</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">3</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">4</MainStatBonus>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">4</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>32</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">5</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>47</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">7</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>68</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">8</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>97</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">11</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>134</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">12</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>182</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">14</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>242</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">16</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>317</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">18</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>410</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">20</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="NecromancerHelmet">
+		<Category>MediumHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">3</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">10</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">4</MainStatBonus>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">15</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>32</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">20</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>47</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">25</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>68</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">30</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">14</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>97</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">35</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">16</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>134</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">40</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">28</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>182</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">45</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">31</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>242</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">50</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">34</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>317</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">55</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">37</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>410</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">40</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="CrowHelmet">
+		<Category>MediumHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">3</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">10</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">15</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">4</MainStatBonus>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">15</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">19</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>32</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">20</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">23</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>47</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">25</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">27</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>68</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">30</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">31</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>97</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">35</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">34</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>134</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">40</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">37</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>182</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">45</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">40</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>242</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">50</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">43</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>317</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">55</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">46</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>410</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">49</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="WhiteMonkHelmet">
+		<Category>LightHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">3</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">2</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">5</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">4</MainStatBonus>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">4</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">10</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>32</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">6</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">15</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>47</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">20</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>68</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">10</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">25</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>97</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">12</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">30</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>134</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">14</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">33</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>182</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">16</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">36</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>242</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">18</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">39</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>317</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">20</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">42</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>410</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">22</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">45</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="HoodHelmet">
+		<Category>LightHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">3</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">2</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">3</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">3</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">4</MainStatBonus>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">4</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">4</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">4</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>32</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">6</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">5</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">5</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>47</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">7</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">6</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">6</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>68</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">7</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">7</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>97</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">9</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>134</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">10</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">9</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">9</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>182</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">11</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>242</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">12</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">11</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">11</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>317</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">13</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">12</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">12</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">14</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>410</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">14</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">13</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">13</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">15</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="HunterHelmet">
+		<Category>MediumHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Resistance">3</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">10</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">10</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Resistance">4</MainStatBonus>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">15</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">15</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<BasePrice>32</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">20</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">20</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<BasePrice>47</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">25</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">25</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<BasePrice>68</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">30</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">30</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<BasePrice>97</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">35</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">35</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<BasePrice>134</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">40</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">40</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<BasePrice>182</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">45</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">45</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">14</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<BasePrice>242</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">50</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">50</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">15</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<BasePrice>317</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">55</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">55</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">16</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<BasePrice>410</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">60</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">17</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="FrostHelmet">
+		<Category>HeavyHelm</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="ArmorTotal">24</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">3</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">3</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="ArmorTotal">34</MainStatBonus>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">4</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">4</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="ArmorTotal">44</MainStatBonus>
+				<BasePrice>32</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">5</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">5</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="ArmorTotal">54</MainStatBonus>
+				<BasePrice>47</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">7</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">6</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="ArmorTotal">64</MainStatBonus>
+				<BasePrice>68</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">8</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">7</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="ArmorTotal">74</MainStatBonus>
+				<BasePrice>97</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">11</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="ArmorTotal">84</MainStatBonus>
+				<BasePrice>134</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">12</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">9</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="ArmorTotal">94</MainStatBonus>
+				<BasePrice>182</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">14</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="ArmorTotal">104</MainStatBonus>
+				<BasePrice>242</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">16</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">11</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="ArmorTotal">114</MainStatBonus>
+				<BasePrice>317</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">18</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">12</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="ArmorTotal">124</MainStatBonus>
+				<BasePrice>410</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">20</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">13</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+</ItemDefinitions>
