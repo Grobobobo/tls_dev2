@@ -1,0 +1,36 @@
+<ItemsListDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation = "../ItemsListDefinitions.xsd">
+
+<!-- ******************************************************************* -->
+<!-- Generated from "macro_items2.xlsm" => "Generation Misc" tab. Count = 17 entries, split into 4 lists. -->
+<!-- ******************************************************************* -->
+
+	<ItemsListDefinition Id="ItemList_NightReward">
+		<Item Id="ItemList_AllWeapons" Odd="6"/>
+		<Item Id="ItemList_BodyArmor" Odd="2"/>
+		<Item Id="ItemList_Pants" Odd="2"/>
+		<Item Id="ItemList_Helmet" Odd="2"/>
+		<Item Id="ItemList_Offhand" Odd="1"/>
+		<Item Id="ItemList_Trinket" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_InventoryBaseContent">
+		<Item Id="ItemList_MeleeWeapons" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_AllDLCItemsDLC1">
+		<Item Id="ItemList_Gauntlet" Odd="1"/>
+		<Item Id="ItemList_Cannon" Odd="1"/>
+		<Item Id="ItemList_WarShield" Odd="1"/>
+		<Item Id="ItemList_TrinketPerkDlc1" Odd="1"/>
+		<Item Id="ItemList_Beer" Odd="1"/>
+		<Item Id="ItemList_ScrollDlc1" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_AllDLCItemsDLC2">
+		<Item Id="ItemList_ManaFlower" Odd="1"/>
+		<Item Id="ItemList_Claws" Odd="1"/>
+		<Item Id="ItemList_Boomerang" Odd="1"/>
+		<Item Id="ItemList_ScrollDlc2" Odd="1"/>
+	</ItemsListDefinition>
+
+</ItemsListDefinitions>

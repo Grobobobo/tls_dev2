@@ -1,0 +1,67 @@
+<ItemsListDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation = "../ItemsListDefinitions.xsd">
+
+<!-- ******************************************************************* -->
+<!-- Generated from "macro_items2.xlsm" => "Generation Shop" tab. Count = 18 entries, split into 14 lists. -->
+<!-- ******************************************************************* -->
+
+	<ItemsListDefinition Id="ItemList_ShopSlotWeaponMelee">
+		<Item Id="ItemList_MeleeWeapons" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ShopSlotWeaponMagic">
+		<Item Id="ItemList_MagicWeapons" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ShopSlotWeaponRanged">
+		<Item Id="ItemList_RangedWeapons" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ShopSlotWeaponAll">
+		<Item Id="ItemList_AllWeapons" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ShopSlotOffhand">
+		<Item Id="ItemList_Offhand" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ShopSlotArmorHelmet">
+		<Item Id="ItemList_Helmet" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ShopSlotArmorBodyArmor">
+		<Item Id="ItemList_BodyArmor" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ShopSlotArmorPants">
+		<Item Id="ItemList_Pants" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ShopSlotArmorAll">
+		<Item Id="ItemList_BodyArmor" Odd="3"/>
+		<Item Id="ItemList_Pants" Odd="3"/>
+		<Item Id="ItemList_Helmet" Odd="3"/>
+		<Item Id="ItemList_Shield" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ShopSlotTrinket">
+		<Item Id="ItemList_Trinket" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ShopSlotUsablePotionHeal">
+		<Item Id="ItemList_PotionHeal" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ShopSlotUsablePotionAll">
+		<Item Id="ItemList_Potion" Odd="1"/>
+		<Item Id="ItemList_Beer" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ShopSlotUsableScroll">
+		<Item Id="ItemList_Scroll_All" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ShopSlotPerkTrinket">
+		<Item Id="ItemList_Trinket_Special" Odd="1"/>
+	</ItemsListDefinition>
+
+</ItemsListDefinitions>
