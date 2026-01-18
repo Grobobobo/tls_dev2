@@ -1,0 +1,691 @@
+﻿<ApocalypseModifierDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+                       xsi:noNamespaceSchemaLocation="ApocalypseModifierDefinitions.xsd">
+
+
+
+   <!-- TODO rename all ids when we have set some rules -->
+
+
+
+   <!-- ====== -->
+
+   <!-- Tier 1 -->
+
+   <!-- ====== -->
+
+   
+
+   <!-- Enemies Health Modifier -->
+
+   <ApocalypseModifierDefinition Id="EnemyHealthModifier">
+
+      <Tier>1</Tier>
+
+      <Steps>
+
+         <Step>EnemyHealthModifier_1</Step>
+
+         <Step>EnemyHealthModifier_2</Step>
+
+         <Step>EnemyHealthModifier_3</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Enemies</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+   <!-- Increase Buildings Cost -->
+
+   <ApocalypseModifierDefinition Id="ProductionCostModifier">
+
+      <Tier>1</Tier>
+
+      <Steps>
+
+         <Step>ProductionCostModifier_1</Step>
+
+         <Step>ProductionCostModifier_2</Step>
+
+         <Step>ProductionCostModifier_3</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Economy</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+   <!-- Double Panic -->
+
+   <ApocalypseModifierDefinition Id="DoublePanicModifier">
+
+      <Tier>1</Tier>
+
+      <Steps>
+
+         <Step>DoublePanicModifier_1</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Enemies</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+   <!-- Berserker -->
+
+   <ApocalypseModifierDefinition Id="BerserkerEnemiesModifier">
+
+      <Tier>1</Tier>
+
+      <Steps>
+
+         <Step>BerserkerEnemiesModifier_1</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Enemies</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+   
+
+   <!-- ====== -->
+
+   <!-- Tier 2 -->
+
+   <!-- ====== -->
+
+
+
+   <!-- Starting Magic Circle Health -->
+
+   <ApocalypseModifierDefinition Id="StartingMagicCircleHealthModifier">
+
+      <Tier>2</Tier>
+
+      <Steps>
+
+         <Step>StartingMagicCircleHealthModifier_1</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Haven</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+   
+
+   <!-- Wave Size -->
+
+   <ApocalypseModifierDefinition Id="WaveSizeModifier">
+
+      <Tier>2</Tier>
+
+      <Steps>
+
+         <Step>WaveSizeModifier_1</Step>
+
+         <Step>WaveSizeModifier_2</Step>
+
+         <Step>WaveSizeModifier_3</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Enemies</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+   <!-- Boss Health -->
+
+   <ApocalypseModifierDefinition Id="BossUnitHealthModifier">
+
+      <Tier>2</Tier>
+
+      <Steps>
+
+         <Step>BossUnitHealthModifier_1</Step>
+
+         <Step>BossUnitHealthModifier_2</Step>
+
+         <Step>BossUnitHealthModifier_3</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>EliteEnemies</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+   <!-- Items Negative Affixes -->
+
+   <ApocalypseModifierDefinition Id="ItemsNegativeAffixesModifier">
+
+      <Tier>2</Tier>
+
+      <Steps>
+
+         <Step>ItemsNegativeAffixesModifier_1</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Equipment</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+   <!-- Super Enemies -->
+
+   <ApocalypseModifierDefinition Id="SuperEnemiesModifier">
+
+      <Tier>2</Tier>
+
+      <Steps>
+
+         <Step>SuperEnemiesModifier_1</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Enemies</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+   <!-- Shop Panic -->
+
+   <!--<ApocalypseModifierDefinition Id="ShopPanicModifier">
+
+      <Tier>2</Tier>
+
+      <Steps>
+
+         <Step>ShopPanicModifier_1</Step>
+
+      </Steps>
+
+   </ApocalypseModifierDefinition>-->
+
+   
+
+
+
+   <!-- ====== -->
+
+   <!-- Tier 3 -->
+
+   <!-- ====== -->
+
+   
+
+   <!-- Heroes Block Vision -->
+
+   <ApocalypseModifierDefinition Id="HeroesVisionModifier">
+
+      <Tier>3</Tier>
+
+      <Steps>
+
+         <Step>HeroesVisionModifier_1</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Heroes</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+   <!-- Anti Turtle -->
+
+   <ApocalypseModifierDefinition Id="AntiTurtleModifier">
+
+      <Tier>3</Tier>
+
+      <Steps>
+
+         <Step>AntiTurtleModifier_1</Step>
+
+         <Step>AntiTurtleModifier_2</Step>
+
+         <Step>AntiTurtleModifier_3</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Haven</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+   <!-- Increase Defenses Cost -->
+
+   <ApocalypseModifierDefinition Id="DefenseCostModifier">
+
+      <Tier>3</Tier>
+
+      <Steps>
+
+         <Step>DefenseCostModifier_1</Step>
+
+         <Step>DefenseCostModifier_2</Step>
+
+         <Step>DefenseCostModifier_3</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Economy</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+   <!-- Mist Censers -->
+
+   <ApocalypseModifierDefinition Id="FogSpawnerModifier">
+
+      <Tier>3</Tier>
+
+      <Steps>
+
+         <Step>FogSpawnerModifier_1</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Mist</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+   <!-- Enemy Late Buff -->
+
+   <!--<ApocalypseModifierDefinition Id="EnemyLateBuffModifier">
+
+      <Tier>3</Tier>
+
+      <Steps>
+
+         <Step>EnemyLateBuffModifier_1</Step>
+
+         <Step>EnemyLateBuffModifier_2</Step>
+
+         <Step>EnemyLateBuffModifier_3</Step>
+
+      </Steps>
+
+   </ApocalypseModifierDefinition>-->
+
+   
+
+   <!-- Faster Enemies -->
+
+   <ApocalypseModifierDefinition Id="FasterEnemiesModifier">
+
+      <Tier>3</Tier>
+
+      <Steps>
+
+         <Step>FasterEnemiesModifier_1</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Enemies</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+   <!-- Sell Price Reduction -->
+
+   <!--<ApocalypseModifierDefinition Id="SellPriceModifier">
+
+      <Tier>3</Tier>
+
+      <Steps>
+
+         <Step>SellPriceModifier_1</Step>
+
+         <Step>SellPriceModifier_2</Step>
+
+         <Step>SellPriceModifier_3</Step>
+
+      </Steps>
+
+   </ApocalypseModifierDefinition>-->
+
+   
+
+   <!-- Building DeadZone -->
+
+   <ApocalypseModifierDefinition Id="BuildingDeadZoneModifier">
+
+      <Tier>3</Tier>
+
+      <Steps>
+
+         <Step>BuildingDeadZoneModifier_1</Step>
+
+         <Step>BuildingDeadZoneModifier_2</Step>
+
+         <Step>BuildingDeadZoneModifier_3</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Haven</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+   <!-- Inn Level Reduction -->
+
+   <ApocalypseModifierDefinition Id="InnLevelModifier">
+
+      <Tier>3</Tier>
+
+      <Steps>
+
+         <Step>InnLevelModifier_1</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Heroes</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+   <!-- Shared Experience Modifier -->
+
+   <ApocalypseModifierDefinition Id="SharedExperienceMultiplierModifier">
+
+      <Tier>3</Tier>
+
+      <Steps>
+
+         <Step>SharedExperienceModifier_1</Step>
+
+         <Step>SharedExperienceModifier_2</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Heroes</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+
+
+   <!-- ====== -->
+
+   <!-- Tier 4 -->
+
+   <!-- ====== -->
+
+
+
+   <!-- Starting Fog Decrease -->
+
+   <ApocalypseModifierDefinition Id="StartingFogModifier">
+
+      <Tier>4</Tier>
+
+      <Steps>
+
+         <Step>StartingFogModifier_1</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Mist</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+   <!-- Lone Wolf -->
+
+   <ApocalypseModifierDefinition Id="LoneWolfModifier">
+
+      <Tier>4</Tier>
+
+      <Steps>
+
+         <Step>LoneWolfModifier_1</Step>
+
+         <Step>LoneWolfModifier_2</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Heroes</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+   <!-- Clawer Quantity -->
+
+   <ApocalypseModifierDefinition Id="ClawerQuantityModifier">
+
+      <Tier>4</Tier>
+
+      <Steps>
+
+         <Step>ClawerQuantityModifier_1</Step>
+
+         <Step>ClawerQuantityModifier_2</Step>
+
+         <Step>ClawerQuantityModifier_3</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Enemies</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+   <!-- Super Affixes Elite -->
+
+   <ApocalypseModifierDefinition Id="SuperAffixesEliteModifier">
+
+      <Tier>4</Tier>
+
+      <Steps>
+
+         <Step>SuperEliteModifier_1</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>EliteEnemies</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+   <!-- Enemy Progression Offset -->
+
+   <ApocalypseModifierDefinition Id="EnemyProgressionOffsetModifier">
+
+      <Tier>4</Tier>
+
+      <Steps>
+
+         <Step>EnemyProgressionOffsetModifier_1</Step>
+
+         <Step>EnemyProgressionOffsetModifier_2</Step>
+
+         <Step>EnemyProgressionOffsetModifier_3</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Enemies</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>
+
+
+
+
+
+
+
+   <!-- ====== -->
+
+   <!-- Tier 5 -->
+
+   <!-- ====== -->
+
+   
+
+   <!-- Healing Bone pile -->
+
+   <!--<ApocalypseModifierDefinition Id="HealingBonePilesModifier">
+
+      <Tier>3</Tier>
+
+      <Steps>
+
+         <Step>HealingBonePilesModifier_1</Step>
+
+      </Steps>
+
+      <FilterIds>
+
+         <FilterId>Mist</FilterId>
+
+      </FilterIds>
+
+   </ApocalypseModifierDefinition>-->
+
+
+
+
+
+   
+
+
+
+   
+
+   <!-- ====== -->
+
+   <!-- Tier 6 -->
+
+   <!-- ====== -->
+
+
+
+
+
+
+
+   <!-- ====== -->
+
+   <!-- Tier 7 -->
+
+   <!-- ====== -->
+
+
+
+</ApocalypseModifierDefinitions>

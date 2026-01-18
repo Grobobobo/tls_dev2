@@ -1,0 +1,1133 @@
+<ApocalypseModifierStepDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+                       xsi:noNamespaceSchemaLocation="ApocalypseModifierStepDefinitions.xsd">
+
+
+
+   <!-- Tier 1 -->
+
+
+
+   <!-- Double Panic Modifier Steps -->
+
+   <ApocalypseModifierStepDefinition Id="DoublePanicModifier_1">
+
+      <ApocalypseLevel>2</ApocalypseLevel>
+
+      <Effects>
+
+         <MultiplyPanicGain Multiplier="2"/>
+
+      </Effects>
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Value="100" Suffix="%" Style="BadNb"/>
+
+      </LocArguments>
+
+      <View>
+
+         <DropdownValue Prefix="+" Value="100" Suffix="%"/>
+
+      </View>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Enemies Health Modifier Steps -->
+
+   <ApocalypseModifierStepDefinition Id="EnemyHealthModifier_1">
+
+      <ApocalypseLevel>2</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="HealthModifier" Value="20"/>
+
+      </TokenVariables>
+
+      <Effects>
+
+         <EnemiesStatBaseValueModifier Stat="HealthTotal" Value="HealthModifier">
+
+            <TriggeredList>AllEnemiesExceptBossUnits</TriggeredList>
+
+         </EnemiesStatBaseValueModifier>
+
+      </Effects>
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Value="HealthModifier" Suffix="%" Style="BadNb"/>
+
+      </LocArguments>
+
+      <View>
+
+         <DropdownValue Prefix="+" Value="HealthModifier" Suffix="%"/>
+
+      </View>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="EnemyHealthModifier_2" TemplateId="EnemyHealthModifier_1">
+
+      <ApocalypseLevel>4</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="HealthModifier" Value="35"/>
+
+      </TokenVariables>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="EnemyHealthModifier_3" TemplateId="EnemyHealthModifier_1">
+
+      <ApocalypseLevel>6</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="HealthModifier" Value="50"/>
+
+      </TokenVariables>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Hero Vision Modifier Steps -->
+
+   <ApocalypseModifierStepDefinition Id="HeroesVisionModifier_1">
+
+      <ApocalypseLevel>2</ApocalypseLevel>
+
+      <Effects>
+
+         <PlayableUnitBlockLineOfSight/>
+
+      </Effects>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Increase Buildings Steps -->
+
+   <ApocalypseModifierStepDefinition Id="ProductionCostModifier_1">
+
+      <ApocalypseLevel>2</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="CostModifier" Value="12"/>
+
+      </TokenVariables>
+
+      <Effects>
+
+         <IncreasePrices Type="All" ResourceCostType="Gold" Value="CostModifier"/>
+
+      </Effects>
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Value="CostModifier" Suffix="%" Style="BadNb"/>
+
+      </LocArguments>
+
+      <View>
+
+         <DropdownValue Prefix="+" Value="CostModifier" Suffix="%"/>
+
+      </View>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="ProductionCostModifier_2" TemplateId="ProductionCostModifier_1">
+
+      <ApocalypseLevel>4</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="CostModifier" Value="24"/>
+
+      </TokenVariables>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="ProductionCostModifier_3" TemplateId="ProductionCostModifier_1">
+
+      <ApocalypseLevel>6</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="CostModifier" Value="36"/>
+
+      </TokenVariables>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Increase Defense Cost Steps -->
+
+   <ApocalypseModifierStepDefinition Id="DefenseCostModifier_1">
+
+      <ApocalypseLevel>2</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="CostModifier" Value="20"/>
+
+      </TokenVariables>
+
+      <Effects>
+
+         <IncreasePrices Type="All" ResourceCostType="Materials" Value="CostModifier"/>
+
+      </Effects>
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Value="CostModifier" Suffix="%" Style="BadNb"/>
+
+      </LocArguments>
+
+      <View>
+
+         <DropdownValue Prefix="+" Value="CostModifier" Suffix="%"/>
+
+      </View>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="DefenseCostModifier_2" TemplateId="DefenseCostModifier_1">
+
+      <ApocalypseLevel>4</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="CostModifier" Value="40"/>
+
+      </TokenVariables>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="DefenseCostModifier_3" TemplateId="DefenseCostModifier_1">
+
+      <ApocalypseLevel>6</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="CostModifier" Value="60"/>
+
+      </TokenVariables>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Wave Size Modifier Steps -->
+
+   <ApocalypseModifierStepDefinition Id="WaveSizeModifier_1">
+
+      <ApocalypseLevel>2</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="WavesSizeModifier" Value="15"/>
+
+      </TokenVariables>
+
+      <Effects>
+
+         <IncreaseEnemiesNumber Value="WavesSizeModifier"/>
+
+      </Effects>
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Value="WavesSizeModifier" Suffix="%" Style="BadNb"/>
+
+      </LocArguments>
+
+      <View>
+
+         <DropdownValue Prefix="+" Value="WavesSizeModifier" Suffix="%"/>
+
+      </View>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="WaveSizeModifier_2" TemplateId="WaveSizeModifier_1">
+
+      <ApocalypseLevel>4</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="WavesSizeModifier" Value="30"/>
+
+      </TokenVariables>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="WaveSizeModifier_3" TemplateId="WaveSizeModifier_1">
+
+      <ApocalypseLevel>6</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="WavesSizeModifier" Value="45"/>
+
+      </TokenVariables>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Inn Level Modifier Steps -->
+
+   <ApocalypseModifierStepDefinition Id="InnLevelModifier_1">
+
+      <ApocalypseLevel>2</ApocalypseLevel>
+
+      <Effects>
+
+         <ModifyInnSlotRecruitmentLevel SlotIndex="1" LevelId="LowUnitLevelApoc"/>
+
+         <ModifyInnSlotRecruitmentLevel SlotIndex="2" LevelId="HighUnitLevelApoc"/>
+
+         <ModifyInnSlotRecruitmentLevel SlotIndex="3" LevelId="AverageUnitLevelApoc"/>
+
+         <ModifyInnSlotRecruitmentLevel SlotIndex="4" LevelId="AverageUnitLevelApoc"/>
+
+      </Effects>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Tier 2 -->
+
+
+
+   <!-- Anti Turtle Modifier Steps -->
+
+   <ApocalypseModifierStepDefinition Id="AntiTurtleModifier_1">
+
+      <ApocalypseLevel>2</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="ExclusionRange" Value="3"/>
+
+      </TokenVariables>
+
+      <Effects>
+
+         <ForbidBuildingCategoryAroundMagicCircle BuildingCategory="Barricade" RadiusRange="ExclusionRange"/>
+
+         <ForbidBuildingCategoryAroundMagicCircle BuildingCategory="Defensive" RadiusRange="ExclusionRange"/>
+
+         <ForbidBuildingCategoryAroundMagicCircle BuildingCategory="HandledDefense" RadiusRange="ExclusionRange"/>
+
+         <ForbidBuildingCategoryAroundMagicCircle BuildingCategory="WalkableHandledDefense" RadiusRange="ExclusionRange"/>
+
+         <ForbidBuildingCategoryAroundMagicCircle BuildingCategory="Gate" RadiusRange="ExclusionRange"/>
+
+         <ForbidBuildingCategoryAroundMagicCircle BuildingCategory="Trap" RadiusRange="ExclusionRange"/>
+
+         <ForbidBuildingCategoryAroundMagicCircle BuildingCategory="Turret" RadiusRange="ExclusionRange"/>
+
+         <ForbidBuildingCategoryAroundMagicCircle BuildingCategory="Wall" RadiusRange="ExclusionRange"/>
+
+         <ForbidBuildingCategoryAroundMagicCircle BuildingCategory="Watchtower" RadiusRange="ExclusionRange"/>
+
+      </Effects>
+
+      <LocArguments>
+
+         <LocArgument Value="ExclusionRange" Style="BadNb"/>
+
+      </LocArguments>
+
+      <View>
+
+         <DropdownValue Value="ExclusionRange"/>
+
+      </View>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="AntiTurtleModifier_2" TemplateId="AntiTurtleModifier_1">
+
+      <ApocalypseLevel>4</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="ExclusionRange" Value="4"/>
+
+      </TokenVariables>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="AntiTurtleModifier_3" TemplateId="AntiTurtleModifier_1">
+
+      <ApocalypseLevel>6</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="ExclusionRange" Value="5"/>
+
+      </TokenVariables>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Boss Health Modifier Steps -->
+
+   <ApocalypseModifierStepDefinition Id="BossUnitHealthModifier_1">
+
+      <ApocalypseLevel>2</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="HealthModifier" Value="125"/>
+
+         <TokenVariable Key="ArmorModifier" Value="50"/>
+
+      </TokenVariables>
+
+      <Effects>
+
+         <EnemiesStatBaseValueModifier Stat="HealthTotal" Value="HealthModifier">
+
+            <TriggeredList>BossUnits</TriggeredList>
+
+         </EnemiesStatBaseValueModifier>
+
+         <EnemiesStatBaseValueModifier Stat="ArmorTotal" Value="ArmorModifier">
+
+            <TriggeredList>BossUnits</TriggeredList>
+
+         </EnemiesStatBaseValueModifier>                                        
+
+      </Effects>
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Suffix="%" Value="HealthModifier" Style="BadNb"/>
+
+         <LocArgument Prefix="+" Suffix="%" Value="ArmorModifier" Style="BadNb"/>
+
+      </LocArguments>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="BossUnitHealthModifier_2" TemplateId="BossUnitHealthModifier_1">
+
+      <ApocalypseLevel>4</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="HealthModifier" Value="250"/>
+
+         <TokenVariable Key="ArmorModifier" Value="100"/>
+
+      </TokenVariables>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="BossUnitHealthModifier_3" TemplateId="BossUnitHealthModifier_1">
+
+      <ApocalypseLevel>6</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="HealthModifier" Value="375"/>
+
+         <TokenVariable Key="ArmorModifier" Value="150"/>
+
+      </TokenVariables>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Building Dead Zone Modifier Steps -->
+
+   <ApocalypseModifierStepDefinition Id="BuildingDeadZoneModifier_1" >
+
+      <ApocalypseLevel>2</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="TargetedBuildingTextKeySuffix" Value="1"/>
+
+      </TokenVariables>
+
+      <Effects>
+
+         <ModifyBuildingsDeadZoneRange Range="2">
+
+            <BuildingId>House</BuildingId>
+
+         </ModifyBuildingsDeadZoneRange>
+
+      </Effects>
+
+      <LocArguments>
+
+         <LocArgument Value="2" Style="BadNb"/>
+
+         <LocalizedArgument Prefix="ApocalypseModifierDescription_BuildingDeadZoneModifier_TargetedBuilding_" Value="TargetedBuildingTextKeySuffix" Style="Keyword"/>
+
+         <LocArgument Value="1" Style="KeywordNb"/>
+
+      </LocArguments>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="BuildingDeadZoneModifier_2" TemplateId="BuildingDeadZoneModifier_1">
+
+      <ApocalypseLevel>4</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="TargetedBuildingTextKeySuffix" Value="2"/>
+
+      </TokenVariables>
+
+      <Effects>
+
+         <ModifyBuildingsDeadZoneRange Range="2">
+
+            <BuildingList>ApocalypseDeadZoneRangeModifierStep2</BuildingList>
+
+         </ModifyBuildingsDeadZoneRange>
+
+      </Effects>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="BuildingDeadZoneModifier_3" TemplateId="BuildingDeadZoneModifier_1">
+
+      <ApocalypseLevel>6</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="TargetedBuildingTextKeySuffix" Value="3"/>
+
+      </TokenVariables>
+
+      <Effects>
+
+         <ModifyBuildingsDeadZoneRange Range="2">
+
+            <BuildingList>TownBuildings</BuildingList>
+
+         </ModifyBuildingsDeadZoneRange>
+
+      </Effects>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Healing BonePiles Modifier Steps -->
+
+   <!--<ApocalypseModifierStepDefinition Id="HealingBonePilesModifier_1">
+
+      <ApocalypseLevel>4</ApocalypseLevel>
+
+      <Effects>
+
+         <AddSkillProgressionFlag Flag="HealingBonePiles"/>
+
+         <SetBuildingsNotDemolishable>
+
+            <BuildingList>BonePiles</BuildingList>
+
+         </SetBuildingsNotDemolishable>
+
+      </Effects>
+
+   </ApocalypseModifierStepDefinition>-->
+
+
+
+   <!-- Mist Censers Steps -->
+
+   <ApocalypseModifierStepDefinition Id="FogSpawnerModifier_1">
+
+      <ApocalypseLevel>2</ApocalypseLevel>
+
+      <Effects>
+
+         <GenerateFogSpawners/>
+
+      </Effects>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Starting Magic Circle Health Modifier Steps -->
+
+   <ApocalypseModifierStepDefinition Id="StartingMagicCircleHealthModifier_1">
+
+      <ApocalypseLevel>1</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="StartingHealthMultiplier" Value="0.25"/>
+
+      </TokenVariables>
+
+      <Effects>
+
+         <ModifyMagicCircleStartingHealth HealthMultiplier="StartingHealthMultiplier"/>
+
+      </Effects>
+
+      <LocArguments>
+
+         <LocArgument Value="(StartingHealthMultiplier * 100)" Suffix="%" Interpreted="true" Style="BadNb"/>
+
+      </LocArguments>
+
+      <View>
+
+         <DropdownValue Value="(StartingHealthMultiplier * 100)" Suffix="%"/>
+
+      </View>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Super Elite Modifier Steps -->
+
+   <ApocalypseModifierStepDefinition Id="SuperEliteModifier_1">
+
+      <ApocalypseLevel>3</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="HealthModifier" Value="25"/>
+
+      </TokenVariables>
+
+      <Effects>
+
+         <AddAffixFlag Flag="SuperEliteAffixes"/>
+
+         <EnemiesStatBaseValueModifier Stat="HealthTotal" Value="HealthModifier">
+
+            <TriggeredList>AllElites</TriggeredList>
+
+         </EnemiesStatBaseValueModifier>
+
+      </Effects>
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Value="HealthModifier" Suffix="%" Interpreted="true" Style="BadNb"/>
+
+      </LocArguments>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Super Enemies Modifier Steps -->
+
+   <ApocalypseModifierStepDefinition Id="SuperEnemiesModifier_1">
+
+      <ApocalypseLevel>4</ApocalypseLevel>
+
+      <Effects>
+
+         <AddSkillProgressionFlag Flag="SuperEnemies"/>
+
+      </Effects>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Tier 3 -->
+
+
+
+   <!-- Berserk Enemies Modifier Steps -->
+
+   <ApocalypseModifierStepDefinition Id="BerserkerEnemiesModifier_1">
+
+      <ApocalypseLevel>2</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="DamageModifier" Value="50"/>
+
+      </TokenVariables>
+
+      <Effects>
+
+         <ModifyEnemiesInjuryStage InjuryStage="2">
+
+            <StatModifiers>
+
+               <StatModifier Stat="InjuryDamageMultiplier" Value="0" OverrideValue="true"/>
+
+               <StatModifier Stat="OverallDamage" Value="DamageModifier"/>
+
+            </StatModifiers>
+
+         </ModifyEnemiesInjuryStage>
+
+      </Effects>
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Value="DamageModifier" Suffix="%" Style="BadNb"/>
+
+         <LocArgument Prefix="+" Value="DamageModifier" Suffix="%" Style="BadNb"/>
+
+      </LocArguments>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Clawer Quantity Steps -->
+
+   <ApocalypseModifierStepDefinition Id="ClawerQuantityModifier_1">
+
+      <ApocalypseLevel>3</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="WeightMultiplier" Value="0.3"/>
+
+         <TokenVariable Key="WeightMultiplierPercentage" Value="WeightMultiplier * 100"/>
+
+      </TokenVariables>
+
+      <Effects>
+
+         <MultiplyEnemyUnitSpawnWaveWeight Multiplier="1 - WeightMultiplier">
+
+            <EnemyId>Clawer</EnemyId>
+
+         </MultiplyEnemyUnitSpawnWaveWeight>
+
+      </Effects>
+
+      <LocArguments>
+
+         <LocArgument Value="(WeightMultiplier * 100)" Suffix="%" Style="BadNb" Interpreted="true"/>
+
+      </LocArguments>
+
+      <View>
+
+         <DropdownValue Value="WeightMultiplier * 100" Suffix="%"/>
+
+      </View>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="ClawerQuantityModifier_2" TemplateId="ClawerQuantityModifier_1">
+
+      <ApocalypseLevel>6</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="WeightMultiplier" Value="0.6"/>
+
+      </TokenVariables>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="ClawerQuantityModifier_3" TemplateId="ClawerQuantityModifier_1">
+
+      <ApocalypseLevel>9</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="WeightMultiplier" Value="0.9"/>
+
+      </TokenVariables>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Enemy Late Buff Modifier Steps -->
+
+   <ApocalypseModifierStepDefinition Id="EnemyLateBuffModifier_1">
+
+      <ApocalypseLevel>2</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="ActivationTurn" Value="6"/>
+
+      </TokenVariables>
+
+      <Effects>
+
+         <AddEnemiesStatModifierFromTurn Turn="ActivationTurn">
+
+            <StatModifier Stat="MovePointsTotal" Value="1"/>
+
+            <StatModifier Stat="OverallDamage" Value="30"/>
+
+         </AddEnemiesStatModifierFromTurn>
+
+      </Effects>
+
+      <LocArguments>
+
+         <LocArgument Value="ActivationTurn" Style="KeyWordNb"/>
+
+         <StatArgument Stat="MovePointsTotal" Value="1" DisplaySign="true"/>
+
+         <StatArgument Stat="OverallDamage" Value="30" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <View>
+
+         <DropdownValue Value="ActivationTurn"/>
+
+      </View>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="EnemyLateBuffModifier_2" TemplateId="EnemyLateBuffModifier_1">
+
+      <ApocalypseLevel>4</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="ActivationTurn" Value="5"/>
+
+      </TokenVariables>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="EnemyLateBuffModifier_3" TemplateId="EnemyLateBuffModifier_1">
+
+      <ApocalypseLevel>6</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="ActivationTurn" Value="4"/>
+
+      </TokenVariables>
+
+   </ApocalypseModifierStepDefinition>
+
+   
+
+   <!-- Enemy Progression Offset Modifier Steps -->
+
+   <ApocalypseModifierStepDefinition Id="EnemyProgressionOffsetModifier_1">
+
+      <ApocalypseLevel>2</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="ProgressionOffset" Value="1"/>
+
+      </TokenVariables>
+
+      <Effects>
+
+         <IncreaseEnemiesProgressionOffset Value="ProgressionOffset"/>
+
+      </Effects>
+
+      <LocArguments>
+
+         <LocArgument Value="ProgressionOffset" Style="BadNb" Interpreted="true"/>
+
+      </LocArguments>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="EnemyProgressionOffsetModifier_2" TemplateId="EnemyProgressionOffsetModifier_1">
+
+      <ApocalypseLevel>4</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="ProgressionOffset" Value="2"/>
+
+      </TokenVariables>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="EnemyProgressionOffsetModifier_3" TemplateId="EnemyProgressionOffsetModifier_1">
+
+      <ApocalypseLevel>6</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="ProgressionOffset" Value="3"/>
+
+      </TokenVariables>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Faster Enemies Steps -->
+
+   <ApocalypseModifierStepDefinition Id="FasterEnemiesModifier_1">
+
+      <ApocalypseLevel>6</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="MovePointsSmallModifier" Value="1"/>
+
+         <TokenVariable Key="MovePointBigModifier" Value="2"/>
+
+         <TokenVariable Key="SmallModifierEnemiesList" Value="ApocalypseMoveSpeed_SmallIncrease"/>
+
+         <TokenVariable Key="BigModifierEnemiesList" Value="ApocalypseMoveSpeed_BigIncrease"/>
+
+      </TokenVariables>
+
+      <Effects>
+
+         <EnemiesStatBaseValueModifier Stat="MovePointsTotal" Value="MovePointsSmallModifier">
+
+            <TriggeredList>SmallModifierEnemiesList</TriggeredList>
+
+         </EnemiesStatBaseValueModifier>
+
+         <EnemiesStatBaseValueModifier Stat="MovePointsTotal" Value="MovePointBigModifier">
+
+            <TriggeredList>BigModifierEnemiesList</TriggeredList>
+
+         </EnemiesStatBaseValueModifier>
+
+      </Effects>
+
+      <LocArguments>
+
+         <StatArgument Stat="MovePointsTotal" Value="MovePointsSmallModifier" DisplaySign="true"/>
+
+         <StatArgument Stat="MovePointsTotal" Value="MovePointBigModifier" DisplaySign="true"/>
+
+      </LocArguments>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Items Negative Affixes Steps -->
+
+   <ApocalypseModifierStepDefinition Id="ItemsNegativeAffixesModifier_1">
+
+      <ApocalypseLevel>1</ApocalypseLevel>
+
+      <Effects>
+
+         <GenerateMalusAffixes/>
+
+      </Effects>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Starting Fog Steps -->
+
+   <ApocalypseModifierStepDefinition Id="StartingFogModifier_1">
+
+      <ApocalypseLevel>4</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="StartingFog" Value="1"/>
+
+      </TokenVariables>
+
+       <Effects>
+
+          <IncreaseStartingFogDensity Value="StartingFog"/>
+
+       </Effects>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Tier 4 -->
+
+
+
+   <!-- Lone Wolf Modifier Steps -->
+
+   <ApocalypseModifierStepDefinition Id="LoneWolfModifier_1">
+
+      <ApocalypseLevel>4</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="RemovedStartingHeroes" Value="1"/>
+
+      </TokenVariables>
+
+      <Effects>
+
+         <RemoveStartingPlayableUnit Amount="RemovedStartingHeroes"/>
+
+      </Effects>
+
+      <LocArguments>
+
+         <LocArgument Prefix="-" Value="RemovedStartingHeroes" Style="BadNb"/>
+
+      </LocArguments>
+
+      <View>
+
+         <DropdownValue Prefix="-" Value="RemovedStartingHeroes"/>
+
+      </View>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="LoneWolfModifier_2">
+
+      <ApocalypseLevel>10</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="RemovedStartingHeroes" Value="2"/>
+
+      </TokenVariables>
+
+      <Effects>
+
+         <RemoveStartingPlayableUnit Amount="RemovedStartingHeroes"/>
+
+      </Effects>
+
+      <LocArguments>
+
+         <LocArgument Prefix="-" Value="RemovedStartingHeroes" Style="BadNb"/>
+
+      </LocArguments>
+
+      <View>
+
+         <DropdownValue Prefix="-" Value="RemovedStartingHeroes"/>
+
+      </View>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <!-- Shared Experience Modifier Steps -->
+
+   <ApocalypseModifierStepDefinition Id="SharedExperienceModifier_1">
+
+      <ApocalypseLevel>2</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="DebuffExperience" Value="15"/>
+
+      </TokenVariables>
+
+      <Effects>
+
+         <MultiplySharedExeprience Value="DebuffExperience"/>
+
+      </Effects>
+
+      <LocArguments>
+
+         <LocArgument Prefix="-" Value="DebuffExperience" Suffix="%" Interpreted="true" Style="BadNb"/>
+
+      </LocArguments>
+
+      <View>
+
+         <DropdownValue Prefix="-" Value="DebuffExperience" Suffix="%"/>
+
+      </View>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+   <ApocalypseModifierStepDefinition Id="SharedExperienceModifier_2" TemplateId="SharedExperienceModifier_1">
+
+      <ApocalypseLevel>4</ApocalypseLevel>
+
+      <TokenVariables>
+
+         <TokenVariable Key="DebuffExperience" Value="30"/>
+
+      </TokenVariables>
+
+   </ApocalypseModifierStepDefinition>
+
+
+
+</ApocalypseModifierStepDefinitions>
