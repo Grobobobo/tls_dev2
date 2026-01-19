@@ -1,0 +1,5858 @@
+﻿<SpawnWaveDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+                     xsi:noNamespaceSchemaLocation="SpawnWaveDefinitions.xsd">
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- TESTS -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <SpawnWaveDefinition Id="WaveTestTiers">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Plated" Weight="50"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1000"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1000"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1000"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+   
+
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- SWAMPFURT (aka TUTORIAL MAP) -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <SpawnWaveDefinition Id="Tutorial_Night_01">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="80"/>
+
+         <EnemyTier Value="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Tutorial_Force_Lose"> <!--Used for the first 3 turns of Swampfurt night 2-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="40"/>
+
+         <EnemyTier Value="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="20"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1.2</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+
+
+   <SpawnWaveDefinition Id="Tutorial_Force_Lose2"> <!--Used for the TutorialSequence of Swampfurt night 2-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="40"/>
+
+         <EnemyUnitTemplateDefinition Id="SpeedyClawer" Weight="10"/>
+
+         <EnemyUnitTemplateDefinition Id="FasterClawer" Weight="10"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="20"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>2</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+   
+
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- GILDENBERG (aka FELDERLAND) -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <SpawnWaveDefinition Id="Wave_Gildenberg_01">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="80"/>
+
+         <EnemyTier Value="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Gildenberg_02">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="80"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1" WeightMultiplier="0.5"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Gildenberg_03">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="80"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2" WeightMultiplier="0.5"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Gildenberg_04">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="80"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1" WeightMultiplier="0.5"/>
+
+         <EnemyTier Value="2"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Gildenberg_05">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="80"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3" WeightMultiplier="0.4"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Gildenberg_06">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="80"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3" WeightMultiplier="0.8"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="10"/>
+
+         <Turn Id="6" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Gildenberg_Final">
+
+      <BossWaveSettings BossId="HarpyBoss">
+
+         <InfiniteWave/>
+
+      </BossWaveSettings>
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="70"/>
+
+         <EnemyUnitTemplateDefinition Id="Plated" Weight="10"/>
+
+         <EnemyUnitTemplateDefinition Id="ResistClawer" Weight="10"/>
+
+         <EnemyUnitTemplateDefinition Id="DodgyClawer" Weight="10"/>
+
+         <EnemyUnitTemplateDefinition Id="Blocker" Weight="10"/>
+
+         <EnemyUnitTemplateDefinition Id="Archer" Weight="3"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="3"/>
+
+         <EnemyTier Value="3" WeightMultiplier="0.2"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="3"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+   
+
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- LAKEBURG -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_01">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Gargoyle" Weight="5"/>
+
+         <EnemyTier Value="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+  
+
+  <SpawnWaveDefinition Id="Wave_Lakeburg_02_Tier1s">
+
+    <EnemyUnitTemplateDefinitions>
+
+      <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+      <EnemyTier Value="1"/>
+
+      <EnemyTier Value="1"/>
+
+      <EnemyTier Value="1"/>
+
+    </EnemyUnitTemplateDefinitions>
+
+    <TemporalDistribution>
+
+      <Turn Id="1" Weight="10"/>
+
+      <Turn Id="2" Weight="5"/>
+
+      <Turn Id="3" Weight="10"/>
+
+      <Turn Id="4" Weight="5"/>
+
+    </TemporalDistribution>
+
+    <SpawnsCountMultiplier>1.125</SpawnsCountMultiplier>
+
+  </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_02_Gargoyles">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Gargoyle" Weight="7"/>
+
+         <EnemyTier Value="1" WeightMultiplier="0.75"/>
+
+         <EnemyTier Value="1" WeightMultiplier="0.75"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_03_Tier2s">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2" WeightMultiplier="0.5"/>
+
+         <EnemyTier Value="2" WeightMultiplier="0.5"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_03_FasterClawers">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="40"/>
+
+         <EnemyUnitTemplateDefinition Id="FasterClawer" Weight="20"/>
+
+         <EnemyTier Value="2" WeightMultiplier="0.7"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_04_Tanky">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="70"/>
+
+         <EnemyUnitTemplateDefinition Id="Tanky" Weight="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_04_Tier2s">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2" WeightMultiplier="0.5"/>
+
+         <EnemyTier Value="2" WeightMultiplier="0.5"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="10"/>
+
+         <Turn Id="6" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+   
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_04_Frogs">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="PoisonFrog" Weight="10"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_05_Tier3">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3" WeightMultiplier="0.8"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_05_FasterClawers">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="FasterClawer" Weight="25"/>
+
+         <EnemyUnitTemplateDefinition Id="SpeedyClawer" Weight="3"/>
+
+         <EnemyTier Value="2" WeightMultiplier="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_05_ArmoredSpeedy">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Plated" Weight="25"/>
+
+         <EnemyUnitTemplateDefinition Id="FasterClawer" Weight="25"/>
+
+         <EnemyUnitTemplateDefinition Id="Armored" Weight="3"/>
+
+         <EnemyUnitTemplateDefinition Id="SpeedyClawer" Weight="3"/>
+
+         <EnemyTier Value="2"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_05_GhostsGargoyles">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Gargoyle" Weight="15"/>
+
+         <EnemyUnitTemplateDefinition Id="Ghost" Weight="3"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_06_2Tier3">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3" WeightMultiplier="0.8"/>
+
+         <EnemyTier Value="3" WeightMultiplier="0.8"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+         <Turn Id="6" Weight="10"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_06_ManyTier2s">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Archer" Weight="8"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="8"/>
+
+         <EnemyUnitTemplateDefinition Id="Gargoyle" Weight="8"/>
+
+         <EnemyTier Value="1" WeightMultiplier="0.5"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="10"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_06_Tier3">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2" WeightMultiplier="1.5"/>
+
+         <EnemyTier Value="3" WeightMultiplier="1.4"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_06_BoomersFrogs">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="PoisonFrog" Weight="12"/>
+
+         <EnemyUnitTemplateDefinition Id="Boomer" Weight="5"/>
+
+         <EnemyTier Value="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_06_EliteGargoyle">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Gargoyle" Weight="20"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="3" WeightMultiplier="1.4"/>
+
+         <EliteEnemies OverrideSpawnDefinition="false">
+
+            <EliteEnemy Id="GargoyleElite" Nb="1"/>
+
+         </EliteEnemies>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>0.96</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_07_TankyFirstEncounter">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Tanky" Weight="1"/>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="40"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_08_2Tier3">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2" WeightMultiplier="1.5"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="3"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+ 
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_08_EliteArmored">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Plated" Weight="25"/>
+
+         <EnemyUnitTemplateDefinition Id="Armored" Weight="10"/>
+
+         <EnemyTier Value="2" WeightMultiplier="1.5"/>
+
+         <EliteEnemies OverrideSpawnDefinition="false">
+
+            <EliteEnemy Id="ArmoredElite" Nb="1"/>
+
+         </EliteEnemies>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>0.95</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_08_SpeedyManyFaster">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="25"/>
+
+         <EnemyUnitTemplateDefinition Id="Plated" Weight="5"/>
+
+         <EnemyUnitTemplateDefinition Id="Archer" Weight="10"/>
+
+         <EnemyUnitTemplateDefinition Id="FasterClawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="SpeedyClawer" Weight="10"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="15"/>
+
+         <Turn Id="2" Weight="15"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_08_GhostBoomer">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Ghost" Weight="5"/>
+
+         <EnemyUnitTemplateDefinition Id="Boomer" Weight="5"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1" WeightMultiplier="0.5"/>
+
+         <EnemyTier Value="2"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="10"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_09_BloodyGargoyle">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Bloody" Weight="7"/>
+
+         <EnemyUnitTemplateDefinition Id="Gargoyle" Weight="15"/>
+
+         <EnemyUnitTemplateDefinition Id="FasterClawer" Weight="20"/>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="2"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="15"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="15"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+  <SpawnWaveDefinition Id="Wave_Lakeburg_09_OneOfEachTier">
+
+    <EnemyUnitTemplateDefinitions>
+
+      <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+      <EnemyTier Value="1"/>
+
+      <EnemyTier Value="2" WeightMultiplier="2"/>
+
+      <EnemyTier Value="3" WeightMultiplier="1.6"/>
+
+    </EnemyUnitTemplateDefinitions>
+
+    <TemporalDistribution>
+
+      <Turn Id="1" Weight="10"/>
+
+      <Turn Id="2" Weight="5"/>
+
+      <Turn Id="3" Weight="10"/>
+
+      <Turn Id="4" Weight="5"/>
+
+      <Turn Id="5" Weight="10"/>
+
+    </TemporalDistribution>
+
+    <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+  </SpawnWaveDefinition>
+
+
+
+  <SpawnWaveDefinition Id="Wave_Lakeburg_09_SpeedyManyFaster">
+
+    <EnemyUnitTemplateDefinitions>
+
+      <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+      <EnemyUnitTemplateDefinition Id="FasterClawer" Weight="30"/>
+
+      <EnemyUnitTemplateDefinition Id="SpeedyClawer" Weight="12"/>
+
+      <EnemyTier Value="2" WeightMultiplier="1.5"/>
+
+    </EnemyUnitTemplateDefinitions>
+
+    <TemporalDistribution>
+
+      <Turn Id="1" Weight="15"/>
+
+      <Turn Id="2" Weight="5"/>
+
+      <Turn Id="3" Weight="15"/>
+
+      <Turn Id="4" Weight="5"/>
+
+      <Turn Id="5" Weight="15"/>
+
+    </TemporalDistribution>
+
+    <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+  </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_09_ManyFlying">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Gargoyle" Weight="30"/>
+
+         <EnemyUnitTemplateDefinition Id="Ghost" Weight="10"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="15"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="15"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="15"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Lakeburg_11_Tanky">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Tanky" Weight="4"/>
+
+         <EnemyUnitTemplateDefinition Id="Armored" Weight="15"/>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="10"/>
+
+         <Turn Id="6" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Final_Lakeburg">
+
+      <BossWaveSettings BossId="NessieBossHead">
+
+         <InfiniteWave/>
+
+      </BossWaveSettings>
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="75"/>
+
+         <EnemyUnitTemplateDefinition Id="PoisonFrog" Weight="15"/>
+
+         <EnemyUnitTemplateDefinition Id="Boomer" Weight="5"/>
+
+         <EnemyUnitTemplateDefinition Id="Tanky" Weight="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2" WeightMultiplier="1.5"/>
+
+         <EnemyTier Value="3"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="15"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+         <Turn Id="6" Weight="5"/>
+
+         <Turn Id="7" Weight="10"/>
+
+         <Turn Id="8" Weight="5"/>
+
+         <Turn Id="9" Weight="0"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+   
+
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- Glenwald -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_01">
+
+   <!--Wave_Lumberjack_EarlyRun_00-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="10"/>
+
+         <EnemyTier Value="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_02_1"> <!--Wave_Lumberjack_EarlyRun_01-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="14"/>
+
+         <EnemyUnitTemplateDefinition Id="DodgyClawer" Weight="40"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_02_2"> <!--Wave_Lumberjack_EarlyRun_02-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="14"/>
+
+         <EnemyUnitTemplateDefinition Id="Plated" Weight="40"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_02_3">
+
+   <!--Wave_Lumberjack_EarlyRun_03-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="14"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_02_ManyTier1">
+
+      <!--Glenwald night 2 Wave_AllTier1_00-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="40"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1.22</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_04_Lumberjack"> <!--Wave Tier 2 with Lumberjack Wave_Lumberjack_Tier2-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="14"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2" WeightMultiplier="0.5"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_04_ManyTier2"> <!--Wave All tier 2 Wave_Alltier2-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2" WeightMultiplier="1"/>
+
+         <EnemyTier Value="2" WeightMultiplier="0.7"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_04_HuntersLumberjacks"> <!--Wave a lot of lumberjacks Wave_ManyLumberjacks-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="10"/>
+
+         <EnemyUnitTemplateDefinition Id="BountyHunter" Weight="7"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_05_Shieldman"> <!--Wave Shieldman + Lumberjack Wave_Shieldman_Lumberjack-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Shieldman" Weight="4"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="10"/>
+
+         <EnemyUnitTemplateDefinition Id="BountyHunter" Weight="8"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="20"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_06_Shieldman"> <!--Wave Shieldman + Lumberjack + Tier3 Wave_Lumberjack_Shieldman_Tier3-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="12"/>
+
+         <EnemyUnitTemplateDefinition Id="BountyHunter" Weight="8"/>
+
+         <EnemyUnitTemplateDefinition Id="Shieldman" Weight="4"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_06_ShieldmanBoomer">
+
+      <!--Wave Shieldman + Lumberjack + A lot of boomer Wave_Lumberjack_ManyBoomers-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="6"/>
+
+         <EnemyUnitTemplateDefinition Id="BountyHunter" Weight="6"/>
+
+         <EnemyUnitTemplateDefinition Id="Shieldman" Weight="3"/>
+
+         <EnemyUnitTemplateDefinition Id="Boomer" Weight="3"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+   
+
+      <SpawnWaveDefinition Id="Wave_Glenwald_06_Blockers"> <!--Classic Wave Wave_Lumberjack_Tier2_Tier3-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Blocker" Weight="30"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1"/>
+
+         <EnemyTier Value="2" WeightMultiplier="1.5"/>
+
+         <EnemyTier Value="3" WeightMultiplier="2"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_06_BoomersFrogs">
+
+      <!--Lakeburg night 6 and Glenwald Night 6 Wave_Boomers_Frogs-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="PoisonFrog" Weight="15"/>
+
+         <EnemyUnitTemplateDefinition Id="Boomer" Weight="6"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_06_EliteGargoyle">
+
+      <!--Lakeburg night 6 and Glenwald Night 6 Wave_Elite_Gargoyle-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Gargoyle" Weight="20"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="5"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="3" WeightMultiplier="0.6"/>
+
+         <EliteEnemies OverrideSpawnDefinition="false">
+
+            <EliteEnemy Id="GargoyleElite" Nb="1"/>
+
+         </EliteEnemies>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>0.94</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_07_Twisted">
+
+      <!--Wave Twisted + No fast enemies -> Corrupted Mage wave. No fast enemies, but some enemies that are dangerous if move buffed (boomer).  -->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Blocker" Weight="30"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="10"/>
+
+         <EnemyUnitTemplateDefinition Id="Boomer" Weight="3"/>
+
+         <EnemyUnitTemplateDefinition Id="Ghost" Weight="3"/>
+
+         <EnemyUnitTemplateDefinition Id="CorruptedMage" Weight="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_07_TwistedHunter">
+
+      <!--Classic Wave Wave_Lumberjack_Tier2_Tier3-2-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="BountyHunter" Weight="8"/>
+
+         <EnemyUnitTemplateDefinition Id="CorruptedMage" Weight="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2" WeightMultiplier="0.5"/>
+
+         <EnemyTier Value="3" WeightMultiplier="0.6"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_07_ShieldmanBoomer">
+
+      <!--Wave Shieldman + Lumberjack + A lot of boomer Wave_Lumberjack_ManyBoomers-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="8"/>
+
+         <EnemyUnitTemplateDefinition Id="BountyHunter" Weight="8"/>
+
+         <EnemyUnitTemplateDefinition Id="Shieldman" Weight="3"/>
+
+         <EnemyUnitTemplateDefinition Id="Boomer" Weight="4"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_07_2Tiers3">
+
+      <!--Classic Wave Wave_Lumberjack_Tier2_Tier3-2-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="10"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3" WeightMultiplier="0.8"/>
+
+         <EnemyTier Value="3" WeightMultiplier="0.8"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_07_ManyT3">
+
+      <!--Wave Shieldman + Lumberjack + A lot of boomer and a lot of speedy / trying to create a mess in players priority Wave_Lumberjack_Boomer_Speedy_Shieldman-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="10"/>
+
+         <EnemyUnitTemplateDefinition Id="SpeedyClawer" Weight="5"/>
+
+         <EnemyUnitTemplateDefinition Id="Boomer" Weight="4"/>
+
+         <EnemyUnitTemplateDefinition Id="Shieldman" Weight="3"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_07_FullOfArmors">
+
+      <!--Wave Shieldman + Lumberjack + Plated + Armored -> The night of the armor -->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Plated" Weight="20"/>
+
+         <EnemyUnitTemplateDefinition Id="Blocker" Weight="20"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="5"/>
+
+         <EnemyUnitTemplateDefinition Id="Armored" Weight="10"/>
+
+         <EnemyUnitTemplateDefinition Id="Shieldman" Weight="3"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_07_FullTargetHeroes">
+
+      <!--Wave Lumberjack + Bulky + Bloody + Armored -> Every enemies that target heroes -->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="FasterClawer" Weight="20"/>
+
+         <EnemyUnitTemplateDefinition Id="DodgyClawer" Weight="20"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="5"/>
+
+         <EnemyUnitTemplateDefinition Id="Bloody" Weight="7"/>
+
+         <EnemyUnitTemplateDefinition Id="CorruptedMage" Weight="2"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glenwald_07_EliteArmored">
+
+      <!--Lakeburg night 8 & 9, Glenwald night 7 Wave_Elite_Armored-->
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Blocker" Weight="20"/>
+
+         <EnemyUnitTemplateDefinition Id="Plated" Weight="25"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="10"/>
+
+         <EnemyUnitTemplateDefinition Id="Armored" Weight="10"/>
+
+         <EnemyTier Value="2" WeightMultiplier="1.5"/>
+
+         <EliteEnemies OverrideSpawnDefinition="false">
+
+            <EliteEnemy Id="ArmoredElite" Nb="1"/>
+
+         </EliteEnemies>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>0.96</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Final_Glenwald">
+
+      <BossWaveSettings BossId="SpawnerBoss">
+
+         <InfiniteWave/>
+
+      </BossWaveSettings>
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="60"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="15"/>
+
+         <EnemyUnitTemplateDefinition Id="BountyHunter" Weight="10"/>
+
+         <EnemyUnitTemplateDefinition Id="Shieldman" Weight="5"/>
+
+         <EnemyUnitTemplateDefinition Id="CorruptedMage" Weight="2"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1.5"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1.5"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="10"/>
+
+         <Turn Id="6" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- Elderlicht -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <SpawnWaveDefinition Id="Wave_Elderlicht_01">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Ghost" Weight="2"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Elderlicht_02_1">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="8"/>
+
+         <EnemyUnitTemplateDefinition Id="Archer" Weight="8"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Elderlicht_02_2">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="PoisonFrog" Weight="8"/>
+
+         <EnemyTier Value="2" WeightMultiplier="0.5"/>
+
+         <EnemyTier Value="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Elderlicht_02_3">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="16"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EliteEnemies OverrideSpawnDefinition="false">
+
+            <EliteEnemy Id="LumberjackElite" Nb="1"/>
+
+         </EliteEnemies>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+   
+
+   <SpawnWaveDefinition Id="Wave_Elderlicht_03">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Elderlicht_04">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="20"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1" WeightMultiplier="2.5"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2" WeightMultiplier="2"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Elderlicht_05">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2" WeightMultiplier="0.5"/>
+
+         <EnemyTier Value="3"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="10"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+   
+
+   <SpawnWaveDefinition Id="Wave_Elderlicht_06">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Gargoyle" Weight="20"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3" WeightMultiplier="2"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Elderlicht_07">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="3"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="15"/>
+
+         <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Elderlicht_08">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="3" WeightMultiplier="1.4"/>
+
+         <EnemyTier Value="4" WeightMultiplier="2"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Elderlicht_09">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2" WeightMultiplier="1.5"/>
+
+         <EnemyTier Value="2" WeightMultiplier="1.2"/>
+
+         <EnemyTier Value="3" WeightMultiplier="2"/>
+
+         <EnemyTier Value="3" WeightMultiplier="1.4"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+         <Turn Id="6" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Elderlicht_10">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="3"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Elderlicht_11">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="0"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="30"/>
+
+         <EnemyUnitTemplateDefinition Id="Tanky" Weight="4"/>
+
+         <EnemyUnitTemplateDefinition Id="Boomer" Weight="0"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="3" WeightMultiplier="2"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="10"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Elderlicht_13">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Plated" Weight="20"/>
+
+         <EnemyUnitTemplateDefinition Id="Blocker" Weight="20"/>
+
+         <EnemyUnitTemplateDefinition Id="Archer" Weight="10"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="5"/>
+
+         <EnemyUnitTemplateDefinition Id="Armored" Weight="5"/>
+
+         <EnemyUnitTemplateDefinition Id="Shieldman" Weight="3"/>
+
+         <EnemyTier Value="4"/>
+
+         <EnemyTier Value="4"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="12"/>
+
+         <Turn Id="2" Weight="7"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="7"/>
+
+         <Turn Id="5" Weight="10"/>
+
+         <Turn Id="6" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Elderlicht_14">
+
+      <BossWaveSettings BossId="ThroneTowerBoss">
+
+         <InfiniteWave/>
+
+      </BossWaveSettings>
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Ghost" Weight="7"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="4"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+         <Turn Id="6" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- GLINTFEIN -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_01_Normal">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2" WeightMultiplier="1.2"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+         <Turn Id="6" Weight="2"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_01_OnlyTiers1">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+         <Turn Id="6" Weight="2"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1.12</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_01_Tanky">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="90"/>
+
+         <EnemyUnitTemplateDefinition Id="Tanky" Weight="1"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1.5"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1.5"/>
+
+         <EnemyTier Value="2" WeightMultiplier="0.6"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+         <Turn Id="6" Weight="2"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_01_Elite">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EliteEnemies OverrideSpawnDefinition="true">
+
+            <EliteEnemy Id="ClawerElite" Nb="1"/>
+
+            <EliteEnemy Id="FasterClawerElite" Nb="1"/>
+
+            <EliteEnemy Id="PlatedElite" Nb="1"/>
+
+         </EliteEnemies>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+         <Turn Id="6" Weight="2"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_02_Normal">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2" WeightMultiplier="0.5"/>
+
+         <EnemyTier Value="3" WeightMultiplier="0.4"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="2"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="10"/>
+
+         <Turn Id="6" Weight="2"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_02_Tiers2">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2" WeightMultiplier="0.7"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="2"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="10"/>
+
+         <Turn Id="6" Weight="2"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_02_CorruptedMage">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="CorruptedMage" Weight="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="2"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="10"/>
+
+         <Turn Id="6" Weight="2"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_02_Elite">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2" WeightMultiplier="0.7"/>
+
+         <EliteEnemies OverrideSpawnDefinition="true">
+
+            <EliteEnemy Id="PlatedElite" Nb="1"/>
+
+            <EliteEnemy Id="DodgyClawerElite" Nb="1"/>
+
+            <EliteEnemy Id="LumberjackElite" Nb="1"/>
+
+            <EliteEnemy Id="GhostElite" Nb="1"/>
+
+         </EliteEnemies>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="2"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="10"/>
+
+         <Turn Id="6" Weight="2"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>0.95</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_03_SchadenNormal">
+
+      <BossWaveSettings BossId="DarkSchaden">
+
+         <AutoUpdateNightSlider/>
+
+         <DisplayEnemiesAmount/>
+
+         <UseDefaultProgressBar/>
+
+      </BossWaveSettings>
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="70"/>
+
+         <EnemyUnitTemplateDefinition Id="FasterClawer" Weight="40"/>
+
+         <EnemyUnitTemplateDefinition Id="SpeedyClawer" Weight="8"/>
+
+         <EnemyUnitTemplateDefinition Id="Gargoyle" Weight="8"/>
+
+         <EnemyUnitTemplateDefinition Id="Bloody" Weight="4"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2" WeightMultiplier="0.5"/>
+
+         <EnemyTier Value="3" WeightMultiplier="0.3"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="15"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="7"/>
+
+         <Turn Id="6" Weight="5"/>
+
+         <Turn Id="7" Weight="5"/>
+
+         <Turn Id="8" Weight="2"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_03_SchadenMoreElites">
+
+      <BossWaveSettings BossId="DarkSchaden">
+
+         <AutoUpdateNightSlider/>
+
+         <DisplayEnemiesAmount/>
+
+         <UseDefaultProgressBar/>
+
+      </BossWaveSettings>
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="80"/>
+
+         <EnemyUnitTemplateDefinition Id="FasterClawer" Weight="30"/>
+
+         <EnemyUnitTemplateDefinition Id="SpeedyClawer" Weight="6"/>
+
+         <EnemyUnitTemplateDefinition Id="Gargoyle" Weight="8"/>
+
+         <EnemyUnitTemplateDefinition Id="Bloody" Weight="4"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2" WeightMultiplier="0.5"/>
+
+         <EnemyTier Value="3" WeightMultiplier="0.3"/>
+
+         <EliteEnemies OverrideSpawnDefinition="true">
+
+            <EliteEnemy Id="BlockerElite" Nb="1"/>
+
+            <EliteEnemy Id="ArcherElite" Nb="1"/>
+
+            <EliteEnemy Id="GhostElite" Nb="1"/>
+
+         </EliteEnemies>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="15"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="7"/>
+
+         <Turn Id="6" Weight="5"/>
+
+         <Turn Id="7" Weight="5"/>
+
+         <Turn Id="8" Weight="2"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>0.95</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_03_SchadenCorruptedMages">
+
+      <BossWaveSettings BossId="DarkSchaden">
+
+         <AutoUpdateNightSlider/>
+
+         <DisplayEnemiesAmount/>
+
+         <UseDefaultProgressBar/>
+
+      </BossWaveSettings>
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="70"/>
+
+         <EnemyUnitTemplateDefinition Id="FasterClawer" Weight="40"/>
+
+         <EnemyUnitTemplateDefinition Id="SpeedyClawer" Weight="6"/>
+
+         <EnemyUnitTemplateDefinition Id="Gargoyle" Weight="8"/>
+
+         <EnemyUnitTemplateDefinition Id="Bloody" Weight="4"/>
+
+         <EnemyUnitTemplateDefinition Id="CorruptedMage" Weight="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="15"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="7"/>
+
+         <Turn Id="6" Weight="5"/>
+
+         <Turn Id="7" Weight="5"/>
+
+         <Turn Id="8" Weight="2"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_03_SchadenManyEnemies">
+
+      <BossWaveSettings BossId="DarkSchaden">
+
+         <AutoUpdateNightSlider/>
+
+         <DisplayEnemiesAmount/>
+
+         <UseDefaultProgressBar/>
+
+      </BossWaveSettings>
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="70"/>
+
+         <EnemyUnitTemplateDefinition Id="FasterClawer" Weight="40"/>
+
+         <EnemyUnitTemplateDefinition Id="SpeedyClawer" Weight="4"/>
+
+         <EnemyUnitTemplateDefinition Id="Gargoyle" Weight="6"/>
+
+         <EnemyUnitTemplateDefinition Id="Bloody" Weight="3"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2" WeightMultiplier="0.5"/>
+
+         <EnemyTier Value="3" WeightMultiplier="0.3"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="15"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="7"/>
+
+         <Turn Id="6" Weight="5"/>
+
+         <Turn Id="7" Weight="5"/>
+
+         <Turn Id="8" Weight="2"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1.12</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_04_Normal">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="60"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="3" WeightMultiplier="0.6"/>
+
+         <EnemyTier Value="4" WeightMultiplier="0.5"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="7"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="10"/>
+
+         <Turn Id="6" Weight="2"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>0.9</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_04_Short">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="60"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="3" WeightMultiplier="0.6"/>
+
+         <EnemyTier Value="4" WeightMultiplier="0.5"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_04_Elite">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="60"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="3" WeightMultiplier="0.6"/>
+
+         <EliteEnemies OverrideSpawnDefinition="true">
+
+            <EliteEnemy Id="DodgyClawerElite" Nb="1"/>
+
+            <EliteEnemy Id="GargoyleElite" Nb="1"/>
+
+            <EliteEnemy Id="GhostElite" Nb="1"/>
+
+         </EliteEnemies>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="7"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="10"/>
+
+         <Turn Id="6" Weight="2"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_05_FreudeNormal">
+
+      <BossWaveSettings BossId="LightFreude">
+
+         <AutoUpdateNightSlider/>
+
+         <DisplayEnemiesAmount/>
+
+         <UseDefaultProgressBar/>
+
+      </BossWaveSettings>
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="100"/>
+
+         <EnemyUnitTemplateDefinition Id="Blocker" Weight="30"/>
+
+         <EnemyUnitTemplateDefinition Id="Plated" Weight="30"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="8"/>
+
+         <EnemyUnitTemplateDefinition Id="Armored" Weight="5"/>
+
+         <EnemyUnitTemplateDefinition Id="Tanky" Weight="2"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3" WeightMultiplier="0.5"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="15"/>
+
+         <Turn Id="2" Weight="0"/>
+
+         <Turn Id="3" Weight="0"/>
+
+         <Turn Id="4" Weight="0"/>
+
+         <Turn Id="5" Weight="15"/>
+
+         <Turn Id="6" Weight="0"/>
+
+         <Turn Id="7" Weight="0"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_05_FreudeShieldman">
+
+      <BossWaveSettings BossId="LightFreude">
+
+         <AutoUpdateNightSlider/>
+
+         <DisplayEnemiesAmount/>
+
+         <UseDefaultProgressBar/>
+
+      </BossWaveSettings>
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="80"/>
+
+         <EnemyUnitTemplateDefinition Id="Blocker" Weight="30"/>
+
+         <EnemyUnitTemplateDefinition Id="Plated" Weight="30"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="8"/>
+
+         <EnemyUnitTemplateDefinition Id="Shieldman" Weight="4"/>
+
+         <EnemyUnitTemplateDefinition Id="Armored" Weight="4"/>
+
+         <EnemyUnitTemplateDefinition Id="Tanky" Weight="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="15"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="0"/>
+
+         <Turn Id="4" Weight="0"/>
+
+         <Turn Id="5" Weight="15"/>
+
+         <Turn Id="6" Weight="5"/>
+
+         <Turn Id="7" Weight="0"/>
+
+         <Turn Id="8" Weight="15"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_05_FreudeElites">
+
+      <BossWaveSettings BossId="LightFreude">
+
+         <AutoUpdateNightSlider/>
+
+         <DisplayEnemiesAmount/>
+
+         <UseDefaultProgressBar/>
+
+      </BossWaveSettings>
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="80"/>
+
+         <EnemyUnitTemplateDefinition Id="Blocker" Weight="30"/>
+
+         <EnemyUnitTemplateDefinition Id="Plated" Weight="30"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="8"/>
+
+         <EnemyUnitTemplateDefinition Id="Armored" Weight="4"/>
+
+         <EnemyUnitTemplateDefinition Id="Tanky" Weight="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3" WeightMultiplier="0.5"/>
+
+         <EliteEnemies OverrideSpawnDefinition="true">
+
+            <EliteEnemy Id="ArmoredElite" Nb="1"/>
+
+            <EliteEnemy Id="TankyElite" Nb="1"/>
+
+            <EliteEnemy Id="LumberjackElite" Nb="1"/>
+
+            <EliteEnemy Id="PoisonFrogElite" Nb="1"/>
+
+         </EliteEnemies>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="15"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="0"/>
+
+         <Turn Id="4" Weight="0"/>
+
+         <Turn Id="5" Weight="15"/>
+
+         <Turn Id="6" Weight="5"/>
+
+         <Turn Id="7" Weight="0"/>
+
+         <Turn Id="8" Weight="15"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>0.96</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_05_FreudeManyArmors">
+
+      <BossWaveSettings BossId="LightFreude">
+
+         <AutoUpdateNightSlider/>
+
+         <DisplayEnemiesAmount/>
+
+         <UseDefaultProgressBar/>
+
+      </BossWaveSettings>
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="80"/>
+
+         <EnemyUnitTemplateDefinition Id="Blocker" Weight="20"/>
+
+         <EnemyUnitTemplateDefinition Id="Plated" Weight="40"/>
+
+         <EnemyUnitTemplateDefinition Id="Archer" Weight="10"/>
+
+         <EnemyUnitTemplateDefinition Id="Armored" Weight="5"/>
+
+         <EnemyUnitTemplateDefinition Id="Tanky" Weight="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2" WeightMultiplier="0.5"/>
+
+         <EnemyTier Value="2" WeightMultiplier="0.5"/>
+
+         <EnemyTier Value="3" WeightMultiplier="0.5"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="15"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="0"/>
+
+         <Turn Id="4" Weight="0"/>
+
+         <Turn Id="5" Weight="15"/>
+
+         <Turn Id="6" Weight="5"/>
+
+         <Turn Id="7" Weight="0"/>
+
+         <Turn Id="8" Weight="15"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_06">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="60"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1.5"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1.5"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1.5"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1.5"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1.5"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="4"/>
+
+         <EnemyTier Value="4"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="15"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+         <Turn Id="6" Weight="2"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_07_Boss">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="100"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="4" WeightMultiplier="0.5"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="2"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="2"/>
+
+         <Turn Id="5" Weight="10"/>
+
+         <Turn Id="6" Weight="2"/>
+
+         <Turn Id="7" Weight="10"/>
+
+         <Turn Id="8" Weight="2"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_Glintfein_07_SchadenFinal">
+
+      <BossWaveSettings BossId="SchadenBoss" SpecificPlaylistId="Last_Boss_Playlist">
+
+         <InfiniteWave/>
+
+      </BossWaveSettings>
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="80"/>
+
+         <EnemyUnitTemplateDefinition Id="Plated" Weight="30"/>
+
+         <EnemyUnitTemplateDefinition Id="ResistClawer" Weight="30"/>
+
+         <EnemyUnitTemplateDefinition Id="FasterClawer" Weight="40"/>
+
+         <EnemyUnitTemplateDefinition Id="Blocker" Weight="30"/>
+
+         <EnemyUnitTemplateDefinition Id="DodgyClawer" Weight="15"/>
+
+         <EnemyUnitTemplateDefinition Id="Tanky" Weight="1"/>
+
+         <EnemyUnitTemplateDefinition Id="CorruptedMage" Weight="1"/>
+
+         <EnemyTier Value="2" WeightMultiplier="1.25"/>
+
+         <EnemyTier Value="2" WeightMultiplier="1.25"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="3"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="10"/>
+
+         <Turn Id="6" Weight="5"/>
+
+         <Turn Id="7" Weight="10"/>
+
+         <Turn Id="8" Weight="5"/>
+
+         <Turn Id="9" Weight="10"/>
+
+         <Turn Id="10" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <!--<SpawnWaveDefinition Id="Wave_Glintfein_07_FreudeFinal">
+
+      <BossWaveSettings BossId="FreudeBoss">
+
+         <InfiniteWave/>
+
+      </BossWaveSettings>
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="4"/>
+
+         <EnemyTier Value="4"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="2"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="2"/>
+
+         <Turn Id="5" Weight="10"/>
+
+         <Turn Id="6" Weight="2"/>
+
+         <Turn Id="7" Weight="10"/>
+
+         <Turn Id="8" Weight="2"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>-->
+
+
+
+    
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- GILDENBERG REDUX -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+	
+
+   <SpawnWaveDefinition Id="Wave_GildenbergRedux_01">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="55"/>
+
+         <EnemyUnitTemplateDefinition Id="Gargoyle" Weight="5"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="7"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="10"/>
+
+         <Turn Id="6" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1.2</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+	
+
+   <SpawnWaveDefinition Id="Wave_GildenbergRedux_02_Tanky">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="90"/>
+
+         <EnemyUnitTemplateDefinition Id="Shieldman" Weight="4"/>
+
+         <EnemyUnitTemplateDefinition Id="Boomer" Weight="2"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+	<SpawnWaveDefinition Id="Wave_GildenbergRedux_02_Flying">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="80"/>
+
+         <EnemyUnitTemplateDefinition Id="Gargoyle" Weight="7"/>
+
+		 <EnemyUnitTemplateDefinition Id="SpeedyClawer" Weight="3"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+	<SpawnWaveDefinition Id="Wave_GildenbergRedux_02_Distance">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="90"/>
+
+         <EnemyUnitTemplateDefinition Id="Archer" Weight="6"/>
+
+	     <EnemyUnitTemplateDefinition Id="BountyHunter" Weight="9"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+	<SpawnWaveDefinition Id="Wave_GildenbergRedux_02_Swarm">
+
+		<EnemyUnitTemplateDefinitions>
+
+			<EnemyUnitTemplateDefinition Id="Clawer" Weight="45"/>
+
+			<EnemyUnitTemplateDefinition Id="FasterClawer" Weight="20"/>
+
+			<EnemyUnitTemplateDefinition Id="Plated" Weight="20"/>
+
+			<EnemyUnitTemplateDefinition Id="Blocker" Weight="10"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+		<TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+		</TemporalDistribution>
+
+		<SpawnsCountMultiplier>1.2</SpawnsCountMultiplier>
+
+	</SpawnWaveDefinition>
+
+
+
+	<SpawnWaveDefinition Id="Wave_GildenbergRedux_02_Elites">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="90"/>
+
+         <EnemyUnitTemplateDefinition Id="ResistClawer" Weight="8"/>
+
+		 <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="4"/>
+
+         <EliteEnemies OverrideSpawnDefinition="true">
+
+		    <EliteEnemy Id="ResistClawerElite" Nb="1"/>
+
+         </EliteEnemies>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1.1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+		
+
+   <SpawnWaveDefinition Id="Wave_GildenbergRedux_02_Buffer">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="80"/>
+
+         <EnemyUnitTemplateDefinition Id="PoisonFrog" Weight="7"/>
+
+		   <EnemyUnitTemplateDefinition Id="Shieldman" Weight="4"/>
+
+		   <EnemyUnitTemplateDefinition Id="DodgyClawer" Weight="15"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+	<SpawnWaveDefinition Id="Wave_GildenbergRedux_03">
+
+		<BossWaveSettings BossId="GildenbergRedux_HarplingWaveThree" DisplayBossInSeer="false">
+
+			<AutoUpdateNightSlider/>
+
+			<DisplayEnemiesAmount/>
+
+			<UseDefaultProgressBar/>
+
+		</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+			<EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+			<EnemyUnitTemplateDefinition Id="Plated" Weight="15"/>
+
+			<EnemyUnitTemplateDefinition Id="DodgyClawer" Weight="15"/>
+
+			<EnemyUnitTemplateDefinition Id="Lumberjack" Weight="12"/>
+
+			<EnemyUnitTemplateDefinition Id="PoisonFrog" Weight="5"/>
+
+			<EnemyUnitTemplateDefinition Id="Bloody" Weight="2"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+		<TemporalDistribution>
+
+         <Turn Id="1" Weight="8"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="8"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="8"/>
+
+		</TemporalDistribution>
+
+		<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+      
+
+     <!-- Je Hide volontairement 
+
+     <SeerAdditionalPortraitsSettings>
+
+         <SeerAdditionalPortraitSettings Id="HarplingVariation" Amount="5" />
+
+      </SeerAdditionalPortraitsSettings>
+
+      -->
+
+      
+
+	</SpawnWaveDefinition>
+
+
+
+	<SpawnWaveDefinition Id="Wave_GildenbergRedux_04">
+
+		<EnemyUnitTemplateDefinitions>
+
+			<EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+			<EnemyUnitTemplateDefinition Id="FasterClawer" Weight="15"/>
+
+			<EnemyUnitTemplateDefinition Id="Blocker" Weight="15"/>
+
+			<EnemyUnitTemplateDefinition Id="BountyHunter" Weight="8"/>
+
+			<EnemyUnitTemplateDefinition Id="SpeedyClawer" Weight="5"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+		<TemporalDistribution>
+
+			<Turn Id="1" Weight="8"/>
+
+			<Turn Id="2" Weight="5"/>
+
+			<Turn Id="3" Weight="8"/>
+
+         <Turn Id="4" Weight="5"/>
+
+		</TemporalDistribution>
+
+		<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+	</SpawnWaveDefinition>
+
+
+
+	<SpawnWaveDefinition Id="Wave_GildenbergRedux_05">
+
+		<BossWaveSettings BossId="GildenbergRedux_HarplingWaveFive" DisplayBossInSeer="false">
+
+			<AutoUpdateNightSlider/>
+
+			<DisplayEnemiesAmount/>
+
+			<UseDefaultProgressBar/>
+
+		</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+			<EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+			<EnemyUnitTemplateDefinition Id="Blocker" Weight="20"/>
+
+			<EnemyUnitTemplateDefinition Id="ResistClawer" Weight="20"/>
+
+			<EnemyUnitTemplateDefinition Id="BountyHunter" Weight="10"/>
+
+			<EnemyUnitTemplateDefinition Id="Armored" Weight="2"/>
+
+         <EnemyUnitTemplateDefinition Id="Bloody" Weight="3"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+		<TemporalDistribution>
+
+         <Turn Id="1" Weight="8"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="8"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="8"/>
+
+		</TemporalDistribution>
+
+		<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+      <SeerAdditionalPortraitsSettings>
+
+         <SeerAdditionalPortraitSettings Id="HarplingVariation" Amount="9" />
+
+      </SeerAdditionalPortraitsSettings>
+
+	</SpawnWaveDefinition>
+
+
+
+	<SpawnWaveDefinition Id="Wave_GildenbergRedux_06_Flying">
+
+		<BossWaveSettings BossId="GildenbergRedux_HarplingWaveSix" DisplayBossInSeer="false">
+
+			<AutoUpdateNightSlider/>
+
+			<DisplayEnemiesAmount/>
+
+			<UseDefaultProgressBar/>
+
+		</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+			<EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+			<EnemyUnitTemplateDefinition Id="Gargoyle" Weight="8"/>
+
+			<EnemyUnitTemplateDefinition Id="Ghost" Weight="5"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+		<TemporalDistribution>
+
+         <Turn Id="1" Weight="8"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="8"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="8"/>
+
+		</TemporalDistribution>
+
+		<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+      <SeerAdditionalPortraitsSettings>
+
+         <SeerAdditionalPortraitSettings Id="HarplingVariation" Amount="6" />
+
+      </SeerAdditionalPortraitsSettings>
+
+	</SpawnWaveDefinition>
+
+
+
+	<SpawnWaveDefinition Id="Wave_GildenbergRedux_06_NoFoot">
+
+		<BossWaveSettings BossId="GildenbergRedux_HarplingWaveSix" DisplayBossInSeer="false">
+
+			<AutoUpdateNightSlider/>
+
+			<DisplayEnemiesAmount/>
+
+			<UseDefaultProgressBar/>
+
+		</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+			<EnemyUnitTemplateDefinition Id="Clawer" Weight="60"/>
+
+			<EnemyUnitTemplateDefinition Id="Ghost" Weight="3"/>
+
+			<EnemyUnitTemplateDefinition Id="CorruptedMage" Weight="1"/>
+
+			<EnemyUnitTemplateDefinition Id="Shieldman" Weight="3"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+		<TemporalDistribution>
+
+         <Turn Id="1" Weight="8"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="8"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="8"/>
+
+		</TemporalDistribution>
+
+		<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+      
+
+      <SeerAdditionalPortraitsSettings>
+
+            <SeerAdditionalPortraitSettings Id="HarplingVariation" Amount="6" />
+
+      </SeerAdditionalPortraitsSettings>
+
+      
+
+	</SpawnWaveDefinition>
+
+
+
+	<SpawnWaveDefinition Id="Wave_GildenbergRedux_06_BigBoi">
+
+		<BossWaveSettings BossId="GildenbergRedux_HarplingWaveSix" DisplayBossInSeer="false">
+
+			<AutoUpdateNightSlider/>
+
+			<DisplayEnemiesAmount/>
+
+			<UseDefaultProgressBar/>
+
+		</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+			<EnemyUnitTemplateDefinition Id="Clawer" Weight="60"/>
+
+			<EnemyUnitTemplateDefinition Id="Boomer" Weight="6"/>
+
+			<EnemyUnitTemplateDefinition Id="Tanky" Weight="1"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+		<TemporalDistribution>
+
+         <Turn Id="1" Weight="8"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="8"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="8"/>
+
+		</TemporalDistribution>
+
+		<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   
+
+      <SeerAdditionalPortraitsSettings>
+
+         <SeerAdditionalPortraitSettings Id="HarplingVariation" Amount="6" />
+
+      </SeerAdditionalPortraitsSettings>
+
+   
+
+	</SpawnWaveDefinition>
+
+
+
+	<SpawnWaveDefinition Id="Wave_GildenbergRedux_06_ZoomZoom">
+
+		<BossWaveSettings BossId="GildenbergRedux_HarplingWaveSix" DisplayBossInSeer="false">
+
+			<AutoUpdateNightSlider/>
+
+			<DisplayEnemiesAmount/>
+
+			<UseDefaultProgressBar/>    
+
+		</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+			<EnemyUnitTemplateDefinition Id="Clawer" Weight="40"/>
+
+			<EnemyUnitTemplateDefinition Id="FasterClawer" Weight="10"/>
+
+			<EnemyUnitTemplateDefinition Id="SpeedyClawer" Weight="5"/>
+
+			<EnemyUnitTemplateDefinition Id="Gargoyle" Weight="10"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+		<TemporalDistribution>
+
+         <Turn Id="1" Weight="8"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="8"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="8"/>
+
+		</TemporalDistribution>
+
+		<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+      
+
+      <SeerAdditionalPortraitsSettings>
+
+         <SeerAdditionalPortraitSettings Id="HarplingVariation" Amount="6" />
+
+      </SeerAdditionalPortraitsSettings>
+
+         
+
+	</SpawnWaveDefinition>
+
+
+
+	<SpawnWaveDefinition Id="Wave_GildenbergRedux_06_ArmoredCore">
+
+		<BossWaveSettings BossId="GildenbergRedux_HarplingWaveSix" DisplayBossInSeer="false">
+
+			<AutoUpdateNightSlider/>
+
+			<DisplayEnemiesAmount/>
+
+			<UseDefaultProgressBar/>
+
+		</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+			<EnemyUnitTemplateDefinition Id="Clawer" Weight="15"/>
+
+         <EnemyUnitTemplateDefinition Id="BountyHunter" Weight="10"/>
+
+			<EnemyUnitTemplateDefinition Id="Armored" Weight="3"/>
+
+			<EnemyUnitTemplateDefinition Id="Blocker" Weight="30"/>
+
+			<EnemyUnitTemplateDefinition Id="Shieldman" Weight="3"/>
+
+			<EnemyUnitTemplateDefinition Id="Plated" Weight="30"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+		<TemporalDistribution>
+
+         <Turn Id="1" Weight="8"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="8"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="8"/>
+
+		</TemporalDistribution>
+
+		<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   
+
+      <SeerAdditionalPortraitsSettings>
+
+         <SeerAdditionalPortraitSettings Id="HarplingVariation" Amount="6" />
+
+      </SeerAdditionalPortraitsSettings>
+
+         
+
+	</SpawnWaveDefinition>
+
+
+
+	<SpawnWaveDefinition Id="Wave_GildenbergRedux_07">
+
+		<BossWaveSettings BossId="GildenbergRedux_HarplingWaveSeven" DisplayBossInSeer="false">
+
+			<AutoUpdateNightSlider/>
+
+			<DisplayEnemiesAmount/>
+
+			<UseDefaultProgressBar/>
+
+		</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+			<EnemyUnitTemplateDefinition Id="Clawer" Weight="40"/>
+
+			<EnemyUnitTemplateDefinition Id="Lumberjack" Weight="8"/>
+
+			<EnemyUnitTemplateDefinition Id="SpeedyClawer" Weight="3"/>
+
+			<EnemyUnitTemplateDefinition Id="Boomer" Weight="3"/>
+
+			<EnemyUnitTemplateDefinition Id="Shieldman" Weight="3"/>
+
+         <EnemyTier Value="1" WeightMultiplier="0.5"/>
+
+         <EnemyTier Value="2"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+		<TemporalDistribution>
+
+			<Turn Id="1" Weight="5"/>
+
+			<Turn Id="2" Weight="8"/>
+
+			<Turn Id="3" Weight="5"/>
+
+			<Turn Id="4" Weight="8"/>
+
+         <Turn Id="5" Weight="5"/>
+
+         <Turn Id="6" Weight="8"/>
+
+		</TemporalDistribution>
+
+		<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   
+
+      <SeerAdditionalPortraitsSettings>
+
+         <SeerAdditionalPortraitSettings Id="HarplingVariation" Amount="10" />
+
+      </SeerAdditionalPortraitsSettings>
+
+   
+
+	</SpawnWaveDefinition>
+
+
+
+	<SpawnWaveDefinition Id="Wave_GildenbergRedux_08">
+
+		<BossWaveSettings BossId="DwarfStatueBoss1">
+
+         <InfiniteWave />
+
+		</BossWaveSettings>
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="65"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="20"/>
+
+         <EnemyUnitTemplateDefinition Id="BountyHunter" Weight="15"/>
+
+         <EnemyUnitTemplateDefinition Id="Boomer" Weight="4"/>
+
+         <EnemyUnitTemplateDefinition Id="Tanky" Weight="2"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="3" WeightMultiplier="1.1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+		<TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+         <Turn Id="5" Weight="10"/>
+
+         <Turn Id="6" Weight="5"/>
+
+         <Turn Id="7" Weight="10"/>
+
+         <Turn Id="8" Weight="5"/>
+
+         <Turn Id="9" Weight="10"/>
+
+         <Turn Id="10" Weight="5"/>
+
+		</TemporalDistribution>
+
+		<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   
+
+      
+
+      <SeerAdditionalPortraitsSettings>
+
+         <SeerAdditionalPortraitSettings Id="HarplingVariation" Amount="20" />
+
+      </SeerAdditionalPortraitsSettings>
+
+   
+
+	</SpawnWaveDefinition>
+
+	
+
+	<!-- ███████████████████████████████████████████████████████████████ -->
+
+	<!-- GLENWALD REDUX -->
+
+	<!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+
+
+	<SpawnWaveDefinition Id="Wave_GlenwaldRedux_01">
+
+		<BossWaveSettings BossId="GlenwaldRedux_FirstWave" DisplayBossInSeer="false">
+
+			<AutoUpdateNightSlider/>
+
+			<DisplayEnemiesAmount/>
+
+			<UseDefaultProgressBar/>
+
+		</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+			<EnemyUnitTemplateDefinition Id="Clawer" Weight="60"/>
+
+			<EnemyUnitTemplateDefinition Id="Lumberjack" Weight="15"/>
+
+		    <EnemyTier Value="1"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="7"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+      </TemporalDistribution>
+
+		<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+	</SpawnWaveDefinition>
+
+	
+
+	<SpawnWaveDefinition Id="Wave_GlenwaldRedux_02_ImTheDodgerNow">
+
+		<BossWaveSettings BossId="GlenwaldRedux_SecondWave" DisplayBossInSeer="false">
+
+			<AutoUpdateNightSlider/>
+
+			<DisplayEnemiesAmount/>
+
+			<UseDefaultProgressBar/>
+
+		</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+			<EnemyUnitTemplateDefinition Id="Clawer" Weight="20"/>
+
+			<EnemyUnitTemplateDefinition Id="BountyHunter" Weight="15"/>
+
+		    <EnemyUnitTemplateDefinition Id="DodgyClawer" Weight="40"/>
+
+		    <EnemyUnitTemplateDefinition Id="FasterClawer" Weight="20"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="4"/>
+
+	      <Turn Id="4" Weight="15"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+		<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+	</SpawnWaveDefinition>
+
+	
+
+	<SpawnWaveDefinition Id="Wave_GlenwaldRedux_02_WoodWorker">
+
+		<BossWaveSettings BossId="GlenwaldRedux_SecondWave" DisplayBossInSeer="false">
+
+			<AutoUpdateNightSlider/>
+
+			<DisplayEnemiesAmount/>
+
+			<UseDefaultProgressBar/>
+
+		</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+			<EnemyUnitTemplateDefinition Id="Clawer" Weight="60"/>
+
+			<EnemyUnitTemplateDefinition Id="Lumberjack" Weight="25"/>
+
+         <EnemyTier Value="1"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="15"/>
+
+         <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+		<SpawnsCountMultiplier>0.9</SpawnsCountMultiplier>
+
+	</SpawnWaveDefinition>
+
+		
+
+	<SpawnWaveDefinition Id="Wave_GlenwaldRedux_02_ImtheRangerNow">
+
+		<BossWaveSettings BossId="GlenwaldRedux_SecondWave" DisplayBossInSeer="false">
+
+			<AutoUpdateNightSlider/>
+
+			<DisplayEnemiesAmount/>
+
+			<UseDefaultProgressBar/>
+
+		</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+			<EnemyUnitTemplateDefinition Id="Clawer" Weight="60"/>
+
+			<EnemyUnitTemplateDefinition Id="BountyHunter" Weight="8"/>
+
+		   <EnemyUnitTemplateDefinition Id="Archer" Weight="8"/>
+
+         <EnemyTier Value="1" WeightMultiplier="0.5"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="4"/>
+
+         <Turn Id="4" Weight="12"/>
+
+      </TemporalDistribution>
+
+		<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+	</SpawnWaveDefinition>
+
+			
+
+	<SpawnWaveDefinition Id="Wave_GlenwaldRedux_02_Swarm">
+
+		<BossWaveSettings BossId="GlenwaldRedux_SecondWave" DisplayBossInSeer="false">
+
+			<AutoUpdateNightSlider/>
+
+			<DisplayEnemiesAmount/>
+
+			<UseDefaultProgressBar/>
+
+		</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+             <EnemyUnitTemplateDefinition Id="Clawer" Weight="40"/>
+
+             <EnemyTier Value="1"/>
+
+             <EnemyTier Value="1"/>
+
+             <EnemyTier Value="1"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+		<SpawnsCountMultiplier>1.3</SpawnsCountMultiplier>
+
+	</SpawnWaveDefinition>
+
+	
+
+	<SpawnWaveDefinition Id="Wave_GlenwaldRedux_03">
+
+		<BossWaveSettings BossId="GlenwaldRedux_DefaultWave" DisplayBossInSeer="false">
+
+			<AutoUpdateNightSlider/>
+
+			<DisplayEnemiesAmount/>
+
+			<UseDefaultProgressBar/>
+
+		</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="60"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="1"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+	      <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+		<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+	</SpawnWaveDefinition>
+
+	
+
+	<SpawnWaveDefinition Id="Wave_GlenwaldRedux_04">
+
+		<BossWaveSettings BossId="GlenwaldRedux_DefaultWave" DisplayBossInSeer="false">
+
+			<AutoUpdateNightSlider/>
+
+			<DisplayEnemiesAmount/>
+
+			<UseDefaultProgressBar/>
+
+		</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyTier Value="2"/>
+
+			<EnemyTier Value="2"/>
+
+         <EnemyTier Value="1" WeightMultiplier="0.5"/>
+
+         <EnemyTier Value="1" WeightMultiplier="0.5"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+      </TemporalDistribution>
+
+		<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+	</SpawnWaveDefinition>
+
+	
+
+		<SpawnWaveDefinition Id="Wave_GlenwaldRedux_05_Shields">
+
+			<BossWaveSettings BossId="GlenwaldRedux_DefaultWave" DisplayBossInSeer="false">
+
+				<AutoUpdateNightSlider/>
+
+				<DisplayEnemiesAmount/>
+
+				<UseDefaultProgressBar/>
+
+			</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="40"/>
+
+		   <EnemyUnitTemplateDefinition Id="Blocker" Weight="30"/>
+
+			<EnemyUnitTemplateDefinition Id="Shieldman" Weight="10"/>
+
+		   <EnemyTier Value="2"/>
+
+			<EnemyTier Value="2"/>
+
+         <EnemyTier Value="1"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+	      <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+		<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+	</SpawnWaveDefinition>
+
+		 
+
+	<SpawnWaveDefinition Id="Wave_GlenwaldRedux_05_Froogmers">
+
+		<BossWaveSettings BossId="GlenwaldRedux_DefaultWave" DisplayBossInSeer="false">
+
+			<AutoUpdateNightSlider/>
+
+			<DisplayEnemiesAmount/>
+
+			<UseDefaultProgressBar/>
+
+		</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="40"/>
+
+		   <EnemyUnitTemplateDefinition Id="PoisonFrog" Weight="15"/>
+
+			<EnemyUnitTemplateDefinition Id="Boomer" Weight="6"/>
+
+		   <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+	     <Turn Id="4" Weight="10"/>
+
+      </TemporalDistribution>
+
+		<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+	</SpawnWaveDefinition>
+
+	
+
+		  	<SpawnWaveDefinition Id="Wave_GlenwaldRedux_05_Gargoyle">
+
+				<BossWaveSettings BossId="GlenwaldRedux_DefaultWave" DisplayBossInSeer="false">
+
+					<AutoUpdateNightSlider/>
+
+					<DisplayEnemiesAmount/>
+
+					<UseDefaultProgressBar/>
+
+				</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="40"/>
+
+         <EnemyUnitTemplateDefinition Id="Gargoyle" Weight="25"/>
+
+			<EnemyUnitTemplateDefinition Id="Lumberjack" Weight="5"/>
+
+         <EnemyTier Value="1" WeightMultiplier="0.5"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+	     <Turn Id="4" Weight="10"/>
+
+      </TemporalDistribution>
+
+		<SpawnsCountMultiplier>0.93</SpawnsCountMultiplier>
+
+	</SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_GlenwaldRedux_05_Bloody">
+
+      <BossWaveSettings BossId="GlenwaldRedux_DefaultWave" DisplayBossInSeer="false">
+
+         <AutoUpdateNightSlider/>
+
+         <DisplayEnemiesAmount/>
+
+         <UseDefaultProgressBar/>
+
+      </BossWaveSettings>
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="60"/>
+
+         <EnemyUnitTemplateDefinition Id="Bloody" Weight="7"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="1" WeightMultiplier="0.5"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+		  
+
+	  	<SpawnWaveDefinition Id="Wave_GlenwaldRedux_06_Flying">
+
+			<BossWaveSettings BossId="GlenwaldRedux_SixthWave" DisplayBossInSeer="false">
+
+				<AutoUpdateNightSlider/>
+
+				<DisplayEnemiesAmount/>
+
+				<UseDefaultProgressBar/>
+
+			</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="60"/>
+
+         <EnemyUnitTemplateDefinition Id="Gargoyle" Weight="15"/>
+
+			<EnemyUnitTemplateDefinition Id="Ghost" Weight="10"/>
+
+         <EnemyTier Value="1" WeightMultiplier="0.5"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+	      <Turn Id="4" Weight="10"/>
+
+      </TemporalDistribution>
+
+		<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+	</SpawnWaveDefinition>
+
+	
+
+		  	<SpawnWaveDefinition Id="Wave_GlenwaldRedux_06_NoFoot">
+
+				<BossWaveSettings BossId="GlenwaldRedux_SixthWave" DisplayBossInSeer="false">
+
+					<AutoUpdateNightSlider/>
+
+					<DisplayEnemiesAmount/>
+
+					<UseDefaultProgressBar/>
+
+				</BossWaveSettings>
+
+				<EnemyUnitTemplateDefinitions>
+
+					<EnemyUnitTemplateDefinition Id="Clawer" Weight="60"/>
+
+					<EnemyUnitTemplateDefinition Id="Ghost" Weight="5"/>
+
+					<EnemyUnitTemplateDefinition Id="Shieldman" Weight="5"/>
+
+               <EnemyTier Value="2" WeightMultiplier="1.5"/>
+
+               <EnemyTier Value="1" WeightMultiplier="0.5"/>
+
+				</EnemyUnitTemplateDefinitions>
+
+				<TemporalDistribution>
+
+					<Turn Id="1" Weight="5"/>
+
+					<Turn Id="2" Weight="10"/>
+
+					<Turn Id="3" Weight="5"/>
+
+					<Turn Id="4" Weight="10"/>
+
+				</TemporalDistribution>
+
+				<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+			</SpawnWaveDefinition>
+
+
+
+		<SpawnWaveDefinition Id="Wave_GlenwaldRedux_07">
+
+			<BossWaveSettings BossId="GlenwaldRedux_SeventhWave" DisplayBossInSeer="false">
+
+				<AutoUpdateNightSlider/>
+
+				<DisplayEnemiesAmount/>
+
+				<UseDefaultProgressBar/>
+
+			</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+			<EnemyUnitTemplateDefinition Id="Clawer" Weight="20"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="3"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1.25"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1.25"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+	      <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+		<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+	</SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_GlenwaldRedux_07_Defensive">
+
+      <BossWaveSettings BossId="GlenwaldRedux_SeventhWave" DisplayBossInSeer="false">
+
+         <AutoUpdateNightSlider/>
+
+         <DisplayEnemiesAmount/>
+
+         <UseDefaultProgressBar/>
+
+      </BossWaveSettings>
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="20"/>
+
+         <EnemyUnitTemplateDefinition Id="Armored" Weight="5"/>
+
+         <EnemyUnitTemplateDefinition Id="Shieldman" Weight="5"/>
+
+         <EnemyUnitTemplateDefinition Id="Plated" Weight="25"/>
+
+         <EnemyUnitTemplateDefinition Id="Blocker" Weight="25"/>
+
+         <EnemyTier Value="2"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="10"/>
+
+         <Turn Id="2" Weight="5"/>
+
+         <Turn Id="3" Weight="10"/>
+
+         <Turn Id="4" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_GlenwaldRedux_08">
+
+      <BossWaveSettings BossId="GlenwaldRedux_EigthWave" DisplayBossInSeer="false">
+
+         <AutoUpdateNightSlider/>
+
+         <DisplayEnemiesAmount/>
+
+         <UseDefaultProgressBar/>
+
+      </BossWaveSettings>
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="60"/>
+
+         <EnemyTier Value="3" WeightMultiplier="3"/>
+
+         <EnemyTier Value="3" WeightMultiplier="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="15"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+		 
+
+	<SpawnWaveDefinition Id="Wave_GlenwaldRedux_09">
+
+		<BossWaveSettings BossId="GlenwaldRedux_EigthWave" DisplayBossInSeer="false">
+
+			<AutoUpdateNightSlider/>
+
+			<DisplayEnemiesAmount/>
+
+			<UseDefaultProgressBar/>
+
+		</BossWaveSettings>
+
+		<EnemyUnitTemplateDefinitions>
+
+			<EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+			<EnemyUnitTemplateDefinition Id="Lumberjack" Weight="12"/>
+
+			<EnemyUnitTemplateDefinition Id="BountyHunter" Weight="12"/>
+
+			<EnemyUnitTemplateDefinition Id="Ghost" Weight="9"/>
+
+		   <EnemyUnitTemplateDefinition Id="CorruptedMage" Weight="3"/>
+
+         <EnemyTier Value="1" WeightMultiplier="0.75"/>
+
+         <EnemyTier Value="1" WeightMultiplier="0.75"/>
+
+		</EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="6"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="4"/>
+
+         <Turn Id="4" Weight="12"/>
+
+         <Turn Id="5" Weight="8"/>
+
+      </TemporalDistribution>
+
+		<SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+	</SpawnWaveDefinition>
+
+
+
+   <SpawnWaveDefinition Id="Wave_GlenwaldRedux_Boss">
+
+      <BossWaveSettings BossId="ZeppelinBoss">
+
+         <InfiniteWave/>
+
+      </BossWaveSettings>
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="55"/>
+
+         <EnemyUnitTemplateDefinition Id="CorruptedMage" Weight="2"/>
+
+         <EnemyUnitTemplateDefinition Id="Armored" Weight="8"/>
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="8"/>
+
+         <EnemyTier Value="3" WeightMultiplier="1.5"/>
+
+         <EnemyTier Value="2"/>
+
+         <EnemyTier Value="1"/>
+
+         <EnemyTier Value="1"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="20"/> <!--1 boss spawns-->
+
+         <Turn Id="2" Weight="8"/>
+
+         <Turn Id="3" Weight="15"/> <!--2 bosses spawns-->
+
+         <Turn Id="4" Weight="7"/> <!--1 boss spawns-->
+
+         <Turn Id="5" Weight="4"/>
+
+         <Turn Id="6" Weight="4"/> 
+
+         <Turn Id="7" Weight="18"/> <!--4 bosses spawn-->
+
+         <Turn Id="8" Weight="7"/>
+
+         <Turn Id="9" Weight="4"/>
+
+         <Turn Id="10" Weight="10"/>
+
+         <Turn Id="11" Weight="5"/>
+
+         <Turn Id="12" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+	<!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- NOT USED FOR NOW -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <!--NOT USED FOR NOW-->
+
+   <SpawnWaveDefinition Id="WaveRandomStartTest">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="40"/>
+
+         <EnemyUnitTemplateDefinition Id="FasterClawer" Weight="10"/>
+
+         <EnemyTier Value="1" WeightMultiplier="1.5"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   <!--NOT USED FOR NOW-->
+
+   <SpawnWaveDefinition Id="WaveTestGargoyle">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="70"/>
+
+         <EnemyUnitTemplateDefinition Id="Gargoyle" Weight="15"/>
+
+         <EnemyUnitTemplateDefinition Id="Archer" Weight="15"/>
+
+         <!--<EnemyUnitTemplateDefinition Id="ClawerRes" Weight="80"/>
+
+         <EnemyUnitTemplateDefinition Id="ClawerDodge" Weight="80"/>-->
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+   
+
+   <!--NOT USED FOR NOW-->
+
+   <SpawnWaveDefinition Id="WaveTestMix">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <!--<EnemyUnitTemplateDefinition Id="FasterClawer" Weight="20"/>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="DodgyClawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Gargoyle" Weight="10"/>-->
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="40"/>
+
+         <EnemyUnitTemplateDefinition Id="FasterClawer" Weight="10"/>
+
+         <EnemyUnitTemplateDefinition Id="DodgyClawer" Weight="10"/>
+
+         <!--<EnemyUnitTemplateDefinition Id="Boomer" Weight="20"/>-->
+
+         <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="10"/>
+
+         <EnemyUnitTemplateDefinition Id="Archer" Weight="10"/>
+
+         <!--<EnemyUnitTemplateDefinition Id="Shieldman" Weight="7"/>-->
+
+         <EnemyUnitTemplateDefinition Id="Plated" Weight="10"/>
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+
+
+
+
+   <!--NOT USED FOR NOW-->
+
+   <SpawnWaveDefinition Id="WaveTestMix2">
+
+      <EnemyUnitTemplateDefinitions>
+
+         <!--<EnemyUnitTemplateDefinition Id="FasterClawer" Weight="20"/>
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="DodgyClawer" Weight="50"/>
+
+         <EnemyUnitTemplateDefinition Id="Gargoyle" Weight="10"/>-->
+
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="90"/>
+
+         <!--<EnemyUnitTemplateDefinition Id="DodgyClawer" Weight="15"/>-->
+
+         <EnemyUnitTemplateDefinition Id="Bloody" Weight="5"/>
+
+         <EnemyUnitTemplateDefinition Id="Tanky" Weight="5"/>
+
+         <!--<EnemyUnitTemplateDefinition Id="Archer" Weight="15"/>-->
+
+      </EnemyUnitTemplateDefinitions>
+
+      <TemporalDistribution>
+
+         <Turn Id="1" Weight="5"/>
+
+         <Turn Id="2" Weight="10"/>
+
+         <Turn Id="3" Weight="5"/>
+
+         <Turn Id="4" Weight="10"/>
+
+         <Turn Id="5" Weight="5"/>
+
+      </TemporalDistribution>
+
+      <SpawnsCountMultiplier>1</SpawnsCountMultiplier>
+
+   </SpawnWaveDefinition>
+
+   
+
+</SpawnWaveDefinitions>
+

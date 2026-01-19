@@ -1,0 +1,547 @@
+﻿<UnitLevelUpStatDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+                     xsi:noNamespaceSchemaLocation="UnitLevelUpStatDefinitions.xsd">
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- Primary/Main Attributes -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   
+
+   <MainStats>
+
+      <UnitLevelUpStatDefinition Stat="HealthTotal" Weight="14">
+
+         <Bonuses>
+
+            <SmallBonus>25</SmallBonus>
+
+            <MediumBonus>40</MediumBonus>
+
+            <BigBonus>50</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      
+
+      <UnitLevelUpStatDefinition Stat="ManaTotal" Weight="14">
+
+         <Bonuses>
+
+            <SmallBonus>7</SmallBonus>
+
+            <MediumBonus>12</MediumBonus>
+
+            <BigBonus>15</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      
+
+      <UnitLevelUpStatDefinition Stat="MovePointsTotal" Weight="6">
+
+         <Bonuses>
+
+            <SmallBonus>1</SmallBonus>
+
+            <MediumBonus>2</MediumBonus>
+
+            <BigBonus>3</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      
+
+      <UnitLevelUpStatDefinition Stat="ActionPointsTotal" Weight="5">
+
+         <Bonuses>
+
+            <BigBonus>1</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      
+
+      <UnitLevelUpStatDefinition Stat="OverallDamage" Weight="14">
+
+         <Bonuses>
+
+            <SmallBonus>5</SmallBonus>
+
+            <MediumBonus>8</MediumBonus>
+
+            <BigBonus>10</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      
+
+      <UnitLevelUpStatDefinition Stat="Critical" Weight="6">
+
+         <Bonuses>
+
+            <SmallBonus>6</SmallBonus>
+
+            <MediumBonus>8</MediumBonus>
+
+            <BigBonus>9</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+
+
+      <UnitLevelUpStatDefinition Stat="Accuracy" Weight="9">
+
+         <Bonuses>
+
+            <SmallBonus>7</SmallBonus>
+
+            <MediumBonus>10</MediumBonus>
+
+            <BigBonus>12</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+
+
+      <UnitLevelUpStatDefinition Stat="ResistanceReduction" Weight="6">
+
+         <Bonuses>
+
+            <SmallBonus>7</SmallBonus>
+
+            <MediumBonus>10</MediumBonus>
+
+            <BigBonus>12</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+      
+
+      
+
+      <UnitLevelUpStatDefinition Stat="Dodge" Weight="9">
+
+         <Bonuses>
+
+            <SmallBonus>5</SmallBonus>
+
+            <MediumBonus>8</MediumBonus>
+
+            <BigBonus>10</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      
+
+      <UnitLevelUpStatDefinition Stat="ArmorTotal" Weight="9">
+
+         <Bonuses>
+
+            <SmallBonus>24</SmallBonus>
+
+            <MediumBonus>34</MediumBonus>
+
+            <BigBonus>40</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      <UnitLevelUpStatDefinition Stat="Resistance" Weight="9">
+
+         <Bonuses>
+
+            <SmallBonus>5</SmallBonus>
+
+            <MediumBonus>8</MediumBonus>
+
+            <BigBonus>10</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      
+
+      <UnitLevelUpStatDefinition Stat="Block" Weight="6">
+
+         <Bonuses>
+
+            <SmallBonus>5</SmallBonus>
+
+            <MediumBonus>7</MediumBonus>
+
+            <BigBonus>8</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+   </MainStats>
+
+
+
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- Secondary Attributes -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <SecondaryStats>
+
+      <UnitLevelUpStatDefinition Stat="ExperienceGainMultiplier" Weight="11">
+
+         <Bonuses>
+
+            <SmallBonus>12</SmallBonus>
+
+            <MediumBonus>17</MediumBonus>
+
+            <BigBonus>20</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+
+
+      <UnitLevelUpStatDefinition Stat="ManaRegen" Weight="16">
+
+         <Bonuses>
+
+            <SmallBonus>3</SmallBonus>
+
+            <MediumBonus>4</MediumBonus>
+
+            <BigBonus>5</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+      
+
+      
+
+      <UnitLevelUpStatDefinition Stat="HealthRegen" Weight="16">
+
+         <Bonuses>
+
+            <SmallBonus>10</SmallBonus>
+
+            <MediumBonus>16</MediumBonus>
+
+            <BigBonus>20</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      
+
+      <UnitLevelUpStatDefinition Stat="HealingReceived" Weight="9">
+
+         <Bonuses>
+
+            <SmallBonus>25</SmallBonus>
+
+            <MediumBonus>40</MediumBonus>
+
+            <BigBonus>50</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      
+
+      <UnitLevelUpStatDefinition Stat="PhysicalDamage" Weight="9">
+
+         <Bonuses>
+
+            <SmallBonus>5</SmallBonus>
+
+            <MediumBonus>7</MediumBonus>
+
+            <BigBonus>8</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+      
+
+
+
+      <UnitLevelUpStatDefinition Stat="RangedDamage" Weight="9">
+
+         <Bonuses>
+
+            <SmallBonus>5</SmallBonus>
+
+            <MediumBonus>7</MediumBonus>
+
+            <BigBonus>8</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      
+
+      <UnitLevelUpStatDefinition Stat="MagicalDamage" Weight="9">
+
+         <Bonuses>
+
+            <SmallBonus>5</SmallBonus>
+
+            <MediumBonus>7</MediumBonus>
+
+            <BigBonus>8</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+      
+
+
+
+      <UnitLevelUpStatDefinition Stat="CriticalPower" Weight="11">
+
+         <Bonuses>
+
+            <SmallBonus>15</SmallBonus>
+
+            <MediumBonus>25</MediumBonus>
+
+            <BigBonus>30</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      
+
+      <UnitLevelUpStatDefinition Stat="Reliability" Weight="13">
+
+         <Bonuses>
+
+            <SmallBonus>10</SmallBonus>
+
+            <MediumBonus>16</MediumBonus>
+
+            <BigBonus>20</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      <UnitLevelUpStatDefinition Stat="SkillRangeModifier" Weight="6">
+
+         <Bonuses>
+
+            <MediumBonus>1</MediumBonus>
+
+            <BigBonus>2</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      
+
+      <UnitLevelUpStatDefinition Stat="PoisonDamageModifier" Weight="11">
+
+         <Bonuses>
+
+            <SmallBonus>15</SmallBonus>
+
+            <MediumBonus>25</MediumBonus>
+
+            <BigBonus>30</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      <UnitLevelUpStatDefinition Stat="StunChanceModifier" Weight="11">
+
+         <Bonuses>
+
+            <SmallBonus>7</SmallBonus>
+
+            <MediumBonus>12</MediumBonus>
+
+            <BigBonus>15</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      
+
+      <UnitLevelUpStatDefinition Stat="PropagationBouncesModifier" Weight="4">
+
+         <Bonuses>
+
+            <MediumBonus>1</MediumBonus>
+
+            <BigBonus>2</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      <UnitLevelUpStatDefinition Stat="PropagationDamage" Weight="5">
+
+         <Bonuses>
+
+            <MediumBonus>4</MediumBonus>
+
+            <BigBonus>6</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      
+
+      <UnitLevelUpStatDefinition Stat="MomentumAttacks" Weight="9">
+
+         <Bonuses>
+
+            <SmallBonus>4</SmallBonus>
+
+            <MediumBonus>6</MediumBonus>
+
+            <BigBonus>7</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      
+
+      <UnitLevelUpStatDefinition Stat="OpportunisticAttacks" Weight="11">
+
+         <Bonuses>
+
+            <SmallBonus>8</SmallBonus>
+
+            <MediumBonus>12</MediumBonus>
+
+            <BigBonus>15</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      
+
+      <UnitLevelUpStatDefinition Stat="IsolatedAttacks" Weight="11">
+
+         <Bonuses>
+
+            <SmallBonus>10</SmallBonus>
+
+            <MediumBonus>16</MediumBonus>
+
+            <BigBonus>20</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+
+
+      
+
+      <UnitLevelUpStatDefinition Stat="MultiHitsCountModifier" Weight="4">
+
+         <Bonuses>
+
+            <BigBonus>1</BigBonus>
+
+         </Bonuses>
+
+      </UnitLevelUpStatDefinition>
+
+   </SecondaryStats>
+
+
+
+</UnitLevelUpStatDefinitions>
