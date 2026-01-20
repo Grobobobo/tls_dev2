@@ -1,0 +1,1888 @@
+<EnemyUnitTemplateDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+                              xsi:noNamespaceSchemaLocation="EnemyUnitTemplateDefinitions.xsd">
+
+
+
+   <EnemyUnitTemplateDefinition Id="Archer">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Archer"/>
+
+      <MoveSoundFolderName Value="Archer"/>
+
+      <Tier>2</Tier>
+
+      <Weight>10</Weight>
+
+      <HealthTotal>75</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>4</MovePointsTotal>
+
+      <ArmorTotal>125</ArmorTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>15</StunResistance>
+
+      <Accuracy>-25</Accuracy>
+
+      <DamageSkillId>ArcherAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>ArcherAttack</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>17</ExperienceGain>
+
+      <DamnedSoulsEarned>9</DamnedSoulsEarned>
+
+      <Panic Value="2"/>
+
+      <Behavior>
+
+         <!--Main idea: Attack heroes from maximum range or building if there is no heroes. Avoid contact with heroes -->
+
+         <ThinkingScope>100</ThinkingScope>
+
+         <Goals>
+
+            <!-- Move away from Hero if he is too close (2 tiles) and shoot at him -->
+
+            <Goal Id="01_ArcherAttack">
+
+               <SkillId Value="ArcherAttack"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="2"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <FarthestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+            <!--Attack Hero. Snaps on closest Hero in range. Priority over buildings-->
+
+            <Goal Id="02_ArcherAttack">
+
+               <SkillId Value="ArcherAttack"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="3+Clamp(MovePoints-2,2,30)"/><!--Added the move attribute to allow this goal to increase a little bit with ennemy progression but remains the same as before at the beginining of the game-->
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Attack Building. Snaps on closest building in range (except Barricade and Damagable Obstacle)-->
+
+            <Goal Id="03_ArcherAttack">
+
+               <SkillId Value="ArcherAttack"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                              <TargetsListId Value="EnemiesDamagableObstacles"/>
+
+                              <TargetId Value="Barricade"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="3+Clamp(MovePoints-2,2,30)"/>
+
+                           <!--Added the move attribute to allow this goal to increase a little bit with ennemy progression but remains the same as before at the beginining of the game-->
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Attack MagicCircle. In this case, used as a default "move towards" when this unit has nothing interesting to do-->
+
+            <Goal Id="04_ArcherAttack">
+
+               <SkillId Value="ArcherAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!--<FirstTarget/>-->
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Default attack : should never be picked as "intention", but rather as default if the enemy "ends up" next to something to attack with nothing better to do -->
+
+            <!--Since-->
+
+            <Goal Id="05_ArcherAttack">
+
+               <SkillId Value="ArcherAttack"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="5"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.9</BaseRatio>
+
+            <RatioMultiplier>0.54</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+               <StatModifier Id="ArmorTotal" Multiplier="ThreeQuarter"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.5</BaseRatio>
+
+            <RatioMultiplier>0.2</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
+
+               <StatModifier Id="ArmorTotal" Multiplier="Half"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+      </Injuries>
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">18</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">5</StatProgression>
+
+         <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">3</StatProgression>
+
+         <StatProgression Id="ArmorTotal" Delay="0" IncreaseEveryXDay="2">25</StatProgression>
+
+         <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">6</StatProgression>
+
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">18</StatProgression>
+
+         <StatProgression Id="MovePointsTotal" Delay="5" IncreaseEveryXDay="6">1</StatProgression>
+
+      </StatsProgressions>
+
+      <SkillProgressions>
+
+         <SkillProgression Id="ApocArcherAttack" ApocalypseFlagUnlock="SuperEnemies"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   
+
+   <EnemyUnitTemplateDefinition Id="Lumberjack">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Lumberjack"/>
+
+      <MoveSoundFolderName Value="Lumberjack"/>
+
+      <Tier>2</Tier>
+
+      <Weight>10</Weight>
+
+      <HealthTotal>180</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>4</MovePointsTotal>
+
+      <ArmorTotal>20</ArmorTotal>
+
+      <Block>30</Block>
+
+      <Dodge>0</Dodge>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>15</StunResistance>
+
+      <Accuracy>-10</Accuracy>
+
+      <DamageSkillId>LumberjackAttackSingle</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>LumberjackAttack</SkillToDisplay>
+
+         <SkillToDisplay>LumberjackAttackSingle</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>18</ExperienceGain>
+
+      <DamnedSoulsEarned>11</DamnedSoulsEarned>
+
+      <Panic Value="3"/>
+
+      <!--Main idea: Clawer that is more dangerous/powerful
+
+      His primary goal is to attack the magic circle but he snaps on defenses.
+
+      His attack is an horizontal AOE so he's a real threat to walls!
+
+      He's also more aggro towards the Heroes-->
+
+      <Behavior>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>100</ThinkingScope>
+
+         <Goals>
+
+            <!-- Attack Heroes: aggro within Move Range tiles-->
+
+            <Goal Id="01_LumberjackAttackSingle">
+
+               <SkillId Value="LumberjackAttackSingle"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="Max(2,MovePoints+1)"/>
+
+                           <!--We want this goal to follow the Move Points total -->
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Attack Buildings: aggro within 2 tiles town building-->
+
+            <Goal Id="02_LumberjackAttack">
+
+               <SkillId Value="LumberjackAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="Walls"/>
+
+                              <TargetsListId Value="BonePiles"/>
+
+                              
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                              <TargetsListId Value="EnemiesDamagableObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="2"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Attack Buildings: aggro within 2 tiles walls-->
+
+            <Goal Id="03_LumberjackAttack">
+
+               <SkillId Value="LumberjackAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="Walls"/>
+
+                              <TargetsListId Value="BonePiles"/>
+
+                              <TargetsListId Value="SpecialDefenses"/>
+
+                              
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="2"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="04_LumberjackAttack">
+
+               <SkillId Value="LumberjackAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!--<FirstTarget/>-->
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="05_LumberjackAttack">
+
+               <!--Default attack : should never be picked as "intention", but rather as default if the enemy "ends up" next to something to attack with nothing better to do -->
+
+               <SkillId Value="LumberjackAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.7</BaseRatio>
+
+            <RatioMultiplier>0.42</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+               <StatModifier Id="Block" Multiplier="ThreeQuarter"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.3</BaseRatio>
+
+            <RatioMultiplier>0.12</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
+
+               <StatModifier Id="Block" Multiplier="Half"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+      </Injuries>
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">18</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="3">5</StatProgression>
+
+         <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">3</StatProgression>
+
+         <StatProgression Id="ArmorTotal" Delay="1" IncreaseEveryXDay="2">20</StatProgression>
+
+         <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">6</StatProgression>
+
+         <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">6</StatProgression>
+
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">36</StatProgression>
+
+         <StatProgression Id="MovePointsTotal" Delay="5" IncreaseEveryXDay="6">1</StatProgression>
+
+      </StatsProgressions>
+
+      <SkillProgressions>
+
+         <SkillProgression Id="ApocLumberjackAttackSingle" ApocalypseFlagUnlock="SuperEnemies"/>
+
+         <SkillProgression Id="ApocLumberjackAttackSingle1" ApocalypseFlagUnlock="SuperEnemies" UnlockedAtDay="8"/>
+
+         <SkillProgression Id="ApocLumberjackAttackSingle2" ApocalypseFlagUnlock="SuperEnemies" UnlockedAtDay="11"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   
+
+   <EnemyUnitTemplateDefinition Id="Gargoyle">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Gargoyle"/>
+
+      <MoveSoundFolderName Value="Gargoyle"/>
+
+      <Tier>2</Tier>
+
+      <Weight>10</Weight>
+
+      <HealthTotal>150</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>5</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>6</Dodge>
+
+      <Resistance>35</Resistance>
+
+      <StunResistance>15</StunResistance>
+
+      <Accuracy>0</Accuracy>
+
+      <DamageSkillId>GargoyleAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>GargoyleAttack</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>16</ExperienceGain>
+
+      <DamnedSoulsEarned>10</DamnedSoulsEarned>
+
+      <Panic Value="5"/>
+
+      <MoveSpeed>6</MoveSpeed>
+
+      <MoveMethod Method="Flying"/>
+
+      <!--Main idea : His goal is to reached the city to increase the panic gauge and attack production building.
+
+      He tries to avoid the battlefield 
+
+      This behavior is an attemps to make a line which go through the center of the map, the goal for the gargoyle is to move away from this line and then attack town building-->
+
+      <Behavior>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+         <Goals>
+
+            <!--Get closer to the closest EnemyMagnet and use skip turn. The cooldown is used to banish this goal for the rest of the combat -->
+
+            <Goal Id="01_GargoyleSkipTurn2">
+
+               <SkillId Value="GargoyleSkipTurn2"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="EnemyMagnet"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+                  <!--<Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetId Value="Barricade"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>-->
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <ClosestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="02_GargoyleAttack">
+
+               <!--Attack random town building (not defense) in his range (6 range) -->
+
+               <SkillId Value="GargoyleAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="TownBuildings"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="Max(2,MovePoints+1)"/>
+
+                           <!--We want this goal to follow the Move Points total -->
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="03_GargoyleAttack">
+
+               <!--If too far from the town buildings to use his "standard" goal, targets the closest one to avoid changing its mind every turn (and thus never reaching any) -->
+
+               <SkillId Value="GargoyleAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="TownBuildings"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="04_GargoyleAttack">
+
+               <!--Default Attack Heroes : should never be picked as "intention", but rather as default if the enemy "ends up" next to a hero to attack with nothing better to do -->
+
+               <SkillId Value="GargoyleAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="05_GargoyleAttack">
+
+               <!--Default attack : should never be picked as "intention", but rather as default if the enemy "ends up" next to something to attack with nothing better to do -->
+
+               <SkillId Value="GargoyleAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.9</BaseRatio>
+
+            <RatioMultiplier>0.54</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.5</BaseRatio>
+
+            <RatioMultiplier>0.2</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
+
+               <StatModifier Id="InjuryDamageMultiplier" Offset="-30"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+      </Injuries>
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">18</StatProgression>
+
+         <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">6</StatProgression>
+
+         <StatProgression Id="Resistance" Delay="2" IncreaseEveryXDay="3">5</StatProgression>
+
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">30</StatProgression>
+
+         <StatProgression Id="MovePointsTotal" Delay="5" IncreaseEveryXDay="3">1</StatProgression>
+
+      </StatsProgressions>
+
+      <SkillProgressions>
+
+         <SkillProgression Id="ApocGargoyleAttack" ApocalypseFlagUnlock="SuperEnemies"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+   
+
+
+
+   <EnemyUnitTemplateDefinition Id="BountyHunter">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="BountyHunter"/>
+
+      <MoveSoundFolderName Value="BountyHunter"/>
+
+      <Tier>2</Tier>
+
+      <Weight>10</Weight>
+
+      <HealthTotal>150</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>4</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>18</Dodge>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>15</StunResistance>
+
+      <Accuracy>5</Accuracy>
+
+      <DamageSkillId>BountyHunterChargedAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>BountyHunterBaseAttack</SkillToDisplay>
+
+         <SkillToDisplay>BountyHunterCharge</SkillToDisplay>
+
+         <SkillToDisplay>BountyHunterChargedAttack</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>19</ExperienceGain>
+
+      <DamnedSoulsEarned>11</DamnedSoulsEarned>
+
+      <Panic Value="3"/>
+
+      <!-- Main idea: Ranged Sharpshooter, tries to hit back line heroes.-->
+
+      <Behavior>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>500</ThinkingScope>
+
+         <Goals>
+
+            <!-- Attack hero : Once charged, attack the farthest hero in a 10 tile range.-->
+
+            <Goal Id="01_BountyHunterChargedAttack">
+
+               <SkillId Value="BountyHunterChargedAttack"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <CasterHasStatusCondition StatusType="Charged"/>
+
+                  </ConditionsGroup>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="10"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Farthest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!-- Attack building : If no heroes, attack a building in a 10 tile range instead-->
+
+            <Goal Id="02_BountyHunterChargedAttack">
+
+               <SkillId Value="BountyHunterChargedAttack"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <CasterHasStatusCondition StatusType="Charged"/>
+
+                  </ConditionsGroup>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="10"/>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetId Value="MagicCircle"/>
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Farthest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Attack Heroes when close to them-->
+
+            <Goal Id="03_BountyHunterBaseAttack">
+
+               <SkillId Value="BountyHunterBaseAttack"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="4"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Charge : If not charged, move towards the farthest hero in range and charge (only if a hero is in a 20 tile radius)-->
+
+            <Goal Id="04_BountyHunterCharge">
+
+               <SkillId Value="BountyHunterCharge"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition NbTurns="1"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="20"/>
+
+                        </ConditionsGroup>
+
+
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Farthest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Attack MagicCircle: default goal-->
+
+            <Goal Id="05_BountyHunterBaseAttack">
+
+               <SkillId Value="BountyHunterBaseAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!--<FirstTarget/>-->
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Attack Buildings (except walls): no aggro, just hit them if they happen to be in range after moving and has no heroes in range-->
+
+            <Goal Id="06_BountyHunterBaseAttack">
+
+               <SkillId Value="BountyHunterBaseAttack"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="Walls"/>
+
+                              <TargetsListId Value="BonePiles"/>
+
+                              <TargetsListId Value="SpecialDefenses"/>
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.8</BaseRatio>
+
+            <RatioMultiplier>0.48</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+               <StatModifier Id="Dodge" Multiplier="ThreeQuarter"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.4</BaseRatio>
+
+            <RatioMultiplier>0.16</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
+
+               <StatModifier Id="Dodge" Multiplier="Half"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+      </Injuries>
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">18</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="5">5</StatProgression>
+
+         <StatProgression Id="Dodge" Delay="2" IncreaseEveryXDay="3">6</StatProgression>
+
+         <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">6</StatProgression>
+
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">30</StatProgression>
+
+         <StatProgression Id="MovePointsTotal" Delay="7" IncreaseEveryXDay="6">1</StatProgression>
+
+      </StatsProgressions>
+
+      <SkillProgressions>
+
+         <SkillProgression Id="ApocBountyHunterChargedAttack" ApocalypseFlagUnlock="SuperEnemies"/>
+
+         <SkillProgression Id="BountyHunterBaseAttack1" UnlockedAtDay="8"/>
+
+         <SkillProgression Id="BountyHunterBaseAttack2" UnlockedAtDay="11"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   
+
+   <EnemyUnitTemplateDefinition Id="PoisonFrog">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="PoisonFrog"/>
+
+      <MoveSoundFolderName Value="PoisonFrog"/>
+
+      <Tier>2</Tier>
+
+      <Weight>10</Weight>
+
+      <HealthTotal>165</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>4</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>4</Dodge>
+
+      <Resistance>35</Resistance>
+
+      <StunResistance>15</StunResistance>
+
+      <Accuracy>-20</Accuracy>
+
+      <DamageSkillId>PoisonFrogAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>PoisonFrogBaseAttack</SkillToDisplay>
+
+         <SkillToDisplay>PoisonFrogAttack</SkillToDisplay>
+
+         <SkillToDisplay>PoisonFrogBuff</SkillToDisplay>
+
+         <SkillToDisplay>PoisonFrogOnDeath</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>17</ExperienceGain>
+
+      <DamnedSoulsEarned>9</DamnedSoulsEarned>
+
+      <Panic Value="3"/>
+
+      <!-- Main idea: Ranged Sharpshooter, tries to hit backline heroes.-->
+
+      <Behavior>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>500</ThinkingScope>
+
+         <Goals>
+
+            <!-- Flee -->
+
+            <Goal Id="01_PoisonFrogFlee">
+
+               <SkillId Value="PoisonFrogFlee"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition/>
+
+                  </ConditionsGroup>
+
+                  <ConditionsGroup>
+
+                     <DamageableAroundCondition DamageableType="Playable" MinAmount="1" MaxRange="2"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Tile>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TileHasHazardCondition HazardType="Fog"/>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="20"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Tile>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- If hero in 7 tile range, move towards closest mist tile-->
+
+            <Goal Id="02_PoisonFrogAttack">
+
+               <SkillId Value="PoisonFrogAttack"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="Clamp(MovePoints+3,3,30)"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Farthest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Buff-->
+
+            <Goal Id="03_PoisonFrogBuff">
+
+               <SkillId Value="PoisonFrogBuff"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetId Value="PoisonFrog"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Min="Clamp(MovePoints+3,5,30)"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Farthest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Attack MagicCircle: default goal-->
+
+            <Goal Id="04_PoisonFrogBaseAttack">
+
+               <SkillId Value="PoisonFrogBaseAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!--<FirstTarget/>-->
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Attack building if end turn next to one-->
+
+            <Goal Id="05_PoisonFrogBaseAttack">
+
+               <SkillId Value="PoisonFrogBaseAttack"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- OnDeath -->
+
+            <Goal Id="06_PoisonFrogOnDeath" GoalComputingStep="OnDeath">
+
+               <SkillId Value="PoisonFrogOnDeath"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.8</BaseRatio>
+
+            <RatioMultiplier>0.48</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.4</BaseRatio>
+
+            <RatioMultiplier>0.16</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
+
+            </StatModifiers>
+
+            <PreventSkills>
+
+               <SkillId>PoisonFrogAttack</SkillId>
+
+               <SkillId>PoisonFrogAttack1</SkillId>
+
+               <SkillId>PoisonFrogAttack2</SkillId>
+
+               <SkillId>ApocPoisonFrogAttack</SkillId>
+
+               <SkillId>ApocPoisonFrogAttack1</SkillId>
+
+               <SkillId>ApocPoisonFrogAttack2</SkillId>
+
+            </PreventSkills>
+
+         </Injury>
+
+      </Injuries>
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">18</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="4">5</StatProgression>
+
+         <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">4</StatProgression>
+
+         <StatProgression Id="Resistance" Delay="2" IncreaseEveryXDay="3">5</StatProgression>
+
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">33</StatProgression>
+
+         <StatProgression Id="MovePointsTotal" Delay="7" IncreaseEveryXDay="2">1</StatProgression>
+
+      </StatsProgressions>
+
+      <SkillProgressions>
+
+         <SkillProgression Id="PoisonFrogAttack1" UnlockedAtDay="8"/>
+
+         <SkillProgression Id="PoisonFrogAttack2" UnlockedAtDay="11"/>
+
+         <SkillProgression Id="ApocPoisonFrogAttack" ApocalypseFlagUnlock="SuperEnemies"/>
+
+         <SkillProgression Id="ApocPoisonFrogAttack1" ApocalypseFlagUnlock="SuperEnemies" UnlockedAtDay="8"/>
+
+         <SkillProgression Id="ApocPoisonFrogAttack2" ApocalypseFlagUnlock="SuperEnemies" UnlockedAtDay="11"/>
+
+         <SkillProgression Id="PoisonFrogBuff1" UnlockedAtDay="8"/>
+
+         <SkillProgression Id="PoisonFrogBuff2" UnlockedAtDay="11"/>
+
+         <SkillProgression Id="PoisonFrogOnDeath1" UnlockedAtDay="8"/>
+
+         <SkillProgression Id="PoisonFrogOnDeath2" UnlockedAtDay="11"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+</EnemyUnitTemplateDefinitions>
+
