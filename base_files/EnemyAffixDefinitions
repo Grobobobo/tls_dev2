@@ -1,0 +1,1452 @@
+<EnemyAffixDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+                              xsi:noNamespaceSchemaLocation="EnemyAffixDefinitions.xsd">
+
+
+
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- ELITE AFFIXES -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   
+
+   <EnemyAffixDefinition Id="Regenerative">
+
+      <IsEliteAffix Weight="10" LockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="HealthPercentage" Value="20"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="HealthTotal"/>
+
+         <LocArgument Value="HealthPercentage" Style="GoodNb"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Regenerative>
+
+            <Percentage>HealthPercentage</Percentage>
+
+         </Regenerative>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+   
+
+   
+
+   <EnemyAffixDefinition Id="ReinforcedHealth">
+
+      <IsEliteAffix Weight="6" LockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="AttributeBonus" Value="200 + (100 * Floor((Day - 1) / 3))"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="HealthTotal" Value="AttributeBonus" Interpreted="true" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Reinforced>
+
+            <StatModifier Id="HealthTotal" Value="AttributeBonus"/>
+
+         </Reinforced>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+   
+
+
+
+   <EnemyAffixDefinition Id="ReinforcedMovePoint">
+
+      <IsEliteAffix Weight="4" LockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="AttributeBonus" Value="3"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="MovePointsTotal" Value="AttributeBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Reinforced>
+
+            <StatModifier Id="MovePointsTotal" Value="AttributeBonus"/>
+
+         </Reinforced>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+   
+
+   
+
+   <EnemyAffixDefinition Id="ReinforcedArmor">
+
+      <IsEliteAffix Weight="6" LockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="AttributeBonus" Value="100 + (50 * Floor((Day - 1) / 2))"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="ArmorTotal" Value="AttributeBonus" Interpreted="true" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Reinforced>
+
+            <StatModifier Id="ArmorTotal" Value="AttributeBonus"/>
+
+         </Reinforced>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+   
+
+
+
+   <EnemyAffixDefinition Id="ReinforcedBlock">
+
+      <IsEliteAffix Weight="4" LockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="AttributeBonus" Value="30 + (10 * Floor((Day - 1) / 2))"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="Block" Value="AttributeBonus" Interpreted="true" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Reinforced>
+
+            <StatModifier Id="Block" Value="AttributeBonus"/>
+
+         </Reinforced>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+   
+
+   
+
+   <EnemyAffixDefinition Id="ReinforcedDodge">
+
+      <IsEliteAffix Weight="6" LockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="AttributeBonus" Value="20 + (5 * Floor((Day - 1) / 3))"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="Dodge" Value="AttributeBonus" Interpreted="true" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Reinforced>
+
+            <StatModifier Id="Dodge" Value="AttributeBonus"/>
+
+         </Reinforced>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+
+
+   <EnemyAffixDefinition Id="AuraBlock">
+
+      <IsEliteAffix Weight="3" LockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="AuraValue" Value="10 + (5 * (Day - 1))"/>
+
+         <TokenVariable Key="AuraRange" Value="2"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatusArgument Status="Buff" Stat="Block" Value="AuraValue" TurnsCount="1" Interpreted="true"/>
+
+         <LocArgument Value="AuraRange" Style="KeyWordNb"/>
+
+         <StatArgument Stat="Block" Value="AuraValue" Interpreted="true" DisplaySign="true"/> <!-- This one is not used in the tooltip, but in the infopanel!-->
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Aura>
+
+            <Range>AuraRange</Range>
+
+            <StatModifiers TurnsCount="1">
+
+               <StatModifier Id="Block" Value="AuraValue"/>
+
+            </StatModifiers>
+
+         </Aura>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+   
+
+   <EnemyAffixDefinition Id="AuraResistance">
+
+      <IsEliteAffix Weight="3" LockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="AuraValue" Value="10 + (5 * Floor((Day - 1) / 2))"/>
+
+         <TokenVariable Key="AuraRange" Value="2"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatusArgument Status="Buff" Stat="Resistance" Value="AuraValue" TurnsCount="1" Interpreted="true"/>
+
+         <LocArgument Value="AuraRange" Style="KeyWordNb"/>
+
+         <StatArgument Stat="Resistance" Value="AuraValue" Interpreted="true" DisplaySign="true"/> <!-- This one is not used in the tooltip, but in the infopanel!-->
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Aura>
+
+            <Range>AuraRange</Range>
+
+            <StatModifiers TurnsCount="1">
+
+               <StatModifier Id="Resistance" Value="AuraValue"/>
+
+            </StatModifiers>
+
+         </Aura>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+   
+
+
+
+   <EnemyAffixDefinition Id="AuraArmor">
+
+      <IsEliteAffix Weight="3" LockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="AuraValue" Value="50 + (10 * (Day - 1))"/>
+
+         <TokenVariable Key="AuraRange" Value="2"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatusArgument Status="Buff" Stat="ArmorTotal" Value="AuraValue" TurnsCount="1" Interpreted="true"/>
+
+         <LocArgument Value="AuraRange" Style="KeyWordNb"/>
+
+         <StatArgument Stat="ArmorTotal" Value="AuraValue" Interpreted="true" DisplaySign="true"/> <!-- This one is not used in the tooltip, but in the infopanel!-->
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Aura>
+
+            <Range>AuraRange</Range>
+
+            <StatModifiers TurnsCount="1">
+
+               <StatModifier Id="ArmorTotal" Value="AuraValue"/>
+
+            </StatModifiers>
+
+         </Aura>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+   
+
+   <EnemyAffixDefinition Id="AuraDodge">
+
+      <IsEliteAffix Weight="3" LockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="AuraValue" Value="10 + (5 * Floor((Day - 1) / 2))"/>
+
+         <TokenVariable Key="AuraRange" Value="2"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatusArgument Status="Buff" Stat="Dodge" Value="AuraValue" TurnsCount="1" Interpreted="true"/>
+
+         <LocArgument Value="AuraRange" Style="KeyWordNb"/>
+
+         <StatArgument Stat="Dodge" Value="AuraValue" Interpreted="true" DisplaySign="true"/> <!-- This one is not used in the tooltip, but in the infopanel!-->
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Aura>
+
+            <Range>AuraRange</Range>
+
+            <StatModifiers TurnsCount="1">
+
+               <StatModifier Id="Dodge" Value="AuraValue"/>
+
+            </StatModifiers>
+
+         </Aura>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+   
+
+
+
+   <EnemyAffixDefinition Id="Misty">
+
+      <IsEliteAffix Weight="8" LockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="MistRange" Value="3"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Value="MistRange" Style="KeyWordNb"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Misty>
+
+            <Range>MistRange</Range>
+
+         </Misty>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+   
+
+
+
+   <EnemyAffixDefinition Id="Mirror">
+
+      <IsEliteAffix Weight="10" LockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="ReturnedDamage" Value="10 + (3 * (Day - 1))"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Value="ReturnedDamage" Interpreted="true" Style="BadNb"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Mirror DamageValue="ReturnedDamage"/>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+   
+
+   
+
+   <EnemyAffixDefinition Id="Energetic">
+
+      <IsEliteAffix Weight="8"/>
+
+      <AffixEffect>
+
+         <Energetic/>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+   
+
+   
+
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- BOSS AFFIXES -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   
+
+   <EnemyAffixDefinition Id="EnergeticSchaden">
+
+      <OverrideBoxAsset BoxId="Schaden"/>
+
+      <AffixEffect>
+
+         <Energetic/>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+
+
+   <EnemyAffixDefinition Id="MistySchaden">
+
+      <TokenVariables>
+
+         <TokenVariable Key="MistRange" Value="3"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Value="MistRange" Style="KeyWordNb"/>
+
+      </LocArguments>
+
+      <OverrideBoxAsset BoxId="Schaden"/>
+
+      <AffixEffect>
+
+         <Misty>
+
+            <Range>MistRange</Range>
+
+         </Misty>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+   <EnemyAffixDefinition Id="MistySchaden1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="MistRange" Value="5"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Value="MistRange" Style="KeyWordNb"/>
+
+      </LocArguments>
+
+      <OverrideBoxAsset BoxId="Schaden"/>
+
+      <AffixEffect>
+
+         <Misty>
+
+            <Range>MistRange</Range>
+
+         </Misty>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+   
+
+   <EnemyAffixDefinition Id="MirrorSchaden">
+
+      <TokenVariables>
+
+         <TokenVariable Key="ReturnedDamage" Value="60"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Value="ReturnedDamage" Interpreted="true" Style="BadNb"/>
+
+      </LocArguments>
+
+      <OverrideBoxAsset BoxId="Schaden"/>
+
+      <AffixEffect>
+
+         <Mirror DamageValue="ReturnedDamage"/>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+   <EnemyAffixDefinition Id="MirrorBlissnacht">
+
+      <TokenVariables>
+
+         <TokenVariable Key="ReturnedDamage" Value="90"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Value="ReturnedDamage" Interpreted="true" Style="BadNb"/>
+
+      </LocArguments>
+
+      <OverrideBoxAsset BoxId="Schaden"/>
+
+      <AffixEffect>
+
+         <Mirror DamageValue="ReturnedDamage"/>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+  
+
+   
+
+   <EnemyAffixDefinition Id="RevengeSchaden">
+
+      <TokenVariables>
+
+         <TokenVariable Key="AlterationValue" Value="10"/>
+
+         <TokenVariable Key="AlterationDuration" Value="1"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatusArgument Status="Debuff" Stat="OverallDamage" Value="-AlterationValue" TurnsCount="AlterationDuration"/>
+
+      </LocArguments>
+
+      <OverrideBoxAsset BoxId="Schaden"/>
+
+      <AffixEffect>
+
+         <Revenge>
+
+            <Debuff>
+
+               <Stat Id="OverallDamage"/>
+
+               <Malus>AlterationValue</Malus>
+
+               <TurnsCount>AlterationDuration</TurnsCount>
+
+            </Debuff>
+
+         </Revenge>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+
+
+   <EnemyAffixDefinition Id="EnergeticFreude">
+
+      <OverrideBoxAsset BoxId="Freude"/>
+
+      <AffixEffect>
+
+         <Energetic/>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+   
+
+   <EnemyAffixDefinition Id="AuraFreude">
+
+      <TokenVariables>
+
+         <TokenVariable Key="AuraValue" Value="50"/>
+
+         <TokenVariable Key="AuraRange" Value="2"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatusArgument Status="Buff" Stat="Block" Value="AuraValue" TurnsCount="1" Interpreted="true"/>
+
+         <LocArgument Value="AuraRange" Style="KeyWordNb"/>
+
+         <StatArgument Stat="Block" Value="AuraValue" Interpreted="true" DisplaySign="true"/> <!-- This one is not used in the tooltip, but in the infopanel!-->
+
+      </LocArguments>
+
+      <OverrideBoxAsset BoxId="Freude"/>
+
+      <AffixEffect>
+
+         <Aura>
+
+            <Range>AuraRange</Range>
+
+            <StatModifiers TurnsCount="1">
+
+               <StatModifier Id="Block" Value="AuraValue"/>
+
+            </StatModifiers>
+
+         </Aura>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+   <EnemyAffixDefinition Id="AuraFreude1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="AuraValue" Value="80"/>
+
+         <TokenVariable Key="AuraRange" Value="3"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatusArgument Status="Buff" Stat="Block" Value="AuraValue" TurnsCount="1" Interpreted="true"/>
+
+         <LocArgument Value="AuraRange" Style="KeyWordNb"/>
+
+         <StatArgument Stat="Block" Value="AuraValue" Interpreted="true" DisplaySign="true"/>
+
+         <!-- This one is not used in the tooltip, but in the infopanel!-->
+
+      </LocArguments>
+
+      <OverrideBoxAsset BoxId="Freude"/>
+
+      <AffixEffect>
+
+         <Aura>
+
+            <Range>AuraRange</Range>
+
+            <StatModifiers TurnsCount="1">
+
+               <StatModifier Id="Block" Value="AuraValue"/>
+
+            </StatModifiers>
+
+         </Aura>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+   
+
+   <EnemyAffixDefinition Id="RegenerativeFreude">
+
+      <TokenVariables>
+
+         <TokenVariable Key="HealthPercentage" Value="10"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="HealthTotal"/>
+
+         <LocArgument Value="HealthPercentage" Style="GoodNb"/>
+
+      </LocArguments>
+
+      <OverrideBoxAsset BoxId="Freude"/>
+
+      <AffixEffect>
+
+         <Regenerative>
+
+            <Percentage>HealthPercentage</Percentage>
+
+         </Regenerative>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+   <EnemyAffixDefinition Id="RegenerativeTendertrost">
+
+      <TokenVariables>
+
+         <TokenVariable Key="HealthPercentage" Value="15"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="HealthTotal"/>
+
+         <LocArgument Value="HealthPercentage" Style="GoodNb"/>
+
+      </LocArguments>
+
+      <OverrideBoxAsset BoxId="Freude"/>
+
+      <AffixEffect>
+
+         <Regenerative>
+
+            <Percentage>HealthPercentage</Percentage>
+
+         </Regenerative>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+      
+
+
+
+   <EnemyAffixDefinition Id="PurgeFreude">
+
+      <TokenVariables>
+
+         <TokenVariable Key="RemoveStatusType" Value="AllNegative"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocalizedArgument Value="SkillEffectName_Purge" Style="Purge"/>
+
+         <StatusArgument Status="RemoveStatusType"/>
+
+      </LocArguments>
+
+      <OverrideBoxAsset BoxId="Freude"/>
+
+      <AffixEffect>
+
+         <Purge StatusType="RemoveStatusType"/>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+   
+
+   <EnemyAffixDefinition Id="BarrierBlissnacht">
+
+      <TokenVariables>
+
+         <TokenVariable Key="ImmunityType" Value="Poison"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatusArgument Status="ImmunityType"/>
+
+      </LocArguments>
+
+      <OverrideBoxAsset BoxId="Schaden"/>
+
+      <AffixEffect>
+
+         <Barrier StatusType="ImmunityType"/>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+   <EnemyAffixDefinition Id="BarrierTendertrost">
+
+      <TokenVariables>
+
+         <TokenVariable Key="ImmunityType" Value="Debuff"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatusArgument Status="ImmunityType"/>
+
+      </LocArguments>
+
+      <OverrideBoxAsset BoxId="Freude"/>
+
+      <AffixEffect>
+
+         <Barrier StatusType="ImmunityType"/>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+   <EnemyAffixDefinition Id="BarrierAll">
+
+      <TokenVariables>
+
+         <TokenVariable Key="ImmunityType" Value="AllNegative"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatusArgument Status="ImmunityType"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Barrier StatusType="ImmunityType"/>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+   
+
+
+
+   <EnemyAffixDefinition Id="HigherPlane">
+
+      <AffixEffect>
+
+         <HigherPlane/>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+	<EnemyAffixDefinition Id="EnergeticDwarf">
+
+		<AffixEffect>
+
+			<Energetic/>
+
+		</AffixEffect>
+
+	</EnemyAffixDefinition>
+
+
+
+   <EnemyAffixDefinition Id="ZeppelinAffix">
+
+      <TokenVariables>
+
+         <TokenVariable Key="StepPercentage" Value="0.3333"/>
+
+         <TokenVariable Key="RemoveStatusType" Value="AllNegative"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Suffix="%" Style="KeywordNb" Value="Round(StepPercentage * 100)" Interpreted="true"/>
+
+
+
+         <StatArgument Stat="HealthTotal"/>
+
+         <LocalizedArgument Value="SkillEffectName_Purge" Style="Purge"/>
+
+         <StatusArgument Status="RemoveStatusType"/>
+
+         <StatusArgument Status="Stun" Chance="100" TurnsCount="1"/>
+
+         <StatusArgument Status="Invulnerable" TurnsCount="1"/>
+
+      </LocArguments>
+
+      <OverrideBoxAsset BoxId="Boss"/>
+
+      <AffixEffect>
+
+         <HealthChunks>
+
+            <Step>StepPercentage</Step>
+
+            <ApplyStatus Status="Stun" TurnsCount="1"/>
+
+            <ApplyStatus Status="Invulnerable" TurnsCount="1"/>
+
+            <RemoveStatus Status="AllNegative"/>
+
+         </HealthChunks>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- ELITE SUPER AFFIXES -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <EnemyAffixDefinition Id="SuperRegenerative">
+
+      <IsEliteAffix Weight="10" UnlockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="HealthPercentage" Value="60"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="HealthTotal"/>
+
+         <LocArgument Value="HealthPercentage" Style="GoodNb"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Regenerative>
+
+            <Percentage>HealthPercentage</Percentage>
+
+         </Regenerative>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+
+
+   <EnemyAffixDefinition Id="SuperReinforcedHealth">
+
+      <IsEliteAffix Weight="6" UnlockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="AttributeBonus" Value="600 + (200 * Floor((Day - 1) / 3))"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="HealthTotal" Value="AttributeBonus" Interpreted="true" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Reinforced>
+
+            <StatModifier Id="HealthTotal" Value="AttributeBonus"/>
+
+         </Reinforced>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+
+
+   <EnemyAffixDefinition Id="SuperReinforcedMovePoint">
+
+      <IsEliteAffix Weight="4" UnlockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="AttributeBonus" Value="5"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="MovePointsTotal" Value="AttributeBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Reinforced>
+
+            <StatModifier Id="MovePointsTotal" Value="AttributeBonus"/>
+
+         </Reinforced>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+
+
+   <EnemyAffixDefinition Id="SuperReinforcedArmor">
+
+      <IsEliteAffix Weight="6" UnlockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="AttributeBonus" Value="400 + (100 * Floor((Day - 1) / 2))"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="ArmorTotal" Value="AttributeBonus" Interpreted="true" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Reinforced>
+
+            <StatModifier Id="ArmorTotal" Value="AttributeBonus"/>
+
+         </Reinforced>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+
+
+   <EnemyAffixDefinition Id="SuperReinforcedBlock">
+
+      <IsEliteAffix Weight="4" UnlockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="AttributeBonus" Value="75 + (15 * Floor((Day - 1) / 2))"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="Block" Value="AttributeBonus" Interpreted="true" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Reinforced>
+
+            <StatModifier Id="Block" Value="AttributeBonus"/>
+
+         </Reinforced>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+
+
+   <EnemyAffixDefinition Id="SuperReinforcedDodge">
+
+      <IsEliteAffix Weight="6" UnlockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="AttributeBonus" Value="40 + (7 * Floor((Day - 1) / 3))"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="Dodge" Value="AttributeBonus" Interpreted="true" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Reinforced>
+
+            <StatModifier Id="Dodge" Value="AttributeBonus"/>
+
+         </Reinforced>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+
+
+   <EnemyAffixDefinition Id="SuperAuraBlock">
+
+      <IsEliteAffix Weight="3" UnlockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="AuraValue" Value="20 + (5 * (Day - 1))"/>
+
+         <TokenVariable Key="AuraRange" Value="5"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatusArgument Status="Buff" Stat="Block" Value="AuraValue" TurnsCount="1" Interpreted="true"/>
+
+         <LocArgument Value="AuraRange" Style="KeyWordNb"/>
+
+         <StatArgument Stat="Block" Value="AuraValue" Interpreted="true" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Aura>
+
+            <Range>AuraRange</Range>
+
+            <StatModifiers TurnsCount="1">
+
+               <StatModifier Id="Block" Value="AuraValue"/>
+
+            </StatModifiers>
+
+         </Aura>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+
+
+   <EnemyAffixDefinition Id="SuperAuraResistance">
+
+      <IsEliteAffix Weight="3" UnlockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="AuraValue" Value="20 + (5 * Floor((Day - 1) / 2))"/>
+
+         <TokenVariable Key="AuraRange" Value="5"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatusArgument Status="Buff" Stat="Resistance" Value="AuraValue" TurnsCount="1" Interpreted="true"/>
+
+         <LocArgument Value="AuraRange" Style="KeyWordNb"/>
+
+         <StatArgument Stat="Resistance" Value="AuraValue" Interpreted="true" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Aura>
+
+            <Range>AuraRange</Range>
+
+            <StatModifiers TurnsCount="1">
+
+               <StatModifier Id="Resistance" Value="AuraValue"/>
+
+            </StatModifiers>
+
+         </Aura>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+
+
+   <EnemyAffixDefinition Id="SuperAuraArmor">
+
+      <IsEliteAffix Weight="3" UnlockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="AuraValue" Value="100 + (10 * (Day - 1))"/>
+
+         <TokenVariable Key="AuraRange" Value="5"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatusArgument Status="Buff" Stat="ArmorTotal" Value="AuraValue" TurnsCount="1" Interpreted="true"/>
+
+         <LocArgument Value="AuraRange" Style="KeyWordNb"/>
+
+         <StatArgument Stat="ArmorTotal" Value="AuraValue" Interpreted="true" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Aura>
+
+            <Range>AuraRange</Range>
+
+            <StatModifiers TurnsCount="1">
+
+               <StatModifier Id="ArmorTotal" Value="AuraValue"/>
+
+            </StatModifiers>
+
+         </Aura>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+
+
+   <EnemyAffixDefinition Id="SuperAuraDodge">
+
+      <IsEliteAffix Weight="3" UnlockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="AuraValue" Value="20 + (5 * Floor((Day - 1) / 2))"/>
+
+         <TokenVariable Key="AuraRange" Value="5"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatusArgument Status="Buff" Stat="Dodge" Value="AuraValue" TurnsCount="1" Interpreted="true"/>
+
+         <LocArgument Value="AuraRange" Style="KeyWordNb"/>
+
+         <StatArgument Stat="Dodge" Value="AuraValue" Interpreted="true" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Aura>
+
+            <Range>AuraRange</Range>
+
+            <StatModifiers TurnsCount="1">
+
+               <StatModifier Id="Dodge" Value="AuraValue"/>
+
+            </StatModifiers>
+
+         </Aura>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+
+
+   <EnemyAffixDefinition Id="SuperMisty">
+
+      <IsEliteAffix Weight="8" UnlockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="MistRange" Value="8"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Value="MistRange" Style="KeyWordNb"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Misty>
+
+            <Range>MistRange</Range>
+
+         </Misty>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+
+
+   <EnemyAffixDefinition Id="SuperMirror">
+
+      <IsEliteAffix Weight="10" UnlockedByApocalypseFlag="SuperEliteAffixes"/>
+
+      <TokenVariables>
+
+         <TokenVariable Key="ReturnedDamage" Value="40 + (5 * (Day - 1))"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Value="ReturnedDamage" Interpreted="true" Style="BadNb"/>
+
+      </LocArguments>
+
+      <AffixEffect>
+
+         <Mirror DamageValue="ReturnedDamage"/>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>
+
+
+
+
+
+   <!--<EnemyAffixDefinition Id="SuperEnergetic">
+
+      <IsEliteAffix Weight="8"/>
+
+      <AffixEffect>
+
+         <Energetic/>
+
+      </AffixEffect>
+
+   </EnemyAffixDefinition>-->
+
+	
+
+</EnemyAffixDefinitions>
+

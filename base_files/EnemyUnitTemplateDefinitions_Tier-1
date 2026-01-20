@@ -1,0 +1,4280 @@
+<EnemyUnitTemplateDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+                              xsi:noNamespaceSchemaLocation="EnemyUnitTemplateDefinitions.xsd">
+
+
+
+   <EnemyUnitTemplateDefinition Id="SupportCocoon">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DamagedParticles Id="Damaged_Particles_Cocoon"/>
+
+      <DeathSoundFolderName Value="Cocoons"/>
+
+      <MoveSoundFolderName Value="Cocoons"/>
+
+      <Tier>-1</Tier>
+
+      <Weight>1</Weight>
+
+      <HealthTotal>120</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <ArmorTotal>300</ArmorTotal>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Resistance>18</Resistance>
+
+      <Accuracy>0</Accuracy>
+
+      <StunResistance>50</StunResistance>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>SupportCocoonSkill</SkillToDisplay>
+
+         <SkillToDisplay>SelfDestruction2</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>10</DamnedSoulsEarned>
+
+      <Panic Value="3"/>
+
+      
+
+      <Behavior>
+
+         <ThinkingScope>100</ThinkingScope>
+
+         <Goals>
+
+            <Goal Id="01_SupportCocoonSkill">
+
+               <SkillId Value="SupportCocoonSkill"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <DamageableAroundCondition DamageableType="Playable" MinAmount="1" MinRange="1" MaxRange="5"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="02_SupportCocoonSkill">
+
+               <SkillId Value="SupportCocoonSkill"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <DamageableAroundCondition DamageableType="Enemy" MinAmount="1" MinRange="1" MaxRange="5"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="03_SelfDestruction">
+
+               <SkillId Value="SelfDestruction2"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <InterpretedTurnCondition>SpawnedHour + 4</InterpretedTurnCondition>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      
+
+      <Injuries>
+
+      </Injuries>
+
+   </EnemyUnitTemplateDefinition>
+
+   
+
+   
+
+   <EnemyUnitTemplateDefinition Id="KillerCocoon">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DamagedParticles Id="Damaged_Particles_Cocoon"/>
+
+      <DeathSoundFolderName Value="Cocoons"/>
+
+      <MoveSoundFolderName Value="Cocoons"/>
+
+      <Tier>-1</Tier>
+
+      <Weight>1</Weight>
+
+      <HealthTotal>270</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>30</Dodge>
+
+      <Resistance>18</Resistance>
+
+      <Accuracy>10</Accuracy>
+
+      <StunResistance>50</StunResistance>
+
+      <DamageSkillId>KillerCocoonSkill</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>KillerCocoonSkill</SkillToDisplay>
+
+         <SkillToDisplay>SelfDestruction2</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>10</DamnedSoulsEarned>
+
+      <Panic Value="3"/>
+
+      
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <ThinkingScope>100</ThinkingScope>
+
+         <Goals>
+
+            <Goal Id="02_KillerCocoonSkill">
+
+               <SkillId Value="KillerCocoonSkill"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="5"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="03_KillerCocoonSkill">
+
+               <SkillId Value="KillerCocoonSkill"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="5"/>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="04_SkipTurnCocoon">
+
+               <SkillId Value="SkipTurnCocoon"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <DamageableAroundCondition DamageableType="Enemy" MinAmount="1" MinRange="1" MaxRange="5"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="05_SelfDestruction">
+
+               <SkillId Value="SelfDestruction2"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <InterpretedTurnCondition>SpawnedHour + 4</InterpretedTurnCondition>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      
+
+      <Injuries>
+
+      </Injuries>
+
+   </EnemyUnitTemplateDefinition>
+
+   
+
+   
+
+   <EnemyUnitTemplateDefinition Id="SpawnerCocoon">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DamagedParticles Id="Damaged_Particles_Cocoon"/>
+
+      <DeathSoundFolderName Value="Cocoons"/>
+
+      <MoveSoundFolderName Value="Cocoons"/>
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+      <HealthTotal>240</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <ArmorTotal>0</ArmorTotal>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Resistance>60</Resistance>
+
+      <Accuracy>0</Accuracy>
+
+      <StunResistance>50</StunResistance>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>SpawnEnemiesTier1</SkillToDisplay>
+
+         <SkillToDisplay>SpawnEnemiesTier2</SkillToDisplay>
+
+         <SkillToDisplay>SpawnEnemiesTier3</SkillToDisplay>
+
+         <SkillToDisplay>SelfDestruction</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>10</DamnedSoulsEarned>
+
+      <Panic Value="1"/>
+
+      
+
+      <Behavior>
+
+         <ThinkingScope>100</ThinkingScope>
+
+         <Goals>
+
+            <Goal Id="01_SpawnEnemiesTier1">
+
+               <SkillId Value="SpawnEnemiesTier1"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <InterpretedTurnCondition>SpawnedHour + 1</InterpretedTurnCondition>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetId Value="Barricade"/>
+
+                           </TargetIdCondition>
+
+                           <TargetInRangeCondition Min="1" Max="1"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+                  <Tile MustBe="Empty">
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Min="1" Max="1"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Tile>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="02_SpawnEnemiesTier2">
+
+               <SkillId Value="SpawnEnemiesTier2"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <InterpretedTurnCondition>SpawnedHour + 2</InterpretedTurnCondition>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                     <Building>
+
+                        <TargetConditions>
+
+                           <ConditionsGroup>
+
+                              <TargetIdCondition>
+
+                                 <TargetId Value="Barricade"/>
+
+                              </TargetIdCondition>
+
+                              <TargetInRangeCondition Min="1" Max="1"/>
+
+                           </ConditionsGroup>
+
+                        </TargetConditions>
+
+                     </Building>
+
+                     <Tile MustBe="Empty">
+
+                        <TargetConditions>
+
+                           <ConditionsGroup>
+
+                              <TargetInRangeCondition Min="1" Max="1"/>
+
+                           </ConditionsGroup>
+
+                        </TargetConditions>
+
+                     </Tile>
+
+                  </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="03_SpawnEnemiesTier3">
+
+               <SkillId Value="SpawnEnemiesTier3"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <InterpretedTurnCondition>SpawnedHour + 3</InterpretedTurnCondition>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetId Value="Barricade"/>
+
+                           </TargetIdCondition>
+
+                           <TargetInRangeCondition Min="1" Max="1"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+                  <Tile MustBe="Empty">
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Min="1" Max="1"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Tile>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="04_SelfDestruction">
+
+               <SkillId Value="SelfDestruction"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <InterpretedTurnCondition>SpawnedHour + 4</InterpretedTurnCondition>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <VisualEvolutions>
+
+         <VisualId Id="01"/>
+
+         <VisualId Id="02"/>
+
+         <VisualId Id="03"/>
+
+      </VisualEvolutions>
+
+   </EnemyUnitTemplateDefinition>
+
+   
+
+
+
+   <EnemyUnitTemplateDefinition Id="Harpling">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Harpling"/>
+
+      <MoveSoundFolderName Value="Harpling"/>
+
+      <Tier>-1</Tier>
+
+      <Weight>10</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>240</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <ArmorTotal>0</ArmorTotal>
+
+      <MovePointsTotal>6</MovePointsTotal>
+
+      <Accuracy>10</Accuracy>
+
+      <Block>0</Block>
+
+      <Dodge>20</Dodge>
+
+      <Resistance>12</Resistance>
+
+      <StunResistance>15</StunResistance>
+
+      <DamageSkillId>HarplingClaw</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>HarplingClaw</SkillToDisplay>
+
+         <SkillToDisplay>HarplingScreech</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <MoveSpeed>6</MoveSpeed>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>10</DamnedSoulsEarned>
+
+      <Panic Value="4"/>
+
+      
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>100</ThinkingScope>
+
+         <GoalsComputingOrder Value="-50"/>
+
+         <Goals>
+
+            <Goal Id="01_HarplingClaw">
+
+               <SkillId Value="HarplingClaw"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="Clamp(MovePoints+20,5,30)"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="02_HarplingScreech">
+
+               <SkillId Value="HarplingScreech"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="Clamp(MovePoints+20,10,30)"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Attack MagicCircle: default behaviour to move towards the center-->
+
+            <Goal Id="03_HarplingClaw">
+
+               <SkillId Value="HarplingClaw"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!--<FirstTarget/>-->
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="04_HarplingClaw">
+
+               <!--Default attack : should never be picked as "intention", but rather as default if the enemy "ends up" next to something to attack with nothing better to do -->
+
+               <SkillId Value="HarplingClaw"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.7</BaseRatio>
+
+            <RatioMultiplier>0.42</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.3</BaseRatio>
+
+            <RatioMultiplier>0.12</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
+
+            </StatModifiers>
+
+            <PreventSkills>
+
+               <SkillId>HarplingScreech</SkillId>
+
+            </PreventSkills>
+
+         </Injury>
+
+      </Injuries>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   
+
+   <EnemyUnitTemplateDefinition Id="NessieOffspring">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="NessieOffspring"/>
+
+      <MoveSoundFolderName Value="NessieOffspring"/>
+
+      <Tier>-1</Tier>
+
+      <Weight>10</Weight>
+
+      <HealthTotal>630</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <ArmorTotal>120</ArmorTotal>
+
+      <MovePointsTotal>7</MovePointsTotal>
+
+      <Accuracy>15</Accuracy>
+
+      <Block>30</Block>
+
+      <Dodge>12</Dodge>
+
+      <Resistance>18</Resistance>
+
+      <StunResistance>50</StunResistance>
+
+      <DamageSkillId>NessieOffspringAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>NessieOffspringAttack</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <MoveSpeed>8</MoveSpeed> <!--10-->
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>15</DamnedSoulsEarned>
+
+      <Panic Value="5"/>
+
+      
+
+      <Behavior>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+         <GoalsComputingOrder Value="-50"/>
+
+         <!--Main idea: attack the magic circle by avoiding every obstacle-->
+
+         <Goals>
+
+            <!-- Attack MagicCircle -->
+
+            <Goal Id="01_NessieOffspringAttack">
+
+               <SkillId Value="NessieOffspringAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!--<FirstTarget/>-->
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Attack Heroes if he finishes his movement next to one -->
+
+            <Goal Id="02_NessieOffspringAttack">
+
+               <SkillId Value="NessieOffspringAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Attack Building if he finishes his movement next to one -->
+
+            <Goal Id="03_NessieOffspringAttack">
+
+               <SkillId Value="NessieOffspringAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.7</BaseRatio>
+
+            <RatioMultiplier>0.42</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.3</BaseRatio>
+
+            <RatioMultiplier>0.12</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
+
+               <StatModifier Id="InjuryDamageMultiplier" Offset="-30"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+      </Injuries>
+
+      <AppearanceDelay>0</AppearanceDelay>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   
+
+   <EnemyUnitTemplateDefinition Id="NessieEgg">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DamagedParticles Id="Damaged_Particles_Cocoon"/>
+
+      <DeathSoundFolderName Value="NessieEgg"/>
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+      <HealthTotal>190</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <ArmorTotal>560</ArmorTotal>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Accuracy>0</Accuracy>
+
+      <Resistance>36</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>NessieEggOnSelfKill</SkillToDisplay>
+
+         <SkillToDisplay>NessieEggAttackOnDeath</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>5</DamnedSoulsEarned>
+
+      <Panic Value="1"/>
+
+      
+
+      <Behavior>
+
+         <ThinkingScope>100</ThinkingScope>
+
+         <Goals>
+
+            <Goal Id="01_NessieEggOnSelfKill">
+
+               <SkillId Value="NessieEggOnSelfKill"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <InterpretedTurnCondition>SpawnedHour + 1</InterpretedTurnCondition>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="02_NessieEggAttackOnDeath" GoalComputingStep="OnDeath">
+
+               <SkillId Value="NessieEggAttackOnDeath"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      
+
+      <Injuries>
+
+      </Injuries>
+
+   </EnemyUnitTemplateDefinition>
+
+   
+
+   
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- UNNAMED HEROES (ELDERLICHT) -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <EnemyUnitTemplateDefinition Id="UnnamedHammer">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Unnamed"/>
+
+      <MoveSoundFolderName Value="Unnamed"/>
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+
+
+      <HealthTotal>10</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>3</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Accuracy>0</Accuracy>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>0</StunResistance>
+
+      <DamageSkillId>UnnamedStunningBash</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>UnnamedStunningBash</SkillToDisplay>
+
+         <SkillToDisplay>UnnamedCrush</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="2"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>30</ThinkingScope>
+
+         <GoalsComputingOrder Value="-90"/>
+
+         <Goals>
+
+            <Goal Id="01_UnnamedStunningBash">
+
+               <SkillId Value="UnnamedStunningBash"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <ClosestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+            
+
+            <Goal Id="02_UnnamedCrush">
+
+               <SkillId Value="UnnamedCrush"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <ClosestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="03_UnnamedStunningBash">
+
+               <SkillId Value="UnnamedStunningBash"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <ClosestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+  
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <IsInvulnerable/>
+
+      <HideInNightReport/>
+
+
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">15</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="5">6</StatProgression>
+
+      </StatsProgressions>
+
+      <SpawnCutscene Id="UnnamedSpawn"/>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   
+
+   <EnemyUnitTemplateDefinition Id="UnnamedDagger">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Unnamed"/>
+
+      <MoveSoundFolderName Value="Unnamed"/>
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+
+
+      <HealthTotal>10</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>4</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Accuracy>0</Accuracy>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>0</StunResistance>
+
+      <DamageSkillId>UnnamedStab</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>UnnamedStab</SkillToDisplay>
+
+         <SkillToDisplay>UnnamedThrowingDagger</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="2"/>
+
+      <MoveSpeed>5</MoveSpeed>
+
+
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>30</ThinkingScope>
+
+         <GoalsComputingOrder Value="-80"/>
+
+         <Goals>
+
+            <Goal Id="01_UnnamedThrowingDagger">
+
+               <SkillId Value="UnnamedThrowingDagger"/>
+
+               <Cooldown Value="2"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <ClosestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="02_UnnamedStab">
+
+               <SkillId Value="UnnamedStab"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <ClosestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="03_UnnamedThrowingDagger">
+
+               <SkillId Value="UnnamedThrowingDagger"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <ClosestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="04_UnnamedStab">
+
+               <SkillId Value="UnnamedStab"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <IsInvulnerable/>
+
+      <HideInNightReport/>
+
+
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">15</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="5">6</StatProgression>
+
+      </StatsProgressions>
+
+
+
+	  <SpawnCutscene Id="UnnamedSpawn"/>
+
+
+
+      <SkillProgressions>
+
+         <SkillProgression Id="UnnamedThrowingDagger1" UnlockedAtDay="8"/>
+
+         <SkillProgression Id="UnnamedThrowingDagger2" UnlockedAtDay="12"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   
+
+   <EnemyUnitTemplateDefinition Id="UnnamedCrossbow">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Unnamed"/>
+
+      <MoveSoundFolderName Value="Unnamed"/>
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+
+
+      <HealthTotal>10</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>3</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Accuracy>0</Accuracy>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>0</StunResistance>
+
+      <DamageSkillId>UnnamedPiercingBolt</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>UnnamedPiercingBolt</SkillToDisplay>
+
+         <SkillToDisplay>UnnamedExplosiveBolt</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="2"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>50</ThinkingScope>
+
+         <GoalsComputingOrder Value="-80"/>
+
+         <Goals>
+
+            <Goal Id="01_UnnamedPiercingBolt">
+
+               <SkillId Value="UnnamedPiercingBolt"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <FarthestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="02_UnnamedExplosiveBolt">
+
+               <SkillId Value="UnnamedExplosiveBolt"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <FarthestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="03_UnnamedExplosiveBolt">
+
+               <SkillId Value="UnnamedExplosiveBolt"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <ClosestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <IsInvulnerable/>
+
+      <HideInNightReport/>
+
+
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">15</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="5">4</StatProgression>
+
+      </StatsProgressions>
+
+	  
+
+	  <SpawnCutscene Id="UnnamedSpawn"/>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   
+
+   <EnemyUnitTemplateDefinition Id="UnnamedShortbow">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Unnamed"/>
+
+      <MoveSoundFolderName Value="Unnamed"/>
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+
+
+      <HealthTotal>10</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>3</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Accuracy>0</Accuracy>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>0</StunResistance>
+
+      <DamageSkillId>UnnamedPreciseMaiming</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>UnnamedPreciseMaiming</SkillToDisplay>
+
+         <SkillToDisplay>UnnamedPowerShot</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="2"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>50</ThinkingScope>
+
+         <GoalsComputingOrder Value="-70"/>
+
+         <Goals>
+
+            <Goal Id="01_UnnamedPowerShot">
+
+               <SkillId Value="UnnamedPowerShot"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="3"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <FarthestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="02_UnnamedPreciseMaiming">
+
+               <SkillId Value="UnnamedPreciseMaiming"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <FarthestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="03_UnnamedPowerShot">
+
+               <SkillId Value="UnnamedPowerShot"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <FarthestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="04_UnnamedPowerShot">
+
+               <SkillId Value="UnnamedPowerShot"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <ClosestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <IsInvulnerable/>
+
+      <HideInNightReport/>
+
+
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">15</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="5">3</StatProgression>
+
+      </StatsProgressions>
+
+	  
+
+	  <SpawnCutscene Id="UnnamedSpawn"/>
+
+	  
+
+      <SkillProgressions>
+
+         <SkillProgression Id="UnnamedPreciseMaiming1" UnlockedAtDay="8"/>
+
+         <SkillProgression Id="UnnamedPreciseMaiming2" UnlockedAtDay="12"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+   
+
+
+
+   <EnemyUnitTemplateDefinition Id="UnnamedWand">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Unnamed"/>
+
+      <MoveSoundFolderName Value="Unnamed"/>
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+
+
+      <HealthTotal>10</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>3</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Accuracy>0</Accuracy>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>0</StunResistance>
+
+      <DamageSkillId>UnnamedDamocles</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>UnnamedDamocles</SkillToDisplay>
+
+         <SkillToDisplay>UnnamedTransfer</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="2"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>50</ThinkingScope>
+
+         <GoalsComputingOrder Value="-60"/>
+
+         <Goals>
+
+            <Goal Id="01_UnnamedTransfer">
+
+               <SkillId Value="UnnamedTransfer"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <DamageableCountInAoeCondition Min="1">
+
+                              <DamageableTypeToCount>Enemy</DamageableTypeToCount>
+
+                           </DamageableCountInAoeCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Enemy</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <FarthestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="02_UnnamedDamocles">
+
+               <SkillId Value="UnnamedDamocles"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <FarthestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="03_UnnamedDamocles">
+
+               <SkillId Value="UnnamedDamocles"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <ClosestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <IsInvulnerable/>
+
+      <HideInNightReport/>
+
+
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">15</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="5">4</StatProgression>
+
+      </StatsProgressions>
+
+
+
+	  <SpawnCutscene Id="UnnamedSpawn"/>
+
+
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   
+
+   <EnemyUnitTemplateDefinition Id="UnnamedTome">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Unnamed"/>
+
+      <MoveSoundFolderName Value="Unnamed"/>
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+
+
+      <HealthTotal>10</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>3</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Accuracy>0</Accuracy>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>0</StunResistance>
+
+      <DamageSkillId>UnnamedShadowBolt</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>UnnamedShadowBolt</SkillToDisplay>
+
+         <SkillToDisplay>UnnamedWeakeningTouch</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="2"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>50</ThinkingScope>
+
+         <GoalsComputingOrder Value="-70"/>
+
+         <Goals>
+
+            <Goal Id="01_UnnamedWeakeningTouch">
+
+               <SkillId Value="UnnamedWeakeningTouch"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <FarthestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="02_UnnamedShadowBolt">
+
+               <SkillId Value="UnnamedShadowBolt"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <FarthestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="03_UnnamedShadowBolt">
+
+               <SkillId Value="UnnamedShadowBolt"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <ClosestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <IsInvulnerable/>
+
+      <HideInNightReport/>
+
+
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">15</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="5">4</StatProgression>
+
+      </StatsProgressions>
+
+	  
+
+	  <SpawnCutscene Id="UnnamedSpawn"/>
+
+
+
+      <SkillProgressions>
+
+         <SkillProgression Id="UnnamedShadowBolt1" UnlockedAtDay="8"/>
+
+         <SkillProgression Id="UnnamedShadowBolt2" UnlockedAtDay="12"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+   
+
+   
+
+   <!--Unnamed Sledgehammer-->
+
+
+
+   <EnemyUnitTemplateDefinition Id="UnnamedSledgehammer">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Unnamed"/>
+
+      <MoveSoundFolderName Value="Unnamed"/>
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+
+
+      <HealthTotal>10</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>4</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Accuracy>30</Accuracy>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>0</StunResistance>
+
+      <DamageSkillId>UnnamedStunningStrike</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>UnnamedStunningStrike</SkillToDisplay>
+
+         <SkillToDisplay>UnnamedGroundStomp</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="2"/>
+
+      <MoveSpeed>5</MoveSpeed>
+
+
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>30</ThinkingScope>
+
+         <GoalsComputingOrder Value="-90"/>
+
+         <Goals>
+
+
+
+            <Goal Id="01_UnnamedStunningStrike">
+
+               <SkillId Value="UnnamedStunningStrike"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <ClosestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="02_UnnamedGroundStomp">
+
+               <SkillId Value="UnnamedGroundStomp"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <ClosestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="03_UnnamedStunningStrike">
+
+               <SkillId Value="UnnamedStunningStrike"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <ClosestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+	  <SpawnCutscene Id="UnnamedSpawnBoss"/>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <IsInvulnerable/>
+
+      <HideInNightReport/>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   
+
+   <!--Unnamed Longbow-->
+
+
+
+   <EnemyUnitTemplateDefinition Id="UnnamedLongbow">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Unnamed"/>
+
+      <MoveSoundFolderName Value="Unnamed"/>
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+
+
+      <HealthTotal>10</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>3</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Accuracy>30</Accuracy>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>0</StunResistance>
+
+      <DamageSkillId>UnnamedSnipeShot</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>UnnamedSnipeShot</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>500</ThinkingScope>
+
+         <GoalsComputingOrder Value="-70"/>
+
+         <Goals>
+
+            <Goal Id="01_UnnamedSnipeShot">
+
+               <SkillId Value="UnnamedSnipeShot"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <FarthestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="02_UnnamedSnipeShot">
+
+               <SkillId Value="UnnamedSnipeShot"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SpecialDefenses"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <FarthestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="02_UnnamedSnipeShot">
+
+               <SkillId Value="UnnamedSnipeShot"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="WallsExceptBarricade"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <FarthestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+	  <SpawnCutscene Id="UnnamedSpawnBoss"/>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <IsInvulnerable/>
+
+      <HideInNightReport/>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   
+
+   <!--Unnamed Druidic-->
+
+
+
+   <EnemyUnitTemplateDefinition Id="UnnamedDruidic">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Unnamed"/>
+
+      <MoveSoundFolderName Value="Unnamed"/>
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+
+
+      <HealthTotal>10</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>3</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Accuracy>30</Accuracy>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>0</StunResistance>
+
+      <DamageSkillId>UnnamedExtremeEntangle</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>UnnamedExtremeEntangle</SkillToDisplay>
+
+         <SkillToDisplay>UnnamedAcidSpray</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>50</ThinkingScope>
+
+         <GoalsComputingOrder Value="-80"/>
+
+         <Goals>
+
+
+
+            <Goal Id="01_UnnamedExtremeEntangle">
+
+               <SkillId Value="UnnamedExtremeEntangle"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Playable</DamageableType>
+
+                  </Optimal>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <FarthestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="02_UnnamedAcidSpray">
+
+               <SkillId Value="UnnamedAcidSpray"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <DamageableCountInAoeCondition Min="1">
+
+                              <DamageableTypeToCount>Enemy</DamageableTypeToCount>
+
+                           </DamageableCountInAoeCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Enemy</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <FarthestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="03_UnnamedExtremeEntangle">
+
+               <SkillId Value="UnnamedExtremeEntangle"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <ClosestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+         </Goals>
+
+      </Behavior>
+
+	  
+
+	  <SpawnCutscene Id="UnnamedSpawnBoss"/>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <IsInvulnerable/>
+
+      <HideInNightReport/>
+
+   </EnemyUnitTemplateDefinition>
+
+   
+
+   
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- SCHADEN & FREUDE (GLINTFEIN) -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <!-- Singularities -->
+
+   
+
+   <EnemyUnitTemplateDefinition Id="DamnedBomb">
+
+      <AvoidAutoTargeting Value="true"/>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="DamnedBomb"/>
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>100</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Accuracy>0</Accuracy>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>0</StunResistance>
+
+      <DamageSkillId>DamnedBombAttack</DamageSkillId>
+
+      <ZoneControlSkill>DamnedBombAttack</ZoneControlSkill>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>DamnedBombAttack</SkillToDisplay>
+
+         <!--<SkillToDisplay>DamnedBombAttackOnDeath</SkillToDisplay>-->
+
+         <SkillToDisplay>DamnedBombDecay</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+      
+
+      <Affixes>
+
+         <Affix Id="BarrierAll"/>
+
+         <Affix Id="HigherPlane"/>
+
+      </Affixes>
+
+
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <ThinkingScope>30</ThinkingScope>
+
+         <GoalsComputingOrder Value="-1000"/>
+
+         <Goals>
+
+            <Goal Id="01_DamnedBombAttack">
+
+               <SkillId Value="DamnedBombAttack"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <DamageableAroundCondition DamageableType="Playable" MinAmount="1" MinRange="1" MaxRange="3"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="02_DamnedBombDecay">
+
+               <SkillId Value="DamnedBombDecay"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <InterpretedTurnCondition>SpawnedHour + 4</InterpretedTurnCondition>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="03_DamnedBombAttackOnDeath" GoalComputingStep="OnDeath">
+
+               <SkillId Value="DamnedBombAttackOnDeath"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <SkillProgressions>
+
+         <SkillProgression Id="DamnedBombAttack1" UnlockedAtDay="4"/>
+
+         <SkillProgression Id="DamnedBombAttack2" UnlockedAtDay="6"/>
+
+
+
+         <SkillProgression Id="DamnedBombAttackOnDeath1" UnlockedAtDay="4"/>
+
+         <SkillProgression Id="DamnedBombAttackOnDeath2" UnlockedAtDay="6"/>
+
+      </SkillProgressions>
+
+
+
+      <HideInNightReport/>
+
+      <SpawnCutscene Id="DamnedBombSpawn"/>
+
+      <LockedOrientation>South</LockedOrientation>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   
+
+   <EnemyUnitTemplateDefinition Id="MovingDamnedBomb">
+
+      <AvoidAutoTargeting Value="true"/>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="MovingDamnedBomb"/>
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>100</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>3</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Accuracy>0</Accuracy>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>0</StunResistance>
+
+      <DamageSkillId>DamnedBombAttack</DamageSkillId>
+
+      <ZoneControlSkill>DamnedBombAttack</ZoneControlSkill>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>DamnedBombAttack</SkillToDisplay>
+
+         <!--<SkillToDisplay>DamnedBombAttackOnDeath</SkillToDisplay>-->
+
+         <SkillToDisplay>MovingDamnedBombDecay</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+      
+
+      <Affixes>
+
+         <Affix Id="BarrierAll"/>
+
+         <Affix Id="HigherPlane"/>
+
+      </Affixes>
+
+
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <ThinkingScope>30</ThinkingScope>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <GoalsComputingOrder Value="-1000"/>
+
+         <Goals>
+
+            <Goal Id="01_DamnedBombAttack">
+
+               <SkillId Value="DamnedBombAttack"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <DamageableAroundCondition DamageableType="Playable" MinAmount="1" MinRange="1" MaxRange="3"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--This goal is only used to allow MovingDamnedBomb to follow playable units-->
+
+            <Goal Id="02_ClawerAttack">
+
+               <SkillId Value="ClawerAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="03_MovingDamnedBombDecay">
+
+               <SkillId Value="MovingDamnedBombDecay"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <InterpretedTurnCondition>SpawnedHour + 4</InterpretedTurnCondition>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="04_DamnedBombAttackOnDeath" GoalComputingStep="OnDeath">
+
+               <SkillId Value="DamnedBombAttackOnDeath"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <SkillProgressions>
+
+         <SkillProgression Id="DamnedBombAttack1" UnlockedAtDay="4"/>
+
+         <SkillProgression Id="DamnedBombAttack2" UnlockedAtDay="6"/>
+
+
+
+         <SkillProgression Id="DamnedBombAttackOnDeath1" UnlockedAtDay="4"/>
+
+         <SkillProgression Id="DamnedBombAttackOnDeath2" UnlockedAtDay="6"/>
+
+      </SkillProgressions>
+
+      
+
+      <HideInNightReport/>
+
+      <SpawnCutscene Id="MovingDamnedBombSpawn"/>
+
+      <LockedOrientation>South</LockedOrientation>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   
+
+   <!-- Weapons -->
+
+
+
+   <EnemyUnitTemplateDefinition Id="ShadowScythe">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="ShadowScythe"/>
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>10</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Accuracy>20</Accuracy>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>0</StunResistance>
+
+      <DamageSkillId>ShadowScytheZoneAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>ShadowScytheZoneAttack</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+         <GoalsComputingOrder Value="-1000"/>
+
+         <Goals>
+
+            <Goal Id="01_ShadowScytheZoneAttack">
+
+               <SkillId Value="ShadowScytheZoneAttack"/>
+
+               <TargetTypes>
+
+                  <Tile>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <DamageableCountInAoeCondition Min="1">
+
+                              <DamageableTypeToCount>Playable</DamageableTypeToCount>
+
+                           </DamageableCountInAoeCondition>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="10"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Tile>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="10">Playable</DamageableType>
+
+                     <DamageableType Weight="1">Building</DamageableType>
+
+                     <DamageableType Weight="-1">Enemy</DamageableType>
+
+                     <DamageableType Weight="-1">Boss</DamageableType>
+
+                  </Optimal>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="02_ShadowScytheZoneAttack">
+
+               <SkillId Value="ShadowScytheZoneAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="10">Playable</DamageableType>
+
+                     <DamageableType Weight="1">Building</DamageableType>
+
+                     <DamageableType Weight="-1">Enemy</DamageableType>
+
+                     <DamageableType Weight="-1">Boss</DamageableType>
+
+                  </Optimal>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <IsInvulnerable/>
+
+      <HideInNightReport/>
+
+      <SpawnCutscene Id="ShadowScytheSpawn"/>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   
+
+   <EnemyUnitTemplateDefinition Id="ShiningSword">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="ShiningSword"/>
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>10</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Accuracy>20</Accuracy>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>0</StunResistance>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>ShiningSwordOffenseBuff</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+         <GoalsComputingOrder Value="-1000"/>
+
+         <Goals>
+
+            <Goal Id="01_ShiningSwordOffenseBuff">
+
+               <SkillId Value="ShiningSwordOffenseBuff"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="T1Enemies"/>
+
+                              <TargetsListId Value="T2Enemies"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      
+
+      <Injuries>
+
+      </Injuries>
+
+      <SpawnCutscene Id="ShiningSwordSpawn"/>
+
+      <IsInvulnerable/>
+
+      <HideInNightReport/>
+
+   </EnemyUnitTemplateDefinition>
+
+   
+
+   
+
+	<!-- ███████████████████████████████████████████████████████████████ -->
+
+	<!-- ███████████████████████████████████████████████████████████████ -->
+
+	<!-- GILDENBERGDREDUX -->
+
+	<!-- ███████████████████████████████████████████████████████████████ -->
+
+	<!-- ███████████████████████████████████████████████████████████████ -->
+
+   
+
+	<EnemyUnitTemplateDefinition Id="HarplingVariation" TemplateId="Harpling" UseTemplateAssets="true">
+
+		<ExperienceGain>30</ExperienceGain>
+
+
+
+		<StatsProgressions>
+
+			<StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">22</StatProgression>
+
+			<StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">8</StatProgression>
+
+			<StatProgression Id="Resistance" Delay="3" IncreaseEveryXDay="5">10</StatProgression>
+
+			<StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">40</StatProgression>
+
+			<StatProgression Id="MovePointsTotal" Delay="8" IncreaseEveryXDay="3">1</StatProgression>
+
+		</StatsProgressions>
+
+		
+
+	</EnemyUnitTemplateDefinition>
+
+
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- GLENWALDREDUX -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <EnemyUnitTemplateDefinition Id="SupportCocoonVariation" TemplateId="SupportCocoon">
+
+      <ExperienceGain>5</ExperienceGain>
+
+
+
+      <StatsProgressions>
+
+         <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">4</StatProgression>
+
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">27</StatProgression>
+
+      </StatsProgressions>
+
+
+
+      <SpawnCutscene Id="CocoonSpawn"/>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   <EnemyUnitTemplateDefinition Id="KillerCocoonVariation" TemplateId="KillerCocoon">
+
+      <ExperienceGain>5</ExperienceGain>
+
+
+
+      <StatsProgressions>
+
+			<StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">8</StatProgression>
+
+			<StatProgression Id="Resistance" Delay="3" IncreaseEveryXDay="5">10</StatProgression>
+
+			<StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">40</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="0" IncreaseEveryXDay="2">5</StatProgression>
+
+      </StatsProgressions>
+
+
+
+      <SpawnCutscene Id="CocoonSpawn2"/>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   <EnemyUnitTemplateDefinition Id="SpawnerCocoonVariation" TemplateId="SpawnerCocoon">
+
+      <ExperienceGain>5</ExperienceGain>
+
+      
+
+      <StatsProgressions>
+
+			<StatProgression Id="Resistance" Delay="3" IncreaseEveryXDay="5">10</StatProgression>
+
+			<StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">45</StatProgression>
+
+      </StatsProgressions>
+
+
+
+      <SpawnCutscene Id="CocoonSpawn3"/>
+
+   </EnemyUnitTemplateDefinition>
+
+   
+
+   
+
+   <!-- Allied ghosts -->
+
+   
+
+   <EnemyUnitTemplateDefinition Id="AlliedUnnamedHammer" TemplateId="UnnamedHammer" UseTemplateAssets="true">
+
+      <IsAnAlly>true</IsAnAlly>
+
+
+
+      <MovePointsTotal>6</MovePointsTotal>
+
+      
+
+      <DamageSkillId>UnnamedStunningBash_Allied</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>UnnamedStunningBash_Allied</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      
+
+      <Behavior>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>30</ThinkingScope>
+
+         <GoalsComputingOrder Value="0"/>
+
+         <Goals>
+
+            <Goal Id="01_UnnamedStunningBash">
+
+               <SkillId Value="UnnamedStunningBash_Allied"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="AlliedGhosts"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <ClosestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+            
+
+         </Goals>
+
+      </Behavior>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   <EnemyUnitTemplateDefinition Id="AlliedUnnamedCrossbow" TemplateId="UnnamedCrossbow" UseTemplateAssets="true">
+
+      <IsAnAlly>true</IsAnAlly>
+
+
+
+      <MovePointsTotal>5</MovePointsTotal>
+
+      
+
+      <DamageSkillId>UnnamedExplosiveBolt_Allied</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>UnnamedExplosiveBolt_Allied</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      
+
+      <Behavior>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>50</ThinkingScope>
+
+         <GoalsComputingOrder Value="0"/>
+
+         <Goals>
+
+
+
+            <Goal Id="01_UnnamedExplosiveBolt">
+
+               <SkillId Value="UnnamedExplosiveBolt_Allied"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="AlliedGhosts"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="10">Enemy</DamageableType>
+
+                     <DamageableType Weight="10">Boss</DamageableType>
+
+                     <DamageableType Weight="-100">Playable</DamageableType>
+
+                     <DamageableType Weight="-100">Building</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <Standard/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+            
+
+         </Goals>
+
+      </Behavior>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   <EnemyUnitTemplateDefinition Id="AlliedUnnamedWand" TemplateId="UnnamedWand" UseTemplateAssets="true">
+
+      <IsAnAlly>true</IsAnAlly>
+
+
+
+      <MovePointsTotal>5</MovePointsTotal>
+
+      
+
+      <DamageSkillId>UnnamedTransfer_Allied</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>UnnamedTransfer_Allied</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+
+
+      <Behavior>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>50</ThinkingScope>
+
+         <GoalsComputingOrder Value="0"/>
+
+         <Goals>
+
+            
+
+            <Goal Id="01_UnnamedTransfer">
+
+               <SkillId Value="UnnamedTransfer_Allied"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <FarthestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="02_UnnamedTransfer_Far">
+
+               <SkillId Value="UnnamedTransfer_Allied"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Farthest/>
+
+               </TargetingMethod>
+
+               <PositioningMethod>
+
+                  <FarthestTile/>
+
+               </PositioningMethod>
+
+            </Goal>
+
+            
+
+         </Goals>
+
+      </Behavior>
+
+
+
+   </EnemyUnitTemplateDefinition>
+
+   
+
+</EnemyUnitTemplateDefinitions>
+

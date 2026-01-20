@@ -1,0 +1,1950 @@
+<EnemyUnitTemplateDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+                              xsi:noNamespaceSchemaLocation="EnemyUnitTemplateDefinitions.xsd">
+
+
+
+   <EnemyUnitTemplateDefinition Id="Shieldman">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Shieldman"/>
+
+      <MoveSoundFolderName Value="Shieldman"/>
+
+      <Tier>3</Tier>
+
+      <Weight>5</Weight>
+
+      <HealthTotal>200</HealthTotal>
+
+      <MovePointsTotal>4</MovePointsTotal>
+
+      <Block>50</Block>
+
+      <Dodge>4</Dodge>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>50</StunResistance>
+
+      <Accuracy>0</Accuracy>
+
+      <DamageSkillId>ShieldmanAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>ShieldmanAttack</SkillToDisplay>
+
+         <SkillToDisplay>ShieldmanBuffSingle</SkillToDisplay>
+
+         <SkillToDisplay>ShieldmanBuffZone</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>30</ExperienceGain>
+
+      <DamnedSoulsEarned>15</DamnedSoulsEarned>
+
+      <Panic Value="3"/>
+
+      <!--Behavior Shieldman : oriented buff single and block-->
+
+      <Behavior>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>100</ThinkingScope>
+
+         <GoalsComputingOrder Value="100"/>
+
+         <Goals>
+
+            <!--buff tier 3 and tier 4 enemies when in range / cooldown : 1 to avoid spamming the same enemy-->
+
+            <Goal Id="01_ShieldmanBuffSingle">
+
+               <SkillId Value="ShieldmanBuffSingle"/>
+
+               <Cooldown Value="1"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="ShieldmanBuffHighPriorityTargets"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Min="1" Max="MovePoints"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Attack magic circle, this goal is here mainly to move the shieldman the same way as the crowd does-->
+
+            <Goal Id="02_ShieldmanAttack">
+
+               <SkillId Value="ShieldmanAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!--<FirstTarget/>-->
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--When finishing his movement if there is a least 3 enemies in his range he will buff them-->
+
+            <Goal Id="03_ShieldmanBuffZone">
+
+               <SkillId Value="ShieldmanBuffZone"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition/>
+
+                  </ConditionsGroup>
+
+                  <ConditionsGroup>
+
+                     <DamageableAroundCondition DamageableType="Enemy" MinAmount="3" MinRange="1" MaxRange="2"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Attack heroes if he finishes his movement by accident next to one-->
+
+            <Goal Id="04_ShieldmanAttack">
+
+               <SkillId Value="ShieldmanAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Attack buildings if he finishes his movement by accident next to one-->
+
+            <Goal Id="05_ShieldmanAttack">
+
+               <SkillId Value="ShieldmanAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--If there is nothing else to do, buff a random enemy within a range of 5-->
+
+            <Goal Id="06_ShieldmanBuffSingle">
+
+               <SkillId Value="ShieldmanBuffSingle"/>
+
+               <Cooldown Value="1"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="ShieldmanBuffLowPriorityTargets"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Min="1" Max="MovePoints"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.8</BaseRatio>
+
+            <RatioMultiplier>0.48</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+               <StatModifier Id="Block" Multiplier="ThreeQuarter"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.4</BaseRatio>
+
+            <RatioMultiplier>0.16</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
+
+               <StatModifier Id="Block" Multiplier="Half"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+      </Injuries>
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">22</StatProgression>
+
+         <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">4</StatProgression>
+
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">40</StatProgression>
+
+         <StatProgression Id="MovePointsTotal" Delay="8" IncreaseEveryXDay="6">1</StatProgression>
+
+         <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">6</StatProgression>
+
+         <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">10</StatProgression>
+
+      </StatsProgressions>
+
+      <SkillProgressions>
+
+         <SkillProgression Id="ShieldmanBuffSingle1" UnlockedAtDay="8"/>
+
+         <SkillProgression Id="ShieldmanBuffSingle2" UnlockedAtDay="11"/>
+
+         <SkillProgression Id="ShieldmanBuffZone1" UnlockedAtDay="8"/>
+
+         <SkillProgression Id="ShieldmanBuffZone2" UnlockedAtDay="11"/>
+
+         <SkillProgression Id="ApocShieldmanBuffZone" ApocalypseFlagUnlock="SuperEnemies"/>
+
+         <SkillProgression Id="ApocShieldmanBuffZone1" ApocalypseFlagUnlock="SuperEnemies" UnlockedAtDay="8"/>
+
+         <SkillProgression Id="ApocShieldmanBuffZone2" ApocalypseFlagUnlock="SuperEnemies" UnlockedAtDay="11"/>
+
+         <!--<SkillProgression Id="ApocShieldmanAttack" ApocalypseFlagUnlock="SuperEnemies"/>-->
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+   
+
+
+
+   <EnemyUnitTemplateDefinition Id="Boomer">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Boomer"/>
+
+      <MoveSoundFolderName Value="Boomer"/>
+
+      <Tier>3</Tier>
+
+      <Weight>5</Weight>
+
+      <HealthTotal>450</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>4</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Resistance>35</Resistance>
+
+      <StunResistance>50</StunResistance>
+
+      <Accuracy>0</Accuracy>
+
+      <DamageSkillId>BoomerAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>BoomerAttack</SkillToDisplay>
+
+         <SkillToDisplay>BoomerAttackOnDeath</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>30</ExperienceGain>
+
+      <DamnedSoulsEarned>16</DamnedSoulsEarned>
+
+      <Panic Value="5"/>
+
+      <!--Main idea: explode on a building with a preference for town building and not defenses-->
+
+      <Behavior>
+
+         <ThinkingScope>100</ThinkingScope>
+
+         <Goals>
+
+            <!-- Attack buildings: everything but the walls -->
+
+            <Goal Id="01_BoomerAttack">
+
+               <SkillId Value="BoomerAttack"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition NbTurns="1"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="Walls"/>
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                              <TargetsListId Value="EnemiesDamagableObstacles"/>
+
+                              <TargetsListId Value="BonePiles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <InterruptionCondition>
+
+                  <AdjacentToPlayableUnit/>
+
+                  <AdjacentToWall/>
+
+               </InterruptionCondition>
+
+            </Goal>
+
+            <!--Attack MagicCircle-->
+
+            <Goal Id="02_BoomerAttack">
+
+               <SkillId Value="BoomerAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!--<FirstTarget/>-->
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <!-- Default target -->
+
+            </Goal>
+
+            <!-- Attack a hero if he finishes his movement next to one  -->
+
+            <Goal Id="03_BoomerAttack">
+
+               <SkillId Value="BoomerAttack"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition NbTurns="1"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Attack a wall if he finishes his movement next to one or Boss Building  -->
+
+            <Goal Id="04_BoomerAttack">
+
+               <SkillId Value="BoomerAttack"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition NbTurns="1"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="WallsExceptBarricade"/>
+
+                              
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- OnDeath -->
+
+            <Goal Id="05_BoomerAttackOnDeath" GoalComputingStep="OnDeath">
+
+               <SkillId Value="BoomerAttackOnDeath"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.65</BaseRatio>
+
+            <RatioMultiplier>0.39</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.2</BaseRatio>
+
+            <RatioMultiplier>0.08</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
+
+            </StatModifiers>
+
+            <Buff>
+
+               <Stat Id="OverallDamage"/>
+
+               <Bonus>30</Bonus>
+
+               <TurnsCount>2</TurnsCount>
+
+            </Buff>
+
+         </Injury>
+
+      </Injuries>
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">22</StatProgression>
+
+         <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">3</StatProgression>
+
+         <StatProgression Id="Resistance" Delay="2" IncreaseEveryXDay="3">5</StatProgression>
+
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">90</StatProgression>
+
+         <StatProgression Id="MovePointsTotal" Delay="8" IncreaseEveryXDay="6">1</StatProgression>        
+
+      </StatsProgressions>
+
+      <SkillProgressions>
+
+         <SkillProgression Id="ApocBoomerAttack" ApocalypseFlagUnlock="SuperEnemies"/>
+
+         <SkillProgression Id="ApocBoomerAttackOnDeath" ApocalypseFlagUnlock="SuperEnemies"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+   
+
+
+
+   <EnemyUnitTemplateDefinition Id="SpeedyClawer">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="SpeedyClawer"/>
+
+      <MoveSoundFolderName Value="SpeedyClawer"/>
+
+      <Tier>3</Tier>
+
+      <Weight>5</Weight>
+
+      <HealthTotal>210</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>7</MovePointsTotal>
+
+      <ArmorTotal>30</ArmorTotal>
+
+      <Block>0</Block>
+
+      <Dodge>24</Dodge>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>50</StunResistance>
+
+      <Accuracy>-20</Accuracy>
+
+      <DamageSkillId>SpeedyAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>SpeedyAttack</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>25</ExperienceGain>
+
+      <DamnedSoulsEarned>16</DamnedSoulsEarned>
+
+      <Panic Value="4"/>
+
+      <MoveSpeed>10</MoveSpeed>
+
+      <Behavior>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+         <!--Main idea: attack the magic circle by avoiding every obstacle-->
+
+         <Goals>
+
+            <!-- Attack MagicCircle -->
+
+            <Goal Id="01_SpeedyAttack">
+
+               <SkillId Value="SpeedyAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!--<FirstTarget/>-->
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Attack Heroes if he finishes his movement next to one -->
+
+            <Goal Id="02_SpeedyAttack">
+
+               <SkillId Value="SpeedyAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Attack Building if he finishes his movement next to one -->
+
+            <Goal Id="03_SpeedyAttack">
+
+               <SkillId Value="SpeedyAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.8</BaseRatio>
+
+            <RatioMultiplier>0.48</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+               <StatModifier Id="Dodge" Multiplier="ThreeQuarter"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.4</BaseRatio>
+
+            <RatioMultiplier>0.16</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
+
+               <StatModifier Id="Dodge" Multiplier="Half"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+      </Injuries>
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">22</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="3" IncreaseEveryXDay="2" MaxIncreases="4">5</StatProgression>
+
+         <StatProgression Id="Dodge" Delay="2" IncreaseEveryXDay="3">8</StatProgression>
+
+         <StatProgression Id="ArmorTotal" Delay="1" IncreaseEveryXDay="2">19</StatProgression>
+
+         <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">6</StatProgression>
+
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">42</StatProgression>
+
+         <StatProgression Id="MovePointsTotal" Delay="5" IncreaseEveryXDay="3">1</StatProgression>
+
+      </StatsProgressions>
+
+      <SkillProgressions>
+
+         <SkillProgression Id="ApocSpeedyAttack" ApocalypseFlagUnlock="SuperEnemies"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+   
+
+
+
+   <EnemyUnitTemplateDefinition Id="Armored">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Armored"/>
+
+      <MoveSoundFolderName Value="Armored"/>
+
+      <Tier>3</Tier>
+
+      <Weight>5</Weight>
+
+      <HealthTotal>135</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>4</MovePointsTotal>
+
+      <ArmorTotal>350</ArmorTotal>
+
+      <Block>0</Block>
+
+      <Dodge>4</Dodge>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>50</StunResistance>
+
+      <Accuracy>-10</Accuracy>
+
+      <DamageSkillId>ArmoredAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>ArmoredAttack</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>25</ExperienceGain>
+
+      <DamnedSoulsEarned>14</DamnedSoulsEarned>
+
+      <Panic Value="4"/>
+
+      <!--Main idea: Strong armor, low hp, attack with a small range.
+
+      His primary goal is to attack the magic circle but he snaps on defenses.
+
+      His attack has a bit of range (3 tiles) so he can hit from behind his allies!
+
+      He's also more aggro towards the Heroes than the Clawers-->
+
+      <Behavior>
+
+         <ThinkingScope>100</ThinkingScope>
+
+         <Goals>
+
+            <!-- Attack Heroes: aggro within 4 tiles-->
+
+            <Goal Id="01_ArmoredAttack">
+
+               <SkillId Value="ArmoredAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="Clamp(MovePoints,4,8)"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Attack Buildings: aggro within 2 tiles except obstacles (for now we aggregated Walls and other buildings since we don't care what they attack)-->
+
+            <Goal Id="02_ArmoredAttack">
+
+               <SkillId Value="ArmoredAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="2"/>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                              <TargetsListId Value="EnemiesDamagableObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Attack MagicCircle: default behaviour to move towards the center-->
+
+            <Goal Id="03_ArmoredAttack">
+
+               <SkillId Value="ArmoredAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!--<FirstTarget/>-->
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="04_ArmoredAttack">
+
+               <!--Default attack : should never be picked as "intention", but rather as default if the enemy "ends up" next to something to attack with nothing better to do -->
+
+               <SkillId Value="ArmoredAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.8</BaseRatio>
+
+            <RatioMultiplier>0.48</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+               <StatModifier Id="ArmorTotal" Multiplier="ThreeQuarter"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.4</BaseRatio>
+
+            <RatioMultiplier>0.16</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
+
+               <StatModifier Id="ArmorTotal" Multiplier="Half"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+      </Injuries>
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">22</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="4">5</StatProgression>
+
+         <StatProgression Id="ArmorTotal" Delay="0" IncreaseEveryXDay="2">70</StatProgression>
+
+         <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">4</StatProgression>
+
+         <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">6</StatProgression>
+
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">27</StatProgression>
+
+         <StatProgression Id="MovePointsTotal" Delay="6" IncreaseEveryXDay="6">1</StatProgression>
+
+      </StatsProgressions>
+
+      <SkillProgressions>
+
+         <SkillProgression Id="ApocArmoredAttack" ApocalypseFlagUnlock="SuperEnemies"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   
+
+   <EnemyUnitTemplateDefinition Id="Bloody">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Bloody"/>
+
+      <MoveSoundFolderName Value="Bloody"/>
+
+      <Tier>3</Tier>
+
+      <Weight>5</Weight>
+
+      <HealthTotal>540</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>5</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>6</Dodge>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>50</StunResistance>
+
+      <Accuracy>20</Accuracy>
+
+      <DamageSkillId>BloodyAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>BloodyAttack</SkillToDisplay>
+
+         <SkillToDisplay>BloodyEatFriend</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>30</ExperienceGain>
+
+      <DamnedSoulsEarned>15</DamnedSoulsEarned>
+
+      <Panic Value="4"/>
+
+      <!--Main idea: Heroes hunter, melee.
+
+      His primary goal is to attack the heroes, eventhough he still has a default behaviour targeting the magicCircle in order to move towards the center when "idle".
+
+      Aggroed by Heroes from a big range, to "start the hunt". Also, more interested in low health heroes-->
+
+      <Behavior>
+
+         <ThinkingScope>800</ThinkingScope>
+
+         <GoalsComputingOrder Value="-100"/>
+
+         <!-- Needs to compute after Clawers, so that he can go eat them after they moved-->
+
+         <!--
+
+         <GoalsComputingOrder Value="100"/>-->
+
+         <Goals>
+
+            <!-- Eat Clawer when injured (<75% Health): attack clawer in range to buff self!
+
+            Sad note: Can't do that because we don't have skill effects that regen, only skill actions (and thus we can't target/damage a clawer with it)-->
+
+            <!--<Goal Id="00_BloodyEatFriend">
+
+               <SkillId Value="BloodyEatFriend"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <CasterHealthCondition Max="75"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetId Value="Clawer"/>
+
+                           </TargetIdCondition>
+
+                           <TargetInRangeCondition Max="5"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>-->
+
+            <!-- Attack low health Heroes: aggro closest <50% Health within 12 tiles-->
+
+            <Goal Id="01_BloodyAttack">
+
+               <SkillId Value="BloodyAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="12"/>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetHealthCondition Max="0.75"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!-- Target the one with the lowest Health -->
+
+                  <Score Value="1/TargetHealth"/>
+
+                  <!-- Is it possible to have "LowestHp"? Or at least some interpreted method to get their health? -->
+
+                  <!-- Meanwhile we just go to the closest -->
+
+                  <!--<Closest/>-->
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Attack Heroes: aggro closest within 8 tiles-->
+
+            <Goal Id="02_BloodyAttack">
+
+               <SkillId Value="BloodyAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="12"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Attack MagicCircle: default goal-->
+
+            <Goal Id="03_BloodyAttack">
+
+               <SkillId Value="BloodyAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!--<FirstTarget/>-->
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Eat T1 ally: no aggro, kill any T1 unit in melee range after moving to buff self! -->
+
+            <!-- POTENTIAL IDEA: make them actively go for that goal, but only targeting low hp T1 => this way the player can potentially actively prevent it -->
+
+            <Goal Id="04_BloodyEatFriend">
+
+               <SkillId Value="BloodyEatFriend"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIsNotEliteCondition/>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetId Value="Clawer"/>
+
+                              <TargetId Value="FasterClawer"/>
+
+                              <TargetId Value="Plated"/>
+
+                              <TargetId Value="DodgyClawer"/>
+
+                              <TargetId Value="Blocker"/>
+
+                              <TargetId Value="ResistClawer"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Default attack : should never be picked as "intention", but rather as default if the enemy "ends up" next to something to attack with nothing better to do -->
+
+            <Goal Id="05_BloodyAttack">
+
+               <SkillId Value="BloodyAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.7</BaseRatio>
+
+            <RatioMultiplier>0.42</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.3</BaseRatio>
+
+            <RatioMultiplier>0.12</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
+
+               <StatModifier Id="InjuryDamageMultiplier" Offset="-30"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+      </Injuries>
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">22</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="3" IncreaseEveryXDay="1" MaxIncreases="10">5</StatProgression>
+
+         <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">6</StatProgression>
+
+         <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">6</StatProgression>
+
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">108</StatProgression>
+
+         <StatProgression Id="MovePointsTotal" Delay="8" IncreaseEveryXDay="6">1</StatProgression>
+
+      </StatsProgressions>
+
+      <SkillProgressions>
+
+         <SkillProgression Id="BloodyEatFriend1" UnlockedAtDay="8"/>
+
+         <SkillProgression Id="BloodyEatFriend2" UnlockedAtDay="11"/>
+
+         <SkillProgression Id="ApocBloodyAttack" ApocalypseFlagUnlock="SuperEnemies"/>
+
+         <SkillProgression Id="ApocBloodyAttack1" ApocalypseFlagUnlock="SuperEnemies" UnlockedAtDay="8"/>
+
+         <SkillProgression Id="ApocBloodyAttack2" ApocalypseFlagUnlock="SuperEnemies" UnlockedAtDay="11"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   
+
+   <EnemyUnitTemplateDefinition Id="Ghost">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Ghost"/>
+
+      <MoveSoundFolderName Value="Ghost"/>
+
+      <Tier>3</Tier>
+
+      <Weight>5</Weight>
+
+      <HealthTotal>270</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>5</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>6</Dodge>
+
+      <Resistance>40</Resistance>
+
+      <StunResistance>50</StunResistance>
+
+      <Accuracy>10</Accuracy>
+
+      <DamageSkillId>GhostAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>GhostAttack</SkillToDisplay>
+
+         <SkillToDisplay>GhostDebuff</SkillToDisplay>
+
+         <SkillToDisplay>GhostShortRangeDebuff</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>30</ExperienceGain>
+
+      <DamnedSoulsEarned>15</DamnedSoulsEarned>
+
+      <Panic Value="4"/>
+
+      <MoveSpeed>6</MoveSpeed>
+
+      <MoveMethod Method="Flying"/>
+
+      <!--Main idea: Debuff Heroes 
+
+      Never attack buildings (apart from MagicCircle in case of absolute nothing else to do).
+
+      Strong defense Debuff AoE/aura in close range, otherwise debuff AP
+
+      -->
+
+      <Behavior>
+
+         <ThinkingScope>500</ThinkingScope>
+
+         <Goals>
+
+            <!--Attack Heroes in the city: Mana drain (cooldown)-->
+
+            <Goal Id="01_GhostShortRangeDebuff">
+
+               <SkillId Value="GhostShortRangeDebuff"/>
+
+               <Cooldown Value="1"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition NbTurns="1"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="Clamp(MovePoints+2,7,12)"/>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <GroundCategoryCondition Id="City"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <!--<Postconditions>
+
+                  <ConditionsGroup>
+
+                     <TargetsCountCondition Min="2"/>
+
+                  </ConditionsGroup>
+
+               </Postconditions>-->
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Attack Heroes: debuff the AP-->
+
+            <Goal Id="02_GhostDebuff">
+
+               <SkillId Value="GhostDebuff"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition NbTurns="1"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="Clamp(MovePoints-2,5,12)"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Farthest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--If there is no heroes in all his range : Attack MagicCircle: default goal-->
+
+            <Goal Id="03_GhostAttack">
+
+               <SkillId Value="GhostAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!--<FirstTarget/>-->
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--If there is nothing else to do : Attack all buildings-->
+
+            <Goal Id="04_GhostAttack">
+
+               <SkillId Value="GhostAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.8</BaseRatio>
+
+            <RatioMultiplier>0.48</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.4</BaseRatio>
+
+            <RatioMultiplier>0.16</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>            
+
+            </StatModifiers>
+
+            <PreventSkills>
+
+               <SkillId>GhostDebuff</SkillId>
+
+               <SkillId>ApocGhostDebuff</SkillId>
+
+            </PreventSkills>
+
+         </Injury>
+
+      </Injuries>
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">22</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="3" IncreaseEveryXDay="3" MaxIncreases="5">5</StatProgression>
+
+         <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">6</StatProgression>
+
+         <StatProgression Id="Resistance" Delay="3" IncreaseEveryXDay="5">10</StatProgression>
+
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">54</StatProgression>
+
+         <StatProgression Id="MovePointsTotal" Delay="8" IncreaseEveryXDay="6">1</StatProgression>
+
+      </StatsProgressions>
+
+      <SkillProgressions>
+
+         <SkillProgression Id="GhostShortRangeDebuff1" UnlockedAtDay="8"/>
+
+         <SkillProgression Id="GhostShortRangeDebuff2" UnlockedAtDay="11"/>
+
+         <SkillProgression Id="ApocGhostDebuff" ApocalypseFlagUnlock="SuperEnemies"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+</EnemyUnitTemplateDefinitions>
+

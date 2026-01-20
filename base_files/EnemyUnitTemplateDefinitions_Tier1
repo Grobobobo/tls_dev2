@@ -1,0 +1,1755 @@
+<EnemyUnitTemplateDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+                              xsi:noNamespaceSchemaLocation="EnemyUnitTemplateDefinitions.xsd">
+
+
+
+   <EnemyUnitTemplateDefinition Id="Clawer">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01" Weight="5"/>
+
+         <VisualVariant Id="02" Weight="5"/>
+
+         <VisualVariant Id="03" Weight="5"/>
+
+         <VisualVariant Id="04" Weight="5"/>
+
+         <VisualVariant Id="05" Weight="5"/>
+
+         <VisualVariant Id="06" Weight="5"/>
+
+         <VisualVariant Id="07" Weight="5"/>
+
+         <VisualVariant Id="08" Weight="5"/>
+
+         <VisualVariant Id="09" Weight="5"/>
+
+         <VisualVariant Id="10" Weight="5"/>
+
+         <VisualVariant Id="11" Weight="5"/>
+
+         <VisualVariant Id="12" Weight="5"/>
+
+         <VisualVariant Id="13" Weight="5"/>
+
+         <!--<VisualVariant Id="14"/>-->
+
+         <VisualVariant Id="15" Weight="5"/>
+
+         <VisualVariant Id="16" Weight="5"/>
+
+         <VisualVariant Id="17" Weight="5"/>
+
+         <VisualVariant Id="18" Weight="5"/>
+
+         <VisualVariant Id="19" Weight="5"/>
+
+         <VisualVariant Id="20" Weight="5"/>
+
+         <VisualVariant Id="21" Weight="5"/>
+
+         <!--<VisualVariant Id="22" Weight="4"/>--> <!--Santa Clawer, ~4/200 spawn chance-->
+
+         <!--<VisualVariant Id="23" Weight="2"/>--> <!--Krampus Clawer ~2/200 spawn chance-->
+
+      </VisualVariants>
+
+      <Tier>1</Tier>
+
+      <Weight>1</Weight>
+
+      <HealthTotal>100</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>4</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>4</Dodge>
+
+      <Resistance>0</Resistance>
+
+      <Accuracy>-20</Accuracy>
+
+      <DamageSkillId>ClawerAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>ClawerAttack</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>12</ExperienceGain>
+
+      <DamnedSoulsEarned>5</DamnedSoulsEarned>
+
+      <Panic Value="2"/>
+
+      <!-- Main idea: kinda stupid, rushes mainly towards the magic circle and attacking what is close.
+
+      His primary goal is to attack the magic circle but he snaps on adjacent defenses.
+
+      Aggroed by Heroes really close (less than his Move range)-->
+
+      <Behavior>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>50</ThinkingScope>
+
+         <Goals>
+
+            <!-- Attack Heroes: aggro within 2 tiles -->
+
+            <Goal Id="01_ClawerAttack">
+
+               <SkillId Value="ClawerAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="Clamp(MovePoints-2,2,6)"/> <!--Clamped max value to 6 to avoid a clawer too agressive-->
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Attack Walls: aggro within 1 tiles-->
+
+            <Goal Id="02_ClawerAttack">
+
+               <SkillId Value="ClawerAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="Walls"/>
+
+                              <TargetsListId Value="BonePiles"/>
+
+                              <TargetsListId Value="SpecialDefenses"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="1"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Attack MagicCircle: default goal-->
+
+            <Goal Id="03_ClawerAttack">
+
+               <SkillId Value="ClawerAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!--<FirstTarget/>-->
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <InterruptionCondition>
+
+                  <AdjacentToPlayableUnit/>
+
+                  <AdjacentToWall/>
+
+                  <AdjacentToBarricade/>
+
+               </InterruptionCondition>
+
+            </Goal>
+
+            <!-- Attack Buildings (except walls): no aggro, just hit them if they happen to be adjacent after moving-->
+
+            <Goal Id="04_ClawerAttack">
+
+               <SkillId Value="ClawerAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="Walls"/>
+
+                              <TargetsListId Value="BonePiles"/>
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.8</BaseRatio>
+
+            <RatioMultiplier>0.48</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+               <StatModifier Id="InjuryDamageMultiplier" Offset="-20"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.4</BaseRatio>
+
+            <RatioMultiplier>0.16</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
+
+               <StatModifier Id="InjuryDamageMultiplier" Offset="-30"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+      </Injuries>
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">12</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="4">5</StatProgression>
+
+         <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">4</StatProgression>
+
+         <StatProgression Id="ArmorTotal" Delay="1" IncreaseEveryXDay="2">16</StatProgression>
+
+         <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">5</StatProgression>
+
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">20</StatProgression>
+
+         <StatProgression Id="MovePointsTotal" Delay="5" IncreaseEveryXDay="6">1</StatProgression>
+
+      </StatsProgressions>
+
+      <SkillProgressions>
+
+         <SkillProgression Id="ApocClawerAttack" ApocalypseFlagUnlock="SuperEnemies"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+   
+
+   
+
+   <EnemyUnitTemplateDefinition Id="FasterClawer">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01" Weight="24"/>
+
+         <!--<VisualVariant Id="02" Weight="1"/>--> <!--Christmas variant-->
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="FasterClawer"/>
+
+      <MoveSoundFolderName Value="FasterClawer"/>
+
+      <Tier>1</Tier>
+
+      <Weight>20</Weight>
+
+      <HealthTotal>70</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>6</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>15</Dodge>
+
+      <Resistance>0</Resistance>
+
+      <Accuracy>-25</Accuracy>
+
+      <DamageSkillId>FasterAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>FasterAttack</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>11</ExperienceGain>
+
+      <DamnedSoulsEarned>4</DamnedSoulsEarned>
+
+      <Panic Value="2"/>
+
+      <MoveSpeed>10</MoveSpeed>
+
+      <!--Main idea: attack the magic circle by avoiding every obstacle-->
+
+      <Behavior>
+
+         <ThinkingScope>100</ThinkingScope>
+
+         <Goals>
+
+            <!-- Attack MagicCircle -->
+
+            <Goal Id="01_FasterAttack">
+
+               <SkillId Value="FasterAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!--<FirstTarget/>-->
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Attack Heroes if he finishes his movement next to one -->
+
+            <Goal Id="02_FasterAttack">
+
+               <SkillId Value="FasterAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!-- Attack Building if he finishes his movement next to one -->
+
+            <Goal Id="03_FasterAttack">
+
+               <SkillId Value="FasterAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>     
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.9</BaseRatio>
+
+            <RatioMultiplier>0.54</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+               <StatModifier Id="Dodge" Multiplier="Half"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.5</BaseRatio>
+
+            <RatioMultiplier>0.2</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
+
+               <StatModifier Id="InjuryDamageMultiplier" Offset="-30"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+      </Injuries>
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">12</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">5</StatProgression>
+
+         <StatProgression Id="Dodge" Delay="2" IncreaseEveryXDay="3">5</StatProgression>
+
+         <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">5</StatProgression>
+
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">14</StatProgression>
+
+         <StatProgression Id="MovePointsTotal" Delay="2" IncreaseEveryXDay="6">1</StatProgression>
+
+      </StatsProgressions>
+
+      <SkillProgressions>
+
+         <SkillProgression Id="ApocFasterAttack" ApocalypseFlagUnlock="SuperEnemies"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+   
+
+
+
+   <EnemyUnitTemplateDefinition Id="DodgyClawer">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Dodger"/>
+
+      <MoveSoundFolderName Value="Dodger"/>
+
+      <Tier>1</Tier>
+
+      <Weight>10</Weight>
+
+      <HealthTotal>110</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>4</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>18</Dodge>
+
+      <Resistance>0</Resistance>
+
+      <Accuracy>-20</Accuracy>
+
+      <DamageSkillId>DodgyAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>DodgyAttack</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>14</ExperienceGain>
+
+      <DamnedSoulsEarned>6</DamnedSoulsEarned>
+
+      <Panic Value="2"/>
+
+      <!-- Main idea: Clawer behavior-->
+
+      <Behavior>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>50</ThinkingScope>
+
+         <Goals>
+
+            <!-- Attack Units. Snaps at a distance of 2 -->
+
+            <Goal Id="01_DodgyAttack">
+
+               <SkillId Value="DodgyAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="Clamp(MovePoints-2,2,6)"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Attack buildings: all the walls. Snaps at a distance of 1 -->
+
+            <Goal Id="02_DodgyAttack">
+
+               <SkillId Value="DodgyAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="Walls"/>
+
+                              <TargetsListId Value="BonePiles"/>
+
+                              <TargetsListId Value="SpecialDefenses"/>
+
+                              
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="1"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Attack MagicCircle-->
+
+            <Goal Id="03_DodgyAttack">
+
+               <SkillId Value="DodgyAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!--<FirstTarget/>-->
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <InterruptionCondition>
+
+                  <AdjacentToPlayableUnit/>
+
+                  <AdjacentToWall/>
+
+                  <AdjacentToBarricade/>
+
+               </InterruptionCondition>
+
+            </Goal>
+
+            <!-- Attack buildings: everything but the walls. Doesn't snap on these building-->
+
+            <Goal Id="04_DodgyAttack">
+
+               <SkillId Value="DodgyAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="Walls"/>
+
+                              <TargetsListId Value="BonePiles"/>
+
+                              
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.8</BaseRatio>
+
+            <RatioMultiplier>0.48</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+               <StatModifier Id="Dodge" Multiplier="Half"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.4</BaseRatio>
+
+            <RatioMultiplier>0.16</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
+
+               <StatModifier Id="InjuryDamageMultiplier" Offset="-30"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+      </Injuries>
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">12</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="4">5</StatProgression>
+
+         <StatProgression Id="Dodge" Delay="2" IncreaseEveryXDay="3">6</StatProgression>
+
+         <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">5</StatProgression>
+
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">22</StatProgression>
+
+         <StatProgression Id="MovePointsTotal" Delay="5" IncreaseEveryXDay="7">1</StatProgression>
+
+      </StatsProgressions>
+
+      <SkillProgressions>
+
+         <SkillProgression Id="ApocDodgyAttack" ApocalypseFlagUnlock="SuperEnemies"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+   
+
+
+
+   <EnemyUnitTemplateDefinition Id="Plated">
+
+      <VisualVariants>
+
+         <VisualVariant Id="03" Weight="9"/>
+
+         <!--<VisualVariant Id="04" Weight="1"/>--> <!--Christmas variant-->
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Plated"/>
+
+      <MoveSoundFolderName Value="Plated"/>
+
+      <Tier>1</Tier>
+
+      <Weight>20</Weight>
+
+      <HealthTotal>50</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>3</MovePointsTotal>
+
+      <ArmorTotal>100</ArmorTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Resistance>0</Resistance>
+
+      <Accuracy>-20</Accuracy>
+
+      <DamageSkillId>PlatedAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>PlatedAttack</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>15</ExperienceGain>
+
+      <DamnedSoulsEarned>6</DamnedSoulsEarned>
+
+      <Panic Value="2"/>
+
+      <!-- Main idea: just like a Clawer, less hp but some armor.
+
+      His primary goal is to attack the magic circle but he snaps on adjacent defenses.
+
+      Aggroed by Heroes really close (less than his Move range)-->
+
+      <Behavior>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>50</ThinkingScope>
+
+         <Goals>
+
+            <!-- Attack Heroes: aggro within 2 tiles -->
+
+            <Goal Id="01_ClawerAttack">
+
+               <SkillId Value="PlatedAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="Clamp(MovePoints-2,4,6)"/><!--Clamped max value to 6 to avoid a clawer too agressive-->
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Attack Walls: aggro within 1 tiles-->
+
+            <Goal Id="02_ClawerAttack">
+
+               <SkillId Value="PlatedAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="Walls"/>
+
+                              <TargetsListId Value="BonePiles"/>
+
+                              <TargetsListId Value="SpecialDefenses"/>
+
+                              
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="1"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Attack MagicCircle: default goal-->
+
+            <Goal Id="03_ClawerAttack">
+
+               <SkillId Value="PlatedAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!--<FirstTarget/>-->
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <InterruptionCondition>
+
+                  <AdjacentToPlayableUnit/>
+
+                  <AdjacentToWall/>
+
+                  <AdjacentToBarricade/>
+
+               </InterruptionCondition>
+
+            </Goal>
+
+            <!-- Attack Buildings (except walls): no aggro, just hit them if they happen to be adjacent after moving-->
+
+            <Goal Id="04_ClawerAttack">
+
+               <SkillId Value="PlatedAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="Walls"/>
+
+                              <TargetsListId Value="BonePiles"/>
+
+                              
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.9</BaseRatio>
+
+            <RatioMultiplier>0.54</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+               <StatModifier Id="ArmorTotal" Multiplier="Half"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.5</BaseRatio>
+
+            <RatioMultiplier>0.2</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
+
+               <StatModifier Id="InjuryDamageMultiplier" Offset="-30"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+      </Injuries>
+
+     <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">12</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="4">5</StatProgression>
+
+         <StatProgression Id="ArmorTotal" Delay="0" IncreaseEveryXDay="2">20</StatProgression>
+
+         <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">3</StatProgression>
+
+         <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">5</StatProgression>
+
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">10</StatProgression>
+
+         <StatProgression Id="MovePointsTotal" Delay="5" IncreaseEveryXDay="6">1</StatProgression>
+
+     </StatsProgressions>
+
+      <SkillProgressions>
+
+         <SkillProgression Id="ApocPlatedAttack" ApocalypseFlagUnlock="SuperEnemies"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   
+
+   <EnemyUnitTemplateDefinition Id="Blocker">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+         <VisualVariant Id="02"/>
+
+         <VisualVariant Id="03"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Blocker"/>
+
+      <MoveSoundFolderName Value="Blocker"/>
+
+      <Tier>1</Tier>
+
+      <Weight>20</Weight>
+
+      <HealthTotal>80</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>4</MovePointsTotal>
+
+      <Block>25</Block>
+
+      <Dodge>0</Dodge>
+
+      <Resistance>0</Resistance>
+
+      <Accuracy>-20</Accuracy>
+
+      <DamageSkillId>BlockerAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>BlockerAttack</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>14</ExperienceGain>
+
+      <DamnedSoulsEarned>6</DamnedSoulsEarned>
+
+      <Panic Value="2"/>
+
+      <!-- Main idea: just like a Clawer, less hp but some armor.
+
+      His primary goal is to attack the magic circle but he snaps on adjacent defenses.
+
+      Aggroed by Heroes really close (less than his Move range)-->
+
+      <Behavior>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>50</ThinkingScope>
+
+         <Goals>
+
+            <!-- Attack Heroes: aggro within 2 tiles -->
+
+            <Goal Id="01_ClawerAttack">
+
+               <SkillId Value="BlockerAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="Clamp(MovePoints-2,4,6)"/><!--Clamped max value to 6 to avoid a clawer too agressive-->
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Attack Walls: aggro within 1 tiles-->
+
+            <Goal Id="02_ClawerAttack">
+
+               <SkillId Value="BlockerAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="Walls"/>
+
+                              <TargetsListId Value="BonePiles"/>
+
+                              <TargetsListId Value="SpecialDefenses"/>
+
+                              
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="1"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Attack MagicCircle: default goal-->
+
+            <Goal Id="03_ClawerAttack">
+
+               <SkillId Value="BlockerAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!--<FirstTarget/>-->
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <InterruptionCondition>
+
+                  <AdjacentToPlayableUnit/>
+
+                  <AdjacentToWall/>
+
+                  <AdjacentToBarricade/>
+
+               </InterruptionCondition>
+
+            </Goal>
+
+            <!-- Attack Buildings (except walls): no aggro, just hit them if they happen to be adjacent after moving-->
+
+            <Goal Id="04_ClawerAttack">
+
+               <SkillId Value="BlockerAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="Walls"/>
+
+                              <TargetsListId Value="BonePiles"/>
+
+                              <TargetsListId Value="SpecialDefenses"/>
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.8</BaseRatio>
+
+            <RatioMultiplier>0.48</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+               <StatModifier Id="Block" Multiplier="Half"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.4</BaseRatio>
+
+            <RatioMultiplier>0.16</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
+
+               <StatModifier Id="InjuryDamageMultiplier" Offset="-30"/>
+
+            </StatModifiers>
+
+         
+
+         </Injury>
+
+      </Injuries>
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">12</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="4">5</StatProgression>
+
+         <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">3</StatProgression>
+
+         <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">5</StatProgression>
+
+         <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">5</StatProgression>
+
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">16</StatProgression>
+
+         <StatProgression Id="MovePointsTotal" Delay="5" IncreaseEveryXDay="6">1</StatProgression>
+
+      </StatsProgressions>
+
+      <SkillProgressions>
+
+         <SkillProgression Id="ApocBlockerAttack" ApocalypseFlagUnlock="SuperEnemies"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+
+
+   <EnemyUnitTemplateDefinition Id="ResistClawer">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01" Weight="9"/>
+
+         <!--<VisualVariant Id="02" Weight="1"/>--> <!--Christmas Variant-->
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="ResistClawer"/>
+
+      <MoveSoundFolderName Value="ResistClawer"/>
+
+      <Tier>1</Tier>
+
+      <Weight>20</Weight>
+
+      <HealthTotal>45</HealthTotal>
+
+      <HealthGaugeSize>Small</HealthGaugeSize>
+
+      <MovePointsTotal>4</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Resistance>70</Resistance>
+
+      <Accuracy>-20</Accuracy>
+
+      <DamageSkillId>ResistClawerAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>ResistClawerAttack</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>14</ExperienceGain>
+
+      <DamnedSoulsEarned>6</DamnedSoulsEarned>
+
+      <Panic Value="2"/>
+
+      <Behavior>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>50</ThinkingScope>
+
+         <Goals>
+
+            <Goal Id="01_ResistClawerAttack">
+
+               <SkillId Value="ResistClawerAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="Clamp(MovePoints-2,4,6)"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="02_ResistClawerAttack">
+
+               <SkillId Value="ResistClawerAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="Walls"/>
+
+                              <TargetsListId Value="BonePiles"/>
+
+                              <TargetsListId Value="SpecialDefenses"/>
+
+                              
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="1"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="03_ResistClawerAttack">
+
+               <SkillId Value="ResistClawerAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!--<FirstTarget/>-->
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <InterruptionCondition>
+
+                  <AdjacentToPlayableUnit/>
+
+                  <AdjacentToWall/>
+
+                  <AdjacentToBarricade/>
+
+               </InterruptionCondition>
+
+            </Goal>
+
+            <Goal Id="04_ResistClawerAttack">
+
+               <SkillId Value="ResistClawerAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="Walls"/>
+
+                              <TargetsListId Value="BonePiles"/>
+
+                              <TargetsListId Value="SpecialDefenses"/>
+
+                              
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.9</BaseRatio>
+
+            <RatioMultiplier>0.54</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+               <StatModifier Id="InjuryDamageMultiplier" Offset="-20"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.5</BaseRatio>
+
+            <RatioMultiplier>0.2</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
+
+               <StatModifier Id="InjuryDamageMultiplier" Offset="-30"/>
+
+            </StatModifiers>
+
+
+
+         </Injury>
+
+      </Injuries>
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">12</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="4">5</StatProgression>
+
+         <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">3</StatProgression>
+
+         <StatProgression Id="Resistance" Delay="4" IncreaseEveryXDay="5">5</StatProgression>
+
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">9</StatProgression>
+
+         <StatProgression Id="MovePointsTotal" Delay="5" IncreaseEveryXDay="6">1</StatProgression>
+
+      </StatsProgressions>
+
+      <SkillProgressions>
+
+         <SkillProgression Id="ApocResistClawerAttack" ApocalypseFlagUnlock="SuperEnemies"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+  
+
+</EnemyUnitTemplateDefinitions>

@@ -1,0 +1,756 @@
+<EnemyUnitTemplateDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+                              xsi:noNamespaceSchemaLocation="EnemyUnitTemplateDefinitions.xsd">
+
+
+
+   <EnemyUnitTemplateDefinition Id="Tanky">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="Tanky"/>
+
+      <MoveSoundFolderName Value="Tanky"/>
+
+      <Tier>4</Tier>
+
+      <Weight>2</Weight>
+
+      <HealthTotal>840</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>3</MovePointsTotal>
+
+      <ArmorTotal>60</ArmorTotal>
+
+      <Block>30</Block>
+
+      <Dodge>4</Dodge>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>80</StunResistance>
+
+      <Accuracy>0</Accuracy>
+
+      <DamageSkillId>TankyAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>TankyAttack</SkillToDisplay>
+
+         <SkillToDisplay>TankyStun</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>60</ExperienceGain>
+
+      <DamnedSoulsEarned>22</DamnedSoulsEarned>
+
+      <Panic Value="7"/>
+
+      <MoveSpeed>2</MoveSpeed>
+
+      <!--Main Idea : His goal is to throw rock to stun heroes and then hit them hard. If there is no hero his main goal is to go to the magic circle -->
+
+      <Behavior>
+
+         <ThinkingScope>100</ThinkingScope>
+
+         <Goals>
+
+            <!--Attack a Hero in range of 5-->
+
+            <Goal Id="01_TankyAttack">
+
+               <SkillId Value="TankyAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="Clamp(MovePoints+2,2,30)"/><!--Added MovePoints so the tanky can run toward hero if he has some buffs-->
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Stun Hero in range of 5-->
+
+            <Goal Id="02_TankyStun">
+
+               <SkillId Value="TankyStun"/>
+
+               <Cooldown Value="3"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition NbTurns="1"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="5"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Attack Magic Circle -->
+
+            <Goal Id="03_TankyAttack">
+
+               <SkillId Value="TankyAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!--<FirstTarget/>-->
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            
+
+            <!-- Attack buildings: all the walls -->
+
+            <Goal Id="04_TankyAttack">
+
+               <SkillId Value="TankyAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="Walls"/>
+
+                              <TargetsListId Value="BonePiles"/>
+
+                              <TargetsListId Value="SpecialDefenses"/>
+
+                              
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!-- Attack Town Building and snap to it  -->
+
+            <Goal Id="05_TankyAttack">
+
+               <SkillId Value="TankyAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="Walls"/>
+
+                              <TargetsListId Value="BonePiles"/>
+
+                              <TargetsListId Value="SpecialDefenses"/>
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.6</BaseRatio>
+
+            <RatioMultiplier>0.36</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.2</BaseRatio>
+
+            <RatioMultiplier>0.08</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
+
+            </StatModifiers>
+
+           <Stun>
+
+             <TurnsCount>1</TurnsCount>
+
+           </Stun>
+
+         </Injury>
+
+      </Injuries>
+
+     <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">26</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="4" IncreaseEveryXDay="2" MaxIncreases="5">7</StatProgression>
+
+         <StatProgression Id="ArmorTotal" Delay="1" IncreaseEveryXDay="2">40</StatProgression>
+
+         <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">6</StatProgression>
+
+         <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">6</StatProgression>
+
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">168</StatProgression>
+
+         <StatProgression Id="MovePointsTotal" Delay="10" IncreaseEveryXDay="6">1</StatProgression>
+
+     </StatsProgressions>
+
+      <SkillProgressions>
+
+         <SkillProgression Id="ApocTankyAttack" ApocalypseFlagUnlock="SuperEnemies"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+   
+
+
+
+   <EnemyUnitTemplateDefinition Id="CorruptedMage">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="CorruptedMage"/>
+
+      <MoveSoundFolderName Value="CorruptedMage"/>
+
+      <Tier>4</Tier>
+
+      <Weight>2</Weight>
+
+      <HealthTotal>720</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>4</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>12</Dodge>
+
+      <Resistance>40</Resistance>
+
+      <StunResistance>80</StunResistance>
+
+      <Accuracy>20</Accuracy>
+
+      <DamageSkillId>CorruptedMageDeathRay</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>CorruptedMageAttack</SkillToDisplay>
+
+         <SkillToDisplay>CorruptedMageBuff</SkillToDisplay>
+
+         <SkillToDisplay>CorruptedMageCharge</SkillToDisplay>
+
+         <SkillToDisplay>CorruptedMageDeathRay</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>60</ExperienceGain>
+
+      <DamnedSoulsEarned>22</DamnedSoulsEarned>
+
+      <Panic Value="5"/>
+
+      <!-- Main idea: Buffs the horde's move speed to make them "charge".
+
+      Casts a death ray in 2 turns : The first one is spent charging the attack and the second turn, the death ray is cast. 
+
+      Primary goal is to buff allies, then to hit heroes with the death ray. 
+
+      Aggroed by Heroes really close (less than his Move range)-->
+
+      <Behavior>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>500</ThinkingScope>
+
+         <Goals>
+
+            <!-- Targeted Death Ray : If this enemy has the “Charged” Flag, try to cast Death Ray and lose “Charged” Flag-->
+
+            <Goal Id="01_CorruptedMageDeathRay">
+
+               <SkillId Value="CorruptedMageDeathRay"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition/>
+
+                  </ConditionsGroup>
+
+                  <ConditionsGroup>
+
+                     <CasterHasStatusCondition StatusType="Charged"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions><!--Clamped max value to 6 to avoid a clawer too agressive-->
+
+               <TargetTypes>
+
+                  <Tile>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <DamageableCountInAoeCondition Min="1">
+
+                              <DamageableTypeToCount>Playable</DamageableTypeToCount>
+
+                           </DamageableCountInAoeCondition>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="MovePoints+1"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Tile>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="3">Playable</DamageableType>
+
+                     <DamageableType Weight="1">Building</DamageableType>
+
+                  </Optimal>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Cast buff : If possible, try to cast buff. Minimum of 3 targets to seem intelligent (update : min = 2). Use furthest target instead of optimal so that multiple mages don't all target the same group of enemies.-->
+
+            <Goal Id="02_CorruptedMageBuff">
+
+               <SkillId Value="CorruptedMageBuff"/>
+
+               <Cooldown Value="2"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <DamageableCountInAoeCondition Min="2">
+
+                              <DamageableTypeToCount>Enemy</DamageableTypeToCount>
+
+                           </DamageableCountInAoeCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                 <Optimal>
+
+                   <DamageableType Weight ="1">Enemy</DamageableType>
+
+                 </Optimal>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Charge death ray : If hero in 2-8 tile range and this enemy has no “Charged” Flag, skip turn and gain “Charged” flag-->
+
+            <Goal Id="03_CorruptedMageCharge">
+
+               <SkillId Value="CorruptedMageCharge"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="15"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Attack MagicCircle: default goal-->
+
+            <Goal Id="04_CorruptedMageAttack">
+
+               <SkillId Value="CorruptedMageAttack"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <!--<FirstTarget/>-->
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+               <InterruptionCondition>
+
+                  <AdjacentToPlayableUnit/>
+
+               </InterruptionCondition>
+
+            </Goal>
+
+            <!-- Attack heroes in range : no aggro, just hit hero or building if they happen to be in range after moving-->
+
+            <Goal Id="05_CorruptedMageAttack">
+
+               <SkillId Value="CorruptedMageAttack"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="3"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+         <Injury>
+
+            <BaseRatio>0.7</BaseRatio>
+
+            <RatioMultiplier>0.42</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+
+            </StatModifiers>
+
+         </Injury>
+
+         <Injury>
+
+            <BaseRatio>0.3</BaseRatio>
+
+            <RatioMultiplier>0.12</RatioMultiplier>
+
+            <StatModifiers>
+
+               <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
+
+            </StatModifiers>
+
+            <PreventSkills>
+
+               <SkillId>CorruptedMageBuff</SkillId>
+
+               <SkillId>CorruptedMageBuff1</SkillId>
+
+               <SkillId>CorruptedMageBuff2</SkillId>
+
+            </PreventSkills>
+
+         </Injury>
+
+      </Injuries>
+
+      <StatsProgressions>
+
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">26</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="3" IncreaseEveryXDay="1" MaxIncreases="10">5</StatProgression>
+
+         <StatProgression Id="Dodge" Delay="2" IncreaseEveryXDay="3">4</StatProgression>
+
+         <StatProgression Id="Resistance" Delay="3" IncreaseEveryXDay="5">10</StatProgression>
+
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">144</StatProgression>
+
+         <StatProgression Id="MovePointsTotal" Delay="10" IncreaseEveryXDay="6">1</StatProgression>
+
+      </StatsProgressions>
+
+      <SkillProgressions>
+
+         <SkillProgression Id="CorruptedMageBuff1" UnlockedAtDay="8"/>
+
+         <SkillProgression Id="CorruptedMageBuff2" UnlockedAtDay="11"/>
+
+         <SkillProgression Id="ApocCorruptedMageCharge" ApocalypseFlagUnlock="SuperEnemies"/>
+
+      </SkillProgressions>
+
+   </EnemyUnitTemplateDefinition>
+
+   
+
+</EnemyUnitTemplateDefinitions>
+

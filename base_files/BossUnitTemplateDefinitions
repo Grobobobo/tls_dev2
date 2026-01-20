@@ -1,0 +1,7831 @@
+<BossUnitTemplateDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+                              xsi:noNamespaceSchemaLocation="BossUnitTemplateDefinitions.xsd">
+
+
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- HARPY BOSS -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   
+
+   <BossUnitTemplateDefinition Id="HarpyBoss">
+
+	  <SortingOrderOverride>100</SortingOrderOverride>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DamagedParticles Id="Damaged_Particles_Harpy"/>
+
+      <DeathSoundFolderName Value="HarpyBoss"/>
+
+      <Tier>10</Tier>
+
+      <Weight>1</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>1680</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>5</MovePointsTotal>
+
+      <Accuracy>20</Accuracy>
+
+      <ArmorTotal>120</ArmorTotal>
+
+      <Block>20</Block>
+
+      <Dodge>12</Dodge>
+
+      <Resistance>18</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <DamageSkillId>HarpyFury</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>HarpyFury</SkillToDisplay>
+
+         <SkillToDisplay>HarpyFlyingAssault</SkillToDisplay>
+
+         <SkillToDisplay>HarpyEnragingScreamAssault</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <MoveSpeed>10</MoveSpeed>
+
+      <ExperienceGain>300</ExperienceGain>
+
+      <DamnedSoulsEarned>50</DamnedSoulsEarned>
+
+      <Panic Value="7"/>
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <PathfindingStyle>Bresenham</PathfindingStyle>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+         <GoalsComputingOrder Value="-100"/>
+
+         <Goals>
+
+            <!-- Attack Heroes-->
+
+            <Goal Id="01_HarpyFury">
+
+               <SkillId Value="HarpyFury"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Attack Heroes: aggro within 25 tiles-->
+
+            <Goal Id="02_HarpyFlyingAssault">
+
+               <SkillId Value="HarpyFlyingAssault"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Attack MagicCircle: default goal-->
+
+            <Goal Id="03_HarpyFury">
+
+               <SkillId Value="HarpyFury"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!--Buff Enemies-->
+
+            <Goal Id="04_HarpyEnragingScreamAssault">
+
+               <SkillId Value="HarpyEnragingScreamAssault"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <DamageableCountInAoeCondition Min="1">
+
+                              <DamageableTypeToCount>Enemy</DamageableTypeToCount>
+
+                           </DamageableCountInAoeCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Attack Obstacles-->
+
+            <Goal Id="05_HarpyFury">
+
+               <SkillId Value="HarpyFury"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            
+
+            <Goal Id="06_HarpyAttackOnSpawn" GoalComputingStep="OnSpawn">
+
+               <SkillId Value="HarpyAttackOnSpawn"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+      </Injuries>
+
+      <AppearanceDelay>1</AppearanceDelay>
+
+      <CastSpawnSkillDelay>0.3</CastSpawnSkillDelay>
+
+      <SpawnCutscene Id="HarpyBoss_Cutscene"/>
+
+      <DeathCutscene Id="HarpyBoss_DeathCutscene"/>
+
+   </BossUnitTemplateDefinition>
+
+
+
+   
+
+   <BossUnitTemplateDefinition Id="HarpyBoss2" TemplateId="HarpyBoss" UseTemplateAssets="true"/>
+
+
+
+   
+
+   <BossUnitTemplateDefinition Id="HarpyBoss3" TemplateId="HarpyBoss" UseTemplateAssets="false">
+
+      <DeathSoundFolderName Value="HarpyBoss3"/>
+
+   </BossUnitTemplateDefinition>
+
+
+
+   
+
+   <BossUnitTemplateDefinition Id="HarpyBossCommander">
+
+      <!--<VisualOffset X="0" Y="1.7"/>-->
+
+      <SortingOrderOverride>120</SortingOrderOverride>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DamagedParticles Id="Damaged_Particles_Harpy"/>
+
+      <DeathSoundFolderName Value="HarpyBossCommander"/>
+
+      <Tier>10</Tier>
+
+      <Weight>1</Weight>
+
+      <MoveMethod Method="AboveAll"/>
+
+      <HealthTotal>10</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Accuracy>20</Accuracy>
+
+      <Block>30</Block>
+
+      <Dodge>10</Dodge>
+
+      <Resistance>20</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <DamageSkillId>HarpyIntimidatingHowl</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>HarpyIntimidatingHowl</SkillToDisplay>
+
+         <SkillToDisplay>HarpyEnragingScream</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      <Behavior>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+         <Goals>
+
+            <Goal Id="01_HarpyEnragingScream">
+
+               <SkillId Value="HarpyEnragingScream"/>
+
+               <Cooldown Value="2"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <DamageableCountInAoeCondition Min="2">
+
+                              <DamageableTypeToCount>Enemy</DamageableTypeToCount>
+
+                           </DamageableCountInAoeCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight ="1">Enemy</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="02_HarpyIntimidatingHowl">
+
+               <SkillId Value="HarpyIntimidatingHowl"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+      </Injuries>
+
+      <IsInvulnerable/>
+
+      <HideInNightReport/>
+
+      <AppearanceDelay>1</AppearanceDelay>
+
+      <CastSpawnSkillDelay>0.5</CastSpawnSkillDelay>
+
+      <SpawnCutscene Id="HarpyBossCommander_Cutscene"/>
+
+      <LockedOrientation>South</LockedOrientation>
+
+   </BossUnitTemplateDefinition>
+
+   
+
+   
+
+   <BossUnitTemplateDefinition Id="HarpyBossCommander2" TemplateId="HarpyBossCommander" UseTemplateAssets="true"/>
+
+
+
+   
+
+   <BossUnitTemplateDefinition Id="HarpyBossCommander3" TemplateId="HarpyBossCommander" UseTemplateAssets="true"/>
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- NESSIE BOSS -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   
+
+  <BossUnitTemplateDefinition Id="NessieBossHeadArmor">
+
+      <Tiles OriginX="0" OriginY="0">
+
+         BB
+
+         BB
+
+      </Tiles>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DamagedParticles Id="Damaged_Particles_Nessie"/>
+
+      <DeathSoundFolderName Value="NessieBossHead"/>
+
+      <Tier>11</Tier>
+
+      <Weight>1</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>6300</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Accuracy>30</Accuracy>
+
+      <ArmorTotal>700</ArmorTotal>
+
+      <Block>30</Block>
+
+      <Dodge>6</Dodge>
+
+      <Resistance>18</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <DamageSkillId>NessieBossHeadSmash</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>NessieBossHeadSmash</SkillToDisplay>
+
+         <SkillToDisplay>NessieBossHydroCatapult</SkillToDisplay>
+
+         <SkillToDisplay>NessieBossHeadSplash</SkillToDisplay>
+
+         <SkillToDisplay>NessieBossDeathSplash</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="2"/>
+
+
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <ThinkingScope>3000</ThinkingScope>
+
+         <GoalsComputingOrder Value="-50"/>
+
+         <Goals>
+
+            
+
+            <!--Goal #1-->
+
+            <Goal Id="01_NessieBossHeadSmash">
+
+               <SkillId Value="NessieBossHeadSmash"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            
+
+            <!--Goal #2-->
+
+            <Goal Id="02_NessieBossHydroCatapult">
+
+               <SkillId Value="NessieBossHydroCatapult"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <Tile>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Min="Skill.MinRange" Max="Skill.MaxRange"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Tile>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableId Weight="-1000">
+
+                        <Id Value="MagicCircle"/>
+
+                     </DamageableId>
+
+                     <DamageableId Weight="2">
+
+                        <IdList Value="EnemiesDamagableObstacles"/>
+
+                        <IdList Value="TownBuildings"/>
+
+                        <IdList Value="Ruins"/>
+
+                     </DamageableId>
+
+                     <DamageableId Weight="5">
+
+                        <IdList Value="SpecialDefenses"/>
+
+                     </DamageableId>
+
+                     <DamageableId Weight="20">
+
+                        <IdList Value="WallsExceptBarricade"/>
+
+                     </DamageableId>
+
+                     <DamageableType Weight="1">Playable</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Goal #3-->
+
+            <Goal Id="03_NessieBossHeadSplash">
+
+               <SkillId Value="NessieBossHeadSplash"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="NessieBoss2"/>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Min="Skill.MinRange + 4" Max="Skill.MaxRange"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Playable</DamageableType>
+
+                     <DamageableType Weight="1">Building</DamageableType>
+
+                  </Optimal>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="04_NessieBossHeadSplashingEntrance" GoalComputingStep="OnSpawn">
+
+               <SkillId Value="NessieBossHeadSplashingEntrance"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="05_NessieBossDeathSplash" GoalComputingStep="OnDeath">
+
+               <SkillId Value="NessieBossDeathSplash"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <HideInNightReport/>
+
+      <AppearanceDelay>2.9</AppearanceDelay>
+
+      <SpawnCutscene Id="NessieBossHeadArmor_Cutscene"/>
+
+   </BossUnitTemplateDefinition>
+
+
+
+
+
+   <BossUnitTemplateDefinition Id="NessieBossTailArmor">
+
+      <Tiles OriginX="0" OriginY="0">
+
+         BB
+
+         BB
+
+      </Tiles>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DamagedParticles Id="Damaged_Particles_Nessie"/>
+
+      <DeathSoundFolderName Value="NessieBossHead"/>
+
+      <Tier>11</Tier>
+
+      <Weight>1</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>2500</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Accuracy>30</Accuracy>
+
+      <ArmorTotal>400</ArmorTotal>
+
+      <Block>30</Block>
+
+      <Dodge>18</Dodge>
+
+      <Resistance>18</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <DamageSkillId>NessieBossTailSmash</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>NessieBossTailSmash</SkillToDisplay>
+
+         <SkillToDisplay>NessieBossEggThrow</SkillToDisplay>
+
+         <SkillToDisplay>NessieBossTailSplash</SkillToDisplay>
+
+         <SkillToDisplay>NessieBossTailDeathSplash</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="2"/>
+
+
+
+      <Behavior>
+
+         <ThinkingScope>3000</ThinkingScope>
+
+         <GoalsComputingOrder Value="0"/>
+
+         <Goals>
+
+            <!--Goal #1-->
+
+            <Goal Id="01_NessieBossEggThrow">
+
+               <SkillId Value="NessieBossEggThrow"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            
+
+            <!--Goal #2-->
+
+            <Goal Id="02_NessieBossTailSmash">
+
+               <SkillId Value="NessieBossTailSmash"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Goal #3-->
+
+            <Goal Id="03_NessieBossTailSplash">
+
+               <SkillId Value="NessieBossTailSplash"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="NessieBoss2"/>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Min="Skill.MinRange + 4" Max="Skill.MaxRange"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Playable</DamageableType>
+
+                     <DamageableType Weight="1">Building</DamageableType>
+
+                  </Optimal>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            
+
+            <!--Goal #4-->
+
+            <Goal Id="04_NessieBossEggThrow">
+
+               <SkillId Value="NessieBossEggThrow"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            
+
+            <!--Goal #5-->
+
+            <Goal Id="05_NessieBossTailSplash">
+
+               <SkillId Value="NessieBossTailSplash"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="NessieBoss2"/>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Min="Skill.MinRange + 4" Max="Skill.MaxRange"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Playable</DamageableType>
+
+                     <DamageableType Weight="1">Building</DamageableType>
+
+                  </Optimal>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="06_NessieBossTailSplashingEntrance" GoalComputingStep="OnSpawn">
+
+               <SkillId Value="NessieBossTailSplashingEntrance"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="07_NessieBossTailDeathSplash" GoalComputingStep="OnDeath">
+
+               <SkillId Value="NessieBossTailDeathSplash"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <HideInNightReport/>
+
+      <AppearanceDelay>2.9</AppearanceDelay>
+
+      <SpawnCutscene Id="NessieBossTailArmor_Cutscene"/>
+
+   </BossUnitTemplateDefinition>
+
+
+
+   
+
+   <BossUnitTemplateDefinition Id="NessieBossHead">
+
+      <Tiles OriginX="0" OriginY="0">
+
+         BB
+
+         BB
+
+      </Tiles>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DamagedParticles Id="Damaged_Particles_Nessie"/>
+
+      <DeathSoundFolderName Value="NessieBossHead"/>
+
+      <Tier>11</Tier>
+
+      <Weight>1</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>6300</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Accuracy>30</Accuracy>
+
+      <Block>30</Block>
+
+      <Dodge>12</Dodge>
+
+      <Resistance>18</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <DamageSkillId>NessieBossHeadSmash</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>NessieBossHeadSmash</SkillToDisplay>
+
+         <SkillToDisplay>NessieBossHydroCatapult</SkillToDisplay>
+
+         <SkillToDisplay>NessieBossHeadSplash</SkillToDisplay>
+
+         <SkillToDisplay>NessieBossDeathSplash</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="2"/>
+
+
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <ThinkingScope>3000</ThinkingScope>
+
+         <GoalsComputingOrder Value="-50"/>
+
+         <Goals>
+
+
+
+            <!--Goal #1-->
+
+            <Goal Id="01_NessieBossHeadSmash">
+
+               <SkillId Value="NessieBossHeadSmash"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Goal #2-->
+
+            <Goal Id="02_NessieBossHydroCatapult">
+
+               <SkillId Value="NessieBossHydroCatapult"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <Tile>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Min="Skill.MinRange" Max="Skill.MaxRange"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Tile>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableId Weight="-1000">
+
+                        <Id Value="MagicCircle"/>
+
+                     </DamageableId>
+
+                     <DamageableId Weight="2">
+
+                        <IdList Value="EnemiesDamagableObstacles"/>
+
+                        <IdList Value="TownBuildings"/>
+
+                        <IdList Value="Ruins"/>
+
+                     </DamageableId>
+
+                     <DamageableId Weight="5">
+
+                        <IdList Value="SpecialDefenses"/>
+
+                     </DamageableId>
+
+                     <DamageableId Weight="20">
+
+                        <IdList Value="WallsExceptBarricade"/>
+
+                     </DamageableId>
+
+                     <DamageableType Weight="1">Playable</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Goal #3-->
+
+            <Goal Id="03_NessieBossHeadSplash">
+
+               <SkillId Value="NessieBossHeadSplash"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="NessieBoss2"/>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Min="Skill.MinRange + 4" Max="Skill.MaxRange"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Playable</DamageableType>
+
+                     <DamageableType Weight="1">Building</DamageableType>
+
+                  </Optimal>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Goal #4-->
+
+            <Goal Id="04_NessieBossHeadSplash">
+
+               <SkillId Value="NessieBossHeadSplash"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="NessieBoss3"/>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Min="Skill.MinRange + 4" Max="Skill.MaxRange"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Goal #5-->
+
+            <Goal Id="05_NessieBossHeadSplash">
+
+               <SkillId Value="NessieBossHeadSplash"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="NessieBoss2"/>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Min="Skill.MinRange + 4" Max="Skill.MaxRange"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Playable</DamageableType>
+
+                     <DamageableType Weight="1">Building</DamageableType>
+
+                  </Optimal>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="06_NessieBossHeadSplashingEntrance" GoalComputingStep="OnSpawn">
+
+               <SkillId Value="NessieBossHeadSplashingEntrance"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="07_NessieBossTailDeathSplash" GoalComputingStep="OnDeath">
+
+               <SkillId Value="NessieBossTailDeathSplash"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <HideInNightReport/>
+
+      <AppearanceDelay>2.9</AppearanceDelay>
+
+      <SpawnCutscene Id="NessieBossHead_Cutscene"/>
+
+   </BossUnitTemplateDefinition>
+
+   
+
+
+
+   <BossUnitTemplateDefinition Id="NessieBossTail">
+
+      <Tiles OriginX="0" OriginY="0">
+
+         BB
+
+         BB
+
+      </Tiles>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DamagedParticles Id="Damaged_Particles_Nessie"/>
+
+      <DeathSoundFolderName Value="NessieBossTail"/>
+
+      <Tier>11</Tier>
+
+      <Weight>1</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>2500</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Accuracy>30</Accuracy>
+
+      <Block>30</Block>
+
+      <Dodge>30</Dodge>
+
+      <Resistance>18</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <DamageSkillId>NessieBossTailSmash</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>NessieBossTailSmash</SkillToDisplay>
+
+         <SkillToDisplay>NessieBossEggThrowEnhanced</SkillToDisplay>
+
+         <SkillToDisplay>NessieBossTailSplash</SkillToDisplay>
+
+         <SkillToDisplay>NessieBossTailDeathSplash</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="2"/>
+
+
+
+      <Behavior>
+
+         <ThinkingScope>3000</ThinkingScope>
+
+         <GoalsComputingOrder Value="0"/>
+
+         <Goals>
+
+            <!--Goal #1-->
+
+            <Goal Id="01_NessieBossEggThrowEnhanced">
+
+               <SkillId Value="NessieBossEggThrowEnhanced"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Goal #2-->
+
+            <Goal Id="02_NessieBossTailSmash">
+
+               <SkillId Value="NessieBossTailSmash"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Goal #3-->
+
+            <Goal Id="03_NessieBossTailSplash">
+
+               <SkillId Value="NessieBossTailSplash"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="NessieBoss2"/>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Min="Skill.MinRange + 4" Max="Skill.MaxRange"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Playable</DamageableType>
+
+                     <DamageableType Weight="1">Building</DamageableType>
+
+                  </Optimal>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Goal #4-->
+
+            <Goal Id="04_NessieBossEggThrowEnhanced">
+
+               <SkillId Value="NessieBossEggThrowEnhanced"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Goal #5-->
+
+            <Goal Id="05_NessieBossTailSplash">
+
+               <SkillId Value="NessieBossTailSplash"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="NessieBoss2"/>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Min="Skill.MinRange + 4" Max="Skill.MaxRange"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Playable</DamageableType>
+
+                     <DamageableType Weight="1">Building</DamageableType>
+
+                  </Optimal>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="06_NessieBossTailSplashingEntrance" GoalComputingStep="OnSpawn">
+
+               <SkillId Value="NessieBossTailSplashingEntrance"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="07_NessieBossTailDeathSplash" GoalComputingStep="OnDeath">
+
+               <SkillId Value="NessieBossTailDeathSplash"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <HideInNightReport/>
+
+      <AppearanceDelay>2.9</AppearanceDelay>
+
+      <SpawnCutscene Id="NessieBossTail_Cutscene"/>
+
+   </BossUnitTemplateDefinition>
+
+   
+
+   
+
+    <BossUnitTemplateDefinition Id="NessieBossHeadRage">
+
+    <Tiles OriginX="0" OriginY="0">
+
+      BB
+
+      BB
+
+    </Tiles>
+
+    <VisualVariants>
+
+      <VisualVariant Id="01"/>
+
+    </VisualVariants>
+
+    <DamagedParticles Id="Damaged_Particles_Nessie"/>
+
+    <DeathSoundFolderName Value="NessieBossHead"/>
+
+    <Tier>11</Tier>
+
+    <Weight>1</Weight>
+
+    <MoveMethod Method="Flying"/>
+
+    <HealthTotal>9500</HealthTotal>
+
+    <HealthGaugeSize>Large</HealthGaugeSize>
+
+    <MovePointsTotal>0</MovePointsTotal>
+
+    <Accuracy>30</Accuracy>
+
+    <Block>0</Block>
+
+    <Dodge>0</Dodge>
+
+    <Resistance>0</Resistance>
+
+    <StunResistance>1000</StunResistance>
+
+    <DamageSkillId>NessieBossRageSmash</DamageSkillId>
+
+    <SkillsToDisplay>
+
+          <SkillToDisplay>NessieBossRageSmash</SkillToDisplay>
+
+          <SkillToDisplay>NessieBossHydroNuke</SkillToDisplay>
+
+          <SkillToDisplay>NessieBossRageSplash</SkillToDisplay>
+
+    </SkillsToDisplay>
+
+    <ExperienceGain>3000</ExperienceGain>
+
+    <DamnedSoulsEarned>500</DamnedSoulsEarned>
+
+    <Panic Value="2"/>
+
+
+
+    <Behavior>
+
+       <TurnsToSkipOnSpawn Value="1"/>
+
+      <ThinkingScope>3000</ThinkingScope>
+
+      <GoalsComputingOrder Value="50"/>
+
+      <Goals>
+
+         
+
+        <!--Goal #1-->
+
+        <Goal Id="01_NessieBossRageSmash">
+
+          <SkillId Value="NessieBossRageSmash"/>
+
+          <TargetTypes>
+
+            <PlayableUnit/>
+
+          </TargetTypes>
+
+          <TargetingMethod>
+
+            <Closest/>
+
+          </TargetingMethod>
+
+        </Goal>
+
+         
+
+        <!--Goal #2-->
+
+        <Goal Id="02_NessieBossHydroNuke">
+
+          <SkillId Value="NessieBossHydroNuke"/>
+
+           <Cooldown Value="1"/>
+
+          <TargetTypes>
+
+            <Tile>
+
+              <TargetConditions>
+
+                <ConditionsGroup>
+
+                  <TargetInRangeCondition Min="Skill.MinRange" Max="Skill.MaxRange"/>
+
+                </ConditionsGroup>
+
+              </TargetConditions>
+
+            </Tile>
+
+          </TargetTypes>
+
+          <TargetingMethod>
+
+            <Optimal>
+
+              <DamageableId Weight="-1000">
+
+                <Id Value="MagicCircle"/>
+
+              </DamageableId>
+
+              <DamageableId Weight="2">
+
+                <IdList Value="EnemiesDamagableObstacles"/>
+
+                <IdList Value="TownBuildings"/>
+
+                <IdList Value="Ruins"/>
+
+              </DamageableId>
+
+              <DamageableId Weight="5">
+
+                <IdList Value="SpecialDefenses"/>
+
+              </DamageableId>
+
+              <DamageableId Weight="20">
+
+                <IdList Value="WallsExceptBarricade"/>
+
+              </DamageableId>
+
+              <DamageableType Weight="1">Playable</DamageableType>
+
+            </Optimal>
+
+          </TargetingMethod>
+
+        </Goal>
+
+
+
+         <!--Goal #4-->
+
+         <Goal Id="04_NessieBossRageSplash">
+
+            <SkillId Value="NessieBossRageSplash"/>
+
+            <TargetTypes>
+
+               <TileFlag>
+
+                  <TargetConditions>
+
+                     <ConditionsGroup>
+
+                        <FlagTagCondition FlagTag="NessieBoss2"/>
+
+                     </ConditionsGroup>
+
+                     <ConditionsGroup>
+
+                        <TargetInRangeCondition Min="Skill.MinRange + 4" Max="Skill.MaxRange"/>
+
+                     </ConditionsGroup>
+
+                  </TargetConditions>
+
+               </TileFlag>
+
+            </TargetTypes>
+
+            <TargetingMethod>
+
+               <Optimal>
+
+                  <DamageableType Weight="10">Playable</DamageableType>
+
+                  <DamageableType Weight="1">Building</DamageableType>
+
+               </Optimal>
+
+               <Closest/>
+
+            </TargetingMethod>
+
+         </Goal>
+
+        
+
+
+
+        <Goal Id="05_NessieBossRageSplashingEntrance" GoalComputingStep="OnSpawn">
+
+          <SkillId Value="NessieBossRageSplashingEntrance"/>
+
+          <TargetTypes>
+
+            <Itself/>
+
+          </TargetTypes>
+
+          <TargetingMethod>
+
+            <FirstTarget/>
+
+          </TargetingMethod>
+
+        </Goal>
+
+      </Goals>
+
+    </Behavior>
+
+
+
+    <Injuries>
+
+    </Injuries>
+
+
+
+    <AppearanceDelay>2.9</AppearanceDelay>
+
+    <SpawnCutscene Id="NessieBossHeadRage_Cutscene"/>
+
+    <DeathCutscene Id="NessieBossHeadRage_DeathCutscene"/>
+
+  </BossUnitTemplateDefinition>
+
+
+
+
+
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- SPAWNER BOSS -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <BossUnitTemplateDefinition Id="SpawnerBoss">
+
+      <Tiles OriginX="0" OriginY="0">
+
+         BB
+
+         BB
+
+      </Tiles>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DamagedParticles Id="Damaged_Particles_SpawnerBoss"/>
+
+      <DeathSoundFolderName Value="SpawnerBoss"/>
+
+      <Tier>12</Tier>
+
+      <Weight>1</Weight>
+
+      <HealthTotal>3000</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Accuracy>25</Accuracy>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Resistance>30</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <DamageSkillId>SpawnerBossRiposte</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>SpawnerBossRiposte</SkillToDisplay>
+
+         <SkillToDisplay>SpawnCocoons</SkillToDisplay>
+
+         <SkillToDisplay>SpawnerBossDefaultSkillDebuffAP</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>150</ExperienceGain>
+
+      <DamnedSoulsEarned>50</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      
+
+      <Behavior>
+
+         <ThinkingScope>100</ThinkingScope>
+
+         <Goals>
+
+            <Goal Id="01_SpawnCocoons">
+
+               <SkillId Value="SpawnCocoons"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="02_SpawnerBossRiposte">
+
+               <SkillId Value="SpawnerBossRiposte"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <PlayableUnitCloseToCasterCondition/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="03_SpawnerBossDefaultSkillDebuffAP">
+
+               <SkillId Value="SpawnerBossDefaultSkillDebuffAP"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="10"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+      </Injuries>
+
+      <AppearanceDelay>3</AppearanceDelay>
+
+      <CastSpawnSkillDelay>0.5</CastSpawnSkillDelay>
+
+      <SpawnCutscene Id="SpawnerBoss_Cutscene"/>
+
+      <DeathCutscene Id="SpawnerBoss_DeathCutscene"/>
+
+   </BossUnitTemplateDefinition>
+
+
+
+   
+
+   <BossUnitTemplateDefinition Id="SpawnerBoss2">
+
+      <Tiles OriginX="0" OriginY="0">
+
+         BB
+
+         BB
+
+      </Tiles>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DamagedParticles Id="Damaged_Particles_SpawnerBoss"/>
+
+      <DeathSoundFolderName Value="SpawnerBoss"/>
+
+      <Tier>12</Tier>
+
+      <Weight>1</Weight>
+
+      <HealthTotal>2600</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Accuracy>25</Accuracy>
+
+      <ArmorTotal>500</ArmorTotal>
+
+      <Block>50</Block>
+
+      <Dodge>0</Dodge>
+
+      <Resistance>30</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <DamageSkillId>SpawnerBossRiposte</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>SpawnerBossRiposte</SkillToDisplay>
+
+         <SkillToDisplay>SpawnCocoons2</SkillToDisplay>
+
+         <SkillToDisplay>SpawnerBossDefaultSkillDebuffAP</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>300</ExperienceGain>
+
+      <DamnedSoulsEarned>50</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      
+
+      <Behavior>
+
+         <ThinkingScope>100</ThinkingScope>
+
+         <Goals>
+
+            <Goal Id="01_SpawnCocoons2">
+
+               <SkillId Value="SpawnCocoons2"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="02_SpawnerBossRiposte">
+
+               <SkillId Value="SpawnerBossRiposte"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <PlayableUnitCloseToCasterCondition/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="03_SpawnerBossDefaultSkillDebuffAP">
+
+               <SkillId Value="SpawnerBossDefaultSkillDebuffAP"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="10"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="04_SpawnerBossFortress" GoalComputingStep="OnSpawn">
+
+               <SkillId Value="SpawnerBossFortress"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+      </Injuries>
+
+      <AppearanceDelay>3</AppearanceDelay>
+
+      <CastSpawnSkillDelay>0.5</CastSpawnSkillDelay>
+
+      <SpawnCutscene Id="SpawnerBoss_Cutscene"/>
+
+      <DeathCutscene Id="SpawnerBoss_DeathCutscene"/>
+
+   </BossUnitTemplateDefinition>
+
+   
+
+
+
+   <BossUnitTemplateDefinition Id="SpawnerBoss3">
+
+      <Tiles OriginX="0" OriginY="0">
+
+         BB
+
+         BB
+
+      </Tiles>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DamagedParticles Id="Damaged_Particles_SpawnerBoss"/>
+
+      <DeathSoundFolderName Value="SpawnerBoss"/>
+
+      <Tier>12</Tier>
+
+      <Weight>1</Weight>
+
+      <HealthTotal>2300</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Accuracy>25</Accuracy>
+
+      <ArmorTotal>1000</ArmorTotal>
+
+      <Block>100</Block>
+
+      <Dodge>0</Dodge>
+
+      <Resistance>30</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <DamageSkillId>SpawnerBossRiposte</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>SpawnerBossRiposte</SkillToDisplay>
+
+         <SkillToDisplay>SpawnCocoons3</SkillToDisplay>
+
+         <SkillToDisplay>SpawnerBossDefaultSkillDebuffAP</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>600</ExperienceGain>
+
+      <DamnedSoulsEarned>50</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      
+
+      <Behavior>
+
+         <ThinkingScope>100</ThinkingScope>
+
+         <Goals>
+
+            <Goal Id="01_SpawnCocoons3">
+
+               <SkillId Value="SpawnCocoons3"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="02_SpawnerBossRiposte">
+
+               <SkillId Value="SpawnerBossRiposte"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <PlayableUnitCloseToCasterCondition/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="03_SpawnCocoons3">
+
+               <SkillId Value="SpawnCocoons3"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <Goal Id="04_SpawnerBossDefaultSkillDebuffAP">
+
+               <SkillId Value="SpawnerBossDefaultSkillDebuffAP"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="10"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="05_SpawnerBossFortress" GoalComputingStep="OnSpawn">
+
+               <SkillId Value="SpawnerBossFortress"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+      </Injuries>
+
+      <AppearanceDelay>3</AppearanceDelay>
+
+      <CastSpawnSkillDelay>0.5</CastSpawnSkillDelay>
+
+      <SpawnCutscene Id="SpawnerBoss_Cutscene"/>
+
+      <DeathCutscene Id="SpawnerBoss_DeathCutscene"/>
+
+   </BossUnitTemplateDefinition>
+
+   
+
+   
+
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- THRONE TOWER BOSS -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <BossUnitTemplateDefinition Id="ThroneTowerBoss">
+
+      <Tiles OriginX="0" OriginY="0">
+
+         BB
+
+         BB
+
+      </Tiles>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <SortingOrderOverride>120</SortingOrderOverride>
+
+      <DamagedParticles Id="Damaged_Particles_SpawnerBoss"/>
+
+      <DeathSoundFolderName Value="SpawnerBoss"/>
+
+      <Tier>13</Tier>
+
+      <Weight>1</Weight>
+
+      <MoveMethod Method="AboveAll"/>
+
+      <HealthTotal>10</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Accuracy>50</Accuracy>
+
+      <Block>50</Block>
+
+      <Dodge>16</Dodge>
+
+      <Resistance>36</Resistance>
+
+      <StunResistance>3210</StunResistance>
+
+      <DamageSkillId>ThroneTowerAnnihilation</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>ThroneTowerCountdownThree_NoSpawn</SkillToDisplay>
+
+         <SkillToDisplay>ThroneTowerCountdownTwo_NoSpawn</SkillToDisplay>
+
+         <SkillToDisplay>ThroneTowerCountdownOne_NoSpawn</SkillToDisplay>
+
+         <SkillToDisplay>ThroneTowerAnnihilation</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="10"/>
+
+
+
+      <Behavior>
+
+         <ThinkingScope>3000</ThinkingScope>
+
+         <GoalsComputingOrder Value="50"/>
+
+         <Goals>
+
+            <Goal Id="01_ThroneTowerAnnihilation">
+
+               <SkillId Value="ThroneTowerAnnihilation"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <CasterHasStatusCondition StatusType="Charged"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Countdown with spawn of guardian-->
+
+            <Goal Id="02_ThroneTowerCountdownThree">
+
+               <SkillId Value="ThroneTowerCountdownThree"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+
+
+            <Goal Id="03_ThroneTowerCountdownTwo_NoSpawn">
+
+               <SkillId Value="ThroneTowerCountdownTwo_NoSpawn"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="04_ThroneTowerCountdownOne">
+
+               <SkillId Value="ThroneTowerCountdownOne"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!-- Countdown without spawn of guardian-->
+
+            <Goal Id="05_ThroneTowerCountdownThree_NoSpawn">
+
+               <SkillId Value="ThroneTowerCountdownThree_NoSpawn"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+
+
+            <Goal Id="06_ThroneTowerCountdownTwo_NoSpawn">
+
+               <SkillId Value="ThroneTowerCountdownTwo_NoSpawn"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="07_ThroneTowerCountdownOne_NoSpawn">
+
+               <SkillId Value="ThroneTowerCountdownOne_NoSpawn"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <IsInvulnerable/>
+
+      <HideInNightReport/>
+
+      <AppearanceDelay>2.9</AppearanceDelay>
+
+      <SpawnCutscene Id="ThroneTowerBoss_Cutscene"/>
+
+      <DeathCutscene Id="ThroneTowerBoss_Death_Cutscene"/>
+
+      <LockedOrientation>South</LockedOrientation>
+
+   </BossUnitTemplateDefinition>
+
+
+
+   
+
+   <BossUnitTemplateDefinition Id="ThroneTowerBoss2">
+
+      <Tiles OriginX="0" OriginY="0">
+
+         BB
+
+         BB
+
+      </Tiles>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <SortingOrderOverride>120</SortingOrderOverride>
+
+      <DamagedParticles Id="Damaged_Particles_SpawnerBoss"/>
+
+      <DeathSoundFolderName Value="SpawnerBoss"/>
+
+      <Tier>13</Tier>
+
+      <Weight>1</Weight>
+
+      <MoveMethod Method="AboveAll"/>
+
+      <HealthTotal>10</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Accuracy>50</Accuracy>
+
+      <Block>50</Block>
+
+      <Dodge>16</Dodge>
+
+      <Resistance>36</Resistance>
+
+      <StunResistance>3210</StunResistance>
+
+      <DamageSkillId>ThroneTowerAnnihilation</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>ThroneTowerCountdownThree_NoSpawn</SkillToDisplay>
+
+         <SkillToDisplay>ThroneTowerCountdownTwo_NoSpawn</SkillToDisplay>
+
+         <SkillToDisplay>ThroneTowerCountdownOne_NoSpawn</SkillToDisplay>
+
+         <SkillToDisplay>ThroneTowerAnnihilation</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="10"/>
+
+
+
+      <Behavior>
+
+         <ThinkingScope>3000</ThinkingScope>
+
+         <GoalsComputingOrder Value="50"/>
+
+         <Goals>
+
+            <Goal Id="01_ThroneTowerAnnihilation">
+
+               <SkillId Value="ThroneTowerAnnihilation"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <CasterHasStatusCondition StatusType="Charged"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Countdown with spawn of guardian-->
+
+            <Goal Id="02_ThroneTowerCountdownThree2">
+
+               <SkillId Value="ThroneTowerCountdownThree2"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+
+
+            <Goal Id="03_ThroneTowerCountdownTwo_NoSpawn">
+
+               <SkillId Value="ThroneTowerCountdownTwo_NoSpawn"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="04_ThroneTowerCountdownOne2">
+
+               <SkillId Value="ThroneTowerCountdownOne2"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!-- Countdown without spawn of guardian-->
+
+            <Goal Id="05_ThroneTowerCountdownThree_NoSpawn">
+
+               <SkillId Value="ThroneTowerCountdownThree_NoSpawn"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+
+
+            <Goal Id="06_ThroneTowerCountdownTwo_NoSpawn">
+
+               <SkillId Value="ThroneTowerCountdownTwo_NoSpawn"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="07_ThroneTowerCountdownOne_NoSpawn">
+
+               <SkillId Value="ThroneTowerCountdownOne_NoSpawn"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <IsInvulnerable/>
+
+      <LockedOrientation>South</LockedOrientation>
+
+      <HideInNightReport/>
+
+      <AppearanceDelay>2.9</AppearanceDelay>
+
+      <SpawnCutscene Id="ThroneTowerBoss2_Cutscene"/>
+
+   </BossUnitTemplateDefinition>
+
+
+
+   
+
+   <BossUnitTemplateDefinition Id="ThroneTowerBoss3">
+
+      <Tiles OriginX="0" OriginY="0">
+
+         BB
+
+         BB
+
+      </Tiles>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <SortingOrderOverride>120</SortingOrderOverride>
+
+      <DamagedParticles Id="Damaged_Particles_SpawnerBoss"/>
+
+      <DeathSoundFolderName Value="SpawnerBoss"/>
+
+      <Tier>13</Tier>
+
+      <Weight>1</Weight>
+
+      <MoveMethod Method="AboveAll"/>
+
+      <HealthTotal>10</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Accuracy>50</Accuracy>
+
+      <Block>50</Block>
+
+      <Dodge>16</Dodge>
+
+      <Resistance>36</Resistance>
+
+      <StunResistance>3210</StunResistance>
+
+      <DamageSkillId>ThroneTowerAnnihilation</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>ThroneTowerCountdownThree_NoSpawn</SkillToDisplay>
+
+         <SkillToDisplay>ThroneTowerCountdownTwo_NoSpawn</SkillToDisplay>
+
+         <SkillToDisplay>ThroneTowerCountdownOne_NoSpawn</SkillToDisplay>
+
+         <SkillToDisplay>ThroneTowerAnnihilation</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="10"/>
+
+
+
+      <Behavior>
+
+         <ThinkingScope>3000</ThinkingScope>
+
+         <GoalsComputingOrder Value="50"/>
+
+         <Goals>
+
+            <Goal Id="01_ThroneTowerAnnihilation">
+
+               <SkillId Value="ThroneTowerAnnihilation"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <CasterHasStatusCondition StatusType="Charged"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            <!-- Countdown with spawn of guardian-->
+
+            <Goal Id="02_ThroneTowerCountdownThree3">
+
+               <SkillId Value="ThroneTowerCountdownThree3"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+
+
+            <Goal Id="03_ThroneTowerCountdownTwo_NoSpawn">
+
+               <SkillId Value="ThroneTowerCountdownTwo_NoSpawn"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="04_ThroneTowerCountdownOne3">
+
+               <SkillId Value="ThroneTowerCountdownOne3"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!-- Countdown without spawn of guardian-->
+
+            <Goal Id="05_ThroneTowerCountdownThree_NoSpawn">
+
+               <SkillId Value="ThroneTowerCountdownThree_NoSpawn"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+
+
+            <Goal Id="06_ThroneTowerCountdownTwo_NoSpawn">
+
+               <SkillId Value="ThroneTowerCountdownTwo_NoSpawn"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="07_ThroneTowerCountdownOne_NoSpawn">
+
+               <SkillId Value="ThroneTowerCountdownOne_NoSpawn"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <IsInvulnerable/>
+
+      <LockedOrientation>South</LockedOrientation>
+
+      <HideInNightReport/>
+
+      <AppearanceDelay>2.9</AppearanceDelay>
+
+      <SpawnCutscene Id="ThroneTowerBoss_Cutscene"/>
+
+   </BossUnitTemplateDefinition>
+
+
+
+   
+
+   <BossUnitTemplateDefinition Id="MonarchBoss">
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DamagedParticles Id="Damaged_Particles_Enemy"/>
+
+      <DeathSoundFolderName Value="MonarchBoss"/>
+
+      <Tier>13</Tier>
+
+      <Weight>1</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>16000</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <ArmorTotal>1600</ArmorTotal>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Accuracy>50</Accuracy>
+
+      <Block>50</Block>
+
+      <Dodge>16</Dodge>
+
+      <Resistance>36</Resistance>
+
+      <StunResistance>3210</StunResistance>
+
+      <DamageSkillId>MonarchEternalFlame</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>MonarchDeathGrip</SkillToDisplay>
+
+         <SkillToDisplay>MonarchEternalFlame</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>6420</ExperienceGain>
+
+      <DamnedSoulsEarned>1000</DamnedSoulsEarned>
+
+      <Panic Value="10"/>
+
+
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <ThinkingScope>3000</ThinkingScope>
+
+         <GoalsComputingOrder Value="50"/>
+
+         <Goals>
+
+            <Goal Id="01_MonarchEternalFlame">
+
+               <SkillId Value="MonarchEternalFlame"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            
+
+            <Goal Id="02_MonarchDeathGrip">
+
+               <SkillId Value="MonarchDeathGrip"/>
+
+               <TargetTypes>
+
+                  <Tile>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Min="Skill.MinRange" Max="Skill.MaxRange"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Tile>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Playable</DamageableType>
+
+                  </Optimal>
+
+                  <Farthest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="03_MonarchDeathGrip">
+
+               <SkillId Value="MonarchDeathGrip"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Farthest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            
+
+         </Goals>
+
+            
+
+      </Behavior>
+
+      
+
+      <Injuries>
+
+      </Injuries>
+
+     
+
+      <AppearanceDelay>2.9</AppearanceDelay>
+
+      <SpawnCutscene Id="MonarchBoss_Cutscene"/>
+
+      <DeathCutscene Id="MonarchBoss_DeathCutscene"/>
+
+   </BossUnitTemplateDefinition>
+
+
+
+   
+
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- SCHADEN & FREUDE (GLINTFEIN) -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   
+
+   <!-- Goddesses -->
+
+
+
+   <BossUnitTemplateDefinition Id="DarkSchaden">
+
+      <Tiles OriginX="0" OriginY="0">
+
+         BB
+
+         BB
+
+      </Tiles>
+
+	  <SortingOrderOverride>100</SortingOrderOverride>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="DarkSchaden"/>
+
+      <!--<MoveSoundFolderName Value="DarkSchaden"/>--> 
+
+      <!--<MoveSoundFolderName Value="DarkSchaden"/>--> 
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>10</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Accuracy>50</Accuracy>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <DamageSkillId>SchadenZoneAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>SchadenZoneAttack</SkillToDisplay>
+
+         <SkillToDisplay>SchadenDebuff</SkillToDisplay>
+
+         <SkillToDisplay>SchadenCharge</SkillToDisplay>
+
+         <SkillToDisplay>SchadenKill</SkillToDisplay>
+
+         <SkillToDisplay>DarkSchadenTeleport</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+
+
+      <Affixes>
+
+         <Affix Id="MistySchaden"/>
+
+      </Affixes>
+
+
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+         <GoalsComputingOrder Value="-1000"/>
+
+         <Goals>
+
+            <!--Execute closest hero if they are in range when Schaden is Charged-->
+
+            <Goal Id="01_SchadenKill">
+
+               <SkillId Value="SchadenKill"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <CasterHasStatusCondition StatusType="Charged"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Attack closest hero if they are in range of the AoE-->
+
+            <Goal Id="02_SchadenZoneAttack">
+
+               <SkillId Value="SchadenZoneAttack"/>
+
+               <TargetTypes>
+
+                  <Tile>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <DamageableCountInAoeCondition Min="1">
+
+                              <DamageableTypeToCount>Playable</DamageableTypeToCount>
+
+                           </DamageableCountInAoeCondition>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="10"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Tile>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="10">Playable</DamageableType>
+
+                     <DamageableType Weight="1">Building</DamageableType>
+
+                     <DamageableType Weight="-1">Enemy</DamageableType>
+
+                     <DamageableType Weight="-1">Boss</DamageableType>
+
+                  </Optimal>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Attack closest hero if they are in range ; Security for goal 02-->
+
+            <Goal Id="03_SchadenZoneAttack">
+
+               <SkillId Value="SchadenZoneAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="10">Playable</DamageableType>
+
+                     <DamageableType Weight="1">Building</DamageableType>
+
+                     <DamageableType Weight="-1">Enemy</DamageableType>
+
+                     <DamageableType Weight="-1">Boss</DamageableType>
+
+                  </Optimal>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Debuff a random hero-->
+
+            <Goal Id="04_SchadenDebuff">
+
+               <SkillId Value="SchadenDebuff"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Teleport to another valid location-->
+
+            <Goal Id="05_DarkSchadenTeleport">
+
+               <SkillId Value="DarkSchadenTeleport"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="Schadenfreude1"/>
+
+                           <TargetInRangeCondition/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Charged for goal 01-->
+
+            <Goal Id="06_SchadenCharge">
+
+               <SkillId Value="SchadenCharge"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Teleport to another valid location if Schaden has nothing else to do-->
+
+            <Goal Id="07_DarkSchadenTeleport">
+
+               <SkillId Value="DarkSchadenTeleport"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="Schadenfreude1"/>
+
+                           <TargetInRangeCondition/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <SpawnCutscene Id="DarkSchaden_Cutscene"/>
+
+      <IsInvulnerable/>
+
+      <HideInNightReport/>
+
+   </BossUnitTemplateDefinition>
+
+
+
+   
+
+   <BossUnitTemplateDefinition Id="LightFreude">
+
+      <Tiles OriginX="0" OriginY="0">
+
+         BB
+
+         BB
+
+      </Tiles>
+
+      <SortingOrderOverride>100</SortingOrderOverride>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="LightFreude"/>
+
+      <!--<MoveSoundFolderName Value="LightFreude"/>-->
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>10</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Accuracy>50</Accuracy>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <DamageSkillId>FreudeStunAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>FreudeStunAttack</SkillToDisplay>
+
+         <SkillToDisplay>FreudeOffenseBuff</SkillToDisplay>
+
+         <SkillToDisplay>FreudeDefenseBuff</SkillToDisplay>
+
+         <SkillToDisplay>LightFreudeTeleport</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+
+
+      <Affixes>
+
+         <Affix Id="AuraFreude"/>
+
+      </Affixes>
+
+
+
+      <Behavior>
+
+         <TurnsToSkipOnSpawn Value="1"/>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+         <GoalsComputingOrder Value="-800"/>
+
+         <Goals>
+
+            <!--Attack closest hero if they are in range-->
+
+            <Goal Id="01_FreudeStunAttack">
+
+               <SkillId Value="FreudeStunAttack"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Buff a group of enemies-->
+
+            <Goal Id="02_FreudeDefenseBuff">
+
+               <SkillId Value="FreudeDefenseBuff"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <DamageableCountInAoeCondition Min="2">
+
+                              <DamageableTypeToCount>Enemy</DamageableTypeToCount>
+
+                           </DamageableCountInAoeCondition>
+
+                           <ExcludeDamageableTypeInAoeCondition>
+
+                              <DamageableType>Boss</DamageableType>
+
+                           </ExcludeDamageableTypeInAoeCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Enemy</DamageableType>
+
+                     <DamageableType Weight="-10">Boss</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Teleport to another valid location-->
+
+            <Goal Id="03_LightFreudeTeleport">
+
+               <SkillId Value="LightFreudeTeleport"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="Schadenfreude1"/>
+
+                           <TargetInRangeCondition/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Buff an enemy if Freude has nothing else to do-->
+
+            <Goal Id="04_FreudeOffenseBuff">
+
+               <SkillId Value="FreudeOffenseBuff"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="T1Enemies"/>
+
+                              <TargetsListId Value="T2Enemies"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Enemy</DamageableType>
+
+                     <DamageableType Weight="-10">Boss</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Teleport to another valid location if Freude cannot fulfill goal 04-->
+
+            <Goal Id="05_LightFreudeTeleport">
+
+               <SkillId Value="LightFreudeTeleport"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="Schadenfreude1"/>
+
+                           <TargetInRangeCondition/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <SpawnCutscene Id="LightFreude_Cutscene"/>
+
+      <IsInvulnerable/>
+
+      <HideInNightReport/>
+
+   </BossUnitTemplateDefinition>
+
+   
+
+   
+
+   <BossUnitTemplateDefinition Id="SchadenBoss">
+
+      <Tiles OriginX="0" OriginY="0">
+
+         BB
+
+         BB
+
+      </Tiles>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="SchadenBoss"/>
+
+      <!--<MoveSoundFolderName Value="SchadenBoss"/>-->
+
+      <Tier>13</Tier>
+
+      <Weight>15</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>5500</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <ArmorTotal>1100</ArmorTotal>
+
+      <Block>50</Block>
+
+      <Dodge>10</Dodge>
+
+      <Accuracy>50</Accuracy>
+
+      <Resistance>25</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <DamageSkillId>SchadenZoneAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>SchadenZoneAttack</SkillToDisplay>
+
+         <SkillToDisplay>SchadenDebuff</SkillToDisplay>
+
+         <SkillToDisplay>SchadenInstantKill</SkillToDisplay>
+
+         <SkillToDisplay>SchadenMovingBomb</SkillToDisplay>
+
+         <SkillToDisplay>SchadenBossTeleport</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+      
+
+      <Affixes>
+
+         <Affix Id="MirrorSchaden"/>
+
+         <Affix Id="RevengeSchaden"/>
+
+      </Affixes>
+
+
+
+      <Behavior>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+         <GoalsComputingOrder Value="-1000"/>
+
+         <Goals>
+
+            <Goal Id="01_SchadenDebuff">
+
+               <SkillId Value="SchadenDebuff"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="02_SchadenInstantKill">
+
+               <SkillId Value="SchadenInstantKill"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="03_SchadenZoneAttack">
+
+               <SkillId Value="SchadenZoneAttack"/>
+
+               <TargetTypes>
+
+                  <Tile>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <DamageableCountInAoeCondition Min="1">
+
+                              <DamageableTypeToCount>Playable</DamageableTypeToCount>
+
+                           </DamageableCountInAoeCondition>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="10"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Tile>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="10">Playable</DamageableType>
+
+                     <DamageableType Weight="1">Building</DamageableType>
+
+                     <DamageableType Weight="-1">Enemy</DamageableType>
+
+                     <DamageableType Weight="-1">Boss</DamageableType>
+
+                  </Optimal>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="04_SchadenZoneAttack">
+
+               <SkillId Value="SchadenZoneAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="10">Playable</DamageableType>
+
+                     <DamageableType Weight="1">Building</DamageableType>
+
+                     <DamageableType Weight="-1">Enemy</DamageableType>
+
+                     <DamageableType Weight="-1">Boss</DamageableType>
+
+                  </Optimal>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="05_SchadenMovingBomb">
+
+               <SkillId Value="SchadenMovingBomb"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="06_SchadenBossTeleport">
+
+               <SkillId Value="SchadenBossTeleport"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="Schadenfreude2"/>
+
+                           <TargetInRangeCondition/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="07_SchadenDebuff">
+
+               <SkillId Value="SchadenDebuff"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="08_SchadenBossTeleport">
+
+               <SkillId Value="SchadenBossTeleport"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="Schadenfreude2"/>
+
+                           <TargetInRangeCondition/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+         </Goals>
+
+      </Behavior>
+
+      
+
+      <Injuries>
+
+      </Injuries>
+
+      
+
+      <SpawnCutscene Id="SchadenBoss_Cutscene"/>
+
+
+
+      <HideInNightReport/>
+
+
+
+      <SkillProgressions>
+
+         <SkillProgression Id="SchadenZoneAttack1" UnlockedAtDay="1"/>
+
+         <SkillProgression Id="SchadenDebuff1" UnlockedAtDay="1"/>
+
+      </SkillProgressions>
+
+   </BossUnitTemplateDefinition>
+
+
+
+   
+
+   <BossUnitTemplateDefinition Id="SchadenBoss_Weaponless">
+
+      <Tiles OriginX="0" OriginY="0">
+
+         BB
+
+         BB
+
+      </Tiles>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="SchadenBoss_Weaponless"/>
+
+      <!--<MoveSoundFolderName Value="SchadenBoss_Weaponless"/>-->
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>10</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Accuracy>50</Accuracy>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>SchadenInstantKill</SkillToDisplay>
+
+         <SkillToDisplay>SchadenMovingBomb</SkillToDisplay>
+
+         <SkillToDisplay>SchadenBossWeaponlessTeleport</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+      
+
+      <Affixes>
+
+         <Affix Id="MistySchaden1"/>
+
+      </Affixes>
+
+
+
+      <Behavior>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+         <GoalsComputingOrder Value="-1000"/>
+
+         <Goals>
+
+            <Goal Id="01_SchadenMovingBomb">
+
+               <SkillId Value="SchadenMovingBomb"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            
+
+            <Goal Id="02_SchadenInstantKill">
+
+               <SkillId Value="SchadenInstantKill"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="03_SchadenMovingBomb">
+
+               <SkillId Value="SchadenMovingBomb"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="04_SchadenBossWeaponlessTeleport">
+
+               <SkillId Value="SchadenBossWeaponlessTeleport"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="Schadenfreude2"/>
+
+                           <TargetInRangeCondition/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="05_SchadenMovingBomb">
+
+               <SkillId Value="SchadenMovingBomb"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="06_SchadenBossWeaponlessTeleport">
+
+               <SkillId Value="SchadenBossWeaponlessTeleport"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="Schadenfreude2"/>
+
+                           <TargetInRangeCondition/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <IsInvulnerable/>
+
+      <HideInNightReport/>
+
+
+
+      <SpawnCutscene Id="SchadenBoss_Weaponless_Cutscene"/>
+
+   </BossUnitTemplateDefinition>
+
+
+
+   
+
+   <BossUnitTemplateDefinition Id="SchadenBoss_Final">
+
+      <Tiles OriginX="0" OriginY="0">
+
+         BB
+
+         BB
+
+      </Tiles>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="SchadenBoss_Final"/>
+
+      <!--<MoveSoundFolderName Value="SchadenBoss_Final"/>-->
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>8000</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <ArmorTotal>1600</ArmorTotal>
+
+      <Block>50</Block>
+
+      <Dodge>10</Dodge>
+
+      <Accuracy>50</Accuracy>
+
+      <Resistance>25</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <DamageSkillId>SchadenZoneAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>SchadenZoneAttack</SkillToDisplay>
+
+         <SkillToDisplay>SchadenDebuff</SkillToDisplay>
+
+         <SkillToDisplay>SchadenMovingBombPlus</SkillToDisplay>
+
+         <SkillToDisplay>SchadenBossFinalTeleport</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+      
+
+      <Affixes>
+
+         <Affix Id="EnergeticSchaden"/>
+
+         <Affix Id="MirrorBlissnacht"/>
+
+         <Affix Id="RevengeSchaden"/>
+
+      </Affixes>
+
+
+
+      <Behavior>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+         <GoalsComputingOrder Value="-1000"/>
+
+         <Goals>
+
+            <Goal Id="01_SchadenDebuff">
+
+               <SkillId Value="SchadenDebuff"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="02_SchadenBossFinalTeleport">
+
+               <SkillId Value="SchadenBossFinalTeleport"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="Schadenfreude2"/>
+
+                           <TargetInRangeCondition/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            
+
+            <Goal Id="03_SchadenZoneAttack">
+
+               <SkillId Value="SchadenZoneAttack"/>
+
+               <TargetTypes>
+
+                  <Tile>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <DamageableCountInAoeCondition Min="1">
+
+                              <DamageableTypeToCount>Playable</DamageableTypeToCount>
+
+                           </DamageableCountInAoeCondition>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="10"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Tile>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="10">Playable</DamageableType>
+
+                     <DamageableType Weight="1">Building</DamageableType>
+
+                     <DamageableType Weight="-1">Enemy</DamageableType>
+
+                     <DamageableType Weight="-1">Boss</DamageableType>
+
+                  </Optimal>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="04_SchadenZoneAttack">
+
+               <SkillId Value="SchadenZoneAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="10">Playable</DamageableType>
+
+                     <DamageableType Weight="1">Building</DamageableType>
+
+                     <DamageableType Weight="-1">Enemy</DamageableType>
+
+                     <DamageableType Weight="-1">Boss</DamageableType>
+
+                  </Optimal>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="05_SchadenMovingBombPlus">
+
+               <SkillId Value="SchadenMovingBombPlus"/>
+
+               <Cooldown Value="2"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="04_SchadenBossFinalTeleport">
+
+               <SkillId Value="SchadenBossFinalTeleport"/>
+
+               <Cooldown Value="2"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="Schadenfreude2"/>
+
+                           <TargetInRangeCondition/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="05_SchadenDebuff">
+
+               <SkillId Value="SchadenDebuff"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="06_SchadenMovingBombPlus">
+
+               <SkillId Value="SchadenMovingBombPlus"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="07_SchadenBossFinalTeleport">
+
+               <SkillId Value="SchadenBossFinalTeleport"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="Schadenfreude2"/>
+
+                           <TargetInRangeCondition/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <HideInNightReport/>
+
+
+
+      <SkillProgressions>
+
+         <SkillProgression Id="SchadenZoneAttack2" UnlockedAtDay="1"/>
+
+         <SkillProgression Id="SchadenDebuff2" UnlockedAtDay="1"/>
+
+      </SkillProgressions>
+
+
+
+      <SpawnCutscene Id="SchadenBoss_Final_Cutscene"/>
+
+      <DeathCutscene Id="SchadenBoss_Final_DeathCutscene" AlwaysPlay="true"/>
+
+
+
+   </BossUnitTemplateDefinition>
+
+   
+
+   
+
+   <BossUnitTemplateDefinition Id="FreudeBoss">
+
+      <Tiles OriginX="0" OriginY="0">
+
+         BB
+
+         BB
+
+      </Tiles>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="FreudeBoss"/>
+
+      <!--<MoveSoundFolderName Value="FreudeBoss"/>-->
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>7000</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Block>50</Block>
+
+      <Dodge>10</Dodge>
+
+      <Accuracy>50</Accuracy>
+
+      <Resistance>55</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <DamageSkillId>FreudeStunAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>FreudeStunAttack</SkillToDisplay>
+
+         <SkillToDisplay>FreudeDefenseBuff</SkillToDisplay>
+
+         <SkillToDisplay>FreudeSummon</SkillToDisplay>
+
+         <SkillToDisplay>FreudeBossTeleport</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+      
+
+      <Affixes>
+
+         <Affix Id="RegenerativeFreude"/>
+
+         <Affix Id="PurgeFreude"/>
+
+      </Affixes>
+
+
+
+      <Behavior>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+         <GoalsComputingOrder Value="-800"/>
+
+         <Goals>
+
+            <Goal Id="01_FreudeSummon">
+
+               <SkillId Value="FreudeSummon"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="02_FreudeStunAttack">
+
+               <SkillId Value="FreudeStunAttack"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="03_FreudeDefenseBuff">
+
+               <SkillId Value="FreudeDefenseBuff"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <DamageableCountInAoeCondition Min="2">
+
+                              <DamageableTypeToCount>Enemy</DamageableTypeToCount>
+
+                           </DamageableCountInAoeCondition>
+
+                           <ExcludeDamageableTypeInAoeCondition>
+
+                              <DamageableType>Boss</DamageableType>
+
+                           </ExcludeDamageableTypeInAoeCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Enemy</DamageableType>
+
+                     <DamageableType Weight="-10">Boss</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="04_FreudeBossTeleport">
+
+               <SkillId Value="FreudeBossTeleport"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="Schadenfreude2"/>
+
+                           <TargetInRangeCondition/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="05_FreudeSummon">
+
+               <SkillId Value="FreudeSummon"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <SpawnCutscene Id="FreudeBoss_Cutscene"/>
+
+
+
+      <HideInNightReport/>
+
+      
+
+      <SkillProgressions>
+
+         <SkillProgression Id="FreudeStunAttack1" UnlockedAtDay="1"/>
+
+         <SkillProgression Id="FreudeDefenseBuff1" UnlockedAtDay="1"/>
+
+      </SkillProgressions>
+
+   </BossUnitTemplateDefinition>
+
+
+
+   
+
+   <BossUnitTemplateDefinition Id="FreudeBoss_Weaponless">
+
+      <Tiles OriginX="0" OriginY="0">
+
+         BB
+
+         BB
+
+      </Tiles>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="FreudeBoss_Weaponless"/>
+
+      <!--<MoveSoundFolderName Value="FreudeBoss_Weaponless"/>-->
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>10</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Block>0</Block>
+
+      <Dodge>0</Dodge>
+
+      <Accuracy>50</Accuracy>
+
+      <Resistance>0</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>FreudeDefenseBuff</SkillToDisplay>
+
+         <SkillToDisplay>FreudeSummonPlus</SkillToDisplay>
+
+         <SkillToDisplay>FreudeBossWeaponlessTeleport</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+      
+
+      <Affixes>
+
+         <Affix Id="AuraFreude1"/>
+
+      </Affixes>
+
+
+
+      <Behavior>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+         <GoalsComputingOrder Value="-800"/>
+
+         <Goals>
+
+            <Goal Id="01_FreudeSummonPlus">
+
+               <SkillId Value="FreudeSummonPlus"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="02_FreudeDefenseBuff">
+
+               <SkillId Value="FreudeDefenseBuff"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <DamageableCountInAoeCondition Min="2">
+
+                              <DamageableTypeToCount>Enemy</DamageableTypeToCount>
+
+                           </DamageableCountInAoeCondition>
+
+                           <ExcludeDamageableTypeInAoeCondition>
+
+                              <DamageableType>Boss</DamageableType>
+
+                           </ExcludeDamageableTypeInAoeCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Enemy</DamageableType>
+
+                     <DamageableType Weight="-10">Boss</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="03_FreudeBossWeaponlessTeleport">
+
+               <SkillId Value="FreudeBossWeaponlessTeleport"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="Schadenfreude2"/>
+
+                           <TargetInRangeCondition/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="04_FreudeSummonPlus">
+
+               <SkillId Value="FreudeSummonPlus"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="05_FreudeDefenseBuff">
+
+               <SkillId Value="FreudeDefenseBuff"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <DamageableCountInAoeCondition Min="2">
+
+                              <DamageableTypeToCount>Enemy</DamageableTypeToCount>
+
+                           </DamageableCountInAoeCondition>
+
+                           <ExcludeDamageableTypeInAoeCondition>
+
+                              <DamageableType>Boss</DamageableType>
+
+                           </ExcludeDamageableTypeInAoeCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Enemy</DamageableType>
+
+                     <DamageableType Weight="-10">Boss</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="06_FreudeBossWeaponlessTeleport">
+
+               <SkillId Value="FreudeBossWeaponlessTeleport"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="Schadenfreude2"/>
+
+                           <TargetInRangeCondition/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <IsInvulnerable/>
+
+      <HideInNightReport/>
+
+
+
+      <SkillProgressions>
+
+         <SkillProgression Id="FreudeDefenseBuff1" UnlockedAtDay="1"/>
+
+      </SkillProgressions>
+
+
+
+      <SpawnCutscene Id="FreudeBoss_Weaponless_Cutscene"/>
+
+   </BossUnitTemplateDefinition>
+
+
+
+   
+
+   <BossUnitTemplateDefinition Id="FreudeBoss_Final">
+
+      <Tiles OriginX="0" OriginY="0">
+
+         BB
+
+         BB
+
+      </Tiles>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="FreudeBoss_Final"/>
+
+      <!--<MoveSoundFolderName Value="FreudeBoss_Final"/>-->
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>10000</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Block>50</Block>
+
+      <Dodge>10</Dodge>
+
+      <Accuracy>50</Accuracy>
+
+      <Resistance>70</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <DamageSkillId>FreudeStunAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>FreudeStunAttack</SkillToDisplay>
+
+         <SkillToDisplay>FreudeOffenseBuff</SkillToDisplay>
+
+         <SkillToDisplay>FreudeSummonPlus</SkillToDisplay>
+
+         <SkillToDisplay>FreudeBossFinalTeleport</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+      
+
+      <Affixes>
+
+         <Affix Id="EnergeticFreude"/>
+
+         <Affix Id="RegenerativeFreude"/>
+
+         <Affix Id="PurgeFreude"/>
+
+      </Affixes>
+
+
+
+      <Behavior>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+         <GoalsComputingOrder Value="-800"/>
+
+         <Goals>
+
+            <Goal Id="01_FreudeOffenseBuff">
+
+               <SkillId Value="FreudeOffenseBuff"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="T1Enemies"/>
+
+                              <TargetsListId Value="T2Enemies"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Enemy</DamageableType>
+
+                     <DamageableType Weight="-10">Boss</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="02_FreudeSummonPlus">
+
+               <SkillId Value="FreudeSummonPlus"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            
+
+            <Goal Id="03_FreudeStunAttack">
+
+               <SkillId Value="FreudeStunAttack"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="04_FreudeOffenseBuff">
+
+               <SkillId Value="FreudeOffenseBuff"/>
+
+               <Cooldown Value="2"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="T1Enemies"/>
+
+                              <TargetsListId Value="T2Enemies"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Enemy</DamageableType>
+
+                     <DamageableType Weight="-10">Boss</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="05_FreudeSummonPlus">
+
+               <SkillId Value="FreudeSummonPlus"/>
+
+               <Cooldown Value="2"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            
+
+            <Goal Id="06_FreudeBossFinalTeleport">
+
+               <SkillId Value="FreudeBossFinalTeleport"/>
+
+               <Cooldown Value="2"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="Schadenfreude2"/>
+
+                           <TargetInRangeCondition/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="07_FreudeOffenseBuff">
+
+               <SkillId Value="FreudeOffenseBuff"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="T1Enemies"/>
+
+                              <TargetsListId Value="T2Enemies"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Enemy</DamageableType>
+
+                     <DamageableType Weight="-10">Boss</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="08_FreudeSummonPlus">
+
+               <SkillId Value="FreudeSummonPlus"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <FirstTarget/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <HideInNightReport/>
+
+
+
+      <SkillProgressions>
+
+         <SkillProgression Id="FreudeStunAttack1" UnlockedAtDay="1"/>
+
+         <SkillProgression Id="FreudeOffenseBuff1" UnlockedAtDay="1"/>
+
+      </SkillProgressions>
+
+
+
+      <SpawnCutscene Id="FreudeBoss_Final_Cutscene"/>
+
+      <DeathCutscene Id="FreudeBoss_Final_DeathCutscene" AlwaysPlay="true"/>
+
+   </BossUnitTemplateDefinition>
+
+   
+
+   
+
+   <!-- Weapons -->
+
+
+
+   <BossUnitTemplateDefinition Id="BlissnachtBoss">
+
+      <Tiles OriginX="0" OriginY="0">
+
+         BB
+
+         BB
+
+      </Tiles>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="BlissnachtBoss"/>
+
+      <!--<MoveSoundFolderName Value="BlissnachtBoss"/>-->
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>4000</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <ArmorTotal>1600</ArmorTotal>
+
+      <Block>25</Block>
+
+      <Dodge>20</Dodge>
+
+      <Accuracy>50</Accuracy>
+
+      <Resistance>25</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <DamageSkillId>BlissnachtZoneAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>BlissnachtZoneAttack</SkillToDisplay>
+
+         <SkillToDisplay>BlissnachtDebuff</SkillToDisplay>
+
+         <SkillToDisplay>BlissnachtBossTeleport</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+      
+
+      <Affixes>
+
+         <Affix Id="BarrierBlissnacht"/>
+
+         <Affix Id="MirrorBlissnacht"/>
+
+      </Affixes>
+
+
+
+      <Behavior>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+         <GoalsComputingOrder Value="-900"/>
+
+         <Goals>
+
+            <Goal Id="01_BlissnachtDebuff">
+
+               <SkillId Value="BlissnachtDebuff"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            
+
+            <Goal Id="02_BlissnachtZoneAttack">
+
+               <SkillId Value="BlissnachtZoneAttack"/>
+
+               <TargetTypes>
+
+                  <Tile>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <DamageableCountInAoeCondition Min="1">
+
+                              <DamageableTypeToCount>Playable</DamageableTypeToCount>
+
+                           </DamageableCountInAoeCondition>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="10"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Tile>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="10">Playable</DamageableType>
+
+                     <DamageableType Weight="1">Building</DamageableType>
+
+                     <DamageableType Weight="-1">Enemy</DamageableType>
+
+                     <DamageableType Weight="-1">Boss</DamageableType>
+
+                  </Optimal>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="03_BlissnachtBossTeleport">
+
+               <SkillId Value="BlissnachtBossTeleport"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="Schadenfreude2"/>
+
+                           <TargetInRangeCondition/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="04_BlissnachtDebuff">
+
+               <SkillId Value="BlissnachtDebuff"/>
+
+               <Cooldown Value="3"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="05_BlissnachtBossTeleport">
+
+               <SkillId Value="BlissnachtBossTeleport"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="Schadenfreude2"/>
+
+                           <TargetInRangeCondition/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+                       
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <HideInNightReport/>
+
+      <SpawnCutscene Id="BlissnachtBoss_Cutscene"/>
+
+   </BossUnitTemplateDefinition>
+
+
+
+   
+
+   <BossUnitTemplateDefinition Id="TendertrostBoss">
+
+      <Tiles OriginX="0" OriginY="0">
+
+         BB
+
+         BB
+
+      </Tiles>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DeathSoundFolderName Value="TendertrostBoss"/>
+
+      <!--<MoveSoundFolderName Value="TendertrostBoss"/>-->
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+      <MoveMethod Method="Flying"/>
+
+      <HealthTotal>5000</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Block>25</Block>
+
+      <Dodge>20</Dodge>
+
+      <Accuracy>50</Accuracy>
+
+      <Resistance>70</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <DamageSkillId>TendertrostStunAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>TendertrostStunAttack</SkillToDisplay>
+
+         <SkillToDisplay>TendertrostOffenseBuff</SkillToDisplay>
+
+         <SkillToDisplay>TendertrostBossTeleport</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      <MoveSpeed>4</MoveSpeed>
+
+      
+
+      <Affixes>
+
+         <Affix Id="BarrierTendertrost"/>
+
+         <Affix Id="RegenerativeTendertrost"/>
+
+      </Affixes>
+
+
+
+      <Behavior>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+         <GoalsComputingOrder Value="-700"/>
+
+         <Goals>
+
+            <Goal Id="01_TendertrostOffenseBuff">
+
+               <SkillId Value="TendertrostOffenseBuff"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="T1Enemies"/>
+
+                              <TargetsListId Value="T2Enemies"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Enemy</DamageableType>
+
+                     <DamageableType Weight="-10">Boss</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            
+
+            <Goal Id="02_TendertrostStunAttack">
+
+               <SkillId Value="TendertrostStunAttack"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="03_TendertrostBossTeleport">
+
+               <SkillId Value="TendertrostBossTeleport"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <TileFlag>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <FlagTagCondition FlagTag="Schadenfreude2"/>
+
+                           <TargetInRangeCondition/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </TileFlag>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Random/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <Goal Id="04_TendertrostOffenseBuff">
+
+               <SkillId Value="TendertrostOffenseBuff"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="T1Enemies"/>
+
+                              <TargetsListId Value="T2Enemies"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Enemy</DamageableType>
+
+                     <DamageableType Weight="-10">Boss</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <HideInNightReport/>
+
+      <SpawnCutscene Id="TendertrostBoss_Cutscene"/>
+
+   </BossUnitTemplateDefinition>
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- GildenbergRedux -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <BossUnitTemplateDefinition Id="DwarfStatueBoss1Vulnerable">
+
+      <!--<VisualOffset X="0" Y="1.7"/>-->
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DamagedParticles Id="Damaged_Particles_Rock"/>
+
+      <DeathSoundFolderName Value="DwarfStatueBoss1Vulnerable"/>
+
+      <Tier>12</Tier>
+
+      <Weight>1</Weight>
+
+      <MoveMethod Method="AboveAll"/>
+
+	  <HealthTotal>5700</HealthTotal>
+
+      <Resistance>20</Resistance>
+
+	  <ArmorTotal>800</ArmorTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Accuracy>40</Accuracy>
+
+      <Block>45</Block>
+
+      <Dodge>0</Dodge>
+
+      <StunResistance>1000</StunResistance>
+
+      <DamageSkillId>AncestralWrath</DamageSkillId>
+
+      <SkillsToDisplay>
+
+		   <SkillToDisplay>FiresStrength</SkillToDisplay>
+
+		   <SkillToDisplay>AncestralWrath</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+	   <Behavior>
+
+		   <ThinkingScope>1000</ThinkingScope>
+
+		   <Goals>
+
+            <Goal Id="00_FiresStrength">
+
+               <SkillId Value="FiresStrength"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Enemy</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+            </Goal>
+
+			   <Goal Id="01_FiresStrength">
+
+				   <SkillId Value="FiresStrength"/>
+
+				   <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <DamageableCountInAoeCondition Min="3">
+
+                              <DamageableTypeToCount>Enemy</DamageableTypeToCount>
+
+                           </DamageableCountInAoeCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Enemy</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+			   </Goal>
+
+		   			   <Goal Id="02_AncestralWrath">
+
+				   <SkillId Value="AncestralWrath"/>
+
+				   <TargetTypes>
+
+					   <PlayableUnit/>
+
+				   </TargetTypes>
+
+				   <TargetingMethod>
+
+					   <Closest/>
+
+				   </TargetingMethod>
+
+			   </Goal>
+
+		   </Goals>
+
+	   </Behavior>
+
+      <Injuries>
+
+      </Injuries>
+
+      <HideInNightReport/>
+
+      <AppearanceDelay>1</AppearanceDelay>
+
+      <CastSpawnSkillDelay>0.5</CastSpawnSkillDelay>
+
+      <LockedOrientation>South</LockedOrientation>
+
+   	   <Affixes>
+
+		   <Affix Id="EnergeticDwarf"/>
+
+	   </Affixes>
+
+   </BossUnitTemplateDefinition>
+
+
+
+   <BossUnitTemplateDefinition Id="DwarfStatueBoss2Vulnerable" TemplateId="DwarfStatueBoss1Vulnerable" UseTemplateAssets="true">
+
+      <HealthTotal>6200</HealthTotal>
+
+	  <Resistance>50</Resistance>
+
+	  <ArmorTotal>0</ArmorTotal>
+
+      <SkillsToDisplay>
+
+		   <SkillToDisplay>FrostsResilience</SkillToDisplay>
+
+		   <SkillToDisplay>AncestralWrath</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <Behavior>
+
+		   <ThinkingScope>1000</ThinkingScope>
+
+		   <Goals>
+
+            <Goal Id="00_FrostsResilience">
+
+               <SkillId Value="FrostsResilience"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <DamageableCountInAoeCondition Min="3">
+
+                              <DamageableTypeToCount>Enemy</DamageableTypeToCount>
+
+                           </DamageableCountInAoeCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Enemy</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+            </Goal>
+
+			<Goal Id="01_AncestralWrath">
+
+				<SkillId Value="AncestralWrath"/>
+
+				<TargetTypes>
+
+					<PlayableUnit/>
+
+				</TargetTypes>
+
+				<TargetingMethod>
+
+					<Closest/>
+
+				</TargetingMethod>
+
+			</Goal>
+
+		   </Goals>
+
+	   </Behavior>
+
+   	   <Affixes>
+
+		   <Affix Id="EnergeticDwarf"/>
+
+	   </Affixes>
+
+   </BossUnitTemplateDefinition>
+
+   
+
+      <BossUnitTemplateDefinition Id="DwarfStatueBoss2VulnerableLast" TemplateId="DwarfStatueBoss1Vulnerable" UseTemplateAssets="true">
+
+      <HealthTotal>6200</HealthTotal>
+
+	  <Resistance>50</Resistance>
+
+	  <ArmorTotal>0</ArmorTotal>
+
+      <SkillsToDisplay>
+
+		   <SkillToDisplay>FrostsResilience</SkillToDisplay>
+
+		   <SkillToDisplay>AncestralWrath</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <Behavior>
+
+		   <ThinkingScope>1000</ThinkingScope>
+
+		   <Goals>
+
+            <Goal Id="00_FrostsResilience">
+
+               <SkillId Value="FrostsResilience"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <DamageableCountInAoeCondition Min="3">
+
+                              <DamageableTypeToCount>Enemy</DamageableTypeToCount>
+
+                           </DamageableCountInAoeCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Enemy</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+            </Goal>
+
+			<Goal Id="01_AncestralWrath">
+
+				<SkillId Value="AncestralWrath"/>
+
+				<TargetTypes>
+
+					<PlayableUnit/>
+
+				</TargetTypes>
+
+				<TargetingMethod>
+
+					<Closest/>
+
+				</TargetingMethod>
+
+			</Goal>
+
+		   </Goals>
+
+	   </Behavior>
+
+   	   <Affixes>
+
+		   <Affix Id="EnergeticDwarf"/>
+
+	   </Affixes>
+
+         <DeathCutscene Id="DwarfStatue_DeathCutscene"/>
+
+   </BossUnitTemplateDefinition>
+
+
+
+   <BossUnitTemplateDefinition Id="DwarfStatueBoss1">
+
+      <!--<VisualOffset X="0" Y="1.7"/>-->
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <DamagedParticles Id="Damaged_Particles_Rock"/>
+
+      <Tier>12</Tier>
+
+      <Weight>1</Weight>
+
+      <MoveMethod Method="AboveAll"/>
+
+	   	  <HealthTotal>5700</HealthTotal>
+
+      <Resistance>20</Resistance>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>0</MovePointsTotal>
+
+      <Block>45</Block>
+
+      <Dodge>0</Dodge>
+
+      <StunResistance>1000</StunResistance>
+
+      <DamageSkillId>AncestralWrath</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>FiresStrength</SkillToDisplay>
+
+         <SkillToDisplay>AncestralWrath</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>0</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      <Behavior>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+	  					
+
+		  		   <Goals>
+
+            <Goal Id="00_FiresStrength">
+
+               <SkillId Value="FiresStrength"/>
+
+               <Cooldown Value="99"/>
+
+               <TargetTypes>
+
+                  <Itself/>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Enemy</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+            </Goal>
+
+			   <Goal Id="01_FiresStrength">
+
+				   <SkillId Value="FiresStrength"/>
+
+				   <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <DamageableCountInAoeCondition Min="3">
+
+                              <DamageableTypeToCount>Enemy</DamageableTypeToCount>
+
+                           </DamageableCountInAoeCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Enemy</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+			   </Goal>
+
+		   			   <Goal Id="02_AncestralWrath">
+
+				   <SkillId Value="AncestralWrath"/>
+
+				   <TargetTypes>
+
+					   <PlayableUnit/>
+
+				   </TargetTypes>
+
+				   <TargetingMethod>
+
+					   <Closest/>
+
+				   </TargetingMethod>
+
+			   </Goal>
+
+		   </Goals>
+
+      </Behavior>
+
+      <Injuries>
+
+      </Injuries>
+
+      <HideInNightReport/>
+
+      <AppearanceDelay>1</AppearanceDelay>
+
+      <CastSpawnSkillDelay>0.5</CastSpawnSkillDelay>
+
+      <LockedOrientation>South</LockedOrientation>
+
+      <IsInvulnerable/> 
+
+   </BossUnitTemplateDefinition>
+
+
+
+   <BossUnitTemplateDefinition Id="DwarfStatueBoss2" TemplateId="DwarfStatueBoss1" UseTemplateAssets="true">
+
+      <HealthTotal>6200</HealthTotal>
+
+	  <Resistance>50</Resistance>
+
+	  <ArmorTotal>0</ArmorTotal>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>FrostsResilience</SkillToDisplay>
+
+         <SkillToDisplay>AncestralWrath</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <Behavior>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+		  <Goals>
+
+            <Goal Id="00_FrostsResilience">
+
+               <SkillId Value="FrostsResilience"/>
+
+               <Cooldown Value="1"/>
+
+               <TargetTypes>
+
+                  <EnemyUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <DamageableCountInAoeCondition Min="3">
+
+                              <DamageableTypeToCount>Enemy</DamageableTypeToCount>
+
+                           </DamageableCountInAoeCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </EnemyUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Optimal>
+
+                     <DamageableType Weight="1">Enemy</DamageableType>
+
+                  </Optimal>
+
+               </TargetingMethod>
+
+            </Goal>
+
+			<Goal Id="01_AncestralWrath">
+
+				<SkillId Value="AncestralWrath"/>
+
+				<TargetTypes>
+
+					<PlayableUnit/>
+
+				</TargetTypes>
+
+				<TargetingMethod>
+
+					<Closest/>
+
+				</TargetingMethod>
+
+			</Goal>
+
+		   </Goals>
+
+
+
+      </Behavior>
+
+   </BossUnitTemplateDefinition>
+
+   
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- GlenwaldRedux -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   
+
+   <BossUnitTemplateDefinition Id="ZeppelinBoss">      
+
+      <Tiles OriginX="0" OriginY="0">
+
+         B
+
+      </Tiles>
+
+      <VisualVariants>
+
+         <VisualVariant Id="01"/>
+
+      </VisualVariants>
+
+      <UpdateAnimatorOnOrientationChange/>
+
+      <DeathSoundFolderName Value="Zeppelin"/>
+
+      <MoveSoundFolderName Value="Zeppelin"/>
+
+      <Tier>-1</Tier>
+
+      <Weight>15</Weight>
+
+      <MoveMethod Method="AboveAll"/>
+
+      <HealthTotal>6000</HealthTotal>
+
+      <HealthGaugeSize>Large</HealthGaugeSize>
+
+      <MovePointsTotal>9</MovePointsTotal>
+
+      <Block>30</Block>
+
+      <Dodge>10</Dodge>
+
+      <Accuracy>50</Accuracy>
+
+      <Resistance>20</Resistance>
+
+      <StunResistance>1000</StunResistance>
+
+      <DamageSkillId>ZeppelinAttack</DamageSkillId>
+
+      <SkillsToDisplay>
+
+         <SkillToDisplay>ZeppelinExplosion</SkillToDisplay>
+
+         <SkillToDisplay>ZeppelinMist</SkillToDisplay>
+
+         <SkillToDisplay>ZeppelinAttack</SkillToDisplay>
+
+      </SkillsToDisplay>
+
+      <ExperienceGain>0</ExperienceGain>
+
+      <DamnedSoulsEarned>50</DamnedSoulsEarned>
+
+      <Panic Value="0"/>
+
+      <MoveSpeed>2</MoveSpeed>
+
+      
+
+      <Affixes>
+
+         <Affix Id="ZeppelinAffix"/>
+
+      </Affixes>
+
+
+
+      <Behavior>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+         <GoalsComputingOrder Value="-700"/>
+
+         <Goals>
+
+            <!--Go towards the closest sacred ballista and try to explode on it-->
+
+            <Goal Id="01_ExplodeOnSacredBallista">
+
+               <SkillId Value="ZeppelinExplosion"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetsListId Value="SacredBallistas"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>    
+
+            
+
+            
+
+            <!--Go towards the MC and try to explode on it-->
+
+            <Goal Id="02_ExplodeOnMC">
+
+               <SkillId Value="ZeppelinExplosion"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            
+
+            <!--Test spawn lightfog-->
+
+            <Goal Id="03_LightFogSpawn">
+
+               <SkillId Value="ZeppelinMist"/>
+
+               <Cooldown Value="2"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <InterpretedTurnCondition>SpawnedHour + 1</InterpretedTurnCondition>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Itself>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <GroundCategoryCondition Id="City"/>
+
+                           <GroundCategoryCondition Id="Outside"/>
+
+                        </ConditionsGroup>
+
+                        <ConditionsGroup>
+
+                           <TargetHasBuildingIdCondition Exclude="true">
+
+                              <BuildingsListId Value="LightFogSpawnersList"/>
+
+                           </TargetHasBuildingIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Itself>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Attack Player-->
+
+            <Goal Id="04_PlayerAttack">
+
+               <SkillId Value="ZeppelinAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="4"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+         </Goals>
+
+      </Behavior>
+
+
+
+      <Injuries>
+
+      </Injuries>
+
+
+
+      <SpawnCutscene Id="ZeppelinBossSpawnCutscene"/>
+
+
+
+      <DeathCutscene Id="Zeppelin_DeathCutscene"/>
+
+   </BossUnitTemplateDefinition>
+
+
+
+   <BossUnitTemplateDefinition Id="ZeppelinBoss_FocusMCOnly" TemplateId="ZeppelinBoss" UseTemplateAssets="true">
+
+      <Affixes>
+
+         <Affix Id="ZeppelinAffix"/>
+
+      </Affixes>
+
+      <Behavior>
+
+         <ThinkingScope>1000</ThinkingScope>
+
+         <GoalsComputingOrder Value="-700"/>
+
+         <Goals>
+
+            <!--Go towards the MC and try to explode on it-->
+
+            <Goal Id="01_ExplodeOnMC">
+
+               <SkillId Value="ZeppelinExplosion"/>
+
+               <TargetTypes>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition>
+
+                              <TargetId Value="MagicCircle"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Test spawn lightfog-->
+
+            <Goal Id="02_LightFogSpawn">
+
+               <SkillId Value="ZeppelinMist"/>
+
+               <Cooldown Value="2"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <InterpretedTurnCondition>SpawnedHour + 1</InterpretedTurnCondition>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <Itself>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetHasBuildingIdCondition Exclude="true">
+
+                              <BuildingsListId Value="LightFogSpawnersList"/>
+
+                           </TargetHasBuildingIdCondition>
+
+                           <GroundCategoryCondition Id="City"/>
+
+                           <GroundCategoryCondition Id="Outside"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Itself>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+
+            <!--Attack Player-->
+
+            <Goal Id="03_PlayerAttack">
+
+               <SkillId Value="ZeppelinAttack"/>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="4"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+            
+
+         </Goals>
+
+      </Behavior>
+
+   </BossUnitTemplateDefinition>
+
+  
+
+</BossUnitTemplateDefinitions>
