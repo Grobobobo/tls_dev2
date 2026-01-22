@@ -608,9 +608,9 @@
 
                      <BaseChance>1</BaseChance>
 
-                     <Stat Id="MovePointsTotal"/>
+                     <Stat Id="Dodge"/>
 
-                     <Bonus>1</Bonus>
+                     <Bonus>12</Bonus>
 
                      <TurnsCount>2</TurnsCount>
 
@@ -696,17 +696,21 @@
 
             <SkillEffects>
 
-               <Debuff>
+               <CasterEffect>
 
-                  <BaseChance>100</BaseChance>
+                  <Buff>
 
-                  <Malus>6</Malus>
+                     <BaseChance>1</BaseChance>
 
-                  <Stat Id="Dodge"/>
+                     <Stat Id="MovePointsTotal"/>
 
-                  <TurnsCount>2</TurnsCount>
+                     <Bonus>1</Bonus>
 
-               </Debuff>
+                     <TurnsCount>2</TurnsCount>
+
+                  </Buff>
+
+               </CasterEffect>
 
             </SkillEffects>
 
@@ -822,13 +826,11 @@
 
                   <Stat Id="MovePointsTotal"/>
 
-                  <Malus>1</Malus>
+                  <Malus>2</Malus>
 
                   <TurnsCount>1</TurnsCount>
 
                </Debuff>
-
-               <ArmorPiercing/>
 
             </SkillEffects>
 
@@ -874,13 +876,11 @@
 
                   <Stat Id="MovePointsTotal"/>
 
-                  <Malus>1</Malus>
+                  <Malus>2</Malus>
 
                   <TurnsCount>1</TurnsCount>
 
                </Debuff>
-
-               <ArmorPiercing/>
 
             </SkillEffects>
 
@@ -978,7 +978,7 @@
 
    <SkillDefinition Id="ApocTankyAttack" TemplateId="TankyAttack">
 
-      <Range Min="1" Max="3" CardinalDirectionOnly="true"/>
+      <Range Min="1" Max="2" CardinalDirectionOnly="true"/>
 
    </SkillDefinition>
 
@@ -986,7 +986,7 @@
 
    <SkillDefinition Id="TankyStun">
 
-      <Range Min="1" Max="5" CardinalDirectionOnly="false"/>
+      <Range Min="1" Max="4" CardinalDirectionOnly="false"/>
 
       <SkillAction>
 
@@ -1110,6 +1110,11 @@
 
    </SkillDefinition>
 
+   <SkillDefinition Id="ApocTankyStun" TemplateId="TankyStun">
+
+      <Range Min="1" Max="5" CardinalDirectionOnly="false"/>
+
+   </SkillDefinition>
 
 
    <SkillDefinition Id="TankyBuff">
@@ -2115,12 +2120,6 @@
             <DamageMultiplier>1</DamageMultiplier>
 
             <SkillEffects>
-
-               <Stun>
-
-                  <BaseChance>1</BaseChance>
-
-               </Stun>
 
                <NoDodge/>
 
@@ -3878,7 +3877,18 @@
 
                      <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
 
-                     <Type Id="AllNegative"/>
+                     <Type Id="Stun"/>
+
+                     <TurnsCount>1</TurnsCount>
+
+                  </NegativeStatusImmunityEffect>
+                  <NegativeStatusImmunityEffect>
+
+                     <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                     <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                     <Type Id="Poison"/>
 
                      <TurnsCount>1</TurnsCount>
 
@@ -3986,7 +3996,18 @@
 
                      <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
 
-                     <Type Id="AllNegative"/>
+                     <Type Id="Stun"/>
+
+                     <TurnsCount>1</TurnsCount>
+
+                  </NegativeStatusImmunityEffect>
+                  <NegativeStatusImmunityEffect>
+
+                     <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                     <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                     <Type Id="Poison"/>
 
                      <TurnsCount>1</TurnsCount>
 
@@ -3998,33 +4019,9 @@
 
                   <BaseChance>1</BaseChance>
 
-                  <Malus>200</Malus>
-
-                  <Stat Id="Block"/>
-
-                  <TurnsCount>2</TurnsCount>
-
-               </Debuff>
-
-               <Debuff>
-
-                  <BaseChance>1</BaseChance>
-
-                  <Malus>400</Malus>
-
-                  <Stat Id="ArmorTotal"/>
-
-                  <TurnsCount>2</TurnsCount>
-
-               </Debuff>
-
-               <Debuff>
-
-                  <BaseChance>1</BaseChance>
-
                   <Malus>100</Malus>
 
-                  <Stat Id="Dodge"/>
+                  <Stat Id="Resistance"/>
 
                   <TurnsCount>2</TurnsCount>
 
@@ -4273,6 +4270,7 @@
             <SkillEffects>
 
                <IgnoreLineOfSight/>
+               <NoBlock/>
 
                <CasterEffect>
 
@@ -4407,6 +4405,49 @@
    </SkillDefinition>
 
 
+   <SkillDefinition Id="ApocBountyHunterCharge" TemplateId="BountyHunterCharge">
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <IgnoreLineOfSight/>
+
+               <CasterEffect>
+
+                  <Buff>
+
+                     <BaseChance>1</BaseChance>
+
+                     <Bonus>10</Bonus>
+
+                     <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                     <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                     <Stat Id="Dodge"/>
+
+                     <TurnsCount>1</TurnsCount>
+
+                  </Buff>
+
+                  <Charged>
+
+                     <TurnsCount>2</TurnsCount>
+
+                  </Charged>
+
+               </CasterEffect>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+   </SkillDefinition>
 
 
 
@@ -4698,8 +4739,6 @@
 
    <SkillDefinition Id="ApocPoisonFrogAttack" TemplateId="PoisonFrogAttack">
 
-      <Range Min="2" Max="5" CardinalDirectionOnly="false"/>
-
       <SkillAction>
 
          <Attack>
@@ -4721,6 +4760,19 @@
                   <TurnsCount>3</TurnsCount>
 
                </Poison>
+
+               <Debuff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Stat Id="HealingReceived"/>
+
+                  <Malus>25</Malus>
+
+                  <TurnsCount>3</TurnsCount>
+
+               </Debuff>
+
 
             </SkillEffects>
 
@@ -4755,6 +4807,19 @@
                   <TurnsCount>3</TurnsCount>
 
                </Poison>
+
+               <Debuff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Stat Id="HealingReceived"/>
+
+                  <Malus>25</Malus>
+
+                  <TurnsCount>3</TurnsCount>
+
+               </Debuff>
+
 
             </SkillEffects>
 
@@ -4792,6 +4857,18 @@
 
                </Poison>
 
+               <Debuff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Stat Id="HealingReceived"/>
+
+                  <Malus>25</Malus>
+
+                  <TurnsCount>3</TurnsCount>
+
+               </Debuff>
+
             </SkillEffects>
 
          </Attack>
@@ -4828,6 +4905,18 @@
 
                </Poison>
 
+               <Debuff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Stat Id="HealingReceived"/>
+
+                  <Malus>25</Malus>
+
+                  <TurnsCount>3</TurnsCount>
+
+               </Debuff>
+
             </SkillEffects>
 
          </Attack>
@@ -4863,6 +4952,18 @@
                   <TurnsCount>3</TurnsCount>
 
                </Poison>
+
+               <Debuff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Stat Id="HealingReceived"/>
+
+                  <Malus>25</Malus>
+
+                  <TurnsCount>3</TurnsCount>
+
+               </Debuff>
 
             </SkillEffects>
 
