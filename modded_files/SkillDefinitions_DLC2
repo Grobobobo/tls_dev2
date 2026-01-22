@@ -784,6 +784,33 @@
 
    </SkillDefinition>
 
+      <SkillDefinition Id="PreciseTargettingStrongThrow" TemplateId="PreciseTargetting">
+      <ActionPointsCost>1</ActionPointsCost>
+
+      <Range Min="4" Max="10" Modifiable="true"/>
+
+      <UsesPerTurnCount>5</UsesPerTurnCount>
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Ranged</AttackType>
+
+            <DamageMultiplier>1</DamageMultiplier>
+
+            <SkillEffects>
+                  <Stun>
+                     <BaseChance>0.5</BaseChance>
+                     <MultiHit HitsCount="3"/>
+                  </Stun>
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+   </SkillDefinition>
 
 
    <SkillDefinition Id="CrescentSwing">
@@ -841,9 +868,8 @@
                   </Stun>
 
                <SurroundingEffect>
-
+                     <DamageMultiplier>0.2</DamageMultiplier>
                   <Stun>
-
                      <BaseChance>0.45</BaseChance>
 
                   </Stun>
@@ -915,7 +941,47 @@
 
    </SkillDefinition>
 
+   <SkillDefinition Id="CrescentSwingStrongThrow" TemplateId="CrescentSwing">
+      <AreaOfEffect OriginX="3" OriginY="4">
 
+         __XX_
+
+         _X___
+
+         X____
+
+         X____
+
+         _X___
+
+      </AreaOfEffect>
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Ranged</AttackType>
+
+            <DamageMultiplier>1.35</DamageMultiplier>
+
+            <SkillEffects>
+
+               <IgnoreLineOfSight/>
+
+                  <Stun>
+
+                     <BaseChance>0.9</BaseChance>
+
+                  </Stun>
+
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+   </SkillDefinition>
 
    <SkillDefinition Id="PainfulSpin">
 
@@ -945,7 +1011,7 @@
 
       <Range Min="4" Max="10" CardinalDirectionOnly="true" Modifiable="true"/>
 
-      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
 
       <AffectedUnits>
 
@@ -972,11 +1038,9 @@
                   </Stun>
 
                <SurroundingEffect>
-
+                  <DamageMultiplier>0.2</DamageMultiplier>
                   <Stun>
-
                      <BaseChance>0.5</BaseChance>
-
                   </Stun>
 
                </SurroundingEffect>
@@ -1116,6 +1180,67 @@
          </CamShake>
 
       </CastFXs>
+
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="PainfulSpinStrongThrow" TemplateId="PainfulSpin">
+
+      <AreaOfEffect OriginX="2" OriginY="5">
+
+         __X__
+
+         _XXX_
+
+         __X__
+
+         _XXX_
+
+         XXXXX
+
+         _XXX_
+
+         __X__
+
+      </AreaOfEffect>
+
+      <ActionPointsCost>2</ActionPointsCost>
+
+      <ManaCost>5</ManaCost>
+
+      <Range Min="4" Max="10" CardinalDirectionOnly="true" Modifiable="true"/>
+
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+
+      <AffectedUnits>
+
+         <CanAffectCaster>false</CanAffectCaster>
+
+      </AffectedUnits>
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Ranged</AttackType>
+
+            <DamageMultiplier>1.7</DamageMultiplier>
+
+            <SkillEffects>
+
+               <IgnoreLineOfSight/>
+
+                  <Stun>
+
+                     <BaseChance>0.5</BaseChance>
+
+                  </Stun>
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
 
    </SkillDefinition>
 
