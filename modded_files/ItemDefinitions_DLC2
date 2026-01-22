@@ -1,0 +1,2093 @@
+<ItemDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../ItemDefinitions.xsd">
+
+<!-- ******************************************************************* -->
+<!-- Generated from "macro_items2.xlsm" => "DLC2" tab. Count = 26 items. -->
+<!-- ******************************************************************* -->
+
+	<ItemDefinition Id="Claws0">
+		<Category>MeleeWeapon</Category>
+		<Tags>
+			<Tag>Claws</Tag>
+		</Tags>
+		<Hands>TwoHands</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="52" Max="99"/>
+				<BasePrice>10</BasePrice>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="58" Max="110"/>
+				<BasePrice>15</BasePrice>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws1</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="64" Max="122"/>
+				<BasePrice>24</BasePrice>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws2</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="71" Max="135"/>
+				<BasePrice>38</BasePrice>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws3</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="79" Max="150"/>
+				<BasePrice>58</BasePrice>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws4</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="88" Max="167"/>
+				<BasePrice>85</BasePrice>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws5</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Claws1">
+		<Category>MeleeWeapon</Category>
+		<Tags>
+			<Tag>Claws</Tag>
+		</Tags>
+		<Hands>TwoHands</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="55" Max="105"/>
+				<BasePrice>14</BasePrice>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="61" Max="117"/>
+				<BasePrice>20</BasePrice>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws1</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="68" Max="130"/>
+				<BasePrice>30</BasePrice>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws2</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="75" Max="144"/>
+				<BasePrice>45</BasePrice>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws3</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="83" Max="160"/>
+				<BasePrice>66</BasePrice>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws4</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="92" Max="178"/>
+				<BasePrice>94</BasePrice>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws5</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Claws2">
+		<Category>MeleeWeapon</Category>
+		<Tags>
+			<Tag>Claws</Tag>
+		</Tags>
+		<Hands>TwoHands</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="55" Max="105"/>
+				<BasePrice>18</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="CriticalPower">15</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="61" Max="117"/>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="CriticalPower">18</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws1</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="68" Max="130"/>
+				<BasePrice>36</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="CriticalPower">21</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws2</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="75" Max="144"/>
+				<BasePrice>52</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="CriticalPower">24</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws3</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="83" Max="160"/>
+				<BasePrice>74</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="CriticalPower">27</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws4</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="92" Max="178"/>
+				<BasePrice>104</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="CriticalPower">30</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws5</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Claws3">
+		<Category>MeleeWeapon</Category>
+		<Tags>
+			<Tag>Claws</Tag>
+		</Tags>
+		<Hands>TwoHands</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="55" Max="105"/>
+				<BasePrice>18</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Critical">5</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="61" Max="117"/>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Critical">6</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws1</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="68" Max="130"/>
+				<BasePrice>36</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Critical">7</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws2</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="75" Max="144"/>
+				<BasePrice>52</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Critical">8</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws3</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="83" Max="160"/>
+				<BasePrice>74</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Critical">10</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws4</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="92" Max="178"/>
+				<BasePrice>104</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Critical">12</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws5</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Claws4">
+		<Category>MeleeWeapon</Category>
+		<Tags>
+			<Tag>Claws</Tag>
+		</Tags>
+		<Hands>TwoHands</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="55" Max="105"/>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="61" Max="117"/>
+				<BasePrice>29</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws1</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="68" Max="130"/>
+				<BasePrice>41</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws2</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="75" Max="144"/>
+				<BasePrice>58</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws3</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="83" Max="160"/>
+				<BasePrice>82</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws4</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="92" Max="178"/>
+				<BasePrice>113</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">3</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws5</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Claws5">
+		<Category>MeleeWeapon</Category>
+		<Tags>
+			<Tag>Claws</Tag>
+		</Tags>
+		<Hands>TwoHands</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="55" Max="105"/>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="61" Max="117"/>
+				<BasePrice>29</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws1</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="68" Max="130"/>
+				<BasePrice>41</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws2</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="75" Max="144"/>
+				<BasePrice>58</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws3</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="83" Max="160"/>
+				<BasePrice>82</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws4</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="92" Max="178"/>
+				<BasePrice>113</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>TearingGrasp</Skill>
+					<Skill>SharpenClaws5</Skill>
+					<Skill>ShadowSteps</Skill>
+					<Skill>PiercingClaws</Skill>
+				</Skills>
+				<Perks>
+					<Perk>BloodDrinker</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Boomerang0">
+		<Category>RangeWeapon</Category>
+		<Tags>
+			<Tag>Boomerang</Tag>
+		</Tags>
+		<Hands>OneHand</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="72" Max="91"/>
+				<BasePrice>10</BasePrice>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="81" Max="102"/>
+				<BasePrice>15</BasePrice>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="89" Max="112"/>
+				<BasePrice>24</BasePrice>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="97" Max="122"/>
+				<BasePrice>38</BasePrice>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="105" Max="132"/>
+				<BasePrice>58</BasePrice>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="113" Max="142"/>
+				<BasePrice>85</BasePrice>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Boomerang1">
+		<Category>RangeWeapon</Category>
+		<Tags>
+			<Tag>Boomerang</Tag>
+		</Tags>
+		<Hands>OneHand</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="81" Max="102"/>
+				<BasePrice>14</BasePrice>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="89" Max="112"/>
+				<BasePrice>20</BasePrice>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="97" Max="122"/>
+				<BasePrice>30</BasePrice>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="105" Max="132"/>
+				<BasePrice>45</BasePrice>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="113" Max="142"/>
+				<BasePrice>66</BasePrice>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="122" Max="153"/>
+				<BasePrice>94</BasePrice>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Boomerang2" TemplateId="Boomerang1">
+
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="57" Max="81"/>
+				<BasePrice>18</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ResistanceReduction">7</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="89" Max="112"/>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ResistanceReduction">8</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="97" Max="112"/>
+				<BasePrice>36</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ResistanceReduction">10</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="105" Max="132"/>
+				<BasePrice>52</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ResistanceReduction">11</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="113" Max="142"/>
+				<BasePrice>74</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ResistanceReduction">13</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="113" Max="142"/>
+				<BasePrice>104</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ResistanceReduction">15</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Boomerang3">
+		<Category>RangeWeapon</Category>
+		<Tags>
+			<Tag>Boomerang</Tag>
+		</Tags>
+		<Hands>OneHand</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="57" Max="81"/>
+				<BasePrice>18</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Critical">6</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="89" Max="112"/>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Critical">7</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="97" Max="112"/>
+				<BasePrice>36</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Critical">8</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="105" Max="132"/>
+				<BasePrice>52</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="113" Max="142"/>
+				<BasePrice>74</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Critical">10</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="113" Max="142"/>
+				<BasePrice>104</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Critical">12</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Boomerang4">
+		<Category>RangeWeapon</Category>
+		<Tags>
+			<Tag>Boomerang</Tag>
+		</Tags>
+		<Hands>OneHand</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="57" Max="81"/>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="StunChanceModifier">15</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="89" Max="112"/>
+				<BasePrice>29</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="StunChanceModifier">18</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="97" Max="112"/>
+				<BasePrice>41</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="StunChanceModifier">21</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="105" Max="132"/>
+				<BasePrice>58</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="StunChanceModifier">24</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="113" Max="142"/>
+				<BasePrice>82</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="StunChanceModifier">27</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="113" Max="142"/>
+				<BasePrice>113</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="StunChanceModifier">30</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="Boomerang5">
+		<Category>RangeWeapon</Category>
+		<Tags>
+			<Tag>Boomerang</Tag>
+		</Tags>
+		<Hands>OneHand</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="57" Max="81"/>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="OpportunisticAttacks">11</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="89" Max="112"/>
+				<BasePrice>29</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="OpportunisticAttacks">13</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="97" Max="112"/>
+				<BasePrice>41</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="OpportunisticAttacks">15</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="105" Max="132"/>
+				<BasePrice>58</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="OpportunisticAttacks">17</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="113" Max="142"/>
+				<BasePrice>82</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="OpportunisticAttacks">19</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="113" Max="142"/>
+				<BasePrice>113</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="OpportunisticAttacks">22</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>PreciseTargetting</Skill>
+					<Skill>CrescentSwing</Skill>
+					<Skill>PainfulSpin</Skill>
+				</Skills>
+				<Perks>
+					<Perk>StrongThrow</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="BoomerangOffhand0">
+		<Category>RangeWeapon</Category>
+		<Tags>
+			<Tag>Boomerang</Tag>
+		</Tags>
+		<Hands>OffHand</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="57" Max="81"/>
+				<BasePrice>14</BasePrice>
+				<Skills>
+					<Skill>PreciseTargettingOffhand</Skill>
+				</Skills>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="89" Max="112"/>
+				<BasePrice>20</BasePrice>
+				<Skills>
+					<Skill>PreciseTargettingOffhand</Skill>
+				</Skills>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="97" Max="112"/>
+				<BasePrice>30</BasePrice>
+				<Skills>
+					<Skill>PreciseTargettingOffhand</Skill>
+				</Skills>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="105" Max="132"/>
+				<BasePrice>45</BasePrice>
+				<Skills>
+					<Skill>PreciseTargettingOffhand</Skill>
+				</Skills>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="113" Max="142"/>
+				<BasePrice>66</BasePrice>
+				<Skills>
+					<Skill>PreciseTargettingOffhand</Skill>
+				</Skills>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="113" Max="142"/>
+				<BasePrice>94</BasePrice>
+				<Skills>
+					<Skill>PreciseTargettingOffhand</Skill>
+				</Skills>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="ManaFlower0">
+		<Category>MagicWeapon</Category>
+		<Tags>
+			<Tag>ManaFlower</Tag>
+		</Tags>
+		<Hands>TwoHands</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="84" Max="117"/>
+				<BasePrice>10</BasePrice>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="93" Max="130"/>
+				<BasePrice>15</BasePrice>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="103" Max="144"/>
+				<BasePrice>24</BasePrice>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="114" Max="160"/>
+				<BasePrice>38</BasePrice>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="127" Max="178"/>
+				<BasePrice>58</BasePrice>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="141" Max="198"/>
+				<BasePrice>85</BasePrice>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="ManaFlower1">
+		<Category>MagicWeapon</Category>
+		<Tags>
+			<Tag>ManaFlower</Tag>
+		</Tags>
+		<Hands>TwoHands</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="89" Max="124"/>
+				<BasePrice>14</BasePrice>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="99" Max="138"/>
+				<BasePrice>20</BasePrice>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="110" Max="153"/>
+				<BasePrice>30</BasePrice>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="122" Max="170"/>
+				<BasePrice>45</BasePrice>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="135" Max="189"/>
+				<BasePrice>66</BasePrice>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="150" Max="210"/>
+				<BasePrice>94</BasePrice>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="ManaFlower2">
+		<Category>MagicWeapon</Category>
+		<Tags>
+			<Tag>ManaFlower</Tag>
+		</Tags>
+		<Hands>TwoHands</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="89" Max="124"/>
+				<BasePrice>18</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="OpportunisticAttacks">5</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="99" Max="138"/>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="OpportunisticAttacks">7</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="110" Max="153"/>
+				<BasePrice>36</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="OpportunisticAttacks">9</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="122" Max="170"/>
+				<BasePrice>52</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="OpportunisticAttacks">11</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="135" Max="189"/>
+				<BasePrice>74</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="OpportunisticAttacks">13</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="150" Max="210"/>
+				<BasePrice>104</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="OpportunisticAttacks">15</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="ManaFlower3">
+		<Category>MagicWeapon</Category>
+		<Tags>
+			<Tag>ManaFlower</Tag>
+		</Tags>
+		<Hands>TwoHands</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="89" Max="124"/>
+				<BasePrice>18</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="PoisonDamageModifier">11</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="99" Max="138"/>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="PoisonDamageModifier">14</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="110" Max="153"/>
+				<BasePrice>36</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="PoisonDamageModifier">16</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="122" Max="170"/>
+				<BasePrice>52</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="PoisonDamageModifier">18</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="135" Max="189"/>
+				<BasePrice>74</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="PoisonDamageModifier">20</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="150" Max="210"/>
+				<BasePrice>104</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="PoisonDamageModifier">22</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="ManaFlower4">
+		<Category>MagicWeapon</Category>
+		<Tags>
+			<Tag>ManaFlower</Tag>
+		</Tags>
+		<Hands>TwoHands</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="89" Max="124"/>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">7</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">3</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="99" Max="138"/>
+				<BasePrice>29</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">8</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">3</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="110" Max="153"/>
+				<BasePrice>41</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">9</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">4</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="122" Max="170"/>
+				<BasePrice>58</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">10</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">4</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="135" Max="189"/>
+				<BasePrice>82</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">11</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">5</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="150" Max="210"/>
+				<BasePrice>113</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">12</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">5</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="ManaFlower5">
+		<Category>MagicWeapon</Category>
+		<Tags>
+			<Tag>ManaFlower</Tag>
+		</Tags>
+		<Hands>TwoHands</Hands>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="89" Max="124"/>
+				<BasePrice>22</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">8</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">15</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="99" Max="138"/>
+				<BasePrice>29</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">22</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="110" Max="153"/>
+				<BasePrice>41</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">12</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">29</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="122" Max="170"/>
+				<BasePrice>58</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">14</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">36</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="135" Max="189"/>
+				<BasePrice>82</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">16</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">43</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="150" Max="210"/>
+				<BasePrice>113</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">18</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">50</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>DeathFlower</Skill>
+					<Skill>CleansingSpores</Skill>
+					<Skill>ContagiousPollen</Skill>
+					<Skill>PetalStorm</Skill>
+				</Skills>
+				<Perks>
+					<Perk>LifeLoan</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="PiercingClawsScroll">
+		<Category>Scroll</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="88" Max="168"/>
+				<BasePrice>14</BasePrice>
+				<Skills>
+					<Skill OverallUsesCount="2">PiercingClawsScroll</Skill>
+				</Skills>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="98" Max="187"/>
+				<BasePrice>20</BasePrice>
+				<Skills>
+					<Skill OverallUsesCount="2">PiercingClawsScroll</Skill>
+				</Skills>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="109" Max="208"/>
+				<BasePrice>30</BasePrice>
+				<Skills>
+					<Skill OverallUsesCount="3">PiercingClawsScroll1</Skill>
+				</Skills>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="120" Max="230"/>
+				<BasePrice>45</BasePrice>
+				<Skills>
+					<Skill OverallUsesCount="3">PiercingClawsScroll1</Skill>
+				</Skills>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="133" Max="256"/>
+				<BasePrice>66</BasePrice>
+				<Skills>
+					<Skill OverallUsesCount="4">PiercingClawsScroll2</Skill>
+				</Skills>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="147" Max="285"/>
+				<BasePrice>94</BasePrice>
+				<Skills>
+					<Skill OverallUsesCount="4">PiercingClawsScroll2</Skill>
+				</Skills>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="PainfulSpinScroll">
+		<Category>Scroll</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="81" Max="102"/>
+				<BasePrice>14</BasePrice>
+				<Skills>
+					<Skill OverallUsesCount="2">PainfulSpinScroll</Skill>
+				</Skills>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="89" Max="112"/>
+				<BasePrice>20</BasePrice>
+				<Skills>
+					<Skill OverallUsesCount="2">PainfulSpinScroll</Skill>
+				</Skills>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="97" Max="122"/>
+				<BasePrice>30</BasePrice>
+				<Skills>
+					<Skill OverallUsesCount="3">PainfulSpinScroll1</Skill>
+				</Skills>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="105" Max="132"/>
+				<BasePrice>45</BasePrice>
+				<Skills>
+					<Skill OverallUsesCount="3">PainfulSpinScroll1</Skill>
+				</Skills>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="113" Max="142"/>
+				<BasePrice>66</BasePrice>
+				<Skills>
+					<Skill OverallUsesCount="4">PainfulSpinScroll2</Skill>
+				</Skills>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="122" Max="153"/>
+				<BasePrice>94</BasePrice>
+				<Skills>
+					<Skill OverallUsesCount="4">PainfulSpinScroll2</Skill>
+				</Skills>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="PetalStormScroll">
+		<Category>Scroll</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<BaseDamage Min="116" Max="161"/>
+				<BasePrice>14</BasePrice>
+				<Skills>
+					<Skill OverallUsesCount="2">PetalStormScroll</Skill>
+				</Skills>
+			</Level>
+			<Level Id="1">
+				<BaseDamage Min="129" Max="179"/>
+				<BasePrice>20</BasePrice>
+				<Skills>
+					<Skill OverallUsesCount="2">PetalStormScroll</Skill>
+				</Skills>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="143" Max="199"/>
+				<BasePrice>30</BasePrice>
+				<Skills>
+					<Skill OverallUsesCount="3">PetalStormScroll1</Skill>
+				</Skills>
+			</Level>
+			<Level Id="3">
+				<BaseDamage Min="159" Max="221"/>
+				<BasePrice>45</BasePrice>
+				<Skills>
+					<Skill OverallUsesCount="3">PetalStormScroll1</Skill>
+				</Skills>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="176" Max="246"/>
+				<BasePrice>66</BasePrice>
+				<Skills>
+					<Skill OverallUsesCount="4">PetalStormScroll2</Skill>
+				</Skills>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="195" Max="273"/>
+				<BasePrice>94</BasePrice>
+				<Skills>
+					<Skill OverallUsesCount="4">PetalStormScroll2</Skill>
+				</Skills>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="MedalPerkViciousKiller">
+		<Category>Trinket</Category>
+		<LevelVariations>
+			<Level Id="2">
+				<MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
+				<BasePrice>42</BasePrice>
+				<Perks>
+					<Perk>ViciousKiller</Perk>
+				</Perks>
+			</Level>
+			<Level Id="3">
+				<BasePrice>59</BasePrice>
+				<Perks>
+					<Perk>ViciousKiller</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Reliability">28</MainStatBonus>
+				<BasePrice>83</BasePrice>
+				<Perks>
+					<Perk>ViciousKiller</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Reliability">30</MainStatBonus>
+				<BasePrice>115</BasePrice>
+				<Perks>
+					<Perk>ViciousKiller</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="MedalPerkMercyKill">
+		<Category>Trinket</Category>
+		<LevelVariations>
+			<Level Id="2">
+				<MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
+				<BasePrice>42</BasePrice>
+				<Perks>
+					<Perk>MercyKill</Perk>
+				</Perks>
+			</Level>
+			<Level Id="3">
+				<BasePrice>53</BasePrice>
+				<Perks>
+					<Perk>MercyKill</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="PoisonDamageModifier">16</MainStatBonus>
+				<BasePrice>70</BasePrice>
+				<Perks>
+					<Perk>MercyKill</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="PoisonDamageModifier">18</MainStatBonus>
+				<BasePrice>93</BasePrice>
+				<Perks>
+					<Perk>MercyKill</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="MedalPerkPlagueDoctor">
+		<Category>Trinket</Category>
+		<LevelVariations>
+			<Level Id="3">
+				<MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
+				<BasePrice>65</BasePrice>
+				<Perks>
+					<Perk>PlagueDoctor</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<BasePrice>93</BasePrice>
+				<Perks>
+					<Perk>PlagueDoctor</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="OpportunisticAttacks">13</MainStatBonus>
+				<BasePrice>118</BasePrice>
+				<Perks>
+					<Perk>PlagueDoctor</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+	<ItemDefinition Id="MedalPerkLongstrider">
+		<Category>Trinket</Category>
+		<LevelVariations>
+			<Level Id="3">
+				<MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
+				<BasePrice>65</BasePrice>
+				<Perks>
+					<Perk>Longstrider</Perk>
+				</Perks>
+			</Level>
+			<Level Id="4">
+				<BasePrice>90</BasePrice>
+				<Perks>
+					<Perk>Longstrider</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="MomentumAttacks">8</MainStatBonus>
+				<BasePrice>123</BasePrice>
+				<Perks>
+					<Perk>Longstrider</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+
+</ItemDefinitions>

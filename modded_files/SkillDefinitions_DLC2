@@ -1,0 +1,3866 @@
+﻿<SkillDefinitions xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+
+                  xs:noNamespaceSchemaLocation="SkillDefinitions.xsd">
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- DLC2 SKILLS -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- CLAWS -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   
+
+   <SkillDefinition Id="TearingGrasp">
+
+      <ActionPointsCost>1</ActionPointsCost>
+
+      <UsesPerTurnCount>4</UsesPerTurnCount>
+
+      <Range Min="1" Max="2" Modifiable="false"/>
+
+      <AreaOfEffect OriginX="0" OriginY="1">
+
+         X_
+
+         _X
+
+      </AreaOfEffect>
+
+      <AffectedUnits>
+
+         <CanAffectCaster>false</CanAffectCaster>
+
+      </AffectedUnits>
+
+      <CanRotate/>
+
+      <CanFlip/>
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Physical</AttackType>
+
+            <DamageMultiplier>1</DamageMultiplier>
+
+         </Attack>
+
+      </SkillAction>
+
+      <OverrideSoundId>Slice</OverrideSoundId>
+
+      <CastFXs TotalDuration="0.28">
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="S">Claws/TearingGrasp/TearingGrasp_Target_S</Path>
+
+               <Path Orientation="S" Flipped="true">Claws/TearingGrasp/TearingGrasp_TargetFlip_S</Path>
+
+
+
+               <Path Orientation="W">Claws/TearingGrasp/TearingGrasp_TargetFlip_S</Path>
+
+               <Path Orientation="W" Flipped="true">Claws/TearingGrasp/TearingGrasp_Target_N</Path>
+
+
+
+               <Path Orientation="E">Claws/TearingGrasp/TearingGrasp_TargetFlip_N</Path>
+
+               <Path Orientation="E" Flipped="true">Claws/TearingGrasp/TearingGrasp_Target_S</Path>
+
+
+
+               <Path Orientation="N">Claws/TearingGrasp/TearingGrasp_Target_N</Path>
+
+               <Path Orientation="N" Flipped="true">Claws/TearingGrasp/TearingGrasp_TargetFlip_N</Path>                    
+
+            </Paths>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>AoeOrigin</Target>
+
+         </VisualEffect>
+
+         
+
+         <SoundEffect> 
+
+            <Path>Claws/SFX_Skill_TearingGrasp</Path>
+
+            <Delay>0</Delay>
+
+         </SoundEffect>
+
+       
+
+         <CamShake>
+
+            <Id>Soft Hit-CamShake</Id>
+
+            <Delay>0.19</Delay>
+
+         </CamShake>
+
+      </CastFXs>
+
+   
+
+   </SkillDefinition>
+
+   
+
+   <SkillDefinition Id="SharpenClaws">
+
+      <ActionPointsCost>1</ActionPointsCost>
+
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+
+      <AffectedUnits>
+
+         <CanAffectCaster>true</CanAffectCaster>
+
+         <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+
+      </AffectedUnits>
+
+      <Range Min="0" Max="0" CardinalDirectionOnly="true"/>
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <CasterEffect>
+
+                  <Buff>
+
+                     <CanAffectCaster>true</CanAffectCaster>
+
+                     <Bonus>8</Bonus>
+
+                     <Stat Id="PhysicalDamage"/>
+
+                     <TurnsCount>2</TurnsCount>
+
+                  </Buff>
+
+                  <Buff>
+
+                     <CanAffectCaster>true</CanAffectCaster>
+
+                     <Bonus>16</Bonus>
+
+                     <Stat Id="Reliability"/>
+
+                     <TurnsCount>2</TurnsCount>
+
+                  </Buff>
+
+               </CasterEffect>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.45">
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="NSEW">Claws/SharpenClaws/SharpenClaws_Caster_NSEW</Path>
+
+            </Paths>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>Caster</Target>
+
+         </VisualEffect>
+
+
+
+         <SoundEffect>
+
+            <Path>Claws/SFX_Skill_SharpenClaws</Path>
+
+            <Delay>0</Delay>
+
+         </SoundEffect>
+
+         
+
+           <CasterAnim>
+
+            <Path>Hero_CastSkill_Entangle_Cast_</Path>
+
+            <Delay>0</Delay>
+
+         </CasterAnim>
+
+   
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="SharpenClaws1" TemplateId="SharpenClaws">
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <CasterEffect>
+
+                  <Buff>
+
+                     <CanAffectCaster>true</CanAffectCaster>
+
+                     <Bonus>8</Bonus>
+
+                     <Stat Id="PhysicalDamage"/>
+
+                     <TurnsCount>2</TurnsCount>
+
+                  </Buff>
+
+                  <Buff>
+
+                     <CanAffectCaster>true</CanAffectCaster>
+
+                     <Bonus>17</Bonus>
+
+                     <Stat Id="Reliability"/>
+
+                     <TurnsCount>2</TurnsCount>
+
+                  </Buff>
+
+               </CasterEffect>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="SharpenClaws2" TemplateId="SharpenClaws">
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <CasterEffect>
+
+                  <Buff>
+
+                     <CanAffectCaster>true</CanAffectCaster>
+
+                     <Bonus>9</Bonus>
+
+                     <Stat Id="PhysicalDamage"/>
+
+                     <TurnsCount>2</TurnsCount>
+
+                  </Buff>
+
+                  <Buff>
+
+                     <CanAffectCaster>true</CanAffectCaster>
+
+                     <Bonus>18</Bonus>
+
+                     <Stat Id="Reliability"/>
+
+                     <TurnsCount>2</TurnsCount>
+
+                  </Buff>
+
+               </CasterEffect>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="SharpenClaws3" TemplateId="SharpenClaws">
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <CasterEffect>
+
+                  <Buff>
+
+                     <CanAffectCaster>true</CanAffectCaster>
+
+                     <Bonus>10</Bonus>
+
+                     <Stat Id="PhysicalDamage"/>
+
+                     <TurnsCount>2</TurnsCount>
+
+                  </Buff>
+
+                  <Buff>
+
+                     <CanAffectCaster>true</CanAffectCaster>
+
+                     <Bonus>20</Bonus>
+
+                     <Stat Id="Reliability"/>
+
+                     <TurnsCount>2</TurnsCount>
+
+                  </Buff>
+
+               </CasterEffect>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="SharpenClaws4" TemplateId="SharpenClaws">
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <CasterEffect>
+
+                  <Buff>
+
+                     <CanAffectCaster>true</CanAffectCaster>
+
+                     <Bonus>11</Bonus>
+
+                     <Stat Id="PhysicalDamage"/>
+
+                     <TurnsCount>2</TurnsCount>
+
+                  </Buff>
+
+                  <Buff>
+
+                     <CanAffectCaster>true</CanAffectCaster>
+
+                     <Bonus>22</Bonus>
+
+                     <Stat Id="Reliability"/>
+
+                     <TurnsCount>2</TurnsCount>
+
+                  </Buff>
+
+               </CasterEffect>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="SharpenClaws5" TemplateId="SharpenClaws">
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <CasterEffect>
+
+                  <Buff>
+
+                     <CanAffectCaster>true</CanAffectCaster>
+
+                     <Bonus>12</Bonus>
+
+                     <Stat Id="PhysicalDamage"/>
+
+                     <TurnsCount>2</TurnsCount>
+
+                  </Buff>
+
+                  <Buff>
+
+                     <CanAffectCaster>true</CanAffectCaster>
+
+                     <Bonus>24</Bonus>
+
+                     <Stat Id="Reliability"/>
+
+                     <TurnsCount>2</TurnsCount>
+
+                  </Buff>
+
+               </CasterEffect>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="ShadowSteps">
+
+      <ActionPointsCost>1</ActionPointsCost>
+
+      <ManaCost>1</ManaCost>
+
+      <MovePointsCost>1</MovePointsCost>
+
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+
+      <Range Min="1" Max="5" Modifiable="true"/>
+
+      <AffectedUnits>
+
+         <CanAffectCaster>false</CanAffectCaster>
+
+      </AffectedUnits>
+
+      <AreaOfEffect OriginX="0" OriginY="0">
+
+         M
+
+         X
+
+      </AreaOfEffect>
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Physical</AttackType>
+
+            <DamageMultiplier>0.8</DamageMultiplier>
+
+            <SkillEffects>
+
+               <Maneuver/>
+
+               <Isolated>
+
+                  <DamageMultiplier>1.5</DamageMultiplier> 
+
+               </Isolated>
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+      <CanRotate/>
+
+      <CastFXs TotalDuration="0.12">
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="S">Claws/ShadowSteps/ShadowSteps_Caster_S</Path>
+
+               <Path Orientation="E">Claws/ShadowSteps/ShadowSteps_Caster_E</Path>
+
+               <Path Orientation="W">Claws/ShadowSteps/ShadowSteps_Caster_W</Path>
+
+               <Path Orientation="N">Claws/ShadowSteps/ShadowSteps_Caster_N</Path>
+
+               
+
+            </Paths>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>FollowCaster</Target>
+
+         </VisualEffect>
+
+         <SoundEffect>
+
+            <Path>Claws/SFX_Skill_ShadowSteps</Path>
+
+            <Delay>0</Delay>
+
+         </SoundEffect>
+
+         <ManeuverFx>
+
+            <Speed>1000</Speed>
+
+            <Delay>0.12</Delay>
+
+         </ManeuverFx>
+
+
+
+         <CamShake>
+
+            <Id>Hard Hit-CamShake</Id>
+
+            <Delay>0.12</Delay>
+
+         </CamShake>
+
+
+
+         <CasterAnim>
+
+            <Delay>0.12</Delay>
+
+         </CasterAnim>
+
+
+
+         <CasterAnim>
+
+            <Path>Hero_CastSkill_Recoil_</Path>
+
+            <Delay>0.5</Delay>
+
+         </CasterAnim>
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="PiercingClaws">
+
+      <ActionPointsCost>2</ActionPointsCost>
+
+      <ManaCost>4</ManaCost>
+
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+
+      <Range Min="1" Max="6" CardinalDirectionOnly="true" Modifiable="true"/>
+
+      <AffectedUnits>
+
+         <CanAffectCaster>false</CanAffectCaster>
+
+      </AffectedUnits>
+
+      <AreaOfEffect OriginX="2" OriginY="2">
+
+         __X__
+
+         _X_X_
+
+         X___X
+
+      </AreaOfEffect>
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Physical</AttackType>
+
+            <DamageMultiplier>1.6</DamageMultiplier>
+
+         </Attack>
+
+      </SkillAction>
+
+	 
+
+      <OverrideSoundId>SuperSpin</OverrideSoundId>
+
+
+
+      <CastFXs TotalDuration="0.53">
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="S">Claws\PiercingClaws\PiercingClaws_Target_S</Path>
+
+               <Path Orientation="E">Claws\PiercingClaws\PiercingClaws_Target_E</Path>
+
+               <Path Orientation="N">Claws\PiercingClaws\PiercingClaws_Target_N</Path>
+
+               <Path Orientation="W">Claws\PiercingClaws\PiercingClaws_Target_W</Path>
+
+            </Paths>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>AoeOrigin</Target>
+
+         </VisualEffect>
+
+         <SoundEffect>
+
+            <Path>Claws/SFX_Skill_PiercingClaws</Path>
+
+            <Delay>0</Delay>
+
+         </SoundEffect>
+
+
+
+         <CamShake>
+
+            <Id>Hard Hit-CamShake</Id>
+
+            <Delay>0.53</Delay>
+
+         </CamShake>
+
+
+
+         <CasterAnim>
+
+            <Path>Hero_CastSkill_Recoil_</Path>
+
+            <Delay>0.46</Delay>
+
+         </CasterAnim>
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- BOOMERANG -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <SkillDefinition Id="PreciseTargetting">
+
+      <ActionPointsCost>1</ActionPointsCost>
+
+      <Range Min="4" Max="10" Modifiable="true"/>
+
+      <UsesPerTurnCount>5</UsesPerTurnCount>
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Ranged</AttackType>
+
+            <DamageMultiplier>1</DamageMultiplier>
+
+                  <Stun>
+
+                     <BaseChance>0.5</BaseChance>
+
+                  </Stun>
+
+         </Attack>
+
+      </SkillAction>
+
+
+
+      <CastFXs TotalDuration="0.52" MultiHitDelay="0.2">
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="S">Boomerang/PreciseTargetting/PreciseTargetting_Caster_S</Path>
+
+               <Path Orientation="E">Boomerang/PreciseTargetting/PreciseTargetting_Caster_E</Path>
+
+               <Path Orientation="N">Boomerang/PreciseTargetting/PreciseTargetting_Caster_N</Path>
+
+               <Path Orientation="W">Boomerang/PreciseTargetting/PreciseTargetting_Caster_W</Path>
+
+            </Paths>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>Caster</Target>
+
+         </VisualEffect>
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="S">Boomerang/PreciseTargetting/PreciseTargetting_Target_S</Path>
+
+               <Path Orientation="E">Boomerang/PreciseTargetting/PreciseTargetting_Target_E</Path>
+
+               <Path Orientation="N">Boomerang/PreciseTargetting/PreciseTargetting_Target_N</Path>
+
+               <Path Orientation="W">Boomerang/PreciseTargetting/PreciseTargetting_Target_W</Path>
+
+            </Paths>
+
+            <Delay>0.4</Delay>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>HitTiles</Target>
+
+         </VisualEffect>
+
+         
+
+         <SoundEffect>
+
+            <Path>Boomerang/SFX_Skill_PreciseTarget</Path>
+
+            <Delay>0</Delay>
+
+         </SoundEffect>
+
+
+
+         <CamShake>
+
+            <Id>Soft Hit-CamShake</Id>
+
+            <Delay>0.87</Delay>
+
+         </CamShake>
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="CrescentSwing">
+
+      <AreaOfEffect OriginX="3" OriginY="4">
+
+         __eX_
+
+         _e___
+
+         e____
+
+         e____
+
+         _e___
+
+      </AreaOfEffect>
+
+      <ActionPointsCost>1</ActionPointsCost>
+
+      <ManaCost>2</ManaCost>
+
+      <Range Min="4" Max="10" CardinalDirectionOnly="false" Modifiable="true"/>
+
+      <CanRotate/>
+
+      <CanFlip/>
+
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+
+      <AffectedUnits>
+
+         <CanAffectCaster>false</CanAffectCaster>
+
+      </AffectedUnits>
+
+
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Ranged</AttackType>
+
+            <DamageMultiplier>1.35</DamageMultiplier>
+
+            <SkillEffects>
+
+               <IgnoreLineOfSight/>
+
+                  <Stun>
+
+                     <BaseChance>0.9</BaseChance>
+
+                  </Stun>
+
+               <SurroundingEffect>
+
+                  <Stun>
+
+                     <BaseChance>0.45</BaseChance>
+
+                  </Stun>
+
+               </SurroundingEffect>
+
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+
+
+      <CastFXs TotalDuration="0.3">
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="E" Flipped="true">Boomerang/CrescentSwing/CrescentSwing_Target_FlipE</Path>
+
+               <Path Orientation="S" Flipped="true">Boomerang/CrescentSwing/CrescentSwing_Target_FlipS</Path>   
+
+               <Path Orientation="N" Flipped="true">Boomerang/CrescentSwing/CrescentSwing_Target_FlipN</Path>
+
+               <Path Orientation="W" Flipped="true">Boomerang/CrescentSwing/CrescentSwing_Target_FlipW</Path>
+
+            
+
+             <Path Orientation="E">Boomerang/CrescentSwing/CrescentSwing_Target_E</Path>
+
+             <Path Orientation="S">Boomerang/CrescentSwing/CrescentSwing_Target_S</Path>
+
+             <Path Orientation="N">Boomerang/CrescentSwing/CrescentSwing_Target_N</Path>
+
+             <Path Orientation="W">Boomerang/CrescentSwing/CrescentSwing_Target_W</Path>
+
+            </Paths>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>AoeOrigin</Target>
+
+         </VisualEffect>
+
+      
+
+         <SoundEffect>
+
+            <Path>Boomerang/SFX_Skill_CrescentSwing</Path>
+
+            <Delay>0</Delay>
+
+         </SoundEffect>
+
+
+
+         <CamShake>
+
+            <Id>Hard Hit-CamShake</Id>
+
+            <Delay>0.3</Delay>
+
+         </CamShake>
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="PainfulSpin">
+
+      <AreaOfEffect OriginX="2" OriginY="5">
+
+         __X__
+
+         _XeX_
+
+         __X__
+
+         _XeX_
+
+         XeeeX
+
+         XeeeX
+
+         _XeX_
+
+         __X__
+
+      </AreaOfEffect>
+
+      <ActionPointsCost>2</ActionPointsCost>
+
+      <ManaCost>5</ManaCost>
+
+      <Range Min="4" Max="10" CardinalDirectionOnly="true" Modifiable="true"/>
+
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+
+      <AffectedUnits>
+
+         <CanAffectCaster>false</CanAffectCaster>
+
+      </AffectedUnits>
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Ranged</AttackType>
+
+            <DamageMultiplier>1.7</DamageMultiplier>
+
+            <SkillEffects>
+
+               <IgnoreLineOfSight/>
+
+                  <Stun>
+
+                     <BaseChance>0.5</BaseChance>
+
+                  </Stun>
+
+               <SurroundingEffect>
+
+                  <Stun>
+
+                     <BaseChance>0.5</BaseChance>
+
+                  </Stun>
+
+               </SurroundingEffect>
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+
+
+      <CastFXs TotalDuration="1.85">
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="S">Boomerang/PainfulSpin/PainfulSpin_TargetBefore_S</Path>
+
+               <Path Orientation="N">Boomerang/PainfulSpin/PainfulSpin_TargetBefore_N</Path>
+
+               <Path Orientation="E">Boomerang/PainfulSpin/PainfulSpin_TargetBefore_E</Path>
+
+               <Path Orientation="W">Boomerang/PainfulSpin/PainfulSpin_TargetBefore_W</Path>
+
+            </Paths>
+
+            <Delay>1.05</Delay>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>AoeOrigin</Target>
+
+         </VisualEffect>
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="S">Boomerang/PainfulSpin/PainfulSpin_TargetBehind_S</Path>
+
+               <Path Orientation="N">Boomerang/PainfulSpin/PainfulSpin_TargetBehind_N</Path>
+
+               <Path Orientation="E">Boomerang/PainfulSpin/PainfulSpin_TargetBehind_E</Path>
+
+               <Path Orientation="W">Boomerang/PainfulSpin/PainfulSpin_TargetBehind_W</Path>
+
+            </Paths>
+
+            <Delay>1.85</Delay>
+
+            <SortingDepth>Behind</SortingDepth>
+
+            <Target>AoeOrigin</Target>
+
+         </VisualEffect>
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="S">Boomerang/PainfulSpin/PainfulSpin_Caster_S</Path>
+
+               <Path Orientation="E">Boomerang/PainfulSpin/PainfulSpin_Caster_E</Path>
+
+               <Path Orientation="N">Boomerang/PainfulSpin/PainfulSpin_Caster_N</Path>
+
+               <Path Orientation="W">Boomerang/PainfulSpin/PainfulSpin_Caster_W</Path>
+
+            </Paths>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>Caster</Target>
+
+         </VisualEffect>
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="S">Boomerang/PainfulSpin/PainfulSpin_SecondaryEffect_S</Path>
+
+               <Path Orientation="N">Boomerang/PainfulSpin/PainfulSpin_SecondaryEffect_N</Path>
+
+               <Path Orientation="E">Boomerang/PainfulSpin/PainfulSpin_SecondaryEffect_E</Path>
+
+               <Path Orientation="W">Boomerang/PainfulSpin/PainfulSpin_SecondaryEffect_W</Path>
+
+            </Paths>
+
+            <Delay>1.85</Delay>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>AoeOrigin</Target>
+
+         </VisualEffect>
+
+
+
+         <CasterAnim>
+
+            <Path>Hero_CastSkill_Boomerang_Charge_</Path>
+
+            <Delay>0.45</Delay>
+
+         </CasterAnim>
+
+
+
+         <SoundEffect>
+
+            <Path>Boomerang/SFX_Skill_PainfulSpin</Path>
+
+            <Delay>0</Delay>
+
+         </SoundEffect>
+
+
+
+         <CamShake>
+
+            <Id>Soft Hit-CamShake</Id>
+
+            <Delay>1.85</Delay>
+
+         </CamShake>
+
+         <CamShake>
+
+            <Id>Hard Hit-CamShake</Id>
+
+            <Delay>2.3</Delay>
+
+         </CamShake>
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- MANA FLOWER -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <SkillDefinition Id="DeathFlower">
+
+      <ActionPointsCost>2</ActionPointsCost>
+
+      <Range Min="1" Max="4" Modifiable="true"/>
+
+      <CanRotate/>
+
+      <AreaOfEffect OriginX="1" OriginY="0">
+
+         _e_
+
+         eXe
+
+      </AreaOfEffect>
+
+      <UsesPerTurnCount>3</UsesPerTurnCount>
+
+
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Magical</AttackType>
+
+            <DamageMultiplier>1</DamageMultiplier>
+
+            <SkillEffects>
+
+               <Poison>
+
+                  <DamagePerTurn>35</DamagePerTurn>
+
+                  <TurnsCount>3</TurnsCount>
+
+               </Poison>
+
+               <SurroundingEffect>
+
+                  <Poison>
+
+                     <DamagePerTurn>35</DamagePerTurn>
+
+                     <TurnsCount>3</TurnsCount>
+
+                  </Poison>
+
+               </SurroundingEffect>
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+
+
+      <CastFXs TotalDuration="1.15">
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="NS">ManaFlower/DeathFlower/DeathFlower_TargetBefore_E</Path>
+
+               <Path Orientation="EW">ManaFlower/DeathFlower/DeathFlower_TargetBefore_S</Path>
+
+            </Paths>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>AoeOrigin</Target>
+
+         </VisualEffect>
+
+
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="E">ManaFlower/DeathFlower/DeathFlower_TargetBehind_E</Path>
+
+               <Path Orientation="N">ManaFlower/DeathFlower/DeathFlower_TargetBehind_N</Path>
+
+               <Path Orientation="S">ManaFlower/DeathFlower/DeathFlower_TargetBehind_S</Path>
+
+               <Path Orientation="W">ManaFlower/DeathFlower/DeathFlower_TargetBehind_W</Path>
+
+            </Paths>
+
+            <Delay>0.5</Delay>
+
+            <SortingDepth>Behind</SortingDepth>
+
+            <Target>AoeOrigin</Target>
+
+         </VisualEffect>
+
+
+
+         <SoundEffect>
+
+            <Path>ManaFlower/SFX_Skill_DeathFlower</Path>
+
+            <Delay>0</Delay>
+
+         </SoundEffect>
+
+
+
+         <CasterAnim>
+
+            <Path>Hero_CastSkill_Entangle_Cast_</Path>
+
+         </CasterAnim>
+
+
+
+         <CamShake>
+
+            <Id>Soft Hit-CamShake</Id>
+
+            <Delay>0.56</Delay>
+
+         </CamShake>
+
+         <CamShake>
+
+            <Id>Soft Hit-CamShake</Id>
+
+            <Delay>1.1</Delay>
+
+         </CamShake>
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="CleansingSpores">
+
+      <AreaOfEffect OriginX="4" OriginY="4">
+
+         ____e____
+
+         ___eee___ 
+
+         __eeeee__
+
+         _eeeeeee_
+
+         eeeeXeeee
+
+         _eeeeeee_
+
+         __eeeee__
+
+         ___eee___
+
+         ____e____
+
+      </AreaOfEffect>
+
+      <ActionPointsCost>1</ActionPointsCost>
+
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+
+      <AffectedUnits>
+
+         <CanAffectCaster>true</CanAffectCaster>
+
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+         <CanAffectBuildings>false</CanAffectBuildings>
+
+      </AffectedUnits>
+
+      <Range Min="0" Max="0"/>
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <RemoveStatus>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Status>AllNegative</Status>
+
+               </RemoveStatus>
+
+               <SurroundingEffect/>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+      <CastFXs TotalDuration="1.6">
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="NSEW">ManaFlower/CleansingSpores/CleansingSpores_Caster_NSEW</Path>
+
+               
+
+            </Paths>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>Caster</Target>
+
+         </VisualEffect>
+
+
+
+         <SoundEffect>
+
+            <Path>ManaFlower/SFX_Skill_CleansingSpores</Path>
+
+            <Delay>0.15</Delay>
+
+         </SoundEffect>
+
+
+
+         <CamShake>
+
+            <Id>Soft Hit-CamShake</Id>
+
+            <Delay>1</Delay>
+
+         </CamShake>
+
+
+
+         <CasterAnim>
+
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+
+            <Delay>0</Delay>
+
+         </CasterAnim>
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="BlankCleansingSpores">
+
+      <AffectedUnits>
+
+         <CanAffectCaster>true</CanAffectCaster>
+
+      </AffectedUnits>
+
+      <Range Min="0" Max="0"/>
+
+      <SkillAction>
+
+         <Generic>
+
+         </Generic>
+
+      </SkillAction>
+
+      <CastFXs TotalDuration="1.6">
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="NSEW">ManaFlower/CleansingSpores/CleansingSpores_Caster_NSEW</Path>
+
+
+
+            </Paths>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>Caster</Target>
+
+         </VisualEffect>
+
+
+
+         <SoundEffect>
+
+            <Path>ManaFlower/SFX_Skill_CleansingSpores</Path>
+
+            <Delay>0.15</Delay>
+
+         </SoundEffect>
+
+
+
+         <CamShake>
+
+            <Id>Soft Hit-CamShake</Id>
+
+            <Delay>1</Delay>
+
+         </CamShake>
+
+
+
+         <CasterAnim>
+
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+
+            <Delay>0</Delay>
+
+         </CasterAnim>
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="ContagiousPollen">
+
+      <ActionPointsCost>1</ActionPointsCost>
+
+      <ManaCost>2</ManaCost>
+
+      <Range Min="1" Max="6" Modifiable="true"/>
+
+      <AreaOfEffect OriginX="1" OriginY="1">
+
+         __e
+
+         _X_
+
+         e__
+
+      </AreaOfEffect>
+
+      <CanFlip/>
+
+      <UsesPerTurnCount>3</UsesPerTurnCount>
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Magical</AttackType>
+
+            <DamageMultiplier>1.5</DamageMultiplier>
+
+            <SkillEffects>
+
+               <Follow/>
+
+               <SurroundingEffect>
+
+                  <Contagion>
+
+                     <BaseChance>1</BaseChance>
+
+                     <TurnsCount>2</TurnsCount>
+
+                  </Contagion>
+
+               </SurroundingEffect>
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+
+
+      <CastFXs TotalDuration="0.5">
+
+
+
+         <VisualEffect>
+
+            <Paths>
+
+                 <Path Orientation="SNEW">ManaFlower/ContagiousPollen/ContagiousPollen_Caster_Before</Path>
+
+            </Paths>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>Caster</Target>
+
+         </VisualEffect>
+
+         <VisualEffect>
+
+            <Paths>
+
+              <Path Orientation="SNEW">ManaFlower/ContagiousPollen/ContagiousPollen_Caster_Behind</Path>
+
+            </Paths>
+
+            <SortingDepth>Behind</SortingDepth>
+
+            <Target>Caster</Target>
+
+         </VisualEffect>
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="SN">ManaFlower/ContagiousPollen/ContagiousPollen_Target_Behind_S</Path>
+
+               <Path Orientation="EW">ManaFlower/ContagiousPollen/ContagiousPollen_Target_Behind_SFlip</Path>
+
+
+
+               <Path Orientation="SN" Flipped="true">ManaFlower/ContagiousPollen/ContagiousPollen_Target_Behind_SFlip</Path>
+
+               <Path Orientation="EW" Flipped="true">ManaFlower/ContagiousPollen/ContagiousPollen_Target_Behind_S</Path>
+
+
+
+            </Paths>
+
+            <SortingDepth>Behind</SortingDepth>
+
+            <Target>AoeOrigin</Target>
+
+         </VisualEffect>
+
+          <VisualEffect>
+
+            <Paths>
+
+              <Path Orientation="SN">ManaFlower/ContagiousPollen/ContagiousPollen_Target_Before_S</Path>
+
+               <Path Orientation="EW">ManaFlower/ContagiousPollen/ContagiousPollen_Target_Before_SFlip</Path>
+
+
+
+               <Path Orientation="SN" Flipped="true">ManaFlower/ContagiousPollen/ContagiousPollen_Target_Before_SFlip</Path>
+
+               <Path Orientation="EW" Flipped="true">ManaFlower/ContagiousPollen/ContagiousPollen_Target_Before_S</Path>
+
+            </Paths>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>AoeOrigin</Target>
+
+         </VisualEffect>
+
+
+
+         <SoundEffect>
+
+            <Path>ManaFlower/SFX_Skill_ContagiousPollen</Path>
+
+            <Delay>0</Delay>
+
+         </SoundEffect>
+
+         
+
+         <FollowFx>
+
+            <Speed>1000</Speed>
+
+            <Delay>0.75</Delay>
+
+         </FollowFx>
+
+
+
+          <CamShake>
+
+            <Id>Hard Hit-CamShake</Id>
+
+            <Delay>0.5</Delay>
+
+         </CamShake>
+
+       
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="PetalStorm">
+
+      <ActionPointsCost>3</ActionPointsCost>
+
+      <ManaCost>8</ManaCost>
+
+      <AreaOfEffect OriginX="3" OriginY="4">
+
+         __XX___
+
+         _X__X__
+
+         X__XX__
+
+         X_X_X_X
+
+         __XX__X
+
+         __X__X_
+
+         ___XX__
+
+      </AreaOfEffect>
+
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+
+      <Range Min="1" Max="1"/>
+
+      <CanFlip/>
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Magical</AttackType>
+
+            <DamageMultiplier>1.3</DamageMultiplier>
+
+            <SkillEffects>
+
+               <RemoveStatus>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Status>Buff</Status>
+
+               </RemoveStatus>
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+
+
+      <CastFXs TotalDuration="0.55">
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="S" Flipped="true">ManaFlower/PetalStorm/PetalStorm_TargetSFlip_Before</Path>
+
+               <Path Orientation="N" Flipped="true">ManaFlower/PetalStorm/PetalStorm_TargetNFlip_Before</Path>
+
+               <Path Orientation="E" Flipped="true">ManaFlower/PetalStorm/PetalStorm_TargetEFlip_Before</Path>
+
+               <Path Orientation="W" Flipped="true">ManaFlower/PetalStorm/PetalStorm_TargetWFlip_Before</Path>
+
+               
+
+               <Path Orientation="S" >ManaFlower/PetalStorm/PetalStorm_TargetS_Before</Path>
+
+               <Path Orientation="N" >ManaFlower/PetalStorm/PetalStorm_TargetN_Before</Path>
+
+               <Path Orientation="W" >ManaFlower/PetalStorm/PetalStorm_TargetW_Before</Path>
+
+               <Path Orientation="E" >ManaFlower/PetalStorm/PetalStorm_TargetE_Before</Path>
+
+            </Paths>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>AoeOrigin</Target>
+
+         </VisualEffect>
+
+         
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="S" Flipped="true">ManaFlower/PetalStorm/PetalStorm_TargetSFlip_Behind</Path>
+
+               <Path Orientation="N" Flipped="true">ManaFlower/PetalStorm/PetalStorm_TargetNFlip_Behind</Path>
+
+               <Path Orientation="E" Flipped="true">ManaFlower/PetalStorm/PetalStorm_TargetEFlip_Behind</Path>
+
+               <Path Orientation="W" Flipped="true">ManaFlower/PetalStorm/PetalStorm_TargetWFlip_Behind</Path>
+
+               
+
+               <Path Orientation="S" >ManaFlower/PetalStorm/PetalStorm_TargetS_Behind</Path>
+
+               <Path Orientation="N" >ManaFlower/PetalStorm/PetalStorm_TargetN_Behind</Path>
+
+               <Path Orientation="W" >ManaFlower/PetalStorm/PetalStorm_TargetW_Behind</Path>
+
+               <Path Orientation="E" >ManaFlower/PetalStorm/PetalStorm_TargetE_Behind</Path>
+
+            </Paths>
+
+            <SortingDepth>Behind</SortingDepth>
+
+            <Target>AoeOrigin</Target>
+
+         </VisualEffect>
+
+
+
+         <CamShake>
+
+            <Id>Hard Hit-CamShake</Id>
+
+            <Delay>0.43</Delay>
+
+         </CamShake>
+
+
+
+         <SoundEffect>
+
+            <Path>ManaFlower/SFX_Skill_PetalStorm</Path>
+
+            <Delay>0.0</Delay>
+
+         </SoundEffect>
+
+
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- OFFHANDS -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <!-- Offhand Boomerang -->
+
+   <SkillDefinition Id="PreciseTargettingOffhand" TemplateId="PreciseTargetting">
+
+      <OverrideLocalizationId>PreciseTargettingOffhand</OverrideLocalizationId>
+
+      <ActionPointsCost>0</ActionPointsCost>
+
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+
+   </SkillDefinition>
+
+   
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- Scrolls -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <SkillDefinition Id="PiercingClawsScroll" TemplateId="PiercingClaws">
+
+      <OverrideLocalizationId>PiercingClawsScroll</OverrideLocalizationId>
+
+      <ActionPointsCost>0</ActionPointsCost>
+
+      <ManaCost>2</ManaCost>
+
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="PiercingClawsScroll1" TemplateId="PiercingClawsScroll">
+
+      <ManaCost>3</ManaCost>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="PiercingClawsScroll2" TemplateId="PiercingClawsScroll">
+
+      <ManaCost>4</ManaCost>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="PainfulSpinScroll" TemplateId="PainfulSpin">
+
+      <OverrideLocalizationId>PainfulSpinScroll</OverrideLocalizationId>
+
+      <ActionPointsCost>0</ActionPointsCost>
+
+      <ManaCost>4</ManaCost>
+
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+
+      <AffectedUnits>
+
+         <CanAffectCaster>false</CanAffectCaster>
+
+      </AffectedUnits>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="PainfulSpinScroll1" TemplateId="PainfulSpinScroll">
+
+      <ManaCost>5</ManaCost>
+
+      <AffectedUnits>
+
+         <CanAffectCaster>false</CanAffectCaster>
+
+      </AffectedUnits>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="PainfulSpinScroll2" TemplateId="PainfulSpinScroll">
+
+      <ManaCost>6</ManaCost>
+
+      <AffectedUnits>
+
+         <CanAffectCaster>false</CanAffectCaster>
+
+      </AffectedUnits>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="PetalStormScroll" TemplateId="PetalStorm">
+
+      <OverrideLocalizationId>PetalStormScroll</OverrideLocalizationId>
+
+      <ActionPointsCost>0</ActionPointsCost>
+
+      <ManaCost>6</ManaCost>
+
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="PetalStormScroll1" TemplateId="PetalStormScroll">
+
+      <ManaCost>8</ManaCost>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="PetalStormScroll2" TemplateId="PetalStormScroll">
+
+      <ManaCost>10</ManaCost>
+
+   </SkillDefinition>
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- Perks -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <SkillDefinition Id="ElvenFinishHim" IsContextual="true" IsLockedByPerk="true">
+
+      <ValidTargets>
+
+         <EnemyUnits/>
+
+         <PlayableUnits/>
+
+      </ValidTargets>
+
+      <!--<DisplayDuringPhases>
+
+         <Night/>
+
+      </DisplayDuringPhases>-->
+
+      <InvalidCastDisplayBehaviour>DisplayedUnavailable</InvalidCastDisplayBehaviour>
+
+      <ContextualConditions>
+
+         <MinTargetInjuryStage>2</MinTargetInjuryStage>
+
+      </ContextualConditions>
+
+      <Range Min="1" Max="3"/>
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <Kill/>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.08">
+
+		 <VisualEffect>
+
+			 <Paths>
+
+				 <Path Orientation="S" >00_Others/ElvenFinishHim/ElvenFinishHim_TargetS</Path>
+
+				 <Path Orientation="N" >00_Others/ElvenFinishHim/ElvenFinishHim_TargetN</Path>
+
+				 <Path Orientation="W" >00_Others/ElvenFinishHim/ElvenFinishHim_TargetW</Path>
+
+				 <Path Orientation="E" >00_Others/ElvenFinishHim/ElvenFinishHim_TargetE</Path>
+
+			 </Paths>
+
+			 <SortingDepth>Before</SortingDepth>
+
+			 <Target>HitTiles</Target>
+
+		 </VisualEffect>
+
+		  
+
+         <SoundEffect>
+
+            <Path>00_Others/Punch/SFX_Skill_Punch</Path>
+
+            <Delay>0</Delay>
+
+         </SoundEffect>
+
+		  
+
+         <CamShake>
+
+            <Id>Soft Hit-CamShake</Id>
+
+            <Delay>0.08</Delay>
+
+         </CamShake>
+
+		  
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="ElvenCoffee" IsLockedByPerk="true">
+
+      <AffectedUnits>
+
+         <CanAffectCaster>true</CanAffectCaster>
+
+      </AffectedUnits>
+
+      <ActionPointsCost>1</ActionPointsCost>
+
+      <ManaCost>3</ManaCost>
+
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+
+      <Range Min="0" Max="0"/>
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <CasterEffect>
+
+                  <RegenStat>
+
+                     <Stat Id="MovePoints"/>
+
+                     <Bonus>99</Bonus>
+
+                  </RegenStat>
+
+               </CasterEffect>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+
+
+      <CastFXs TotalDuration="0.5">
+
+		 <VisualEffect>
+
+			 <Paths>
+
+				 <Path Orientation="NSEW" >00_Others/ElvenCoffee/ElvenCoffee</Path>
+
+			 </Paths>
+
+			 <SortingDepth>Before</SortingDepth>
+
+			 <Target>Caster</Target>
+
+		 </VisualEffect>
+
+		  
+
+         <SoundEffect>
+
+            <Path>Elven/SFX_Skill_ElvenCoffee</Path>
+
+            <Delay>0</Delay>
+
+         </SoundEffect>
+
+
+
+         <CamShake>
+
+            <Id>Soft Hit-CamShake</Id>
+
+            <Delay>0.4</Delay>
+
+         </CamShake>
+
+
+
+         <CasterAnim>
+
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+
+            <Delay>0</Delay>
+
+         </CasterAnim>
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+
+
+
+
+   <SkillDefinition Id="ElvenJumpOverWall" IsContextual="true" TemplateId="JumpOverWall" IsLockedByPerk="true">
+
+      <OverrideLocalizationId>JumpOverWall</OverrideLocalizationId>
+
+      <OverrideArtId>JumpOverWall</OverrideArtId>
+
+      <MovePointsCost>2</MovePointsCost>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="ElvenJumpOverWall2" IsContextual="true" TemplateId="JumpOverWall2" IsLockedByPerk="true">
+
+      <MovePointsCost>1</MovePointsCost>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="ElusiveSkill">
+
+      <InfiniteRange/>
+
+      <AreaOfEffect OriginX="0" OriginY="0">
+
+         X
+
+      </AreaOfEffect>
+
+      <AffectedUnits>
+
+         <CanAffectBuildings>false</CanAffectBuildings>
+
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+      </AffectedUnits>
+
+      <SkillAction>
+
+         <Attack>
+
+            <BaseDamage Min="10 + Floor(Dodge * 0.5)" Max="10 + Floor(Dodge * 0.5)"/>
+
+            <AttackType>Adaptative</AttackType>
+
+            <DamageMultiplier>1</DamageMultiplier>
+
+         </Attack>
+
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.8">
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="E">00_Others/Elusive/ElusiveSkill/ElusiveSkillE</Path>
+
+               <Path Orientation="N">00_Others/Elusive/ElusiveSkill/ElusiveSkillN</Path>
+
+               <Path Orientation="S">00_Others/Elusive/ElusiveSkill/ElusiveSkillS</Path>
+
+               <Path Orientation="W">00_Others/Elusive/ElusiveSkill/ElusiveSkillW</Path>
+
+            </Paths>
+
+            <Delay>Random(0, 0.3)</Delay>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>HitTiles</Target>
+
+         </VisualEffect>
+
+
+
+        <VisualEffect>
+
+          <Paths>
+
+            <Path Orientation="NSWE">00_Others/Elusive/ElusiveSkill/ElusiveSkill_Behind</Path>
+
+          </Paths>
+
+          <SortingDepth>Behind</SortingDepth>
+
+          <Target>HitTiles</Target>
+
+        </VisualEffect>
+
+        
+
+         <SoundEffect>
+
+            <Path>LongBow/Watchout/SFX_Skill_LongBow_Watchout</Path>
+
+            <Delay>0</Delay>
+
+         </SoundEffect>
+
+
+
+         <CamShake>
+
+            <Id>Soft Hit-CamShake</Id>
+
+            <Delay>0.2</Delay>
+
+         </CamShake>
+
+
+
+         <CasterAnim>
+
+            <Path>Enemy_NoAnimation_</Path>
+
+            <Delay>0</Delay>
+
+         </CasterAnim>
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="ElusiveSkill2" TemplateId="ElusiveSkill">
+
+      <OverrideLocalizationId>ElusiveSkill2</OverrideLocalizationId>
+
+      <!--<OverrideArtId>Todo</OverrideArtId>-->
+
+      <SkillAction>
+
+         <Attack>
+
+            <BaseDamage Min="30 + Floor(Dodge * 1.75)" Max="30 + Floor(Dodge * 1.75)"/>
+
+            <AttackType>Adaptative</AttackType>
+
+            <DamageMultiplier>1</DamageMultiplier>
+
+            <SkillEffects>
+
+               <Follow/>
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.8">
+
+         
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="NSEW">00_Others/Elusive/ElusiveSkill2/ElusiveSkill2_HitTiles</Path>
+
+            </Paths>
+
+            <Delay>0.15</Delay>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>HitTiles</Target>
+
+         </VisualEffect>
+
+
+
+        <VisualEffect>
+
+          <Paths>
+
+            <Path Orientation="NSEW">00_Others/Elusive/ElusiveSkill2/ElusiveSkill2_Behind</Path>
+
+          </Paths>
+
+          <Delay>0.15</Delay>
+
+          <SortingDepth>Behind</SortingDepth>
+
+          <Target>HitTiles</Target>
+
+        </VisualEffect>
+
+
+
+         <SoundEffect>
+
+            <Path>Longbow/SnipeShot/SFX_Skill_Longbow_SnipeShot2</Path>
+
+            <Delay>0.3</Delay>
+
+            <OnImpact>true</OnImpact>
+
+         </SoundEffect>
+
+
+
+         <FollowFx>
+
+            <Speed>1000</Speed>
+
+            <Delay>0.8</Delay>
+
+         </FollowFx>
+
+         
+
+         <SoundEffect>
+
+            <Path>LongBow/Watchout/SFX_Skill_LongBow_Watchout</Path>
+
+            <Delay>0</Delay>
+
+         </SoundEffect>
+
+
+
+         <CamShake>
+
+            <Id>Soft Hit-CamShake</Id>
+
+            <Delay>0.8</Delay>
+
+         </CamShake>
+
+
+
+
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+
+
+
+
+
+   <SkillDefinition Id="StrongThrowSkill">
+
+      <Range Min="1" Max="10"  Modifiable="true"/>
+
+      <AreaOfEffect OriginX="0" OriginY="0">
+
+         X
+
+      </AreaOfEffect>
+
+      <AffectedUnits>
+
+         <CanAffectBuildings>false</CanAffectBuildings>
+
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+      </AffectedUnits>
+
+      <SkillAction>
+
+         <Attack>
+
+            <BaseDamage Min="50 + Floor(StunChanceModifier * 1.4)" Max="50 + Floor(StunChanceModifier * 1.4)"/>
+
+            <AttackType>Ranged</AttackType>
+
+            <DamageMultiplier>1</DamageMultiplier>
+
+            <SkillEffects>
+
+               <Propagation PropagationsCount="2"/>
+
+               <IgnoreLineOfSight/>
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.52" PropagationDelay="0.2">
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="S">Boomerang/PreciseTargetting/PreciseTargetting_Caster_S</Path>
+
+               <Path Orientation="E">Boomerang/PreciseTargetting/PreciseTargetting_Caster_E</Path>
+
+               <Path Orientation="N">Boomerang/PreciseTargetting/PreciseTargetting_Caster_N</Path>
+
+               <Path Orientation="W">Boomerang/PreciseTargetting/PreciseTargetting_Caster_W</Path>
+
+            </Paths>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>Caster</Target>
+
+         </VisualEffect>
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="S">Boomerang/PreciseTargetting/PreciseTargetting_Target_S</Path>
+
+               <Path Orientation="E">Boomerang/PreciseTargetting/PreciseTargetting_Target_E</Path>
+
+               <Path Orientation="N">Boomerang/PreciseTargetting/PreciseTargetting_Target_N</Path>
+
+               <Path Orientation="W">Boomerang/PreciseTargetting/PreciseTargetting_Target_W</Path>
+
+            </Paths>
+
+            <Delay>0.4</Delay>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>HitTiles</Target>
+
+         </VisualEffect>
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path>Boomerang/CrescentSwing/CrescentSwing_Propagation</Path>
+
+            </Paths>
+
+            <Delay>0.4</Delay>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>PropagationTiles</Target>
+
+         </VisualEffect>
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="WarDanceSkill">
+
+      <AreaOfEffect OriginX="1" OriginY="0">
+
+         XXX
+
+      </AreaOfEffect>
+
+      <AffectedUnits>
+
+         <CanAffectBuildings>false</CanAffectBuildings>
+
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+      </AffectedUnits>
+
+      <SkillAction>
+
+         <Attack>
+
+            <BaseDamage Min="25 + Floor(Dodge * 0.9)" Max="25 + Floor(Dodge * 0.9)"/>
+
+            <AttackType>Adaptative</AttackType>
+
+            <DamageMultiplier>1</DamageMultiplier>
+
+         </Attack>
+
+      </SkillAction>
+
+
+
+      <CastFXs TotalDuration="0.4">
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="WE">00_Others/WarDance/Skill_WarDanceNS_Before</Path>
+
+               <Path Orientation="NS">00_Others/WarDance/Skill_WarDanceEW_Before</Path>
+
+            </Paths>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>AoeOrigin</Target>
+
+         </VisualEffect>
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="WE">00_Others/WarDance/Skill_WarDanceNS_Behind</Path>
+
+               <Path Orientation="NS">00_Others/WarDance/Skill_WarDanceEW_Behind</Path>
+
+            </Paths>
+
+            <SortingDepth>Behind</SortingDepth>
+
+            <Target>AoeOrigin</Target>
+
+         </VisualEffect>
+
+
+
+         <SoundEffect>
+
+            <Path>Elven/SFX_Skill_WarDance</Path>
+
+            <Delay>0</Delay>
+
+         </SoundEffect>
+
+
+
+         <CamShake>
+
+            <Id>Hard Hit-CamShake</Id>
+
+            <Delay>0.4</Delay>
+
+         </CamShake>
+
+
+
+      </CastFXs>
+
+      
+
+   </SkillDefinition>
+
+
+
+   
+
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- SEEDS SKILLS -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <SkillDefinition Id="PoisonSeedSkill">
+
+      <Range Min="0" Max="3"/>
+
+      <AreaOfEffect OriginX="1" OriginY="1">
+
+         eee
+
+         eXe
+
+         eee
+
+      </AreaOfEffect>
+
+      <AffectedUnits>
+
+         <CanAffectBuildings>false</CanAffectBuildings>
+
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+      </AffectedUnits>
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <Contagion>
+
+                  <BaseChance>100</BaseChance>
+
+                  <TurnsCount>3</TurnsCount>
+
+               </Contagion>
+
+               <Poison>
+
+                  <BaseChance>1</BaseChance>
+
+                  <DamagePerTurn>50</DamagePerTurn>
+
+                  <TurnsCount>3</TurnsCount>
+
+               </Poison>
+
+            <SurroundingEffect>
+
+               <Poison>
+
+                  <BaseChance>1</BaseChance>
+
+                  <DamagePerTurn>50</DamagePerTurn>
+
+                  <TurnsCount>3</TurnsCount>
+
+               </Poison>
+
+            </SurroundingEffect>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+
+
+      <CastFXs TotalDuration="0.2">
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="SNEW">Seeds/PoisonSeed/PoisonSeed_AoEBefore</Path>
+
+            </Paths>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>AoeOrigin</Target>
+
+         </VisualEffect>
+
+
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="SNEW">Seeds/PoisonSeed/PoisonSeed_AoEBehind</Path>
+
+            </Paths>
+
+            <SortingDepth>Behind</SortingDepth>
+
+            <Target>AoeOrigin</Target>
+
+         </VisualEffect>
+
+
+
+         <SoundEffect>
+
+            <Path>Seeds/SFX_Skill_Seed_Poison</Path>
+
+            <Delay>0</Delay>
+
+         </SoundEffect>
+
+
+
+         <CamShake>
+
+            <Id>Soft Hit-CamShake</Id>
+
+            <Delay>0.15</Delay>
+
+         </CamShake>
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+   
+
+   <SkillDefinition Id="PoisonSeedSkill2" TemplateId="PoisonSeedSkill">
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <Contagion>
+
+                  <BaseChance>100</BaseChance>
+
+                  <TurnsCount>3</TurnsCount>
+
+               </Contagion>
+
+               <Poison>
+
+                  <BaseChance>1</BaseChance>
+
+                  <DamagePerTurn>75</DamagePerTurn>
+
+                  <TurnsCount>3</TurnsCount>
+
+               </Poison>
+
+               <SurroundingEffect>
+
+                  <Poison>
+
+                     <BaseChance>1</BaseChance>
+
+                     <DamagePerTurn>75</DamagePerTurn>
+
+                     <TurnsCount>3</TurnsCount>
+
+                  </Poison>
+
+               </SurroundingEffect>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+	
+
+  <SkillDefinition Id="IsolationSeedSkill">
+
+      <Range Min="0" Max="6"/>
+
+      <AffectedUnits>
+
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+      </AffectedUnits>
+
+      <SkillAction>
+
+    <Attack>
+
+		<BaseDamage Min="90" Max="110"/>
+
+	    <AttackType>Physical</AttackType>
+
+        <DamageMultiplier>1</DamageMultiplier>
+
+            <SkillEffects>
+
+	                <MultiHit HitsCount="3"/>
+
+                    <Isolated>
+
+	                    <DamageMultiplier>2</DamageMultiplier>
+
+                    </Isolated>
+
+               <NoDodge/>
+
+               <IgnoreLineOfSight/>
+
+            </SkillEffects>
+
+    </Attack>
+
+      </SkillAction>
+
+
+
+      <CastFXs TotalDuration="0.4">
+
+		 <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="SNEW">Seeds/IsolationSeed/IsolationSeed_Caster</Path>
+
+            </Paths>
+
+			 <SortingDepth>Before</SortingDepth>
+
+            <Target>Caster</Target>
+
+         </VisualEffect>
+
+			  
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="N">Seeds/IsolationSeed/IsolationSeed_TargetBeforeN</Path>
+
+			   <Path Orientation="S">Seeds/IsolationSeed/IsolationSeed_TargetBeforeS</Path>
+
+			   <Path Orientation="E">Seeds/IsolationSeed/IsolationSeed_TargetBeforeE</Path>
+
+			   <Path Orientation="W">Seeds/IsolationSeed/IsolationSeed_TargetBeforeW</Path>
+
+            </Paths>
+
+			 <Delay>0.37</Delay>
+
+			 <SortingDepth>Before</SortingDepth>
+
+            <Target>HitTiles</Target>
+
+         </VisualEffect>
+
+
+
+		  <VisualEffect>
+
+			  <Paths>
+
+				  <Path Orientation="SNEW">Seeds/IsolationSeed/IsolationSeed_TargetBehind</Path>
+
+			  </Paths>
+
+			  <Delay>0.37</Delay>
+
+			  <SortingDepth>Behind</SortingDepth>
+
+			  <Target>HitTiles</Target>
+
+		  </VisualEffect>
+
+
+
+        <SoundEffect>
+
+            <Path>Seeds/SFX_Skill_Seed_Isolation</Path>
+
+            <Delay>0</Delay>
+
+         </SoundEffect>
+
+
+
+         <CamShake>
+
+            <Id>Hard Hit-CamShake</Id>
+
+            <Delay>0.37</Delay>
+
+         </CamShake>
+
+		  
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="IsolationSeedSkill2" TemplateId="IsolationSeedSkill">
+
+      <Range Min="0" Max="6"/>
+
+      <AffectedUnits>
+
+         <CanAffectBuildings>false</CanAffectBuildings>
+
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+      </AffectedUnits>
+
+      <SkillAction>
+
+         <Attack>
+
+            <BaseDamage Min="140" Max="160"/>
+
+            <AttackType>Physical</AttackType>
+
+            <DamageMultiplier>1</DamageMultiplier>
+
+            <SkillEffects>
+
+               <MultiHit HitsCount="3"/>
+
+               <Isolated>
+
+                  <DamageMultiplier>2</DamageMultiplier>
+
+               </Isolated>
+
+               <NoDodge/>
+
+               <IgnoreLineOfSight/>
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="PurgingSeedSkill">
+
+      <Range Min="0" Max="6"/>
+
+      <AreaOfEffect OriginX="2" OriginY="2">
+
+         _XXX_
+
+         XXXXX
+
+         XXXXX
+
+         XXXXX
+
+         _XXX_
+
+      </AreaOfEffect>
+
+      <AffectedUnits>
+
+         <CanAffectBuildings>false</CanAffectBuildings>
+
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+      </AffectedUnits>
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <Debuff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Stat Id="Resistance"/>
+
+                  <TurnsCount>2</TurnsCount>
+
+                  <Malus>20</Malus>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+               </Debuff>
+
+               <RemoveStatus>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Status>RemovablePositive</Status>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+               </RemoveStatus>
+
+               <IgnoreLineOfSight/>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+
+
+	   <CastFXs TotalDuration="0.2">
+
+		   <VisualEffect>
+
+			   <Paths>
+
+				   <Path Orientation="SNEW">Seeds/PurgingSeed/PurgingSeed_AoEBefore</Path>
+
+			   </Paths>
+
+			   <SortingDepth>Before</SortingDepth>
+
+			   <Target>AoeOrigin</Target>
+
+		   </VisualEffect>
+
+
+
+		   <VisualEffect>
+
+			   <Paths>
+
+				   <Path Orientation="SNEW">Seeds/PurgingSeed/PurgingSeed_AoEBehind</Path>
+
+			   </Paths>
+
+			   <SortingDepth>Behind</SortingDepth>
+
+			   <Target>AoeOrigin</Target>
+
+		   </VisualEffect>
+
+
+
+		   <VisualEffect>
+
+			   <Paths>
+
+				   <Path Orientation="SNEW">Seeds/PurgingSeed/PurgingSeed_HitTiles</Path>
+
+			   </Paths>
+
+			   <SortingDepth>Before</SortingDepth>
+
+			   <Target>HitTiles</Target>
+
+		   </VisualEffect>
+
+
+
+		   <SoundEffect>
+
+			   <Path>Seeds/SFX_Skill_Seed_Purging</Path>
+
+			   <Delay>0</Delay>
+
+		   </SoundEffect>
+
+
+
+		   <CamShake>
+
+			   <Id>Soft Hit-CamShake</Id>
+
+			   <Delay>0.2</Delay>
+
+		   </CamShake>
+
+	   </CastFXs>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="PurgingSeedSkill2" TemplateId="PurgingSeedSkill">
+
+      <Range Min="0" Max="6"/>
+
+      <AreaOfEffect OriginX="2" OriginY="2">
+
+         _XXX_
+
+         XXXXX
+
+         XXXXX
+
+         XXXXX
+
+         _XXX_
+
+      </AreaOfEffect>
+
+      <AffectedUnits>
+
+         <CanAffectBuildings>false</CanAffectBuildings>
+
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+      </AffectedUnits>
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <Debuff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Stat Id="Resistance"/>
+
+                  <TurnsCount>2</TurnsCount>
+
+                  <Malus>30</Malus>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+               </Debuff>
+
+               <RemoveStatus>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Status>RemovablePositive</Status>
+
+               </RemoveStatus>
+
+               <IgnoreLineOfSight/>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+	
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- LIVING FOREST SKILLS -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+	
+
+<SkillDefinition Id="LivingForestBallistaSkill">
+
+      <ValidTargets>
+
+         <EnemyUnits/>
+
+      </ValidTargets>
+
+      <AffectedUnits>
+
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+         <CanAffectBuildings>false</CanAffectBuildings>
+
+      </AffectedUnits>
+
+      <Range Min="1" Max="4"/>
+
+      <SkillAction>
+
+         <Attack>
+
+            <BaseDamage Min="100" Max="130"/>
+
+            <AttackType>Physical</AttackType>
+
+            <DamageMultiplier>1</DamageMultiplier>
+
+            <SkillEffects>
+
+               <IgnoreLineOfSight/>
+
+               <NoDodge/>
+
+               <Debuff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Malus>15</Malus>
+
+                  <Stat Id="OverallDamage"/>
+
+               </Debuff>
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+  <CastFXs TotalDuration="0.4">
+
+    <VisualEffect>
+
+      <Paths>
+
+        <Path Orientation="SNEW">00_Others/LivingForestBallistaSkill/LivingForestBallistaSkill_Caster</Path>
+
+      </Paths>
+
+      <SortingDepth>Before</SortingDepth>
+
+      <Target>Caster</Target>
+
+    </VisualEffect>
+
+
+
+    <VisualEffect>
+
+      <Paths>
+
+        <Path Orientation="N">Seeds/IsolationSeed/IsolationSeed_TargetBeforeN</Path>
+
+        <Path Orientation="S">Seeds/IsolationSeed/IsolationSeed_TargetBeforeS</Path>
+
+        <Path Orientation="E">Seeds/IsolationSeed/IsolationSeed_TargetBeforeE</Path>
+
+        <Path Orientation="W">Seeds/IsolationSeed/IsolationSeed_TargetBeforeW</Path>
+
+      </Paths>
+
+      <Delay>0.37</Delay>
+
+      <SortingDepth>Before</SortingDepth>
+
+      <Target>HitTiles</Target>
+
+    </VisualEffect>
+
+
+
+    <SoundEffect>
+
+       <Path>Seeds/SFX_Skill_Seed_Isolation</Path>
+
+       <Delay>0</Delay>
+
+    </SoundEffect>
+
+
+
+    <CamShake>
+
+       <Id>Hard Hit-CamShake</Id>
+
+       <Delay>0.37</Delay>
+
+    </CamShake>
+
+   </CastFXs>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="SacredBallistaSproutSkill">
+
+      <AreaOfEffect OriginX="3" OriginY="3">
+
+         XXXXXXX
+
+         XXXXXXX
+
+         XXXXXXX
+
+         XXXXXXX
+
+         XXXXXXX
+
+         XXXXXXX
+
+         XXXXXXX
+
+      </AreaOfEffect>
+
+      <ValidTargets>
+
+         <Building Id="SacredBallistaSprout"/>
+
+      </ValidTargets>
+
+      <AffectedUnits>
+
+         <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+
+         <CanAffectBossUnits>false</CanAffectBossUnits>
+
+         <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+
+      </AffectedUnits>
+
+      <Range Min="0" Max="0"/>
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <Buff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+
+                  <CanAffectBossUnits>false</CanAffectBossUnits>
+
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+
+                  <Bonus>20</Bonus>
+
+                  <Stat Id="Resistance"/>
+
+                  <TurnsCount>2</TurnsCount>
+
+               </Buff>
+
+               <Buff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+
+                  <CanAffectBossUnits>false</CanAffectBossUnits>
+
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+
+                  <Bonus>1</Bonus>
+
+                  <Stat Id="MovePointsTotal"/>
+
+                  <TurnsCount>1</TurnsCount>
+
+               </Buff>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+
+
+      <CastFXs TotalDuration="1.75">
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="NSEW">00_Others/SacredBallistaSproutSkill/SacredBallistaSproutSkill_AoEBefore</Path>
+
+            </Paths>
+
+            <Delay>0.37</Delay>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>AoeOrigin</Target>
+
+         </VisualEffect>
+
+
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="NSEW">00_Others/SacredBallistaSproutSkill/SacredBallistaSproutSkill_AoEBehind</Path>
+
+            </Paths>
+
+            <SortingDepth>Behind</SortingDepth>
+
+            <Target>AoeOrigin</Target>
+
+         </VisualEffect>
+
+
+
+         <SoundEffect>
+
+            <Path>SacredBallista\SFX_Skill_SacredBallista_Sprout</Path>
+
+            <Delay>0</Delay>
+
+         </SoundEffect>
+
+
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="SacredBallistaSkill">
+
+      <ValidTargets>
+
+         <EnemyUnits/>  <!--Il faudra un moyen de distinguer un ennemi spécifique à partir de son ID (comme on a déjà pour les valid buildings)-->
+
+      </ValidTargets>
+
+      <AffectedUnits>
+
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+         <CanAffectBuildings>false</CanAffectBuildings>
+
+      </AffectedUnits>
+
+      <Range Min="1" Max="20"/>
+
+      <SkillAction>
+
+         <Attack>
+
+            <BaseDamage Min="1600" Max="1800"/>
+
+            <AttackType>Physical</AttackType>
+
+            <DamageMultiplier>1</DamageMultiplier>
+
+            <SkillEffects>
+
+               <IgnoreLineOfSight/>
+
+               <NoDodge/>
+
+               <Debuff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Malus>25</Malus>
+
+                  <Stat Id="Resistance"/>
+
+                  <TurnsCount>2</TurnsCount>
+
+               </Debuff>
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+      <CastFXs TotalDuration="1.375">
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="SNEW">00_Others/SacredBallistaSkill/SacredBallistaSkill_Caster</Path>
+
+            </Paths>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>Caster</Target>
+
+         </VisualEffect>
+
+
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="NSEW">00_Others/SacredBallistaSkill/SacredBallistaSkill_HitTilesBefore</Path>
+
+            </Paths>
+
+            <Delay>1.25</Delay>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>HitTiles</Target>
+
+         </VisualEffect>
+
+
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="NSEW">00_Others/SacredBallistaSkill/SacredBallistaSkill_HitTilesBehind</Path>
+
+            </Paths>
+
+            <Delay>1.375</Delay>
+
+            <SortingDepth>Behind</SortingDepth>
+
+            <Target>HitTiles</Target>
+
+         </VisualEffect>
+
+
+
+         <SoundEffect>
+
+            <Path>SacredBallista\SFX_Skill_SacredBallista_Skills_01</Path>
+
+            <Delay>0</Delay>
+
+         </SoundEffect>
+
+
+
+         <SoundEffect>
+
+            <Path>SacredBallista\SFX_Skill_SacredBallista_Skills_02</Path>
+
+            <Delay>1.25</Delay>
+
+         </SoundEffect>
+
+
+
+
+
+         <CamShake>
+
+            <Id>Hard Hit-CamShake</Id>
+
+            <Delay>1.375</Delay>
+
+         </CamShake>
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+
+
+
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- BOSS SKILLS -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <SkillDefinition Id="ZeppelinExplosion">
+
+      <ValidTargets>
+
+         <BuildingsList Id="SacredBallistas"/>
+
+         <Building Id="MagicCircle"/>
+
+      </ValidTargets>
+
+      <Range Min="1" Max="1" CardinalDirectionOnly="true"/>
+
+      <AreaOfEffect OriginX="5" OriginY="5" >
+
+         __XXXXXXX__
+
+         _XXXXXXXXX_
+
+         XXXXXXXXXXX
+
+         XXXXXXXXXXX
+
+         XXXXXXXXXXX
+
+         XXXXXXXXXXX
+
+         XXXXXXXXXXX
+
+         XXXXXXXXXXX
+
+         XXXXXXXXXXX
+
+         _XXXXXXXXX_
+
+         __XXXXXXX__
+
+      </AreaOfEffect>
+
+      <AffectedUnits>
+
+         <CanAffectCaster>false</CanAffectCaster>
+
+      </AffectedUnits>
+
+      <SkillAction>
+
+         <Attack>
+
+            <BaseDamage Min="400" Max="400"/>
+
+            <AttackType>Magical</AttackType>
+
+            <DamageMultiplier>1</DamageMultiplier>
+
+            <SkillEffects>
+
+               <NoDodge></NoDodge>
+
+               <ExileCaster/>
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+
+
+      <CastFXs TotalDuration="1.06">
+
+
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="SNEW">Enemy Boss/ZeppelinBoss/Explosion/ZeppelinBoss_Explosion_Before_NSEW</Path>
+
+            </Paths>
+
+			<Delay>0.36</Delay>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>AoeOrigin</Target>
+
+         </VisualEffect>
+
+
+
+		 <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="SNEW">Enemy Boss/ZeppelinBoss/Explosion/ZeppelinBoss_Explosion_Behind_NSEW</Path>
+
+            </Paths>
+
+			<Delay>1</Delay>
+
+            <SortingDepth>Behind</SortingDepth>
+
+            <Target>AoeOrigin</Target>
+
+         </VisualEffect>
+
+		  
+
+
+
+         <CamShake>
+
+            <Id>Hard Hit-CamShake</Id>
+
+			<Delay>1.06</Delay>
+
+         </CamShake>
+
+
+
+		 <CasterAnim>
+
+            <Path>Enemy_CastSkill_ZeppelinExplosion_</Path>
+
+            <Delay>0</Delay>
+
+         </CasterAnim>
+
+
+
+         <SoundEffect>
+
+         <Path>Zeppelin/SFX_Skill_Zeppelin_AtomicBurst</Path>
+
+         <Delay>0</Delay>
+
+         </SoundEffect>
+
+
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+
+
+   <SkillDefinition Id="ZeppelinAttack">
+
+      <ValidTargets>
+
+         <PlayableUnits/>
+
+      </ValidTargets>
+
+      <Range Min="1" Max="6"/>
+
+      <SkillAction>
+
+         <Attack>
+
+            <BaseDamage Min="120" Max="140"/>
+
+            <AttackType>Physical</AttackType>
+
+            <DamageMultiplier>1</DamageMultiplier>
+
+         </Attack>
+
+      </SkillAction>
+
+      <CastFXs TotalDuration="1.05">
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path Orientation="S">Enemy Boss/ZeppelinBoss/ZeppelinAttack/ZeppelinAttack_TargetS</Path>
+
+               <Path Orientation="N">Enemy Boss/ZeppelinBoss/ZeppelinAttack/ZeppelinAttack_TargetN</Path>
+
+               <Path Orientation="W">Enemy Boss/ZeppelinBoss/ZeppelinAttack/ZeppelinAttack_TargetW</Path>
+
+               <Path Orientation="E">Enemy Boss/ZeppelinBoss/ZeppelinAttack/ZeppelinAttack_TargetE</Path>
+
+            </Paths>
+
+			 <Delay>0.93</Delay>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>HitTiles</Target>
+
+         </VisualEffect>
+
+
+
+         <CamShake>
+
+            <Id>Hard Hit-CamShake</Id>
+
+            <Delay>1.05</Delay>
+
+         </CamShake>
+
+		  
+
+		     <CasterAnim>
+
+            <Path>Enemy_CastSkill_ZeppelinAttack_</Path>
+
+            <Delay>0</Delay>
+
+         </CasterAnim>
+
+
+
+         <SoundEffect>
+
+         <Path>Zeppelin/SFX_Skill_Zeppelin_HeadBump</Path>
+
+         <Delay>0</Delay>
+
+         </SoundEffect>
+
+
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+   
+
+   <SkillDefinition Id="ZeppelinMist">
+
+      <SkillAction>
+
+         <Build Delay="2.91">
+
+            <Location>
+
+               <OnSelf/>
+
+            </Location>
+
+            <Buildings>
+
+               <Building Id="LightFogSpawner_Alive2" Weight="1"/>
+
+            </Buildings>
+
+         </Build>
+
+      </SkillAction>
+
+      <CastFXs>
+
+         <VisualEffect>
+
+            <Paths>
+
+               <Path>Enemy Boss/ZeppelinBoss/ZeppelinMist/ZeppelinMist</Path>
+
+            </Paths>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>HitTiles</Target>
+
+         </VisualEffect>
+
+
+
+         <CamShake>
+
+            <Id>Soft Hit-CamShake</Id>
+
+            <Delay>0.58</Delay>
+
+         </CamShake>
+
+
+
+         <SoundEffect>
+
+         <Path>Zeppelin/SFX_Skill_Zeppelin_InvocFog</Path>
+
+         <Delay>0</Delay>
+
+         </SoundEffect>
+
+
+
+        <CasterAnim>
+
+          <Path>Enemy_CastSkill_ZeppelinMist_</Path>
+
+          <Delay>0</Delay>
+
+        </CasterAnim>
+
+        
+
+      </CastFXs>
+
+
+
+   </SkillDefinition>
+
+   
+
+   
+
+
+
+</SkillDefinitions>
