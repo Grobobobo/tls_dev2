@@ -494,7 +494,7 @@
 
                <Isolated>
 
-                  <DamageMultiplier>1.5</DamageMultiplier> 
+                  <DamageMultiplier>1.3</DamageMultiplier> 
 
                </Isolated>
 
@@ -703,12 +703,11 @@
             <AttackType>Ranged</AttackType>
 
             <DamageMultiplier>1</DamageMultiplier>
-
-                  <Stun>
-
-                     <BaseChance>0.5</BaseChance>
-
-                  </Stun>
+            <SkillEffects>
+               <Stun>
+                  <BaseChance>0.5</BaseChance>
+               </Stun>
+            </SkillEffects>
 
          </Attack>
 
@@ -802,8 +801,8 @@
             <SkillEffects>
                   <Stun>
                      <BaseChance>0.5</BaseChance>
-                     <MultiHit HitsCount="3"/>
                   </Stun>
+                  <MultiHit HitsCount="2"/>
             </SkillEffects>
 
          </Attack>
@@ -817,7 +816,7 @@
 
       <AreaOfEffect OriginX="3" OriginY="4">
 
-         __eX_
+         __XX_
 
          _e___
 
@@ -855,24 +854,29 @@
 
             <AttackType>Ranged</AttackType>
 
-            <DamageMultiplier>1.35</DamageMultiplier>
+            <DamageMultiplier>1.3</DamageMultiplier>
 
             <SkillEffects>
 
                <IgnoreLineOfSight/>
 
-                  <Stun>
-
-                     <BaseChance>0.9</BaseChance>
-
-                  </Stun>
+               <Debuff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                  <Stat Id="Accuracy"/>
+                  <Malus>30</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
 
                <SurroundingEffect>
-                     <DamageMultiplier>0.2</DamageMultiplier>
-                  <Stun>
-                     <BaseChance>0.45</BaseChance>
-
-                  </Stun>
+                   
+                  <Debuff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                     <Stat Id="Accuracy"/>
+                     <Malus>15</Malus>
+                     <TurnsCount>2</TurnsCount>
+                  </Debuff>
 
                </SurroundingEffect>
 
@@ -962,17 +966,19 @@
 
             <AttackType>Ranged</AttackType>
 
-            <DamageMultiplier>1.35</DamageMultiplier>
+            <DamageMultiplier>1.3</DamageMultiplier>
 
             <SkillEffects>
 
                <IgnoreLineOfSight/>
 
-                  <Stun>
-
-                     <BaseChance>0.9</BaseChance>
-
-                  </Stun>
+               <Debuff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                  <Stat Id="Accuracy"/>
+                  <Malus>30</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
 
 
             </SkillEffects>
@@ -982,6 +988,447 @@
       </SkillAction>
 
    </SkillDefinition>
+
+
+   <SkillDefinition Id="CrescentSwing1" TemplateId="CrescentSwing">
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Ranged</AttackType>
+
+            <DamageMultiplier>1.3</DamageMultiplier>
+
+            <SkillEffects>
+               <IgnoreLineOfSight/>
+               <Debuff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                  <Stat Id="Accuracy"/>
+                  <Malus>32</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
+
+               <SurroundingEffect>
+
+                  <Debuff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                     <Stat Id="Accuracy"/>
+                     <Malus>17</Malus>
+                     <TurnsCount>2</TurnsCount>
+                  </Debuff>
+
+               </SurroundingEffect>
+
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="CrescentSwing1StrongThrow" TemplateId="CrescentSwing">
+      <AreaOfEffect OriginX="3" OriginY="4">
+
+         __XX_
+
+         _X___
+
+         X____
+
+         X____
+
+         _X___
+
+      </AreaOfEffect>
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Ranged</AttackType>
+
+            <DamageMultiplier>1.3</DamageMultiplier>
+
+            <SkillEffects>
+
+               <IgnoreLineOfSight/>
+
+               <Debuff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                  <Stat Id="Accuracy"/>
+                  <Malus>32</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
+
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+   <SkillDefinition Id="CrescentSwing2" TemplateId="CrescentSwing">
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Ranged</AttackType>
+
+            <DamageMultiplier>1.3</DamageMultiplier>
+
+            <SkillEffects>
+
+               <IgnoreLineOfSight/>
+
+               <Debuff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                  <Stat Id="Accuracy"/>
+                  <Malus>34</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
+
+               <SurroundingEffect>
+
+                  <Debuff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                     <Stat Id="Accuracy"/>
+                     <Malus>19</Malus>
+                     <TurnsCount>2</TurnsCount>
+                  </Debuff>
+
+               </SurroundingEffect>
+
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="CrescentSwing2StrongThrow" TemplateId="CrescentSwing">
+      <AreaOfEffect OriginX="3" OriginY="4">
+
+         __XX_
+
+         _X___
+
+         X____
+
+         X____
+
+         _X___
+
+      </AreaOfEffect>
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Ranged</AttackType>
+
+            <DamageMultiplier>1.3</DamageMultiplier>
+
+            <SkillEffects>
+
+               <IgnoreLineOfSight/>
+
+               <Debuff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                  <Stat Id="Accuracy"/>
+                  <Malus>34</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
+
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+   <SkillDefinition Id="CrescentSwing3" TemplateId="CrescentSwing">
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Ranged</AttackType>
+
+            <DamageMultiplier>1.3</DamageMultiplier>
+
+            <SkillEffects>
+
+               <IgnoreLineOfSight/>
+
+               <Debuff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                  <Stat Id="Accuracy"/>
+                  <Malus>36</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
+
+               <SurroundingEffect>
+
+                  <Debuff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                     <Stat Id="Accuracy"/>
+                     <Malus>21</Malus>
+                     <TurnsCount>2</TurnsCount>
+                  </Debuff>
+
+               </SurroundingEffect>
+
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="CrescentSwing3StrongThrow" TemplateId="CrescentSwing">
+      <AreaOfEffect OriginX="3" OriginY="4">
+
+         __XX_
+
+         _X___
+
+         X____
+
+         X____
+
+         _X___
+
+      </AreaOfEffect>
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Ranged</AttackType>
+
+            <DamageMultiplier>1.3</DamageMultiplier>
+
+            <SkillEffects>
+
+               <IgnoreLineOfSight/>
+
+               <Debuff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                  <Stat Id="Accuracy"/>
+                  <Malus>36</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
+
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+   <SkillDefinition Id="CrescentSwing4" TemplateId="CrescentSwing">
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Ranged</AttackType>
+
+            <DamageMultiplier>1.3</DamageMultiplier>
+
+            <SkillEffects>
+
+               <IgnoreLineOfSight/>
+
+               <Debuff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                  <Stat Id="Accuracy"/>
+                  <Malus>38</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
+
+               <SurroundingEffect>
+
+                  <Debuff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                     <Stat Id="Accuracy"/>
+                     <Malus>23</Malus>
+                     <TurnsCount>2</TurnsCount>
+                  </Debuff>
+
+               </SurroundingEffect>
+
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="CrescentSwing4StrongThrow" TemplateId="CrescentSwing">
+      <AreaOfEffect OriginX="3" OriginY="4">
+
+         __XX_
+
+         _X___
+
+         X____
+
+         X____
+
+         _X___
+
+      </AreaOfEffect>
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Ranged</AttackType>
+
+            <DamageMultiplier>1.3</DamageMultiplier>
+
+            <SkillEffects>
+
+               <IgnoreLineOfSight/>
+
+               <Debuff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                  <Stat Id="Accuracy"/>
+                  <Malus>38</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
+
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+   <SkillDefinition Id="CrescentSwing5" TemplateId="CrescentSwing">
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Ranged</AttackType>
+
+            <DamageMultiplier>1.3</DamageMultiplier>
+
+            <SkillEffects>
+
+               <IgnoreLineOfSight/>
+
+               <Debuff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                  <Stat Id="Accuracy"/>
+                  <Malus>40</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
+
+               <SurroundingEffect>
+
+                  <Debuff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                     <Stat Id="Accuracy"/>
+                     <Malus>25</Malus>
+                     <TurnsCount>2</TurnsCount>
+                  </Debuff>
+
+               </SurroundingEffect>
+
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="CrescentSwing5StrongThrow" TemplateId="CrescentSwing">
+      <AreaOfEffect OriginX="3" OriginY="4">
+
+         __XX_
+
+         _X___
+
+         X____
+
+         X____
+
+         _X___
+
+      </AreaOfEffect>
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Ranged</AttackType>
+
+            <DamageMultiplier>1.3</DamageMultiplier>
+
+            <SkillEffects>
+
+               <IgnoreLineOfSight/>
+
+               <Debuff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                  <Stat Id="Accuracy"/>
+                  <Malus>40</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
+
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+
 
    <SkillDefinition Id="PainfulSpin">
 
@@ -1038,7 +1485,7 @@
                   </Stun>
 
                <SurroundingEffect>
-                  <DamageMultiplier>0.2</DamageMultiplier>
+
                   <Stun>
                      <BaseChance>0.5</BaseChance>
                   </Stun>
@@ -1182,6 +1629,8 @@
       </CastFXs>
 
    </SkillDefinition>
+
+
 
 
    <SkillDefinition Id="PainfulSpinStrongThrow" TemplateId="PainfulSpin">
@@ -1612,7 +2061,7 @@
 
             <AttackType>Magical</AttackType>
 
-            <DamageMultiplier>1.5</DamageMultiplier>
+            <DamageMultiplier>1.3</DamageMultiplier>
 
             <SkillEffects>
 

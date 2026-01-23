@@ -161,13 +161,13 @@
       
 		<TokenVariables>
          <TokenVariable Key="PerkStacks" Value="Max(0,EnemiesHitThreshold - Module.Buffer)"/>
-			<TokenVariable Key="EnemiesHitThreshold" Value="9"/>
+			<TokenVariable Key="EnemiesHitThreshold" Value="4"/>
 			<TokenVariable Key="CanActivatePerk" Value="Module.Buffer3"/>
       </TokenVariables>
 		<LocArguments>
              <LocArgument Value="EnemiesHitThreshold" Style="KeyWordNb"/>
                <LocalizedArgument Value="SkillEffectName_MultiHit" Style="MultiHit"/>
-               <LocArgument Value="3" Style="DamageNb" Prefix=" x"/>
+               <LocArgument Value="2" Style="DamageNb" Prefix=" x"/>
              <!--<LocArgument Prefix="+" Value="OverallDamageBonus" Suffix="%" Style="GoodNb"/>-->
              <LocArgument Value="PerkStacks" Interpreted="true" Style="KeyWordNb"/>
       </LocArguments>
@@ -254,6 +254,52 @@
                   </Conditions>
 
                </ReplaceItemSkill>
+               <ReplaceItemSkill SkillIdReplacement="CrescentSwing1StrongThrow" SkillIdToReplace="CrescentSwing1" LinkedSkillIdForUsesPerTurn="CrescentSwing1">
+
+                  <Conditions>
+
+							<IsTrue Value="CanActivatePerk = 1"/>
+
+                  </Conditions>
+
+               </ReplaceItemSkill>               
+               <ReplaceItemSkill SkillIdReplacement="CrescentSwing2StrongThrow" SkillIdToReplace="CrescentSwing2" LinkedSkillIdForUsesPerTurn="CrescentSwing2">
+
+                  <Conditions>
+
+							<IsTrue Value="CanActivatePerk = 1"/>
+
+                  </Conditions>
+
+               </ReplaceItemSkill>               
+               <ReplaceItemSkill SkillIdReplacement="CrescentSwing3StrongThrow" SkillIdToReplace="CrescentSwing3" LinkedSkillIdForUsesPerTurn="CrescentSwing3">
+
+                  <Conditions>
+
+							<IsTrue Value="CanActivatePerk = 1"/>
+
+                  </Conditions>
+
+               </ReplaceItemSkill>               
+               <ReplaceItemSkill SkillIdReplacement="CrescentSwing4StrongThrow" SkillIdToReplace="CrescentSwing4" LinkedSkillIdForUsesPerTurn="CrescentSwing4">
+
+                  <Conditions>
+
+							<IsTrue Value="CanActivatePerk = 1"/>
+
+                  </Conditions>
+
+               </ReplaceItemSkill>               
+               <ReplaceItemSkill SkillIdReplacement="CrescentSwing5StrongThrow" SkillIdToReplace="CrescentSwing5" LinkedSkillIdForUsesPerTurn="CrescentSwing5">
+
+                  <Conditions>
+
+							<IsTrue Value="CanActivatePerk = 1"/>
+
+                  </Conditions>
+
+               </ReplaceItemSkill>
+
                <ReplaceItemSkill SkillIdReplacement="PainfulSpinStrongThrow" SkillIdToReplace="PainfulSpin" LinkedSkillIdForUsesPerTurn="PainfulSpin">
 
                   <Conditions>
