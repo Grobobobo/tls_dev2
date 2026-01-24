@@ -2378,7 +2378,7 @@
    <SkillDefinition Id="ArmageddonScroll" TemplateId="Armageddon">
       <OverrideLocalizationId>ArmageddonScroll</OverrideLocalizationId>
       <ActionPointsCost>0</ActionPointsCost>
-      <ManaCost>5</ManaCost>
+      <ManaCost>8</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
       <SkillAction>
          <Attack>
@@ -2393,11 +2393,9 @@
    </SkillDefinition>
 
    <SkillDefinition Id="ArmageddonScroll1" TemplateId="ArmageddonScroll">
-      <ManaCost>6</ManaCost>
    </SkillDefinition>
 
    <SkillDefinition Id="ArmageddonScroll2" TemplateId="ArmageddonScroll">
-      <ManaCost>7</ManaCost>
    </SkillDefinition>
 
    <SkillDefinition Id="GeoCannonScroll" TemplateId="GeoCannon">
