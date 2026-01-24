@@ -2403,18 +2403,6 @@
       <ActionPointsCost>0</ActionPointsCost>
       <ManaCost>6</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
-      <SkillAction>
-         <Attack>
-            <AttackType>Magical</AttackType>
-            <DamageMultiplier>1.7</DamageMultiplier>
-            <SkillEffects>
-               <Inaccurate>
-                  <Malus>2</Malus>
-               </Inaccurate>
-               <NoBlock/>
-            </SkillEffects>
-         </Attack>
-      </SkillAction>
    </SkillDefinition>
 
    <SkillDefinition Id="GeoCannonScroll1" TemplateId="GeoCannonScroll">
@@ -2429,34 +2417,6 @@
       <MovePointsCost>0</MovePointsCost>
       <ManaCost>3</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
-      <SkillAction>
-         <Attack>
-            <AttackType>Physical</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
-            <SkillEffects>
-               <Maneuver/>
-               <Debuff>
-                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-                  <CanAffectCaster>false</CanAffectCaster>
-                  <Stat Id="OverallDamage"/>
-                  <Malus>20</Malus>
-                  <TurnsCount>2</TurnsCount>
-               </Debuff>
-               <SurroundingEffect>
-                  <Damage Multiplier="0.5"/>
-                  <Debuff>
-                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                     <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-                     <CanAffectCaster>false</CanAffectCaster>
-                     <Stat Id="OverallDamage"/>
-                     <Malus>20</Malus>
-                     <TurnsCount>2</TurnsCount>
-                  </Debuff>
-               </SurroundingEffect>
-            </SkillEffects>
-         </Attack>
-      </SkillAction>
    </SkillDefinition>
 
    <SkillDefinition Id="MovingWallScroll1" TemplateId="MovingWallScroll">
@@ -2471,12 +2431,6 @@
       <ActionPointsCost>0</ActionPointsCost>
       <ManaCost>5</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
-      <SkillAction>
-         <Attack>
-            <AttackType>Physical</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
-         </Attack>
-      </SkillAction>
    </SkillDefinition>
 
    <SkillDefinition Id="WallsOfPainScroll1" TemplateId="WallsOfPainScroll">
