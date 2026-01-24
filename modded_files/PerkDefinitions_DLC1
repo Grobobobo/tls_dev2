@@ -532,7 +532,7 @@
 			<TokenVariable Key="PerkStacks" Value="Min(Max(0,Module.Buffer), MaxStacks)"/>
          <TokenVariable Key="MaxStacks" Value="20"/>
          <TokenVariable Key="WasAttackedThisTurn" Value="Module.Buffer2"/>
-         <TokenVariable Key="StackPerEnemy" Value="2"/>
+         <TokenVariable Key="StackPerEnemy" Value="3"/>
          <TokenVariable Key="StackLoosePerSkill" Value="1"/>
          <TokenVariable Key="IsStackConsumePrevented" Value="Module.Buffer3"/>
       </TokenVariables>
@@ -792,9 +792,9 @@
          <!--<TokenVariable Key="SkillUsed" Value="Min(Module.Buffer, OverheatThreshold)"/>--> <!--A decommenter si limite haute-->
          <TokenVariable Key="SkillUsed" Value="Module.Buffer"/>
          <TokenVariable Key="OverheatThreshold" Value="7"/>
-			<TokenVariable Key="CooldownPerTurn" Value="5"/>
+			<TokenVariable Key="CooldownPerTurn" Value="4"/>
 			<TokenVariable Key="SkillId" Value="OverheatSkill"/>
-			<TokenVariable Key="BastHealthCost" Value="4"/>
+			<TokenVariable Key="BastHealthCost" Value="12"/>
 			<TokenVariable Key="HeatlCostPerPoint" Value="4"/>
          <TokenVariable Key="HeatIncrease" Value="1"/>
          <TokenVariable Key="CanTriggerOverheat" Value ="Module.Buffer3"/>
@@ -862,6 +862,17 @@
                      <TriggerEffects/>
 						</Actions>
 					</Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('Cannon')"/>
+                     <IsTrue Value="CanTriggerOverheat = 1"/>
+                  </Conditions>
+                  <Actions>
+					  <RefreshPerkActivationFeedback RefreshView="true"/>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                  </Actions>
+               </Event>
                <Event EffectTime="OnSkillCastEnd">
                   <Conditions>
                      <IsTrue Value="Skill.IsFromItemWithTag('Cannon')"/>

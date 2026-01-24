@@ -73,14 +73,14 @@
       <SkillAction>
          <Attack>
             <AttackType>Physical</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
+            <DamageMultiplier>1.4</DamageMultiplier>
             <SkillEffects>
                <CasterEffect>
                   <Buff>
                      <CanAffectCaster>true</CanAffectCaster>
-                     <Bonus>4</Bonus>
+                     <Bonus>7</Bonus>
                      <Stat Id="Block"/>
-                     <TurnsCount>1</TurnsCount>
+                     <TurnsCount>2</TurnsCount>
                   </Buff>
                </CasterEffect>
             </SkillEffects>
@@ -120,14 +120,14 @@
       <SkillAction>
          <Attack>
             <AttackType>Physical</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
+            <DamageMultiplier>1.4</DamageMultiplier>
             <SkillEffects>
                <CasterEffect>
                   <Buff>
                      <CanAffectCaster>true</CanAffectCaster>
-                     <Bonus>6</Bonus>
+                     <Bonus>8</Bonus>
                      <Stat Id="Block"/>
-                     <TurnsCount>1</TurnsCount>
+                     <TurnsCount>2</TurnsCount>
                   </Buff>
                </CasterEffect>
             </SkillEffects>
@@ -139,14 +139,14 @@
             <SkillAction>
          <Attack>
             <AttackType>Physical</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
+            <DamageMultiplier>1.4</DamageMultiplier>
             <SkillEffects>
                <CasterEffect>
                   <Buff>
                      <CanAffectCaster>true</CanAffectCaster>
-                     <Bonus>8</Bonus>
+                     <Bonus>9</Bonus>
                      <Stat Id="Block"/>
-                     <TurnsCount>1</TurnsCount>
+                     <TurnsCount>2</TurnsCount>
                   </Buff>
                </CasterEffect>
             </SkillEffects>
@@ -158,14 +158,14 @@
             <SkillAction>
          <Attack>
             <AttackType>Physical</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
+            <DamageMultiplier>2</DamageMultiplier>
             <SkillEffects>
                <CasterEffect>
                   <Buff>
                      <CanAffectCaster>true</CanAffectCaster>
                      <Bonus>10</Bonus>
                      <Stat Id="Block"/>
-                     <TurnsCount>1</TurnsCount>
+                     <TurnsCount>2</TurnsCount>
                   </Buff>
                </CasterEffect>
             </SkillEffects>
@@ -177,14 +177,14 @@
             <SkillAction>
          <Attack>
             <AttackType>Physical</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
+            <DamageMultiplier>1.4</DamageMultiplier>
             <SkillEffects>
                <CasterEffect>
                   <Buff>
                      <CanAffectCaster>true</CanAffectCaster>
                      <Bonus>12</Bonus>
                      <Stat Id="Block"/>
-                     <TurnsCount>1</TurnsCount>
+                     <TurnsCount>2</TurnsCount>
                   </Buff>
                </CasterEffect>
             </SkillEffects>
@@ -196,14 +196,14 @@
             <SkillAction>
          <Attack>
             <AttackType>Physical</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
+            <DamageMultiplier>1.4</DamageMultiplier>
             <SkillEffects>
                <CasterEffect>
                   <Buff>
                      <CanAffectCaster>true</CanAffectCaster>
                      <Bonus>14</Bonus>
                      <Stat Id="Block"/>
-                     <TurnsCount>1</TurnsCount>
+                     <TurnsCount>2</TurnsCount>
                   </Buff>
                </CasterEffect>
             </SkillEffects>
@@ -213,11 +213,12 @@
    
    <SkillDefinition Id="MovingWall">
       <ActionPointsCost>2</ActionPointsCost>
-      <ManaCost>2</ManaCost>
+      <ManaCost>3</ManaCost>
       <MovePointsCost>1</MovePointsCost>
-      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
       <Range Min="1" Max="5" CardinalDirectionOnly="true" Modifiable="true"/>
       <AreaOfEffect OriginX="1" OriginY="0">
+         eee
          eee
          XXX
          _M_
@@ -225,7 +226,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Physical</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
+            <DamageMultiplier>1.1</DamageMultiplier>
             <SkillEffects>
                <Maneuver/>
                <Debuff>
@@ -233,17 +234,17 @@
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>false</CanAffectCaster>
                   <Stat Id="OverallDamage"/>
-                  <Malus>20</Malus>
+                  <Malus>50</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <SurroundingEffect>
-                  <Damage Multiplier="0.5"/>
+                  <Damage Multiplier="0.55"/>
 				      <Debuff>
 					     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
 					     <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
 					     <CanAffectCaster>false</CanAffectCaster>
 					     <Stat Id="OverallDamage"/>
-					     <Malus>20</Malus>
+					     <Malus>50</Malus>
 					     <TurnsCount>2</TurnsCount>
 				      </Debuff>
                </SurroundingEffect>
@@ -301,7 +302,7 @@
 
    <SkillDefinition Id="WallsOfPain">
       <ActionPointsCost>2</ActionPointsCost>
-      <ManaCost>4</ManaCost>
+      <ManaCost>5</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
       <Range Min="1" Max="1" CardinalDirectionOnly="true"/>
       <AreaOfEffect OriginX="1" OriginY="3">
@@ -317,7 +318,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Physical</AttackType>
-            <DamageMultiplier>1.1</DamageMultiplier>
+            <DamageMultiplier>1.3</DamageMultiplier>
          </Attack>
       </SkillAction>
 	 
@@ -428,7 +429,7 @@
 				<DamageMultiplier>1</DamageMultiplier>
 				<SkillEffects>
                <Opportunistic>
-                  <DamageMultiplier>1.6</DamageMultiplier>
+                  <DamageMultiplier>1.4</DamageMultiplier>
                </Opportunistic>
                <SurroundingEffect>
                   <Damage Multiplier="0.3"/>
@@ -498,7 +499,7 @@
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <Opportunistic>
-                  <DamageMultiplier>1.6</DamageMultiplier>
+                  <DamageMultiplier>1.4</DamageMultiplier>
                </Opportunistic>
                <SurroundingEffect>
                   <Damage Multiplier="0.3"/>
@@ -523,7 +524,7 @@
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <Opportunistic>
-                  <DamageMultiplier>1.6</DamageMultiplier>
+                  <DamageMultiplier>1.4</DamageMultiplier>
                </Opportunistic>
                <SurroundingEffect>
                   <Damage Multiplier="0.3"/>
@@ -548,7 +549,7 @@
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <Opportunistic>
-                  <DamageMultiplier>1.6</DamageMultiplier>
+                  <DamageMultiplier>1.4</DamageMultiplier>
                </Opportunistic>
                <SurroundingEffect>
                   <Damage Multiplier="0.3"/>
@@ -573,7 +574,7 @@
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <Opportunistic>
-                  <DamageMultiplier>1.6</DamageMultiplier>
+                  <DamageMultiplier>1.4</DamageMultiplier>
                </Opportunistic>
                <SurroundingEffect>
                   <Damage Multiplier="0.3"/>
@@ -598,7 +599,7 @@
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <Opportunistic>
-                  <DamageMultiplier>1.6</DamageMultiplier>
+                  <DamageMultiplier>1.4</DamageMultiplier>
                </Opportunistic>
                <SurroundingEffect>
                   <Damage Multiplier="0.3"/>
@@ -741,13 +742,13 @@
       </AreaOfEffect>
       <ActionPointsCost>2</ActionPointsCost>
       <ManaCost>6</ManaCost>
-      <Range Min="1" Max="2" CardinalDirectionOnly="true"/>
+      <Range Min="1" Max="2" CardinalDirectionOnly="false"/>
       <UsesPerTurnCount>1</UsesPerTurnCount>
 
       <SkillAction>
          <Attack>
             <AttackType>Magical</AttackType>
-            <DamageMultiplier>1.25</DamageMultiplier>
+            <DamageMultiplier>1.7</DamageMultiplier>
 				<SkillEffects>
                <Inaccurate>
                   <Malus>2</Malus>
@@ -971,22 +972,21 @@
          eXe
          eee
       </AreaOfEffect>
-		<ActionPointsCost>2</ActionPointsCost>
-		<ManaCost>1</ManaCost>
+		<ActionPointsCost>1</ActionPointsCost>
+		<ManaCost>2</ManaCost>
 		<Range Min="7" Max="21" Modifiable="true"/>
 		<UsesPerTurnCount>2</UsesPerTurnCount>
 
 		<SkillAction>
 			<Attack>
 				<AttackType>Ranged</AttackType>
-				<DamageMultiplier>1</DamageMultiplier>
+				<DamageMultiplier>1.0</DamageMultiplier>
 				<SkillEffects>
 					<IgnoreLineOfSight/>
-               <Stun>
-                  <BaseChance>0.9</BaseChance>
-               </Stun>
+               <Momentum>
+                  <DamageBonusPerTile>0.15</DamageBonusPerTile>
+               </Momentum>
 					<SurroundingEffect>
-						<Damage Multiplier="0.5"/>
                   <Stun>
                      <BaseChance>0.5</BaseChance>
                   </Stun>
@@ -1056,7 +1056,7 @@
 		<SkillAction>
 			<Attack>
 				<AttackType>Ranged</AttackType>
-				<DamageMultiplier>0.7</DamageMultiplier>
+				<DamageMultiplier>1.0</DamageMultiplier>
 				<SkillEffects>
 					<MultiHit HitsCount="3"/>
 				   <IgnoreLineOfSight/>
@@ -1138,7 +1138,7 @@
 
       <SkillAction>
          <Attack>
-            <BaseDamage Min="82" Max="130"/>
+            <BaseDamage Min="170" Max="340"/>
             <AttackType>Ranged</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
@@ -1371,6 +1371,11 @@
 
    <SkillDefinition Id="CollateralDamageSkill">
       <Range Min="1" Max="2" Modifiable="false"/>
+         <AreaOfEffect OriginX="1" OriginY="1">
+         _X_
+         XXX
+         _X_
+      </AreaOfEffect>
       <AffectedUnits>
          <CanAffectCaster>false</CanAffectCaster>
          <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
@@ -1378,7 +1383,7 @@
       </AffectedUnits>
       <SkillAction>
          <Attack>
-            <BaseDamage Min="200" Max="250"/>
+            <BaseDamage Min="150" Max="250"/>
             <AttackType>Adaptative</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
@@ -2398,12 +2403,12 @@
    <SkillDefinition Id="GeoCannonScroll" TemplateId="GeoCannon">
       <OverrideLocalizationId>GeoCannonScroll</OverrideLocalizationId>
       <ActionPointsCost>0</ActionPointsCost>
-      <ManaCost>5</ManaCost>
+      <ManaCost>6</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
       <SkillAction>
          <Attack>
             <AttackType>Magical</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
+            <DamageMultiplier>1.7</DamageMultiplier>
             <SkillEffects>
                <Inaccurate>
                   <Malus>2</Malus>
@@ -2415,18 +2420,16 @@
    </SkillDefinition>
 
    <SkillDefinition Id="GeoCannonScroll1" TemplateId="GeoCannonScroll">
-      <ManaCost>6</ManaCost>
    </SkillDefinition>
 
    <SkillDefinition Id="GeoCannonScroll2" TemplateId="GeoCannonScroll">
-      <ManaCost>7</ManaCost>
    </SkillDefinition>
 
    <SkillDefinition Id="MovingWallScroll" TemplateId="MovingWall">
       <OverrideLocalizationId>MovingWallScroll</OverrideLocalizationId>
       <ActionPointsCost>0</ActionPointsCost>
       <MovePointsCost>0</MovePointsCost>
-      <ManaCost>2</ManaCost>
+      <ManaCost>3</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
       <SkillAction>
          <Attack>
@@ -2459,18 +2462,16 @@
    </SkillDefinition>
 
    <SkillDefinition Id="MovingWallScroll1" TemplateId="MovingWallScroll">
-      <ManaCost>3</ManaCost>
    </SkillDefinition>
 
    <SkillDefinition Id="MovingWallScroll2" TemplateId="MovingWallScroll">
-      <ManaCost>4</ManaCost>
    </SkillDefinition>
 
 
    <SkillDefinition Id="WallsOfPainScroll" TemplateId="WallsOfPain">
       <OverrideLocalizationId>WallsOfPainScroll</OverrideLocalizationId>
       <ActionPointsCost>0</ActionPointsCost>
-      <ManaCost>3</ManaCost>
+      <ManaCost>5</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
       <SkillAction>
          <Attack>
@@ -2481,11 +2482,9 @@
    </SkillDefinition>
 
    <SkillDefinition Id="WallsOfPainScroll1" TemplateId="WallsOfPainScroll">
-      <ManaCost>4</ManaCost>
    </SkillDefinition>
 
    <SkillDefinition Id="WallsOfPainScroll2" TemplateId="WallsOfPainScroll">
-      <ManaCost>5</ManaCost>
    </SkillDefinition>
 
 
