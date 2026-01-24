@@ -383,7 +383,7 @@
          <TokenVariable Key="MagicDamageBonus" Value="Plague * ScalingMagicDamage"/>
          <TokenVariable Key="PoisonScalingOnLevel" Value="(Floor(Owner.Level/PerLevelHeroScale) * PoisonScalingLevelMultiplicative)"/>
          <TokenVariable Key="PlayerPoisonScalingOnHit" Value="0.25"/>
-         <TokenVariable Key="PerLevelHeroScale" Value="3"/>
+         <TokenVariable Key="PerLevelHeroScale" Value="6"/>
 
          <TokenVariable Key="ApplyStatusRange" Value="4"/>
          <TokenVariable Key="PoisonPlayerDuration" Value="3"/>
