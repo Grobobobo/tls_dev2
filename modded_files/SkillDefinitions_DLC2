@@ -152,7 +152,7 @@
 
                      <CanAffectCaster>true</CanAffectCaster>
 
-                     <Bonus>8</Bonus>
+                     <Bonus>12</Bonus>
 
                      <Stat Id="PhysicalDamage"/>
 
@@ -238,7 +238,7 @@
 
                      <CanAffectCaster>true</CanAffectCaster>
 
-                     <Bonus>8</Bonus>
+                     <Bonus>13</Bonus>
 
                      <Stat Id="PhysicalDamage"/>
 
@@ -284,7 +284,7 @@
 
                      <CanAffectCaster>true</CanAffectCaster>
 
-                     <Bonus>9</Bonus>
+                     <Bonus>14</Bonus>
 
                      <Stat Id="PhysicalDamage"/>
 
@@ -330,7 +330,7 @@
 
                      <CanAffectCaster>true</CanAffectCaster>
 
-                     <Bonus>10</Bonus>
+                     <Bonus>15</Bonus>
 
                      <Stat Id="PhysicalDamage"/>
 
@@ -376,7 +376,7 @@
 
                      <CanAffectCaster>true</CanAffectCaster>
 
-                     <Bonus>11</Bonus>
+                     <Bonus>16</Bonus>
 
                      <Stat Id="PhysicalDamage"/>
 
@@ -422,7 +422,7 @@
 
                      <CanAffectCaster>true</CanAffectCaster>
 
-                     <Bonus>12</Bonus>
+                     <Bonus>18</Bonus>
 
                      <Stat Id="PhysicalDamage"/>
 
@@ -2401,15 +2401,11 @@
 
    <SkillDefinition Id="PiercingClawsScroll1" TemplateId="PiercingClawsScroll">
 
-      <ManaCost>3</ManaCost>
-
    </SkillDefinition>
 
 
 
    <SkillDefinition Id="PiercingClawsScroll2" TemplateId="PiercingClawsScroll">
-
-      <ManaCost>4</ManaCost>
 
    </SkillDefinition>
 
@@ -2421,7 +2417,7 @@
 
       <ActionPointsCost>0</ActionPointsCost>
 
-      <ManaCost>4</ManaCost>
+      <ManaCost>5</ManaCost>
 
       <UsesPerTurnCount>1</UsesPerTurnCount>
 
@@ -2451,7 +2447,7 @@
 
    <SkillDefinition Id="PainfulSpinScroll2" TemplateId="PainfulSpinScroll">
 
-      <ManaCost>6</ManaCost>
+      <ManaCost>5</ManaCost>
 
       <AffectedUnits>
 
@@ -2469,7 +2465,7 @@
 
       <ActionPointsCost>0</ActionPointsCost>
 
-      <ManaCost>6</ManaCost>
+      <ManaCost>8</ManaCost>
 
       <UsesPerTurnCount>1</UsesPerTurnCount>
 
@@ -2480,15 +2476,11 @@
 
    <SkillDefinition Id="PetalStormScroll1" TemplateId="PetalStormScroll">
 
-      <ManaCost>8</ManaCost>
-
    </SkillDefinition>
 
 
 
    <SkillDefinition Id="PetalStormScroll2" TemplateId="PetalStormScroll">
-
-      <ManaCost>10</ManaCost>
 
    </SkillDefinition>
 
