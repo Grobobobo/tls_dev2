@@ -63,7 +63,6 @@ for sheet_name in weapon_sheets:
         print(f"✓ {sheet_name}: {len(row_22)} variants found")
 
 # Extract Tier 1 Variant Values
-print("\nExtracting Tier 1 Variant Values...")
 tier1_sheet = wb['Tier 1 Variant Values']
 tier1_headers = []
 for col_idx in range(1, 20):
@@ -87,11 +86,8 @@ for row_idx in range(9, 25):
         tier1_data[row_idx - 8] = row_data
 
 print(f"✓ Tier 1: {len(tier1_headers)} stat headers, {len(tier1_data)} data rows")
-print(f"DEBUG: tier1_data keys: {list(tier1_data.keys())}")
-print(f"DEBUG: tier1_headers[:5]: {tier1_headers[:5]}")
 
 # Extract Tier 2 Variant Values
-print("Extracting Tier 2 Variant Values...")
 tier2_sheet = wb['Tier 2 Variant Values']
 tier2_headers = []
 for col_idx in range(1, 30):  # Increased to 30 to capture all headers
@@ -423,8 +419,6 @@ def create_base_stat_bonuses(weapon_id, variant_id, level_id, excel_weapon_name)
         return None
     
     stat_names = variant_mapping.get(variant_id) or variant_mapping.get(str(variant_id))
-    if weapon_id in ['Axe4', 'Pistol4'] and level_id == 0:  # Debug
-        print(f"      DEBUG: Found stat_names: {stat_names}")
     
     # Normalize stat_names to always be a list
     if isinstance(stat_names, str):
@@ -518,10 +512,6 @@ def process_xml_file(file_path):
                 skipped_weapons.append((weapon_base, item_id))
             continue
         
-        # Debug: Print first few weapon matches
-        if item_id in ['Sword2', 'Sword3']:
-            print(f"    DEBUG: {item_id} -> weapon_base='{weapon_base}' -> excel_name='{excel_weapon_name}'")
-        
         # Process all level variants
         level_variations = item.find('LevelVariations')
         if level_variations is None:
@@ -539,12 +529,6 @@ def process_xml_file(file_path):
             
             # Create new BaseStatBonuses
             new_base_stat_bonuses = create_base_stat_bonuses(item_id, variant_id, level_id, excel_weapon_name)
-            
-            # Debug: Track why bonuses aren't being created
-            if new_base_stat_bonuses is None and variant_id in [2, 3, 4, 5]:
-                if excel_weapon_name.lower() != 'war shield' or variant_id not in [0, 1]:
-                    if update_count == 0:  # Only print for first file
-                        print(f"    DEBUG: No bonuses created for {item_id} (variant {variant_id}, level {level_id})")
             
             # Remove old BaseStatBonuses if it exists
             old_bsb = level_elem.find('BaseStatBonuses')
@@ -574,9 +558,6 @@ def process_xml_file(file_path):
         print(f"  ⚠ ERROR: Tree is empty, aborting write for {file_path}")
         return update_count, changes
     
-    # Backup original file
-    backup_path = file_path + '.backup'
-    shutil.copy2(file_path, backup_path)
     original_size = os.path.getsize(file_path)
     
     # Write the updated XML
@@ -585,9 +566,7 @@ def process_xml_file(file_path):
     # Verify file was written successfully
     new_size = os.path.getsize(file_path)
     if new_size < original_size * 0.5:  # File shrank by more than 50%
-        print(f"  ⚠ WARNING: File size dropped from {original_size} to {new_size} bytes")
-        print(f"  ⚠ Restoring from backup...")
-        shutil.copy2(backup_path, file_path)
+        print(f"  ⚠ ERROR: File size dropped from {original_size} to {new_size} bytes - aborting")
         return update_count, changes
     
     print(f"  ✓ File saved: {item_count} items, {new_size} bytes")
