@@ -50,6 +50,16 @@
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <NoDodge/>
+                 <CasterEffect>
+                  <Buff>
+                     <BaseChance>1</BaseChance>
+                     <CanAffectCaster>true</CanAffectCaster>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <Bonus>5</Bonus>
+                     <Stat Id="OverallDamage"/>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -106,16 +116,10 @@
                   <Stat Id="MovePoints"/>
                   <Bonus>2</Bonus>
                </RegenStat>
-               <CasterEffect>
-                  <Buff>
+               <RemoveStatus>
                      <BaseChance>1</BaseChance>
-                     <CanAffectCaster>true</CanAffectCaster>
-                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                     <Bonus>10</Bonus>
-                     <Stat Id="OverallDamage"/>
-                     <TurnsCount>1</TurnsCount>
-                  </Buff>
-               </CasterEffect>
+                     <Status>Debuff</Status>
+               </RemoveStatus>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -176,16 +180,10 @@
                   <Stat Id="MovePoints"/>
                   <Bonus>2</Bonus>
                </RegenStat>
-               <CasterEffect>
-                  <Buff>
+               <RemoveStatus>
                      <BaseChance>1</BaseChance>
-                     <CanAffectCaster>true</CanAffectCaster>
-                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                     <Bonus>11</Bonus>
-                     <Stat Id="OverallDamage"/>
-                     <TurnsCount>1</TurnsCount>
-                  </Buff>
-               </CasterEffect>
+                     <Status>Debuff</Status>
+               </RemoveStatus>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -203,16 +201,10 @@
                   <Stat Id="MovePoints"/>
                   <Bonus>3</Bonus>
                </RegenStat>
-               <CasterEffect>
-                  <Buff>
+               <RemoveStatus>
                      <BaseChance>1</BaseChance>
-                     <CanAffectCaster>true</CanAffectCaster>
-                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                     <Bonus>12</Bonus>
-                     <Stat Id="OverallDamage"/>
-                     <TurnsCount>1</TurnsCount>
-                  </Buff>
-               </CasterEffect>
+                     <Status>Debuff</Status>
+               </RemoveStatus>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -230,16 +222,10 @@
                   <Stat Id="MovePoints"/>
                   <Bonus>3</Bonus>
                </RegenStat>
-               <CasterEffect>
-                  <Buff>
+               <RemoveStatus>
                      <BaseChance>1</BaseChance>
-                     <CanAffectCaster>true</CanAffectCaster>
-                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                     <Bonus>13</Bonus>
-                     <Stat Id="OverallDamage"/>
-                     <TurnsCount>1</TurnsCount>
-                  </Buff>
-               </CasterEffect>
+                     <Status>Debuff</Status>
+               </RemoveStatus>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -257,16 +243,10 @@
                   <Stat Id="MovePoints"/>
                   <Bonus>4</Bonus>
                </RegenStat>
-               <CasterEffect>
-                  <Buff>
+               <RemoveStatus>
                      <BaseChance>1</BaseChance>
-                     <CanAffectCaster>true</CanAffectCaster>
-                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                     <Bonus>14</Bonus>
-                     <Stat Id="OverallDamage"/>
-                     <TurnsCount>1</TurnsCount>
-                  </Buff>
-               </CasterEffect>
+                     <Status>Debuff</Status>
+               </RemoveStatus>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -284,16 +264,10 @@
                   <Stat Id="MovePoints"/>
                   <Bonus>4</Bonus>
                </RegenStat>
-               <CasterEffect>
-                  <Buff>
+               <RemoveStatus>
                      <BaseChance>1</BaseChance>
-                     <CanAffectCaster>true</CanAffectCaster>
-                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                     <Bonus>15</Bonus>
-                     <Stat Id="OverallDamage"/>
-                     <TurnsCount>1</TurnsCount>
-                  </Buff>
-               </CasterEffect>
+                     <Status>Debuff</Status>
+               </RemoveStatus>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -308,9 +282,9 @@
       <SkillAction>
          <Attack>
             <AttackType>Magical</AttackType>
-            <DamageMultiplier>0.85</DamageMultiplier>
+            <DamageMultiplier>0.8</DamageMultiplier>
             <SkillEffects>
-               <MultiHit HitsCount="4"/>
+               <MultiHit HitsCount="5"/>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -361,7 +335,7 @@
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <Momentum>
-                  <DamageBonusPerTile>0.3</DamageBonusPerTile>
+                  <DamageBonusPerTile>0.35</DamageBonusPerTile>
                </Momentum>
             </SkillEffects>
          </Attack>
@@ -576,13 +550,13 @@
       <UsesPerTurnCount>2</UsesPerTurnCount>
       <Range Min="1" Max="1"/>
       <AreaOfEffect OriginX="1" OriginY="0">
-         XXX
          _X_
+         XXX
       </AreaOfEffect>
       <SkillAction>
          <Attack>
             <AttackType>Magical</AttackType>
-            <DamageMultiplier>0.8</DamageMultiplier>
+            <DamageMultiplier>1.1</DamageMultiplier>
             <SkillEffects>
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -591,6 +565,12 @@
                   <Malus>15</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="MovePoints"/>
+                     <Bonus>4</Bonus>
+                  </RegenStat>
+               </CasterEffect>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -643,7 +623,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Magical</AttackType>
-            <DamageMultiplier>0.8</DamageMultiplier>
+            <DamageMultiplier>1.1</DamageMultiplier>
             <SkillEffects>
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -652,6 +632,12 @@
                   <Malus>17</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="MovePoints"/>
+                     <Bonus>4</Bonus>
+                  </RegenStat>
+               </CasterEffect>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -662,7 +648,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Magical</AttackType>
-            <DamageMultiplier>0.8</DamageMultiplier>
+            <DamageMultiplier>1.1</DamageMultiplier>
             <SkillEffects>
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -671,6 +657,12 @@
                   <Malus>19</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="MovePoints"/>
+                     <Bonus>4</Bonus>
+                  </RegenStat>
+               </CasterEffect>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -681,7 +673,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Magical</AttackType>
-            <DamageMultiplier>0.8</DamageMultiplier>
+            <DamageMultiplier>1.1</DamageMultiplier>
             <SkillEffects>
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -690,6 +682,12 @@
                   <Malus>21</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="MovePoints"/>
+                     <Bonus>4</Bonus>
+                  </RegenStat>
+               </CasterEffect>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -700,7 +698,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Magical</AttackType>
-            <DamageMultiplier>0.8</DamageMultiplier>
+            <DamageMultiplier>1.1</DamageMultiplier>
             <SkillEffects>
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -709,6 +707,12 @@
                   <Malus>23</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="MovePoints"/>
+                     <Bonus>4</Bonus>
+                  </RegenStat>
+               </CasterEffect>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -719,7 +723,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Magical</AttackType>
-            <DamageMultiplier>0.8</DamageMultiplier>
+            <DamageMultiplier>1.1</DamageMultiplier>
             <SkillEffects>
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -728,6 +732,12 @@
                   <Malus>25</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="MovePoints"/>
+                     <Bonus>4</Bonus>
+                  </RegenStat>
+               </CasterEffect>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -892,6 +902,16 @@
                <Isolated>
                   <DamageMultiplier>1.75</DamageMultiplier>
                </Isolated>
+               <CasterEffect>
+                  <Buff>
+                     <BaseChance>1</BaseChance>
+                     <CanAffectCaster>true</CanAffectCaster>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <Bonus>10</Bonus>
+                     <Stat Id="PoisonDamageModifier"/>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -1666,7 +1686,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Magical</AttackType>
-            <DamageMultiplier>1.3</DamageMultiplier>
+            <DamageMultiplier>1.4</DamageMultiplier>
             <SkillEffects>
                <ArmorPiercing/>
             </SkillEffects>
@@ -1739,9 +1759,9 @@
       <SkillAction>
          <Attack>
             <AttackType>Magical</AttackType>
-            <DamageMultiplier>1.4</DamageMultiplier>
+            <DamageMultiplier>1.6</DamageMultiplier>
             <SkillEffects>
-               <Propagation PropagationsCount="10"/>
+               <Propagation PropagationsCount="9"/>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -1932,7 +1952,7 @@
 
    <SkillDefinition Id="AcidSpray">
       <ActionPointsCost>1</ActionPointsCost>
-      <ManaCost>2</ManaCost>
+      <ManaCost>1</ManaCost>
       <UsesPerTurnCount>2</UsesPerTurnCount>
       <Range Min="3" Max="10" Modifiable="true"/>
       <AreaOfEffect OriginX="2" OriginY="2">

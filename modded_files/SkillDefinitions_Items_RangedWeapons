@@ -42,15 +42,17 @@
    <!-- Hand Crossbow -->
    <SkillDefinition Id="QuickShot">
       <ActionPointsCost>1</ActionPointsCost>
-      <UsesPerTurnCount>3</UsesPerTurnCount>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
       <Range Min="1" Max="6" CardinalDirectionOnly="false" Modifiable="true"/>
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
-               <MultiHit HitsCount="2"/>
-               <ArmorPiercing/>
+               <MultiHit HitsCount="3"/>
+               <Inaccurate>
+                  <Malus>1</Malus>
+               </Inaccurate>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -95,24 +97,17 @@
 
    <SkillDefinition Id="SlowDeath">
       <ActionPointsCost>1</ActionPointsCost>
-      <UsesPerTurnCount>3</UsesPerTurnCount>
+      <UsesPerTurnCount>4</UsesPerTurnCount>
       <Range Min="1" Max="6" CardinalDirectionOnly="false" Modifiable="true"/>
       <SkillAction>
          <Generic>
             <SkillEffects>
+               <DamageMultiplier>1</DamageMultiplier>
                <Poison>
                   <BaseChance>1</BaseChance>
                   <DamagePerTurn>60</DamagePerTurn>
                   <TurnsCount>3</TurnsCount>
                </Poison>
-               <Debuff>
-                  <BaseChance>1</BaseChance>
-                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-                  <Stat Id="MovePointsTotal"/>
-                  <Malus>1</Malus>
-                  <TurnsCount>3</TurnsCount>
-               </Debuff>
             </SkillEffects>
          </Generic>
 
@@ -298,7 +293,7 @@
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <Momentum>
-                  <DamageBonusPerTile>0.2</DamageBonusPerTile>
+                  <DamageBonusPerTile>0.25</DamageBonusPerTile>
                </Momentum>
                <NoBlock/>
             </SkillEffects>
@@ -355,7 +350,7 @@
             <DamageMultiplier>1.25</DamageMultiplier>
             <SkillEffects>
                <Isolated>
-                  <DamageMultiplier>1.25</DamageMultiplier>
+                  <DamageMultiplier>1.5</DamageMultiplier>
                </Isolated>
                <Follow/>
             </SkillEffects>
@@ -487,6 +482,12 @@
       <UsesPerTurnCount>1</UsesPerTurnCount>
    </SkillDefinition>
 
+   <!-- Offhand HandCrossbow -->
+   <SkillDefinition Id="SlowDeathOffHand" TemplateId="SlowDeath">
+     <!--   <OverrideLocalizationId>SlowDeathOffHand</OverrideLocalizationId> -->
+      <ActionPointsCost>0</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+   </SkillDefinition>
 
    <!-- Offhand Pistol -->
    <SkillDefinition Id="PistolShotOffhand" TemplateId="PistolShot">
@@ -513,6 +514,9 @@
             <AttackType>Ranged</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
+               <Isolated>
+                  <DamageMultiplier>1.35</DamageMultiplier>
+               </Isolated>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -565,15 +569,16 @@
    <SkillDefinition Id="PowerShot">
       <ActionPointsCost>1</ActionPointsCost>
       <UsesPerTurnCount>2</UsesPerTurnCount>
-      <Range Min="1" Max="4" CardinalDirectionOnly="false" Modifiable="true"/>
+      <Range Min="1" Max="3" CardinalDirectionOnly="false" Modifiable="true"/>
       <AreaOfEffect OriginX="0" OriginY="0">
          X
       </AreaOfEffect>
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
-            <DamageMultiplier>1.45</DamageMultiplier>
+            <DamageMultiplier>1.65</DamageMultiplier>
             <SkillEffects>
+               <ArmorPiercing/>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -631,7 +636,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
+            <DamageMultiplier>1.15</DamageMultiplier>
             <SkillEffects>
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -706,7 +711,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
-            <DamageMultiplier>1.65</DamageMultiplier>
+            <DamageMultiplier>1.85</DamageMultiplier>
             <SkillEffects>
                <IgnoreLineOfSight/>
             </SkillEffects>
@@ -903,9 +908,9 @@
             <AttackType>Ranged</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
-               <Isolated>
+               <Opportunistic>
                   <DamageMultiplier>1.25</DamageMultiplier>
-               </Isolated>
+               </Opportunistic>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -1556,9 +1561,11 @@
             <SkillEffects>
                <Debuff>
                   <BaseChance>1</BaseChance>
-                  <Stat Id="Resistance"/>
-                  <Malus>5</Malus>
-                  <TurnsCount>1</TurnsCount>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                  <Stat Id="MovePointsTotal"/>
+                  <Malus>1</Malus>
+                  <TurnsCount>3</TurnsCount>
                </Debuff>
             </SkillEffects>
          </Attack>
@@ -1963,17 +1970,16 @@
    <SkillDefinition Id="RifleShot">
       <ActionPointsCost>2</ActionPointsCost>
       <UsesPerTurnCount>3</UsesPerTurnCount>
-      <Range Min="3" Max="12" CardinalDirectionOnly="false" Modifiable="true"/>
+      <Range Min="3" Max="8" CardinalDirectionOnly="false" Modifiable="true"/>
       <AreaOfEffect OriginX="0" OriginY="0">
          X
       </AreaOfEffect>
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
+            <DamageMultiplier>0.8</DamageMultiplier>
             <SkillEffects>
-               <NoDodge/>
-               <Propagation PropagationsCount="1"/>
+               <Propagation PropagationsCount="2"/>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -2028,14 +2034,11 @@
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
-            <DamageMultiplier>0.7</DamageMultiplier>
+            <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <Inaccurate>
                   <Malus>1</Malus>
                </Inaccurate>
-               <Opportunistic>
-                  <DamageMultiplier>1.25</DamageMultiplier>
-               </Opportunistic>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -2301,20 +2304,23 @@
 
    
    <SkillDefinition Id="Assassinate">
-      <ActionPointsCost>2</ActionPointsCost>
-      <MovePointsCost>1</MovePointsCost>
+      <ActionPointsCost>1</ActionPointsCost>
+      <MovePointsCost>2</MovePointsCost>
       <ManaCost>2</ManaCost>
-      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
       <Range Min="5" Max="12" CardinalDirectionOnly="false" Modifiable="true"/>
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
-            <DamageMultiplier>1.25</DamageMultiplier>
+            <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <Isolated>
                   <DamageMultiplier>1.5</DamageMultiplier>
                </Isolated>
-               <NoBlock/>
+               <Opportunistic>
+                  <DamageMultiplier>1.5</DamageMultiplier>
+               </Opportunistic>
+               <NoDodge/>
             </SkillEffects>
          </Attack>
       </SkillAction>
