@@ -1,0 +1,451 @@
+{
+  "variant_stats": {
+    "sword": {
+      "2": "Momentum",
+      "3": "Physical Damage",
+      "4": "Skill Range",
+      "5": "Move points;Dodge"
+    },
+    "Hammer": {
+      "2": "Stun Chance",
+      "3": "XP gain",
+      "4": "Block",
+      "5": "Opportunism"
+    },
+    "1h Axe": {
+      "2": "Health;Health Regen",
+      "3": "Reliability",
+      "4": "Critical Power",
+      "5": "Opportunism"
+    },
+    "Dagger": {
+      "2": "Isolation",
+      "3": "Poison Damage",
+      "4": "Skill Range",
+      "5": "Critical"
+    },
+    "2h sword": {
+      "2": "Resistance reduction",
+      "3": "Critical",
+      "4": "Physical damage",
+      "5": "Momentum"
+    },
+    "2H Hammer": {
+      "2": "opportunism",
+      "3": "stun chance",
+      "4": "propagation damage",
+      "5": "Skill Range"
+    },
+    "2H AXE": {
+      "2": "accuracy",
+      "3": "daily hp regen",
+      "4": "reliability",
+      "5": "critical"
+    },
+    "Spear": {
+      "2": "physical damage",
+      "3": "Mana;Mana Regen",
+      "4": "Move Points;Dodge",
+      "5": "momentum"
+    },
+    "Hand crossbow": {
+      "2": "resistance reduction",
+      "3": "poison damage",
+      "4": "Propagation Bounces",
+      "5": "Accuracy"
+    },
+    "Crossbow": {
+      "2": "Mana;Mana Regen",
+      "3": "Critical",
+      "4": "accuracy",
+      "5": "ranged damage"
+    },
+    "Pistol": {
+      "2": "Critical",
+      "3": "Momentum",
+      "4": "Critical Power",
+      "5": "Move Points;Dodge"
+    },
+    "Shortbow": {
+      "2": "Mana;Mana Regen",
+      "3": "xp gain",
+      "4": "skill range",
+      "5": "isolation"
+    },
+    "Longbow": {
+      "2": "Accuracy",
+      "3": "opportunism",
+      "4": "stun chance",
+      "5": "reliability"
+    },
+    "Rifle": {
+      "2": "isolation",
+      "3": "opportunism",
+      "4": "resistance reduction",
+      "5": "propagation bounces"
+    },
+    "Wand": {
+      "2": "xp gain",
+      "3": "reliability",
+      "4": "Skill Range",
+      "5": "Critical Power"
+    },
+    "Scepter": {
+      "2": "momentum",
+      "3": "stun chance",
+      "4": "propagation damage",
+      "5": "Move Points;Dodge"
+    },
+    "Tome of Secrets": {
+      "2": "magic damage",
+      "3": "Mana;Mana Regen",
+      "4": "reliability",
+      "5": "Propagation Bounces"
+    },
+    "Magic orb": {
+      "2": "opportunism",
+      "3": "isolation",
+      "4": "poison damage",
+      "5": "Mana;Mana Regen\n"
+    },
+    "power staff": {
+      "2": "magic damage",
+      "3": "opportunism",
+      "4": "stun chance",
+      "5": "Move Points;Dodge\n"
+    },
+    "druid staff": {
+      "2": "Mana;Mana regen",
+      "3": "Magic Damage",
+      "4": "Poison Damage",
+      "5": "opportunism\n"
+    },
+    "War Shield": {
+      "2": "block",
+      "3": "Health;Health Regen",
+      "4": "Armor;Resistance",
+      "5": "resistance reduction"
+    },
+    "Claws": {
+      "2": "CriticalPower",
+      "3": "Critical",
+      "4": "isolation",
+      "5": "Skill Range"
+    },
+    "Cannon": {
+      "2": "Reliability",
+      "3": "stun chance",
+      "4": "Health;Health Regen",
+      "5": "Momentum"
+    },
+    "Boomerang": {
+      "2": "resistance reduction",
+      "3": "Critical",
+      "4": "stun chance",
+      "5": "opportunism"
+    },
+    "Gauntlet": {
+      "2": "opportunism",
+      "3": "accuracy",
+      "4": "Propagation Damage",
+      "5": "Propagation Bounces"
+    },
+    "Sacred Flower": {
+      "2": "opportunism",
+      "3": "Health;Health Regen",
+      "4": "Mana;Mana Regen",
+      "5": "Skill Range"
+    }
+  },
+  "tier1_headers": [
+    "Level",
+    "Momentum",
+    "Physical Damage",
+    "Ranged Damage",
+    "Magic Damage",
+    "Stun Chance",
+    "Mana;Mana Regen",
+    "Health;Health Regen",
+    "Reliability",
+    "Opportunism",
+    "Isolation",
+    "Resistance Reduction",
+    "Accuracy",
+    "Block",
+    "Critical",
+    "Critical Power",
+    "Poison Damage",
+    "XP gain"
+  ],
+  "tier1_data": {
+    "1": [
+      0.0,
+      5.0,
+      6.0,
+      6.0,
+      6.0,
+      10.0,
+      "7;2",
+      "40;8",
+      15.0,
+      7.0,
+      10.0,
+      7.0,
+      6.0,
+      7.0,
+      6.0,
+      15.0,
+      15.0,
+      15.0
+    ],
+    "2": [
+      1.0,
+      6.0,
+      7.0,
+      7.0,
+      7.0,
+      12.0,
+      "8;2",
+      "48;9",
+      18.0,
+      8.0,
+      12.0,
+      8.0,
+      7.0,
+      8.0,
+      7.0,
+      18.0,
+      18.0,
+      18.0
+    ],
+    "3": [
+      2.0,
+      7.0,
+      8.0,
+      8.0,
+      8.0,
+      14.0,
+      "9;3",
+      "56;10",
+      21.0,
+      9.0,
+      14.0,
+      9.0,
+      8.0,
+      9.0,
+      8.0,
+      21.0,
+      21.0,
+      21.0
+    ],
+    "4": [
+      3.0,
+      8.0,
+      9.0,
+      9.0,
+      9.0,
+      16.0,
+      "11;3",
+      "64;12",
+      24.0,
+      10.0,
+      16.0,
+      11.0,
+      9.0,
+      11.0,
+      9.0,
+      24.0,
+      24.0,
+      24.0
+    ],
+    "5": [
+      4.0,
+      9.0,
+      10.0,
+      10.0,
+      10.0,
+      18.0,
+      "13;4",
+      "72;14",
+      27.0,
+      11.0,
+      18.0,
+      13.0,
+      10.0,
+      13.0,
+      10.0,
+      27.0,
+      27.0,
+      27.0
+    ],
+    "6": [
+      5.0,
+      10.0,
+      12.0,
+      12.0,
+      12.0,
+      20.0,
+      "15;4",
+      "80;16",
+      30.0,
+      12.0,
+      20.0,
+      15.0,
+      12.0,
+      15.0,
+      12.0,
+      30.0,
+      30.0,
+      30.0
+    ]
+  },
+  "tier2_headers": [
+    "Level",
+    "Propagation Bounces",
+    "Propagation Damage",
+    "Move Points;Dodge",
+    "Skill Range",
+    "Armor;Resistance",
+    "Momentum",
+    "Physical Damage",
+    "Ranged Damage",
+    "Magic Damage",
+    "Stun Chance",
+    "Mana;Mana Regen",
+    "Health;Health Regen",
+    "Reliability",
+    "Opportunism",
+    "Isolation",
+    "Resistance Reduction",
+    "Accuracy",
+    "Block"
+  ],
+  "tier2_data": {
+    "1": [
+      0.0,
+      1.0,
+      4.0,
+      "1;6",
+      1.0,
+      "35;5",
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      15.0,
+      "12;4",
+      "50;16",
+      25.0,
+      11.0,
+      15.0,
+      11.0,
+      9.0,
+      11.0
+    ],
+    "2": [
+      1.0,
+      1.0,
+      4.0,
+      "1;7",
+      1.0,
+      "42;6",
+      9.0,
+      9.0,
+      9.0,
+      9.0,
+      18.0,
+      "14;4",
+      "60;19",
+      30.0,
+      13.0,
+      18.0,
+      13.0,
+      10.0,
+      13.0
+    ],
+    "3": [
+      2.0,
+      1.0,
+      5.0,
+      "1;8",
+      1.0,
+      "50;7",
+      10.0,
+      10.0,
+      10.0,
+      10.0,
+      21.0,
+      "16;5",
+      "70;22",
+      35.0,
+      15.0,
+      21.0,
+      15.0,
+      12.0,
+      15.0
+    ],
+    "4": [
+      3.0,
+      2.0,
+      6.0,
+      "2;9",
+      2.0,
+      "57;8",
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      24.0,
+      "18;6",
+      "80;25",
+      40.0,
+      17.0,
+      24.0,
+      17.0,
+      14.0,
+      17.0
+    ],
+    "5": [
+      4.0,
+      2.0,
+      7.0,
+      "2;10",
+      2.0,
+      "63;9",
+      14.0,
+      14.0,
+      14.0,
+      14.0,
+      27.0,
+      "21;7",
+      "90;28",
+      45.0,
+      19.0,
+      27.0,
+      19.0,
+      16.0,
+      19.0
+    ],
+    "6": [
+      5.0,
+      2.0,
+      8.0,
+      "2;12",
+      2.0,
+      "70;10",
+      16.0,
+      16.0,
+      16.0,
+      16.0,
+      30.0,
+      "24;8",
+      "100;32",
+      50.0,
+      22.0,
+      30.0,
+      22.0,
+      18.0,
+      22.0
+    ]
+  }
+}
