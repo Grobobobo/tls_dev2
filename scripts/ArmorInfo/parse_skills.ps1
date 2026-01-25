@@ -1,8 +1,8 @@
-[xml]$xmlContent = Get-Content "c:\Users\Marcin\Desktop\tls_dev\base_files\SkillDefinitions_Items_Other"
+[xml]$xmlContent = Get-Content "./base_files/SkillDefinitions_Items_Other"
 
 # Load Loc_TLS file and create a hashtable for skill names
 $locData = @{}
-$locLines = Get-Content "c:\Users\Marcin\Desktop\tls_dev\base_files\Loc_TLS"
+$locLines = Get-Content "./base_files/Loc_TLS"
 foreach ($line in $locLines) {
     $parts = $line -split ','
     if ($parts[0] -match "^SkillName_") {
@@ -116,6 +116,6 @@ foreach ($baseSkillName in $skillsWithEffects.Keys | Sort-Object) {
 }
 
 # Export to CSV
-$csvData | Export-Csv -Path "c:\Users\Marcin\Desktop\tls_dev\SkillDefinitions_Items_Other.csv" -NoTypeInformation
+$csvData | Export-Csv -Path "./SkillDefinitions_Items_Other.csv" -NoTypeInformation
 
-Write-Host "CSV file created successfully at c:\Users\Marcin\Desktop\tls_dev\SkillDefinitions_Items_Other.csv"
+Write-Host "CSV file created successfully at ./SkillDefinitions_Items_Other.csv"

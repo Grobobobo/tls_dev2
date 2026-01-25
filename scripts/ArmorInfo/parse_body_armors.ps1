@@ -1,7 +1,7 @@
-[xml]$xmlContent = Get-Content "c:\Users\Marcin\Desktop\tls_dev\base_files\ItemDefinitions_Shields"
+[xml]$xmlContent = Get-Content "./base_files/ItemDefinitions_BodyArmors"
 
 # Load ItemListDefinitions_ArmorItems to determine base vs special tags
-[xml]$itemListContent = Get-Content "c:\Users\Marcin\Desktop\tls_dev\base_files\ItemListDefinitions_ArmorItems"
+[xml]$itemListContent = Get-Content "./base_files/ItemListDefinitions_ArmorItems"
 $itemTags = @{}
 
 # Process all ItemsListDefinition elements to find Base and Special items
@@ -23,7 +23,7 @@ foreach ($itemListDef in $itemListContent.ItemsListDefinitions.ItemsListDefiniti
 
 # Load Loc_TLS file and create a hashtable for item names
 $locData = @{}
-$locLines = Get-Content "c:\Users\Marcin\Desktop\tls_dev\base_files\Loc_TLS"
+$locLines = Get-Content "./base_files/Loc_TLS"
 foreach ($line in $locLines) {
     $parts = $line -split ','
     if ($parts[0] -match "^ItemName_") {
@@ -54,11 +54,7 @@ foreach ($itemDef in $xmlContent.ItemDefinitions.ItemDefinition) {
     $itemName = $locData[$itemId]
     
     # Get skill for level 0
-    $levelZero = $itemDef.LevelVariations.Level | Where-Object { $_.Id -eq "0" }
-    $skill0 = ""
-    if ($levelZero -and $levelZero.Skills) {
-        $skill0 = $levelZero.Skills.Skill
-    }
+    $skill0 = $itemDef.LevelVariations.Level | Where-Object { $_.Id -eq "0" } | Select-Object -ExpandProperty Skills | Select-Object -ExpandProperty Skill
     
     # Get MainStatBonus values for levels 0-5
     $mainStatBonusValues = @()
@@ -139,6 +135,6 @@ foreach ($itemDef in $xmlContent.ItemDefinitions.ItemDefinition) {
 }
 
 # Export to CSV
-$csvData | Export-Csv -Path "c:\Users\Marcin\Desktop\tls_dev\ItemDefinitions_Shields.csv" -NoTypeInformation
+$csvData | Export-Csv -Path "./ItemDefinitions_BodyArmors.csv" -NoTypeInformation
 
-Write-Host "CSV file created successfully at c:\Users\Marcin\Desktop\tls_dev\ItemDefinitions_Shields.csv"
+Write-Host "CSV file created successfully at ./ItemDefinitions_BodyArmors.csv"
