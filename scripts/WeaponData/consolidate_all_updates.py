@@ -12,6 +12,8 @@ Workflow:
 
 import openpyxl
 import json
+import os
+import shutil
 import xml.etree.ElementTree as ET
 from pathlib import Path
 import sys
@@ -85,12 +87,14 @@ for row_idx in range(9, 25):
         tier1_data[row_idx - 8] = row_data
 
 print(f"✓ Tier 1: {len(tier1_headers)} stat headers, {len(tier1_data)} data rows")
+print(f"DEBUG: tier1_data keys: {list(tier1_data.keys())}")
+print(f"DEBUG: tier1_headers[:5]: {tier1_headers[:5]}")
 
 # Extract Tier 2 Variant Values
 print("Extracting Tier 2 Variant Values...")
 tier2_sheet = wb['Tier 2 Variant Values']
 tier2_headers = []
-for col_idx in range(1, 20):
+for col_idx in range(1, 30):  # Increased to 30 to capture all headers
     cell = tier2_sheet.cell(8, col_idx)
     if cell.value:
         tier2_headers.append(cell.value)
@@ -101,7 +105,7 @@ tier2_data = {}
 for row_idx in range(9, 25):
     row_data = []
     has_data = False
-    for col_idx in range(1, len(tier2_headers) + 1):
+    for col_idx in range(1, len(tier2_headers) + 1):  # Use full tier2_headers length
         cell = tier2_sheet.cell(row_idx, col_idx)
         if cell.value is not None:
             has_data = True
@@ -244,13 +248,13 @@ stat_name_mapping = {
 # Build Tier 1 bonuses dictionary
 tier1_bonuses = {}
 for level in range(6):
-    level_str = str(level + 1)
+    level_key = level + 1  # tier1_data has integer keys 1-6
     tier1_bonuses[level] = {}
-    if level_str in tier1_data:
+    if level_key in tier1_data:
         for header_idx, header in enumerate(tier1_headers):
-            if header_idx < len(tier1_data[level_str]):
+            if header_idx < len(tier1_data[level_key]):
                 try:
-                    value = tier1_data[level_str][header_idx]
+                    value = tier1_data[level_key][header_idx]
                     if isinstance(value, str):
                         try:
                             value = float(value)
@@ -265,13 +269,13 @@ for level in range(6):
 # Build Tier 2 bonuses dictionary
 tier2_bonuses = {}
 for level in range(6):
-    level_str = str(level + 1)
+    level_key = level + 1  # tier2_data has integer keys 1-6
     tier2_bonuses[level] = {}
-    if level_str in tier2_data:
+    if level_key in tier2_data:
         for header_idx, header in enumerate(tier2_headers):
-            if header_idx < len(tier2_data[level_str]):
+            if header_idx < len(tier2_data[level_key]):
                 try:
-                    value = tier2_data[level_str][header_idx]
+                    value = tier2_data[level_key][header_idx]
                     if isinstance(value, str):
                         try:
                             value = float(value)
@@ -291,7 +295,6 @@ for weapon, variants in variant_stats.items():
 print(f"✓ Stat name mapping: {len(stat_name_mapping)} entries")
 print(f"✓ Tier 1 bonuses: {len(tier1_headers)} stats × 6 levels")
 print(f"✓ Tier 2 bonuses: {len(tier2_headers)} stats × 6 levels")
-
 # ============================================================================
 # PHASE 4: UPDATE WEAPON STAT BONUSES IN XML FILES
 # ============================================================================
@@ -301,7 +304,7 @@ print("-" * 80)
 # OffHand weapons to exclude
 OFFHAND_WEAPONS = {'BattleMageMagicWand', 'BattleMageSword', 'DuelingPistol', 'MysticHammer', 
                    'ParryingDagger', 'PreciseHandCrossbow', 'ReliableMagicScepter', 'SwiftAxe', 
-                   'TransferMagicOrb', 'WarpCrystal'}
+                   'TransferMagicOrb', 'WarpCrystal', 'GauntletOffhand', 'BoomerangOffhand'}
 
 # Manual mapping for tricky weapon names
 WEAPON_NAME_MAPPING = {
@@ -312,6 +315,11 @@ WEAPON_NAME_MAPPING = {
     'TomeOfMagic': 'Tome of Secrets',
     'DruidicStaff': 'druid staff',
     'WarShield': 'War Shield',
+    '2HHammer': '2H Hammer',
+    '2HAxe': '2H AXE',
+    'HandCrossbow': 'Hand crossbow',
+    'MagicOrb': 'Magic orb',
+    'ManaFlower': 'Sacred Flower',
 }
 
 def find_excel_weapon_name(xml_base):
@@ -398,9 +406,9 @@ def create_base_stat_bonuses(weapon_id, variant_id, level_id, excel_weapon_name)
     if variant_id == 0 or variant_id == 1:
         if excel_weapon_name.lower() == 'war shield':
             base_stat_bonuses = ET.Element('BaseStatBonuses')
-            stat_elem = ET.SubElement(base_stat_bonuses, 'BaseStat')
+            stat_elem = ET.SubElement(base_stat_bonuses, 'BaseStatBonus')
             stat_elem.set('Stat', 'Dodge')
-            stat_elem.set('Value', '-20')
+            stat_elem.text = '-20'
             return base_stat_bonuses
         else:
             return None
@@ -410,11 +418,13 @@ def create_base_stat_bonuses(weapon_id, variant_id, level_id, excel_weapon_name)
     if not variant_mapping:
         return None
     
-    variant_id_str = str(variant_id)
-    if variant_id_str not in variant_mapping:
+    # Variant keys can be int or str depending on how they were extracted
+    if variant_id not in variant_mapping and str(variant_id) not in variant_mapping:
         return None
     
-    stat_names = variant_mapping[variant_id_str]
+    stat_names = variant_mapping.get(variant_id) or variant_mapping.get(str(variant_id))
+    if weapon_id in ['Axe4', 'Pistol4'] and level_id == 0:  # Debug
+        print(f"      DEBUG: Found stat_names: {stat_names}")
     
     # Normalize stat_names to always be a list
     if isinstance(stat_names, str):
@@ -450,28 +460,28 @@ def create_base_stat_bonuses(weapon_id, variant_id, level_id, excel_weapon_name)
             values = parse_composite_value(value)
             for i, stat in enumerate(xml_stat_name):
                 if i < len(values):
-                    stat_elem = ET.SubElement(base_stat_bonuses, 'BaseStat')
+                    stat_elem = ET.SubElement(base_stat_bonuses, 'BaseStatBonus')
                     stat_elem.set('Stat', stat)
-                    stat_elem.set('Value', str(values[i]))
+                    stat_elem.text = str(values[i])
         else:
             # Single stat mapping
             values = parse_composite_value(value)
             if values:
-                stat_elem = ET.SubElement(base_stat_bonuses, 'BaseStat')
+                stat_elem = ET.SubElement(base_stat_bonuses, 'BaseStatBonus')
                 stat_elem.set('Stat', xml_stat_name)
-                stat_elem.set('Value', str(values[0]))
+                stat_elem.text = str(values[0])
     
     # For WarShield, always add -20 Dodge
     if excel_weapon_name.lower() == 'war shield':
-        dodge_exists = any(elem.get('Stat') == 'Dodge' for elem in base_stat_bonuses.findall('BaseStat'))
+        dodge_exists = any(elem.get('Stat') == 'Dodge' for elem in base_stat_bonuses.findall('BaseStatBonus'))
         if not dodge_exists:
-            stat_elem = ET.SubElement(base_stat_bonuses, 'BaseStat')
+            stat_elem = ET.SubElement(base_stat_bonuses, 'BaseStatBonus')
             stat_elem.set('Stat', 'Dodge')
-            stat_elem.set('Value', '-20')
+            stat_elem.text = '-20'
         else:
-            for elem in base_stat_bonuses.findall('BaseStat'):
+            for elem in base_stat_bonuses.findall('BaseStatBonus'):
                 if elem.get('Stat') == 'Dodge':
-                    elem.set('Value', '-20')
+                    elem.text = '-20'
     
     return base_stat_bonuses if len(base_stat_bonuses) > 0 else None
 
@@ -482,6 +492,7 @@ def process_xml_file(file_path):
     
     changes = []
     update_count = 0
+    skipped_weapons = []
     
     for item in root.findall('.//ItemDefinition'):
         item_id = item.get('Id')
@@ -503,7 +514,13 @@ def process_xml_file(file_path):
         # Find the Excel weapon name (case-insensitive)
         excel_weapon_name = find_excel_weapon_name(weapon_base)
         if not excel_weapon_name:
+            if weapon_base not in [w[0] for w in skipped_weapons]:
+                skipped_weapons.append((weapon_base, item_id))
             continue
+        
+        # Debug: Print first few weapon matches
+        if item_id in ['Sword2', 'Sword3']:
+            print(f"    DEBUG: {item_id} -> weapon_base='{weapon_base}' -> excel_name='{excel_weapon_name}'")
         
         # Process all level variants
         level_variations = item.find('LevelVariations')
@@ -523,6 +540,12 @@ def process_xml_file(file_path):
             # Create new BaseStatBonuses
             new_base_stat_bonuses = create_base_stat_bonuses(item_id, variant_id, level_id, excel_weapon_name)
             
+            # Debug: Track why bonuses aren't being created
+            if new_base_stat_bonuses is None and variant_id in [2, 3, 4, 5]:
+                if excel_weapon_name.lower() != 'war shield' or variant_id not in [0, 1]:
+                    if update_count == 0:  # Only print for first file
+                        print(f"    DEBUG: No bonuses created for {item_id} (variant {variant_id}, level {level_id})")
+            
             # Remove old BaseStatBonuses if it exists
             old_bsb = level_elem.find('BaseStatBonuses')
             if old_bsb is not None:
@@ -534,8 +557,8 @@ def process_xml_file(file_path):
                 
                 # Log the change
                 bonus_str = ', '.join([
-                    f"{stat.get('Stat')}={stat.get('Value')}"
-                    for stat in new_base_stat_bonuses.findall('BaseStat')
+                    f"{stat.get('Stat')}={stat.text}"
+                    for stat in new_base_stat_bonuses.findall('BaseStatBonus')
                 ])
                 changes.append({
                     'weapon_id': item_id,
@@ -545,8 +568,36 @@ def process_xml_file(file_path):
                 })
                 update_count += 1
     
+    # Validate tree has content before writing
+    item_count = len(root.findall('.//ItemDefinition'))
+    if item_count == 0:
+        print(f"  ⚠ ERROR: Tree is empty, aborting write for {file_path}")
+        return update_count, changes
+    
+    # Backup original file
+    backup_path = file_path + '.backup'
+    shutil.copy2(file_path, backup_path)
+    original_size = os.path.getsize(file_path)
+    
     # Write the updated XML
     tree.write(file_path, encoding='utf-8', xml_declaration=True)
+    
+    # Verify file was written successfully
+    new_size = os.path.getsize(file_path)
+    if new_size < original_size * 0.5:  # File shrank by more than 50%
+        print(f"  ⚠ WARNING: File size dropped from {original_size} to {new_size} bytes")
+        print(f"  ⚠ Restoring from backup...")
+        shutil.copy2(backup_path, file_path)
+        return update_count, changes
+    
+    print(f"  ✓ File saved: {item_count} items, {new_size} bytes")
+    
+    # Print skipped weapons for debugging
+    if skipped_weapons:
+        print(f"\n  DEBUG: Skipped {len(skipped_weapons)} weapon bases (no Excel match):")
+        for weapon_base, example_id in skipped_weapons[:10]:
+            print(f"    {weapon_base} (e.g., {example_id})")
+    
     return update_count, changes
 
 # Process all weapon files
@@ -683,8 +734,59 @@ for item_def in root.findall('ItemDefinition'):
         print(f"  No updates needed")
 
 tree.write('../../modded_files/ItemDefinitions_Usables', encoding='utf-8', xml_declaration=True)
-print(f"\n✓ Updated {total_scroll_updated} scroll damage values")
-print(f"✓ Removed {total_removed} damage values from special scrolls")
+print(f"\nUpdated {total_scroll_updated} scroll damage values")
+print(f"Removed {total_removed} damage values from special scrolls")
+
+# ============================================================================
+# PHASE 6: REFORMAT ALL XML FILES
+# ============================================================================
+print("\n[PHASE 6] Reformatting XML files...")
+print("-" * 80)
+
+def indent_xml(elem, level=0):
+    """Add proper indentation to XML elements"""
+    indent = "\n" + level * "  "
+    if len(elem):
+        if not elem.text or not elem.text.strip():
+            elem.text = indent + "  "
+        if not elem.tail or not elem.tail.strip():
+            elem.tail = indent
+        for child in elem:
+            indent_xml(child, level + 1)
+        if not child.tail or not child.tail.strip():
+            child.tail = indent
+    else:
+        if level and (not elem.tail or not elem.tail.strip()):
+            elem.tail = indent
+
+def reformat_xml_file(file_path):
+    """Reformat an XML file with proper indentation and spacing"""
+    tree = ET.parse(file_path)
+    root = tree.getroot()
+    indent_xml(root)
+    
+    # Add blank line after each ItemDefinition
+    for item_def in root.findall('ItemDefinition'):
+        if item_def.tail and item_def.tail.strip() == '':
+            # Add extra newline for spacing between ItemDefinitions
+            item_def.tail = '\n\n' + (root.tag == item_def.tag and '' or '  ')
+    
+    tree.write(file_path, encoding='utf-8', xml_declaration=True)
+
+# Reformat all modified files
+files_to_reformat = [
+    '../../modded_files/ItemDefinitions_Weapons',
+    '../../modded_files/ItemDefinitions_DLC1',
+    '../../modded_files/ItemDefinitions_DLC2',
+    '../../modded_files/ItemDefinitions_Usables',
+]
+
+for file_path in files_to_reformat:
+    try:
+        reformat_xml_file(file_path)
+        print(f"Reformatted {file_path}")
+    except Exception as e:
+        print(f"Error reformatting {file_path}: {e}")
 
 # ============================================================================
 # FINAL SUMMARY
@@ -692,8 +794,8 @@ print(f"✓ Removed {total_removed} damage values from special scrolls")
 print("\n" + "=" * 80)
 print("CONSOLIDATION COMPLETE")
 print("=" * 80)
-print(f"✓ Stat bonus updates: {total_stat_updates}")
-print(f"✓ Scroll damage updates: {total_scroll_updated}")
-print(f"✓ Scroll removals: {total_removed}")
-print(f"✓ All XML files have been updated and saved")
+print(f"Stat bonus updates: {total_stat_updates}")
+print(f"Scroll damage updates: {total_scroll_updated}")
+print(f"Scroll removals: {total_removed}")
+print(f"All XML files have been updated, synchronized, and reformatted")
 print("=" * 80)

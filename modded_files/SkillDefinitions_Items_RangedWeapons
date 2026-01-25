@@ -1550,7 +1550,7 @@
    <!-- Crossbow -->
    <SkillDefinition Id="StraightShot">
       <ActionPointsCost>1</ActionPointsCost>
-      <UsesPerTurnCount>4</UsesPerTurnCount>
+      <UsesPerTurnCount>3</UsesPerTurnCount>
       <Range Min="3" Max="10" CardinalDirectionOnly="false" Modifiable="true"/>
       <AreaOfEffect OriginX="0" OriginY="0">
          X
@@ -1701,7 +1701,7 @@
 
    <SkillDefinition Id="HeavyBolt">
       <ActionPointsCost>1</ActionPointsCost>
-      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <UsesPerTurnCount>3</UsesPerTurnCount>
       <Range Min="1" Max="10" CardinalDirectionOnly="true" Modifiable="true"/>
       <AreaOfEffect OriginX="0" OriginY="0">
          X

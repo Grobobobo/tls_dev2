@@ -550,8 +550,8 @@
       <UsesPerTurnCount>2</UsesPerTurnCount>
       <Range Min="1" Max="1"/>
       <AreaOfEffect OriginX="1" OriginY="0">
-         _X_
          XXX
+         _X_
       </AreaOfEffect>
       <SkillAction>
          <Attack>
@@ -755,7 +755,7 @@
             <DamageMultiplier>1.4</DamageMultiplier>
             <SkillEffects>
                <Stun>
-                  <BaseChance>0.6</BaseChance>
+                  <BaseChance>0.7</BaseChance>
                </Stun>
                <Propagation PropagationsCount="6"/>
             </SkillEffects>
