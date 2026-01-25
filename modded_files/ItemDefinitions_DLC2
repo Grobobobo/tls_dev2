@@ -1,8 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
 <ItemDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../ItemDefinitions.xsd">
 
-<!-- ******************************************************************* -->
-<!-- Generated from "macro_items2.xlsm" => "DLC2" tab. Count = 26 items. -->
-<!-- ******************************************************************* -->
+
+
+
 
 	<ItemDefinition Id="Claws0">
 		<Category>MeleeWeapon</Category>
@@ -12,7 +13,7 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="52" Max="104"/>
+				<BaseDamage Min="52" Max="104" />
 				<BasePrice>10</BasePrice>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
@@ -25,7 +26,7 @@
 				</Perks>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="58" Max="116"/>
+				<BaseDamage Min="58" Max="116" />
 				<BasePrice>15</BasePrice>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
@@ -38,7 +39,7 @@
 				</Perks>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="64" Max="128"/>
+				<BaseDamage Min="64" Max="128" />
 				<BasePrice>24</BasePrice>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
@@ -51,7 +52,7 @@
 				</Perks>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="71" Max="141"/>
+				<BaseDamage Min="71" Max="141" />
 				<BasePrice>38</BasePrice>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
@@ -64,7 +65,7 @@
 				</Perks>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="78" Max="155"/>
+				<BaseDamage Min="78" Max="155" />
 				<BasePrice>58</BasePrice>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
@@ -77,7 +78,7 @@
 				</Perks>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="86" Max="171"/>
+				<BaseDamage Min="86" Max="171" />
 				<BasePrice>85</BasePrice>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
@@ -100,7 +101,7 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="58" Max="116"/>
+				<BaseDamage Min="58" Max="116" />
 				<BasePrice>14</BasePrice>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
@@ -113,7 +114,7 @@
 				</Perks>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="64" Max="128"/>
+				<BaseDamage Min="64" Max="128" />
 				<BasePrice>20</BasePrice>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
@@ -126,7 +127,7 @@
 				</Perks>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="71" Max="141"/>
+				<BaseDamage Min="71" Max="141" />
 				<BasePrice>30</BasePrice>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
@@ -139,7 +140,7 @@
 				</Perks>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="78" Max="155"/>
+				<BaseDamage Min="78" Max="155" />
 				<BasePrice>45</BasePrice>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
@@ -152,7 +153,7 @@
 				</Perks>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="86" Max="171"/>
+				<BaseDamage Min="86" Max="171" />
 				<BasePrice>66</BasePrice>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
@@ -165,7 +166,7 @@
 				</Perks>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="94" Max="188"/>
+				<BaseDamage Min="94" Max="188" />
 				<BasePrice>94</BasePrice>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
@@ -188,11 +189,8 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="58" Max="116"/>
+				<BaseDamage Min="58" Max="116" />
 				<BasePrice>18</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="CriticalPower">15</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws</Skill>
@@ -204,11 +202,8 @@
 				</Perks>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="64" Max="128"/>
+				<BaseDamage Min="64" Max="128" />
 				<BasePrice>25</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="CriticalPower">18</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws1</Skill>
@@ -220,11 +215,8 @@
 				</Perks>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="71" Max="141"/>
+				<BaseDamage Min="71" Max="141" />
 				<BasePrice>36</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="CriticalPower">21</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws2</Skill>
@@ -236,11 +228,8 @@
 				</Perks>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="78" Max="155"/>
+				<BaseDamage Min="78" Max="155" />
 				<BasePrice>52</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="CriticalPower">24</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws3</Skill>
@@ -252,11 +241,8 @@
 				</Perks>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="86" Max="171"/>
+				<BaseDamage Min="86" Max="171" />
 				<BasePrice>74</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="CriticalPower">27</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws4</Skill>
@@ -268,11 +254,8 @@
 				</Perks>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="94" Max="188"/>
+				<BaseDamage Min="94" Max="188" />
 				<BasePrice>104</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="CriticalPower">30</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws5</Skill>
@@ -294,11 +277,8 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="58" Max="116"/>
+				<BaseDamage Min="58" Max="116" />
 				<BasePrice>18</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">6</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws</Skill>
@@ -308,13 +288,13 @@
 				<Perks>
 					<Perk>BloodDrinker</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Critical" Value="6" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="64" Max="128"/>
+				<BaseDamage Min="64" Max="128" />
 				<BasePrice>25</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">7</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws1</Skill>
@@ -324,13 +304,13 @@
 				<Perks>
 					<Perk>BloodDrinker</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Critical" Value="7" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="71" Max="141"/>
+				<BaseDamage Min="71" Max="141" />
 				<BasePrice>36</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">8</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws2</Skill>
@@ -340,13 +320,13 @@
 				<Perks>
 					<Perk>BloodDrinker</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Critical" Value="8" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="78" Max="155"/>
+				<BaseDamage Min="78" Max="155" />
 				<BasePrice>52</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws3</Skill>
@@ -356,13 +336,13 @@
 				<Perks>
 					<Perk>BloodDrinker</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Critical" Value="9" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="86" Max="171"/>
+				<BaseDamage Min="86" Max="171" />
 				<BasePrice>74</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">10</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws4</Skill>
@@ -372,13 +352,13 @@
 				<Perks>
 					<Perk>BloodDrinker</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Critical" Value="10" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="94" Max="188"/>
+				<BaseDamage Min="94" Max="188" />
 				<BasePrice>104</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">12</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws5</Skill>
@@ -388,6 +368,9 @@
 				<Perks>
 					<Perk>BloodDrinker</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Critical" Value="12" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -400,11 +383,8 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="58" Max="116"/>
+				<BaseDamage Min="58" Max="116" />
 				<BasePrice>22</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="IsolatedAttacks">15</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws</Skill>
@@ -414,13 +394,13 @@
 				<Perks>
 					<Perk>BloodDrinker</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="IsolatedAttacks" Value="15" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="64" Max="128"/>
+				<BaseDamage Min="64" Max="128" />
 				<BasePrice>29</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="IsolatedAttacks">18</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws1</Skill>
@@ -430,13 +410,13 @@
 				<Perks>
 					<Perk>BloodDrinker</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="IsolatedAttacks" Value="18" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="71" Max="141"/>
+				<BaseDamage Min="71" Max="141" />
 				<BasePrice>41</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="IsolatedAttacks">21</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws2</Skill>
@@ -446,13 +426,13 @@
 				<Perks>
 					<Perk>BloodDrinker</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="IsolatedAttacks" Value="21" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="78" Max="155"/>
+				<BaseDamage Min="78" Max="155" />
 				<BasePrice>58</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="IsolatedAttacks">24</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws3</Skill>
@@ -462,13 +442,13 @@
 				<Perks>
 					<Perk>BloodDrinker</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="IsolatedAttacks" Value="24" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="86" Max="171"/>
+				<BaseDamage Min="86" Max="171" />
 				<BasePrice>82</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="IsolatedAttacks">27</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws4</Skill>
@@ -478,13 +458,13 @@
 				<Perks>
 					<Perk>BloodDrinker</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="IsolatedAttacks" Value="27" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="94" Max="188"/>
+				<BaseDamage Min="94" Max="188" />
 				<BasePrice>113</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="IsolatedAttacks">30</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws5</Skill>
@@ -494,6 +474,9 @@
 				<Perks>
 					<Perk>BloodDrinker</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="IsolatedAttacks" Value="30" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -506,11 +489,8 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="58" Max="116"/>
+				<BaseDamage Min="58" Max="116" />
 				<BasePrice>22</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws</Skill>
@@ -520,13 +500,13 @@
 				<Perks>
 					<Perk>BloodDrinker</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="SkillRangeModifier" Value="1" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="64" Max="128"/>
+				<BaseDamage Min="64" Max="128" />
 				<BasePrice>29</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws1</Skill>
@@ -536,13 +516,13 @@
 				<Perks>
 					<Perk>BloodDrinker</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="SkillRangeModifier" Value="1" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="71" Max="141"/>
+				<BaseDamage Min="71" Max="141" />
 				<BasePrice>41</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws2</Skill>
@@ -552,13 +532,13 @@
 				<Perks>
 					<Perk>BloodDrinker</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="SkillRangeModifier" Value="1" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="78" Max="155"/>
+				<BaseDamage Min="78" Max="155" />
 				<BasePrice>58</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws3</Skill>
@@ -568,13 +548,13 @@
 				<Perks>
 					<Perk>BloodDrinker</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="SkillRangeModifier" Value="2" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="86" Max="171"/>
+				<BaseDamage Min="86" Max="171" />
 				<BasePrice>82</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws4</Skill>
@@ -584,13 +564,13 @@
 				<Perks>
 					<Perk>BloodDrinker</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="SkillRangeModifier" Value="2" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="94" Max="188"/>
+				<BaseDamage Min="94" Max="188" />
 				<BasePrice>113</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
 					<Skill>SharpenClaws5</Skill>
@@ -600,6 +580,9 @@
 				<Perks>
 					<Perk>BloodDrinker</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="SkillRangeModifier" Value="2" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -612,7 +595,7 @@
 		<Hands>OneHand</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="74" Max="92"/>
+				<BaseDamage Min="74" Max="92" />
 				<BasePrice>10</BasePrice>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
@@ -624,7 +607,7 @@
 				</Perks>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="82" Max="102"/>
+				<BaseDamage Min="82" Max="102" />
 				<BasePrice>15</BasePrice>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
@@ -636,7 +619,7 @@
 				</Perks>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="90" Max="112"/>
+				<BaseDamage Min="90" Max="112" />
 				<BasePrice>24</BasePrice>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
@@ -648,7 +631,7 @@
 				</Perks>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="98" Max="123"/>
+				<BaseDamage Min="98" Max="123" />
 				<BasePrice>38</BasePrice>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
@@ -660,7 +643,7 @@
 				</Perks>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="108" Max="135"/>
+				<BaseDamage Min="108" Max="135" />
 				<BasePrice>58</BasePrice>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
@@ -672,7 +655,7 @@
 				</Perks>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="119" Max="149"/>
+				<BaseDamage Min="119" Max="149" />
 				<BasePrice>85</BasePrice>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
@@ -694,7 +677,7 @@
 		<Hands>OneHand</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="82" Max="102"/>
+				<BaseDamage Min="82" Max="102" />
 				<BasePrice>14</BasePrice>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
@@ -706,7 +689,7 @@
 				</Perks>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="90" Max="112"/>
+				<BaseDamage Min="90" Max="112" />
 				<BasePrice>20</BasePrice>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
@@ -718,7 +701,7 @@
 				</Perks>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="98" Max="123"/>
+				<BaseDamage Min="98" Max="123" />
 				<BasePrice>30</BasePrice>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
@@ -730,7 +713,7 @@
 				</Perks>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="108" Max="135"/>
+				<BaseDamage Min="108" Max="135" />
 				<BasePrice>45</BasePrice>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
@@ -742,7 +725,7 @@
 				</Perks>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="119" Max="149"/>
+				<BaseDamage Min="119" Max="149" />
 				<BasePrice>66</BasePrice>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
@@ -754,7 +737,7 @@
 				</Perks>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="131" Max="164"/>
+				<BaseDamage Min="131" Max="164" />
 				<BasePrice>94</BasePrice>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
@@ -771,11 +754,8 @@
 
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="82" Max="102"/>
+				<BaseDamage Min="82" Max="102" />
 				<BasePrice>18</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="ResistanceReduction">7</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing</Skill>
@@ -784,13 +764,13 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="ResistanceReduction" Value="7" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="90" Max="112"/>
+				<BaseDamage Min="90" Max="112" />
 				<BasePrice>25</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="ResistanceReduction">8</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing1</Skill>
@@ -799,13 +779,13 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="ResistanceReduction" Value="8" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="98" Max="123"/>
+				<BaseDamage Min="98" Max="123" />
 				<BasePrice>36</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="ResistanceReduction">10</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing2</Skill>
@@ -814,13 +794,13 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="ResistanceReduction" Value="9" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="108" Max="135"/>
+				<BaseDamage Min="108" Max="135" />
 				<BasePrice>52</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="ResistanceReduction">11</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing3</Skill>
@@ -829,13 +809,13 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="ResistanceReduction" Value="11" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="119" Max="149"/>
+				<BaseDamage Min="119" Max="149" />
 				<BasePrice>74</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="ResistanceReduction">13</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing4</Skill>
@@ -844,13 +824,13 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="ResistanceReduction" Value="13" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="131" Max="164"/>
+				<BaseDamage Min="131" Max="164" />
 				<BasePrice>104</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="ResistanceReduction">15</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing5</Skill>
@@ -859,6 +839,9 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="ResistanceReduction" Value="15" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -871,11 +854,8 @@
 		<Hands>OneHand</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="82" Max="102"/>
+				<BaseDamage Min="82" Max="102" />
 				<BasePrice>18</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">6</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing</Skill>
@@ -884,13 +864,13 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Critical" Value="6" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="90" Max="112"/>
+				<BaseDamage Min="90" Max="112" />
 				<BasePrice>25</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">7</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing1</Skill>
@@ -899,13 +879,13 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Critical" Value="7" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="98" Max="123"/>
+				<BaseDamage Min="98" Max="123" />
 				<BasePrice>36</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">8</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing2</Skill>
@@ -914,13 +894,13 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Critical" Value="8" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="108" Max="135"/>
+				<BaseDamage Min="108" Max="135" />
 				<BasePrice>52</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing3</Skill>
@@ -929,13 +909,13 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Critical" Value="9" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="119" Max="149"/>
+				<BaseDamage Min="119" Max="149" />
 				<BasePrice>74</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">10</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing4</Skill>
@@ -944,13 +924,13 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Critical" Value="10" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="131" Max="164"/>
+				<BaseDamage Min="131" Max="164" />
 				<BasePrice>104</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">12</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing5</Skill>
@@ -959,6 +939,9 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Critical" Value="12" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -971,11 +954,8 @@
 		<Hands>OneHand</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="82" Max="102"/>
+				<BaseDamage Min="82" Max="102" />
 				<BasePrice>22</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="StunChanceModifier">15</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing</Skill>
@@ -984,13 +964,13 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="StunChanceModifier" Value="15" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="90" Max="112"/>
+				<BaseDamage Min="90" Max="112" />
 				<BasePrice>29</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="StunChanceModifier">18</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing1</Skill>
@@ -999,13 +979,13 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="StunChanceModifier" Value="18" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="98" Max="123"/>
+				<BaseDamage Min="98" Max="123" />
 				<BasePrice>41</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="StunChanceModifier">21</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing2</Skill>
@@ -1014,13 +994,13 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="StunChanceModifier" Value="21" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="108" Max="135"/>
+				<BaseDamage Min="108" Max="135" />
 				<BasePrice>58</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="StunChanceModifier">24</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing3</Skill>
@@ -1029,13 +1009,13 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="StunChanceModifier" Value="24" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="119" Max="149"/>
+				<BaseDamage Min="119" Max="149" />
 				<BasePrice>82</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="StunChanceModifier">27</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing4</Skill>
@@ -1044,13 +1024,13 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="StunChanceModifier" Value="27" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="131" Max="164"/>
+				<BaseDamage Min="131" Max="164" />
 				<BasePrice>113</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="StunChanceModifier">30</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing5</Skill>
@@ -1059,6 +1039,9 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="StunChanceModifier" Value="30" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -1071,11 +1054,8 @@
 		<Hands>OneHand</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="82" Max="102"/>
+				<BaseDamage Min="82" Max="102" />
 				<BasePrice>22</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="OpportunisticAttacks">11</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing</Skill>
@@ -1084,13 +1064,13 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="OpportunisticAttacks" Value="11" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="90" Max="112"/>
+				<BaseDamage Min="90" Max="112" />
 				<BasePrice>29</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="OpportunisticAttacks">13</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing1</Skill>
@@ -1099,13 +1079,13 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="OpportunisticAttacks" Value="13" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="98" Max="123"/>
+				<BaseDamage Min="98" Max="123" />
 				<BasePrice>41</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="OpportunisticAttacks">15</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing2</Skill>
@@ -1114,13 +1094,13 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="OpportunisticAttacks" Value="15" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="108" Max="135"/>
+				<BaseDamage Min="108" Max="135" />
 				<BasePrice>58</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="OpportunisticAttacks">17</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing3</Skill>
@@ -1129,13 +1109,13 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="OpportunisticAttacks" Value="17" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="119" Max="149"/>
+				<BaseDamage Min="119" Max="149" />
 				<BasePrice>82</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="OpportunisticAttacks">19</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing4</Skill>
@@ -1144,13 +1124,13 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="OpportunisticAttacks" Value="19" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="131" Max="164"/>
+				<BaseDamage Min="131" Max="164" />
 				<BasePrice>113</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="OpportunisticAttacks">22</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>PreciseTargetting</Skill>
 					<Skill>CrescentSwing5</Skill>
@@ -1159,6 +1139,9 @@
 				<Perks>
 					<Perk>StrongThrow</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="OpportunisticAttacks" Value="22" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -1171,42 +1154,42 @@
 		<Hands>OffHand</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="82" Max="102"/>
+				<BaseDamage Min="82" Max="102" />
 				<BasePrice>14</BasePrice>
 				<Skills>
 					<Skill>PreciseTargettingOffhand</Skill>
 				</Skills>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="90" Max="112"/>
+				<BaseDamage Min="90" Max="112" />
 				<BasePrice>20</BasePrice>
 				<Skills>
 					<Skill>PreciseTargettingOffhand</Skill>
 				</Skills>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="98" Max="123"/>
+				<BaseDamage Min="98" Max="123" />
 				<BasePrice>30</BasePrice>
 				<Skills>
 					<Skill>PreciseTargettingOffhand</Skill>
 				</Skills>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="108" Max="135"/>
+				<BaseDamage Min="108" Max="135" />
 				<BasePrice>45</BasePrice>
 				<Skills>
 					<Skill>PreciseTargettingOffhand</Skill>
 				</Skills>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="119" Max="149"/>
+				<BaseDamage Min="119" Max="149" />
 				<BasePrice>66</BasePrice>
 				<Skills>
 					<Skill>PreciseTargettingOffhand</Skill>
 				</Skills>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="131" Max="164"/>
+				<BaseDamage Min="131" Max="164" />
 				<BasePrice>94</BasePrice>
 				<Skills>
 					<Skill>PreciseTargettingOffhand</Skill>
@@ -1223,7 +1206,7 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="68" Max="135"/>
+				<BaseDamage Min="68" Max="135" />
 				<BasePrice>10</BasePrice>
 				<Skills>
 					<Skill>DeathFlower</Skill>
@@ -1236,7 +1219,7 @@
 				</Perks>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="75" Max="150"/>
+				<BaseDamage Min="75" Max="150" />
 				<BasePrice>15</BasePrice>
 				<Skills>
 					<Skill>DeathFlower</Skill>
@@ -1249,7 +1232,7 @@
 				</Perks>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="83" Max="165"/>
+				<BaseDamage Min="83" Max="165" />
 				<BasePrice>24</BasePrice>
 				<Skills>
 					<Skill>DeathFlower</Skill>
@@ -1262,7 +1245,7 @@
 				</Perks>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="91" Max="182"/>
+				<BaseDamage Min="91" Max="182" />
 				<BasePrice>38</BasePrice>
 				<Skills>
 					<Skill>DeathFlower</Skill>
@@ -1275,7 +1258,7 @@
 				</Perks>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="100" Max="200"/>
+				<BaseDamage Min="100" Max="200" />
 				<BasePrice>58</BasePrice>
 				<Skills>
 					<Skill>DeathFlower</Skill>
@@ -1288,7 +1271,7 @@
 				</Perks>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="110" Max="220"/>
+				<BaseDamage Min="110" Max="220" />
 				<BasePrice>85</BasePrice>
 				<Skills>
 					<Skill>DeathFlower</Skill>
@@ -1311,7 +1294,7 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="75" Max="150"/>
+				<BaseDamage Min="75" Max="150" />
 				<BasePrice>14</BasePrice>
 				<Skills>
 					<Skill>DeathFlower</Skill>
@@ -1324,7 +1307,7 @@
 				</Perks>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="83" Max="165"/>
+				<BaseDamage Min="83" Max="165" />
 				<BasePrice>20</BasePrice>
 				<Skills>
 					<Skill>DeathFlower</Skill>
@@ -1337,7 +1320,7 @@
 				</Perks>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="91" Max="182"/>
+				<BaseDamage Min="91" Max="182" />
 				<BasePrice>30</BasePrice>
 				<Skills>
 					<Skill>DeathFlower</Skill>
@@ -1350,7 +1333,7 @@
 				</Perks>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="100" Max="200"/>
+				<BaseDamage Min="100" Max="200" />
 				<BasePrice>45</BasePrice>
 				<Skills>
 					<Skill>DeathFlower</Skill>
@@ -1363,7 +1346,7 @@
 				</Perks>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="110" Max="220"/>
+				<BaseDamage Min="110" Max="220" />
 				<BasePrice>66</BasePrice>
 				<Skills>
 					<Skill>DeathFlower</Skill>
@@ -1376,7 +1359,7 @@
 				</Perks>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="121" Max="242"/>
+				<BaseDamage Min="121" Max="242" />
 				<BasePrice>94</BasePrice>
 				<Skills>
 					<Skill>DeathFlower</Skill>
@@ -1399,7 +1382,7 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="75" Max="150"/>
+				<BaseDamage Min="75" Max="150" />
 				<BasePrice>18</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="OpportunisticAttacks">7</BaseStatBonus>
@@ -1415,7 +1398,7 @@
 				</Perks>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="83" Max="165"/>
+				<BaseDamage Min="83" Max="165" />
 				<BasePrice>25</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="OpportunisticAttacks">8</BaseStatBonus>
@@ -1431,7 +1414,7 @@
 				</Perks>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="91" Max="182"/>
+				<BaseDamage Min="91" Max="182" />
 				<BasePrice>36</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="OpportunisticAttacks">9</BaseStatBonus>
@@ -1447,7 +1430,7 @@
 				</Perks>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="100" Max="200"/>
+				<BaseDamage Min="100" Max="200" />
 				<BasePrice>52</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="OpportunisticAttacks">11</BaseStatBonus>
@@ -1463,7 +1446,7 @@
 				</Perks>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="110" Max="220"/>
+				<BaseDamage Min="110" Max="220" />
 				<BasePrice>74</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="OpportunisticAttacks">13</BaseStatBonus>
@@ -1479,7 +1462,7 @@
 				</Perks>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="121" Max="242"/>
+				<BaseDamage Min="121" Max="242" />
 				<BasePrice>104</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="OpportunisticAttacks">15</BaseStatBonus>
@@ -1505,7 +1488,7 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="75" Max="150"/>
+				<BaseDamage Min="75" Max="150" />
 				<BasePrice>18</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealthTotal">40</BaseStatBonus>
@@ -1522,7 +1505,7 @@
 				</Perks>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="83" Max="165"/>
+				<BaseDamage Min="83" Max="165" />
 				<BasePrice>25</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealthTotal">48</BaseStatBonus>
@@ -1539,7 +1522,7 @@
 				</Perks>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="91" Max="182"/>
+				<BaseDamage Min="91" Max="182" />
 				<BasePrice>36</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealthTotal">56</BaseStatBonus>
@@ -1556,7 +1539,7 @@
 				</Perks>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="100" Max="200"/>
+				<BaseDamage Min="100" Max="200" />
 				<BasePrice>52</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealthTotal">64</BaseStatBonus>
@@ -1573,7 +1556,7 @@
 				</Perks>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="110" Max="220"/>
+				<BaseDamage Min="110" Max="220" />
 				<BasePrice>74</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealthTotal">72</BaseStatBonus>
@@ -1590,7 +1573,7 @@
 				</Perks>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="121" Max="242"/>
+				<BaseDamage Min="121" Max="242" />
 				<BasePrice>104</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealthTotal">80</BaseStatBonus>
@@ -1617,7 +1600,7 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="75" Max="150"/>
+				<BaseDamage Min="75" Max="150" />
 				<BasePrice>22</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ManaTotal">12</BaseStatBonus>
@@ -1634,7 +1617,7 @@
 				</Perks>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="83" Max="165"/>
+				<BaseDamage Min="83" Max="165" />
 				<BasePrice>29</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ManaTotal">15</BaseStatBonus>
@@ -1651,7 +1634,7 @@
 				</Perks>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="91" Max="182"/>
+				<BaseDamage Min="91" Max="182" />
 				<BasePrice>41</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ManaTotal">17</BaseStatBonus>
@@ -1668,7 +1651,7 @@
 				</Perks>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="100" Max="200"/>
+				<BaseDamage Min="100" Max="200" />
 				<BasePrice>58</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ManaTotal">19</BaseStatBonus>
@@ -1685,7 +1668,7 @@
 				</Perks>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="110" Max="220"/>
+				<BaseDamage Min="110" Max="220" />
 				<BasePrice>82</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ManaTotal">21</BaseStatBonus>
@@ -1702,7 +1685,7 @@
 				</Perks>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="121" Max="242"/>
+				<BaseDamage Min="121" Max="242" />
 				<BasePrice>113</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ManaTotal">24</BaseStatBonus>
@@ -1729,7 +1712,7 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="75" Max="150"/>
+				<BaseDamage Min="75" Max="150" />
 				<BasePrice>22</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
@@ -1745,7 +1728,7 @@
 				</Perks>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="83" Max="165"/>
+				<BaseDamage Min="83" Max="165" />
 				<BasePrice>29</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
@@ -1761,7 +1744,7 @@
 				</Perks>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="91" Max="182"/>
+				<BaseDamage Min="91" Max="182" />
 				<BasePrice>41</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
@@ -1777,7 +1760,7 @@
 				</Perks>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="100" Max="200"/>
+				<BaseDamage Min="100" Max="200" />
 				<BasePrice>58</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
@@ -1793,7 +1776,7 @@
 				</Perks>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="110" Max="220"/>
+				<BaseDamage Min="110" Max="220" />
 				<BasePrice>82</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
@@ -1809,7 +1792,7 @@
 				</Perks>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="121" Max="242"/>
+				<BaseDamage Min="121" Max="242" />
 				<BasePrice>113</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
@@ -1831,42 +1814,42 @@
 		<Category>Scroll</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="58" Max="116"/>
+				<BaseDamage Min="58" Max="116" />
 				<BasePrice>14</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="2">PiercingClawsScroll</Skill>
 				</Skills>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="64" Max="128"/>
+				<BaseDamage Min="64" Max="128" />
 				<BasePrice>20</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="2">PiercingClawsScroll</Skill>
 				</Skills>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="71" Max="141"/>
+				<BaseDamage Min="71" Max="141" />
 				<BasePrice>30</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="3">PiercingClawsScroll1</Skill>
 				</Skills>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="78" Max="155"/>
+				<BaseDamage Min="78" Max="155" />
 				<BasePrice>45</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="3">PiercingClawsScroll1</Skill>
 				</Skills>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="86" Max="171"/>
+				<BaseDamage Min="86" Max="171" />
 				<BasePrice>66</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="4">PiercingClawsScroll2</Skill>
 				</Skills>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="94" Max="188"/>
+				<BaseDamage Min="94" Max="188" />
 				<BasePrice>94</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="4">PiercingClawsScroll2</Skill>
@@ -1879,42 +1862,42 @@
 		<Category>Scroll</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="82" Max="102"/>
+				<BaseDamage Min="82" Max="102" />
 				<BasePrice>14</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="2">PainfulSpinScroll</Skill>
 				</Skills>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="90" Max="112"/>
+				<BaseDamage Min="90" Max="112" />
 				<BasePrice>20</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="2">PainfulSpinScroll</Skill>
 				</Skills>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="98" Max="123"/>
+				<BaseDamage Min="98" Max="123" />
 				<BasePrice>30</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="3">PainfulSpinScroll1</Skill>
 				</Skills>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="108" Max="135"/>
+				<BaseDamage Min="108" Max="135" />
 				<BasePrice>45</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="3">PainfulSpinScroll1</Skill>
 				</Skills>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="119" Max="149"/>
+				<BaseDamage Min="119" Max="149" />
 				<BasePrice>66</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="4">PainfulSpinScroll2</Skill>
 				</Skills>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="131" Max="164"/>
+				<BaseDamage Min="131" Max="164" />
 				<BasePrice>94</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="4">PainfulSpinScroll2</Skill>
@@ -1927,42 +1910,42 @@
 		<Category>Scroll</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="75" Max="150"/>
+				<BaseDamage Min="75" Max="150" />
 				<BasePrice>14</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="2">PetalStormScroll</Skill>
 				</Skills>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="83" Max="165"/>
+				<BaseDamage Min="83" Max="165" />
 				<BasePrice>20</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="2">PetalStormScroll</Skill>
 				</Skills>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="91" Max="182"/>
+				<BaseDamage Min="91" Max="182" />
 				<BasePrice>30</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="3">PetalStormScroll1</Skill>
 				</Skills>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="100" Max="200"/>
+				<BaseDamage Min="100" Max="200" />
 				<BasePrice>45</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="3">PetalStormScroll1</Skill>
 				</Skills>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="110" Max="220"/>
+				<BaseDamage Min="110" Max="220" />
 				<BasePrice>66</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="4">PetalStormScroll2</Skill>
 				</Skills>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="121" Max="242"/>
+				<BaseDamage Min="121" Max="242" />
 				<BasePrice>94</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="4">PetalStormScroll2</Skill>

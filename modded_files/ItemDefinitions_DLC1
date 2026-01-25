@@ -1,8 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
 <ItemDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../ItemDefinitions.xsd">
 
-<!-- ******************************************************************* -->
-<!-- Generated from "macro_items2.xlsm" => "DLC1" tab. Count = 39 items. -->
-<!-- ******************************************************************* -->
+
+
+
 
 	<ItemDefinition Id="WarShield0">
 		<Category>MeleeWeapon</Category>
@@ -12,11 +13,8 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="72" Max="110"/>
+				<BaseDamage Min="72" Max="110" />
 				<BasePrice>10</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp</Skill>
@@ -26,13 +24,13 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="79" Max="122"/>
+				<BaseDamage Min="79" Max="122" />
 				<BasePrice>15</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp1</Skill>
@@ -42,13 +40,13 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="87" Max="134"/>
+				<BaseDamage Min="87" Max="134" />
 				<BasePrice>24</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp2</Skill>
@@ -58,13 +56,13 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="96" Max="147"/>
+				<BaseDamage Min="96" Max="147" />
 				<BasePrice>38</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp3</Skill>
@@ -74,13 +72,13 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="105" Max="162"/>
+				<BaseDamage Min="105" Max="162" />
 				<BasePrice>58</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp4</Skill>
@@ -90,13 +88,13 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="116" Max="178"/>
+				<BaseDamage Min="116" Max="178" />
 				<BasePrice>85</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp5</Skill>
@@ -106,6 +104,9 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -118,11 +119,8 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="79" Max="122"/>
+				<BaseDamage Min="79" Max="122" />
 				<BasePrice>14</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp</Skill>
@@ -132,13 +130,13 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="87" Max="134"/>
+				<BaseDamage Min="87" Max="134" />
 				<BasePrice>20</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp1</Skill>
@@ -148,13 +146,13 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="96" Max="147"/>
+				<BaseDamage Min="96" Max="147" />
 				<BasePrice>30</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp2</Skill>
@@ -164,13 +162,13 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="105" Max="162"/>
+				<BaseDamage Min="105" Max="162" />
 				<BasePrice>45</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp3</Skill>
@@ -180,13 +178,13 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="116" Max="178"/>
+				<BaseDamage Min="116" Max="178" />
 				<BasePrice>66</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp4</Skill>
@@ -196,13 +194,13 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="127" Max="196"/>
+				<BaseDamage Min="127" Max="196" />
 				<BasePrice>94</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp5</Skill>
@@ -212,6 +210,9 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -224,12 +225,8 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="79" Max="122"/>
+				<BaseDamage Min="79" Max="122" />
 				<BasePrice>18</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="Block">7</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp</Skill>
@@ -239,14 +236,14 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Block" Value="7" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="87" Max="134"/>
+				<BaseDamage Min="87" Max="134" />
 				<BasePrice>25</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="Block">8</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp1</Skill>
@@ -256,14 +253,14 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Block" Value="8" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="96" Max="147"/>
+				<BaseDamage Min="96" Max="147" />
 				<BasePrice>36</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="Block">9</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp2</Skill>
@@ -273,14 +270,14 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Block" Value="9" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="105" Max="162"/>
+				<BaseDamage Min="105" Max="162" />
 				<BasePrice>52</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="Block">11</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp3</Skill>
@@ -290,14 +287,14 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Block" Value="11" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="116" Max="178"/>
+				<BaseDamage Min="116" Max="178" />
 				<BasePrice>74</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="Block">13</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp4</Skill>
@@ -307,14 +304,14 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Block" Value="13" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="127" Max="196"/>
+				<BaseDamage Min="127" Max="196" />
 				<BasePrice>104</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="Block">15</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp5</Skill>
@@ -324,6 +321,10 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Block" Value="15" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -336,13 +337,8 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="79" Max="122"/>
+				<BaseDamage Min="79" Max="122" />
 				<BasePrice>18</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="HealthTotal">40</BaseStatBonus>
-					<BaseStatBonus Stat="HealthRegen">8</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp</Skill>
@@ -352,15 +348,15 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="HealthTotal" Value="40" />
+					<BaseStat Stat="HealthRegen" Value="8" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="87" Max="134"/>
+				<BaseDamage Min="87" Max="134" />
 				<BasePrice>25</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="HealthTotal">48</BaseStatBonus>
-					<BaseStatBonus Stat="HealthRegen">9</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp1</Skill>
@@ -370,15 +366,15 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="HealthTotal" Value="48" />
+					<BaseStat Stat="HealthRegen" Value="9" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="96" Max="147"/>
+				<BaseDamage Min="96" Max="147" />
 				<BasePrice>36</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="HealthTotal">56</BaseStatBonus>
-					<BaseStatBonus Stat="HealthRegen">10</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp2</Skill>
@@ -388,15 +384,15 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="HealthTotal" Value="56" />
+					<BaseStat Stat="HealthRegen" Value="10" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="105" Max="162"/>
+				<BaseDamage Min="105" Max="162" />
 				<BasePrice>52</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="HealthTotal">64</BaseStatBonus>
-					<BaseStatBonus Stat="HealthRegen">12</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp3</Skill>
@@ -406,15 +402,15 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="HealthTotal" Value="64" />
+					<BaseStat Stat="HealthRegen" Value="12" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="116" Max="178"/>
+				<BaseDamage Min="116" Max="178" />
 				<BasePrice>74</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="HealthTotal">72</BaseStatBonus>
-					<BaseStatBonus Stat="HealthRegen">14</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp4</Skill>
@@ -424,15 +420,15 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="HealthTotal" Value="72" />
+					<BaseStat Stat="HealthRegen" Value="14" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="127" Max="196"/>
+				<BaseDamage Min="127" Max="196" />
 				<BasePrice>104</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="HealthTotal">72</BaseStatBonus>
-					<BaseStatBonus Stat="HealthRegen">16</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp5</Skill>
@@ -442,6 +438,11 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="HealthTotal" Value="80" />
+					<BaseStat Stat="HealthRegen" Value="16" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -454,13 +455,8 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="79" Max="122"/>
+				<BaseDamage Min="79" Max="122" />
 				<BasePrice>22</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="ArmorTotal">35</BaseStatBonus>
-					<BaseStatBonus Stat="Resistance">5</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp</Skill>
@@ -470,15 +466,15 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="ArmorTotal" Value="35" />
+					<BaseStat Stat="Resistance" Value="5" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="87" Max="134"/>
+				<BaseDamage Min="87" Max="134" />
 				<BasePrice>29</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="ArmorTotal">42</BaseStatBonus>
-					<BaseStatBonus Stat="Resistance">6</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp1</Skill>
@@ -488,15 +484,15 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="ArmorTotal" Value="42" />
+					<BaseStat Stat="Resistance" Value="6" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="96" Max="147"/>
+				<BaseDamage Min="96" Max="147" />
 				<BasePrice>41</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="ArmorTotal">49</BaseStatBonus>
-					<BaseStatBonus Stat="Resistance">7</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp2</Skill>
@@ -506,15 +502,15 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="ArmorTotal" Value="50" />
+					<BaseStat Stat="Resistance" Value="7" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="105" Max="162"/>
+				<BaseDamage Min="105" Max="162" />
 				<BasePrice>58</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="ArmorTotal">56</BaseStatBonus>
-					<BaseStatBonus Stat="Resistance">8</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp3</Skill>
@@ -524,15 +520,15 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="ArmorTotal" Value="57" />
+					<BaseStat Stat="Resistance" Value="8" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="116" Max="178"/>
+				<BaseDamage Min="116" Max="178" />
 				<BasePrice>82</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="ArmorTotal">63</BaseStatBonus>
-					<BaseStatBonus Stat="Resistance">9</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp4</Skill>
@@ -542,15 +538,15 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="ArmorTotal" Value="63" />
+					<BaseStat Stat="Resistance" Value="9" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="127" Max="196"/>
+				<BaseDamage Min="127" Max="196" />
 				<BasePrice>113</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="ArmorTotal">70</BaseStatBonus>
-					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp5</Skill>
@@ -560,6 +556,11 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="ArmorTotal" Value="70" />
+					<BaseStat Stat="Resistance" Value="10" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -572,12 +573,8 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="79" Max="122"/>
+				<BaseDamage Min="79" Max="122" />
 				<BasePrice>22</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="ResistanceReduction">11</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp</Skill>
@@ -587,14 +584,14 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="ResistanceReduction" Value="11" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="87" Max="134"/>
+				<BaseDamage Min="87" Max="134" />
 				<BasePrice>29</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="ResistanceReduction">13</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp1</Skill>
@@ -604,14 +601,14 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="ResistanceReduction" Value="13" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="96" Max="147"/>
+				<BaseDamage Min="96" Max="147" />
 				<BasePrice>41</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="ResistanceReduction">15</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp2</Skill>
@@ -621,14 +618,14 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="ResistanceReduction" Value="15" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="105" Max="162"/>
+				<BaseDamage Min="105" Max="162" />
 				<BasePrice>58</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="ResistanceReduction">17</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp3</Skill>
@@ -638,14 +635,14 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="ResistanceReduction" Value="17" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="116" Max="178"/>
+				<BaseDamage Min="116" Max="178" />
 				<BasePrice>82</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="ResistanceReduction">19</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp4</Skill>
@@ -655,14 +652,14 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="ResistanceReduction" Value="19" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="127" Max="196"/>
+				<BaseDamage Min="127" Max="196" />
 				<BasePrice>113</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-20</BaseStatBonus>
-					<BaseStatBonus Stat="ResistanceReduction">22</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Breach</Skill>
 					<Skill>ShieldUp5</Skill>
@@ -672,6 +669,10 @@
 				<Perks>
 					<Perk>PerfectGuard</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="ResistanceReduction" Value="22" />
+					<BaseStat Stat="Dodge" Value="-20" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -684,7 +685,7 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="60" Max="119"/>
+				<BaseDamage Min="60" Max="119" />
 				<BasePrice>10</BasePrice>
 				<Skills>
 					<Skill>CannonBall</Skill>
@@ -697,7 +698,7 @@
 				</Perks>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="66" Max="132"/>
+				<BaseDamage Min="66" Max="132" />
 				<BasePrice>15</BasePrice>
 				<Skills>
 					<Skill>CannonBall</Skill>
@@ -710,7 +711,7 @@
 				</Perks>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="73" Max="145"/>
+				<BaseDamage Min="73" Max="145" />
 				<BasePrice>24</BasePrice>
 				<Skills>
 					<Skill>CannonBall</Skill>
@@ -723,7 +724,7 @@
 				</Perks>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="80" Max="160"/>
+				<BaseDamage Min="80" Max="160" />
 				<BasePrice>38</BasePrice>
 				<Skills>
 					<Skill>CannonBall</Skill>
@@ -736,7 +737,7 @@
 				</Perks>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="88" Max="176"/>
+				<BaseDamage Min="88" Max="176" />
 				<BasePrice>58</BasePrice>
 				<Skills>
 					<Skill>CannonBall</Skill>
@@ -749,7 +750,7 @@
 				</Perks>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="97" Max="194"/>
+				<BaseDamage Min="97" Max="194" />
 				<BasePrice>85</BasePrice>
 				<Skills>
 					<Skill>CannonBall</Skill>
@@ -772,7 +773,7 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="66" Max="132"/>
+				<BaseDamage Min="66" Max="132" />
 				<BasePrice>14</BasePrice>
 				<Skills>
 					<Skill>CannonBall</Skill>
@@ -785,7 +786,7 @@
 				</Perks>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="73" Max="145"/>
+				<BaseDamage Min="73" Max="145" />
 				<BasePrice>20</BasePrice>
 				<Skills>
 					<Skill>CannonBall</Skill>
@@ -798,7 +799,7 @@
 				</Perks>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="80" Max="160"/>
+				<BaseDamage Min="80" Max="160" />
 				<BasePrice>30</BasePrice>
 				<Skills>
 					<Skill>CannonBall</Skill>
@@ -811,7 +812,7 @@
 				</Perks>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="88" Max="176"/>
+				<BaseDamage Min="88" Max="176" />
 				<BasePrice>45</BasePrice>
 				<Skills>
 					<Skill>CannonBall</Skill>
@@ -824,7 +825,7 @@
 				</Perks>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="97" Max="194"/>
+				<BaseDamage Min="97" Max="194" />
 				<BasePrice>66</BasePrice>
 				<Skills>
 					<Skill>CannonBall</Skill>
@@ -837,7 +838,7 @@
 				</Perks>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="107" Max="213"/>
+				<BaseDamage Min="107" Max="213" />
 				<BasePrice>94</BasePrice>
 				<Skills>
 					<Skill>CannonBall</Skill>
@@ -860,11 +861,8 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="66" Max="132"/>
+				<BaseDamage Min="66" Max="132" />
 				<BasePrice>18</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Reliability">15</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -874,13 +872,13 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Reliability" Value="15" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="73" Max="145"/>
+				<BaseDamage Min="73" Max="145" />
 				<BasePrice>25</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Reliability">18</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -890,13 +888,13 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Reliability" Value="18" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="80" Max="160"/>
+				<BaseDamage Min="80" Max="160" />
 				<BasePrice>36</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Reliability">21</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -906,13 +904,13 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Reliability" Value="21" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="88" Max="176"/>
+				<BaseDamage Min="88" Max="176" />
 				<BasePrice>52</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Reliability">24</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -922,13 +920,13 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Reliability" Value="24" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="97" Max="194"/>
+				<BaseDamage Min="97" Max="194" />
 				<BasePrice>74</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Reliability">27</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -938,13 +936,13 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Reliability" Value="27" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="107" Max="213"/>
+				<BaseDamage Min="107" Max="213" />
 				<BasePrice>104</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Reliability">30</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -954,6 +952,9 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Reliability" Value="30" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -966,11 +967,8 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="66" Max="132"/>
+				<BaseDamage Min="66" Max="132" />
 				<BasePrice>18</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="StunChanceModifier">10</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -980,13 +978,13 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="StunChanceModifier" Value="10" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="73" Max="145"/>
+				<BaseDamage Min="73" Max="145" />
 				<BasePrice>25</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="StunChanceModifier">12</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -996,13 +994,13 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="StunChanceModifier" Value="12" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="80" Max="160"/>
+				<BaseDamage Min="80" Max="160" />
 				<BasePrice>36</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="StunChanceModifier">14</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -1012,13 +1010,13 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="StunChanceModifier" Value="14" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="88" Max="176"/>
+				<BaseDamage Min="88" Max="176" />
 				<BasePrice>52</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="StunChanceModifier">16</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -1028,13 +1026,13 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="StunChanceModifier" Value="16" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="97" Max="194"/>
+				<BaseDamage Min="97" Max="194" />
 				<BasePrice>74</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="StunChanceModifier">18</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -1044,13 +1042,13 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="StunChanceModifier" Value="18" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="107" Max="213"/>
+				<BaseDamage Min="107" Max="213" />
 				<BasePrice>104</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="StunChanceModifier">20</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -1060,6 +1058,9 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="StunChanceModifier" Value="20" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -1072,12 +1073,8 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="66" Max="132"/>
+				<BaseDamage Min="66" Max="132" />
 				<BasePrice>22</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">50</BaseStatBonus>
-					<BaseStatBonus Stat="HealthRegen">16</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -1087,14 +1084,14 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="HealthTotal" Value="50" />
+					<BaseStat Stat="HealthRegen" Value="16" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="73" Max="145"/>
+				<BaseDamage Min="73" Max="145" />
 				<BasePrice>29</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">60</BaseStatBonus>
-					<BaseStatBonus Stat="HealthRegen">19</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -1104,14 +1101,14 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="HealthTotal" Value="60" />
+					<BaseStat Stat="HealthRegen" Value="19" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="80" Max="160"/>
+				<BaseDamage Min="80" Max="160" />
 				<BasePrice>41</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">70</BaseStatBonus>
-					<BaseStatBonus Stat="HealthRegen">22</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -1121,14 +1118,14 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="HealthTotal" Value="70" />
+					<BaseStat Stat="HealthRegen" Value="22" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="88" Max="176"/>
+				<BaseDamage Min="88" Max="176" />
 				<BasePrice>58</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">80</BaseStatBonus>
-					<BaseStatBonus Stat="HealthRegen">25</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -1138,14 +1135,14 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="HealthTotal" Value="80" />
+					<BaseStat Stat="HealthRegen" Value="25" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="97" Max="194"/>
+				<BaseDamage Min="97" Max="194" />
 				<BasePrice>82</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">90</BaseStatBonus>
-					<BaseStatBonus Stat="HealthRegen">28</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -1155,14 +1152,14 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="HealthTotal" Value="90" />
+					<BaseStat Stat="HealthRegen" Value="28" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="107" Max="213"/>
+				<BaseDamage Min="107" Max="213" />
 				<BasePrice>113</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">100</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">32</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -1172,6 +1169,10 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="HealthTotal" Value="100" />
+					<BaseStat Stat="HealthRegen" Value="32" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -1184,11 +1185,8 @@
 		<Hands>TwoHands</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="66" Max="132"/>
+				<BaseDamage Min="66" Max="132" />
 				<BasePrice>22</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="MomentumAttacks">9</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -1198,13 +1196,13 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="MomentumAttacks" Value="8" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="73" Max="145"/>
+				<BaseDamage Min="73" Max="145" />
 				<BasePrice>29</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="MomentumAttacks">10</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -1214,13 +1212,13 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="MomentumAttacks" Value="9" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="80" Max="160"/>
+				<BaseDamage Min="80" Max="160" />
 				<BasePrice>41</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="MomentumAttacks">12</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -1230,13 +1228,13 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="MomentumAttacks" Value="10" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="88" Max="176"/>
+				<BaseDamage Min="88" Max="176" />
 				<BasePrice>58</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="MomentumAttacks">14</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -1246,13 +1244,13 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="MomentumAttacks" Value="12" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="97" Max="194"/>
+				<BaseDamage Min="97" Max="194" />
 				<BasePrice>82</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="MomentumAttacks">16</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -1262,13 +1260,13 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="MomentumAttacks" Value="14" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="107" Max="213"/>
+				<BaseDamage Min="107" Max="213" />
 				<BasePrice>113</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="MomentumAttacks">18</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>CannonBall</Skill>
 					<Skill>RocketJump</Skill>
@@ -1278,6 +1276,9 @@
 				<Perks>
 					<Perk>Overheat</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="MomentumAttacks" Value="16" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -1290,7 +1291,7 @@
 		<Hands>OneHand</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="75" Max="94"/>
+				<BaseDamage Min="75" Max="94" />
 				<BasePrice>10</BasePrice>
 				<Skills>
 					<Skill>Snap</Skill>
@@ -1302,7 +1303,7 @@
 				</Perks>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="83" Max="104"/>
+				<BaseDamage Min="83" Max="104" />
 				<BasePrice>15</BasePrice>
 				<Skills>
 					<Skill>Snap1</Skill>
@@ -1314,7 +1315,7 @@
 				</Perks>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="91" Max="114"/>
+				<BaseDamage Min="91" Max="114" />
 				<BasePrice>24</BasePrice>
 				<Skills>
 					<Skill>Snap2</Skill>
@@ -1326,7 +1327,7 @@
 				</Perks>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="100" Max="125"/>
+				<BaseDamage Min="100" Max="125" />
 				<BasePrice>38</BasePrice>
 				<Skills>
 					<Skill>Snap3</Skill>
@@ -1338,7 +1339,7 @@
 				</Perks>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="110" Max="137"/>
+				<BaseDamage Min="110" Max="137" />
 				<BasePrice>58</BasePrice>
 				<Skills>
 					<Skill>Snap4</Skill>
@@ -1350,7 +1351,7 @@
 				</Perks>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="120" Max="150"/>
+				<BaseDamage Min="120" Max="150" />
 				<BasePrice>85</BasePrice>
 				<Skills>
 					<Skill>Snap5</Skill>
@@ -1372,7 +1373,7 @@
 		<Hands>OneHand</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="83" Max="104"/>
+				<BaseDamage Min="83" Max="104" />
 				<BasePrice>14</BasePrice>
 				<Skills>
 					<Skill>Snap</Skill>
@@ -1384,7 +1385,7 @@
 				</Perks>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="91" Max="114"/>
+				<BaseDamage Min="91" Max="114" />
 				<BasePrice>20</BasePrice>
 				<Skills>
 					<Skill>Snap1</Skill>
@@ -1396,7 +1397,7 @@
 				</Perks>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="100" Max="125"/>
+				<BaseDamage Min="100" Max="125" />
 				<BasePrice>30</BasePrice>
 				<Skills>
 					<Skill>Snap2</Skill>
@@ -1408,7 +1409,7 @@
 				</Perks>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="110" Max="137"/>
+				<BaseDamage Min="110" Max="137" />
 				<BasePrice>45</BasePrice>
 				<Skills>
 					<Skill>Snap3</Skill>
@@ -1420,7 +1421,7 @@
 				</Perks>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="120" Max="150"/>
+				<BaseDamage Min="120" Max="150" />
 				<BasePrice>66</BasePrice>
 				<Skills>
 					<Skill>Snap4</Skill>
@@ -1432,7 +1433,7 @@
 				</Perks>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="132" Max="165"/>
+				<BaseDamage Min="132" Max="165" />
 				<BasePrice>94</BasePrice>
 				<Skills>
 					<Skill>Snap5</Skill>
@@ -1454,11 +1455,8 @@
 		<Hands>OneHand</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="83" Max="104"/>
+				<BaseDamage Min="83" Max="104" />
 				<BasePrice>18</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="OpportunisticAttacks">7</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap</Skill>
 					<Skill>Shockwave</Skill>
@@ -1467,13 +1465,13 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="OpportunisticAttacks" Value="7" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="91" Max="114"/>
+				<BaseDamage Min="91" Max="114" />
 				<BasePrice>25</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="OpportunisticAttacks">8</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap1</Skill>
 					<Skill>Shockwave</Skill>
@@ -1482,13 +1480,13 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="OpportunisticAttacks" Value="8" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="100" Max="125"/>
+				<BaseDamage Min="100" Max="125" />
 				<BasePrice>36</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="OpportunisticAttacks">9</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap2</Skill>
 					<Skill>Shockwave</Skill>
@@ -1497,13 +1495,13 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="OpportunisticAttacks" Value="9" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="110" Max="137"/>
+				<BaseDamage Min="110" Max="137" />
 				<BasePrice>52</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="OpportunisticAttacks">11</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap3</Skill>
 					<Skill>Shockwave</Skill>
@@ -1512,13 +1510,13 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="OpportunisticAttacks" Value="10" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="120" Max="150"/>
+				<BaseDamage Min="120" Max="150" />
 				<BasePrice>74</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="OpportunisticAttacks">13</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap4</Skill>
 					<Skill>Shockwave</Skill>
@@ -1527,13 +1525,13 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="OpportunisticAttacks" Value="11" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="132" Max="165"/>
+				<BaseDamage Min="132" Max="165" />
 				<BasePrice>104</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="OpportunisticAttacks">15</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap5</Skill>
 					<Skill>Shockwave</Skill>
@@ -1542,6 +1540,9 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="OpportunisticAttacks" Value="12" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -1554,11 +1555,8 @@
 		<Hands>OneHand</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="83" Max="104"/>
+				<BaseDamage Min="83" Max="104" />
 				<BasePrice>18</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">6</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap</Skill>
 					<Skill>Shockwave</Skill>
@@ -1567,13 +1565,13 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Accuracy" Value="6" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="91" Max="114"/>
+				<BaseDamage Min="91" Max="114" />
 				<BasePrice>25</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">7</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap1</Skill>
 					<Skill>Shockwave</Skill>
@@ -1582,13 +1580,13 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Accuracy" Value="7" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="100" Max="125"/>
+				<BaseDamage Min="100" Max="125" />
 				<BasePrice>36</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">8</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap2</Skill>
 					<Skill>Shockwave</Skill>
@@ -1597,13 +1595,13 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Accuracy" Value="8" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="110" Max="137"/>
+				<BaseDamage Min="110" Max="137" />
 				<BasePrice>52</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">9</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap3</Skill>
 					<Skill>Shockwave</Skill>
@@ -1612,13 +1610,13 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Accuracy" Value="9" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="120" Max="150"/>
+				<BaseDamage Min="120" Max="150" />
 				<BasePrice>74</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">10</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap4</Skill>
 					<Skill>Shockwave</Skill>
@@ -1627,13 +1625,13 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Accuracy" Value="10" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="132" Max="165"/>
+				<BaseDamage Min="132" Max="165" />
 				<BasePrice>104</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">12</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap5</Skill>
 					<Skill>Shockwave</Skill>
@@ -1642,6 +1640,9 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="Accuracy" Value="12" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -1654,11 +1655,8 @@
 		<Hands>OneHand</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="83" Max="104"/>
+				<BaseDamage Min="83" Max="104" />
 				<BasePrice>22</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationDamage">4</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap</Skill>
 					<Skill>Shockwave</Skill>
@@ -1667,13 +1665,13 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="PropagationDamage" Value="4" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="91" Max="114"/>
+				<BaseDamage Min="91" Max="114" />
 				<BasePrice>29</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationDamage">4</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap1</Skill>
 					<Skill>Shockwave</Skill>
@@ -1682,13 +1680,13 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="PropagationDamage" Value="4" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="100" Max="125"/>
+				<BaseDamage Min="100" Max="125" />
 				<BasePrice>41</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationDamage">5</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap2</Skill>
 					<Skill>Shockwave</Skill>
@@ -1697,13 +1695,13 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="PropagationDamage" Value="5" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="110" Max="137"/>
+				<BaseDamage Min="110" Max="137" />
 				<BasePrice>58</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationDamage">6</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap3</Skill>
 					<Skill>Shockwave</Skill>
@@ -1712,13 +1710,13 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="PropagationDamage" Value="6" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="120" Max="150"/>
+				<BaseDamage Min="120" Max="150" />
 				<BasePrice>82</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationDamage">7</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap4</Skill>
 					<Skill>Shockwave</Skill>
@@ -1727,13 +1725,13 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="PropagationDamage" Value="7" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="132" Max="165"/>
+				<BaseDamage Min="132" Max="165" />
 				<BasePrice>113</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationDamage">8</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap5</Skill>
 					<Skill>Shockwave</Skill>
@@ -1742,6 +1740,9 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="PropagationDamage" Value="8" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -1754,11 +1755,8 @@
 		<Hands>OneHand</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="83" Max="104"/>
+				<BaseDamage Min="83" Max="104" />
 				<BasePrice>22</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap</Skill>
 					<Skill>Shockwave</Skill>
@@ -1767,13 +1765,13 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="PropagationBouncesModifier" Value="1" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="91" Max="114"/>
+				<BaseDamage Min="91" Max="114" />
 				<BasePrice>29</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap1</Skill>
 					<Skill>Shockwave</Skill>
@@ -1782,13 +1780,13 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="PropagationBouncesModifier" Value="1" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="100" Max="125"/>
+				<BaseDamage Min="100" Max="125" />
 				<BasePrice>41</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap2</Skill>
 					<Skill>Shockwave</Skill>
@@ -1797,13 +1795,13 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="PropagationBouncesModifier" Value="1" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="110" Max="137"/>
+				<BaseDamage Min="110" Max="137" />
 				<BasePrice>58</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationBouncesModifier">2</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap3</Skill>
 					<Skill>Shockwave</Skill>
@@ -1812,13 +1810,13 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="PropagationBouncesModifier" Value="2" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="120" Max="150"/>
+				<BaseDamage Min="120" Max="150" />
 				<BasePrice>82</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationBouncesModifier">2</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap4</Skill>
 					<Skill>Shockwave</Skill>
@@ -1827,13 +1825,13 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="PropagationBouncesModifier" Value="2" />
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="132" Max="165"/>
+				<BaseDamage Min="132" Max="165" />
 				<BasePrice>113</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationBouncesModifier">2</BaseStatBonus>
-				</BaseStatBonuses>
 				<Skills>
 					<Skill>Snap5</Skill>
 					<Skill>Shockwave</Skill>
@@ -1842,6 +1840,9 @@
 				<Perks>
 					<Perk>GeoReservoir</Perk>
 				</Perks>
+				<BaseStatBonuses>
+					<BaseStat Stat="PropagationBouncesModifier" Value="2" />
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -1854,42 +1855,42 @@
 		<Hands>OffHand</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="83" Max="104"/>
+				<BaseDamage Min="83" Max="104" />
 				<BasePrice>14</BasePrice>
 				<Skills>
 					<Skill>SnapOffhand</Skill>
 				</Skills>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="91" Max="114"/>
+				<BaseDamage Min="91" Max="114" />
 				<BasePrice>20</BasePrice>
 				<Skills>
 					<Skill>SnapOffhand1</Skill>
 				</Skills>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="100" Max="125"/>
+				<BaseDamage Min="100" Max="125" />
 				<BasePrice>30</BasePrice>
 				<Skills>
 					<Skill>SnapOffhand2</Skill>
 				</Skills>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="110" Max="137"/>
+				<BaseDamage Min="110" Max="137" />
 				<BasePrice>45</BasePrice>
 				<Skills>
 					<Skill>SnapOffhand3</Skill>
 				</Skills>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="120" Max="150"/>
+				<BaseDamage Min="120" Max="150" />
 				<BasePrice>66</BasePrice>
 				<Skills>
 					<Skill>SnapOffhand4</Skill>
 				</Skills>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="132" Max="165"/>
+				<BaseDamage Min="132" Max="165" />
 				<BasePrice>94</BasePrice>
 				<Skills>
 					<Skill>SnapOffhand5</Skill>
@@ -2401,42 +2402,42 @@
 		<Category>Scroll</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="79" Max="122"/>
+				<BaseDamage Min="79" Max="122" />
 				<BasePrice>14</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="2">MovingWallScroll</Skill>
 				</Skills>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="87" Max="134"/>
+				<BaseDamage Min="87" Max="134" />
 				<BasePrice>20</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="2">MovingWallScroll</Skill>
 				</Skills>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="96" Max="147"/>
+				<BaseDamage Min="96" Max="147" />
 				<BasePrice>30</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="3">MovingWallScroll1</Skill>
 				</Skills>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="105" Max="162"/>
+				<BaseDamage Min="105" Max="162" />
 				<BasePrice>45</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="3">MovingWallScroll1</Skill>
 				</Skills>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="116" Max="178"/>
+				<BaseDamage Min="116" Max="178" />
 				<BasePrice>66</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="4">MovingWallScroll2</Skill>
 				</Skills>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="127" Max="196"/>
+				<BaseDamage Min="127" Max="196" />
 				<BasePrice>94</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="4">MovingWallScroll2</Skill>
@@ -2449,42 +2450,42 @@
 		<Category>Scroll</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="79" Max="122"/>
+				<BaseDamage Min="79" Max="122" />
 				<BasePrice>14</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="2">WallsOfPainScroll</Skill>
 				</Skills>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="87" Max="134"/>
+				<BaseDamage Min="87" Max="134" />
 				<BasePrice>20</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="2">WallsOfPainScroll</Skill>
 				</Skills>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="96" Max="147"/>
+				<BaseDamage Min="96" Max="147" />
 				<BasePrice>30</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="3">WallsOfPainScroll1</Skill>
 				</Skills>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="105" Max="162"/>
+				<BaseDamage Min="105" Max="162" />
 				<BasePrice>45</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="3">WallsOfPainScroll1</Skill>
 				</Skills>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="116" Max="178"/>
+				<BaseDamage Min="116" Max="178" />
 				<BasePrice>66</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="4">WallsOfPainScroll2</Skill>
 				</Skills>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="127" Max="196"/>
+				<BaseDamage Min="127" Max="196" />
 				<BasePrice>94</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="4">WallsOfPainScroll2</Skill>
@@ -2497,42 +2498,42 @@
 		<Category>Scroll</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="66" Max="132"/>
+				<BaseDamage Min="66" Max="132" />
 				<BasePrice>14</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="2">ArmageddonScroll</Skill>
 				</Skills>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="73" Max="145"/>
+				<BaseDamage Min="73" Max="145" />
 				<BasePrice>20</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="2">ArmageddonScroll</Skill>
 				</Skills>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="80" Max="160"/>
+				<BaseDamage Min="80" Max="160" />
 				<BasePrice>30</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="3">ArmageddonScroll1</Skill>
 				</Skills>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="88" Max="176"/>
+				<BaseDamage Min="88" Max="176" />
 				<BasePrice>45</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="3">ArmageddonScroll1</Skill>
 				</Skills>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="97" Max="194"/>
+				<BaseDamage Min="97" Max="194" />
 				<BasePrice>66</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="4">ArmageddonScroll2</Skill>
 				</Skills>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="107" Max="213"/>
+				<BaseDamage Min="107" Max="213" />
 				<BasePrice>94</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="4">ArmageddonScroll2</Skill>
@@ -2545,42 +2546,42 @@
 		<Category>Scroll</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="83" Max="104"/>
+				<BaseDamage Min="83" Max="104" />
 				<BasePrice>14</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="2">GeoCannonScroll</Skill>
 				</Skills>
 			</Level>
 			<Level Id="1">
-				<BaseDamage Min="91" Max="114"/>
+				<BaseDamage Min="91" Max="114" />
 				<BasePrice>20</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="2">GeoCannonScroll</Skill>
 				</Skills>
 			</Level>
 			<Level Id="2">
-				<BaseDamage Min="100" Max="125"/>
+				<BaseDamage Min="100" Max="125" />
 				<BasePrice>30</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="3">GeoCannonScroll1</Skill>
 				</Skills>
 			</Level>
 			<Level Id="3">
-				<BaseDamage Min="110" Max="137"/>
+				<BaseDamage Min="110" Max="137" />
 				<BasePrice>45</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="3">GeoCannonScroll1</Skill>
 				</Skills>
 			</Level>
 			<Level Id="4">
-				<BaseDamage Min="120" Max="150"/>
+				<BaseDamage Min="120" Max="150" />
 				<BasePrice>66</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="4">GeoCannonScroll2</Skill>
 				</Skills>
 			</Level>
 			<Level Id="5">
-				<BaseDamage Min="132" Max="165"/>
+				<BaseDamage Min="132" Max="165" />
 				<BasePrice>94</BasePrice>
 				<Skills>
 					<Skill OverallUsesCount="4">GeoCannonScroll2</Skill>
