@@ -1821,6 +1821,7 @@
             </SkillEffects>
          </Attack>
       </SkillAction>
+   </SkillDefinition>
 
    <SkillDefinition Id="Leap3" TemplateId="Leap">
       <SkillAction>
@@ -1848,7 +1849,8 @@
             </SkillEffects>
          </Attack>
       </SkillAction>
-   
+   </SkillDefinition>
+
       <SkillDefinition Id="Leap4" TemplateId="Leap">
       <SkillAction>
          <Attack>
@@ -1875,6 +1877,7 @@
             </SkillEffects>
          </Attack>
       </SkillAction>
+   </SkillDefinition>
 
       <SkillDefinition Id="Leap5" TemplateId="Leap">
       <SkillAction>
@@ -1902,6 +1905,7 @@
             </SkillEffects>
          </Attack>
       </SkillAction>
+   </SkillDefinition>
 
    <SkillDefinition Id="Rage">
       <!-- Name : Berserker Rage -->

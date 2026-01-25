@@ -100,9 +100,10 @@
       <UsesPerTurnCount>4</UsesPerTurnCount>
       <Range Min="1" Max="6" CardinalDirectionOnly="false" Modifiable="true"/>
       <SkillAction>
-         <Generic>
+         <Attack>
+            <AttackType>Ranged</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
-               <DamageMultiplier>1</DamageMultiplier>
                <Poison>
                   <BaseChance>1</BaseChance>
                   <DamagePerTurn>60</DamagePerTurn>
