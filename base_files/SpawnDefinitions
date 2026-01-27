@@ -1,0 +1,2833 @@
+﻿<SpawnDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+                 xsi:noNamespaceSchemaLocation="SpawnDefinitions.xsd">
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- TEST -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <SpawnDefinition Id="Test" TemplateId="Lakeburg">
+
+      <SpawnPointRect Width="6" Height="3"/>
+
+   </SpawnDefinition>
+
+
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- Lakeburg -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   
+
+   
+
+   <SpawnDefinition Id="Lakeburg">
+
+      <SpawnsCountMultipliers>
+
+        <SpawnsCountMultiplier StartingNight="1">5</SpawnsCountMultiplier>
+
+        <SpawnsCountMultiplier StartingNight="2">5</SpawnsCountMultiplier>
+
+        <SpawnsCountMultiplier StartingNight="3">7</SpawnsCountMultiplier>
+
+        <SpawnsCountMultiplier StartingNight="4">8</SpawnsCountMultiplier>
+
+        <SpawnsCountMultiplier StartingNight="5">8</SpawnsCountMultiplier>
+
+        <SpawnsCountMultiplier StartingNight="6">10</SpawnsCountMultiplier>
+
+        <SpawnsCountMultiplier StartingNight="7">15</SpawnsCountMultiplier>
+
+        <SpawnsCountMultiplier StartingNight="8">17</SpawnsCountMultiplier>
+
+        <SpawnsCountMultiplier StartingNight="9">17</SpawnsCountMultiplier>
+
+        <SpawnsCountMultiplier StartingNight="10">20</SpawnsCountMultiplier>
+
+        <SpawnsCountMultiplier StartingNight="11">23</SpawnsCountMultiplier>
+
+        <SpawnsCountMultiplier StartingNight="12">28</SpawnsCountMultiplier>
+
+      </SpawnsCountMultipliers>
+
+      <SpawnsCountPerWave>60 + Night * Multiplier</SpawnsCountPerWave>
+
+      
+
+      
+
+      <SpawnWavesPerDayDefinitions>
+
+         
+
+         <SpawnWavesPerDayDefinition StartingNight="1">
+
+            <SpawnWaveDefinition Id="Wave_Lakeburg_01" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+      
+
+         <SpawnWavesPerDayDefinition StartingNight="2">
+
+            <SpawnWaveDefinition Id="Wave_Lakeburg_02_Tier1s" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Lakeburg_02_Gargoyles" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="3">
+
+           <SpawnWaveDefinition Id="Wave_Lakeburg_03_Tier2s" Weight="1"/>
+
+           <SpawnWaveDefinition Id="Wave_Lakeburg_03_FasterClawers" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="4">
+
+            <SpawnWaveDefinition Id="Wave_Lakeburg_04_Tier2s" Weight="3"/>
+
+            <SpawnWaveDefinition Id="Wave_Lakeburg_04_Tanky" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Lakeburg_04_Frogs" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="5">
+
+           <SpawnWaveDefinition Id="Wave_Lakeburg_05_Tier3" Weight="1"/>
+
+           <SpawnWaveDefinition Id="Wave_Lakeburg_05_FasterClawers" Weight="1"/>
+
+           <SpawnWaveDefinition Id="Wave_Lakeburg_05_ArmoredSpeedy" Weight="1"/>
+
+           <SpawnWaveDefinition Id="Wave_Lakeburg_05_GhostsGargoyles" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+      
+
+         <SpawnWavesPerDayDefinition StartingNight="6">
+
+           <SpawnWaveDefinition Id="Wave_Lakeburg_06_2Tier3" Weight="1"/>
+
+           <SpawnWaveDefinition Id="Wave_Lakeburg_06_ManyTier2s" Weight="2"/>
+
+           <SpawnWaveDefinition Id="Wave_Lakeburg_06_Tier3" Weight="3"/>
+
+           <SpawnWaveDefinition Id="Wave_Lakeburg_06_BoomersFrogs" Weight="1"/>
+
+           <SpawnWaveDefinition Id="Wave_Lakeburg_06_EliteGargoyle" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+     
+
+         <SpawnWavesPerDayDefinition StartingNight="7">
+
+           <SpawnWaveDefinition Id="Wave_Lakeburg_07_TankyFirstEncounter" Weight="1"/>
+
+        </SpawnWavesPerDayDefinition>
+
+     
+
+         <SpawnWavesPerDayDefinition StartingNight="8">
+
+           <SpawnWaveDefinition Id="Wave_Lakeburg_08_2Tier3" Weight="3"/>
+
+           <SpawnWaveDefinition Id="Wave_Lakeburg_08_SpeedyManyFaster" Weight="2"/>
+
+           <SpawnWaveDefinition Id="Wave_Lakeburg_08_GhostBoomer" Weight="2"/>
+
+           <SpawnWaveDefinition Id="Wave_Lakeburg_08_EliteArmored" Weight="1"/>
+
+        </SpawnWavesPerDayDefinition>
+
+         
+
+         <SpawnWavesPerDayDefinition StartingNight="9">
+
+            <SpawnWaveDefinition Id="Wave_Lakeburg_09_BloodyGargoyle" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Lakeburg_09_OneOfEachTier" Weight="2"/>
+
+            <SpawnWaveDefinition Id="Wave_Lakeburg_09_SpeedyManyFaster" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Lakeburg_09_ManyFlying" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Lakeburg_08_EliteArmored" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+         
+
+         <SpawnWavesPerDayDefinition StartingNight="10">
+
+           <SpawnWaveDefinition Id="Wave_Lakeburg_09_BloodyGargoyle" Weight="1"/>
+
+           <SpawnWaveDefinition Id="Wave_Lakeburg_09_OneOfEachTier" Weight="2"/>
+
+           <SpawnWaveDefinition Id="Wave_Lakeburg_09_SpeedyManyFaster" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Lakeburg_09_ManyFlying" Weight="1"/>
+
+        </SpawnWavesPerDayDefinition>
+
+         
+
+         <SpawnWavesPerDayDefinition StartingNight="11">
+
+           <SpawnWaveDefinition Id="Wave_Lakeburg_11_Tanky" Weight="1"/>
+
+        </SpawnWavesPerDayDefinition>
+
+         
+
+         <SpawnWavesPerDayDefinition StartingNight="12">
+
+            <SpawnWaveDefinition Id="Wave_Final_Lakeburg" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+      </SpawnWavesPerDayDefinitions>
+
+      
+
+   
+
+      <SpawnDirectionsPerDayDefinitions>
+
+         <SpawnDirectionsPerDayDefinition StartingNight="1">
+
+            <SpawnDirectionDefinition Id="AllIn_T100-2" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="2">
+
+            <SpawnDirectionDefinition Id="AllIn_T100-3" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="3">
+
+            <SpawnDirectionDefinition Id="Corner_T60-1_L40-1" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="4">
+
+            <SpawnDirectionDefinition Id="Corner_T60-1_L40-1" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="5">
+
+            <SpawnDirectionDefinition Id="Corner_T50-2_L50-2" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="6">
+
+            <SpawnDirectionDefinition Id="Parallel_T50-1_B50-1" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="7">
+
+            <SpawnDirectionDefinition Id="Parallel_T50-1_B50-1" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="8">
+
+            <SpawnDirectionDefinition Id="Three_T40-1_L20-1_B40-1" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="9">
+
+            <SpawnDirectionDefinition Id="Three_T40-1_L20-1_B40-1" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="10">
+
+            <SpawnDirectionDefinition Id="Four_T40-1_L20-1_B40-1_R20-1" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="12">
+
+            <SpawnDirectionDefinition Id="Four_T40-2_L40-2_B20-2_R20-2" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+      </SpawnDirectionsPerDayDefinitions>
+
+
+
+      <ElitesPerDayDefinitions>
+
+         
+
+         <ElitesPerDayDefinition StartingNight="1">
+
+         </ElitesPerDayDefinition>
+
+         
+
+         <ElitesPerDayDefinition StartingNight="5">
+
+            <Elites Tier="1">1</Elites>
+
+         </ElitesPerDayDefinition>
+
+         
+
+         <ElitesPerDayDefinition StartingNight="6">
+
+         </ElitesPerDayDefinition>
+
+         
+
+         <ElitesPerDayDefinition StartingNight="7">
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="8">
+
+            <Elites Tier="2">1</Elites>
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="9">
+
+            <Elites Tier="3">1</Elites>
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="10">
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="11">
+
+            <Elites Tier="3">1</Elites>
+
+            <Elites Tier="2">1</Elites>
+
+            <Elites Tier="1">1</Elites>
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="12">
+
+            <Elites Tier="1">1</Elites>
+
+         </ElitesPerDayDefinition>
+
+         
+
+      </ElitesPerDayDefinitions>
+
+
+
+      <DistanceMaxFromCenterPerDays>
+
+         <DistanceMaxFromCenterPerDay StartingNight="1" Value="4"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="2" Value="5"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="3" Value="2"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="4" Value="4"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="5" Value="6"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="6" Value="9"/>
+
+      </DistanceMaxFromCenterPerDays>
+
+
+
+      <SpawnPointsPerGroup>3</SpawnPointsPerGroup>
+
+      <SpawnPointRect Width="6" Height="2"/>
+
+      <DisallowedEnemies>
+
+         <EnemyId>Shieldman</EnemyId>
+
+         <EnemyId>BountyHunter</EnemyId>
+
+         <EnemyId>CorruptedMage</EnemyId>
+
+         <EnemyId>HarplingVariation</EnemyId>
+
+      </DisallowedEnemies>
+
+   </SpawnDefinition>
+
+   
+
+   
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- Glenwood -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+
+
+   <SpawnDefinition Id="Glenwald" TemplateId="Lakeburg">
+
+      <SpawnsCountMultipliers>
+
+         <SpawnsCountMultiplier StartingNight="1">7</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="2">7</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="3">10</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="4">8</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="5">12</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="6">14</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="7">16</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="8">20</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="9">24</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="10">34</SpawnsCountMultiplier>
+
+      </SpawnsCountMultipliers>
+
+      
+
+      <SpawnsCountPerWave>67 + Night * Multiplier</SpawnsCountPerWave>
+
+
+
+      <SpawnWavesPerDayDefinitions>
+
+         <SpawnWavesPerDayDefinition StartingNight="1">
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_01" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="2">
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_02_1" Weight="2"/>
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_02_2" Weight="2"/>
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_02_3" Weight="2"/>
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_02_ManyTier1" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="4">
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_04_Lumberjack" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_04_ManyTier2" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_04_HuntersLumberjacks" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="5">
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_05_Shieldman" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="6">
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_06_Shieldman" Weight="2"/>
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_06_Blockers" Weight="2"/>
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_06_ShieldmanBoomer" Weight="2"/>
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_06_BoomersFrogs" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_06_EliteGargoyle" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="7">
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_07_Twisted" Weight="2"/>
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_07_TwistedHunter" Weight="2"/>
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_07_ShieldmanBoomer" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_07_2Tiers3" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_07_ManyT3" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_07_FullOfArmors" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_07_FullTargetHeroes" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Glenwald_07_EliteArmored" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="10">
+
+            <SpawnWaveDefinition Id="Wave_Final_Glenwald" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+      </SpawnWavesPerDayDefinitions>
+
+
+
+      <SpawnDirectionsPerDayDefinitions>
+
+         <SpawnDirectionsPerDayDefinition StartingNight="1">
+
+            <SpawnDirectionDefinition Id="AllIn_T100-2" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="2">
+
+            <SpawnDirectionDefinition Id="AllIn_T100-3" Weight="50"/>
+
+            <SpawnDirectionDefinition Id="Corner_T60-1_L40-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="AllIn_T100-3E" Weight="50"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="3">
+
+            <SpawnDirectionDefinition Id="Three_T25-1_L25-1_B25-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Corner_T70-3E_L30-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Corner_T60-1_L40-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Corner_T50-2_L50-2" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="AllIn_T100-3E" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Parallel_T50-1_B50-1" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="5">
+
+            <SpawnDirectionDefinition Id="AllIn_T100-5E" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="6">
+
+            <SpawnDirectionDefinition Id="Parallel_T80-3_B20-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Parallel_T50-2_B50-2" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Parallel_T60-3E_B40-2" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Corner_T70-3E_L30-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Corner_T60-3_L40-2" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Three_T40-1_L20-1_B40-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Three_T60-3_L20-1_B20-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Three_T50-3E_L25-1_B25-1" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="8">
+
+            <SpawnDirectionDefinition Id="Parallel_T50-4E_B50-4E" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="9">
+
+            <SpawnDirectionDefinition Id="Four_T40-1_L20-1_B40-1_R20-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Four_T25-2_L25-2_B25-2_R25-2" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Four_T33-2_L33-2_B17-1_R17-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Four_T33-2_L17-1_B33-2_R17-2" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Four_T50-2_L15-1_B15-1_R20-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Three_T40-3E_L40-3E_B20-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Three_T80-4_L10-1_B10-1" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="10">
+
+            <SpawnDirectionDefinition Id="Four_T25-4E_L25-4E_B25-4E_R25-4E" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+      </SpawnDirectionsPerDayDefinitions>
+
+
+
+      
+
+      <ElitesPerDayDefinitions>
+
+
+
+         <ElitesPerDayDefinition StartingNight="1">
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="2">
+
+            <Elites Tier="1">1</Elites>
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="3">
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="4">
+
+            <Elites Tier="2">1</Elites>
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="5">
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="6">
+
+            <Elites Tier="3">1</Elites>
+
+         </ElitesPerDayDefinition>
+
+         
+
+         <ElitesPerDayDefinition StartingNight="7">
+
+            <Elites Tier="2">1</Elites>
+
+            <Elites Tier="1">1</Elites>
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="8">
+
+         </ElitesPerDayDefinition>
+
+         
+
+         <ElitesPerDayDefinition StartingNight="9">
+
+            <Elites Tier="3">1</Elites>
+
+            <Elites Tier="1">2</Elites>
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="10">
+
+            <Elites Tier="2">1</Elites>
+
+         </ElitesPerDayDefinition>
+
+
+
+      </ElitesPerDayDefinitions>
+
+      
+
+      <DistanceMaxFromCenterPerDays>
+
+         <DistanceMaxFromCenterPerDay StartingNight="1" Value="8"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="2" Value="10"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="5" Value="15"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="6" Value="12"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="8" Value="15"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="10" Value="12"/>
+
+      </DistanceMaxFromCenterPerDays>
+
+      
+
+      <SpawnPointsPerGroup>2</SpawnPointsPerGroup>
+
+      <SpawnPointRect Width="4" Height="2"/>
+
+      
+
+      <DisallowedEnemies>
+
+         <EnemyId>HarplingVariation</EnemyId>
+
+      </DisallowedEnemies>
+
+   </SpawnDefinition>
+
+
+
+
+
+  <!-- ███████████████████████████████████████████████████████████████ -->
+
+  <!-- TutorialMap aka Swampfurt -->
+
+  <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+
+
+  <SpawnDefinition Id="TutorialMap" TemplateId="Lakeburg">
+
+
+
+    <SpawnsCountMultipliers>
+
+      <SpawnsCountMultiplier StartingNight="1">5</SpawnsCountMultiplier>
+
+      <SpawnsCountMultiplier StartingNight="2">10</SpawnsCountMultiplier>
+
+    </SpawnsCountMultipliers>
+
+
+
+    <SpawnWavesPerDayDefinitions>
+
+
+
+      <SpawnWavesPerDayDefinition StartingNight="1">
+
+        <SpawnWaveDefinition Id="Tutorial_Night_01" Weight="1"/>
+
+      </SpawnWavesPerDayDefinition>
+
+
+
+      <SpawnWavesPerDayDefinition StartingNight="2">
+
+        <SpawnWaveDefinition Id="Tutorial_Force_Lose" Weight="1"/>
+
+      </SpawnWavesPerDayDefinition>
+
+
+
+    </SpawnWavesPerDayDefinitions>
+
+
+
+    <SpawnDirectionsPerDayDefinitions>
+
+      
+
+      <SpawnDirectionsPerDayDefinition StartingNight="1">
+
+        <SpawnDirectionDefinition Id="AllIn_T100-1" Weight="100"/>
+
+      </SpawnDirectionsPerDayDefinition>
+
+
+
+      <SpawnDirectionsPerDayDefinition StartingNight="2">
+
+        <SpawnDirectionDefinition Id="AllIn_T100-1" Weight="100"/>
+
+      </SpawnDirectionsPerDayDefinition>
+
+      
+
+    </SpawnDirectionsPerDayDefinitions>
+
+
+
+    <DistanceMaxFromCenterPerDays>
+
+      <DistanceMaxFromCenterPerDay StartingNight="1" Value="5"/>
+
+      <DistanceMaxFromCenterPerDay StartingNight="2" Value="5"/>
+
+    </DistanceMaxFromCenterPerDays>
+
+
+
+    <SpawnPointsPerGroup>3</SpawnPointsPerGroup>
+
+    <SpawnPointRect Height="2" Width="5"/>
+
+
+
+    <DisallowedEnemies>
+
+      <EnemyId>Blocker</EnemyId>
+
+      <EnemyId>PoisonFrog</EnemyId>
+
+      <EnemyId>BountyHunter</EnemyId>
+
+      <EnemyId>Ghost</EnemyId>
+
+      <EnemyId>Boomer</EnemyId>
+
+      <EnemyId>Shieldman</EnemyId>
+
+      <EnemyId>Bloody</EnemyId>
+
+      <EnemyId>HarplingVariation</EnemyId>
+
+    </DisallowedEnemies>
+
+
+
+  </SpawnDefinition>
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- Felderland aka Gildenberg -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+
+
+   <SpawnDefinition Id="Felderland" TemplateId="Lakeburg">
+
+
+
+      <SpawnsCountMultipliers>
+
+         <SpawnsCountMultiplier StartingNight="1">5</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="2">6</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="3">7</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="4">8</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="5">12</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="6">17</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="7">10</SpawnsCountMultiplier>
+
+      </SpawnsCountMultipliers>
+
+      <SpawnsCountPerWave>55 + Night * Multiplier</SpawnsCountPerWave>
+
+
+
+      <SpawnWavesPerDayDefinitions>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="1">
+
+            <SpawnWaveDefinition Id="Wave_Gildenberg_01" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="2">
+
+            <SpawnWaveDefinition Id="Wave_Gildenberg_02" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="3">
+
+            <SpawnWaveDefinition Id="Wave_Gildenberg_03" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="4">
+
+            <SpawnWaveDefinition Id="Wave_Gildenberg_04" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="5">
+
+            <SpawnWaveDefinition Id="Wave_Gildenberg_05" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="6">
+
+            <SpawnWaveDefinition Id="Wave_Gildenberg_06" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="7">
+
+            <SpawnWaveDefinition Id="Wave_Gildenberg_Final" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+         
+
+      </SpawnWavesPerDayDefinitions>
+
+
+
+      <SpawnDirectionsPerDayDefinitions>
+
+         <SpawnDirectionsPerDayDefinition StartingNight="1">
+
+            <SpawnDirectionDefinition Id="AllIn_T100-1" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+         
+
+         <SpawnDirectionsPerDayDefinition StartingNight="2">
+
+            <SpawnDirectionDefinition Id="AllIn_T100-1" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="3">
+
+            <SpawnDirectionDefinition Id="Corner_T65-1_L45-1" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="4">
+
+            <SpawnDirectionDefinition Id="AllIn_T100-4E" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="5">
+
+            <SpawnDirectionDefinition Id="Corner_T70-3E_L30-1" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="6">
+
+            <SpawnDirectionDefinition Id="Parallel_T50-1_B50-1" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="7">
+
+            <SpawnDirectionDefinition Id="Three_T30_L40_B30" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+      </SpawnDirectionsPerDayDefinitions>
+
+
+
+      <ElitesPerDayDefinitions>
+
+
+
+         <ElitesPerDayDefinition StartingNight="1">
+
+         </ElitesPerDayDefinition>
+
+
+
+      </ElitesPerDayDefinitions>
+
+
+
+      <DistanceMaxFromCenterPerDays>
+
+         <DistanceMaxFromCenterPerDay StartingNight="1" Value="5"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="2" Value="12"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="3" Value="8"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="4" Value="18"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="5" Value="5"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="6" Value="3"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="7" Value="5"/>
+
+      </DistanceMaxFromCenterPerDays>
+
+
+
+      <SpawnPointsPerGroup>2</SpawnPointsPerGroup>
+
+      <SpawnPointRect Height="2" Width="5"/>
+
+      
+
+      <DisallowedEnemies>
+
+         <EnemyId>PoisonFrog</EnemyId>
+
+         <EnemyId>BountyHunter</EnemyId>
+
+         <EnemyId>Ghost</EnemyId>
+
+         <EnemyId>Boomer</EnemyId>
+
+         <EnemyId>Shieldman</EnemyId>
+
+         <EnemyId>Bloody</EnemyId>
+
+         <EnemyId>HarplingVariation</EnemyId>
+
+      </DisallowedEnemies>
+
+      
+
+   </SpawnDefinition>
+
+
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- Elderlicht -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+
+
+   <SpawnDefinition Id="Elderlicht" TemplateId="Lakeburg">
+
+      <SpawnsCountMultipliers>
+
+         <SpawnsCountMultiplier StartingNight="1">5</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="2">6</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="3">0</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="4">6</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="5">14</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="6">12</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="7">14</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="8">17</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="9">11</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="10">21</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="11">12</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="12">26</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="13">28</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="14">36</SpawnsCountMultiplier>
+
+      </SpawnsCountMultipliers>
+
+
+
+      <SpawnsCountPerWave>75 + Night * Multiplier</SpawnsCountPerWave>
+
+
+
+      <SpawnWavesPerDayDefinitions>
+
+         <SpawnWavesPerDayDefinition StartingNight="1">
+
+            <SpawnWaveDefinition Id="Wave_Elderlicht_01" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="2">
+
+            <SpawnWaveDefinition Id="Wave_Elderlicht_02_1" Weight="2"/>
+
+            <SpawnWaveDefinition Id="Wave_Elderlicht_02_2" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Elderlicht_02_3" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="3">
+
+            <SpawnWaveDefinition Id="Wave_Elderlicht_03" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="4">
+
+            <SpawnWaveDefinition Id="Wave_Elderlicht_04" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="5">
+
+            <SpawnWaveDefinition Id="Wave_Elderlicht_05" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="6">
+
+            <SpawnWaveDefinition Id="Wave_Elderlicht_06" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="7">
+
+            <SpawnWaveDefinition Id="Wave_Elderlicht_07" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="8">
+
+            <SpawnWaveDefinition Id="Wave_Elderlicht_08" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="10">
+
+            <SpawnWaveDefinition Id="Wave_Elderlicht_10" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="11">
+
+            <SpawnWaveDefinition Id="Wave_Elderlicht_11" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="12">
+
+            <SpawnWaveDefinition Id="Wave_Elderlicht_10" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="13">
+
+            <SpawnWaveDefinition Id="Wave_Elderlicht_13" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="14">
+
+            <SpawnWaveDefinition Id="Wave_Elderlicht_14" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <!--<SpawnWavesPerDayDefinition StartingNight="15">
+
+            <SpawnWaveDefinition Id="Wave_Elderlicht_15" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>-->
+
+
+
+      </SpawnWavesPerDayDefinitions>
+
+
+
+      <SpawnDirectionsPerDayDefinitions>
+
+         <SpawnDirectionsPerDayDefinition StartingNight="1">
+
+            <!--1 Coté, 3 points-->
+
+            <SpawnDirectionDefinition Id="AllIn_T100-3" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="2">
+
+            <!--1 Coté, 3 points-->
+
+            <SpawnDirectionDefinition Id="AllIn_T100-3" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="3">
+
+            <!--3 Coté, 3 points-->
+
+            <SpawnDirectionDefinition Id="Four_T25-1_L15-1_B25-1_R25-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Four_T25-1_L15-1_B15-1_R25-1" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="4">
+
+            <!--2 Coté, 4 points-->
+
+            <SpawnDirectionDefinition Id="Corner_T60-2_L40-2" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="5">
+
+            <!--2 Coté, 4 points-->
+
+            <SpawnDirectionDefinition Id="Corner_T35-1E_T30-1_L35-1" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="6">
+
+            <!--3 Coté, 5 points-->
+
+            <SpawnDirectionDefinition Id="Three_T25-2E_L15-1_B25-2E" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Three_10-1_L30-2E_B20-2E" Weight="50"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="7">
+
+            <!--2 Coté, 6 points-->
+
+            <SpawnDirectionDefinition Id="Parallel_T50-2E_B50-2E" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="8">
+
+            <!--2/3 Cotés, 6 points-->
+
+            <SpawnDirectionDefinition Id="Corner_T40-2E_T30-3_L30-3" Weight="30"/>
+
+            <SpawnDirectionDefinition Id="Three_T35-2E_T15-2E_L25-1_B25-1" Weight="35"/>
+
+            <SpawnDirectionDefinition Id="Three_T25-1_L35-2E_L15-2E_B25-1" Weight="35"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="9">
+
+            <!--2 Cotés, 6 points-->
+
+            <SpawnDirectionDefinition Id="Corner_T30-2E_T35-2_L35-3" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="10">
+
+            <!--4 Coté, 12 points-->
+
+            <SpawnDirectionDefinition Id="Four_T30-2E_T10-2_L10-3_B30-2E_B10-2_R10-3" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Four_T10-2_L20-2E_L10-2_B35-2E_B15-2_R20-3" Weight="50"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="11">
+
+            <!--2 Coté, 10 points-->
+
+            <SpawnDirectionDefinition Id="Parallel_T30-2E_T20-3_B30-2E_B20-3" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="12">
+
+            <!--3/4 Cotés, 10 points-->
+
+            <SpawnDirectionDefinition Id="Four_T25-4_L25-4_B25-4_R25-4E" Weight="40"/>
+
+            <SpawnDirectionDefinition Id="Four_T40-6E_L20-3_B20-4_R20-3" Weight="20"/>
+
+            <SpawnDirectionDefinition Id="Four_T35-5E_L15-3_B35-5E_R15-3" Weight="20"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="13">
+
+            <!--1 Coté, 10 points-->
+
+            <SpawnDirectionDefinition Id="AllIn_T30-2E_T20-2E_T20-2E_R30-2_L30-2" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="14">
+
+            <SpawnDirectionDefinition Id="Four_T25-2E_T10-2_L25-2E_L10-2_B25-2E_B10-2_R25-2E_R10-2" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+      </SpawnDirectionsPerDayDefinitions>
+
+
+
+
+
+      <ElitesPerDayDefinitions>
+
+
+
+         <ElitesPerDayDefinition StartingNight="1">
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="2">
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="3">
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="4">
+
+            <Elites Tier="2">1</Elites>
+
+            <Elites Tier="1">3</Elites>
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="5">
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="6">
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="7">
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="8">
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="9">
+
+            <Elites Tier="3">2</Elites>
+
+            <Elites Tier="2">4</Elites>
+
+            <Elites Tier="1">6</Elites>
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="10">
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="11">
+
+            <Elites Tier="4">1</Elites>
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="12">
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="13">
+
+            <Elites Tier="4">2</Elites>
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="14">
+
+            <Elites Tier="3">1</Elites>
+
+         </ElitesPerDayDefinition>
+
+
+
+      </ElitesPerDayDefinitions>
+
+
+
+      <DistanceMaxFromCenterPerDays>
+
+         <DistanceMaxFromCenterPerDay StartingNight="1" Value="6"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="2" Value="3"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="3" Value="10"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="4" Value="10"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="5" Value="12"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="6" Value="15"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="7" Value="20"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="8" Value="17"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="9" Value="19"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="10" Value="20"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="11" Value="30"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="12" Value="24"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="13" Value="30"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="14" Value="25"/>
+
+      </DistanceMaxFromCenterPerDays>
+
+
+
+      <SpawnPointsPerGroup>3</SpawnPointsPerGroup>
+
+      <SpawnPointRect Width="3" Height="2"/>
+
+
+
+      <DisallowedEnemies>
+
+         <EnemyId>HarplingVariation</EnemyId>
+
+      </DisallowedEnemies>
+
+
+
+      <OverridenForbiddenDirectionsPerDay>
+
+
+
+         <OverrideForbiddenDirection StartingNight="1">
+
+            <ForbiddenDirection>Left</ForbiddenDirection>
+
+         </OverrideForbiddenDirection>
+
+
+
+         <OverrideForbiddenDirection StartingNight="2">
+
+            <ForbiddenDirection>Left</ForbiddenDirection>
+
+         </OverrideForbiddenDirection>
+
+
+
+         <OverrideForbiddenDirection StartingNight="3">
+
+         </OverrideForbiddenDirection>
+
+
+
+         <OverrideForbiddenDirection StartingNight="6">
+
+            <ForbiddenDirection>Right</ForbiddenDirection>
+
+         </OverrideForbiddenDirection>
+
+
+
+         <OverrideForbiddenDirection StartingNight="7">
+
+         </OverrideForbiddenDirection>
+
+
+
+         <OverrideForbiddenDirection StartingNight="9">
+
+            <ForbiddenDirection>Right</ForbiddenDirection>
+
+         </OverrideForbiddenDirection>
+
+
+
+         <OverrideForbiddenDirection StartingNight="10">
+
+         </OverrideForbiddenDirection>
+
+
+
+         <OverrideForbiddenDirection StartingNight="11">
+
+            <ForbiddenDirection>Left</ForbiddenDirection>
+
+            <ForbiddenDirection>Right</ForbiddenDirection>
+
+         </OverrideForbiddenDirection>
+
+
+
+         <OverrideForbiddenDirection StartingNight="12">
+
+         </OverrideForbiddenDirection>
+
+
+
+         <OverrideForbiddenDirection StartingNight="13">
+
+            <ForbiddenDirection>Right</ForbiddenDirection>
+
+         </OverrideForbiddenDirection>
+
+
+
+         <OverrideForbiddenDirection StartingNight="14">
+
+         </OverrideForbiddenDirection>
+
+         
+
+      </OverridenForbiddenDirectionsPerDay>     
+
+      
+
+   </SpawnDefinition>
+
+
+
+	<!-- ███████████████████████████████████████████████████████████████ -->
+
+	<!-- Glintfein -->
+
+	<!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <SpawnDefinition Id="Glintfein" TemplateId="Lakeburg">
+
+      <SpawnsCountMultipliers>
+
+         <SpawnsCountMultiplier StartingNight="1">10</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="2">25</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="3">40</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="4">53</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="5">60</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="6">70</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="7">80</SpawnsCountMultiplier>
+
+      </SpawnsCountMultipliers>
+
+      <SpawnsCountPerWave>130 + Night * Multiplier</SpawnsCountPerWave>
+
+
+
+
+
+      <SpawnWavesPerDayDefinitions>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="1">
+
+            <SpawnWaveDefinition Id="Wave_Glintfein_01_Normal" Weight="3"/>
+
+            <SpawnWaveDefinition Id="Wave_Glintfein_01_OnlyTiers1" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Glintfein_01_Tanky" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Glintfein_01_Elite" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="2">
+
+            <SpawnWaveDefinition Id="Wave_Glintfein_02_Normal" Weight="3"/>
+
+            <SpawnWaveDefinition Id="Wave_Glintfein_02_Tiers2" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Glintfein_02_CorruptedMage" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Glintfein_02_Elite" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="3">
+
+            <SpawnWaveDefinition Id="Wave_Glintfein_03_SchadenNormal" Weight="3"/>
+
+            <SpawnWaveDefinition Id="Wave_Glintfein_03_SchadenMoreElites" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Glintfein_03_SchadenCorruptedMages" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Glintfein_03_SchadenManyEnemies" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="4">
+
+            <SpawnWaveDefinition Id="Wave_Glintfein_04_Normal" Weight="2"/>
+
+            <!--<SpawnWaveDefinition Id="Wave_Glintfein_04_Short" Weight="1"/>-->
+
+            <SpawnWaveDefinition Id="Wave_Glintfein_04_Elite" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="5">
+
+            <SpawnWaveDefinition Id="Wave_Glintfein_05_FreudeNormal" Weight="3"/>
+
+            <SpawnWaveDefinition Id="Wave_Glintfein_05_FreudeShieldman" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Glintfein_05_FreudeElites" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_Glintfein_05_FreudeManyArmors" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="6">
+
+            <SpawnWaveDefinition Id="Wave_Glintfein_06" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+
+
+         <SpawnWavesPerDayDefinition StartingNight="7">
+
+            <SpawnWaveDefinition Id="Wave_Glintfein_07_SchadenFinal" Weight="1"/>
+
+            <!--<SpawnWaveDefinition Id="Wave_Glintfein_07_FreudeFinal" Weight="1"/>-->
+
+         </SpawnWavesPerDayDefinition>
+
+         
+
+      </SpawnWavesPerDayDefinitions>
+
+
+
+
+
+      <SpawnDirectionsPerDayDefinitions>
+
+         
+
+         <SpawnDirectionsPerDayDefinition StartingNight="1">
+
+            <SpawnDirectionDefinition Id="Corner_T70-1_L30-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Corner_T65-1_L35-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Corner_T65-2E_L35-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Corner_T65-1_L35-2E" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="2">
+
+            <!--45/35/20, 25/50/25, 30/40/30-->
+
+            <SpawnDirectionDefinition Id="Three_T30-1_L40-2E_B30-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Three_T30-1_L30-1_B40-2E" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Three_T30-2E_L30-1_B30-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Three_T50-3E_L25-1_B25-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Three_T35-1_L45-2_B20-1" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="3">
+
+            <!--25/25/25/25, 20/30/20/30, 45/30/15/10-->
+
+            <SpawnDirectionDefinition Id="Four_T15-1E_T15-4E_L20-3_B15-1E_B15-4E_R20-3E" Weight="100"/>
+
+            <!--
+
+            <SpawnDirectionDefinition Id="Four_T40-1_L20-1_B40-1_R20-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Four_T33-2_L33-2_B17-1_R17-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Four_T45-2_L30-2_B15-1_R10-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Four_T10-1_L30-2_B15-1_R45-2" Weight="100"/>
+
+            -->
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="4">
+
+            <!--pareil que nuit 2, mais plus de spawnpoints-->
+
+            <SpawnDirectionDefinition Id="Three_T30-1_L40-2E_B30-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Three_T30-1_L30-1_B40-2E" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Three_T30-2E_L30-1_B30-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Three_T50-3E_L25-1_B25-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Three_T35-1_L45-2_B20-1" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="5">
+
+            <!--pareil que nuit 3, mais centré-->
+
+            <SpawnDirectionDefinition Id="Four_Freude" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="6">
+
+            <!--pareil que nuit 3, plus de spawnpoints-->
+
+            <SpawnDirectionDefinition Id="Parallel_T50-8E_B50-8E" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="7">
+
+            <SpawnDirectionDefinition Id="Four_Boss" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+         
+
+      </SpawnDirectionsPerDayDefinitions>
+
+
+
+      <ElitesPerDayDefinitions>
+
+         <ElitesPerDayDefinition StartingNight="1">
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="7">
+
+            <Elites Tier="1">4</Elites>
+
+            <Elites Tier="2">2</Elites>
+
+            <Elites Tier="4">1</Elites>
+
+         </ElitesPerDayDefinition>
+
+      </ElitesPerDayDefinitions>
+
+
+
+      <DistanceMaxFromCenterPerDays>
+
+         <DistanceMaxFromCenterPerDay StartingNight="1" Value="5"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="2" Value="10"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="3" Value="18"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="4" Value="16"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="5" Value="15"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="6" Value="20"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="7" Value="20"/>
+
+      </DistanceMaxFromCenterPerDays>
+
+
+
+      <SpawnPointsPerGroup>2</SpawnPointsPerGroup>
+
+      <SpawnPointRect Width="3" Height="2"/>
+
+      
+
+      <DisallowedEnemies>
+
+         <EnemyId>HarplingVariation</EnemyId>
+
+      </DisallowedEnemies>
+
+
+
+      <OverridenForbiddenDirectionsPerDay>
+
+
+
+         <OverrideForbiddenDirection StartingNight="1">
+
+         </OverrideForbiddenDirection>
+
+
+
+         <OverrideForbiddenDirection StartingNight="6">
+
+            <ForbiddenDirection>Top</ForbiddenDirection>
+
+         </OverrideForbiddenDirection>
+
+
+
+         <OverrideForbiddenDirection StartingNight="7">
+
+         </OverrideForbiddenDirection>
+
+         
+
+      </OverridenForbiddenDirectionsPerDay>
+
+      
+
+   </SpawnDefinition>
+
+
+
+	<!-- ███████████████████████████████████████████████████████████████ -->
+
+	<!-- Gildenberg Redux -->
+
+	<!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+	<SpawnDefinition Id="GildenbergRedux" TemplateId="Lakeburg">
+
+
+
+		<SpawnsCountMultipliers>
+
+			<SpawnsCountMultiplier StartingNight="1">8</SpawnsCountMultiplier>
+
+			<SpawnsCountMultiplier StartingNight="2">24</SpawnsCountMultiplier>
+
+			<SpawnsCountMultiplier StartingNight="3">22</SpawnsCountMultiplier>
+
+			<SpawnsCountMultiplier StartingNight="4">26</SpawnsCountMultiplier>
+
+			<SpawnsCountMultiplier StartingNight="5">32</SpawnsCountMultiplier>
+
+			<SpawnsCountMultiplier StartingNight="6">30</SpawnsCountMultiplier>
+
+			<SpawnsCountMultiplier StartingNight="7">36</SpawnsCountMultiplier>
+
+			<SpawnsCountMultiplier StartingNight="8">60</SpawnsCountMultiplier>
+
+		</SpawnsCountMultipliers>
+
+		<SpawnsCountPerWave>75 + Night * Multiplier</SpawnsCountPerWave>
+
+
+
+		<SpawnWavesPerDayDefinitions>
+
+			<SpawnWavesPerDayDefinition StartingNight="1">
+
+				<SpawnWaveDefinition Id="Wave_GildenbergRedux_01" Weight="1"/>
+
+			</SpawnWavesPerDayDefinition>
+
+			<SpawnWavesPerDayDefinition StartingNight="2">
+
+				<SpawnWaveDefinition Id="Wave_GildenbergRedux_02_Tanky" Weight="1"/>
+
+				<SpawnWaveDefinition Id="Wave_GildenbergRedux_02_Flying" Weight="1"/>
+
+				<SpawnWaveDefinition Id="Wave_GildenbergRedux_02_Distance" Weight="1"/>
+
+				<SpawnWaveDefinition Id="Wave_GildenbergRedux_02_Swarm" Weight="1"/>
+
+				<SpawnWaveDefinition Id="Wave_GildenbergRedux_02_Elites" Weight="1"/>
+
+				<SpawnWaveDefinition Id="Wave_GildenbergRedux_02_Buffer" Weight="1"/>
+
+			</SpawnWavesPerDayDefinition>
+
+			<SpawnWavesPerDayDefinition StartingNight="3">
+
+				<SpawnWaveDefinition Id="Wave_GildenbergRedux_03" Weight="1"/>
+
+			</SpawnWavesPerDayDefinition>
+
+			<SpawnWavesPerDayDefinition StartingNight="4">
+
+				<SpawnWaveDefinition Id="Wave_GildenbergRedux_04" Weight="1"/>
+
+			</SpawnWavesPerDayDefinition>
+
+			<SpawnWavesPerDayDefinition StartingNight="5">
+
+				<SpawnWaveDefinition Id="Wave_GildenbergRedux_05" Weight="1"/>
+
+			</SpawnWavesPerDayDefinition>
+
+			<SpawnWavesPerDayDefinition StartingNight="6">
+
+				<SpawnWaveDefinition Id="Wave_GildenbergRedux_06_Flying" Weight="1"/>
+
+				<SpawnWaveDefinition Id="Wave_GildenbergRedux_06_NoFoot" Weight="1"/>
+
+				<SpawnWaveDefinition Id="Wave_GildenbergRedux_06_BigBoi" Weight="1"/>
+
+				<SpawnWaveDefinition Id="Wave_GildenbergRedux_06_ZoomZoom" Weight="1"/>
+
+				<SpawnWaveDefinition Id="Wave_GildenbergRedux_06_ArmoredCore" Weight="1"/>
+
+			</SpawnWavesPerDayDefinition>
+
+			<SpawnWavesPerDayDefinition StartingNight="7">
+
+				<SpawnWaveDefinition Id="Wave_GildenbergRedux_07" Weight="1"/>
+
+			</SpawnWavesPerDayDefinition>
+
+			<SpawnWavesPerDayDefinition StartingNight="8">
+
+				<SpawnWaveDefinition Id="Wave_GildenbergRedux_08" Weight="1"/>
+
+			</SpawnWavesPerDayDefinition>
+
+		</SpawnWavesPerDayDefinitions>
+
+
+
+		<SpawnDirectionsPerDayDefinitions>
+
+			<SpawnDirectionsPerDayDefinition StartingNight="1">
+
+				<SpawnDirectionDefinition Id="AllIn_T100-2E" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="AllIn_B100-5E" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="AllIn_L100-2E" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="AllIn_R100-2E" Weight="1"/>
+
+			</SpawnDirectionsPerDayDefinition>
+
+			<SpawnDirectionsPerDayDefinition StartingNight="2">
+
+				<SpawnDirectionDefinition Id="Corner_T65-5E_L35-1" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Corner_B60-5E_R40-3" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Corner_T65-5E_R35-1" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Corner_B60-5E_L40-3" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Parallel_L50-5E_R50-5E" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Parallel_T50-4E_B50-4E" Weight="1"/>
+
+			</SpawnDirectionsPerDayDefinition>
+
+			<SpawnDirectionsPerDayDefinition StartingNight="3">
+
+				<!--Harpling-->
+
+				<SpawnDirectionDefinition Id="AllIn_B100-5E" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="AllIn_R100-4" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Corner_B60-5E_R40-3" Weight="1"/>
+
+			</SpawnDirectionsPerDayDefinition>
+
+			<SpawnDirectionsPerDayDefinition StartingNight="4">
+
+				<SpawnDirectionDefinition Id="Corner_T70-3E_L30-1" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Corner_T60-3_L40-2" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Parallel_T80-3_B20-1" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Parallel_T50-4E_B50-4E" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Three_T50-3E_L25-1_B25-1" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Three_T40-1_L20-1_B40-1" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Three_T60-3_L20-1_B20-1" Weight="1"/>
+
+			</SpawnDirectionsPerDayDefinition>
+
+			<SpawnDirectionsPerDayDefinition StartingNight="5">
+
+				<!--Harpling-->
+
+				<SpawnDirectionDefinition Id="Corner_T65-5E_L35-1" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Corner_T65-5E_R35-1" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Parallel_L50-5E_R50-5E" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Parallel_T50-4E_B50-4E" Weight="1"/>
+
+			</SpawnDirectionsPerDayDefinition>
+
+			<SpawnDirectionsPerDayDefinition StartingNight="6">
+
+				<!--Harpling-->
+
+				<SpawnDirectionDefinition Id="Three_T50-3E_L25-1_B25-1" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Three_T40-1_L20-1_B40-1" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Three_T60-3_L20-1_B20-1" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Parallel_T80-8E_B20-5E" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Parallel_T50-4E_B50-4E" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Four_T35-5E_L15-2_B35-5E_R15-2" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Four_T25-5E_L25-2E_B25-5E_R25-2E" Weight="1"/>
+
+			</SpawnDirectionsPerDayDefinition>
+
+			<SpawnDirectionsPerDayDefinition StartingNight="7">
+
+				<!--Harpling-->
+
+				<SpawnDirectionDefinition Id="Four_T40-1_L20-1_B40-1_R20-1" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Four_T25-2_L25-2_B25-2_R25-2" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Three_T40-3E_L40-3E_B20-1" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Three_T80-4_L10-1_B10-1" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Parallel_L50-10E_R50-10E" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Parallel_T50-10E_B50-10E" Weight="1"/>
+
+			</SpawnDirectionsPerDayDefinition>
+
+			<SpawnDirectionsPerDayDefinition StartingNight="8">
+
+				<!--Harpling-->
+
+				<SpawnDirectionDefinition Id="Four_T15-5E_L35-4E_B15-5E_R35-4E" Weight="1"/>
+
+				<SpawnDirectionDefinition Id="Four_T35-5E_L15-4E_B35-5E_R15-4E" Weight="1"/>
+
+			</SpawnDirectionsPerDayDefinition>
+
+		</SpawnDirectionsPerDayDefinitions>
+
+
+
+		<ElitesPerDayDefinitions>
+
+			<ElitesPerDayDefinition StartingNight="1">
+
+				<Elites Tier="2">1</Elites>
+
+			</ElitesPerDayDefinition>
+
+			<ElitesPerDayDefinition StartingNight="2">
+
+			</ElitesPerDayDefinition>
+
+			<ElitesPerDayDefinition StartingNight="4">
+
+				<Elites Tier="2">1</Elites>
+
+			</ElitesPerDayDefinition>
+
+			<ElitesPerDayDefinition StartingNight="5">
+
+				<Elites Tier="3">2</Elites>
+
+			</ElitesPerDayDefinition>
+
+			<ElitesPerDayDefinition StartingNight="6">
+
+			</ElitesPerDayDefinition>
+
+			<ElitesPerDayDefinition StartingNight="7">
+
+				<Elites Tier="3">3</Elites>
+
+			</ElitesPerDayDefinition>
+
+			<ElitesPerDayDefinition StartingNight="8">
+
+				<Elites Tier="2">4</Elites>
+
+				<Elites Tier="3">2</Elites>
+
+			</ElitesPerDayDefinition>
+
+		</ElitesPerDayDefinitions>
+
+
+
+		<DistanceMaxFromCenterPerDays>
+
+			<DistanceMaxFromCenterPerDay StartingNight="1" Value="4"/>
+
+			<DistanceMaxFromCenterPerDay StartingNight="2" Value="6"/>
+
+			<DistanceMaxFromCenterPerDay StartingNight="3" Value="8"/>
+
+			<DistanceMaxFromCenterPerDay StartingNight="4" Value="9"/>
+
+			<DistanceMaxFromCenterPerDay StartingNight="5" Value="12"/>
+
+			<DistanceMaxFromCenterPerDay StartingNight="6" Value="14"/>
+
+			<DistanceMaxFromCenterPerDay StartingNight="7" Value="16"/>
+
+		</DistanceMaxFromCenterPerDays>
+
+
+
+
+
+		<!--<OverridenForbiddenDirectionsPerDay>
+
+			<OverrideForbiddenDirection StartingNight="1">
+
+				<ForbiddenDirection>Right</ForbiddenDirection>
+
+			</OverrideForbiddenDirection>
+
+			<OverrideForbiddenDirection StartingNight="2">
+
+				<ForbiddenDirection>Left</ForbiddenDirection>
+
+				<ForbiddenDirection>Top</ForbiddenDirection>
+
+			</OverrideForbiddenDirection>
+
+			<OverrideForbiddenDirection StartingNight="3">
+
+				<ForbiddenDirection>Right</ForbiddenDirection>
+
+				<ForbiddenDirection>Left</ForbiddenDirection>
+
+				<ForbiddenDirection>Top</ForbiddenDirection>
+
+			</OverrideForbiddenDirection>
+
+			<OverrideForbiddenDirection StartingNight="4">
+
+			</OverrideForbiddenDirection>
+
+			<OverrideForbiddenDirection StartingNight="5">
+
+				<ForbiddenDirection>Left</ForbiddenDirection>
+
+			</OverrideForbiddenDirection>
+
+			<OverrideForbiddenDirection StartingNight="6">
+
+			</OverrideForbiddenDirection>
+
+		</OverridenForbiddenDirectionsPerDay>-->
+
+
+
+
+
+		<SpawnPointsPerGroup>2</SpawnPointsPerGroup>
+
+		<SpawnPointRect Height="2" Width="5"/>
+
+
+
+		<DisallowedEnemies>
+
+		</DisallowedEnemies>
+
+	</SpawnDefinition>
+
+
+
+		<!-- ███████████████████████████████████████████████████████████████ -->
+
+		<!-- Glenwald Redux -->
+
+		<!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+	<SpawnDefinition Id="GlenwaldRedux" TemplateId="Lakeburg">
+
+
+
+		<SpawnsCountMultipliers>
+
+			<SpawnsCountMultiplier StartingNight="1">5</SpawnsCountMultiplier>
+
+			<SpawnsCountMultiplier StartingNight="2">12</SpawnsCountMultiplier>
+
+			<SpawnsCountMultiplier StartingNight="3">15</SpawnsCountMultiplier>
+
+			<SpawnsCountMultiplier StartingNight="4">16</SpawnsCountMultiplier>
+
+			<SpawnsCountMultiplier StartingNight="5">15</SpawnsCountMultiplier>
+
+			<SpawnsCountMultiplier StartingNight="6">19</SpawnsCountMultiplier>
+
+			<SpawnsCountMultiplier StartingNight="7">22</SpawnsCountMultiplier>
+
+         <SpawnsCountMultiplier StartingNight="8">23</SpawnsCountMultiplier>
+
+			<SpawnsCountMultiplier StartingNight="9">24</SpawnsCountMultiplier>
+
+			<SpawnsCountMultiplier StartingNight="10">65</SpawnsCountMultiplier>
+
+		</SpawnsCountMultipliers>
+
+		<SpawnsCountPerWave>70 + Night * Multiplier</SpawnsCountPerWave>
+
+
+
+		<SpawnWavesPerDayDefinitions>
+
+			<SpawnWavesPerDayDefinition StartingNight="1">
+
+				<SpawnWaveDefinition Id="Wave_GlenwaldRedux_01" Weight="1"/>
+
+			</SpawnWavesPerDayDefinition>
+
+			<SpawnWavesPerDayDefinition StartingNight="2">
+
+				<SpawnWaveDefinition Id="Wave_GlenwaldRedux_02_ImTheDodgerNow" Weight="1"/>
+
+				<SpawnWaveDefinition Id="Wave_GlenwaldRedux_02_WoodWorker" Weight="1"/>
+
+				<SpawnWaveDefinition Id="Wave_GlenwaldRedux_02_ImtheRangerNow" Weight="1"/>
+
+				<SpawnWaveDefinition Id="Wave_GlenwaldRedux_02_Swarm" Weight="1"/>
+
+			</SpawnWavesPerDayDefinition>
+
+			<SpawnWavesPerDayDefinition StartingNight="3">
+
+				<SpawnWaveDefinition Id="Wave_GlenwaldRedux_03" Weight="1"/>
+
+			</SpawnWavesPerDayDefinition>
+
+			<SpawnWavesPerDayDefinition StartingNight="4">
+
+				<SpawnWaveDefinition Id="Wave_GlenwaldRedux_04" Weight="1"/>
+
+			</SpawnWavesPerDayDefinition>
+
+			<SpawnWavesPerDayDefinition StartingNight="5">
+
+				<SpawnWaveDefinition Id="Wave_GlenwaldRedux_05_Shields" Weight="1"/>
+
+				<SpawnWaveDefinition Id="Wave_GlenwaldRedux_05_Gargoyle" Weight="1"/>
+
+				<SpawnWaveDefinition Id="Wave_GlenwaldRedux_05_Froogmers" Weight="1"/>
+
+            <SpawnWaveDefinition Id="Wave_GlenwaldRedux_05_Bloody" Weight="1"/>
+
+			</SpawnWavesPerDayDefinition>
+
+			<SpawnWavesPerDayDefinition StartingNight="6">
+
+				<SpawnWaveDefinition Id="Wave_GlenwaldRedux_06_Flying" Weight="1"/>
+
+				<SpawnWaveDefinition Id="Wave_GlenwaldRedux_06_NoFoot" Weight="1"/>
+
+			</SpawnWavesPerDayDefinition>
+
+			<SpawnWavesPerDayDefinition StartingNight="7">
+
+				<SpawnWaveDefinition Id="Wave_GlenwaldRedux_07" Weight="2"/>
+
+            <SpawnWaveDefinition Id="Wave_GlenwaldRedux_07_Defensive" Weight="1"/>
+
+			</SpawnWavesPerDayDefinition>
+
+         <SpawnWavesPerDayDefinition StartingNight="8">
+
+            <SpawnWaveDefinition Id="Wave_GlenwaldRedux_08" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+			<SpawnWavesPerDayDefinition StartingNight="9">
+
+				<SpawnWaveDefinition Id="Wave_GlenwaldRedux_09" Weight="1"/>
+
+			</SpawnWavesPerDayDefinition>
+
+         <SpawnWavesPerDayDefinition StartingNight="10">
+
+            <SpawnWaveDefinition Id="Wave_GlenwaldRedux_Boss" Weight="1"/>
+
+         </SpawnWavesPerDayDefinition>
+
+		</SpawnWavesPerDayDefinitions>
+
+
+
+		<SpawnDirectionsPerDayDefinitions>
+
+			<SpawnDirectionsPerDayDefinition StartingNight="1">
+
+				<SpawnDirectionDefinition Id="Three_T30-1E_L35-1_B35-1" Weight="100"/>
+
+			</SpawnDirectionsPerDayDefinition>
+
+
+
+			<SpawnDirectionsPerDayDefinition StartingNight="2">
+
+				<SpawnDirectionDefinition Id="Corner_T60-1_L40-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Corner_T65-1_L45-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Corner_T70-1_L30-1" Weight="100"/>
+
+			</SpawnDirectionsPerDayDefinition>
+
+
+
+			<SpawnDirectionsPerDayDefinition StartingNight="3">
+
+				<SpawnDirectionDefinition Id="Corner_T50-2E_T10-1E_L30-2" Weight="100"/>
+
+				<SpawnDirectionDefinition Id="Corner_T50-2E_T10-1E_R30-2" Weight="100"/>
+
+			</SpawnDirectionsPerDayDefinition>
+
+
+
+			<SpawnDirectionsPerDayDefinition StartingNight="4">
+
+				<SpawnDirectionDefinition Id="AllIn_T40-1E_T60-4E" Weight="100"/>
+
+			</SpawnDirectionsPerDayDefinition>
+
+         
+
+         <SpawnDirectionsPerDayDefinition StartingNight="5">
+
+            <SpawnDirectionDefinition Id="Four_T15-1_L35-1E_B25-1_R25-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Four_T30-1_L30-1_B20-1E_R20-1E" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Four_T25-1E_L25-1E_B25-1E_R25-1E" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+			<SpawnDirectionsPerDayDefinition StartingNight="6">
+
+				<!--<SpawnDirectionDefinition Id="Parallel_T80-3_B20-1" Weight="100"/>
+
+				<SpawnDirectionDefinition Id="Parallel_T50-2_B50-2" Weight="100"/>
+
+				<SpawnDirectionDefinition Id="Parallel_T60-3E_B40-2" Weight="100"/>
+
+				<SpawnDirectionDefinition Id="Corner_T70-3E_L30-1" Weight="100"/>
+
+				<SpawnDirectionDefinition Id="Corner_T60-3_L40-2" Weight="100"/>-->
+
+            <SpawnDirectionDefinition Id="Parallel_L40-1E_R60-5E" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Parallel_L35-1E_R65-5" Weight="100"/>
+
+				<SpawnDirectionDefinition Id="Three_T25-1E_T15-2_L20-1_B40-1" Weight="100"/>
+
+				<SpawnDirectionDefinition Id="Three_T60-3E_L20-1_B20-1" Weight="100"/>
+
+				<SpawnDirectionDefinition Id="Three_T50-3E_L25-1_B25-1" Weight="100"/>
+
+            <!--<SpawnDirectionDefinition Id="Four_T25-2_L25-2_B25-2_R25-2" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Four_T33-2_L33-2_B17-1_R17-1" Weight="100"/>-->
+
+			</SpawnDirectionsPerDayDefinition>
+
+
+
+         <SpawnDirectionsPerDayDefinition StartingNight="7">
+
+            <SpawnDirectionDefinition Id="Four_T15-1E_T10-4E_L15-1E_L10-4E_B15-1E_B10-4E_R15-1E_R10-4E" Weight="100"/>
+
+         </SpawnDirectionsPerDayDefinition>
+
+         
+
+         <SpawnDirectionsPerDayDefinition StartingNight="8">
+
+            <SpawnDirectionDefinition Id="Corner_T30-3E_T25-5E_R25-2E_R20-5E" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Corner_T25-2E_T20-5E_R30-3E_R25-5E" Weight="100"/>
+
+            <!--<SpawnDirectionDefinition Id="Four_T40-1_L20-1_B40-1_R20-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Four_T25-2_L25-2_B25-2_R25-2" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Four_T33-2_L33-2_B17-1_R17-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Four_T33-2_L17-1_B33-2_R17-2" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Four_T50-2_L15-1_B15-1_R20-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Three_T40-3E_L40-3E_B20-1" Weight="100"/>
+
+            <SpawnDirectionDefinition Id="Three_T80-4_L10-1_B10-1" Weight="100"/>-->
+
+         </SpawnDirectionsPerDayDefinition>
+
+
+
+			<SpawnDirectionsPerDayDefinition StartingNight="9">
+
+            <SpawnDirectionDefinition Id="Four_T15-2E_T10-2E_L25-2E_B15-2E_B10-2E_R25-2E" Weight="100"/>
+
+			</SpawnDirectionsPerDayDefinition>
+
+
+
+			<SpawnDirectionsPerDayDefinition StartingNight="10">
+
+				<SpawnDirectionDefinition Id="Four_T20-4E_T5-1E_L20-4E_L5-1E_B20-4E_B5-1E_R20-4E_R5-1E" Weight="100"/>
+
+			</SpawnDirectionsPerDayDefinition>
+
+
+
+		</SpawnDirectionsPerDayDefinitions>
+
+      
+
+      <OverridenForbiddenDirectionsPerDay>
+
+         
+
+         <!--<OverrideForbiddenDirection StartingNight="1">
+
+            <ForbiddenDirection>Top</ForbiddenDirection>
+
+            <ForbiddenDirection>Bottom</ForbiddenDirection>
+
+         </OverrideForbiddenDirection>-->
+
+         
+
+         <OverrideForbiddenDirection StartingNight="1">
+
+         </OverrideForbiddenDirection>
+
+         
+
+         <OverrideForbiddenDirection StartingNight="4">
+
+            <ForbiddenDirection>Left</ForbiddenDirection>
+
+            <ForbiddenDirection>Bottom</ForbiddenDirection>
+
+            <ForbiddenDirection>Right</ForbiddenDirection>
+
+         </OverrideForbiddenDirection>
+
+         
+
+         <OverrideForbiddenDirection StartingNight="5">
+
+         </OverrideForbiddenDirection>
+
+         
+
+      </OverridenForbiddenDirectionsPerDay>
+
+
+
+		<ElitesPerDayDefinitions>
+
+
+
+			<!--<ElitesPerDayDefinition StartingNight="1">
+
+				<Elites Tier="2">1</Elites>
+
+			</ElitesPerDayDefinition>-->
+
+
+
+			<ElitesPerDayDefinition StartingNight="1">
+
+			</ElitesPerDayDefinition>
+
+
+
+			<ElitesPerDayDefinition StartingNight="3">
+
+				<Elites Tier="1">2</Elites>
+
+			</ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="4">
+
+         </ElitesPerDayDefinition>
+
+
+
+			<ElitesPerDayDefinition StartingNight="5">
+
+            <Elites Tier="3">1</Elites>
+
+            <Elites Tier="2">1</Elites>
+
+            <Elites Tier="1">1</Elites>
+
+			</ElitesPerDayDefinition>
+
+
+
+			<ElitesPerDayDefinition StartingNight="6">
+
+			</ElitesPerDayDefinition>
+
+
+
+			<ElitesPerDayDefinition StartingNight="7">
+
+				<Elites Tier="3">2</Elites>
+
+			</ElitesPerDayDefinition>
+
+
+
+			<ElitesPerDayDefinition StartingNight="8">
+
+			</ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="9">
+
+            <Elites Tier="4">1</Elites>
+
+            <Elites Tier="2">2</Elites>
+
+            <Elites Tier="1">4</Elites>
+
+         </ElitesPerDayDefinition>
+
+
+
+         <ElitesPerDayDefinition StartingNight="10">
+
+         </ElitesPerDayDefinition>
+
+
+
+		</ElitesPerDayDefinitions>
+
+
+
+		<DistanceMaxFromCenterPerDays>
+
+			<DistanceMaxFromCenterPerDay StartingNight="1" Value="6"/>
+
+			<DistanceMaxFromCenterPerDay StartingNight="2" Value="8"/>
+
+			<DistanceMaxFromCenterPerDay StartingNight="3" Value="18"/>
+
+			<DistanceMaxFromCenterPerDay StartingNight="4" Value="18"/>
+
+			<DistanceMaxFromCenterPerDay StartingNight="5" Value="15"/>
+
+			<DistanceMaxFromCenterPerDay StartingNight="6" Value="18"/>
+
+			<DistanceMaxFromCenterPerDay StartingNight="7" Value="20"/>
+
+			<DistanceMaxFromCenterPerDay StartingNight="8" Value="20"/>
+
+			<DistanceMaxFromCenterPerDay StartingNight="9" Value="20"/>
+
+         <DistanceMaxFromCenterPerDay StartingNight="10" Value="24"/>
+
+		</DistanceMaxFromCenterPerDays>
+
+
+
+		<SpawnPointsPerGroup>3</SpawnPointsPerGroup>
+
+		<SpawnPointRect Width="3" Height="2"/>
+
+
+
+		<DisallowedEnemies>
+
+			<EnemyId>HarplingVariation</EnemyId>
+
+		</DisallowedEnemies>
+
+
+
+	</SpawnDefinition>
+
+
+
+
+
+</SpawnDefinitions>

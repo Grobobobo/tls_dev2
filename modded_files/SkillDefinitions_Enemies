@@ -1801,7 +1801,7 @@
 
    <SkillDefinition Id="ArmoredAttack">
 
-      <Range Min="1" Max="2" CardinalDirectionOnly="true"/>
+      <Range Min="1" Max="3" CardinalDirectionOnly="true"/>
 
       <SkillAction>
 
@@ -2727,23 +2727,7 @@
 
                   <Stat Id="ActionPointsTotal"/>
 
-                  <Malus>1</Malus>
-
-                  <TurnsCount>1</TurnsCount>
-
-               </Debuff>
-
-               <Debuff>
-
-                  <BaseChance>1</BaseChance>
-
-                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-
-                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
-
-                  <Stat Id="MagicalDamage"/>
-
-                  <Malus>50</Malus>
+                  <Malus>2</Malus>
 
                   <TurnsCount>1</TurnsCount>
 
@@ -2932,6 +2916,108 @@
    </SkillDefinition>
 
 
+   <SkillDefinition Id="ApocGhostShortRangeDebuff" TemplateId="GhostShortRangeDebuff">
+
+      <SkillAction>
+
+         <Attack>
+
+            <BaseDamage Min="15" Max="20"/>
+
+            <AttackType>Magical</AttackType>
+
+            <DamageMultiplier>1</DamageMultiplier>
+
+            <SkillEffects>
+
+               <DecreaseStat>
+
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+
+                  <Stat Id="Mana"/>
+
+                  <LossValue>6</LossValue>
+
+               </DecreaseStat>
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="ApocGhostShortRangeDebuff1" TemplateId="GhostShortRangeDebuff">
+
+      <SkillAction>
+
+         <Attack>
+
+            <BaseDamage Min="15" Max="20"/>
+
+            <AttackType>Magical</AttackType>
+
+            <DamageMultiplier>1</DamageMultiplier>
+
+            <SkillEffects>
+
+               <DecreaseStat>
+
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+
+                  <Stat Id="Mana"/>
+
+                  <LossValue>7</LossValue>
+
+               </DecreaseStat>
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+   <SkillDefinition Id="ApocGhostShortRangeDebuff1" TemplateId="GhostShortRangeDebuff">
+
+      <SkillAction>
+
+         <Attack>
+
+            <BaseDamage Min="15" Max="20"/>
+
+            <AttackType>Magical</AttackType>
+
+            <DamageMultiplier>1</DamageMultiplier>
+
+            <SkillEffects>
+
+               <DecreaseStat>
+
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+
+                  <Stat Id="Mana"/>
+
+                  <LossValue>9</LossValue>
+
+               </DecreaseStat>
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+   </SkillDefinition>
 
    <!--<SkillDefinition Id="GhostAuraDebuff">
 
@@ -4851,7 +4937,7 @@
 
                   <BaseChance>1</BaseChance>
 
-                  <DamagePerTurn>8</DamagePerTurn>
+                  <DamagePerTurn>9</DamagePerTurn>
 
                   <TurnsCount>3</TurnsCount>
 
@@ -4947,7 +5033,7 @@
 
                   <BaseChance>1</BaseChance>
 
-                  <DamagePerTurn>11</DamagePerTurn>
+                  <DamagePerTurn>12</DamagePerTurn>
 
                   <TurnsCount>3</TurnsCount>
 

@@ -1004,7 +1004,7 @@
 
          <Goals>
 
-            <!-- Attack Heroes: aggro within 4 tiles-->
+            <!-- Attack Heroes: aggro within 5 tiles-->
 
             <Goal Id="01_ArmoredAttack">
 
@@ -1018,7 +1018,7 @@
 
                         <ConditionsGroup>
 
-                           <TargetInRangeCondition Max="Clamp(MovePoints,4,8)"/>
+                           <TargetInRangeCondition Max="Clamp(MovePoints,5,8)"/>
 
                         </ConditionsGroup>
 
@@ -1036,7 +1036,7 @@
 
             </Goal>
 
-            <!-- Attack Buildings: aggro within 2 tiles except obstacles (for now we aggregated Walls and other buildings since we don't care what they attack)-->
+            <!-- Attack Buildings: aggro within 3 tiles except obstacles (for now we aggregated Walls and other buildings since we don't care what they attack)-->
 
             <Goal Id="02_ArmoredAttack">
 
@@ -1050,7 +1050,7 @@
 
                         <ConditionsGroup>
 
-                           <TargetInRangeCondition Max="2"/>
+                           <TargetInRangeCondition Max="3"/>
 
                         </ConditionsGroup>
 
@@ -1937,6 +1937,12 @@
          <SkillProgression Id="GhostShortRangeDebuff1" UnlockedAtDay="8"/>
 
          <SkillProgression Id="GhostShortRangeDebuff2" UnlockedAtDay="11"/>
+
+         <SkillProgression Id="ApocGhostShortRangeDebuff" ApocalypseFlagUnlock="SuperEnemies"/>
+
+         <SkillProgression Id="ApocGhostShortRangeDebuff1" ApocalypseFlagUnlock="SuperEnemies" UnlockedAtDay="8"/>
+
+         <SkillProgression Id="ApocGhostShortRangeDebuff2" ApocalypseFlagUnlock="SuperEnemies" UnlockedAtDay="11"/>
 
          <SkillProgression Id="ApocGhostDebuff" ApocalypseFlagUnlock="SuperEnemies"/>
 
