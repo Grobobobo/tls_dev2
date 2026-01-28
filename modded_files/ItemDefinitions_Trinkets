@@ -3318,17 +3318,10 @@
 	<ItemDefinition Id="MedalPerkExplosiveAtoms">
 		<Category>Trinket</Category>
 		<LevelVariations>
-			<Level Id="4">
-				<MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
-				<BasePrice>100</BasePrice>
-				<Perks>
-					<Perk>ExplosiveAtoms</Perk>
-				</Perks>
-			</Level>
 			<Level Id="5">
-				<BasePrice>135</BasePrice>
+				<BasePrice>148</BasePrice>
 				<Perks>
-					<Perk>ExplosiveAtoms</Perk>
+					<Perk>Energized</Perk>
 				</Perks>
 			</Level>
 		</LevelVariations>
@@ -3350,11 +3343,17 @@
 	<ItemDefinition Id="MedalPerkSheerPower">
 		<Category>Trinket</Category>
 		<LevelVariations>
-			<Level Id="5">
+			<Level Id="4">
 				<MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
-				<BasePrice>148</BasePrice>
+				<BasePrice>100</BasePrice>
 				<Perks>
 					<Perk>SheerPower</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<BasePrice>135</BasePrice>
+				<Perks>
+				<Perk>SheerPower</Perk>
 				</Perks>
 			</Level>
 		</LevelVariations>
@@ -3482,7 +3481,7 @@
 				<MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
 				<BasePrice>148</BasePrice>
 				<Perks>
-					<Perk>FastToxins</Perk>
+					<Perk>PlagueDoctor</Perk>
 				</Perks>
 			</Level>
 		</LevelVariations>
@@ -3527,13 +3526,13 @@
 				<MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
 				<BasePrice>100</BasePrice>
 				<Perks>
-					<Perk>HumanBallista</Perk>
+					<Perk>ManualControl</Perk>
 				</Perks>
 			</Level>
 			<Level Id="5">
 				<BasePrice>135</BasePrice>
 				<Perks>
-					<Perk>HumanBallista</Perk>
+					<Perk>ManualControl</Perk>
 				</Perks>
 			</Level>
 		</LevelVariations>
