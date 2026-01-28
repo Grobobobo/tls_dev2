@@ -1,0 +1,203 @@
+<PerkDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                               xsi:noNamespaceSchemaLocation="PerkDefinitions.xsd">
+
+   <!-- Modified perks -->
+   
+   <PerkDefinition Id="Fatality">
+      <TokenVariables>
+         <TokenVariable Key="HealthThresholdCurrent" Value="HealthThresholdBase + CurrentPhysDmgOverThreshold * 1"/> <!--Warning : when changing this formula or other values in this perk, also need to change it in SkillDefinitions_Perks.xml-->
+         <TokenVariable Key="HealthThresholdBase" Value="30"/>
+         <TokenVariable Key="HealthThresholdGainedPerPhysDmg" Value="1"/>
+         <TokenVariable Key="SkillId" Value="FinishHim"/>
+         <TokenVariable Key="CurrentPhysDmgOverThreshold" Value="Max(0, Owner.PhysicalDamage - MinimumPhysDmgThreshold)"/>
+         <TokenVariable Key="PhysDmgStepSize" Value="1"/>
+         <TokenVariable Key="MinimumPhysDmgThreshold" Value="100"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument Stat="HealthTotal" Value="HealthThresholdBase" DisplaySign="false" Style="KeyWordNb"/>
+         <LocArgument Value="HealthThresholdGainedPerPhysDmg" Style="KeyWordNb"/>
+         <StatArgument Stat="HealthTotal" Value="HealthThresholdCurrent" Interpreted="true" Style="KeyWordNb"/>
+         <LocalizedArgument Prefix="SkillName_" Value="SkillId" Style="Skill"/>
+         <StatArgument Stat="PhysicalDamage" Value="PhysDmgStepSize" DisplaySign="false" Interpreted="true"/>
+         <LocArgument Value="MinimumPhysDmgThreshold" Interpreted="true" Style="KeyWordNb"/>
+      </LocArguments>
+      <View>
+         <SkillsToShow>
+            <SkillToShow Id="FinishHim"/> <!-- TODO use "SkillId" TokenVariable if ever implemented-->
+         </SkillsToShow>
+         <DisplayBonusBeforePurchase/>
+         <DisplayInHUD>
+            <GreyOut>
+               <IsFalse Value="ContextualSkillActive"/>
+            </GreyOut>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Effects>
+               <UnlockContextualSkill ContextualSkillId="FinishHim"/> <!-- TODO use "SkillId" TokenVariable if ever implemented-->
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="SpikySkin">
+      <TokenVariables>
+         <TokenVariable Key="DodgeMalus" Value="-30"/>
+         <TokenVariable Key="BlockBonus" Value="12"/>
+         <TokenVariable Key="SkillDamage" Value="BaseDamage + Floor(Owner.Block * (BlockPercentage / 100))"/>
+         <TokenVariable Key="BlockPercentage" Value="300"/>
+         <TokenVariable Key="BaseDamage" Value="50"/>
+         <TokenVariable Key="SkillId" Value="SpikySkinPerkSkill"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="BlockPercentage" Suffix="%" Style="KeyWordNb"/>
+         <StatArgument Stat="Block"/>
+         <LocalizedArgument Prefix="SkillName_" Value="SkillId" Style="Skill"/>
+         <LocArgument Value="SkillDamage" Interpreted="true" Style="Damage"/>
+         <LocArgument Value="BaseDamage" Style="KeyWordNb"/>
+         <StatArgument Stat="Dodge" Value="DodgeMalus"/>
+         <StatArgument Stat="Block" Value="BlockBonus"/>
+      </LocArguments>
+      <View>
+         <SkillsToShow>
+            <SkillToShow Id="SpikySkinPerkSkill"/> <!-- TODO use "SkillId" TokenVariable if ever implemented-->
+         </SkillsToShow>
+         <DisplayInHUD/>
+         <DisplayBonusBeforePurchase/>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnHitTaken">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="IsCasterUnit"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <StatModifier Stat="Dodge" Value="DodgeMalus"/>
+               <StatModifier Stat="Block" Value="BlockBonus"/>
+               <CastSkill SkillId="SpikySkinPerkSkill"> <!-- TODO use "SkillId" TokenVariable if ever implemented-->
+                  <PerkTargeting TargetingReference="Caster" TargetingMethod="Self"/>
+               </CastSkill>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="HeadOn">
+      <TokenVariables>
+         <TokenVariable Key="MovementConditionWasValid" Value="TilesCrossedUnusedFromPreviousTurns + (TilesCrossedThisTurnBeforeCast - TilesCrossedThisTurnOnLastPerkUse) > TilesCrossedThreshold - 1"/>
+         <TokenVariable Key="MovementConditionIsValid" Value="TilesCrossedCurrentCount > TilesCrossedThreshold - 1"/>
+         <TokenVariable Key="RemainingTilesToCross" Value="Max(0, TilesCrossedThreshold - TilesCrossedCurrentCount)"/>
+         <!-- Here, we're using TotalMomentumTilesCrossedThisTurn as it contains all moves except teleports. We don't want Teleport to affect HeadOn, whereas we want teleport to affect SteadyAim. -->
+         <TokenVariable Key="TilesCrossedCurrentCount" Value="(TilesCrossedUnusedFromPreviousTurns + (Owner.TotalMomentumTilesCrossedThisTurn - TilesCrossedThisTurnOnLastPerkUse))"/>
+
+         <TokenVariable Key="TilesCrossedThisTurnOnLastPerkUse" Value="Module.Buffer"/> 
+         <TokenVariable Key="TilesCrossedThisTurnBeforeCast" Value="Module.Buffer2"/> <!-- as you can move during the skill with follow/maneuver, we need to keep track of this in order to know if the perk was used for the skill. -->
+         <TokenVariable Key="TilesCrossedUnusedFromPreviousTurns" Value="Module.Buffer3"/>
+
+         <TokenVariable Key="TilesCrossedThreshold" Value="4"/>
+         <TokenVariable Key="PhysicalDamageBonus" Value="35"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="TilesCrossedThreshold" Style="KeyWordNb"/>
+         <StatArgument Stat="PhysicalDamage" Value="PhysicalDamageBonus"/>
+         <LocalizedArgument Value="SkillEffectName_NoDodge" Style="NoDodge"/>
+         <LocArgument Value="RemainingTilesToCross" Interpreted="true" Style="KeyWordNb"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Buffer Value="RemainingTilesToCross"/>
+            <GreyOut>
+               <IsFalse Value="MovementConditionIsValid"/>
+            </GreyOut>
+            <Highlight>
+               <IsTrue Value="MovementConditionIsValid"/>
+               <IsTrue Value="HasTargetTile"/>
+               <IsTrue Value="Skill.IsAttack"/>
+            </Highlight>
+         </DisplayInHUD>
+         <CompendiumEntries>
+            <CompendiumEntry Id="SkillEffect_NoDodge"/>
+            <CompendiumEntry Id="SkillEffect_NoMomentum"/>
+         </CompendiumEntries>
+         <FeedbackActivationConditions>
+            <IsTrue Value="MovementConditionIsValid"/>
+         </FeedbackActivationConditions>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnSkillCastBegin">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer2" Value="Owner.TotalMomentumTilesCrossedThisTurn"/> <!--TilesCrossedThisTurnBeforeCast = TotalMomentumTilesCrossedThisTurn-->
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="MovementConditionWasValid"/>
+                  </Conditions>
+                  <Actions>
+                     <ForbidSkillUndo/>
+                     <SetBufferTo BufferIndex="Buffer" Value="Module.Buffer2"/> <!--TilesCrossedThisTurnOnLastPerkUse = TilesCrossedThisTurnBeforeCast-->
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/> <!--TilesCrossedUnusedFromPreviousTurns = 0-->
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Actions>
+                     <RefreshPerkActivationFeedback/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillUndo">
+                  <Actions>
+                     <RefreshPerkActivationFeedback/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnMovementEnd">
+                  <Actions>
+                     <RefreshPerkActivationFeedback/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnEndNightTurnPlayable">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer3" Value="Module.Buffer3 + (Owner.TotalMomentumTilesCrossedThisTurn - Module.Buffer)"/> <!--TilesCrossedUnusedFromPreviousTurns += TotalMomentumTilesCrossedThisTurn - TilesCrossedThisTurnOnLastPerkUse-->
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/> <!--TilesCrossedThisTurnOnLastPerkUse = 0-->
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/> <!--TilesCrossedThisTurnOnLastPerkUse = 0-->
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/> <!--TilesCrossedUnusedFromPreviousTurns = 0-->
+                     <RefreshPerkActivationFeedback RefreshView="false"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Conditions>
+               <IsTrue Value="MovementConditionIsValid"/>
+            </Conditions>
+            <Effects>
+               <StatModifier Stat="PhysicalDamage" Value="PhysicalDamageBonus"/>
+               <AddSkillEffect>
+                  <Conditions>
+                     <IsTrue Value="HasPerkData"/>
+                     <IsTrue Value="HasSkill"/>
+                     <IsTrue Value="MovementConditionIsValid"/>
+                     <IsTrue Value="Skill.IsAttack"/>
+                  </Conditions>
+                  <SkillEffects>
+                     <NoDodge/>
+                  </SkillEffects>
+               </AddSkillEffect>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+</PerkDefinitions>
