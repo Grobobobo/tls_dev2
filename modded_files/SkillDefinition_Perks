@@ -196,7 +196,7 @@
 
       <UsesPerTurnCount>2</UsesPerTurnCount>
 
-      <Range Min="1" Max="9"/>
+      <Range Min="1" Max="9" Modifiable="true"/>
 
       <SkillAction>
 
@@ -292,7 +292,7 @@
 
       <UsesPerTurnCount>2</UsesPerTurnCount>
 
-      <Range Min="1" Max="9"/>
+      <Range Min="1" Max="9" Modifiable="true"/>
 
       <SkillAction>
 
@@ -668,11 +668,17 @@
 
       <Range Min="2" Max="6" Modifiable="true"/>
 
+      <AreaOfEffect OriginX="0" OriginY="0">
+         e
+         X
+
+      </AreaOfEffect>
+
       <SkillAction>
 
          <Attack>
 
-            <BaseDamage Min="90" Max="125"/>
+            <BaseDamage Min="135" Max="188"/>
 
             <AttackType>Adaptative</AttackType>
 
@@ -680,9 +686,16 @@
 
             <SkillEffects>
 
+               <ArmorPiercing/>
+
                <!-- <IgnoreLineOfSight/> -->
 
                <!-- <NoDodge/> -->
+               <SurroundingEffect>
+
+                  <Damage Multiplier="0.5"/>
+
+               </SurroundingEffect>
 
             </SkillEffects>
 

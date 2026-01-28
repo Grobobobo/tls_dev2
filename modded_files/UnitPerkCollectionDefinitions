@@ -256,13 +256,13 @@
 
       <UnitPerkTierDefinition Tier="1">
 
-         <UnitPerkDefinition Id="BackProtection"/>
+         <UnitPerkDefinition Id="DefensiveTraining"/>
 
       </UnitPerkTierDefinition>
 
       <UnitPerkTierDefinition Tier="2">
 
-         <UnitPerkDefinition Id="DefensiveTraining"/>
+         <UnitPerkDefinition Id="AgainstTheWall"/>
 
       </UnitPerkTierDefinition>
 
@@ -270,13 +270,13 @@
 
          <!--<UnitPerkDefinition Id="Resupply"/>-->
 
-         <UnitPerkDefinition Id="ManualControl"/>
+         <UnitPerkDefinition Id="HumanBallista"/>
 
       </UnitPerkTierDefinition>
 
       <UnitPerkTierDefinition Tier="4">
 
-         <UnitPerkDefinition Id="HumanBallista"/>
+         <UnitPerkDefinition Id="ManualControl"/>
 
       </UnitPerkTierDefinition>
 

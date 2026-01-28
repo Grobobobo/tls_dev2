@@ -1575,7 +1575,7 @@
          <TokenVariable Key="SkillHasMoveCost" Value="Skill.MovePointsCost > 0"/>
          <TokenVariable Key="TargetMinDistanceToActivate" Value="5"/>
          <TokenVariable Key="MovePointsValueToCancelActivation" Value="3"/>
-         <TokenVariable Key="MovePointsMultiplier" Value="1.5"/>
+         <TokenVariable Key="MovePointsMultiplier" Value="2"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="HealthTotal"/>
@@ -2608,6 +2608,101 @@
       </Modules>
    </PerkDefinition>
    
+   <!-- T2 -->
+   <PerkDefinition Id="AgainstTheWall">
+      <TokenVariables>
+         <TokenVariable Key="EffectDisplayValueDamage" Value="(TotalDamageBonus) * IsPerkActive"/>
+         <TokenVariable Key="EffectDisplayValueArmor" Value="(TotalArmorBonus) * IsPerkActive"/>
+         <TokenVariable Key="PerkNeedUpdate" Value="Module.Buffer ! IsPerkActive"/>
+         <TokenVariable Key="IsPerkActive" Value="BooleanChoice(Owner.IsBackProtectionValid, 1, -1)"/>
+         <TokenVariable Key="TotalDamageBonus" Value="BaseDamageBonus + ScalingDamageBonus * Owner.Level"/>
+         <TokenVariable Key="BaseDamageBonus" Value="10"/>
+         <TokenVariable Key="ScalingDamageBonus" Value="2"/>
+         <TokenVariable Key="TotalArmorBonus" Value="BaseArmorBonus + ScalingArmorBonus * Owner.Level"/>
+         <TokenVariable Key="BaseArmorBonus" Value="25"/>
+         <TokenVariable Key="ScalingArmorBonus" Value="5"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument Stat="OverallDamage" Value="BaseDamageBonus"/>
+         <LocArgument Value="ScalingDamageBonus" Style="GoodNb"/>
+         <StatArgument Stat="OverallDamage" Value="TotalDamageBonus" Interpreted="true"/>
+         <StatArgument Stat="ArmorTotal" Value="BaseArmorBonus"/>
+         <LocArgument Value="ScalingArmorBonus" Style="GoodNb"/>
+         <StatArgument Stat="ArmorTotal" Value="TotalArmorBonus" Interpreted="true"/>
+      </LocArguments>
+      <View>
+         <DisplayBonusBeforePurchase/>
+         <DisplayInHUD>
+            <Bonus Value="TotalDamageBonus"/>
+            <Bonus Value="TotalArmorBonus"/>
+            <GreyOut>
+               <IsFalse Value="Module.IsActive"/>
+            </GreyOut>
+            <HoverDisplay>
+               <HoverRange Range="1"/>
+            </HoverDisplay>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule DefaultBufferValue="-1">
+            <Events>
+               <Event EffectTime="OnStartNightTurnPlayable">
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnCreationAfterViewInitialized">
+                  <Conditions>
+                     <IsTrue Value="Module.IsActive"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo Value="IsPerkActive"/>
+                     <InstantiateStatEffectDisplay Value="EffectDisplayValueDamage" Stat="OverallDamage"/>
+                     <InstantiateStatEffectDisplay Value="EffectDisplayValueArmor" Stat="Armor"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnBuildingConstructed">
+                  <Conditions>
+                     <IsTrue Value="PerkNeedUpdate"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo Value="IsPerkActive"/>
+                     <InstantiateStatEffectDisplay Value="EffectDisplayValueDamage" Stat="OverallDamage"/>
+                     <InstantiateStatEffectDisplay Value="EffectDisplayValueArmor" Stat="Armor"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnBuildingDestroyed">
+                  <Conditions>
+                     <IsTrue Value="PerkNeedUpdate"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo Value="IsPerkActive"/>
+                     <InstantiateStatEffectDisplay Value="EffectDisplayValueDamage" Stat="OverallDamage"/>
+                     <InstantiateStatEffectDisplay Value="EffectDisplayValueArmor" Stat="Armor"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnMovementEnd">
+                  <Conditions>
+                     <IsTrue Value="PerkNeedUpdate"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo Value="IsPerkActive"/>
+                     <InstantiateStatEffectDisplay Value="EffectDisplayValueDamage" Stat="OverallDamage"/>
+                     <InstantiateStatEffectDisplay Value="EffectDisplayValueArmor" Stat="Armor"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Conditions>
+               <IsTrue Value="IsPerkActive = 1"/>
+            </Conditions>
+            <Effects>
+               <StatModifier Stat="OverallDamage" Value="TotalDamageBonus"/>
+               <StatModifier Stat="Armor" Value="TotalArmorBonus"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
    <!-- T3 -->
    <PerkDefinition Id="ManualControl">
       <TokenVariables>
