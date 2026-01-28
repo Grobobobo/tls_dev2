@@ -600,7 +600,7 @@
          <TokenVariable Key="EnemiesToKill" Value="4"/>
          <TokenVariable Key="ManaRegenBonus" Value="1"/>
          <TokenVariable Key="BonusMax" Value="Floor(Owner.ManaTotal * (ManaPercentage/100))"/>
-         <TokenVariable Key="ManaPercentage" Value="25"/>
+         <TokenVariable Key="ManaPercentage" Value="50"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="EnemiesToKill" Style="KeyWordNb"/>
@@ -711,25 +711,25 @@
    <!-- T2 -->
    <PerkDefinition Id="MagicFuel">
       <TokenVariables>
-         <TokenVariable Key="OverallDamageBonus" Value="Floor(Owner.Mana * (ManaPercentage / 100))"/>
-         <TokenVariable Key="ManaPercentage" Value="30"/>
+         <TokenVariable Key="MagicalDamageBonus" Value="Floor(Owner.Mana * (ManaPercentage / 100))"/>
+         <TokenVariable Key="ManaPercentage" Value="40"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="ManaPercentage" Suffix="%" Style="KeyWordNb"/>
-         <StatArgument Stat="OverallDamage"/>
+         <StatArgument Stat="MagicalDamage"/>
          <StatArgument Stat="ManaTotal"/>
-         <StatArgument Stat="OverallDamage" Value="OverallDamageBonus" Interpreted="true"/>
+         <StatArgument Stat="MagicalDamage" Value="MagicalDamageBonus" Interpreted="true"/>
       </LocArguments>
       <View>
          <DisplayBonusBeforePurchase/>
          <DisplayInHUD>
-            <Bonus Value="OverallDamageBonus"/>
+            <Bonus Value="MagicalDamageBonus"/>
          </DisplayInHUD>
       </View>
       <Modules>
          <BufferModule>
             <Effects>
-               <StatModifier Stat="OverallDamage" Value="OverallDamageBonus"/>
+               <StatModifier Stat="MagicalDamage" Value="MagicalDamageBonus"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -773,7 +773,7 @@
          <TokenVariable Key="ReductionIsActive" Value="ActionPointsToSpendLeft = 0"/>
          <TokenVariable Key="ManaCostReduction" Value="Ceil(ManaCostBase / ManaCostDivider)"/>
          <TokenVariable Key="ManaCostBase" Value="BooleanChoice(Owner.IsManaCostLocked, 0, Skill.BaseManaCost)"/>
-         <TokenVariable Key="ManaCostDivider" Value="2"/>
+         <TokenVariable Key="ManaCostDivider" Value="5"/>
          <TokenVariable Key="ActionPointsToSpendLeft" Value="Max(0, ActionPointsSpentThreshold - Module.Buffer)"/>
          <TokenVariable Key="ActionPointsSpentThreshold" Value="8"/>
          <TokenVariable Key="RealActionPointsSpent" Value="Module.Buffer3"/>
@@ -853,9 +853,9 @@
          <TokenVariable Key="SkillHasManaCost" Value="Skill.ManaCost > 0"/>
          <TokenVariable Key="ManaThresholdReached" Value="ManaToSpendLeft = 0"/>
          <TokenVariable Key="ActionPointsRestoreTotal" Value="ActionPointsRestoreValue * Floor(Module.Buffer / ManaSpentThreshold)"/>
-         <TokenVariable Key="ActionPointsRestoreValue" Value="1"/>
+         <TokenVariable Key="ActionPointsRestoreValue" Value="2"/>
          <TokenVariable Key="ManaToSpendLeft" Value="Max(0, ManaSpentThreshold - Module.Buffer)"/>
-         <TokenVariable Key="ManaSpentThreshold" Value="7"/>
+         <TokenVariable Key="ManaSpentThreshold" Value="10"/>
          <TokenVariable Key="RealManaSpent" Value="Module.Buffer3"/>
       </TokenVariables>
       <LocArguments>
@@ -942,10 +942,10 @@
    <PerkDefinition Id="ExplosiveAtoms">
       <TokenVariables>
          <TokenVariable Key="TriggerCondition" Value="BooleanChoice(Owner.IsManaCostLocked, 0, Skill.BaseManaCost) > 0"/>
-         <TokenVariable Key="CriticalPowerBonus" Value="50"/>
+         <TokenVariable Key="PerkDamageBonus" Value="20"/>
       </TokenVariables>
       <LocArguments>
-         <StatArgument Stat="CriticalPower" Value="CriticalPowerBonus"/>
+         <StatArgument Stat="PerkDamage" Value="PerkDamageBonus"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -963,7 +963,7 @@
                <IsTrue Value="Skill.IsAttack"/>
             </Conditions>
             <Effects>
-               <SkillModifier ComputationStat="CriticalPower" Value="CriticalPowerBonus">
+               <SkillModifier ComputationStat="PerkDamage" Value="PerkDamageBonus">
                   <Conditions>
                      <IsTrue Value="TriggerCondition"/>
                   </Conditions>
@@ -3822,9 +3822,9 @@
          <TokenVariable Key="BonusStacksGrantedByCurrentTrigger" Value="Floor(Module.Buffer / EnemiesToKill)"/>
          <TokenVariable Key="RemainingEnemiesToKill" Value="EnemiesToKill - Module.Buffer"/>
          <TokenVariable Key="EnemiesToKill" Value="4"/>
-         <TokenVariable Key="HealthRegenBonus" Value="3"/>
+         <TokenVariable Key="HealthRegenBonus" Value="6"/>
          <TokenVariable Key="BonusMax" Value="Floor(Owner.HealthTotal * (HealthPercentage/100))"/>
-         <TokenVariable Key="HealthPercentage" Value="20"/>
+         <TokenVariable Key="HealthPercentage" Value="50"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="EnemiesToKill" Style="KeyWordNb"/>
@@ -3908,25 +3908,25 @@
 
    <PerkDefinition Id="SanguineFuel">
       <TokenVariables>
-         <TokenVariable Key="OverallDamageBonus" Value="Floor(Owner.Health * (HealthPercentage / 100))"/>
-         <TokenVariable Key="HealthPercentage" Value="5"/>
+         <TokenVariable Key="MagicalDamageBonus" Value="Floor(Owner.Health * (HealthPercentage / 100))"/>
+         <TokenVariable Key="HealthPercentage" Value="8"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="HealthPercentage" Suffix="%" Style="KeyWordNb"/>
-         <StatArgument Stat="OverallDamage"/>
+         <StatArgument Stat="MagicalDamage"/>
          <StatArgument Stat="HealthTotal"/>
-         <StatArgument Stat="OverallDamage" Value="OverallDamageBonus" Interpreted="true"/>
+         <StatArgument Stat="MagicalDamage" Value="MagicalDamageBonus" Interpreted="true"/>
       </LocArguments>
       <View>
          <DisplayBonusBeforePurchase/>
          <DisplayInHUD>
-            <Bonus Value="OverallDamageBonus"/>
+            <Bonus Value="MagicalDamageBonus"/>
          </DisplayInHUD>
       </View>
       <Modules>
          <BufferModule>
             <Effects>
-               <StatModifier Stat="OverallDamage" Value="OverallDamageBonus"/>
+               <StatModifier Stat="MagicalDamage" Value="MagicalDamageBonus"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -3935,7 +3935,7 @@
    <PerkDefinition Id="CriticalCarvings">
       <TokenVariables>
          <TokenVariable Key="CriticalBonus" Value="CriticalMultiplier * NumberOfStepsReached"/>
-         <TokenVariable Key="CriticalMultiplier" Value="2"/>
+         <TokenVariable Key="CriticalMultiplier" Value="4"/>
          <TokenVariable Key="NumberOfStepsReached" Value="Floor(CurrentHealthMissingPercentage / PercentageStep)"/>
          <TokenVariable Key="PercentageStep" Value="5"/>
          <TokenVariable Key="CurrentHealthMissingPercentage" Value="(100 - CurrentHealthPercentage)"/>
@@ -3969,7 +3969,7 @@
          <TokenVariable Key="ReductionIsActive" Value="ActionPointsToSpendLeft = 0"/>
          <TokenVariable Key="HealthCostReduction" Value="Ceil(HealthCostBase / HealthCostDivider)"/>
          <TokenVariable Key="HealthCostBase" Value="Skill.HealthCost"/>
-         <TokenVariable Key="HealthCostDivider" Value="2"/>
+         <TokenVariable Key="HealthCostDivider" Value="20"/>
          <TokenVariable Key="ActionPointsToSpendLeft" Value="Max(0, ActionPointsSpentThreshold - Module.Buffer)"/>
          <TokenVariable Key="ActionPointsSpentThreshold" Value="8"/>
          <TokenVariable Key="RealActionPointsSpend" Value="Module.Buffer3"/>
@@ -4115,10 +4115,10 @@
    <PerkDefinition Id="ExplosiveHemoglobin">
       <TokenVariables>
          <TokenVariable Key="TriggerCondition" Value="Skill.HealthCost > 0"/>
-         <TokenVariable Key="CriticalPowerBonus" Value="50"/>
+         <TokenVariable Key="PerkDamageBonus" Value="20"/>
       </TokenVariables>
       <LocArguments>
-         <StatArgument Stat="CriticalPower" Value="CriticalPowerBonus"/>
+         <StatArgument Stat="PerkDamage" Value="PerkDamageBonus"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -4136,7 +4136,7 @@
                <IsTrue Value="Skill.IsAttack"/>
             </Conditions>
             <Effects>
-               <SkillModifier ComputationStat="CriticalPower" Value="CriticalPowerBonus">
+               <SkillModifier ComputationStat="PerkDamage" Value="PerkDamageBonus">
                   <Conditions>
                      <IsTrue Value="TriggerCondition"/>
                   </Conditions>
