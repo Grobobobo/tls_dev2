@@ -22,7 +22,7 @@
 
       <GuardiansGroup Id="2B_HamDag_01">
 
-         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedHammer" Weight="2"/>
 
          <Guardian Id="UnnamedDagger" Weight="1"/>
 
@@ -44,9 +44,9 @@
 
       <GuardiansGroup Id="3B_HamShort_01">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
 
       </GuardiansGroup>
 
@@ -54,9 +54,9 @@
 
       <GuardiansGroup Id="3B_HamWand_01">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedWand" Weight="1"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
 
       </GuardiansGroup>
 
@@ -64,9 +64,9 @@
 
       <GuardiansGroup Id="3B_HamShort_02">
 
-         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedHammer" Weight="2"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -74,9 +74,9 @@
 
       <GuardiansGroup Id="3B_HamWand_02">
 
-         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedHammer" Weight="2"/>
 
-         <Guardian Id="UnnamedWand" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -84,27 +84,7 @@
 
       <GuardiansGroup Id="3B_DagShort_01">
 
-         <Guardian Id="UnnamedDagger" Weight="2"/>
-
-         <Guardian Id="UnnamedShortbow" Weight="1"/>
-
-      </GuardiansGroup>
-
-
-
-      <GuardiansGroup Id="3B_DagWand_01">
-
-         <Guardian Id="UnnamedDagger" Weight="2"/>
-
-         <Guardian Id="UnnamedWand" Weight="1"/>
-
-      </GuardiansGroup>
-
-
-
-      <GuardiansGroup Id="3B_DagShort_02">
-
-         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
          <Guardian Id="UnnamedShortbow" Weight="2"/>
 
@@ -112,9 +92,9 @@
 
 
 
-      <GuardiansGroup Id="3B_DagWand_02">
+      <GuardiansGroup Id="3B_DagWand_01">
 
-         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
          <Guardian Id="UnnamedWand" Weight="2"/>
 
@@ -122,11 +102,31 @@
 
 
 
+      <GuardiansGroup Id="3B_DagShort_02">
+
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+
+         <Guardian Id="UnnamedShortbow" Weight="3"/>
+
+      </GuardiansGroup>
+
+
+
+      <GuardiansGroup Id="3B_DagWand_02">
+
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+
+         <Guardian Id="UnnamedWand" Weight="3"/>
+
+      </GuardiansGroup>
+
+
+
       <GuardiansGroup Id="3B_HamShortWand_01">
 
-         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedHammer" Weight="2"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
 
          <Guardian Id="UnnamedWand" Weight="1"/>
 
@@ -136,9 +136,9 @@
 
       <GuardiansGroup Id="3B_DagShortWand_01">
 
-         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedDagger" Weight="2"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
 
          <Guardian Id="UnnamedWand" Weight="1"/>
 
@@ -160,9 +160,9 @@
 
       <GuardiansGroup Id="4B_HamCrossWand_01">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedCrossbow" Weight="1"/>
+         <Guardian Id="UnnamedCrossbow" Weight="2"/>
 
          <Guardian Id="UnnamedWand" Weight="1"/>
 
@@ -172,11 +172,11 @@
 
       <GuardiansGroup Id="4B_HamCrossWand_02">
 
-         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedHammer" Weight="2"/>
 
          <Guardian Id="UnnamedCrossbow" Weight="1"/>
 
-         <Guardian Id="UnnamedWand" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -184,9 +184,9 @@
 
       <GuardiansGroup Id="4B_DagCrossWand_01">
 
-         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
-         <Guardian Id="UnnamedCrossbow" Weight="1"/>
+         <Guardian Id="UnnamedCrossbow" Weight="2"/>
 
          <Guardian Id="UnnamedWand" Weight="1"/>
 
@@ -196,11 +196,11 @@
 
       <GuardiansGroup Id="4B_DagCrossWand_02">
 
-         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedDagger" Weight="2"/>
 
          <Guardian Id="UnnamedCrossbow" Weight="1"/>
 
-         <Guardian Id="UnnamedWand" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -208,9 +208,9 @@
 
       <GuardiansGroup Id="4B_HamShortTome_01">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
 
          <Guardian Id="UnnamedTome" Weight="1"/>
 
@@ -220,11 +220,11 @@
 
       <GuardiansGroup Id="4B_HamShortTome_02">
 
-         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedHammer" Weight="2"/>
 
          <Guardian Id="UnnamedShortbow" Weight="1"/>
 
-         <Guardian Id="UnnamedTome" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -232,9 +232,9 @@
 
       <GuardiansGroup Id="4B_DagShortTome_01">
 
-         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
 
          <Guardian Id="UnnamedTome" Weight="1"/>
 
@@ -244,11 +244,11 @@
 
       <GuardiansGroup Id="4B_DagShortTome_02">
 
-         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedDagger" Weight="2"/>
 
          <Guardian Id="UnnamedShortbow" Weight="1"/>
 
-         <Guardian Id="UnnamedTome" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -256,9 +256,9 @@
 
       <GuardiansGroup Id="4B_HamCrossTome_01">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedCrossbow" Weight="1"/>
+         <Guardian Id="UnnamedCrossbow" Weight="2"/>
 
          <Guardian Id="UnnamedTome" Weight="1"/>
 
@@ -268,9 +268,9 @@
 
       <GuardiansGroup Id="4B_DagCrossTome_01">
 
-         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
-         <Guardian Id="UnnamedCrossbow" Weight="1"/>
+         <Guardian Id="UnnamedCrossbow" Weight="2"/>
 
          <Guardian Id="UnnamedTome" Weight="1"/>
 
@@ -296,11 +296,11 @@
 
       <GuardiansGroup Id="5B_HamShortWand_01">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="3"/>
 
-         <Guardian Id="UnnamedWand" Weight="1"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
 
       </GuardiansGroup>
 
@@ -308,11 +308,11 @@
 
       <GuardiansGroup Id="5B_HamShortWand_02">
 
-         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedHammer" Weight="2"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="3"/>
 
-         <Guardian Id="UnnamedWand" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -320,11 +320,11 @@
 
       <GuardiansGroup Id="5B_HamShortWand_03">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
 
-         <Guardian Id="UnnamedWand" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -332,11 +332,11 @@
 
       <GuardiansGroup Id="5B_HamCrossWand_01">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="3"/>
 
-         <Guardian Id="UnnamedWand" Weight="1"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
 
       </GuardiansGroup>
 
@@ -344,11 +344,11 @@
 
       <GuardiansGroup Id="5B_HamCrossWand_02">
 
-         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedHammer" Weight="2"/>
 
-         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="3"/>
 
-         <Guardian Id="UnnamedWand" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -356,11 +356,11 @@
 
       <GuardiansGroup Id="5B_HamCrossWand_03">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedCrossbow" Weight="1"/>
+         <Guardian Id="UnnamedCrossbow" Weight="2"/>
 
-         <Guardian Id="UnnamedWand" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -368,11 +368,11 @@
 
       <GuardiansGroup Id="5B_HamShortTome_01">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="3"/>
 
-         <Guardian Id="UnnamedTome" Weight="1"/>
+         <Guardian Id="UnnamedTome" Weight="2"/>
 
       </GuardiansGroup>
 
@@ -380,11 +380,11 @@
 
       <GuardiansGroup Id="5B_HamShortTome_02">
 
-         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedHammer" Weight="2"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="3"/>
 
-         <Guardian Id="UnnamedTome" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -392,11 +392,11 @@
 
       <GuardiansGroup Id="5B_HamShortTome_03">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
 
-         <Guardian Id="UnnamedTome" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -404,11 +404,11 @@
 
       <GuardiansGroup Id="5B_HamCrossTome_01">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="3"/>
 
-         <Guardian Id="UnnamedTome" Weight="1"/>
+         <Guardian Id="UnnamedTome" Weight="2"/>
 
       </GuardiansGroup>
 
@@ -416,11 +416,11 @@
 
       <GuardiansGroup Id="5B_HamCrossTome_02">
 
-         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedHammer" Weight="2"/>
 
-         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="3"/>
 
-         <Guardian Id="UnnamedTome" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -428,11 +428,11 @@
 
       <GuardiansGroup Id="5B_HamCrossTome_03">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedCrossbow" Weight="1"/>
+         <Guardian Id="UnnamedCrossbow" Weight="2"/>
 
-         <Guardian Id="UnnamedTome" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -444,11 +444,11 @@
 
       <GuardiansGroup Id="5B_DagShortWand_01">
 
-         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="3"/>
 
-         <Guardian Id="UnnamedWand" Weight="1"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
 
       </GuardiansGroup>
 
@@ -456,11 +456,11 @@
 
       <GuardiansGroup Id="5B_DagShortWand_02">
 
-         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedDagger" Weight="2"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="3"/>
 
-         <Guardian Id="UnnamedWand" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -468,11 +468,11 @@
 
       <GuardiansGroup Id="5B_DagShortWand_03">
 
-         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
 
-         <Guardian Id="UnnamedWand" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -480,11 +480,11 @@
 
       <GuardiansGroup Id="5B_DagCrossWand_01">
 
-         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
-         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="3"/>
 
-         <Guardian Id="UnnamedWand" Weight="1"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
 
       </GuardiansGroup>
 
@@ -492,11 +492,11 @@
 
       <GuardiansGroup Id="5B_DagCrossWand_02">
 
-         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedDagger" Weight="2"/>
 
-         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="3"/>
 
-         <Guardian Id="UnnamedWand" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -504,11 +504,11 @@
 
       <GuardiansGroup Id="5B_DagCrossWand_03">
 
-         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
-         <Guardian Id="UnnamedCrossbow" Weight="1"/>
+         <Guardian Id="UnnamedCrossbow" Weight="2"/>
 
-         <Guardian Id="UnnamedWand" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -516,11 +516,11 @@
 
       <GuardiansGroup Id="5B_DagShortTome_01">
 
-         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="3"/>
 
-         <Guardian Id="UnnamedTome" Weight="1"/>
+         <Guardian Id="UnnamedTome" Weight="2"/>
 
       </GuardiansGroup>
 
@@ -528,11 +528,11 @@
 
       <GuardiansGroup Id="5B_DagShortTome_02">
 
-         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedDagger" Weight="2"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="3"/>
 
-         <Guardian Id="UnnamedTome" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -540,11 +540,11 @@
 
       <GuardiansGroup Id="5B_DagShortTome_03">
 
-         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
 
-         <Guardian Id="UnnamedTome" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -552,11 +552,11 @@
 
       <GuardiansGroup Id="5B_DagCrossTome_01">
 
-         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
-         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="3"/>
 
-         <Guardian Id="UnnamedTome" Weight="1"/>
+         <Guardian Id="UnnamedTome" Weight="2"/>
 
       </GuardiansGroup>
 
@@ -564,11 +564,11 @@
 
       <GuardiansGroup Id="5B_DagCrossTome_02">
 
-         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedDagger" Weight="2"/>
 
-         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="3"/>
 
-         <Guardian Id="UnnamedTome" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -576,11 +576,11 @@
 
       <GuardiansGroup Id="5B_DagCrossTome_03">
 
-         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
-         <Guardian Id="UnnamedCrossbow" Weight="1"/>
+         <Guardian Id="UnnamedCrossbow" Weight="2"/>
 
-         <Guardian Id="UnnamedTome" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -592,11 +592,11 @@
 
       <GuardiansGroup Id="5B_HamDagShort_01">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedDagger" Weight="2"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -604,11 +604,11 @@
 
       <GuardiansGroup Id="5B_HamDagShort_02">
 
-         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedHammer" Weight="2"/>
 
-         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -616,11 +616,11 @@
 
       <GuardiansGroup Id="5B_HamDagCross_01">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedDagger" Weight="2"/>
 
-         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -628,11 +628,11 @@
 
       <GuardiansGroup Id="5B_HamDagCross_02">
 
-         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedHammer" Weight="2"/>
 
-         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
-         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -640,11 +640,11 @@
 
       <GuardiansGroup Id="5B_HamDagWand_01">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedDagger" Weight="2"/>
 
-         <Guardian Id="UnnamedWand" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -652,11 +652,11 @@
 
       <GuardiansGroup Id="5B_HamDagWand_02">
 
-         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedHammer" Weight="2"/>
 
-         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
-         <Guardian Id="UnnamedWand" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -664,11 +664,11 @@
 
       <GuardiansGroup Id="5B_HamDagTome_01">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedDagger" Weight="2"/>
 
-         <Guardian Id="UnnamedTome" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -676,11 +676,11 @@
 
       <GuardiansGroup Id="5B_HamDagTome_02">
 
-         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedHammer" Weight="2"/>
 
-         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
-         <Guardian Id="UnnamedTome" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -700,13 +700,13 @@
 
       <GuardiansGroup Id="8B_Quatuor_01">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="3"/>
 
-         <Guardian Id="UnnamedWand" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -714,13 +714,13 @@
 
       <GuardiansGroup Id="8B_Quatuor_02">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
-         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="3"/>
 
-         <Guardian Id="UnnamedWand" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -728,13 +728,13 @@
 
       <GuardiansGroup Id="8B_Quatuor_03">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
-         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="3"/>
 
-         <Guardian Id="UnnamedTome" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -742,13 +742,13 @@
 
       <GuardiansGroup Id="8B_Quatuor_04">
 
-         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedHammer" Weight="3"/>
 
-         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="3"/>
 
-         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="3"/>
 
-         <Guardian Id="UnnamedTome" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="3"/>
 
       </GuardiansGroup>
 
@@ -768,15 +768,15 @@
 
       <GuardiansGroup Id="6B_Everyone_01">
 
-         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedHammer" Weight="2"/>
 
-         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedDagger" Weight="2"/>
 
          <Guardian Id="UnnamedShortbow" Weight="1"/>
 
          <Guardian Id="UnnamedCrossbow" Weight="1"/>
 
-         <Guardian Id="UnnamedWand" Weight="1"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
 
          <Guardian Id="UnnamedTome" Weight="1"/>
 
@@ -792,17 +792,17 @@
 
       <BraziersAmounts>
 
-         <BraziersAmount Night="1" Amount="2"/>
+         <BraziersAmount Night="1" Amount="3"/>
 
-         <BraziersAmount Night="2" Amount="3"/>
+         <BraziersAmount Night="2" Amount="5"/>
 
-         <BraziersAmount Night="5" Amount="4"/>
+         <BraziersAmount Night="5" Amount="6"/>
 
-         <BraziersAmount Night="8" Amount="5"/>
+         <BraziersAmount Night="8" Amount="8"/>
 
-         <BraziersAmount Night="12" Amount="8"/>
+         <BraziersAmount Night="12" Amount="12"/>
 
-         <BraziersAmount Night="13" Amount="6"/> 
+         <BraziersAmount Night="13" Amount="9"/> 
 
          <BraziersAmount Night="14" Amount="0"/> 
 
