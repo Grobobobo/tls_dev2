@@ -2904,25 +2904,25 @@
    
    <PerkDefinition Id="Coagulation">
       <TokenVariables>
-         <TokenVariable Key="ArmorBonus" Value="Floor(Owner.HealthRegen * HealthRegenPercentage / 100)"/>
-         <TokenVariable Key="HealthRegenPercentage" Value="110"/>
+         <TokenVariable Key="BlockBonus" Value="Floor(Owner.HealthRegen * HealthRegenPercentage / 100)"/>
+         <TokenVariable Key="HealthRegenPercentage" Value="35"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="HealthRegenPercentage" Suffix="%" Style="KeyWordNb"/>
-         <StatArgument Stat="ArmorTotal"/>
+         <StatArgument Stat="Block"/>
          <StatArgument Stat="HealthRegen"/>
-         <StatArgument Stat="ArmorTotal" Value="ArmorBonus" Interpreted="true"/>
+         <StatArgument Stat="Block" Value="BlockBonus" Interpreted="true"/>
       </LocArguments>
       <View>
          <DisplayBonusBeforePurchase/>
          <DisplayInHUD>
-            <Bonus Value="ArmorBonus"/>
+            <Bonus Value="BlockBonus"/>
          </DisplayInHUD>
       </View>
       <Modules>
          <BufferModule>
             <Effects>
-               <StatModifier Stat="ArmorTotal" Value="ArmorBonus"/>
+               <StatModifier Stat="Block" Value="BlockBonus"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -2989,7 +2989,7 @@
    <!-- T2 -->
    <PerkDefinition Id="AvidLearner">
       <TokenVariables>
-         <TokenVariable Key="ExperienceGainMultiplierBonus" Value="25"/>
+         <TokenVariable Key="ExperienceGainMultiplierBonus" Value="35"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="ExperienceGainMultiplier" Value="ExperienceGainMultiplierBonus"/>
@@ -3015,7 +3015,7 @@
          <TokenVariable Key="BonusDamagePerKill" Value="1"/> <!--gain X damage every...-->
          <TokenVariable Key="BonusDamageKillThreshold" Value="KillThresholdBaseValue + Floor(TotalBonusDamage / IncreaseThresholdEveryXBonusDamage)"/> <!--... every Y kills.-->
          <TokenVariable Key="KillThresholdBaseValue" Value="1"/>
-         <TokenVariable Key="IncreaseThresholdEveryXBonusDamage" Value="100"/> <!--where Y is increased by 1 every Z kills-->
+         <TokenVariable Key="IncreaseThresholdEveryXBonusDamage" Value="50"/> <!--where Y is increased by 1 every Z kills-->
          <TokenVariable Key="PunchKills" Value="Module.Buffer"/>
          <TokenVariable Key="TotalBonusDamage" Value="Module.Buffer2"/>
       </TokenVariables>
@@ -3071,21 +3071,24 @@
    
    <PerkDefinition Id="GlassCannon">
       <TokenVariables>
-         <TokenVariable Key="HealthTotalBonus" Value="-60"/>
-         <TokenVariable Key="CriticalBonus" Value="15"/>
+         <TokenVariable Key="HealthTotalBonus" Value="-80"/>
+         <TokenVariable Key="PerkDamageBonus" Value="15"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="HealthTotal" Value="HealthTotalBonus"/>
-         <StatArgument Stat="Critical" Value="CriticalBonus"/>
+         <StatArgument Stat="PerkDamage" Value="PerkDamageBonus"/>
       </LocArguments>
       <View>
          <DisplayInHUD/>
+         <CompendiumEntries>
+            <CompendiumEntry Id="GameConcept_PerkDamage"/>
+         </CompendiumEntries>
       </View>
       <Modules>
          <BufferModule>
             <Effects>
                <StatModifier Stat="HealthTotal" Value="HealthTotalBonus" ChildStatFollows="false"/>
-               <StatModifier Stat="Critical" Value="CriticalBonus"/>
+               <StatModifier Stat="PerkDamage" Value="PerkDamageBonus"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -3093,8 +3096,8 @@
    
    <PerkDefinition Id="Nimble">
       <TokenVariables>
-         <TokenVariable Key="MovePointsBonus" Value="2"/>
-         <TokenVariable Key="DodgeBonus" Value="15"/>
+         <TokenVariable Key="MovePointsBonus" Value="4"/>
+         <TokenVariable Key="DodgeBonus" Value="25"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="Dodge" Value="DodgeBonus"/>
@@ -3228,9 +3231,13 @@
    <PerkDefinition Id="Initiator">
       <TokenVariables>
          <TokenVariable Key="MultiHitBonus" Value="2"/>
+         <TokenVariable Key="PropagationBouncesBonus" Value="3"/>
+         <TokenVariable Key="StunChanceBonus" Value="10"/>
       </TokenVariables>
      <LocArguments>
          <StatArgument Stat="MultiHitsCountModifier" Value="MultiHitBonus"/>
+         <StatArgument Stat="PropagationBouncesModifier" Value="PropagationBouncesBonus"/>
+         <StatArgument Stat="StunChance" Value="StunChanceBonus"/>
      </LocArguments>
       <View>
          <DisplayInHUD>
@@ -3238,6 +3245,9 @@
                <IsTrue Value="Module.Buffer > 0"/>
             </GreyOut>
          </DisplayInHUD>
+         <CompendiumEntries>
+            <CompendiumEntry Id="SkillEffect_Propagation"/>
+         </CompendiumEntries>
       </View>
       <Modules>
          <BufferModule>
@@ -3258,6 +3268,8 @@
             </Conditions>
             <Effects>
                <StatModifier Stat="MultiHitsCountModifier" Value="MultiHitBonus"/>
+               <StatModifier Stat="PropagationBouncesModifier" Value="PropagationBouncesBonus"/>
+               <StatModifier Stat="StunChance" Value="StunChanceBonus"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -3408,7 +3420,7 @@
    
    <PerkDefinition Id="VolatileReaction">
       <TokenVariables>
-         <TokenVariable Key="PropagationBouncesModifierBonus" Value="1"/>
+         <TokenVariable Key="PropagationBouncesModifierBonus" Value="3"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="PropagationBouncesModifier" Value="PropagationBouncesModifierBonus"/>
@@ -3817,7 +3829,7 @@
          <TokenVariable Key="TurnsLeftToTrigger" Value="Max(0, NightThreshold - CurrentNightHour)"/>
          <TokenVariable Key="ActionPointsBonus" Value="2"/>
          <TokenVariable Key="MovePointsBonus" Value="3"/>
-         <TokenVariable Key="NightThreshold" Value="5"/>
+         <TokenVariable Key="NightThreshold" Value="4"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="NightThreshold" Style="KeyWordNb"/>

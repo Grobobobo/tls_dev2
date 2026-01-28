@@ -108,6 +108,8 @@
 
             <SkillEffects>
 
+               <IgnoreLineOfSight/>
+
                <Buff>
 
                   <BaseChance>1</BaseChance>
@@ -1255,7 +1257,7 @@
 
                   <Stat Id="MovePointsTotal"/>
 
-                  <TurnsCount>1</TurnsCount>
+                  <TurnsCount>2</TurnsCount>
 
                </Debuff>
 
