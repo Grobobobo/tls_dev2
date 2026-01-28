@@ -2089,9 +2089,9 @@
          <TokenVariable Key="PoisonedEnnemiesCount" Value="Module.Buffer"/>
          <TokenVariable Key="PerkPoisonModified" Value="Round(PerkPoisonDamage * (Owner.PoisonDamageModifier/100))"/>
          <TokenVariable Key="PerkPoisonDuration" Value="2"/>
-         <TokenVariable Key="PerkPoisonDamage" Value="30"/>
+         <TokenVariable Key="PerkPoisonDamage" Value="80"/>
          <TokenVariable Key="PerkRange" Value="10"/>
-         <TokenVariable Key="ContagionThreshold" Value="3"/>
+         <TokenVariable Key="ContagionThreshold" Value="8"/>
          <TokenVariable Key="ContagionDuration" Value="2"/>
       </TokenVariables>
       <LocArguments>
