@@ -1,0 +1,582 @@
+﻿<UnitPerkCollectionDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+                     xsi:noNamespaceSchemaLocation="UnitPerkCollectionDefinitions.xsd">
+
+
+
+   <UnitPerkCollectionDefinition Id="Warrior" MultipleAllowed="true">
+
+      <UnitPerkTierDefinition Tier="1">
+
+         <UnitPerkDefinition Id="Sprint"/>
+
+         <UnitPerkDefinition Id="Fatality"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="2">
+
+         <UnitPerkDefinition Id="Bodybuilder"/>
+
+         <UnitPerkDefinition Id="SpikySkin"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="3">
+
+         <UnitPerkDefinition Id="Vampire"/>
+
+         <UnitPerkDefinition Id="Relentless"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="4">
+
+         <UnitPerkDefinition Id="HeadOn"/>
+
+         <UnitPerkDefinition Id="OrganicArmor"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="5">
+
+         <UnitPerkDefinition Id="Berserk"/>
+
+         <UnitPerkDefinition Id="Boom"/>
+
+      </UnitPerkTierDefinition>
+
+   </UnitPerkCollectionDefinition>
+
+
+
+   <UnitPerkCollectionDefinition Id="Mage" MultipleAllowed="true">
+
+      <UnitPerkTierDefinition Tier="1">
+
+         <UnitPerkDefinition Id="Harvester"/>
+
+         <UnitPerkDefinition Id="ManaGrowth"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="2">
+
+         <UnitPerkDefinition Id="MagicFuel"/>
+
+         <UnitPerkDefinition Id="CriticalRunes"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="3">
+
+         <UnitPerkDefinition Id="Thrifty"/>
+
+         <UnitPerkDefinition Id="Energized"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="4">
+
+         <UnitPerkDefinition Id="Blink"/>
+
+         <UnitPerkDefinition Id="ExplosiveAtoms"/>
+
+         <!--<UnitPerkDefinition Id="RagingSorcery"/>-->
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="5">
+
+         <UnitPerkDefinition Id="ManaCollector"/>
+
+         <UnitPerkDefinition Id="SheerPower"/>
+
+      </UnitPerkTierDefinition>
+
+   </UnitPerkCollectionDefinition>
+
+
+
+   <UnitPerkCollectionDefinition Id="Archer" MultipleAllowed="true">
+
+      <UnitPerkTierDefinition Tier="1">
+
+         <UnitPerkDefinition Id="SteadyAim"/>
+
+         <UnitPerkDefinition Id="Perseverance"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="2">
+
+         <UnitPerkDefinition Id="ThirdEye"/>
+
+         <UnitPerkDefinition Id="Spotter"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="3">
+
+         <UnitPerkDefinition Id="LongerWeapons"/>
+
+         <UnitPerkDefinition Id="ShorterWeapons"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="4">
+
+         <UnitPerkDefinition Id="FieldStudy"/>
+
+         <UnitPerkDefinition Id="ProximityShot"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="5">
+
+         <UnitPerkDefinition Id="WeaknessFinder"/>
+
+         <UnitPerkDefinition Id="SurgicalStrike"/>
+
+      </UnitPerkTierDefinition>
+
+   </UnitPerkCollectionDefinition>
+
+
+
+   <UnitPerkCollectionDefinition Id="Hexer" MultipleAllowed="false">
+
+      <UnitPerkTierDefinition Tier="1">
+
+         <UnitPerkDefinition Id="Stunning"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="2">
+
+         <UnitPerkDefinition Id="Contamination"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="3">
+
+         <UnitPerkDefinition Id="Bully"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="4">
+
+         <UnitPerkDefinition Id="Sadist"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="5">
+
+         <UnitPerkDefinition Id="Hex"/>
+
+      </UnitPerkTierDefinition>
+
+   </UnitPerkCollectionDefinition>
+
+   
+
+   <UnitPerkCollectionDefinition Id="Plague" MultipleAllowed="false">
+
+      <UnitPerkTierDefinition Tier="1">
+
+         <UnitPerkDefinition Id="SepticShock"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="2">
+
+         <UnitPerkDefinition Id="Poisonous"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="3">
+
+         <UnitPerkDefinition Id="ToxicLeech"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="4">
+
+         <UnitPerkDefinition Id="Epidemic"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="5">
+
+         <UnitPerkDefinition Id="FastToxins"/>
+
+      </UnitPerkTierDefinition>
+
+   </UnitPerkCollectionDefinition>
+
+   
+
+   <UnitPerkCollectionDefinition Id="Assassin" MultipleAllowed="false">
+
+      <UnitPerkTierDefinition Tier="1">
+
+         <UnitPerkDefinition Id="CherryPicking"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="2">
+
+         <UnitPerkDefinition Id="FirstBlood"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="3">
+
+         <UnitPerkDefinition Id="Duelist"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="4">
+
+         <UnitPerkDefinition Id="CriticalMaster"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="5">
+
+         <UnitPerkDefinition Id="LegendaryAssassin"/>
+
+      </UnitPerkTierDefinition>
+
+   </UnitPerkCollectionDefinition>
+
+
+
+   <UnitPerkCollectionDefinition Id="Engineer" MultipleAllowed="false">
+
+      <UnitPerkTierDefinition Tier="1">
+
+         <UnitPerkDefinition Id="BackProtection"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="2">
+
+         <UnitPerkDefinition Id="DefensiveTraining"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="3">
+
+         <!--<UnitPerkDefinition Id="Resupply"/>-->
+
+         <UnitPerkDefinition Id="ManualControl"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="4">
+
+         <UnitPerkDefinition Id="HumanBallista"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="5">
+
+         <UnitPerkDefinition Id="FortressMaster"/>
+
+      </UnitPerkTierDefinition>
+
+   </UnitPerkCollectionDefinition>
+
+
+
+   <UnitPerkCollectionDefinition Id="Misc" MultipleAllowed="true">
+
+      <UnitPerkTierDefinition Tier="1">
+
+         <UnitPerkDefinition Id="PotionThrow"/>
+
+         <UnitPerkDefinition Id="Leapfrog"/>
+
+         <UnitPerkDefinition Id="Coagulation"/>
+
+         <UnitPerkDefinition Id="Cheer"/>
+
+         <UnitPerkDefinition Id="QuickReload"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="2">
+
+         <UnitPerkDefinition Id="AvidLearner"/>
+
+         <UnitPerkDefinition Id="MartialPunch"/>
+
+         <UnitPerkDefinition Id="GlassCannon"/>
+
+         <UnitPerkDefinition Id="Nimble"/>
+
+         <UnitPerkDefinition Id="Overload"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="3">
+
+         <UnitPerkDefinition Id="LoneWolf"/>
+
+         <UnitPerkDefinition Id="Initiator"/>
+
+         <UnitPerkDefinition Id="QuantityVsQuality"/>
+
+         <UnitPerkDefinition Id="BloodMagic"/>
+
+         <UnitPerkDefinition Id="ManaShield"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="4">
+
+         <UnitPerkDefinition Id="Specialist"/>
+
+         <!--<UnitPerkDefinition Id="Versatility"/>-->
+
+         <UnitPerkDefinition Id="VolatileReaction"/>
+
+         <UnitPerkDefinition Id="Inertia"/>
+
+         <UnitPerkDefinition Id="Flexibility"/>
+
+         <UnitPerkDefinition Id="RunicGift"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="5">
+
+         <UnitPerkDefinition Id="AdrenalineRush"/>
+
+         <UnitPerkDefinition Id="DontPanic"/>
+
+         <UnitPerkDefinition Id="Blessing"/>
+
+         <UnitPerkDefinition Id="NightOwl"/>
+
+         <UnitPerkDefinition Id="BigGameHunter"/>
+
+      </UnitPerkTierDefinition>
+
+      
+
+   </UnitPerkCollectionDefinition>
+
+
+
+   <UnitPerkCollectionDefinition Id="Human" MultipleAllowed="true">
+
+      <UnitPerkTierDefinition Tier="1">
+
+         <UnitPerkDefinition Id="PotionThrow"/>
+
+         <UnitPerkDefinition Id="Leapfrog"/>
+
+         <UnitPerkDefinition Id="Coagulation"/>
+
+         <UnitPerkDefinition Id="Cheer"/>
+
+         <UnitPerkDefinition Id="QuickReload"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="2">
+
+         <UnitPerkDefinition Id="AvidLearner"/>
+
+         <UnitPerkDefinition Id="MartialPunch"/>
+
+         <UnitPerkDefinition Id="GlassCannon"/>
+
+         <UnitPerkDefinition Id="Nimble"/>
+
+         <UnitPerkDefinition Id="Overload"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="3">
+
+         <UnitPerkDefinition Id="LoneWolf"/>
+
+         <UnitPerkDefinition Id="Initiator"/>
+
+         <UnitPerkDefinition Id="QuantityVsQuality"/>
+
+         <UnitPerkDefinition Id="BloodMagic"/>
+
+         <UnitPerkDefinition Id="ManaShield"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="4">
+
+         <UnitPerkDefinition Id="Specialist"/>
+
+         <!--<UnitPerkDefinition Id="Versatility"/>-->
+
+         <UnitPerkDefinition Id="VolatileReaction"/>
+
+         <UnitPerkDefinition Id="Inertia"/>
+
+         <UnitPerkDefinition Id="Flexibility"/>
+
+         <UnitPerkDefinition Id="RunicGift"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="5">
+
+         <UnitPerkDefinition Id="AdrenalineRush"/>
+
+         <UnitPerkDefinition Id="DontPanic"/>
+
+         <UnitPerkDefinition Id="Blessing"/>
+
+         <UnitPerkDefinition Id="NightOwl"/>
+
+         <UnitPerkDefinition Id="BigGameHunter"/>
+
+      </UnitPerkTierDefinition>
+
+
+
+   </UnitPerkCollectionDefinition>
+
+
+
+
+
+   <UnitPerkCollectionDefinition Id="Dwarf" MultipleAllowed="false">
+
+      <UnitPerkTierDefinition Tier="1">
+
+         <UnitPerkDefinition Id="JollyDrinker"/>
+
+         <UnitPerkDefinition Id="BodycountContest"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="2">
+
+         <UnitPerkDefinition Id="Carnage"/>
+
+         <UnitPerkDefinition Id="Thickness"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="3">
+
+         <UnitPerkDefinition Id="HardAsARock"/>
+
+         <UnitPerkDefinition Id="LookAtMyMuscles"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="4">
+
+         <UnitPerkDefinition Id="YoureNext"/>
+
+         <UnitPerkDefinition Id="EmergencyTunnel"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="5">
+
+         <UnitPerkDefinition Id="Warcry"/>
+
+         <UnitPerkDefinition Id="HeartOfTheParty"/>
+
+      </UnitPerkTierDefinition>
+
+   </UnitPerkCollectionDefinition>
+
+
+
+   <UnitPerkCollectionDefinition Id="Elf" MultipleAllowed="false">
+
+      <UnitPerkTierDefinition Tier="1">
+
+         <UnitPerkDefinition Id="CoffeeInfused"/>
+
+         <UnitPerkDefinition Id="UrbanHate"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="2">
+
+         <UnitPerkDefinition Id="OneWithNature"/>
+
+         <UnitPerkDefinition Id="Sentry"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="3">
+
+         <UnitPerkDefinition Id="FlickerStrike"/>
+
+         <UnitPerkDefinition Id="DeadlyRanger"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="4">
+
+         <UnitPerkDefinition Id="Elusive"/>
+
+         <UnitPerkDefinition Id="WeakSpotExploit"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="5">
+
+         <UnitPerkDefinition Id="HuntersArsenal"/>
+
+         <UnitPerkDefinition Id="WarDance"/>
+
+      </UnitPerkTierDefinition>
+
+   </UnitPerkCollectionDefinition>
+
+   
+
+   <!-- TEST COLLECTION -->
+
+   
+
+   <UnitPerkCollectionDefinition Id="TestCollection" MultipleAllowed="true">
+
+      <UnitPerkTierDefinition Tier="1">
+
+         <UnitPerkDefinition Id="Blink"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="2">
+
+         <UnitPerkDefinition Id="Spotter"/>
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="3">
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="4">
+
+      </UnitPerkTierDefinition>
+
+      <UnitPerkTierDefinition Tier="5">
+
+      </UnitPerkTierDefinition>
+
+   </UnitPerkCollectionDefinition>
+
+   
+
+</UnitPerkCollectionDefinitions>
+
