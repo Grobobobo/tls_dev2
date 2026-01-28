@@ -1953,27 +1953,27 @@
     <Category>Trinket</Category>
     <LevelVariations>
       <Level Id="2">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>42</BasePrice>
         <Perks>
           <Perk>ViciousKiller</Perk>
         </Perks>
       </Level>
       <Level Id="3">
+        <MainStatBonus Stat="Reliability">15</MainStatBonus>
         <BasePrice>59</BasePrice>
         <Perks>
           <Perk>ViciousKiller</Perk>
         </Perks>
       </Level>
       <Level Id="4">
-        <MainStatBonus Stat="Reliability">28</MainStatBonus>
+        <MainStatBonus Stat="Reliability">30</MainStatBonus>
         <BasePrice>83</BasePrice>
         <Perks>
           <Perk>ViciousKiller</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="Reliability">30</MainStatBonus>
+        <MainStatBonus Stat="Reliability">45</MainStatBonus>
         <BasePrice>115</BasePrice>
         <Perks>
           <Perk>ViciousKiller</Perk>
@@ -1985,21 +1985,8 @@
   <ItemDefinition Id="MedalPerkMercyKill">
     <Category>Trinket</Category>
     <LevelVariations>
-      <Level Id="2">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
-        <BasePrice>42</BasePrice>
-        <Perks>
-          <Perk>MercyKill</Perk>
-        </Perks>
-      </Level>
-      <Level Id="3">
-        <BasePrice>53</BasePrice>
-        <Perks>
-          <Perk>MercyKill</Perk>
-        </Perks>
-      </Level>
       <Level Id="4">
-        <MainStatBonus Stat="PoisonDamageModifier">16</MainStatBonus>
+        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>70</BasePrice>
         <Perks>
           <Perk>MercyKill</Perk>
@@ -2015,27 +2002,27 @@
     </LevelVariations>
   </ItemDefinition>
 
-  <ItemDefinition Id="MedalPerkFastToxins">
+  <ItemDefinition Id="MedalPerkPlagueDoctor">
     <Category>Trinket</Category>
     <LevelVariations>
       <Level Id="3">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>65</BasePrice>
         <Perks>
-          <Perk>PlagueDoctor</Perk>
+          <Perk>FastToxins</Perk>
         </Perks>
       </Level>
       <Level Id="4">
+        <MainStatBonus Stat="OpportunisticAttacks">7</MainStatBonus>
         <BasePrice>93</BasePrice>
         <Perks>
-          <Perk>PlagueDoctor</Perk>
+          <Perk>FastToxins</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="OpportunisticAttacks">13</MainStatBonus>
+        <MainStatBonus Stat="OpportunisticAttacks">14</MainStatBonus>
         <BasePrice>118</BasePrice>
         <Perks>
-          <Perk>PlagueDoctor</Perk>
+          <Perk>FastToxins</Perk>
         </Perks>
       </Level>
     </LevelVariations>
@@ -2045,20 +2032,20 @@
     <Category>Trinket</Category>
     <LevelVariations>
       <Level Id="3">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>65</BasePrice>
         <Perks>
           <Perk>Longstrider</Perk>
         </Perks>
       </Level>
       <Level Id="4">
+        <MainStatBonus Stat="MomentumAttacks">5</MainStatBonus>
         <BasePrice>90</BasePrice>
         <Perks>
           <Perk>Longstrider</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="MomentumAttacks">8</MainStatBonus>
+        <MainStatBonus Stat="MomentumAttacks">10</MainStatBonus>
         <BasePrice>123</BasePrice>
         <Perks>
           <Perk>Longstrider</Perk>

@@ -485,7 +485,7 @@
 
    <!-- Offhand HandCrossbow -->
    <SkillDefinition Id="SlowDeathOffHand" TemplateId="SlowDeath">
-     <!--   <OverrideLocalizationId>SlowDeathOffHand</OverrideLocalizationId> -->
+      <OverrideLocalizationId>SlowDeathOffHand</OverrideLocalizationId>
       <ActionPointsCost>0</ActionPointsCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
    </SkillDefinition>

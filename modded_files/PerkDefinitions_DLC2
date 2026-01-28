@@ -1327,23 +1327,21 @@
 
    <PerkDefinition Id="Longstrider">
       <TokenVariables>
-         <TokenVariable Key="MomentumToAdd" Value="Floor(MomentumGainedPerSkill/MomentumThreshold)"/>
-         <TokenVariable Key="MomentumThreshold" Value="2"/>
+         <TokenVariable Key="MovePointsRestore" Value="Floor(MovePointsGainedPerSkill/MovePointsThreshold)"/>
+         <TokenVariable Key="MovePointsThreshold" Value="2"/>
          <TokenVariable Key="MomentumGainedPerSkill" Value="Max(0 , FinishTile - StartingTile)"/>
          <TokenVariable Key="StartingTile" Value="Module.Buffer"/>
          <TokenVariable Key="FinishTile" Value="Module.Buffer2"/>
       </TokenVariables>
       <LocArguments>
-         <LocArgument Value="MomentumThreshold" Style="GoodNb" />
-         <LocalizedArgument Value="SkillEffectName_Momentum" Style="Momentum"/>
+         <LocArgument Value="MovePointsThreshold" Style="GoodNb" />
+         <RestoreStatArgument Stat="MovePointsTotal" Value="MovePointsRestore" DisplaySign="false" DisplayRestoreText="true"/>
          <LocalizedArgument Value="SkillEffectName_Follow" Style="Follow"/>
          <LocalizedArgument Value="SkillEffectName_Maneuver" Style="Maneuver"/>
-         <LocArgument Value="1" Style="GoodNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD/>
          <CompendiumEntries>
-            <CompendiumEntry Id="SkillEffect_Momentum"/>
             <CompendiumEntry Id="SkillEffect_Maneuver"/>
             <CompendiumEntry Id="SkillEffect_Follow"/>
          </CompendiumEntries>
@@ -1354,7 +1352,6 @@
                <Event EffectTime="OnSkillCastBegin">
                   <Conditions>
                      <IsTrue Value="Skill.HasManeuver"/>
-                     <IsFalse Value="Skill.HasNoMomentum"/>
                   </Conditions>
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer" Value="Owner.TilesCrossedThisTurn"/>
@@ -1363,7 +1360,6 @@
                <Event EffectTime="OnSkillCastEnd">
                   <Conditions>
                      <IsTrue Value="Skill.HasManeuver"/>
-                     <IsFalse Value="Skill.HasNoMomentum"/>
                   </Conditions>
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer2" Value="Owner.TilesCrossedThisTurn"/>
@@ -1373,7 +1369,6 @@
                <Event EffectTime="OnSkillCastBegin">
                   <Conditions>
                      <IsTrue Value="Skill.HasFollow"/>
-                     <IsFalse Value="Skill.HasNoMomentum"/>
                   </Conditions>
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer" Value="Owner.TilesCrossedThisTurn"/>
@@ -1382,7 +1377,6 @@
                <Event EffectTime="OnSkillCastEnd">
                   <Conditions>
                      <IsTrue Value="Skill.HasFollow"/>
-                     <IsFalse Value="Skill.HasNoMomentum"/>
                   </Conditions>
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer2" Value="Owner.TilesCrossedThisTurn"/>
@@ -1391,7 +1385,7 @@
                </Event>
             </Events>
             <Effects>
-               <MomentumModifier Value="MomentumToAdd"/>
+               <RestoreStat Stat="MovePoints" Value="MovePointsRestore"/>
                <ResetBuffer ResetValue="0"/>
             </Effects>
          </BufferModule>

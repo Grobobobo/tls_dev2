@@ -1898,20 +1898,20 @@
     <Category>Trinket</Category>
     <LevelVariations>
       <Level Id="3">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>65</BasePrice>
         <Perks>
           <Perk>ForgeMastery</Perk>
         </Perks>
       </Level>
       <Level Id="4">
+        <MainStatBonus Stat="Accuracy">12</MainStatBonus>
         <BasePrice>90</BasePrice>
         <Perks>
           <Perk>ForgeMastery</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="Accuracy">4</MainStatBonus>
+        <MainStatBonus Stat="Accuracy">12</MainStatBonus>
         <BasePrice>123</BasePrice>
         <Perks>
           <Perk>ForgeMastery</Perk>
@@ -1924,27 +1924,27 @@
     <Category>Trinket</Category>
     <LevelVariations>
       <Level Id="2">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>42</BasePrice>
         <Perks>
           <Perk>ShowerofBlows</Perk>
         </Perks>
       </Level>
       <Level Id="3">
+        <MainStatBonus Stat="Accuracy">6</MainStatBonus>
         <BasePrice>59</BasePrice>
         <Perks>
           <Perk>ShowerofBlows</Perk>
         </Perks>
       </Level>
       <Level Id="4">
-        <MainStatBonus Stat="Accuracy">4</MainStatBonus>
+        <MainStatBonus Stat="Accuracy">12</MainStatBonus>
         <BasePrice>83</BasePrice>
         <Perks>
           <Perk>ShowerofBlows</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="Accuracy">9</MainStatBonus>
+        <MainStatBonus Stat="Accuracy">18</MainStatBonus>
         <BasePrice>115</BasePrice>
         <Perks>
           <Perk>ShowerofBlows</Perk>
@@ -1957,7 +1957,6 @@
     <Category>Trinket</Category>
     <LevelVariations>
       <Level Id="2">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>42</BasePrice>
         <Perks>
           <Perk>CollateralDamage</Perk>
@@ -1965,19 +1964,20 @@
       </Level>
       <Level Id="3">
         <BasePrice>59</BasePrice>
+        <MainStatBonus Stat="PhysicalDamage">6</MainStatBonus>
         <Perks>
           <Perk>CollateralDamage</Perk>
         </Perks>
       </Level>
       <Level Id="4">
-        <MainStatBonus Stat="PhysicalDamage">5</MainStatBonus>
+        <MainStatBonus Stat="PhysicalDamage">12</MainStatBonus>
         <BasePrice>83</BasePrice>
         <Perks>
           <Perk>CollateralDamage</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="PhysicalDamage">7</MainStatBonus>
+        <MainStatBonus Stat="PhysicalDamage">18</MainStatBonus>
         <BasePrice>115</BasePrice>
         <Perks>
           <Perk>CollateralDamage</Perk>
@@ -1990,7 +1990,6 @@
     <Category>Trinket</Category>
     <LevelVariations>
       <Level Id="2">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>42</BasePrice>
         <Perks>
           <Perk>FearOfDeath</Perk>
@@ -1998,19 +1997,20 @@
       </Level>
       <Level Id="3">
         <BasePrice>59</BasePrice>
+        <MainStatBonus Stat="CriticalPower">15</MainStatBonus>
         <Perks>
           <Perk>FearOfDeath</Perk>
         </Perks>
       </Level>
       <Level Id="4">
-        <MainStatBonus Stat="CriticalPower">10</MainStatBonus>
+        <MainStatBonus Stat="CriticalPower">30</MainStatBonus>
         <BasePrice>83</BasePrice>
         <Perks>
           <Perk>FearOfDeath</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="CriticalPower">19</MainStatBonus>
+        <MainStatBonus Stat="CriticalPower">45</MainStatBonus>
         <BasePrice>115</BasePrice>
         <Perks>
           <Perk>FearOfDeath</Perk>
@@ -2023,7 +2023,6 @@
     <Category>Trinket</Category>
     <LevelVariations>
       <Level Id="3">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>65</BasePrice>
         <Perks>
           <Perk>DontYouDareMoving</Perk>
@@ -2031,12 +2030,13 @@
       </Level>
       <Level Id="4">
         <BasePrice>90</BasePrice>
+        <MainStatBonus Stat="Accuracy">6</MainStatBonus>
         <Perks>
           <Perk>DontYouDareMoving</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="Accuracy">4</MainStatBonus>
+        <MainStatBonus Stat="Accuracy">12</MainStatBonus>
         <BasePrice>123</BasePrice>
         <Perks>
           <Perk>DontYouDareMoving</Perk>
@@ -2049,20 +2049,20 @@
     <Category>Trinket</Category>
     <LevelVariations>
       <Level Id="3">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>65</BasePrice>
         <Perks>
           <Perk>SmithsAnvil</Perk>
         </Perks>
       </Level>
       <Level Id="4">
+        <MainStatBonus Stat="Resistance">5</MainStatBonus>
         <BasePrice>90</BasePrice>
         <Perks>
           <Perk>SmithsAnvil</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="Block">3</MainStatBonus>
+        <MainStatBonus Stat="Resistance">10</MainStatBonus>
         <BasePrice>123</BasePrice>
         <Perks>
           <Perk>SmithsAnvil</Perk>
@@ -2075,27 +2075,27 @@
     <Category>Trinket</Category>
     <LevelVariations>
       <Level Id="2">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>42</BasePrice>
         <Perks>
           <Perk>LikeAShark</Perk>
         </Perks>
       </Level>
       <Level Id="3">
+        <MainStatBonus Stat="ResistanceReduction">7</MainStatBonus>
         <BasePrice>59</BasePrice>
         <Perks>
           <Perk>LikeAShark</Perk>
         </Perks>
       </Level>
       <Level Id="4">
-        <MainStatBonus Stat="ResistanceReduction">6</MainStatBonus>
+        <MainStatBonus Stat="ResistanceReduction">14</MainStatBonus>
         <BasePrice>83</BasePrice>
         <Perks>
           <Perk>LikeAShark</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="ResistanceReduction">10</MainStatBonus>
+        <MainStatBonus Stat="ResistanceReduction">21</MainStatBonus>
         <BasePrice>115</BasePrice>
         <Perks>
           <Perk>LikeAShark</Perk>
@@ -2108,20 +2108,19 @@
     <Category>Trinket</Category>
     <LevelVariations>
       <Level Id="3">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>65</BasePrice>
         <Perks>
           <Perk>EarthquakeStrike</Perk>
         </Perks>
       </Level>
       <Level Id="4">
-        <BasePrice>90</BasePrice>
+        <MainStatBonus Stat="StunChanceModifier">10</MainStatBonus>
         <Perks>
           <Perk>EarthquakeStrike</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="StunChanceModifier">7</MainStatBonus>
+        <MainStatBonus Stat="StunChanceModifier">20</MainStatBonus>
         <BasePrice>123</BasePrice>
         <Perks>
           <Perk>EarthquakeStrike</Perk>
@@ -2134,30 +2133,30 @@
     <Category>Trinket</Category>
     <LevelVariations>
       <Level Id="2">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>42</BasePrice>
         <Perks>
-          <Perk>AgainstTheWall</Perk>
+          <Perk>Resupply</Perk>
         </Perks>
       </Level>
       <Level Id="3">
+        <MainStatBonus Stat="ResistanceReduction">7</MainStatBonus>
         <BasePrice>59</BasePrice>
         <Perks>
-          <Perk>AgainstTheWall</Perk>
+          <Perk>Resupply</Perk>
         </Perks>
       </Level>
       <Level Id="4">
-        <MainStatBonus Stat="ResistanceReduction">6</MainStatBonus>
+        <MainStatBonus Stat="ResistanceReduction">14</MainStatBonus>
         <BasePrice>83</BasePrice>
         <Perks>
-          <Perk>AgainstTheWall</Perk>
+          <Perk>Resupply</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="ResistanceReduction">10</MainStatBonus>
+        <MainStatBonus Stat="ResistanceReduction">21</MainStatBonus>
         <BasePrice>115</BasePrice>
         <Perks>
-          <Perk>AgainstTheWall</Perk>
+          <Perk>Resupply</Perk>
         </Perks>
       </Level>
     </LevelVariations>
@@ -2167,20 +2166,20 @@
     <Category>Trinket</Category>
     <LevelVariations>
       <Level Id="3">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>65</BasePrice>
         <Perks>
           <Perk>StoneheartShield</Perk>
         </Perks>
       </Level>
       <Level Id="4">
+        <MainStatBonus Stat="Block">7</MainStatBonus>
         <BasePrice>90</BasePrice>
         <Perks>
           <Perk>StoneheartShield</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="ArmorTotal">15</MainStatBonus>
+        <MainStatBonus Stat="Block">14</MainStatBonus>
         <BasePrice>123</BasePrice>
         <Perks>
           <Perk>StoneheartShield</Perk>
@@ -2193,20 +2192,20 @@
     <Category>Trinket</Category>
     <LevelVariations>
       <Level Id="3">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>65</BasePrice>
         <Perks>
           <Perk>Aggressiveness</Perk>
         </Perks>
       </Level>
       <Level Id="4">
+        <MainStatBonus Stat="ArmorTotal">30</MainStatBonus>
         <BasePrice>90</BasePrice>
         <Perks>
           <Perk>Aggressiveness</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="ArmorTotal">15</MainStatBonus>
+        <MainStatBonus Stat="ArmorTotal">60</MainStatBonus>
         <BasePrice>123</BasePrice>
         <Perks>
           <Perk>Aggressiveness</Perk>
@@ -2219,20 +2218,20 @@
     <Category>Trinket</Category>
     <LevelVariations>
       <Level Id="3">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>65</BasePrice>
         <Perks>
           <Perk>FYouInParticular</Perk>
         </Perks>
       </Level>
       <Level Id="4">
+        <MainStatBonus Stat="Block">7</MainStatBonus>
         <BasePrice>90</BasePrice>
         <Perks>
           <Perk>FYouInParticular</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="Block">3</MainStatBonus>
+        <MainStatBonus Stat="Block">14</MainStatBonus>
         <BasePrice>123</BasePrice>
         <Perks>
           <Perk>FYouInParticular</Perk>
@@ -2245,20 +2244,20 @@
     <Category>Trinket</Category>
     <LevelVariations>
       <Level Id="3">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>65</BasePrice>
         <Perks>
           <Perk>MoodSwings</Perk>
         </Perks>
       </Level>
       <Level Id="4">
+        <MainStatBonus Stat="MomentumAttacks">5</MainStatBonus>
         <BasePrice>90</BasePrice>
         <Perks>
           <Perk>MoodSwings</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="MomentumAttacks">4</MainStatBonus>
+        <MainStatBonus Stat="MomentumAttacks">10</MainStatBonus>
         <BasePrice>123</BasePrice>
         <Perks>
           <Perk>MoodSwings</Perk>
