@@ -44,11 +44,11 @@
 
       <ContextualConditions>
 
-         <MaxTargetHealthLeft>15 + Max(0, PhysicalDamage-100)</MaxTargetHealthLeft>
+         <MaxTargetHealthLeft>30 + Max(0, PhysicalDamage-100)</MaxTargetHealthLeft>
 
       </ContextualConditions>
 
-      <Range Min="1" Max="1" CardinalDirectionOnly="true"/>
+      <Range Min="1" Max="2" CardinalDirectionOnly="true"/>
 
       <SkillAction>
 
@@ -1180,7 +1180,7 @@
 
          <Attack>
 
-            <BaseDamage Min="50 + Floor(Block * 2)" Max="50 + Floor(Block * 2)"/> <!-- 200% of hero's block -->
+            <BaseDamage Min="50 + Floor(Block * 3)" Max="50 + Floor(Block * 3)"/> <!-- 300% of hero's block -->
 
             <AttackType>Physical</AttackType>
 
