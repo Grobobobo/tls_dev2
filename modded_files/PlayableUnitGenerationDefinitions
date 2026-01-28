@@ -1,0 +1,2235 @@
+﻿<PlayableUnitGenerationDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PlayableUnitGenerationDefinitions.xsd">
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- Melee Hero -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <PlayableUnitGenerationDefinition ArchetypeId="Melee">
+
+      <!-- Primary Attributes -->
+
+      <StatGenerationDefinitions>
+
+         <StatGenerationDefinition Stat="HealthTotal">
+
+            <Min>95</Min>
+
+            <Max>105</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ManaTotal">
+
+            <Min>18</Min>
+
+            <Max>22</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="MovePointsTotal">
+
+            <Min>7</Min>
+
+            <Max>7</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="Dodge">
+
+            <Min>4</Min>
+
+            <Max>6</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="OverallDamage">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="Critical">
+
+            <Min>4</Min>
+
+            <Max>6</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ResistanceReduction">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="Accuracy">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ActionPointsTotal">
+
+            <Min>5</Min>
+
+            <Max>5</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ArmorTotal">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+
+
+         <!-- Secondary Attributes -->
+
+         <StatGenerationDefinition Stat="HealthRegen">
+
+            <Min>8</Min>
+
+            <Max>12</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ManaRegen">
+
+            <Min>4</Min>
+
+            <Max>6</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PhysicalDamage">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="RangedDamage">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="MagicalDamage">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="CriticalPower">
+
+            <Min>150</Min>
+
+            <Max>150</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="HealingReceived">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="SkillRangeModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ExperienceGainMultiplier">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="Reliability">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="StunChanceModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="StunResistance">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PropagationBouncesModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PropagationDamage">
+
+            <Min>90</Min>
+
+            <Max>90</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="MomentumAttacks">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="OpportunisticAttacks">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="IsolatedAttacks">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ArmorShreddingAttacks">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PoisonDamageModifier">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="MultiHitsCountModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PoisonDurationModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="DebuffDurationModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="BuffDurationModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PotionRangeModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PercentageResistanceReduction">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="BonusSkillUses">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="BonusUsableItemsUses">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="StunDurationModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ContagionDurationModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+
+
+         <!--Biggs-->
+
+         <StatGenerationDefinition Stat="GauntletRangeModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+
+
+         <StatGenerationDefinition Stat="BonusMainHandSkillUses">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+
+
+      </StatGenerationDefinitions>
+
+
+
+      <!-- Equipment generation -->
+
+      <EquipmentGenerationDefinitions>
+
+         <BaseGenerationLevel>0</BaseGenerationLevel>
+
+         <EquipmentGenerationDefinition Slot="RightHand">
+
+            <!-- Melee weapons -->
+
+            <Items Weight="50">
+
+               <ItemLevelModifiersList Id="Hero_MeleeRightHand"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenMeleeWeapons"/>
+
+            </Items>
+
+
+
+            <Items Weight="50" Id="Melee_Variations">
+
+               <ItemLevelModifiersList Id="Hero_MeleeRightHand"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenMeleeWeaponsVariations"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+
+
+         <!-- Keep in mind that nothing will be generated there if the unit already generated a 2H weapon! -->
+
+         <EquipmentGenerationDefinition Slot="LeftHand">
+
+            <!-- Nothing -->
+
+            <Items Weight="60"/>
+
+            <!-- Shield or Offhand Weapon -->
+
+            <Items Weight="40">
+
+               <ItemLevelModifiersList Id="Hero_LeftHand"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenOffhand"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+
+
+         <EquipmentGenerationDefinition Slot="Body">
+
+            <!-- Nothing -->
+
+            <!--<Items Weight="5"/>-->
+
+            <!-- ClothArmor -->
+
+            <Items Weight="20">
+
+               <ItemLevelModifiersList Id="Hero_BodyArmor"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenClothBodyArmor"/>
+
+            </Items>
+
+            <!-- LightArmor -->
+
+            <Items Weight="30">
+
+               <ItemLevelModifiersList Id="Hero_BodyArmor"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenLightBodyArmor"/>
+
+            </Items>
+
+            <!-- MediumArmor -->
+
+            <Items Weight="30">
+
+               <ItemLevelModifiersList Id="Hero_BodyArmor"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenMediumBodyArmor"/>
+
+            </Items>
+
+            <!-- HeavyArmor -->
+
+            <Items Weight="20">
+
+               <ItemLevelModifiersList Id="Hero_BodyArmor"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenHeavyBodyArmor"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+
+
+         <EquipmentGenerationDefinition Slot="Foot">
+
+            <!-- Cloth Pants -->
+
+            <Items Weight="30">
+
+               <ItemLevelModifiersList Id="Hero_Pants"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenClothPants"/>
+
+            </Items>
+
+            <!-- Light Pants -->
+
+            <Items Weight="30">
+
+               <ItemLevelModifiersList Id="Hero_Pants"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenLightPants"/>
+
+            </Items>
+
+            <!-- Medium Pants -->
+
+            <Items Weight="30">
+
+               <ItemLevelModifiersList Id="Hero_Pants"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenMediumPants"/>
+
+            </Items>
+
+            <!-- Heavy Pants -->
+
+            <Items Weight="30">
+
+               <ItemLevelModifiersList Id="Hero_Pants"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenHeavyPants"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+
+
+
+
+         <EquipmentGenerationDefinition Slot="Head">
+
+            <!-- Helmets -->
+
+            <Items Weight="30" Id="Helmet">
+
+               <ItemLevelModifiersList Id="Hero_Helmet"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenHelmet"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+
+
+         <EquipmentGenerationDefinition Slot="Trinket">
+
+            <!-- Trinkets -->
+
+            <Items Weight="100" Id="Trinket">
+
+               <ItemLevelModifiersList Id="Hero_Trinket"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenTrinket"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+
+
+         <EquipmentGenerationDefinition Slot="Usables">
+
+            <!-- Usables -->
+
+            <Items Weight="100" Id="Usables">
+
+               <ItemLevelModifiersList Id="Hero_Usable"/>
+
+               <ItemRaritiesList Id="AlwaysCommon"/>
+
+               <ItemsList Id="ItemList_HeroGenUsable"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+      </EquipmentGenerationDefinitions>
+
+
+
+      <!--Background available traits-->
+
+      <UnitTraitDefinitions>
+
+         <!-- Bad (-1) -->
+
+         <UnitTraitDefinition Id="Squire"/>
+
+
+
+         <UnitTraitDefinition Id="Farmer"/>
+
+
+
+         <UnitTraitDefinition Id="Thug"/>
+
+         <UnitTraitDefinition Id="Charlatan"/>
+
+         <UnitTraitDefinition Id="Jester"/>
+
+         <UnitTraitDefinition Id="Vagrant"/>
+
+         <UnitTraitDefinition Id="EscapedSlave"/>
+
+         <UnitTraitDefinition Id="Pickpocket"/>
+
+         <UnitTraitDefinition Id="Gravedigger"/>
+
+
+
+         <!-- Neutral (0) -->
+
+         <UnitTraitDefinition Id="Brawler"/>
+
+         <UnitTraitDefinition Id="Barbarian"/>
+
+         <UnitTraitDefinition Id="Militia"/>
+
+
+
+         <UnitTraitDefinition Id="Cultist"/>
+
+         <UnitTraitDefinition Id="Jeweler"/>
+
+         <UnitTraitDefinition Id="Scout"/>
+
+         <UnitTraitDefinition Id="Fisherman"/>
+
+
+
+         <UnitTraitDefinition Id="Miner"/>
+
+         <UnitTraitDefinition Id="Minstrel"/>
+
+         <UnitTraitDefinition Id="Druid"/>
+
+         <UnitTraitDefinition Id="Cook"/>
+
+         <UnitTraitDefinition Id="PlagueDoctor"/>
+
+         <UnitTraitDefinition Id="Carrier"/>
+
+         <UnitTraitDefinition Id="Trader"/>
+
+
+
+         <!-- Good (1) -->
+
+         <UnitTraitDefinition Id="Infantryman"/>
+
+         <UnitTraitDefinition Id="Possessed"/>
+
+         <UnitTraitDefinition Id="Blacksmith"/>
+
+         <UnitTraitDefinition Id="Thief"/>
+
+         <UnitTraitDefinition Id="Noble"/>
+
+         <UnitTraitDefinition Id="Mercenary"/>
+
+         <UnitTraitDefinition Id="Warrior"/>
+
+         <UnitTraitDefinition Id="Hangman"/>
+
+         <UnitTraitDefinition Id="FortuneTeller"/>
+
+         <UnitTraitDefinition Id="Illusionist"/>
+
+         <UnitTraitDefinition Id="Poacher"/>
+
+         <UnitTraitDefinition Id="BountyHunter"/>
+
+         <UnitTraitDefinition Id="Traitor"/>
+
+         <UnitTraitDefinition Id="Trapper"/>
+
+         <UnitTraitDefinition Id="Jailer"/>
+
+
+
+         <!-- Very Good (2) -->
+
+         <UnitTraitDefinition Id="Berserker"/>
+
+         <UnitTraitDefinition Id="Fencer"/>
+
+         <UnitTraitDefinition Id="ShieldBearer"/>
+
+         <UnitTraitDefinition Id="BattleMage"/>
+
+         <UnitTraitDefinition Id="Cleric"/>
+
+         <UnitTraitDefinition Id="Soldier"/>
+
+
+
+         <UnitTraitDefinition Id="Hunter"/>
+
+         <UnitTraitDefinition Id="Wildling"/>
+
+         <UnitTraitDefinition Id="Shaman"/>
+
+         <UnitTraitDefinition Id="Pirate"/>
+
+         <UnitTraitDefinition Id="Scavenger"/>
+
+         <UnitTraitDefinition Id="Tactician"/>
+
+         <UnitTraitDefinition Id="Messenger"/>
+
+
+
+         <!-- Epic Good (3) -->
+
+         <UnitTraitDefinition Id="Knight"/>
+
+         <UnitTraitDefinition Id="Gladiator"/>
+
+         <UnitTraitDefinition Id="MartialArtist"/>
+
+         <UnitTraitDefinition Id="Paladin"/>
+
+         <UnitTraitDefinition Id="RoyalGuard"/>
+
+         <UnitTraitDefinition Id="Hero"/>
+
+         <UnitTraitDefinition Id="Prophet"/>
+
+         <UnitTraitDefinition Id="Surgeon"/>
+
+         <UnitTraitDefinition Id="Inquisitor"/>
+
+         <UnitTraitDefinition Id="Assassin"/>
+
+      </UnitTraitDefinitions>
+
+   </PlayableUnitGenerationDefinition>
+
+
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- Ranged Hero -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <PlayableUnitGenerationDefinition ArchetypeId="Range">
+
+      <!-- Primary Attributes -->
+
+      <StatGenerationDefinitions>
+
+         <StatGenerationDefinition Stat="HealthTotal">
+
+            <Min>95</Min>
+
+            <Max>105</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ManaTotal">
+
+            <Min>18</Min>
+
+            <Max>22</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="MovePointsTotal">
+
+            <Min>7</Min>
+
+            <Max>7</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="Dodge">
+
+            <Min>4</Min>
+
+            <Max>6</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="OverallDamage">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="Critical">
+
+            <Min>4</Min>
+
+            <Max>6</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ResistanceReduction">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="Accuracy">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ActionPointsTotal">
+
+            <Min>5</Min>
+
+            <Max>5</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ArmorTotal">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+
+
+         <!-- Secondary Attributes -->
+
+         <StatGenerationDefinition Stat="HealthRegen">
+
+            <Min>8</Min>
+
+            <Max>12</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ManaRegen">
+
+            <Min>4</Min>
+
+            <Max>6</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PhysicalDamage">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="RangedDamage">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="MagicalDamage">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="CriticalPower">
+
+            <Min>150</Min>
+
+            <Max>150</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="HealingReceived">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="SkillRangeModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ExperienceGainMultiplier">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="Reliability">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="StunChanceModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="StunResistance">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PropagationBouncesModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PropagationDamage">
+
+            <Min>90</Min>
+
+            <Max>90</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="MomentumAttacks">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="OpportunisticAttacks">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="IsolatedAttacks">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ArmorShreddingAttacks">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PoisonDamageModifier">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="MultiHitsCountModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PoisonDurationModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="DebuffDurationModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="BuffDurationModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PotionRangeModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PercentageResistanceReduction">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="BonusSkillUses">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="BonusUsableItemsUses">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="StunDurationModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ContagionDurationModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <!--Biggs-->
+
+         <StatGenerationDefinition Stat="GauntletRangeModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="BonusMainHandSkillUses">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+      </StatGenerationDefinitions>
+
+
+
+      <!--Equipment generation-->
+
+      <EquipmentGenerationDefinitions>
+
+         <BaseGenerationLevel>0</BaseGenerationLevel>
+
+         <EquipmentGenerationDefinition Slot="RightHand">
+
+            <!-- Range weapons -->
+
+            <Items Weight="50">
+
+               <ItemLevelModifiersList Id="Hero_RangeRightHand"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenRangedWeapons"/>
+
+            </Items>
+
+
+
+            <Items Weight="50" Id="Range_Variations">
+
+               <ItemLevelModifiersList Id="Hero_RangeRightHand"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenRangedWeaponsVariations"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+
+
+         <!--Keep in mind that nothing will be generated there if the unit already generated a 2H weapon!-->
+
+         <EquipmentGenerationDefinition Slot="LeftHand">
+
+            <!-- Nothing -->
+
+            <Items Weight="60"/>
+
+            <!-- Shield or Offhand Weapon -->
+
+            <Items Weight="40">
+
+               <ItemLevelModifiersList Id="Hero_LeftHand"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenOffhand"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+
+
+         <EquipmentGenerationDefinition Slot="Body">
+
+            <!-- Nothing -->
+
+            <!--<Items Weight="5"/>-->
+
+            <!-- ClothArmor -->
+
+            <Items Weight="20">
+
+               <ItemLevelModifiersList Id="Hero_BodyArmor"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenClothBodyArmor"/>
+
+            </Items>
+
+            <!-- LightArmor -->
+
+            <Items Weight="30">
+
+               <ItemLevelModifiersList Id="Hero_BodyArmor"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenLightBodyArmor"/>
+
+            </Items>
+
+            <!-- MediumArmor -->
+
+            <Items Weight="30">
+
+               <ItemLevelModifiersList Id="Hero_BodyArmor"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenMediumBodyArmor"/>
+
+            </Items>
+
+            <!-- HeavyArmor -->
+
+            <Items Weight="20">
+
+               <ItemLevelModifiersList Id="Hero_BodyArmor"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenHeavyBodyArmor"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+
+
+         <EquipmentGenerationDefinition Slot="Foot">
+
+
+
+            <!-- Cloth Pants -->
+
+            <Items Weight="30">
+
+               <ItemLevelModifiersList Id="Hero_Pants"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenClothPants"/>
+
+            </Items>
+
+            <!-- Light Pants -->
+
+            <Items Weight="30">
+
+               <ItemLevelModifiersList Id="Hero_Pants"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenLightPants"/>
+
+            </Items>
+
+            <!-- Medium Pants -->
+
+            <Items Weight="30">
+
+               <ItemLevelModifiersList Id="Hero_Pants"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenMediumPants"/>
+
+            </Items>
+
+            <!-- Heavy Pants -->
+
+            <Items Weight="30">
+
+               <ItemLevelModifiersList Id="Hero_Pants"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenHeavyPants"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+
+
+
+
+         <EquipmentGenerationDefinition Slot="Head">
+
+            <!-- Helmets -->
+
+            <Items Weight="30" Id="Helmet">
+
+               <ItemLevelModifiersList Id="Hero_Helmet"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenHelmet"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+
+
+         <EquipmentGenerationDefinition Slot="Trinket">
+
+            <!-- Trinkets -->
+
+            <Items Weight="100" Id="Trinket">
+
+               <ItemLevelModifiersList Id="Hero_Trinket"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenTrinket"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+
+
+         <EquipmentGenerationDefinition Slot="Usables">
+
+            <!-- Usables -->
+
+            <Items Weight="100" Id="Usables">
+
+               <ItemLevelModifiersList Id="Hero_Usable"/>
+
+               <ItemRaritiesList Id="AlwaysCommon"/>
+
+               <ItemsList Id="ItemList_HeroGenUsable"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+      </EquipmentGenerationDefinitions>
+
+
+
+      <!--Background available traits-->
+
+      <UnitTraitDefinitions>
+
+         <!-- Bad (-1) -->
+
+         <UnitTraitDefinition Id="Sentry"/>
+
+         <UnitTraitDefinition Id="Juggler"/>
+
+
+
+         <UnitTraitDefinition Id="Farmer"/>
+
+
+
+
+
+         <UnitTraitDefinition Id="Thug"/>
+
+         <UnitTraitDefinition Id="Charlatan"/>
+
+         <UnitTraitDefinition Id="Jester"/>
+
+         <UnitTraitDefinition Id="Vagrant"/>
+
+         <UnitTraitDefinition Id="EscapedSlave"/>
+
+         <UnitTraitDefinition Id="Pickpocket"/>
+
+         <UnitTraitDefinition Id="Gravedigger"/>
+
+         <!-- Neutral (0) -->
+
+         <UnitTraitDefinition Id="Ranger"/>
+
+
+
+         <UnitTraitDefinition Id="Herbalist"/>
+
+         <UnitTraitDefinition Id="Dancer"/>
+
+         <UnitTraitDefinition Id="Scout"/>
+
+         <UnitTraitDefinition Id="Fisherman"/>
+
+
+
+
+
+         <UnitTraitDefinition Id="Miner"/>
+
+         <UnitTraitDefinition Id="Minstrel"/>
+
+         <UnitTraitDefinition Id="Druid"/>
+
+         <UnitTraitDefinition Id="Cook"/>
+
+         <UnitTraitDefinition Id="PlagueDoctor"/>
+
+         <UnitTraitDefinition Id="Carrier"/>
+
+         <UnitTraitDefinition Id="Trader"/>
+
+         <!-- Good (1) -->
+
+         <UnitTraitDefinition Id="Longbowman"/>
+
+
+
+         <UnitTraitDefinition Id="Blacksmith"/>
+
+
+
+         <UnitTraitDefinition Id="Thief"/>
+
+         <UnitTraitDefinition Id="Noble"/>
+
+         <UnitTraitDefinition Id="Mercenary"/>
+
+         <UnitTraitDefinition Id="Warrior"/>
+
+         <UnitTraitDefinition Id="Hangman"/>
+
+         <UnitTraitDefinition Id="FortuneTeller"/>
+
+         <UnitTraitDefinition Id="Illusionist"/>
+
+         <UnitTraitDefinition Id="Poacher"/>
+
+         <UnitTraitDefinition Id="BountyHunter"/>
+
+         <UnitTraitDefinition Id="Traitor"/>
+
+         <UnitTraitDefinition Id="Trapper"/>
+
+         <UnitTraitDefinition Id="Jailer"/>
+
+         <!-- Very Good (2) -->
+
+         <UnitTraitDefinition Id="Fletcher"/>
+
+         <UnitTraitDefinition Id="Marksman"/>
+
+
+
+         <UnitTraitDefinition Id="Soldier"/>
+
+
+
+         <UnitTraitDefinition Id="Hunter"/>
+
+         <UnitTraitDefinition Id="Wildling"/>
+
+         <UnitTraitDefinition Id="Shaman"/>
+
+         <UnitTraitDefinition Id="Pirate"/>
+
+         <UnitTraitDefinition Id="Scavenger"/>
+
+         <UnitTraitDefinition Id="Tactician"/>
+
+         <UnitTraitDefinition Id="Messenger"/>
+
+         <!-- Epic Good (3) -->
+
+         <UnitTraitDefinition Id="Sniper"/>
+
+
+
+         <UnitTraitDefinition Id="OccultHunter"/>
+
+         <UnitTraitDefinition Id="RoyalGuard"/>
+
+
+
+         <UnitTraitDefinition Id="Hero"/>
+
+         <UnitTraitDefinition Id="Prophet"/>
+
+         <UnitTraitDefinition Id="Surgeon"/>
+
+         <UnitTraitDefinition Id="Inquisitor"/>
+
+         <UnitTraitDefinition Id="Assassin"/>
+
+      </UnitTraitDefinitions>
+
+   </PlayableUnitGenerationDefinition>
+
+
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- Magic Hero -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <PlayableUnitGenerationDefinition ArchetypeId="Magic">
+
+      <!-- Primary Attributes -->
+
+      <StatGenerationDefinitions>
+
+         <StatGenerationDefinition Stat="HealthTotal">
+
+            <Min>95</Min>
+
+            <Max>105</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ManaTotal">
+
+            <Min>18</Min>
+
+            <Max>22</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="MovePointsTotal">
+
+            <Min>7</Min>
+
+            <Max>7</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="Dodge">
+
+            <Min>4</Min>
+
+            <Max>6</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="OverallDamage">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="Critical">
+
+
+
+            <Min>4</Min>
+
+            <Max>6</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ResistanceReduction">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="Accuracy">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ActionPointsTotal">
+
+            <Min>5</Min>
+
+            <Max>5</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ArmorTotal">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+
+
+         <!-- Secondary Attributes -->
+
+         <StatGenerationDefinition Stat="HealthRegen">
+
+            <Min>8</Min>
+
+            <Max>12</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ManaRegen">
+
+            <Min>4</Min>
+
+            <Max>6</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PhysicalDamage">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="RangedDamage">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="MagicalDamage">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="CriticalPower">
+
+            <Min>150</Min>
+
+            <Max>150</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="HealingReceived">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="SkillRangeModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ExperienceGainMultiplier">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="Reliability">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="StunChanceModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="StunResistance">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PropagationBouncesModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PropagationDamage">
+
+            <Min>90</Min>
+
+            <Max>90</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="MomentumAttacks">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="OpportunisticAttacks">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="IsolatedAttacks">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ArmorShreddingAttacks">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PoisonDamageModifier">
+
+            <Min>100</Min>
+
+            <Max>100</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="MultiHitsCountModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PoisonDurationModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="DebuffDurationModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="BuffDurationModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PotionRangeModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="PercentageResistanceReduction">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="BonusSkillUses">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="BonusUsableItemsUses">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="StunDurationModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="ContagionDurationModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <!--Biggs-->
+
+         <StatGenerationDefinition Stat="GauntletRangeModifier">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+         <StatGenerationDefinition Stat="BonusMainHandSkillUses">
+
+            <Min>0</Min>
+
+            <Max>0</Max>
+
+         </StatGenerationDefinition>
+
+      </StatGenerationDefinitions>
+
+
+
+      <!--Equipment generation-->
+
+      <EquipmentGenerationDefinitions>
+
+         <BaseGenerationLevel>0</BaseGenerationLevel>
+
+         <EquipmentGenerationDefinition Slot="RightHand">
+
+            <!-- Magic weapons -->
+
+            <Items Weight="50">
+
+               <ItemLevelModifiersList Id="Hero_MagicRightHand"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenMagicWeapons"/>
+
+            </Items>
+
+
+
+            <Items Weight="50" Id="Magic_Variations">
+
+               <ItemLevelModifiersList Id="Hero_MagicRightHand"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenMagicWeaponsVariations"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+
+
+         <!--Keep in mind that nothing will be generated there if the unit already generated a 2H weapon!-->
+
+         <EquipmentGenerationDefinition Slot="LeftHand">
+
+            <!-- Nothing -->
+
+            <Items Weight="60"/>
+
+            <!-- Shield or Offhand Weapon -->
+
+            <Items Weight="40">
+
+               <ItemLevelModifiersList Id="Hero_LeftHand"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenOffhand"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+
+
+         <EquipmentGenerationDefinition Slot="Body">
+
+            <!-- Nothing -->
+
+            <!--<Items Weight="5"/>-->
+
+            <!-- ClothArmor -->
+
+            <Items Weight="20">
+
+               <ItemLevelModifiersList Id="Hero_BodyArmor"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenClothBodyArmor"/>
+
+            </Items>
+
+            <!-- LightArmor -->
+
+            <Items Weight="30">
+
+               <ItemLevelModifiersList Id="Hero_BodyArmor"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenLightBodyArmor"/>
+
+            </Items>
+
+            <!-- MediumArmor -->
+
+            <Items Weight="30">
+
+               <ItemLevelModifiersList Id="Hero_BodyArmor"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenMediumBodyArmor"/>
+
+            </Items>
+
+            <!-- HeavyArmor -->
+
+            <Items Weight="20">
+
+               <ItemLevelModifiersList Id="Hero_BodyArmor"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenHeavyBodyArmor"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+
+
+         <EquipmentGenerationDefinition Slot="Foot">
+
+
+
+            <!-- Cloth Pants -->
+
+            <Items Weight="30">
+
+               <ItemLevelModifiersList Id="Hero_Pants"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenClothPants"/>
+
+            </Items>
+
+            <!-- Light Pants -->
+
+            <Items Weight="30">
+
+               <ItemLevelModifiersList Id="Hero_Pants"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenLightPants"/>
+
+            </Items>
+
+            <!-- Medium Pants -->
+
+            <Items Weight="30">
+
+               <ItemLevelModifiersList Id="Hero_Pants"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenMediumPants"/>
+
+            </Items>
+
+            <!-- Heavy Pants -->
+
+            <Items Weight="30">
+
+               <ItemLevelModifiersList Id="Hero_Pants"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenHeavyPants"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+
+
+
+
+         <EquipmentGenerationDefinition Slot="Head">
+
+            <!-- Helmets -->
+
+            <Items Weight="30" Id="Helmet">
+
+               <ItemLevelModifiersList Id="Hero_Helmet"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenHelmet"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+
+
+         <EquipmentGenerationDefinition Slot="Trinket">
+
+            <!-- Trinkets -->
+
+            <Items Weight="100" Id="Trinket">
+
+               <ItemLevelModifiersList Id="Hero_Trinket"/>
+
+               <ItemRaritiesList Id="HeroGeneration"/>
+
+               <ItemsList Id="ItemList_HeroGenTrinket"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+
+
+         <EquipmentGenerationDefinition Slot="Usables">
+
+            <!-- Usables -->
+
+            <Items Weight="100" Id="Usables">
+
+               <ItemLevelModifiersList Id="Hero_Usable"/>
+
+               <ItemRaritiesList Id="AlwaysCommon"/>
+
+               <ItemsList Id="ItemList_HeroGenUsable"/>
+
+            </Items>
+
+         </EquipmentGenerationDefinition>
+
+      </EquipmentGenerationDefinitions>
+
+
+
+      <!--Background available traits-->
+
+      <UnitTraitDefinitions>
+
+         <!-- Bad (-1) -->
+
+         <UnitTraitDefinition Id="WIZZARD"/>
+
+         <UnitTraitDefinition Id="TempleServant"/>
+
+
+
+
+
+         <UnitTraitDefinition Id="Thug"/>
+
+         <UnitTraitDefinition Id="Charlatan"/>
+
+         <UnitTraitDefinition Id="Jester"/>
+
+         <UnitTraitDefinition Id="Vagrant"/>
+
+         <UnitTraitDefinition Id="EscapedSlave"/>
+
+         <UnitTraitDefinition Id="Pickpocket"/>
+
+         <UnitTraitDefinition Id="Gravedigger"/>
+
+         <!-- Neutral (0) -->
+
+         <UnitTraitDefinition Id="Magician"/>
+
+
+
+         <UnitTraitDefinition Id="Cultist"/>
+
+         <UnitTraitDefinition Id="Jeweler"/>
+
+         <UnitTraitDefinition Id="Herbalist"/>
+
+         <UnitTraitDefinition Id="Dancer"/>
+
+
+
+
+
+         <UnitTraitDefinition Id="Miner"/>
+
+         <UnitTraitDefinition Id="Minstrel"/>
+
+         <UnitTraitDefinition Id="Druid"/>
+
+         <UnitTraitDefinition Id="Cook"/>
+
+         <UnitTraitDefinition Id="PlagueDoctor"/>
+
+         <UnitTraitDefinition Id="Carrier"/>
+
+         <UnitTraitDefinition Id="Trader"/>
+
+         <!-- Good (1) -->
+
+         <UnitTraitDefinition Id="Wizard"/>
+
+         <UnitTraitDefinition Id="Scholar"/>
+
+
+
+         <UnitTraitDefinition Id="Possessed"/>
+
+
+
+         <UnitTraitDefinition Id="Thief"/>
+
+         <UnitTraitDefinition Id="Noble"/>
+
+         <UnitTraitDefinition Id="Mercenary"/>
+
+         <UnitTraitDefinition Id="Warrior"/>
+
+         <UnitTraitDefinition Id="Hangman"/>
+
+         <UnitTraitDefinition Id="FortuneTeller"/>
+
+         <UnitTraitDefinition Id="Illusionist"/>
+
+         <UnitTraitDefinition Id="Poacher"/>
+
+         <UnitTraitDefinition Id="BountyHunter"/>
+
+         <UnitTraitDefinition Id="Traitor"/>
+
+         <UnitTraitDefinition Id="Trapper"/>
+
+         <UnitTraitDefinition Id="Jailer"/>
+
+         <!-- Very Good (2) -->
+
+         <UnitTraitDefinition Id="Occultist"/>
+
+         <UnitTraitDefinition Id="BloodMage"/>
+
+         <UnitTraitDefinition Id="Pyromancer"/>
+
+
+
+         <UnitTraitDefinition Id="BattleMage"/>
+
+         <UnitTraitDefinition Id="Cleric"/>
+
+
+
+         <UnitTraitDefinition Id="Hunter"/>
+
+         <UnitTraitDefinition Id="Wildling"/>
+
+         <UnitTraitDefinition Id="Shaman"/>
+
+         <UnitTraitDefinition Id="Pirate"/>
+
+         <UnitTraitDefinition Id="Scavenger"/>
+
+         <UnitTraitDefinition Id="Tactician"/>
+
+         <UnitTraitDefinition Id="Messenger"/>
+
+         <!-- Epic Good (3) -->
+
+         <UnitTraitDefinition Id="Archmage"/>
+
+         <UnitTraitDefinition Id="Warlock"/>
+
+
+
+         <UnitTraitDefinition Id="Paladin"/>
+
+         <UnitTraitDefinition Id="OccultHunter"/>
+
+
+
+         <UnitTraitDefinition Id="Hero"/>
+
+         <UnitTraitDefinition Id="Prophet"/>
+
+         <UnitTraitDefinition Id="Surgeon"/>
+
+         <UnitTraitDefinition Id="Inquisitor"/>
+
+         <UnitTraitDefinition Id="Assassin"/>
+
+      </UnitTraitDefinitions>
+
+   </PlayableUnitGenerationDefinition>
+
+
+
+</PlayableUnitGenerationDefinitions>
