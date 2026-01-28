@@ -2204,10 +2204,10 @@
    <!-- T1 -->
    <PerkDefinition Id="CherryPicking">
       <TokenVariables>
-         <TokenVariable Key="ReliabilityBonus" Value="75"/>
+         <TokenVariable Key="CriticalBonus" Value="15"/>
       </TokenVariables>
       <LocArguments>
-         <StatArgument Stat="Reliability" Value="ReliabilityBonus"/>
+         <StatArgument Stat="Critical" Value="CriticalBonus"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -2224,7 +2224,7 @@
       <Modules>
          <BufferModule>
             <Effects>
-               <SkillModifier ComputationStat="Reliability" Value="ReliabilityBonus">
+               <SkillModifier ComputationStat="Critical" Value="CriticalBonus">
                   <Conditions>
                      <IsTrue Value="Skill.IsAttack"/>
                      <IsTrue Value="IsTargetUnit"/>
@@ -2239,11 +2239,11 @@
    <!-- T2 -->
    <PerkDefinition Id="FirstBlood">
       <TokenVariables>
-         <TokenVariable Key="CriticalBonus" Value="15"/>
+         <TokenVariable Key="ReliabilityBonus" Value="50"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="HealthTotal"/>
-         <StatArgument Stat="Critical" Value="CriticalBonus"/>
+         <StatArgument Stat="Reliability" Value="ReliabilityBonus"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -2257,7 +2257,7 @@
       <Modules>
          <BufferModule>
             <Effects>
-               <SkillModifier ComputationStat="Critical" Value="CriticalBonus">
+               <SkillModifier ComputationStat="Reliability" Value="ReliabilityBonus">
                   <Conditions>
                      <IsTrue Value="Skill.IsAttack"/>
                      <IsTrue Value="IsTargetEnemyUnit"/>
@@ -2278,7 +2278,7 @@
          <TokenVariable Key="DefaultMultiplierValue" Value="7"/>
          <TokenVariable Key="PhysicalMultiplierValue" Value="10"/>
          <TokenVariable Key="BonusMax" Value="80"/>
-         <TokenVariable Key="MalusValue" Value="4"/>
+         <TokenVariable Key="MalusValue" Value="2"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="OverallDamage" Value="DefaultMultiplierValue"/>
