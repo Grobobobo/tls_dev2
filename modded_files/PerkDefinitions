@@ -945,7 +945,7 @@
          <TokenVariable Key="PerkDamageBonus" Value="20"/>
       </TokenVariables>
       <LocArguments>
-         <StatArgument Stat="PerkDamage" Value="PerkDamageBonus"/>
+         <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -963,7 +963,7 @@
                <IsTrue Value="Skill.IsAttack"/>
             </Conditions>
             <Effects>
-               <SkillModifier ComputationStat="PerkDamage" Value="PerkDamageBonus">
+               <SkillModifier ComputationStat="OverallDamage" Value="PerkDamageBonus">
                   <Conditions>
                      <IsTrue Value="TriggerCondition"/>
                   </Conditions>
@@ -3076,7 +3076,7 @@
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="HealthTotal" Value="HealthTotalBonus"/>
-         <StatArgument Stat="PerkDamage" Value="PerkDamageBonus"/>
+         <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD/>
@@ -3088,7 +3088,7 @@
          <BufferModule>
             <Effects>
                <StatModifier Stat="HealthTotal" Value="HealthTotalBonus" ChildStatFollows="false"/>
-               <StatModifier Stat="PerkDamage" Value="PerkDamageBonus"/>
+               <StatModifier ComputationStat="OverallDamage" Value="PerkDamageBonus"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -4225,7 +4225,7 @@
          <TokenVariable Key="PerkDamageBonus" Value="20"/>
       </TokenVariables>
       <LocArguments>
-         <StatArgument Stat="PerkDamage" Value="PerkDamageBonus"/>
+         <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -4243,7 +4243,7 @@
                <IsTrue Value="Skill.IsAttack"/>
             </Conditions>
             <Effects>
-               <SkillModifier ComputationStat="PerkDamage" Value="PerkDamageBonus">
+               <SkillModifier ComputationStat="OverallDamage" Value="PerkDamageBonus">
                   <Conditions>
                      <IsTrue Value="TriggerCondition"/>
                   </Conditions>
