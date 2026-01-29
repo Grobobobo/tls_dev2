@@ -1,0 +1,104 @@
+﻿<ItemGenerationModifiersListDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:noNamespaceSchemaLocation="ItemGenerationModifiersListDefinitions.xsd">
+
+   <!-- TESTS -->
+
+   <ItemGenerationModifiersListDefinition Id="ModifiersTest">
+      <Probability Weight="100">0</Probability>
+      <Probability Weight="35">1</Probability>
+      <Probability Weight="100">2</Probability>
+      <Probability Weight="100">3</Probability>
+   </ItemGenerationModifiersListDefinition>
+
+   <ItemGenerationModifiersListDefinition Id="Modifiers1">
+      <Probability Weight="100">-1</Probability>
+      <Probability Weight="35">0</Probability>
+   </ItemGenerationModifiersListDefinition>
+
+   <!-- END TESTS-->
+
+   <ItemGenerationModifiersListDefinition Id="BuildingProduction">
+      <Probability Weight="100">0</Probability>
+      <Probability Weight="35">1</Probability>
+   </ItemGenerationModifiersListDefinition>
+
+   <ItemGenerationModifiersListDefinition Id="ShopProduction">
+      <Probability Weight="100">-2</Probability>
+      <Probability Weight="66">-1</Probability>
+      <Probability Weight="25">0</Probability>
+   </ItemGenerationModifiersListDefinition>
+
+   <!--<ItemGenerationModifiersListDefinition Id="ShopConsumables">
+      <Probability Weight="100">-1</Probability>
+      <Probability Weight="35">0</Probability>
+      <Probability Weight="5">1</Probability>
+   </ItemGenerationModifiersListDefinition>-->
+
+   <ItemGenerationModifiersListDefinition Id="PanicReward">
+      <Probability Weight="100">0</Probability>
+      <Probability Weight="30">1</Probability>
+      <Probability Weight="5">2</Probability>
+   </ItemGenerationModifiersListDefinition>
+
+   <ItemGenerationModifiersListDefinition Id="PanicRewardImproved">
+      <Probability Weight="100">1</Probability>
+      <Probability Weight="35">2</Probability>
+   </ItemGenerationModifiersListDefinition>
+
+   <ItemGenerationModifiersListDefinition Id="BonePile">
+      <Probability Weight="100">-1</Probability>
+      <Probability Weight="55">0</Probability>
+   </ItemGenerationModifiersListDefinition>
+
+   <ItemGenerationModifiersListDefinition Id="BonePileElite">
+      <Probability Weight="100">0</Probability>
+   </ItemGenerationModifiersListDefinition>
+   
+   <!-- PLAYABLE UNIT GENERATION -->
+
+   <ItemGenerationModifiersListDefinition Id="Hero_Helmet">
+      <Probability Weight="100">0</Probability>
+      <Probability Weight="0">1</Probability>
+   </ItemGenerationModifiersListDefinition>
+
+   <ItemGenerationModifiersListDefinition Id="Hero_BodyArmor">
+      <Probability Weight="100">0</Probability>
+      <Probability Weight="0">1</Probability>
+   </ItemGenerationModifiersListDefinition>
+
+   <ItemGenerationModifiersListDefinition Id="Hero_Pants">
+      <Probability Weight="100">0</Probability>
+      <Probability Weight="0">1</Probability>
+   </ItemGenerationModifiersListDefinition>
+
+   <ItemGenerationModifiersListDefinition Id="Hero_MeleeRightHand">
+      <Probability Weight="100">0</Probability>
+      <Probability Weight="0">1</Probability>
+   </ItemGenerationModifiersListDefinition>
+
+   <ItemGenerationModifiersListDefinition Id="Hero_RangeRightHand">
+      <Probability Weight="100">0</Probability>
+      <Probability Weight="0">1</Probability>
+   </ItemGenerationModifiersListDefinition>
+
+   <ItemGenerationModifiersListDefinition Id="Hero_MagicRightHand">
+      <Probability Weight="100">0</Probability>
+      <Probability Weight="0">1</Probability>
+   </ItemGenerationModifiersListDefinition>
+
+   <ItemGenerationModifiersListDefinition Id="Hero_LeftHand">
+      <Probability Weight="100">0</Probability>
+      <Probability Weight="0">1</Probability>
+   </ItemGenerationModifiersListDefinition>
+
+   <ItemGenerationModifiersListDefinition Id="Hero_Trinket">
+      <Probability Weight="100">0</Probability>
+      <Probability Weight="0">1</Probability>
+   </ItemGenerationModifiersListDefinition>
+
+   <ItemGenerationModifiersListDefinition Id="Hero_Usable">
+      <Probability Weight="100">0</Probability>
+      <Probability Weight="0">1</Probability>
+   </ItemGenerationModifiersListDefinition>
+
+</ItemGenerationModifiersListDefinitions>
