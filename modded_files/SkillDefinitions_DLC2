@@ -2395,17 +2395,33 @@
 
       <UsesPerTurnCount>1</UsesPerTurnCount>
 
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Physical</AttackType>
+
+            <DamageMultiplier>1.6</DamageMultiplier>
+
+         </Attack>
+
+      </SkillAction>
+
    </SkillDefinition>
 
 
 
    <SkillDefinition Id="PiercingClawsScroll1" TemplateId="PiercingClawsScroll">
 
+      <ManaCost>2</ManaCost>
+
    </SkillDefinition>
 
 
 
    <SkillDefinition Id="PiercingClawsScroll2" TemplateId="PiercingClawsScroll">
+
+      <ManaCost>2</ManaCost>
 
    </SkillDefinition>
 
@@ -2426,6 +2442,38 @@
          <CanAffectCaster>false</CanAffectCaster>
 
       </AffectedUnits>
+
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Ranged</AttackType>
+
+            <DamageMultiplier>1.7</DamageMultiplier>
+
+            <SkillEffects>
+
+               <IgnoreLineOfSight/>
+
+                  <Stun>
+
+                     <BaseChance>0.5</BaseChance>
+
+                  </Stun>
+
+               <SurroundingEffect>
+
+                  <Stun>
+                     <BaseChance>0.5</BaseChance>
+                  </Stun>
+
+               </SurroundingEffect>
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
 
    </SkillDefinition>
 
@@ -2469,6 +2517,21 @@
 
       <UsesPerTurnCount>1</UsesPerTurnCount>
 
+      <SkillAction>
+
+         <Attack>
+
+            <AttackType>Magical</AttackType>
+
+            <DamageMultiplier>1.3</DamageMultiplier>
+
+            <SkillEffects>
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
 
    </SkillDefinition>
 
@@ -2476,11 +2539,15 @@
 
    <SkillDefinition Id="PetalStormScroll1" TemplateId="PetalStormScroll">
 
+      <ManaCost>8</ManaCost>
+
    </SkillDefinition>
 
 
 
    <SkillDefinition Id="PetalStormScroll2" TemplateId="PetalStormScroll">
+
+      <ManaCost>8</ManaCost>
 
    </SkillDefinition>
 
