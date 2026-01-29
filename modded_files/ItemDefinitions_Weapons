@@ -3064,6 +3064,10 @@
           <Skill>Rage</Skill>
           <Skill>SuperSpin</Skill>
         </Skills>
+        <BaseStatBonuses>
+          <BaseStatBonus Stat="HealthTotal">40</BaseStatBonus>
+          <BaseStatBonus Stat="HealthRegen">8</BaseStatBonus>
+        </BaseStatBonuses>
       </Level>
       <Level Id="1">
         <BaseDamage Min="85" Max="169" />
@@ -3074,6 +3078,10 @@
           <Skill>Rage1</Skill>
           <Skill>SuperSpin</Skill>
         </Skills>
+        <BaseStatBonuses>
+          <BaseStatBonus Stat="HealthTotal">48</BaseStatBonus>
+          <BaseStatBonus Stat="HealthRegen">9</BaseStatBonus>
+        </BaseStatBonuses>
       </Level>
       <Level Id="2">
         <BaseDamage Min="93" Max="186" />
@@ -3084,6 +3092,10 @@
           <Skill>Rage2</Skill>
           <Skill>SuperSpin</Skill>
         </Skills>
+        <BaseStatBonuses>
+          <BaseStatBonus Stat="HealthTotal">56</BaseStatBonus>
+          <BaseStatBonus Stat="HealthRegen">10</BaseStatBonus>
+        </BaseStatBonuses>
       </Level>
       <Level Id="3">
         <BaseDamage Min="103" Max="205" />
@@ -3094,6 +3106,10 @@
           <Skill>Rage3</Skill>
           <Skill>SuperSpin</Skill>
         </Skills>
+        <BaseStatBonuses>
+          <BaseStatBonus Stat="HealthTotal">64</BaseStatBonus>
+          <BaseStatBonus Stat="HealthRegen">12</BaseStatBonus>
+        </BaseStatBonuses>
       </Level>
       <Level Id="4">
         <BaseDamage Min="113" Max="226" />
@@ -3104,6 +3120,10 @@
           <Skill>Rage4</Skill>
           <Skill>SuperSpin</Skill>
         </Skills>
+        <BaseStatBonuses>
+          <BaseStatBonus Stat="HealthTotal">72</BaseStatBonus>
+          <BaseStatBonus Stat="HealthRegen">14</BaseStatBonus>
+        </BaseStatBonuses>
       </Level>
       <Level Id="5">
         <BaseDamage Min="125" Max="249" />
@@ -3114,6 +3134,10 @@
           <Skill>Rage5</Skill>
           <Skill>SuperSpin</Skill>
         </Skills>
+        <BaseStatBonuses>
+          <BaseStatBonus Stat="HealthTotal">80</BaseStatBonus>
+          <BaseStatBonus Stat="HealthRegen">16</BaseStatBonus>
+        </BaseStatBonuses>
       </Level>
     </LevelVariations>
   </ItemDefinition>
