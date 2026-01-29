@@ -800,6 +800,7 @@ for item_def in root.findall('ItemDefinition'):
     levels = weapon_data[excel_sheet]['levels']
     print(f"\n{item_id} (from {excel_sheet}):")
     
+    # Scrolls use Excel levels 0-5 (same as weapons ending in 1-5, NOT like weapons ending in 0)
     level_mapping = {0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5}
     
     level_variations = item_def.find('LevelVariations')
@@ -818,9 +819,8 @@ for item_def in root.findall('ItemDefinition'):
             continue
         
         excel_level = level_mapping[level_id_int]
-        excel_level_str = str(excel_level)
         
-        if excel_level_str not in levels:
+        if excel_level not in levels:
             continue
         
         base_damage = level_elem.find('BaseDamage')
@@ -829,8 +829,8 @@ for item_def in root.findall('ItemDefinition'):
         
         old_min = base_damage.get('Min')
         old_max = base_damage.get('Max')
-        new_min = levels[excel_level_str]['min']
-        new_max = levels[excel_level_str]['max']
+        new_min = levels[excel_level]['min']
+        new_max = levels[excel_level]['max']
         
         if old_min != str(new_min) or old_max != str(new_max):
             base_damage.set('Min', str(new_min))
