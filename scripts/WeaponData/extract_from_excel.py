@@ -291,11 +291,10 @@ for weapon, variants in variant_stats.items():
 print(f"✓ Stat name mapping: {len(stat_name_mapping)} entries")
 print(f"✓ Tier 1 bonuses: {len(tier1_headers)} stats × 6 levels")
 print(f"✓ Tier 2 bonuses: {len(tier2_headers)} stats × 6 levels")
+
 # ============================================================================
-# PHASE 4: UPDATE WEAPON STAT BONUSES IN XML FILES
+# WEAPON CONSTANTS AND HELPER FUNCTIONS
 # ============================================================================
-print("\n[PHASE 4] Updating weapon stat bonuses...")
-print("-" * 80)
 
 # OffHand weapons to exclude
 OFFHAND_WEAPONS = {'BattleMageMagicWand', 'BattleMageSword', 'DuelingPistol', 'MysticHammer', 
@@ -348,6 +347,129 @@ def find_excel_weapon_name(xml_base):
             return excel_name
     
     return None
+
+# ============================================================================
+# PHASE 4: UPDATE WEAPON DAMAGE VALUES IN XML FILES
+# ============================================================================
+print("\n[PHASE 4] Updating weapon damage values...")
+print("-" * 80)
+
+def update_weapon_damage(file_path):
+    """Process an ItemDefinitions XML file and update damage values"""
+    tree = ET.parse(file_path)
+    root = tree.getroot()
+    
+    damage_changes = []
+    update_count = 0
+    
+    for item in root.findall('.//ItemDefinition'):
+        item_id = item.get('Id')
+        if not item_id:
+            continue
+        
+        # Extract variant ID from the weapon ID
+        variant_id = int(item_id[-1]) if item_id[-1].isdigit() else None
+        if variant_id is None:
+            continue
+        
+        # Get the weapon base (strip off the trailing digit)
+        weapon_base = item_id.rstrip('0123456789')
+        
+        # Check if this is an offhand weapon
+        is_offhand = weapon_base in OFFHAND_WEAPONS
+        
+        # Find the Excel weapon name
+        excel_weapon_name = find_excel_weapon_name(weapon_base)
+        if not excel_weapon_name:
+            continue
+        
+        # Get damage data for this weapon
+        if excel_weapon_name not in weapon_data:
+            continue
+        
+        levels_data = weapon_data[excel_weapon_name]['levels']
+        
+        # Process all level variants
+        level_variations = item.find('LevelVariations')
+        if level_variations is None:
+            continue
+        
+        for level_elem in level_variations.findall('Level'):
+            level_id_str = level_elem.get('Id')
+            if level_id_str is None:
+                continue
+            
+            try:
+                level_id = int(level_id_str)
+            except (ValueError, TypeError):
+                continue
+            
+            # Map XML level to Excel level based on weapon type and variant_id
+            # Non-offhand weapons ending in 0: use Excel levels -1 to 4 (XML 0→Excel -1, ..., XML 5→Excel 4)
+            # All other weapons (including offhands): use Excel levels 0 to 5 (XML 0→Excel 0, ..., XML 5→Excel 5)
+            if variant_id == 0 and not is_offhand:
+                excel_level = level_id - 1  # XML 0→Excel -1, XML 1→Excel 0, ..., XML 5→Excel 4
+            else:
+                excel_level = level_id  # Direct mapping for offhands and all other weapons
+            
+            # Check if we have damage data for this Excel level
+            if excel_level not in levels_data:
+                continue
+            
+            damage_info = levels_data[excel_level]
+            new_min = damage_info['min']
+            new_max = damage_info['max']
+            
+            # Find or create BaseDamage element
+            base_damage = level_elem.find('BaseDamage')
+            if base_damage is None:
+                base_damage = ET.SubElement(level_elem, 'BaseDamage')
+            
+            old_min = base_damage.get('Min')
+            old_max = base_damage.get('Max')
+            
+            # Update damage values
+            if old_min != str(new_min) or old_max != str(new_max):
+                base_damage.set('Min', str(new_min))
+                base_damage.set('Max', str(new_max))
+                damage_changes.append({
+                    'weapon_id': item_id,
+                    'level': level_id,
+                    'excel_level': excel_level,
+                    'old': f"{old_min}-{old_max}" if old_min else "None",
+                    'new': f"{new_min}-{new_max}"
+                })
+                update_count += 1
+    
+    # Write the updated XML
+    tree.write(file_path, encoding='utf-8', xml_declaration=True)
+    
+    return update_count, damage_changes
+
+# Process all weapon files for damage updates
+all_damage_changes = []
+total_damage_updates = 0
+
+files_to_process_damage = [
+    '../../modded_files/ItemDefinitions_Weapons',
+    '../../modded_files/ItemDefinitions_DLC1',
+    '../../modded_files/ItemDefinitions_DLC2',
+]
+
+for file_path in files_to_process_damage:
+    print(f"\nProcessing {file_path}...")
+    update_count, changes = update_weapon_damage(file_path)
+    all_damage_changes.extend(changes)
+    total_damage_updates += update_count
+    print(f"  ✓ Updated {update_count} weapon damage values")
+
+print(f"\n✓ Total weapon damage updates: {total_damage_updates}")
+
+# ============================================================================
+# PHASE 5: UPDATE WEAPON STAT BONUSES IN XML FILES
+# ============================================================================
+print("\n[PHASE 5] Updating weapon stat bonuses...")
+print("-" * 80)
 
 def parse_composite_value(value_str):
     """Parse composite values like '7;2' or '40;8' into a list"""
@@ -599,9 +721,9 @@ for file_path in files_to_process:
 print(f"\n✓ Total stat bonus updates: {total_stat_updates}")
 
 # ============================================================================
-# PHASE 5: UPDATE SCROLL ITEM DAMAGE VALUES IN XML FILES
+# PHASE 6: UPDATE SCROLL ITEM DAMAGE VALUES IN XML FILES
 # ============================================================================
-print("\n[PHASE 5] Updating scroll item damage values...")
+print("\n[PHASE 6] Updating scroll item damage values...")
 print("-" * 80)
 
 scroll_mapping = {
@@ -717,9 +839,9 @@ print(f"\nUpdated {total_scroll_updated} scroll damage values")
 print(f"Removed {total_removed} damage values from special scrolls")
 
 # ============================================================================
-# PHASE 6: REFORMAT ALL XML FILES
+# PHASE 7: REFORMAT ALL XML FILES
 # ============================================================================
-print("\n[PHASE 6] Reformatting XML files...")
+print("\n[PHASE 7] Reformatting XML files...")
 print("-" * 80)
 
 def indent_xml(elem, level=0):
@@ -773,6 +895,7 @@ for file_path in files_to_reformat:
 print("\n" + "=" * 80)
 print("CONSOLIDATION COMPLETE")
 print("=" * 80)
+print(f"Weapon damage updates: {total_damage_updates}")
 print(f"Stat bonus updates: {total_stat_updates}")
 print(f"Scroll damage updates: {total_scroll_updated}")
 print(f"Scroll removals: {total_removed}")
