@@ -1540,9 +1540,9 @@
    <PerkDefinition Id="WeaknessFinder">
       <TokenVariables>
          <TokenVariable Key="IsolatedAttacksBonus" Value="Floor(Owner.Accuracy * (AccuracyPercentage / 100))"/>
-         <TokenVariable Key="AccuracyPercentage" Value="100"/>
+         <TokenVariable Key="AccuracyPercentage" Value="200"/>
          <TokenVariable Key="OpportunisticAttacksBonus" Value="Floor(Owner.ResistanceReduction * (ResReducPercentage / 100))"/>
-         <TokenVariable Key="ResReducPercentage" Value="100"/>
+         <TokenVariable Key="ResReducPercentage" Value="200"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="AccuracyPercentage" Suffix="%" Style="KeyWordNb"/>

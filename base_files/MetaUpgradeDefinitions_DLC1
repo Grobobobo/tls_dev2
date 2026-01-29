@@ -1,0 +1,382 @@
+﻿<MetaUpgradeDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:noNamespaceSchemaLocation="../MetaUpgradeDefinitions.xsd">
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- WEAPONS -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!--WARSHIELD-->
+   <MetaUpgradeDefinition Id="UnlockWarShield" Price="300" DLCId="Dwarves">
+      <Categories OverrideAutomaticCategories="true">
+         <Category Value="Weapon"/>
+      </Categories>
+      <UnlockConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="ENVIRONMENT:OwnedDLC Dwarves" B="1"/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesHealth1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>WarShield0</Item>
+            <Item>WarShield1</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockWarShieldVariations1" DLCId="Dwarves">
+      <Categories OverrideAutomaticCategories="true">
+         <Category Value="Weapon"/>
+      </Categories>
+      <UnlockConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag WarShield" B="25"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag WarShield" B="100"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>WarShield2</Item>
+            <Item>WarShield3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockWarShieldVariations2" DLCId="Dwarves">
+      <Categories OverrideAutomaticCategories="true">
+         <Category Value="Weapon"/>
+      </Categories>
+      <UnlockConditions>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockWarShieldVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag WarShield" B="300"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>WarShield4</Item>
+            <Item>WarShield5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>WarShield0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+  
+      <!--GAUNTLET-->
+   <MetaUpgradeDefinition Id="UnlockGauntlet" Price="300" DLCId="Dwarves">
+      <Categories OverrideAutomaticCategories="true">
+         <Category Value="Weapon"/>
+      </Categories>
+      <UnlockConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="ENVIRONMENT:OwnedDLC Dwarves" B="1"/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesHealth1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Gauntlet0</Item>
+            <Item>Gauntlet1</Item>
+            <Item>GauntletOffhand0</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockGauntletVariations1" DLCId="Dwarves">
+      <Categories OverrideAutomaticCategories="true">
+         <Category Value="Weapon"/>
+      </Categories>
+      <UnlockConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Gauntlet" B="25"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Gauntlet" B="100"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Gauntlet2</Item>
+            <Item>Gauntlet3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockGauntletVariations2" DLCId="Dwarves">
+      <Categories OverrideAutomaticCategories="true">
+         <Category Value="Weapon"/>
+      </Categories>
+      <UnlockConditions>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockGauntletVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Gauntlet" B="300"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Gauntlet4</Item>
+            <Item>Gauntlet5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>Gauntlet0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+  
+   
+   <!--CANNON-->
+   <MetaUpgradeDefinition Id="UnlockCannon" Price="300" DLCId="Dwarves">
+      <Categories OverrideAutomaticCategories="true">
+         <Category Value="Weapon"/>
+      </Categories>
+      <UnlockConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="ENVIRONMENT:OwnedDLC Dwarves" B="1"/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesHealth1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Cannon0</Item>
+            <Item>Cannon1</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockCannonVariations1" DLCId="Dwarves">
+      <Categories OverrideAutomaticCategories="true">
+         <Category Value="Weapon"/>
+      </Categories>
+      <UnlockConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Cannon" B="25"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Cannon" B="100"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Cannon2</Item>
+            <Item>Cannon3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockCannonVariations2" DLCId="Dwarves">
+      <Categories OverrideAutomaticCategories="true">
+         <Category Value="Weapon"/>
+      </Categories>
+      <UnlockConditions>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockCannonVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Cannon" B="300"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Cannon4</Item>
+            <Item>Cannon5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>Cannon0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+  
+      <!--Unlock GildenbergRedux-->
+   <MetaUpgradeDefinition Id="UnlockGildenbergReduxCity" DLCId="Dwarves">
+      <Categories OverrideAutomaticCategories="true">
+         <Category Value="City"/>
+      </Categories>
+      <UnlockConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsCompletedInCity Felderland" B="1"/>
+            <NumberAGreaterThanOrEqualToB A="ENVIRONMENT:OwnedDLC Dwarves" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsCompletedInCity Felderland" B="1"/>
+            <NumberAGreaterThanOrEqualToB A="ENVIRONMENT:OwnedDLC Dwarves" B="1"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockCities>
+            <City>GildenbergRedux</City>
+         </UnlockCities>
+      </UpgradeEffects>
+      <MandatoryUnlock/>
+   </MetaUpgradeDefinition>
+   
+   <!--Glyph-->
+   
+      <MetaUpgradeDefinition Id="UnlockGlyphItemWeaponMoreCannon" Price="500" DLCId="Dwarves">
+      <Categories OverrideAutomaticCategories="true">
+         <Category Value="Weapon"/>
+      </Categories>
+      <UnlockConditions>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockCannonVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockGlyphs>
+            <GlyphId>ItemWeaponMoreCannon</GlyphId>
+         </UnlockGlyphs>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockGlyphItemWeaponMoreGauntlet" Price="500" DLCId="Dwarves">
+      <Categories OverrideAutomaticCategories="true">
+         <Category Value="Weapon"/>
+      </Categories>
+      <UnlockConditions>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockGauntletVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockGlyphs>
+            <GlyphId>ItemWeaponMoreGauntlet</GlyphId>
+         </UnlockGlyphs>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockGlyphItemWeaponMoreWarShield" Price="500" DLCId="Dwarves">
+      <Categories OverrideAutomaticCategories="true">
+         <Category Value="Weapon"/>
+      </Categories>
+      <UnlockConditions>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockWarShieldVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockGlyphs>
+            <GlyphId>ItemWeaponMoreWarShield</GlyphId>
+         </UnlockGlyphs>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- TRINKETS A PERKS -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <MetaUpgradeDefinition Id="UnlockTrinketPerkDLC1_1" Price="500" DLCId="Dwarves">
+      <Categories OverrideAutomaticCategories="true">
+         <Category Value="Equipment"/>
+      </Categories>
+
+      <UnlockConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ItemsBoughtOrProducedOfCategory Trinket" B="10"/>
+            <NumberAGreaterThanOrEqualToB A="ENVIRONMENT:OwnedDLC Dwarves" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>MedalPerkForgeMastery</Item>
+            <Item>MedalPerkShowerofBlows</Item>
+            <Item>MedalPerkCollateralDamage</Item>
+            <Item>MedalPerkFearOfDeath</Item>
+            <Item>MedalPerkDontYouDareMoving</Item>
+            <Item>MedalPerkSmithsAnvil</Item>
+            <Item>MedalPerkLikeAShark</Item>
+         </UnlockItems>
+
+         <!-- to unlock perk medals in the shop -->
+         <CreateItemModifier>
+            <CreateItemId>ShopMedalPerk</CreateItemId>
+            <Count>1</Count>
+         </CreateItemModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockTrinketPerkDLC1_2" Price="500" DLCId="Dwarves">
+      <Categories OverrideAutomaticCategories="true">
+         <Category Value="Equipment"/>
+      </Categories>
+
+      <UnlockConditions>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockTrinketPerkDLC1_1" B="1"/>
+            <NumberAGreaterThanOrEqualToB A="ENVIRONMENT:OwnedDLC Dwarves" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>MedalPerkEarthquakeStrike</Item>
+            <Item>MedalPerkAgainstTheWall</Item>
+            <Item>MedalPerkStoneheartShield</Item>
+            <Item>MedalPerkAggressiveness</Item>
+            <Item>MedalPerkFYouInParticular</Item>
+            <Item>MedalPerkMoodSwings</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockBeers" Price="500" DLCId="Dwarves">
+      <Categories OverrideAutomaticCategories="true">
+         <Category Value="Equipment"/>
+      </Categories>
+
+      <UnlockConditions>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockInn" B="1"/>
+            <NumberAGreaterThanOrEqualToB A="ENVIRONMENT:OwnedDLC Dwarves" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>StoutBeer</Item>
+            <Item>AmberBeer</Item>
+            <Item>PilsnerBeer</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- DWARF RACE -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <MetaUpgradeDefinition Id="UnlockDwarf" DLCId="Dwarves">
+      <UnlockConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="ENVIRONMENT:OwnedDLC Dwarves" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="ENVIRONMENT:OwnedDLC Dwarves" B="1"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockRaces>
+            <Race>Dwarf</Race>
+         </UnlockRaces>
+      </UpgradeEffects>
+      <MandatoryUnlock/>
+   </MetaUpgradeDefinition>
+
+</MetaUpgradeDefinitions>

@@ -1,0 +1,2369 @@
+﻿<!--
+  - BuildingActionDefinition
+    - Attribute Id (required) : Id of the BuildingActionDefinition (unique name) => Must be the same in BuildingDefinition.xsd
+    - Element PhaseStates (optional) :
+      If not set the action will be available during all phases, otherwize you can choose between Available, Disable and Hidden for each phase
+         - Element Production (required)
+         - Element Deployment (required)
+         - Element Night (required)
+    - Element WorkersCost (optional) : The workers cost for this action, if not set it will be free
+    - Element UsesPerTurnCount (optional) : How many times the action can be use during a turn, if not set there is no limitation
+    - Element ActionEffects (required) : The BuildingActionDefinition can ave several effects, current avaible effets are FillGauge, Heal and HealMana
+      - Element FillGauge 
+         - Element Amount (required) : Must be a int, how many production units are added 
+      - Element Heal 
+         - Element Amount (required) : Must be a int, hom many hp it can heal
+      - Element HealMana 
+         - Element Amount (required) : Must be a int, hom many mp it can heal
+-->
+
+<BuildingActionDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:noNamespaceSchemaLocation="BuildingActionDefinitions.xsd">
+
+   <BuildingActionDefinition Id="HelpBlacksmith">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>2</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HelpBlacksmith_1">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HelpBlacksmith_2">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+   
+   <BuildingActionDefinition Id="HelpBlacksmith_3">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>3</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HelpArmorMaker">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>2</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HelpArmorMaker_1">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HelpArmorMaker_2">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HelpArmorMaker_3">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>3</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HelpBowyer">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>2</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HelpBowyer_1">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HelpBowyer_2">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HelpBowyer_3">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>3</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HelpMagicShop">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>2</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HelpMagicShop_1">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HelpMagicShop_2">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HelpMagicShop_3">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>3</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+
+   <BuildingActionDefinition Id="HelpTrinketMaker">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>2</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HelpTrinketMaker_1">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HelpTrinketMaker_2">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HelpTrinketMaker_3">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>3</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+
+   <BuildingActionDefinition Id="HelpPotionMaker">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>2</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HelpPotionMaker_1">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HelpPotionMaker_2">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HelpPotionMaker_3">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>3</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HelpBuilding_TargetBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_HelpProduction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+   
+   <!--TEMPLE-->
+
+   <BuildingActionDefinition Id="HealFree">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <Heal>
+            <Amount>40</Amount>
+            <Target>Single</Target>
+         </Heal>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/Heal_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_Temple_Heal</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HealFree_1">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <Heal>
+            <Amount>80</Amount>
+            <Target>Single</Target>
+         </Heal>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/Heal_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_Temple_Heal</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HealFree_2">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <Heal>
+            <Amount>200</Amount>
+            <Target>Single</Target>
+         </Heal>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/Heal_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_Temple_Heal</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="Heal">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <Heal>
+            <Amount>40</Amount>
+            <Target>All</Target>
+         </Heal>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/Heal_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_Temple_Heal</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="Heal_1">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <ActionEffects>
+         <Heal>
+            <Amount>60</Amount>
+            <Target>All</Target>
+         </Heal>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/Heal_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_Temple_Heal</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="Blessing">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>2</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <UpgradeStat>
+            <Stat>HealthTotal</Stat>
+            <Bonus>24</Bonus>
+            <Target>Single</Target>
+         </UpgradeStat>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/Heal_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_Temple_Heal</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="Blessing_1">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>2</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <UpgradeStat>
+            <Stat>HealthTotal</Stat>
+            <Bonus>32</Bonus>
+            <Target>Single</Target>
+         </UpgradeStat>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/Heal_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_Temple_Heal</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+
+   <!--MANA WELL-->
+
+   <BuildingActionDefinition Id="HealManaFree">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <HealMana>
+            <Amount>6</Amount>
+            <Target>Single</Target>
+         </HealMana>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HealMana_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_ManaWell_Heal</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HealManaFree_1">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <HealMana>
+            <Amount>12</Amount>
+            <Target>Single</Target>
+         </HealMana>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HealMana_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_ManaWell_Heal</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HealMana">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <HealMana>
+            <Amount>8</Amount>
+            <Target>All</Target>
+         </HealMana>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HealMana_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_ManaWell_Heal</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="HealMana_1">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <HealMana>
+            <Amount>12</Amount>
+            <Target>All</Target>
+         </HealMana>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HealMana_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_ManaWell_Heal</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="Gift">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <UpgradeStat>
+            <Stat>ManaTotal</Stat>
+            <Bonus>6</Bonus>
+            <Target>Single</Target>
+         </UpgradeStat>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HealMana_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_ManaWell_Heal</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="Gift_1">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <UpgradeStat>
+            <Stat>ManaTotal</Stat>
+            <Bonus>10</Bonus>
+            <Target>Single</Target>
+         </UpgradeStat>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HealMana_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_ManaWell_Heal</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="ScavengeGold">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <ActionEffects>
+         <Scavenge>
+            <GainGold>14</GainGold>
+            <GainMaterials>13</GainMaterials>
+            <Damage>50</Damage>
+         </Scavenge>
+         <GainMaterials>2</GainMaterials>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <!--<Path Orientation="N">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="W">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="S">00_Others/Scavenge_CasterBefore_SE</Path>
+               <Path Orientation="E">00_Others/Scavenge_CasterBefore_SE</Path>-->
+               <Path>00_Others/Scavenge_CasterBefore_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Scavenge/SFX_Skill_Building_Scavenge</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="ScavengeMaterials">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <ActionEffects>
+         <Scavenge>
+            <GainGold>4</GainGold>
+            <GainMaterials>40</GainMaterials>
+            <Damage>50</Damage>
+         </Scavenge>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <!--<Path Orientation="N">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="W">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="S">00_Others/Scavenge_CasterBefore_SE</Path>
+               <Path Orientation="E">00_Others/Scavenge_CasterBefore_SE</Path>-->
+               <Path>00_Others/Scavenge_CasterBefore_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Scavenge/SFX_Skill_Building_Scavenge</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="ScavengeGold2">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>2</WorkersCost>
+      <ActionEffects>
+         <Scavenge>
+            <GainGold>32</GainGold>
+            <GainMaterials>28</GainMaterials>
+            <Damage>100</Damage>
+         </Scavenge>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <!--<Path Orientation="N">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="W">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="S">00_Others/Scavenge_CasterBefore_SE</Path>
+               <Path Orientation="E">00_Others/Scavenge_CasterBefore_SE</Path>-->
+               <Path>00_Others/Scavenge_CasterBefore_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Scavenge/SFX_Skill_Building_Scavenge</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="ScavengeMaterials2">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>2</WorkersCost>
+      <ActionEffects>
+         <Scavenge>
+            <GainGold>9</GainGold>
+            <GainMaterials>90</GainMaterials>
+            <Damage>100</Damage>
+         </Scavenge>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <!--<Path Orientation="N">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="W">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="S">00_Others/Scavenge_CasterBefore_SE</Path>
+               <Path Orientation="E">00_Others/Scavenge_CasterBefore_SE</Path>-->
+               <Path>00_Others/Scavenge_CasterBefore_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Scavenge/SFX_Skill_Building_Scavenge</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="ScavengeGold3">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>3</WorkersCost>
+      <ActionEffects>
+         <Scavenge>
+            <GainGold>54</GainGold>
+            <GainMaterials>46</GainMaterials>
+            <Damage>150</Damage>
+         </Scavenge>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <!--<Path Orientation="N">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="W">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="S">00_Others/Scavenge_CasterBefore_SE</Path>
+               <Path Orientation="E">00_Others/Scavenge_CasterBefore_SE</Path>-->
+               <Path>00_Others/Scavenge_CasterBefore_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Scavenge/SFX_Skill_Building_Scavenge</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="ScavengeMaterials3">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>3</WorkersCost>
+      <ActionEffects>
+         <Scavenge>
+            <GainGold>16</GainGold>
+            <GainMaterials>160</GainMaterials>
+            <Damage>150</Damage>
+         </Scavenge>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <!--<Path Orientation="N">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="W">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="S">00_Others/Scavenge_CasterBefore_SE</Path>
+               <Path Orientation="E">00_Others/Scavenge_CasterBefore_SE</Path>-->
+               <Path>00_Others/Scavenge_CasterBefore_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Scavenge/SFX_Skill_Building_Scavenge</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="ScavengeGold4">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>4</WorkersCost>
+      <ActionEffects>
+         <Scavenge>
+            <GainGold>80</GainGold>
+            <GainMaterials>67</GainMaterials>
+            <Damage>200</Damage>
+         </Scavenge>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <!--<Path Orientation="N">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="W">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="S">00_Others/Scavenge_CasterBefore_SE</Path>
+               <Path Orientation="E">00_Others/Scavenge_CasterBefore_SE</Path>-->
+               <Path>00_Others/Scavenge_CasterBefore_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Scavenge/SFX_Skill_Building_Scavenge</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="ScavengeMaterials4">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>4</WorkersCost>
+      <ActionEffects>
+         <Scavenge>
+            <GainGold>24</GainGold>
+            <GainMaterials>240</GainMaterials>
+            <Damage>200</Damage>
+         </Scavenge>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <!--<Path Orientation="N">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="W">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="S">00_Others/Scavenge_CasterBefore_SE</Path>
+               <Path Orientation="E">00_Others/Scavenge_CasterBefore_SE</Path>-->
+               <Path>00_Others/Scavenge_CasterBefore_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Scavenge/SFX_Skill_Building_Scavenge</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   
+   <!--BONEPILES-->
+
+   <!--<BuildingActionDefinition Id="BoneScavengeResource">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <ActionEffects>
+         <Scavenge>
+            <GainGold>8</GainGold>
+            <GainMaterials>16</GainMaterials>
+            <GainDamnedSouls>10</GainDamnedSouls>
+            <Damage>50</Damage>
+         </Scavenge>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/Scavenge_CasterBefore_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <FolderPath>00_Others/Scavenge/BonePile/SFX_Skill_Building_Scavenge_BonePile_LVL01</FolderPath>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>-->
+
+   <BuildingActionDefinition Id="BoneScavengeGold">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <ActionEffects>
+         <Scavenge>
+            <GainGold>16</GainGold>
+            <GainDamnedSouls>10</GainDamnedSouls>
+            <Damage>50</Damage>
+         </Scavenge>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/Scavenge_CasterBefore_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <FolderPath>00_Others/Scavenge/BonePile/SFX_Skill_Building_Scavenge_BonePile_LVL01</FolderPath>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="BoneScavengeMaterials">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <ActionEffects>
+         <Scavenge>
+            <GainMaterials>30</GainMaterials>
+            <GainDamnedSouls>10</GainDamnedSouls>
+            <Damage>50</Damage>
+         </Scavenge>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/Scavenge_CasterBefore_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <FolderPath>00_Others/Scavenge/BonePile/SFX_Skill_Building_Scavenge_BonePile_LVL01</FolderPath>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="BoneScavengeResource2">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <ActionEffects>
+         <Scavenge>
+            <GainGold>18</GainGold>
+            <GainMaterials>32</GainMaterials>
+            <GainDamnedSouls>25</GainDamnedSouls>
+            <Damage>125</Damage>
+         </Scavenge>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/Scavenge_CasterBefore_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <FolderPath>00_Others/Scavenge/BonePile/SFX_Skill_Building_Scavenge_BonePile_LVL02</FolderPath>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+
+   <BuildingActionDefinition Id="BoneScavengeItem2">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <ActionEffects>
+         <Scavenge>
+            <GainDamnedSouls>25</GainDamnedSouls>
+            <CreateItem>
+               <BuildingLevelModifiersList Id="BonePile"/>
+               <ItemsList Id="ItemList_NightReward"/>
+               <ItemRaritiesList Id="BonePile"/>
+            </CreateItem>
+            <Damage>125</Damage>
+         </Scavenge>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/Scavenge_CasterBefore_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <FolderPath>00_Others/Scavenge/BonePile/SFX_Skill_Building_Scavenge_BonePile_LVL02</FolderPath>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+
+
+   <BuildingActionDefinition Id="BoneScavengeResource3">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>2</WorkersCost>
+      <ActionEffects>
+         <Scavenge>
+            <GainGold>72</GainGold>
+            <GainMaterials>128</GainMaterials>
+            <GainDamnedSouls>50</GainDamnedSouls>
+            <Damage>250</Damage>
+         </Scavenge>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/Scavenge_CasterBefore_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <FolderPath>00_Others/Scavenge/BonePile/SFX_Skill_Building_Scavenge_BonePile_LVL03</FolderPath>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+
+
+   <BuildingActionDefinition Id="BoneScavengeItem3">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>2</WorkersCost>
+      <ActionEffects>
+         <Scavenge>
+            <GainDamnedSouls>50</GainDamnedSouls>
+            <CreateItem>
+               <BuildingLevelModifiersList Id="BonePile"/>
+               <ItemsList Id="ItemList_NightReward"/>
+               <ItemRaritiesList Id="BonePile"/>
+            </CreateItem>
+            <CreateItem>
+               <BuildingLevelModifiersList Id="BonePile"/>
+               <ItemsList Id="ItemList_NightReward"/>
+               <ItemRaritiesList Id="BonePile"/>
+            </CreateItem>
+            <CreateItem>
+               <BuildingLevelModifiersList Id="BonePile"/>
+               <ItemsList Id="ItemList_NightReward"/>
+               <ItemRaritiesList Id="BonePile"/>
+            </CreateItem>
+            <Damage>250</Damage>
+         </Scavenge>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/Scavenge_CasterBefore_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <FolderPath>00_Others/Scavenge/BonePile/SFX_Skill_Building_Scavenge_BonePile_LVL03</FolderPath>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+
+
+   <!--<BuildingActionDefinition Id="EliteBoneScavengeResource">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <ActionEffects>
+         <Scavenge>
+            <GainGold>36</GainGold>
+            <GainMaterials>68</GainMaterials>
+            <GainDamnedSouls>100</GainDamnedSouls>
+            <Damage>125</Damage>
+         </Scavenge>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/Scavenge_CasterBefore_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <FolderPath>00_Others/Scavenge/BonePile/SFX_Skill_Building_Scavenge_BonePile_LVLElite</FolderPath>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>-->
+   
+
+   <BuildingActionDefinition Id="EliteBoneScavengeItem">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <ActionEffects>
+         <Scavenge>
+            <GainGold>22</GainGold>
+            <GainMaterials>38</GainMaterials>
+            <GainDamnedSouls>100</GainDamnedSouls>
+            <CreateItem>
+               <BuildingLevelModifiersList Id="BonePileElite"/>
+               <ItemsList Id="ItemList_NightReward"/>
+               <ItemRaritiesList Id="AlwaysEpic"/>
+            </CreateItem>
+            <Damage>125</Damage>
+         </Scavenge>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/Scavenge_CasterBefore_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <FolderPath>00_Others/Scavenge/BonePile/SFX_Skill_Building_Scavenge_BonePile_LVLElite</FolderPath>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+   
+   
+   <!--BONEPILES END-->
+
+   <BuildingActionDefinition Id="ReloadSkillPoints">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <ActionEffects>
+         <ReloadSkillPoints>
+            <SkillPoints>1</SkillPoints>
+         </ReloadSkillPoints>
+      </ActionEffects>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="Mine">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>2</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="SE">00_Others/Mine_HitTiles_SE</Path>
+               <Path Orientation="NW">00_Others/Mine_HitTiles_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Scavenge/SFX_Skill_Building_Scavenge</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="Mine_1">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="SE">00_Others/Mine_HitTiles_SE</Path>
+               <Path Orientation="NW">00_Others/Mine_HitTiles_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Scavenge/SFX_Skill_Building_Scavenge</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+  <BuildingActionDefinition Id="Mine_2">
+    <PhaseStates>
+      <Production>Available</Production>
+      <Deployment>Disable</Deployment>
+      <Night>Disable</Night>
+    </PhaseStates>
+    <WorkersCost>1</WorkersCost>
+    <UsesPerTurnCount>2</UsesPerTurnCount>
+     <ActionEffects>
+        <FillGauge>
+           <Amount>10</Amount>
+        </FillGauge>
+     </ActionEffects>
+    <CastFXs TotalDuration="0.5">
+      <VisualEffect>
+        <Paths>
+          <Path Orientation="SE">00_Others/Mine_HitTiles_SE</Path>
+          <Path Orientation="NW">00_Others/Mine_HitTiles_NW</Path>
+        </Paths>
+        <SortingDepth>Before</SortingDepth>
+        <Target>HitTiles</Target>
+      </VisualEffect>
+
+      <SoundEffect>
+        <Path>00_Others/Scavenge/SFX_Skill_Building_Scavenge</Path>
+        <Delay>0</Delay>
+      </SoundEffect>
+
+      <CamShake>
+        <Id>Soft Hit-CamShake</Id>
+        <Delay>0.50</Delay>
+      </CamShake>
+    </CastFXs>
+  </BuildingActionDefinition>
+
+  <!--<BuildingActionDefinition Id="Mine_3">
+    <PhaseStates>
+      <Production>Available</Production>
+      <Deployment>Disable</Deployment>
+      <Night>Disable</Night>
+    </PhaseStates>
+    <WorkersCost>3</WorkersCost>
+    <UsesPerTurnCount>1</UsesPerTurnCount>
+     <ActionEffects>
+        <FillGauge>
+           <Amount>10</Amount>
+        </FillGauge>
+     </ActionEffects>
+    <CastFXs TotalDuration="0.5">
+      <VisualEffect>
+        <Paths>
+          <Path Orientation="SE">00_Others/Mine_HitTiles_SE</Path>
+          <Path Orientation="NW">00_Others/Mine_HitTiles_NW</Path>
+        </Paths>
+        <SortingDepth>Before</SortingDepth>
+        <Target>HitTiles</Target>
+      </VisualEffect>
+
+      <SoundEffect>
+        <Path>00_Others/Scavenge/SFX_Skill_Building_Scavenge</Path>
+        <Delay>0</Delay>
+      </SoundEffect>
+
+      <CamShake>
+        <Id>Soft Hit-CamShake</Id>
+        <Delay>0.50</Delay>
+      </CamShake>
+    </CastFXs>
+  </BuildingActionDefinition>-->
+
+   <BuildingActionDefinition Id="Scavenge">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>2</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <!--<Path Orientation="N">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="W">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="S">00_Others/Scavenge_CasterBefore_SE</Path>
+               <Path Orientation="E">00_Others/Scavenge_CasterBefore_SE</Path>-->
+               <Path>00_Others/Scavenge_CasterBefore_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Scavenge/SFX_Skill_Building_Scavenge</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="Scavenge_1">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <FillGauge>
+            <Amount>10</Amount>
+         </FillGauge>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <!--<Path Orientation="N">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="W">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="S">00_Others/Scavenge_CasterBefore_SE</Path>
+               <Path Orientation="E">00_Others/Scavenge_CasterBefore_SE</Path>-->
+               <Path>00_Others/Scavenge_CasterBefore_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Scavenge/SFX_Skill_Building_Scavenge</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.50</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="Scavenge_2">
+    <PhaseStates>
+      <Production>Available</Production>
+      <Deployment>Disable</Deployment>
+      <Night>Disable</Night>
+    </PhaseStates>
+    <WorkersCost>1</WorkersCost>
+    <UsesPerTurnCount>2</UsesPerTurnCount>
+     <ActionEffects>
+        <FillGauge>
+           <Amount>10</Amount>
+        </FillGauge>
+     </ActionEffects>
+     <CastFXs TotalDuration="0.5">
+        <VisualEffect>
+           <Paths>
+              <!--<Path Orientation="N">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="W">00_Others/Scavenge_CasterBefore_NW</Path>
+               <Path Orientation="S">00_Others/Scavenge_CasterBefore_SE</Path>
+               <Path Orientation="E">00_Others/Scavenge_CasterBefore_SE</Path>-->
+              <Path>00_Others/Scavenge_CasterBefore_NW</Path>
+           </Paths>
+           <SortingDepth>Before</SortingDepth>
+           <Target>HitTiles</Target>
+        </VisualEffect>
+
+        <SoundEffect>
+           <Path>00_Others/Scavenge/SFX_Skill_Building_Scavenge</Path>
+           <Delay>0</Delay>
+        </SoundEffect>
+
+        <CamShake>
+           <Id>Soft Hit-CamShake</Id>
+           <Delay>0.50</Delay>
+        </CamShake>
+     </CastFXs>
+  </BuildingActionDefinition>
+
+  <!--<BuildingActionDefinition Id="Scavenge_3">
+    <PhaseStates>
+      <Production>Available</Production>
+      <Deployment>Disable</Deployment>
+      <Night>Disable</Night>
+    </PhaseStates>
+    <WorkersCost>3</WorkersCost>
+    <UsesPerTurnCount>1</UsesPerTurnCount>
+    <ActionEffects>
+      <GainMaterials>150</GainMaterials>
+    </ActionEffects>
+  </BuildingActionDefinition>-->
+
+   <BuildingActionDefinition Id="RepelFog">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>Ceil(4-(FogDensityIndex/2))</WorkersCost> <!-- FogDensityIndex and FogDensityValue are usable -->
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <RepelFog>
+            <Amount>1</Amount>
+         </RepelFog>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Fog_Reveal</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+   <BuildingActionDefinition Id="GuessWhere">
+      <PhaseStates>
+         <Production>Available</Production>
+         <Deployment>Disable</Deployment>
+         <Night>Disable</Night>
+      </PhaseStates>
+      <WorkersCost>1</WorkersCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionEffects>
+         <RevealWaveEnemiesRatio/>
+      </ActionEffects>
+      <CastFXs TotalDuration="0.5">
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Seer_Show_Direction</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+      </CastFXs>
+   </BuildingActionDefinition>
+
+  <BuildingActionDefinition Id="GuessAgain">
+    <PhaseStates>
+      <Production>Available</Production>
+      <Deployment>Disable</Deployment>
+      <Night>Disable</Night>
+    </PhaseStates>
+    <WorkersCost>1</WorkersCost>
+    <UsesPerTurnCount>2</UsesPerTurnCount>
+    <ActionEffects>
+      <RerollWave/>
+    </ActionEffects>
+     <CastFXs TotalDuration="0.5">
+        <SoundEffect>
+           <Path>00_Others/Building/SFX_Skill_Seer_Reroll</Path>
+           <Delay>0</Delay>
+        </SoundEffect>
+     </CastFXs>
+  </BuildingActionDefinition>
+
+</BuildingActionDefinitions>
