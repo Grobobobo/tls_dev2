@@ -195,6 +195,9 @@
         <Perks>
           <Perk>BloodDrinker</Perk>
         </Perks>
+        <BaseStatBonuses>
+          <BaseStatBonus Stat="CriticalPower">15</BaseStatBonus>
+        </BaseStatBonuses>
       </Level>
       <Level Id="1">
         <BaseDamage Min="64" Max="128" />
@@ -208,6 +211,9 @@
         <Perks>
           <Perk>BloodDrinker</Perk>
         </Perks>
+        <BaseStatBonuses>
+          <BaseStatBonus Stat="CriticalPower">18</BaseStatBonus>
+        </BaseStatBonuses>
       </Level>
       <Level Id="2">
         <BaseDamage Min="71" Max="141" />
@@ -221,6 +227,9 @@
         <Perks>
           <Perk>BloodDrinker</Perk>
         </Perks>
+        <BaseStatBonuses>
+          <BaseStatBonus Stat="CriticalPower">21</BaseStatBonus>
+        </BaseStatBonuses>
       </Level>
       <Level Id="3">
         <BaseDamage Min="78" Max="155" />
@@ -234,6 +243,9 @@
         <Perks>
           <Perk>BloodDrinker</Perk>
         </Perks>
+        <BaseStatBonuses>
+          <BaseStatBonus Stat="CriticalPower">24</BaseStatBonus>
+        </BaseStatBonuses>
       </Level>
       <Level Id="4">
         <BaseDamage Min="86" Max="171" />
@@ -247,6 +259,9 @@
         <Perks>
           <Perk>BloodDrinker</Perk>
         </Perks>
+        <BaseStatBonuses>
+          <BaseStatBonus Stat="CriticalPower">27</BaseStatBonus>
+        </BaseStatBonuses>
       </Level>
       <Level Id="5">
         <BaseDamage Min="94" Max="188" />
@@ -260,6 +275,9 @@
         <Perks>
           <Perk>BloodDrinker</Perk>
         </Perks>
+        <BaseStatBonuses>
+          <BaseStatBonus Stat="CriticalPower">30</BaseStatBonus>
+        </BaseStatBonuses>
       </Level>
     </LevelVariations>
   </ItemDefinition>

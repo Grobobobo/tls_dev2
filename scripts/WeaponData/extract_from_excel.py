@@ -315,6 +315,7 @@ WEAPON_NAME_MAPPING = {
     'HandCrossbow': 'Hand crossbow',
     'MagicOrb': 'Magic orb',
     'ManaFlower': 'Sacred Flower',
+    'Claw': 'Claws',
 }
 
 def find_excel_weapon_name(xml_base):
@@ -334,14 +335,15 @@ def find_excel_weapon_name(xml_base):
         return excel_weapons_lower[normalized]
     
     # Try removing hyphens and spaces from Excel names for comparison
-    for excel_name, excel_name_lower in excel_weapons_lower.items():
+    for excel_name in weapon_variants_mapping.keys():
+        excel_name_lower = excel_name.lower()
         if excel_name_lower.replace(' ', '').replace('-', '') == normalized.replace(' ', '').replace('-', ''):
             return excel_name
     
     # Try checking if any excel weapon name contains the normalized string
-    for excel_name, excel_name_lower in excel_weapons_lower.items():
+    for excel_name in weapon_variants_mapping.keys():
         # Remove all non-alphanumeric for fuzzy matching
-        excel_clean = ''.join(c for c in excel_name_lower if c.isalnum())
+        excel_clean = ''.join(c for c in excel_name.lower() if c.isalnum())
         xml_clean = ''.join(c for c in normalized if c.isalnum())
         if excel_clean == xml_clean:
             return excel_name
@@ -493,12 +495,18 @@ def find_stat_value_in_bonuses(stat_name, bonuses_dict):
         if key.lower() == stat_name.lower():
             return value
     
+    # Try with/without spaces (e.g., "CriticalPower" vs "Critical Power")
+    stat_name_no_space = stat_name.replace(' ', '')
+    for key, value in bonuses_dict.items():
+        if key.replace(' ', '').lower() == stat_name_no_space.lower():
+            return value
+    
     # Try to find in composite keys (e.g., "Mana;Mana Regen")
     for key, value in bonuses_dict.items():
         if ';' in key:
             parts = [p.strip() for p in key.split(';')]
             for i, part in enumerate(parts):
-                if part.lower() == stat_name.lower():
+                if part.lower() == stat_name.lower() or part.replace(' ', '').lower() == stat_name_no_space.lower():
                     values = parse_composite_value(value)
                     if i < len(values):
                         return values[i]
@@ -513,6 +521,12 @@ def map_excel_stat_to_xml(excel_stat_name):
     # Try case-insensitive match
     for key, val in stat_name_mapping.items():
         if key.lower() == excel_stat_name.lower():
+            return val
+    
+    # Try with/without spaces (e.g., "CriticalPower" vs "Critical Power")
+    excel_stat_no_space = excel_stat_name.replace(' ', '')
+    for key, val in stat_name_mapping.items():
+        if key.replace(' ', '').lower() == excel_stat_no_space.lower():
             return val
     
     return None
