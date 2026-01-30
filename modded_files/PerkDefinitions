@@ -1574,7 +1574,7 @@
          <TokenVariable Key="IsMoveAboveZero" Value="Owner.MovePoints > MovePointsValueToCancelActivation"/>
          <TokenVariable Key="SkillHasMoveCost" Value="Skill.MovePointsCost > 0"/>
          <TokenVariable Key="TargetMinDistanceToActivate" Value="5"/>
-         <TokenVariable Key="MovePointsValueToCancelActivation" Value="3"/>
+         <TokenVariable Key="MovePointsValueToCancelActivation" Value="4"/>
          <TokenVariable Key="MovePointsMultiplier" Value="2"/>
       </TokenVariables>
       <LocArguments>
@@ -2170,7 +2170,7 @@
    <!-- T5 -->
    <PerkDefinition Id="FastToxins">
       <TokenVariables>
-         <TokenVariable Key="PoisonDamageModifierBonus" Value="100"/>
+         <TokenVariable Key="PoisonDamageModifierBonus" Value="200"/>
          <TokenVariable Key="PoisonTurnsCountModifier" Value="-1"/>
       </TokenVariables>
       <LocArguments>

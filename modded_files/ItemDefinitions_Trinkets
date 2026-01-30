@@ -8,48 +8,103 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="Resistance">8</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>10</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">2</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">-30</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">3</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>15</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">4</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">-36</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">6</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="Resistance">10</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>24</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">6</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">-42</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">9</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="Resistance">12</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>38</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">8</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">-48</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">12</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="Resistance">14</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>58</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">-54</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">15</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="Resistance">16</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>85</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">12</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">-60</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">18</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="Resistance">18</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>120</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">14</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">-66</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">21</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="Resistance">20</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>165</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">16</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">-72</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">24</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="Resistance">22</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>222</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">18</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">-78</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">27</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="Resistance">24</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>293</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">20</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">-84</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">30</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="Resistance">26</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>382</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">22</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">-90</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">33</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -58,7 +113,7 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="Resistance">3</MainStatBonus>
+				<MainStatBonus Stat="Resistance">5</MainStatBonus>
 				<BasePrice>12</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
@@ -66,7 +121,7 @@
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="Resistance">4</MainStatBonus>
+				<MainStatBonus Stat="Resistance">10</MainStatBonus>
 				<BasePrice>17</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
@@ -74,7 +129,7 @@
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="Resistance">5</MainStatBonus>
+				<MainStatBonus Stat="Resistance">15</MainStatBonus>
 				<BasePrice>26</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
@@ -82,7 +137,7 @@
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="Resistance">7</MainStatBonus>
+				<MainStatBonus Stat="Resistance">20</MainStatBonus>
 				<BasePrice>40</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
@@ -90,7 +145,7 @@
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="Resistance">9</MainStatBonus>
+				<MainStatBonus Stat="Resistance">25</MainStatBonus>
 				<BasePrice>60</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
@@ -98,7 +153,7 @@
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="Resistance">11</MainStatBonus>
+				<MainStatBonus Stat="Resistance">30</MainStatBonus>
 				<BasePrice>87</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
@@ -106,7 +161,7 @@
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="Resistance">13</MainStatBonus>
+				<MainStatBonus Stat="Resistance">35</MainStatBonus>
 				<BasePrice>122</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
@@ -114,7 +169,7 @@
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="Resistance">15</MainStatBonus>
+				<MainStatBonus Stat="Resistance">40</MainStatBonus>
 				<BasePrice>167</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
@@ -122,7 +177,7 @@
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="Resistance">17</MainStatBonus>
+				<MainStatBonus Stat="Resistance">45</MainStatBonus>
 				<BasePrice>224</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
@@ -130,7 +185,7 @@
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="Resistance">19</MainStatBonus>
+				<MainStatBonus Stat="Resistance">50</MainStatBonus>
 				<BasePrice>296</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
@@ -138,7 +193,7 @@
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="Resistance">21</MainStatBonus>
+				<MainStatBonus Stat="Resistance">55</MainStatBonus>
 				<BasePrice>385</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
@@ -152,80 +207,80 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="ArmorTotal">15</MainStatBonus>
+				<MainStatBonus Stat="ArmorTotal">30</MainStatBonus>
 				<BasePrice>10</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">2</BaseStatBonus>
-				</BaseStatBonuses>
-			</Level>
-			<Level Id="1">
-				<MainStatBonus Stat="ArmorTotal">19</MainStatBonus>
-				<BasePrice>15</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">4</BaseStatBonus>
-				</BaseStatBonuses>
-			</Level>
-			<Level Id="2">
-				<MainStatBonus Stat="ArmorTotal">27</MainStatBonus>
-				<BasePrice>24</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Accuracy">6</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
-			<Level Id="3">
-				<MainStatBonus Stat="ArmorTotal">32</MainStatBonus>
-				<BasePrice>38</BasePrice>
+			<Level Id="1">
+				<MainStatBonus Stat="ArmorTotal">42</MainStatBonus>
+				<BasePrice>15</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Accuracy">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="ArmorTotal">54</MainStatBonus>
+				<BasePrice>24</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Accuracy">8</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
-			<Level Id="4">
-				<MainStatBonus Stat="ArmorTotal">39</MainStatBonus>
-				<BasePrice>58</BasePrice>
+			<Level Id="3">
+				<MainStatBonus Stat="ArmorTotal">66</MainStatBonus>
+				<BasePrice>38</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Accuracy">9</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
-			<Level Id="5">
-				<MainStatBonus Stat="ArmorTotal">45</MainStatBonus>
-				<BasePrice>85</BasePrice>
+			<Level Id="4">
+				<MainStatBonus Stat="ArmorTotal">78</MainStatBonus>
+				<BasePrice>58</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Accuracy">10</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
-			<Level Id="6">
-				<MainStatBonus Stat="ArmorTotal">50</MainStatBonus>
-				<BasePrice>120</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">11</BaseStatBonus>
-				</BaseStatBonuses>
-			</Level>
-			<Level Id="7">
-				<MainStatBonus Stat="ArmorTotal">57</MainStatBonus>
-				<BasePrice>165</BasePrice>
+			<Level Id="5">
+				<MainStatBonus Stat="ArmorTotal">90</MainStatBonus>
+				<BasePrice>85</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Accuracy">12</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
-			<Level Id="8">
-				<MainStatBonus Stat="ArmorTotal">63</MainStatBonus>
-				<BasePrice>222</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">13</BaseStatBonus>
-				</BaseStatBonuses>
-			</Level>
-			<Level Id="9">
-				<MainStatBonus Stat="ArmorTotal">69</MainStatBonus>
-				<BasePrice>293</BasePrice>
+			<Level Id="6">
+				<MainStatBonus Stat="ArmorTotal">102</MainStatBonus>
+				<BasePrice>120</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Accuracy">14</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="ArmorTotal">114</MainStatBonus>
+				<BasePrice>165</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Accuracy">16</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="ArmorTotal">126</MainStatBonus>
+				<BasePrice>222</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Accuracy">18</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="ArmorTotal">138</MainStatBonus>
+				<BasePrice>293</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Accuracy">20</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="ArmorTotal">75</MainStatBonus>
+				<MainStatBonus Stat="ArmorTotal">150</MainStatBonus>
 				<BasePrice>382</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">15</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">22</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -235,91 +290,80 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="CriticalPower">15</MainStatBonus>
+				<MainStatBonus Stat="Block">5</MainStatBonus>
 				<BasePrice>12</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">10</BaseStatBonus>
-					<BaseStatBonus Stat="ManaRegen">-2</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">15</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="CriticalPower">20</MainStatBonus>
+				<MainStatBonus Stat="Block">7</MainStatBonus>
 				<BasePrice>17</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">14</BaseStatBonus>
-					<BaseStatBonus Stat="ManaRegen">-2</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">21</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="CriticalPower">25</MainStatBonus>
+				<MainStatBonus Stat="Block">9</MainStatBonus>
 				<BasePrice>26</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">22</BaseStatBonus>
-					<BaseStatBonus Stat="ManaRegen">-2</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">27</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="CriticalPower">30</MainStatBonus>
+				<MainStatBonus Stat="Block">11</MainStatBonus>
 				<BasePrice>40</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">28</BaseStatBonus>
-					<BaseStatBonus Stat="ManaRegen">-2</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">33</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="CriticalPower">35</MainStatBonus>
+				<MainStatBonus Stat="Block">13</MainStatBonus>
 				<BasePrice>60</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">34</BaseStatBonus>
-					<BaseStatBonus Stat="ManaRegen">-2</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">39</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="CriticalPower">40</MainStatBonus>
+				<MainStatBonus Stat="Block">15</MainStatBonus>
 				<BasePrice>87</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">40</BaseStatBonus>
-					<BaseStatBonus Stat="ManaRegen">-2</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">45</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="CriticalPower">45</MainStatBonus>
+				<MainStatBonus Stat="Block">17</MainStatBonus>
 				<BasePrice>122</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">46</BaseStatBonus>
-					<BaseStatBonus Stat="ManaRegen">-3</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">51</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="CriticalPower">50</MainStatBonus>
+				<MainStatBonus Stat="Block">19</MainStatBonus>
 				<BasePrice>167</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">52</BaseStatBonus>
-					<BaseStatBonus Stat="ManaRegen">-3</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">57</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="CriticalPower">55</MainStatBonus>
+				<MainStatBonus Stat="Block">21</MainStatBonus>
 				<BasePrice>224</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">58</BaseStatBonus>
-					<BaseStatBonus Stat="ManaRegen">-3</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">63</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="CriticalPower">60</MainStatBonus>
+				<MainStatBonus Stat="Block">23</MainStatBonus>
 				<BasePrice>296</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">64</BaseStatBonus>
-					<BaseStatBonus Stat="ManaRegen">-3</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">69</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="CriticalPower">65</MainStatBonus>
+				<MainStatBonus Stat="Block">25</MainStatBonus>
 				<BasePrice>385</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">70</BaseStatBonus>
-					<BaseStatBonus Stat="ManaRegen">-3</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">75</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -329,80 +373,80 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="IsolatedAttacks">7</MainStatBonus>
+				<MainStatBonus Stat="IsolatedAttacks">15</MainStatBonus>
 				<BasePrice>14</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">10</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">7</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="IsolatedAttacks">10</MainStatBonus>
+				<MainStatBonus Stat="IsolatedAttacks">19</MainStatBonus>
 				<BasePrice>20</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">14</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">10</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="IsolatedAttacks">13</MainStatBonus>
+				<MainStatBonus Stat="IsolatedAttacks">23</MainStatBonus>
 				<BasePrice>30</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">22</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">13</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="IsolatedAttacks">16</MainStatBonus>
+				<MainStatBonus Stat="IsolatedAttacks">27</MainStatBonus>
 				<BasePrice>45</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">28</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="IsolatedAttacks">19</MainStatBonus>
+				<MainStatBonus Stat="IsolatedAttacks">31</MainStatBonus>
 				<BasePrice>66</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">34</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">19</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="IsolatedAttacks">22</MainStatBonus>
+				<MainStatBonus Stat="IsolatedAttacks">35</MainStatBonus>
 				<BasePrice>94</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">40</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">22</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="IsolatedAttacks">25</MainStatBonus>
+				<MainStatBonus Stat="IsolatedAttacks">39</MainStatBonus>
 				<BasePrice>131</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">46</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">25</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="IsolatedAttacks">27</MainStatBonus>
+				<MainStatBonus Stat="IsolatedAttacks">43</MainStatBonus>
 				<BasePrice>178</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">52</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">28</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="IsolatedAttacks">29</MainStatBonus>
+				<MainStatBonus Stat="IsolatedAttacks">47</MainStatBonus>
 				<BasePrice>238</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">58</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">31</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="IsolatedAttacks">31</MainStatBonus>
+				<MainStatBonus Stat="IsolatedAttacks">51</MainStatBonus>
 				<BasePrice>313</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">64</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">34</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="IsolatedAttacks">33</MainStatBonus>
+				<MainStatBonus Stat="IsolatedAttacks">55</MainStatBonus>
 				<BasePrice>406</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">70</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">37</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -412,80 +456,80 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="OpportunisticAttacks">6</MainStatBonus>
+				<MainStatBonus Stat="OpportunisticAttacks">10</MainStatBonus>
 				<BasePrice>14</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">5</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">15</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="OpportunisticAttacks">8</MainStatBonus>
+				<MainStatBonus Stat="OpportunisticAttacks">14</MainStatBonus>
 				<BasePrice>20</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">7</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">18</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="OpportunisticAttacks">10</MainStatBonus>
+				<MainStatBonus Stat="OpportunisticAttacks">18</MainStatBonus>
 				<BasePrice>30</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">21</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="OpportunisticAttacks">12</MainStatBonus>
+				<MainStatBonus Stat="OpportunisticAttacks">23</MainStatBonus>
 				<BasePrice>45</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">11</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">24</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="OpportunisticAttacks">14</MainStatBonus>
+				<MainStatBonus Stat="OpportunisticAttacks">27</MainStatBonus>
 				<BasePrice>66</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">13</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">27</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="OpportunisticAttacks">16</MainStatBonus>
+				<MainStatBonus Stat="OpportunisticAttacks">32</MainStatBonus>
 				<BasePrice>94</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">15</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">30</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="OpportunisticAttacks">25</MainStatBonus>
+				<MainStatBonus Stat="OpportunisticAttacks">37</MainStatBonus>
 				<BasePrice>131</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">17</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">33</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="OpportunisticAttacks">27</MainStatBonus>
+				<MainStatBonus Stat="OpportunisticAttacks">42</MainStatBonus>
 				<BasePrice>178</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">19</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">36</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="OpportunisticAttacks">29</MainStatBonus>
+				<MainStatBonus Stat="OpportunisticAttacks">47</MainStatBonus>
 				<BasePrice>238</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">21</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">39</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="OpportunisticAttacks">31</MainStatBonus>
+				<MainStatBonus Stat="OpportunisticAttacks">52</MainStatBonus>
 				<BasePrice>313</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">23</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">42</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="OpportunisticAttacks">33</MainStatBonus>
+				<MainStatBonus Stat="OpportunisticAttacks">57</MainStatBonus>
 				<BasePrice>406</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">25</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">45</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -495,91 +539,80 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="RangedDamage">3</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">10</MainStatBonus>
 				<BasePrice>12</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">4</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">5</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="RangedDamage">5</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">12</MainStatBonus>
 				<BasePrice>17</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">6</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">7</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="RangedDamage">7</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">14</MainStatBonus>
 				<BasePrice>26</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">8</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">9</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="RangedDamage">9</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">16</MainStatBonus>
 				<BasePrice>40</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">10</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">11</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="RangedDamage">11</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">19</MainStatBonus>
 				<BasePrice>60</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">12</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">13</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="RangedDamage">13</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">22</MainStatBonus>
 				<BasePrice>87</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">13</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">15</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="RangedDamage">15</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">25</MainStatBonus>
 				<BasePrice>122</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">-10</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">14</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">17</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="RangedDamage">17</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">28</MainStatBonus>
 				<BasePrice>167</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">-10</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">15</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">19</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="RangedDamage">19</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">31</MainStatBonus>
 				<BasePrice>224</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">-10</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">16</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">21</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="RangedDamage">21</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">34</MainStatBonus>
 				<BasePrice>296</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">-10</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">17</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">23</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="RangedDamage">23</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">37</MainStatBonus>
 				<BasePrice>385</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Critical">-10</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">18</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">25</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -589,91 +622,109 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="Accuracy">2</MainStatBonus>
+				<MainStatBonus Stat="PoisonDamageModifier">15</MainStatBonus>
 				<BasePrice>18</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">2</BaseStatBonus>
-					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">6</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">5</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>RunFaster</Skill>
+				</Skills>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="Accuracy">4</MainStatBonus>
+				<MainStatBonus Stat="PoisonDamageModifier">21</MainStatBonus>
 				<BasePrice>25</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">2</BaseStatBonus>
-					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">7</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">6</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>RunFaster</Skill>
+				</Skills>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="Accuracy">6</MainStatBonus>
+				<MainStatBonus Stat="PoisonDamageModifier">27</MainStatBonus>
 				<BasePrice>36</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">3</BaseStatBonus>
-					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">7</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>RunFaster</Skill>
+				</Skills>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="Accuracy">8</MainStatBonus>
+				<MainStatBonus Stat="PoisonDamageModifier">33</MainStatBonus>
 				<BasePrice>52</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">3</BaseStatBonus>
-					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">9</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>RunFaster</Skill>
+				</Skills>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="Accuracy">9</MainStatBonus>
+				<MainStatBonus Stat="PoisonDamageModifier">39</MainStatBonus>
 				<BasePrice>74</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">4</BaseStatBonus>
-					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">9</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>RunFaster</Skill>
+				</Skills>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="Accuracy">10</MainStatBonus>
+				<MainStatBonus Stat="PoisonDamageModifier">45</MainStatBonus>
 				<BasePrice>104</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">5</BaseStatBonus>
-					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">12</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">10</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>RunFaster</Skill>
+				</Skills>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="Accuracy">11</MainStatBonus>
+				<MainStatBonus Stat="PoisonDamageModifier">51</MainStatBonus>
 				<BasePrice>143</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">5</BaseStatBonus>
-					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">14</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">11</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="Accuracy">12</MainStatBonus>
+				<MainStatBonus Stat="PoisonDamageModifier">57</MainStatBonus>
 				<BasePrice>193</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">5</BaseStatBonus>
-					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">16</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">12</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="Accuracy">13</MainStatBonus>
+				<MainStatBonus Stat="PoisonDamageModifier">63</MainStatBonus>
 				<BasePrice>256</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">6</BaseStatBonus>
-					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">18</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">13</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="Accuracy">14</MainStatBonus>
+				<MainStatBonus Stat="PoisonDamageModifier">69</MainStatBonus>
 				<BasePrice>334</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">6</BaseStatBonus>
-					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">20</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">14</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="Accuracy">15</MainStatBonus>
+				<MainStatBonus Stat="PoisonDamageModifier">75</MainStatBonus>
 				<BasePrice>431</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">7</BaseStatBonus>
-					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">22</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">15</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -686,77 +737,88 @@
 				<MainStatBonus Stat="Reliability">10</MainStatBonus>
 				<BasePrice>14</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">4</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-12</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="Reliability">15</MainStatBonus>
+				<MainStatBonus Stat="Reliability">16</MainStatBonus>
 				<BasePrice>20</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">6</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="Reliability">20</MainStatBonus>
+				<MainStatBonus Stat="Reliability">22</MainStatBonus>
 				<BasePrice>30</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-8</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="Reliability">25</MainStatBonus>
+				<MainStatBonus Stat="Reliability">28</MainStatBonus>
 				<BasePrice>45</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-6</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="Reliability">30</MainStatBonus>
+				<MainStatBonus Stat="Reliability">34</MainStatBonus>
 				<BasePrice>66</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">12</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-4</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="Reliability">33</MainStatBonus>
+				<MainStatBonus Stat="Reliability">40</MainStatBonus>
 				<BasePrice>94</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">14</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-2</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="Reliability">36</MainStatBonus>
+				<MainStatBonus Stat="Reliability">46</MainStatBonus>
 				<BasePrice>131</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">16</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">0</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="Reliability">39</MainStatBonus>
+				<MainStatBonus Stat="Reliability">52</MainStatBonus>
 				<BasePrice>178</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">18</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">2</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="Reliability">42</MainStatBonus>
+				<MainStatBonus Stat="Reliability">58</MainStatBonus>
 				<BasePrice>238</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">20</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">4</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="Reliability">45</MainStatBonus>
+				<MainStatBonus Stat="Reliability">64</MainStatBonus>
 				<BasePrice>313</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">22</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">6</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="Reliability">48</MainStatBonus>
+				<MainStatBonus Stat="Reliability">70</MainStatBonus>
 				<BasePrice>406</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">24</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -766,91 +828,121 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="ManaTotal">8</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">3</MainStatBonus>
 				<BasePrice>14</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PoisonDamageModifier">25</BaseStatBonus>
-					<BaseStatBonus Stat="PropagationBouncesModifier">-1</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">-30</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>Inspiration</Skill>
+				</Skills>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="ManaTotal">9</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">8</MainStatBonus>
 				<BasePrice>20</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PoisonDamageModifier">25</BaseStatBonus>
-					<BaseStatBonus Stat="PropagationBouncesModifier">-1</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">-30</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>Inspiration</Skill>
+				</Skills>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="ManaTotal">10</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">13</MainStatBonus>
 				<BasePrice>30</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PoisonDamageModifier">25</BaseStatBonus>
-					<BaseStatBonus Stat="PropagationBouncesModifier">-1</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">-30</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>Inspiration</Skill>
+				</Skills>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="ManaTotal">11</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">19</MainStatBonus>
 				<BasePrice>45</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PoisonDamageModifier">25</BaseStatBonus>
-					<BaseStatBonus Stat="PropagationBouncesModifier">-1</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">-30</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>Inspiration</Skill>
+				</Skills>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="ManaTotal">13</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">25</MainStatBonus>
 				<BasePrice>66</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PoisonDamageModifier">25</BaseStatBonus>
-					<BaseStatBonus Stat="PropagationBouncesModifier">-1</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">-30</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>Inspiration</Skill>
+				</Skills>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="ManaTotal">15</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">31</MainStatBonus>
 				<BasePrice>94</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PoisonDamageModifier">25</BaseStatBonus>
-					<BaseStatBonus Stat="PropagationBouncesModifier">-1</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">-30</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>Inspiration</Skill>
+				</Skills>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="ManaTotal">13</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">37</MainStatBonus>
 				<BasePrice>131</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PoisonDamageModifier">30</BaseStatBonus>
-					<BaseStatBonus Stat="PropagationBouncesModifier">-1</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">-30</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>Inspiration</Skill>
+				</Skills>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="ManaTotal">14</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">43</MainStatBonus>
 				<BasePrice>178</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PoisonDamageModifier">30</BaseStatBonus>
-					<BaseStatBonus Stat="PropagationBouncesModifier">-1</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">-30</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>Inspiration</Skill>
+				</Skills>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="ManaTotal">15</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">49</MainStatBonus>
 				<BasePrice>238</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PoisonDamageModifier">30</BaseStatBonus>
-					<BaseStatBonus Stat="PropagationBouncesModifier">-1</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">-30</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>Inspiration</Skill>
+				</Skills>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="ManaTotal">16</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">55</MainStatBonus>
 				<BasePrice>313</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PoisonDamageModifier">30</BaseStatBonus>
-					<BaseStatBonus Stat="PropagationBouncesModifier">-1</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">-30</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>Inspiration</Skill>
+				</Skills>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="ManaTotal">17</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">61</MainStatBonus>
 				<BasePrice>406</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PoisonDamageModifier">30</BaseStatBonus>
-					<BaseStatBonus Stat="PropagationBouncesModifier">-1</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">-30</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -860,80 +952,80 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="ManaTotal">8</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">7</MainStatBonus>
 				<BasePrice>12</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">3</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">6</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
 				<MainStatBonus Stat="ManaTotal">9</MainStatBonus>
 				<BasePrice>17</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">3</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">7</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="ManaTotal">10</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">12</MainStatBonus>
 				<BasePrice>26</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">4</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">8</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="ManaTotal">11</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">15</MainStatBonus>
 				<BasePrice>40</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">4</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">10</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="ManaTotal">13</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">18</MainStatBonus>
 				<BasePrice>60</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">5</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">12</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="ManaTotal">15</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">21</MainStatBonus>
 				<BasePrice>87</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">6</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">14</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="ManaTotal">13</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">24</MainStatBonus>
 				<BasePrice>122</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">6</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="ManaTotal">14</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">27</MainStatBonus>
 				<BasePrice>167</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">6</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">18</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="ManaTotal">15</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">30</MainStatBonus>
 				<BasePrice>224</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">7</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">20</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="ManaTotal">16</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">33</MainStatBonus>
 				<BasePrice>296</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">7</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">22</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="ManaTotal">17</MainStatBonus>
+				<MainStatBonus Stat="ManaTotal">36</MainStatBonus>
 				<BasePrice>385</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">8</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">24</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -943,79 +1035,90 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="OverallDamage">4</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">8</MainStatBonus>
 				<BasePrice>14</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="OverallDamage">-12</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="OverallDamage">6</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">8</MainStatBonus>
 				<BasePrice>20</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="OverallDamage">8</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">14</MainStatBonus>
 				<BasePrice>30</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="OverallDamage">-8</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="OverallDamage">10</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">20</MainStatBonus>
 				<BasePrice>45</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="OverallDamage">-6</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="OverallDamage">12</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">26</MainStatBonus>
 				<BasePrice>66</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="OverallDamage">-4</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="OverallDamage">14</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">32</MainStatBonus>
 				<BasePrice>94</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="OverallDamage">-2</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="OverallDamage">16</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">38</MainStatBonus>
 				<BasePrice>131</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="OverallDamage">0</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">2</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="OverallDamage">18</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">44</MainStatBonus>
 				<BasePrice>178</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="OverallDamage">2</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">2</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="OverallDamage">20</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">50</MainStatBonus>
 				<BasePrice>238</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="OverallDamage">4</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">2</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="OverallDamage">22</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">56</MainStatBonus>
 				<BasePrice>313</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="OverallDamage">6</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">2</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="OverallDamage">24</MainStatBonus>
+				<MainStatBonus Stat="Accuracy">62</MainStatBonus>
 				<BasePrice>406</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">2</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
@@ -1029,7 +1132,7 @@
 				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>14</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-12</BaseStatBonus>
 					<BaseStatBonus Stat="ExperienceGainMultiplier">10</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -1040,8 +1143,8 @@
 				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>20</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">-9</BaseStatBonus>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">15</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1052,7 +1155,7 @@
 				<BasePrice>30</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="OverallDamage">-8</BaseStatBonus>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">10</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">20</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1062,8 +1165,8 @@
 				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>45</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">-7</BaseStatBonus>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-6</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">26</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1073,8 +1176,8 @@
 				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>66</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">-6</BaseStatBonus>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-4</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">32</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1084,8 +1187,8 @@
 				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>94</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">-5</BaseStatBonus>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-2</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">38</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1095,8 +1198,8 @@
 				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>131</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">-4</BaseStatBonus>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">15</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">0</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">44</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1106,8 +1209,8 @@
 				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>178</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">-3</BaseStatBonus>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">15</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">2</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">50</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1117,8 +1220,8 @@
 				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>238</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">-2</BaseStatBonus>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">15</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">4</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">56</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1128,8 +1231,8 @@
 				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>313</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">-1</BaseStatBonus>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">15</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">6</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">62</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1139,7 +1242,8 @@
 				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>406</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">15</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">68</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1152,121 +1256,121 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="HealthRegen">7</MainStatBonus>
+				<MainStatBonus Stat="HealthRegen">13</MainStatBonus>
 				<BasePrice>10</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">-10</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">15</BaseStatBonus>
-				</BaseStatBonuses>
-				<Skills>
-					<Skill>Cleanse</Skill>
-				</Skills>
-			</Level>
-			<Level Id="1">
-				<MainStatBonus Stat="HealthRegen">9</MainStatBonus>
-				<BasePrice>15</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">-13</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">10</BaseStatBonus>
 					<BaseStatBonus Stat="HealingReceived">20</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Cleanse</Skill>
 				</Skills>
 			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="HealthRegen">19</MainStatBonus>
+				<BasePrice>15</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">13</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">26</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>Cleanse</Skill>
+				</Skills>
+			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="HealthRegen">11</MainStatBonus>
+				<MainStatBonus Stat="HealthRegen">26</MainStatBonus>
 				<BasePrice>24</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">-16</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">25</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">16</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">32</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Cleanse</Skill>
 				</Skills>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="HealthRegen">13</MainStatBonus>
+				<MainStatBonus Stat="HealthRegen">32</MainStatBonus>
 				<BasePrice>38</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">-19</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">30</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">19</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">38</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Cleanse</Skill>
 				</Skills>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="HealthRegen">15</MainStatBonus>
+				<MainStatBonus Stat="HealthRegen">41</MainStatBonus>
 				<BasePrice>58</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">-22</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">35</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">22</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">44</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Cleanse</Skill>
 				</Skills>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="HealthRegen">17</MainStatBonus>
+				<MainStatBonus Stat="HealthRegen">48</MainStatBonus>
 				<BasePrice>85</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">-25</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">40</BaseStatBonus>
-				</BaseStatBonuses>
-				<Skills>
-					<Skill>Cleanse</Skill>
-				</Skills>
-			</Level>
-			<Level Id="6">
-				<MainStatBonus Stat="HealthRegen">19</MainStatBonus>
-				<BasePrice>120</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">-28</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">45</BaseStatBonus>
-				</BaseStatBonuses>
-				<Skills>
-					<Skill>Cleanse</Skill>
-				</Skills>
-			</Level>
-			<Level Id="7">
-				<MainStatBonus Stat="HealthRegen">21</MainStatBonus>
-				<BasePrice>165</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">-31</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">25</BaseStatBonus>
 					<BaseStatBonus Stat="HealingReceived">50</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Cleanse</Skill>
 				</Skills>
 			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="HealthRegen">55</MainStatBonus>
+				<BasePrice>120</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">28</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">56</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>Cleanse</Skill>
+				</Skills>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="HealthRegen">62</MainStatBonus>
+				<BasePrice>165</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">31</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">62</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>Cleanse</Skill>
+				</Skills>
+			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="HealthRegen">23</MainStatBonus>
+				<MainStatBonus Stat="HealthRegen">69</MainStatBonus>
 				<BasePrice>222</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">-34</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">55</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">34</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">68</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Cleanse</Skill>
 				</Skills>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="HealthRegen">25</MainStatBonus>
+				<MainStatBonus Stat="HealthRegen">76</MainStatBonus>
 				<BasePrice>293</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">-37</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">60</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">37</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">74</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Cleanse</Skill>
 				</Skills>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="HealthRegen">27</MainStatBonus>
+				<MainStatBonus Stat="HealthRegen">83</MainStatBonus>
 				<BasePrice>382</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ArmorTotal">-40</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">65</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">40</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">80</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Cleanse</Skill>
@@ -1281,6 +1385,9 @@
 			<Level Id="0">
 				<BaseDamage Min="85" Max="135"/>
 				<BasePrice>18</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+				</BaseStatBonuses>
 				<Skills>
 					<Skill>MeteorShower</Skill>
 				</Skills>
@@ -1288,6 +1395,9 @@
 			<Level Id="1">
 				<BaseDamage Min="92" Max="154"/>
 				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+				</BaseStatBonuses>
 				<Skills>
 					<Skill>MeteorShower</Skill>
 				</Skills>
@@ -1295,6 +1405,9 @@
 			<Level Id="2">
 				<BaseDamage Min="99" Max="176"/>
 				<BasePrice>36</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+				</BaseStatBonuses>
 				<Skills>
 					<Skill>MeteorShower</Skill>
 				</Skills>
@@ -1302,6 +1415,9 @@
 			<Level Id="3">
 				<BaseDamage Min="107" Max="201"/>
 				<BasePrice>52</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+				</BaseStatBonuses>
 				<Skills>
 					<Skill>MeteorShower</Skill>
 				</Skills>
@@ -1309,6 +1425,9 @@
 			<Level Id="4">
 				<BaseDamage Min="116" Max="229"/>
 				<BasePrice>74</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+				</BaseStatBonuses>
 				<Skills>
 					<Skill>MeteorShower</Skill>
 				</Skills>
@@ -1316,6 +1435,9 @@
 			<Level Id="5">
 				<BaseDamage Min="125" Max="261"/>
 				<BasePrice>104</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+				</BaseStatBonuses>
 				<Skills>
 					<Skill>MeteorShower</Skill>
 				</Skills>
@@ -1323,6 +1445,9 @@
 			<Level Id="6">
 				<BaseDamage Min="135" Max="298"/>
 				<BasePrice>143</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+				</BaseStatBonuses>
 				<Skills>
 					<Skill>MeteorShower</Skill>
 				</Skills>
@@ -1330,6 +1455,9 @@
 			<Level Id="7">
 				<BaseDamage Min="146" Max="340"/>
 				<BasePrice>193</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+				</BaseStatBonuses>
 				<Skills>
 					<Skill>MeteorShower</Skill>
 				</Skills>
@@ -1337,6 +1465,9 @@
 			<Level Id="8">
 				<BaseDamage Min="158" Max="388"/>
 				<BasePrice>256</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+				</BaseStatBonuses>
 				<Skills>
 					<Skill>MeteorShower</Skill>
 				</Skills>
@@ -1344,6 +1475,9 @@
 			<Level Id="9">
 				<BaseDamage Min="171" Max="442"/>
 				<BasePrice>334</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+				</BaseStatBonuses>
 				<Skills>
 					<Skill>MeteorShower</Skill>
 				</Skills>
@@ -1351,6 +1485,9 @@
 			<Level Id="10">
 				<BaseDamage Min="185" Max="504"/>
 				<BasePrice>431</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+				</BaseStatBonuses>
 				<Skills>
 					<Skill>MeteorShower</Skill>
 				</Skills>
@@ -1365,110 +1502,121 @@
 				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>18</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealingReceived">15</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">20</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">6</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
-					<Skill>Run</Skill>
+					<Skill>RunFaster</Skill>
 				</Skills>
 			</Level>
 			<Level Id="1">
 				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>25</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealingReceived">20</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">28</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
-					<Skill>Run</Skill>
+					<Skill>RunFaster</Skill>
 				</Skills>
 			</Level>
 			<Level Id="2">
 				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>36</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealingReceived">25</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">36</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">10</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
-					<Skill>Run</Skill>
+					<Skill>RunFaster</Skill>
 				</Skills>
 			</Level>
 			<Level Id="3">
 				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>52</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealingReceived">30</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">44</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">12</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
-					<Skill>Run</Skill>
+					<Skill>RunFaster</Skill>
 				</Skills>
 			</Level>
 			<Level Id="4">
 				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>74</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealingReceived">35</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">52</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">15</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
-					<Skill>Run</Skill>
+					<Skill>RunFaster</Skill>
 				</Skills>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="MovePointsTotal">2</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>104</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealingReceived">40</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">60</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">18</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
-					<Skill>Run</Skill>
+					<Skill>RunFaster</Skill>
 				</Skills>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="MovePointsTotal">2</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>143</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealingReceived">45</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">68</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">21</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
-					<Skill>Run</Skill>
+					<Skill>RunFaster</Skill>
 				</Skills>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="MovePointsTotal">2</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>193</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealingReceived">50</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">76</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">24</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
-					<Skill>Run</Skill>
+					<Skill>RunFaster</Skill>
 				</Skills>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="MovePointsTotal">2</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>256</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealingReceived">55</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">84</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">27</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
-					<Skill>Run</Skill>
+					<Skill>RunFaster</Skill>
 				</Skills>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="MovePointsTotal">2</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>334</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealingReceived">60</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">92</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">30</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
-					<Skill>Run</Skill>
+					<Skill>RunFaster</Skill>
 				</Skills>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="MovePointsTotal">2</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>431</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealingReceived">65</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">100</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">33</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
-					<Skill>Run</Skill>
+					<Skill>RunFaster</Skill>
 				</Skills>
 			</Level>
 		</LevelVariations>
@@ -1478,80 +1626,91 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="ExperienceGainMultiplier">10</MainStatBonus>
+				<MainStatBonus Stat="ExperienceGainMultiplier">15</MainStatBonus>
 				<BasePrice>14</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Reliability">10</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">15</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">5</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="ExperienceGainMultiplier">15</MainStatBonus>
+				<MainStatBonus Stat="ExperienceGainMultiplier">20</MainStatBonus>
 				<BasePrice>20</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Reliability">15</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">18</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">6</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="ExperienceGainMultiplier">20</MainStatBonus>
+				<MainStatBonus Stat="ExperienceGainMultiplier">25</MainStatBonus>
 				<BasePrice>30</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Reliability">20</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">21</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">7</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="ExperienceGainMultiplier">25</MainStatBonus>
+				<MainStatBonus Stat="ExperienceGainMultiplier">31</MainStatBonus>
 				<BasePrice>45</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Reliability">25</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">24</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="ExperienceGainMultiplier">30</MainStatBonus>
+				<MainStatBonus Stat="ExperienceGainMultiplier">37</MainStatBonus>
 				<BasePrice>66</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Reliability">30</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">27</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">9</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="ExperienceGainMultiplier">35</MainStatBonus>
+				<MainStatBonus Stat="ExperienceGainMultiplier">43</MainStatBonus>
 				<BasePrice>94</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Reliability">33</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">30</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">10</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="ExperienceGainMultiplier">40</MainStatBonus>
+				<MainStatBonus Stat="ExperienceGainMultiplier">49</MainStatBonus>
 				<BasePrice>131</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Reliability">36</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">33</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">11</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="ExperienceGainMultiplier">45</MainStatBonus>
+				<MainStatBonus Stat="ExperienceGainMultiplier">55</MainStatBonus>
 				<BasePrice>178</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Reliability">39</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">36</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">12</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="ExperienceGainMultiplier">50</MainStatBonus>
+				<MainStatBonus Stat="ExperienceGainMultiplier">61</MainStatBonus>
 				<BasePrice>238</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Reliability">42</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">39</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">13</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="ExperienceGainMultiplier">55</MainStatBonus>
+				<MainStatBonus Stat="ExperienceGainMultiplier">67</MainStatBonus>
 				<BasePrice>313</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Reliability">45</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">42</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">14</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="ExperienceGainMultiplier">60</MainStatBonus>
+				<MainStatBonus Stat="ExperienceGainMultiplier">73</MainStatBonus>
 				<BasePrice>406</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Reliability">48</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">45</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">15</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -1561,91 +1720,80 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="HealthRegen">5</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">45</MainStatBonus>
 				<BasePrice>12</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">15</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">-4</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">5</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="HealthRegen">10</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">57</MainStatBonus>
 				<BasePrice>17</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">20</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">-4</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">7</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="HealthRegen">15</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">69</MainStatBonus>
 				<BasePrice>26</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">25</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">-4</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">9</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="HealthRegen">20</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">81</MainStatBonus>
 				<BasePrice>40</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">30</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">-5</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">11</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="HealthRegen">25</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">93</MainStatBonus>
 				<BasePrice>60</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">35</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">-5</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">13</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="HealthRegen">30</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">105</MainStatBonus>
 				<BasePrice>87</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">40</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">-5</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">15</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="HealthRegen">35</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">117</MainStatBonus>
 				<BasePrice>122</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">45</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">-6</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">17</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="HealthRegen">40</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">129</MainStatBonus>
 				<BasePrice>167</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">50</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">-6</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">19</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="HealthRegen">45</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">141</MainStatBonus>
 				<BasePrice>224</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">55</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">-7</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">21</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="HealthRegen">50</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">153</MainStatBonus>
 				<BasePrice>296</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">60</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">-7</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">23</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="HealthRegen">55</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">165</MainStatBonus>
 				<BasePrice>385</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">65</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">-8</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">25</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -1658,7 +1806,8 @@
 				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>14</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">-15</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-18</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">4</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1668,7 +1817,8 @@
 				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>20</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">-14</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-16</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">6</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1679,6 +1829,7 @@
 				<BasePrice>30</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ExperienceGainMultiplier">-13</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">8</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1688,7 +1839,8 @@
 				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>45</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">-12</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-10</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">10</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1698,7 +1850,8 @@
 				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>66</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">-11</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-7</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">13</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1708,7 +1861,8 @@
 				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>94</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">-10</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-4</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">16</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1718,7 +1872,8 @@
 				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>131</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">-9</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-1</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">19</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1728,7 +1883,8 @@
 				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>178</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">-8</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">2</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">22</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1738,7 +1894,8 @@
 				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>238</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">-7</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">5</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">25</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1748,7 +1905,8 @@
 				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>313</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">-6</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">8</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">28</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1758,7 +1916,8 @@
 				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>406</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">-5</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">11</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">31</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1771,80 +1930,91 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="Block">2</MainStatBonus>
+				<MainStatBonus Stat="Block">5</MainStatBonus>
 				<BasePrice>14</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="MagicalDamage">3</BaseStatBonus>
-				</BaseStatBonuses>
-			</Level>
-			<Level Id="1">
-				<MainStatBonus Stat="Block">3</MainStatBonus>
-				<BasePrice>20</BasePrice>
-				<BaseStatBonuses>
+					<BaseStatBonus Stat="PropagationDamage">3</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">5</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
-			<Level Id="2">
-				<MainStatBonus Stat="Block">4</MainStatBonus>
-				<BasePrice>30</BasePrice>
+			<Level Id="1">
+				<MainStatBonus Stat="Block">6</MainStatBonus>
+				<BasePrice>20</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="PropagationDamage">4</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">7</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
-			<Level Id="3">
-				<MainStatBonus Stat="Block">6</MainStatBonus>
-				<BasePrice>45</BasePrice>
+			<Level Id="2">
+				<MainStatBonus Stat="Block">7</MainStatBonus>
+				<BasePrice>30</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="PropagationDamage">4</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">9</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
-			<Level Id="4">
+			<Level Id="3">
 				<MainStatBonus Stat="Block">8</MainStatBonus>
+				<BasePrice>45</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="PropagationDamage">5</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Block">9</MainStatBonus>
 				<BasePrice>66</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="MagicalDamage">11</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationDamage">5</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">13</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
 				<MainStatBonus Stat="Block">10</MainStatBonus>
 				<BasePrice>94</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="MagicalDamage">13</BaseStatBonus>
-				</BaseStatBonuses>
-			</Level>
-			<Level Id="6">
-				<MainStatBonus Stat="Block">12</MainStatBonus>
-				<BasePrice>131</BasePrice>
-				<BaseStatBonuses>
+					<BaseStatBonus Stat="PropagationDamage">6</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">15</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
-			<Level Id="7">
-				<MainStatBonus Stat="Block">14</MainStatBonus>
-				<BasePrice>178</BasePrice>
+			<Level Id="6">
+				<MainStatBonus Stat="Block">11</MainStatBonus>
+				<BasePrice>131</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="PropagationDamage">7</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">17</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
-			<Level Id="8">
-				<MainStatBonus Stat="Block">16</MainStatBonus>
-				<BasePrice>238</BasePrice>
+			<Level Id="7">
+				<MainStatBonus Stat="Block">12</MainStatBonus>
+				<BasePrice>178</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="PropagationDamage">8</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">19</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
-			<Level Id="9">
-				<MainStatBonus Stat="Block">18</MainStatBonus>
-				<BasePrice>313</BasePrice>
+			<Level Id="8">
+				<MainStatBonus Stat="Block">13</MainStatBonus>
+				<BasePrice>238</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="PropagationDamage">9</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">21</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Block">14</MainStatBonus>
+				<BasePrice>313</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="PropagationDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">23</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="Block">20</MainStatBonus>
+				<MainStatBonus Stat="Block">15</MainStatBonus>
 				<BasePrice>406</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="MagicalDamage">23</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationDamage">11</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">25</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -1854,110 +2024,121 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="Block">2</MainStatBonus>
+				<MainStatBonus Stat="Block">5</MainStatBonus>
 				<BasePrice>14</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Resistance">3</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">5</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">25</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>TurtleStance</Skill>
 				</Skills>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="Block">3</MainStatBonus>
+				<MainStatBonus Stat="Block">7</MainStatBonus>
 				<BasePrice>20</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Resistance">4</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">6</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">31</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>TurtleStance1</Skill>
 				</Skills>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="Block">4</MainStatBonus>
+				<MainStatBonus Stat="Block">9</MainStatBonus>
 				<BasePrice>30</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Resistance">5</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">7</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">37</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>TurtleStance2</Skill>
 				</Skills>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="Block">6</MainStatBonus>
+				<MainStatBonus Stat="Block">11</MainStatBonus>
 				<BasePrice>45</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Resistance">7</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">8</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">43</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>TurtleStance3</Skill>
 				</Skills>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="Block">8</MainStatBonus>
+				<MainStatBonus Stat="Block">13</MainStatBonus>
 				<BasePrice>66</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Resistance">9</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">49</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>TurtleStance4</Skill>
 				</Skills>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="Block">10</MainStatBonus>
+				<MainStatBonus Stat="Block">15</MainStatBonus>
 				<BasePrice>94</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Resistance">11</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">55</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>TurtleStance5</Skill>
 				</Skills>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="Block">12</MainStatBonus>
+				<MainStatBonus Stat="Block">17</MainStatBonus>
 				<BasePrice>131</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Resistance">13</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">11</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">61</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>TurtleStance5</Skill>
 				</Skills>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="Block">14</MainStatBonus>
+				<MainStatBonus Stat="Block">19</MainStatBonus>
 				<BasePrice>178</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Resistance">15</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">12</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">67</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>TurtleStance5</Skill>
 				</Skills>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="Block">16</MainStatBonus>
+				<MainStatBonus Stat="Block">21</MainStatBonus>
 				<BasePrice>238</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Resistance">17</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">13</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">73</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>TurtleStance5</Skill>
 				</Skills>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="Block">18</MainStatBonus>
+				<MainStatBonus Stat="Block">23</MainStatBonus>
 				<BasePrice>313</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Resistance">19</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">14</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">79</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>TurtleStance5</Skill>
 				</Skills>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="Block">20</MainStatBonus>
+				<MainStatBonus Stat="Block">25</MainStatBonus>
 				<BasePrice>406</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Resistance">21</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">15</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">85</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>TurtleStance5</Skill>
@@ -1970,102 +2151,91 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="Block">2</MainStatBonus>
+				<MainStatBonus Stat="Block">5</MainStatBonus>
 				<BasePrice>18</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">10</BaseStatBonus>
-					<BaseStatBonus Stat="Reliability">-10</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">15</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">30</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">25</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="Block">3</MainStatBonus>
+				<MainStatBonus Stat="Block">7</MainStatBonus>
 				<BasePrice>25</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">15</BaseStatBonus>
-					<BaseStatBonus Stat="Reliability">-13</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">20</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">36</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">30</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="Block">4</MainStatBonus>
+				<MainStatBonus Stat="Block">9</MainStatBonus>
 				<BasePrice>36</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">20</BaseStatBonus>
-					<BaseStatBonus Stat="Reliability">-16</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">25</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">42</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">35</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="Block">6</MainStatBonus>
+				<MainStatBonus Stat="Block">11</MainStatBonus>
 				<BasePrice>52</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">25</BaseStatBonus>
-					<BaseStatBonus Stat="Reliability">-19</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">30</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">48</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">40</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="Block">8</MainStatBonus>
+				<MainStatBonus Stat="Block">13</MainStatBonus>
 				<BasePrice>74</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">30</BaseStatBonus>
-					<BaseStatBonus Stat="Reliability">-22</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">35</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">54</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">45</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="Block">10</MainStatBonus>
+				<MainStatBonus Stat="Block">15</MainStatBonus>
 				<BasePrice>104</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">35</BaseStatBonus>
-					<BaseStatBonus Stat="Reliability">-25</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">40</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">50</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="Block">12</MainStatBonus>
+				<MainStatBonus Stat="Block">17</MainStatBonus>
 				<BasePrice>143</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">40</BaseStatBonus>
-					<BaseStatBonus Stat="Reliability">-28</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">45</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">66</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">55</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="Block">14</MainStatBonus>
+				<MainStatBonus Stat="Block">19</MainStatBonus>
 				<BasePrice>193</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">45</BaseStatBonus>
-					<BaseStatBonus Stat="Reliability">-31</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">50</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">72</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="Block">16</MainStatBonus>
+				<MainStatBonus Stat="Block">21</MainStatBonus>
 				<BasePrice>256</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">50</BaseStatBonus>
-					<BaseStatBonus Stat="Reliability">-34</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">55</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">78</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="Block">18</MainStatBonus>
+				<MainStatBonus Stat="Block">23</MainStatBonus>
 				<BasePrice>334</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">55</BaseStatBonus>
-					<BaseStatBonus Stat="Reliability">-37</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">60</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">84</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">70</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="Block">20</MainStatBonus>
+				<MainStatBonus Stat="Block">25</MainStatBonus>
 				<BasePrice>431</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealthTotal">60</BaseStatBonus>
-					<BaseStatBonus Stat="Reliability">-40</BaseStatBonus>
-					<BaseStatBonus Stat="HealingReceived">65</BaseStatBonus>
+					<BaseStatBonus Stat="HealthTotal">90</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">75</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -2075,91 +2245,80 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="CriticalPower">15</MainStatBonus>
+				<MainStatBonus Stat="Critical">5</MainStatBonus>
 				<BasePrice>12</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">2</BaseStatBonus>
-					<BaseStatBonus Stat="ResistanceReduction">5</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">10</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="CriticalPower">20</MainStatBonus>
+				<MainStatBonus Stat="Critical">7</MainStatBonus>
 				<BasePrice>17</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">4</BaseStatBonus>
-					<BaseStatBonus Stat="ResistanceReduction">6</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">14</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="CriticalPower">25</MainStatBonus>
+				<MainStatBonus Stat="Critical">9</MainStatBonus>
 				<BasePrice>26</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">6</BaseStatBonus>
-					<BaseStatBonus Stat="ResistanceReduction">7</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">18</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="CriticalPower">30</MainStatBonus>
+				<MainStatBonus Stat="Critical">11</MainStatBonus>
 				<BasePrice>40</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">8</BaseStatBonus>
-					<BaseStatBonus Stat="ResistanceReduction">8</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">22</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="CriticalPower">35</MainStatBonus>
+				<MainStatBonus Stat="Critical">13</MainStatBonus>
 				<BasePrice>60</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">9</BaseStatBonus>
-					<BaseStatBonus Stat="ResistanceReduction">9</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">26</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="CriticalPower">40</MainStatBonus>
+				<MainStatBonus Stat="Critical">15</MainStatBonus>
 				<BasePrice>87</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">10</BaseStatBonus>
-					<BaseStatBonus Stat="ResistanceReduction">10</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">30</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="CriticalPower">45</MainStatBonus>
+				<MainStatBonus Stat="Critical">17</MainStatBonus>
 				<BasePrice>122</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">11</BaseStatBonus>
-					<BaseStatBonus Stat="ResistanceReduction">11</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">34</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="CriticalPower">50</MainStatBonus>
+				<MainStatBonus Stat="Critical">19</MainStatBonus>
 				<BasePrice>167</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">12</BaseStatBonus>
-					<BaseStatBonus Stat="ResistanceReduction">12</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">38</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="CriticalPower">55</MainStatBonus>
+				<MainStatBonus Stat="Critical">21</MainStatBonus>
 				<BasePrice>224</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">13</BaseStatBonus>
-					<BaseStatBonus Stat="ResistanceReduction">13</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">42</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="CriticalPower">60</MainStatBonus>
+				<MainStatBonus Stat="Critical">23</MainStatBonus>
 				<BasePrice>296</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">14</BaseStatBonus>
-					<BaseStatBonus Stat="ResistanceReduction">14</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">46</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="CriticalPower">65</MainStatBonus>
+				<MainStatBonus Stat="Critical">25</MainStatBonus>
 				<BasePrice>385</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Accuracy">15</BaseStatBonus>
-					<BaseStatBonus Stat="ResistanceReduction">15</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">50</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -2169,91 +2328,91 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="PhysicalDamage">3</MainStatBonus>
+				<MainStatBonus Stat="OverallDamage">10</MainStatBonus>
 				<BasePrice>12</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
-					<BaseStatBonus Stat="PoisonDamageModifier">25</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">-10</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">5</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="PhysicalDamage">5</MainStatBonus>
+				<MainStatBonus Stat="OverallDamage">12</MainStatBonus>
 				<BasePrice>17</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
-					<BaseStatBonus Stat="PoisonDamageModifier">25</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">-10</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">8</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="PhysicalDamage">7</MainStatBonus>
+				<MainStatBonus Stat="OverallDamage">14</MainStatBonus>
 				<BasePrice>26</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
-					<BaseStatBonus Stat="PoisonDamageModifier">25</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">-10</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">11</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="PhysicalDamage">9</MainStatBonus>
+				<MainStatBonus Stat="OverallDamage">16</MainStatBonus>
 				<BasePrice>40</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
-					<BaseStatBonus Stat="PoisonDamageModifier">25</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">-10</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">15</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="PhysicalDamage">11</MainStatBonus>
+				<MainStatBonus Stat="OverallDamage">18</MainStatBonus>
 				<BasePrice>60</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
-					<BaseStatBonus Stat="PoisonDamageModifier">25</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">-10</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">19</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="PhysicalDamage">13</MainStatBonus>
+				<MainStatBonus Stat="OverallDamage">20</MainStatBonus>
 				<BasePrice>87</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
-					<BaseStatBonus Stat="PoisonDamageModifier">30</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">-10</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">19</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="PhysicalDamage">15</MainStatBonus>
+				<MainStatBonus Stat="OverallDamage">22</MainStatBonus>
 				<BasePrice>122</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
-					<BaseStatBonus Stat="PoisonDamageModifier">30</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">-10</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">19</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="PhysicalDamage">17</MainStatBonus>
+				<MainStatBonus Stat="OverallDamage">24</MainStatBonus>
 				<BasePrice>167</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
-					<BaseStatBonus Stat="PoisonDamageModifier">30</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">-10</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">19</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="PhysicalDamage">19</MainStatBonus>
+				<MainStatBonus Stat="OverallDamage">26</MainStatBonus>
 				<BasePrice>224</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
-					<BaseStatBonus Stat="PoisonDamageModifier">30</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">-10</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">19</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="PhysicalDamage">21</MainStatBonus>
+				<MainStatBonus Stat="OverallDamage">28</MainStatBonus>
 				<BasePrice>296</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
-					<BaseStatBonus Stat="PoisonDamageModifier">30</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">-10</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">19</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="PhysicalDamage">23</MainStatBonus>
+				<MainStatBonus Stat="OverallDamage">30</MainStatBonus>
 				<BasePrice>385</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
-					<BaseStatBonus Stat="PoisonDamageModifier">30</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">-10</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">19</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -2263,80 +2422,91 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="StunChanceModifier">6</MainStatBonus>
+				<MainStatBonus Stat="Critical">8</MainStatBonus>
 				<BasePrice>18</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">7</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">6</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="StunChanceModifier">8</MainStatBonus>
+				<MainStatBonus Stat="Critical">10</MainStatBonus>
 				<BasePrice>25</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">7</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="StunChanceModifier">10</MainStatBonus>
+				<MainStatBonus Stat="Critical">12</MainStatBonus>
 				<BasePrice>36</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">9</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="StunChanceModifier">12</MainStatBonus>
+				<MainStatBonus Stat="Critical">14</MainStatBonus>
 				<BasePrice>52</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">11</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">9</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="StunChanceModifier">14</MainStatBonus>
+				<MainStatBonus Stat="Critical">16</MainStatBonus>
 				<BasePrice>74</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">10</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="StunChanceModifier">16</MainStatBonus>
+				<MainStatBonus Stat="Critical">18</MainStatBonus>
 				<BasePrice>104</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationBouncesModifier">2</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">15</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">12</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="StunChanceModifier">18</MainStatBonus>
+				<MainStatBonus Stat="Critical">20</MainStatBonus>
 				<BasePrice>143</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationBouncesModifier">2</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">17</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">14</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="StunChanceModifier">20</MainStatBonus>
+				<MainStatBonus Stat="Critical">22</MainStatBonus>
 				<BasePrice>193</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationBouncesModifier">2</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">19</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="StunChanceModifier">22</MainStatBonus>
+				<MainStatBonus Stat="Critical">24</MainStatBonus>
 				<BasePrice>256</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationBouncesModifier">2</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">21</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">18</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="StunChanceModifier">24</MainStatBonus>
+				<MainStatBonus Stat="Critical">26</MainStatBonus>
 				<BasePrice>334</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationBouncesModifier">2</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">23</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">20</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="StunChanceModifier">26</MainStatBonus>
+				<MainStatBonus Stat="Critical">28</MainStatBonus>
 				<BasePrice>431</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationBouncesModifier">2</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">25</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">22</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -2346,80 +2516,91 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="MomentumAttacks">3</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>14</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">4</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">6</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">4</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="MomentumAttacks">4</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>20</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">6</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">8</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">5</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="MomentumAttacks">5</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>30</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">10</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">6</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="MomentumAttacks">6</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>45</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">10</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">12</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">7</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="MomentumAttacks">7</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>66</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">11</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">15</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">8</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="MomentumAttacks">8</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>94</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">12</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">18</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">10</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="MomentumAttacks">9</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>131</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">13</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">21</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">12</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="MomentumAttacks">10</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>178</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">14</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">24</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">14</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="MomentumAttacks">11</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>238</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">15</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">27</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="MomentumAttacks">12</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>313</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">16</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">30</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">18</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="MomentumAttacks">13</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>406</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="Dodge">17</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">33</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">20</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -2515,8 +2696,8 @@
 				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>14</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">-3</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">4</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">4</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">6</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Run</Skill>
@@ -2526,8 +2707,8 @@
 				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>20</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">-3</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">6</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">5</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Run</Skill>
@@ -2537,8 +2718,8 @@
 				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>30</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">-3</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">8</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">6</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">10</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Run</Skill>
@@ -2548,8 +2729,8 @@
 				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>45</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">-3</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">10</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">7</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">12</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Run</Skill>
@@ -2559,8 +2740,8 @@
 				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>66</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">-3</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">12</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">15</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Run</Skill>
@@ -2570,8 +2751,8 @@
 				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>94</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">-3</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">13</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">18</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Run</Skill>
@@ -2581,8 +2762,8 @@
 				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>131</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">14</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">12</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">21</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Run</Skill>
@@ -2592,8 +2773,8 @@
 				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>178</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">15</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">14</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">24</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Run</Skill>
@@ -2603,8 +2784,8 @@
 				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>238</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">16</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">16</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">27</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Run</Skill>
@@ -2614,8 +2795,8 @@
 				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>313</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">17</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">18</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">30</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Run</Skill>
@@ -2625,8 +2806,8 @@
 				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
 				<BasePrice>406</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ManaRegen">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Accuracy">18</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">20</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">33</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Run</Skill>
@@ -2722,10 +2903,10 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>12</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationDamage">3</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">6</BaseStatBonus>
 					<BaseStatBonus Stat="SkillRangeModifier">-1</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -2733,10 +2914,10 @@
 				</Skills>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>17</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationDamage">4</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">8</BaseStatBonus>
 					<BaseStatBonus Stat="SkillRangeModifier">-1</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -2744,10 +2925,10 @@
 				</Skills>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>26</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationDamage">5</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">10</BaseStatBonus>
 					<BaseStatBonus Stat="SkillRangeModifier">-1</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -2755,10 +2936,10 @@
 				</Skills>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>40</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationDamage">6</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">12</BaseStatBonus>
 					<BaseStatBonus Stat="SkillRangeModifier">-1</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -2766,10 +2947,10 @@
 				</Skills>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>60</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationDamage">7</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">14</BaseStatBonus>
 					<BaseStatBonus Stat="SkillRangeModifier">-1</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -2777,10 +2958,10 @@
 				</Skills>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>87</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">16</BaseStatBonus>
 					<BaseStatBonus Stat="SkillRangeModifier">-1</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -2788,10 +2969,10 @@
 				</Skills>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>122</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationDamage">9</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">18</BaseStatBonus>
 					<BaseStatBonus Stat="SkillRangeModifier">-1</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -2799,10 +2980,10 @@
 				</Skills>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>167</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">20</BaseStatBonus>
 					<BaseStatBonus Stat="SkillRangeModifier">-1</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -2810,10 +2991,10 @@
 				</Skills>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>224</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationDamage">11</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">22</BaseStatBonus>
 					<BaseStatBonus Stat="SkillRangeModifier">-1</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -2821,10 +3002,10 @@
 				</Skills>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>296</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationDamage">12</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">24</BaseStatBonus>
 					<BaseStatBonus Stat="SkillRangeModifier">-1</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -2832,10 +3013,10 @@
 				</Skills>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="MovePointsTotal">1</MainStatBonus>
+				<MainStatBonus Stat="MovePointsTotal">3</MainStatBonus>
 				<BasePrice>385</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PropagationDamage">13</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">26</BaseStatBonus>
 					<BaseStatBonus Stat="SkillRangeModifier">-1</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -2849,48 +3030,81 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="StunChanceModifier">15</MainStatBonus>
+				<MainStatBonus Stat="StunChanceModifier">10</MainStatBonus>
 				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">5</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="StunChanceModifier">17</MainStatBonus>
+				<MainStatBonus Stat="StunChanceModifier">13</MainStatBonus>
 				<BasePrice>17</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">7</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="StunChanceModifier">19</MainStatBonus>
+				<MainStatBonus Stat="StunChanceModifier">16</MainStatBonus>
 				<BasePrice>26</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">9</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="StunChanceModifier">21</MainStatBonus>
+				<MainStatBonus Stat="StunChanceModifier">19</MainStatBonus>
 				<BasePrice>40</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">11</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="StunChanceModifier">23</MainStatBonus>
+				<MainStatBonus Stat="StunChanceModifier">22</MainStatBonus>
 				<BasePrice>60</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">13</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
 				<MainStatBonus Stat="StunChanceModifier">25</MainStatBonus>
 				<BasePrice>87</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">15</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="StunChanceModifier">27</MainStatBonus>
+				<MainStatBonus Stat="StunChanceModifier">28</MainStatBonus>
 				<BasePrice>122</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">17</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="StunChanceModifier">29</MainStatBonus>
+				<MainStatBonus Stat="StunChanceModifier">31</MainStatBonus>
 				<BasePrice>167</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">19</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="StunChanceModifier">31</MainStatBonus>
+				<MainStatBonus Stat="StunChanceModifier">34</MainStatBonus>
 				<BasePrice>224</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">21</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="StunChanceModifier">33</MainStatBonus>
+				<MainStatBonus Stat="StunChanceModifier">37</MainStatBonus>
 				<BasePrice>296</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">23</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="StunChanceModifier">35</MainStatBonus>
+				<MainStatBonus Stat="StunChanceModifier">40</MainStatBonus>
 				<BasePrice>385</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Block">25</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -2899,97 +3113,122 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
+				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>18</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">-30</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-32</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">10</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperConcentration</Skill>
 				</Skills>
 			</Level>
 			<Level Id="1">
+				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>25</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">-27</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-26</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">20</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperConcentration</Skill>
 				</Skills>
 			</Level>
 			<Level Id="2">
+				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>36</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">-24</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-20</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">30</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperConcentration</Skill>
 				</Skills>
 			</Level>
 			<Level Id="3">
+				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>52</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">-21</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-14</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">40</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperConcentration</Skill>
 				</Skills>
 			</Level>
 			<Level Id="4">
+				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>74</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">-18</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-8</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">50</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperConcentration</Skill>
 				</Skills>
 			</Level>
 			<Level Id="5">
+				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>104</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">-15</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">-2</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperConcentration</Skill>
 				</Skills>
 			</Level>
 			<Level Id="6">
+				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>143</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">-12</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">4</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">70</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperConcentration</Skill>
 				</Skills>
 			</Level>
 			<Level Id="7">
+				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>193</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">-9</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">10</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">80</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperConcentration</Skill>
 				</Skills>
 			</Level>
 			<Level Id="8">
+				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>256</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">-6</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">16</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">90</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperConcentration</Skill>
 				</Skills>
 			</Level>
 			<Level Id="9">
+				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>334</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">-3</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">22</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">100</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperConcentration</Skill>
 				</Skills>
 			</Level>
 			<Level Id="10">
+				<MainStatBonus Stat="ActionPointsTotal">1</MainStatBonus>
 				<BasePrice>431</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">28</BaseStatBonus>
+					<BaseStatBonus Stat="ArmorTotal">110</BaseStatBonus>
+				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperConcentration</Skill>
 				</Skills>
@@ -3003,7 +3242,9 @@
 			<Level Id="0">
 				<BasePrice>18</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-12</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">7</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">6</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperInspiration</Skill>
@@ -3012,7 +3253,9 @@
 			<Level Id="1">
 				<BasePrice>25</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">-9</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">8</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">7</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperInspiration</Skill>
@@ -3022,6 +3265,8 @@
 				<BasePrice>36</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="OverallDamage">-8</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">9</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">8</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperInspiration</Skill>
@@ -3030,7 +3275,9 @@
 			<Level Id="3">
 				<BasePrice>52</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">-7</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-6</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">11</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">9</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperInspiration</Skill>
@@ -3039,7 +3286,9 @@
 			<Level Id="4">
 				<BasePrice>74</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">-6</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-4</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">13</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">10</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperInspiration</Skill>
@@ -3048,7 +3297,9 @@
 			<Level Id="5">
 				<BasePrice>104</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">-5</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-2</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">15</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">12</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperInspiration</Skill>
@@ -3057,7 +3308,9 @@
 			<Level Id="6">
 				<BasePrice>143</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">-4</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">0</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">17</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">14</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperInspiration</Skill>
@@ -3066,7 +3319,9 @@
 			<Level Id="7">
 				<BasePrice>193</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">-3</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">2</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">19</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">16</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperInspiration</Skill>
@@ -3075,7 +3330,9 @@
 			<Level Id="8">
 				<BasePrice>256</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">-2</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">4</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">21</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">18</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperInspiration</Skill>
@@ -3084,7 +3341,9 @@
 			<Level Id="9">
 				<BasePrice>334</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OverallDamage">-1</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">6</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">23</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">20</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperInspiration</Skill>
@@ -3092,6 +3351,11 @@
 			</Level>
 			<Level Id="10">
 				<BasePrice>431</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">25</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">22</BaseStatBonus>
+				</BaseStatBonuses>
 				<Skills>
 					<Skill>SuperInspiration</Skill>
 				</Skills>
@@ -3103,38 +3367,43 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="ResistanceReduction">20</MainStatBonus>
+				<MainStatBonus Stat="ResistanceReduction">15</MainStatBonus>
 				<BasePrice>12</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">5</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="ResistanceReduction">22</MainStatBonus>
+				<MainStatBonus Stat="ResistanceReduction">18</MainStatBonus>
 				<BasePrice>17</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">7</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="ResistanceReduction">24</MainStatBonus>
+				<MainStatBonus Stat="ResistanceReduction">21</MainStatBonus>
 				<BasePrice>26</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">9</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="ResistanceReduction">26</MainStatBonus>
+				<MainStatBonus Stat="ResistanceReduction">24</MainStatBonus>
 				<BasePrice>40</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">11</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="ResistanceReduction">28</MainStatBonus>
+				<MainStatBonus Stat="ResistanceReduction">27</MainStatBonus>
 				<BasePrice>60</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">13</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
@@ -3142,41 +3411,47 @@
 				<BasePrice>87</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">15</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="ResistanceReduction">31</MainStatBonus>
+				<MainStatBonus Stat="ResistanceReduction">33</MainStatBonus>
 				<BasePrice>122</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">17</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="ResistanceReduction">32</MainStatBonus>
+				<MainStatBonus Stat="ResistanceReduction">36</MainStatBonus>
 				<BasePrice>167</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">19</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="ResistanceReduction">33</MainStatBonus>
+				<MainStatBonus Stat="ResistanceReduction">39</MainStatBonus>
 				<BasePrice>224</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">21</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="ResistanceReduction">34</MainStatBonus>
+				<MainStatBonus Stat="ResistanceReduction">42</MainStatBonus>
 				<BasePrice>296</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">23</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="ResistanceReduction">35</MainStatBonus>
+				<MainStatBonus Stat="ResistanceReduction">45</MainStatBonus>
 				<BasePrice>385</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">25</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -3188,46 +3463,79 @@
 			<Level Id="0">
 				<MainStatBonus Stat="HealthTotal">30</MainStatBonus>
 				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealingReceived">40</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="HealthTotal">40</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">42</MainStatBonus>
 				<BasePrice>17</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealingReceived">48</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="HealthTotal">50</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">54</MainStatBonus>
 				<BasePrice>26</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealingReceived">56</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="HealthTotal">60</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">66</MainStatBonus>
 				<BasePrice>40</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealingReceived">64</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="HealthTotal">70</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">78</MainStatBonus>
 				<BasePrice>60</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealingReceived">72</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="HealthTotal">80</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">90</MainStatBonus>
 				<BasePrice>87</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealingReceived">80</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="HealthTotal">90</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">102</MainStatBonus>
 				<BasePrice>122</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealingReceived">88</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="HealthTotal">100</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">114</MainStatBonus>
 				<BasePrice>167</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealingReceived">96</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
-				<MainStatBonus Stat="HealthTotal">110</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">126</MainStatBonus>
 				<BasePrice>224</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealingReceived">104</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="HealthTotal">120</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">138</MainStatBonus>
 				<BasePrice>296</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealingReceived">112</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="HealthTotal">130</MainStatBonus>
+				<MainStatBonus Stat="HealthTotal">150</MainStatBonus>
 				<BasePrice>385</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealingReceived">120</BaseStatBonus>
+				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -3318,10 +3626,18 @@
 	<ItemDefinition Id="MedalPerkExplosiveAtoms">
 		<Category>Trinket</Category>
 		<LevelVariations>
-			<Level Id="5">
-				<BasePrice>148</BasePrice>
+			<Level Id="4">
+				<MainStatBonus Stat="CriticalPower">15</MainStatBonus>
+				<BasePrice>90</BasePrice>
 				<Perks>
-					<Perk>Energized</Perk>
+					<Perk>ExplosiveAtoms</Perk>
+				</Perks>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="CriticalPower">30</MainStatBonus>
+				<BasePrice>123</BasePrice>
+				<Perks>
+					<Perk>ExplosiveAtoms</Perk>
 				</Perks>
 			</Level>
 		</LevelVariations>
@@ -3481,7 +3797,7 @@
 				<MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
 				<BasePrice>148</BasePrice>
 				<Perks>
-					<Perk>PlagueDoctor</Perk>
+					<Perk>FastToxins</Perk>
 				</Perks>
 			</Level>
 		</LevelVariations>
@@ -3523,20 +3839,22 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="4">
-				<MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
-				<BasePrice>100</BasePrice>
+				<MainStatBonus Stat="OverallDamage">5</MainStatBonus>
+				<BasePrice>90</BasePrice>
 				<Perks>
-					<Perk>ManualControl</Perk>
+					<Perk>HumanBallista</Perk>
 				</Perks>
 			</Level>
 			<Level Id="5">
-				<BasePrice>135</BasePrice>
+				<MainStatBonus Stat="OverallDamage">10</MainStatBonus>
+				<BasePrice>123</BasePrice>
 				<Perks>
-					<Perk>ManualControl</Perk>
+					<Perk>HumanBallista</Perk>
 				</Perks>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
+
 
 	<ItemDefinition Id="MedalPerkFortressMaster">
 		<Category>Trinket</Category>

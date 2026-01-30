@@ -46,7 +46,7 @@
          <StatArgument Stat="HealthTotal" Value="HealthThresholdCurrent" Interpreted="true" Style="KeyWordNb"/>
          <LocalizedArgument Prefix="SkillName_" Value="SkillId" Style="Skill"/>
          <StatArgument Stat="PhysicalDamage" Value="PhysDmgStepSize" DisplaySign="false" Interpreted="true"/>
-         <LocArgument Value="MinimumPhysDmgThreshold" Interpreted="true" Style="KeyWordNb"/>
+         <LocalizedArgument Value="MinimumPhysDmgThreshold" Interpreted="true" Style="KeyWordNb"/>
       </LocArguments>
       <View>
          <SkillsToShow>
@@ -547,7 +547,7 @@
             <Highlight>
                <IsTrue Value="Skill.IsAttack"/>
                <IsTrue Value="IsTargetUnit"/>
-               <IsFalse Value="TargetUnitDistanceFromCastedSkill > MaxTriggerDistance"/>
+               <IsFalse Value="TargetUnitDistanceFromCaster > MaxTriggerDistance"/>
             </Highlight>
            <HoverDisplay>
              <HoverRange Range="MaxTriggerDistance"/>
@@ -558,7 +558,7 @@
          <BufferModule>
             <Conditions>
                <IsTrue Value="IsTargetUnit"/>
-               <IsFalse Value="TargetUnitDistanceFromCastedSkill > MaxTriggerDistance"/>
+               <IsFalse Value="TargetUnitDistanceFromCaster > MaxTriggerDistance"/>
                <IsTrue Value="AttackData.OverkillDamage > 0"/>
             </Conditions>
             <Events>
@@ -1327,7 +1327,7 @@
             <Highlight>
                <IsTrue Value="Skill.IsAttack"/>
                <IsTrue Value="IsTargetUnit"/>
-               <IsTrue Value="DistanceForMalus + 1 > TargetUnitDistanceFromCastedSkill"/>
+               <IsTrue Value="DistanceForMalus + 1 > TargetUnitDistanceFromCaster"/>
             </Highlight>
             <HoverDisplay>
                <HoverRange Range="DistanceForMalus"/>
@@ -1346,7 +1346,7 @@
                      <IsTrue Value="HasPerkData"/>
                      <IsTrue Value="Skill.IsAttack"/>
                      <IsTrue Value="IsTargetUnit"/>
-                     <IsTrue Value="DistanceForMalus + 1 > TargetUnitDistanceFromCastedSkill"/>
+                     <IsTrue Value="DistanceForMalus + 1 > TargetUnitDistanceFromCaster"/>
                   </Conditions>
                   <SkillEffects>
                      <Inaccurate>
@@ -1411,8 +1411,8 @@
                      <IsTrue Value="Skill.HasPropagation"/>
                      <IsTrue Value="Skill.IsAttack"/>
                      <IsTrue Value="IsTargetUnit"/>
-                     <IsTrue Value="MaxDistanceForBonus + 1 > TargetUnitDistanceFromCastedSkill"/>
-                     <IsTrue Value="TargetUnitDistanceFromCastedSkill > MinDistanceForBonus - 1"/>
+                     <IsTrue Value="MaxDistanceForBonus + 1 > TargetUnitDistanceFromCaster"/>
+                     <IsTrue Value="TargetUnitDistanceFromCaster > MinDistanceForBonus - 1"/>
                   </Conditions>
                   <SkillEffects>
                      <NoDodge></NoDodge>
@@ -1467,7 +1467,7 @@
                <Event EffectTime="OnTargetKilled">
                   <Conditions>
                      <IsTrue Value="IsTargetEnemyUnit"/>
-                     <IsTrue Value="TargetUnitDistanceFromCastedSkill > MinimumDistanceToIncreaseBuffer - 1"/>
+                     <IsTrue Value="TargetUnitDistanceFromCaster > MinimumDistanceToIncreaseBuffer - 1"/>
                   </Conditions>
                   <Actions>
                      <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
@@ -1624,7 +1624,7 @@
                   <Conditions>
                      <IsTrue Value="IsTargetEnemyUnit"/>
                      <IsTrue Value="Skill.IsAttack"/>
-                     <IsTrue Value="TargetUnitDistanceFromCastedSkill > TargetMinDistanceToActivate - 1" />
+                     <IsTrue Value="TargetUnitDistanceFromCaster > TargetMinDistanceToActivate - 1" />
                      <IsFalse Value="TargetUnit.HealthTotal > AttackData.HealthDamage"/>
                   </Conditions>
                   <Actions>
@@ -2266,7 +2266,7 @@
       </Modules>
    </PerkDefinition>
 
-      <!-- T3 -->
+   <!-- T3 -->
    <PerkDefinition Id="Duelist">
       <TokenVariables>
          <TokenVariable Key="DamageDeltaEachHit" Value="Module.Buffer2"/>
@@ -2581,7 +2581,7 @@
       <TokenVariables>
          <TokenVariable Key="XPMultiplier" Value="KillerMultiplier * WaveMultiplier"/>
          <TokenVariable Key="KillerMultiplier" Value="KillerBonusExperienceFactor"/>
-         <TokenVariable Key="WaveMultiplier" Value="CurrentWaveXpAdjustmentMultiplier"/>
+         <TokenVariable Key="WaveMultiplier" Value="CurrentWavePercentageModifier"/>
       </TokenVariables>
       <View>
          <DisplayInHUD/>
@@ -2629,8 +2629,6 @@
             <SkillToShow Id="ManualControlCatapult"/>
             <SkillToShow Id="ManualControlBallista"/>
             <SkillToShow Id="ManualControlBallistaTower"/>
-            <SkillToShow Id="ManualControlBallistaHeavy"/>
-            <SkillToShow Id="ManualControlBallistaSplit"/>
             <SkillToShow Id="ManualControlStunTrap"/>
             <SkillToShow Id="ManualControlSlowTrap"/>
             <SkillToShow Id="ManualControlDamageTrap"/>
@@ -2645,8 +2643,6 @@
                <UnlockContextualSkill ContextualSkillId="ManualControlCatapult"/>
                <UnlockContextualSkill ContextualSkillId="ManualControlBallista"/>
                <UnlockContextualSkill ContextualSkillId="ManualControlBallistaTower"/>
-               <UnlockContextualSkill ContextualSkillId="ManualControlBallistaHeavy"/>
-               <UnlockContextualSkill ContextualSkillId="ManualControlBallistaSplit"/>
                <UnlockContextualSkill ContextualSkillId="ManualControlStunTrap"/>
                <UnlockContextualSkill ContextualSkillId="ManualControlSlowTrap"/>
                <UnlockContextualSkill ContextualSkillId="ManualControlDamageTrap"/>
@@ -2797,8 +2793,7 @@
       <Modules>
          <BufferModule>
             <Effects>
-               <UnlockContextualSkill ContextualSkillId="JumpOverWall2"/>
-               <LockSkill SkillId="JumpOverWall"/>
+               <SwapContextualSkill ContextualSkillIdToLock="JumpOverWall" ContextualSkillIdToUnlock="JumpOverWall2"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -3780,7 +3775,7 @@
          <LocArgument Value="OverallDamage_BaseBonus" Prefix="+" Suffix="%" Style="GoodNb"/>
          <LocArgument Value="OverallDamage_DynamicBonus" Suffix="%" Style="GoodNb"/>
          <LocArgument Value="OverallDamage_DynamicStepsValue" Style="KeyWordNb"/>
-         <LocArgument Value="OverallDamage_BonusMax" Interpreted="true" Suffix="%" Style="KeyWordNb"/>
+         <LocalizedArgument Value="OverallDamage_BonusMax" Interpreted="true" Suffix="%" Style="KeyWordNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD>

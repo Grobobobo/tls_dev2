@@ -316,6 +316,19 @@ WEAPON_NAME_MAPPING = {
     'MagicOrb': 'Magic orb',
     'ManaFlower': 'Sacred Flower',
     'Claw': 'Claws',
+    # Offhand weapon mappings to their base weapon types
+    'BattleMageMagicWand': 'Wand',
+    'BattleMageSword': 'sword',
+    'DuelingPistol': 'Pistol',
+    'MysticHammer': 'Hammer',
+    'ParryingDagger': 'Dagger',
+    'PreciseHandCrossbow': 'Hand crossbow',
+    'ReliableMagicScepter': 'Scepter',
+    'SwiftAxe': '1h Axe',
+    'TransferMagicOrb': 'Magic orb',
+    'WarpCrystal': 'Tome of Secrets',
+    'GauntletOffhand': 'Gauntlet',
+    'BoomerangOffhand': 'Boomerang',
 }
 
 def find_excel_weapon_name(xml_base):
@@ -407,12 +420,15 @@ def update_weapon_damage(file_path):
                 continue
             
             # Map XML level to Excel level based on weapon type and variant_id
+            # Offhand weapons: use Excel levels 0 to 5 (XML 0→Excel 0, ..., XML 5→Excel 5)
             # Non-offhand weapons ending in 0: use Excel levels -1 to 4 (XML 0→Excel -1, ..., XML 5→Excel 4)
-            # All other weapons (including offhands): use Excel levels 0 to 5 (XML 0→Excel 0, ..., XML 5→Excel 5)
-            if variant_id == 0 and not is_offhand:
-                excel_level = level_id - 1  # XML 0→Excel -1, XML 1→Excel 0, ..., XML 5→Excel 4
+            # All other weapon variants: use Excel levels 0 to 5 (XML 0→Excel 0, ..., XML 5→Excel 5)
+            if is_offhand:
+                excel_level = level_id  # Offhands always use direct mapping 0-5
+            elif variant_id == 0:
+                excel_level = level_id - 1  # Non-offhand variant 0 uses -1 to 4
             else:
-                excel_level = level_id  # Direct mapping for offhands and all other weapons
+                excel_level = level_id  # Weapon variants 1-5 use direct mapping 0-5
             
             # Check if we have damage data for this Excel level
             if excel_level not in levels_data:
