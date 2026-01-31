@@ -50,7 +50,7 @@
             <SkillEffects>
                <RegenStat>
                   <Stat Id="Health"/>
-                  <Bonus>13</Bonus>
+                  <Bonus>20</Bonus>
                </RegenStat>
                <RemoveStatus>
                   <BaseChance>1</BaseChance>
@@ -93,7 +93,7 @@
             <SkillEffects>
                <RegenStat>
                   <Stat Id="Health"/>
-                  <Bonus>18</Bonus>
+                  <Bonus>25</Bonus>
                </RegenStat>
                <RemoveStatus>
                   <BaseChance>1</BaseChance>
@@ -111,7 +111,25 @@
             <SkillEffects>
                <RegenStat>
                   <Stat Id="Health"/>
-                  <Bonus>22</Bonus>
+                  <Bonus>30</Bonus>
+               </RegenStat>
+               <RemoveStatus>
+                  <BaseChance>1</BaseChance>
+                  <Status>AllNegative</Status>
+               </RemoveStatus>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="HealthPotion3" TemplateId="HealthPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <RegenStat>
+                  <Stat Id="Health"/>
+                  <Bonus>40</Bonus>
                </RegenStat>
                <RemoveStatus>
                   <BaseChance>1</BaseChance>
@@ -134,7 +152,7 @@
             <SkillEffects>
                <RegenStat>
                   <Stat Id="Mana"/>
-                  <Bonus>2</Bonus>
+                  <Bonus>4</Bonus>
                </RegenStat>
             </SkillEffects>
          </Generic>
@@ -173,7 +191,7 @@
             <SkillEffects>
                <RegenStat>
                   <Stat Id="Mana"/>
-                  <Bonus>3</Bonus>
+                  <Bonus>5</Bonus>
                </RegenStat>
             </SkillEffects>
          </Generic>
@@ -187,7 +205,21 @@
             <SkillEffects>
                <RegenStat>
                   <Stat Id="Mana"/>
-                  <Bonus>4</Bonus>
+                  <Bonus>6</Bonus>
+               </RegenStat>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="ManaPotion3" TemplateId="ManaPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <RegenStat>
+                  <Stat Id="Mana"/>
+                  <Bonus>8</Bonus>
                </RegenStat>
             </SkillEffects>
          </Generic>
@@ -292,7 +324,7 @@
             <SkillEffects>
                <RegenStat>
                   <Stat Id="MovePoints"/>
-                  <Bonus>2</Bonus>
+                  <Bonus>3</Bonus>
                </RegenStat>
             </SkillEffects>
          </Generic>
@@ -331,20 +363,6 @@
             <SkillEffects>
                <RegenStat>
                   <Stat Id="MovePoints"/>
-                  <Bonus>3</Bonus>
-               </RegenStat>
-            </SkillEffects>
-         </Generic>
-      </SkillAction>
-   </SkillDefinition>
-   
-
-   <SkillDefinition Id="SpeedPotion2" TemplateId="SpeedPotion"> <!-- Unused, kept for potential retrocompat reasons -->
-      <SkillAction>
-         <Generic>
-            <SkillEffects>
-               <RegenStat>
-                  <Stat Id="MovePoints"/>
                   <Bonus>4</Bonus>
                </RegenStat>
             </SkillEffects>
@@ -353,13 +371,27 @@
    </SkillDefinition>
    
 
-   <SkillDefinition Id="SpeedPotion3" TemplateId="SpeedPotion"> <!-- Unused, kept for potential retrocompat reasons -->
+   <SkillDefinition Id="SpeedPotion2" TemplateId="SpeedPotion">
       <SkillAction>
          <Generic>
             <SkillEffects>
                <RegenStat>
                   <Stat Id="MovePoints"/>
                   <Bonus>5</Bonus>
+               </RegenStat>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="SpeedPotion3" TemplateId="SpeedPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <RegenStat>
+                  <Stat Id="MovePoints"/>
+                  <Bonus>6</Bonus>
                </RegenStat>
             </SkillEffects>
          </Generic>
@@ -422,7 +454,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                   <Stat Id="Dodge"/>
-                  <Bonus>31</Bonus>
+                  <Bonus>30</Bonus>
                   <TurnsCount>2</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -439,7 +471,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                   <Stat Id="Dodge"/>
-                  <Bonus>37</Bonus>
+                  <Bonus>36</Bonus>
                   <TurnsCount>2</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -473,7 +505,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                   <Stat Id="Dodge"/>
-                  <Bonus>46</Bonus>
+                  <Bonus>48</Bonus>
                   <TurnsCount>2</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -495,7 +527,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                   <Stat Id="Block"/>
-                  <Bonus>10</Bonus>
+                  <Bonus>20</Bonus>
                   <TurnsCount>2</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -537,7 +569,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                   <Stat Id="Block"/>
-                  <Bonus>15</Bonus>
+                  <Bonus>25</Bonus>
                   <TurnsCount>2</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -554,7 +586,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                   <Stat Id="Block"/>
-                  <Bonus>20</Bonus>
+                  <Bonus>30</Bonus>
                   <TurnsCount>2</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -571,7 +603,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                   <Stat Id="Block"/>
-                  <Bonus>25</Bonus>
+                  <Bonus>35</Bonus>
                   <TurnsCount>2</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -587,7 +619,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                   <Stat Id="Block"/>
-                  <Bonus>30</Bonus>
+                  <Bonus>40</Bonus>
                   <TurnsCount>2</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -609,7 +641,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                   <Stat Id="OverallDamage"/>
-                  <Bonus>10</Bonus>
+                  <Bonus>20</Bonus>
                   <TurnsCount>2</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -651,7 +683,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                   <Stat Id="OverallDamage"/>
-                  <Bonus>15</Bonus>
+                  <Bonus>25</Bonus>
                   <TurnsCount>2</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -668,7 +700,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                   <Stat Id="OverallDamage"/>
-                  <Bonus>20</Bonus>
+                  <Bonus>30</Bonus>
                   <TurnsCount>2</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -685,7 +717,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                   <Stat Id="OverallDamage"/>
-                  <Bonus>25</Bonus>
+                  <Bonus>35</Bonus>
                   <TurnsCount>2</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -702,7 +734,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                   <Stat Id="OverallDamage"/>
-                  <Bonus>30</Bonus>
+                  <Bonus>40</Bonus>
                   <TurnsCount>2</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -722,8 +754,15 @@
             <SkillEffects>
                <NegativeStatusImmunityEffect>
                   <Type Id="AllNegative"/>
-                  <TurnsCount>1</TurnsCount>
+                  <TurnsCount>2</TurnsCount>
                </NegativeStatusImmunityEffect>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="Resistance"/>
+                  <Bonus>15</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -763,6 +802,97 @@
                   <Type Id="AllNegative"/>
                   <TurnsCount>2</TurnsCount>
                </NegativeStatusImmunityEffect>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="Resistance"/>
+                  <Bonus>19</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="DispelPotion2" TemplateId="DispelPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <NegativeStatusImmunityEffect>
+                  <Type Id="AllNegative"/>
+                  <TurnsCount>2</TurnsCount>
+               </NegativeStatusImmunityEffect>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="Resistance"/>
+                  <Bonus>23</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="DispelPotion3" TemplateId="DispelPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <NegativeStatusImmunityEffect>
+                  <Type Id="AllNegative"/>
+                  <TurnsCount>2</TurnsCount>
+               </NegativeStatusImmunityEffect>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="Resistance"/>
+                  <Bonus>23</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="DispelPotion4" TemplateId="DispelPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <NegativeStatusImmunityEffect>
+                  <Type Id="AllNegative"/>
+                  <TurnsCount>2</TurnsCount>
+               </NegativeStatusImmunityEffect>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="Resistance"/>
+                  <Bonus>26</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="DispelPotion5" TemplateId="DispelPotion">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <NegativeStatusImmunityEffect>
+                  <Type Id="AllNegative"/>
+                  <TurnsCount>2</TurnsCount>
+               </NegativeStatusImmunityEffect>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="Resistance"/>
+                  <Bonus>30</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -780,32 +910,54 @@
       <ActionPointsCost>0</ActionPointsCost>
       <ManaCost>3</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1.6</DamageMultiplier>
+         </Attack>
+      </SkillAction>
    </SkillDefinition>
 
 
    <SkillDefinition Id="AxeBoomerangScroll1" TemplateId="AxeBoomerangScroll">
+      <ManaCost>3</ManaCost>
    </SkillDefinition>
 
 
    <SkillDefinition Id="AxeBoomerangScroll2" TemplateId="AxeBoomerangScroll">
+      <ManaCost>3</ManaCost>
    </SkillDefinition>
    
 
    <SkillDefinition Id="ThrowingDaggersScroll" TemplateId="ThrowingDaggers">
       <OverrideLocalizationId>ThrowingDaggersScroll</OverrideLocalizationId>
       <ActionPointsCost>0</ActionPointsCost>
-      <ManaCost>4</ManaCost>
+      <ManaCost>3</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
       <SkillAction>
+         <Attack>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>0.6</DamageMultiplier>
+            <SkillEffects>
+               <MultiHit HitsCount="4"/>
+               <Poison>
+                  <BaseChance>1</BaseChance>
+                  <DamagePerTurn>30</DamagePerTurn>
+                  <TurnsCount>3</TurnsCount>
+               </Poison>
+            </SkillEffects>
+         </Attack>
       </SkillAction>
    </SkillDefinition>
 
 
    <SkillDefinition Id="ThrowingDaggersScroll1" TemplateId="ThrowingDaggersScroll">
+      <ManaCost>3</ManaCost>
    </SkillDefinition>
 
 
    <SkillDefinition Id="ThrowingDaggersScroll2" TemplateId="ThrowingDaggersScroll">
+      <ManaCost>3</ManaCost>
    </SkillDefinition>
 
 
@@ -815,14 +967,25 @@
       <MovePointsCost>0</MovePointsCost>
       <ManaCost>1</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <Maneuver/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
    </SkillDefinition>
 
 
    <SkillDefinition Id="ChargeScroll1" TemplateId="ChargeScroll">
+      <ManaCost>2</ManaCost>
    </SkillDefinition>
 
 
    <SkillDefinition Id="ChargeScroll2" TemplateId="ChargeScroll">
+      <ManaCost>3</ManaCost>
    </SkillDefinition>
    
 
@@ -832,14 +995,27 @@
       <MovePointsCost>0</MovePointsCost>
       <ManaCost>3</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>0.75</DamageMultiplier>
+            <SkillEffects>
+               <Momentum>
+                  <DamageBonusPerTile>0.15</DamageBonusPerTile>
+               </Momentum>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
    </SkillDefinition>
 
 
    <SkillDefinition Id="SwordBlastScroll1" TemplateId="SwordBlastScroll">
+      <ManaCost>3</ManaCost>
    </SkillDefinition>
 
 
    <SkillDefinition Id="SwordBlastScroll2" TemplateId="SwordBlastScroll">
+      <ManaCost>3</ManaCost>
    </SkillDefinition>
 
 
@@ -848,14 +1024,30 @@
       <ActionPointsCost>0</ActionPointsCost>
       <ManaCost>3</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1.1</DamageMultiplier>
+            <SkillEffects>
+               <CasterEffect>
+                  <RemoveStatus>
+                     <BaseChance>1</BaseChance>
+                     <Status>Debuff</Status>
+                  </RemoveStatus>
+               </CasterEffect>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
    </SkillDefinition>
 
 
    <SkillDefinition Id="SuperSpinScroll1" TemplateId="SuperSpinScroll">
+      <ManaCost>3</ManaCost>
    </SkillDefinition>
 
 
    <SkillDefinition Id="SuperSpinScroll2" TemplateId="SuperSpinScroll">
+      <ManaCost>3</ManaCost>
    </SkillDefinition>
    
 
@@ -864,14 +1056,25 @@
       <ActionPointsCost>0</ActionPointsCost>
       <ManaCost>3</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1.1</DamageMultiplier>
+            <SkillEffects>
+               <NoDodge></NoDodge>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
    </SkillDefinition>
 
 
    <SkillDefinition Id="GroundSmashScroll1" TemplateId="GroundSmashScroll">
+      <ManaCost>3</ManaCost>
    </SkillDefinition>
 
 
    <SkillDefinition Id="GroundSmashScroll2" TemplateId="GroundSmashScroll">
+      <ManaCost>3</ManaCost>
    </SkillDefinition>
    
 
@@ -880,14 +1083,22 @@
       <ActionPointsCost>0</ActionPointsCost>
       <ManaCost>5</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1.1</DamageMultiplier>
+         </Attack>
+      </SkillAction>
    </SkillDefinition>
 
 
    <SkillDefinition Id="TripleSwipeScroll1" TemplateId="TripleSwipeScroll">
+      <ManaCost>5</ManaCost>
    </SkillDefinition>
 
 
    <SkillDefinition Id="TripleSwipeScroll2" TemplateId="TripleSwipeScroll">
+      <ManaCost>5</ManaCost>
    </SkillDefinition>
 
 
@@ -896,14 +1107,25 @@
       <ActionPointsCost>0</ActionPointsCost>
       <ManaCost>4</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Ranged</AttackType>
+            <DamageMultiplier>1.35</DamageMultiplier>
+            <SkillEffects>
+               <NoDodge/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
    </SkillDefinition>
 
 
    <SkillDefinition Id="GrapeshotScroll1" TemplateId="GrapeshotScroll">
+      <ManaCost>4</ManaCost>
    </SkillDefinition>
 
 
    <SkillDefinition Id="GrapeshotScroll2" TemplateId="GrapeshotScroll">
+      <ManaCost>4</ManaCost>
    </SkillDefinition>
    
 
@@ -912,14 +1134,25 @@
       <ActionPointsCost>0</ActionPointsCost>
       <ManaCost>4</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Ranged</AttackType>
+            <DamageMultiplier>1.85</DamageMultiplier>
+            <SkillEffects>
+               <IgnoreLineOfSight/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
    </SkillDefinition>
 
 
    <SkillDefinition Id="RainOfArrowsScroll1" TemplateId="RainOfArrowsScroll">
+      <ManaCost>4</ManaCost>
    </SkillDefinition>
 
 
    <SkillDefinition Id="RainOfArrowsScroll2" TemplateId="RainOfArrowsScroll">
+      <ManaCost>4</ManaCost>
    </SkillDefinition>
 
 
@@ -928,14 +1161,22 @@
       <ActionPointsCost>0</ActionPointsCost>
       <ManaCost>3</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Ranged</AttackType>
+            <DamageMultiplier>1.45</DamageMultiplier>
+         </Attack>
+      </SkillAction>
    </SkillDefinition>
 
 
    <SkillDefinition Id="ExplosiveBoltScroll1" TemplateId="ExplosiveBoltScroll">
+      <ManaCost>3</ManaCost>
    </SkillDefinition>
 
 
    <SkillDefinition Id="ExplosiveBoltScroll2" TemplateId="ExplosiveBoltScroll">
+      <ManaCost>3</ManaCost>
    </SkillDefinition>
 
 
@@ -943,16 +1184,33 @@
       <OverrideLocalizationId>AssassinateScroll</OverrideLocalizationId>
       <ActionPointsCost>0</ActionPointsCost>
       <MovePointsCost>0</MovePointsCost>
-      <ManaCost>2</ManaCost>
+      <ManaCost>3</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Ranged</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <Isolated>
+                  <DamageMultiplier>1.5</DamageMultiplier>
+               </Isolated>
+               <Opportunistic>
+                  <DamageMultiplier>1.5</DamageMultiplier>
+               </Opportunistic>
+               <NoDodge/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
    </SkillDefinition>
 
 
    <SkillDefinition Id="AssassinateScroll1" TemplateId="AssassinateScroll">
+      <ManaCost>3</ManaCost>
    </SkillDefinition>
 
 
    <SkillDefinition Id="AssassinateScroll2" TemplateId="AssassinateScroll">
+      <ManaCost>3</ManaCost>
    </SkillDefinition>
 
 
@@ -962,15 +1220,24 @@
       <ManaCost>4</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
       <SkillAction>
+         <Attack>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>0.8</DamageMultiplier>
+            <SkillEffects>
+               <MultiHit HitsCount="5"/>
+            </SkillEffects>
+         </Attack>
       </SkillAction>
    </SkillDefinition>
 
 
    <SkillDefinition Id="MagicMissilesScroll1" TemplateId="MagicMissilesScroll">
+      <ManaCost>4</ManaCost>
    </SkillDefinition>
 
 
    <SkillDefinition Id="MagicMissilesScroll2" TemplateId="MagicMissilesScroll">
+      <ManaCost>4</ManaCost>
    </SkillDefinition>
 
 
@@ -979,14 +1246,28 @@
       <ActionPointsCost>0</ActionPointsCost>
       <ManaCost>3</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1.4</DamageMultiplier>
+            <SkillEffects>
+               <Stun>
+                  <BaseChance>0.7</BaseChance>
+               </Stun>
+               <Propagation PropagationsCount="6"/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
    </SkillDefinition>
 
 
    <SkillDefinition Id="HammerOfFaithScroll1" TemplateId="HammerOfFaithScroll">
+      <ManaCost>3</ManaCost>
    </SkillDefinition>
 
 
    <SkillDefinition Id="HammerOfFaithScroll2" TemplateId="HammerOfFaithScroll">
+      <ManaCost>3</ManaCost>
    </SkillDefinition>
    
 
@@ -995,22 +1276,44 @@
       <ActionPointsCost>0</ActionPointsCost>
       <ManaCost>6</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>4</DamageMultiplier>
+            <SkillEffects>
+               <NoDodge/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
    </SkillDefinition>
 
 
    <SkillDefinition Id="DeathRayScroll1" TemplateId="DeathRayScroll">
+      <ManaCost>6</ManaCost>
    </SkillDefinition>
 
 
    <SkillDefinition Id="DeathRayScroll2" TemplateId="DeathRayScroll">
+      <ManaCost>6</ManaCost>
    </SkillDefinition>
    
 
    <SkillDefinition Id="ScorchingWaveScroll" TemplateId="ScorchingWave"> <!-- Unused, kept for potential retrocompat reasons -->
       <OverrideLocalizationId>ScorchingWaveScroll</OverrideLocalizationId>
       <ActionPointsCost>0</ActionPointsCost>
-      <ManaCost>2</ManaCost>
+      <ManaCost>3</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <Opportunistic>
+                  <DamageMultiplier>2</DamageMultiplier>
+               </Opportunistic>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
    </SkillDefinition>
    
 
@@ -1019,6 +1322,22 @@
       <ActionPointsCost>0</ActionPointsCost>
       <ManaCost>5</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1.2</DamageMultiplier>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="FireThrowerScroll1" TemplateId="FireThrowerScroll">
+      <ManaCost>5</ManaCost>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="FireThrowerScroll2" TemplateId="FireThrowerScroll">
+      <ManaCost>5</ManaCost>
    </SkillDefinition>
 
 
@@ -1027,15 +1346,25 @@
       <ActionPointsCost>0</ActionPointsCost>
       <ManaCost>4</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
-
+      <SkillAction>
+         <Attack>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1.4</DamageMultiplier>
+            <SkillEffects>
+               <ArmorPiercing/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
    </SkillDefinition>
 
 
    <SkillDefinition Id="FireballScroll1" TemplateId="FireballScroll">
+      <ManaCost>4</ManaCost>
    </SkillDefinition>
 
 
    <SkillDefinition Id="FireballScroll2" TemplateId="FireballScroll">
+      <ManaCost>4</ManaCost>
    </SkillDefinition>
    
 
@@ -1044,14 +1373,25 @@
       <ActionPointsCost>0</ActionPointsCost>
       <ManaCost>6</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1.6</DamageMultiplier>
+            <SkillEffects>
+               <Propagation PropagationsCount="9"/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
    </SkillDefinition>
 
 
    <SkillDefinition Id="LightningStrikeScroll1" TemplateId="LightningStrikeScroll">
+      <ManaCost>6</ManaCost>
    </SkillDefinition>
 
 
    <SkillDefinition Id="LightningStrikeScroll2" TemplateId="LightningStrikeScroll">
+      <ManaCost>6</ManaCost>
    </SkillDefinition>
 
 
@@ -1060,14 +1400,30 @@
       <ActionPointsCost>0</ActionPointsCost>
       <ManaCost>3</ManaCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <Poison>
+                  <BaseChance>1</BaseChance>
+                  <DamagePerTurn>30</DamagePerTurn>
+                  <TurnsCount>3</TurnsCount>
+               </Poison>
+               <Propagation PropagationsCount="5"/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
    </SkillDefinition>
 
 
    <SkillDefinition Id="BeeStingScroll1" TemplateId="BeeStingScroll">
+      <ManaCost>3</ManaCost>
    </SkillDefinition>
 
 
    <SkillDefinition Id="BeeStingScroll2" TemplateId="BeeStingScroll">
+      <ManaCost>3</ManaCost>
    </SkillDefinition>
    
 
@@ -1080,11 +1436,13 @@
    
 
    <SkillDefinition Id="TeleportationScroll1" TemplateId="TeleportationScroll">
+      <ManaCost>3</ManaCost>
       <Range Min="1" Max="7" CardinalDirectionOnly="false"/>
    </SkillDefinition>
 
 
    <SkillDefinition Id="TeleportationScroll2" TemplateId="TeleportationScroll">
+      <ManaCost>3</ManaCost>
       <Range Min="1" Max="9" CardinalDirectionOnly="false"/>
    </SkillDefinition>
    

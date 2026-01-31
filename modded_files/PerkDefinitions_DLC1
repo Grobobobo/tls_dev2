@@ -1496,22 +1496,30 @@
 
    <PerkDefinition Id="AgainstTheWall">
       <TokenVariables>
-         <TokenVariable Key="EffectDisplayValue" Value="(TotalDamageBonus) * IsPerkActive"/>
+         <TokenVariable Key="EffectDisplayValueDamage" Value="(TotalDamageBonus) * IsPerkActive"/>
+         <TokenVariable Key="EffectDisplayValueArmor" Value="(TotalArmorBonus) * IsPerkActive"/>
          <TokenVariable Key="PerkNeedUpdate" Value="Module.Buffer ! IsPerkActive"/>
          <TokenVariable Key="IsPerkActive" Value="BooleanChoice(Owner.IsBackProtectionValid, 1, -1)"/>
-         <TokenVariable Key="TotalDamageBonus" Value="BaseDomageBonus + ScalingDamageBonus * Owner.Level"/>
-         <TokenVariable Key="BaseDomageBonus" Value="10"/>
+         <TokenVariable Key="TotalDamageBonus" Value="BaseDamageBonus + ScalingDamageBonus * Owner.Level"/>
+         <TokenVariable Key="BaseDamageBonus" Value="10"/>
          <TokenVariable Key="ScalingDamageBonus" Value="2"/>
+         <TokenVariable Key="TotalArmorBonus" Value="BaseArmorBonus + ScalingArmorBonus * Owner.Level"/>
+         <TokenVariable Key="BaseArmorBonus" Value="25"/>
+         <TokenVariable Key="ScalingArmorBonus" Value="5"/>
       </TokenVariables>
       <LocArguments>
-         <StatArgument Stat="OverallDamage" Value="BaseDomageBonus"/>
+         <StatArgument Stat="OverallDamage" Value="BaseDamageBonus"/>
          <LocArgument Value="ScalingDamageBonus" Style="GoodNb"/>
          <StatArgument Stat="OverallDamage" Value="TotalDamageBonus" Interpreted="true"/>
+         <StatArgument Stat="ArmorTotal" Value="BaseArmorBonus"/>
+         <LocArgument Value="ScalingArmorBonus" Style="GoodNb"/>
+         <StatArgument Stat="ArmorTotal" Value="TotalArmorBonus" Interpreted="true"/>
       </LocArguments>
       <View>
          <DisplayBonusBeforePurchase/>
          <DisplayInHUD>
             <Bonus Value="TotalDamageBonus"/>
+            <Bonus Value="TotalArmorBonus"/>
             <GreyOut>
                <IsFalse Value="Module.IsActive"/>
             </GreyOut>
@@ -1534,7 +1542,8 @@
                   </Conditions>
                   <Actions>
                      <SetBufferTo Value="IsPerkActive"/>
-                     <InstantiateStatEffectDisplay Value="EffectDisplayValue" Stat="OverallDamage"/>
+                     <InstantiateStatEffectDisplay Value="EffectDisplayValueDamage" Stat="OverallDamage"/>
+                     <InstantiateStatEffectDisplay Value="EffectDisplayValueArmor" Stat="Armor"/>
                   </Actions>
                </Event>
                <Event EffectTime="OnBuildingConstructed">
@@ -1543,7 +1552,8 @@
                   </Conditions>
                   <Actions>
                      <SetBufferTo Value="IsPerkActive"/>
-                     <InstantiateStatEffectDisplay Value="EffectDisplayValue" Stat="OverallDamage"/>
+                     <InstantiateStatEffectDisplay Value="EffectDisplayValueDamage" Stat="OverallDamage"/>
+                     <InstantiateStatEffectDisplay Value="EffectDisplayValueArmor" Stat="Armor"/>
                   </Actions>
                </Event>
                <Event EffectTime="OnBuildingDestroyed">
@@ -1552,7 +1562,8 @@
                   </Conditions>
                   <Actions>
                      <SetBufferTo Value="IsPerkActive"/>
-                     <InstantiateStatEffectDisplay Value="EffectDisplayValue" Stat="OverallDamage"/>
+                     <InstantiateStatEffectDisplay Value="EffectDisplayValueDamage" Stat="OverallDamage"/>
+                     <InstantiateStatEffectDisplay Value="EffectDisplayValueArmor" Stat="Armor"/>
                   </Actions>
                </Event>
                <Event EffectTime="OnMovementEnd">
@@ -1561,7 +1572,8 @@
                   </Conditions>
                   <Actions>
                      <SetBufferTo Value="IsPerkActive"/>
-                     <InstantiateStatEffectDisplay Value="EffectDisplayValue" Stat="OverallDamage"/>
+                     <InstantiateStatEffectDisplay Value="EffectDisplayValueDamage" Stat="OverallDamage"/>
+                     <InstantiateStatEffectDisplay Value="EffectDisplayValueArmor" Stat="Armor"/>
                   </Actions>
                </Event>
             </Events>
@@ -1570,6 +1582,7 @@
             </Conditions>
             <Effects>
                <StatModifier Stat="OverallDamage" Value="TotalDamageBonus"/>
+               <StatModifier Stat="Armor" Value="TotalArmorBonus"/>
             </Effects>
          </BufferModule>
       </Modules>

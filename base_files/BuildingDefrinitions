@@ -1,0 +1,9399 @@
+﻿<BuildingDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+                     xsi:noNamespaceSchemaLocation="BuildingDefinitions.xsd">
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- CITY MISC -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <BuildingDefinition Id="MagicCircle">
+
+      <Blueprint>
+
+         <Tiles OriginX="1" OriginY="1">
+
+            BBB
+
+            BBB
+
+            BBB
+
+         </Tiles>
+
+         <Category>Production</Category>                       
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-58" Y="34"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <!-- This is the max value, that is when the player has all the mages (incl. upgrades) -->
+
+         <HealthTotal>400</HealthTotal>
+
+         <TotalPanicValue>60</TotalPanicValue>
+
+      </Damageable>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="FillEffectGauge1"/>
+
+      </Passives>
+
+
+
+      <Production>
+
+         <BuildingGaugeEffectDefinition>
+
+            <OpenMagicSeal/>
+
+         </BuildingGaugeEffectDefinition>
+
+      </Production>
+
+
+
+      <MagicCircleSettings>
+
+         <MageSlotMax>4</MageSlotMax>
+
+         <MageSlotInit>1</MageSlotInit>
+
+         <MageCountInit>1</MageCountInit>
+
+         <OpenSealsInit>0</OpenSealsInit>
+
+         <SealsToClose>1</SealsToClose>
+
+      </MagicCircleSettings>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <!-- RuinsA has been moved to a single file for the example -->
+
+
+
+   <BuildingDefinition Id="RuinsB">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+            B
+
+         </Tiles>
+
+         <BuildingHUDOffset X="-38" Y="50"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <IsDemolishable>true</IsDemolishable>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>100</HealthTotal>
+
+         <TotalPanicValue>2</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="-0.49" PositionY="0.33"/>
+
+            <FlameAnchorPoint PositionX="0.91" PositionY="0.99"/>
+
+            <FlameAnchorPoint PositionX="-0.04" PositionY="1.2"/>
+
+            <FlameAnchorPoint PositionX="-0.52" PositionY="2.26"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>2</FlameCount>
+
+      </Damageable>
+
+
+
+      <Production>
+
+         <BuildingActionDefinitions>
+
+            <BuildingActionDefinition Id="ScavengeGold2"/>
+
+            <BuildingActionDefinition Id="ScavengeMaterials2"/>
+
+         </BuildingActionDefinitions>
+
+      </Production>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="RuinsC">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            BB
+
+            B
+
+         </Tiles>
+
+         <BuildingHUDOffset X="-26" Y="74"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <IsDemolishable>true</IsDemolishable>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>150</HealthTotal>
+
+         <TotalPanicValue>3</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="-0.17" PositionY="3.98"/>
+
+            <FlameAnchorPoint PositionX="-1.02" PositionY="3.21"/>
+
+            <FlameAnchorPoint PositionX="-0.57" PositionY="1.74"/>
+
+            <FlameAnchorPoint PositionX="-0.25" PositionY="1.22"/>
+
+            <FlameAnchorPoint PositionX="-0.06" PositionY="-0.05"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>2</FlameCount>
+
+      </Damageable>
+
+
+
+      <Production>
+
+         <BuildingActionDefinitions>
+
+            <BuildingActionDefinition Id="ScavengeGold3"/>
+
+            <BuildingActionDefinition Id="ScavengeMaterials3"/>
+
+         </BuildingActionDefinitions>
+
+      </Production>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="RuinsD">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            BB
+
+            BB
+
+         </Tiles>
+
+         <BuildingHUDOffset X="-26" Y="50"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <IsDemolishable>true</IsDemolishable>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>200</HealthTotal>
+
+         <TotalPanicValue>4</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="0.39" PositionY="2.31"/>
+
+            <FlameAnchorPoint PositionX="-0.38" PositionY="1.57"/>
+
+            <FlameAnchorPoint PositionX="0.44" PositionY="0.84"/>
+
+            <FlameAnchorPoint PositionX="0.49" PositionY="0.3"/>
+
+            <FlameAnchorPoint PositionX="0.06" PositionY="3.4"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>3</FlameCount>
+
+      </Damageable>
+
+
+
+      <Production>
+
+         <BuildingActionDefinitions>
+
+            <BuildingActionDefinition Id="ScavengeGold4"/>
+
+            <BuildingActionDefinition Id="ScavengeMaterials4"/>
+
+         </BuildingActionDefinitions>
+
+      </Production>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- BONEPILES -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <BuildingDefinition Id="BonePile1">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>BonePile</Category>
+
+         <ShadowType>SingleShadow</ShadowType>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="44"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <IsDemolishable>true</IsDemolishable>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>50</HealthTotal>
+
+         <TotalPanicValue>0.5</TotalPanicValue>
+
+         <DamagedParticles Id="Damaged_Particles_Enemy"/>
+
+         <!-- <NoSmokeFXOnDestruction/> -->
+
+      </Damageable>
+
+
+
+      <Production>
+
+         <BuildingActionDefinitions>
+
+            <BuildingActionDefinition Id="BoneScavengeGold"/>
+
+            <BuildingActionDefinition Id="BoneScavengeMaterials"/>
+
+         </BuildingActionDefinitions>
+
+      </Production>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="BonePile1Decay"/>
+
+         <BuildingPassiveDefinition Id="BonePileLevelUpdate"/>
+
+      </Passives>
+
+      
+
+      <Battle>
+
+         <Behavior>
+
+            <ThinkingScope>100</ThinkingScope>
+
+            <Goals>
+
+               <!-- healing bone piles, it's first so we can see the skill when testing the skill -->
+
+               <Goal Id="01_HealingBonePileSkill">
+
+                  <Preconditions>
+
+                     <ConditionsGroup>
+
+                        <ApocalypseSkillProgressionFlagIsToggledCondition Flag="HealingBonePiles"/>
+
+                     </ConditionsGroup>
+
+                     <ConditionsGroup>
+
+                        <NotInFogCondition/>
+
+                     </ConditionsGroup>
+
+                     <ConditionsGroup>
+
+                        <DamageableAroundCondition DamageableType="Enemy" MinAmount="1" MinRange="1" MaxRange="2"/>
+
+                     </ConditionsGroup>
+
+                  </Preconditions>
+
+                  <SkillId Value="BonePileHealing"/>
+
+                  <TargetTypes>
+
+                     <Itself/>
+
+                  </TargetTypes>
+
+                  <TargetingMethod>
+
+                     <FirstTarget/>
+
+                  </TargetingMethod>
+
+               </Goal>
+
+               
+
+               <Goal Id="00_BonePileAttackOnDeath" GoalComputingStep="OnDeath">
+
+                  <Preconditions>
+
+                     <ConditionsGroup>
+
+                        <SkillProgressionFlagIsToggledCondition Flag="ExplosiveBonePiles"/>
+
+                     </ConditionsGroup>
+
+                  </Preconditions>
+
+                  <SkillId Value="BonePileAttackOnDeath"/>
+
+                  <TargetTypes>
+
+                     <Itself/>
+
+                  </TargetTypes>
+
+                  <TargetingMethod>
+
+                     <FirstTarget/>
+
+                  </TargetingMethod>
+
+               </Goal>
+
+            </Goals>
+
+         </Behavior>
+
+      </Battle>
+
+   </BuildingDefinition>
+
+
+
+   
+
+   <BuildingDefinition Id="BonePile2">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>BonePile</Category>
+
+         <ShadowType>SingleShadow</ShadowType>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="44"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <IsDemolishable>true</IsDemolishable>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>125</HealthTotal>
+
+         <TotalPanicValue>0.5</TotalPanicValue>
+
+         <DamagedParticles Id="Damaged_Particles_Enemy"/>
+
+         <!-- <NoSmokeFXOnDestruction/> -->
+
+      </Damageable>
+
+
+
+      <Production>
+
+         <BuildingActionDefinitions>
+
+            <BuildingActionDefinition Id="BoneScavengeResource2"/>
+
+            <BuildingActionDefinition Id="BoneScavengeItem2"/>
+
+         </BuildingActionDefinitions>
+
+      </Production>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="BonePile2Decay"/>
+
+         <BuildingPassiveDefinition Id="BonePileLevelUpdate"/>
+
+      </Passives>
+
+
+
+      <Battle>
+
+         <Behavior>
+
+            <ThinkingScope>100</ThinkingScope>
+
+            <Goals>
+
+               <!-- healing bone piles, it's first so we can see the skill when testing the skill -->
+
+               <Goal Id="01_HealingBonePileSkill">
+
+                  <Preconditions>
+
+                     <ConditionsGroup>
+
+                        <ApocalypseSkillProgressionFlagIsToggledCondition Flag="HealingBonePiles"/>
+
+                     </ConditionsGroup>
+
+                     <ConditionsGroup>
+
+                        <NotInFogCondition/>
+
+                     </ConditionsGroup>
+
+                     <ConditionsGroup>
+
+                        <DamageableAroundCondition DamageableType="Enemy" MinAmount="1" MinRange="1" MaxRange="2"/>
+
+                     </ConditionsGroup>
+
+                  </Preconditions>
+
+                  <SkillId Value="BonePileHealing"/>
+
+                  <TargetTypes>
+
+                     <Itself/>
+
+                  </TargetTypes>
+
+                  <TargetingMethod>
+
+                     <FirstTarget/>
+
+                  </TargetingMethod>
+
+               </Goal>
+
+               
+
+               <Goal Id="00_BonePileAttackOnDeath" GoalComputingStep="OnDeath">
+
+                  <Preconditions>
+
+                     <ConditionsGroup>
+
+                        <SkillProgressionFlagIsToggledCondition Flag="ExplosiveBonePiles"/>
+
+                     </ConditionsGroup>
+
+                  </Preconditions>
+
+                  <SkillId Value="BonePileAttackOnDeath"/>
+
+                  <TargetTypes>
+
+                     <Itself/>
+
+                  </TargetTypes>
+
+                  <TargetingMethod>
+
+                     <FirstTarget/>
+
+                  </TargetingMethod>
+
+               </Goal>
+
+            </Goals>
+
+         </Behavior>
+
+      </Battle>
+
+   </BuildingDefinition>
+
+
+
+   
+
+   <BuildingDefinition Id="BonePile3">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>BonePile</Category>
+
+         <ShadowType>SingleShadow</ShadowType>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="44"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <IsDemolishable>true</IsDemolishable>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>250</HealthTotal>
+
+         <TotalPanicValue>0.5</TotalPanicValue>
+
+         <DamagedParticles Id="Damaged_Particles_Enemy"/>
+
+         <!-- <NoSmokeFXOnDestruction/> -->
+
+      </Damageable>
+
+
+
+      <Production>
+
+         <BuildingActionDefinitions>
+
+            <BuildingActionDefinition Id="BoneScavengeResource3"/>
+
+            <BuildingActionDefinition Id="BoneScavengeItem3"/>
+
+         </BuildingActionDefinitions>
+
+      </Production>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="BonePile3Decay"/>
+
+         <BuildingPassiveDefinition Id="BonePileLevelUpdate"/>
+
+      </Passives>
+
+
+
+      <Battle>
+
+         <Behavior>
+
+            <ThinkingScope>100</ThinkingScope>
+
+            <Goals>
+
+               <!-- healing bone piles, it's first so we can see the skill when testing the skill -->
+
+               <Goal Id="01_HealingBonePileSkill">
+
+                  <Preconditions>
+
+                     <ConditionsGroup>
+
+                        <ApocalypseSkillProgressionFlagIsToggledCondition Flag="HealingBonePiles"/>
+
+                     </ConditionsGroup>
+
+                     <ConditionsGroup>
+
+                        <NotInFogCondition/>
+
+                     </ConditionsGroup>
+
+                     <ConditionsGroup>
+
+                        <DamageableAroundCondition DamageableType="Enemy" MinAmount="1" MinRange="1" MaxRange="2"/>
+
+                     </ConditionsGroup>
+
+                  </Preconditions>
+
+                  <SkillId Value="BonePileHealing"/>
+
+                  <TargetTypes>
+
+                     <Itself/>
+
+                  </TargetTypes>
+
+                  <TargetingMethod>
+
+                     <FirstTarget/>
+
+                  </TargetingMethod>
+
+               </Goal>
+
+               
+
+               <Goal Id="00_BonePileAttackOnDeath" GoalComputingStep="OnDeath">
+
+                  <Preconditions>
+
+                     <ConditionsGroup>
+
+                        <SkillProgressionFlagIsToggledCondition Flag="ExplosiveBonePiles"/>
+
+                     </ConditionsGroup>
+
+                  </Preconditions>
+
+                  <SkillId Value="BonePileAttackOnDeath"/>
+
+                  <TargetTypes>
+
+                     <Itself/>
+
+                  </TargetTypes>
+
+                  <TargetingMethod>
+
+                     <FirstTarget/>
+
+                  </TargetingMethod>
+
+               </Goal>
+
+            </Goals>
+
+         </Behavior>
+
+      </Battle>
+
+   </BuildingDefinition>
+
+
+
+   
+
+   <BuildingDefinition Id="BonePileElite">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>BonePile</Category>
+
+         <ShadowType>SingleShadow</ShadowType>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="44"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <IsDemolishable>true</IsDemolishable>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>125</HealthTotal>
+
+         <TotalPanicValue>0.5</TotalPanicValue>
+
+         <DamagedParticles Id="Damaged_Particles_Enemy"/>
+
+         <!-- <NoSmokeFXOnDestruction/> -->
+
+      </Damageable>
+
+
+
+      <Production>
+
+         <BuildingActionDefinitions>
+
+            <!--<BuildingActionDefinition Id="EliteBoneScavengeResource"/>-->
+
+            <BuildingActionDefinition Id="EliteBoneScavengeItem"/>
+
+         </BuildingActionDefinitions>
+
+      </Production>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="BonePileLevelUpdate"/>
+
+      </Passives>
+
+      
+
+      <Battle>
+
+         <Behavior>
+
+            <ThinkingScope>100</ThinkingScope>
+
+            <Goals>
+
+               <!-- healing bone piles, it's first so we can see the skill when testing the skill -->
+
+               <Goal Id="01_HealingBonePileSkill">
+
+                  <Preconditions>
+
+                     <ConditionsGroup>
+
+                        <ApocalypseSkillProgressionFlagIsToggledCondition Flag="HealingBonePiles"/>
+
+                     </ConditionsGroup>
+
+                     <ConditionsGroup>
+
+                        <NotInFogCondition/>
+
+                     </ConditionsGroup>
+
+                     <ConditionsGroup>
+
+                        <DamageableAroundCondition DamageableType="Enemy" MinAmount="1" MinRange="1" MaxRange="2"/>
+
+                     </ConditionsGroup>
+
+                  </Preconditions>
+
+                  <SkillId Value="BonePileHealing"/>
+
+                  <TargetTypes>
+
+                     <Itself/>
+
+                  </TargetTypes>
+
+                  <TargetingMethod>
+
+                     <FirstTarget/>
+
+                  </TargetingMethod>
+
+               </Goal>
+
+               
+
+               <Goal Id="00_BonePileAttackOnDeath" GoalComputingStep="OnDeath">
+
+                  <Preconditions>
+
+                     <ConditionsGroup>
+
+                        <SkillProgressionFlagIsToggledCondition Flag="ExplosiveBonePiles"/>
+
+                     </ConditionsGroup>
+
+                  </Preconditions>
+
+                  <SkillId Value="BonePileAttackOnDeath"/>
+
+                  <TargetTypes>
+
+                     <Itself/>
+
+                  </TargetTypes>
+
+                  <TargetingMethod>
+
+                     <FirstTarget/>
+
+                  </TargetingMethod>
+
+               </Goal>
+
+            </Goals>
+
+         </Behavior>
+
+      </Battle>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- DEFENSES -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <!--/// Walls ///-->
+
+
+
+   <BuildingDefinition Id="Barricade">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Barricade</Category>
+
+         <ShadowType>SingleShadow</ShadowType>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="44"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <MaterialsCost>7</MaterialsCost>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Instantaneous"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>27</HealthTotal>
+
+         <TotalPanicValue>0.5</TotalPanicValue>
+
+         <DamagedParticles Id="Damaged_Particles_Wood"/>
+
+         <NoSmokeFXOnDestruction/>
+
+      </Damageable>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="WoodenWall">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Wall</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="70"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <MaterialsCost>12</MaterialsCost>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Instantaneous"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>75</HealthTotal>
+
+         <TotalPanicValue>0.75</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="-0.02" PositionY="0.4"/>
+
+            <FlameAnchorPoint PositionX="0.33" PositionY="0.71"/>
+
+            <FlameAnchorPoint PositionX="-0.09" PositionY="1.53"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+         <DamagedParticles Id="Damaged_Particles_Wood"/>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UpgradeWoodenWallToWoodenWallReinforced"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="WoodenWallReinforced">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Wall</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="70"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <MaterialsCost>20</MaterialsCost>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Instantaneous"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>150</HealthTotal>
+
+         <TotalPanicValue>0.75</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="-0.02" PositionY="0.4"/>
+
+            <FlameAnchorPoint PositionX="0.33" PositionY="0.71"/>
+
+            <FlameAnchorPoint PositionX="-0.09" PositionY="1.53"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+         <DamagedParticles Id="Damaged_Particles_Wood"/>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <UpgradeOf>WoodenWall</UpgradeOf>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UpgradeWoodenWallReinforcedToStoneWall"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+   </BuildingDefinition>
+
+
+
+   <!-- Wooden Gate for early game-->
+
+   <BuildingDefinition Id="WoodenGate">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            H
+
+         </Tiles>
+
+         <Category>Gate</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="70"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <MaterialsCost>12</MaterialsCost>
+
+         <BuildLimit>Gates</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Instantaneous"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>75</HealthTotal>
+
+         <TotalPanicValue>0.75</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="0.81" PositionY="0.58"/>
+
+            <FlameAnchorPoint PositionX="-0.32" PositionY="0.65"/>
+
+            <FlameAnchorPoint PositionX="-0.64" PositionY="0.46"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UpgradeWoodenGateToGateReinforced"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="StoneWall">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Wall</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="70"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <MaterialsCost>30</MaterialsCost>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Instantaneous"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>300</HealthTotal>
+
+         <TotalPanicValue>0.75</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="0.59" PositionY="0.87"/>
+
+            <FlameAnchorPoint PositionX="0.02" PositionY="1.65"/>
+
+            <FlameAnchorPoint PositionX="0" PositionY="0"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+         <DamagedParticles Id="Damaged_Particles_Rock"/>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <UpgradeOf>WoodenWallReinforced</UpgradeOf>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UpgradeStoneWallToStoneWallReinforced"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="StoneWallReinforced">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Wall</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="70"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <MaterialsCost>40</MaterialsCost>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Instantaneous"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>450</HealthTotal>
+
+         <TotalPanicValue>0.75</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="0.59" PositionY="0.87"/>
+
+            <FlameAnchorPoint PositionX="0.02" PositionY="1.65"/>
+
+            <FlameAnchorPoint PositionX="0" PositionY="0"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+         <DamagedParticles Id="Damaged_Particles_Rock"/>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <UpgradeOf>StoneWall</UpgradeOf>
+
+      </Upgrade>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <!-- This one is special because it's not buildable by the player, yet it's not an "obstacle" -->
+
+   <BuildingDefinition Id="VestigeWall">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Wall</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="70"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Instantaneous"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>120</HealthTotal>
+
+         <TotalPanicValue>0.75</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="0" PositionY="0"/>
+
+            <FlameAnchorPoint PositionX="0.06" PositionY="1.77"/>
+
+            <FlameAnchorPoint PositionX="0.19" PositionY="1.03"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+         <DamagedParticles Id="Damaged_Particles_Rock"/>
+
+      </Damageable>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <!-- Reinforced Gate -->
+
+   <BuildingDefinition Id="Gate">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            H
+
+         </Tiles>
+
+         <Category>Gate</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="70"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <MaterialsCost>30</MaterialsCost>
+
+         <BuildLimit>Gates</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Instantaneous"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>300</HealthTotal>
+
+         <TotalPanicValue>0.75</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="0.81" PositionY="0.58"/>
+
+            <FlameAnchorPoint PositionX="-0.32" PositionY="0.65"/>
+
+            <FlameAnchorPoint PositionX="-0.84" PositionY="0.61"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <UpgradeOf>WoodenGate</UpgradeOf>
+
+      </Upgrade>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <!-- "LD" gate -->
+
+   <BuildingDefinition Id="GateHorizontal">
+
+      <Blueprint>
+
+         <Tiles OriginX="1" OriginY="0">
+
+            BHB
+
+         </Tiles>
+
+         <Category>Gate</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="70"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <MaterialsCost>40</MaterialsCost>
+
+         <IsBuyable>false</IsBuyable>
+
+         <BuildLimit>Gates</BuildLimit>
+
+         <IsRepairable>true</IsRepairable>
+
+         <IsDemolishable>true</IsDemolishable>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Instantaneous"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>450</HealthTotal>
+
+         <TotalPanicValue>0.75</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="-0.49" PositionY="1.86"/>
+
+            <FlameAnchorPoint PositionX="0.58" PositionY="2.34"/>
+
+            <FlameAnchorPoint PositionX="1.61" PositionY="3.33"/>
+
+            <FlameAnchorPoint PositionX="1.26" PositionY="4.13"/>
+
+            <FlameAnchorPoint PositionX="-0.41" PositionY="-0.15"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+      </Damageable>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <!-- "LD" gate -->
+
+   <BuildingDefinition Id="GateVertical">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="1">
+
+            B
+
+            H
+
+            B
+
+         </Tiles>
+
+         <Category>Gate</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="50"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <MaterialsCost>40</MaterialsCost>
+
+         <IsBuyable>false</IsBuyable>
+
+         <BuildLimit>Gates</BuildLimit>
+
+         <IsRepairable>true</IsRepairable>
+
+         <IsDemolishable>true</IsDemolishable>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Instantaneous"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>450</HealthTotal>
+
+         <TotalPanicValue>0.75</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="0.55" PositionY="-0.03"/>
+
+            <FlameAnchorPoint PositionX="-1.56" PositionY="3.85"/>
+
+            <FlameAnchorPoint PositionX="-0.41" PositionY="2.41"/>
+
+            <FlameAnchorPoint PositionX="0.63" PositionY="1.84"/>
+
+            <FlameAnchorPoint PositionX="-1.01" PositionY="3.22"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+      </Damageable>
+
+   </BuildingDefinition>
+
+
+
+   <!--/// Traps ///-->
+
+
+
+   <BuildingDefinition Id="SlowTrap">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            E
+
+         </Tiles>
+
+         <Category>Trap</Category>
+
+         <ShadowType>SingleShadow</ShadowType>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="50"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <MaterialsCost>7</MaterialsCost>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Instantaneous"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <NoSmokeFXOnDestruction/>
+
+      </Damageable>
+
+
+
+      <Battle>
+
+         <Behavior>
+
+            <PathfindingStyle>Bresenham</PathfindingStyle>
+
+            <ThinkingScope>50</ThinkingScope>
+
+            <Goals>
+
+               <Goal Id="00_SlowTrapTriggered">
+
+                  <SkillId Value="SkillGroup_SlowTrapTriggered"/>
+
+                  <TargetTypes>
+
+                     <EnemyUnit>
+
+                        <TargetConditions>
+
+                           <ConditionsGroup>
+
+                              <TargetInRangeCondition Min="0" Max="0"/>
+
+                           </ConditionsGroup>
+
+                        </TargetConditions>
+
+                     </EnemyUnit>
+
+                  </TargetTypes>
+
+                  <TargetingMethod>
+
+                     <FirstTarget/>
+
+                  </TargetingMethod>
+
+               </Goal>
+
+            </Goals>
+
+         </Behavior>
+
+         <MaximumTrapUsage>3</MaximumTrapUsage>
+
+         <SkillProgressions>
+
+            <SkillProgression Id="Spe_SlowTrapTriggered" GlyphFlagUnlock="SpecializedTraps"/>
+
+         </SkillProgressions>
+
+         <GoalsSkillsToDisplay>
+
+            <SkillGroupId>SkillGroup_SlowTrapTriggered</SkillGroupId>
+
+         </GoalsSkillsToDisplay>
+
+      </Battle>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="StunTrap">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            E
+
+         </Tiles>
+
+         <Category>Trap</Category>
+
+         <ShadowType>SingleShadow</ShadowType>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="50"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <MaterialsCost>10</MaterialsCost>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Instantaneous"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <NoSmokeFXOnDestruction/>
+
+      </Damageable>
+
+
+
+      <Battle>
+
+         <Behavior>
+
+            <PathfindingStyle>Bresenham</PathfindingStyle>
+
+            <ThinkingScope>50</ThinkingScope>
+
+            <Goals>
+
+               <Goal Id="00_StunTrapTriggered">
+
+                  <SkillId Value="SkillGroup_StunTrapTriggered"/>
+
+                  <TargetTypes>
+
+                     <EnemyUnit>
+
+                        <TargetConditions>
+
+                           <ConditionsGroup>
+
+                              <TargetInRangeCondition Min="0" Max="0"/>
+
+                           </ConditionsGroup>
+
+                        </TargetConditions>
+
+                     </EnemyUnit>
+
+                  </TargetTypes>
+
+                  <TargetingMethod>
+
+                     <FirstTarget/>
+
+                  </TargetingMethod>
+
+               </Goal>
+
+            </Goals>
+
+         </Behavior>
+
+         <MaximumTrapUsage>1</MaximumTrapUsage>
+
+         <SkillProgressions>
+
+            <SkillProgression Id="Spe_StunTrapTriggered" GlyphFlagUnlock="SpecializedTraps"/>
+
+         </SkillProgressions>
+
+         <GoalsSkillsToDisplay>
+
+            <SkillGroupId>SkillGroup_StunTrapTriggered</SkillGroupId>
+
+         </GoalsSkillsToDisplay>
+
+      </Battle>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="DamageTrap">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            E
+
+         </Tiles>
+
+         <Category>Trap</Category>
+
+         <ShadowType>SingleShadow</ShadowType>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="50"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <MaterialsCost>13</MaterialsCost>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Instantaneous"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <NoSmokeFXOnDestruction/>
+
+      </Damageable>
+
+
+
+      <Battle>
+
+         <Behavior>
+
+            <PathfindingStyle>Bresenham</PathfindingStyle>
+
+            <ThinkingScope>50</ThinkingScope>
+
+            <Goals>
+
+               <Goal Id="00_DamageTrapTriggered">
+
+                  <SkillId Value="SkillGroup_DamageTrapTriggered"/>
+
+                  <TargetTypes>
+
+                     <EnemyUnit>
+
+                        <TargetConditions>
+
+                           <ConditionsGroup>
+
+                              <TargetInRangeCondition Min="0" Max="0"/>
+
+                           </ConditionsGroup>
+
+                        </TargetConditions>
+
+                     </EnemyUnit>
+
+                  </TargetTypes>
+
+                  <TargetingMethod>
+
+                     <FirstTarget/>
+
+                  </TargetingMethod>
+
+               </Goal>
+
+            </Goals>
+
+         </Behavior>
+
+         <MaximumTrapUsage>2</MaximumTrapUsage>
+
+         <SkillProgressions>
+
+            <SkillProgression Id="Spe_DamageTrapTriggered" GlyphFlagUnlock="SpecializedTraps"/>
+
+         </SkillProgressions>
+
+         <GoalsSkillsToDisplay>
+
+            <SkillGroupId>SkillGroup_DamageTrapTriggered</SkillGroupId>
+
+         </GoalsSkillsToDisplay>
+
+      </Battle>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <!--/// Combat ///-->
+
+
+
+   <BuildingDefinition Id="Ballista">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Turret</Category>
+
+         <ShadowType>SingleShadow</ShadowType>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-22" Y="68"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <MaterialsCost>55</MaterialsCost>
+
+         <BuildLimit>Ballistas</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+            <ConstructionAnimationShockwaveFrame Value="24"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>75</HealthTotal>
+
+         <TotalPanicValue>3</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="0.59" PositionY="1.38"/>
+
+            <FlameAnchorPoint PositionX="-0.35" PositionY="1.32"/>
+
+            <FlameAnchorPoint PositionX="-0.09" PositionY="0.75"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+         <DamagedParticles Id="Damaged_Particles_Wood"/>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UpgradeBallistaToBallistaTower"/>
+
+            <!--<BuildingUpgradeDefinition Id="UpgradeBallistaSkill"/>-->
+
+            <BuildingUpgradeDefinition Id="IncreaseBallistaPlaysPerTurn"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+
+
+      <Battle>
+
+         <Behavior>
+
+            <PathfindingStyle>Bresenham</PathfindingStyle>
+
+            <ThinkingScope>50</ThinkingScope>
+
+            <Goals>
+
+               <!--Attack Enemy: closest within 8 tiles-->
+
+               <Goal Id="00_BallistaSkill">
+
+                  <SkillId Value="SkillGroup_Ballista"/>
+
+                  <TargetTypes>
+
+                     <EnemyUnit>
+
+                        <TargetConditions>
+
+                           <ConditionsGroup>
+
+                              <TargetInRangeCondition Min="1" Max="8"/>
+
+                           </ConditionsGroup>
+
+                        </TargetConditions>
+
+                     </EnemyUnit>
+
+                  </TargetTypes>
+
+                  <TargetingMethod>
+
+                     <Closest/>
+
+                     <AvoidOverkill/>
+
+                  </TargetingMethod>
+
+               </Goal>
+
+            </Goals>
+
+         </Behavior>
+
+         <SkillProgressions>
+
+            <SkillProgression Id="Spe_BallistaSkill" GlyphFlagUnlock="SpecializedFiringDefenses"/>
+
+         </SkillProgressions>
+
+         <GoalsSkillsToDisplay>
+
+            <SkillGroupId>SkillGroup_Ballista</SkillGroupId>
+
+         </GoalsSkillsToDisplay>
+
+      </Battle>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="BallistaTower">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Turret</Category>
+
+         <ShadowType>SingleShadow</ShadowType>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="50"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <MaterialsCost>90</MaterialsCost>
+
+         <BuildLimit>Ballistas</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+            <ConstructionAnimationShockwaveFrame Value="24"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>115</HealthTotal>
+
+         <TotalPanicValue>4</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="-0.29" PositionY="1.96"/>
+
+            <FlameAnchorPoint PositionX="0.01" PositionY="0.13"/>
+
+            <FlameAnchorPoint PositionX="-0.45" PositionY="0.82"/>
+
+            <FlameAnchorPoint PositionX="0.67" PositionY="1.92"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>2</FlameCount>
+
+         <DamagedParticles Id="Damaged_Particles_Wood"/>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <UpgradeOf>Ballista</UpgradeOf>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="IncreaseBallistaPlaysPerTurn"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+
+
+      <Battle>
+
+         <Behavior>
+
+            <PathfindingStyle>Bresenham</PathfindingStyle>
+
+            <ThinkingScope>50</ThinkingScope>
+
+            <Goals>
+
+               <!--Attack Enemy: closest within 8 tiles-->
+
+               <Goal Id="00_BallistaTowerSkill">
+
+                  <SkillId Value="SkillGroup_BallistaTower"/>
+
+                  <TargetTypes>
+
+                     <EnemyUnit>
+
+                        <TargetConditions>
+
+                           <ConditionsGroup>
+
+                              <TargetInRangeCondition Min="1" Max="8"/>
+
+                           </ConditionsGroup>
+
+                        </TargetConditions>
+
+                     </EnemyUnit>
+
+                  </TargetTypes>
+
+                  <TargetingMethod>
+
+                     <Closest/>
+
+                     <AvoidOverkill/>
+
+                  </TargetingMethod>
+
+               </Goal>
+
+            </Goals>
+
+         </Behavior>
+
+         <SkillProgressions>
+
+            <SkillProgression Id="Spe_BallistaTowerSkill" GlyphFlagUnlock="SpecializedFiringDefenses"/>
+
+         </SkillProgressions>
+
+         <GoalsSkillsToDisplay>
+
+            <SkillGroupId>SkillGroup_BallistaTower</SkillGroupId>
+
+         </GoalsSkillsToDisplay>
+
+      </Battle>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="Catapult">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>HandledDefense</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="50"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <MaterialsCost>80</MaterialsCost>
+
+         <BuildLimit>12</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+            <ConstructionAnimationShockwaveFrame Value="24"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>115</HealthTotal>
+
+         <TotalPanicValue>4</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="0.55" PositionY="1.31"/>
+
+            <FlameAnchorPoint PositionX="-0.33" PositionY="0.28"/>
+
+            <FlameAnchorPoint PositionX="-0.7" PositionY="1.66"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+      </Damageable>
+
+
+
+      <Battle>
+
+         <Skills>
+
+            <Skill NightUsesCount="2">SkillGroup_UseCatapult</Skill>
+
+         </Skills>
+
+         <SkillProgressions>
+
+            <SkillProgression Id="Spe_UseCatapult" GlyphFlagUnlock="SpecializedFiringDefenses"/>
+
+         </SkillProgressions>
+
+      </Battle>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <!--/// Specialty ///-->
+
+   <BuildingDefinition Id="Watchtower">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Watchtower</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="50"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <MaterialsCost>40</MaterialsCost>
+
+         <BuildLimit>12</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+            <ConstructionAnimationShockwaveFrame Value="24"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>100</HealthTotal>
+
+         <TotalPanicValue>4</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="-0.83" PositionY="1.38"/>
+
+            <FlameAnchorPoint PositionX="0.39" PositionY="0.46"/>
+
+            <FlameAnchorPoint PositionX="-0.38" PositionY="0.06"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+      </Damageable>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="Teleporter">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            E
+
+         </Tiles>
+
+         <ShadowType>SingleShadow</ShadowType>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="50"/>
+
+      </Blueprint>
+
+
+
+      <Damageable>
+
+      </Damageable>
+
+
+
+      <Construction>
+
+         <MaterialsCost>60</MaterialsCost>
+
+         <BuildLimit>6</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Instantaneous"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- SEEDS DLC2 -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <BuildingDefinition Id="PoisonSeed">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            E
+
+         </Tiles>
+
+         <Category>WalkableHandledDefense</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="50"/>
+
+      </Blueprint>
+
+
+
+      <Damageable>
+
+         <NoSmokeFXOnDestruction/>
+
+      </Damageable>
+
+
+
+      <Construction>
+
+         <MaterialsCost>80</MaterialsCost>
+
+         <BuildLimit>Seeds</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Instantaneous"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Upgrade>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UpgradePoisonSeed"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+
+
+      <Battle>
+
+         <HasDisabledState>true</HasDisabledState>
+
+         <Skills>
+
+            <Skill NightUsesCount="2">PoisonSeedSkill</Skill>
+
+         </Skills>
+
+      </Battle>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="IsolationSeed">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            E
+
+         </Tiles>
+
+         <Category>WalkableHandledDefense</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="50"/>
+
+      </Blueprint>
+
+      
+
+      <Damageable>
+
+         <NoSmokeFXOnDestruction/>
+
+      </Damageable>
+
+
+
+      <Construction>
+
+         <MaterialsCost>80</MaterialsCost>
+
+         <BuildLimit>Seeds</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Instantaneous"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Upgrade>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UpgradeIsolationSeed"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+
+
+      <Battle>
+
+         <HasDisabledState>true</HasDisabledState>
+
+         <Skills>
+
+            <Skill NightUsesCount="2">IsolationSeedSkill</Skill>
+
+         </Skills>
+
+      </Battle>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="PurgingSeed">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            E
+
+         </Tiles>
+
+         <Category>WalkableHandledDefense</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="50"/>
+
+      </Blueprint>
+
+      
+
+      <Damageable>
+
+         <NoSmokeFXOnDestruction/>
+
+      </Damageable>
+
+
+
+      <Construction>
+
+         <MaterialsCost>80</MaterialsCost>
+
+         <BuildLimit>Seeds</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Instantaneous"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Upgrade>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UpgradePurgingSeed"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+
+
+      <Battle>
+
+		 <HasDisabledState>true</HasDisabledState>
+
+         <Skills>
+
+            <Skill NightUsesCount="2">PurgingSeedSkill</Skill>
+
+         </Skills>
+
+      </Battle>
+
+   </BuildingDefinition>
+
+
+
+
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- CITY BUILDINGS -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <!--/// Basic Economy ///-->
+
+
+
+   <BuildingDefinition Id="House">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+            B
+
+         </Tiles>
+
+         <BuildingHUDOffset X="-38" Y="50"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GoldCost>30</GoldCost>
+
+         <BuildLimit>4</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+            <ConstructionAnimationShockwaveFrame Value="24"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>165</HealthTotal>
+
+         <TotalPanicValue>10</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="-0.8" PositionY="0.55"/>
+
+            <FlameAnchorPoint PositionX="-0.43" PositionY="1.95"/>
+
+            <FlameAnchorPoint PositionX="0.16" PositionY="1.23"/>
+
+            <FlameAnchorPoint PositionX="-1.37" PositionY="3.08"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>2</FlameCount>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UpgradeWorkers"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="IncreaseWorkers"/>
+
+      </Passives>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="ScavengerCamp">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            BB
+
+         </Tiles>
+
+         <BuildingHUDOffset X="-16" Y="48"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GoldCost>60</GoldCost>
+
+         <BuildLimit>3</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+            <ConstructionAnimationShockwaveFrame Value="24"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>165</HealthTotal>
+
+         <TotalPanicValue>10</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="0.854" PositionY="1.211"/>
+
+            <FlameAnchorPoint PositionX="0.02" PositionY="1.628"/>
+
+            <FlameAnchorPoint PositionX="-0.189" PositionY="0.298"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>2</FlameCount>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UpgradeFillGaugeScavenger"/>
+
+            <BuildingUpgradeDefinition Id="UpgradeScavenge"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="FillEffectGauge10"/>
+
+      </Passives>
+
+
+
+      <Production>
+
+         <BuildingGaugeEffectDefinition>
+
+            <GainMaterials/>
+
+         </BuildingGaugeEffectDefinition>
+
+
+
+         <BuildingActionDefinitions>
+
+            <BuildingActionDefinition Id="Scavenge"/>
+
+         </BuildingActionDefinitions>
+
+      </Production>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="GoldMine">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            BB
+
+         </Tiles>
+
+         <BuildingHUDOffset X="-16" Y="48"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GoldCost>60</GoldCost>
+
+         <BuildLimit>3</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+            <ConstructionAnimationShockwaveFrame Value="24"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>165</HealthTotal>
+
+         <TotalPanicValue>10</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="0.23" PositionY="2.16"/>
+
+            <FlameAnchorPoint PositionX="-0.48" PositionY="0.7"/>
+
+            <FlameAnchorPoint PositionX="0.64" PositionY="3.28"/>
+
+            <FlameAnchorPoint PositionX="0.73" PositionY="0.47"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>2</FlameCount>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UpgradeFillGaugeGoldMine"/>
+
+            <BuildingUpgradeDefinition Id="UpgradeMine"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="FillEffectGauge10"/>
+
+      </Passives>
+
+
+
+      <Production>
+
+         <BuildingGaugeEffectDefinition>
+
+            <GainGold/>
+
+         </BuildingGaugeEffectDefinition>
+
+
+
+         <BuildingActionDefinitions>
+
+            <BuildingActionDefinition Id="Mine"/>
+
+         </BuildingActionDefinitions>
+
+      </Production>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <!--/// Regen ///-->
+
+
+
+   <BuildingDefinition Id="Temple">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="1">
+
+            _B
+
+            BB
+
+            _B
+
+         </Tiles>
+
+         <BuildingHUDOffset X="-4" Y="50"/>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GoldCost>70</GoldCost>
+
+         <BuildLimit>1</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+            <ConstructionAnimationShockwaveFrame Value="24"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>270</HealthTotal>
+
+         <TotalPanicValue>17</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="0.86" PositionY="2.71"/>
+
+            <FlameAnchorPoint PositionX="2.02" PositionY="0.5"/>
+
+            <FlameAnchorPoint PositionX="0.61" PositionY="1.85"/>
+
+            <FlameAnchorPoint PositionX="-0.59" PositionY="0.34"/>
+
+            <FlameAnchorPoint PositionX="1.21" PositionY="0.92"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>2</FlameCount>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UnlockHealFree"/>
+
+            <BuildingUpgradeDefinition Id="UpgradeHeal"/>
+
+            <BuildingUpgradeDefinition Id="UnlockBlessing"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="FillEffectGauge10"/>
+
+      </Passives>
+
+
+
+      <Production>
+
+         <BuildingGaugeEffectDefinition TriggeredOnConstruction="false">
+
+            <GlobalUpgradeStat>
+
+               <Stat>HealthTotal</Stat>
+
+               <Bonus>8</Bonus>
+
+            </GlobalUpgradeStat>
+
+         </BuildingGaugeEffectDefinition>
+
+         <BuildingActionDefinitions>
+
+            <BuildingActionDefinition Id="HealFree"/>
+
+            <BuildingActionDefinition Id="Heal"/>
+
+            <BuildingActionDefinition Id="Blessing"/>
+
+         </BuildingActionDefinitions>
+
+      </Production>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="ManaWell">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <BuildingHUDOffset X="-26" Y="50"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GoldCost>35</GoldCost>
+
+         <BuildLimit>2</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+            <ConstructionAnimationShockwaveFrame Value="24"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>90</HealthTotal>
+
+         <TotalPanicValue>5</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="0.2" PositionY="1.9"/>
+
+            <FlameAnchorPoint PositionX="-0.22" PositionY="0.3"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UnlockHealManaFree"/>
+
+            <BuildingUpgradeDefinition Id="UpgradeHealMana"/>
+
+            <BuildingUpgradeDefinition Id="UnlockGift"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="FillEffectGauge10"/>
+
+      </Passives>
+
+
+
+      <Production>
+
+         <BuildingGaugeEffectDefinition TriggeredOnConstruction="false">
+
+            <GlobalUpgradeStat>
+
+               <Stat>ManaTotal</Stat>
+
+               <Bonus>1</Bonus>
+
+            </GlobalUpgradeStat>
+
+         </BuildingGaugeEffectDefinition>
+
+         <BuildingActionDefinitions>
+
+            <BuildingActionDefinition Id="HealManaFree"/>
+
+            <BuildingActionDefinition Id="HealMana"/>
+
+            <BuildingActionDefinition Id="Gift"/>
+
+         </BuildingActionDefinitions>
+
+      </Production>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <!--/// Items ///-->
+
+
+
+   <BuildingDefinition Id="Shop">
+
+      <Blueprint>
+
+         <Tiles OriginX="1" OriginY="1">
+
+            BB
+
+            _B
+
+            _B
+
+         </Tiles>
+
+         <BuildingHUDOffset X="-56" Y="50"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GoldCost>55</GoldCost>
+
+         <BuildLimit>1</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+            <ConstructionAnimationShockwaveFrame Value="24"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>270</HealthTotal>
+
+         <TotalPanicValue>17</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="-1.611" PositionY="0.855"/>
+
+            <FlameAnchorPoint PositionX="-2.279" PositionY="0.053"/>
+
+            <FlameAnchorPoint PositionX="-0.516" PositionY="2.03"/>
+
+            <FlameAnchorPoint PositionX="-0.846" PositionY="0.979"/>
+
+            <FlameAnchorPoint PositionX="-0.988" PositionY="3.338"/>
+
+            <FlameAnchorPoint PositionX="-0.552" PositionY="0.223"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>3</FlameCount>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UpgradeSellRatio"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="GenerateShopItems"/>
+
+      </Passives>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="ArmorMaker">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B_
+
+            BB
+
+         </Tiles>
+
+         <BuildingHUDOffset X="-26" Y="40"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GoldCost>65</GoldCost>
+
+         <BuildLimit>ProdBuildings</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+            <ConstructionAnimationShockwaveFrame Value="24"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>225</HealthTotal>
+
+         <TotalPanicValue>14</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="-0.67" PositionY="2.62"/>
+
+            <FlameAnchorPoint PositionX="0.56" PositionY="2.3"/>
+
+            <FlameAnchorPoint PositionX="0.15" PositionY="0.27"/>
+
+            <FlameAnchorPoint PositionX="-0.65" PositionY="1.27"/>
+
+            <FlameAnchorPoint PositionX="0.74" PositionY="1.03"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UpgradeFillGaugeProduction"/>
+
+            <BuildingUpgradeDefinition Id="UpgradeHelpArmorMaker"/>
+
+            <BuildingUpgradeDefinition Id="UpgradeProductionLevel"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="FillEffectGauge10"/>
+
+      </Passives>
+
+
+
+      <Production>
+
+         <!--<BuildingGaugeEffectDefinition TriggeredOnConstruction="true">-->
+
+         <BuildingGaugeEffectDefinition>
+
+            <CreateItem>
+
+               <BuildingLevelModifiersList Id="BuildingProduction"/>
+
+               <ItemsList Id="ItemList_ArmorMakerProd"/>
+
+               <ItemRaritiesList Id="BuildingProduction"/>
+
+            </CreateItem>
+
+         </BuildingGaugeEffectDefinition>
+
+
+
+
+
+         <BuildingActionDefinitions>
+
+            <BuildingActionDefinition Id="HelpArmorMaker"/>
+
+         </BuildingActionDefinitions>
+
+      </Production>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="Blacksmith">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="1">
+
+            BB
+
+            _B
+
+         </Tiles>
+
+         <BuildingHUDOffset X="0" Y="50"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GoldCost>65</GoldCost>
+
+         <BuildLimit>ProdBuildings</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+            <ConstructionAnimationShockwaveFrame Value="24"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>225</HealthTotal>
+
+         <TotalPanicValue>14</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="0.95" PositionY="3.42"/>
+
+            <FlameAnchorPoint PositionX="0.06" PositionY="1.71"/>
+
+            <FlameAnchorPoint PositionX="1.83" PositionY="2.54"/>
+
+            <FlameAnchorPoint PositionX="1.74" PositionY="0.92"/>
+
+            <FlameAnchorPoint PositionX="0.7" PositionY="1.89"/>
+
+            <FlameAnchorPoint PositionX="2.57" PositionY="1.05"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>2</FlameCount>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UpgradeFillGaugeProduction"/>
+
+            <BuildingUpgradeDefinition Id="UpgradeHelpBlacksmith"/>
+
+            <BuildingUpgradeDefinition Id="UpgradeProductionLevel"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="FillEffectGauge10"/>
+
+      </Passives>
+
+
+
+      <Production>
+
+         <BuildingGaugeEffectDefinition>
+
+            <CreateItem>
+
+               <BuildingLevelModifiersList Id="BuildingProduction"/>
+
+               <ItemsList Id="ItemList_BlacksmithProd"/>
+
+               <ItemRaritiesList Id="BuildingProduction"/>
+
+            </CreateItem>
+
+         </BuildingGaugeEffectDefinition>
+
+
+
+         <BuildingActionDefinitions>
+
+            <BuildingActionDefinition Id="HelpBlacksmith"/>
+
+         </BuildingActionDefinitions>
+
+      </Production>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="Bowyer">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="1">
+
+            BB
+
+            _B
+
+         </Tiles>
+
+         <BuildingHUDOffset X="0" Y="50"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GoldCost>65</GoldCost>
+
+         <BuildLimit>ProdBuildings</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+            <ConstructionAnimationShockwaveFrame Value="24"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>225</HealthTotal>
+
+         <TotalPanicValue>14</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="1.05" PositionY="2.9"/>
+
+            <FlameAnchorPoint PositionX="1.92" PositionY="2.15"/>
+
+            <FlameAnchorPoint PositionX="1.37" PositionY="0.97"/>
+
+            <FlameAnchorPoint PositionX="0.27" PositionY="1.57"/>
+
+            <FlameAnchorPoint PositionX="-0.01" PositionY="0.53"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>2</FlameCount>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UpgradeFillGaugeProduction"/>
+
+            <BuildingUpgradeDefinition Id="UpgradeHelpBowyer"/>
+
+            <BuildingUpgradeDefinition Id="UpgradeProductionLevel"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="FillEffectGauge10"/>
+
+      </Passives>
+
+
+
+      <Production>
+
+         <BuildingGaugeEffectDefinition>
+
+            <CreateItem>
+
+               <BuildingLevelModifiersList Id="BuildingProduction"/>
+
+               <ItemsList Id="ItemList_BowyerProd"/>
+
+               <ItemRaritiesList Id="BuildingProduction"/>
+
+            </CreateItem>
+
+         </BuildingGaugeEffectDefinition>
+
+
+
+         <BuildingActionDefinitions>
+
+            <BuildingActionDefinition Id="HelpBowyer"/>
+
+         </BuildingActionDefinitions>
+
+      </Production>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="MagicShop">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            BB
+
+            B_
+
+         </Tiles>
+
+         <BuildingHUDOffset X="-34" Y="74"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GoldCost>65</GoldCost>
+
+         <BuildLimit>ProdBuildings</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+            <ConstructionAnimationShockwaveFrame Value="24"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>225</HealthTotal>
+
+         <TotalPanicValue>14</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="0.49" PositionY="0.79"/>
+
+            <FlameAnchorPoint PositionX="-0.68" PositionY="2.5"/>
+
+            <FlameAnchorPoint PositionX="0.4" PositionY="4.08"/>
+
+            <FlameAnchorPoint PositionX="-0.15" PositionY="3.19"/>
+
+            <FlameAnchorPoint PositionX="-0.16" PositionY="1.41"/>
+
+            <FlameAnchorPoint PositionX="-1.31" PositionY="3.61"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>2</FlameCount>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UpgradeFillGaugeProduction"/>
+
+            <BuildingUpgradeDefinition Id="UpgradeHelpMagicShop"/>
+
+            <BuildingUpgradeDefinition Id="UpgradeProductionLevel"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="FillEffectGauge10"/>
+
+      </Passives>
+
+
+
+      <Production>
+
+         <BuildingGaugeEffectDefinition>
+
+            <CreateItem>
+
+               <BuildingLevelModifiersList Id="BuildingProduction" />
+
+               <ItemsList Id="ItemList_MagicShopProd"/>
+
+               <ItemRaritiesList Id="BuildingProduction"/>
+
+            </CreateItem>
+
+         </BuildingGaugeEffectDefinition>
+
+         <BuildingActionDefinitions>
+
+            <BuildingActionDefinition Id="HelpMagicShop"/>
+
+         </BuildingActionDefinitions>
+
+      </Production>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="TrinketMaker">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+            B
+
+            B
+
+         </Tiles>
+
+         <BuildingHUDOffset X="-56" Y="60"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GoldCost>75</GoldCost>
+
+         <BuildLimit>ProdBuildings</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+            <ConstructionAnimationShockwaveFrame Value="24"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>225</HealthTotal>
+
+         <TotalPanicValue>14</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="0.46" PositionY="0.59"/>
+
+            <FlameAnchorPoint PositionX="-1.25" PositionY="4.17"/>
+
+            <FlameAnchorPoint PositionX="0.84" PositionY="1.8"/>
+
+            <FlameAnchorPoint PositionX="-2.66" PositionY="4.08"/>
+
+            <FlameAnchorPoint PositionX="-0.79" PositionY="1.57"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>2</FlameCount>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UpgradeFillGaugeProduction"/>
+
+            <BuildingUpgradeDefinition Id="UpgradeHelpTrinketMaker"/>
+
+            <BuildingUpgradeDefinition Id="UpgradeProductionLevel"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="FillEffectGauge10"/>
+
+      </Passives>
+
+
+
+      <Production>
+
+         <BuildingGaugeEffectDefinition TriggeredOnConstruction="false">
+
+            <CreateItem>
+
+               <BuildingLevelModifiersList Id="BuildingProduction" />
+
+               <ItemsList Id="ItemList_TrinketMakerProd"/>
+
+               <ItemRaritiesList Id="BuildingProduction"/>
+
+            </CreateItem>
+
+         </BuildingGaugeEffectDefinition>
+
+         <BuildingActionDefinitions>
+
+            <BuildingActionDefinition Id="HelpTrinketMaker"/>
+
+         </BuildingActionDefinitions>
+
+      </Production>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="PotionMaker">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            BBB
+
+         </Tiles>
+
+         <BuildingHUDOffset X="-10" Y="75"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GoldCost>75</GoldCost>
+
+         <BuildLimit>ProdBuildings</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+            <ConstructionAnimationShockwaveFrame Value="24"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>225</HealthTotal>
+
+         <TotalPanicValue>14</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="1.95" PositionY="3.2"/>
+
+            <FlameAnchorPoint PositionX="0.73" PositionY="2.7"/>
+
+            <FlameAnchorPoint PositionX="1.82" PositionY="1.55"/>
+
+            <FlameAnchorPoint PositionX="0.63" PositionY="0.185"/>
+
+            <FlameAnchorPoint PositionX="-0.09" PositionY="2.07"/>
+
+            <FlameAnchorPoint PositionX="2.75" PositionY="2"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>2</FlameCount>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UpgradeFillGaugeProduction"/>
+
+            <BuildingUpgradeDefinition Id="UpgradeHelpPotionMaker"/>
+
+            <BuildingUpgradeDefinition Id="UpgradeProductionLevel"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="FillEffectGauge10"/>
+
+      </Passives>
+
+
+
+      <Production>
+
+         <BuildingGaugeEffectDefinition TriggeredOnConstruction="false">
+
+            <CreateItem>
+
+               <BuildingLevelModifiersList Id="BuildingProduction" />
+
+               <ItemsList Id="ItemList_PotionMakerProd"/>
+
+               <ItemRaritiesList Id="AlwaysCommon"/>
+
+            </CreateItem>
+
+         </BuildingGaugeEffectDefinition>
+
+         <BuildingActionDefinitions>
+
+            <BuildingActionDefinition Id="HelpPotionMaker"/>
+
+         </BuildingActionDefinitions>
+
+      </Production>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <!--/// Specialty ///-->
+
+
+
+   <BuildingDefinition Id="Inn">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            BB
+
+            BB
+
+         </Tiles>
+
+         <BuildingHUDOffset X="-26" Y="60"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GoldCost>110</GoldCost>
+
+         <BuildLimit>1</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+            <ConstructionAnimationShockwaveFrame Value="24"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>270</HealthTotal>
+
+         <TotalPanicValue>17</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="-0.55" PositionY="3.72"/>
+
+            <FlameAnchorPoint PositionX="0.07" PositionY="2.39"/>
+
+            <FlameAnchorPoint PositionX="0.55" PositionY="1.61"/>
+
+            <FlameAnchorPoint PositionX="-0.73" PositionY="1.42"/>
+
+            <FlameAnchorPoint PositionX="0.45" PositionY="3.42"/>
+
+            <FlameAnchorPoint PositionX="-0.03" PositionY="0.39"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>3</FlameCount>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UpgradePlayableUnitLimit"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="Seer">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="1">
+
+            BB
+
+            _B
+
+         </Tiles>
+
+         <BuildingHUDOffset X="0" Y="60"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GoldCost>140</GoldCost>
+
+         <BuildLimit>1</BuildLimit>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+         </GroundCategories>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+            <ConstructionAnimationShockwaveFrame Value="24"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>225</HealthTotal>
+
+         <TotalPanicValue>14</TotalPanicValue>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="-0.18" PositionY="2.37"/>
+
+            <FlameAnchorPoint PositionX="0.83" PositionY="2.74"/>
+
+            <FlameAnchorPoint PositionX="1.78" PositionY="2.31"/>
+
+            <FlameAnchorPoint PositionX="1.34" PositionY="0.45"/>
+
+            <FlameAnchorPoint PositionX="2.32" PositionY="1.03"/>
+
+            <FlameAnchorPoint PositionX="0.06" PositionY="0.83"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>2</FlameCount>
+
+      </Damageable>
+
+
+
+      <Upgrade>
+
+         <BuildingUpgradeDefinitions>
+
+            <BuildingUpgradeDefinition Id="UpgradeGuessWho"/>
+
+         </BuildingUpgradeDefinitions>
+
+      </Upgrade>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="ImproveSpawnWaveInfo"/>
+
+      </Passives>
+
+
+
+      <Production>
+
+         <BuildingActionDefinitions>
+
+            <BuildingActionDefinition Id="RepelFog"/>
+
+            <BuildingActionDefinition Id="GuessWhere"/>
+
+            <BuildingActionDefinition Id="GuessAgain"/>
+
+         </BuildingActionDefinitions>
+
+      </Production>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- OBSTACLES/SCENERY -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <BuildingDefinition Id="Rock">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Rock_Mine">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Mine">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="Tree">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="TreeOakOnly">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="TreePineOnly">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="TreeBreakable">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="80"/>
+
+      </Blueprint>
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="TreeBreakable_Death"/>
+
+      </Passives>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>100</HealthTotal>
+
+      </Damageable>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="TreeStump">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <MuteConstructionSound/>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="WoodPile">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="60"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>55</HealthTotal>
+
+         <DamagedParticles Id="Damaged_Particles_Wood_02"/>
+
+         <!--<NoSmokeFXOnDestruction/>-->
+
+      </Damageable>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="MinecartA">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <MuteConstructionSound/>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="MinecartB">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <MuteConstructionSound/>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="MinecartC">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <MuteConstructionSound/>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Barrels">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="60"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>27</HealthTotal>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="0.18" PositionY="0.18"/>
+
+            <FlameAnchorPoint PositionX="-0.18" PositionY="0.85"/>
+
+            <FlameAnchorPoint PositionX="0.34" PositionY="1.09"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+         <DamagedParticles Id="Damaged_Particles_Wood_02"/>
+
+         <!--<NoSmokeFXOnDestruction/>-->
+
+      </Damageable>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Crates">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="60"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>27</HealthTotal>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="0.18" PositionY="0.18"/>
+
+            <FlameAnchorPoint PositionX="-0.18" PositionY="0.85"/>
+
+            <FlameAnchorPoint PositionX="0.34" PositionY="1.09"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+         <DamagedParticles Id="Damaged_Particles_Wood_02"/>
+
+         <!--<NoSmokeFXOnDestruction/>-->
+
+      </Damageable>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="RoadBlock_NSEW">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="60"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>55</HealthTotal>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="-0.07" PositionY="0.18"/>
+
+            <FlameAnchorPoint PositionX="-0.29" PositionY="0.85"/>
+
+            <FlameAnchorPoint PositionX="0.26" PositionY="1.48"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+         <DamagedParticles Id="Damaged_Particles_Wood_02"/>
+
+         <!--<NoSmokeFXOnDestruction/>-->
+
+      </Damageable>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="RoadBlock_N">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="60"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>55</HealthTotal>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="-0.07" PositionY="0.18"/>
+
+            <FlameAnchorPoint PositionX="-0.29" PositionY="0.85"/>
+
+            <FlameAnchorPoint PositionX="0.26" PositionY="1.48"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+         <DamagedParticles Id="Damaged_Particles_Wood_02"/>
+
+         <!--<NoSmokeFXOnDestruction/>-->
+
+      </Damageable>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="RoadBlock_S">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="60"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>55</HealthTotal>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="-0.07" PositionY="0.18"/>
+
+            <FlameAnchorPoint PositionX="-0.29" PositionY="0.85"/>
+
+            <FlameAnchorPoint PositionX="0.26" PositionY="1.48"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+         <DamagedParticles Id="Damaged_Particles_Wood_02"/>
+
+         <!--<NoSmokeFXOnDestruction/>-->
+
+      </Damageable>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="RoadBlock_E">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="60"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>55</HealthTotal>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="-0.07" PositionY="0.18"/>
+
+            <FlameAnchorPoint PositionX="-0.29" PositionY="0.85"/>
+
+            <FlameAnchorPoint PositionX="0.26" PositionY="1.48"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+         <DamagedParticles Id="Damaged_Particles_Wood_02"/>
+
+         <!--<NoSmokeFXOnDestruction/>-->
+
+      </Damageable>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="RoadBlock_W">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="60"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>55</HealthTotal>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="-0.07" PositionY="0.18"/>
+
+            <FlameAnchorPoint PositionX="-0.29" PositionY="0.85"/>
+
+            <FlameAnchorPoint PositionX="0.26" PositionY="1.48"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+         <DamagedParticles Id="Damaged_Particles_Wood_02"/>
+
+         <!--<NoSmokeFXOnDestruction/>-->
+
+      </Damageable>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Crate_Iron">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <MuteConstructionSound/>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="SmallBoat_A">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            BB
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-16" Y="48"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <MuteConstructionSound/>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="SmallBoat_B">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-16" Y="48"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <MuteConstructionSound/>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="TempleStatue">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+  <BuildingDefinition Id="DwarfStatue">
+
+    <Blueprint>
+
+      <Tiles OriginX="0" OriginY="0">
+
+        B
+
+      </Tiles>
+
+      <Category>Obstacle</Category>
+
+      <SidewalkType>None</SidewalkType>
+
+    </Blueprint>
+
+
+
+    <Construction>
+
+      <GroundCategories>
+
+        <GroundCategory>City</GroundCategory>
+
+        <GroundCategory>Outside</GroundCategory>
+
+      </GroundCategories>
+
+      <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+    </Construction>
+
+  </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="TempleWall">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="70"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>120</HealthTotal>
+
+         <FlameAnchorPoints>
+
+            <FlameAnchorPoint PositionX="0" PositionY="0"/>
+
+            <FlameAnchorPoint PositionX="0.06" PositionY="1.77"/>
+
+            <FlameAnchorPoint PositionX="0.19" PositionY="1.03"/>
+
+         </FlameAnchorPoints>
+
+         <FlameCount>1</FlameCount>
+
+         <DamagedParticles Id="Damaged_Particles_Rock"/>
+
+      </Damageable>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="Lamppost">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="Grave">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="50"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>50</HealthTotal>
+
+         <DamagedParticles Id="Damaged_Particles_Rock"/>
+
+         <NoSmokeFXOnDestruction/>
+
+      </Damageable>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Mountain">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="50"/>
+
+         <BlockFlying/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="ThroneBase">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="50"/>
+
+         <BlockFlying/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Pillar_Large">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            BB
+
+            BB
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Pillar_Large_Broken">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            BB
+
+            BB
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Pillar_Small">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Pillar_Small_Broken">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="PillarRubble">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <MuteConstructionSound/>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Throne">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            BB
+
+            BB
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="CorruptedPillar">
+
+      <Blueprint>
+
+         <Category>None</Category>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <SidewalkType>Obstacle</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="44"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+         <DestructionAnimationTypes>
+
+            <DestructionAnimationType Value="Animated"/>
+
+         </DestructionAnimationTypes>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="CorruptedMageStatue">
+
+      <Blueprint>
+
+         <Category>None</Category>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <SidewalkType>Obstacle</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="44"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+         <DestructionAnimationTypes>
+
+            <DestructionAnimationType Value="Animated"/>
+
+         </DestructionAnimationTypes>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="CorruptedCrate_Iron">
+
+      <Blueprint>
+
+         <Category>None</Category>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            BB
+
+         </Tiles>
+
+         <SidewalkType>Obstacle</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="44"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+         <DestructionAnimationTypes>
+
+            <DestructionAnimationType Value="Animated"/>
+
+         </DestructionAnimationTypes>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="CorruptedTreeBreakable">
+
+      <Blueprint>
+
+         <Category>None</Category>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+            B
+
+         </Tiles>
+
+         <SidewalkType>Obstacle</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="44"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+         <DestructionAnimationTypes>
+
+            <DestructionAnimationType Value="Animated"/>
+
+         </DestructionAnimationTypes>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="CorruptedRails">
+
+      <Blueprint>
+
+         <Category>None</Category>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            _B
+
+            BB
+
+         </Tiles>
+
+         <SidewalkType>Obstacle</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="44"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+         <DestructionAnimationTypes>
+
+            <DestructionAnimationType Value="Animated"/>
+
+         </DestructionAnimationTypes>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="CorruptedThrone">
+
+      <Blueprint>
+
+         <Category>None</Category>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            BB
+
+            BB
+
+         </Tiles>
+
+         <SidewalkType>Obstacle</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="44"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Adjacent</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+         <DestructionAnimationTypes>
+
+            <DestructionAnimationType Value="Animated"/>
+
+         </DestructionAnimationTypes>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+
+
+
+
+   <!--<BuildingDefinition Id="WoodenFence">
+
+       <Blueprint>
+
+          <Tiles OriginX="0" OriginY="0">
+
+             B
+
+          </Tiles>
+
+          <Category>Obstacle</Category>
+
+          <SidewalkType>None</SidewalkType>
+
+          <BuildingHUDOffset X="-22" Y="58"/>
+
+       </Blueprint>
+
+ 
+
+       <Construction>
+
+          <GroundCategories>
+
+             <GroundCategory>City</GroundCategory>
+
+             <GroundCategory>Outside</GroundCategory>
+
+          </GroundCategories>
+
+          <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+       </Construction>
+
+ 
+
+       <Damageable>
+
+          <HealthTotal>25</HealthTotal>
+
+       </Damageable>
+
+    </BuildingDefinition>-->
+
+
+
+
+
+   <!-- Id is hardcoded for default light fog spawner to spawn, ping Matthieu H if changed -->
+
+   <BuildingDefinition Id="LightFogSpawner_Alive">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <BuildingHUDOffset X="-26" Y="50"/>
+
+         <SidewalkType>None</SidewalkType>
+
+         <Category>LightFogSpawner</Category>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+         <MuteDestructionSound/>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>150</HealthTotal>
+
+         <DamagedParticles Id="Damaged_Particles_Enemy"/>
+
+         <NoSmokeFXOnDestruction/>
+
+      </Damageable>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="LightFogSpawner_Death"/>
+
+         <BuildingPassiveDefinition Id="GenerateLightFog"/>
+
+      </Passives>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="LightFogSpawner_Alive2">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <BuildingHUDOffset X="-26" Y="50"/>
+
+         <SidewalkType>None</SidewalkType>
+
+         <Category>LightFogSpawner</Category>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+         <MuteDestructionSound/>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>250</HealthTotal>
+
+         <DamagedParticles Id="Damaged_Particles_Enemy"/>
+
+         <NoSmokeFXOnDestruction/>
+
+      </Damageable>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="LightFogSpawner_Death"/>
+
+         <BuildingPassiveDefinition Id="GenerateLightFog"/>
+
+      </Passives>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="LightFogSpawner_Alive3">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <BuildingHUDOffset X="-26" Y="50"/>
+
+         <SidewalkType>None</SidewalkType>
+
+         <Category>LightFogSpawner</Category>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+         <MuteDestructionSound/>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>400</HealthTotal>
+
+         <DamagedParticles Id="Damaged_Particles_Enemy"/>
+
+         <NoSmokeFXOnDestruction/>
+
+      </Damageable>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="LightFogSpawner_Death"/>
+
+         <BuildingPassiveDefinition Id="GenerateLightFog"/>
+
+      </Passives>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="LightFogSpawner_Alive4">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <BuildingHUDOffset X="-26" Y="50"/>
+
+         <SidewalkType>None</SidewalkType>
+
+         <Category>LightFogSpawner</Category>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+         <MuteDestructionSound/>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>600</HealthTotal>
+
+         <DamagedParticles Id="Damaged_Particles_Enemy"/>
+
+         <NoSmokeFXOnDestruction/>
+
+      </Damageable>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="LightFogSpawner_Death"/>
+
+         <BuildingPassiveDefinition Id="GenerateLightFog"/>
+
+      </Passives>
+
+   </BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="LightFogSpawner_Dead">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <SidewalkType>None</SidewalkType>
+
+         <Category>LightFogSpawner</Category>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <NoSmokeFXOnDestruction/>
+
+      </Damageable>
+
+   </BuildingDefinition>
+
+   
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- BRAZIERS -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <BuildingDefinition Id="Brazier_Unlit">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>UnlitBrazier</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-28" Y="40"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="BrazierBoss_Unlit">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>UnlitBrazier</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-28" Y="40"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Brazier_Prelit1">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>None</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-28" Y="40"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="LitBrazier1"/>
+
+      </Passives>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Brazier_Prelit2">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>None</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-28" Y="40"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="LitBrazier2"/>
+
+      </Passives>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Brazier_Prelit3">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>None</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-28" Y="40"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="LitBrazier3"/>
+
+      </Passives>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Brazier_Prelit4">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>None</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-28" Y="40"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="LitBrazier4"/>
+
+      </Passives>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Brazier_Prelit5">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>None</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-28" Y="40"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="LitBrazier5"/>
+
+      </Passives>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Brazier_Lit1">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>LitBrazier</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-28" Y="40"/>
+
+      </Blueprint>
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Brazier>
+
+         <PointsTotal>10</PointsTotal>
+
+      </Brazier>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="ExtinguishBrazier"/>
+
+         <BuildingPassiveDefinition Id="SpawnGuardian"/>
+
+      </Passives>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Brazier_Lit2">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>LitBrazier</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-28" Y="40"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Brazier>
+
+         <PointsTotal>20</PointsTotal>
+
+      </Brazier>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="ExtinguishBrazier"/>
+
+         <BuildingPassiveDefinition Id="SpawnGuardian"/>
+
+      </Passives>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Brazier_Lit3">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>LitBrazier</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-28" Y="40"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Brazier>
+
+         <PointsTotal>30</PointsTotal>
+
+      </Brazier>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="ExtinguishBrazier"/>
+
+         <BuildingPassiveDefinition Id="SpawnGuardian"/>
+
+      </Passives>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Brazier_Lit4">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>LitBrazier</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-28" Y="40"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Brazier>
+
+         <PointsTotal>40</PointsTotal>
+
+      </Brazier>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="ExtinguishBrazier"/>
+
+         <BuildingPassiveDefinition Id="SpawnGuardian"/>
+
+      </Passives>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="Brazier_Lit5">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>LitBrazier</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-28" Y="40"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Brazier>
+
+         <PointsTotal>50</PointsTotal>
+
+      </Brazier>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="ExtinguishBrazier"/>
+
+         <BuildingPassiveDefinition Id="SpawnGuardian"/>
+
+      </Passives>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="BrazierBoss_Lit1">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>LitBrazier</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-28" Y="40"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Brazier>
+
+         <PointsTotal>30</PointsTotal>
+
+      </Brazier>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="ExtinguishBrazierBoss"/>
+
+      </Passives>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="BrazierBoss_Lit2">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>LitBrazier</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-28" Y="40"/>
+
+
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Brazier>
+
+         <PointsTotal>20</PointsTotal>
+
+      </Brazier>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="ExtinguishBrazierBoss"/>
+
+      </Passives>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="BrazierBoss_Lit3">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>LitBrazier</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+         <ConstructionAnimationTypes>
+
+            <ConstructionAnimationType Value="Animated"/>
+
+            <ConstructionAnimationFrameRate Value="20"/>
+
+         </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Brazier>
+
+         <PointsTotal>10</PointsTotal>
+
+      </Brazier>
+
+
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="ExtinguishBrazierBoss"/>
+
+      </Passives>
+
+   </BuildingDefinition>
+
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- DLC 1 -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   
+
+   <BuildingDefinition Id="CrystalExplosiveOn">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-22" Y="85"/>
+
+      </Blueprint>
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="CrystalExplosive_Death"/>
+
+      </Passives>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+        <ConstructionAnimationTypes>
+
+          <ConstructionAnimationType Value="Animated"/>
+
+          <ConstructionAnimationFrameRate Value="20"/>
+
+        </ConstructionAnimationTypes>
+
+         <DestructionAnimationTypes>
+
+            <DestructionAnimationType Value="Animated"/>
+
+         </DestructionAnimationTypes>
+
+         <MuteDestructionSound/>
+
+         <MuteConstructionSound/>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>100</HealthTotal>
+
+         <NoSmokeFXOnDestruction/>
+
+      </Damageable>
+
+
+
+      <Battle>
+
+         <Behavior>
+
+            <ThinkingScope>100</ThinkingScope>
+
+            <Goals>
+
+               <Goal Id="00_CrystalExplosiveSkillOnDeath" GoalComputingStep="OnDeath">
+
+                  <SkillId Value="CrystalExplosiveSkillOnDeath"/>
+
+                  <TargetTypes>
+
+                     <Itself/>
+
+                  </TargetTypes>
+
+                  <TargetingMethod>
+
+                     <FirstTarget/>
+
+                  </TargetingMethod>
+
+               </Goal>
+
+            </Goals>
+
+         </Behavior>
+
+         <GoalsSkillsToDisplay>
+
+            <SkillGroupId>CrystalExplosiveSkillOnDeath</SkillGroupId>
+
+         </GoalsSkillsToDisplay>
+
+      </Battle>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="CrystalFrostOn">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-22" Y="85"/>
+
+      </Blueprint>
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="CrystalFrost_Death"/>
+
+      </Passives>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+        <ConstructionAnimationTypes>
+
+          <ConstructionAnimationType Value="Animated"/>
+
+          <ConstructionAnimationFrameRate Value="20"/>
+
+        </ConstructionAnimationTypes>
+
+         <DestructionAnimationTypes>
+
+            <DestructionAnimationType Value="Animated"/>
+
+         </DestructionAnimationTypes>
+
+         <MuteDestructionSound/>
+
+         <MuteConstructionSound/>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>100</HealthTotal>
+
+         <NoSmokeFXOnDestruction/>
+
+      </Damageable>
+
+
+
+      <Battle>
+
+         <Behavior>
+
+            <ThinkingScope>100</ThinkingScope>
+
+            <Goals>
+
+               <Goal Id="00_CrystalFrostSkillOnDeath" GoalComputingStep="OnDeath">
+
+                  <SkillId Value="CrystalFrostSkillOnDeath"/>
+
+                  <TargetTypes>
+
+                     <Itself/>
+
+                  </TargetTypes>
+
+                  <TargetingMethod>
+
+                     <FirstTarget/>
+
+                  </TargetingMethod>
+
+               </Goal>
+
+            </Goals>
+
+         </Behavior>
+
+         <GoalsSkillsToDisplay>
+
+            <SkillGroupId>CrystalFrostSkillOnDeath</SkillGroupId>
+
+         </GoalsSkillsToDisplay>
+
+      </Battle>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="CrystalPoisonOn">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-22" Y="85"/>
+
+      </Blueprint>
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="CrystalPoison_Death"/>
+
+      </Passives>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+        <ConstructionAnimationTypes>
+
+          <ConstructionAnimationType Value="Animated"/>
+
+          <ConstructionAnimationFrameRate Value="20"/>
+
+        </ConstructionAnimationTypes>
+
+         <DestructionAnimationTypes>
+
+            <DestructionAnimationType Value="Animated"/>
+
+         </DestructionAnimationTypes>
+
+         <MuteDestructionSound/>
+
+         <MuteConstructionSound/>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>100</HealthTotal>
+
+         <NoSmokeFXOnDestruction/>
+
+      </Damageable>
+
+
+
+      <Battle>
+
+         <Behavior>
+
+            <ThinkingScope>100</ThinkingScope>
+
+            <Goals>
+
+               <Goal Id="00_CrystalPoisonSkillOnDeath" GoalComputingStep="OnDeath">
+
+                  <SkillId Value="CrystalPoisonSkillOnDeath"/>
+
+                  <TargetTypes>
+
+                     <Itself/>
+
+                  </TargetTypes>
+
+                  <TargetingMethod>
+
+                     <FirstTarget/>
+
+                  </TargetingMethod>
+
+               </Goal>
+
+            </Goals>
+
+         </Behavior>
+
+         <GoalsSkillsToDisplay>
+
+            <SkillGroupId>CrystalPoisonSkillOnDeath</SkillGroupId>
+
+         </GoalsSkillsToDisplay>
+
+      </Battle>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="CrystalNormalOff">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="0" Y="0"/>
+
+      </Blueprint>
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="CrystalNormal_Regen"/>
+
+      </Passives>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+        <ConstructionAnimationTypes>
+
+          <ConstructionAnimationType Value="Animated"/>
+
+          <ConstructionAnimationFrameRate Value="20"/>
+
+        </ConstructionAnimationTypes>
+
+         <MuteDestructionSound/>
+
+         <MuteConstructionSound/>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="CrystalCorruptedOn">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-22" Y="85"/>
+
+      </Blueprint>
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="CrystalCorrupted_Death"/>
+
+      </Passives>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+        <ConstructionAnimationTypes>
+
+          <ConstructionAnimationType Value="Animated"/>
+
+          <ConstructionAnimationFrameRate Value="20"/>
+
+        </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>700</HealthTotal>
+
+         <NoSmokeFXOnDestruction/>
+
+      </Damageable>
+
+
+
+      <Battle>
+
+         <Behavior>
+
+            <ThinkingScope>10</ThinkingScope>
+
+            <Goals>
+
+               <Goal Id="00_CorruptedCrystalSkill" GoalComputingStep="OnDeath">
+
+                  <SkillId Value="CrystalCorruptedSkillSummon"/>
+
+                  <TargetTypes>
+
+                     <EnemyUnit>
+
+                        <TargetConditions>
+
+                           <ConditionsGroup>
+
+                              <TargetInRangeCondition Min="1" Max="3"/>
+
+                           </ConditionsGroup>
+
+                           <ConditionsGroup>
+
+                              <TargetIsNotEliteCondition/>
+
+                           </ConditionsGroup>
+
+                           <ConditionsGroup>
+
+                              <TargetIdCondition Exclude="true">
+
+                                 <TargetsListId Value="FlyingEnemies"/>
+
+                              </TargetIdCondition>
+
+                           </ConditionsGroup>
+
+                        </TargetConditions>
+
+                     </EnemyUnit>
+
+                  </TargetTypes>
+
+                  <TargetingMethod>
+
+                     <Closest/>
+
+                  </TargetingMethod>
+
+               </Goal>
+
+            </Goals>
+
+         </Behavior>
+
+         <GoalsSkillsToDisplay>
+
+            <SkillGroupId>CrystalCorruptedSkillSummon</SkillGroupId>
+
+         </GoalsSkillsToDisplay>
+
+      </Battle>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="CrystalCorruptedOff">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="0" Y="0"/>
+
+      </Blueprint>
+
+      <Passives>
+
+         <BuildingPassiveDefinition Id="CrystalCorrupted_Regen"/>
+
+      </Passives>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+		  <ConstructionAnimationTypes>
+
+		  <ConstructionAnimationType Value="Animated"/>
+
+		  <ConstructionAnimationFrameRate Value="20"/>
+
+		  </ConstructionAnimationTypes>
+
+		  <MuteDestructionSound/>
+
+		  <MuteConstructionSound/>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="DwarfStatueAura1Off">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="0" Y="0"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="DwarfStatueAura2Off">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="0" Y="0"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+   </BuildingDefinition>
+
+
+
+   
+
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- SKILLS -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <BuildingDefinition Id="SpawnerBossFortressWall">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <SidewalkType>None</SidewalkType>
+
+         <BuildingHUDOffset X="-26" Y="70"/>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+
+
+      <Damageable>
+
+         <HealthTotal>200</HealthTotal> <!-- 160 -> 300 -->
+
+         <DamagedParticles Id="Damaged_Particles_Rock"/>
+
+      </Damageable>
+
+   </BuildingDefinition>
+
+
+
+
+
+   
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- BUILDING LIMITS -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <BuildingLimitGroupDefinition Id="Gates" Limit="12"/>
+
+   <BuildingLimitGroupDefinition Id="Ballistas" Limit="32"/>
+
+   <BuildingLimitGroupDefinition Id="ProdBuildings" Limit="5"/>
+
+   <BuildingLimitGroupDefinition Id="Seeds" Limit="20"/>
+
+
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- LIVINGFOREST DLC2 -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <BuildingDefinition Id="LivingForestWallSprout">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            E
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+     
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+		  <ConstructionAnimationTypes>
+
+			  <ConstructionAnimationType Value="Animated"/>
+
+			  <ConstructionAnimationFrameRate Value="30"/>
+
+		  </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <!--<Passives>
+
+         <BuildingPassiveDefinition Id="LivingForestWallGrowth"/>
+
+      </Passives>-->
+
+
+
+   </BuildingDefinition>
+
+	
+
+   <BuildingDefinition Id="LivingForestWall">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+     <Damageable/>
+
+     
+
+        <Construction>
+
+           <GroundCategories>
+
+              <GroundCategory>City</GroundCategory>
+
+              <GroundCategory>Outside</GroundCategory>
+
+           </GroundCategories>
+
+           <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+		   <ConstructionAnimationTypes>
+
+			    <ConstructionAnimationType Value="Animated"/>
+
+			    <ConstructionAnimationFrameRate Value="30"/>
+
+			    <ConstructionAnimationShockwaveFrame Value="24"/>
+
+		   </ConstructionAnimationTypes>
+
+          <DestructionAnimationTypes>
+
+            <DestructionAnimationType Value="Animated"/>
+
+          </DestructionAnimationTypes>
+
+        </Construction>
+
+     
+
+   </BuildingDefinition>
+
+
+
+   <BuildingDefinition Id="LivingForestBallistaSprout">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            E
+
+         </Tiles>
+
+         <Category>Obstacle</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+		 <ConstructionAnimationTypes>
+
+			 <ConstructionAnimationType Value="Animated"/>
+
+			 <ConstructionAnimationFrameRate Value="30"/>
+
+		 </ConstructionAnimationTypes>
+
+      </Construction>
+
+
+
+      <!--<Passives>
+
+         <BuildingPassiveDefinition Id="LivingForestBallistaGrowth"/>
+
+      </Passives>-->
+
+
+
+   </BuildingDefinition>
+
+
+
+	<BuildingDefinition Id="LivingForestBallista">
+
+		<Blueprint>
+
+			<Tiles OriginX="0" OriginY="0">
+
+				B
+
+			</Tiles>
+
+			<Category>Turret</Category>
+
+			<SidewalkType>None</SidewalkType>
+
+		</Blueprint>
+
+
+
+    <Damageable/>
+
+
+
+    <Construction>
+
+			<GroundCategories>
+
+				<GroundCategory>City</GroundCategory>
+
+				<GroundCategory>Outside</GroundCategory>
+
+			</GroundCategories>
+
+			<OccupationVolumeType>Ignore</OccupationVolumeType>
+
+		  <ConstructionAnimationTypes>
+
+			  <ConstructionAnimationType Value="Animated"/>
+
+			  <ConstructionAnimationFrameRate Value="30"/>
+
+			  <ConstructionAnimationShockwaveFrame Value="24"/>
+
+		  </ConstructionAnimationTypes>
+
+      <DestructionAnimationTypes>
+
+        <DestructionAnimationType Value="Animated"/>
+
+      </DestructionAnimationTypes>
+
+		</Construction>
+
+
+
+
+
+		<Battle>
+
+			<Behavior>
+
+				<PathfindingStyle>Bresenham</PathfindingStyle>
+
+				<ThinkingScope>50</ThinkingScope>
+
+				<Goals>
+
+					<!--Attack Enemy: closest within 8 tiles-->
+
+					<Goal Id="00_LivingForestBallistaSkill">
+
+						<SkillId Value="LivingForestBallistaSkill"/>
+
+						<TargetTypes>
+
+							<EnemyUnit>
+
+								<TargetConditions>
+
+									<ConditionsGroup>
+
+										<TargetInRangeCondition Min="1" Max="8"/>
+
+									</ConditionsGroup>
+
+								</TargetConditions>
+
+							</EnemyUnit>
+
+						</TargetTypes>
+
+						<TargetingMethod>
+
+							<Closest/>
+
+						</TargetingMethod>
+
+					</Goal>
+
+				</Goals>
+
+			</Behavior>
+
+         <GoalsSkillsToDisplay>
+
+            <SkillGroupId>LivingForestBallistaSkill</SkillGroupId>
+
+         </GoalsSkillsToDisplay>
+
+		</Battle>
+
+	</BuildingDefinition>
+
+
+
+
+
+   <BuildingDefinition Id="SacredBallistaSprout">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Turret</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Damageable>
+
+        <HealthTotal>300</HealthTotal>
+
+        <FlameAnchorPoints>
+
+          <FlameAnchorPoint PositionX="-0.22" PositionY="0.57"/>
+
+          <FlameAnchorPoint PositionX="0.18" PositionY="1.2"/>
+
+          <FlameAnchorPoint PositionX="0.54" PositionY="0.62"/>
+
+        </FlameAnchorPoints>
+
+        <FlameCount>1</FlameCount>
+
+      </Damageable>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+      </Construction>
+
+
+
+      <Battle>
+
+         <Behavior>
+
+            <PathfindingStyle>Bresenham</PathfindingStyle>
+
+            <ThinkingScope>50</ThinkingScope>
+
+            <Goals>
+
+               <!--Cast buff if a playable character is in range-->
+
+               <Goal Id="00_SacredBallistaSproutSkill">
+
+                  <SkillId Value="SacredBallistaSproutSkill"/>
+
+                  <TargetTypes>
+
+                     <Itself>
+
+                        <TargetConditions>
+
+                           <ConditionsGroup>
+
+                              <DamageableCountInAoeCondition Min="1" IsUnitPriority="true">
+
+                                 <DamageableTypeToCount>Playable</DamageableTypeToCount>
+
+                              </DamageableCountInAoeCondition>
+
+                           </ConditionsGroup>
+
+                        </TargetConditions>
+
+                     </Itself>
+
+                  </TargetTypes>
+
+                  <TargetingMethod>
+
+                     <Closest/>
+
+                  </TargetingMethod>
+
+               </Goal>
+
+            </Goals>
+
+         </Behavior>
+
+         <GoalsSkillsToDisplay>
+
+            <SkillGroupId>SacredBallistaSproutSkill</SkillGroupId>
+
+         </GoalsSkillsToDisplay>
+
+      </Battle>
+
+   </BuildingDefinition>
+
+   
+
+
+
+   <BuildingDefinition Id="SacredBallista">
+
+      <Blueprint>
+
+         <Tiles OriginX="0" OriginY="0">
+
+            B
+
+         </Tiles>
+
+         <Category>Turret</Category>
+
+         <SidewalkType>None</SidewalkType>
+
+      </Blueprint>
+
+
+
+      <Damageable>
+
+         <HealthTotal>300</HealthTotal>
+
+		  <FlameAnchorPoints>
+
+			  <FlameAnchorPoint PositionX="-0.59" PositionY="3.07"/>
+
+			  <FlameAnchorPoint PositionX="0.32" PositionY="2.35"/>
+
+			  <FlameAnchorPoint PositionX="-0.25" PositionY="1.62"/>
+
+			  <FlameAnchorPoint PositionX="0.26" PositionY="1.37"/>
+
+			  <FlameAnchorPoint PositionX="0.05" PositionY="0.41"/>
+
+			  <FlameAnchorPoint PositionX="0" PositionY="1.89"/>
+
+		  </FlameAnchorPoints>
+
+		  <FlameCount>2</FlameCount>
+
+      </Damageable>
+
+
+
+      <Construction>
+
+         <GroundCategories>
+
+            <GroundCategory>City</GroundCategory>
+
+            <GroundCategory>Outside</GroundCategory>
+
+         </GroundCategories>
+
+         <OccupationVolumeType>Ignore</OccupationVolumeType>
+
+        <ConstructionAnimationTypes>
+
+          <ConstructionAnimationType Value="Animated"/>
+
+          <ConstructionAnimationFrameRate Value="5"/>
+
+        </ConstructionAnimationTypes>
+
+      </Construction>
+
+      
+
+      <Battle>
+
+         <Behavior>
+
+            <PathfindingStyle>Bresenham</PathfindingStyle>
+
+            <ThinkingScope>50</ThinkingScope>
+
+            <Goals>
+
+               <!--Attack Enemy: closest within 8 tiles-->
+
+               <Goal Id="00_SacredBallistaSkill">
+
+                  <SkillId Value="SacredBallistaSkill"/>
+
+                  <Cooldown Value="2"/>
+
+                  <TargetTypes>
+
+                     <EnemyUnit>
+
+                        <TargetConditions>
+
+                           <ConditionsGroup>
+
+                              <TargetIdCondition>
+
+                                 <TargetsListId Value="GlenwadReduxBosses"/>
+
+                              </TargetIdCondition>
+
+                           </ConditionsGroup>
+
+                        </TargetConditions>
+
+                     </EnemyUnit>
+
+                  </TargetTypes>
+
+                  <TargetingMethod>
+
+                     <Closest/>
+
+                  </TargetingMethod>
+
+               </Goal>
+
+            </Goals>
+
+         </Behavior>
+
+         <GoalsSkillsToDisplay>
+
+            <SkillGroupId>SacredBallistaSkill</SkillGroupId>
+
+         </GoalsSkillsToDisplay>
+
+      </Battle>
+
+
+
+   </BuildingDefinition>
+
+
+
+	<BuildingDefinition Id="GiantTreeBlock">
+
+		<Blueprint>
+
+			<Tiles OriginX="0" OriginY="0">
+
+				B
+
+			</Tiles>
+
+			<Category>Obstacle</Category>
+
+			<SidewalkType>None</SidewalkType>
+
+		</Blueprint>
+
+
+
+		<Construction>
+
+			<GroundCategories>
+
+				<GroundCategory>City</GroundCategory>
+
+				<GroundCategory>Outside</GroundCategory>
+
+			</GroundCategories>
+
+			<OccupationVolumeType>Ignore</OccupationVolumeType>
+
+		</Construction>
+
+	</BuildingDefinition>
+
+
+
+	
+
+	<BuildingDefinition Id="GiantTreeRootsE">
+
+		<Blueprint>
+
+			<Tiles OriginX="0" OriginY="0">
+
+				B
+
+			</Tiles>
+
+			<Category>Obstacle</Category>
+
+			<SidewalkType>None</SidewalkType>
+
+		</Blueprint>
+
+
+
+		<Construction>
+
+			<GroundCategories>
+
+				<GroundCategory>City</GroundCategory>
+
+				<GroundCategory>Outside</GroundCategory>
+
+			</GroundCategories>
+
+			<OccupationVolumeType>Ignore</OccupationVolumeType>
+
+		</Construction>
+
+	</BuildingDefinition>
+
+
+
+	
+
+	<BuildingDefinition Id="GiantTreeRootsS_A">
+
+		<Blueprint>
+
+			<Tiles OriginX="0" OriginY="0">
+
+				B
+
+			</Tiles>
+
+			<Category>Obstacle</Category>
+
+			<SidewalkType>None</SidewalkType>
+
+		</Blueprint>
+
+
+
+		<Construction>
+
+			<GroundCategories>
+
+				<GroundCategory>City</GroundCategory>
+
+				<GroundCategory>Outside</GroundCategory>
+
+			</GroundCategories>
+
+			<OccupationVolumeType>Ignore</OccupationVolumeType>
+
+		</Construction>
+
+	</BuildingDefinition>
+
+
+
+	
+
+	<BuildingDefinition Id="GiantTreeRootsS_B">
+
+		<Blueprint>
+
+			<Tiles OriginX="0" OriginY="0">
+
+				B
+
+			</Tiles>
+
+			<Category>Obstacle</Category>
+
+			<SidewalkType>None</SidewalkType>
+
+		</Blueprint>
+
+
+
+		<Construction>
+
+			<GroundCategories>
+
+				<GroundCategory>City</GroundCategory>
+
+				<GroundCategory>Outside</GroundCategory>
+
+			</GroundCategories>
+
+			<OccupationVolumeType>Ignore</OccupationVolumeType>
+
+		</Construction>
+
+	</BuildingDefinition>
+
+
+
+	
+
+	<BuildingDefinition Id="GiantTreeRootsS_C">
+
+		<Blueprint>
+
+			<Tiles OriginX="0" OriginY="0">
+
+				B
+
+			</Tiles>
+
+			<Category>Obstacle</Category>
+
+			<SidewalkType>None</SidewalkType>
+
+		</Blueprint>
+
+
+
+		<Construction>
+
+			<GroundCategories>
+
+				<GroundCategory>City</GroundCategory>
+
+				<GroundCategory>Outside</GroundCategory>
+
+			</GroundCategories>
+
+			<OccupationVolumeType>Ignore</OccupationVolumeType>
+
+		</Construction>
+
+	</BuildingDefinition>
+
+
+
+	
+
+	<BuildingDefinition Id="GiantTreeRootsW_A">
+
+		<Blueprint>
+
+			<Tiles OriginX="0" OriginY="0">
+
+				B
+
+			</Tiles>
+
+			<Category>Obstacle</Category>
+
+			<SidewalkType>None</SidewalkType>
+
+		</Blueprint>
+
+
+
+		<Construction>
+
+			<GroundCategories>
+
+				<GroundCategory>City</GroundCategory>
+
+				<GroundCategory>Outside</GroundCategory>
+
+			</GroundCategories>
+
+			<OccupationVolumeType>Ignore</OccupationVolumeType>
+
+		</Construction>
+
+	</BuildingDefinition>
+
+
+
+	
+
+	<BuildingDefinition Id="GiantTreeRootsW_B">
+
+		<Blueprint>
+
+			<Tiles OriginX="0" OriginY="0">
+
+				B
+
+			</Tiles>
+
+			<Category>Obstacle</Category>
+
+			<SidewalkType>None</SidewalkType>
+
+		</Blueprint>
+
+
+
+		<Construction>
+
+			<GroundCategories>
+
+				<GroundCategory>City</GroundCategory>
+
+				<GroundCategory>Outside</GroundCategory>
+
+			</GroundCategories>
+
+			<OccupationVolumeType>Ignore</OccupationVolumeType>
+
+		</Construction>
+
+	</BuildingDefinition>
+
+
+
+</BuildingDefinitions>

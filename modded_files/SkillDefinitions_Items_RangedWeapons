@@ -41,15 +41,15 @@
 
    <!-- Hand Crossbow -->
    <SkillDefinition Id="QuickShot">
-      <ActionPointsCost>1</ActionPointsCost>
+      <ActionPointsCost>2</ActionPointsCost>
       <UsesPerTurnCount>2</UsesPerTurnCount>
       <Range Min="1" Max="6" CardinalDirectionOnly="false" Modifiable="true"/>
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
+            <DamageMultiplier>1.25</DamageMultiplier>
             <SkillEffects>
-               <MultiHit HitsCount="2"/>
+               <MultiHit HitsCount="3"/>
                <Inaccurate>
                   <Malus>1</Malus>
                </Inaccurate>
@@ -106,8 +106,8 @@
             <SkillEffects>
                <Poison>
                   <BaseChance>1</BaseChance>
-                  <DamagePerTurn>60</DamagePerTurn>
-                  <TurnsCount>3</TurnsCount>
+                  <DamagePerTurn>45</DamagePerTurn>
+                  <TurnsCount>2</TurnsCount>
                </Poison>
             </SkillEffects>
          </Attack>
@@ -485,7 +485,7 @@
 
    <!-- Offhand HandCrossbow -->
    <SkillDefinition Id="SlowDeathOffHand" TemplateId="SlowDeath">
-     <!--   <OverrideLocalizationId>SlowDeathOffHand</OverrideLocalizationId> -->
+      <OverrideLocalizationId>SlowDeathOffhand</OverrideLocalizationId>
       <ActionPointsCost>0</ActionPointsCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
    </SkillDefinition>
@@ -1978,7 +1978,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
-            <DamageMultiplier>0.8</DamageMultiplier>
+            <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <Propagation PropagationsCount="2"/>
             </SkillEffects>

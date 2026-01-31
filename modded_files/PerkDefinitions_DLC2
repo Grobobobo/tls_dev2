@@ -700,7 +700,7 @@
          <TokenVariable Key="RoundingNumber" Value="(5)"/>
          
          <!-- Stat Base -->
-         <TokenVariable Key="ManaRegenPerSteps" Value="2"/>
+         <TokenVariable Key="ManaRegenPerSteps" Value="1"/>
          <TokenVariable Key="XPBonusPerSteps" Value="8"/>
       </TokenVariables>
       <LocArguments>
@@ -768,10 +768,12 @@
       <TokenVariables>
          <TokenVariable Key="IsAnAllyInRange" Value="Owner.ClosestAllyDistance > AllyRange"/>
          <TokenVariable Key="AllyRange" Value="12"/>
+         <TokenVariable Key="IsolationBonus" Value="25"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="AllyRange" Style="KeyWordNb"/>
          <LocalizedArgument Value="SkillEffectName_IgnoreLineOfSight" Style="Vision"/>
+         <StatArgument Stat="IsolatedAttacks" Value="IsolationBonus"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -786,6 +788,11 @@
       <Modules>
          <BufferModule>
             <Effects>
+               <StatModifier Stat="IsolatedAttacks" Value="IsolationBonus">
+                  <Conditions>
+                     <IsTrue Value="IsAnAllyInRange"/>
+                  </Conditions>
+               </StatModifier>
                <AddSkillEffect>
                   <Conditions>
                      <IsTrue Value="IsAnAllyInRange"/>
@@ -813,10 +820,10 @@
          <TokenVariable Key="MaxSlotPossible" Value="9"/>
       
          <!-- Stat Tokens-->
-         <TokenVariable Key="BonusDamageBase" Value="5"/>
+         <TokenVariable Key="BonusDamageBase" Value="3"/>
          <TokenVariable Key="BonusDamageStep" Value="1"/>
          <TokenVariable Key="BonusDamageUnlock" Value="1"/>
-         <TokenVariable Key="BonusDodgeBase" Value="4"/>
+         <TokenVariable Key="BonusDodgeBase" Value="5"/>
          <TokenVariable Key="BonusDodgeStep" Value="1"/>
          <TokenVariable Key="BonusDodgeUnlock" Value="2"/>
          <TokenVariable Key="BonusAPBase" Value="1"/>
@@ -866,7 +873,7 @@
    <PerkDefinition Id="WeakSpotExploit">
       <TokenVariables>
          <TokenVariable Key="StunBonus" Value="20"/>
-         <TokenVariable Key="PoisonDmg" Value="Round(40 * (Owner.PoisonDamageModifier/100))"/>
+         <TokenVariable Key="PoisonDmg" Value="Round(50 * (Owner.PoisonDamageModifier/100))"/>
          <TokenVariable Key="PoisonDuration" Value="2"/>
          <!-- If IsTargetUnit + TargetUnit.HasNegativeAlteration are true OR Skill.HasNegativeAlteration is true, consider the perk as active 
          <TokenVariable Key="IsPerkActive" Value="BooleanChoice(IsTargetUnit, BooleanChoice(TargetUnit.HasNegativeAlteration, 1, BooleanChoice(Skill.HasNegativeAlteration, 1,0)), BooleanChoice(Skill.HasNegativeAlteration, 1,0))"/>
@@ -1081,14 +1088,14 @@
 
          <!--Poison bonus calculation-->
          <TokenVariable Key="PoisonBonusTotal" Value="(PoisonBonusBase+(NumberOfStepsReached*PoisonBonusPerStep))"/>
-         <TokenVariable Key="PoisonBonusPerStep" Value="20"/>
+         <TokenVariable Key="PoisonBonusPerStep" Value="180"/>
          <TokenVariable Key="PoisonBonusBase" Value="0"/> <!--Unused ! If set to 1 or more, needs to be added back to the localization key !-->
          <TokenVariable Key="PoisonAppliedDuration" Value="2"/>
          
          <!--Range Damage Steps-->
          <TokenVariable Key="NextThreshold" Value="(MinimumRangedDamageThreshold + (NumberOfStepsReached + 1) * RangedDamageStep)"/>
          <TokenVariable Key="NumberOfStepsReached" Value="(Floor(CurrentRangedDamageOverThreshold / RangedDamageStep))"/>
-         <TokenVariable Key="RangedDamageStep" Value="5"/>
+         <TokenVariable Key="RangedDamageStep" Value="25"/>
          <TokenVariable Key="CurrentRangedDamageOverThreshold" Value="(Max(0, Owner.RangedDamage - MinimumRangedDamageThreshold))"/>
          <TokenVariable Key="MinimumRangedDamageThreshold" Value="100"/>
       </TokenVariables>
@@ -1320,23 +1327,21 @@
 
    <PerkDefinition Id="Longstrider">
       <TokenVariables>
-         <TokenVariable Key="MomentumToAdd" Value="Floor(MomentumGainedPerSkill/MomentumThreshold)"/>
-         <TokenVariable Key="MomentumThreshold" Value="2"/>
+         <TokenVariable Key="MovePointsRestore" Value="Floor(MovePointsGainedPerSkill/MovePointsThreshold)"/>
+         <TokenVariable Key="MovePointsThreshold" Value="2"/>
          <TokenVariable Key="MomentumGainedPerSkill" Value="Max(0 , FinishTile - StartingTile)"/>
          <TokenVariable Key="StartingTile" Value="Module.Buffer"/>
          <TokenVariable Key="FinishTile" Value="Module.Buffer2"/>
       </TokenVariables>
       <LocArguments>
-         <LocArgument Value="MomentumThreshold" Style="GoodNb" />
-         <LocalizedArgument Value="SkillEffectName_Momentum" Style="Momentum"/>
+         <LocArgument Value="MovePointsThreshold" Style="GoodNb" />
+         <RestoreStatArgument Stat="MovePointsTotal" Value="1" DisplaySign="false" DisplayRestoreText="true"/>
          <LocalizedArgument Value="SkillEffectName_Follow" Style="Follow"/>
          <LocalizedArgument Value="SkillEffectName_Maneuver" Style="Maneuver"/>
-         <LocArgument Value="1" Style="GoodNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD/>
          <CompendiumEntries>
-            <CompendiumEntry Id="SkillEffect_Momentum"/>
             <CompendiumEntry Id="SkillEffect_Maneuver"/>
             <CompendiumEntry Id="SkillEffect_Follow"/>
          </CompendiumEntries>
@@ -1347,7 +1352,6 @@
                <Event EffectTime="OnSkillCastBegin">
                   <Conditions>
                      <IsTrue Value="Skill.HasManeuver"/>
-                     <IsFalse Value="Skill.HasNoMomentum"/>
                   </Conditions>
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer" Value="Owner.TilesCrossedThisTurn"/>
@@ -1356,7 +1360,6 @@
                <Event EffectTime="OnSkillCastEnd">
                   <Conditions>
                      <IsTrue Value="Skill.HasManeuver"/>
-                     <IsFalse Value="Skill.HasNoMomentum"/>
                   </Conditions>
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer2" Value="Owner.TilesCrossedThisTurn"/>
@@ -1366,7 +1369,6 @@
                <Event EffectTime="OnSkillCastBegin">
                   <Conditions>
                      <IsTrue Value="Skill.HasFollow"/>
-                     <IsFalse Value="Skill.HasNoMomentum"/>
                   </Conditions>
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer" Value="Owner.TilesCrossedThisTurn"/>
@@ -1375,7 +1377,6 @@
                <Event EffectTime="OnSkillCastEnd">
                   <Conditions>
                      <IsTrue Value="Skill.HasFollow"/>
-                     <IsFalse Value="Skill.HasNoMomentum"/>
                   </Conditions>
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer2" Value="Owner.TilesCrossedThisTurn"/>
@@ -1384,7 +1385,7 @@
                </Event>
             </Events>
             <Effects>
-               <MomentumModifier Value="MomentumToAdd"/>
+               <RestoreStat Stat="MovePoints" Value="MovePointsRestore"/>
                <ResetBuffer ResetValue="0"/>
             </Effects>
          </BufferModule>

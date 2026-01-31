@@ -1,0 +1,140 @@
+﻿﻿<!--<SkillDefinitions xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+
+                  xs:noNamespaceSchemaLocation="http://cccp-dev.cblue.be/tmp/tls/SkillDefinitions.xsd">-->
+
+
+
+<!--
+
+  - SkillDefinition
+
+    - Element ValidTargets (optional) :
+
+        If not specified, all targets are valid.
+
+        If specified, only mentioned targets are targetable.
+
+        Usable targets : PlayableUnits, EnemyUnits, EmptyTiles, Building Id="BuildingId", SlotEffect Id="SlotEffectId".
+
+        Example : 
+
+        <ValidTargets>
+
+          <SlotEffect Id="FillEffectGauge"></SlotEffect>
+
+        </ValidTargets>
+
+    - Element AttackEffects (optional) :
+
+        Example :
+
+        <AttackEffects>
+
+          <AttackEffect Id="ArmorPiercing"/>
+
+          <AttackEffect Id="NoBlock"/>
+
+        </AttackEffects>
+
+    - Element Conditions (optional) :
+
+        If not specified, the skill will always be displayed
+
+        If specified, all conditions need to be valid
+
+        Usable conditions : InWatchtower, TargetInRange, OnlyDuringPhase (Production OR Deployment OR Night. In the following example, the skill will be available 
+
+         during the production phase OR the night AND if the target is in range)
+
+        Example : 
+
+        <Conditions>
+
+          <OnlyDuringPhase>
+
+            <Production/>
+
+            <Night/>
+
+          </OnlyDuringPhase>
+
+          <TargetInRange/>
+
+        </Conditions>
+
+-->
+
+
+
+<SkillDefinitions xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+
+                  xs:noNamespaceSchemaLocation="SkillDefinitions.xsd">
+
+   <SkillDefinition Id="ExtinguishBrazier" IsContextual="true" IsBrazierSpecific="true">
+
+
+
+      <ValidTargets>
+
+         <BuildingCategory Category="LitBrazier"/>
+
+      </ValidTargets>
+
+      <InvalidCastDisplayBehaviour>DisplayedUnavailable</InvalidCastDisplayBehaviour>
+
+      <ContextualConditions>
+
+         <BuildingExist/>
+
+         <MaxTargetHealthLeft>10 + Level * 3</MaxTargetHealthLeft>
+
+      </ContextualConditions>
+
+      <ActionPointsCost>2</ActionPointsCost>
+
+      <Range Min="1" Max="1"/>
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <ExtinguishBrazier>
+
+                  <BrazierDamage>10</BrazierDamage>
+
+               </ExtinguishBrazier>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+
+
+      <CastFXs TotalDuration="0.2">
+
+         <SoundEffect>
+
+            <Path>00_Others/SFX_Skill_Extinguish_01</Path>
+
+            <Delay>0</Delay>
+
+         </SoundEffect>
+
+         <CamShake>
+
+            <Id>Soft Hit-CamShake</Id>
+
+            <Delay>0.2</Delay>
+
+         </CamShake>
+
+      </CastFXs>
+
+   </SkillDefinition>
+
+</SkillDefinitions>
+

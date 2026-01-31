@@ -1,0 +1,1870 @@
+﻿<UnitStatDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+                     xsi:noNamespaceSchemaLocation="UnitStatDefinitions.xsd">
+
+
+
+   <MagicDamagePercentageResistanceReduction Value="50"/>
+
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- Main Stats -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <UnitStatDefinition Id="Health" ParentStat="HealthTotal">
+
+      <CompendiumEntries>
+
+         <CompendiumEntry Id="GameConcept_Wounds"/>
+
+      </CompendiumEntries>
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>1000</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>100000</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>100000</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+   
+
+
+
+   <UnitStatDefinition Id="HealthTotal" ChildStat="Health">
+
+      <CompendiumEntries>
+
+         <CompendiumEntry Id="GameConcept_Wounds"/>
+
+      </CompendiumEntries>
+
+      <Boundaries UnitType="Playable">
+
+         <Min>50</Min>
+
+         <Max>1000</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>1</Min>
+
+         <Max>100000</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>100000</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+
+
+   <UnitStatDefinition Id="HealthRegen">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>1000</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>1000</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>2000</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+
+
+   <UnitStatDefinition Id="Mana" ParentStat="ManaTotal">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>140</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>1000</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>1000</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+
+
+   <UnitStatDefinition Id="ManaTotal" ChildStat="Mana">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>8</Min>
+
+         <Max>140</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>8</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>8</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+
+
+   <UnitStatDefinition Id="ManaRegen">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>140</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>1000</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>1000</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+
+
+   <UnitStatDefinition Id="ActionPoints" ParentStat="ActionPointsTotal">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>12</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+
+
+   <UnitStatDefinition Id="ActionPointsTotal" ChildStat="ActionPoints">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>1</Min>
+
+         <Max>12</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>1</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+
+
+   <UnitStatDefinition Id="MovePoints" ParentStat="MovePointsTotal">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>17</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+
+
+   <UnitStatDefinition Id="MovePointsTotal" ChildStat="MovePoints">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>3</Min>
+
+         <Max>17</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+   
+
+   <UnitStatDefinition Id="OverallDamage" ShownAsPercentage="1">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>-100</Min>
+
+         <Max>500</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>-100</Min>
+
+         <Max>500</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>-100</Min>
+
+         <Max>500</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+
+
+   <UnitStatDefinition Id="Critical" ShownAsPercentage="1">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+
+
+   <UnitStatDefinition Id="ResistanceReduction" ShownAsPercentage="1">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+
+
+   <UnitStatDefinition Id="Accuracy" ShownAsPercentage="1">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>-100</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>-100</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>-100</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+
+
+   <UnitStatDefinition Id="Armor" ParentStat="ArmorTotal">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>500</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>10000</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>10000</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+
+
+   <UnitStatDefinition Id="ArmorTotal" ChildStat="Armor">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>500</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>10000</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>10000</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+   
+
+
+
+   <UnitStatDefinition Id="Dodge" ShownAsPercentage="1">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>95</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>95</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>95</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+   
+
+
+
+   <UnitStatDefinition Id="Block">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>500</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>500</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+   
+
+   <UnitStatDefinition Id="Resistance" ShownAsPercentage="1">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>-50</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>-50</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>-50</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- Secondary Stats -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+
+
+   <UnitStatDefinition Id="PhysicalDamage" ShownAsPercentage="1">
+
+      <CompendiumEntries>
+
+         <CompendiumEntry Id="DamageType_Physical"/>
+
+      </CompendiumEntries>
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>200</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>200</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>200</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+
+
+   <UnitStatDefinition Id="RangedDamage" ShownAsPercentage="1">
+
+      <CompendiumEntries>
+
+         <CompendiumEntry Id="DamageType_Ranged"/>
+
+      </CompendiumEntries>
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>200</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>200</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>200</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+
+
+   <UnitStatDefinition Id="MagicalDamage" ShownAsPercentage="1">
+
+      <CompendiumEntries>
+
+         <CompendiumEntry Id="DamageType_Magical"/>
+
+      </CompendiumEntries>
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>200</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>200</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>200</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+   
+
+
+
+   <UnitStatDefinition Id="CriticalPower" ShownAsPercentage="1">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>100</Min>
+
+         <Max>500</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>100</Min>
+
+         <Max>500</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>100</Min>
+
+         <Max>500</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+   
+
+   <UnitStatDefinition Id="HealingReceived" ShownAsPercentage="1">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>33</Min>
+
+         <Max>400</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>33</Min>
+
+         <Max>400</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>33</Min>
+
+         <Max>400</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+   
+
+
+
+   <UnitStatDefinition Id="SkillRangeModifier">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>-2</Min>
+
+         <Max>8</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>-2</Min>
+
+         <Max>8</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>-2</Min>
+
+         <Max>8</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+   
+
+
+
+   <UnitStatDefinition Id="ExperienceGainMultiplier" ShownAsPercentage="1">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>50</Min>
+
+         <Max>300</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>50</Min>
+
+         <Max>300</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>50</Min>
+
+         <Max>300</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+
+
+   <UnitStatDefinition Id="Reliability" ShownAsPercentage="1">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+   
+
+
+
+   <UnitStatDefinition Id="StunChanceModifier" ShownAsPercentage="1">
+
+      <CompendiumEntries>
+
+         <CompendiumEntry Id="SkillEffect_Stun"/>
+
+      </CompendiumEntries>
+
+      <Boundaries UnitType="Playable">
+
+         <Min>-50</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>-50</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>-50</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+   
+
+   <UnitStatDefinition Id="StunResistance" ShownAsPercentage="1">
+
+      <CompendiumEntries>
+
+         <CompendiumEntry Id="SkillEffect_Stun"/>
+
+      </CompendiumEntries>
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>1000</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>10000</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+   
+
+   <UnitStatDefinition Id="PropagationBouncesModifier">
+
+      <CompendiumEntries>
+
+         <CompendiumEntry Id="SkillEffect_Propagation"/>
+
+      </CompendiumEntries>
+
+      <Boundaries UnitType="Playable">
+
+         <Min>-2</Min>
+
+         <Max>8</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>-2</Min>
+
+         <Max>8</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>-2</Min>
+
+         <Max>8</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+   
+
+   <UnitStatDefinition Id="PropagationDamage" ShownAsPercentage="1">
+
+      <CompendiumEntries>
+
+         <CompendiumEntry Id="SkillEffect_Propagation"/>
+
+      </CompendiumEntries>
+
+      <Boundaries UnitType="Playable">
+
+         <Min>90</Min>
+
+         <Max>105</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>90</Min>
+
+         <Max>105</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>90</Min>
+
+         <Max>105</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+
+
+   <UnitStatDefinition Id="MomentumAttacks" ShownAsPercentage="1">
+
+      <CompendiumEntries>
+
+         <CompendiumEntry Id="SkillEffect_Momentum"/>
+
+      </CompendiumEntries>
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+   
+
+   <UnitStatDefinition Id="OpportunisticAttacks" ShownAsPercentage="1">
+
+      <CompendiumEntries>
+
+         <CompendiumEntry Id="GameConcept_NegativeAlterations"/>
+
+      </CompendiumEntries>
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>500</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>500</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>500</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+   
+
+   <UnitStatDefinition Id="IsolatedAttacks" ShownAsPercentage="1">
+
+      <CompendiumEntries>
+
+         <CompendiumEntry Id="GameConcept_Isolated"/>
+
+      </CompendiumEntries>
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>500</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>500</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>500</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+   
+
+   <UnitStatDefinition Id="ArmorShreddingAttacks" ShownAsPercentage="1">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>300</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>300</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>300</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+   
+
+   <UnitStatDefinition Id="PoisonDamageModifier" ShownAsPercentage="1">
+
+      <CompendiumEntries>
+
+         <CompendiumEntry Id="SkillEffect_Poison"/>
+
+      </CompendiumEntries>
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>500</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>500</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>500</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+   
+
+   <UnitStatDefinition Id="MultiHitsCountModifier">
+
+      <CompendiumEntries>
+
+         <CompendiumEntry Id="SkillEffect_MultiHit"/>
+
+      </CompendiumEntries>
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>5</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>5</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>5</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+   
+
+
+
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- Perks Stats -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   
+
+   <UnitStatDefinition Id="PoisonDurationModifier">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>-5</Min>
+
+         <Max>10</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+   
+
+
+
+   <UnitStatDefinition Id="DebuffDurationModifier">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>-5</Min>
+
+         <Max>10</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+   
+
+   <UnitStatDefinition Id="BuffDurationModifier">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>10</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+   
+
+   <UnitStatDefinition Id="PotionRangeModifier">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>1000</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+   
+
+   
+
+   <!-- [GAMESAVE WIPE DELETE] -->
+
+   <UnitStatDefinition Id="MagicDamageReductionModifier">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+   
+
+   
+
+   <UnitStatDefinition Id="PercentageResistanceReduction">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+   
+
+
+
+   <UnitStatDefinition Id="BonusSkillUses">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>10</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+   
+
+   <UnitStatDefinition Id="BonusUsableItemsUses">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>10</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+   
+
+
+
+   <UnitStatDefinition Id="StunDurationModifier">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>-5</Min>
+
+         <Max>10</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+   
+
+   <UnitStatDefinition Id="ContagionDurationModifier">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>-5</Min>
+
+         <Max>10</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+	<!-- Biggs -->
+
+	<UnitStatDefinition Id="GauntletRangeModifier">
+
+		<Boundaries UnitType="Playable">
+
+			<Min>0</Min>
+
+			<Max>1000</Max>
+
+		</Boundaries>
+
+		<Boundaries UnitType="Enemy">
+
+			<Min>0</Min>
+
+			<Max>0</Max>
+
+		</Boundaries>
+
+		<Boundaries UnitType="Boss">
+
+			<Min>0</Min>
+
+			<Max>0</Max>
+
+		</Boundaries>
+
+	</UnitStatDefinition>
+
+
+
+   <UnitStatDefinition Id="BonusMainHandSkillUses">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>10</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- Enemis Only Stats -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   <UnitStatDefinition Id="Panic">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+
+
+   <UnitStatDefinition Id="ExperienceGain">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>1000</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>10000</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+   
+
+   <UnitStatDefinition Id="EnemyEvolutionDamageMultiplier" ShownAsPercentage="1">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>100</Min>
+
+         <Max>1000</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>100</Min>
+
+         <Max>100</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+   
+
+   <UnitStatDefinition Id="DamnedSoulsEarned">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>0</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>1000</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>1000</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+   
+
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- Misc Hidden Stats -->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+
+   
+
+   <UnitStatDefinition Id="InjuryDamageMultiplier" ShownAsPercentage="1">
+
+      <Boundaries UnitType="Playable">
+
+         <Min>0</Min>
+
+         <Max>200</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Enemy">
+
+         <Min>0</Min>
+
+         <Max>200</Max>
+
+      </Boundaries>
+
+      <Boundaries UnitType="Boss">
+
+         <Min>0</Min>
+
+         <Max>200</Max>
+
+      </Boundaries>
+
+   </UnitStatDefinition>
+
+
+
+</UnitStatDefinitions>
+

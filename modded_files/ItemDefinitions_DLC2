@@ -195,6 +195,9 @@
         <Perks>
           <Perk>BloodDrinker</Perk>
         </Perks>
+        <BaseStatBonuses>
+          <BaseStatBonus Stat="CriticalPower">15</BaseStatBonus>
+        </BaseStatBonuses>
       </Level>
       <Level Id="1">
         <BaseDamage Min="64" Max="128" />
@@ -208,6 +211,9 @@
         <Perks>
           <Perk>BloodDrinker</Perk>
         </Perks>
+        <BaseStatBonuses>
+          <BaseStatBonus Stat="CriticalPower">18</BaseStatBonus>
+        </BaseStatBonuses>
       </Level>
       <Level Id="2">
         <BaseDamage Min="71" Max="141" />
@@ -221,6 +227,9 @@
         <Perks>
           <Perk>BloodDrinker</Perk>
         </Perks>
+        <BaseStatBonuses>
+          <BaseStatBonus Stat="CriticalPower">21</BaseStatBonus>
+        </BaseStatBonuses>
       </Level>
       <Level Id="3">
         <BaseDamage Min="78" Max="155" />
@@ -234,6 +243,9 @@
         <Perks>
           <Perk>BloodDrinker</Perk>
         </Perks>
+        <BaseStatBonuses>
+          <BaseStatBonus Stat="CriticalPower">24</BaseStatBonus>
+        </BaseStatBonuses>
       </Level>
       <Level Id="4">
         <BaseDamage Min="86" Max="171" />
@@ -247,6 +259,9 @@
         <Perks>
           <Perk>BloodDrinker</Perk>
         </Perks>
+        <BaseStatBonuses>
+          <BaseStatBonus Stat="CriticalPower">27</BaseStatBonus>
+        </BaseStatBonuses>
       </Level>
       <Level Id="5">
         <BaseDamage Min="94" Max="188" />
@@ -260,6 +275,9 @@
         <Perks>
           <Perk>BloodDrinker</Perk>
         </Perks>
+        <BaseStatBonuses>
+          <BaseStatBonus Stat="CriticalPower">30</BaseStatBonus>
+        </BaseStatBonuses>
       </Level>
     </LevelVariations>
   </ItemDefinition>
@@ -1953,27 +1971,27 @@
     <Category>Trinket</Category>
     <LevelVariations>
       <Level Id="2">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>42</BasePrice>
         <Perks>
           <Perk>ViciousKiller</Perk>
         </Perks>
       </Level>
       <Level Id="3">
+        <MainStatBonus Stat="Reliability">15</MainStatBonus>
         <BasePrice>59</BasePrice>
         <Perks>
           <Perk>ViciousKiller</Perk>
         </Perks>
       </Level>
       <Level Id="4">
-        <MainStatBonus Stat="Reliability">28</MainStatBonus>
+        <MainStatBonus Stat="Reliability">30</MainStatBonus>
         <BasePrice>83</BasePrice>
         <Perks>
           <Perk>ViciousKiller</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="Reliability">30</MainStatBonus>
+        <MainStatBonus Stat="Reliability">45</MainStatBonus>
         <BasePrice>115</BasePrice>
         <Perks>
           <Perk>ViciousKiller</Perk>
@@ -1985,21 +2003,8 @@
   <ItemDefinition Id="MedalPerkMercyKill">
     <Category>Trinket</Category>
     <LevelVariations>
-      <Level Id="2">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
-        <BasePrice>42</BasePrice>
-        <Perks>
-          <Perk>MercyKill</Perk>
-        </Perks>
-      </Level>
-      <Level Id="3">
-        <BasePrice>53</BasePrice>
-        <Perks>
-          <Perk>MercyKill</Perk>
-        </Perks>
-      </Level>
       <Level Id="4">
-        <MainStatBonus Stat="PoisonDamageModifier">16</MainStatBonus>
+        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>70</BasePrice>
         <Perks>
           <Perk>MercyKill</Perk>
@@ -2019,20 +2024,20 @@
     <Category>Trinket</Category>
     <LevelVariations>
       <Level Id="3">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>65</BasePrice>
         <Perks>
           <Perk>PlagueDoctor</Perk>
         </Perks>
       </Level>
       <Level Id="4">
+        <MainStatBonus Stat="OpportunisticAttacks">7</MainStatBonus>
         <BasePrice>93</BasePrice>
         <Perks>
           <Perk>PlagueDoctor</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="OpportunisticAttacks">13</MainStatBonus>
+        <MainStatBonus Stat="OpportunisticAttacks">14</MainStatBonus>
         <BasePrice>118</BasePrice>
         <Perks>
           <Perk>PlagueDoctor</Perk>
@@ -2045,20 +2050,20 @@
     <Category>Trinket</Category>
     <LevelVariations>
       <Level Id="3">
-        <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
         <BasePrice>65</BasePrice>
         <Perks>
           <Perk>Longstrider</Perk>
         </Perks>
       </Level>
       <Level Id="4">
+        <MainStatBonus Stat="MomentumAttacks">5</MainStatBonus>
         <BasePrice>90</BasePrice>
         <Perks>
           <Perk>Longstrider</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="MomentumAttacks">8</MainStatBonus>
+        <MainStatBonus Stat="MomentumAttacks">10</MainStatBonus>
         <BasePrice>123</BasePrice>
         <Perks>
           <Perk>Longstrider</Perk>
