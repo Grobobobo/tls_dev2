@@ -1063,11 +1063,11 @@
    <!-- T1 -->
    <PerkDefinition Id="SteadyAim">
       <TokenVariables>
-         <TokenVariable Key="AccuracyBonus" Value="10"/>
+         <TokenVariable Key="RangedDamageBonus" Value="12"/>
          <TokenVariable Key="SkillRangeModifier" Value="2"/>
       </TokenVariables>
       <LocArguments>
-         <StatArgument Stat="Accuracy" Value="AccuracyBonus"/>
+         <StatArgument Stat="RangedDamage" Value="RangedDamageBonus"/>
          <StatArgument Stat="SkillRangeModifier" Value="SkillRangeModifier"/>
       </LocArguments>
       <View>
@@ -1103,7 +1103,7 @@
                </Event>
             </Events>
             <Effects>
-               <StatModifier Stat="Accuracy" Value="AccuracyBonus"/>
+               <StatModifier Stat="RangedDamage" Value="RangedDamageBonus"/>
                <StatModifier Stat="SkillRangeModifier" Value="SkillRangeModifier"/>
             </Effects>
          </BufferModule>
@@ -1195,11 +1195,13 @@
          <TokenVariable Key="RemainingEnemiesToHit" Value="Max(0, HitThreshold - Module.Buffer)"/>
          <TokenVariable Key="ThresholdIsReached" Value="Module.Buffer > HitThreshold - 1"/>
          <TokenVariable Key="ThresholdWasReached" Value="Module.Buffer2 > HitThreshold - 1"/>
-         <TokenVariable Key="HitThreshold" Value="2"/>
+         <TokenVariable Key="HitThreshold" Value="3"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="HitThreshold" Style="KeyWordNb"/>
          <LocalizedArgument Value="SkillEffectName_IgnoreLineOfSight" Style="Vision"/>
+         <LocalizedArgument Value="SkillEffectName_ArmorPiercing" Style="ArmorPiercing"/>
+         <LocalizedArgument Value="SkillEffectName_NoBlock" Style="NoBlock"/>
          <LocArgument Value="RemainingEnemiesToHit" Interpreted="true" Style="KeyWordNb"/>
       </LocArguments>
       <View>
@@ -1219,6 +1221,8 @@
          </DisplayInHUD>
          <CompendiumEntries>
             <CompendiumEntry Id="SkillEffect_IgnoreLineOfSight"/>
+            <CompendiumEntry Id="SkillEffect_IgnoreArmor"/>
+            <CompendiumEntry Id="SkillEffect_NoBlock"/>
          </CompendiumEntries>
          <FeedbackActivationConditions>
             <IsTrue Value="ThresholdIsReached"/>
@@ -1283,6 +1287,8 @@
                   </Conditions>
                   <SkillEffects>
                      <IgnoreLineOfSight/>
+                     <ArmorPiercing/>
+                     <NoBlock/>
                   </SkillEffects>
                </AddSkillEffect>
             </Effects>
@@ -1315,7 +1321,7 @@
    <!-- T3 -->
    <PerkDefinition Id="LongerWeapons">
       <TokenVariables>
-         <TokenVariable Key="SkillRangeBonus" Value="2"/>
+         <TokenVariable Key="SkillRangeBonus" Value="3"/>
          <TokenVariable Key="DistanceForMalus" Value="5"/>
          <TokenVariable Key="UnreliableMultiplier" Value="0.5"/>
       </TokenVariables>
@@ -1364,7 +1370,7 @@
    
    <PerkDefinition Id="ShorterWeapons">
       <TokenVariables>
-         <TokenVariable Key="SkillRangeMalus" Value="-2"/>
+         <TokenVariable Key="SkillRangeMalus" Value="-1"/>
          <TokenVariable Key="MinDistanceForBonus" Value="2"/>
          <TokenVariable Key="MaxDistanceForBonus" Value="6"/>
       </TokenVariables>
@@ -1430,11 +1436,13 @@
    <PerkDefinition Id="FieldStudy">
       <TokenVariables>
          <TokenVariable Key="CurrentSkillRangeModifierBonus" Value="Module.Buffer2 * SkillRangeModifierBonus"/>
+         <TokenVariable Key="CurrentResistanceReductionBonus" Value="Module.Buffer2 * ResistanceReductionBonus"/>
          <TokenVariable Key="BonusStacksGrantedByCurrentTrigger" Value="Floor(Module.Buffer / EnemyUnitsToKill)"/>
          <TokenVariable Key="RemainingEnemiesToKill" Value="EnemyUnitsToKill - Min(Module.Buffer,EnemyUnitsToKill)"/>
-         <TokenVariable Key="EnemyUnitsToKill" Value="12"/>
-         <TokenVariable Key="MinimumDistanceToIncreaseBuffer" Value="4"/>
+         <TokenVariable Key="EnemyUnitsToKill" Value="8"/>
+         <TokenVariable Key="MinimumDistanceToIncreaseBuffer" Value="6"/>
          <TokenVariable Key="SkillRangeModifierBonus" Value="1"/>
+         <TokenVariable Key="ResistanceReductionBonus" Value="5"/>
          <TokenVariable Key="BaseGameSkillRangeCap" Value="8"/> <!--The base game value of max skill range, to be updated manually-->
          <TokenVariable Key="AdditionnalSkillRangeCap" Value="8"/>
       </TokenVariables>
@@ -1446,10 +1454,13 @@
          <StatArgument Stat="SkillRangeModifier" Value="SkillRangeModifierBonus"/>
          <StatArgument Stat="SkillRangeModifier" Value="CurrentSkillRangeModifierBonus" Interpreted="true"/>
          <LocArgument Value="RemainingEnemiesToKill" Interpreted="true" Style="KeyWordNb"/>
+         <StatArgument Stat="ResistanceReduction" Value="ResistanceReductionBonus"/>
+         <StatArgument Stat="ResistanceReduction" Value="CurrentResistanceReductionBonus" Interpreted="true"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
             <Bonus Value="CurrentSkillRangeModifierBonus"/>
+            <Bonus Value="CurrentResistanceReductionBonus"/>
             <Buffer Value="RemainingEnemiesToKill"/>
             <Highlight>
                <IsTrue Value="HasTargetTile"/>
@@ -1470,7 +1481,7 @@
                <Event EffectTime="OnTargetKilled">
                   <Conditions>
                      <IsTrue Value="IsTargetEnemyUnit"/>
-                     <IsTrue Value="TargetUnitDistanceFromCastedSkill > MinimumDistanceToIncreaseBuffer - 1"/>
+                     <IsTrue Value="TargetUnitDistanceFromCaster > MinimumDistanceToIncreaseBuffer - 1"/>
                   </Conditions>
                   <Actions>
                      <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
@@ -1483,12 +1494,14 @@
                   <Actions>
                      <IncreaseBuffer BufferIndex="Buffer2" Value="BonusStacksGrantedByCurrentTrigger"/>
                      <InstantiateStatEffectDisplay Stat="SkillRangeModifier" Value="BonusStacksGrantedByCurrentTrigger * SkillRangeModifierBonus"/>
+                     <InstantiateStatEffectDisplay Stat="ResistanceReduction" Value="BonusStacksGrantedByCurrentTrigger * ResistanceReductionBonus"/>
                      <SetBufferTo BufferIndex="Buffer" Value="Module.Buffer % EnemyUnitsToKill"/>
                   </Actions>
                </Event>
             </Events>
             <Effects>
                <StatModifier Stat="SkillRangeModifier" Value="CurrentSkillRangeModifierBonus"/>
+               <StatModifier Stat="ResistanceReduction" Value="CurrentResistanceReductionBonus"/>
                <StatBoundaryModifier Stat="SkillRangeModifier" MaxModifier="AdditionnalSkillRangeCap"/>
             </Effects>
          </BufferModule>
@@ -1627,7 +1640,7 @@
                   <Conditions>
                      <IsTrue Value="IsTargetEnemyUnit"/>
                      <IsTrue Value="Skill.IsAttack"/>
-                     <IsTrue Value="TargetUnitDistanceFromCastedSkill > TargetMinDistanceToActivate - 1" />
+                     <IsTrue Value="TargetUnitDistanceFromCaster > TargetMinDistanceToActivate - 1" />
                      <IsFalse Value="TargetUnit.HealthTotal > AttackData.HealthDamage"/>
                   </Conditions>
                   <Actions>
@@ -2584,7 +2597,7 @@
       <TokenVariables>
          <TokenVariable Key="XPMultiplier" Value="KillerMultiplier * WaveMultiplier"/>
          <TokenVariable Key="KillerMultiplier" Value="KillerBonusExperienceFactor"/>
-         <TokenVariable Key="WaveMultiplier" Value="CurrentWaveXpAdjustmentMultiplier"/>
+         <TokenVariable Key="WaveMultiplier" Value="CurrentWavePercentageModifier"/>
       </TokenVariables>
       <View>
          <DisplayInHUD/>
@@ -2633,8 +2646,6 @@
             <SkillToShow Id="ManualControlCatapult"/>
             <SkillToShow Id="ManualControlBallista"/>
             <SkillToShow Id="ManualControlBallistaTower"/>
-            <SkillToShow Id="ManualControlBallistaHeavy"/>
-            <SkillToShow Id="ManualControlBallistaSplit"/>
             <SkillToShow Id="ManualControlStunTrap"/>
             <SkillToShow Id="ManualControlSlowTrap"/>
             <SkillToShow Id="ManualControlDamageTrap"/>
@@ -2649,8 +2660,6 @@
                <UnlockContextualSkill ContextualSkillId="ManualControlCatapult"/>
                <UnlockContextualSkill ContextualSkillId="ManualControlBallista"/>
                <UnlockContextualSkill ContextualSkillId="ManualControlBallistaTower"/>
-               <UnlockContextualSkill ContextualSkillId="ManualControlBallistaHeavy"/>
-               <UnlockContextualSkill ContextualSkillId="ManualControlBallistaSplit"/>
                <UnlockContextualSkill ContextualSkillId="ManualControlStunTrap"/>
                <UnlockContextualSkill ContextualSkillId="ManualControlSlowTrap"/>
                <UnlockContextualSkill ContextualSkillId="ManualControlDamageTrap"/>
@@ -2994,7 +3003,7 @@
          <BufferModule>
             <Effects>
                <StatModifier Stat="HealthTotal" Value="HealthTotalBonus" ChildStatFollows="false"/>
-               <StatModifier ComputationStat="OverallDamage" Value="PerkDamageBonus"/>
+               <SkillModifier ComputationStat="OverallDamage" Value="PerkDamageBonus"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -3143,7 +3152,7 @@
      <LocArguments>
          <StatArgument Stat="MultiHitsCountModifier" Value="MultiHitBonus"/>
          <StatArgument Stat="PropagationBouncesModifier" Value="PropagationBouncesBonus"/>
-         <StatArgument Stat="StunChance" Value="StunChanceBonus"/>
+         <StatArgument Stat="StunChanceModifier" Value="StunChanceBonus"/>
      </LocArguments>
       <View>
          <DisplayInHUD>
@@ -3175,7 +3184,7 @@
             <Effects>
                <StatModifier Stat="MultiHitsCountModifier" Value="MultiHitBonus"/>
                <StatModifier Stat="PropagationBouncesModifier" Value="PropagationBouncesBonus"/>
-               <StatModifier Stat="StunChance" Value="StunChanceBonus"/>
+               <StatModifier Stat="StunChanceModifier" Value="StunChanceBonus"/>
             </Effects>
          </BufferModule>
       </Modules>
