@@ -765,6 +765,11 @@
   </ItemDefinition>
 
   <ItemDefinition Id="Boomerang2">
+    <Category>RangeWeapon</Category>
+    <Tags>
+      <Tag>Boomerang</Tag>
+    </Tags>
+    <Hands>OneHand</Hands>
     <LevelVariations>
       <Level Id="0">
         <BaseDamage Min="82" Max="102" />

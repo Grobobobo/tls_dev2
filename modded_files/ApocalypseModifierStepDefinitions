@@ -21,7 +21,7 @@
    <ApocalypseModifierStepDefinition Id="EnemyHealthModifier_1">
       <ApocalypseLevel>2</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="HealthModifier" Value="20"/>
+         <TokenVariable Key="HealthModifier" Value="10"/>
       </TokenVariables>
       <Effects>
          <EnemiesStatBaseValueModifier Stat="HealthTotal" Value="HealthModifier">
@@ -39,14 +39,14 @@
    <ApocalypseModifierStepDefinition Id="EnemyHealthModifier_2" TemplateId="EnemyHealthModifier_1">
       <ApocalypseLevel>4</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="HealthModifier" Value="35"/>
+         <TokenVariable Key="HealthModifier" Value="20"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="EnemyHealthModifier_3" TemplateId="EnemyHealthModifier_1">
       <ApocalypseLevel>6</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="HealthModifier" Value="50"/>
+         <TokenVariable Key="HealthModifier" Value="30"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 
@@ -124,7 +124,7 @@
    <ApocalypseModifierStepDefinition Id="WaveSizeModifier_1">
       <ApocalypseLevel>2</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="WavesSizeModifier" Value="15"/>
+         <TokenVariable Key="WavesSizeModifier" Value="10"/>
       </TokenVariables>
       <Effects>
          <IncreaseEnemiesNumber Value="WavesSizeModifier"/>
@@ -140,14 +140,14 @@
    <ApocalypseModifierStepDefinition Id="WaveSizeModifier_2" TemplateId="WaveSizeModifier_1">
       <ApocalypseLevel>4</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="WavesSizeModifier" Value="30"/>
+         <TokenVariable Key="WavesSizeModifier" Value="20"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="WaveSizeModifier_3" TemplateId="WaveSizeModifier_1">
       <ApocalypseLevel>6</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="WavesSizeModifier" Value="45"/>
+         <TokenVariable Key="WavesSizeModifier" Value="30"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 
@@ -360,7 +360,7 @@
    <ApocalypseModifierStepDefinition Id="ClawerQuantityModifier_1">
       <ApocalypseLevel>3</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="WeightMultiplier" Value="0.3"/>
+         <TokenVariable Key="WeightMultiplier" Value="0.25"/>
          <TokenVariable Key="WeightMultiplierPercentage" Value="WeightMultiplier * 100"/>
       </TokenVariables>
       <Effects>
@@ -379,14 +379,14 @@
    <ApocalypseModifierStepDefinition Id="ClawerQuantityModifier_2" TemplateId="ClawerQuantityModifier_1">
       <ApocalypseLevel>6</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="WeightMultiplier" Value="0.6"/>
+         <TokenVariable Key="WeightMultiplier" Value="0.5"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="ClawerQuantityModifier_3" TemplateId="ClawerQuantityModifier_1">
       <ApocalypseLevel>9</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="WeightMultiplier" Value="0.9"/>
+         <TokenVariable Key="WeightMultiplier" Value="0.75"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 
