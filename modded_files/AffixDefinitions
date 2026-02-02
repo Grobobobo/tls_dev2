@@ -16,17 +16,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="ArmorTotal">15</Modifier>
+            <Modifier Stat="ArmorTotal">23</Modifier>
          </Level>
          <Level Id="2">
-            <Modifier Stat="ArmorTotal">25</Modifier>
+            <Modifier Stat="ArmorTotal">34</Modifier>
          </Level>
          <Level Id="3">
-            <Modifier Stat="ArmorTotal">32</Modifier>
+            <Modifier Stat="ArmorTotal">45</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="ArmorTotal">12</Modifier>
+         <Modifier Stat="ArmorTotal">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
    
@@ -45,17 +45,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="Resistance">3</Modifier>
+            <Modifier Stat="Resistance">5</Modifier>
          </Level>
          <Level Id="2">
-            <Modifier Stat="Resistance">6</Modifier>
+            <Modifier Stat="Resistance">8</Modifier>
          </Level>
          <Level Id="3">
-            <Modifier Stat="Resistance">7</Modifier>
+            <Modifier Stat="Resistance">10</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="Resistance">2</Modifier>
+         <Modifier Stat="Resistance">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
 
@@ -74,17 +74,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="Block">3</Modifier>
-         </Level>
-         <Level Id="2">
             <Modifier Stat="Block">5</Modifier>
          </Level>
+         <Level Id="2">
+            <Modifier Stat="Block">8</Modifier>
+         </Level>
          <Level Id="3">
-            <Modifier Stat="Block">6</Modifier>
+            <Modifier Stat="Block">10</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="Block">3</Modifier>
+         <Modifier Stat="Block">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
    
@@ -103,17 +103,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="Dodge">3</Modifier>
-         </Level>
-         <Level Id="2">
             <Modifier Stat="Dodge">6</Modifier>
          </Level>
+         <Level Id="2">
+            <Modifier Stat="Dodge">9</Modifier>
+         </Level>
          <Level Id="3">
-            <Modifier Stat="Dodge">8</Modifier>
+            <Modifier Stat="Dodge">12</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="Dodge">3</Modifier>
+         <Modifier Stat="Dodge">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
    
@@ -132,17 +132,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="HealthTotal">15</Modifier>
+            <Modifier Stat="HealthTotal">30</Modifier>
          </Level>
          <Level Id="2">
-            <Modifier Stat="HealthTotal">25</Modifier>
+            <Modifier Stat="HealthTotal">45</Modifier>
          </Level>
          <Level Id="3">
-            <Modifier Stat="HealthTotal">30</Modifier>
+            <Modifier Stat="HealthTotal">60</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="HealthTotal">15</Modifier>
+         <Modifier Stat="HealthTotal">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
 
@@ -161,17 +161,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="HealthRegen">8</Modifier>
+            <Modifier Stat="HealthRegen">16</Modifier>
          </Level>
          <Level Id="2">
-            <Modifier Stat="HealthRegen">13</Modifier>
+            <Modifier Stat="HealthRegen">24</Modifier>
          </Level>
          <Level Id="3">
-            <Modifier Stat="HealthRegen">17</Modifier>
+            <Modifier Stat="HealthRegen">32</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="HealthRegen">8</Modifier>
+         <Modifier Stat="HealthRegen">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
 
@@ -190,17 +190,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="ManaTotal">5</Modifier>
+            <Modifier Stat="ManaTotal">7</Modifier>
          </Level>
          <Level Id="2">
-            <Modifier Stat="ManaTotal">9</Modifier>
+            <Modifier Stat="ManaTotal">12</Modifier>
          </Level>
          <Level Id="3">
-            <Modifier Stat="ManaTotal">11</Modifier>
+            <Modifier Stat="ManaTotal">15</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="ManaTotal">4</Modifier>
+         <Modifier Stat="ManaTotal">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
    
@@ -219,17 +219,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="ManaRegen">2</Modifier>
+            <Modifier Stat="ManaRegen">4</Modifier>
          </Level>
          <Level Id="2">
-            <Modifier Stat="ManaRegen">3</Modifier>
+            <Modifier Stat="ManaRegen">6</Modifier>
          </Level>
          <Level Id="3">
-            <Modifier Stat="ManaRegen">4</Modifier>
+            <Modifier Stat="ManaRegen">8</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="ManaRegen">2</Modifier>
+         <Modifier Stat="ManaRegen">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
    
@@ -255,11 +255,11 @@
             <Modifier Stat="MovePointsTotal">2</Modifier>
          </Level>
          <Level Id="3">
-            <Modifier Stat="MovePointsTotal">2</Modifier>
+            <Modifier Stat="MovePointsTotal">3</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="MovePointsTotal">1</Modifier>
+         <Modifier Stat="MovePointsTotal">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
 
@@ -285,7 +285,7 @@
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="ActionPointsTotal">1</Modifier>
+         <Modifier Stat="ActionPointsTotal">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
 
@@ -304,17 +304,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="OverallDamage">3</Modifier>
+            <Modifier Stat="OverallDamage">5</Modifier>
          </Level>
          <Level Id="2">
-            <Modifier Stat="OverallDamage">6</Modifier>
+            <Modifier Stat="OverallDamage">8</Modifier>
          </Level>
          <Level Id="3">
-            <Modifier Stat="OverallDamage">8</Modifier>
+            <Modifier Stat="OverallDamage">10</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="OverallDamage">3</Modifier>
+         <Modifier Stat="OverallDamage">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
    
@@ -333,17 +333,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="Critical">4</Modifier>
+            <Modifier Stat="Critical">5</Modifier>
          </Level>
          <Level Id="2">
-            <Modifier Stat="Critical">6</Modifier>
+            <Modifier Stat="Critical">7</Modifier>
          </Level>
          <Level Id="3">
-            <Modifier Stat="Critical">7</Modifier>
+            <Modifier Stat="Critical">9</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="Critical">3</Modifier>
+         <Modifier Stat="Critical">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
 
@@ -362,17 +362,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="ResistanceReduction">5</Modifier>
-         </Level>
-         <Level Id="2">
             <Modifier Stat="ResistanceReduction">8</Modifier>
          </Level>
+         <Level Id="2">
+            <Modifier Stat="ResistanceReduction">11</Modifier>
+         </Level>
          <Level Id="3">
-            <Modifier Stat="ResistanceReduction">10</Modifier>
+            <Modifier Stat="ResistanceReduction">15</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="ResistanceReduction">3</Modifier>
+         <Modifier Stat="ResistanceReduction">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
    
@@ -391,17 +391,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="Accuracy">5</Modifier>
+            <Modifier Stat="Accuracy">6</Modifier>
          </Level>
          <Level Id="2">
-            <Modifier Stat="Accuracy">8</Modifier>
+            <Modifier Stat="Accuracy">9</Modifier>
          </Level>
          <Level Id="3">
-            <Modifier Stat="Accuracy">10</Modifier>
+            <Modifier Stat="Accuracy">12</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="Accuracy">3</Modifier>
+         <Modifier Stat="Accuracy">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
    
@@ -420,14 +420,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="ExperienceGainMultiplier">8</Modifier>
+            <Modifier Stat="ExperienceGainMultiplier">10</Modifier>
          </Level>
          <Level Id="2">
-            <Modifier Stat="ExperienceGainMultiplier">13</Modifier>
+            <Modifier Stat="ExperienceGainMultiplier">15</Modifier>
+         </Level>
+         <Level Id="3">
+            <Modifier Stat="ExperienceGainMultiplier">20</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="ExperienceGainMultiplier">6</Modifier>
+         <Modifier Stat="ExperienceGainMultiplier">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
 
@@ -446,17 +449,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="HealingReceived">20</Modifier>
+            <Modifier Stat="HealingReceived">23</Modifier>
          </Level>
          <Level Id="2">
-            <Modifier Stat="HealingReceived">30</Modifier>
+            <Modifier Stat="HealingReceived">34</Modifier>
          </Level>
          <Level Id="3">
-            <Modifier Stat="HealingReceived">40</Modifier>
+            <Modifier Stat="HealingReceived">45</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="HealingReceived">15</Modifier>
+         <Modifier Stat="HealingReceived">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
 
@@ -475,17 +478,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="CriticalPower">10</Modifier>
+            <Modifier Stat="CriticalPower">13</Modifier>
          </Level>
          <Level Id="2">
-            <Modifier Stat="CriticalPower">20</Modifier>
+            <Modifier Stat="CriticalPower">19</Modifier>
          </Level>
          <Level Id="3">
             <Modifier Stat="CriticalPower">25</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="CriticalPower">10</Modifier>
+         <Modifier Stat="CriticalPower">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
 
@@ -504,17 +507,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="Reliability">7</Modifier>
-         </Level>
-         <Level Id="2">
             <Modifier Stat="Reliability">13</Modifier>
          </Level>
+         <Level Id="2">
+            <Modifier Stat="Reliability">19</Modifier>
+         </Level>
          <Level Id="3">
-            <Modifier Stat="Reliability">16</Modifier>
+            <Modifier Stat="Reliability">25</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="Reliability">6</Modifier>
+         <Modifier Stat="Reliability">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
 
@@ -533,17 +536,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="PhysicalDamage">3</Modifier>
-         </Level>
-         <Level Id="2">
             <Modifier Stat="PhysicalDamage">5</Modifier>
          </Level>
+         <Level Id="2">
+            <Modifier Stat="PhysicalDamage">7</Modifier>
+         </Level>
          <Level Id="3">
-            <Modifier Stat="PhysicalDamage">6</Modifier>
+            <Modifier Stat="PhysicalDamage">9</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="PhysicalDamage">2</Modifier>
+         <Modifier Stat="PhysicalDamage">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
 
@@ -562,17 +565,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="MagicalDamage">3</Modifier>
-         </Level>
-         <Level Id="2">
             <Modifier Stat="MagicalDamage">5</Modifier>
          </Level>
+         <Level Id="2">
+            <Modifier Stat="MagicalDamage">7</Modifier>
+         </Level>
          <Level Id="3">
-            <Modifier Stat="MagicalDamage">6</Modifier>
+            <Modifier Stat="MagicalDamage">9</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="MagicalDamage">2</Modifier>
+         <Modifier Stat="MagicalDamage">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
 
@@ -591,17 +594,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="RangedDamage">3</Modifier>
-         </Level>
-         <Level Id="2">
             <Modifier Stat="RangedDamage">5</Modifier>
          </Level>
+         <Level Id="2">
+            <Modifier Stat="RangedDamage">7</Modifier>
+         </Level>
          <Level Id="3">
-            <Modifier Stat="RangedDamage">6</Modifier>
+            <Modifier Stat="RangedDamage">9</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="RangedDamage">2</Modifier>
+         <Modifier Stat="RangedDamage">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
    
@@ -620,17 +623,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="StunChanceModifier">5</Modifier>
+            <Modifier Stat="StunChanceModifier">8</Modifier>
          </Level>
          <Level Id="2">
-            <Modifier Stat="StunChanceModifier">9</Modifier>
+            <Modifier Stat="StunChanceModifier">11</Modifier>
          </Level>
          <Level Id="3">
-            <Modifier Stat="StunChanceModifier">11</Modifier>
+            <Modifier Stat="StunChanceModifier">15</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="StunChanceModifier">4</Modifier>
+         <Modifier Stat="StunChanceModifier">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
 
@@ -649,17 +652,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="PoisonDamageModifier">10</Modifier>
+            <Modifier Stat="PoisonDamageModifier">13</Modifier>
          </Level>
          <Level Id="2">
-            <Modifier Stat="PoisonDamageModifier">20</Modifier>
+            <Modifier Stat="PoisonDamageModifier">19</Modifier>
          </Level>
          <Level Id="3">
             <Modifier Stat="PoisonDamageModifier">25</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="PoisonDamageModifier">10</Modifier>
+         <Modifier Stat="PoisonDamageModifier">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
    
@@ -688,7 +691,7 @@
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="PropagationBouncesModifier">1</Modifier>
+         <Modifier Stat="PropagationBouncesModifier">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
 
@@ -707,17 +710,14 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="PropagationDamage">3</Modifier>
-         </Level>
-         <Level Id="2">
             <Modifier Stat="PropagationDamage">4</Modifier>
          </Level>
-         <Level Id="3">
-            <Modifier Stat="PropagationDamage">5</Modifier>
+         <Level Id="2">
+            <Modifier Stat="PropagationDamage">6</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="PropagationDamage">1</Modifier>
+         <Modifier Stat="PropagationDamage">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
 
@@ -740,7 +740,7 @@
       </Level>
     </Levels>
     <EpicBonus>
-      <Modifier Stat="MultiHitsCountModifier">1</Modifier>
+      <Modifier Stat="MultiHitsCountModifier">0</Modifier>
     </EpicBonus>
   </AffixDefinition>
    
@@ -769,7 +769,7 @@
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="SkillRangeModifier">1</Modifier>
+         <Modifier Stat="SkillRangeModifier">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
 
@@ -788,17 +788,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="MomentumAttacks">3</Modifier>
+            <Modifier Stat="MomentumAttacks">4</Modifier>
          </Level>
          <Level Id="2">
-            <Modifier Stat="MomentumAttacks">5</Modifier>
+            <Modifier Stat="MomentumAttacks">6</Modifier>
          </Level>
          <Level Id="3">
-            <Modifier Stat="MomentumAttacks">6</Modifier>
+            <Modifier Stat="MomentumAttacks">8</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="MomentumAttacks">2</Modifier>
+         <Modifier Stat="MomentumAttacks">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
    
@@ -817,17 +817,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="OpportunisticAttacks">6</Modifier>
+            <Modifier Stat="OpportunisticAttacks">8</Modifier>
          </Level>
          <Level Id="2">
-            <Modifier Stat="OpportunisticAttacks">10</Modifier>
+            <Modifier Stat="OpportunisticAttacks">11</Modifier>
          </Level>
          <Level Id="3">
-            <Modifier Stat="OpportunisticAttacks">13</Modifier>
+            <Modifier Stat="OpportunisticAttacks">15</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="OpportunisticAttacks">4</Modifier>
+         <Modifier Stat="OpportunisticAttacks">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
 
@@ -846,17 +846,17 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="IsolatedAttacks">7</Modifier>
+            <Modifier Stat="IsolatedAttacks">10</Modifier>
          </Level>
          <Level Id="2">
-            <Modifier Stat="IsolatedAttacks">13</Modifier>
+            <Modifier Stat="IsolatedAttacks">15</Modifier>
          </Level>
          <Level Id="3">
-            <Modifier Stat="IsolatedAttacks">16</Modifier>
+            <Modifier Stat="IsolatedAttacks">20</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
-         <Modifier Stat="IsolatedAttacks">6</Modifier>
+         <Modifier Stat="IsolatedAttacks">0</Modifier>
       </EpicBonus>
    </AffixDefinition>
 
