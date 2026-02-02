@@ -33,7 +33,7 @@
    <PerkDefinition Id="Fatality">
       <TokenVariables>
          <TokenVariable Key="HealthThresholdCurrent" Value="HealthThresholdBase + CurrentPhysDmgOverThreshold * 1"/> <!--Warning : when changing this formula or other values in this perk, also need to change it in SkillDefinitions_Perks.xml-->
-         <TokenVariable Key="HealthThresholdBase" Value="30"/>
+         <TokenVariable Key="HealthThresholdBase" Value="15"/>
          <TokenVariable Key="HealthThresholdGainedPerPhysDmg" Value="1"/>
          <TokenVariable Key="SkillId" Value="FinishHim"/>
          <TokenVariable Key="CurrentPhysDmgOverThreshold" Value="Max(0, Owner.PhysicalDamage - MinimumPhysDmgThreshold)"/>
@@ -2252,7 +2252,7 @@
    <!-- T2 -->
    <PerkDefinition Id="FirstBlood">
       <TokenVariables>
-         <TokenVariable Key="ReliabilityBonus" Value="50"/>
+         <TokenVariable Key="ReliabilityBonus" Value="40"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="HealthTotal"/>
