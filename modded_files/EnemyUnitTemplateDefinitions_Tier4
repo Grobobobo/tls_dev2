@@ -752,6 +752,11 @@
 
          <SkillProgression Id="CorruptedMageBuff2" UnlockedAtDay="11"/>
 
+         <SkillProgression Id="ApocCorruptedMageBuff" ApocalypseFlagUnlock="SuperEnemies"/>
+         <SkillProgression Id="ApocCorruptedMageBuff1" ApocalypseFlagUnlock="SuperEnemies" UnlockedAtDay="8" />
+         <SkillProgression Id="ApocCorruptedMageBuff2" ApocalypseFlagUnlock="SuperEnemies" UnlockedAtDay="11"/>
+
+
          <SkillProgression Id="ApocCorruptedMageCharge" ApocalypseFlagUnlock="SuperEnemies"/>
 
       </SkillProgressions>
