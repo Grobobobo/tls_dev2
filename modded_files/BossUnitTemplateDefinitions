@@ -768,7 +768,7 @@
 
       <MoveMethod Method="Flying"/>
 
-      <HealthTotal>2500</HealthTotal>
+      <HealthTotal>750</HealthTotal>
 
       <HealthGaugeSize>Large</HealthGaugeSize>
 
@@ -1072,7 +1072,7 @@
 
       <MoveMethod Method="Flying"/>
 
-      <HealthTotal>6300</HealthTotal>
+      <HealthTotal>9450</HealthTotal>
 
       <HealthGaugeSize>Large</HealthGaugeSize>
 
@@ -1080,11 +1080,11 @@
 
       <Accuracy>30</Accuracy>
 
-      <Block>30</Block>
+      <Block>50</Block>
 
       <Dodge>12</Dodge>
 
-      <Resistance>18</Resistance>
+      <Resistance>25</Resistance>
 
       <StunResistance>1000</StunResistance>
 
@@ -1438,7 +1438,7 @@
 
       <MoveMethod Method="Flying"/>
 
-      <HealthTotal>2500</HealthTotal>
+      <HealthTotal>750</HealthTotal>
 
       <HealthGaugeSize>Large</HealthGaugeSize>
 
@@ -1752,7 +1752,7 @@
 
     <Dodge>0</Dodge>
 
-    <Resistance>0</Resistance>
+    <Resistance>25</Resistance>
 
     <StunResistance>1000</StunResistance>
 
@@ -2008,7 +2008,7 @@
 
       <Weight>1</Weight>
 
-      <HealthTotal>3000</HealthTotal>
+      <HealthTotal>4500</HealthTotal>
 
       <HealthGaugeSize>Large</HealthGaugeSize>
 
@@ -2174,7 +2174,7 @@
 
       <Weight>1</Weight>
 
-      <HealthTotal>2600</HealthTotal>
+      <HealthTotal>3900</HealthTotal>
 
       <HealthGaugeSize>Large</HealthGaugeSize>
 
@@ -2184,7 +2184,7 @@
 
       <ArmorTotal>500</ArmorTotal>
 
-      <Block>50</Block>
+      <Block>75</Block>
 
       <Dodge>0</Dodge>
 
@@ -2362,7 +2362,7 @@
 
       <Weight>1</Weight>
 
-      <HealthTotal>2300</HealthTotal>
+      <HealthTotal>3450</HealthTotal>
 
       <HealthGaugeSize>Large</HealthGaugeSize>
 
@@ -2372,7 +2372,7 @@
 
       <ArmorTotal>1000</ArmorTotal>
 
-      <Block>100</Block>
+      <Block>125</Block>
 
       <Dodge>0</Dodge>
 
@@ -3430,7 +3430,7 @@
 
       <MoveMethod Method="Flying"/>
 
-      <HealthTotal>16000</HealthTotal>
+      <HealthTotal>24000</HealthTotal>
 
       <HealthGaugeSize>Large</HealthGaugeSize>
 
@@ -3440,11 +3440,11 @@
 
       <Accuracy>50</Accuracy>
 
-      <Block>50</Block>
+      <Block>100</Block>
 
       <Dodge>16</Dodge>
 
-      <Resistance>36</Resistance>
+      <Resistance>50</Resistance>
 
       <StunResistance>3210</StunResistance>
 
@@ -4286,7 +4286,7 @@
 
       <MoveMethod Method="Flying"/>
 
-      <HealthTotal>5500</HealthTotal>
+      <HealthTotal>8250</HealthTotal>
 
       <HealthGaugeSize>Large</HealthGaugeSize>
 
@@ -4294,7 +4294,7 @@
 
       <ArmorTotal>1100</ArmorTotal>
 
-      <Block>50</Block>
+      <Block>150</Block>
 
       <Dodge>10</Dodge>
 
@@ -4906,7 +4906,7 @@
 
       <MoveMethod Method="Flying"/>
 
-      <HealthTotal>8000</HealthTotal>
+      <HealthTotal>12000</HealthTotal>
 
       <HealthGaugeSize>Large</HealthGaugeSize>
 
@@ -4914,7 +4914,7 @@
 
       <ArmorTotal>1600</ArmorTotal>
 
-      <Block>50</Block>
+      <Block>150</Block>
 
       <Dodge>10</Dodge>
 
@@ -5312,7 +5312,7 @@
 
       <MoveMethod Method="Flying"/>
 
-      <HealthTotal>7000</HealthTotal>
+      <HealthTotal>10500</HealthTotal>
 
       <HealthGaugeSize>Large</HealthGaugeSize>
 
@@ -5324,7 +5324,7 @@
 
       <Accuracy>50</Accuracy>
 
-      <Resistance>55</Resistance>
+      <Resistance>75</Resistance>
 
       <StunResistance>1000</StunResistance>
 
@@ -5902,7 +5902,7 @@
 
       <MoveMethod Method="Flying"/>
 
-      <HealthTotal>10000</HealthTotal>
+      <HealthTotal>15000</HealthTotal>
 
       <HealthGaugeSize>Large</HealthGaugeSize>
 
@@ -5914,7 +5914,7 @@
 
       <Accuracy>50</Accuracy>
 
-      <Resistance>70</Resistance>
+      <Resistance>90</Resistance>
 
       <StunResistance>1000</StunResistance>
 
@@ -6286,7 +6286,7 @@
 
       <MoveMethod Method="Flying"/>
 
-      <HealthTotal>4000</HealthTotal>
+      <HealthTotal>5500</HealthTotal>
 
       <HealthGaugeSize>Large</HealthGaugeSize>
 
@@ -6560,7 +6560,7 @@
 
       <MoveMethod Method="Flying"/>
 
-      <HealthTotal>5000</HealthTotal>
+      <HealthTotal>7500</HealthTotal>
 
       <HealthGaugeSize>Large</HealthGaugeSize>
 
@@ -6810,7 +6810,7 @@
 
       <MoveMethod Method="AboveAll"/>
 
-	  <HealthTotal>5700</HealthTotal>
+	  <HealthTotal>8550</HealthTotal>
 
       <Resistance>20</Resistance>
 
@@ -6960,7 +6960,7 @@
 
    <BossUnitTemplateDefinition Id="DwarfStatueBoss2Vulnerable" TemplateId="DwarfStatueBoss1Vulnerable" UseTemplateAssets="true">
 
-      <HealthTotal>6200</HealthTotal>
+      <HealthTotal>9300</HealthTotal>
 
 	  <Resistance>50</Resistance>
 
@@ -7054,7 +7054,7 @@
 
       <BossUnitTemplateDefinition Id="DwarfStatueBoss2VulnerableLast" TemplateId="DwarfStatueBoss1Vulnerable" UseTemplateAssets="true">
 
-      <HealthTotal>6200</HealthTotal>
+      <HealthTotal>9300</HealthTotal>
 
 	  <Resistance>50</Resistance>
 
@@ -7434,7 +7434,7 @@
 
       <MoveMethod Method="AboveAll"/>
 
-      <HealthTotal>6000</HealthTotal>
+      <HealthTotal>7500</HealthTotal>
 
       <HealthGaugeSize>Large</HealthGaugeSize>
 
@@ -7446,7 +7446,7 @@
 
       <Accuracy>50</Accuracy>
 
-      <Resistance>20</Resistance>
+      <Resistance>100</Resistance>
 
       <StunResistance>1000</StunResistance>
 

@@ -1,0 +1,263 @@
+﻿<AffixMalusDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="AffixMalusDefinitions.xsd">
+
+  
+  
+  <!--  ////////////  PRIMARY ATTRUBUTE  ////////////  -->
+  
+   <AffixMalusDefinition StatId="HealthTotal">
+      <Weight>7</Weight>
+      <Values>
+         <Small>23</Small>
+         <Medium>34</Medium>
+         <Big>45</Big>
+      </Values>
+   </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="ManaTotal">
+      <Weight>8</Weight>
+      <Values>
+         <Small>3</Small>
+         <Medium>6</Medium>
+         <Big>9</Big>
+      </Values>
+   </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="MovePointsTotal">
+    <Weight>2</Weight>
+    <Values>
+      <Big>2</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="PhysicalDamage">
+    <Weight>6</Weight>
+    <Values>
+      <Small>4</Small>
+      <Medium>6</Medium>
+      <Big>7</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+   <AffixMalusDefinition StatId="MagicalDamage">
+    <Weight>6</Weight>
+    <Values>
+      <Small>4</Small>
+      <Medium>6</Medium>
+      <Big>7</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="RangedDamage">
+    <Weight>6</Weight>
+    <Values>
+      <Small>4</Small>
+      <Medium>6</Medium>
+      <Big>7</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="Critical">
+    <Weight>8</Weight>
+    <Values>
+      <Small>5</Small>
+      <Medium>7</Medium>
+      <Big>9</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="Dodge">
+    <Weight>6</Weight>
+    <Values>
+      <Small>5</Small>
+      <Medium>7</Medium>
+      <Big>9</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="ArmorTotal">
+    <Weight>6</Weight>
+    <Values>
+      <Small>18</Small>
+      <Medium>26</Medium>
+      <Big>34</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="Resistance">
+    <Weight>6</Weight>
+    <Values>
+      <Small>4</Small>
+      <Medium>6</Medium>
+      <Big>8</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="Block">
+    <Weight>4</Weight>
+    <Values>
+      <Small>4</Small>
+      <Medium>6</Medium>
+      <Big>8</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <!--  ////////////  SECONDARY ATTRUBUTE  ////////////  -->
+
+  <AffixMalusDefinition StatId="ExperienceGainMultiplier">
+    <Weight>8</Weight>
+    <Values>
+      <Small>8</Small>
+      <Medium>12</Medium>
+      <Big>15</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="ManaRegen">
+    <Weight>4</Weight>
+    <Values>
+      <Small>3</Small>
+      <Medium>5</Medium>
+      <Big>6</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="HealthRegen">
+    <Weight>6</Weight>
+    <Values>
+      <Small>12</Small>
+      <Medium>18</Medium>
+      <Big>24</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="HealingReceived">
+    <Weight>7</Weight>
+    <Values>
+      <Small>18</Small>
+      <Medium>26</Medium>
+      <Big>34</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="OverallDamage">
+    <Weight>8</Weight>
+    <Values>
+      <Small>4</Small>
+      <Medium>6</Medium>
+      <Big>7</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="CriticalPower">
+    <Weight>8</Weight>
+    <Values>
+      <Small>10</Small>
+      <Medium>15</Medium>
+      <Big>19</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="Reliability">
+    <Weight>6</Weight>
+    <Values>
+      <Small>10</Small>
+      <Medium>15</Medium>
+      <Big>19</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="SkillRangeModifier">
+    <Weight>2</Weight>
+    <Values>
+      <Big>1</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="Accuracy">
+    <Weight>4</Weight>
+    <Values>
+      <Small>5</Small>
+      <Medium>7</Medium>
+      <Big>9</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="PoisonDamageModifier">
+    <Weight>7</Weight>
+    <Values>
+      <Small>10</Small>
+      <Medium>15</Medium>
+      <Big>19</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="StunChanceModifier">
+    <Weight>7</Weight>
+    <Values>
+      <Small>6</Small>
+      <Medium>9</Medium>
+      <Big>12</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="PropagationBouncesModifier">
+    <Weight>7</Weight>
+    <Values>
+      <Big>1</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="PropagationDamage">
+    <Weight>7</Weight>
+    <Values>
+      <Small>3</Small>
+      <Medium>4</Medium>
+      <Big>5</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="MomentumAttacks">
+    <Weight>7</Weight>
+    <Values>
+      <Small>3</Small>
+      <Medium>5</Medium>
+      <Big>6</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="OpportunisticAttacks">
+    <Weight>6</Weight>
+    <Values>
+      <Small>6</Small>
+      <Medium>9</Medium>
+      <Big>12</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="IsolatedAttacks">
+    <Weight>6</Weight>
+    <Values>
+      <Small>8</Small>
+      <Medium>12</Medium>
+      <Big>15</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="ResistanceReduction">
+    <Weight>4</Weight>
+    <Values>
+      <Small>6</Small>
+      <Medium>9</Medium>
+      <Big>12</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+  <AffixMalusDefinition StatId="MultiHitsCountModifier">
+    <Weight>7</Weight>
+    <Values>
+      <Big>1</Big>
+    </Values>
+  </AffixMalusDefinition>
+
+</AffixMalusDefinitions>

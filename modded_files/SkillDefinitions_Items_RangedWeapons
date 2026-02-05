@@ -47,7 +47,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
-            <DamageMultiplier>1.25</DamageMultiplier>
+            <DamageMultiplier>1.4</DamageMultiplier>
             <SkillEffects>
                <MultiHit HitsCount="3"/>
                <Inaccurate>
@@ -1970,17 +1970,18 @@
    <!-- Rifle -->
    <SkillDefinition Id="RifleShot">
       <ActionPointsCost>2</ActionPointsCost>
-      <UsesPerTurnCount>3</UsesPerTurnCount>
-      <Range Min="3" Max="8" CardinalDirectionOnly="false" Modifiable="true"/>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <Range Min="1" Max="8" CardinalDirectionOnly="false" Modifiable="true"/>
       <AreaOfEffect OriginX="0" OriginY="0">
          X
       </AreaOfEffect>
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
+            <DamageMultiplier>0.9</DamageMultiplier>
             <SkillEffects>
-               <Propagation PropagationsCount="2"/>
+               <Propagation PropagationsCount="3"/>
+               <NoDodge/>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -2313,7 +2314,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
+            <DamageMultiplier>1.25</DamageMultiplier>
             <SkillEffects>
                <Isolated>
                   <DamageMultiplier>1.5</DamageMultiplier>
@@ -2321,7 +2322,6 @@
                <Opportunistic>
                   <DamageMultiplier>1.5</DamageMultiplier>
                </Opportunistic>
-               <NoDodge/>
             </SkillEffects>
          </Attack>
       </SkillAction>

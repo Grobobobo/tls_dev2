@@ -2820,7 +2820,7 @@
    <PerkDefinition Id="Coagulation">
       <TokenVariables>
          <TokenVariable Key="BlockBonus" Value="Floor(Owner.HealthRegen * HealthRegenPercentage / 100)"/>
-         <TokenVariable Key="HealthRegenPercentage" Value="35"/>
+         <TokenVariable Key="HealthRegenPercentage" Value="25"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="HealthRegenPercentage" Suffix="%" Style="KeyWordNb"/>
@@ -3794,7 +3794,7 @@
          <TokenVariable Key="HealthTotalThreshold" Value="600"/>
          <TokenVariable Key="OverallDamage_BonusMax" Value="OverallDamage_BaseBonus + OverallDamage_DynamicMax"/>
          <TokenVariable Key="OverallDamage_DynamicStepsValue" Value="120"/>
-         <TokenVariable Key="OverallDamage_DynamicMax" Value="30"/>
+         <TokenVariable Key="OverallDamage_DynamicMax" Value="20"/>
          <TokenVariable Key="OverallDamage_DynamicBonus" Value="2"/>
          <TokenVariable Key="OverallDamage_BaseBonus" Value="20"/>
       </TokenVariables>
@@ -4359,8 +4359,8 @@
          <TokenVariable Key="AtLeastOneBonusPending" Value="CurrentActionPointsBonus + CurrentMovePointsBonus > 0"/>
          <TokenVariable Key="CurrentActionPointsBonus" Value="Min(Module.Buffer, MaxActionPointsBonus)"/>
          <TokenVariable Key="CurrentMovePointsBonus" Value="Min(Module.Buffer2, MaxMovePointsBonus)"/>
-         <TokenVariable Key="MaxActionPointsBonus" Value="1"/>
-         <TokenVariable Key="MaxMovePointsBonus" Value="2"/>
+         <TokenVariable Key="MaxActionPointsBonus" Value="2"/>
+         <TokenVariable Key="MaxMovePointsBonus" Value="4"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument  Stat="ActionPointsTotal" Value="MaxActionPointsBonus" DisplaySign="false" Style="KeyWordNb"/>

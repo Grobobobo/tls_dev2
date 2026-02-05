@@ -1,0 +1,3573 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<GlyphDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+                        xsi:noNamespaceSchemaLocation="GlyphDefinitions.xsd">
+
+
+
+   <!-- BOUNDLESS MODE -->
+
+
+
+   <GlyphDefinition Id="Easy_ThinnerWaves" Cost="3" IsCustom="true">
+
+      <TokenVariables>
+
+         <TokenVariable Key="EnemiesPercentageDecrease" Value="20"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Value="EnemiesPercentageDecrease" Suffix="%" Style="GoodNb"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <DecreaseEnemiesCount Percentage="EnemiesPercentageDecrease"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="Easy_WealthyHaven" Cost="3" IsCustom="true">
+
+      <TokenVariables>
+
+         <TokenVariable Key="GoldBonus" Value="80"/>
+
+         <TokenVariable Key="MaterialsBonus" Value="160"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Value="GoldBonus" Style="GoodNb"/>
+
+         <LocalizedArgument Prefix="Resources_Name_" Value="Gold" Style="Gold"/>
+
+         <LocArgument Prefix="+" Value="MaterialsBonus" Style="GoodNb"/>
+
+         <LocalizedArgument Prefix="Resources_Name_" Value="Materials" Style="Materials"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <IncreaseStartingResources>
+
+            <GoldBonus>GoldBonus</GoldBonus>
+
+            <MaterialsBonus>MaterialsBonus</MaterialsBonus>
+
+         </IncreaseStartingResources>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="Easy_AdditionalStartingHero" Cost="3" IsCustom="true">
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Value="1" Style="GoodNb"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <BonusUnits>
+
+            <Unit>
+
+               <PlayableUnitGenerationDefinitions>
+
+                  <PlayableUnitGenerationDefinition ArchetypeId="Melee"/>
+
+                  <PlayableUnitGenerationDefinition ArchetypeId="Range"/>
+
+                  <PlayableUnitGenerationDefinition ArchetypeId="Magic"/>
+
+               </PlayableUnitGenerationDefinitions>
+
+               <UnitGenerationLevelDefinition Id="Start"/>
+
+            </Unit>
+
+         </BonusUnits>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="Easy_ReducedCost" Cost="3" IsCustom="true">
+
+      <TokenVariables>
+
+         <TokenVariable Key="PriceModifier" Value="20"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Value="PriceModifier" Suffix="%" Style="GoodNb"/>
+
+         <LocalizedArgument Prefix="Resources_Name_" Value="Gold" Style="Gold"/>
+
+         <LocalizedArgument Prefix="Resources_Name_" Value="Materials" Style="Materials"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyCosts Value="-PriceModifier" Type="All"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+   
+
+
+
+   <!-- MELEE WEAPON MORE -->
+
+   <GlyphDefinition Id="ItemWeaponMoreSword" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_Sword"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_MeleeWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenSwordBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_SwordVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponOffhand" Value="BattleMageSword0"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenMeleeWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenMeleeWeaponsVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryOffhand" Value="ItemList_HeroGenOffhandWeapon"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryOffhand" ItemId="HeroGenWeaponOffhand" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="Sword">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMoreAxe" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_Axe"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_MeleeWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenAxeBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_AxeVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponOffhand" Value="SwiftAxe0"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenMeleeWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenMeleeWeaponsVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryOffhand" Value="ItemList_HeroGenOffhandWeapon"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryOffhand" ItemId="HeroGenWeaponOffhand" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="Axe">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMoreDagger" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_Dagger"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_MeleeWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenDaggerBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_DaggerVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponOffhand" Value="ParryingDagger0"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenMeleeWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenMeleeWeaponsVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryOffhand" Value="ItemList_HeroGenOffhandWeapon"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryOffhand" ItemId="HeroGenWeaponOffhand" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="Dagger">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMoreHammer" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_Hammer"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_MeleeWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenHammerBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_HammerVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponOffhand" Value="MysticHammer0"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenMeleeWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenMeleeWeaponsVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryOffhand" Value="ItemList_HeroGenOffhandWeapon"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryOffhand" ItemId="HeroGenWeaponOffhand" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="Hammer">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMore2HSword" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_2HSword"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_MeleeWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGen2HSwordBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_2HSwordVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenMeleeWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenMeleeWeaponsVariations"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="2HSword">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMore2HAxe" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_2HAxe"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_MeleeWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGen2HAxeBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_2HAxeVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenMeleeWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenMeleeWeaponsVariations"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="2HAxe">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMore2HHammer" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_2HHammer"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_MeleeWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGen2HHammerBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_2HHammerVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenMeleeWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenMeleeWeaponsVariations"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="2HHammer">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMoreSpear" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_Spear"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_MeleeWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenSpearBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_SpearVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenMeleeWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenMeleeWeaponsVariations"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="Spear">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   
+
+   <!-- MAGIC WEAPON MORE -->
+
+   <GlyphDefinition Id="ItemWeaponMoreMagicWand" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_MagicWand"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_MagicWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenMagicWandBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_MagicWandVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponOffhand" Value="BattleMageMagicWand0"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenMagicWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenMagicWeaponsVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryOffhand" Value="ItemList_HeroGenOffhandWeapon"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryOffhand" ItemId="HeroGenWeaponOffhand" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="MagicWand">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMoreMagicOrb" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_MagicOrb"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_MagicWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenMagicOrbBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_MagicOrbVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponOffhand" Value="TransferMagicOrb0"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenMagicWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenMagicWeaponsVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryOffhand" Value="ItemList_HeroGenOffhandWeapon"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryOffhand" ItemId="HeroGenWeaponOffhand" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="MagicOrb">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMoreMagicScepter" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_MagicScepter"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_MagicWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenMagicScepterBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_MagicScepterVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponOffhand" Value="ReliableMagicScepter0"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenMagicWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenMagicWeaponsVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryOffhand" Value="ItemList_HeroGenOffhandWeapon"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryOffhand" ItemId="HeroGenWeaponOffhand" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="MagicScepter">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMoreTomeOfMagic" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_TomeOfMagic"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_MagicWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenTomeOfMagicBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_TomeOfMagicVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenMagicWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenMagicWeaponsVariations"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="TomeOfMagic">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMoreMagicStaff" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_MagicStaff"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_MagicWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenMagicStaffBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_MagicStaffVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenMagicWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenMagicWeaponsVariations"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="MagicStaff">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMoreDruidicStaff" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_DruidicStaff"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_MagicWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenDruidicStaffBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_DruidicStaffVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenMagicWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenMagicWeaponsVariations"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="DruidicStaff">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   
+
+   <!-- RANGED WEAPON MORE -->
+
+   <GlyphDefinition Id="ItemWeaponMoreHandCrossbow" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_HandCrossbow"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_RangedWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenHandCrossbowBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_HandCrossbowVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponOffhand" Value="PreciseHandCrossbow0"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenRangedWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenRangedWeaponsVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryOffhand" Value="ItemList_HeroGenOffhandWeapon"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryOffhand" ItemId="HeroGenWeaponOffhand" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="HandCrossbow">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMorePistol" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_Pistol"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_RangedWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenPistolBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_PistolVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponOffhand" Value="DuelingPistol0"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenRangedWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenRangedWeaponsVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryOffhand" Value="ItemList_HeroGenOffhandWeapon"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryOffhand" ItemId="HeroGenWeaponOffhand" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="Pistol">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMoreCrossbow" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_Crossbow"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_RangedWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenCrossbowBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_CrossbowVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenRangedWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenRangedWeaponsVariations"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="Crossbow">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMoreShortbow" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_Shortbow"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_RangedWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenShortbowBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_ShortbowVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenRangedWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenRangedWeaponsVariations"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="Shortbow">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMoreLongbow" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_Longbow"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_RangedWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenLongbowBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_LongbowVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenRangedWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenRangedWeaponsVariations"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="Longbow">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMoreRifle" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_Rifle"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_RangedWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenRifleBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_RifleVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenRangedWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenRangedWeaponsVariations"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="Rifle">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+   
+
+   
+
+   <!-- DAMNED SOULS MODIFIERS -->
+
+   <GlyphDefinition Id="DamnedSoulsMultiplier" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="BonusPercentage" Value="10"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Value="BonusPercentage" Suffix="%" Style="GoodNb"/>
+
+         <LocalizedArgument Value="TurnInfoPanelTitle_Tooltip_SoulsTitle" Style="DamnedSouls"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <DamnedSoulsPercentageModifier Value="BonusPercentage"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="DamnedSoulsMultiplier2" Cost="2">
+
+      <TokenVariables>
+
+         <TokenVariable Key="BonusPercentage" Value="30"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Value="BonusPercentage" Suffix="%" Style="GoodNb"/>
+
+         <LocalizedArgument Value="TurnInfoPanelTitle_Tooltip_SoulsTitle" Style="DamnedSouls"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <DamnedSoulsPercentageModifier Value="BonusPercentage"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   
+
+   <!-- FOG -->
+
+   <GlyphDefinition Id="ThinnerFog" Cost="2">
+
+      <GlyphEffects>
+
+         <SetFogCap Index="Dense"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   
+
+   <!-- WEALTHY HAVEN -->
+
+   <GlyphDefinition Cost="2" Id="WealthyHaven">
+
+      <TokenVariables>
+
+         <TokenVariable Key="GoldBonus" Value="40"/>
+
+         <TokenVariable Key="MaterialsBonus" Value="135"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Value="GoldBonus" Style="GoodNb"/>
+
+         <LocalizedArgument Prefix="Resources_Name_" Value="Gold" Style="Gold"/>
+
+         <LocArgument Prefix="+" Value="MaterialsBonus" Style="GoodNb"/>
+
+         <LocalizedArgument Prefix="Resources_Name_" Value="Materials" Style="Materials"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <IncreaseStartingResources>
+
+            <GoldBonus>GoldBonus</GoldBonus>
+
+            <MaterialsBonus>MaterialsBonus</MaterialsBonus>
+
+         </IncreaseStartingResources>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Cost="1" Id="WealthyHaven2">
+
+      <TokenVariables>
+
+         <TokenVariable Key="GoldBonus" Value="30"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Value="GoldBonus" Style="GoodNb"/>
+
+         <LocalizedArgument Prefix="Resources_Name_" Value="Gold" Style="Gold"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <IncreaseStartingResources>
+
+            <GoldBonus>GoldBonus</GoldBonus>
+
+         </IncreaseStartingResources>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Cost="1" Id="WealthyHaven3">
+
+      <TokenVariables>
+
+         <TokenVariable Key="MaterialsBonus" Value="100"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Value="MaterialsBonus" Style="GoodNb"/>
+
+         <LocalizedArgument Prefix="Resources_Name_" Value="Materials" Style="Materials"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <IncreaseStartingResources>
+
+            <MaterialsBonus>MaterialsBonus</MaterialsBonus>
+
+         </IncreaseStartingResources>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   
+
+   <!-- MORE ATTRIBUTE -->
+
+   <GlyphDefinition Id="HeroAttributeMoreAP" Cost="3">
+
+      <TokenVariables>
+
+         <TokenVariable Key="ActionPointsBonus" Value="1"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="ActionPointsTotal" Value="ActionPointsBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyPlayableUnitsStats>
+
+            <StatToModify Stat="ActionPointsTotal" Value="ActionPointsBonus"/>
+
+         </ModifyPlayableUnitsStats>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroAttributeMoreHealth" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="HealthBonus" Value="35"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="HealthTotal" Value="HealthBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyPlayableUnitsStats>
+
+            <StatToModify Stat="HealthTotal" Value="HealthBonus"/>
+
+         </ModifyPlayableUnitsStats>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroAttributeMoreHealth2" Cost="2">
+
+      <TokenVariables>
+
+         <TokenVariable Key="HealthBonus" Value="50"/>
+
+         <TokenVariable Key="HealthRegenBonus" Value="10"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="HealthTotal" Value="HealthBonus" DisplaySign="true"/>
+
+         <StatArgument Stat="HealthRegen" Value="HealthRegenBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyPlayableUnitsStats>
+
+            <StatToModify Stat="HealthTotal" Value="HealthBonus"/>
+
+            <StatToModify Stat="HealthRegen" Value="HealthRegenBonus"/>
+
+         </ModifyPlayableUnitsStats>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroAttributeMoreMana" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="ManaBonus" Value="8"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="ManaTotal" Value="ManaBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyPlayableUnitsStats>
+
+            <StatToModify Stat="ManaTotal" Value="ManaBonus"/>
+
+         </ModifyPlayableUnitsStats>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroAttributeMoreMana2" Cost="2">
+
+      <TokenVariables>
+
+         <TokenVariable Key="ManaBonus" Value="12"/>
+
+         <TokenVariable Key="ManaRegenBonus" Value="3"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="ManaTotal" Value="ManaBonus" DisplaySign="true"/>
+
+         <StatArgument Stat="ManaRegen" Value="ManaRegenBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyPlayableUnitsStats>
+
+            <StatToModify Stat="ManaTotal" Value="ManaBonus"/>
+
+            <StatToModify Stat="ManaRegen" Value="ManaRegenBonus"/>
+
+         </ModifyPlayableUnitsStats>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroAttributeMoreMove" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="MoveBonus" Value="1"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="MovePointsTotal" Value="MoveBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyPlayableUnitsStats>
+
+            <StatToModify Stat="MovePointsTotal" Value="MoveBonus"/>
+
+         </ModifyPlayableUnitsStats>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroAttributeMoreMove2" Cost="2">
+
+      <TokenVariables>
+
+         <TokenVariable Key="MoveBonus" Value="3"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="MovePointsTotal" Value="MoveBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyPlayableUnitsStats>
+
+            <StatToModify Stat="MovePointsTotal" Value="MoveBonus"/>
+
+         </ModifyPlayableUnitsStats>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroAttributeMoreDamage" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="DamageBonus" Value="10"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="OverallDamage" Value="DamageBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyPlayableUnitsStats>
+
+            <StatToModify Stat="OverallDamage" Value="DamageBonus"/>
+
+         </ModifyPlayableUnitsStats>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroAttributeMoreDamage2" Cost="2">
+
+      <TokenVariables>
+
+         <TokenVariable Key="DamageBonusBeforeThreshold" Value="3"/>
+
+         <TokenVariable Key="DamageBonusAfterThreshold" Value="2"/>
+
+         <TokenVariable Key="DayThreshold" Value="6"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="OverallDamage" Value="DamageBonusBeforeThreshold" DisplaySign="true"/>
+
+         <LocArgument Value="DayThreshold" Style="Number"/>
+
+         <StatArgument Stat="OverallDamage" Value="DamageBonusAfterThreshold" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <NativePerk PerkId="MoreDamage" ForceHideTooltip="true"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroAttributeMoreOpportunism" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="OpportunismBonus" Value="20"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="OpportunisticAttacks" Value="OpportunismBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyPlayableUnitsStats>
+
+            <StatToModify Stat="OpportunisticAttacks" Value="OpportunismBonus"/>
+
+         </ModifyPlayableUnitsStats>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroAttributeMoreIsolation" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="IsolationBonus" Value="25"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="IsolatedAttacks" Value="IsolationBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyPlayableUnitsStats>
+
+            <StatToModify Stat="IsolatedAttacks" Value="IsolationBonus"/>
+
+         </ModifyPlayableUnitsStats>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroAttributeMoreExpGain" Cost="3">
+
+      <TokenVariables>
+
+         <TokenVariable Key="ExpBonus" Value="30"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="ExperienceGainMultiplier" Value="ExpBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyPlayableUnitsStats>
+
+            <StatToModify Stat="ExperienceGainMultiplier" Value="ExpBonus"/>
+
+         </ModifyPlayableUnitsStats>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroAttributeMoreCritical" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="CriticalBonus" Value="8"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="Critical" Value="CriticalBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyPlayableUnitsStats>
+
+            <StatToModify Stat="Critical" Value="CriticalBonus"/>
+
+         </ModifyPlayableUnitsStats>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroAttributeMoreResReduction" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="ResReductionBonus" Value="12"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="ResistanceReduction" Value="ResReductionBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyPlayableUnitsStats>
+
+            <StatToModify Stat="ResistanceReduction" Value="ResReductionBonus"/>
+
+         </ModifyPlayableUnitsStats>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroAttributeMoreAccuracy" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="AccuracyBonus" Value="12"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="Accuracy" Value="AccuracyBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyPlayableUnitsStats>
+
+            <StatToModify Stat="Accuracy" Value="AccuracyBonus"/>
+
+         </ModifyPlayableUnitsStats>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroAttributeMoreBlock" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="BlockBonus" Value="8"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="Block" Value="BlockBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyPlayableUnitsStats>
+
+            <StatToModify Stat="Block" Value="BlockBonus"/>
+
+         </ModifyPlayableUnitsStats>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroAttributeMoreArmor" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="ArmorBonus" Value="40"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="ArmorTotal" Value="ArmorBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyPlayableUnitsStats>
+
+            <StatToModify Stat="ArmorTotal" Value="ArmorBonus"/>
+
+         </ModifyPlayableUnitsStats>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroAttributeMoreResistance" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="ResistanceBonus" Value="10"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="Resistance" Value="ResistanceBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyPlayableUnitsStats>
+
+            <StatToModify Stat="Resistance" Value="ResistanceBonus"/>
+
+         </ModifyPlayableUnitsStats>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroAttributeMoreDodge" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="DodgeBonus" Value="10"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="Dodge" Value="DodgeBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyPlayableUnitsStats>
+
+            <StatToModify Stat="Dodge" Value="DodgeBonus"/>
+
+         </ModifyPlayableUnitsStats>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroAttributeMoreReliability" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="ReliabilityBonus" Value="20"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="Reliability" Value="ReliabilityBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyPlayableUnitsStats>
+
+            <StatToModify Stat="Reliability" Value="ReliabilityBonus"/>
+
+         </ModifyPlayableUnitsStats>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroAttributeMoreSkillRange" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="SkillRangeBonus" Value="1"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="SkillRangeModifier" Value="SkillRangeBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyPlayableUnitsStats>
+
+            <StatToModify Stat="SkillRangeModifier" Value="SkillRangeBonus"/>
+
+         </ModifyPlayableUnitsStats>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   
+
+   <!-- LEVEL UP -->
+
+   <GlyphDefinition Id="HeroLevelupMoreRerolls" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="RerollsBonus" Value="1"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Value="RerollsBonus" Style="GoodNb"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <IncreaseLevelupRerolls Value="RerollsBonus"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroLevelupImprovedRarity" Cost="2">
+
+      <GlyphEffects>
+
+         <ModifyRarityProbabilityTree TreeId="LevelUp">
+
+            <Probability Weight="16">2</Probability>
+
+            <Probability Weight="8">3</Probability>
+
+         </ModifyRarityProbabilityTree>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   
+
+   <!-- PERKS -->
+
+   <GlyphDefinition Id="HeroPerkMorePoint" Cost="3">
+
+      <TokenVariables>
+
+         <TokenVariable Key="PerkPointsBonus" Value="1"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Value="PerkPointsBonus" Style="GoodNb"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <NativePerkPointsBonus Value="PerkPointsBonus"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroPerkNativeLeapFrog" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="PerkId" Value="Leapfrog"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocalizedArgument Prefix="PerkName_" Value="PerkId"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <NativePerk PerkId="PerkId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroPerkNativePotionThrow" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="PerkId" Value="PotionThrow"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocalizedArgument Prefix="PerkName_" Value="PerkId"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <NativePerk PerkId="PerkId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroPerkNativeMartialPunch" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="PerkId" Value="MartialPunch"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocalizedArgument Prefix="PerkName_" Value="PerkId"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <NativePerk PerkId="PerkId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroPerkNativeOverload" Cost="2">
+
+      <TokenVariables>
+
+         <TokenVariable Key="PerkId" Value="Overload"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocalizedArgument Prefix="PerkName_" Value="PerkId"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <NativePerk PerkId="PerkId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroSpecialPerkNativeDeathPrevention" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="PerkId" Value="DeathPrevention"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocalizedArgument Prefix="PerkName_" Value="PerkId"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <NativePerk PerkId="PerkId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="HeroSpecialPerkNativeRetainAPMove" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="PerkId" Value="RetainAPMove"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocalizedArgument Prefix="PerkName_" Value="PerkId"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <NativePerk PerkId="PerkId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   
+
+   <!-- HERO GENERATION -->
+
+   <GlyphDefinition Id="HeroGenerationHigherLevelGear" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="Level" Value="1"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Value="Level" Style="GoodNb"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <IncreaseStartingGearLevel Id="Hero_BodyArmor">
+
+            <Probability Weight="100">Level</Probability>
+
+         </IncreaseStartingGearLevel>
+
+         <IncreaseStartingGearLevel Id="Hero_Pants">
+
+            <Probability Weight="100">Level</Probability>
+
+         </IncreaseStartingGearLevel>
+
+         <IncreaseStartingGearLevel Id="Hero_Helmet">
+
+            <Probability Weight="100">Level</Probability>
+
+         </IncreaseStartingGearLevel>
+
+         <IncreaseStartingGearLevel Id="Hero_LeftHand">
+
+            <Probability Weight="100">Level</Probability>
+
+         </IncreaseStartingGearLevel>
+
+         <IncreaseStartingGearLevel Id="Hero_MeleeRightHand">
+
+            <Probability Weight="100">Level</Probability>
+
+         </IncreaseStartingGearLevel>
+
+         <IncreaseStartingGearLevel Id="Hero_RangeRightHand">
+
+            <Probability Weight="100">Level</Probability>
+
+         </IncreaseStartingGearLevel>
+
+         <IncreaseStartingGearLevel Id="Hero_MagicRightHand">
+
+            <Probability Weight="100">Level</Probability>
+
+         </IncreaseStartingGearLevel>
+
+         <IncreaseStartingGearLevel Id="Hero_Trinket">
+
+            <Probability Weight="100">Level</Probability>
+
+         </IncreaseStartingGearLevel>
+
+         <IncreaseStartingGearLevel Id="Hero_Usable">
+
+            <Probability Weight="100">Level</Probability>
+
+         </IncreaseStartingGearLevel>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+
+
+   <!-- ADDITIONAL STARTING HERO -->
+
+   <GlyphDefinition Id="AdditionalStartingHero" Cost="3">
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Value="1" Style="GoodNb"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <BonusUnits IncreaseUnitsLimit="false">
+
+            <Unit>
+
+               <PlayableUnitGenerationDefinitions>
+
+                  <PlayableUnitGenerationDefinition ArchetypeId="Melee"/>
+
+                  <PlayableUnitGenerationDefinition ArchetypeId="Range"/>
+
+                  <PlayableUnitGenerationDefinition ArchetypeId="Magic"/>
+
+               </PlayableUnitGenerationDefinitions>
+
+               <UnitGenerationLevelDefinition Id="Start"/>
+
+            </Unit>
+
+         </BonusUnits>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+
+
+   <!-- PRODUCTION -->
+
+   <GlyphDefinition Id="ItemProdMoreReroll" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="RerollsBonus" Value="1"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Value="RerollsBonus" Style="GoodNb"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <AdditionalRewardReroll Value="RerollsBonus"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemProdMoreChoices" Cost="2">
+
+      <TokenVariables>
+
+         <TokenVariable Key="ChoicesBonus" Value="1"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Value="ChoicesBonus" Style="GoodNb"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyRewardsCount NightRewardsModifier="ChoicesBonus" ProdRewardsModifier="ChoicesBonus"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+
+
+   <!-- SHOP -->
+
+   <GlyphDefinition Id="ShopKeepersBestFriend" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="GoldBonusPercentage" Value="10"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Value="GoldBonusPercentage" Suffix="%" Style="GoodNb"/>
+
+         <LocalizedArgument Prefix="Resources_Name_" Value="Gold" Style="Gold"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <BonusSellingRatio Value="GoldBonusPercentage"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+
+
+   <!-- SCAVENGING -->
+
+   <GlyphDefinition Id="BetterDebrisScavenging" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="ResourcesBonusPercentage" Value="20"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Prefix="+" Value="ResourcesBonusPercentage" Suffix="%" Style="GoodNb"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <DamnedSoulsScavengingPercentageModifier Value="ResourcesBonusPercentage"/>
+
+         <GoldScavengingPercentageModifier Value="ResourcesBonusPercentage"/>
+
+         <MaterialScavengingPercentageModifier Value="ResourcesBonusPercentage"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="DailyDiscountScavenging" Cost="2">
+
+      <TokenVariables>
+
+         <TokenVariable Key="CostModifier" Value="-1"/>
+
+         <TokenVariable Key="ModifiersDailyLimit" Value="1"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Value="CostModifier" Style="GoodNb"/>
+
+         <LocalizedArgument Prefix="Resources_Name_" Value="Workers" Style="Workers"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyBuildingActionsCost ModifiersDailyLimit="ModifiersDailyLimit">
+
+            <!-- Ruins -->
+
+            <BuildingActionCostModifier BuildingActionId="ScavengeGold" CostModifier="CostModifier"/>
+
+            <BuildingActionCostModifier BuildingActionId="ScavengeGold2" CostModifier="CostModifier"/>
+
+            <BuildingActionCostModifier BuildingActionId="ScavengeGold3" CostModifier="CostModifier"/>
+
+            <BuildingActionCostModifier BuildingActionId="ScavengeGold4" CostModifier="CostModifier"/>
+
+            <BuildingActionCostModifier BuildingActionId="ScavengeMaterials" CostModifier="CostModifier"/>
+
+            <BuildingActionCostModifier BuildingActionId="ScavengeMaterials2" CostModifier="CostModifier"/>
+
+            <BuildingActionCostModifier BuildingActionId="ScavengeMaterials3" CostModifier="CostModifier"/>
+
+            <BuildingActionCostModifier BuildingActionId="ScavengeMaterials4" CostModifier="CostModifier"/>
+
+            <!-- Bone Piles -->
+
+            <BuildingActionCostModifier BuildingActionId="BoneScavengeGold" CostModifier="CostModifier"/>
+
+            <BuildingActionCostModifier BuildingActionId="BoneScavengeMaterials" CostModifier="CostModifier"/>
+
+            <BuildingActionCostModifier BuildingActionId="BoneScavengeResource" CostModifier="CostModifier"/>
+
+            <BuildingActionCostModifier BuildingActionId="BoneScavengeResource2" CostModifier="CostModifier"/>
+
+            <BuildingActionCostModifier BuildingActionId="BoneScavengeItem2" CostModifier="CostModifier"/>
+
+            <BuildingActionCostModifier BuildingActionId="BoneScavengeResource3" CostModifier="CostModifier"/>
+
+            <BuildingActionCostModifier BuildingActionId="BoneScavengeItem3" CostModifier="CostModifier"/>
+
+            <BuildingActionCostModifier BuildingActionId="EliteBoneScavengeResource" CostModifier="CostModifier"/>
+
+            <BuildingActionCostModifier BuildingActionId="EliteBoneScavengeItem" CostModifier="CostModifier"/>
+
+         </ModifyBuildingActionsCost>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+
+
+   <!-- BONE PILES -->
+
+   <GlyphDefinition Id="ExplosiveBonePiles" Cost="1">
+
+      <GlyphEffects>
+
+         <ToggleSkillProgressionFlag Flag="ExplosiveBonePiles"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="PartialScavengeBonePilesOnDecay" Cost="2">
+
+      <TokenVariables>
+
+         <TokenVariable Key="DecayFreeResourcesGold" Value="7"/>
+
+         <TokenVariable Key="DecayFreeResourcesMaterials" Value="13"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Value="DecayFreeResourcesGold" Style="GoodNb"/>
+
+         <LocalizedArgument Prefix="Resources_Name_" Value="Gold" Style="Gold"/>
+
+         <LocArgument Value="DecayFreeResourcesMaterials" Style="GoodNb"/>
+
+         <LocalizedArgument Prefix="Resources_Name_" Value="Materials" Style="Materials"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <AddBuildingPassive PassiveId="BonePile1Decay_FreeResources">
+
+            <Building Id="BonePile1"/>
+
+         </AddBuildingPassive>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+
+
+   <!-- ITEMS -->
+
+   <GlyphDefinition Id="ItemBetterLevel" Cost="3">
+
+      <GlyphEffects>
+
+         <ModifyLevelProbabilityTree TreeId="BuildingProduction">
+
+            <Probability Weight="25">1</Probability>
+
+         </ModifyLevelProbabilityTree>
+
+         <ModifyLevelProbabilityTree TreeId="ShopProduction">
+
+            <Probability Weight="24">-1</Probability>
+
+            <Probability Weight="15">0</Probability>
+
+         </ModifyLevelProbabilityTree>
+
+         <ModifyLevelProbabilityTree TreeId="PanicReward">
+
+            <Probability Weight="20">1</Probability>
+
+            <Probability Weight="5">2</Probability>
+
+         </ModifyLevelProbabilityTree>
+
+         <ModifyLevelProbabilityTree TreeId="PanicRewardImproved">
+
+            <Probability Weight="25">2</Probability>
+
+         </ModifyLevelProbabilityTree>
+
+         <ModifyLevelProbabilityTree TreeId="BonePile">
+
+            <Probability Weight="20">0</Probability>
+
+         </ModifyLevelProbabilityTree>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemBetterRarity" Cost="2">
+
+      <GlyphEffects>
+
+         <ModifyRarityProbabilityTree TreeId="BuildingProduction">
+
+            <Probability Weight="20">2</Probability>
+
+         </ModifyRarityProbabilityTree>
+
+         <ModifyRarityProbabilityTree TreeId="ShopProduction">
+
+            <Probability Weight="14">2</Probability>
+
+         </ModifyRarityProbabilityTree>
+
+         <ModifyRarityProbabilityTree TreeId="PanicRewardBasic">
+
+            <Probability Weight="21">2</Probability>
+
+         </ModifyRarityProbabilityTree>
+
+         <ModifyRarityProbabilityTree TreeId="HeroGeneration">
+
+            <Probability Weight="18">2</Probability>
+
+         </ModifyRarityProbabilityTree>
+
+         <ModifyRarityProbabilityTree TreeId="BonePile">
+
+            <Probability Weight="20">2</Probability>
+
+         </ModifyRarityProbabilityTree>
+
+         <ModifyRarityProbabilityTree TreeId="BuildingProduction">
+
+            <Probability Weight="10">3</Probability>
+
+         </ModifyRarityProbabilityTree>
+
+         <ModifyRarityProbabilityTree TreeId="ShopProduction">
+
+            <Probability Weight="7">3</Probability>
+
+         </ModifyRarityProbabilityTree>
+
+         <ModifyRarityProbabilityTree TreeId="PanicRewardBasic">
+
+            <Probability Weight="7">3</Probability>
+
+         </ModifyRarityProbabilityTree>
+
+         <ModifyRarityProbabilityTree TreeId="PanicRewardHigh">
+
+            <Probability Weight="17">3</Probability>
+
+         </ModifyRarityProbabilityTree>
+
+         <ModifyRarityProbabilityTree TreeId="HeroGeneration">
+
+            <Probability Weight="6">3</Probability>
+
+         </ModifyRarityProbabilityTree>
+
+         <ModifyRarityProbabilityTree TreeId="BonePile">
+
+            <Probability Weight="10">3</Probability>
+
+         </ModifyRarityProbabilityTree>
+
+         <ModifyRarityProbabilityTree TreeId="BuildingProduction">
+
+            <Probability Weight="4">4</Probability>
+
+         </ModifyRarityProbabilityTree>
+
+         <ModifyRarityProbabilityTree TreeId="ShopProduction">
+
+            <Probability Weight="3">4</Probability>
+
+         </ModifyRarityProbabilityTree>
+
+         <ModifyRarityProbabilityTree TreeId="PanicRewardHigh">
+
+            <Probability Weight="5">4</Probability>
+
+         </ModifyRarityProbabilityTree>
+
+         <ModifyRarityProbabilityTree TreeId="BonePile">
+
+            <Probability Weight="4">4</Probability>
+
+         </ModifyRarityProbabilityTree>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+
+
+   <!-- DEFENSES MODIFIERS -->
+
+   <GlyphDefinition Id="DefensesMoreHealth" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="WoodHealthBonus" Value="50"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="HealthTotal"/>
+
+         <LocArgument Prefix="+" Value="WoodHealthBonus" Suffix="%" Style="GoodNb"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <IncreaseBuildingHealth IdList="WoodenWallsIncludingBarricade" Value="WoodHealthBonus"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="DefensesMoreHealth2" Cost="2">
+
+      <TokenVariables>
+
+         <TokenVariable Key="WoodHealthBonus" Value="40"/>
+
+         <TokenVariable Key="StoneHealthBonus" Value="20"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="HealthTotal"/>
+
+         <LocArgument Prefix="+" Value="WoodHealthBonus" Suffix="%" Style="GoodNb"/>
+
+         <LocArgument Prefix="+" Value="StoneHealthBonus" Suffix="%" Style="GoodNb"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <IncreaseBuildingHealth IdList="WoodenWallsIncludingBarricade" Value="WoodHealthBonus"/>
+
+         <IncreaseBuildingHealth IdList="StoneWalls" Value="StoneHealthBonus"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="DefensesMoreHealth3" Cost="3">
+
+      <TokenVariables>
+
+         <TokenVariable Key="WoodHealthBonus" Value="60"/>
+
+         <TokenVariable Key="StoneHealthBonus" Value="40"/>
+
+         <TokenVariable Key="SpecialDefensesHealthBonus" Value="50"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="HealthTotal"/>
+
+         <LocArgument Prefix="+" Value="WoodHealthBonus" Suffix="%" Style="GoodNb"/>
+
+         <LocArgument Prefix="+" Value="StoneHealthBonus" Suffix="%" Style="GoodNb"/>
+
+         <LocArgument Prefix="+" Value="SpecialDefensesHealthBonus" Suffix="%" Style="GoodNb"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <IncreaseBuildingHealth IdList="WoodenWallsIncludingBarricade" Value="WoodHealthBonus"/>
+
+         <IncreaseBuildingHealth IdList="StoneWalls" Value="StoneHealthBonus"/>
+
+         <IncreaseBuildingHealth IdList="SpecialDefenses" Value="SpecialDefensesHealthBonus"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="DefensesMoreDamage" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="DamageBonus" Value="25"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <StatArgument Stat="OverallDamage" Value="DamageBonus" DisplaySign="true"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <IncreaseDefensesDamages Value="DamageBonus"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="DefensesSpecializedTraps" Cost="2">
+
+      <GlyphEffects>
+
+         <ToggleSkillProgressionFlag Flag="SpecializedTraps"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="DefensesSpecializedFiringDefenses" Cost="2">
+
+      <GlyphEffects>
+
+         <ToggleSkillProgressionFlag Flag="SpecializedFiringDefenses"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="DefensesReusableTraps" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="FreeChargeChances" Value="33"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Value="FreeChargeChances" Suffix="%" Style="GoodNb"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <FreeTrapUsageChances Value="FreeChargeChances"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+
+
+   <!-- BUILD LIMIT -->
+
+   <GlyphDefinition Id="HouseHigherBuildingLimit" Cost="2">
+
+      <TokenVariables>
+
+         <TokenVariable Key="BuildingId" Value="House"/>
+
+         <TokenVariable Key="BuildLimitModifier" Value="1"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Value="BuildLimitModifier" Style="GoodNb"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyBuildLimit Value="BuildLimitModifier" BuildLimitId="BuildingId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ProdBuildingHigherBuildingLimit" Cost="1">
+
+      <TokenVariables>
+
+         <TokenVariable Key="BuildingId" Value="ProdBuildings"/>
+
+         <TokenVariable Key="BuildLimitModifier" Value="2"/>
+
+      </TokenVariables>
+
+      <LocArguments>
+
+         <LocArgument Value="BuildLimitModifier" Style="GoodNb"/>
+
+      </LocArguments>
+
+      <GlyphEffects>
+
+         <ModifyBuildLimit Value="BuildLimitModifier" BuildLimitId="BuildingId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+   
+
+   <!-- DLC 1 -->
+
+
+
+   <GlyphDefinition Id="ItemWeaponMoreCannon" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_Cannon"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_RangedWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenCannonBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_CannonVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenRangedWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenRangedWeaponsVariations"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="Cannon">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMoreGauntlet" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_Gauntlet"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_MagicWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenGauntletBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_GauntletVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponOffhand" Value="GauntletOffhand0"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenMagicWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenMagicWeaponsVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryOffhand" Value="ItemList_HeroGenOffhandWeapon"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryOffhand" ItemId="HeroGenWeaponOffhand" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="Gauntlet">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMoreWarShield" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_WarShield"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_MeleeWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenWarShieldBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_WarShieldVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenMeleeWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenMeleeWeaponsVariations"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="WarShield">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+   
+
+   <!-- DLC 2 -->
+
+
+
+   <GlyphDefinition Id="ItemWeaponMoreClaws" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_Claws"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_MeleeWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenClawsBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_ClawsVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenMeleeWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenMeleeWeaponsVariations"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="Claws">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMoreManaFlower" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_ManaFlower"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_MagicWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenManaFlowerBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_ManaFlowerVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponOffhand" Value="ManaFlowerOffhand0"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenMagicWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenMagicWeaponsVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryOffhand" Value="ItemList_HeroGenOffhandWeapon"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryOffhand" ItemId="HeroGenWeaponOffhand" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="ManaFlower">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+
+
+   <GlyphDefinition Id="ItemWeaponMoreBoomerang" Cost="1">
+
+      <TokenVariables>
+
+         <!--Item drops-->
+
+         <TokenVariable Key="ItemDropWeaponId" Value="ItemList_Boomerang"/>
+
+         <TokenVariable Key="ItemDropWeaponCategory" Value="ItemList_RangedWeapons"/>
+
+         <!--Hero gen-->
+
+         <TokenVariable Key="HeroGenWeaponBase" Value="ItemList_HeroGenBoomerangBase"/>
+
+         <TokenVariable Key="HeroGenWeaponVariations" Value="ItemList_BoomerangVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponOffhand" Value="BoomerangOffhand0"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryBase" Value="ItemList_HeroGenMRangedWeapons"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryVariations" Value="ItemList_HeroGenRangedWeaponsVariations"/>
+
+         <TokenVariable Key="HeroGenWeaponCategoryOffhand" Value="ItemList_HeroGenOffhandWeapon"/>
+
+         <!--Multipliers-->
+
+         <TokenVariable Key="WeaponWeightMultiplier" Value="3"/>
+
+         <TokenVariable Key="CategoryWeightMultiplier" Value="2"/>
+
+         <TokenVariable Key="HeroGenMultiplier" Value="10000"/>
+
+      </TokenVariables>
+
+      <GlyphEffects>
+
+         <!--Item drops-->
+
+         <MultiplyItemWeight ItemListId="ItemDropWeaponCategory" ItemId="ItemDropWeaponId" WeightMultiplier="WeaponWeightMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="ItemList_AllWeapons" ItemId="ItemDropWeaponCategory" WeightMultiplier="CategoryWeightMultiplier" IsCumulative="false"/>
+
+         <!--Hero gen-->
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryBase" ItemId="HeroGenWeaponBase" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryVariations" ItemId="HeroGenWeaponVariations" WeightMultiplier="HeroGenMultiplier"/>
+
+         <MultiplyItemWeight ItemListId="HeroGenWeaponCategoryOffhand" ItemId="HeroGenWeaponOffhand" WeightMultiplier="HeroGenMultiplier"/>
+
+         <!-- Item Rarity -->
+
+         <ModifyItemRarity Tag="Boomerang">
+
+            <MinRarity>2</MinRarity>
+
+         </ModifyItemRarity>
+
+         <!-- Starting Gear Generation Priority -->
+
+         <AddStartingGearGenerationPriority ItemListId="ItemDropWeaponId"/>
+
+      </GlyphEffects>
+
+   </GlyphDefinition>
+
+   
+
+</GlyphDefinitions>

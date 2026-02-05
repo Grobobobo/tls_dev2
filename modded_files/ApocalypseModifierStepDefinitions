@@ -52,7 +52,7 @@
 
    <!-- Hero Vision Modifier Steps -->
    <ApocalypseModifierStepDefinition Id="HeroesVisionModifier_1">
-      <ApocalypseLevel>2</ApocalypseLevel>
+      <ApocalypseLevel>1</ApocalypseLevel>
       <Effects>
          <PlayableUnitBlockLineOfSight/>
       </Effects>
@@ -93,7 +93,7 @@
    <ApocalypseModifierStepDefinition Id="DefenseCostModifier_1">
       <ApocalypseLevel>2</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="CostModifier" Value="20"/>
+         <TokenVariable Key="CostModifier" Value="15"/>
       </TokenVariables>
       <Effects>
          <IncreasePrices Type="All" ResourceCostType="Materials" Value="CostModifier"/>
@@ -109,14 +109,14 @@
    <ApocalypseModifierStepDefinition Id="DefenseCostModifier_2" TemplateId="DefenseCostModifier_1">
       <ApocalypseLevel>4</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="CostModifier" Value="40"/>
+         <TokenVariable Key="CostModifier" Value="30"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="DefenseCostModifier_3" TemplateId="DefenseCostModifier_1">
       <ApocalypseLevel>6</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="CostModifier" Value="60"/>
+         <TokenVariable Key="CostModifier" Value="45"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 

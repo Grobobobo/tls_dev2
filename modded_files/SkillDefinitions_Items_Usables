@@ -1189,7 +1189,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
+            <DamageMultiplier>1.25</DamageMultiplier>
             <SkillEffects>
                <Isolated>
                   <DamageMultiplier>1.5</DamageMultiplier>
@@ -1197,7 +1197,6 @@
                <Opportunistic>
                   <DamageMultiplier>1.5</DamageMultiplier>
                </Opportunistic>
-               <NoDodge/>
             </SkillEffects>
          </Attack>
       </SkillAction>

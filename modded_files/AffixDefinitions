@@ -6,13 +6,13 @@
       <ItemLevel Min="0" Max="10"/>
       <ItemCategories>
          <ItemCategory Weight="22">BodyArmor</ItemCategory>
-         <ItemCategory Weight="18">Shield</ItemCategory>
+         <ItemCategory Weight="22">Shield</ItemCategory>
          <ItemCategory Weight="22">Boots</ItemCategory>
          <ItemCategory Weight="22">Helm</ItemCategory>
          <ItemCategory Weight="14">MeleeWeapon</ItemCategory>
          <ItemCategory Weight="14">RangeWeapon</ItemCategory>
          <ItemCategory Weight="14">MagicWeapon</ItemCategory>
-         <ItemCategory Weight="0">Trinket</ItemCategory>
+         <ItemCategory Weight="14">Trinket</ItemCategory>
       </ItemCategories>
       <Levels>
          <Level Id="1">
@@ -35,13 +35,13 @@
       <ItemLevel Min="0" Max="10"/>
       <ItemCategories>
          <ItemCategory Weight="22">BodyArmor</ItemCategory>
-         <ItemCategory Weight="18">Shield</ItemCategory>
+         <ItemCategory Weight="22">Shield</ItemCategory>
          <ItemCategory Weight="22">Boots</ItemCategory>
          <ItemCategory Weight="22">Helm</ItemCategory>
          <ItemCategory Weight="14">MeleeWeapon</ItemCategory>
          <ItemCategory Weight="14">RangeWeapon</ItemCategory>
          <ItemCategory Weight="14">MagicWeapon</ItemCategory>
-         <ItemCategory Weight="0">Trinket</ItemCategory>
+         <ItemCategory Weight="14">Trinket</ItemCategory>
       </ItemCategories>
       <Levels>
          <Level Id="1">
@@ -63,13 +63,13 @@
    <AffixDefinition Id="BlockBonus" Droppable = "true">
       <ItemLevel Min="0" Max="10"/>
       <ItemCategories>
-         <ItemCategory Weight="18">BodyArmor</ItemCategory>
-         <ItemCategory Weight="27">Shield</ItemCategory>
-         <ItemCategory Weight="18">Boots</ItemCategory>
-         <ItemCategory Weight="18">Helm</ItemCategory>
-         <ItemCategory Weight="12">MeleeWeapon</ItemCategory>
-         <ItemCategory Weight="12">RangeWeapon</ItemCategory>
-         <ItemCategory Weight="12">MagicWeapon</ItemCategory>
+         <ItemCategory Weight="22">BodyArmor</ItemCategory>
+         <ItemCategory Weight="22">Shield</ItemCategory>
+         <ItemCategory Weight="22">Boots</ItemCategory>
+         <ItemCategory Weight="22">Helm</ItemCategory>
+         <ItemCategory Weight="14">MeleeWeapon</ItemCategory>
+         <ItemCategory Weight="14">RangeWeapon</ItemCategory>
+         <ItemCategory Weight="14">MagicWeapon</ItemCategory>
          <ItemCategory Weight="0">Trinket</ItemCategory>
       </ItemCategories>
       <Levels>
@@ -93,13 +93,13 @@
       <ItemLevel Min="0" Max="10"/>
       <ItemCategories>
          <ItemCategory Weight="22">BodyArmor</ItemCategory>
-         <ItemCategory Weight="18">Shield</ItemCategory>
+         <ItemCategory Weight="0">Shield</ItemCategory>
          <ItemCategory Weight="22">Boots</ItemCategory>
          <ItemCategory Weight="22">Helm</ItemCategory>
          <ItemCategory Weight="14">MeleeWeapon</ItemCategory>
          <ItemCategory Weight="14">RangeWeapon</ItemCategory>
          <ItemCategory Weight="14">MagicWeapon</ItemCategory>
-         <ItemCategory Weight="0">Trinket</ItemCategory>
+         <ItemCategory Weight="14">Trinket</ItemCategory>
       </ItemCategories>
       <Levels>
          <Level Id="1">
@@ -122,7 +122,7 @@
       <ItemLevel Min="0" Max="10"/>
       <ItemCategories>
          <ItemCategory Weight="22">BodyArmor</ItemCategory>
-         <ItemCategory Weight="18">Shield</ItemCategory>
+         <ItemCategory Weight="22">Shield</ItemCategory>
          <ItemCategory Weight="22">Boots</ItemCategory>
          <ItemCategory Weight="22">Helm</ItemCategory>
          <ItemCategory Weight="22">MeleeWeapon</ItemCategory>
@@ -725,14 +725,14 @@
   <AffixDefinition Id="MultiHitsCountModifierBonus" Droppable = "true" MaxOccurrences="1">
     <ItemLevel Min="0" Max="10"/>
     <ItemCategories>
-       <ItemCategory Weight="0">BodyArmor</ItemCategory>
-       <ItemCategory Weight="10">Shield</ItemCategory>
-       <ItemCategory Weight="0">Boots</ItemCategory>
-       <ItemCategory Weight="0">Helm</ItemCategory>
-       <ItemCategory Weight="10">MeleeWeapon</ItemCategory>
-       <ItemCategory Weight="10">RangeWeapon</ItemCategory>
-       <ItemCategory Weight="10">MagicWeapon</ItemCategory>
-       <ItemCategory Weight="7">Trinket</ItemCategory>
+       <ItemCategory Weight="5">BodyArmor</ItemCategory>
+       <ItemCategory Weight="5">Shield</ItemCategory>
+       <ItemCategory Weight="5">Boots</ItemCategory>
+       <ItemCategory Weight="5">Helm</ItemCategory>
+       <ItemCategory Weight="5">MeleeWeapon</ItemCategory>
+       <ItemCategory Weight="5">RangeWeapon</ItemCategory>
+       <ItemCategory Weight="5">MagicWeapon</ItemCategory>
+       <ItemCategory Weight="5">Trinket</ItemCategory>
     </ItemCategories>
     <Levels>
       <Level Id="3">
@@ -748,14 +748,14 @@
    <AffixDefinition Id="SkillRangeBonus" Droppable = "true">
       <ItemLevel Min="0" Max="10"/>
       <ItemCategories>
-         <ItemCategory Weight="0">BodyArmor</ItemCategory>
-         <ItemCategory Weight="3">Shield</ItemCategory>
-         <ItemCategory Weight="0">Boots</ItemCategory>
-         <ItemCategory Weight="0">Helm</ItemCategory>
+         <ItemCategory Weight="7">BodyArmor</ItemCategory>
+         <ItemCategory Weight="7">Shield</ItemCategory>
+         <ItemCategory Weight="7">Boots</ItemCategory>
+         <ItemCategory Weight="7">Helm</ItemCategory>
          <ItemCategory Weight="5">MeleeWeapon</ItemCategory>
-         <ItemCategory Weight="10">RangeWeapon</ItemCategory>
+         <ItemCategory Weight="5">RangeWeapon</ItemCategory>
          <ItemCategory Weight="5">MagicWeapon</ItemCategory>
-         <ItemCategory Weight="5">Trinket</ItemCategory>
+         <ItemCategory Weight="7">Trinket</ItemCategory>
       </ItemCategories>
       <Levels>
          <Level Id="1">
