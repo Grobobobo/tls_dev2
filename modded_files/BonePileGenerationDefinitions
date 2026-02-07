@@ -84,24 +84,28 @@
          <BonePile Id="BonePile1" AddedPercentage="9"/>
          <BonePile Id="BonePile2" AddedPercentage="7"/>
          <BonePile Id="BonePile3" AddedPercentage="5"/>
+         <BonePile Id="BonePileElite" AddedPercentage="100"/>
       </BoneGroup>
 
       <BoneGroup Tier="2" Elite="true">
          <BonePile Id="BonePile1" AddedPercentage="12"/>
          <BonePile Id="BonePile2" AddedPercentage="9"/>
          <BonePile Id="BonePile3" AddedPercentage="6"/>
+         <BonePile Id="BonePileElite" AddedPercentage="100"/>
       </BoneGroup>
 
       <BoneGroup Tier="3" Elite="true">
          <BonePile Id="BonePile1" AddedPercentage="18"/>
          <BonePile Id="BonePile2" AddedPercentage="14"/>
          <BonePile Id="BonePile3" AddedPercentage="9"/>
+         <BonePile Id="BonePileElite" AddedPercentage="100"/>
       </BoneGroup>
 
       <BoneGroup Tier="4" Elite="true">
          <BonePile Id="BonePile1" AddedPercentage="27"/>
          <BonePile Id="BonePile2" AddedPercentage="20"/>
          <BonePile Id="BonePile3" AddedPercentage="14"/>
+         <BonePile Id="BonePileElite" AddedPercentage="100"/>
       </BoneGroup>   
       
    </BonePileGeneratorDefinition>
@@ -137,24 +141,28 @@
          <BonePile Id="BonePile1" AddedPercentage="12"/>
          <BonePile Id="BonePile2" AddedPercentage="9"/>
          <BonePile Id="BonePile3" AddedPercentage="6"/>
+         <BonePile Id="BonePileElite" AddedPercentage="100"/>
       </BoneGroup>
       
       <BoneGroup Tier="2" Elite="true">
          <BonePile Id="BonePile1" AddedPercentage="16"/>
          <BonePile Id="BonePile2" AddedPercentage="12"/>
          <BonePile Id="BonePile3" AddedPercentage="8"/>
+         <BonePile Id="BonePileElite" AddedPercentage="100"/>
       </BoneGroup>
       
       <BoneGroup Tier="3" Elite="true">
          <BonePile Id="BonePile1" AddedPercentage="24"/>
          <BonePile Id="BonePile2" AddedPercentage="18"/>
          <BonePile Id="BonePile3" AddedPercentage="12"/>
+         <BonePile Id="BonePileElite" AddedPercentage="100"/>
       </BoneGroup>
       
       <BoneGroup Tier="4" Elite="true">
          <BonePile Id="BonePile1" AddedPercentage="36"/>
          <BonePile Id="BonePile2" AddedPercentage="27"/>
          <BonePile Id="BonePile3" AddedPercentage="18"/>
+         <BonePile Id="BonePileElite" AddedPercentage="100"/>
       </BoneGroup>
       
    </BonePileGeneratorDefinition>
@@ -190,21 +198,21 @@
          <BonePile Id="BonePile1" AddedPercentage="18"/>
          <BonePile Id="BonePile2" AddedPercentage="14"/>
          <BonePile Id="BonePile3" AddedPercentage="9"/>
-         <BonePile Id="BonePileElite" AddedPercentage="33"/>
+         <BonePile Id="BonePileElite" AddedPercentage="100"/>
       </BoneGroup>
       
       <BoneGroup Tier="2" Elite="true">
          <BonePile Id="BonePile1" AddedPercentage="24"/>
          <BonePile Id="BonePile2" AddedPercentage="18"/>
          <BonePile Id="BonePile3" AddedPercentage="12"/>
-         <BonePile Id="BonePileElite" AddedPercentage="50"/>
+         <BonePile Id="BonePileElite" AddedPercentage="100"/>
       </BoneGroup>
       
       <BoneGroup Tier="3" Elite="true">
          <BonePile Id="BonePile1" AddedPercentage="36"/>
          <BonePile Id="BonePile2" AddedPercentage="27"/>
          <BonePile Id="BonePile3" AddedPercentage="18"/>
-         <BonePile Id="BonePileElite" AddedPercentage="66"/>
+         <BonePile Id="BonePileElite" AddedPercentage="100"/>
       </BoneGroup>
       
       <BoneGroup Tier="4" Elite="true">
@@ -247,14 +255,14 @@
          <BonePile Id="BonePile1" AddedPercentage="24"/>
          <BonePile Id="BonePile2" AddedPercentage="18"/>
          <BonePile Id="BonePile3" AddedPercentage="12"/>
-         <BonePile Id="BonePileElite" AddedPercentage="50"/>
+         <BonePile Id="BonePileElite" AddedPercentage="100"/>
       </BoneGroup>
 
       <BoneGroup Tier="2" Elite="true">
          <BonePile Id="BonePile1" AddedPercentage="32"/>
          <BonePile Id="BonePile2" AddedPercentage="24"/>
          <BonePile Id="BonePile3" AddedPercentage="16"/>
-         <BonePile Id="BonePileElite" AddedPercentage="66"/>
+         <BonePile Id="BonePileElite" AddedPercentage="100"/>
       </BoneGroup>
 
       <BoneGroup Tier="3" Elite="true">
@@ -304,7 +312,7 @@
          <BonePile Id="BonePile1" AddedPercentage="36"/>
          <BonePile Id="BonePile2" AddedPercentage="27"/>
          <BonePile Id="BonePile3" AddedPercentage="18"/>
-         <BonePile Id="BonePileElite" AddedPercentage="66"/>
+         <BonePile Id="BonePileElite" AddedPercentage="100"/>
       </BoneGroup>
       
       <BoneGroup Tier="2" Elite="true">
