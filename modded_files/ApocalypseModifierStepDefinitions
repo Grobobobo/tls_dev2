@@ -153,10 +153,11 @@
 
    <!-- Inn Level Modifier Steps -->
    <ApocalypseModifierStepDefinition Id="InnLevelModifier_1">
-      <ApocalypseLevel>4</ApocalypseLevel>
+      <ApocalypseLevel>2</ApocalypseLevel>
       <Effects>
-         <ModifyInnSlotRecruitmentLevel SlotIndex="1" LevelId="LowUnitLevelApoc"/>
-         <ModifyInnSlotRecruitmentLevel SlotIndex="2" LevelId="HighUnitLevelApoc"/>
+         <ModifyInnSlotRecruitmentLevel SlotIndex="0" LevelId="LowUnitLevelApoc"/>
+         <ModifyInnSlotRecruitmentLevel SlotIndex="1" LevelId="HighUnitLevelApoc"/>
+         <ModifyInnSlotRecruitmentLevel SlotIndex="2" LevelId="AverageUnitLevelApoc"/>
          <ModifyInnSlotRecruitmentLevel SlotIndex="3" LevelId="AverageUnitLevelApoc"/>
          <ModifyInnSlotRecruitmentLevel SlotIndex="4" LevelId="AverageUnitLevelApoc"/>
       </Effects>
@@ -283,7 +284,7 @@
    </ApocalypseModifierStepDefinition>
 
    <!-- Healing BonePiles Modifier Steps -->
-   <ApocalypseModifierStepDefinition Id="HealingBonePilesModifier_1">
+   <!--<ApocalypseModifierStepDefinition Id="HealingBonePilesModifier_1">
       <ApocalypseLevel>4</ApocalypseLevel>
       <Effects>
          <AddSkillProgressionFlag Flag="HealingBonePiles"/>
@@ -291,7 +292,7 @@
             <BuildingList>BonePiles</BuildingList>
          </SetBuildingsNotDemolishable>
       </Effects>
-   </ApocalypseModifierStepDefinition>
+   </ApocalypseModifierStepDefinition>-->
 
    <!-- Mist Censers Steps -->
    <ApocalypseModifierStepDefinition Id="FogSpawnerModifier_1">
@@ -320,10 +321,19 @@
 
    <!-- Super Elite Modifier Steps -->
    <ApocalypseModifierStepDefinition Id="SuperEliteModifier_1">
-      <ApocalypseLevel>2</ApocalypseLevel>
+      <ApocalypseLevel>3</ApocalypseLevel>
+      <TokenVariables>
+         <TokenVariable Key="HealthModifier" Value="50"/>
+      </TokenVariables>
       <Effects>
          <AddAffixFlag Flag="SuperEliteAffixes"/>
+         <EnemiesStatBaseValueModifier Stat="HealthTotal" Value="HealthModifier">
+            <TriggeredList>AllElites</TriggeredList>
+         </EnemiesStatBaseValueModifier>
       </Effects>
+      <LocArguments>
+         <LocArgument Prefix="+" Value="HealthModifier" Suffix="%" Interpreted="true" Style="BadNb"/>
+      </LocArguments>
    </ApocalypseModifierStepDefinition>
 
    <!-- Super Enemies Modifier Steps -->
@@ -430,24 +440,42 @@
    <ApocalypseModifierStepDefinition Id="EnemyProgressionOffsetModifier_1">
       <ApocalypseLevel>2</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="ProgressionOffset" Value="1"/>
+         <TokenVariable Key="ProgressionMultiplier" Value="1.15"/>
+         <TokenVariable Key="ExcludeStatMovePoints" Value="MovePointsTotal"/>
+         <TokenVariable Key="ExcludeStatDodge" Value="Dodge"/>
+         <TokenVariable Key="ExcludeStatResistance" Value="Resistance"/>
       </TokenVariables>
       <Effects>
-         <IncreaseEnemiesProgressionOffset Value="ProgressionOffset"/>
+          <EnemiesStatProgressionMultiplier Value="ProgressionMultiplier">
+              <ExcludeStats>
+                  <ExcludeStat Id="ExcludeStatMovePoints"/>
+                  <ExcludeStat Id="ExcludeStatDodge"/>
+                  <ExcludeStat Id="ExcludeStatResistance"/>
+              </ExcludeStats>
+          </EnemiesStatProgressionMultiplier>
       </Effects>
+      <LocArguments>
+         <LocArgument Value="(ProgressionMultiplier-1)*100" Suffix="%" Style="BadNb" Interpreted="true"/>
+      </LocArguments>
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="EnemyProgressionOffsetModifier_2" TemplateId="EnemyProgressionOffsetModifier_1">
       <ApocalypseLevel>4</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="ProgressionOffset" Value="2"/>
+         <TokenVariable Key="ProgressionMultiplier" Value="1.3"/>
+         <TokenVariable Key="ExcludeStatMovePoints" Value="MovePointsTotal"/>
+         <TokenVariable Key="ExcludeStatDodge" Value="Dodge"/>
+         <TokenVariable Key="ExcludeStatResistance" Value="Resistance"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="EnemyProgressionOffsetModifier_3" TemplateId="EnemyProgressionOffsetModifier_1">
       <ApocalypseLevel>6</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="ProgressionOffset" Value="3"/>
+         <TokenVariable Key="ProgressionMultiplier" Value="1.45"/>
+         <TokenVariable Key="ExcludeStatMovePoints" Value="MovePointsTotal"/>
+         <TokenVariable Key="ExcludeStatDodge" Value="Dodge"/>
+         <TokenVariable Key="ExcludeStatResistance" Value="Resistance"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 
@@ -526,6 +554,46 @@
       <View>
          <DropdownValue Prefix="-" Value="RemovedStartingHeroes"/>
       </View>
+   </ApocalypseModifierStepDefinition>
+
+   <!-- Shared Experience Modifier Steps -->
+   <ApocalypseModifierStepDefinition Id="SharedExperienceModifier_1">
+      <ApocalypseLevel>2</ApocalypseLevel>
+      <TokenVariables>
+         <TokenVariable Key="DebuffExperience" Value="15"/>
+      </TokenVariables>
+      <Effects>
+         <MultiplySharedExeprience Value="DebuffExperience"/>
+      </Effects>
+      <LocArguments>
+         <LocArgument Prefix="-" Value="DebuffExperience" Suffix="%" Interpreted="true" Style="BadNb"/>
+      </LocArguments>
+      <View>
+         <DropdownValue Prefix="-" Value="DebuffExperience" Suffix="%"/>
+      </View>
+   </ApocalypseModifierStepDefinition>
+
+   <ApocalypseModifierStepDefinition Id="SharedExperienceModifier_2" TemplateId="SharedExperienceModifier_1">
+      <ApocalypseLevel>4</ApocalypseLevel>
+      <TokenVariables>
+         <TokenVariable Key="DebuffExperience" Value="30"/>
+      </TokenVariables>
+   </ApocalypseModifierStepDefinition>
+
+   <ApocalypseModifierStepDefinition Id="TraitsParametersModifier_1">
+      <ApocalypseLevel>4</ApocalypseLevel>
+      <TokenVariables>
+         <TokenVariable Key="TotalModifier" Value="10"/>
+         <TokenVariable Key="BoundariesMinModifier" Value="3"/>
+         <TokenVariable Key="BoundariesMaxModifier" Value="2"/>
+      </TokenVariables>
+      <Effects>
+         <TraitsParameters>
+            <StartTraitTotalPointsModifier Value="TotalModifier"/>
+            <UnitTraitPointsBoundariesModifiers Min="BoundariesMinModifier" Max="BoundariesMaxModifier"/>
+         </TraitsParameters>
+         <UnlockTraits Flag="TraitsParametersApo1"/>
+      </Effects>
    </ApocalypseModifierStepDefinition>
 
 </ApocalypseModifierStepDefinitions>

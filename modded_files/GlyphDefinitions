@@ -1522,9 +1522,9 @@
 
       <TokenVariables>
 
-         <TokenVariable Key="GoldBonus" Value="40"/>
+         <TokenVariable Key="GoldBonus" Value="75"/>
 
-         <TokenVariable Key="MaterialsBonus" Value="135"/>
+         <TokenVariable Key="MaterialsBonus" Value="250"/>
 
       </TokenVariables>
 
@@ -1560,7 +1560,7 @@
 
       <TokenVariables>
 
-         <TokenVariable Key="GoldBonus" Value="30"/>
+         <TokenVariable Key="GoldBonus" Value="60"/>
 
       </TokenVariables>
 
@@ -1590,7 +1590,7 @@
 
       <TokenVariables>
 
-         <TokenVariable Key="MaterialsBonus" Value="100"/>
+         <TokenVariable Key="MaterialsBonus" Value="200"/>
 
       </TokenVariables>
 
@@ -1944,11 +1944,11 @@
 
 
 
-   <GlyphDefinition Id="HeroAttributeMoreExpGain" Cost="3">
+   <GlyphDefinition Id="HeroAttributeMoreExpGain" Cost="2">
 
       <TokenVariables>
 
-         <TokenVariable Key="ExpBonus" Value="30"/>
+         <TokenVariable Key="ExpBonus" Value="25"/>
 
       </TokenVariables>
 

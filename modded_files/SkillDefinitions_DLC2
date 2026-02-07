@@ -2247,7 +2247,8 @@
 
                   <BaseChance>1</BaseChance>
 
-                  <Status>Buff</Status>
+                  <Status>RemovablePositive</Status>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
 
                </RemoveStatus>
 
@@ -2531,7 +2532,8 @@
 
                   <BaseChance>1</BaseChance>
 
-                  <Status>Buff</Status>
+                  <Status>RemovablePositive</Status>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
 
                </RemoveStatus>
 
