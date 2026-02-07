@@ -10,9 +10,11 @@
    <PerkDefinition Id="JollyDrinker">
 	   <TokenVariables>
          <TokenVariable Key="MovePointRestored" Value="2"/>
+         <TokenVariable Key="BonusHealing" Value="30"/>
       </TokenVariables>
       <LocArguments>
          <RestoreStatArgument Stat="MovePointsTotal" Value="MovePointRestored" DisplayRestoreText="true"/>
+         <StatArgument Stat="HealingReceived" Value="BonusHealing" DisplaySign="true"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -37,6 +39,7 @@
             </Events>
             <Effects>
                <RestoreStat Stat="MovePoints" Value="MovePointRestored"/>
+               <StatModifier Stat="HealingReceived" Value="BonusHealing"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -189,7 +192,7 @@
       <TokenVariables>
          <TokenVariable Key="TotalGain" Value="Module.Buffer * GainPerKill"/>
          <TokenVariable Key="GainPerKill" Value="1"/>
-         <TokenVariable Key="BuffDuration" Value="1"/>
+         <TokenVariable Key="BuffDuration" Value="2"/>
       </TokenVariables>
       <LocArguments>
          <StatusArgument Stat="Block" Status="Buff" Value="GainPerKill" TurnsCount="BuffDuration"/>
@@ -1009,21 +1012,27 @@
 
    <PerkDefinition Id="ShowerofBlows">
       <TokenVariables>
-         <TokenVariable Key="DamageCurrentBonus" Value="DamageBonus * HitsInARow" />
-         <TokenVariable Key="AccuracyCurrentMalus" Value="AccuracyMalus * HitsInARow" />
+         <TokenVariable Key="DamageCurrentBonus" Value="DamageBonus * CurrentInstances" />
+         <TokenVariable Key="AccuracyCurrentMalus" Value="AccuracyMalus * CurrentInstances" />
+         <TokenVariable Key="CurrentInstances" Value="BooleanChoice(MaximalInstances > HitsInARow, HitsInARow, MaximalInstances)"/>
+         <TokenVariable Key="MaximalDamage" Value="DamageBonus * MaximalInstances"/>
+         <TokenVariable Key="MaximalAccuracy" Value="AccuracyMalus * MaximalInstances"/>
          <TokenVariable Key="HitsInARow" Value="Module.Buffer"/>
-         <TokenVariable Key="DamageBonus" Value="5" />
-         <TokenVariable Key="AccuracyMalus" Value="-4" />
+         <TokenVariable Key="MaximalInstances" Value="10"/>
+         <TokenVariable Key="DamageBonus" Value="7" />
+         <TokenVariable Key="AccuracyMalus" Value="-3" />
       </TokenVariables>  
       <LocArguments>
          <StatArgument Stat="OverallDamage" Value="DamageBonus"/>
          <StatArgument Stat="Accuracy" Value="AccuracyMalus"/>
          <StatArgument Stat="OverallDamage" Value="DamageCurrentBonus" Interpreted="true"/>
          <StatArgument Stat="Accuracy" Value="AccuracyCurrentMalus" Interpreted="true"/>
+         <LocArgument Value="MaximalDamage" Suffix="%" Style="KeyWordNb" Interpreted="true"/>
+         <LocArgument Value="MaximalAccuracy" Suffix="%" Style="KeyWordNb" Interpreted="true"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
-            <Buffer Value="HitsInARow"/>
+            <Buffer Value="CurrentInstances"/>
             <Highlight>
                <IsTrue Value="HasTargetTile"/>
                <IsTrue Value="IsTargetEnemyUnit"/>
@@ -1056,9 +1065,17 @@
 				   </Conditions>
                   <Actions>
                      <IncreaseBuffer Value="1"/>
+                     <RefreshPerkActivationFeedback RefreshView="true"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnTargetHit">
+				   <Conditions>
+					   <IsTrue Value="IsTargetEnemyUnit"/>
+					   <IsFalse Value="HitsInARow > MaximalInstances"/>
+				   </Conditions>
+                  <Actions>
                      <InstantiateBuffEffectDisplay Stat="OverallDamage" Value="DamageCurrentBonus"/>
                      <InstantiateStatEffectDisplay Stat="Accuracy" Value="AccuracyCurrentMalus"/>
-                     <RefreshPerkActivationFeedback RefreshView="true"/>
                   </Actions>
                </Event>
                <Event EffectTime="OnSkillCastEnd">
@@ -1122,7 +1139,7 @@
             </Events>
             <Effects>
                <CastSkill SkillId="CollateralDamageSkill">
-                  <PerkTargeting TargetingReference="Caster" TargetingMethod="DamageablesInRange" Amount="1" Range="Module.CastSkillEffect.Skill.MaxRange">
+                  <PerkTargeting TargetingReference="Target" TargetingMethod="DamageablesInRange" Amount="1" Range="Module.CastSkillEffect.Skill.MaxRange">
                      <DamageableTarget Type="Enemy"/>
                      <DamageableTarget Type="Boss"/>
                   </PerkTargeting>
@@ -1483,7 +1500,7 @@
             </Events>
             <Effects>
                <ApplyStatus Status="Stun" Chance="100" TurnsCount="1">
-                  <PerkTargeting TargetingMethod="DamageablesInRange" TargetingReference="Owner">
+                  <PerkTargeting TargetingMethod="DamageablesInRange" TargetingReference="Target">
                      <DamageableTarget Type="Enemy"/>
                      <DamageableTarget Type="Boss"/>
                   </PerkTargeting>
@@ -1591,8 +1608,9 @@
    <PerkDefinition Id="StoneheartShield">
       <TokenVariables>
          <TokenVariable Key="BlockCurrentBonus" Value="Min(Module.Buffer * BlockBonus, Blockthreshold)"/>
-         <TokenVariable Key="BlockBonus" Value="6"/>
-         <TokenVariable Key="Blockthreshold" Value="30"/>
+         <TokenVariable Key="BlockBonus" Value="10"/>
+         <TokenVariable Key="Blockthreshold" Value="40"/>
+         <TokenVariable Key="IncreaseToMaximumBlock" Value="40"/>
          <TokenVariable Key="EnemisLeftToKill" Value="(TargetNbr - Module.Buffer2)"/>
          <TokenVariable Key="TargetNbr" Value="4"/>
       </TokenVariables>
@@ -1602,6 +1620,8 @@
         <StatArgument Stat="Block" Value="BlockCurrentBonus" Interpreted="true"/>
         <LocArgument Value="TargetNbr" Style="KeywordNb"/>
         <LocArgument Value="EnemisLeftToKill" Style="KeywordNb" Interpreted="true"/>
+         <LocArgument Value="IncreaseToMaximumBlock" Interpreted="true" Style="KeyWordNb"/>
+         <StatArgument Stat="Block"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -1648,6 +1668,7 @@
             </Events>
             <Effects>
                <StatModifier Stat="Block" Value="BlockCurrentBonus"/>
+               <StatBoundaryModifier Stat="Block" MaxModifier="IncreaseToMaximumBlock"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -1660,7 +1681,7 @@
          <TokenVariable Key="DepletedArmour" Value="(Owner.ArmorTotal - Owner.Armor)"/>
          <TokenVariable Key="DamageConversionRate" Value="3"/>
          <TokenVariable Key="DamageThreshold" Value="60"/>
-         <TokenVariable Key="ArmourConversionRate" Value="15"/>
+         <TokenVariable Key="ArmourConversionRate" Value="10"/>
          <TokenVariable Key="BuffDuration" Value="1"/>
       </TokenVariables>
       <LocArguments>
@@ -1705,7 +1726,7 @@
       <TokenVariables>
          <TokenVariable Key="TotalStacks" Value="Clamp(0, StacksLimit - Module.Buffer, StacksLimit)"/>
          <TokenVariable Key="StacksPerHit" Value="1"/>
-         <TokenVariable Key="StacksLimit" Value="8"/>
+         <TokenVariable Key="StacksLimit" Value="3"/>
       </TokenVariables>
       <LocArguments>
         <LocArgument Value="StacksLimit" Style="KeyWordNb"/>

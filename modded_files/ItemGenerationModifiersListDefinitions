@@ -40,12 +40,12 @@
 
    <ItemGenerationModifiersListDefinition Id="PanicReward">
       <Probability Weight="100">1</Probability>
-      <Probability Weight="20">2</Probability>
+      <Probability Weight="0">2</Probability>
    </ItemGenerationModifiersListDefinition>
 
    <ItemGenerationModifiersListDefinition Id="PanicRewardImproved">
       <Probability Weight="100">1</Probability>
-      <Probability Weight="20">2</Probability>
+      <Probability Weight="0">2</Probability>
    </ItemGenerationModifiersListDefinition>
 
    <ItemGenerationModifiersListDefinition Id="BonePile">
