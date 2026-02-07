@@ -1451,8 +1451,8 @@
          <TokenVariable Key="PerkDamageBonus" Value="15"/>
       </TokenVariables>
       <LocArguments>
-         <StatArgument Stat="Reliability" Value="ReliabilityBonus"/>
          <StatArgument Stat="PerkDamage" Value="PerkDamageBonus"/>
+         <StatArgument Stat="Reliability" Value="ReliabilityBonus"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
