@@ -1858,11 +1858,11 @@
    </SkillDefinition>
 
    <SkillDefinition Id="SlashUnique" TemplateId="Slash">
-      <Range Min="1" Max="1" CardinalDirectionOnly="false" Modifiable="true"/>
+      <Range Min="1" Max="2" CardinalDirectionOnly="false" Modifiable="true"/>
    </SkillDefinition>
 
    <SkillDefinition Id="BladeRushUnique" TemplateId="BladeRush">
-      <Range Min="1" Max="1" CardinalDirectionOnly="false" Modifiable="true"/>
+      <Range Min="1" Max="2" CardinalDirectionOnly="false" Modifiable="true"/>
    </SkillDefinition>
    <!--Hammer-->
 
@@ -1872,7 +1872,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Physical</AttackType>
-            <BaseDamage Min="69 * (1 + Level/10)" Max="105 * (1 + Level/10)"/>
+            <BaseDamage Min="69 * (1 + Level/12)" Max="105 * (1 + Level/12)"/>
             <DamageMultiplier>1.5</DamageMultiplier>
             <SkillEffects>
                <IgnoreLineOfSight/>
@@ -1907,6 +1907,7 @@
          eXe
          eXe
          eXe
+         eXe
       </AreaOfEffect>
       <SkillAction>
          <Attack>
@@ -1914,7 +1915,7 @@
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <SurroundingEffect>
-                  <Damage Multiplier="0.7"/>
+                  <Damage Multiplier="0.5"/>
                </SurroundingEffect>
             </SkillEffects>
          </Attack>
@@ -1970,6 +1971,7 @@
          eeXee
          eeXee
          eeXee
+         eeXee
       </AreaOfEffect>
       <SkillAction>
          <Attack>
@@ -1977,7 +1979,7 @@
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <SurroundingEffect>
-                  <Damage Multiplier="0.7"/>
+                  <Damage Multiplier="0.5"/>
                </SurroundingEffect>
             </SkillEffects>
          </Attack>
