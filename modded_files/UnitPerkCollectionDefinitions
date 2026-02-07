@@ -153,7 +153,7 @@
          <UnitPerkDefinition Id="QuickReload"/>
          
          <!-- Research locked perks -->
-         <UnitPerkDefinition Id="JollyDrinker" ResearchFlag="DwarvesPerksInMisc"/>
+         <UnitPerkDefinition Id="HardAsARock" ResearchFlag="DwarvesPerksInMisc"/>
          <UnitPerkDefinition Id="BodycountContest" ResearchFlag="DwarvesPerksInMisc"/>
          <UnitPerkDefinition Id="CoffeeInfused" ResearchFlag="ElvesPerksInMisc"/>
          <UnitPerkDefinition Id="UrbanHate" ResearchFlag="ElvesPerksInMisc"/>
@@ -166,7 +166,7 @@
          <UnitPerkDefinition Id="Overload"/>
 
          <!-- Research locked perks -->
-         <UnitPerkDefinition Id="Carnage" ResearchFlag="DwarvesPerksInMisc"/>
+         <UnitPerkDefinition Id="JollyDrinker" ResearchFlag="DwarvesPerksInMisc"/>
          <UnitPerkDefinition Id="Thickness" ResearchFlag="DwarvesPerksInMisc"/>
          <UnitPerkDefinition Id="OneWithNature" ResearchFlag="ElvesPerksInMisc"/>
          <UnitPerkDefinition Id="Sentry" ResearchFlag="ElvesPerksInMisc"/>
@@ -179,8 +179,8 @@
          <UnitPerkDefinition Id="ManaShield"/>
 
          <!-- Research locked perks -->
-         <UnitPerkDefinition Id="HardAsARock" ResearchFlag="DwarvesPerksInMisc"/>
-         <UnitPerkDefinition Id="LookAtMyMuscles" ResearchFlag="DwarvesPerksInMisc"/>
+         <UnitPerkDefinition Id="Carnage" ResearchFlag="DwarvesPerksInMisc"/>
+         <UnitPerkDefinition Id="EmergencyTunnel" ResearchFlag="DwarvesPerksInMisc"/>
          <UnitPerkDefinition Id="FlickerStrike" ResearchFlag="ElvesPerksInMisc"/>
          <UnitPerkDefinition Id="DeadlyRanger" ResearchFlag="ElvesPerksInMisc"/>
       </UnitPerkTierDefinition>
@@ -194,7 +194,7 @@
 
          <!-- Research locked perks -->
          <UnitPerkDefinition Id="YoureNext" ResearchFlag="DwarvesPerksInMisc"/>
-         <UnitPerkDefinition Id="EmergencyTunnel" ResearchFlag="DwarvesPerksInMisc"/>
+         <UnitPerkDefinition Id="LookAtMyMuscles" ResearchFlag="DwarvesPerksInMisc"/>
          <UnitPerkDefinition Id="Elusive" ResearchFlag="ElvesPerksInMisc"/>
          <UnitPerkDefinition Id="WeakSpotExploit" ResearchFlag="ElvesPerksInMisc"/>
       </UnitPerkTierDefinition>
@@ -257,20 +257,20 @@
 
    <UnitPerkCollectionDefinition Id="Dwarf" MultipleAllowed="false">
       <UnitPerkTierDefinition Tier="1">
-         <UnitPerkDefinition Id="JollyDrinker"/>
+         <UnitPerkDefinition Id="HardAsARock"/>
          <UnitPerkDefinition Id="BodycountContest"/>
       </UnitPerkTierDefinition>
       <UnitPerkTierDefinition Tier="2">
-         <UnitPerkDefinition Id="Carnage"/>
+         <UnitPerkDefinition Id="JollyDrinker"/>
          <UnitPerkDefinition Id="Thickness"/>
       </UnitPerkTierDefinition>
       <UnitPerkTierDefinition Tier="3">
-         <UnitPerkDefinition Id="HardAsARock"/>
-         <UnitPerkDefinition Id="LookAtMyMuscles"/>
+         <UnitPerkDefinition Id="Carnage"/>
+         <UnitPerkDefinition Id="EmergencyTunnel"/>
       </UnitPerkTierDefinition>
       <UnitPerkTierDefinition Tier="4">
          <UnitPerkDefinition Id="YoureNext"/>
-         <UnitPerkDefinition Id="EmergencyTunnel"/>
+         <UnitPerkDefinition Id="LookAtMyMuscles"/>
       </UnitPerkTierDefinition>
       <UnitPerkTierDefinition Tier="5">
          <UnitPerkDefinition Id="Warcry"/>

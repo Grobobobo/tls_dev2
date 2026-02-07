@@ -1195,7 +1195,7 @@
          <TokenVariable Key="RemainingEnemiesToHit" Value="Max(0, HitThreshold - Module.Buffer)"/>
          <TokenVariable Key="ThresholdIsReached" Value="Module.Buffer > HitThreshold - 1"/>
          <TokenVariable Key="ThresholdWasReached" Value="Module.Buffer2 > HitThreshold - 1"/>
-         <TokenVariable Key="HitThreshold" Value="3"/>
+         <TokenVariable Key="HitThreshold" Value="2"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="HitThreshold" Style="KeyWordNb"/>

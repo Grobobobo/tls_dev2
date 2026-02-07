@@ -9,12 +9,14 @@
    
    <PerkDefinition Id="JollyDrinker">
 	   <TokenVariables>
-         <TokenVariable Key="MovePointRestored" Value="2"/>
-         <TokenVariable Key="BonusHealing" Value="30"/>
+         <TokenVariable Key="MovePointRestored" Value="3"/>
+         <TokenVariable Key="EquipmentSlotId" Value="Consumable"/>
+         <TokenVariable Key="ConsumableSlotAmount" Value="1"/>
       </TokenVariables>
       <LocArguments>
          <RestoreStatArgument Stat="MovePointsTotal" Value="MovePointRestored" DisplayRestoreText="true"/>
-         <StatArgument Stat="HealingReceived" Value="BonusHealing" DisplaySign="true"/>
+         <LocArgument Prefix="+" Value="ConsumableSlotAmount" Style="GoodNb"/>
+         <LocalizedArgument Prefix="CategoryName_" Value="EquipmentSlotId" Style="KeyWord"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -25,6 +27,11 @@
          </DisplayInHUD>
       </View>
       <Modules>
+         <BufferModule>
+            <Effects>
+               <EquipmentSlotModifier SlotId="Consumable" Value="ConsumableSlotAmount"/>
+            </Effects>
+         </BufferModule>
          <BufferModule>
             <Events>
                <Event EffectTime="OnHitTaken">
@@ -39,7 +46,6 @@
             </Events>
             <Effects>
                <RestoreStat Stat="MovePoints" Value="MovePointRestored"/>
-               <StatModifier Stat="HealingReceived" Value="BonusHealing"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -96,7 +102,7 @@
          <TokenVariable Key="MovePointsBuffDuration" Value="2"/>
          <TokenVariable Key="MovePointsBuffValue" Value="1"/>
          <TokenVariable Key="OverallDamageBuffDuration" Value="2"/>
-         <TokenVariable Key="OverallDamageBuffValue" Value="5"/>
+         <TokenVariable Key="OverallDamageBuffValue" Value="8"/>
          <TokenVariable Key="EnemyHitThreshold" Value="5"/>
       </TokenVariables>
       <LocArguments>
@@ -192,10 +198,12 @@
       <TokenVariables>
          <TokenVariable Key="TotalGain" Value="Module.Buffer * GainPerKill"/>
          <TokenVariable Key="GainPerKill" Value="1"/>
-         <TokenVariable Key="BuffDuration" Value="2"/>
+         <TokenVariable Key="BuffDuration" Value="1"/>
+         <TokenVariable Key="MaxBlockBonus" Value="20"/>
       </TokenVariables>
       <LocArguments>
          <StatusArgument Stat="Block" Status="Buff" Value="GainPerKill" TurnsCount="BuffDuration"/>
+         <StatArgument Stat="BlockTotal" Value="MaxBlockBonus"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -206,6 +214,11 @@
          </DisplayInHUD>     
       </View>
       <Modules>
+         <StatModifierModule>
+            <Effects>
+               <StatModifier Stat="BlockTotal" Value="MaxBlockBonus" ChildStatFollows="true"/>
+            </Effects>
+         </StatModifierModule>
          <BufferModule>
             <Events>
                <Event EffectTime="OnSkillCastBegin">
@@ -241,10 +254,15 @@
       <TokenVariables>
          <!--<TokenVariable Key="APGain" Value="2"/>-->
          <TokenVariable Key="SkillUsePerTurnBonus" Value="1"/>
+         <TokenVariable Key="MovePointsGain" Value="5"/>
+         <TokenVariable Key="MaxMovePointsGain" Value="3"/>
       </TokenVariables>
       <LocArguments>
          <!--<StatArgument Stat="ActionPointsTotal" Value="APGain"/>-->
          <LocArgument Prefix="+" Value="SkillUsePerTurnBonus" Style="GoodNb"/>
+         <StatArgument Stat="MovePointsTotal" Value="MovePointsGain"/>
+         <StatArgument Stat="MovePointsTotal"/>
+		   <LocArgument Value="MaxMovePointsGain" Style="KeywordNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD/>
@@ -254,6 +272,8 @@
             <Effects>
                <!--<StatModifier Stat="ActionPointsTotal" Value="APGain"/>-->
                <StatModifier Stat="BonusSkillUses" Value ="SkillUsePerTurnBonus"/>
+               <StatModifier Stat="MovePointsTotal" Value="MovePointsGain" ChildStatFollows="true"/>
+               <StatBoundaryModifier Stat="MovePointsTotal" MaxModifier="MaxMovePointsGain"/>
                <EquipmentSlotModifier SlotId="Body" Value="-1"/>
             </Effects>
          </BufferModule>
@@ -442,13 +462,20 @@
    <PerkDefinition Id="EmergencyTunnel">
       <TokenVariables>
          <TokenVariable Key="SkillID" Value="EmergencyTunnelSkill"/>
+         <TokenVariable Key="OverallUsesBonus" Value="3"/>
+         <TokenVariable Key="EquipmentSlotId" Value="Consumable"/>
+         <TokenVariable Key="ConsumableSlotAmount" Value="1"/>
+         <TokenVariable Key="BonusUsesItemId" Value="Usable"/>
+         <TokenVariable Key="BonusUsableItemsUsesAmount" Value="1"/>
       </TokenVariables>
       <LocArguments>
          <LocalizedArgument Prefix="SkillName_" Value="SkillID" Style="Skill"/>
+         <LocArgument Prefix="+" Value="BonusUsableItemsUsesAmount" Style="GoodNb"/>
+         <LocalizedArgument Prefix="CategoryName_" Value="BonusUsesItemId" Style="KeyWord"/>
       </LocArguments>
       <View>
          <SkillsToShow>
-            <SkillToShow Id="EmergencyTunnelSkill" OverallUses="2"/>
+            <SkillToShow Id="EmergencyTunnelSkill" OverallUses="3"/>
          </SkillsToShow>
          <DisplayInHUD>
             <HoverDisplay>
@@ -458,8 +485,17 @@
       </View>
       <Modules>
          <BufferModule>
+            <Events>
+               <Event EffectTime="OnCreation">
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+            </Events>
             <Effects>
-               <UnlockContextualSkill ContextualSkillId="EmergencyTunnelSkill" OverallUses="2"/>
+               <UnlockContextualSkill ContextualSkillId="EmergencyTunnelSkill" OverallUses="3"/>
+               <StatModifier Stat="BonusUsableItemsUses" Value="BonusUsableItemsUsesAmount"/>
+               <RestoreUses SlotId="Usables" Value="BonusUsableItemsUsesAmount"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -1019,8 +1055,8 @@
          <TokenVariable Key="MaximalAccuracy" Value="AccuracyMalus * MaximalInstances"/>
          <TokenVariable Key="HitsInARow" Value="Module.Buffer"/>
          <TokenVariable Key="MaximalInstances" Value="10"/>
-         <TokenVariable Key="DamageBonus" Value="7" />
-         <TokenVariable Key="AccuracyMalus" Value="-3" />
+         <TokenVariable Key="DamageBonus" Value="8" />
+         <TokenVariable Key="AccuracyMalus" Value="-2" />
       </TokenVariables>  
       <LocArguments>
          <StatArgument Stat="OverallDamage" Value="DamageBonus"/>
@@ -1046,7 +1082,7 @@
       <Modules>
          <BufferModule>
             <Events>
-               <Event EffectTime="OnStartProductionTurn">
+               <Event EffectTime="OnStartNightTurnPlayable">
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer" Value="0"/>
                   </Actions>
@@ -1152,13 +1188,17 @@
    <PerkDefinition Id="FearOfDeath">
       <TokenVariables>
          <TokenVariable Key="CritChanceCurrentBonus" Value="CritChanceBonus * NonCritHits"/>
+         <TokenVariable Key="CritDamageCurrentBonus" Value="CritDamageBonus * NonCritHits"/>
          <TokenVariable Key="CritChanceBonus" Value="5"/>
+         <TokenVariable Key="CritDamageBonus" Value="5"/>
          <TokenVariable Key="NonCritHits" Value="Module.Buffer"/>
          <TokenVariable Key="IsCrit" Value="AttackData.IsCrit"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="Critical" Value="CritChanceBonus"/>
          <StatArgument Stat="Critical" Value="CritChanceCurrentBonus" Interpreted="true"/>
+         <StatArgument Stat="CriticalDamage" Value="CritDamageBonus"/>
+         <StatArgument Stat="CriticalDamage" Value="CritDamageCurrentBonus" Interpreted="true"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -1208,6 +1248,7 @@
             </Events>
             <Effects>
                <StatModifier Stat="Critical" Value="CritChanceCurrentBonus"/>
+               <StatModifier Stat="CriticalDamage" Value="CritDamageCurrentBonus"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -1217,7 +1258,7 @@
       <TokenVariables>
 		  <TokenVariable Key="RemainingHit" Value="Clamp(SuccessfullAttacks, 0, TargetNbr)"/>
          <TokenVariable Key="SuccessfullAttacks" Value="(TargetNbr - Module.Buffer)"/>
-         <TokenVariable Key="TargetNbr" Value="8"/>
+         <TokenVariable Key="TargetNbr" Value="6"/>
          <TokenVariable Key="Duration" Value="1"/>
          <TokenVariable Key="MovePointsMalus" Value="-10"/>
          <TokenVariable Key="CanBeTrigger" Value="Module.Buffer2"/>
@@ -1407,10 +1448,11 @@
       <TokenVariables>
          <TokenVariable Key="IsTargetInjured" Value="TargetUnit.InjuryStage > 0"/>
          <TokenVariable Key="ReliabilityBonus" Value="100"/>
+         <TokenVariable Key="PerkDamageBonus" Value="15"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="Reliability" Value="ReliabilityBonus"/>
-         <LocalizedArgument Value="SkillEffectName_NoBlock" Style="NoBlock"/>
+         <StatArgument Stat="PerkDamage" Value="PerkDamageBonus"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -1421,7 +1463,6 @@
             </Highlight>
          </DisplayInHUD>
          <CompendiumEntries>
-            <CompendiumEntry Id="SkillEffect_NoBlock"/>
             <CompendiumEntry Id="GameConcept_Wounds"/>
          </CompendiumEntries>
       </View>
@@ -1435,16 +1476,13 @@
                      <IsTrue Value="IsTargetInjured"/>
                   </Conditions>
                </SkillModifier>
-               <AddSkillEffect>
+               <SkillModifier ComputationStat="OverallDamage" Value="PerkDamageBonus"/>
                   <Conditions>
                      <IsTrue Value="HasPerkData"/>
                      <IsTrue Value="IsTargetEnemyUnit"/>
                      <IsTrue Value="IsTargetInjured"/>
                   </Conditions>
-                  <SkillEffects>
-                     <NoBlock/>
-                  </SkillEffects>
-               </AddSkillEffect>
+               </SkillModifier>
             </Effects>
          </BufferModule>
       </Modules>
@@ -1608,11 +1646,11 @@
    <PerkDefinition Id="StoneheartShield">
       <TokenVariables>
          <TokenVariable Key="BlockCurrentBonus" Value="Min(Module.Buffer * BlockBonus, Blockthreshold)"/>
-         <TokenVariable Key="BlockBonus" Value="10"/>
+         <TokenVariable Key="BlockBonus" Value="1"/>
          <TokenVariable Key="Blockthreshold" Value="40"/>
          <TokenVariable Key="IncreaseToMaximumBlock" Value="40"/>
          <TokenVariable Key="EnemisLeftToKill" Value="(TargetNbr - Module.Buffer2)"/>
-         <TokenVariable Key="TargetNbr" Value="4"/>
+         <TokenVariable Key="TargetNbr" Value="10"/>
       </TokenVariables>
      <LocArguments>
         <StatArgument Stat="Block" Value="BlockBonus"/>
@@ -1659,12 +1697,6 @@
                      <SetBufferTo BufferIndex="Buffer2" Value="0"/>
                   </Actions>
                </Event>
-               <Event EffectTime="OnStartTurn">
-                  <Actions>
-                     <SetBufferTo Value="0"/>
-					  <SetBufferTo BufferIndex="Buffer2" Value="0"/>
-                  </Actions>
-               </Event>
             </Events>
             <Effects>
                <StatModifier Stat="Block" Value="BlockCurrentBonus"/>
@@ -1676,22 +1708,22 @@
 
    <PerkDefinition Id="Aggressiveness">
       <TokenVariables>
-         <TokenVariable Key="DamageBonus" Value="Min(Floor((DepletedArmour/ArmourConversionRate)) * DamageConversionRate, DamageThreshold)"/>
-         <TokenVariable Key="TotalArmour" Value="Owner.UnlockedArmorTotal"/>
-         <TokenVariable Key="DepletedArmour" Value="(Owner.ArmorTotal - Owner.Armor)"/>
+         <TokenVariable Key="DamageBonus" Value="Min(Floor((DepletedHealth/HealthConversionRate)) * DamageConversionRate, DamageThreshold)"/>
+         <TokenVariable Key="TotalHealth" Value="Owner.HealthPointsTotal"/>
+         <TokenVariable Key="DepletedHealth" Value="(Owner.HealthPointsTotal - Owner.HealthPoints)"/>
          <TokenVariable Key="DamageConversionRate" Value="3"/>
          <TokenVariable Key="DamageThreshold" Value="60"/>
-         <TokenVariable Key="ArmourConversionRate" Value="10"/>
+         <TokenVariable Key="HealthConversionRate" Value="10"/>
          <TokenVariable Key="BuffDuration" Value="1"/>
       </TokenVariables>
       <LocArguments>
-         <LocArgument Value="ArmourConversionRate" Style="KeyWordNb"/>
-         <StatArgument Stat="ArmorTotal"/>
+         <LocArgument Value="HealthConversionRate" Style="KeyWordNb"/>
+         <StatArgument Stat="HealthPointsTotal"/>
          <StatusArgument Status="Buff" Stat="OverallDamage" Value="DamageConversionRate" TurnsCount="BuffDuration"/>
          <LocArgument Value="DamageThreshold" Style="KeyWordNb"/>
          <StatusArgument Status="Buff"/>
          <LocArgument Value="DamageBonus" Interpreted="true" Style="GoodNb" Prefix="+"/>
-         <LocArgument Value="DepletedArmour" Interpreted="true" Style="KeyWordNb"/>
+         <LocArgument Value="DepletedHealth" Interpreted="true" Style="KeyWordNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD/>
@@ -1797,7 +1829,7 @@
          <TokenVariable Key="IsDayOddOrEven" Value="DayNumber % 2"/>
          <TokenVariable Key="EvenDaysMoveBonus" Value="MoveBonus * Module.Buffer"/>
          <TokenVariable Key="OddDaysAPBonus" Value="APBonus * Module.Buffer2"/>
-         <TokenVariable Key="MoveBonus" Value="3"/>
+         <TokenVariable Key="MoveBonus" Value="5"/>
          <TokenVariable Key="APBonus" Value="2"/>
       </TokenVariables>
       <LocArguments>
