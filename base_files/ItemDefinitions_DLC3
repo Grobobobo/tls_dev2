@@ -9,7 +9,7 @@
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="83 * (1 + PlayableUnitLevel/10)" Max="102 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BaseDamage Min="65 * (1 + PlayableUnitLevel/10)" Max="80 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
 				<Skills>
 					<Skill>SliceUnique</Skill>
@@ -33,7 +33,7 @@
       <IsUnique>true</IsUnique>
       <LevelVariations>
          <Level Id="0">
-            <BaseDamage Min="160 * (1 + PlayableUnitLevel/10)" Max="186 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BaseDamage Min="124 * (1 + PlayableUnitLevel/10)" Max="144 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <Skills>
                <Skill>Bash</Skill>
@@ -57,7 +57,7 @@
       <IsUnique>true</IsUnique>
       <LevelVariations>
          <Level Id="0">
-            <BaseDamage Min="87 * (1 + PlayableUnitLevel/10)" Max="156 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BaseDamage Min="69 * (1 + PlayableUnitLevel/10)" Max="105 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>58</BasePrice>
             <BaseStatBonuses>
                <BaseStatBonus Stat="OpportunisticAttacks">19</BaseStatBonus>
@@ -84,7 +84,7 @@
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="83 * (1 + PlayableUnitLevel/10)" Max="109 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BaseDamage Min="78 * (1 + PlayableUnitLevel/10)" Max="90 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
@@ -111,7 +111,7 @@
       <IsUnique>true</IsUnique>
       <LevelVariations>
          <Level Id="0">
-            <BaseDamage Min="144 * (1 + PlayableUnitLevel/10)" Max="191 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BaseDamage Min="111 * (1 + PlayableUnitLevel/10)" Max="149 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <Skills>
                <Skill>Thrust</Skill>
@@ -136,7 +136,7 @@
       <IsUnique>true</IsUnique>
       <LevelVariations>
          <Level Id="0">
-            <BaseDamage Min="142 * (1 + PlayableUnitLevel/10)" Max="185 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BaseDamage Min="110 * (1 + PlayableUnitLevel/10)" Max="140 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <Skills>
                <Skill>HammerStrike</Skill>
@@ -161,7 +161,7 @@
       <IsUnique>true</IsUnique>
       <LevelVariations>
          <Level Id="0">
-            <BaseDamage Min="97 * (1 + PlayableUnitLevel/10)" Max="181 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BaseDamage Min="82 * (1 + PlayableUnitLevel/10)" Max="136 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <Skills>
                <Skill>Swing</Skill>
@@ -186,7 +186,7 @@
       <IsUnique>true</IsUnique>
       <LevelVariations>
          <Level Id="0">
-            <BaseDamage Min="115 * (1 + PlayableUnitLevel/10)" Max="157 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BaseDamage Min="99 * (1 + PlayableUnitLevel/10)" Max="126 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <Skills>
                <Skill>Impale</Skill>
@@ -211,7 +211,7 @@
       <IsUnique>true</IsUnique>
       <LevelVariations>
          <Level Id="0">
-            <BaseDamage Min="61 * (1 + PlayableUnitLevel/10)" Max="71 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BaseDamage Min="49 * (1 + PlayableUnitLevel/10)" Max="58 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <Skills>
                <Skill>QuickShot</Skill>
@@ -234,7 +234,7 @@
       <IsUnique>true</IsUnique>
       <LevelVariations>
          <Level Id="0">
-            <BaseDamage Min="87 * (1 + PlayableUnitLevel/10)" Max="105 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BaseDamage Min="70 * (1 + PlayableUnitLevel/10)" Max="85 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <BaseStatBonuses>
                <BaseStatBonus Stat="CriticalPower">10</BaseStatBonus>
@@ -260,7 +260,7 @@
       <IsUnique>true</IsUnique>
       <LevelVariations>
          <Level Id="0">
-            <BaseDamage Min="92 * (1 + PlayableUnitLevel/10)" Max="152 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BaseDamage Min="84 * (1 + PlayableUnitLevel/10)" Max="118 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <Skills>
                <Skill>PreciseShotUnique</Skill>
@@ -285,7 +285,7 @@
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="85 * (1 + PlayableUnitLevel/10)" Max="154 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BaseDamage Min="78 * (1 + PlayableUnitLevel/10)" Max="120 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Reliability">-10</BaseStatBonus>
@@ -313,7 +313,7 @@
       <IsUnique>true</IsUnique>
       <LevelVariations>
          <Level Id="0">
-            <BaseDamage Min="123 * (1 + PlayableUnitLevel/10)" Max="159 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BaseDamage Min="100 * (1 + PlayableUnitLevel/10)" Max="130 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <Skills>
                <Skill>StraightShot5</Skill>
@@ -338,7 +338,7 @@
       <IsUnique>true</IsUnique>
       <LevelVariations>
          <Level Id="0">
-            <BaseDamage Min="179 * (1 + PlayableUnitLevel/10)" Max="228 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BaseDamage Min="145 * (1 + PlayableUnitLevel/10)" Max="185 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <BaseStatBonuses>
                <BaseStatBonus Stat="PropagationDamage">-25</BaseStatBonus>
@@ -366,7 +366,7 @@
       <IsUnique>true</IsUnique>
       <LevelVariations>
          <Level Id="0">
-            <BaseDamage Min="91 * (1 + PlayableUnitLevel/10)" Max="129 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BaseDamage Min="72 * (1 + PlayableUnitLevel/10)" Max="101 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <Skills>
 					<Skill>SwordOfDamocles</Skill>
@@ -383,18 +383,18 @@
    <ItemDefinition Id="MagicScepterUnique">
       <Category>MagicWeapon</Category>
       <Tags>
-         <Tag>MagicScepter</Tag>
+         <Tag>MagicScepterUnique</Tag>
       </Tags>
       <Hands>OneHand</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
          <Level Id="0">
-            <BaseDamage Min="78 * (1 + PlayableUnitLevel/10)" Max="102 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BaseDamage Min="60 * (1 + PlayableUnitLevel/10)" Max="80 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <Skills>
 					<Skill>MagicBash</Skill>
 					<Skill>WindWalk5</Skill>
-					<Skill>HammerOfFaith</Skill>
+					<Skill>HammerOfFaithUnique</Skill>
             </Skills>
             <Perks>
                <Perk>MagicScepterUniquePerk</Perk>
@@ -413,7 +413,7 @@
       <IsUnique>true</IsUnique>
       <LevelVariations>
          <Level Id="0">
-            <BaseDamage Min="87 * (1 + PlayableUnitLevel/10)" Max="114 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BaseDamage Min="71 * (1 + PlayableUnitLevel/10)" Max="93 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealthTotal">-25</BaseStatBonus>
@@ -439,7 +439,7 @@
       <IsUnique>true</IsUnique>
       <LevelVariations>
          <Level Id="0">
-            <BaseDamage Min="110 * (1 + PlayableUnitLevel/10)" Max="142 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+            <BaseDamage Min="90 * (1 + PlayableUnitLevel/10)" Max="116 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
 				<Skills>
 					<Skill>PillarOfLight5</Skill>
@@ -463,7 +463,7 @@
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="82 * (1 + PlayableUnitLevel/10)" Max="144 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BaseDamage Min="76 * (1 + PlayableUnitLevel/10)" Max="126 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
 				<Skills>
 					<Skill>ShadowBolt</Skill>
@@ -487,7 +487,7 @@
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="78 * (1 + PlayableUnitLevel/10)" Max="100 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BaseDamage Min="65 * (1 + PlayableUnitLevel/10)" Max="83 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
 				<Skills>
 					<Skill>Flytrap</Skill>
@@ -512,7 +512,7 @@
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="101 * (1 + PlayableUnitLevel/10)" Max="133 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BaseDamage Min="81 * (1 + PlayableUnitLevel/10)" Max="104 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
 				<Skills>
 					<Skill>Breach</Skill>
@@ -537,7 +537,7 @@
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="136 * (1 + PlayableUnitLevel/10)" Max="225 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BaseDamage Min="74 * (1 + PlayableUnitLevel/10)" Max="117 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
 				<Skills>
 					<Skill>CannonBall</Skill>
@@ -562,7 +562,7 @@
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="114 * (1 + PlayableUnitLevel/10)" Max="138 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BaseDamage Min="91 * (1 + PlayableUnitLevel/10)" Max="108 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
 				<Skills>
 					<Skill>Snap5</Skill>
@@ -570,7 +570,6 @@
 					<Skill>GeoCannon</Skill>
 				</Skills>
 				<Perks>
-					<Perk>GeoReservoir</Perk>
                <Perk>GauntletUniquePerk</Perk>
 				</Perks>
 			</Level>
@@ -586,7 +585,7 @@
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="71 * (1 + PlayableUnitLevel/10)" Max="135 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BaseDamage Min="55 * (1 + PlayableUnitLevel/10)" Max="105 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
 				<Skills>
 					<Skill>TearingGrasp</Skill>
@@ -610,7 +609,7 @@
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="59 * (1 + PlayableUnitLevel/10)" Max="88 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BaseDamage Min="46 * (1 + PlayableUnitLevel/10)" Max="68 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
 				<Skills>
 					<Skill>PreciseTargettingUnique</Skill>
@@ -625,7 +624,7 @@
 	</ItemDefinition>
    
    <ItemDefinition Id="ManaFlowerUnique">
-		<Category>MagicWeapon</Category>
+		<Category>MagicWeapon</Category>s
 		<Tags>
 			<Tag>ManaFlower</Tag>
 		</Tags>
@@ -633,11 +632,11 @@
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
 			<Level Id="0">
-				<BaseDamage Min="114 * (1 + PlayableUnitLevel/10)" Max="160 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
+				<BaseDamage Min="89 * (1 + PlayableUnitLevel/10)" Max="124 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
-            <BaseStatBonuses>
+            <!--<BaseStatBonuses>
                <BaseStatBonus Stat="HealthTotal">400</BaseStatBonus>
-            </BaseStatBonuses>
+            </BaseStatBonuses>-->
 				<Skills>
 					<Skill>DeathFlower</Skill>
 					<Skill>CleansingSpores</Skill>
@@ -780,21 +779,6 @@
             <BasePrice>94</BasePrice>
             <Skills>
                <Skill OverallUsesCount="2">PortableWatchtowerSkill</Skill>
-            </Skills>
-         </Level>
-      </LevelVariations>
-   </ItemDefinition>
-
-   <ItemDefinition Id="PortableBridgeUnique">
-      <Category>MagicWeapon</Category>
-      <Hands>OffHand</Hands>
-      <IsUnique>true</IsUnique>
-      <LevelVariations>
-         <Level Id="0">
-            <BaseDamage Min="0" Max="0"/>
-            <BasePrice>94</BasePrice>
-            <Skills>
-               <Skill OverallUsesCount="8">PortableBridgeSkill</Skill>
             </Skills>
          </Level>
       </LevelVariations>

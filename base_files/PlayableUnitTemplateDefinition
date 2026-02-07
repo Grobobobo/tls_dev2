@@ -1,0 +1,22 @@
+﻿<PlayableUnitTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                              xsi:noNamespaceSchemaLocation="PlayableUnitTemplateDefinition.xsd">
+
+   <Injuries BaseHealth="125">
+      <Injury>
+         <BaseRatio>0.80</BaseRatio>
+         <RatioMultiplier>0.24</RatioMultiplier>
+         <StatModifiers>
+            <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
+         </StatModifiers>
+      </Injury>
+      <Injury>
+         <BaseRatio>0.40</BaseRatio>
+         <RatioMultiplier>0.06</RatioMultiplier>
+         <StatModifiers>
+            <StatModifier Id="MovePointsTotal" Multiplier="TwoThird"/>
+            <StatModifier Id="ActionPointsTotal" Multiplier="TwoThird"/>
+         </StatModifiers>
+      </Injury>
+   </Injuries>
+   
+</PlayableUnitTemplateDefinition>

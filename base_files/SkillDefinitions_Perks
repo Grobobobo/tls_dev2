@@ -653,6 +653,16 @@
       </ContextualConditions>
       <Range Min="5" Max="14" Modifiable="true"/>
    </SkillDefinition>
+
+   <SkillDefinition Id="ManualControlCatapultAuto" IsContextual="true" IsLockedByPerk="true" TemplateId="UseCatapult">
+      <OverrideLocalizationId>ManualControlCatapult</OverrideLocalizationId>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ActionPointsCost>2</ActionPointsCost>
+      <ContextualConditions>
+         <NextToBuilding>CatapultAuto</NextToBuilding>
+      </ContextualConditions>
+      <Range Min="5" Max="14" Modifiable="true"/>
+   </SkillDefinition>
    
    <SkillDefinition Id="ManualControlBallista" IsContextual="true" IsLockedByPerk="true" TemplateId="BallistaSkill">
       <OverrideLocalizationId>ManualControlBallista</OverrideLocalizationId>
@@ -680,7 +690,48 @@
       <ContextualConditions>
          <NextToBuilding>BallistaTower</NextToBuilding>
       </ContextualConditions>
+      <Range Min="1" Max="10" Modifiable="true"/>
+      <InvalidCastDisplayBehaviour>DisplayedUnavailable</InvalidCastDisplayBehaviour>
+   </SkillDefinition>
+
+   <SkillDefinition Id="ManualControlBallistaHeavy" IsContextual="true" IsLockedByPerk="true" TemplateId="BallistaHeavySkill">
+      <OverrideLocalizationId>ManualControlBallista</OverrideLocalizationId>
+      <ValidTargets EverythingValid="true"/>
+      <AffectedUnits>
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+         <CanAffectCaster>false</CanAffectCaster>
+      </AffectedUnits>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ContextualConditions>
+         <NextToBuilding>BallistaHeavy</NextToBuilding>
+      </ContextualConditions>
       <Range Min="1" Max="8" Modifiable="true"/>
+      <InvalidCastDisplayBehaviour>DisplayedUnavailable</InvalidCastDisplayBehaviour>
+   </SkillDefinition>
+
+   <SkillDefinition Id="ManualControlBallistaSplit" IsContextual="true" IsLockedByPerk="true" TemplateId="BallistaSplitSkill">
+      <OverrideLocalizationId>ManualControlBallista</OverrideLocalizationId>
+      <ValidTargets EverythingValid="true"/>
+      <AffectedUnits>
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+         <CanAffectCaster>false</CanAffectCaster>
+      </AffectedUnits>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ContextualConditions>
+         <NextToBuilding>BallistaSplit</NextToBuilding>
+      </ContextualConditions>
+      <Range Min="1" Max="8" Modifiable="true"/>
+      <SkillAction>
+         <Attack>
+            <BaseDamage Min="80" Max="120"/>
+            <AttackType>Ranged</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <MultiHit HitsCount="3"/>
+               <NoDodge/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
       <InvalidCastDisplayBehaviour>DisplayedUnavailable</InvalidCastDisplayBehaviour>
    </SkillDefinition>
 

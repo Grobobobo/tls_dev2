@@ -1,844 +1,465 @@
 ﻿<BuildingPassiveDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-
                      xsi:noNamespaceSchemaLocation="BuildingPassiveDefinitions.xsd">
-
    
-
    <BuildingPassiveDefinition Id="SpawnGuardian">
-
       <GenerateGuardian/>
-
       <Triggers>
-
          <Permanent TriggerOnLoad="false"/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
    
-
    <BuildingPassiveDefinition Id="FillEffectGauge1">
-
       <FillEffectGauge>
-
          <Value>1</Value>
-
       </FillEffectGauge>
 
-
-
       <Triggers>
-
          <StartProductionTurn/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="FillEffectGauge5">
-
       <FillEffectGauge>
-
          <Value>5</Value>
-
       </FillEffectGauge>
 
-
-
       <Triggers>
-
          <StartProductionTurn/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="FillEffectGauge10">
-
       <FillEffectGauge>
-
          <Value>10</Value>
-
       </FillEffectGauge>
 
-
-
       <Triggers>
-
          <StartProductionTurn/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="GenerateShopItems">
-
       <UpdateShopLevel/>
-
       <GenerateNewItemsRoster>
-
          <!--Weapons-->
-
          <CreateItem>
-
             <BuildingLevelModifiersList Id="ShopProduction"/>
-
             <ItemsList Id="ItemList_ShopSlotWeaponMelee"/>
-
             <ItemRaritiesList Id="ShopProduction"/>
-
             <Count>
-
                1
-
                + BooleanChoice(MeleeWeaponQuantity > 15, 1, 0)
-
             </Count>
-
          </CreateItem>
-
          <CreateItem>
-
             <BuildingLevelModifiersList Id="ShopProduction"/>
-
             <ItemsList Id="ItemList_ShopSlotWeaponRanged"/>
-
             <ItemRaritiesList Id="ShopProduction"/>
-
             <Count>
-
                1
-
                + BooleanChoice(RangedWeaponQuantity > 15, 1, 0)
-
             </Count>
-
          </CreateItem>
-
          <CreateItem>
-
             <BuildingLevelModifiersList Id="ShopProduction"/>
-
             <ItemsList Id="ItemList_ShopSlotWeaponMagic"/>
-
             <ItemRaritiesList Id="ShopProduction"/>
-
             <Count>
-
                1
-
                + BooleanChoice(MagicWeaponQuantity > 15, 1, 0)
-
             </Count>
-
          </CreateItem>
-
          <CreateItem>
-
             <BuildingLevelModifiersList Id="ShopProduction"/>
-
             <ItemsList Id="ItemList_ShopSlotWeaponAll"/>
-
             <ItemRaritiesList Id="ShopProduction"/>
-
             <Count>
-
                1
-
                + BooleanChoice(WeaponQuantity > 23, 1, 0)
-
                + BooleanChoice(WeaponQuantity > 59, 1, 0)
-
                + BooleanChoice(WeaponQuantity > 89, 1, 0)
-
             </Count>
-
          </CreateItem>
-
          <!--Shields / Special Offhands-->
-
          <CreateItem>
-
             <BuildingLevelModifiersList Id="ShopProduction"/>
-
             <ItemsList Id="ItemList_ShopSlotOffhand"/>
-
             <ItemRaritiesList Id="ShopProduction"/>
-
             <Count>1</Count>
-
          </CreateItem>
-
          <!--Armors-->
-
          <CreateItem>
-
             <BuildingLevelModifiersList Id="ShopProduction"/>
-
             <ItemsList Id="ItemList_ShopSlotArmorHelmet"/>
-
             <ItemRaritiesList Id="ShopProduction"/>
-
             <Count>1</Count>
-
          </CreateItem>
-
          <CreateItem>
-
             <BuildingLevelModifiersList Id="ShopProduction"/>
-
             <ItemsList Id="ItemList_ShopSlotArmorBodyArmor"/>
-
             <ItemRaritiesList Id="ShopProduction"/>
-
             <Count>1</Count>
-
          </CreateItem>
-
          <CreateItem>
-
             <BuildingLevelModifiersList Id="ShopProduction"/>
-
             <ItemsList Id="ItemList_ShopSlotArmorPants"/>
-
             <ItemRaritiesList Id="ShopProduction"/>
-
             <Count>1</Count>
-
          </CreateItem>
-
          <CreateItem>
-
             <BuildingLevelModifiersList Id="ShopProduction"/>
-
             <ItemsList Id="ItemList_ShopSlotArmorAll"/>
-
             <ItemRaritiesList Id="ShopProduction"/>
-
             <Count>
-
                1
-
                + BooleanChoice(ArmorQuantity > 23, 1, 0)
-
                + BooleanChoice(ArmorQuantity > 44, 1, 0)
-
                + BooleanChoice(ArmorQuantity > 74, 1, 0)
-
             </Count>
-
          </CreateItem>
-
          <!--Trinkets-->
-
          <CreateItem>
-
             <BuildingLevelModifiersList Id="ShopProduction"/>
-
             <ItemsList Id="ItemList_ShopSlotTrinket"/>
-
             <ItemRaritiesList Id="ShopProduction"/>
-
             <Count>
-
                RandomInt(1,2)
-
                + BooleanChoice(AllQuantity > 134, 1, 0)
-
                + BooleanChoice(AllQuantity > 209, 1, 0)
-
             </Count>
-
          </CreateItem>
-
          <!--Trinkets Perk-->
-
          <CreateItem Id="ShopMedalPerk" MinLevel="2">
-
             <BuildingLevelModifiersList Id="ShopProduction"/>
-
             <ItemsList Id="ItemList_ShopSlotPerkTrinket"/>
-
             <ItemRaritiesList Id="ShopProduction"/>
-
             <Count>0</Count> <!-- 0 because we want to set the correct count using meta upgrades -->
-
          </CreateItem>
-
          <!--Consumables-->
-
          <CreateItem Id="ShopHealPotions"> <!-- This is optional, and just an example of how we can/must id a <CreateItem> IF we want to alter it via meta upgrades -->
-
             <BuildingLevelModifiersList Id="ShopProduction"/>
-
             <ItemsList Id="ItemList_ShopSlotUsablePotionHeal"/>
-
             <ItemRaritiesList Id="AlwaysCommon"/>
-
             <Count>1</Count>
-
          </CreateItem>
-
          <CreateItem>
-
             <BuildingLevelModifiersList Id="ShopProduction"/>
-
             <ItemsList Id="ItemList_ShopSlotUsablePotionAll"/>
-
             <ItemRaritiesList Id="AlwaysCommon"/>
-
             <Count>
-
                2
-
                + BooleanChoice(AllQuantity > 149, 1, 0)
-
                + BooleanChoice(AllQuantity > 234, 1, 0)
-
             </Count>
-
          </CreateItem>
-
          <CreateItem>
-
             <BuildingLevelModifiersList Id="ShopProduction"/>
-
             <ItemsList Id="ItemList_ShopSlotUsableScroll"/>
-
             <ItemRaritiesList Id="AlwaysCommon"/>
-
             <Count>
-
                RandomInt(1,2)
-
                + BooleanChoice(AllQuantity > 179, 1, 0)
-
                + BooleanChoice(AllQuantity > 259, 1, 0)
-
             </Count>
-
          </CreateItem>
-
       </GenerateNewItemsRoster>
 
-
-
       <Triggers>
-
          <StartProductionTurn/>
-
          <OnConstruction/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="ImproveSpawnWaveInfo">
-
       <ImproveSpawnWaveInfo>
-
          <Level>1</Level>
-
       </ImproveSpawnWaveInfo>
-
       
-
       <Triggers>
-
          <Permanent TriggerOnLoad="true"/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="IncreaseWorkers">
-
       <IncreaseWorkers>
-
          <Value>1</Value>
-
       </IncreaseWorkers>
-
       
-
       <Triggers>
-
          <Permanent TriggerOnLoad="true"/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
    
-
    <BuildingPassiveDefinition Id="LightFogSpawner_Death">
-
       <TransformBuilding>
-
          <BuildingId>LightFogSpawner_Dead</BuildingId>
-
       </TransformBuilding>
-
       
-
       <Triggers>
-
          <OnDeath/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="TreeBreakable_Death">
-
       <TransformBuilding>
-
          <BuildingId>TreeStump</BuildingId>
-
       </TransformBuilding>
-
-
 
       <Triggers>  
-
          <OnDeath/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="GenerateLightFog">
-
       <GenerateLightFog>
-
          <!--<CanLightFogExistOnSelf/>-->
-
       </GenerateLightFog>
 
-
-
       <Triggers>
-
          <Permanent TriggerOnLoad="true"/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="LitBrazier1">
-
       <TransformBuilding>
-
          <BuildingId>Brazier_Lit1</BuildingId>
-
       </TransformBuilding>
-
       <Triggers>
-
          <AfterXNightTurns NumberOfNightTurns="1"/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="LitBrazier2">
-
       <TransformBuilding>
-
          <BuildingId>Brazier_Lit2</BuildingId>
-
       </TransformBuilding>
-
       <Triggers>
-
          <AfterXNightTurns NumberOfNightTurns="1"/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="LitBrazier3">
-
       <TransformBuilding>
-
          <BuildingId>Brazier_Lit3</BuildingId>
-
       </TransformBuilding>
-
       <Triggers>
-
          <AfterXNightTurns NumberOfNightTurns="1"/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="LitBrazier4">
-
       <TransformBuilding>
-
          <BuildingId>Brazier_Lit4</BuildingId>
-
       </TransformBuilding>
-
       <Triggers>
-
          <AfterXNightTurns NumberOfNightTurns="1"/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="LitBrazier5">
-
       <TransformBuilding>
-
          <BuildingId>Brazier_Lit5</BuildingId>
-
       </TransformBuilding>
-
       <Triggers>
-
          <AfterXNightTurns NumberOfNightTurns="1"/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
    
-
    <BuildingPassiveDefinition Id="ExtinguishBrazier">
-
       <TransformBuilding>
-
          <BuildingId>Brazier_Unlit</BuildingId>
-
       </TransformBuilding>
-
       <Triggers>
-
          <OnExtinguish/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="ExtinguishBrazierBoss">
-
       <TransformBuilding>
-
          <BuildingId>BrazierBoss_Unlit</BuildingId>
-
       </TransformBuilding>
-
       <Triggers>
-
          <OnExtinguish/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="BonePile3Decay">
-
       <TransformBuilding>
-
          <BuildingId>BonePile2</BuildingId>
-
          <PlayDestructionSmoke>true</PlayDestructionSmoke>
-
       </TransformBuilding>
-
       <Triggers>
-
          <AfterXNightEnd NumberOfNightEnd="1"/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="BonePile2Decay">
-
       <TransformBuilding>
-
          <BuildingId>BonePile1</BuildingId>
-
          <PlayDestructionSmoke>true</PlayDestructionSmoke>
-
       </TransformBuilding>
-
       <Triggers>
-
          <AfterXNightEnd NumberOfNightEnd="1"/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="BonePile1Decay">
-
       <DestroyBuilding/>
-
       <Triggers>
-
          <AfterXNightEnd NumberOfNightEnd="1"/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="BonePile1Decay_FreeResources">
-
       <GainResources Gold="7" Materials="13"/>
-
       <Triggers>
-
          <AfterXNightEnd NumberOfNightEnd="1"/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
    
-
    <BuildingPassiveDefinition Id="BonePileLevelUpdate">
-
       <UpdateBonePileLevel/>
-
       <Triggers>
-
          <OnConstruction/>
-
          <StartProductionTurn/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
 
-
-
    <!-- ███████████████████████████████████████████████████████████████ -->
-
    <!-- DLC 1 -->
-
    <!-- ███████████████████████████████████████████████████████████████ -->
-
-
 
    <BuildingPassiveDefinition Id="CrystalExplosive_Death">
-
       <TransformBuilding>
-
          <BuildingId>CrystalNormalOff</BuildingId>
-
 		 <Instantaneous>false</Instantaneous>
-
       </TransformBuilding>
 
-
-
       <Triggers>
-
          <OnDeath/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="CrystalPoison_Death">
-
       <TransformBuilding>
-
          <BuildingId>CrystalNormalOff</BuildingId>
-
 		  <Instantaneous>false</Instantaneous>
-
       </TransformBuilding>
 
-
-
       <Triggers>
-
          <OnDeath/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="CrystalFrost_Death">
-
       <TransformBuilding>
-
          <BuildingId>CrystalNormalOff</BuildingId>
-
 		  <Instantaneous>false</Instantaneous>
-
       </TransformBuilding>
 
-
-
       <Triggers>
-
          <OnDeath/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
    
-
    <BuildingPassiveDefinition Id="CrystalNormal_Regen">
-
       <TransformBuilding>
-
          <BuildingListId>NormalCrystalsGildenbergRedux</BuildingListId>
-
       </TransformBuilding>
 
-
-
       <Triggers>
-
          <StartNightEnemyTurn/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
-
 
 
    <BuildingPassiveDefinition Id="CrystalCorrupted_Death">
-
       <TransformBuilding>
-
          <BuildingId>CrystalCorruptedOff</BuildingId>
-
 		  <Instantaneous>false</Instantaneous>
-
       </TransformBuilding>
 
-
-
       <Triggers>
-
          <OnDeath/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="CrystalCorrupted_Regen">
-
       <TransformBuilding>
-
          <BuildingId>CrystalCorruptedOn</BuildingId>
-
       </TransformBuilding>
 
-
-
       <Triggers>
-
          <EndProductionTurn/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
 
-
-
    <!-- ███████████████████████████████████████████████████████████████ -->
-
    <!-- DLC 2 -->
-
    <!-- ███████████████████████████████████████████████████████████████ -->
 
-
-
-   <BuildingPassiveDefinition Id="LivingForestBallistaGrowth">
-
+   <BuildingPassiveDefinition Id="PlayerLivingForestBallistaGrowth">
       <TransformBuilding>
-
-         <BuildingId>LivingForestBallista</BuildingId>
-
+         <BuildingId>PlayerLivingForestBallista</BuildingId>
       </TransformBuilding>
 
-
-
       <Triggers>
-
          <AfterXNightTurns NumberOfNightTurns="1"/>
-
       </Triggers>
-
    </BuildingPassiveDefinition>
-
-
 
    <BuildingPassiveDefinition Id="LivingForestWallGrowth">
-
       <TransformBuilding>
-
          <BuildingId>LivingForestWall</BuildingId>
-
       </TransformBuilding>
 
+      <Triggers>
+         <AfterXNightTurns NumberOfNightTurns="1"/>
+      </Triggers>
+   </BuildingPassiveDefinition>
+   
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- DLC 3 -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
 
+   <BuildingPassiveDefinition Id="PlayableUnitSkillBuild">
+      <DestroyBuilding>
+         <TriggerOnDeathEvent>false</TriggerOnDeathEvent>
+         <PlayDeathSound/>
+      </DestroyBuilding>
 
       <Triggers>
-
-         <AfterXNightTurns NumberOfNightTurns="1"/>
-
+         <StartProductionTurn/>
       </Triggers>
-
    </BuildingPassiveDefinition>
 
+   <BuildingPassiveDefinition Id="PlayerFortress">
+      <DestroyBuilding/>
 
+      <Triggers>
+         <StartProductionTurn/> <!-- OLD <AfterXNightTurns NumberOfNightTurns="1"/> -->
+      </Triggers>
+   </BuildingPassiveDefinition>
 
+   <BuildingPassiveDefinition Id="CrystalPlayer_Regen">
+      <TransformBuilding>  
+         <BuildingListId>PlayerCrystals</BuildingListId>
+      </TransformBuilding>
 
+      <Triggers>
+         <AfterXNightTurns NumberOfNightTurns="2"/>
+      </Triggers>
+   </BuildingPassiveDefinition>
+
+   <BuildingPassiveDefinition Id="PlayerCrystal_Death">
+      <TransformBuilding>
+         <BuildingId>PlayerCrystalNormalOff</BuildingId>
+         <Instantaneous>false</Instantaneous>
+      </TransformBuilding>
+
+      <Triggers>
+         <OnDeath/>
+      </Triggers>
+   </BuildingPassiveDefinition>
 
 </BuildingPassiveDefinitions>
-

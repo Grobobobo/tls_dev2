@@ -440,17 +440,13 @@
    <ApocalypseModifierStepDefinition Id="EnemyProgressionOffsetModifier_1">
       <ApocalypseLevel>2</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="ProgressionMultiplier" Value="1.15"/>
+         <TokenVariable Key="ProgressionMultiplier" Value="1.4"/>
          <TokenVariable Key="ExcludeStatMovePoints" Value="MovePointsTotal"/>
-         <TokenVariable Key="ExcludeStatDodge" Value="Dodge"/>
-         <TokenVariable Key="ExcludeStatResistance" Value="Resistance"/>
       </TokenVariables>
       <Effects>
           <EnemiesStatProgressionMultiplier Value="ProgressionMultiplier">
               <ExcludeStats>
                   <ExcludeStat Id="ExcludeStatMovePoints"/>
-                  <ExcludeStat Id="ExcludeStatDodge"/>
-                  <ExcludeStat Id="ExcludeStatResistance"/>
               </ExcludeStats>
           </EnemiesStatProgressionMultiplier>
       </Effects>
@@ -462,20 +458,16 @@
    <ApocalypseModifierStepDefinition Id="EnemyProgressionOffsetModifier_2" TemplateId="EnemyProgressionOffsetModifier_1">
       <ApocalypseLevel>4</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="ProgressionMultiplier" Value="1.3"/>
+         <TokenVariable Key="ProgressionMultiplier" Value="1.7"/>
          <TokenVariable Key="ExcludeStatMovePoints" Value="MovePointsTotal"/>
-         <TokenVariable Key="ExcludeStatDodge" Value="Dodge"/>
-         <TokenVariable Key="ExcludeStatResistance" Value="Resistance"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="EnemyProgressionOffsetModifier_3" TemplateId="EnemyProgressionOffsetModifier_1">
       <ApocalypseLevel>6</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="ProgressionMultiplier" Value="1.45"/>
+         <TokenVariable Key="ProgressionMultiplier" Value="2"/>
          <TokenVariable Key="ExcludeStatMovePoints" Value="MovePointsTotal"/>
-         <TokenVariable Key="ExcludeStatDodge" Value="Dodge"/>
-         <TokenVariable Key="ExcludeStatResistance" Value="Resistance"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 

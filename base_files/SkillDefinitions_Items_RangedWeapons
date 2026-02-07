@@ -1167,7 +1167,7 @@
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectBossUnits>true</CanAffectBossUnits>
                   <Stat Id="Dodge"/>
-                  <Malus>50</Malus>
+                  <Malus>20</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
@@ -1222,9 +1222,14 @@
 		 </CasterAnim>
 
          <SoundEffect>
-            <Path>00_Others/Spot/SFX_Skill_Spot</Path>
+            <Path>LongBow/TakeAim/SFX_SKILL_TakeAim_Hit</Path>
             <Delay>0</Delay>
          </SoundEffect>
+         <SoundEffect>
+            <Path>LongBow/TakeAim/SFX_SKILL_TakeAim_Shoot</Path>
+            <Delay>0.87</Delay>
+         </SoundEffect>
+
       </CastFXs>
    </SkillDefinition>
    
@@ -1237,7 +1242,7 @@
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectBossUnits>true</CanAffectBossUnits>
                   <Stat Id="Dodge"/>
-                  <Malus>55</Malus>
+                  <Malus>22</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
@@ -1261,7 +1266,7 @@
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectBossUnits>true</CanAffectBossUnits>
                   <Stat Id="Dodge"/>
-                  <Malus>60</Malus>
+                  <Malus>24</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
@@ -1285,7 +1290,7 @@
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectBossUnits>true</CanAffectBossUnits>
                   <Stat Id="Dodge"/>
-                  <Malus>65</Malus>
+                  <Malus>26</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
@@ -1309,7 +1314,7 @@
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectBossUnits>true</CanAffectBossUnits>
                   <Stat Id="Dodge"/>
-                  <Malus>70</Malus>
+                  <Malus>28</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
@@ -1333,7 +1338,7 @@
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectBossUnits>true</CanAffectBossUnits>
                   <Stat Id="Dodge"/>
-                  <Malus>75</Malus>
+                  <Malus>30</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>

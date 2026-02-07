@@ -1,0 +1,28 @@
+﻿<RaceDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="RaceDefinitions.xsd">
+   
+   <RaceDefinition Id="Elf">
+      <OverrideUnitAnimator/>
+      
+      <StatBoundaryModifiers>
+         <StatBoundaryModifier MaxModifier="25" Stat="Dodge"/>
+      </StatBoundaryModifiers>
+      
+      <StatModifiers>
+         <StatModifier Stat="Block">-4</StatModifier>
+         <StatModifier Stat="ManaRegen">8</StatModifier>
+         <StatModifier Stat="Dodge">7</StatModifier>
+      </StatModifiers>
+
+      <Perks>
+         <Perk>IntoTheWild</Perk>
+      </Perks>
+      
+      <OverrideNames Gender="Female"/>
+      <OverrideNames Gender="Male"/>
+      <HUDOffset X="0" Y="74"/>
+      
+      <GenderGenerationWeight Gender="Female">80</GenderGenerationWeight>
+      <GenderGenerationWeight Gender="Male">20</GenderGenerationWeight>
+   </RaceDefinition>
+
+</RaceDefinitions>

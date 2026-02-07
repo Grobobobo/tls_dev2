@@ -34,20 +34,24 @@
       <Probability Weight="5">1</Probability>
    </ItemGenerationModifiersListDefinition>-->
 
+   <ItemGenerationModifiersListDefinition Id="PanicRewardLow">
+      <Probability Weight="100">1</Probability>
+   </ItemGenerationModifiersListDefinition>
+
    <ItemGenerationModifiersListDefinition Id="PanicReward">
-      <Probability Weight="100">0</Probability>
-      <Probability Weight="30">1</Probability>
-      <Probability Weight="5">2</Probability>
+      <Probability Weight="100">1</Probability>
+      <Probability Weight="20">2</Probability>
    </ItemGenerationModifiersListDefinition>
 
    <ItemGenerationModifiersListDefinition Id="PanicRewardImproved">
       <Probability Weight="100">1</Probability>
-      <Probability Weight="35">2</Probability>
+      <Probability Weight="20">2</Probability>
    </ItemGenerationModifiersListDefinition>
 
    <ItemGenerationModifiersListDefinition Id="BonePile">
       <Probability Weight="100">-1</Probability>
-      <Probability Weight="55">0</Probability>
+      <Probability Weight="35">0</Probability>
+      <Probability Weight="5">1</Probability>
    </ItemGenerationModifiersListDefinition>
 
    <ItemGenerationModifiersListDefinition Id="BonePileElite">

@@ -150,7 +150,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="Dodge"/>
-                     <Bonus>24</Bonus>
+                     <Bonus>20</Bonus>
                      <TurnsCount>1</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -192,7 +192,7 @@
              <CasterEffect>
                 <Buff>
                    <Stat Id="Dodge"/>
-                   <Bonus>29</Bonus>
+                   <Bonus>23</Bonus>
                    <TurnsCount>1</TurnsCount>
                 </Buff>
              </CasterEffect>
@@ -209,7 +209,7 @@
            <CasterEffect>
               <Buff>
                  <Stat Id="Dodge"/>
-                 <Bonus>34</Bonus>
+                 <Bonus>26</Bonus>
                  <TurnsCount>1</TurnsCount>
               </Buff>
            </CasterEffect>
@@ -226,7 +226,7 @@
            <CasterEffect>
               <Buff>
                  <Stat Id="Dodge"/>
-                 <Bonus>38</Bonus>
+                 <Bonus>29</Bonus>
                  <TurnsCount>1</TurnsCount>
               </Buff>
            </CasterEffect>
@@ -243,7 +243,7 @@
            <CasterEffect>
               <Buff>
                  <Stat Id="Dodge"/>
-                 <Bonus>43</Bonus>
+                 <Bonus>32</Bonus>
                  <TurnsCount>1</TurnsCount>
               </Buff>
            </CasterEffect>
@@ -260,7 +260,7 @@
            <CasterEffect>
               <Buff>
                  <Stat Id="Dodge"/>
-                 <Bonus>48</Bonus>
+                 <Bonus>35</Bonus>
                  <TurnsCount>1</TurnsCount>
               </Buff>
            </CasterEffect>
@@ -286,7 +286,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="ArmorTotal"/>
-                     <Bonus>45</Bonus>
+                     <Bonus>35</Bonus>
                      <TurnsCount>1</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -328,7 +328,7 @@
            <CasterEffect>
               <Buff>
                  <Stat Id="ArmorTotal"/>
-                 <Bonus>63</Bonus>
+                 <Bonus>45</Bonus>
                  <TurnsCount>1</TurnsCount>
               </Buff>
            </CasterEffect>
@@ -345,7 +345,7 @@
            <CasterEffect>
               <Buff>
                  <Stat Id="ArmorTotal"/>
-                 <Bonus>81</Bonus>
+                 <Bonus>60</Bonus>
                  <TurnsCount>1</TurnsCount>
               </Buff>
            </CasterEffect>
@@ -362,7 +362,7 @@
            <CasterEffect>
               <Buff>
                  <Stat Id="ArmorTotal"/>
-                 <Bonus>99</Bonus>
+                 <Bonus>75</Bonus>
                  <TurnsCount>1</TurnsCount>
               </Buff>
            </CasterEffect>
@@ -379,7 +379,7 @@
            <CasterEffect>
               <Buff>
                  <Stat Id="ArmorTotal"/>
-                 <Bonus>117</Bonus>
+                 <Bonus>100</Bonus>
                  <TurnsCount>1</TurnsCount>
               </Buff>
            </CasterEffect>
@@ -396,7 +396,7 @@
            <CasterEffect>
               <Buff>
                  <Stat Id="ArmorTotal"/>
-                 <Bonus>135</Bonus>
+                 <Bonus>125</Bonus>
                  <TurnsCount>1</TurnsCount>
               </Buff>
            </CasterEffect>
@@ -422,7 +422,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="Block"/>
-                     <Bonus>10</Bonus>
+                     <Bonus>7</Bonus>
                      <TurnsCount>1</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -464,7 +464,7 @@
            <CasterEffect>
               <Buff>
                  <Stat Id="Block"/>
-                 <Bonus>14</Bonus>
+                 <Bonus>10</Bonus>
                  <TurnsCount>1</TurnsCount>
               </Buff>
            </CasterEffect>
@@ -481,7 +481,7 @@
            <CasterEffect>
               <Buff>
                  <Stat Id="Block"/>
-                 <Bonus>18</Bonus>
+                 <Bonus>14</Bonus>
                  <TurnsCount>1</TurnsCount>
               </Buff>
            </CasterEffect>
@@ -498,7 +498,7 @@
            <CasterEffect>
               <Buff>
                  <Stat Id="Block"/>
-                 <Bonus>22</Bonus>
+                 <Bonus>19</Bonus>
                  <TurnsCount>1</TurnsCount>
               </Buff>
            </CasterEffect>
@@ -515,7 +515,7 @@
            <CasterEffect>
               <Buff>
                  <Stat Id="Block"/>
-                 <Bonus>26</Bonus>
+                 <Bonus>25</Bonus>
                  <TurnsCount>1</TurnsCount>
               </Buff>
            </CasterEffect>
@@ -532,7 +532,7 @@
            <CasterEffect>
               <Buff>
                  <Stat Id="Block"/>
-                 <Bonus>30</Bonus>
+                 <Bonus>32</Bonus>
                  <TurnsCount>1</TurnsCount>
               </Buff>
            </CasterEffect>
@@ -840,7 +840,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="MomentumAttacks"/>
-                     <Bonus>5</Bonus>
+                     <Bonus>3</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>  
                </CasterEffect>
@@ -883,7 +883,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="MomentumAttacks"/>
-                     <Bonus>6</Bonus>
+                     <Bonus>4</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -902,7 +902,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="MomentumAttacks"/>
-                     <Bonus>7</Bonus>
+                     <Bonus>5</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -921,7 +921,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="MomentumAttacks"/>
-                     <Bonus>8</Bonus>
+                     <Bonus>6</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -940,7 +940,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="MomentumAttacks"/>
-                     <Bonus>9</Bonus>
+                     <Bonus>7</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -959,7 +959,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="MomentumAttacks"/>
-                     <Bonus>10</Bonus>
+                     <Bonus>8</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1027,7 +1027,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="OpportunisticAttacks"/>
-                     <Bonus>9</Bonus>
+                     <Bonus>8</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1046,7 +1046,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="OpportunisticAttacks"/>
-                     <Bonus>10</Bonus>
+                     <Bonus>9</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1065,7 +1065,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="OpportunisticAttacks"/>
-                     <Bonus>12</Bonus>
+                     <Bonus>10</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1084,7 +1084,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="OpportunisticAttacks"/>
-                     <Bonus>13</Bonus>
+                     <Bonus>11</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1103,7 +1103,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="OpportunisticAttacks"/>
-                     <Bonus>15</Bonus>
+                     <Bonus>12</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1129,7 +1129,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="OverallDamage"/>
-                     <Bonus>10</Bonus>
+                     <Bonus>8</Bonus>
                      <TurnsCount>1</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1172,7 +1172,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="OverallDamage"/>
-                     <Bonus>14</Bonus>
+                     <Bonus>11</Bonus>
                      <TurnsCount>1</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1191,7 +1191,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="OverallDamage"/>
-                     <Bonus>18</Bonus>
+                     <Bonus>14</Bonus>
                      <TurnsCount>1</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1210,7 +1210,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="OverallDamage"/>
-                     <Bonus>22</Bonus>
+                     <Bonus>17</Bonus>
                      <TurnsCount>1</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1229,7 +1229,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="OverallDamage"/>
-                     <Bonus>26</Bonus>
+                     <Bonus>20</Bonus>
                      <TurnsCount>1</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1248,7 +1248,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="OverallDamage"/>
-                     <Bonus>30</Bonus>
+                     <Bonus>23</Bonus>
                      <TurnsCount>1</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1744,7 +1744,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="Block"/>
-                     <Bonus>5</Bonus>
+                     <Bonus>3</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1788,7 +1788,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="Block"/>
-                     <Bonus>6</Bonus>
+                     <Bonus>4</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1806,7 +1806,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="Block"/>
-                     <Bonus>7</Bonus>
+                     <Bonus>5</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1824,7 +1824,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="Block"/>
-                     <Bonus>8</Bonus>
+                     <Bonus>6</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1842,7 +1842,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="Block"/>
-                     <Bonus>9</Bonus>
+                     <Bonus>7</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1861,7 +1861,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="Block"/>
-                     <Bonus>10</Bonus>
+                     <Bonus>8</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>
                </CasterEffect>

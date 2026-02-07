@@ -1974,25 +1974,19 @@
       <ValidTargets>
          <PlayableUnits/>
       </ValidTargets>
-      <UsesPerTurnCount>3</UsesPerTurnCount>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
       <Range Min="0" Max="3" Modifiable="true"/>
       <SkillAction>
          <Generic>
             <SkillEffects>
-               <Buff>
-                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                  <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="IsolatedAttacks"/>
-                  <Bonus>12</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
-               <Buff>
-                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                  <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="OpportunisticAttacks"/>
-                  <Bonus>12</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
+               <RegenStat>
+                  <Stat Id="Mana"/>
+                  <Bonus>4</Bonus>
+               </RegenStat>
+               <DecreaseStat>
+                  <Stat Id="Health"/>
+                  <LossValue>5</LossValue>
+               </DecreaseStat>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -2024,115 +2018,36 @@
    </SkillDefinition>
 
    <SkillDefinition Id="StoutBeer1" TemplateId="StoutBeer">
+      <UsesPerTurnCount>2</UsesPerTurnCount>
       <SkillAction>
          <Generic>
             <SkillEffects>
-               <Buff>
-                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                  <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="IsolatedAttacks"/>
-                  <Bonus>13</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
-               <Buff>
-                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                  <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="OpportunisticAttacks"/>
-                  <Bonus>13</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
+               <RegenStat>
+                  <Stat Id="Mana"/>
+                  <Bonus>6</Bonus>
+               </RegenStat>
+               <DecreaseStat>
+                  <Stat Id="Health"/>
+                  <LossValue>8</LossValue>
+               </DecreaseStat>
             </SkillEffects>
          </Generic>
       </SkillAction>
    </SkillDefinition>
 
    <SkillDefinition Id="StoutBeer2" TemplateId="StoutBeer">
+      <UsesPerTurnCount>2</UsesPerTurnCount>
       <SkillAction>
          <Generic>
             <SkillEffects>
-               <Buff>
-                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                  <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="IsolatedAttacks"/>
-                  <Bonus>17</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
-               <Buff>
-                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                  <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="OpportunisticAttacks"/>
-                  <Bonus>17</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
-            </SkillEffects>
-         </Generic>
-      </SkillAction>
-   </SkillDefinition>
-
-   <SkillDefinition Id="StoutBeer3" TemplateId="StoutBeer">
-      <SkillAction>
-         <Generic>
-            <SkillEffects>
-               <Buff>
-                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                  <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="IsolatedAttacks"/>
-                  <Bonus>19</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
-               <Buff>
-                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                  <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="OpportunisticAttacks"/>
-                  <Bonus>19</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
-            </SkillEffects>
-         </Generic>
-      </SkillAction>
-   </SkillDefinition>
-
-   <SkillDefinition Id="StoutBeer4" TemplateId="StoutBeer">
-      <SkillAction>
-         <Generic>
-            <SkillEffects>
-               <Buff>
-                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                  <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="IsolatedAttacks"/>
-                  <Bonus>22</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
-               <Buff>
-                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                  <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="OpportunisticAttacks"/>
-                  <Bonus>22</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
-            </SkillEffects>
-         </Generic>
-      </SkillAction>
-   </SkillDefinition>
-
-   <SkillDefinition Id="StoutBeer5" TemplateId="StoutBeer">
-      <SkillAction>
-         <Generic>
-            <SkillEffects>
-               <Buff>
-                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                  <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="IsolatedAttacks"/>
-                  <Bonus>24</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
-               <Buff>
-                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                  <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="OpportunisticAttacks"/>
-                  <Bonus>24</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
+               <RegenStat>
+                  <Stat Id="Mana"/>
+                  <Bonus>8</Bonus>
+               </RegenStat>
+               <DecreaseStat>
+                  <Stat Id="Health"/>
+                  <LossValue>10</LossValue>
+               </DecreaseStat>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -2142,26 +2057,29 @@
       <AllowFriendlyFire/>
       <ValidTargets>
          <PlayableUnits/>
+         <EnemyUnits/>
       </ValidTargets>
-      <UsesPerTurnCount>3</UsesPerTurnCount>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
       <Range Min="0" Max="3" Modifiable="true"/>
       <SkillAction>
          <Generic>
             <SkillEffects>
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="MomentumAttacks"/>
+                  <Stat Id="Accuracy"/>
                   <Bonus>7</Bonus>
-                  <TurnsCount>1</TurnsCount>
+                  <TurnsCount>2</TurnsCount>
                </Buff>
-               <Buff>
+               <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="SkillsRange"/>
-                  <Bonus>1</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
+                  <Stat Id="OverallDamage"/>
+                  <Malus>5</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -2198,18 +2116,20 @@
             <SkillEffects>
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="MomentumAttacks"/>
-                  <Bonus>8</Bonus>
-                  <TurnsCount>1</TurnsCount>
+                  <Stat Id="Accuracy"/>
+                  <Bonus>11</Bonus>
+                  <TurnsCount>2</TurnsCount>
                </Buff>
-               <Buff>
+               <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="SkillsRange"/>
-                  <Bonus>1</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
+                  <Stat Id="OverallDamage"/>
+                  <Malus>8</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -2221,18 +2141,20 @@
             <SkillEffects>
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="MomentumAttacks"/>
-                  <Bonus>11</Bonus>
-                  <TurnsCount>1</TurnsCount>
+                  <Stat Id="Accuracy"/>
+                  <Bonus>14</Bonus>
+                  <TurnsCount>2</TurnsCount>
                </Buff>
-               <Buff>
+               <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="SkillsRange"/>
-                  <Bonus>1</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
+                  <Stat Id="OverallDamage"/>
+                  <Malus>10</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -2244,18 +2166,20 @@
             <SkillEffects>
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="MomentumAttacks"/>
-                  <Bonus>11</Bonus>
-                  <TurnsCount>1</TurnsCount>
+                  <Stat Id="Accuracy"/>
+                  <Bonus>18</Bonus>
+                  <TurnsCount>2</TurnsCount>
                </Buff>
-               <Buff>
+               <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="SkillsRange"/>
-                  <Bonus>2</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
+                  <Stat Id="OverallDamage"/>
+                  <Malus>15</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -2267,41 +2191,20 @@
             <SkillEffects>
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="MomentumAttacks"/>
-                  <Bonus>13</Bonus>
-                  <TurnsCount>1</TurnsCount>
+                  <Stat Id="Accuracy"/>
+                  <Bonus>21</Bonus>
+                  <TurnsCount>2</TurnsCount>
                </Buff>
-               <Buff>
+               <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="SkillsRange"/>
-                  <Bonus>2</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
-            </SkillEffects>
-         </Generic>
-      </SkillAction>
-   </SkillDefinition>
-
-   <SkillDefinition Id="AmberBeer5" TemplateId="AmberBeer">
-      <SkillAction>
-         <Generic>
-            <SkillEffects>
-               <Buff>
-                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                  <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="MomentumAttacks"/>
-                  <Bonus>14</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
-               <Buff>
-                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                  <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="SkillsRange"/>
-                  <Bonus>2</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
+                  <Stat Id="OverallDamage"/>
+                  <Malus>15</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -2311,26 +2214,29 @@
       <AllowFriendlyFire/>
       <ValidTargets>
          <PlayableUnits/>
+         <EnemyUnits/>
       </ValidTargets>
-      <UsesPerTurnCount>3</UsesPerTurnCount>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
       <Range Min="0" Max="3" Modifiable="true"/>
       <SkillAction>
          <Generic>
             <SkillEffects>
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>true</CanAffectCaster>
                   <Stat Id="Critical"/>
-                  <Bonus>10</Bonus>
-                  <TurnsCount>1</TurnsCount>
+                  <Bonus>15</Bonus>
+                  <TurnsCount>2</TurnsCount>
                </Buff>
-               <Buff>
+               <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="Accuracy"/>
-                  <Bonus>10</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
+                  <Stat Id="CriticalPower"/>
+                  <Malus>15</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -2368,18 +2274,20 @@
             <SkillEffects>
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>true</CanAffectCaster>
                   <Stat Id="Critical"/>
-                  <Bonus>10</Bonus>
-                  <TurnsCount>1</TurnsCount>
+                  <Bonus>18</Bonus>
+                  <TurnsCount>2</TurnsCount>
                </Buff>
-               <Buff>
+               <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="Accuracy"/>
-                  <Bonus>10</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
+                  <Stat Id="CriticalPower"/>
+                  <Malus>15</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -2391,18 +2299,20 @@
             <SkillEffects>
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>true</CanAffectCaster>
                   <Stat Id="Critical"/>
-                  <Bonus>14</Bonus>
-                  <TurnsCount>1</TurnsCount>
+                  <Bonus>24</Bonus>
+                  <TurnsCount>2</TurnsCount>
                </Buff>
-               <Buff>
+               <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="Accuracy"/>
-                  <Bonus>14</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
+                  <Stat Id="CriticalPower"/>
+                  <Malus>15</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -2414,18 +2324,20 @@
             <SkillEffects>
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>true</CanAffectCaster>
                   <Stat Id="Critical"/>
-                  <Bonus>15</Bonus>
-                  <TurnsCount>1</TurnsCount>
+                  <Bonus>29</Bonus>
+                  <TurnsCount>2</TurnsCount>
                </Buff>
-               <Buff>
+               <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="Accuracy"/>
-                  <Bonus>15</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
+                  <Stat Id="CriticalPower"/>
+                  <Malus>15</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -2437,41 +2349,20 @@
             <SkillEffects>
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>true</CanAffectCaster>
                   <Stat Id="Critical"/>
-                  <Bonus>18</Bonus>
-                  <TurnsCount>1</TurnsCount>
+                  <Bonus>31</Bonus>
+                  <TurnsCount>2</TurnsCount>
                </Buff>
-               <Buff>
+               <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="Accuracy"/>
-                  <Bonus>18</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
-            </SkillEffects>
-         </Generic>
-      </SkillAction>
-   </SkillDefinition>
-
-   <SkillDefinition Id="PilsnerBeer5" TemplateId="PilsnerBeer">
-      <SkillAction>
-         <Generic>
-            <SkillEffects>
-               <Buff>
-                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                  <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="Critical"/>
-                  <Bonus>20</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
-               <Buff>
-                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                  <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="Accuracy"/>
-                  <Bonus>20</Bonus>
-                  <TurnsCount>1</TurnsCount>
-               </Buff>
+                  <Stat Id="CriticalPower"/>
+                  <Malus>10</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
             </SkillEffects>
          </Generic>
       </SkillAction>
