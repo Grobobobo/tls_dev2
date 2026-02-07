@@ -1346,8 +1346,8 @@
       <WorkersCost>1</WorkersCost>
       <ActionEffects>
          <Scavenge>
-            <GainGold>18</GainGold>
-            <GainMaterials>16</GainMaterials>
+            <GainGold>20</GainGold>
+            <GainMaterials>22</GainMaterials>
             <Damage>50</Damage>
          </Scavenge>
          <GainMaterials>2</GainMaterials>
@@ -1387,8 +1387,8 @@
       <WorkersCost>1</WorkersCost>
       <ActionEffects>
          <Scavenge>
-            <GainGold>5</GainGold>
-            <GainMaterials>50</GainMaterials>
+            <GainGold>10</GainGold>
+            <GainMaterials>55</GainMaterials>
             <Damage>50</Damage>
          </Scavenge>
       </ActionEffects>
@@ -1427,8 +1427,8 @@
       <WorkersCost>2</WorkersCost>
       <ActionEffects>
          <Scavenge>
-            <GainGold>38</GainGold>
-            <GainMaterials>32</GainMaterials>
+            <GainGold>45</GainGold>
+            <GainMaterials>60</GainMaterials>
             <Damage>100</Damage>
          </Scavenge>
       </ActionEffects>
@@ -1467,7 +1467,7 @@
       <WorkersCost>2</WorkersCost>
       <ActionEffects>
          <Scavenge>
-            <GainGold>10</GainGold>
+            <GainGold>23</GainGold>
             <GainMaterials>120</GainMaterials>
             <Damage>100</Damage>
          </Scavenge>
@@ -1507,8 +1507,8 @@
       <WorkersCost>3</WorkersCost>
       <ActionEffects>
          <Scavenge>
-            <GainGold>60</GainGold>
-            <GainMaterials>48</GainMaterials>
+            <GainGold>78</GainGold>
+            <GainMaterials>105</GainMaterials>
             <Damage>150</Damage>
          </Scavenge>
       </ActionEffects>
@@ -1547,7 +1547,7 @@
       <WorkersCost>3</WorkersCost>
       <ActionEffects>
          <Scavenge>
-            <GainGold>15</GainGold>
+            <GainGold>39</GainGold>
             <GainMaterials>210</GainMaterials>
             <Damage>150</Damage>
          </Scavenge>
@@ -1587,8 +1587,8 @@
       <WorkersCost>4</WorkersCost>
       <ActionEffects>
          <Scavenge>
-            <GainGold>84</GainGold>
-            <GainMaterials>64</GainMaterials>
+            <GainGold>117</GainGold>
+            <GainMaterials>160</GainMaterials>
             <Damage>200</Damage>
          </Scavenge>
       </ActionEffects>
@@ -1627,7 +1627,7 @@
       <WorkersCost>4</WorkersCost>
       <ActionEffects>
          <Scavenge>
-            <GainGold>20</GainGold>
+            <GainGold>58</GainGold>
             <GainMaterials>320</GainMaterials>
             <Damage>200</Damage>
          </Scavenge>
@@ -1985,11 +1985,11 @@
          <Deployment>Disable</Deployment>
          <Night>Disable</Night>
       </PhaseStates>
-      <WorkersCost>1</WorkersCost>
+      <WorkersCost>2</WorkersCost>
       <ActionEffects>
          <Scavenge>
-            <GainGold>15</GainGold>
-            <GainMaterials>48</GainMaterials>
+            <GainGold>30</GainGold>
+            <GainMaterials>100</GainMaterials>
             <GainDamnedSouls>100</GainDamnedSouls>
             <CreateItem>
                <BuildingLevelModifiersList Id="BonePileElite"/>

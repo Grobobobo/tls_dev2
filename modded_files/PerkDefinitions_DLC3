@@ -3086,13 +3086,12 @@
          <!--A decommenter si limite haute-->
          <TokenVariable Key="SkillUsed" Value="Module.Buffer"/>
          <TokenVariable Key="OverheatThreshold" Value="7"/>
-         <TokenVariable Key="CooldownPerTurn" Value="5"/>
-         <TokenVariable Key="SkillId" Value="OverheatSkill"/>
-         <TokenVariable Key="BastHealthCost" Value="4"/>
-         <TokenVariable Key="HeatlCostPerPoint" Value="4"/>
+			<TokenVariable Key="CooldownPerTurn" Value="4"/>
+			<TokenVariable Key="SkillId" Value="OverheatSkill"/>
+			<TokenVariable Key="BastHealthCost" Value="12"/>
+			<TokenVariable Key="HeatlCostPerPoint" Value="4"/>
          <TokenVariable Key="HeatIncrease" Value="1"/>
          <TokenVariable Key="CanTriggerOverheat" Value ="Module.Buffer3"/>
-
          <TokenVariable Key="HasHitEnoughUnits" Value="Module.Buffer2 > UnitsHitThreshold - 1"/>
          <TokenVariable Key="CurrentUnitsHit" Value="Module.Buffer2"/>
          <TokenVariable Key="UnitsHitThreshold" Value="5"/>
@@ -3163,6 +3162,17 @@
                      <!--<SetBufferTo BufferIndex="Buffer" Value="OverheatThreshold"/>-->
                      <!-- A décommenter si on veut mettre une limite haute-->
                      <TriggerEffects/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('Cannon')"/>
+                     <IsTrue Value="CanTriggerOverheat = 1"/>
+                  </Conditions>
+                  <Actions>
+					  <RefreshPerkActivationFeedback RefreshView="true"/>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
                   </Actions>
                </Event>
                <Event EffectTime="OnSkillCastEnd">
@@ -3600,68 +3610,165 @@
 
    <!--Boomerang-->
    <PerkDefinition Id="StrongThrowUnique">
-      <TokenVariables>
-         <TokenVariable Key="STStacks" Value="Module.Buffer"/>
-         <TokenVariable Key="TotalRange" Value="PerkRange + (BooleanChoice(HasOwner, Owner.SkillRangeModifier, 0))"/>
-         <TokenVariable Key="PerkRange" Value="10"/>
-         <TokenVariable Key="SkillId" Value="StrongThrowSkill"/>
-         <TokenVariable Key="SkillDamage" Value="BaseDamage + StunTotal"/>
-         <TokenVariable Key="StunTotal" Value="(BooleanChoice(HasOwner, Floor(Owner.StunChanceModifier * StunPercentage), 0))"/>
-         <TokenVariable Key="StunPercentage" Value="1.4"/>
-         <TokenVariable Key="BaseDamage" Value="50"/>
-         <TokenVariable Key="UniqueBonusStunChance" Value="35"/>
-      </TokenVariables>
-      <LocArguments>
-         <LocArgument Value="TotalRange" Style="KeywordNb" Interpreted="true"/>
-         <LocalizedArgument Prefix="SkillName_" Value="StrongThrowSkill" Style="Skill"/>
-         <LocArgument Value="StunPercentage * 100" Suffix="%" Style="KeyWordNb" Interpreted="true"/>
-         <StatArgument Stat="StunChanceModifier"/>
-         <LocalizedArgument Prefix="SkillName_" Value="SkillId" Style="Skill"/>
-         <LocArgument Value="SkillDamage" Interpreted="true" Style="Damage"/>
-         <LocArgument Value="BaseDamage" Style="KeyWordNb"/>
-         <LocalizedArgument Prefix="SkillName_" Value="PainfulSpin" Style="Skill"/>
+		<TokenVariables>
+         <TokenVariable Key="PerkStacks" Value="Max(0,EnemiesHitThreshold - Module.Buffer)"/>
+			<TokenVariable Key="EnemiesHitThreshold" Value="4"/>
+			<TokenVariable Key="CanActivatePerk" Value="Module.Buffer3"/>
+         <TokenVariable Key="UniqueBonusStunChance" Value="50"/>
 
-         <LocalizedArgument Prefix="SkillName_" Value="PreciseTargetting" Style="Skill"/>
-         <StatArgument Stat="StunChanceModifier" Value="UniqueBonusStunChance" DisplaySign="false"/>
+      </TokenVariables>
+		<LocArguments>
+             <LocArgument Value="EnemiesHitThreshold" Style="KeyWordNb"/>
+               <LocalizedArgument Value="SkillEffectName_MultiHit" Style="MultiHit"/>
+               <LocArgument Value="2" Style="DamageNb" Prefix=" x"/>
+             <!--<LocArgument Prefix="+" Value="OverallDamageBonus" Suffix="%" Style="GoodNb"/>-->
+             <LocArgument Value="PerkStacks" Interpreted="true" Style="KeyWordNb"/>
+            <LocalizedArgument Prefix="SkillName_" Value="PreciseTargetting" Style="Skill"/>
+            <StatArgument Stat="StunChanceModifier" Value="UniqueBonusStunChance" DisplaySign="false"/>
+
       </LocArguments>
-      <View>
-         <DisplayInHUD>
-            <Buffer Value="Module.Buffer"/>
-            <Highlight>
-               <IsTrue Value="STStacks > 0"/>
-            </Highlight>
-            <HoverDisplay>
-               <HoverRange Range="TotalRange"/>
-            </HoverDisplay>
-         </DisplayInHUD>
-         <SkillsToShow>
-            <SkillToShow Id="StrongThrowSkill"/>
-         </SkillsToShow>
-      </View>
-      <Modules>
-         <BufferModule>
-            <Events>
-               <Event EffectTime="OnSkillCastEnd">
+		<View>
+			<DisplayInHUD>
+				<Buffer Value="PerkStacks"/>
+				<GreyOut>
+					<IsFalse Value="PerkStacks = 0"/>
+				</GreyOut>
+				<Highlight> 
+					<IsTrue Value="PerkStacks = 0"/>
+					<IsTrue Value="Skill.IsFromItemWithTag('Boomerang')"/>
+				</Highlight>
+			</DisplayInHUD>
+			<FeedbackActivationConditions>
+				<IsFalse Value="PerkStacks = EnemiesHitThreshold"/>
+			</FeedbackActivationConditions>
+		</View>
+		<Modules>
+			<BufferModule>
+				<Events>
+					<Event EffectTime="OnTargetHit">
+						<Conditions>
+							<IsTrue Value="Skill.IsFromItemWithTag('Boomerang')"/>
+							<IsTrue Value="IsTargetUnit"/>
+							<IsFalse Value="PerkStacks = 0"/>
+							<IsTrue Value="CanActivatePerk = 0"/>
+						</Conditions>
+						<Actions>
+							<IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+						</Actions>
+					</Event>
+					<Event EffectTime="OnSkillCastEnd">
+						<Conditions>
+							<IsTrue Value="Skill.IsFromItemWithTag('Boomerang')"/>
+							<IsTrue Value="PerkStacks = 0"/>
+							<!--<IsTrue Value="Module.Buffer2 ! 0"/>-->
+							<IsTrue Value="CanActivatePerk = 1"/>
+						</Conditions>
+						<Actions>
+							<SetBufferTo BufferIndex="Buffer" Value="0"/>
+							<SetBufferTo BufferIndex="Buffer2" Value="0"/>
+							<SetBufferTo BufferIndex="Buffer3" Value="0"/>
+							<RefreshPerkActivationFeedback RefreshView="true"/>
+						</Actions>
+					</Event>
+					<Event EffectTime="OnSkillCastEnd">
+						<Conditions>
+							<IsTrue Value="Skill.IsFromItemWithTag('Boomerang')"/>
+							<IsTrue Value="PerkStacks = 0"/>
+							<IsTrue Value="CanActivatePerk = 0"/>
+						</Conditions>
+						<Actions>
+							<RefreshPerkActivationFeedback RefreshView="true"/>
+							<SetBufferTo BufferIndex="Buffer3" Value="1"/>
+						</Actions>
+					</Event>
+					<!-- Reset Journa -->
+					<Event EffectTime="OnStartProductionTurn">
+						<Actions>
+							<SetBufferTo BufferIndex="Buffer" Value="0"/>
+							<SetBufferTo BufferIndex="Buffer2" Value="0"/>
+							<SetBufferTo BufferIndex="Buffer3" Value="0"/>
+						</Actions>
+					</Event>
+				</Events>
+				<Effects>
+               <ReplaceItemSkill SkillIdReplacement="PreciseTargettingUniqueStrongThrow" SkillIdToReplace="PreciseTargettingUnique" LinkedSkillIdForUsesPerTurn="PreciseTargettingUnique">
+
                   <Conditions>
-                     <IsTrue Value="Skill.IsFromItemWithTag('Boomerang')"/>
+
+							<IsTrue Value="CanActivatePerk = 1"/>
+
                   </Conditions>
-                  <Actions>
-                     <SetBufferTo BufferIndex="Buffer" Value="BooleanChoice(Skill.IsSkillID('PainfulSpin'),2,1)"/>
-                     <TriggerEffects/>
-                  </Actions>
-               </Event>
-            </Events>
-            <Effects>
-               <CastSkill SkillId="StrongThrowSkill">
-                  <PerkTargeting TargetingReference="Caster" TargetingMethod="ClosestTarget" Range="TotalRange" Amount="STStacks">
-                     <DamageableTarget Type="Enemy"/>
-                     <HasStatus StatusType="Stun"/>
-                  </PerkTargeting>
-               </CastSkill>
-               <ResetBuffer ResetValue="0"/>
-            </Effects>
-         </BufferModule>
-      </Modules>
+
+               </ReplaceItemSkill>
+
+               <ReplaceItemSkill SkillIdReplacement="CrescentSwingStrongThrow" SkillIdToReplace="CrescentSwing" LinkedSkillIdForUsesPerTurn="CrescentSwing">
+
+                  <Conditions>
+
+							<IsTrue Value="CanActivatePerk = 1"/>
+
+                  </Conditions>
+
+               </ReplaceItemSkill>
+               <ReplaceItemSkill SkillIdReplacement="CrescentSwing1StrongThrow" SkillIdToReplace="CrescentSwing1" LinkedSkillIdForUsesPerTurn="CrescentSwing1">
+
+                  <Conditions>
+
+							<IsTrue Value="CanActivatePerk = 1"/>
+
+                  </Conditions>
+
+               </ReplaceItemSkill>               
+               <ReplaceItemSkill SkillIdReplacement="CrescentSwing2StrongThrow" SkillIdToReplace="CrescentSwing2" LinkedSkillIdForUsesPerTurn="CrescentSwing2">
+
+                  <Conditions>
+
+							<IsTrue Value="CanActivatePerk = 1"/>
+
+                  </Conditions>
+
+               </ReplaceItemSkill>               
+               <ReplaceItemSkill SkillIdReplacement="CrescentSwing3StrongThrow" SkillIdToReplace="CrescentSwing3" LinkedSkillIdForUsesPerTurn="CrescentSwing3">
+
+                  <Conditions>
+
+							<IsTrue Value="CanActivatePerk = 1"/>
+
+                  </Conditions>
+
+               </ReplaceItemSkill>               
+               <ReplaceItemSkill SkillIdReplacement="CrescentSwing4StrongThrow" SkillIdToReplace="CrescentSwing4" LinkedSkillIdForUsesPerTurn="CrescentSwing4">
+
+                  <Conditions>
+
+							<IsTrue Value="CanActivatePerk = 1"/>
+
+                  </Conditions>
+
+               </ReplaceItemSkill>               
+               <ReplaceItemSkill SkillIdReplacement="CrescentSwing5StrongThrow" SkillIdToReplace="CrescentSwing5" LinkedSkillIdForUsesPerTurn="CrescentSwing5">
+
+                  <Conditions>
+
+							<IsTrue Value="CanActivatePerk = 1"/>
+
+                  </Conditions>
+
+               </ReplaceItemSkill>
+
+               <ReplaceItemSkill SkillIdReplacement="PainfulSpinStrongThrow" SkillIdToReplace="PainfulSpin" LinkedSkillIdForUsesPerTurn="PainfulSpin">
+
+                  <Conditions>
+
+							<IsTrue Value="CanActivatePerk = 1"/>
+
+                  </Conditions>
+
+               </ReplaceItemSkill>
+
+				</Effects>
+			</BufferModule>
+		</Modules>
    </PerkDefinition>
 
 

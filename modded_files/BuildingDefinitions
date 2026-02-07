@@ -796,7 +796,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>30</MaterialsCost>
+         <MaterialsCost>25</MaterialsCost>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
          </GroundCategories>
@@ -809,7 +809,7 @@
 
       <Damageable>
          <HealthTotal>320</HealthTotal>
-         <TotalPanicValue>0.4</TotalPanicValue>
+         <TotalPanicValue>0.2</TotalPanicValue>
          <FlameAnchorPoints>
             <FlameAnchorPoint PositionX="0.59" PositionY="0.87"/>
             <FlameAnchorPoint PositionX="0.02" PositionY="1.65"/>
@@ -872,7 +872,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>40</MaterialsCost>
+         <MaterialsCost>35</MaterialsCost>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
          </GroundCategories>
@@ -885,7 +885,7 @@
 
       <Damageable>
          <HealthTotal>500</HealthTotal>
-         <TotalPanicValue>0.4</TotalPanicValue>
+         <TotalPanicValue>0.2</TotalPanicValue>
          <FlameAnchorPoints>
             <FlameAnchorPoint PositionX="0.59" PositionY="0.87"/>
             <FlameAnchorPoint PositionX="0.02" PositionY="1.65"/>
@@ -958,8 +958,8 @@
       </Construction>
 
       <Damageable>
-         <HealthTotal>120</HealthTotal>
-         <TotalPanicValue>0.4</TotalPanicValue>
+         <HealthTotal>140</HealthTotal>
+         <TotalPanicValue>0.2</TotalPanicValue>
          <FlameAnchorPoints>
             <FlameAnchorPoint PositionX="0" PositionY="0"/>
             <FlameAnchorPoint PositionX="0.06" PositionY="1.77"/>
@@ -983,7 +983,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>30</MaterialsCost>
+         <MaterialsCost>25</MaterialsCost>
          <BuildLimit>Gates</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -997,7 +997,7 @@
 
       <Damageable>
          <HealthTotal>320</HealthTotal>
-         <TotalPanicValue>0.8</TotalPanicValue>
+         <TotalPanicValue>0.4</TotalPanicValue>
          <FlameAnchorPoints>
             <FlameAnchorPoint PositionX="0.81" PositionY="0.58"/>
             <FlameAnchorPoint PositionX="-0.32" PositionY="0.65"/>
@@ -1179,7 +1179,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>8</MaterialsCost>
+         <MaterialsCost>10</MaterialsCost>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
             <GroundCategory>Outside</GroundCategory>
@@ -1224,7 +1224,7 @@
                </Goal>
             </Goals>
          </Behavior>
-         <MaximumTrapUsage>1</MaximumTrapUsage>
+         <MaximumTrapUsage>2</MaximumTrapUsage>
          <SkillProgressions>
             <SkillProgression Id="Spe_StunTrapTriggered" GlyphFlagUnlock="SpecializedTraps"/>
          </SkillProgressions>

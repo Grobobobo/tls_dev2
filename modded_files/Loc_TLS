@@ -13308,34 +13308,36 @@ Próximo passo: {4} de {1}","{3}
 PerkName_HardAsARock,Hard As A Rock,Solide comme un roc,坚若磐石,堅若磐石,岩のように硬く,Твёрдый как камень,Твердий наче камінь,Hart wie ein Fels,Duro como una piedra,Duro Feito Pedra,돌처럼 단단하게
 PerkDescription_HardAsARock,"Whenever an enemy is <style=KeyWord>killed</style>:
 {0}.
+Increases <style=KeyWord>Maximum</style> {1} by {2}.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Quand un ennemi est <style=KeyWord>tué</style><nbsp>:
 {0}.
+Augmente {1} <style=KeyWord>maximum</style> de {2}.
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","每有敌人被 <style=KeyWord>击杀</style>时：
 {0}。
-
+<style=KeyWord>最大</style>{1}提升{2}。
 <style=""DwarfIcon""></style><style=""DwarfText"">卢恩堡的矮人DLC</style>","每有敵人被 <style=KeyWord>擊殺</style>時：
 {0}。
-
+<style=KeyWord>最大</style>{1}提升{2}。
 <style=""DwarfIcon""></style><style=""DwarfText"">盧恩堡的矮人DLC</style>","エネミーを1体<style=KeyWord>倒す</style>毎に{0}。
-
+<style=KeyWord>最大</style>{1}を{2}増加させる。
 <style=""DwarfIcon""></style><style=""DwarfText"">ルーネンベルクのドワーフDLC</style>","Каждый раз, когда враг <style=KeyWord>убит</style>:
 {0}.
-
+Увеличивает <style=KeyWord>максимум</style> {1} на {2}.
 <style=""DwarfIcon""></style><style=""DwarfText"">Дополнительный контент ""Dwarves of Runenberg""</style>","Коли ворога <style=KeyWord>вбивають</style>:
 {0}.
-
+Збільшує <style=KeyWord>максимум</style> {1} на {2}.
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC «Dwarves of Runenberg»</style>","Immer wenn ein Feind <style=KeyWord>getötet</style> wird:
 {0}.
-
+Erhöht das <style=KeyWord>Maximum</style> von {1} um {2}.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Cuando se <style=KeyWord>mata</style> a un enemigo:
 {0}.
-
+Aumenta el {1} <style=KeyWord>máximo</style> en {2}.
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","Sempre que um inimigo for <style=KeyWord>abatido</style>:
 {0}.
-
+Aumenta {1} <style=KeyWord>Máximo</style> em {2}.
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","적을 <style=KeyWord>처치</style>할 때마다:
-영웅의 턴이 <style=KeyWord>종료</style>될 때 {0}
-
+{0}.
+<style=KeyWord>최대</style> {1}이(가) {2} 증가합니다.
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
 PerkName_LookAtMyMuscles,Look At My Muscles,Admirez ces muscles,秀肌肉,秀肌肉,オレの筋肉を見よ,Посмотри на мои мускулы,"Диви, які м'язи",Sieh dir meine Muskeln an,Mira qué músculos,Admira Esses Músculos,내 근육 좀 볼래
 PerkDescription_LookAtMyMuscles,"{1}. Increases <style=KeyWord>Maximum</style> {2} by {3}.
@@ -22305,6 +22307,7 @@ PerkDescription_OverheatUniquePerk,"Whenever a <style=KeyWord>Cannon</style> <st
 Whenever <style=Bad>Heat</style> reaches {0}, every <style=KeyWord>Cannon</style> <style=Skill>skill</style> gets:
 {1} {2} <style=KeyWord>cost</style>, increased by {3} for each {8} and {9} base cost.
 {4} is <style=KeyWord>automatically</style> cast on the Hero.
+Afterwards, set <style=Bad>Heat</style> to <style=Bad>0</style>.
 At the <style=KeyWord>end</style> of the Heroes' turn:
 {5} <style=Bad>Heat</style>.
 <style=Attenuated>Heat is reset every morning.</style>
@@ -22317,6 +22320,7 @@ Every {10} units hit with a single {11} <style=Skill>skill</style>, automaticall
 Quand la <style=Bad>Chaleur</style> atteint {0}, chaque <style=Skill>compétence</style> du <style=KeyWord>Canon</style> obtient<nbsp>:
 {1} {2} au <style=KeyWord>coût</style>, augmenté de {3} pour chaque coût de base en {8} et en {9}.
 Utilise <style=KeyWord>automatiquement</style> {4} sur le Héros.
+Ensuite, réinitialise la <style=Bad>Chaleur</style> à <style=Bad>0</style>.
 À la <style=KeyWord>fin</style> du tour des Héros<nbsp>:
 {5} <style=Bad>Chaleur</style>.
 
@@ -22329,6 +22333,7 @@ Tous les {10} unités touchées avec une seul utilisation d'une <style=Skill>com
 当<style=Bad>热量</style>达到{0}时，所有<style=KeyWord>加农炮</style><style=Skill>技能</style>：
 {1}{2}<style=KeyWord>消耗</style>，每多1点{8}和{9}基础消耗，增加{3}。
 <style=KeyWord>自动</style>对英雄施放{4}。
+之后，将<style=Bad>热量</style>设置为<style=Bad>0</style>。
 英雄回合<style=KeyWord>结束</style>时：
 {5}<style=Bad>热量</style>。
 <style=Attenuated>热量每天早上会重置。</style>
@@ -22341,6 +22346,7 @@ Tous les {10} unités touchées avec une seul utilisation d'une <style=Skill>com
 當<style=Bad>熱量</style>達到{0}時，所有<style=KeyWord>加農炮</style><style=Skill>技能</style>將會：
 <style=KeyWord>消耗</style>{1}{2}，每多消耗1點基礎{8}和{9}時增加{3}。
 對英雄<style=KeyWord>自動</style>施放{4}。
+之後，將<style=Bad>熱量</style>設置為<style=Bad>0</style>。
 在英雄回合<style=KeyWord>結束</style>時：
 {5}<style=Bad>熱量</style>。
 <style=Attenuated>熱量在每個白天重置。</style>
@@ -22353,6 +22359,7 @@ Tous les {10} unités touchées avec une seul utilisation d'une <style=Skill>com
 <style=Bad>ヒート</style>が{0}になると、各<style=KeyWord>大砲</style><style=Skill>スキル</style>は以下を獲得する:
 {1} {2}<style=KeyWord>コスト</style>。{8}と {9}のベースコスト毎に{3}増加する。
 {4}が英雄に<style=KeyWord>自動的に</style>使用される。
+その後、<style=Bad>ヒート</style>を<style=Bad>0</style>に設定する。
 英雄のターンの<style=KeyWord>終了時</style>:
 {5}<style=Bad>ヒート</style>。
 <style=Attenuated>ヒートは毎朝リセットされる。</style>
@@ -22365,6 +22372,7 @@ Tous les {10} unités touchées avec une seul utilisation d'une <style=Skill>com
 Каждый раз, когда <style=Bad>жар</style> достигает {0}, каждый <style=Skill>навык</style> <style=KeyWord>пушек</style> получает:
 {2} <style=KeyWord>тратится</style>: {1} ({3} за каждое {8} и когда тратится {9}).
 {4} <style=KeyWord>автоматически</style> распространяется на героя.
+После этого <style=Bad>жар</style> сбрасывается до <style=Bad>0</style>.
 В <style=KeyWord>конце</style> хода героя:
 {5} к <style=Bad>жару</style>.
 <style=Attenuated>Жар сбрасывается каждое утро.</style>
@@ -22377,6 +22385,7 @@ Tous les {10} unités touchées avec une seul utilisation d'une <style=Skill>com
 Якщо <style=Bad>жар</style> досягне {0}, кожне <style=Skill>вміння</style> <style=KeyWord>гармати</style> отримує:
 {1} <style=KeyWord>вартість</style> {2}, що зростає на {3} за кожну витрату {8} та {9} (базова вартість).
 {4} <style=KeyWord>автоматично</style> застосовується на героя.
+Після цього <style=Bad>жар</style> скидається до <style=Bad>0</style>.
  <style=KeyWord>Наприкінці</style> ходу героїв:
 {5} <style=Bad>жар</style>.
 <style=Attenuated>Щоранку жар скидається.</style>
@@ -22389,6 +22398,7 @@ Tous les {10} unités touchées avec une seul utilisation d'une <style=Skill>com
 Immer wenn die <style=Bad>Hitze</style> {0} erreicht, erhält jede <style=KeyWord>Kanonen</style>-<style=Skill>Fähigkeit</style>:
 {1} {2}s<style=KeyWord>kosten</style>, erhöht um {3} pro {8} und {9}-Basiskosten.
 {4} wird <style=KeyWord>automatisch</style> auf den Helden gewirkt.
+Danach wird die <style=Bad>Hitze</style> auf <style=Bad>0</style> zurückgesetzt.
 Am <style=KeyWord>Ende</style> der Runde des Helden:
 {5} <style=Bad>Hitze</style>.
 <style=Attenuated>Hitze wird jeden Morgen zurückgesetzt.</style>
@@ -22401,6 +22411,7 @@ Pro {10} Einheiten, die mit einer einzigen <style=Skill>Fähigkeit</style> von {
 Cuando la <style=Bad>temperatura</style> alcance {0}, todas las <style=Skill>habilidades</style> de <style=KeyWord>cañón</style> obtienen:
 {1} de <style=KeyWord>coste</style> de {2}, que aumenta en {3} por cada {8} y {9} de coste base.
 {4} se usa <style=KeyWord>automáticamente</style> sobre el héroe.
+Después, la <style=Bad>temperatura</style> se establece en <style=Bad>0</style>.
 Al <style=KeyWord>final</style> del turno de los héroes:
 {5} <style=Bad>temperatura</style>.
 <style=Attenuated>La temperatura se reinicia cada mañana.</style>
@@ -22413,6 +22424,7 @@ Por cada {10} unidades afectadas por una <style=Skill>habilidad</style> de {11},
 Sempre que <style=Bad>Calor</style> atingir {0}, todas as <style=Skill>habilidades</style> de <style=KeyWord>Canhão</style> recebem:
 {1} de <style=KeyWord>custo</style> de {2}, aumentado em {3} para cada custo base de {8} e {9}.
 O Herói lança {4} <style=KeyWord>automaticamente</style>.
+Depois, define <style=Bad>Calor</style> para <style=Bad>0</style>.
 No <style=KeyWord>fim</style> do turno dos Heróis:
 {5} de <style=Bad>Calor</style>.
 <style=Attenuated>O Calor é redefinido todas as manhãs.</style>
@@ -22425,6 +22437,7 @@ A cada {10} unidades atingidas por uma única <style=Skill>habilidade</style> de
 <style=Bad>열기</style>가 {0}에 도달할 때마다 모든 <style=KeyWord>대포</style> <style=Skill>스킬</style>:
 {2} <style=KeyWord>소모</style> {1} ({8}, {9} 기본 비용마다 {3} 증가)
 영웅에게 {4} <style=KeyWord>자동</style> 시전
+그 후, <style=Bad>열기</style>를 <style=Bad>0</style>으로 설정
 영웅의 턴이 <style=KeyWord>종료</style>될 때:
 {5} <style=Bad>열기</style>
 <style=Attenuated>열기는 매일 아침 초기화</style>
@@ -22682,47 +22695,53 @@ Enquanto <style=Perk>Instinto Selvagem</style> estiver ativo, {4} recebe:
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
 PerkName_StrongThrowUnique,Strong Throw,Lancer Puissant,强力投掷,奮力丟擲,強肩の一投,Бросок с силой,Могутній кидок,Starker Wurf,Lanzamiento potente,Arremesso Forte,강력한 투척
-PerkDescription_StrongThrowUnique,"Whenever a <style=KeyWord>Boomerang</style> <style=Skill>attack</style> is cast:
-<style=Keyword>Automatically</style> cast {1} on the closest <style=Stun>stunned</style> enemy within a range of {0}, with a base damage equal to {6} + {2} of the Hero's {3}.
-If {7} is cast, automatically cast {1} a <style=Keyword>second time.</style>
+PerkDescription_StrongThrowUnique,"Every {0} enemies <style=KeyWord>damaged</style> with a <style=KeyWord>Boomerang</style> skill, the next <style=KeyWord>Boomerang</style> <style=""Skill"">skill</style> gets:
+<color=#549EE4>Secondary</color> tiles now count as <style=bad>Primary</style> tiles.
+Precise Targeting gets: {1}{2}.
+<style=Attenuated>This modifier is reset every morning.</style>
 
 <style=Perk>Corrupted Bonus: Whiplash</style>
-{8} gains {9}.
+{4} gains {5}.
 
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Quand une <style=skill>attaque</style> de <style=keyword>Boomerang</style> est utilisée :
-Utilise <style=Keyword>automatiquement</style> {1} sur l'ennemi <style=Stun>étourdi</style> le plus proche dans une portée de {0}, avec des dégâts de base égaux à {6} + {2} de {3} du Héros.
-Si {7} est utilisée, utilise automatiquement {1} une <style=keyword>seconde fois.</style>
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Tous les {0} ennemis <style=KeyWord>touchés</style> avec une compétence de <style=KeyWord>Boomerang</style>, la prochaine <style=""Skill"">compétence</style> de <style=KeyWord>Boomerang</style> obtient :
+Les cases <color=#549EE4>secondaires</color> comptent maintenant comme des cases <style=bad>primaires</style>.
+Ciblage précis obtient : {1}{2}.
+<style=Attenuated>Ce modificateur est réinitialisé chaque matin.</style>
 
 <style=Perk>Bonus de Corruption<nbsp>: Coup de fouet</style>
-{8} obtient {9}.
+{4} obtient {5}.
 
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","每次施放<style=KeyWord>回旋镖</style><style=Skill>攻击</style>时：
-<style=Keyword>自动</style>对{0}格范围内距离最近的<style=Stun>眩晕</style>敌人施放{1}，其基础伤害等于{6}+英雄{3}的{2}。
-如果施放了{7}，则自动<style=Keyword>二次施放</style>{1}。
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","每{0}个被<style=KeyWord>回旋镖</style>技能<style=KeyWord>伤害</style>的敌人，下一个<style=KeyWord>回旋镖</style><style=""Skill"">技能</style>获得：
+<color=#549EE4>次要</color>格子现在视为<style=bad>主要</style>格子。
+精确瞄准获得：{1}{2}。
+<style=Attenuated>此修正每天早上重置。</style>
 
 <style=Perk>腐化加成：断颈旋击</style>
-{8}获得{9}。
+{4}获得{5}。
 
-<style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","每當施放<style=KeyWord>迴力鏢</style><style=Skill>攻擊</style>時：
-<style=Keyword>自動</style>對{0}格範圍內最近的<style=Stun>暈眩</style>敵人施放{1}，基礎傷害等於{6}+英雄{3}的{2}。
-如果施放{7}，則<style=Keyword>再次</style>自動施放{1}。
+<style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","每{0}個被<style=KeyWord>迴力鏢</style>技能<style=KeyWord>傷害</style>的敵人，下一個<style=KeyWord>迴力鏢</style><style=""Skill"">技能</style>獲得：
+<color=#549EE4>次要</color>格子現在視為<style=bad>主要</style>格子。
+精確瞄準獲得：{1}{2}。
+<style=Attenuated>此修正每天早上重置。</style>
 
 <style=Perk>腐化加成：頭部重擊</style>
-{8}獲得{9}。
+{4}獲得{5}。
 
-<style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","<style=KeyWord>ブーメラン</style>で<style=Skill>攻撃</style>するたび、以下の効果を得る:
-距離{0}以内で最も距離が近い<style=Stun>気絶</style>状態のエネミーに対し、<style=Keyword>自動的</style>に{1}(基本ダメージ＝英雄の{3}に{6}+{2})を発動する。
-{7}発動時、自動的に{1}が<style=Keyword>2回</style>発動する。
+<style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","<style=KeyWord>ブーメラン</style>スキルで{0}体のエネミーに<style=KeyWord>ダメージ</style>を与えるごとに、次の<style=KeyWord>ブーメラン</style><style=""Skill"">スキル</style>は以下を得る:
+<color=#549EE4>副次</color>タイルが<style=bad>主要</style>タイルとしてカウントされる。
+精密照準が以下を得る: {1}{2}。
+<style=Attenuated>この修正は毎朝リセットされる。</style>
 
 <style=Perk>腐敗ボーナス: 鞭打ち</style>
-{8}が{9}を得る。
+{4}が{5}を得る。
 
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","Каждый раз, когда герой <style=Skill>атакует</style> <style=KeyWord>бумерангом</style>:
-<style=Keyword>автоматически</style> применяет против ближайшего <style=Stun>оглушённого</style> врага в пределах {0} яч. навык ""{1}"" с базовым уроном {6} + {2} от характеристики героя ""{3}"".
-Если действует ""{7}"", автоматически применяет ""{1}"" <style=Keyword>повторно.</style>
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","Каждые {0} врагов, получивших <style=KeyWord>урон</style> от навыка <style=KeyWord>бумеранга</style>, следующий <style=""Skill"">навык</style> <style=KeyWord>бумеранга</style> получает:
+Клетки <color=#549EE4>вторичных целей</color> теперь считаются клетками <style=bad>первичных</style> целей.
+Точное наведение получает: {1}{2}.
+<style=Attenuated>Этот модификатор сбрасывается каждое утро.</style>
 
 <style=Perk>Бонус от порчи: Хлёсткий удар</style>
-{8} получает дополнительный эффект: {9}.
+{4} получает {5}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Під час кожної <style=Skill>атаки</style> <style=KeyWord>бумерангом</style>:
 до найближчого <style=Stun>дезорієнтованого</style> ворога в радіусі {0} <style=Keyword>автоматично</style> застосовується «{1}», завдаючи базової шкоди в розмірі {6} + {2} від {3} героя.
@@ -22732,32 +22751,36 @@ Si {7} est utilisée, utilise automatiquement {1} une <style=keyword>seconde foi
 {8} отримує {9}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Bei jedem <style=Skill>Angriff</style> mit dem <style=KeyWord>Bumerang</style> geschieht Folgendes:
-Es wird <style=Keyword>automatisch</style> {1} auf den nächsten <style=Stun>betäubten</style> Gegner innerhalb einer Reichweite von {0} gewirkt, und zwar mit einem Basisschaden von {6} + {2} der {3} des Helden.
-Wenn {7} gewirkt wird, wird {1} automatisch <style=Keyword>ein zweites Mal</style> gewirkt.
+<color=#549EE4>Sekundäre</color> Felder zählen jetzt als <style=bad>primäre</style> Felder.
+Präzise Zielerfassung erhält: {1}{2}.
+<style=Attenuated>Dieser Modifikator wird jeden Morgen zurückgesetzt.</style>
 
 <style=Perk>Verdorben-Bonus: Schleudertrauma</style>
-{8} erhält {9}.
+{4} erhält {5}.
 
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Cuando se lanza un <style=Skill>ataque</style> con <style=KeyWord>bumerán</style>:
-Se lanza {1} <style=Keyword>automáticamente</style> al enemigo <style=Stun>aturdido</style> más cercano, siempre que se encuentre a una distancia máxima de {0}, con un daño base equivalente a {6} + {2} del {3} del héroe.
-Si se lanza {7}, {1} se lanza automáticamente una <style=Keyword>segunda vez.</style>
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Cada {0} enemigos <style=KeyWord>dañados</style> con una habilidad de <style=KeyWord>bumerán</style>, la próxima <style=""Skill"">habilidad</style> de <style=KeyWord>bumerán</style> obtiene:
+Las casillas <color=#549EE4>secundarias</color> ahora cuentan como casillas <style=bad>primarias</style>.
+Objetivo preciso obtiene: {1}{2}.
+<style=Attenuated>Este modificador se reinicia cada mañana.</style>
 
 <style=Perk>Bonificación de corrupción: Latigazo</style>
-{8} obtiene un {9}.
+{4} obtiene {5}.
 
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","Sempre que um <style=Skill>ataque</style> de <style=KeyWord>Bumerangue</style> é lançado:
-Lança <style=Keyword>automaticamente</style> {1} no inimigo <style=Stun>atordoado</style> mais próximo, em uma distância de até {0}, com dano base igual a {6} + {2} do atributo {3} do Herói.
-Se a habilidade {7} for lançada, lança automaticamente {1} uma <style=Keyword>segunda vez.</style>
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","A cada {0} inimigos <style=KeyWord>danificados</style> com uma habilidade de <style=KeyWord>Bumerangue</style>, a próxima <style=""Skill"">habilidade</style> de <style=KeyWord>Bumerangue</style> recebe:
+Casas <color=#549EE4>Secundárias</color> agora contam como casas <style=bad>Primárias</style>.
+Mira Precisa recebe: {1}{2}.
+<style=Attenuated>Este modificador é redefinido todas as manhãs.</style>
 
 <style=Perk>Bonificação Corrompida: Contusão</style>
-{8} recebe {9}.
+{4} recebe {5}.
 
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","<style=KeyWord>부메랑</style> <style=Skill>공격</style>을 시전할 때마다:
-{0}타일 이내의 가장 가까운 <style=Stun>기절</style>한 적에게 {1} <style=Keyword>자동</style> 시전, 기본 피해는 영웅의 {3}의 {6} + {2}
-{7} 시전 시 자동으로 {1} <style=Keyword>한 번 더 시전</style>
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","<style=KeyWord>부메랑</style> 스킬로 {0}명의 적에게 <style=KeyWord>피해</style>를 입힐 때마다 다음 <style=KeyWord>부메랑</style> <style=""Skill"">스킬</style>이 획득:
+<color=#549EE4>보조</color> 타일이 이제 <style=bad>주요</style> 타일로 간주됩니다.
+정밀 조준이 획득: {1}{2}.
+<style=Attenuated>이 수정치는 매일 아침 초기화됩니다.</style>
 
 <style=Perk>오염된 보너스: 채찍질</style>
-{8}이(가) {9} 획득
+{4}이(가) {5} 획득
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
 PerkEffectInformations_StrongThrowUnique,"Enemies to hit: {3}","Ennemis à toucher<nbsp>: {3}","还需击中敌人数：{3}","還需擊中敵人數：{3}","命中させるエネミー: {3}","Ещё попаданий: {3}","Залишилося ударити ворогів: {3}.","Zu treffende Gegner: {3}","Enemigos por golpear: {3}","Inimigos a serem golpeados: {3}","명중해야 하는 적: {3}"

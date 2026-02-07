@@ -199,11 +199,12 @@
          <TokenVariable Key="TotalGain" Value="Module.Buffer * GainPerKill"/>
          <TokenVariable Key="GainPerKill" Value="1"/>
          <TokenVariable Key="BuffDuration" Value="1"/>
-         <TokenVariable Key="MaxBlockBonus" Value="20"/>
+         <TokenVariable Key="IncreaseToMaximumBlock" Value="20"/>
       </TokenVariables>
       <LocArguments>
          <StatusArgument Stat="Block" Status="Buff" Value="GainPerKill" TurnsCount="BuffDuration"/>
-         <StatArgument Stat="BlockTotal" Value="MaxBlockBonus"/>
+         <LocArgument Value="IncreaseToMaximumBlock" Interpreted="true" Style="KeyWordNb"/>
+         <StatArgument Stat="Block"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -216,7 +217,7 @@
       <Modules>
          <StatModifierModule>
             <Effects>
-               <StatModifier Stat="BlockTotal" Value="MaxBlockBonus" ChildStatFollows="true"/>
+               <StatBoundaryModifier Stat="Block" MaxModifier="IncreaseToMaximumBlock"/>
             </Effects>
          </StatModifierModule>
          <BufferModule>
