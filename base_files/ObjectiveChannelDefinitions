@@ -1,0 +1,26 @@
+﻿<ObjectiveChannelDefinitions xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+   
+   <ObjectiveChannelDefinition Id="Base">
+      <BaseGenerationChance>1.0</BaseGenerationChance>
+      <IncreaseGenerationChance>0.5</IncreaseGenerationChance>
+      <ResetGenerationChance>0.5</ResetGenerationChance>
+      <DifficultyPerNight>
+         <DifficultyAtNight Night="1">Corruption * 2.5</DifficultyAtNight> <!--Old difficulty multiplier : 2.5-->
+      </DifficultyPerNight>
+      <MasteryMultiplier>1.0</MasteryMultiplier>
+   </ObjectiveChannelDefinition>
+   
+   <ObjectiveChannelDefinition Id="Difficult" TemplateId="Base"> <!--Unused-->
+      <DifficultyPerNight>
+         <DifficultyAtNight Night="1">100</DifficultyAtNight>
+         <DifficultyAtNight Night="2">300</DifficultyAtNight>
+      </DifficultyPerNight>
+   </ObjectiveChannelDefinition>
+
+   <ObjectiveChannelDefinition Id="AdditionalObjectives" TemplateId="Base">
+      <BaseGenerationChance>0</BaseGenerationChance>
+      <IncreaseGenerationChance>0.25</IncreaseGenerationChance>
+      <ResetGenerationChance>0.5</ResetGenerationChance>
+   </ObjectiveChannelDefinition>
+
+</ObjectiveChannelDefinitions>

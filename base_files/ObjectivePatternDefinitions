@@ -1,0 +1,206 @@
+﻿<ObjectivePatternDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ObjectivePatternDefinitions.xsd">
+   
+   <!-- SkipNakedPatternFeasibility, if true, skips the feasibility check on a pattern when no constraint nor duration has been picked yet -->
+   <!-- Min/Max diff definition: DefaultMin = 100 | DefaultMax = N/A | LowerDiffTarget = 125 | EarlyDiffTarget = 215 | UpperDiffTarget = 800-->
+   <ObjectivePatternDefinition Id="KillEnemies" Weight="15" SkipNakedPatternFeasibility="true" MinDifficulty="150">
+      <ObjectiveAction>KillEnemy</ObjectiveAction>
+      
+      <ObjectiveConstraints>
+         <!-- <ObjectiveConstraint Value="None" Weight="1"/>-->
+         <ObjectiveConstraint Value="EnemyId" Weight="10"/>
+         <ObjectiveConstraint Value="Isolated" Weight="1"/>
+         <ObjectiveConstraint Value="NegativeAlteration" Weight="1"/>
+         <ObjectiveConstraint Value="XTilesFromFog" Weight="1"/>
+         <ObjectiveConstraint Value="SkillCost" Weight="1"/>
+         <ObjectiveConstraint Value="TargetFullHealth" Weight="1"/>
+         <ObjectiveConstraint Value="WithoutMoving" Weight="1"/>
+         <ObjectiveConstraint Value="XTilesOrLessFromCaster" Weight="1"/>
+         <ObjectiveConstraint Value="XTilesOrMoreFromCaster" Weight="1"/>
+      </ObjectiveConstraints>
+      
+      <AdditionalConstraintOdd>0.45</AdditionalConstraintOdd>
+      
+      <ObjectiveDurations>
+         <ObjectiveDuration Value="Normal" Weight="1"/>
+      </ObjectiveDurations>
+   </ObjectivePatternDefinition>
+
+   
+   <ObjectivePatternDefinition Id="DealDamages" Weight="12" MinDifficulty="50">
+      <ObjectiveAction>DealDamage</ObjectiveAction>
+
+      <ObjectiveConstraints>
+         <!-- <ObjectiveConstraint Value="None" Weight="1"/>-->
+         <ObjectiveConstraint Value="AttackType" Weight="2"/>
+         <ObjectiveConstraint Value="Isolated" Weight="1"/>
+         <ObjectiveConstraint Value="NegativeAlteration" Weight="1"/>
+         <ObjectiveConstraint Value="XTilesFromFog" Weight="1"/>
+         <ObjectiveConstraint Value="EnemyId" Weight="10"/>
+         <ObjectiveConstraint Value="SkillCost" Weight="1"/>
+         <ObjectiveConstraint Value="TargetFullHealth" Weight="1"/>
+         <ObjectiveConstraint Value="WithoutMoving" Weight="1"/>
+         <ObjectiveConstraint Value="XTilesOrLessFromCaster" Weight="1"/>
+         <ObjectiveConstraint Value="XTilesOrMoreFromCaster" Weight="1"/>
+      </ObjectiveConstraints>
+
+      <AdditionalConstraintOdd>0.45</AdditionalConstraintOdd>
+
+      <ObjectiveDurations>
+         <ObjectiveDuration Value="DealDamageDuration" Weight="1"/>
+      </ObjectiveDurations>
+   </ObjectivePatternDefinition>
+   
+   
+   <ObjectivePatternDefinition Id="UseSkill" Weight="2" MinDifficulty="50" MaxDifficulty="215">
+      <ObjectiveAction>UseSkill</ObjectiveAction>
+
+      <ObjectiveConstraints>
+         <ObjectiveConstraint Value="IsPunch" Weight="1"/>
+      </ObjectiveConstraints>
+
+      <ObjectiveDurations>
+         <ObjectiveDuration Value="Normal" Weight="1"/>
+      </ObjectiveDurations>
+   </ObjectivePatternDefinition>
+
+
+   <ObjectivePatternDefinition Id="GetHit" Weight="2" MinDifficulty="215">
+      <ObjectiveAction>GetHit</ObjectiveAction>
+
+      <ObjectiveConstraints>
+      </ObjectiveConstraints>
+
+      <ObjectiveDurations>
+         <ObjectiveDuration Value="Normal" Weight="1"/>
+      </ObjectiveDurations>
+   </ObjectivePatternDefinition>
+   
+
+   <!--<ObjectivePatternDefinition Id="UseMana" Weight="2" MinDifficulty="215">
+      <ObjectiveAction>UseMana</ObjectiveAction>
+
+      <ObjectiveConstraints>
+      </ObjectiveConstraints>
+
+      <ObjectiveDurations>
+         <ObjectiveDuration Value="Normal" Weight="1"/>
+      </ObjectiveDurations>
+   </ObjectivePatternDefinition>
+   
+
+   <ObjectivePatternDefinition Id="UseMovePoints" Weight="2" MinDifficulty="50" MaxDifficulty="215">
+      <ObjectiveAction>UseMovePoints</ObjectiveAction>
+
+      <ObjectiveConstraints>
+      </ObjectiveConstraints>
+
+      <ObjectiveDurations>
+         <ObjectiveDuration Value="Normal" Weight="1"/>
+      </ObjectiveDurations>
+   </ObjectivePatternDefinition>-->
+
+
+   <ObjectivePatternDefinition Id="DontKillEnemies" Weight="3" MinDifficulty="150"> <!--Old weight value : 6-->
+      <ObjectiveAction Invert="true">KillEnemy</ObjectiveAction>
+
+      <ObjectiveConstraints>
+         <ObjectiveConstraint Value="EnemyIdInvert" Weight="6"/>
+         <ObjectiveConstraint Value="Isolated" Weight="2"/>
+         <ObjectiveConstraint Value="NegativeAlteration" Weight="2"/>
+         <!--<ObjectiveConstraint Value="XTilesFromFog" Weight="1"/>-->
+         <ObjectiveConstraint Value="SkillCost" Weight="1"/>
+         <!--<ObjectiveConstraint Value="TargetFullHealth" Weight="1"/>-->
+         <!--<ObjectiveConstraint Value="WithoutMoving" Weight="1"/>-->
+         <!--<ObjectiveConstraint Value="XTilesOrLessFromCaster" Weight="1"/>-->
+         <!--<ObjectiveConstraint Value="XTilesOrMoreFromCaster" Weight="1"/>-->
+      </ObjectiveConstraints>
+
+      <ObjectiveDurations>
+         <ObjectiveDuration Value="NormalInverted2Turns" Weight="1"/>
+      </ObjectiveDurations>
+   </ObjectivePatternDefinition>
+
+
+   <ObjectivePatternDefinition Id="DontDealDamages" Weight="4" MinDifficulty="50"> <!--Old weight value : 5-->
+      <ObjectiveAction Invert="true">DealDamage</ObjectiveAction>
+
+      <ObjectiveConstraints>
+         <ObjectiveConstraint Value="EnemyIdInvert" Weight="6"/>
+         <ObjectiveConstraint Value="Isolated" Weight="2"/>
+         <ObjectiveConstraint Value="NegativeAlteration" Weight="2"/>
+         <!--<ObjectiveConstraint Value="XTilesFromFog" Weight="1"/>-->
+         <ObjectiveConstraint Value="SkillCost" Weight="1"/>
+         <!--<ObjectiveConstraint Value="TargetFullHealth" Weight="1"/>-->
+         <!--<ObjectiveConstraint Value="WithoutMoving" Weight="1"/>-->
+         <!--<ObjectiveConstraint Value="XTilesOrLessFromCaster" Weight="1"/>-->
+         <!--<ObjectiveConstraint Value="XTilesOrMoreFromCaster" Weight="1"/>-->
+      </ObjectiveConstraints>
+
+      <ObjectiveDurations>
+         <ObjectiveDuration Value="NormalInverted2Turns" Weight="1"/>
+      </ObjectiveDurations>
+   </ObjectivePatternDefinition>
+
+
+   <ObjectivePatternDefinition Id="DontUseSkill" Weight="1" MinDifficulty="50" MaxDifficulty="215"> <!--Old weight value : 1-->
+      <ObjectiveAction Invert="true">UseSkill</ObjectiveAction>
+
+      <ObjectiveConstraints>
+         <ObjectiveConstraint Value="IsPunch" Weight="1"/>
+         <ObjectiveConstraint Value="IsJump"  Weight="1"/>
+      </ObjectiveConstraints>
+
+      <ObjectiveDurations>
+         <ObjectiveDuration Value="NormalInverted2Turns" Weight="1"/>
+      </ObjectiveDurations>
+   </ObjectivePatternDefinition>
+
+   
+   <ObjectivePatternDefinition Id="DontGetHit" Weight="1" MinDifficulty="215"> <!--Old weight value : 2-->
+      <ObjectiveAction Invert="true">GetHit</ObjectiveAction>
+
+      <ObjectiveConstraints>
+      </ObjectiveConstraints>
+
+      <ObjectiveDurations>
+         <ObjectiveDuration Value="NormalInverted2Turns" Weight="1"/>
+      </ObjectiveDurations>
+   </ObjectivePatternDefinition>
+
+
+   <ObjectivePatternDefinition Id="DontUseMana" Weight="1" MinDifficulty="50"><!--Old weight value : 2-->
+      <ObjectiveAction Invert="true">UseMana</ObjectiveAction>
+
+      <ObjectiveConstraints>
+      </ObjectiveConstraints>
+
+      <ObjectiveDurations>
+         <ObjectiveDuration Value="NormalInverted2Turns" Weight="1"/>
+      </ObjectiveDurations>
+   </ObjectivePatternDefinition>
+
+   
+   <ObjectivePatternDefinition Id="DontUseMovePoints" Weight="1" MinDifficulty="50"><!--Old weight value : 2-->
+      <ObjectiveAction Invert="true">UseMovePoints</ObjectiveAction>
+
+      <ObjectiveConstraints>
+      </ObjectiveConstraints>
+
+      <ObjectiveDurations>
+         <ObjectiveDuration Value="NormalInverted2Turns" Weight="1"/>
+      </ObjectiveDurations>
+   </ObjectivePatternDefinition>
+   
+
+   <ObjectivePatternDefinition Id="DontGeneratePanic" Weight="1" MinDifficulty="50">
+      <ObjectiveAction Invert="true">GeneratePanic</ObjectiveAction>
+
+      <ObjectiveConstraints>
+      </ObjectiveConstraints>
+
+      <ObjectiveDurations>
+         <ObjectiveDuration Value="NormalInverted2Turns" Weight="1"/>
+      </ObjectiveDurations>
+   </ObjectivePatternDefinition>
+
+</ObjectivePatternDefinitions>
