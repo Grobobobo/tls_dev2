@@ -2088,8 +2088,11 @@
             <AttackType>Ranged</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
+               <Isolated>
+                  <DamageMultiplier>1.35</DamageMultiplier>
+               </Isolated>
                <SurroundingEffect>
-                  <Damage Multiplier="0.55"/>
+                  <Damage Multiplier="0.5"/>
                </SurroundingEffect>
             </SkillEffects>
          </Attack>
@@ -2105,10 +2108,11 @@
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
-            <DamageMultiplier>1.45</DamageMultiplier>
+            <DamageMultiplier>1.65</DamageMultiplier>
             <SkillEffects>
+               <ArmorPiercing/>
                <SurroundingEffect>
-                  <Damage Multiplier="0.4"/>
+                  <Damage Multiplier="0.8"/>
                </SurroundingEffect>
             </SkillEffects>
          </Attack>
@@ -2125,7 +2129,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
+            <DamageMultiplier>1.15</DamageMultiplier>
             <SkillEffects>
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -2135,7 +2139,7 @@
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <SurroundingEffect>
-                  <Damage Multiplier="0.4"/>
+                  <Damage Multiplier="0.55"/>
                </SurroundingEffect>
             </SkillEffects>
          </Attack>
@@ -2153,11 +2157,11 @@
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
-            <DamageMultiplier>1.65</DamageMultiplier>
+            <DamageMultiplier>1.85</DamageMultiplier>
             <SkillEffects>
                <IgnoreLineOfSight/>
                <SurroundingEffect>
-                  <Damage Multiplier="0.4"/>
+                  <Damage Multiplier="0.9"/>
                </SurroundingEffect>
             </SkillEffects>
          </Attack>
