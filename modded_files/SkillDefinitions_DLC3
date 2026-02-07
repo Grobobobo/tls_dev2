@@ -2403,9 +2403,8 @@
             <AttackType>Ranged</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
-               <MultiHit HitsCount="3"/>
                <Stun>
-                  <BaseChance>0.5</BaseChance>
+                  <BaseChance>0.85</BaseChance>
                </Stun>
             </SkillEffects>
          </Attack>

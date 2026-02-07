@@ -1,0 +1,3877 @@
+﻿<PerkDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                               xsi:noNamespaceSchemaLocation="PerkDefinitions.xsd">
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- DLC3 -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+      
+      <PerkDefinition Id="PanicMovePoint">
+         <TokenVariables>
+            <TokenVariable Key="TotalMovePointGain" Value="MovepointGainPerStep * NumberOfStepsReached"/>
+            <TokenVariable Key="MovepointGainPerStep" Value="1"/>
+            <TokenVariable Key="ActualMoveBonus" Value="BooleanChoice(PanicValue > 99,3,0)"/>
+            <TokenVariable Key="NextThresholdReachedIn" Value="((NumberOfStepsReached + 1) *StepValue) - CurrentPanic"/>
+            <TokenVariable Key="NumberOfStepsReached" Value="Floor(CurrentPanic/StepValue)"/>
+            <TokenVariable Key="StepValue" Value="20"/>
+            <TokenVariable Key="CurrentPanic" Value="Round(PanicValue)"/>
+         </TokenVariables>
+         <LocArguments>
+            <LocArgument Value="StepValue" Suffix="%" Style="KeyWordNb"/>
+            <StatArgument Value="MovepointGainPerStep" Stat="MovePointsTotal" DisplaySign="true" Interpreted="true"/>
+            <LocArgument Value="CurrentPanic" Suffix="%" Interpreted="true" Style="KeyWordNb"/>
+            <StatArgument Value="TotalMovePointGain" Interpreted="true" DisplaySign="true" Stat="MovePointsTotal"/>
+            <LocArgument Value="NextThresholdReachedIn" Suffix="%" Interpreted="true" Style="KeyWordNb"/>
+         </LocArguments>
+         <View>
+            <DisplayInHUD>
+               <Bonus Value="TotalMovePointGain"/>
+               <GreyOut>
+                  <IsFalse Value="PanicValue > 19"/>
+               </GreyOut>
+            </DisplayInHUD>
+         </View>
+         <Modules>
+            <BufferModule>
+               <Effects>
+                  <StatModifier Stat="MovePointsTotal" Value="TotalMovePointGain" ChildStatFollows="true"/>
+               </Effects>
+            </BufferModule>
+         </Modules>
+      </PerkDefinition>
+
+   <PerkDefinition Id="EnemiesInsideHavenPerk">
+      <TokenVariables>
+         <TokenVariable Key="ActualDamageBonus" Value="BooleanChoice(IsEnemyInsideHavenThisNight=0,20,0)"/>
+         <TokenVariable Key="DamageGain" Value="25"/>
+         <TokenVariable Key="IsEnemyInsideHavenThisNight" Value="Module.Buffer"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument Value="DamageGain" Stat="OverallDamage" DisplaySign="true" Interpreted="true"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <GreyOut>
+               <IsFalse Value="IsEnemyInsideHavenThisNight = 0"/>
+            </GreyOut>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnEnemyMovementEnd">
+                  <Conditions>
+                     <IsTrue Value="IsEnemyInsideHavenThisNight = 0"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="EnemiesInsideCity"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <StatModifier Stat="OverallDamage" Value="ActualDamageBonus"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="ExperienceBonusPerHeroes">
+      <TokenVariables>
+         <TokenVariable Key="ActualExperienceBonus" Value="(BaseXpBonus + XpMalusPerHeroes) - (NumberOfPlayableUnit * XpMalusPerHeroes)"/>
+         <TokenVariable Key="XpMalusPerHeroes" Value="8"/>
+         <TokenVariable Key="BaseXpBonus" Value="60"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument Value="BaseXpBonus" Stat="ExperienceGainMultiplier" DisplaySign="true" Interpreted="true"/>
+         <LocArgument Value="XpMalusPerHeroes" Prefix="-" Suffix="%" Interpreted="true" Style="BadNb"/>
+         <LocArgument Value="NumberOfPlayableUnit" Interpreted="true" Style="KeyWord"/>
+         <StatArgument Value="ActualExperienceBonus" Stat="ExperienceGainMultiplier" DisplaySign="true" Interpreted="true"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Bonus Value="ActualExperienceBonus"/>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Effects>
+               <StatModifier Stat="ExperienceGainMultiplier" Value="ActualExperienceBonus"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="HeroesBlockPhysDamagePerk">
+      <TokenVariables>
+         <TokenVariable Key="BonusMultiplier" Value="Floor(BooleanChoice(Owner.PhysicalDamage-MinimumThreshold > 0, Owner.PhysicalDamage-MinimumThreshold, 0)/PhysAttackThreshold)"/>
+         <TokenVariable Key="NextThreshold" Value="MinimumThreshold + (NumberOfStepsReached + 1) * PhysAttackThreshold"/>
+         <TokenVariable Key="NumberOfStepsReached" Value="Floor(CurrentPhysOverThreshold / PhysAttackThreshold)"/>
+         <TokenVariable Key="CurrentPhysOverThreshold" Value="Max(0, Owner.PhysicalDamage - MinimumThreshold)"/>
+         <TokenVariable Key="BlockBonus" Value="10"/>
+         <TokenVariable Key="PhysAttackThreshold" Value="10"/>
+         <TokenVariable Key="MinimumThreshold" Value="100"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="PhysAttackThreshold" Style="KeyWordNb"/>
+         <StatArgument Stat="PhysicalDamage"/>
+         <LocArgument Value="MinimumThreshold" Style="KeyWordNb"/>
+         <StatArgument Stat="Block" Value="BlockBonus"/>
+         <StatArgument Stat="Block" Value="BlockBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="PhysicalDamage" Value="NextThreshold" Interpreted="true" DisplaySign="false" Style="KeyWordNb"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Bonus Value="BlockBonus * BonusMultiplier"/>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Effects>
+               <StatModifier Stat="Block" Value="BlockBonus * BonusMultiplier"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="HeroesSkillRangeRangedDamagePerk">
+      <TokenVariables>
+         <TokenVariable Key="BonusMultiplier" Value="Floor(BooleanChoice(Owner.RangedDamage-MinimumThreshold > 0, Owner.RangedDamage-MinimumThreshold, 0)/RangAttackThreshold)"/>
+         <TokenVariable Key="NextThreshold" Value="MinimumThreshold + (NumberOfStepsReached + 1) * RangAttackThreshold"/>
+         <TokenVariable Key="NumberOfStepsReached" Value="Floor(CurrentRangeOverThreshold / RangAttackThreshold)"/>
+         <TokenVariable Key="CurrentRangeOverThreshold" Value="Max(0, Owner.RangedDamage - MinimumThreshold)"/>
+         <TokenVariable Key="SkillRangeBonus" Value="2"/>
+         <TokenVariable Key="RangAttackThreshold" Value="10"/>
+         <TokenVariable Key="MinimumThreshold" Value="100"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="RangAttackThreshold" Style="KeyWordNb"/>
+         <StatArgument Stat="RangedDamage"/>
+         <LocArgument Value="MinimumThreshold" Style="KeyWordNb"/>
+         <StatArgument Stat="SkillRangeModifier" Value="SkillRangeBonus"/>
+         <StatArgument Stat="SkillRangeModifier" Value="SkillRangeBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="RangedDamage" Value="NextThreshold" Interpreted="true" DisplaySign="false" Style="KeyWordNb"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Bonus Value="SkillRangeBonus * BonusMultiplier"/>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Effects>
+               <StatModifier Stat="SkillRangeModifier" Value="SkillRangeBonus * BonusMultiplier"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="HeroesManaRegMagicDamagePerk">
+      <TokenVariables>
+         <TokenVariable Key="BonusMultiplier" Value="Floor(BooleanChoice(Owner.MagicalDamage-MinimumThreshold > 0, Owner.MagicalDamage-MinimumThreshold, 0)/MagicAttackThreshold)"/>
+         <TokenVariable Key="NextThreshold" Value="MinimumThreshold + (NumberOfStepsReached + 1) * MagicAttackThreshold"/>
+         <TokenVariable Key="NumberOfStepsReached" Value="Floor(CurrentMagicOverThreshold / MagicAttackThreshold)"/>
+         <TokenVariable Key="CurrentMagicOverThreshold" Value="Max(0, Owner.MagicalDamage - MinimumThreshold)"/>
+         <TokenVariable Key="ManaRegBonus" Value="8"/>
+         <TokenVariable Key="MagicAttackThreshold" Value="10"/>
+         <TokenVariable Key="MinimumThreshold" Value="100"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="MagicAttackThreshold" Style="KeyWordNb"/>
+         <StatArgument Stat="MagicalDamage"/>
+         <LocArgument Value="MinimumThreshold" Style="KeyWordNb"/>
+         <StatArgument Stat="ManaRegen" Value="ManaRegBonus"/>
+         <StatArgument Stat="ManaRegen" Value="ManaRegBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="MagicalDamage" Value="NextThreshold" Interpreted="true" DisplaySign="false" Style="KeyWordNb"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Bonus Value="ManaRegBonus * BonusMultiplier"/>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Effects>
+               <StatModifier Stat="ManaRegen" Value="ManaRegBonus * BonusMultiplier"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="BloodyResearchPerk">
+      <TokenVariables>
+         <TokenVariable Key="SkillId" Value="BloodyResearchSkill"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocalizedArgument Prefix="SkillName_" Value="SkillId" Style="Skill"/>
+         <RestoreStatArgument Stat="HealthTotal" DisplayRestoreText="true" DisplaySign="true" Interpreted="true" Value="40"/>
+         <LocalizedArgument Prefix="EnemyName_" Value="Clawer" Style="Keyword"/>
+      </LocArguments>
+      <View>
+         <SkillsToShow>
+            <SkillToShow Id="BloodyResearchSkill"/>
+         </SkillsToShow>
+         <DisplayInHUD>
+            <GreyOut>
+               <IsFalse Value="ContextualSkillActive"/>
+            </GreyOut>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Effects>
+               <UnlockContextualSkill ContextualSkillId="BloodyResearchSkill" OverallUses="2"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="CorruptedMageResearchPerk">
+      <TokenVariables>
+         <TokenVariable Key="ManaToSpend" Value="16"/> <!--Base: 12-->
+         <TokenVariable Key="ManaSpent" Value="Module.Buffer"/>
+         <TokenVariable Key="ResistanceGained" Value="90"/>
+         <TokenVariable Key="HasAlreadyActivatedThisTurn" Value="Module.Buffer2 > 0"/>
+         <TokenVariable Key="BuffDuration" Value="1"/>
+      </TokenVariables>
+      <View>
+         <DisplayInHUD>
+            <Buffer Value="Max(0 , (ManaToSpend - ManaSpent))"/>
+            <GreyOut>
+               <IsTrue Value="HasAlreadyActivatedThisTurn"/>
+            </GreyOut>
+         </DisplayInHUD>
+      </View>
+      <LocArguments>
+         <LocArgument Value="ManaToSpend" Style="KeywordNb" Interpreted="true"/>
+         <StatArgument Stat="ManaTotal" />
+         <StatusArgument Status="Buff" Stat="Resistance" Value="ResistanceGained" TurnsCount="BuffDuration" />
+         <LocArgument Value="ManaSpent" Style="Mana" Interpreted="true"/>
+      </LocArguments>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnSkillCastBegin">
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="Skill.ManaCost"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="ManaSpent > ManaToSpend-1"/>
+                     <IsFalse Value="HasAlreadyActivatedThisTurn"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="1"/>
+                     <!--<Log Formatting="Reached cap" Value="Module.Buffer2"/>-->
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnEndTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <ApplyStatus Stat="Resistance" Status="Buff" TurnsCount="BuffDuration" Value="ResistanceGained">
+                  <PerkTargeting Amount="1" Range="0" TargetingMethod="Self" TargetingReference="Owner">
+                     <DamageableTarget Type="Playable"/>
+                  </PerkTargeting>
+               </ApplyStatus>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="TankyResearchPerk">
+      <TokenVariables>
+         <TokenVariable Key="BonusStunChance" Value="25"/>
+         <TokenVariable Key="StunDamage" Value="160"/>
+      </TokenVariables>
+      <View>
+         <DisplayInHUD/>
+      </View>
+      <LocArguments>
+         <StatArgument DisplaySign="true" Stat="StunChanceModifier" Value="BonusStunChance"/>
+         <LocArgument Value="StunDamage" Style="KeywordNb"/>
+      </LocArguments>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnStatusApplied">
+                  <Conditions>
+                     <IsTrue Value="IsTargetUnit"/>
+                     <IsTrue Value="AppliedStun"/>
+                     <IsFalse Value="OwnerIsTarget"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <DealDamage Value="StunDamage">
+                  <PerkTargeting TargetingReference="Target" TargetingMethod="Self"/>
+               </DealDamage>
+            </Effects>
+         </BufferModule>
+         <BufferModule>
+            <Effects>
+               <StatModifier Stat="StunChanceModifier" Value="BonusStunChance"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   <PerkDefinition Id="SpeedyClawerResearchPerk">
+      <TokenVariables>
+         <TokenVariable Key="MomentumGain" Value="2"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="MomentumGain" Style="KeywordNb"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD/>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <MomentumModifier Value="MomentumGain"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="BoomerResearchPerk">
+      <TokenVariables>
+         <TokenVariable Key="SkillId" Value="PlayerBoomerAttack"/>
+      </TokenVariables>
+      <View>
+         <SkillsToShow>
+            <SkillToShow Id="PlayerBoomerAttack"/>
+         </SkillsToShow>
+         <DisplayInHUD/>
+      </View>
+      <LocArguments>
+         <LocalizedArgument Prefix="SkillName_" Value="SkillId" Style="skill"/>
+      </LocArguments>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnHitTaken">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnBehaviorClusterExecutionEnd">
+                  <Conditions>
+                     <IsTrue Value="Module.Buffer = 1"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <CastSkill SkillId="PlayerBoomerAttack">
+                  <!-- TODO use "SkillId" TokenVariable if ever implemented-->
+                  <PerkTargeting TargetingReference="Owner" TargetingMethod="Self" Amount="1" Range="0">
+                     <DamageableTarget Type="Enemy"/>
+                     <DamageableTarget Type="Boss"/>
+                  </PerkTargeting>
+               </CastSkill>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="WeakButDeadly">
+      <TokenVariables>
+         <TokenVariable Key="AccuracyPercentageMalus" Value="Max(0, AccuracyMaxBonus - (AccuracyPercentageDecrement * AccuracyMalusPerStep))"/>
+         <TokenVariable Key="AccuracyPercentageDecrement" Value="Floor(CurrentHealthOverThreshold / AccuracyHealthStep)"/>
+         <TokenVariable Key="RangeMalusValue" Value="Max(0, RangeMaxBonus - (RangeDecrement * RangeMalusPerStep))"/>
+         <TokenVariable Key="RangeDecrement" Value="Floor(CurrentHealthOverThreshold / RangeHealthStep)"/>
+         <TokenVariable Key="AccuracyNextThreshold" Value="MinimumHealthThreshold + (AccuracyNumberOfStepsReached + 1) * AccuracyHealthStep"/>
+         <TokenVariable Key="RangeNextThreshold" Value="MinimumHealthThreshold + (RangeNumberOfStepsReached + 1) * RangeHealthStep"/>
+         <TokenVariable Key="AccuracyNumberOfStepsReached" Value="Floor(CurrentHealthOverThreshold / AccuracyHealthStep)"/>
+         <TokenVariable Key="RangeNumberOfStepsReached" Value="Floor(CurrentHealthOverThreshold / RangeHealthStep)"/>
+         <TokenVariable Key="CurrentHealthOverThreshold" Value="Max(0, Owner.HealthTotal - MinimumHealthThreshold)"/>
+         <TokenVariable Key="AccuracyMaxBonus" Value="20"/>
+         <TokenVariable Key="RangeMaxBonus" Value="3"/>
+         <TokenVariable Key="AccuracyMalusPerStep" Value="2"/>
+         <TokenVariable Key="RangeMalusPerStep" Value="1"/>
+         <TokenVariable Key="AccuracyHealthStep" Value="10"/>
+         <TokenVariable Key="RangeHealthStep" Value="30"/>
+         <TokenVariable Key="MinimumHealthThreshold" Value="125"/>
+         <TokenVariable Key="MinMalusValue" Value="0"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument Stat="Accuracy" Value="AccuracyMaxBonus" DisplaySign="true"/>
+         <LocArgument Value="AccuracyHealthStep" Style="KeyWordNb"/>
+         <StatArgument Stat="HealthTotal"/>
+         <LocArgument Value="MinimumHealthThreshold"  Style="KeyWordNb"/>
+         <StatArgument Value="-1 * AccuracyMalusPerStep" Stat="Accuracy" Interpreted="true" DisplaySign="true"/>
+         <LocArgument Value="MinMalusValue"  Style="KeyWordNb" Suffix="%"/>
+         <StatArgument Stat="SkillRangeModifier" Value="RangeMaxBonus" DisplaySign="true"/>
+         <LocArgument Value="RangeHealthStep" Style="KeyWordNb"/>
+         <StatArgument Stat="HealthTotal"/>
+         <LocArgument Value="MinimumHealthThreshold"  Style="KeyWordNb"/>
+         <StatArgument Stat="SkillRangeModifier" Value="-1 * RangeMalusPerStep" Interpreted="true" DisplaySign="true"/>
+         <LocArgument Value="MinMalusValue" Style="KeyWordNb"/>
+         <StatArgument Stat="Accuracy" Value="AccuracyPercentageMalus" Interpreted="true"/>
+         <StatArgument Stat="HealthTotal" Value="AccuracyNextThreshold" Interpreted="true" DisplaySign="false" Style="KeyWordNb"/>
+         <StatArgument Stat="SkillRangeModifier" Value="RangeMalusValue" Interpreted="true"/>
+         <StatArgument Stat="HealthTotal" Value="RangeNextThreshold" Interpreted="true" DisplaySign="false" Style="KeyWordNb"/>
+      </LocArguments>
+      <View>
+         <DisplayBonusBeforePurchase/>
+         <DisplayInHUD>
+
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Effects>
+               <StatModifier Stat="Accuracy" Value="AccuracyPercentageMalus"/>
+               <StatModifier Stat="SkillRangeModifier" Value="RangeMalusValue"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="StrongerAllies">
+      <TokenVariables>
+         <TokenVariable Key="MaxHealthBonus" Value="25"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument Stat="HealthTotal" Value="MaxHealthBonus" DisplaySign="true"/>
+         <StatArgument Stat="HealthTotal" Value="Module.Buffer" DisplaySign="true"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Highlight>
+               <IsTrue Value="Skill.HasBuff"/>
+            </Highlight>
+            <Bonus Value="Module.Buffer"/>
+         </DisplayInHUD>
+         <CompendiumEntries>
+            <CompendiumEntry Id="SkillEffect_Buff"/>
+         </CompendiumEntries>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <!--Reset buffer at the end of the night-->
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillStatusApplied">
+                  <Conditions>
+                     <IsTrue Value="AppliedBuff"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="MaxHealthBonus"/>
+                     <!--Increase buffer each time a status is applied with a skill-->
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <StatModifier Stat="HealthTotal" Value="Module.Buffer"/>
+               <!--Add a permanent bonus to the hero using the buffer value-->
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="StrongerMagic">
+      <TokenVariables>
+         <TokenVariable Key="SkillHasManaCost" Value="ManaCostBase > 0"/>
+         <TokenVariable Key="ManaCostReduction" Value="BooleanChoice(ResRedIsUpToClampPercentage, ManaCostBase * ReductionClampPercentage / 100, ManaCostBase * Owner.ResistanceReduction / 100)"/>
+         <TokenVariable Key="ResRedIsUpToClampPercentage" Value="Owner.ResistanceReduction > ReductionClampPercentage"/>
+         <TokenVariable Key="ManaCostBase" Value="BooleanChoice(Owner.IsManaCostLocked, 0, Skill.BaseManaCost)"/>
+         <TokenVariable Key="ReductionClampPercentage" Value="70"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument Stat="ManaTotal"/>
+         <StatArgument Stat="ResistanceReduction"/>
+         <LocArgument Value="ReductionClampPercentage * -1" Interpreted="true" Suffix="%" Style="GoodNb"/>
+         <LocArgument Value="BooleanChoice(ResRedIsUpToClampPercentage, ReductionClampPercentage, Owner.ResistanceReduction)" Interpreted="true" Suffix="%" Style="GoodNb"/>
+
+      </LocArguments>                          
+      <View>
+         <DisplayInHUD/>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Effects>
+               <SkillModifier ComputationStat="ManaCost" Value="ManaCostReduction">
+                  <Conditions>
+                     <IsTrue Value="SkillHasManaCost"/>
+                  </Conditions>
+               </SkillModifier>
+            </Effects>
+         </BufferModule>
+
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="BatWing">
+      <TokenVariables>
+         <TokenVariable Key="HasCastSkill" Value="Module.Buffer = 1"/>
+         <TokenVariable Key="MovePointReduction" Value="1"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocalizedArgument Prefix="SkillName_" Value="JumpOverWall" Style="Skill"/>
+         <LocalizedArgument Prefix="SkillName_" Value="HeavyJumpOver" Style="Skill"/>
+         <LocArgument Value="MovePointReduction" Prefix="-" Style="GoodNb"/>
+      </LocArguments>
+      <View>
+         <SkillsToShow>
+            <SkillToShow Id="HeavyJumpOver"/>
+         </SkillsToShow>
+         <DisplayInHUD>
+            <Highlight>
+               <IsTrue Value="HasTargetTile"/>
+               <IsTrue Value="Skill.IsSkillID('JumpOverWall')"/>
+            </Highlight>
+         </DisplayInHUD>
+         <DisplayBonusBeforePurchase></DisplayBonusBeforePurchase>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('JumpOverWall')"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('JumpOverWall2')"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('ElvenJumpOverWall')"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('ElvenJumpOverWall2')"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <SkillModifier ComputationStat="MovePointsCost" Value="MovePointReduction">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('JumpOverWall')"/>
+                  </Conditions>
+               </SkillModifier>
+               <SkillModifier ComputationStat="MovePointsCost" Value="MovePointReduction">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('JumpOverWall2')"/>
+                  </Conditions>
+               </SkillModifier>
+               <SkillModifier ComputationStat="MovePointsCost" Value="MovePointReduction">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('ElvenJumpOverWall')"/>
+                  </Conditions>
+               </SkillModifier>
+               <SkillModifier ComputationStat="MovePointsCost" Value="MovePointReduction">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('ElvenJumpOverWall2')"/>
+                  </Conditions>
+               </SkillModifier>
+               <SkillModifier ComputationStat="MovePointsCost" Value="MovePointReduction">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('TossMeSkill')"/>
+                  </Conditions>
+               </SkillModifier>
+               <SkillModifier ComputationStat="MovePointsCost" Value="MovePointReduction">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('TossMeSkillCatapult')"/>
+                  </Conditions>
+               </SkillModifier>
+               <CastSkill SkillId="HeavyJumpOver">
+                  <PerkTargeting TargetingMethod="Self" TargetingReference="Owner"></PerkTargeting>
+               </CastSkill>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="MovePractice">
+      <TokenVariables>
+         <TokenVariable Key="TotalMoveGained" Value="MovePerStep * Module.Buffer2"/>
+         <TokenVariable Key="TotalXPGained" Value="XPPerStep * Module.Buffer2"/>
+         
+         <TokenVariable Key="RemainingUnitsToKill" Value="UnitKilledThreshold - Module.Buffer"/>
+         <TokenVariable Key="HasKilledEnoughUnits" Value="Module.Buffer > UnitKilledThreshold - 1"/>
+         <TokenVariable Key="UnitKilledThreshold" Value="25"/>
+         
+         <TokenVariable Key="MovePerStep" Value="1"/>
+         <TokenVariable Key="XPPerStep" Value="10"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="UnitKilledThreshold" Style="KeyWordNb"/>
+         <StatArgument Stat="MovePointsTotal" Value="MovePerStep" DisplaySign="true" Interpreted="true"/>
+         <StatArgument Stat="ExperienceGainMultiplier" Value="XPPerStep" DisplaySign="true" Interpreted="true"/>
+         <StatArgument Stat="MovePointsTotal" Value="TotalMoveGained" DisplaySign="true" Interpreted="true"/>
+         <StatArgument Stat="ExperienceGainMultiplier" Value="TotalXPGained" DisplaySign="true" Interpreted="true"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Buffer Value="RemainingUnitsToKill"/>
+            <Highlight>
+               <IsTrue Value="HasKilledEnoughUnits"/>
+            </Highlight>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnCreation">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer3" Value="Owner.Level"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnTargetKilled">
+                  <Conditions>
+                     <IsFalse Value="HasKilledEnoughUnits"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnTargetKilled">
+                  <Conditions>
+                     <IsTrue Value="HasKilledEnoughUnits"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnExperienceDistributionEnded">
+                  <Conditions>
+                     <IsFalse Value="Module.Buffer3 = Owner.Level"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="Owner.Level"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <StatModifier Stat="MovePointsTotal" Value="TotalMoveGained"/>
+               <StatModifier Stat="ExperienceGainMultiplier" Value="TotalXPGained"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="ArmorPractice">
+      <TokenVariables>
+         <TokenVariable Key="ArmorBonus" Value="BooleanChoice(IsThresholdReached, ArmorValue2,ArmorValue1)"/>
+         <TokenVariable Key="XPBonus" Value="BooleanChoice(IsThresholdReached, 0,XPValue)"/>
+         <TokenVariable Key="ArmorMaxBonus" Value="BooleanChoice(IsThresholdReached, ArmorMaxValue,0)"/>
+
+         <TokenVariable Key="IsThresholdReached" Value="Owner.Level + 1 > LevelThreshold"/>
+         <TokenVariable Key="LevelThreshold" Value="6"/>
+
+         <TokenVariable Key="ArmorValue1" Value="15"/>
+         <TokenVariable Key="ArmorValue2" Value="80"/>
+         <TokenVariable Key="XPValue" Value="20"/>
+         <TokenVariable Key="ArmorMaxValue" Value="200"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="6" Style="KeyWordNb"/>
+         <StatArgument Stat="ExperienceGainMultiplier" Value="XPValue" DisplaySign="true"/>
+         <StatArgument Stat="ArmorTotal" Value="ArmorValue1" DisplaySign="true"/>
+         <StatArgument Stat="ArmorTotal" Value="ArmorValue2" DisplaySign="true"/>
+         <LocArgument Value="ArmorMaxValue" Prefix="+" Style="GoodNb"/>
+         <StatArgument Stat="ArmorTotal"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD/>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Effects>
+               <StatModifier Stat="ArmorTotal" Value="ArmorBonus"/>
+               <StatModifier Stat="ExperienceGainMultiplier" Value="XPBonus"/>
+               <StatBoundaryModifier Stat="ArmorTotal" MaxModifier="ArmorMaxBonus"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="DodgePractice">
+      <TokenVariables>
+         <TokenVariable Key="AddedBonusDodgeValue" Value="BooleanChoice(MaxDodgeBonus > Module.Buffer * BonusDodgeValueMultiplier,Module.Buffer * BonusDodgeValueMultiplier,MaxDodgeBonus)"/>
+         <TokenVariable Key="BonusDodgeValueMultiplier" Value="1"/>
+         <TokenVariable Key="MaxDodgeBonus" Value="50"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument Stat="Dodge" Value="BonusDodgeValueMultiplier" DisplaySign="true"/>
+         <LocArgument Value="MaxDodgeBonus" Prefix="+" Suffix="%" Style="KeyWordNb"/>
+         <StatArgument Stat="Dodge" Value="AddedBonusDodgeValue" Interpreted="true" DisplaySign="true"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Bonus Value="AddedBonusDodgeValue"/>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Conditions>
+               <IsTrue Value="Module.Buffer > 0"/>
+            </Conditions>
+            <Events>
+               <Event EffectTime="OnDodge">
+                  <Actions>
+                     <IncreaseBuffer Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnDodge">
+                  <Conditions>
+                     <IsFalse Value="IsCasterPlayableUnit"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer2" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnBehaviorClusterExecutionEnd">
+                  <Conditions>
+                     <IsTrue Value="Module.Buffer2 > 0"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <StatModifier Stat="Dodge" Value="AddedBonusDodgeValue"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="BlockPractice">
+      <TokenVariables>
+         <TokenVariable Key="CurrentExperienceBonus" Value="XPBonus * BuffInstances"/>
+         <TokenVariable Key="BuffInstances" Value="Module.Buffer2"/>
+         
+         <TokenVariable Key="DamageLeftToBlock" Value="DamageToBlockThreshold - BlockedDamageSinceLastThresholdReached"/>
+         <TokenVariable Key="BlockedDamageSinceLastThresholdReached" Value="Module.Buffer"/>
+         <TokenVariable Key="DamageToBlockThreshold" Value="160"/>
+
+         <TokenVariable Key="XPBonus" Value="10"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="DamageToBlockThreshold" Interpreted="true" Style="KeyWordNb"/>
+         <StatArgument Stat="ExperienceGainMultiplier" Value="XPBonus" DisplaySign="true" Interpreted="true"/>
+         <StatArgument Stat="ExperienceGainMultiplier" Value="CurrentExperienceBonus" DisplaySign="true" Interpreted="true"/>
+         <LocArgument Value="DamageLeftToBlock" Interpreted="true" Style="KeyWordNb"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Buffer Value="DamageLeftToBlock"/>
+            <Bonus Value="CurrentExperienceBonus"/>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnHitTaken">
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="AttackData.BlockedDamage"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnBehaviorClusterExecutionEnd">
+                  <Conditions>
+                     <IsTrue Value="BlockedDamageSinceLastThresholdReached > DamageToBlockThreshold"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
+                     <DecreaseBuffer BufferIndex="Buffer" Value="DamageToBlockThreshold"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <StatModifier Stat="ExperienceGainMultiplier" Value="CurrentExperienceBonus"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   <PerkDefinition Id="ResistancePractice">
+      <TokenVariables>
+         <TokenVariable Key="ResistanceBonus" Value="NumberOfStepsReached * ResistancePercentage"/>
+         <TokenVariable Key="ResistancePercentage" Value="3"/>
+         <TokenVariable Key="NextThreshold" Value="MinimumXPThreshold + (NumberOfStepsReached + 1) * XPStep"/>
+         <TokenVariable Key="NumberOfStepsReached" Value="Floor(CurrentXPOverThreshold / XPStep)"/>
+         <TokenVariable Key="XPStep" Value="10"/>
+         <TokenVariable Key="CurrentXPOverThreshold" Value="Max(0, Owner.ExperienceGainMultiplier - MinimumXPThreshold)"/>
+         <TokenVariable Key="MinimumXPThreshold" Value="100"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="XPStep" Suffix="%" Style="KeyWordNb"/>
+         <StatArgument Stat="ExperienceGainMultiplier"/>
+         <LocArgument Value="MinimumXPThreshold" Suffix="%" Style="KeyWordNb"/>
+         <StatArgument Stat="Resistance" Value="ResistancePercentage"/>
+         <StatArgument Stat="Resistance" Value="ResistanceBonus" Interpreted="true"/>
+         <StatArgument Stat="ExperienceGainMultiplier" Value="NextThreshold" Interpreted="true" DisplaySign="true" Style="KeyWordNb"/>
+      </LocArguments>
+      <View>
+         <DisplayBonusBeforePurchase/>
+         <DisplayInHUD>
+            <Bonus Value="ResistanceBonus"/>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Effects>
+               <StatModifier Stat="Resistance" Value="ResistanceBonus"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="ViciousVenom">
+      <TokenVariables>
+         <TokenVariable Key="PoisonBonus" Value="10"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatusArgument Status="Buff" Stat="PoisonDamageModifier" Value="PoisonBonus" TurnsCount="-1" Interpreted="true"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD/>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnStartTurn">
+                  <Conditions>
+                     <IsFalse Value="IsEnemyTurn"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <ApplyStatus Status="Buff" Stat="PoisonDamageModifier" Value="10" TurnsCount="-1" RefreshHUD="true">
+                  <PerkTargeting TargetingReference="Owner" TargetingMethod="Self"/>
+               </ApplyStatus> 
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   <!--NEGATIVE PERKS-->
+
+   <!--Armor Break Curse-->
+   <PerkDefinition Id="ArmorBreakCurse">
+      <TokenVariables>
+         <TokenVariable Key="DamageDealt" Value="Owner.ArmorTotal * ArmorToDamageMultiplier"/>
+         <TokenVariable Key="ArmorToDamageMultiplier" Value="0.4"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument Stat="ArmorTotal" Value="0" Style="KeyWordNb"/>
+         <LocArgument Value="ArmorToDamageMultiplier * 100" Interpreted="true" Style="KeyWordNb" Suffix="%"/>
+         <StatArgument Stat="ArmorTotal"/>
+         <LocArgument Value="DamageDealt" Interpreted="true"  Style="DamageRed"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Malus Value="DamageDealt"/>
+         </DisplayInHUD>
+         <DisplayBonusBeforePurchase/>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnHitTaken">
+                  <Conditions>
+                     <IsTrue Value="Owner.Armor = 0"/>
+                     <IsFalse Value="Module.Buffer = 1"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="1"/>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartTurn">
+                  <Conditions>
+                     <IsTrue Value="Owner.Armor > 0"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <DealDamage Value="DamageDealt">
+                  <PerkTargeting Amount="1" TargetingReference="Owner" TargetingMethod="Self" Range="0">
+                     <DamageableTarget Type="Playable"/>
+                  </PerkTargeting>
+               </DealDamage>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="ArmorBreakCurse_2">
+      <TokenVariables>
+         <TokenVariable Key="DamageDealt" Value="Owner.ArmorTotal * ArmorToDamageMultiplier"/>
+         <TokenVariable Key="ArmorToDamageMultiplier" Value="1"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument Stat="ArmorTotal" Value="0" Style="KeyWordNb"/>
+         <LocArgument Value="ArmorToDamageMultiplier * 100" Interpreted="true" Style="KeyWordNb" Suffix="%"/>
+         <StatArgument Stat="ArmorTotal"/>
+         <LocArgument Value="DamageDealt" Interpreted="true"  Style="DamageRed"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Malus Value="DamageDealt"/>
+         </DisplayInHUD>
+         <DisplayBonusBeforePurchase/>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnHitTaken">
+                  <Conditions>
+                     <IsTrue Value="Owner.Armor = 0"/>
+                     <IsFalse Value="Module.Buffer = 1"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="1"/>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartTurn">
+                  <Conditions>
+                     <IsTrue Value="Owner.Armor > 0"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <DealDamage Value="DamageDealt">
+                  <PerkTargeting Amount="1" TargetingReference="Owner" TargetingMethod="Self" Range="0">
+                     <DamageableTarget Type="Playable"/>
+                  </PerkTargeting>
+               </DealDamage>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <!--Mana Drain Curse-->
+   <PerkDefinition Id="ManaDrainCurse">
+      <TokenVariables>
+         <TokenVariable Key="EnemiesToKill" Value="8"/>
+         <TokenVariable Key="EnemiesKilled" Value="Module.Buffer"/>
+         <TokenVariable Key="ManaLost" Value="5"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="EnemiesToKill" Interpreted="true" Style="KeyWordNb"/>
+         <StatArgument Stat="ManaTotal" Value="ManaLost" Style="BadNb"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Buffer Value="Max(0 , (EnemiesToKill - EnemiesKilled))"/>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnTargetKilled">
+                  <Conditions>
+                     <IsTrue Value="IsTargetUnit"/>
+                     <IsFalse Value="IsTriggeredByPerk"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="Module.Buffer2"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Module.Buffer > EnemiesToKill - 1"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                     <!--<Log Formatting="Triggered Effects {0}" Value="0"/>-->
+                     <SetBufferTo BufferIndex="Buffer" Value="Module.Buffer % EnemiesToKill"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartNightTurnPlayable">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <CastSkill SkillId="ManaDrainSkill">
+                  <PerkTargeting Amount="1" TargetingReference="Owner" TargetingMethod="Self" Range="0">
+                     <DamageableTarget Type="Playable"/>
+                  </PerkTargeting>
+               </CastSkill>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   <PerkDefinition Id="ManaDrainCurse_2">
+      <TokenVariables>
+         <TokenVariable Key="EnemiesToKill" Value="3"/>
+         <TokenVariable Key="EnemiesKilled" Value="Module.Buffer"/>
+         <TokenVariable Key="ManaLost" Value="5"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="EnemiesToKill" Interpreted="true" Style="KeyWordNb"/>
+         <StatArgument Stat="ManaTotal" Value="ManaLost" Style="BadNb"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Buffer Value="Max(0 , (EnemiesToKill - EnemiesKilled))"/>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnTargetKilled">
+                  <Conditions>
+                     <IsTrue Value="IsTargetUnit"/>
+                     <IsFalse Value="IsTriggeredByPerk"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="Module.Buffer2"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Module.Buffer > EnemiesToKill - 1"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                     <!--<Log Formatting="Triggered Effects {0}" Value="0"/>-->
+                     <SetBufferTo BufferIndex="Buffer" Value="Module.Buffer % EnemiesToKill"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartNightTurnPlayable">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <CastSkill SkillId="ManaDrainSkill">
+                  <PerkTargeting Amount="1" TargetingReference="Owner" TargetingMethod="Self" Range="0">
+                     <DamageableTarget Type="Playable"/>
+                  </PerkTargeting>
+               </CastSkill>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+
+   <!--Bad Movement Curse-->
+   <PerkDefinition Id="BadMovementCurse">
+      <TokenVariables>
+         <TokenVariable Key="MovementConditionWasValid" Value="TilesCrossedUnusedFromPreviousTurns + (TilesCrossedThisTurnBeforeCast - TilesCrossedThisTurnOnLastPerkUse) > TilesCrossedThreshold - 1"/>
+         <TokenVariable Key="MovementConditionIsValid" Value="TilesCrossedCurrentCount > TilesCrossedThreshold - 1"/>
+         <TokenVariable Key="RemainingTilesToCross" Value="Max(0, TilesCrossedThreshold - TilesCrossedCurrentCount)"/>
+         <TokenVariable Key="TilesCrossedCurrentCount" Value="(TilesCrossedUnusedFromPreviousTurns + (Owner.TotalMomentumTilesCrossedThisTurn - TilesCrossedThisTurnOnLastPerkUse))"/>
+
+         <TokenVariable Key="TilesCrossedThisTurnOnLastPerkUse" Value="Module.Buffer"/>
+         <TokenVariable Key="TilesCrossedThisTurnBeforeCast" Value="Module.Buffer2"/>
+         <TokenVariable Key="TilesCrossedUnusedFromPreviousTurns" Value="Module.Buffer3"/>
+
+         <TokenVariable Key="TilesCrossedThreshold" Value="5"/>
+         <TokenVariable Key="DamageMalus" Value="-30"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="TilesCrossedThreshold" Style="KeyWordNb"/>
+         <StatArgument Stat="OverallDamage" Value="DamageMalus"/>
+         <LocArgument Value="RemainingTilesToCross" Interpreted="true" Style="KeyWordNb"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Buffer Value="RemainingTilesToCross"/>
+            <GreyOut>
+               <IsFalse Value="MovementConditionIsValid"/>
+            </GreyOut>
+            <Highlight>
+               <IsTrue Value="MovementConditionIsValid"/>
+               <IsTrue Value="HasTargetTile"/>
+               <IsTrue Value="Skill.IsAttack"/>
+            </Highlight>
+         </DisplayInHUD>
+         <CompendiumEntries>
+            <CompendiumEntry Id="SkillEffect_NoMomentum"/>
+         </CompendiumEntries>
+         <FeedbackActivationConditions>
+            <IsTrue Value="MovementConditionIsValid"/>
+         </FeedbackActivationConditions>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnSkillCastBegin">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer2" Value="Owner.TotalMomentumTilesCrossedThisTurn"/>
+                     <!--TilesCrossedThisTurnBeforeCast = TotalMomentumTilesCrossedThisTurn-->
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="MovementConditionWasValid"/>
+                  </Conditions>
+                  <Actions>
+                     <ForbidSkillUndo/>
+                     <SetBufferTo BufferIndex="Buffer" Value="Module.Buffer2"/>
+                     <!--TilesCrossedThisTurnOnLastPerkUse = TilesCrossedThisTurnBeforeCast-->
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                     <!--TilesCrossedUnusedFromPreviousTurns = 0-->
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Actions>
+                     <RefreshPerkActivationFeedback/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillUndo">
+                  <Actions>
+                     <RefreshPerkActivationFeedback/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnMovementEnd">
+                  <Actions>
+                     <RefreshPerkActivationFeedback/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnEndNightTurnPlayable">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer3" Value="Module.Buffer3 + (Owner.TotalMomentumTilesCrossedThisTurn - Module.Buffer)"/>
+                     <!--TilesCrossedUnusedFromPreviousTurns += TotalMomentumTilesCrossedThisTurn - TilesCrossedThisTurnOnLastPerkUse-->
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <!--TilesCrossedThisTurnOnLastPerkUse = 0-->
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <!--TilesCrossedThisTurnOnLastPerkUse = 0-->
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                     <!--TilesCrossedUnusedFromPreviousTurns = 0-->
+                     <RefreshPerkActivationFeedback RefreshView="false"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Conditions>
+               <IsTrue Value="MovementConditionIsValid"/>
+            </Conditions>
+            <Effects>
+               <StatModifier Stat="OverallDamage" Value="DamageMalus"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="BadMovementCurse_2">
+      <TokenVariables>
+         <TokenVariable Key="MovementConditionWasValid" Value="TilesCrossedUnusedFromPreviousTurns + (TilesCrossedThisTurnBeforeCast - TilesCrossedThisTurnOnLastPerkUse) > TilesCrossedThreshold - 1"/>
+         <TokenVariable Key="MovementConditionIsValid" Value="TilesCrossedCurrentCount > TilesCrossedThreshold - 1"/>
+         <TokenVariable Key="RemainingTilesToCross" Value="Max(0, TilesCrossedThreshold - TilesCrossedCurrentCount)"/>
+         <TokenVariable Key="TilesCrossedCurrentCount" Value="(TilesCrossedUnusedFromPreviousTurns + (Owner.TotalMomentumTilesCrossedThisTurn - TilesCrossedThisTurnOnLastPerkUse))"/>
+
+         <TokenVariable Key="TilesCrossedThisTurnOnLastPerkUse" Value="Module.Buffer"/>
+         <TokenVariable Key="TilesCrossedThisTurnBeforeCast" Value="Module.Buffer2"/>
+         <TokenVariable Key="TilesCrossedUnusedFromPreviousTurns" Value="Module.Buffer3"/>
+
+         <TokenVariable Key="TilesCrossedThreshold" Value="2"/>
+         <TokenVariable Key="DamageMalus" Value="-30"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="TilesCrossedThreshold" Style="KeyWordNb"/>
+         <StatArgument Stat="OverallDamage" Value="DamageMalus"/>
+         <LocArgument Value="RemainingTilesToCross" Interpreted="true" Style="KeyWordNb"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Buffer Value="RemainingTilesToCross"/>
+            <GreyOut>
+               <IsFalse Value="MovementConditionIsValid"/>
+            </GreyOut>
+            <Highlight>
+               <IsTrue Value="MovementConditionIsValid"/>
+               <IsTrue Value="HasTargetTile"/>
+               <IsTrue Value="Skill.IsAttack"/>
+            </Highlight>
+         </DisplayInHUD>
+         <CompendiumEntries>
+            <CompendiumEntry Id="SkillEffect_NoMomentum"/>
+         </CompendiumEntries>
+         <FeedbackActivationConditions>
+            <IsTrue Value="MovementConditionIsValid"/>
+         </FeedbackActivationConditions>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnSkillCastBegin">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer2" Value="Owner.TotalMomentumTilesCrossedThisTurn"/>
+                     <!--TilesCrossedThisTurnBeforeCast = TotalMomentumTilesCrossedThisTurn-->
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="MovementConditionWasValid"/>
+                  </Conditions>
+                  <Actions>
+                     <ForbidSkillUndo/>
+                     <SetBufferTo BufferIndex="Buffer" Value="Module.Buffer2"/>
+                     <!--TilesCrossedThisTurnOnLastPerkUse = TilesCrossedThisTurnBeforeCast-->
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                     <!--TilesCrossedUnusedFromPreviousTurns = 0-->
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Actions>
+                     <RefreshPerkActivationFeedback/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillUndo">
+                  <Actions>
+                     <RefreshPerkActivationFeedback/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnMovementEnd">
+                  <Actions>
+                     <RefreshPerkActivationFeedback/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnEndNightTurnPlayable">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer3" Value="Module.Buffer3 + (Owner.TotalMomentumTilesCrossedThisTurn - Module.Buffer)"/>
+                     <!--TilesCrossedUnusedFromPreviousTurns += TotalMomentumTilesCrossedThisTurn - TilesCrossedThisTurnOnLastPerkUse-->
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <!--TilesCrossedThisTurnOnLastPerkUse = 0-->
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <!--TilesCrossedThisTurnOnLastPerkUse = 0-->
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                     <!--TilesCrossedUnusedFromPreviousTurns = 0-->
+                     <RefreshPerkActivationFeedback RefreshView="false"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Conditions>
+               <IsTrue Value="MovementConditionIsValid"/>
+            </Conditions>
+            <Effects>
+               <StatModifier Stat="OverallDamage" Value="DamageMalus"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+
+   <!--Missing Mana Curse-->
+   <PerkDefinition Id="MissingManaCurse">
+      <TokenVariables>
+         <TokenVariable Key="MoveMalus" Value="MoveMultiplier * NumberOfStepsReached"/>
+         <TokenVariable Key="MoveMultiplier" Value="-1"/>
+         <TokenVariable Key="NumberOfStepsReached" Value="Floor(CurrentManaMissingPercentage / PercentageStep)"/>
+         <TokenVariable Key="PercentageStep" Value="12"/>
+         <TokenVariable Key="CurrentManaMissingPercentage" Value="(100 - CurrentManaPercentage)"/>
+         <TokenVariable Key="CurrentManaPercentage" Value="Clamp(BooleanChoice(Owner.ManaTotal > 0, Owner.Mana / Owner.ManaTotal, 1) * 100, 0, 100)"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="PercentageStep" Suffix="%" Style="KeyWordNb"/>
+         <StatArgument Stat="ManaTotal"/>
+         <StatArgument Stat="MovePointsTotal" Value="MoveMultiplier" Interpreted="true" DisplaySign="true" Style="BadNb"/>
+         <LocArgument Value="Floor(CurrentManaMissingPercentage)" Suffix="%" Interpreted="true" Style="KeyWordNb"/>
+         <StatArgument Stat="MovePointsTotal" Value="MoveMalus" Interpreted="true" DisplaySign="true" Style="BadNb"/>
+      </LocArguments>
+      <View>
+         <DisplayBonusBeforePurchase/>
+         <DisplayInHUD>
+            <Malus Value="MoveMalus"/>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Effects>
+               <StatModifier Stat="MovePointsTotal" Value="MoveMalus"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="MissingManaCurse_2">
+      <TokenVariables>
+         <TokenVariable Key="MoveMalus" Value="MoveMultiplier * NumberOfStepsReached"/>
+         <TokenVariable Key="MoveMultiplier" Value="-1"/>
+         <TokenVariable Key="NumberOfStepsReached" Value="Floor(CurrentManaMissingPercentage / PercentageStep)"/>
+         <TokenVariable Key="PercentageStep" Value="6"/>
+         <TokenVariable Key="CurrentManaMissingPercentage" Value="(100 - CurrentManaPercentage)"/>
+         <TokenVariable Key="CurrentManaPercentage" Value="Clamp(BooleanChoice(Owner.ManaTotal > 0, Owner.Mana / Owner.ManaTotal, 1) * 100, 0, 100)"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="PercentageStep" Suffix="%" Style="KeyWordNb"/>
+         <StatArgument Stat="ManaTotal"/>
+         <StatArgument Stat="MovePointsTotal" Value="MoveMultiplier" Interpreted="true" DisplaySign="true" Style="BadNb"/>
+         <LocArgument Value="Floor(CurrentManaMissingPercentage)" Suffix="%" Interpreted="true" Style="KeyWordNb"/>
+         <StatArgument Stat="MovePointsTotal" Value="MoveMalus" Interpreted="true" DisplaySign="true" Style="BadNb"/>
+      </LocArguments>
+      <View>
+         <DisplayBonusBeforePurchase/>
+         <DisplayInHUD>
+            <Malus Value="MoveMalus"/>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Effects>
+               <StatModifier Stat="MovePointsTotal" Value="MoveMalus"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+
+   <!--Negative Alteration Curse-->
+   <PerkDefinition Id="NegativeAlterationCurse">
+      <TokenVariables>
+         <TokenVariable Key="HealthBonus" Value="30"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatusArgument Status="Buff" Stat="HealthTotal" Value="HealthBonus" Interpreted="true" TurnsCount="-1"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Highlight>
+               <IsTrue Value="IsTargetUnit"/>
+               <IsTrue Value="Skill.HasNegativeAlteration"/>
+            </Highlight>
+         </DisplayInHUD>
+         <CompendiumEntries>
+            <CompendiumEntry Id="GameConcept_NegativeAlterations"/>
+         </CompendiumEntries>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnSkillStatusApplied">
+                  <Conditions>
+                     <IsTrue Value="IsTargetUnit"/>
+                     <IsTrue Value="AppliedNegativeAlteration"/>
+                     <IsFalse Value="OwnerIsTarget"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <ApplyStatus Status="Buff" Stat="HealthTotal" Value="HealthBonus" TurnsCount="-1" Chance="100" HideDisplayEffect="true" RefreshHUD="false">
+                  <PerkTargeting TargetingReference="Target" TargetingMethod="Self"/>
+               </ApplyStatus>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="NegativeAlterationCurse_2">
+      <TokenVariables>
+         <TokenVariable Key="HealthBonus" Value="75"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatusArgument Status="Buff" Stat="HealthTotal" Value="HealthBonus" Interpreted="true" TurnsCount="-1"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Highlight>
+               <IsTrue Value="IsTargetUnit"/>
+               <IsTrue Value="Skill.HasNegativeAlteration"/>
+            </Highlight>
+         </DisplayInHUD>
+         <CompendiumEntries>
+            <CompendiumEntry Id="GameConcept_NegativeAlterations"/>
+         </CompendiumEntries>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnSkillStatusApplied">
+                  <Conditions>
+                     <IsTrue Value="IsTargetUnit"/>
+                     <IsTrue Value="AppliedNegativeAlteration"/>
+                     <IsFalse Value="OwnerIsTarget"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <ApplyStatus Status="Buff" Stat="HealthTotal" Value="HealthBonus" TurnsCount="-1" Chance="100" HideDisplayEffect="true" RefreshHUD="false">
+                  <PerkTargeting TargetingReference="Target" TargetingMethod="Self"/>
+               </ApplyStatus>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+
+   <!--Hit Armor Curse-->
+   <PerkDefinition Id="HitArmorCurse">
+      <TokenVariables>
+         <TokenVariable Key="HealthLost" Value="10"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument Stat="ArmorTotal"/>
+         <StatArgument Stat="HealthTotal" Value="HealthLost" Interpreted="true" Style="BadNb"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Highlight>
+               <IsTrue Value="IsTargetUnit"/>
+               <IsTrue Value="TargetUnit.Armor > 0"/>
+            </Highlight>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnTargetHit">
+                  <Conditions>
+                     <IsTrue Value="IsTargetUnit"/>
+                     <IsTrue Value="AttackData.ArmorDamage > 0"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <DealDamage Value="HealthLost" IgnoreDefense="true">
+                  <PerkTargeting Amount="1" TargetingReference="Owner" TargetingMethod="Self" Range="0">
+                     <DamageableTarget Type="Playable"/>
+                  </PerkTargeting>
+               </DealDamage>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="HitArmorCurse_2">
+      <TokenVariables>
+         <TokenVariable Key="HealthLost" Value="25"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument Stat="ArmorTotal"/>
+         <StatArgument Stat="HealthTotal" Value="HealthLost" Interpreted="true" Style="BadNb"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Highlight>
+               <IsTrue Value="IsTargetUnit"/>
+               <IsTrue Value="TargetUnit.Armor > 0"/>
+            </Highlight>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnTargetHit">
+                  <Conditions>
+                     <IsTrue Value="IsTargetUnit"/>
+                     <IsTrue Value="AttackData.ArmorDamage > 0"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <DealDamage Value="HealthLost" IgnoreDefense="true">
+                  <PerkTargeting Amount="1" TargetingReference="Owner" TargetingMethod="Self" Range="0">
+                     <DamageableTarget Type="Playable"/>
+                  </PerkTargeting>
+               </DealDamage>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+
+   <!--ReduceCritCurse-->
+   <PerkDefinition Id="ReduceCritCurse">
+      <TokenVariables>
+         <TokenVariable Key="TotalCriticalMalus" Value="Module.Buffer * CriticalScalingMalus"/>
+         <TokenVariable Key="RemainingCriticalHits" Value="CriticalHitsThreshold - Module.Buffer2"/>
+
+         <TokenVariable Key="MalusIncrement" Value="Floor(Module.Buffer2 / CriticalHitsThreshold)"/>
+
+         <TokenVariable Key="CriticalScalingMalus" Value="-3"/>
+         <TokenVariable Key="CriticalHitsThreshold" Value="1"/>
+      </TokenVariables>
+      <LocArguments>
+         <!--<LocArgument Value="CriticalHitsThreshold" Style="KeyWordNb"/>-->
+         <StatArgument Stat="Critical" Value="CriticalScalingMalus"/>
+         <StatArgument Stat="Critical" Value="TotalCriticalMalus" Interpreted="true"/>
+         <!--<LocArgument Value="RemainingCriticalHits" Interpreted="true" Style="KeyWordNb"/>-->
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Malus Value="TotalCriticalMalus"/>
+            <Highlight>
+               <IsTrue Value="Skill.IsAttack"/>
+               <IsTrue Value="IsTargetUnit"/>
+            </Highlight>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnTargetHit">
+                  <Conditions>
+                     <IsTrue Value="IsTargetUnit"/>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="AttackData.IsCrit"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Module.Buffer2 > CriticalHitsThreshold - 1"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="MalusIncrement"/>
+                     <InstantiateStatEffectDisplay Stat="CriticalPower" Value="MalusIncrement * CriticalScalingMalus"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="Module.Buffer2 % CriticalHitsThreshold"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <StatModifier Stat="Critical" Value="TotalCriticalMalus"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="ReduceCritCurse_2">
+      <TokenVariables>
+         <TokenVariable Key="TotalCriticalMalus" Value="Module.Buffer * CriticalScalingMalus"/>
+         <TokenVariable Key="RemainingCriticalHits" Value="CriticalHitsThreshold - Module.Buffer2"/>
+
+         <TokenVariable Key="MalusIncrement" Value="Floor(Module.Buffer2 / CriticalHitsThreshold)"/>
+
+         <TokenVariable Key="CriticalScalingMalus" Value="-7"/>
+         <TokenVariable Key="CriticalHitsThreshold" Value="1"/>
+      </TokenVariables>
+      <LocArguments>
+         <!--<LocArgument Value="CriticalHitsThreshold" Style="KeyWordNb"/>-->
+         <StatArgument Stat="Critical" Value="CriticalScalingMalus"/>
+         <StatArgument Stat="Critical" Value="TotalCriticalMalus" Interpreted="true"/>
+         <!--<LocArgument Value="RemainingCriticalHits" Interpreted="true" Style="KeyWordNb"/>-->
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Malus Value="TotalCriticalMalus"/>
+            <Highlight>
+               <IsTrue Value="Skill.IsAttack"/>
+               <IsTrue Value="IsTargetUnit"/>
+            </Highlight>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnTargetHit">
+                  <Conditions>
+                     <IsTrue Value="IsTargetUnit"/>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="AttackData.IsCrit"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Module.Buffer2 > CriticalHitsThreshold - 1"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="MalusIncrement"/>
+                     <InstantiateStatEffectDisplay Stat="CriticalPower" Value="MalusIncrement * CriticalScalingMalus"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="Module.Buffer2 % CriticalHitsThreshold"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <StatModifier Stat="Critical" Value="TotalCriticalMalus"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+
+   <!--Adjacent Building Malus Curse-->
+   <PerkDefinition Id="AdjacentBuildingMalusCurse">
+      <TokenVariables>
+         <TokenVariable Key="AccuracyMalus" Value="-25"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument Stat="Accuracy" Value="AccuracyMalus" Interpreted="true" Style="BadNb" DisplaySign="true"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Highlight>
+               <IsTrue Value="Skill.IsAttack"/>
+               <IsTrue Value="IsTargetUnit"/>
+               <IsTrue Value="TargetUnit.IsAdjacentToBuilding"/>
+            </Highlight>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Effects>
+               <SkillModifier ComputationStat="Accuracy" Value="AccuracyMalus">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="IsTargetUnit"/>
+                     <IsTrue Value="TargetUnit.IsAdjacentToBuilding"/>
+                  </Conditions>
+               </SkillModifier>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <PerkDefinition Id="AdjacentBuildingMalusCurse_2">
+      <TokenVariables>
+         <TokenVariable Key="AccuracyMalus" Value="-60"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument Stat="Accuracy" Value="AccuracyMalus" Interpreted="true" Style="BadNb" DisplaySign="true"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Highlight>
+               <IsTrue Value="Skill.IsAttack"/>
+               <IsTrue Value="IsTargetUnit"/>
+               <IsTrue Value="TargetUnit.IsAdjacentToBuilding"/>
+            </Highlight>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Effects>
+               <SkillModifier ComputationStat="Accuracy" Value="AccuracyMalus">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="IsTargetUnit"/>
+                     <IsTrue Value="TargetUnit.IsAdjacentToBuilding"/>
+                  </Conditions>
+               </SkillModifier>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+
+   <!--//////////////////////-->
+   <!--CORRUPTED WEAPON PERKS-->
+   <!--//////////////////////-->
+   
+   <!--Sword-->
+   <PerkDefinition Id="SwordUniquePerk">
+      <TokenVariables>
+      </TokenVariables>
+
+      <LocArguments>
+         <LocalizedArgument Prefix="SkillName_" Value="Slash" Interpreted="false" Style="Skill"/>
+         <LocalizedArgument Prefix="SkillName_" Value="BladeRush" Interpreted="false" Style="Skill"/>
+      </LocArguments>
+
+      <View>
+         <DisplayInHUD/>
+      </View>
+
+      <Modules>
+         <BufferModule/>
+      </Modules>
+   </PerkDefinition>
+   
+   
+   <!--Hammer-->
+   <PerkDefinition Id="HammerUniquePerk">
+      <TokenVariables>
+         <TokenVariable Key="HasSkillBeenUsedEnough" Value="FirstSkillUsages > UsesRequired - 1"/>
+         <TokenVariable Key="FirstSkillUsages" Value="Min(Module.Buffer,UsesRequired)"/>
+         <TokenVariable Key="UsesRequired" Value="2"/>
+         <TokenVariable Key="FirstSkillId" Value="Bash"/> <!--unused-->
+         <TokenVariable Key="MultiHitBonus" Value="3"/>
+      </TokenVariables>
+      
+      <LocArguments>
+         <LocalizedArgument Prefix="SkillName_" Value="Bash" Style="Skill"/>
+         <LocArgument Value="UsesRequired" Interpreted="true" Style="KeywordNb"/>
+         <LocalizedArgument Value="SkillEffectName_MultiHit" Style="MultiHit"/>
+         <LocArgument Value="MultiHitBonus" Style="GoodNb" Prefix="+"/>
+      </LocArguments>
+
+      <View>
+         <DisplayInHUD>
+            <Buffer Value="FirstSkillUsages"/>
+            <Highlight>
+               <IsTrue Value="HasSkillBeenUsedEnough"/>
+            </Highlight>
+         </DisplayInHUD>
+      </View>
+
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('Bash')"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('HammerUnique')"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                     <!--<Log Value="Module.Buffer" Formatting="Increased buffer to {0}"/>-->
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <AddSkillEffect>
+                  <Conditions>
+                     <IsTrue Value="HasPerkData"/>
+                     <IsTrue Value="HasSkill"/>
+                     <IsTrue Value="HasSkillBeenUsedEnough"/>
+                     <IsTrue Value="Skill.IsSkillID('Bash')"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('HammerUnique')"/>
+                  </Conditions>
+                  <SkillEffects>
+                     <MultiHit HitsCount="MultiHitBonus"/>
+                  </SkillEffects>
+               </AddSkillEffect>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   <!--Axe-->
+   <PerkDefinition Id="AxeUniquePerk">
+      <TokenVariables>
+         <TokenVariable Key="ReductionIsActive" Value="UnitsToKillLeft = 0"/>
+         <TokenVariable Key="UnitsToKillLeft" Value="Max(0, RemainingUnitsToKill)"/>
+         <TokenVariable Key="RemainingUnitsToKill" Value="UnitKilledThreshold - Module.Buffer"/>
+         <TokenVariable Key="UnitKilledThreshold" Value="12"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="UnitKilledThreshold" Style="KeyWordNb"/>
+         <LocalizedArgument Prefix="SkillName_" Value="IntimidatingScream" Style="Skill"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Buffer Value="RemainingUnitsToKill"/>
+            <Highlight>
+               <IsTrue Value="Skill.IsAttack"/>
+               <IsTrue Value="IsTargetUnit"/>
+            </Highlight>
+         </DisplayInHUD>
+      <SkillsToShow>
+         <SkillToShow Id="IntimidatingScreamUnique"/>
+      </SkillsToShow>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnTargetKilled">
+                  <Conditions>
+                     <IsTrue Value="IsTargetUnit"/>
+                     <IsFalse Value="IsTriggeredByPerk"/>
+                     <IsFalse Value="ReductionIsActive"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnEndNightTurnPlayable">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <ReplaceItemSkill SkillIdReplacement="IntimidatingScreamUnique" SkillIdToReplace="IntimidatingScream">
+                  <Conditions>
+                     <IsTrue Value="ReductionIsActive"/>
+                  </Conditions>
+               </ReplaceItemSkill>
+               <ReplaceItemSkill SkillIdReplacement="IntimidatingScream" SkillIdToReplace="IntimidatingScreamUnique">
+                  <Conditions>
+                     <IsFalse Value="ReductionIsActive"/>
+                  </Conditions>
+               </ReplaceItemSkill>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   <!--Dagger-->
+   <PerkDefinition Id="DaggerUniquePerk">
+      <TokenVariables>
+         <TokenVariable Key="RemainingUnitsToKill" Value="UnitKilledThreshold - Module.Buffer"/>
+         <TokenVariable Key="HasKilledEnoughUnits" Value="Module.Buffer > UnitKilledThreshold - 1"/>
+         <TokenVariable Key="UnitKilledThreshold" Value="5"/>
+         <TokenVariable Key="MultiHitBonus" Value="2"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="UnitKilledThreshold" Interpreted="true" Style="KeywordNb"/>
+         <LocalizedArgument Prefix="SkillName_" Value="DaggerThrow" Style="Skill"/>
+         <LocArgument Value="2" Style="GoodNb" Prefix="+"/>
+         <LocalizedArgument Value="SkillEffectName_MultiHit" Style="MultiHit"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Buffer Value="RemainingUnitsToKill"/>
+            <Highlight>
+               <IsTrue Value="HasKilledEnoughUnits"/>
+            </Highlight>
+         </DisplayInHUD>
+         <CompendiumEntries>
+            <CompendiumEntry Id="GameConcept_Isolated"/>
+         </CompendiumEntries>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnTargetKilled">
+                  <Conditions>
+                     <IsTrue Value="IsTargetUnit"/>
+                     <IsTrue Value="TargetUnit.IsIsolated"/>
+                     <IsFalse Value="HasKilledEnoughUnits"/>
+                     <IsFalse Value="Skill.IsSkillID('ThrowingDaggers')"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnTargetHit">
+                  <Conditions>
+                     <IsTrue Value="IsTargetUnit"/>
+                     <IsTrue Value="TargetUnit.IsIsolated"/>
+                     <IsFalse Value="HasKilledEnoughUnits"/>
+                     <IsTrue Value="Skill.IsSkillID('ThrowingDaggers')"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('DaggerThrow')"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('DaggerUnique')"/>
+                     <IsTrue Value="HasKilledEnoughUnits"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <AddSkillEffect>
+                  <Conditions>
+                     <IsTrue Value="HasKilledEnoughUnits"/>
+                     <IsTrue Value="Skill.IsSkillID('DaggerThrow')"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('DaggerUnique')"/>
+                  </Conditions>
+                  <SkillEffects>
+                     <MultiHit HitsCount="MultiHitBonus"/>
+                  </SkillEffects>
+               </AddSkillEffect>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   <!--2HSword-->
+   <PerkDefinition Id="2HSwordUniquePerk">
+      <TokenVariables>
+         <TokenVariable Key="DamageMalusValue" Value="DamageBonusValue - (DamageMalusMultiplier * NumberOfStepsReached)"/>
+         <TokenVariable Key="DamageMalusMultiplier" Value="10"/>
+         <TokenVariable Key="BlockBonusValue" Value="BlockBonusMultiplier * NumberOfStepsReached"/>
+         <TokenVariable Key="BlockBonusMultiplier" Value="10"/>
+         <TokenVariable Key="DamageBonusValue" Value="50"/>
+         <TokenVariable Key="NumberOfStepsReached" Value="Floor(CurrentMoveMissingPercentage / MissingMoveStepValue)"/>
+         <TokenVariable Key="MissingMoveStepValue" Value="20"/>
+         <TokenVariable Key="CurrentMoveMissingPercentage" Value="(100 - CurrentMovePercentage)"/>
+         <TokenVariable Key="CurrentMovePercentage" Value="Clamp(BooleanChoice(CurrentMP > 0, CurrentMP / TotalMP, 0) * 100, 0, 100)"/>
+         <TokenVariable Key="CurrentMP" Value="(BooleanChoice(HasOwner, Owner.MovePoints, 0))"/>
+         <TokenVariable Key="TotalMP" Value="(BooleanChoice(HasOwner, Owner.MovePointsTotal, 0))"/>
+         <TokenVariable Key="DamageMalusText" Value="-10"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument Stat="OverallDamage" Value="DamageBonusValue" Interpreted="true"/>
+         <LocArgument Value="MissingMoveStepValue" Suffix="%" Style="KeyWordNb"/>
+         <StatArgument Stat="MovePointsTotal"/>
+         <StatArgument Stat="OverallDamage" Value="DamageMalusText"/>
+         <StatArgument Stat="Block" Value="BlockBonusMultiplier"/>
+         <LocArgument Value="Floor(CurrentMoveMissingPercentage)" Suffix="%" Interpreted="true" Style="KeyWordNb"/>
+         <StatArgument Stat="OverallDamage" Value="DamageMalusValue" Interpreted="true"/>
+         <StatArgument Stat="Block" Value="BlockBonusValue" Interpreted="true"/>
+      </LocArguments>
+      <View>
+         <DisplayBonusBeforePurchase/>
+         <DisplayInHUD/>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Effects>
+               <StatModifier Stat="OverallDamage" Value="DamageMalusValue"/>
+               <StatModifier Stat="Block" Value="BlockBonusValue"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   <!--2HHammer-->
+   <PerkDefinition Id="2HHammerUniquePerk">
+      <TokenVariables>
+         <TokenVariable Key="ActionCostReduction" Value="1"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocalizedArgument Prefix="SkillName_" Value="HammerStrike" Style="Skill"/>
+         <StatArgument Stat="ActionPointsTotal" Value="0" DisplaySign="false"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Highlight>
+               <IsTrue Value="HasSkill"/>
+               <IsTrue Value="Skill.IsFromItemWithTag('2HHammerUnique')"/>
+               <IsTrue Value="Skill.IsSkillID('HammerStrike')"/>
+               <IsTrue Value="HasTargetTile"/>
+               <IsFalse Value="IsTargetUnit"/>
+               <IsFalse Value="IsTargetBuilding"/>
+            </Highlight>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Effects>
+               <SkillModifier ComputationStat="ActionPointsCost" Value="1">
+                  <Conditions>
+                     <IsTrue Value="HasSkill"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('2HHammerUnique')"/>
+                     <IsTrue Value="Skill.IsSkillID('HammerStrike')"/>
+                     <IsTrue Value="HasTargetTile"/>
+                     <IsFalse Value="IsTargetUnit"/>
+                     <IsFalse Value="IsTargetBuilding"/>
+                  </Conditions>
+               </SkillModifier>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   <!--2HAxe-->
+   <PerkDefinition Id="2HAxeUniquePerk">
+
+      <TokenVariables>
+         <TokenVariable Key="TotalMoveIncrease" Value="Stacks* MovePointsBuffValue"/>
+         <TokenVariable Key="MovePointsBuffValue" Value="2"/>
+         <TokenVariable Key="EnemyHitThreshold" Value="5"/>
+         <TokenVariable Key="Stacks" Value="Module.Buffer2"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="EnemyHitThreshold" Style="KeyWordNb"/>
+         <LocalizedArgument Prefix="SkillName_" Value="Swing" Style="Skill"/>
+         <StatArgument Stat="MovePointsTotal" Value="MovePointsBuffValue" DisplaySign="true" Interpreted="true"/>
+         <LocArgument Prefix="+" Value="MovePointsBuffValue" Style="KeyWordNb"/>
+         <StatArgument Stat="MovePointsTotal"/>
+         <StatArgument Stat="MovePointsTotal" Value="TotalMoveIncrease" DisplaySign="true" Interpreted="true"/>
+         <LocArgument Prefix="+" Value="TotalMoveIncrease" Style="KeyWordNb" Interpreted="true"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Bonus Value="TotalMoveIncrease"/>
+         </DisplayInHUD>
+         <FeedbackActivationConditions>
+            <IsTrue Value="Module.Buffer > EnemyHitThreshold-1"/>
+         </FeedbackActivationConditions>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnTargetHit">
+                  <Conditions>
+                     <IsTrue Value="IsTargetEnemyUnit"/>
+                     <IsTrue Value="HasSkill"/>
+                     <IsTrue Value="Skill.IsSkillID('Swing')"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('2HAxeUnique')"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastBegin">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Module.Buffer > EnemyHitThreshold-1"/>
+                  </Conditions>
+                  <Actions>
+                     <RefreshPerkActivationFeedback RefreshView="true"/>
+                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Actions>
+                     <SetBufferTo Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <StatBoundaryModifier Stat="MovePointsTotal" MaxModifier="TotalMoveIncrease"/>
+               <StatModifier Stat="MovePointsTotal" Value="TotalMoveIncrease"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   
+   <!--Spear-->
+   <PerkDefinition Id="SpearUniquePerk">
+      <TokenVariables>
+         <!--<TokenVariable Key="DamageBonusValue" Value="DamageBonusMultiplier * PreviousNumberTargetHit"/>-->
+         <TokenVariable Key="IsFirstThreshPassed" Value="NumberTargetHit > FirstThreshold - 1"/>
+         <TokenVariable Key="IsSecondThreshPassed" Value="NumberTargetHit > SecondThreshold - 1"/>
+         <TokenVariable Key="NumberTargetHit" Value="Min(Module.Buffer,SecondThreshold)"/>
+         <TokenVariable Key="KillsToReachSecondThreshold" Value="11"/>
+         <TokenVariable Key="FirstThreshold" Value="7"/>
+         <TokenVariable Key="SecondThreshold" Value="18"/>
+         <!--<TokenVariable Key="DamageBonusMultiplier" Value="3"/>-->
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="FirstThreshold" Style="KeyWordNb"/>
+         <LocalizedArgument Value="ItemName_NoDLCTag_SpearUnique" Style="Unique"/>
+         <LocalizedArgument Prefix="SkillName_" Value="Impale" Style="Skill"/>
+         <LocArgument Value="KillsToReachSecondThreshold" Style="KeyWordNb"/>
+      </LocArguments>
+      <View>
+         <DisplayBonusBeforePurchase/>
+         <DisplayInHUD>
+            <Buffer Value="NumberTargetHit"/>
+         </DisplayInHUD>
+         <SkillsToShow>
+            <SkillToShow Id="ImpaleUnique"/>
+            <SkillToShow Id="ImpaleUnique2"/>
+         </SkillsToShow>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+
+               <Event EffectTime="OnStartNightTurnPlayable">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnTargetHit">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('SpearUnique')"/>
+                     <IsTrue Value="IsTargetUnit"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>
+               <!--<Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('SpearUnique')"/>
+                     <IsTrue Value="NumberTargetHit > FirstThreshold - 1"/>
+                  </Conditions>
+                  <Actions>
+                     <Log Formatting="Le premier threshold est atteint : {0}" Value="IsFirstThreshPassed"/>
+                     <Log Formatting="Le second threshold est atteint : {0}" Value="IsSecondThreshPassed"/>
+                  </Actions>
+               </Event>-->
+               
+            </Events>
+            <Effects>
+               
+               <ReplaceItemSkill SkillIdReplacement="ImpaleUnique" SkillIdToReplace="Impale" LinkedSkillIdForUsesPerTurn="Impale">
+                  <Conditions>
+                     <IsTrue Value="IsFirstThreshPassed"/>
+                     <IsFalse Value="IsSecondThreshPassed"/>
+                  </Conditions>
+               </ReplaceItemSkill>
+               <ReplaceItemSkill SkillIdReplacement="ImpaleUnique2" SkillIdToReplace="Impale" LinkedSkillIdForUsesPerTurn="Impale">
+                  <Conditions>
+                     <IsTrue Value="IsSecondThreshPassed"/>
+                  </Conditions>
+               </ReplaceItemSkill>
+               
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   <!--Hand Crossbow-->
+   <PerkDefinition Id="HandCrossbowUniquePerk">
+      <TokenVariables>
+         <TokenVariable Key="HasSkillBeenUsedEnough" Value="SkillUsages > SkillUsageThreshold - 1"/>
+         <TokenVariable Key="SkillUsages" Value="Module.Buffer"/>
+         <TokenVariable Key="SkillUsageThreshold" Value="5"/>
+         <TokenVariable Key="ActionPointsRestoreValue" Value="10"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="SkillUsageThreshold" Style="KeyWordNb"/>
+         <LocalizedArgument Value="ItemName_NoDLCTag_HandCrossbowUnique" Style="Unique"/>
+         <StatArgument Stat="ActionPointsTotal"/>
+      </LocArguments>
+      <View>
+         <DisplayBonusBeforePurchase/>
+         <DisplayInHUD>
+            <Buffer Value="SkillUsageThreshold - SkillUsages"/>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('HandCrossbowUnique')"/>
+                     <IsFalse Value="HasSkillBeenUsedEnough"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('HandCrossbowUnique')"/>
+                     <IsTrue Value="HasSkillBeenUsedEnough"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnTargetKilled">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('HandCrossbowUnique')"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <RestoreStat Stat="ActionPoints" Value="ActionPointsRestoreValue"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   <!--Pistol-->
+   <PerkDefinition Id="PistolUniquePerk">
+      <TokenVariables>
+      </TokenVariables>
+
+      <LocArguments>
+         <LocalizedArgument Prefix="SkillName_" Value="Grapeshot" Style="Skill"/>
+      </LocArguments>
+
+      <View>
+         <DisplayInHUD>
+         </DisplayInHUD>
+         <SkillsToShow>
+            <SkillToShow Id="PistolShot_UniquePerk"/>
+         </SkillsToShow>
+      </View>
+
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnEnemyMovementEnd">
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <CastSkill SkillId="PistolShot_UniquePerk">
+                  <PerkTargeting TargetingReference="Owner" TargetingMethod="ClosestTarget" Amount="1" >
+                  </PerkTargeting>
+               </CastSkill>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   <!--Shortbow-->
+   <PerkDefinition Id="ShortbowUniquePerk">
+      <TokenVariables>
+      </TokenVariables>
+
+      <LocArguments>
+         <LocalizedArgument Value="ItemName_NoDLCTag_ShortbowUnique" Style="Unique"/>
+      </LocArguments>
+
+      <View>
+         <DisplayInHUD/>
+      </View>
+
+      <Modules>
+         <BufferModule/>
+      </Modules>
+   </PerkDefinition>
+   
+   
+   <!--Longbow-->
+   <PerkDefinition Id="LongbowUniquePerk">
+      <TokenVariables>
+         <TokenVariable Key="DamageBonusValue" Value="DamageBonusStep * DistanceFromOwnerToTarget"/>
+         <TokenVariable Key="DamageBonusStep" Value="3"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocalizedArgument Value="ItemName_NoDLCTag_LongbowUnique" Style="Unique"/>
+         <StatArgument Stat="OverallDamage" Value="DamageBonusStep"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Highlight>
+               <IsTrue Value="Skill.IsAttack"/>
+            </Highlight>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Conditions>
+               <IsTrue Value="Skill.IsFromItemWithTag('LongbowUnique')"/>
+            </Conditions>
+            <Effects>
+               <SkillModifier ComputationStat="OverallDamage" Value="DamageBonusValue"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   <!--Crossbow-->
+   <PerkDefinition Id="CrossbowUniquePerk">
+      <TokenVariables>
+         <TokenVariable Key="DamageBonusValue" Value="DamageBonusStep * Module.Buffer"/>
+         <TokenVariable Key="DamageBonusStep" Value="5"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocalizedArgument Value="ItemName_NoDLCTag_CrossbowUnique" Style="Unique"/>
+         <StatArgument Stat="OverallDamage" Value="DamageBonusStep"/>
+         <StatArgument Stat="OverallDamage" Value="DamageBonusValue" DisplaySign="true" Interpreted="true"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Buffer Value="Module.Buffer"/>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('CrossbowUnique')"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnTileCrossed">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Conditions>
+               <IsTrue Value="Skill.IsFromItemWithTag('CrossbowUnique')"/>
+            </Conditions>
+            <Effects>
+               <SkillModifier ComputationStat="OverallDamage" Value="DamageBonusValue">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('CrossbowUnique')"/>
+                  </Conditions>
+               </SkillModifier>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   <!--Rifle-->
+   <PerkDefinition Id="RifleUniquePerk">
+      <TokenVariables>
+         <TokenVariable Key="HasPerkAlreadyActivatedThisTurn" Value="Module.Buffer > 0"/>
+         <TokenVariable Key="MoveDebuffValue" Value="3"/>
+         <TokenVariable Key="AccDebuffValue" Value="50"/>
+         <TokenVariable Key="DebuffDuration" Value="2"/>
+      </TokenVariables>
+
+      <LocArguments>
+         <LocalizedArgument Value="ItemName_NoDLCTag_RifleUnique" Style="Unique"/>
+         <StatusArgument Status="Debuff" Stat="MovePointsTotal" Value="-1 * MoveDebuffValue" TurnsCount="DebuffDuration" Interpreted="true"/>
+         <StatusArgument Status="Debuff" Stat="Accuracy" Value="-1 * AccDebuffValue" TurnsCount="DebuffDuration" Interpreted="true"/>
+      </LocArguments>
+
+      <View>
+         <DisplayInHUD>
+            <GreyOut>
+               <IsTrue Value="HasPerkAlreadyActivatedThisTurn"/>
+            </GreyOut>
+         </DisplayInHUD>
+      </View>
+
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnTargetKilled">
+                  <Conditions>
+                     <IsFalse Value="HasPerkAlreadyActivatedThisTurn"/>
+                     <IsTrue Value="IsTargetEnemyUnit"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('RifleUnique')"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartNightTurnPlayable">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <ApplyStatus Status="Debuff" Stat="MovePointsTotal" Value="MoveDebuffValue" TurnsCount="DebuffDuration">
+                  <PerkTargeting TargetingReference="Target" TargetingMethod="DamageablesInRange">
+                     <DamageableTarget Type="Enemy"/>
+                     <DamageableTarget Type="Boss"/>
+                  </PerkTargeting>
+               </ApplyStatus>
+               <ApplyStatus Status="Debuff" Stat="Accuracy" Value="AccDebuffValue" TurnsCount="DebuffDuration">
+                  <PerkTargeting TargetingReference="Target" TargetingMethod="DamageablesInRange">
+                     <DamageableTarget Type="Enemy"/>
+                     <DamageableTarget Type="Boss"/>
+                  </PerkTargeting>
+               </ApplyStatus>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <!--Magic Wand-->
+   <PerkDefinition Id="MagicWandUniquePerk">
+      <TokenVariables>
+         <TokenVariable Key="RemainingUnitsToKill" Value="UnitKilledThreshold - Module.Buffer"/>
+         <TokenVariable Key="HasKilledEnoughUnits" Value="Module.Buffer > UnitKilledThreshold - 1"/>
+         <TokenVariable Key="UnitKilledThreshold" Value="12"/>
+         <TokenVariable Key="MultiHitSkillBaseValue" Value="4"/>
+         <TokenVariable Key="MultiHitBonus" Value="Module.Buffer2"/>
+         <TokenVariable Key="MultiHitStep" Value="1"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="UnitKilledThreshold" Style="KeyWord"/>
+         <LocalizedArgument Value="ItemName_NoDLCTag_MagicWandUnique" Style="Unique"/>
+         <LocalizedArgument Value="Magic Missiles" Style="Skill"/>
+         <LocArgument Value="MultiHitStep" Prefix="+" Style="GoodNb"/>
+         <LocalizedArgument Value="SkillEffectName_MultiHit" Style="MultiHit"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Buffer Value="RemainingUnitsToKill"/>
+            <Highlight>
+               <IsTrue Value="HasKilledEnoughUnits"/>
+            </Highlight>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnTargetKilled">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('MagicWandUnique')"/>
+                     <IsFalse Value="HasKilledEnoughUnits"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnTargetKilled">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('MagicWandUnique')"/>
+                     <IsTrue Value="HasKilledEnoughUnits"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer2" Value="MultiHitStep"/>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <AddSkillEffect>
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('MagicWandUnique')"/>
+                     <IsTrue Value="Skill.IsSkillID('MagicMissilesUnique')"/>
+                  </Conditions>
+                  <SkillEffects>
+                     <MultiHit HitsCount="MultiHitSkillBaseValue + MultiHitBonus"/>
+                  </SkillEffects>
+               </AddSkillEffect>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   <!--Magic Scepter-->
+   <PerkDefinition Id="MagicScepterUniquePerk">
+      <TokenVariables>
+         <TokenVariable Key="DamageAboveThresholdValue" Value="AttackData.TotalDamage > DamageThresholdTotal"/>
+         <TokenVariable Key="DamageThresholdCurrent" Value="DamageThresholdTotal - DamageThreshold"/>
+         <TokenVariable Key="DamageThresholdTotal" Value="400 + DamageThreshold"/>
+         <TokenVariable Key="DamageThreshold" Value="Module.Buffer"/>
+         <TokenVariable Key="DmgThresholdIncrease" Value="600"/>
+         <TokenVariable Key="PropBounceSkillNewValue" Value="PropBounceSkillBaseValue + PropBounceBonus"/>
+         <TokenVariable Key="PropBounceBonus" Value="Module.Buffer2"/>
+         <TokenVariable Key="PropBounceIncrease" Value="1"/>
+         <TokenVariable Key="StunningAboveThresholdValue" Value="Module.Buffer3 > StunningThresholdTotal - 1"/>
+         <TokenVariable Key="PerkDamageSteps" Value="Floor(Module.Buffer3 / StunningThresholdTotal)"/>
+         <TokenVariable Key="StunningThresholdCurrent" Value="StunningThresholdTotal - StunningThreshold"/>
+         <TokenVariable Key="StunningThresholdTotal" Value="(3 + StunningThreshold)"/>
+         <TokenVariable Key="StunningThreshold" Value="Module.Buffer4"/>
+         <TokenVariable Key="StunNbThresholdIncrease" Value="1"/>
+         <TokenVariable Key="PerkDamageBonus" Value="Module.Buffer5"/>
+         <TokenVariable Key="PerkDamageIncrease" Value="10"/>
+         <TokenVariable Key="PropBounceSkillBaseValue" Value="6"/>
+         <TokenVariable Key="Skill1ID" Value="MagicBash"/>
+         <TokenVariable Key="Skill2ID" Value="HammerOfFaithUnique"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument Value="DamageThresholdCurrent" Style="KeyWordNb" Interpreted="true"/>
+         <LocalizedArgument Prefix="SkillName_" Value="Skill1ID" Style="Skill"/>
+         <LocalizedArgument Prefix="SkillName_" Value="HammerOfFaith" Style="Skill"/>
+         <StatArgument Stat="PropagationBouncesModifier" Value="PropBounceIncrease"/>
+         <LocArgument Value="DmgThresholdIncrease" Style="KeyWordNb"/>
+
+         <StatArgument Value="StunningThresholdCurrent" Style="KeyWordNb" Interpreted="true"/>
+         <LocArgument Value="PerkDamageIncrease" Prefix="+" Suffix="%" Style="GoodNb"/>
+         <LocArgument Value="StunNbThresholdIncrease" Style="KeyWordNb"/>
+
+         <StatArgument Value="DamageThresholdTotal" Style="KeyWordNb" Interpreted="true"/>
+         <StatArgument Stat="PropagationBouncesModifier" Value="PropBounceBonus" Interpreted="true"/>
+         <StatArgument Value="StunningThresholdTotal" Style="KeyWordNb" Interpreted="true"/>
+         <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb" Interpreted="true"/>
+      </LocArguments>
+      <View>
+         <DisplayBonusBeforePurchase/>
+         <DisplayInHUD/>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               
+               <Event EffectTime="OnTargetHit"> <!--After dealing enough damage with Skill1, increase prop for Skill2 + increase threshold-->
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('MagicScepterUnique')"/>
+                     <IsTrue Value="Skill.IsSkillID('Skill1ID')"/>
+                     <IsTrue Value="DamageAboveThresholdValue"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="DmgThresholdIncrease"/>
+                     <IncreaseBuffer BufferIndex="Buffer2" Value="PropBounceIncrease"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStatusApplied">
+                  <Conditions>
+                     <IsTrue Value="IsTargetUnit"/>
+                     <IsTrue Value="AppliedStun"/>
+                     <IsFalse Value="OwnerIsTarget"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer3" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd"> 
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('MagicScepterUnique')"/>
+                     <IsTrue Value="Skill.IsSkillID('Skill2ID')"/>
+                     <IsTrue Value="StunningAboveThresholdValue"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer5" Value="PerkDamageIncrease * PerkDamageSteps"/>
+                     <IncreaseBuffer BufferIndex="Buffer4" Value="StunNbThresholdIncrease * PerkDamageSteps"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('MagicScepterUnique')"/>
+                     <IsTrue Value="Skill.IsSkillID('Skill2ID')"/>
+                     <IsFalse Value="StunningAboveThresholdValue"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer4" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer5" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <AddSkillEffect>
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('MagicScepterUnique')"/>
+                     <IsTrue Value="Skill.IsSkillID('Skill2ID')"/>
+                  </Conditions>
+                  <SkillEffects>
+                     <Propagation PropagationsCount="PropBounceSkillNewValue"/>
+                  </SkillEffects>
+               </AddSkillEffect>
+               <SkillModifier ComputationStat="OverallDamage" Value="PerkDamageBonus">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('MagicScepterUnique')"/>
+                     <IsTrue Value="Skill.IsSkillID('Skill1ID')"/>
+                  </Conditions>
+               </SkillModifier>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   <!--Magic Orb-->
+   <PerkDefinition Id="MagicOrbUniquePerk">
+      <TokenVariables>
+         <TokenVariable Key="DamageBonusValue" Value="(Module.Buffer * DamageBonusStep)"/>
+         <TokenVariable Key="DamageBonusStep" Value="1"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument Stat="HealthTotal"/>
+         <LocalizedArgument Value="ItemName_NoDLCTag_MagicOrbUnique" Style="Unique"/>
+         <StatArgument Stat="OverallDamage" Value="DamageBonusStep"/>
+      <StatArgument Stat="OverallDamage" Value="DamageBonusValue" DisplaySign="true" Interpreted="true"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Bonus Value="DamageBonusValue"/>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnTargetHit">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="IsTargetEnemyUnit"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnTargetKilled">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="IsTargetEnemyUnit"/>
+                     <IsFalse Value="TargetUnit.HealthTotal > AttackData.HealthDamage"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('MagicOrbUnique')"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="DamageBonusStep"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="Module.Buffer2 > 1"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <StatModifier Stat="OverallDamage" Value="DamageBonusValue"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   <!--Magic Staff-->
+   <PerkDefinition Id="MagicStaffUniquePerk">
+      <TokenVariables>
+         <TokenVariable Key="DamageAboveThresholdValue" Value="AttackData.HealthDamage > Owner.Health - ThresholdValue"/>
+         <TokenVariable Key="ThresholdValue" Value="1"/>
+         <TokenVariable Key="HasPerkTriggeredAlready" Value="Module.Buffer > 0"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument  Stat="HealthTotal" Value="ThresholdValue" DisplaySign="false" Style="KeyWordNb"/>
+         <StatusArgument Status="Invulnerable"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <GreyOut>
+               <IsTrue Value="HasPerkTriggeredAlready"/>
+            </GreyOut>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnAttackDataComputed">
+                  <Conditions>
+                     <IsTrue Value="Module.Buffer = 0"/>
+                     <IsTrue Value="DamageAboveThresholdValue"/>
+                  </Conditions>
+                  <Actions>
+                     <!-- Activate the perk -->
+                     <SetBufferTo BufferIndex="Buffer" Value="1"/>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <AttackDataModifier AttackDataParameter="HealthDamage" Value="Owner.Health - ThresholdValue"/>
+               <ApplyStatus Status="Invulnerable" TurnsCount ="-1">
+                  <PerkTargeting TargetingReference="Owner" TargetingMethod="Self">
+                     <DamageableTarget Type="Playable"/>
+                  </PerkTargeting>
+               </ApplyStatus>
+               <CastSkill SkillId="ImmortalityVisualEffect">
+                  <PerkTargeting TargetingReference="Owner" TargetingMethod="Self"/>
+               </CastSkill>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   <!--Tome Of Magic-->
+   <PerkDefinition Id="TomeOfMagicUniquePerk">
+      <TokenVariables>
+         <TokenVariable Key="SkillHasManaCost" Value="Skill.ManaCost > 0"/>
+         <TokenVariable Key="ManaThresholdReached" Value="ManaToSpendLeft = 0"/>
+         <TokenVariable Key="ManaToSpendLeft" Value="Max(0, ManaSpentThreshold - Module.Buffer)"/>
+         <TokenVariable Key="ManaSpentThreshold" Value="3"/>
+         <TokenVariable Key="RealManaSpent" Value="Module.Buffer3"/>
+         <TokenVariable Key="EnemiesHit" Value="3"/>
+         <TokenVariable Key="StrikeRange" Value="10"/>
+      </TokenVariables>
+
+      <LocArguments>
+         <StatArgument Stat="ManaTotal" Value="ManaSpentThreshold" DisplaySign="false" Style="KeyWordNb"/>
+         <LocalizedArgument Prefix="SkillName_" Value="LightningStrike_1TileAuto" Style="Skill"/>
+         <LocArgument Value="EnemiesHit" Interpreted="true" Style="KeyWordNb"/>
+         <LocArgument Value="StrikeRange" Interpreted="true" Style="KeyWordNb"/>
+         <StatArgument Stat="ManaTotal"/>
+         <LocArgument Value="ManaToSpendLeft" Interpreted="true" Style="KeyWordNb"/>
+      </LocArguments>
+
+      <View>
+         <DisplayInHUD>
+            <Buffer Value="ManaToSpendLeft"/>
+            <Highlight>
+               <IsTrue Value="SkillHasManaCost"/>
+            </Highlight>
+         </DisplayInHUD>
+         <SkillsToShow>
+            <SkillToShow Id="LightningStrike_1TileAuto"/>
+         </SkillsToShow>
+      </View>
+
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnSkillCastBegin">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer3" Value="Skill.ManaCost"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Actions>
+                     <IncreaseBuffer Value="RealManaSpent"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="ManaThresholdReached"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                     <SetBufferTo Value="Module.Buffer % ManaSpentThreshold"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillUndo">
+                  <Actions>
+                     <DecreaseBuffer Value="UndoneSkillData.ManaSpent"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <CastSkill SkillId="LightningStrike_1TileAuto">
+                  <PerkTargeting TargetingReference="Owner" TargetingMethod="DamageablesInRange" Range="StrikeRange" Amount="EnemiesHit" >
+                     <DamageableTarget Type="Enemy"/>
+                     <DamageableTarget Type="Boss"/>
+                  </PerkTargeting>
+               </CastSkill>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+     
+   <!--Druidic Staff-->
+   <PerkDefinition Id="DruidicStaffUniquePerk">
+      <TokenVariables>
+         <TokenVariable Key="MaxRange" Value="5"/>
+         <TokenVariable Key="HealthPercentageThreshold" Value="0.3"/>
+      </TokenVariables>
+
+      <LocArguments>
+         <LocArgument Value="MaxRange" Style="KeyWordNb"/>
+         <LocArgument Value="HealthPercentageThreshold * 100" Suffix="%" Interpreted="true" Style="KeyWordNb"/>
+         <StatArgument Stat="HealthTotal"/>
+         <LocalizedArgument Prefix="SkillName_" Value="DruidicStaffKill" Style="skill"/>
+      </LocArguments>
+
+      <View>
+         <DisplayInHUD>
+            <HoverDisplay>
+               <HoverRange Range="MaxRange"/>
+            </HoverDisplay>
+         </DisplayInHUD>
+      <SkillsToShow>
+         <SkillToShow Id="DruidicStaffKill"/>
+      </SkillsToShow>
+      </View>
+
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnPoisonProc">
+                  <Conditions>
+                     <IsFalse Value="OwnerIsTarget"/>
+                     <IsTrue Value="IsTargetEnemyUnit"/>
+                     <IsTrue Value="MaxRange > DistanceFromOwnerToTarget - 1"/>
+                     <IsTrue Value="TargetUnit.HealthTotal * HealthPercentageThreshold > TargetUnit.Health"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <CastSkill SkillId="DruidicStaffKill">
+                  <PerkTargeting TargetingReference="Target" TargetingMethod="Self">
+                  </PerkTargeting>
+               </CastSkill>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   <!--WarShield-->
+   <PerkDefinition Id="PerfectGuardUnique">
+      <TokenVariables>
+         <TokenVariable Key="DamagePerStack" Value="4"/>
+         <TokenVariable Key="PerkStacks" Value="Min(Max(0,Module.Buffer), MaxStacks)"/>
+         <TokenVariable Key="MaxStacks" Value="20"/>
+         <TokenVariable Key="WasAttackedThisTurn" Value="Module.Buffer2"/>
+         <TokenVariable Key="StackPerEnemy" Value="2"/>
+         <TokenVariable Key="StackLoosePerSkill" Value="1"/>
+         <TokenVariable Key="IsStackConsumePrevented" Value="Module.Buffer3"/>
+         <!--Added by uniaue perk-->
+         <TokenVariable Key="ResistanceDebuff" Value="15"/>
+         <TokenVariable Key="EnemiesAmount" Value="5"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Prefix="+" Value="DamagePerStack * StackPerEnemy" Suffix="%" Style="GoodNb" Interpreted="true"/>
+         <LocArgument Value="MaxStacks * DamagePerStack" Style="KeyWordNb" Interpreted="true"/>
+         <LocArgument Value="DamagePerStack" Suffix="%" Style="BadNb" Interpreted="true"/>
+         <LocArgument Prefix="+" Value="DamagePerStack * PerkStacks" Suffix="%" Style="GoodNb" Interpreted="true"/>
+         <!--Added by uniaue perk-->
+         <LocalizedArgument Prefix="SkillName_" Value="ShieldUp" Style="Skill"/>
+         <StatusArgument Status="Debuff" Stat="Resistance" TurnsCount="1" Value="-1 * ResistanceDebuff" Interpreted="true"/>
+         <LocArgument Value="EnemiesAmount" Style="KeyWordNb"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Bonus Value="DamagePerStack * PerkStacks"/>
+            <GreyOut>
+               <IsTrue Value="PerkStacks = 0"/>
+            </GreyOut>
+            <Highlight>
+               <IsTrue Value="PerkStacks > 0"/>
+               <IsTrue Value="Skill.IsFromItemWithTag('WarShield')"/>
+            </Highlight>
+         </DisplayInHUD>
+         <FeedbackActivationConditions>
+            <IsTrue Value="PerkStacks > 0"/>
+         </FeedbackActivationConditions>
+         <CompendiumEntries>
+            <CompendiumEntry Id="GameConcept_PerkDamage"/>
+         </CompendiumEntries>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnStartNightTurnPlayable">
+                  <Conditions>
+                     <IsTrue Value="WasAttackedThisTurn = 0"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Floor(PerkStacks/2)"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartNightTurnPlayable">
+                  <Conditions>
+                     <IsTrue Value="Module.Buffer > MaxStacks"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="MaxStacks"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartNightTurnEnemy">
+                  <Conditions>
+                     <IsTrue Value="Module.Buffer > MaxStacks"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="MaxStacks"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartNightTurnEnemy">
+                  <Conditions>
+                     <IsTrue Value="WasAttackedThisTurn > 0"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastBegin">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('WarShield')"/>
+                     <IsTrue Value="PerkStacks > 0"/>
+                     <IsTrue Value="IsStackConsumePrevented = 0"/>
+                  </Conditions>
+                  <Actions>
+                     <DecreaseBuffer Value="StackLoosePerSkill * Skill.ActionPointsCost"/>
+                     <RefreshPerkActivationFeedback RefreshView="true"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsFalse Value="Module.Buffer > 0"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnHitTaken">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="IsCasterEnemyUnit"/>
+                     <IsTrue Value="IsPlayableTurn"/>
+                     <IsTrue Value="PerkStacks = 0"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="StackPerEnemy"/>
+                     <IncreaseBuffer BufferIndex="Buffer2" Value="StackPerEnemy"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="1"/>
+                     <RefreshPerkActivationFeedback RefreshView="true"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnHitTaken">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="IsCasterEnemyUnit"/>
+                     <IsTrue Value="IsEnemyTurn"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="StackPerEnemy"/>
+                     <IncreaseBuffer BufferIndex="Buffer2" Value="StackPerEnemy"/>
+                     <RefreshPerkActivationFeedback RefreshView="true"/>
+                  </Actions>
+               </Event>
+               <!-- Reset Journa -->
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <SkillModifier ComputationStat="OverallDamage" Value="DamagePerStack * PerkStacks">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('WarShield')"/>
+                     <IsTrue Value="PerkStacks > 0"/>
+                     <IsTrue Value="IsStackConsumePrevented = 0"/>
+                  </Conditions>
+               </SkillModifier>
+            </Effects>
+         </BufferModule>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnTargetKilled">
+                  <Conditions>
+                     <IsTrue Value="IsTargetEnemyUnit"/>
+                     <IsTrue Value="HasSkill"/>
+                     <IsTrue Value="Skill.IsSkillID('ShieldUp5')"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('WarshieldUnique')"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <ApplyStatus Status="Debuff" Stat="Resistance" Value="ResistanceDebuff" TurnsCount="1">
+                  <PerkTargeting TargetingReference="Target" TargetingMethod="ClosestDamageablesInRange" Amount="EnemiesAmount" Range="10"/>
+               </ApplyStatus>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   
+   <!--Cannon-->
+   <PerkDefinition Id="OverheatUniquePerk">
+      <TokenVariables>
+         <!--<TokenVariable Key="SkillUsed" Value="Min(Module.Buffer, OverheatThreshold)"/>-->
+         <!--A decommenter si limite haute-->
+         <TokenVariable Key="SkillUsed" Value="Module.Buffer"/>
+         <TokenVariable Key="OverheatThreshold" Value="7"/>
+         <TokenVariable Key="CooldownPerTurn" Value="5"/>
+         <TokenVariable Key="SkillId" Value="OverheatSkill"/>
+         <TokenVariable Key="BastHealthCost" Value="4"/>
+         <TokenVariable Key="HeatlCostPerPoint" Value="4"/>
+         <TokenVariable Key="HeatIncrease" Value="1"/>
+         <TokenVariable Key="CanTriggerOverheat" Value ="Module.Buffer3"/>
+
+         <TokenVariable Key="HasHitEnoughUnits" Value="Module.Buffer2 > UnitsHitThreshold - 1"/>
+         <TokenVariable Key="CurrentUnitsHit" Value="Module.Buffer2"/>
+         <TokenVariable Key="UnitsHitThreshold" Value="5"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="OverheatThreshold" Style="KeyWordNb"/>
+         <LocArgument Prefix="+" Value="BastHealthCost" Style="BadNb"/>
+         <StatArgument Stat="HealthTotal"/>
+         <LocArgument  Value="HeatlCostPerPoint" Style="BadNb"/>
+         <LocalizedArgument Prefix="SkillName_" Value="SkillId" Style="Skill"/>
+         <LocArgument Value="CooldownPerTurn" Style="GoodNb" Prefix="-"/>
+         <LocArgument Value="SkillUsed" Style="KeyWordNb" Interpreted="true"/>
+         <LocArgument Value="HeatIncrease" Prefix="+" Style="BadNb"/>
+         <StatArgument Stat="ActionPointsTotal"/>
+         <StatArgument Stat="ManaTotal"/>
+         <LocArgument Value="UnitsHitThreshold" Style="KeyWordNb"/>
+         <LocalizedArgument Value="ItemName_NoDLCTag_CannonUnique" Style="Unique"/>
+      </LocArguments>
+      <View>
+         <SkillsToShow>
+            <SkillToShow Id="OverheatSkill"/>
+         </SkillsToShow>
+         <DisplayInHUD>
+            <Buffer Value="SkillUsed"/>
+            <GreyOut>
+               <IsFalse Value="SkillUsed > OverheatThreshold - 1"/>
+            </GreyOut>
+            <Highlight>
+               <IsTrue Value="SkillUsed > OverheatThreshold - 1"/>
+               <IsTrue Value="Skill.IsFromItemWithTag('Cannon')"/>
+            </Highlight>
+         </DisplayInHUD>
+         <FeedbackActivationConditions>
+            <IsTrue Value="SkillUsed > OverheatThreshold - 1"/>
+         </FeedbackActivationConditions>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('Cannon')"/>
+                     <!--<IsFalse Value="SkillUsed = OverheatThreshold"/>-->
+                     <!-- A décommenter si on veut mettre une limite haute-->
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="HeatIncrease * (Skill.BaseActionPointsCost + Skill.BaseManaCost)"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillUndo">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('RocketJump')"/>
+                  </Conditions>
+                  <Actions>
+                     <DecreaseBuffer BufferIndex="Buffer" Value="HeatIncrease * (Skill.BaseActionPointsCost + Skill.BaseManaCost)"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('Cannon')"/>
+                     <!--<IsTrue Value="SkillUsed = OverheatThreshold"/>-->
+                     <!-- A décommenter si on veut mettre une limite haute-->
+                     <IsTrue Value="SkillUsed > OverheatThreshold - 1"/>
+                     <IsTrue Value="CanTriggerOverheat = 1"/>
+                  </Conditions>
+                  <Actions>
+                     <RefreshPerkActivationFeedback RefreshView="true"/>
+                     <!--<SetBufferTo BufferIndex="Buffer" Value="OverheatThreshold"/>-->
+                     <!-- A décommenter si on veut mettre une limite haute-->
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('Cannon')"/>
+                     <IsFalse Value="CanTriggerOverheat = 1"/>
+                     <IsTrue Value="SkillUsed > OverheatThreshold - 1"/>
+                  </Conditions>
+                  <Actions>
+                     <RefreshPerkActivationFeedback RefreshView="true"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="1"/>
+                  </Actions>
+               </Event>
+               <!--<Event EffectTime="OnEndNightTurnPlayable">
+                  <Conditions>
+                     <IsTrue Value="Module.Buffer > OverheatThreshold"/>
+                  </Conditions>
+						<Actions>
+							<SetBufferTo BufferIndex="Buffer" Value="OverheatThreshold"/>
+						</Actions>
+					</Event>-->
+               <!-- A décommenter si on veut mettre une limite haute-->
+               <Event EffectTime="OnEndNightTurnPlayable">
+                  <Actions>
+                     <DecreaseBuffer BufferIndex="Buffer" Value="CooldownPerTurn"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnEndNightTurnPlayable">
+                  <Conditions>
+                     <IsFalse Value="SkillUsed > 0"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnEndNightTurnPlayable">
+                  <Conditions>
+                     <IsFalse Value="SkillUsed > OverheatThreshold - 1"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnTargetHit">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('CannonUnique')"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnTargetHit">
+                  <Conditions>
+                     <IsTrue Value="HasHitEnoughUnits"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('CannonUnique')"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastBegin">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <SkillModifier ComputationStat="HealthCost" Value=" BastHealthCost * -1 + (Skill.BaseActionPointsCost + Skill.BaseManaCost) * (HeatlCostPerPoint * -1)">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('Cannon')"/>
+                     <!--<IsTrue Value="SkillUsed = OverheatThreshold"/>-->
+                     <!-- A décommenter si on veut mettre une limite haute-->
+                     <IsTrue Value="SkillUsed > OverheatThreshold - 1"/>
+                  </Conditions>
+               </SkillModifier>
+               <CastSkill SkillId="OverheatSkill">
+                  <PerkTargeting TargetingReference="Caster" TargetingMethod="Self"/>
+               </CastSkill>
+            </Effects>
+         </BufferModule>
+         <!--<BufferModule>
+            <Events>
+               
+            </Events>
+            <Effects>
+               <CastSkill SkillId="OverheatSkill">
+                  <PerkTargeting TargetingReference="Caster" TargetingMethod="Self"/>
+               </CastSkill>
+            </Effects>
+         </BufferModule>-->
+      </Modules>
+   </PerkDefinition>
+   
+   <!--Gauntlet-->
+   <PerkDefinition Id="GauntletUniquePerk">
+      <TokenVariables>
+         <TokenVariable Key="TotalRangeBonus" Value="((BaseRangeBonus + (SkillRangeModifier * AddedRangeBonus)) * CanActivatePerk)" />
+         <TokenVariable Key="SkillRangeModifier" Value="(BooleanChoice(HasOwner,Owner.SkillRangeModifier,0))" />
+			<TokenVariable Key="BaseRangeBonus" Value="6" />
+         <TokenVariable Key="AddedRangeBonus" Value="3"/>
+			<!--<TokenVariable Key="OverallDamageBonus" Value="50"/>-->
+         <TokenVariable Key="PerkStacks" Value="Max(0,EnemiesHitThreshold - Module.Buffer)"/>
+			<TokenVariable Key="EnemiesHitThreshold" Value="6"/>
+			<TokenVariable Key="CanActivatePerk" Value="Module.Buffer3"/>
+      
+         <TokenVariable Key="ActionPointToManaCostRatio" Value="3"/>
+         <TokenVariable Key="HasMissingMana" Value="Owner.ManaTotal > Owner.Mana" />
+         <TokenVariable Key="HasEnoughMana" Value="Owner.Mana > Owner.ManaTotal * ManaPercentage"/>
+         <TokenVariable Key="ManaPercentage" Value="0.1"/>
+         <TokenVariable Key="RestoredMana" Value="Floor(UnlockedManaRegen * ManaRegenFactor)"/>
+         <TokenVariable Key="UnlockedManaRegen" Value="(BooleanChoice(HasOwner,Owner.UnlockedManaRegen,0))"/>
+         <TokenVariable Key="ManaRegenFactor" Value="0.5"/>
+      </TokenVariables>
+
+      <LocArguments>
+         <LocArgument Value="EnemiesHitThreshold" Style="KeyWordNb"/>
+         <!--<LocArgument Prefix="+" Value="OverallDamageBonus" Suffix="%" Style="GoodNb"/>-->
+         <LocalizedArgument Value="SkillEffectName_NoDodge" Style="NoDodge"/>
+         <StatArgument Stat="SkillRangeModifier" Value="BaseRangeBonus"/>
+         <LocArgument Value="PerkStacks" Interpreted="true" Style="KeyWordNb"/>
+         <LocArgument Prefix="+" Value="BaseRangeBonus" Style="GoodNb"/>
+         <LocArgument Value="AddedRangeBonus" Style="GoodNb"/>
+         <StatArgument Stat="SkillRangeModifier"/>
+         <LocArgument Prefix="+" Value="TotalRangeBonus" Interpreted="true" Style="GoodNb"/>
+         <LocalizedArgument Value="SkillEffectName_IgnoreLineOfSight" Style="Vision"/>
+      
+         <LocArgument Value="ManaPercentage * 100" Suffix="%" Interpreted="true" Style="KeyWordNb"/>
+         <StatArgument Stat="ManaTotal"/>
+         <LocalizedArgument Value="ItemName_NoDLCTag_GauntletUnique" Style="Unique"/>
+         <StatArgument Stat="ActionPointsTotal"/>
+         <LocArgument Value="ActionPointToManaCostRatio" Style="KeyWordNb"/>
+         <LocArgument Value="ManaRegenFactor * 100" Suffix="%" Interpreted="true" Style="KeyWordNb"/>
+         <StatArgument Stat="ManaRegen"/>
+         <StatArgument Stat="ManaTotal" Value="RestoredMana" Interpreted="true" DisplaySign="true"/>
+      </LocArguments>
+
+		<View>
+			<DisplayInHUD>
+				<Buffer Value="PerkStacks"/>
+            <Bonus Value="TotalRangeBonus"/>
+				<GreyOut>
+					<IsFalse Value="PerkStacks = 0"/>
+				</GreyOut>
+				<Highlight> 
+					<IsTrue Value="PerkStacks = 0"/>
+					<IsTrue Value="Skill.IsFromItemWithTag('Gauntlet')"/>
+				</Highlight>
+			</DisplayInHUD>
+			<FeedbackActivationConditions>
+				<IsFalse Value="PerkStacks = EnemiesHitThreshold"/>
+			</FeedbackActivationConditions>
+         <CompendiumEntries>
+            <!--<CompendiumEntry Id="GameConcept_PerkDamage"/>-->
+            <CompendiumEntry Id="SkillEffect_NoDodge"/>
+            <CompendiumEntry Id="SkillEffect_IgnoreLineOfSight"/>
+         </CompendiumEntries>
+		</View>
+
+      <Modules>
+         <BufferModule>
+				<Events>
+					<Event EffectTime="OnTargetHit">
+						<Conditions>
+							<IsTrue Value="Skill.IsFromItemWithTag('Gauntlet')"/>
+							<IsTrue Value="IsTargetUnit"/>
+							<IsFalse Value="PerkStacks = 0"/>
+							<IsTrue Value="CanActivatePerk = 0"/>
+						</Conditions>
+						<Actions>
+							<IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+						</Actions>
+					</Event>
+					<Event EffectTime="OnSkillCastEnd">
+						<Conditions>
+							<IsTrue Value="Skill.IsFromItemWithTag('Gauntlet')"/>
+							<IsTrue Value="PerkStacks = 0"/>
+							<!--<IsTrue Value="Module.Buffer2 ! 0"/>-->
+							<IsTrue Value="CanActivatePerk = 1"/>
+						</Conditions>
+						<Actions>
+							<SetBufferTo BufferIndex="Buffer" Value="0"/>
+							<SetBufferTo BufferIndex="Buffer2" Value="0"/>
+							<SetBufferTo BufferIndex="Buffer3" Value="0"/>
+							<RefreshPerkActivationFeedback RefreshView="true"/>
+						</Actions>
+					</Event>
+					<Event EffectTime="OnSkillCastEnd">
+						<Conditions>
+							<IsTrue Value="Skill.IsFromItemWithTag('Gauntlet')"/>
+							<IsTrue Value="PerkStacks = 0"/>
+							<IsTrue Value="CanActivatePerk = 0"/>
+						</Conditions>
+						<Actions>
+							<RefreshPerkActivationFeedback RefreshView="true"/>
+							<SetBufferTo BufferIndex="Buffer3" Value="1"/>
+						</Actions>
+					</Event>
+					<!-- Reset Journa -->
+					<Event EffectTime="OnStartProductionTurn">
+						<Actions>
+							<SetBufferTo BufferIndex="Buffer" Value="0"/>
+							<SetBufferTo BufferIndex="Buffer2" Value="0"/>
+							<SetBufferTo BufferIndex="Buffer3" Value="0"/>
+						</Actions>
+					</Event>
+				</Events>
+				<Effects>
+					<StatModifier Stat="GauntletRangeModifier" Value="TotalRangeBonus"/>
+					<!--<SkillModifier ComputationStat="OverallDamage" Value="OverallDamageBonus">
+                  <Conditions>
+							<IsTrue Value="Skill.IsFromItemWithTag('Gauntlet')"/>
+							<IsTrue Value="PerkStacks = 0"/>
+						</Conditions>
+					</SkillModifier>-->
+               <AddSkillEffect>
+                  <Conditions>
+                     <IsTrue Value="HasPerkData"/>
+                     <IsTrue Value="HasSkill"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('Gauntlet')"/>
+                     <IsTrue Value="PerkStacks = 0"/>
+                     <IsTrue Value="CanActivatePerk = 1"/>
+                  </Conditions>
+                  <SkillEffects>
+                     <NoDodge/>
+                     <IgnoreLineOfSight/>
+                  </SkillEffects>
+               </AddSkillEffect>
+				</Effects>
+			</BufferModule>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnStartNightTurnPlayable">
+                  <Conditions>
+                     <IsTrue Value="HasMissingMana"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <RestoreStat Stat="Mana" Value="RestoredMana"/>
+               <SkillModifier ComputationStat="ManaCost" Value="-ActionPointToManaCostRatio * Skill.BaseActionPointsCost" AffectBase="true">
+                  <Conditions>
+                     <IsTrue Value="HasPerkData"/>
+                     <IsTrue Value="HasSkill"/>
+                     <IsTrue Value="HasEnoughMana"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('GauntletUnique')"/>
+                  </Conditions>
+               </SkillModifier>
+               <ComputationStatLocker ComputationStat="ActionPointsCost">
+                  <Conditions>
+                     <IsTrue Value="HasPerkData"/>
+                     <IsTrue Value="HasEnoughMana"/>
+                     <IsTrue Value="HasSkill"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('GauntletUnique')"/>
+                  </Conditions>
+               </ComputationStatLocker>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   
+   <!--Claws-->
+   <PerkDefinition Id="BloodDrinkerUnique">
+      <TokenVariables>
+         <TokenVariable Key="PerkStack" Value="Max(0,Threshold - Module.Buffer)"/>
+         <TokenVariable Key="IsTargetIsolated" Value="TargetUnit.IsIsolated"/>
+         <TokenVariable Key="Threshold" Value="3"/>
+         <TokenVariable Key="DebuffDamage" Value="-40"/>
+         <TokenVariable Key="PerkCanBeClean" Value="Module.Buffer2"/>
+         <TokenVariable Key="TargetWasHit" Value="Module.Buffer3"/>
+         <!--Unique perk bonus-->
+         <TokenVariable Key="AddedRange" Value="1"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="Threshold" Style="KeyWordNb"/>
+         <LocalizedArgument Value="SkillEffectName_MultiHit" Style="MultiHit"/>
+         <LocArgument Value="3" Style="DamageNb" Prefix=" x"/>
+         <LocArgument Value="DebuffDamage" Suffix="%" Style="BadNb"/>
+         <!--Unique perk bonus-->
+         <LocalizedArgument Prefix="SkillName_" Value="TearingGrasp" Style="skill"/>
+         <StatArgument Stat="SkillRangeModifier" Value="AddedRange" DisplaySign="true"/>
+         <StatArgument Stat="SkillRangeModifier"/>
+      </LocArguments>
+      <View>
+         <CompendiumEntries>
+            <CompendiumEntry Id="SkillEffect_MultiHit"/>
+            <CompendiumEntry Id="GameConcept_Isolated"/>
+         </CompendiumEntries>
+         <DisplayInHUD>
+            <Buffer Value="PerkStack"/>
+            <Highlight>
+               <IsTrue Value="PerkStack = 0"/>
+               <IsTrue Value="Skill.IsFromItemWithTag('Claws')"/>
+            </Highlight>
+            <GreyOut>
+               <IsFalse Value="PerkStack = 0"/>
+            </GreyOut>
+         </DisplayInHUD>
+         <FeedbackActivationConditions>
+            <IsTrue Value="PerkStack = 0"/>
+         </FeedbackActivationConditions>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnStartNightTurnPlayable">
+                  <Conditions>
+                     <IsTrue Value="PerkStack = 0"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <RefreshPerkActivationFeedback RefreshView="true"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnTargetHit">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('Claws')"/>
+                     <IsFalse Value="PerkStack = 0"/>
+                     <IsTrue Value="IsTargetUnit"/>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="IsTargetIsolated"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                     <RefreshPerkActivationFeedback RefreshView="true"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastBegin">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('Claws')"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastBegin">
+                  <Conditions>
+                     <IsTrue Value="PerkStack = 0"/>
+                     <IsTrue Value="Skill.IsAttack"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               <!--At least one unit is hit when perk is active-->
+               <Event EffectTime="OnTargetHit">
+                  <Conditions>
+                     <IsTrue Value="PerkStack = 0"/>
+                     <IsTrue Value="IsTargetUnit"/>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsFalse Value="IsTargetIsolated"/>
+                  </Conditions>
+                  <Actions>
+                     <DecreaseBuffer BufferIndex="Buffer2" Value="1"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="1"/>
+                  </Actions>
+               </Event>
+               <!--Revert cleanse if injured target hit-->
+               <Event EffectTime="OnTargetHit">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('Claws')"/>
+                     <IsTrue Value="PerkStack = 0"/>
+                     <IsTrue Value="IsTargetUnit"/>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="IsTargetIsolated"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer2" Value="99"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="1"/>
+                  </Actions>
+               </Event>
+               <!-- Data Reset-->
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('Claws')"/>
+                     <IsTrue Value="PerkStack = 0"/>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsFalse Value="PerkCanBeClean > 0"/>
+                     <IsTrue Value="TargetWasHit = 1"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <RefreshPerkActivationFeedback RefreshView="true"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <AddSkillEffect>
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('Claws')"/>
+                     <IsTrue Value="PerkStack = 0"/>
+                     <IsTrue Value="Skill.IsAttack"/>
+                  </Conditions>
+                  <SkillEffects>
+                     <MultiHit HitsCount="3"/>
+                  </SkillEffects>
+               </AddSkillEffect>
+               <SkillModifier ComputationStat="OverallDamage" Value="DebuffDamage">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('Claws')"/>
+                     <IsTrue Value="PerkStack = 0"/>
+                     <IsTrue Value="Skill.IsAttack"/>
+                  </Conditions>
+               </SkillModifier>
+            </Effects>
+         </BufferModule>
+         <BufferModule>
+            <Effects>
+               <ReplaceItemSkill SkillIdToReplace="TearingGrasp" SkillIdReplacement="TearingGraspUnique" LinkedSkillIdForUsesPerTurn="TearingGrasp">
+                  <Conditions>
+                     <IsTrue Value="PerkStack = 0"/>
+                  </Conditions>
+               </ReplaceItemSkill>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+
+
+   <!--Boomerang-->
+   <PerkDefinition Id="StrongThrowUnique">
+      <TokenVariables>
+         <TokenVariable Key="STStacks" Value="Module.Buffer"/>
+         <TokenVariable Key="TotalRange" Value="PerkRange + (BooleanChoice(HasOwner, Owner.SkillRangeModifier, 0))"/>
+         <TokenVariable Key="PerkRange" Value="10"/>
+         <TokenVariable Key="SkillId" Value="StrongThrowSkill"/>
+         <TokenVariable Key="SkillDamage" Value="BaseDamage + StunTotal"/>
+         <TokenVariable Key="StunTotal" Value="(BooleanChoice(HasOwner, Floor(Owner.StunChanceModifier * StunPercentage), 0))"/>
+         <TokenVariable Key="StunPercentage" Value="1.4"/>
+         <TokenVariable Key="BaseDamage" Value="50"/>
+         <TokenVariable Key="UniqueBonusStunChance" Value="35"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="TotalRange" Style="KeywordNb" Interpreted="true"/>
+         <LocalizedArgument Prefix="SkillName_" Value="StrongThrowSkill" Style="Skill"/>
+         <LocArgument Value="StunPercentage * 100" Suffix="%" Style="KeyWordNb" Interpreted="true"/>
+         <StatArgument Stat="StunChanceModifier"/>
+         <LocalizedArgument Prefix="SkillName_" Value="SkillId" Style="Skill"/>
+         <LocArgument Value="SkillDamage" Interpreted="true" Style="Damage"/>
+         <LocArgument Value="BaseDamage" Style="KeyWordNb"/>
+         <LocalizedArgument Prefix="SkillName_" Value="PainfulSpin" Style="Skill"/>
+
+         <LocalizedArgument Prefix="SkillName_" Value="PreciseTargetting" Style="Skill"/>
+         <StatArgument Stat="StunChanceModifier" Value="UniqueBonusStunChance" DisplaySign="false"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Buffer Value="Module.Buffer"/>
+            <Highlight>
+               <IsTrue Value="STStacks > 0"/>
+            </Highlight>
+            <HoverDisplay>
+               <HoverRange Range="TotalRange"/>
+            </HoverDisplay>
+         </DisplayInHUD>
+         <SkillsToShow>
+            <SkillToShow Id="StrongThrowSkill"/>
+         </SkillsToShow>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('Boomerang')"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="BooleanChoice(Skill.IsSkillID('PainfulSpin'),2,1)"/>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <CastSkill SkillId="StrongThrowSkill">
+                  <PerkTargeting TargetingReference="Caster" TargetingMethod="ClosestTarget" Range="TotalRange" Amount="STStacks">
+                     <DamageableTarget Type="Enemy"/>
+                     <HasStatus StatusType="Stun"/>
+                  </PerkTargeting>
+               </CastSkill>
+               <ResetBuffer ResetValue="0"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+
+
+   <!--Mana FLower-->
+   <PerkDefinition Id="LifeLoanUnique">
+      <TokenVariables>
+         <TokenVariable Key="DebuffSpellId" Value="CleansingSpore"/>
+         <TokenVariable Key="PoisonedEnemies" Value="Ceil((Plague * (EnemyPoisonScaling + PoisonScalingOnLevel)) * (PoisonDamageModifier/100))"/>
+         <TokenVariable Key="PoisonDamageModifier" Value="(BooleanChoice(HasOwner,Owner.PoisonDamageModifier,0))"/>
+         <TokenVariable Key="MagicDamageBonus" Value="Plague * ScalingMagicDamage"/>
+         <TokenVariable Key="PoisonScalingOnLevel" Value="(Floor(PlayableUnitLevel/PerLevelHeroScale) * PoisonScalingLevelMultiplicative)"/>
+         <TokenVariable Key="PlayableUnitLevel" Value="(BooleanChoice(HasOwner,Owner.Level,1))"/>
+         <TokenVariable Key="PlayerPoisonScalingOnHit" Value="0.25"/>
+         <TokenVariable Key="PerLevelHeroScale" Value="3"/>
+
+         <TokenVariable Key="ApplyStatusRange" Value="4"/>
+         <TokenVariable Key="PoisonPlayerDuration" Value="3"/>
+
+         <TokenVariable Key="Plague" Value="(Module.Buffer)"/>
+
+         <TokenVariable Key="EnemyPoisonScaling" Value="3"/>
+         <TokenVariable Key="PoisonScalingLevelMultiplicative" Value="1"/>
+         <TokenVariable Key="ScalingMagicDamage" Value="1"/>
+         <TokenVariable Key="BaseStackCost" Value="0"/>
+         <TokenVariable Key="AdditionnalStackPerCost" Value="1"/>
+         <TokenVariable Key="DurationPoisonEnemies" Value="2"/>
+
+         <TokenVariable Key="IsPoisonThresholdReached" Value="Module2.Buffer5 > PoisonDamageThreshold - 1"/>
+         <TokenVariable Key="PoisonDamageThreshold" Value="15"/>
+         <TokenVariable Key="MaxHealthBonus" Value="40"/>
+         <TokenVariable Key="TotalPoisonProc" Value="Module2.Buffer5"/>
+
+         <TokenVariable Key="BonusToMaximumHealth" Value="1000"/>
+      </TokenVariables>
+      <LocArguments>
+         <LocArgument Value="AdditionnalStackPerCost" Style="GoodNb"/>
+         <StatArgument Stat="ActionPointsTotal"/>
+         <StatArgument Stat="ManaTotal"/>
+         <LocalizedArgument Prefix="SkillName_" Value="CleansingSpores" Style="Skill"/>
+         <LocArgument Value="Plague" Style="GoodNb" Interpreted="true"/>
+         <StatusArgument Value="EnemyPoisonScaling" Style="GoodNb" Status="Poison" TurnsCount="DurationPoisonEnemies"/>
+         <LocArgument Value="PoisonScalingLevelMultiplicative" Style="GoodNb" Prefix="+"/>
+         <StatArgument Stat="MagicalDamage" Value="ScalingMagicDamage" DisplaySign="true"/>
+         <StatusArgument Value="PoisonedEnemies" Style="GoodNb" Status="Poison" TurnsCount="DurationPoisonEnemies" Interpreted="true"/>
+         <StatusArgument Value="Round(PoisonedEnemies*PlayerPoisonScalingOnHit)" Style="GoodNb" Status="Poison" TurnsCount="DurationPoisonEnemies" Interpreted="true"/>
+         <LocArgument Value="PlayerPoisonScalingOnHit*100" Interpreted="true" Suffix="%" Style="KeywordNb"/>
+         <LocArgument Value="PerLevelHeroScale" Style="KeywordNb"/>
+         
+         <LocArgument Value="PoisonDamageThreshold" Style="GoodNb"/>
+         <StatArgument Stat="HealthTotal" Value="MaxHealthBonus" DisplaySign="true"/>
+         
+         <LocArgument Value="BonusToMaximumHealth" Prefix="+" Style="GoodNb"/>
+         <StatArgument Stat="HealthTotal"/>
+      </LocArguments>
+      <View>
+         <CompendiumEntries>
+            <CompendiumEntry Id="SkillEffect_Poison"/>
+            <CompendiumEntry Id="SkillEffect_Purge"/>
+         </CompendiumEntries>
+         <DisplayInHUD>
+            <Buffer Value="Plague"/>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Events>
+               <!-- Plague Calculation -->
+               <Event EffectTime="OnSkillCastBegin">
+                  <Conditions>
+                     <IsFalse Value="Skill.IsSkillID('CleansingSpores')"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('ManaFlower')"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="BaseStackCost + (Skill.BaseActionPointsCost + Skill.BaseManaCost) * (AdditionnalStackPerCost)"/>
+                  </Actions>
+               </Event>
+               <!-- Cleasing Spore Shit -->
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('CleansingSpores')"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('ManaFlower')"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               <!-- Cleasing Spore Shit -->
+               <Event EffectTime="OnStartNightTurnEnemy">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer2" Value="1"/>
+                  </Actions>
+               </Event>
+
+               <Event EffectTime="OnHitTaken">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="IsEnemyTurn"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+
+               <Event EffectTime="OnStartNightTurnPlayable">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               <!-- Daily Reset -->
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+
+               
+            </Events>
+            <Effects>
+               <StatModifier Stat="MagicalDamage" Value="MagicDamageBonus"/>
+
+               <ApplyStatus Status="Poison" TurnsCount="DurationPoisonEnemies" Value="Round(PoisonedEnemies*PlayerPoisonScalingOnHit)">
+                  <Conditions>
+                     <IsTrue Value="Plague > 0"/>
+                     <IsTrue Value="Module.Buffer2 = 1"/>
+                  </Conditions>
+                  <PerkTargeting Amount="1" Range="ApplyStatusRange" TargetingMethod="Self" TargetingReference="Owner">
+                     <DamageableTarget Type="Playable"/>
+                  </PerkTargeting>
+               </ApplyStatus>
+
+               <ApplyStatus Status="Poison" TurnsCount="DurationPoisonEnemies" Value="PoisonedEnemies">
+                  <Conditions>
+                     <IsTrue Value="Plague > 0"/>
+                     <IsTrue Value="Module.Buffer2 = 1"/>
+                  </Conditions>
+                  <PerkTargeting Amount="99" Range="ApplyStatusRange" TargetingMethod="DamageablesInRange" TargetingReference="Owner">
+                     <DamageableTarget Type="Enemy"/>
+                     <DamageableTarget Type="Boss"/>
+                  </PerkTargeting>
+               </ApplyStatus>
+
+               <CastSkill SkillId="BlankCleansingSpores">
+                  <Conditions>
+                     <IsTrue Value="Plague > 0"/>
+                     <IsTrue Value="Module.Buffer2 = 1"/>
+                  </Conditions>
+                  <PerkTargeting Amount="1" Range="ApplyStatusRange" TargetingMethod="Self" TargetingReference="Owner">
+                     <DamageableTarget Type="Playable"/>
+                  </PerkTargeting>
+               </CastSkill>
+
+               <AddSkillEffect>
+                  <Conditions>
+                     <IsTrue Value="Plague > 0"/>
+                     <IsTrue Value="Skill.IsSkillID('CleansingSpores')"/>
+                  </Conditions>
+                  <SkillEffects>
+                     <SurroundingEffect>
+                        <Poison>
+                           <BaseChance>1</BaseChance>
+                           <DamagePerTurn>PoisonedEnemies</DamagePerTurn>
+                           <TurnsCount>DurationPoisonEnemies</TurnsCount>
+                           <IgnorePoisonDamageScale/>
+                        </Poison>
+                     </SurroundingEffect>
+                  </SkillEffects>
+               </AddSkillEffect>
+            </Effects>
+         </BufferModule>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnPoisonProc">
+                  <Conditions>
+                     <IsTrue Value="OwnerIsTarget"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer5" Value="AttackData.HealthDamage"/>
+                     <!--<Log Formatting="Dégâts de poison subit : {0}" Value="AttackData.HealthDamage"/>
+                     <Log Formatting="Dégâts de poison subit totaux : {0}" Value="TotalPoisonProc"/>-->
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnPoisonProc">
+                  <Conditions>
+                     <IsTrue Value="OwnerIsTarget"/>
+                     <IsTrue Value="IsPoisonThresholdReached"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer8" Value="MaxHealthBonus"/>
+                     <SetBufferTo BufferIndex="Buffer5" Value="Module2.Buffer5 - PoisonDamageThreshold"/>
+                     <!--<Log Formatting="Vie augmentée de : {0}" Value="MaxHealthBonus"/>-->
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <!--<SetBufferTo BufferIndex="Buffer8" Value="0"/>-->
+                     <SetBufferTo BufferIndex="Buffer5" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <StatModifier Stat="HealthTotal" Value="Module2.Buffer8"/>
+               <StatBoundaryModifier MaxModifier="BonusToMaximumHealth" Stat="HealthTotal"/>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+   
+</PerkDefinitions>
