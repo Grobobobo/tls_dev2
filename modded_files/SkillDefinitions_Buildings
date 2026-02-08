@@ -107,7 +107,7 @@
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <Stun>
-                  <BaseChance>1</BaseChance>
+                  <BaseChance>1.5</BaseChance>
                </Stun>
                <NoDodge/>
             </SkillEffects>
@@ -163,12 +163,12 @@
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <Stun>
-                  <BaseChance>1</BaseChance>
+                  <BaseChance>1.5</BaseChance>
                </Stun>
                <NoDodge/>
                <SurroundingEffect>
                   <Stun>
-                     <BaseChance>0.65</BaseChance>
+                     <BaseChance>1</BaseChance>
                   </Stun>
                </SurroundingEffect>
             </SkillEffects>
@@ -213,8 +213,10 @@
          <CanAffectBuildings>false</CanAffectBuildings>
       </AffectedUnits>
       <Range Min="0" Max="0"/>
-      <AreaOfEffect OriginX="0" OriginY="0">
-         X
+      <AreaOfEffect OriginX="1" OriginY="1">
+         _X_
+         XXX
+         _X_
       </AreaOfEffect>
       <SkillAction>
          <Attack>
@@ -270,9 +272,9 @@
       </AffectedUnits>
       <Range Min="0" Max="0"/>
       <AreaOfEffect OriginX="1" OriginY="1">
-         _e_
          eXe
-         _e_
+         XXX
+         eXe
       </AreaOfEffect>
       <SkillAction>
          <Attack>
@@ -334,8 +336,10 @@
          <CanAffectBuildings>false</CanAffectBuildings>
       </AffectedUnits>
       <Range Min="0" Max="0"/>
-      <AreaOfEffect OriginX="0" OriginY="0">
-         X
+      <AreaOfEffect OriginX="1" OriginY="1">
+         _X_
+         XXX
+         _X_
       </AreaOfEffect>
       <SkillAction>
          <Attack>
@@ -391,9 +395,9 @@
       </AffectedUnits>
       <Range Min="0" Max="0"/>
       <AreaOfEffect OriginX="1" OriginY="1">
-         _e_
          eXe
-         _e_
+         XXX
+         eXe
       </AreaOfEffect>
       <SkillAction>
          <Attack>
@@ -529,7 +533,7 @@
             <SkillEffects>
                <NoDodge/>
                <SurroundingEffect>
-                  <Damage Multiplier="0.75"/>
+                  <Damage Multiplier="1"/>
                </SurroundingEffect>
             </SkillEffects>
          </Attack>
@@ -648,7 +652,7 @@
             <SkillEffects>
                <NoDodge/>
                <SurroundingEffect>
-                  <Damage Multiplier="0.75"/>
+                  <Damage Multiplier="1"/>
                </SurroundingEffect>
             </SkillEffects>
          </Attack>

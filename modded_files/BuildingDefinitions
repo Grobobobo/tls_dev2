@@ -1111,7 +1111,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>6</MaterialsCost>
+         <MaterialsCost>11</MaterialsCost>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
             <GroundCategory>Outside</GroundCategory>
@@ -1155,7 +1155,7 @@
                </Goal>
             </Goals>
          </Behavior>
-         <MaximumTrapUsage>3</MaximumTrapUsage>
+         <MaximumTrapUsage>2</MaximumTrapUsage>
          <SkillProgressions>
             <SkillProgression Id="Spe_SlowTrapTriggered" GlyphFlagUnlock="SpecializedTraps"/>
          </SkillProgressions>
@@ -1179,7 +1179,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>10</MaterialsCost>
+         <MaterialsCost>9</MaterialsCost>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
             <GroundCategory>Outside</GroundCategory>
@@ -1224,7 +1224,7 @@
                </Goal>
             </Goals>
          </Behavior>
-         <MaximumTrapUsage>2</MaximumTrapUsage>
+         <MaximumTrapUsage>1</MaximumTrapUsage>
          <SkillProgressions>
             <SkillProgression Id="Spe_StunTrapTriggered" GlyphFlagUnlock="SpecializedTraps"/>
          </SkillProgressions>
@@ -1247,7 +1247,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>12</MaterialsCost>
+         <MaterialsCost>13</MaterialsCost>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
             <GroundCategory>Outside</GroundCategory>
@@ -1317,7 +1317,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>55</MaterialsCost>
+         <MaterialsCost>60</MaterialsCost>
          <BuildLimit>Ballistas</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -1399,7 +1399,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>90</MaterialsCost>
+         <MaterialsCost>100</MaterialsCost>
          <BuildLimit>Ballistas</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -1480,7 +1480,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>90</MaterialsCost>
+         <MaterialsCost>100</MaterialsCost>
          <BuildLimit>Ballistas</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -1560,7 +1560,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>90</MaterialsCost>
+         <MaterialsCost>100</MaterialsCost>
          <BuildLimit>Ballistas</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -1638,7 +1638,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>80</MaterialsCost>
+         <MaterialsCost>88</MaterialsCost>
          <BuildLimit>12</BuildLimit>
          <IsBuyableConditions>
             <ResearchFlag MustBeDefined="false" Flag="CatapultReplacedByCatapultAuto"/>
@@ -1857,7 +1857,7 @@
       </Damageable>
 
       <Construction>
-         <MaterialsCost>80</MaterialsCost>
+         <MaterialsCost>72</MaterialsCost>
          <BuildLimit>Seeds</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -1879,7 +1879,7 @@
       <Battle>
          <HasDisabledState>true</HasDisabledState>
          <Skills>
-            <Skill NightUsesCount="2">PoisonSeedSkill</Skill>
+            <Skill NightUsesCount="3">PoisonSeedSkill</Skill>
          </Skills>
       </Battle>
    </BuildingDefinition>
@@ -1899,7 +1899,7 @@
       </Damageable>
 
       <Construction>
-         <MaterialsCost>80</MaterialsCost>
+         <MaterialsCost>72</MaterialsCost>
          <BuildLimit>Seeds</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -1921,7 +1921,7 @@
       <Battle>
          <HasDisabledState>true</HasDisabledState>
          <Skills>
-            <Skill NightUsesCount="2">IsolationSeedSkill</Skill>
+            <Skill NightUsesCount="3">IsolationSeedSkill</Skill>
          </Skills>
       </Battle>
    </BuildingDefinition>
@@ -1942,7 +1942,7 @@
       </Damageable>
 
       <Construction>
-         <MaterialsCost>80</MaterialsCost>
+         <MaterialsCost>72</MaterialsCost>
          <BuildLimit>Seeds</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -1964,7 +1964,7 @@
       <Battle>
 		 <HasDisabledState>true</HasDisabledState>
          <Skills>
-            <Skill NightUsesCount="2">PurgingSeedSkill</Skill>
+            <Skill NightUsesCount="3">PurgingSeedSkill</Skill>
          </Skills>
       </Battle>
    </BuildingDefinition>
@@ -5923,7 +5923,7 @@
 
       <Damageable>
          <HealthTotal>27</HealthTotal>
-         <TotalPanicValue>0.5</TotalPanicValue>
+         <TotalPanicValue>0.4</TotalPanicValue>
          <DamagedParticles Id="Damaged_Particles_Wood"/>
       </Damageable>
 

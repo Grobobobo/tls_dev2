@@ -3220,7 +3220,7 @@
 
    <SkillDefinition Id="PoisonSeedSkill">
 
-      <Range Min="0" Max="3"/>
+      <Range Min="0" Max="6"/>
 
       <AreaOfEffect OriginX="1" OriginY="1">
 
@@ -3250,7 +3250,7 @@
 
                   <BaseChance>100</BaseChance>
 
-                  <TurnsCount>3</TurnsCount>
+                  <TurnsCount>2</TurnsCount>
 
                </Contagion>
 
@@ -3260,7 +3260,7 @@
 
                   <DamagePerTurn>50</DamagePerTurn>
 
-                  <TurnsCount>3</TurnsCount>
+                  <TurnsCount>2</TurnsCount>
 
                </Poison>
 
@@ -3272,7 +3272,7 @@
 
                   <DamagePerTurn>50</DamagePerTurn>
 
-                  <TurnsCount>3</TurnsCount>
+                  <TurnsCount>2</TurnsCount>
 
                </Poison>
 
@@ -3416,7 +3416,7 @@
 
             <SkillEffects>
 
-	                <MultiHit HitsCount="3"/>
+	                <MultiHit HitsCount="4"/>
 
                     <Isolated>
 

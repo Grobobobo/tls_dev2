@@ -1004,7 +1004,7 @@
       <UpgradeLevels>
          <UpgradeLevel>
             <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
-            <MaterialCost>10</MaterialCost>
+            <MaterialCost>5</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="ReplaceBuilding" NewBuildingId="StoneWall"/>
             </UpgradeEffects>
@@ -1073,7 +1073,7 @@
     <UpgradeLevels>
       <UpgradeLevel>
         <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
-        <MaterialCost>18</MaterialCost>
+        <MaterialCost>13</MaterialCost>
         <UpgradeEffects>
           <UpgradeEffect Id="ReplaceBuilding" NewBuildingId="Gate"/>
         </UpgradeEffects>
@@ -1145,7 +1145,7 @@
     <UpgradeLevels>
       <UpgradeLevel>
         <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
-        <MaterialCost>35</MaterialCost>
+        <MaterialCost>40</MaterialCost>
         <UpgradeEffects>
           <UpgradeEffect Id="ReplaceBuilding" NewBuildingId="BallistaTower"/>
         </UpgradeEffects>
@@ -1177,7 +1177,7 @@
       <UpgradeLevels>
          <UpgradeLevel>
             <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
-            <MaterialCost>35</MaterialCost>
+            <MaterialCost>40</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="ReplaceBuilding" NewBuildingId="BallistaHeavy"/>
             </UpgradeEffects>
@@ -1209,7 +1209,7 @@
       <UpgradeLevels>
          <UpgradeLevel>
             <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
-            <MaterialCost>35</MaterialCost>
+            <MaterialCost>40</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="ReplaceBuilding" NewBuildingId="BallistaSplit"/>
             </UpgradeEffects>
@@ -1319,7 +1319,7 @@
    <BuildingUpgradeDefinition Id="UpgradeSlowTrap" IsGlobal="true">
       <UpgradeLevels>
          <UpgradeLevel>
-            <MaterialCost>160</MaterialCost>
+            <MaterialCost>150</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapSkill" OldSkillId="SlowTrapTriggered" NewSkillId="SlowTrapTriggered_Upgraded"/>
                <UpgradeEffect Id="SwapSkill" OldSkillId="Spe_SlowTrapTriggered" NewSkillId="Spe_SlowTrapTriggered_Upgraded"/>
@@ -1352,7 +1352,7 @@
       <UpgradeLevels>
          <UpgradeLevel>
             <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
-            <MaterialCost>160</MaterialCost>
+            <MaterialCost>150</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapSkill" OldSkillId="DamageTrapTriggered" NewSkillId="DamageTrapTriggered_Upgraded"/>
                <UpgradeEffect Id="SwapSkill" OldSkillId="Spe_DamageTrapTriggered" NewSkillId="Spe_DamageTrapTriggered_Upgraded"/>
@@ -1385,7 +1385,7 @@
       <UpgradeLevels>
          <UpgradeLevel>
             <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
-            <MaterialCost>160</MaterialCost>
+            <MaterialCost>150</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="IncreaseMaximumTrapCharges" Value="1"/>
             </UpgradeEffects>
