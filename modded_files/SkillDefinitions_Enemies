@@ -3665,6 +3665,67 @@
 
    </SkillDefinition>
 
+   <SkillDefinition Id="ApocCorruptedMageBuff" TemplateId="CorruptedMageBuff">
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <Buff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                  <Stat Id="MovePointsTotal"/>
+
+                  <Bonus>2</Bonus>
+
+                  <TurnsCount>2</TurnsCount>
+
+               </Buff>
+
+               <Buff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                  <Stat Id="Dodge"/>
+
+                  <Bonus>15</Bonus>
+
+                  <TurnsCount>1</TurnsCount>
+
+               </Buff>
+
+               <NegativeStatusImmunityEffect>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                  <Type Id="Stun"/>
+
+                  <TurnsCount>1</TurnsCount>
+
+               </NegativeStatusImmunityEffect>
+
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
 
 
    <SkillDefinition Id="CorruptedMageBuff1" TemplateId="CorruptedMageBuff">
@@ -3716,6 +3777,68 @@
    </SkillDefinition>
 
 
+   <SkillDefinition Id="ApocCorruptedMageBuff1" TemplateId="ApocCorruptedMageBuff">
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <Buff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                  <Stat Id="MovePointsTotal"/>
+
+                  <Bonus>2</Bonus>
+
+                  <TurnsCount>2</TurnsCount>
+
+               </Buff>
+
+               <Buff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                  <Stat Id="Dodge"/>
+
+                  <Bonus>15</Bonus>
+
+                  <TurnsCount>1</TurnsCount>
+
+               </Buff>
+
+               <NegativeStatusImmunityEffect>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                  <Type Id="Stun"/>
+
+                  <TurnsCount>1</TurnsCount>
+
+               </NegativeStatusImmunityEffect>
+
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+
 
    <SkillDefinition Id="CorruptedMageBuff2" TemplateId="CorruptedMageBuff">
 
@@ -3756,6 +3879,67 @@
                   <TurnsCount>1</TurnsCount>
 
                </Buff>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+   <SkillDefinition Id="ApocCorruptedMageBuff2" TemplateId="ApocCorruptedMageBuff">
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <Buff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                  <Stat Id="MovePointsTotal"/>
+
+                  <Bonus>2</Bonus>
+
+                  <TurnsCount>2</TurnsCount>
+
+               </Buff>
+
+               <Buff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                  <Stat Id="Dodge"/>
+
+                  <Bonus>25</Bonus>
+
+                  <TurnsCount>1</TurnsCount>
+
+               </Buff>
+
+               <NegativeStatusImmunityEffect>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                  <Type Id="Stun"/>
+
+                  <TurnsCount>1</TurnsCount>
+
+               </NegativeStatusImmunityEffect>
+
 
             </SkillEffects>
 
@@ -4847,17 +5031,7 @@
 
                </Poison>
 
-               <Debuff>
 
-                  <BaseChance>1</BaseChance>
-
-                  <Stat Id="HealingReceived"/>
-
-                  <Malus>25</Malus>
-
-                  <TurnsCount>3</TurnsCount>
-
-               </Debuff>
 
 
             </SkillEffects>
@@ -4894,17 +5068,7 @@
 
                </Poison>
 
-               <Debuff>
 
-                  <BaseChance>1</BaseChance>
-
-                  <Stat Id="HealingReceived"/>
-
-                  <Malus>25</Malus>
-
-                  <TurnsCount>3</TurnsCount>
-
-               </Debuff>
 
 
             </SkillEffects>
@@ -4943,17 +5107,7 @@
 
                </Poison>
 
-               <Debuff>
 
-                  <BaseChance>1</BaseChance>
-
-                  <Stat Id="HealingReceived"/>
-
-                  <Malus>25</Malus>
-
-                  <TurnsCount>3</TurnsCount>
-
-               </Debuff>
 
             </SkillEffects>
 
@@ -4991,17 +5145,7 @@
 
                </Poison>
 
-               <Debuff>
 
-                  <BaseChance>1</BaseChance>
-
-                  <Stat Id="HealingReceived"/>
-
-                  <Malus>25</Malus>
-
-                  <TurnsCount>3</TurnsCount>
-
-               </Debuff>
 
             </SkillEffects>
 
@@ -5039,17 +5183,7 @@
 
                </Poison>
 
-               <Debuff>
 
-                  <BaseChance>1</BaseChance>
-
-                  <Stat Id="HealingReceived"/>
-
-                  <Malus>25</Malus>
-
-                  <TurnsCount>3</TurnsCount>
-
-               </Debuff>
 
             </SkillEffects>
 
@@ -5230,6 +5364,48 @@
    </SkillDefinition>
 
 
+<SkillDefinition Id="ApocPoisonFrogBuff" TemplateId="PoisonFrogBuff">
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <Buff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Bonus>8</Bonus>
+
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                  <Stat Id="Resistance"/>
+
+                  <TurnsCount>2</TurnsCount>
+
+               </Buff>
+
+               <NegativeStatusImmunityEffect>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                  <Type Id="Debuff"/>
+
+                  <TurnsCount>1</TurnsCount>
+
+               </NegativeStatusImmunityEffect>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+   </SkillDefinition>
 
 
 
@@ -5263,6 +5439,50 @@
 
       </SkillAction>
 
+   </SkillDefinition>
+
+
+<SkillDefinition Id="ApocPoisonFrogBuff1" TemplateId="ApocPoisonFrogBuff">
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <Buff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Bonus>11</Bonus>
+
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                  <Stat Id="Resistance"/>
+
+                  <TurnsCount>2</TurnsCount>
+
+               </Buff>
+
+               <NegativeStatusImmunityEffect>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                  <Type Id="Debuff"/>
+
+                  <TurnsCount>1</TurnsCount>
+
+               </NegativeStatusImmunityEffect>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
    </SkillDefinition>
 
 
@@ -5301,6 +5521,49 @@
 
    </SkillDefinition>
 
+
+<SkillDefinition Id="ApocPoisonFrogBuff2" TemplateId="ApocPoisonFrogBuff">
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <Buff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Bonus>15</Bonus>
+
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                  <Stat Id="Resistance"/>
+
+                  <TurnsCount>2</TurnsCount>
+
+               </Buff>
+
+               <NegativeStatusImmunityEffect>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                  <Type Id="Debuff"/>
+
+                  <TurnsCount>1</TurnsCount>
+
+               </NegativeStatusImmunityEffect>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+   </SkillDefinition>
 
 
 
@@ -5456,6 +5719,52 @@
    </SkillDefinition>
 
 
+   <SkillDefinition Id="ApocPoisonFrogOnDeath" TemplateId="PoisonFrogOnDeath">
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <Buff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Bonus>8</Bonus>
+
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                  <Stat Id="Resistance"/>
+
+                  <TurnsCount>2</TurnsCount>
+
+               </Buff>
+
+               <NegativeStatusImmunityEffect>
+
+               <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+               <Type Id="Debuff"/>
+
+               <TurnsCount>1</TurnsCount>
+
+               </NegativeStatusImmunityEffect>
+
+
+               <IgnoreLineOfSight/>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+   </SkillDefinition>
 
 
 
@@ -5494,6 +5803,52 @@
    </SkillDefinition>
 
 
+   <SkillDefinition Id="ApocPoisonFrogOnDeath1" TemplateId="ApocPoisonFrogOnDeath">
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <Buff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Bonus>11</Bonus>
+
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                  <Stat Id="Resistance"/>
+
+                  <TurnsCount>2</TurnsCount>
+
+               </Buff>
+
+               <NegativeStatusImmunityEffect>
+
+               <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+               <Type Id="Debuff"/>
+
+               <TurnsCount>1</TurnsCount>
+
+               </NegativeStatusImmunityEffect>
+
+               <IgnoreLineOfSight/>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
 
 
 
@@ -5520,6 +5875,52 @@
                   <TurnsCount>2</TurnsCount>
 
                </Buff>
+
+               <IgnoreLineOfSight/>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
+   <SkillDefinition Id="ApocPoisonFrogOnDeath2" TemplateId="ApocPoisonFrogOnDeath">
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <Buff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Bonus>15</Bonus>
+
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+                  <Stat Id="Resistance"/>
+
+                  <TurnsCount>2</TurnsCount>
+
+               </Buff>
+
+               <NegativeStatusImmunityEffect>
+
+               <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+
+               <Type Id="Debuff"/>
+
+               <TurnsCount>1</TurnsCount>
+
+               </NegativeStatusImmunityEffect>
 
                <IgnoreLineOfSight/>
 

@@ -907,7 +907,7 @@
                      <BaseChance>1</BaseChance>
                      <CanAffectCaster>true</CanAffectCaster>
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                     <Bonus>10</Bonus>
+                     <Bonus>12</Bonus>
                      <Stat Id="PoisonDamageModifier"/>
                      <TurnsCount>1</TurnsCount>
                   </Buff>
@@ -1968,17 +1968,22 @@
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-                  <Stat Id="ArmorTotal"/>
-                  <Malus>250</Malus>
+                  <Stat Id="Block"/>
+                  <Malus>30</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <Stat Id="Dodge"/>
-                  <Malus>25</Malus>
+                  <Malus>20</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
+               <RemoveStatus>
+                  <BaseChance>1</BaseChance>
+                  <Status>RemovablePositive</Status>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+               </RemoveStatus>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -2025,17 +2030,22 @@
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-                  <Stat Id="ArmorTotal"/>
-                  <Malus>300</Malus>
+                  <Stat Id="Block"/>
+                  <Malus>33</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <Stat Id="Dodge"/>
-                  <Malus>30</Malus>
+                  <Malus>22</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
+               <RemoveStatus>
+                  <BaseChance>1</BaseChance>
+                  <Status>RemovablePositive</Status>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+               </RemoveStatus>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -2049,17 +2059,22 @@
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-                  <Stat Id="ArmorTotal"/>
-                  <Malus>350</Malus>
+                  <Stat Id="Block"/>
+                  <Malus>35</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <Stat Id="Dodge"/>
-                  <Malus>35</Malus>
+                  <Malus>24</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
+               <RemoveStatus>
+                  <BaseChance>1</BaseChance>
+                  <Status>RemovablePositive</Status>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+               </RemoveStatus>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -2073,17 +2088,22 @@
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-                  <Stat Id="ArmorTotal"/>
-                  <Malus>400</Malus>
+                  <Stat Id="Block"/>
+                  <Malus>38</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <Stat Id="Dodge"/>
-                  <Malus>40</Malus>
+                  <Malus>26</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
+               <RemoveStatus>
+                  <BaseChance>1</BaseChance>
+                  <Status>RemovablePositive</Status>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+               </RemoveStatus>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -2097,17 +2117,22 @@
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-                  <Stat Id="ArmorTotal"/>
-                  <Malus>450</Malus>
+                  <Stat Id="Block"/>
+                  <Malus>41</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <Stat Id="Dodge"/>
-                  <Malus>45</Malus>
+                  <Malus>28</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
+               <RemoveStatus>
+                  <BaseChance>1</BaseChance>
+                  <Status>RemovablePositive</Status>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+               </RemoveStatus>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -2121,17 +2146,22 @@
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-                  <Stat Id="ArmorTotal"/>
-                  <Malus>500</Malus>
+                  <Stat Id="Block"/>
+                  <Malus>45</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <Stat Id="Dodge"/>
-                  <Malus>50</Malus>
+                  <Malus>30</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
+               <RemoveStatus>
+                  <BaseChance>1</BaseChance>
+                  <Status>RemovablePositive</Status>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+               </RemoveStatus>
             </SkillEffects>
          </Generic>
       </SkillAction>

@@ -467,7 +467,7 @@
       <TokenVariables>
          <TokenVariable Key="DamageBonusThisTurn" Value="Module.Buffer2 * DamageBonusByHit"/>
          <TokenVariable Key="CurrentDamageBonus" Value="(Module.Buffer + Module.Buffer2) * DamageBonusByHit"/>
-         <TokenVariable Key="DamageBonusByHit" Value="4"/>
+         <TokenVariable Key="DamageBonusByHit" Value="6"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="OverallDamage" Value="DamageBonusByHit"/>
@@ -1195,7 +1195,7 @@
          <TokenVariable Key="RemainingEnemiesToHit" Value="Max(0, HitThreshold - Module.Buffer)"/>
          <TokenVariable Key="ThresholdIsReached" Value="Module.Buffer > HitThreshold - 1"/>
          <TokenVariable Key="ThresholdWasReached" Value="Module.Buffer2 > HitThreshold - 1"/>
-         <TokenVariable Key="HitThreshold" Value="3"/>
+         <TokenVariable Key="HitThreshold" Value="2"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="HitThreshold" Style="KeyWordNb"/>
@@ -1481,7 +1481,7 @@
                <Event EffectTime="OnTargetKilled">
                   <Conditions>
                      <IsTrue Value="IsTargetEnemyUnit"/>
-                     <IsTrue Value="TargetUnitDistanceFromCaster > MinimumDistanceToIncreaseBuffer - 1"/>
+                     <IsTrue Value="TargetUnitDistanceFromCastedSkill > MinimumDistanceToIncreaseBuffer - 1"/>
                   </Conditions>
                   <Actions>
                      <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
@@ -1640,7 +1640,7 @@
                   <Conditions>
                      <IsTrue Value="IsTargetEnemyUnit"/>
                      <IsTrue Value="Skill.IsAttack"/>
-                     <IsTrue Value="TargetUnitDistanceFromCaster > TargetMinDistanceToActivate - 1" />
+                     <IsTrue Value="TargetUnitDistanceFromCastedSkill > TargetMinDistanceToActivate - 1" />
                      <IsFalse Value="TargetUnit.HealthTotal > AttackData.HealthDamage"/>
                   </Conditions>
                   <Actions>
@@ -2215,7 +2215,42 @@
    <!-- ███████████████████████████████████████████████████████████████ -->
 
    <!-- T1 -->
+   <!-- Swapped name with first blood to switch icons  -->
    <PerkDefinition Id="CherryPicking">
+      <TokenVariables>
+         <TokenVariable Key="ReliabilityBonus" Value="40"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument Stat="HealthTotal"/>
+         <StatArgument Stat="Reliability" Value="ReliabilityBonus"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Highlight>
+               <IsTrue Value="Skill.IsAttack"/>
+               <IsTrue Value="IsTargetEnemyUnit"/>
+               <IsTrue Value="TargetUnit.Health = TargetUnit.HealthTotal"/>
+            </Highlight>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Effects>
+               <SkillModifier ComputationStat="Reliability" Value="ReliabilityBonus">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="IsTargetEnemyUnit"/>
+                     <IsTrue Value="TargetUnit.Health = TargetUnit.HealthTotal"/>
+                  </Conditions>
+               </SkillModifier>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <!-- T2 -->
+   <!-- Swapped name with cherry picking to preserve stuff  -->
+   <PerkDefinition Id="FirstBlood">
       <TokenVariables>
          <TokenVariable Key="CriticalBonus" Value="15"/>
       </TokenVariables>
@@ -2247,39 +2282,7 @@
             </Effects>
          </BufferModule>
       </Modules>
-   </PerkDefinition>
 
-   <!-- T2 -->
-   <PerkDefinition Id="FirstBlood">
-      <TokenVariables>
-         <TokenVariable Key="ReliabilityBonus" Value="40"/>
-      </TokenVariables>
-      <LocArguments>
-         <StatArgument Stat="HealthTotal"/>
-         <StatArgument Stat="Reliability" Value="ReliabilityBonus"/>
-      </LocArguments>
-      <View>
-         <DisplayInHUD>
-            <Highlight>
-               <IsTrue Value="Skill.IsAttack"/>
-               <IsTrue Value="IsTargetEnemyUnit"/>
-               <IsTrue Value="TargetUnit.Health = TargetUnit.HealthTotal"/>
-            </Highlight>
-         </DisplayInHUD>
-      </View>
-      <Modules>
-         <BufferModule>
-            <Effects>
-               <SkillModifier ComputationStat="Reliability" Value="ReliabilityBonus">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsAttack"/>
-                     <IsTrue Value="IsTargetEnemyUnit"/>
-                     <IsTrue Value="TargetUnit.Health = TargetUnit.HealthTotal"/>
-                  </Conditions>
-               </SkillModifier>
-            </Effects>
-         </BufferModule>
-      </Modules>
    </PerkDefinition>
 
       <!-- T3 -->
@@ -2597,7 +2600,7 @@
       <TokenVariables>
          <TokenVariable Key="XPMultiplier" Value="KillerMultiplier * WaveMultiplier"/>
          <TokenVariable Key="KillerMultiplier" Value="KillerBonusExperienceFactor"/>
-         <TokenVariable Key="WaveMultiplier" Value="CurrentWavePercentageModifier"/>
+         <TokenVariable Key="WaveMultiplier" Value="CurrentWaveXpAdjustmentMultiplier"/>
       </TokenVariables>
       <View>
          <DisplayInHUD/>
@@ -2646,6 +2649,8 @@
             <SkillToShow Id="ManualControlCatapult"/>
             <SkillToShow Id="ManualControlBallista"/>
             <SkillToShow Id="ManualControlBallistaTower"/>
+            <SkillToShow Id="ManualControlBallistaHeavy"/>
+            <SkillToShow Id="ManualControlBallistaSplit"/>
             <SkillToShow Id="ManualControlStunTrap"/>
             <SkillToShow Id="ManualControlSlowTrap"/>
             <SkillToShow Id="ManualControlDamageTrap"/>
@@ -2658,8 +2663,11 @@
          <BufferModule>
             <Effects>
                <UnlockContextualSkill ContextualSkillId="ManualControlCatapult"/>
+               <UnlockContextualSkill ContextualSkillId="ManualControlCatapultAuto"/>
                <UnlockContextualSkill ContextualSkillId="ManualControlBallista"/>
                <UnlockContextualSkill ContextualSkillId="ManualControlBallistaTower"/>
+               <UnlockContextualSkill ContextualSkillId="ManualControlBallistaHeavy"/>
+               <UnlockContextualSkill ContextualSkillId="ManualControlBallistaSplit"/>
                <UnlockContextualSkill ContextualSkillId="ManualControlStunTrap"/>
                <UnlockContextualSkill ContextualSkillId="ManualControlSlowTrap"/>
                <UnlockContextualSkill ContextualSkillId="ManualControlDamageTrap"/>
@@ -2700,7 +2708,7 @@
    <!-- T4 -->
    <PerkDefinition Id="HumanBallista">
       <TokenVariables>
-         <TokenVariable Key="TargetAmount" Value="2"/>
+         <TokenVariable Key="TargetAmount" Value="3"/>
          <TokenVariable Key="SkillId" Value="HumanBallistaPerkSkill"/>
       </TokenVariables>
       <LocArguments>
@@ -3794,7 +3802,7 @@
          <TokenVariable Key="HealthTotalThreshold" Value="600"/>
          <TokenVariable Key="OverallDamage_BonusMax" Value="OverallDamage_BaseBonus + OverallDamage_DynamicMax"/>
          <TokenVariable Key="OverallDamage_DynamicStepsValue" Value="120"/>
-         <TokenVariable Key="OverallDamage_DynamicMax" Value="30"/>
+         <TokenVariable Key="OverallDamage_DynamicMax" Value="20"/>
          <TokenVariable Key="OverallDamage_DynamicBonus" Value="2"/>
          <TokenVariable Key="OverallDamage_BaseBonus" Value="20"/>
       </TokenVariables>
@@ -4359,8 +4367,8 @@
          <TokenVariable Key="AtLeastOneBonusPending" Value="CurrentActionPointsBonus + CurrentMovePointsBonus > 0"/>
          <TokenVariable Key="CurrentActionPointsBonus" Value="Min(Module.Buffer, MaxActionPointsBonus)"/>
          <TokenVariable Key="CurrentMovePointsBonus" Value="Min(Module.Buffer2, MaxMovePointsBonus)"/>
-         <TokenVariable Key="MaxActionPointsBonus" Value="1"/>
-         <TokenVariable Key="MaxMovePointsBonus" Value="2"/>
+         <TokenVariable Key="MaxActionPointsBonus" Value="2"/>
+         <TokenVariable Key="MaxMovePointsBonus" Value="4"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument  Stat="ActionPointsTotal" Value="MaxActionPointsBonus" DisplaySign="false" Style="KeyWordNb"/>

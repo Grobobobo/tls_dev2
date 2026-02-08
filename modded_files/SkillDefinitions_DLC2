@@ -2247,7 +2247,8 @@
 
                   <BaseChance>1</BaseChance>
 
-                  <Status>Buff</Status>
+                  <Status>RemovablePositive</Status>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
 
                </RemoveStatus>
 
@@ -2531,7 +2532,8 @@
 
                   <BaseChance>1</BaseChance>
 
-                  <Status>Buff</Status>
+                  <Status>RemovablePositive</Status>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
 
                </RemoveStatus>
 
@@ -2797,7 +2799,7 @@
 
          <Attack>
 
-            <BaseDamage Min="10 + Floor(Dodge * 0.5)" Max="10 + Floor(Dodge * 0.5)"/>
+            <BaseDamage Min="10 + Floor(Dodge * 2)" Max="10 + Floor(Dodge * 2)"/>
 
             <AttackType>Adaptative</AttackType>
 
@@ -2893,7 +2895,7 @@
 
          <Attack>
 
-            <BaseDamage Min="30 + Floor(Dodge * 1.75)" Max="30 + Floor(Dodge * 1.75)"/>
+            <BaseDamage Min="30 + Floor(Dodge * 3)" Max="30 + Floor(Dodge * 3)"/>
 
             <AttackType>Adaptative</AttackType>
 
@@ -3128,7 +3130,7 @@
 
          <Attack>
 
-            <BaseDamage Min="25 + Floor(Dodge * 0.9)" Max="25 + Floor(Dodge * 0.9)"/>
+            <BaseDamage Min="50 + Floor(Dodge * 1.75)" Max="50 + Floor(Dodge * 1.75)"/>
 
             <AttackType>Adaptative</AttackType>
 
@@ -3218,7 +3220,7 @@
 
    <SkillDefinition Id="PoisonSeedSkill">
 
-      <Range Min="0" Max="3"/>
+      <Range Min="0" Max="6"/>
 
       <AreaOfEffect OriginX="1" OriginY="1">
 
@@ -3248,7 +3250,7 @@
 
                   <BaseChance>100</BaseChance>
 
-                  <TurnsCount>3</TurnsCount>
+                  <TurnsCount>2</TurnsCount>
 
                </Contagion>
 
@@ -3258,7 +3260,7 @@
 
                   <DamagePerTurn>50</DamagePerTurn>
 
-                  <TurnsCount>3</TurnsCount>
+                  <TurnsCount>2</TurnsCount>
 
                </Poison>
 
@@ -3270,7 +3272,7 @@
 
                   <DamagePerTurn>50</DamagePerTurn>
 
-                  <TurnsCount>3</TurnsCount>
+                  <TurnsCount>2</TurnsCount>
 
                </Poison>
 
@@ -3414,7 +3416,7 @@
 
             <SkillEffects>
 
-	                <MultiHit HitsCount="3"/>
+	                <MultiHit HitsCount="4"/>
 
                     <Isolated>
 
@@ -3423,7 +3425,7 @@
                     </Isolated>
 
                <NoDodge/>
-
+               <NoBlock/>
                <IgnoreLineOfSight/>
 
             </SkillEffects>
@@ -3544,11 +3546,11 @@
 
             <SkillEffects>
 
-               <MultiHit HitsCount="3"/>
+               <MultiHit HitsCount="4"/>
 
                <Isolated>
 
-                  <DamageMultiplier>2</DamageMultiplier>
+                  <DamageMultiplier>3</DamageMultiplier>
 
                </Isolated>
 
@@ -3572,15 +3574,15 @@
 
       <AreaOfEffect OriginX="2" OriginY="2">
 
-         _XXX_
-
-         XXXXX
-
-         XXXXX
-
-         XXXXX
+         __X__
 
          _XXX_
+
+         XXXXX
+
+         _XXX_
+
+         __X__
 
       </AreaOfEffect>
 
@@ -3606,7 +3608,7 @@
 
                   <TurnsCount>2</TurnsCount>
 
-                  <Malus>20</Malus>
+                  <Malus>10</Malus>
 
                   <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
 
@@ -3712,15 +3714,15 @@
 
       <AreaOfEffect OriginX="2" OriginY="2">
 
-         _XXX_
-
-         XXXXX
-
-         XXXXX
-
-         XXXXX
+         __X__
 
          _XXX_
+
+         XXXXX
+
+         _XXX_
+
+         __X__
 
       </AreaOfEffect>
 
@@ -3746,7 +3748,7 @@
 
                   <TurnsCount>2</TurnsCount>
 
-                  <Malus>30</Malus>
+                  <Malus>20</Malus>
 
                   <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
 
@@ -4074,7 +4076,7 @@
 
                   <BaseChance>1</BaseChance>
 
-                  <Malus>25</Malus>
+                  <Malus>50</Malus>
 
                   <Stat Id="Resistance"/>
 

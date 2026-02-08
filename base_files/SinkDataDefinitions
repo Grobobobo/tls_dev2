@@ -1,0 +1,27 @@
+﻿<SinkDataDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:noNamespaceSchemaLocation="SinkDataDefinitions.xsd">
+   
+   <SinkDataDefinition Id="Attribute">
+      <BasePrice>150</BasePrice>
+      <RerollMultiplier>2.25</RerollMultiplier>
+      <RoundedTo>50</RoundedTo>
+      <FinalPrice>BasePrice * Pow(RerollMultiplier, Rerolls)</FinalPrice>
+   </SinkDataDefinition>
+
+   <SinkDataDefinition Id="ItemReward">
+      <BasePrice>150</BasePrice>
+      <RerollMultiplier>2.25</RerollMultiplier>
+      <RoundedTo>50</RoundedTo>
+      <FinalPrice>BasePrice * Pow(RerollMultiplier, Rerolls)</FinalPrice>
+   </SinkDataDefinition>
+
+   <SinkDataDefinition Id="Perk">
+      <BasePrice>350</BasePrice>
+      <PricePerPerk>100</PricePerPerk>
+      <RerollMultiplier>2.4</RerollMultiplier>
+      <RoundedTo>50</RoundedTo>
+      <FinalPrice>(BasePrice + PricePerPerk * Perks) * Pow(RerollMultiplier, Rerolls)</FinalPrice>
+      <RerollBaseChances>0.66</RerollBaseChances>
+   </SinkDataDefinition>
+   
+</SinkDataDefinitions>

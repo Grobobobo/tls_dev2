@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
 <ItemDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../ItemDefinitions.xsd">
 
 <!-- ******************************************************************* -->
@@ -3626,6 +3627,12 @@
 	<ItemDefinition Id="MedalPerkExplosiveAtoms">
 		<Category>Trinket</Category>
 		<LevelVariations>
+			<Level Id="3">
+				<BasePrice>65</BasePrice>
+				<Perks>
+					<Perk>ExplosiveAtoms</Perk>
+				</Perks>
+			</Level>
 			<Level Id="4">
 				<MainStatBonus Stat="CriticalPower">15</MainStatBonus>
 				<BasePrice>90</BasePrice>
@@ -3838,6 +3845,12 @@
 	<ItemDefinition Id="MedalPerkHumanBallista">
 		<Category>Trinket</Category>
 		<LevelVariations>
+			<Level Id="3">
+				<BasePrice>65</BasePrice>
+				<Perks>
+					<Perk>HumanBallista</Perk>
+				</Perks>
+			</Level>
 			<Level Id="4">
 				<MainStatBonus Stat="OverallDamage">5</MainStatBonus>
 				<BasePrice>90</BasePrice>

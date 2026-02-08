@@ -869,9 +869,197 @@ print(f"\nUpdated {total_scroll_updated} scroll damage values")
 print(f"Removed {total_removed} damage values from special scrolls")
 
 # ============================================================================
-# PHASE 7: REFORMAT ALL XML FILES
+# PHASE 7: UPDATE UNIQUE WEAPONS IN ITEMDEFINITIONS_DLC3
 # ============================================================================
-print("\n[PHASE 7] Reformatting XML files...")
+print("\n[PHASE 7] Updating unique weapons in ItemDefinitions_DLC3...")
+print("-" * 80)
+
+# Mapping from unique weapon IDs to their Excel sheet names
+unique_weapon_mapping = {
+    'SwordUnique': 'sword',
+    'HammerUnique': 'Hammer',
+    'AxeUnique': '1h Axe',
+    'DaggerUnique': 'Dagger',
+    '2HSwordUnique': '2h sword',
+    '2HHammerUnique': '2H Hammer',
+    '2HAxeUnique': '2H AXE',
+    'SpearUnique': 'Spear',
+    'HandCrossbowUnique': 'Hand crossbow',
+    'PistolUnique': 'Pistol',
+    'ShortbowUnique': 'Shortbow',
+    'LongbowUnique': 'Longbow',
+    'CrossbowUnique': 'Crossbow',
+    'RifleUnique': 'Rifle',
+    'MagicWandUnique': 'Wand',
+    'MagicScepterUnique': 'Scepter',
+    'MagicOrbUnique': 'Magic orb',
+    'MagicStaffUnique': 'power staff',
+    'TomeOfMagicUnique': 'Tome of Secrets',
+    'DruidicStaffUnique': 'druid staff',
+    'WarShieldUnique': 'War Shield',
+    'CannonUnique': 'Cannon',
+    'GauntletUnique': 'Gauntlet',
+    'ClawsUnique': 'Claws',
+    'BoomerangUnique': 'Boomerang',
+    'ManaFlowerUnique': 'Sacred Flower',
+}
+
+tree = ET.parse('../../modded_files/ItemDefinitions_DLC3')
+root = tree.getroot()
+
+unique_changes = []
+total_unique_updated = 0
+
+for item_def in root.findall('ItemDefinition'):
+    item_id = item_def.get('Id')
+    
+    if item_id not in unique_weapon_mapping:
+        continue
+    
+    excel_sheet = unique_weapon_mapping[item_id]
+    
+    if excel_sheet not in weapon_data:
+        print(f"Warning: {excel_sheet} not in weapon data for {item_id}")
+        continue
+    
+    levels = weapon_data[excel_sheet]['levels']
+    
+    # Get level 0 damage values from Excel
+    if 0 not in levels:
+        print(f"Warning: Level 0 not found in {excel_sheet} for {item_id}")
+        continue
+    
+    level0_min = levels[0]['min']
+    level0_max = levels[0]['max']
+    
+    print(f"\n{item_id} (from {excel_sheet}):")
+    print(f"  Level 0 Excel values: Min={level0_min}, Max={level0_max}")
+    
+    level_variations = item_def.find('LevelVariations')
+    if level_variations is None:
+        continue
+    
+    for level_elem in level_variations.findall('Level'):
+        level_id = level_elem.get('Id')
+        base_damage = level_elem.find('BaseDamage')
+        
+        if base_damage is None:
+            continue
+        
+        old_min = base_damage.get('Min')
+        old_max = base_damage.get('Max')
+        
+        # Create new formula with level 0 values and /12 scaling
+        new_min = f"{level0_min} * (1 + PlayableUnitLevel/12)"
+        new_max = f"{level0_max} * (1 + PlayableUnitLevel/12)"
+        
+        # Update the BaseDamage attributes
+        base_damage.set('Min', new_min)
+        base_damage.set('Max', new_max)
+        base_damage.set('Interpreted', 'true')
+        
+        unique_changes.append({
+            'weapon_id': item_id,
+            'level': level_id,
+            'old_min': old_min,
+            'old_max': old_max,
+            'new_min': new_min,
+            'new_max': new_max
+        })
+        total_unique_updated += 1
+        print(f"  Level {level_id}:")
+        print(f"    Old: Min=\"{old_min}\" Max=\"{old_max}\"")
+        print(f"    New: Min=\"{new_min}\" Max=\"{new_max}\"")
+
+tree.write('../../modded_files/ItemDefinitions_DLC3', encoding='utf-8', xml_declaration=True)
+print(f"\n✓ Updated {total_unique_updated} unique weapon damage formulas")
+
+# Also update offhand unique weapons (they share common values, just change /10 to /12)
+print("\nUpdating unique offhand weapons (changing /10 to /12)...")
+offhand_unique_weapons = [
+    'HarpyOffHandUnique', 'CetusiaOffHandUnique', 'ArchivistOffHandUnique',
+    'SchadenOffHandUnique', 'FreudeOffHandUnique', 'FleshcloudOffHandUnique'
+]
+
+tree = ET.parse('../../modded_files/ItemDefinitions_DLC3')
+root = tree.getroot()
+
+total_offhand_updated = 0
+
+for item_def in root.findall('ItemDefinition'):
+    item_id = item_def.get('Id')
+    
+    if item_id not in offhand_unique_weapons:
+        continue
+    
+    level_variations = item_def.find('LevelVariations')
+    if level_variations is None:
+        continue
+    
+    for level_elem in level_variations.findall('Level'):
+        base_damage = level_elem.find('BaseDamage')
+        
+        if base_damage is None:
+            continue
+        
+        old_min = base_damage.get('Min')
+        old_max = base_damage.get('Max')
+        
+        # Replace /10 with /12 in the formula
+        if old_min and 'PlayableUnitLevel/10' in old_min:
+            new_min = old_min.replace('PlayableUnitLevel/10', 'PlayableUnitLevel/12')
+            base_damage.set('Min', new_min)
+            total_offhand_updated += 1
+            print(f"  {item_id}: Min formula updated")
+        
+        if old_max and 'PlayableUnitLevel/10' in old_max:
+            new_max = old_max.replace('PlayableUnitLevel/10', 'PlayableUnitLevel/12')
+            base_damage.set('Max', new_max)
+
+tree.write('../../modded_files/ItemDefinitions_DLC3', encoding='utf-8', xml_declaration=True)
+print(f"✓ Updated {total_offhand_updated} offhand weapon formulas")
+
+# Update IntimidatingScreamUnique skill in SkillDefinitions_DLC3
+print("\nUpdating IntimidatingScreamUnique skill...")
+
+# Get Axe level 0 damage values from Excel
+excel_sheet = '1h Axe'
+if excel_sheet in weapon_data and 0 in weapon_data[excel_sheet]['levels']:
+    axe_level0_min = weapon_data[excel_sheet]['levels'][0]['min']
+    axe_level0_max = weapon_data[excel_sheet]['levels'][0]['max']
+    
+    tree = ET.parse('../../modded_files/SkillDefinitions_DLC3')
+    root = tree.getroot()
+    
+    for skill_def in root.findall('.//SkillDefinition[@Id="IntimidatingScreamUnique"]'):
+        skill_action = skill_def.find('.//SkillAction/Attack')
+        if skill_action is not None:
+            base_damage = skill_action.find('BaseDamage')
+            if base_damage is not None:
+                old_min = base_damage.get('Min')
+                old_max = base_damage.get('Max')
+                
+                # Create new formula with Excel level 0 values and PlayableUnitLevel/12
+                new_min = f"{axe_level0_min} * (1 + PlayableUnitLevel/12)"
+                new_max = f"{axe_level0_max} * (1 + PlayableUnitLevel/12)"
+                
+                base_damage.set('Min', new_min)
+                base_damage.set('Max', new_max)
+                base_damage.set('Interpreted', 'true')
+                
+                print(f"  IntimidatingScreamUnique:")
+                print(f"    Old: Min=\"{old_min}\" Max=\"{old_max}\"")
+                print(f"    New: Min=\"{new_min}\" Max=\"{new_max}\"")
+    
+    tree.write('../../modded_files/SkillDefinitions_DLC3', encoding='utf-8', xml_declaration=True)
+    print(f"✓ Updated IntimidatingScreamUnique skill")
+else:
+    print(f"⚠️  Warning: Could not find Axe level 0 data for IntimidatingScreamUnique")
+
+# ============================================================================
+# PHASE 8: REFORMAT ALL XML FILES
+# ============================================================================
+print("\n[PHASE 8] Reformatting XML files...")
 print("-" * 80)
 
 def indent_xml(elem, level=0):
@@ -910,6 +1098,8 @@ files_to_reformat = [
     '../../modded_files/ItemDefinitions_DLC1',
     '../../modded_files/ItemDefinitions_DLC2',
     '../../modded_files/ItemDefinitions_Usables',
+    '../../modded_files/ItemDefinitions_DLC3',
+    '../../modded_files/SkillDefinitions_DLC3',
 ]
 
 for file_path in files_to_reformat:
@@ -929,5 +1119,7 @@ print(f"Weapon damage updates: {total_damage_updates}")
 print(f"Stat bonus updates: {total_stat_updates}")
 print(f"Scroll damage updates: {total_scroll_updated}")
 print(f"Scroll removals: {total_removed}")
+print(f"Unique weapon formula updates: {total_unique_updated}")
+print(f"Unique offhand formula updates: {total_offhand_updated}")
 print(f"All XML files have been updated, synchronized, and reformatted")
 print("=" * 80)

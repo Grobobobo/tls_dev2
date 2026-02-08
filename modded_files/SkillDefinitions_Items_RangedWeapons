@@ -47,7 +47,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
-            <DamageMultiplier>1.25</DamageMultiplier>
+            <DamageMultiplier>1.4</DamageMultiplier>
             <SkillEffects>
                <MultiHit HitsCount="3"/>
                <Inaccurate>
@@ -1173,16 +1173,22 @@
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectBossUnits>true</CanAffectBossUnits>
                   <Stat Id="Dodge"/>
-                  <Malus>50</Malus>
+                  <Malus>20</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectBossUnits>true</CanAffectBossUnits>
-                  <Stat Id="ArmorTotal"/>
-                  <Malus>200</Malus>
+                  <Stat Id="Block"/>
+                  <Malus>30</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
+               <RemoveStatus>
+                  <BaseChance>1</BaseChance>
+                  <Status>RemovablePositive</Status>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+               </RemoveStatus>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -1228,12 +1234,16 @@
 		 </CasterAnim>
 
          <SoundEffect>
-            <Path>00_Others/Spot/SFX_Skill_Spot</Path>
+            <Path>LongBow/TakeAim/SFX_SKILL_TakeAim_Hit</Path>
             <Delay>0</Delay>
          </SoundEffect>
+         <SoundEffect>
+            <Path>LongBow/TakeAim/SFX_SKILL_TakeAim_Shoot</Path>
+            <Delay>0.87</Delay>
+         </SoundEffect>
+
       </CastFXs>
-   </SkillDefinition>
-   
+   </SkillDefinition>   
    <SkillDefinition Id="TakeAim1" TemplateId="TakeAim">
       <SkillAction>
          <Generic>
@@ -1243,16 +1253,22 @@
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectBossUnits>true</CanAffectBossUnits>
                   <Stat Id="Dodge"/>
-                  <Malus>55</Malus>
+                  <Malus>22</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectBossUnits>true</CanAffectBossUnits>
-                  <Stat Id="ArmorTotal"/>
-                  <Malus>250</Malus>
+                  <Stat Id="Block"/>
+                  <Malus>33</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
+               <RemoveStatus>
+                  <BaseChance>1</BaseChance>
+                  <Status>RemovablePositive</Status>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+               </RemoveStatus>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -1267,16 +1283,22 @@
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectBossUnits>true</CanAffectBossUnits>
                   <Stat Id="Dodge"/>
-                  <Malus>60</Malus>
+                  <Malus>24</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectBossUnits>true</CanAffectBossUnits>
-                  <Stat Id="ArmorTotal"/>
-                  <Malus>300</Malus>
+                  <Stat Id="Block"/>
+                  <Malus>35</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
+               <RemoveStatus>
+                  <BaseChance>1</BaseChance>
+                  <Status>RemovablePositive</Status>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+               </RemoveStatus>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -1291,16 +1313,22 @@
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectBossUnits>true</CanAffectBossUnits>
                   <Stat Id="Dodge"/>
-                  <Malus>65</Malus>
+                  <Malus>26</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectBossUnits>true</CanAffectBossUnits>
-                  <Stat Id="ArmorTotal"/>
-                  <Malus>350</Malus>
+                  <Stat Id="Block"/>
+                  <Malus>38</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
+               <RemoveStatus>
+                  <BaseChance>1</BaseChance>
+                  <Status>RemovablePositive</Status>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+               </RemoveStatus>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -1315,16 +1343,22 @@
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectBossUnits>true</CanAffectBossUnits>
                   <Stat Id="Dodge"/>
-                  <Malus>70</Malus>
+                  <Malus>28</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectBossUnits>true</CanAffectBossUnits>
-                  <Stat Id="ArmorTotal"/>
-                  <Malus>400</Malus>
+                  <Stat Id="Block"/>
+                  <Malus>41</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
+               <RemoveStatus>
+                  <BaseChance>1</BaseChance>
+                  <Status>RemovablePositive</Status>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+               </RemoveStatus>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -1339,16 +1373,22 @@
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectBossUnits>true</CanAffectBossUnits>
                   <Stat Id="Dodge"/>
-                  <Malus>75</Malus>
+                  <Malus>30</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <CanAffectBossUnits>true</CanAffectBossUnits>
-                  <Stat Id="ArmorTotal"/>
-                  <Malus>450</Malus>
+                  <Stat Id="Block"/>
+                  <Malus>45</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
+               <RemoveStatus>
+                  <BaseChance>1</BaseChance>
+                  <Status>RemovablePositive</Status>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+               </RemoveStatus>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -1970,17 +2010,18 @@
    <!-- Rifle -->
    <SkillDefinition Id="RifleShot">
       <ActionPointsCost>2</ActionPointsCost>
-      <UsesPerTurnCount>3</UsesPerTurnCount>
-      <Range Min="3" Max="8" CardinalDirectionOnly="false" Modifiable="true"/>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <Range Min="1" Max="8" CardinalDirectionOnly="false" Modifiable="true"/>
       <AreaOfEffect OriginX="0" OriginY="0">
          X
       </AreaOfEffect>
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
+            <DamageMultiplier>0.9</DamageMultiplier>
             <SkillEffects>
-               <Propagation PropagationsCount="2"/>
+               <Propagation PropagationsCount="3"/>
+               <NoDodge/>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -2313,7 +2354,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
+            <DamageMultiplier>1.25</DamageMultiplier>
             <SkillEffects>
                <Isolated>
                   <DamageMultiplier>1.5</DamageMultiplier>
@@ -2321,7 +2362,6 @@
                <Opportunistic>
                   <DamageMultiplier>1.5</DamageMultiplier>
                </Opportunistic>
-               <NoDodge/>
             </SkillEffects>
          </Attack>
       </SkillAction>

@@ -366,7 +366,7 @@
 
       <Block>0</Block>
 
-      <Dodge>15</Dodge>
+      <Dodge>10</Dodge>
 
       <Resistance>0</Resistance>
 
@@ -1444,7 +1444,7 @@
 
          <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">3</StatProgression>
 
-         <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">5</StatProgression>
+         <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">7</StatProgression>
 
          <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">5</StatProgression>
 

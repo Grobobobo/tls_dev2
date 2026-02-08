@@ -696,7 +696,7 @@
 
          <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">6</StatProgression>
 
-         <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">7</StatProgression>
+         <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">10</StatProgression>
 
          <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">41</StatProgression>
 
@@ -1874,9 +1874,17 @@
 
          <SkillProgression Id="PoisonFrogBuff2" UnlockedAtDay="11"/>
 
+         <SkillProgression Id="ApocPoisonFrogBuff" ApocalypseFlagUnlock="SuperEnemies"/>
+         <SkillProgression Id="ApocPoisonFrogBuff1" ApocalypseFlagUnlock="SuperEnemies" UnlockedAtDay="8"/>
+         <SkillProgression Id="ApocPoisonFrogBuff2" ApocalypseFlagUnlock="SuperEnemies" UnlockedAtDay="11"/>
+
          <SkillProgression Id="PoisonFrogOnDeath1" UnlockedAtDay="8"/>
 
          <SkillProgression Id="PoisonFrogOnDeath2" UnlockedAtDay="11"/>
+
+         <SkillProgression Id="ApocPoisonFrogOnDeath" ApocalypseFlagUnlock="SuperEnemies"/>
+         <SkillProgression Id="ApocPoisonFrogOnDeath1" ApocalypseFlagUnlock="SuperEnemies" UnlockedAtDay="8"/>
+         <SkillProgression Id="ApocPoisonFrogOnDeath2" ApocalypseFlagUnlock="SuperEnemies" UnlockedAtDay="11"/>
 
       </SkillProgressions>
 
