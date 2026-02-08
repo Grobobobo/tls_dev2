@@ -2215,7 +2215,42 @@
    <!-- ███████████████████████████████████████████████████████████████ -->
 
    <!-- T1 -->
+   <!-- Swapped name with first blood to switch icons  -->
    <PerkDefinition Id="CherryPicking">
+      <TokenVariables>
+         <TokenVariable Key="ReliabilityBonus" Value="40"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument Stat="HealthTotal"/>
+         <StatArgument Stat="Reliability" Value="ReliabilityBonus"/>
+      </LocArguments>
+      <View>
+         <DisplayInHUD>
+            <Highlight>
+               <IsTrue Value="Skill.IsAttack"/>
+               <IsTrue Value="IsTargetEnemyUnit"/>
+               <IsTrue Value="TargetUnit.Health = TargetUnit.HealthTotal"/>
+            </Highlight>
+         </DisplayInHUD>
+      </View>
+      <Modules>
+         <BufferModule>
+            <Effects>
+               <SkillModifier ComputationStat="Reliability" Value="ReliabilityBonus">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="IsTargetEnemyUnit"/>
+                     <IsTrue Value="TargetUnit.Health = TargetUnit.HealthTotal"/>
+                  </Conditions>
+               </SkillModifier>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+
+   <!-- T2 -->
+   <!-- Swapped name with cherry picking to preserve stuff  -->
+   <PerkDefinition Id="FirstBlood">
       <TokenVariables>
          <TokenVariable Key="CriticalBonus" Value="15"/>
       </TokenVariables>
@@ -2247,39 +2282,7 @@
             </Effects>
          </BufferModule>
       </Modules>
-   </PerkDefinition>
 
-   <!-- T2 -->
-   <PerkDefinition Id="FirstBlood">
-      <TokenVariables>
-         <TokenVariable Key="ReliabilityBonus" Value="40"/>
-      </TokenVariables>
-      <LocArguments>
-         <StatArgument Stat="HealthTotal"/>
-         <StatArgument Stat="Reliability" Value="ReliabilityBonus"/>
-      </LocArguments>
-      <View>
-         <DisplayInHUD>
-            <Highlight>
-               <IsTrue Value="Skill.IsAttack"/>
-               <IsTrue Value="IsTargetEnemyUnit"/>
-               <IsTrue Value="TargetUnit.Health = TargetUnit.HealthTotal"/>
-            </Highlight>
-         </DisplayInHUD>
-      </View>
-      <Modules>
-         <BufferModule>
-            <Effects>
-               <SkillModifier ComputationStat="Reliability" Value="ReliabilityBonus">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsAttack"/>
-                     <IsTrue Value="IsTargetEnemyUnit"/>
-                     <IsTrue Value="TargetUnit.Health = TargetUnit.HealthTotal"/>
-                  </Conditions>
-               </SkillModifier>
-            </Effects>
-         </BufferModule>
-      </Modules>
    </PerkDefinition>
 
       <!-- T3 -->

@@ -4781,8 +4781,23 @@ Aplica {0} a todos os inimigos em uma <style=KeyWord>distância de até {1}</sty
 PerkEffectInformations_Poisonous,{2},{2},{2},{2},{2},{2},{2},{2},{2},{2}.,{2}
 PerkName_Stunning,Stunning!,Stupéfiant<nbsp>!,眩晕！,眩暈！,スタニング!,Оглушитель,Приголомшливий!,Fesselnd!,¡Pasmoso!,Atordoante!,어지러워!
 PerkDescription_Stunning,{0}.,{0}.,{0},{0},{0}。,{0}.,{0}.,{0}.,{0}.,{0}.,{0}
-PerkName_FirstBlood,First Blood,Premier sang,第一滴血,第一滴血,先制の血,Первая кровь,Перша кров,Erstschlag,Primera sangre,Sangue Fresco,선제 타격
-PerkDescription_FirstBlood,"When <style=KeyWord>attacking</style> a unit with <style=KeyWord>full</style> {0}, the attack gets:
+PerkName_FirstBlood,Cherry Picking,Tri sélectif,就是你了,就是你了,いいとこ取り,Враг одиночества,Вередливий,Wählerisch,Tiquismiquis,Escolhendo a Dedo,골라 먹기
+PerkDescription_FirstBlood,"When <style=KeyWord>attacking</style> an <style=KeyWord>isolated</style> unit, the attack gets:
+{0}.","Lorsqu'une unité <style=KeyWord>isolée</style> est <style=KeyWord>attaquée</style>, l'attaque obtient<nbsp>:
+{0}.","当<style=KeyWord>攻击</style><style=KeyWord>落单</style>的敌人时，此次攻击获得：
+{0}","當<style=KeyWord>攻擊</style><style=KeyWord>落單</style>的敵人時，此次攻擊獲得：
+{0}",<style=KeyWord>孤立した</style>ユニットへ<style=KeyWord>攻撃</style>時、以下の効果を得る: {0}。,"Если цель <style=KeyWord>атаки</style> героя <style=KeyWord>изолирована</style>, атака получает бонус:
+{0}.","Під час <style=KeyWord>атаки</style> <style=KeyWord>відокремленого</style> монстра, атака отримує:
+{0}.","Beim <style=KeyWord>Angriff</style> auf einen <style=KeyWord>isolierte</style> Einheit, erhält der Angriff:
+{0}.","Al <style=KeyWord>atacar</style> a una unidad <style=KeyWord>aislada</style>, el ataque obtiene:
+{0}.","Quando <style=KeyWord>atacar</style> uma unidade <style=KeyWord>isolada</style>, o ataque recebe:
+{0}.","<style=KeyWord>고립</style> 상태인 유닛을 <style=KeyWord>공격</style>할 경우:
+{0}"
+PerkName_MagicFuel,Magic Fuel,Carburant magique,魔法燃料,魔法燃料,魔法燃料,Сила маны,Магічне паливо,Magischer Treibstoff,Combustible mágico,Combustível Mágico,마법 연료
+PerkDescription_MagicFuel,{1} is increased by {0} of the Hero's <style=KeyWord>current {2}</style>.,{1} augmentés de {0} du <style=KeyWord>{2} actuel</style> du Héros.,按英雄<style=KeyWord>当前{2}</style>的{0}提升{1}。,按英雄<style=KeyWord>當前{2}</style>的{0}提升{1}。,{1}が<style=KeyWord>英雄の{2}</style>の{0}分上昇する。,{1} увеличится на {0} от <style=KeyWord>текущего уровня маны героя</style>.,{1} збільшується на {0} від <style=KeyWord>поточного значення параметра {2}</style> героя.,Der {1} wird um {0} des <style=KeyWord>derzeitigen {2}</style> des Helden erhöht.,{1} aumenta un {0} de la cantidad de {2} <style=KeyWord>actual</style> del héroe.,{1} recebe aumento equivalente a {0} do <style=KeyWord>{2} atual</style> do Herói.,{1} 능력치가 영웅이 지닌 <style=KeyWord>현재 {2}</style>의 {0}만큼 증가
+PerkEffectInformations_MagicFuel,{3},{3},{3},{3},{3},{3},{3},{3},{3},{3}.,{3}
+PerkName_CherryPicking,First Blood,Premier sang,第一滴血,第一滴血,先制の血,Первая кровь,Перша кров,Erstschlag,Primera sangre,Sangue Fresco,선제 타격
+PerkDescription_CherryPicking,"When <style=KeyWord>attacking</style> a unit with <style=KeyWord>full</style> {0}, the attack gets:
 {1}.","Lorsqu'une unité avec toute sa {0} est <style=KeyWord>attaquée</style>, l'attaque obtient<nbsp>:
 {1}.","当<style=KeyWord>攻击</style>{0}<style=KeyWord>为满</style>的敌人时，此次攻击获得：
 {1}","當<style=KeyWord>攻擊</style>{0}<style=KeyWord>為滿</style>的敵人時，此次攻擊獲得：
@@ -4794,21 +4809,6 @@ PerkDescription_FirstBlood,"When <style=KeyWord>attacking</style> a unit with <s
 {1}.","Quando <style=KeyWord>atacar</style> uma unidade com a {0} ainda <style=KeyWord>cheia</style>, o ataque recebe:
 {1}.","<style=KeyWord>최대</style> {0} 상태인 유닛을 <style=KeyWord>공격할</style> 경우:
 {1}"
-PerkName_MagicFuel,Magic Fuel,Carburant magique,魔法燃料,魔法燃料,魔法燃料,Сила маны,Магічне паливо,Magischer Treibstoff,Combustible mágico,Combustível Mágico,마법 연료
-PerkDescription_MagicFuel,{1} is increased by {0} of the Hero's <style=KeyWord>current {2}</style>.,{1} augmentés de {0} du <style=KeyWord>{2} actuel</style> du Héros.,按英雄<style=KeyWord>当前{2}</style>的{0}提升{1}。,按英雄<style=KeyWord>當前{2}</style>的{0}提升{1}。,{1}が<style=KeyWord>英雄の{2}</style>の{0}分上昇する。,{1} увеличится на {0} от <style=KeyWord>текущего уровня маны героя</style>.,{1} збільшується на {0} від <style=KeyWord>поточного значення параметра {2}</style> героя.,Der {1} wird um {0} des <style=KeyWord>derzeitigen {2}</style> des Helden erhöht.,{1} aumenta un {0} de la cantidad de {2} <style=KeyWord>actual</style> del héroe.,{1} recebe aumento equivalente a {0} do <style=KeyWord>{2} atual</style> do Herói.,{1} 능력치가 영웅이 지닌 <style=KeyWord>현재 {2}</style>의 {0}만큼 증가
-PerkEffectInformations_MagicFuel,{3},{3},{3},{3},{3},{3},{3},{3},{3},{3}.,{3}
-PerkName_CherryPicking,Cherry Picking,Tri sélectif,就是你了,就是你了,いいとこ取り,Враг одиночества,Вередливий,Wählerisch,Tiquismiquis,Escolhendo a Dedo,골라 먹기
-PerkDescription_CherryPicking,"When <style=KeyWord>attacking</style> an <style=KeyWord>isolated</style> unit, the attack gets:
-{0}.","Lorsqu'une unité <style=KeyWord>isolée</style> est <style=KeyWord>attaquée</style>, l'attaque obtient<nbsp>:
-{0}.","当<style=KeyWord>攻击</style><style=KeyWord>落单</style>的敌人时，此次攻击获得：
-{0}","當<style=KeyWord>攻擊</style><style=KeyWord>落單</style>的敵人時，此次攻擊獲得：
-{0}",<style=KeyWord>孤立した</style>ユニットへ<style=KeyWord>攻撃</style>時、以下の効果を得る: {0}。,"Если цель <style=KeyWord>атаки</style> героя <style=KeyWord>изолирована</style>, атака получает бонус:
-{0}.","Під час <style=KeyWord>атаки</style> <style=KeyWord>відокремленого</style> монстра, атака отримує:
-{0}.","Beim <style=KeyWord>Angriff</style> auf einen <style=KeyWord>isolierte</style> Einheit, erhält der Angriff:
-{0}.","Al <style=KeyWord>atacar</style> a una unidad <style=KeyWord>aislada</style>, el ataque obtiene:
-{0}.","Quando <style=KeyWord>atacar</style> uma unidade <style=KeyWord>isolada</style>, o ataque recebe:
-{0}.","<style=KeyWord>고립</style> 상태인 유닛을 <style=KeyWord>공격</style>할 경우:
-{0}"
 PerkName_Specialist,Specialist,Spécialiste,专一,專一,スペシャリスト,Любимое оружие,Спеціаліст,Spezialist,Especialista,Especialista,전문가
 PerkDescription_Specialist,"<style=Bad>Disables the second weapon set</style>, in exchange for {0}, {1} and {2} <style=KeyWord>use</style> <style=Attenuated>(Limit per turn)</style> on every <style=""Skill"">skill</style> provided by the remaining <style=KeyWord>weapon</style> <style=Attenuated>(provided by items in Main Hand slot)</style>.","<style=Bad>Désactive le second set d'armes</style> en échange de {0}, {1} et {2} <style=KeyWord>utilisations</style> <style=Attenuated>(Limite par tour)</style> pour chaque <style=Skill>compétence</style> provenant de votre <style=KeyWord>set d'armes</style> restant (procurées par l'objet dans votre emplacement de Main Principale)</style>.","<style=Bad>禁用第二套武器</style>以换取{0}、{1}，并使剩余<style=KeyWord>武器</style><style=Attenuated>（主手栏位的物品）</style>提供的每项<style=""Skill"">技能</style><style=KeyWord>使用次数</style><style=Attenuated>（每回合限制的次数）</style>{2}。","<style=Bad>禁用次要武器</style>，但其餘可用<style=KeyWord>武器</style><style=Attenuated>（僅限主手欄位）</style>提供的所有<style=""Skill"">技能</style>{0}、{1}、{2}<style=KeyWord>使用次數</style><style=Attenuated>（每回合限制）</style>。","<style=Bad>第二武器セットを無効</style>にする代わりに、{0}および残りの<style=KeyWord>武器</style><style=Attenuated>(利き手武器スロットのアイテム)</style>で発動する全ての<style=""Skill"">スキル</style>に{1}および<style=KeyWord>使用回数</style>{2}<style=Attenuated>(1ターンに1回まで)</style>。","<style=Bad>Герой теряет второй набор оружия</style>, но взамен получает бонус: {0}, {1} и {2} <style=KeyWord>заряд(а)</style> <style=Attenuated>(макс. за ход)</style> для каждого <style=""Skill"">навыка</style> оставшегося <style=KeyWord>оружия</style> <style=Attenuated>(т.е. предмета в ячейке основной руки)</style>.","<style=Bad>Вимикає другий набір зброї</style> в обмін на {0}, {1} і {2} <style=KeyWord>вик.</style> <style=Attenuated>(обмеження на хід)</style> кожного <style=""Skill"">вміння</style>, що надає <style=KeyWord>зброя</style>, яка лишилася <style=Attenuated>(усі елементи головного набору зброї в руках)</style>.","<style=Bad>Deaktiviert den zweiten Waffensatz</style> im Austausch gegen {0}, {1} und {2} <style=KeyWord>Nutzung(en)</style> <style=Attenuated>(Limit pro Runde)</style> jeder <style=""Skill"">Fähigkeit</style> der verbleibenden <style=KeyWord>Waffe</style> <style=Attenuated>bzw. des Gegenstandes im Haupthandplatz</style>.","<style=Bad>Desactiva el segundo conjunto de armas</style> a cambio de {0}, {1} y {2} <style=KeyWord>usos</style> <style=Attenuated>(límite por turno)</style> en cada <style=""Skill"">habilidad</style> proporcionada por el <style=KeyWord>arma</style> restante <style=Attenuated>(los objetos equipados en la mano dominante)</style>.","<style=Bad>Desativa o segundo conjunto de armas</style>, em troca de {0}, {1} e {2} <style=KeyWord>uso(s)</style> <style=Attenuated>(Limite por turno)</style> por <style=""Skill"">habilidade</style> proporcionada pela <style=KeyWord>arma</style> restante <style=Attenuated>(proporcionada por itens no espaço da Mão Primária)</style>.","<style=Bad>2번째 무기 세트를 비활성화</style>하고 남은 <style=KeyWord>무기</style>가 제공<style=Attenuated>(주 무기 슬롯에 있는 아이템이 제공)</style>하는 <style=""Skill"">스킬</style> 하나당 {0}, {1}, <style=KeyWord>사용 횟수</style> {2} <style=Attenuated>(턴당 제한)</style>"
 PerkName_Leapfrog,Leapfrog,Saute-mouton,蛙跳,蛙跳,馬跳び,Прыжок,Чехарда,Bocksprung,Salto de rana,Pulo do Gato,높은 도약
