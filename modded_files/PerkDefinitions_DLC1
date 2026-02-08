@@ -1477,7 +1477,7 @@
                      <IsTrue Value="IsTargetInjured"/>
                   </Conditions>
                </SkillModifier>
-               <SkillModifier ComputationStat="OverallDamage" Value="PerkDamageBonus"/>
+               <SkillModifier ComputationStat="OverallDamage" Value="PerkDamageBonus">
                   <Conditions>
                      <IsTrue Value="HasPerkData"/>
                      <IsTrue Value="IsTargetEnemyUnit"/>
