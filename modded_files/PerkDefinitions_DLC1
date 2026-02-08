@@ -55,7 +55,7 @@
       <TokenVariables>
          <TokenVariable Key="IsAnAllyInRange" Value="Owner.ClosestAllyDistance > AllyRange"/>
          <TokenVariable Key="AllyRange" Value="12"/>
-         <TokenVariable Key="BonusExperience" Value="120"/>
+         <TokenVariable Key="BonusExperience" Value="150"/>
          <TokenVariable Key="XPMultiplier" Value="KillerMultiplier * WaveMultiplier"/>
          <TokenVariable Key="KillerMultiplier" Value="KillerBonusExperienceFactor"/>
          <TokenVariable Key="WaveMultiplier" Value="CurrentWaveXpAdjustmentMultiplier"/>

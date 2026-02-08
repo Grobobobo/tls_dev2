@@ -3425,7 +3425,7 @@
                     </Isolated>
 
                <NoDodge/>
-
+               <NoBlock/>
                <IgnoreLineOfSight/>
 
             </SkillEffects>
@@ -3546,11 +3546,11 @@
 
             <SkillEffects>
 
-               <MultiHit HitsCount="3"/>
+               <MultiHit HitsCount="4"/>
 
                <Isolated>
 
-                  <DamageMultiplier>2</DamageMultiplier>
+                  <DamageMultiplier>3</DamageMultiplier>
 
                </Isolated>
 
@@ -3574,15 +3574,15 @@
 
       <AreaOfEffect OriginX="2" OriginY="2">
 
-         _XXX_
-
-         XXXXX
-
-         XXXXX
-
-         XXXXX
+         __X__
 
          _XXX_
+
+         XXXXX
+
+         _XXX_
+
+         __X__
 
       </AreaOfEffect>
 
@@ -3608,7 +3608,7 @@
 
                   <TurnsCount>2</TurnsCount>
 
-                  <Malus>20</Malus>
+                  <Malus>10</Malus>
 
                   <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
 
@@ -3714,15 +3714,15 @@
 
       <AreaOfEffect OriginX="2" OriginY="2">
 
-         _XXX_
-
-         XXXXX
-
-         XXXXX
-
-         XXXXX
+         __X__
 
          _XXX_
+
+         XXXXX
+
+         _XXX_
+
+         __X__
 
       </AreaOfEffect>
 
@@ -3748,7 +3748,7 @@
 
                   <TurnsCount>2</TurnsCount>
 
-                  <Malus>30</Malus>
+                  <Malus>20</Malus>
 
                   <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
 

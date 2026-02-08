@@ -1112,6 +1112,7 @@
 
       <Construction>
          <MaterialsCost>11</MaterialsCost>
+         <BuildLimit>32</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
             <GroundCategory>Outside</GroundCategory>
@@ -1180,6 +1181,7 @@
 
       <Construction>
          <MaterialsCost>9</MaterialsCost>
+         <BuildLimit>34</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
             <GroundCategory>Outside</GroundCategory>
@@ -1248,6 +1250,7 @@
 
       <Construction>
          <MaterialsCost>13</MaterialsCost>
+         <BuildLimit>30</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
             <GroundCategory>Outside</GroundCategory>
@@ -1988,7 +1991,7 @@
 
       <Construction>
          <GoldCost>30</GoldCost>
-         <BuildLimit>4</BuildLimit>
+         <BuildLimit>3</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
          </GroundCategories>
@@ -2868,7 +2871,7 @@
       </Blueprint>
 
       <Construction>
-         <GoldCost>75</GoldCost>
+         <GoldCost>55</GoldCost>
          <BuildLimit>ProdBuildings</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -2908,6 +2911,11 @@
 
       <Production>
          <BuildingGaugeEffectDefinition TriggeredOnConstruction="false">
+            <CreateItem>
+               <BuildingLevelModifiersList Id="BuildingProduction" />
+               <ItemsList Id="ItemList_PotionMakerProd"/>
+               <ItemRaritiesList Id="AlwaysCommon"/>
+            </CreateItem>
             <CreateItem>
                <BuildingLevelModifiersList Id="BuildingProduction" />
                <ItemsList Id="ItemList_PotionMakerProd"/>
@@ -5030,11 +5038,11 @@
    <!-- BUILDING LIMITS -->
    <!-- ███████████████████████████████████████████████████████████████ -->
 
-   <BuildingLimitGroupDefinition Id="Gates" Limit="12"/>
+   <BuildingLimitGroupDefinition Id="Gates" Limit="6"/>
    <BuildingLimitGroupDefinition Id="Ballistas" Limit="32"/>
    <BuildingLimitGroupDefinition Id="Barricades" Limit="0" ResearchFlag="BarricadesLimit"/>
-   <BuildingLimitGroupDefinition Id="ProdBuildings" Limit="5"/>
-   <BuildingLimitGroupDefinition Id="Seeds" Limit="20"/>
+   <BuildingLimitGroupDefinition Id="ProdBuildings" Limit="4"/>
+   <BuildingLimitGroupDefinition Id="Seeds" Limit="8"/>
 
 
    <!-- ███████████████████████████████████████████████████████████████ -->
