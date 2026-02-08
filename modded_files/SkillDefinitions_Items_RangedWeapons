@@ -1234,12 +1234,16 @@
 		 </CasterAnim>
 
          <SoundEffect>
-            <Path>00_Others/Spot/SFX_Skill_Spot</Path>
+            <Path>LongBow/TakeAim/SFX_SKILL_TakeAim_Hit</Path>
             <Delay>0</Delay>
          </SoundEffect>
+         <SoundEffect>
+            <Path>LongBow/TakeAim/SFX_SKILL_TakeAim_Shoot</Path>
+            <Delay>0.87</Delay>
+         </SoundEffect>
+
       </CastFXs>
-   </SkillDefinition>
-   
+   </SkillDefinition>   
    <SkillDefinition Id="TakeAim1" TemplateId="TakeAim">
       <SkillAction>
          <Generic>

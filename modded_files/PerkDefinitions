@@ -467,7 +467,7 @@
       <TokenVariables>
          <TokenVariable Key="DamageBonusThisTurn" Value="Module.Buffer2 * DamageBonusByHit"/>
          <TokenVariable Key="CurrentDamageBonus" Value="(Module.Buffer + Module.Buffer2) * DamageBonusByHit"/>
-         <TokenVariable Key="DamageBonusByHit" Value="4"/>
+         <TokenVariable Key="DamageBonusByHit" Value="6"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="OverallDamage" Value="DamageBonusByHit"/>
@@ -2708,7 +2708,7 @@
    <!-- T4 -->
    <PerkDefinition Id="HumanBallista">
       <TokenVariables>
-         <TokenVariable Key="TargetAmount" Value="2"/>
+         <TokenVariable Key="TargetAmount" Value="3"/>
          <TokenVariable Key="SkillId" Value="HumanBallistaPerkSkill"/>
       </TokenVariables>
       <LocArguments>

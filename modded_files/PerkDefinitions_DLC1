@@ -10,7 +10,7 @@
    <PerkDefinition Id="JollyDrinker">
 	   <TokenVariables>
          <TokenVariable Key="MovePointRestored" Value="3"/>
-         <TokenVariable Key="EquipmentSlotId" Value="Consumable"/>
+         <TokenVariable Key="EquipmentSlotId" Value="Usables"/>
          <TokenVariable Key="ConsumableSlotAmount" Value="1"/>
       </TokenVariables>
       <LocArguments>
@@ -29,7 +29,7 @@
       <Modules>
          <BufferModule>
             <Effects>
-               <EquipmentSlotModifier SlotId="Consumable" Value="ConsumableSlotAmount"/>
+               <EquipmentSlotModifier SlotId="Usables" Value="UsableSlotAmount"/>
             </Effects>
          </BufferModule>
          <BufferModule>
@@ -263,7 +263,7 @@
          <LocArgument Prefix="+" Value="SkillUsePerTurnBonus" Style="GoodNb"/>
          <StatArgument Stat="MovePointsTotal" Value="MovePointsGain"/>
          <StatArgument Stat="MovePointsTotal"/>
-		   <LocArgument Value="MaxMovePointsGain" Style="KeywordNb"/>
+         <LocArgument Value="MaxMovePointsGain" Interpreted="true" Style="KeyWordNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD/>
@@ -1198,8 +1198,8 @@
       <LocArguments>
          <StatArgument Stat="Critical" Value="CritChanceBonus"/>
          <StatArgument Stat="Critical" Value="CritChanceCurrentBonus" Interpreted="true"/>
-         <StatArgument Stat="CriticalDamage" Value="CritDamageBonus"/>
-         <StatArgument Stat="CriticalDamage" Value="CritDamageCurrentBonus" Interpreted="true"/>
+         <StatArgument Stat="CriticalPower" Value="CritDamageBonus"/>
+         <StatArgument Stat="CriticalPower" Value="CritDamageCurrentBonus" Interpreted="true"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -1249,7 +1249,7 @@
             </Events>
             <Effects>
                <StatModifier Stat="Critical" Value="CritChanceCurrentBonus"/>
-               <StatModifier Stat="CriticalDamage" Value="CritDamageCurrentBonus"/>
+               <StatModifier Stat="CriticalPower" Value="CritDamageCurrentBonus"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -1452,7 +1452,7 @@
          <TokenVariable Key="PerkDamageBonus" Value="15"/>
       </TokenVariables>
       <LocArguments>
-         <StatArgument Stat="PerkDamage" Value="PerkDamageBonus"/>
+         <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb"/>
          <StatArgument Stat="Reliability" Value="ReliabilityBonus"/>
       </LocArguments>
       <View>
@@ -1719,7 +1719,7 @@
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="HealthConversionRate" Style="KeyWordNb"/>
-         <StatArgument Stat="HealthPointsTotal"/>
+         <StatArgument Stat="HealthTotal"/>
          <StatusArgument Status="Buff" Stat="OverallDamage" Value="DamageConversionRate" TurnsCount="BuffDuration"/>
          <LocArgument Value="DamageThreshold" Style="KeyWordNb"/>
          <StatusArgument Status="Buff"/>

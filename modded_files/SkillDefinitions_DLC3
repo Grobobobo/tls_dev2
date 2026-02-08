@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
 <SkillDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SkillDefinitions.xsd">
   <SkillDefinition Id="BarricadeAttackOnDeath">
     <OverrideArtId>DamnedBombAttack</OverrideArtId>
@@ -2079,20 +2080,20 @@
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
           <Stun>
-            <BaseChance>0.85</BaseChance>
+            <BaseChance>1</BaseChance>
           </Stun>
         </SkillEffects>
       </Attack>
     </SkillAction>
   </SkillDefinition>
-  <SkillDefinition Id="PreciseTargettingUnique" TemplateId="PreciseTargetting">
+  <SkillDefinition Id="PreciseTargettingUniqueStrongThrow" TemplateId="PreciseTargetting">
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
           <Stun>
-            <BaseChance>0.85</BaseChance>
+            <BaseChance>1</BaseChance>
           </Stun>
           <MultiHit HitsCount="2" />
         </SkillEffects>

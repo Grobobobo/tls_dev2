@@ -512,7 +512,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="0">
-        <BaseDamage Min="81 * (1 + PlayableUnitLevel/10)" Max="104 * (1 + PlayableUnitLevel/10)" Interpreted="true" />
+        <BaseDamage Min="83 * (1 + PlayableUnitLevel/12)" Max="128 * (1 + PlayableUnitLevel/12)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
           <Skill>Breach</Skill>
@@ -537,7 +537,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="0">
-        <BaseDamage Min="74 * (1 + PlayableUnitLevel/10)" Max="117 * (1 + PlayableUnitLevel/10)" Interpreted="true" />
+        <BaseDamage Min="66 * (1 + PlayableUnitLevel/12)" Max="132 * (1 + PlayableUnitLevel/12)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
           <Skill>CannonBall</Skill>
@@ -562,7 +562,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="0">
-        <BaseDamage Min="91 * (1 + PlayableUnitLevel/10)" Max="108 * (1 + PlayableUnitLevel/10)" Interpreted="true" />
+        <BaseDamage Min="83 * (1 + PlayableUnitLevel/12)" Max="104 * (1 + PlayableUnitLevel/12)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
           <Skill>Snap5</Skill>
@@ -712,7 +712,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="0">
-        <BaseDamage Min="6" Max="66"/>
+        <BaseDamage Min="6" Max="66" />
         <BasePrice>0</BasePrice>
         <Skills>
           <Skill>PlayerSchadenKill</Skill>
@@ -727,7 +727,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="0">
-        <BaseDamage Min="7" Max="77"/>
+        <BaseDamage Min="7" Max="77" />
         <BasePrice>0</BasePrice>
         <Skills>
           <Skill OverallUsesCount="2">PlayerFreudeOffenseBuff</Skill>

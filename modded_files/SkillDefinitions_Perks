@@ -61,6 +61,7 @@
                   <Bonus>12</Bonus>
                   <TurnsCount>2</TurnsCount>
                </Buff>
+               <IgnoreLineOfSight/>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -341,7 +342,6 @@
       <AreaOfEffect OriginX="0" OriginY="0">
          e
          X
-
       </AreaOfEffect>
 
       <SkillAction>
@@ -350,14 +350,12 @@
             <AttackType>Adaptative</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
-
-               <ArmorPiercing/>
-              <IgnoreLineOfSight/>
-               <NoDodge/>
+            <ArmorPiercing/>
+            <IgnoreLineOfSight/>
+            <NoDodge/>
                <SurroundingEffect>
                   <Damage Multiplier="0.75"/>
                </SurroundingEffect>
-
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -423,7 +421,7 @@
                   <Targets>
                      <TargetsListId Value="HandledDefenses"/>
                   </Targets>
-                  <Amount>1</Amount>
+                  <Amount>3</Amount>
                </ResupplyOverallUses>
                <IgnoreLineOfSight/>
             </SkillEffects>

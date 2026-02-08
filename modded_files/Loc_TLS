@@ -3888,30 +3888,30 @@ SkillEffectDescription_ResupplySkills,"<style=KeyWord>Gives back <style=GoodNb>1
 <style=Attenuated>Não excede o máximo.</style>","<style=KeyWord>현재 무기 세트</style>(<style=Attenuated>손에 장착한 아이템</style>)의 모든 스킬에 <style=Attenuated>(턴당 제한)</style> <style=KeyWord>사용 횟수를 <style=GoodNb>1</style>회만큼 돌려줍니다</style>.
 <style=Attenuated>최대치를 초과할 수 없습니다.</style>"
 SkillEffectName_ResupplyCharges,Charge Restoration,Restauration de Charges,陷阱装填,陷阱裝填,チャージ復活,Восст. ловушки,Відновлення заряду,Ladung wiederherstellen,Restauración de carga,Restauração de Carga,충전 회복
-SkillEffectDescription_ResupplyCharges,"<style=KeyWord>Gives back</style> <style=GoodNb>1</style> <style=TrapUse>Charge</style> to the target trap.
-<style=Attenuated>Cannot overflow.</style>","<style=KeyWord>Rend</style> <style=GoodNb>1</style> <style=TrapUse>Charge</style> au piège ciblé.
-<style=Attenuated>Ne peut dépasser la valeur maximale de l'attribut.</style>","<style=KeyWord>补充</style>陷阱的<style=GoodNb>1次</style><style=TrapUse>使用次数</style>。
-<style=Attenuated>不能超过</style>上限。","<style=KeyWord>補充</style>陷阱的<style=GoodNb>1次</style><style=TrapUse>使用次數</style>。
-<style=Attenuated>不能超過</style>上限。","対象トラップの<style=TrapUse>チャージ</style>を<style=GoodNb>1</style>回復<style=KeyWord>する</style>。
-<style=Attenuated>回数上限を超えることはない。</style>","<style=KeyWord>Восстанавливает</style> <style=GoodNb>1</style> <style=TrapUse>заряд</style> выбранной ловушке.
-<style=Attenuated>ВАЖНО: излишек зарядов будет потерян!</style>","<style=KeyWord>Повертає</style> <style=GoodNb>1</style> <style=TrapUse>заряд</style> цільової пастки.
-<style=Attenuated>Неможливо зробити більше максимуму.</style>","<style=KeyWord>Gibt</style> <style=GoodNb>1</style> <style=TrapUse>Ladung</style> an die Zielfalle zurück.
- <style=Attenuated>Kann nicht überlaufen.</style>","<style=KeyWord>Recupera</style> <style=GoodNb>1 </style> <style=TrapUse>carga</style> de la trampa objetivo.
-<style=Attenuated>No puede sobrepasar el máximo.</style>","<style=KeyWord>Devolve</style> <style=GoodNb>1 <style=TrapUse>Carga</style> à armadilha alvo.
-<style=Attenuated>Não excede o máximo.</style>","대상 함정에 <style=TrapUse>충전</style>을 <style=GoodNb>1</style>회만큼 <style=KeyWord>돌려줍니다</style>.
+SkillEffectDescription_ResupplyCharges,"<style=KeyWord>Gives back</style> <style=GoodNb>2</style> <style=TrapUse>Charge</style> to the target trap.
+<style=Attenuated>Cannot overflow.</style>","<style=KeyWord>Rend</style> <style=GoodNb>2</style> <style=TrapUse>Charge</style> au piège ciblé.
+<style=Attenuated>Ne peut dépasser la valeur maximale de l'attribut.</style>","<style=KeyWord>补充</style>陷阱的<style=GoodNb>2次</style><style=TrapUse>使用次数</style>。
+<style=Attenuated>不能超过</style>上限。","<style=KeyWord>補充</style>陷阱的<style=GoodNb>2次</style><style=TrapUse>使用次數</style>。
+<style=Attenuated>不能超過</style>上限。","対象トラップの<style=TrapUse>チャージ</style>を<style=GoodNb>2</style>回復<style=KeyWord>する</style>。
+<style=Attenuated>回数上限を超えることはない。</style>","<style=KeyWord>Восстанавливает</style> <style=GoodNb>2</style> <style=TrapUse>заряд</style> выбранной ловушке.
+<style=Attenuated>ВАЖНО: излишек зарядов будет потерян!</style>","<style=KeyWord>Повертає</style> <style=GoodNb>2</style> <style=TrapUse>заряд</style> цільової пастки.
+<style=Attenuated>Неможливо зробити більше максимуму.</style>","<style=KeyWord>Gibt</style> <style=GoodNb>2</style> <style=TrapUse>Ladung</style> an die Zielfalle zurück.
+ <style=Attenuated>Kann nicht überlaufen.</style>","<style=KeyWord>Recupera</style> <style=GoodNb>2 </style> <style=TrapUse>carga</style> de la trampa objetivo.
+<style=Attenuated>No puede sobrepasar el máximo.</style>","<style=KeyWord>Devolve</style> <style=GoodNb>2</style> <style=TrapUse>Carga</style> à armadilha alvo.
+<style=Attenuated>Não excede o máximo.</style>","대상 함정에 <style=TrapUse>충전</style>을 <style=GoodNb>2</style>회만큼 <style=KeyWord>돌려줍니다</style>.
 <style=Attenuated>최대치를 초과할 수 없습니다.</style>"
 SkillEffectName_ResupplyOverallUses,Use Restoration,Restauration d'utilisations,防御装填,防禦裝填,使用復活,Восст. зарядов,Відновлення використань,Wiederherstellung,Restauración de uso,Uso de Restauração,사용 회복
-SkillEffectDescription_ResupplyOverallUses,"<style=KeyWord>Gives back</style> <style=GoodNb>1</style> <style=UsePerNight>Use per night</style> to the target defense.
-<style=Attenuated>Cannot overflow.</style>","<style=KeyWord>Rend</style> <style=GoodNb>1</style> <style=UsePerNight>utilisation par nuit</style> à la défense ciblée.
-<style=Attenuated>Ne peut dépasser la valeur maximale de l'attribut.</style>","<style=KeyWord>补充</style>防御设施的<style=GoodNb>1次</style><style=UsePerNight>每晚使用次数</style>。
-<style=Attenuated>不能超过</style>上限。","<style=KeyWord>補充</style>防禦設施的<style=GoodNb>1次</style><style=UsePerNight>每晚使用次數</style>。
-<style=Attenuated>不能超過</style>上限。","対象防衛施設の<style=UsePerNight>夜間使用回数</style>を<style=GoodNb>1</style><style=KeyWord>回復する</style>。
-<style=Attenuated>回数上限を超えることはない。</style>","<style=KeyWord>Восстанавливает</style> <style=GoodNb>1</style> <style=UsePerNight>заряд на ночь</style> выбранному защитному зданию.
-<style=Attenuated>ВАЖНО: излишек зарядов будет потерян!</style>","<style=KeyWord>Повертає</style> <style=GoodNb>1</style> <style=UsePerNight>використання за ніч</style> до захисту цілі.
-<style=Attenuated>Неможливо зробити більше максимуму.</style>","<style=KeyWord>Gibt</style> <style=GoodNb>1</style> <style=UsePerNight>Einsatz pro Nacht</style> an die Zielverteidigung zurück.
- <style=Attenuated>Kann nicht überlaufen.</style>","<style=KeyWord>Recupera</style> <style=GoodNb>1</style> <style=UsePerNight>uso por noche</style> de la defensa del objetivo.
-<style=Attenuated>No puede sobrepasar el máximo.</style>","<style=KeyWord>Devolve</style> <style=GoodNb>1</style> <style=UsePerNight>Uso por noite</style> à defesa do alvo.
-<style=Attenuated>Não excede o máximo.</style>","대상 방어 시설에 <style=UsePerNight>하룻밤 사용 횟수</style>를 <style=GoodNb>1</style>회만큼 <style=KeyWord>돌려줍니다</style>.
+SkillEffectDescription_ResupplyOverallUses,"<style=KeyWord>Gives back</style> <style=GoodNb>3</style> <style=UsePerNight>Use per night</style> to the target defense.
+<style=Attenuated>Cannot overflow.</style>","<style=KeyWord>Rend</style> <style=GoodNb>3</style> <style=UsePerNight>utilisation par nuit</style> à la défense ciblée.
+<style=Attenuated>Ne peut dépasser la valeur maximale de l'attribut.</style>","<style=KeyWord>补充</style>防御设施的<style=GoodNb>3次</style><style=UsePerNight>每晚使用次数</style>。
+<style=Attenuated>不能超过</style>上限。","<style=KeyWord>補充</style>防禦設施的<style=GoodNb>3次</style><style=UsePerNight>每晚使用次數</style>。
+<style=Attenuated>不能超過</style>上限。","対象防衛施設の<style=UsePerNight>夜間使用回数</style>を<style=GoodNb>3</style><style=KeyWord>回復する</style>。
+<style=Attenuated>回数上限を超えることはない。</style>","<style=KeyWord>Восстанавливает</style> <style=GoodNb>3</style> <style=UsePerNight>заряд на ночь</style> выбранному защитному зданию.
+<style=Attenuated>ВАЖНО: излишек зарядов будет потерян!</style>","<style=KeyWord>Повертає</style> <style=GoodNb>3</style> <style=UsePerNight>використання за ніч</style> до захисту цілі.
+<style=Attenuated>Неможливо зробити більше максимуму.</style>","<style=KeyWord>Gibt</style> <style=GoodNb>3</style> <style=UsePerNight>Einsatz pro Nacht</style> an die Zielverteidigung zurück.
+ <style=Attenuated>Kann nicht überlaufen.</style>","<style=KeyWord>Recupera</style> <style=GoodNb>3</style> <style=UsePerNight>uso por noche</style> de la defensa del objetivo.
+<style=Attenuated>No puede sobrepasar el máximo.</style>","<style=KeyWord>Devolve</style> <style=GoodNb>3</style> <style=UsePerNight>Uso por noite</style> à defesa do alvo.
+<style=Attenuated>Não excede o máximo.</style>","대상 방어 시설에 <style=UsePerNight>하룻밤 사용 횟수</style>를 <style=GoodNb>3</style>회만큼 <style=KeyWord>돌려줍니다</style>.
 <style=Attenuated>최대치를 초과할 수 없습니다.</style>"
 SkillEffectName_ExtinguishBrazier,Extinguish,Éteindre,熄灭,熄滅,消滅,Потушить,Погасити,Löschen,Extintor,Eliminação,진화
 SkillEffectDescription_ExtinguishBrazier,"<style=Keyword>Removes</style> some <size=16><sprite name=""BrazierPoints""/></size><style=Brazier>Flame Points</style> to the targeted <style=Brazier>Soul Vessel</style>.","<style=Keyword>Retire</style> quelques <size=16><sprite name=""BrazierPoints""/></size><style=Brazier>points de Flamme</style> au <style=Brazier>Flambeau des Revenants</style> ciblé.","指定<style=Brazier>灵魂容器</style>，<style=Keyword>消去</style>其一定量的<size=16><sprite name=""BrazierPoints""/></size><style=Brazier>火焰点数</style>。","指定<style=Brazier>靈魂容器</style>，<style=Keyword>消去</style>其一定量的<size=16><sprite name=""BrazierPoints""/></size><style=Brazier>火焰點數</style>。","選択した<style=Brazier>魂の器</style>から複数の<size=16><sprite name=""BrazierPoints""/></size><style=Brazier>フレームポイント</style>を<style=Keyword>取り除く</style>。","<style=KeyWord>Уменьшает</style> значение <size=16><sprite name=""BrazierPoints""/></size><style=brazier>пламени</style> выбранного <style=brazier>сосуда души</style>.","<style=Keyword>Прибирає</style> декілька <size=16><sprite name=""BrazierPoints""/></size><style=Brazier>джерел полум'я</style> цільової <style=Brazier>посудини душі</style>.","<style=Keyword>Entfernt</style> einige <size=16><sprite name=""BrazierPoints""/></size><style=Brazier>Flammenpunkte</style> auf das anvisierte <style=Brazier>Seelengefäß</style>.","<style=Keyword>Elimina</style> algunos <size=16><sprite name=""BrazierPoints""/></size><style=Brazier>puntos de llama</style> del <style=Brazier>receptáculo de almas</style>.","<style=Keyword>Remove</style> alguns <size=16><sprite name=""BrazierPoints""/></size><style=Brazier>Pontos de Chama</style> do <style=Brazier>Receptáculo de Almas</style> alvo.","대상 <style=Keyword>영혼 그릇</style>에서 <size=16><sprite name=""BrazierPoints""/></size><style=Brazier>불꽃 점수</style>를 일부분 <style=Brazier>제거</style>합니다."
@@ -5746,23 +5746,23 @@ PerkDescription_BigGameHunter,"When <style=KeyWord>attacking</style> an enemy wi
 {2} <style=PerkDamage>특전 피해</style>, 이후 추가 <style=KeyWord>최대</style> {1} {4}마다 {3}만큼 증가 (최대 {5})"
 PerkName_ThirdEye,Third Eye,Troisième oeil,第三只眼,第三只眼,第三の目,Третий глаз,Третє око,Drittes Auge,Tercer ojo,Terceiro Olho,세 번째 눈
 PerkDescription_ThirdEye,"Every {0} enemies <style=KeyWord>hit</style>, the next <style=""Skill"">skill</style> gets:
-{1}.
+{1}, {2}, {3}.
 <style=Attenuated>This modifier doesn't stack.</style>","Tous les {0} ennemis <style=KeyWord>touchés</style>, la prochaine <style=""Skill"">compétence</style> obtient<nbsp>:
-{1}
+{1}, {2}, {3}.
 <style=Attenuated>Ce modificateur n'est pas cumulable.</style>","每<style=KeyWord>击中</style>{0}个敌人，下一次使用<style=""Skill"">技能</style>时获得效果：
-{1}
+{1}, {2}, {3}。
 <style=Attenuated>此加成不可叠加。</style>","每<style=KeyWord>擊中</style>{0}個敵人，下一次使用<style=""Skill"">技能</style>時獲得效果：
-{1}
+{1}, {2}, {3}。
 <style=Attenuated>此加成不可疊加。</style>","{0}体のエネミーに<style=KeyWord>攻撃</style>する毎に、次の<style=""Skill"">スキル</style>は以下の効果を得る:
-{1}。
+{1}, {2}, {3}。
 <style=ATTenuated>この効果は重複しない。</style>","За <style=KeyWord>попадания</style> по {0} врагам следующий <style=""Skill"">навык</style> получает:
-{1}.
+{1}, {2}, {3}.
 <style=Attenuated>Эффект не накапливается.</style>","За кожних {0} ворогів, яким завдано <style=KeyWord>удар</style>, наступне <style=""Skill"">вміння</style> отримає:
-{1}.
+{1}, {2}, {3}.
 <style=Attenuated>Цей модифікатор не поєднується.</style>","Jeder {0} <style=KeyWord>getroffene</style> Gegner, gibt dem nächsten Angriff:
-{1}.
+{1}, {2}, {3}.
 <style=Attenuated>Dieser Modifikator ist nicht stapelbar.</style>","Cada {0} enemigos <style=KeyWord>golpeados</style>, la siguiente <style=""Skill"">habilidad</style> obtiene:
-{1}.
+{1}, {2}, {3}.
 <style=Attenuated>Este modificador no es acumulable.</style>","A cada {0} inimigos <style=KeyWord>golpeados</style>, a próxima <style=""Skill"">habilidade</style> recebe:
 {1}.
 <style=Attenuated>Este modificador não acumula.</style>","적 {0}명에 <style=KeyWord>명중</style>할 때마다 다음 <style=""Skill"">스킬</style>에 적용:
@@ -13308,36 +13308,36 @@ Próximo passo: {4} de {1}","{3}
 PerkName_HardAsARock,Hard As A Rock,Solide comme un roc,坚若磐石,堅若磐石,岩のように硬く,Твёрдый как камень,Твердий наче камінь,Hart wie ein Fels,Duro como una piedra,Duro Feito Pedra,돌처럼 단단하게
 PerkDescription_HardAsARock,"Whenever an enemy is <style=KeyWord>killed</style>:
 {0}.
-Increases <style=KeyWord>Maximum</style> {1} by {2}.
+Increases <style=KeyWord>Maximum</style> {2} by {1}.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Quand un ennemi est <style=KeyWord>tué</style><nbsp>:
 {0}.
-Augmente {1} <style=KeyWord>maximum</style> de {2}.
+Augmente {2} <style=KeyWord>maximum</style> de {1}.
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","每有敌人被 <style=KeyWord>击杀</style>时：
 {0}。
-<style=KeyWord>最大</style>{1}提升{2}。
+<style=KeyWord>最大</style>{2}提升{1}。
 <style=""DwarfIcon""></style><style=""DwarfText"">卢恩堡的矮人DLC</style>","每有敵人被 <style=KeyWord>擊殺</style>時：
 {0}。
-<style=KeyWord>最大</style>{1}提升{2}。
+<style=KeyWord>最大</style>{2}提升{1}。
 <style=""DwarfIcon""></style><style=""DwarfText"">盧恩堡的矮人DLC</style>","エネミーを1体<style=KeyWord>倒す</style>毎に{0}。
-<style=KeyWord>最大</style>{1}を{2}増加させる。
+<style=KeyWord>最大</style>{2}を{1}増加させる。
 <style=""DwarfIcon""></style><style=""DwarfText"">ルーネンベルクのドワーフDLC</style>","Каждый раз, когда враг <style=KeyWord>убит</style>:
 {0}.
-Увеличивает <style=KeyWord>максимум</style> {1} на {2}.
+Увеличивает <style=KeyWord>максимум</style> {2} на {1}.
 <style=""DwarfIcon""></style><style=""DwarfText"">Дополнительный контент ""Dwarves of Runenberg""</style>","Коли ворога <style=KeyWord>вбивають</style>:
 {0}.
-Збільшує <style=KeyWord>максимум</style> {1} на {2}.
+Збільшує <style=KeyWord>максимум</style> {2} на {1}.
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC «Dwarves of Runenberg»</style>","Immer wenn ein Feind <style=KeyWord>getötet</style> wird:
 {0}.
-Erhöht das <style=KeyWord>Maximum</style> von {1} um {2}.
+Erhöht das <style=KeyWord>Maximum</style> von {2} um {1}.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Cuando se <style=KeyWord>mata</style> a un enemigo:
 {0}.
-Aumenta el {1} <style=KeyWord>máximo</style> en {2}.
+Aumenta el {2} <style=KeyWord>máximo</style> en {1}.
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","Sempre que um inimigo for <style=KeyWord>abatido</style>:
 {0}.
-Aumenta {1} <style=KeyWord>Máximo</style> em {2}.
+Aumenta {2} <style=KeyWord>Máximo</style> em {1}.
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","적을 <style=KeyWord>처치</style>할 때마다:
 {0}.
-<style=KeyWord>최대</style> {1}이(가) {2} 증가합니다.
+<style=KeyWord>최대</style> {2}이(가) {1} 증가합니다.
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
 PerkName_LookAtMyMuscles,Look At My Muscles,Admirez ces muscles,秀肌肉,秀肌肉,オレの筋肉を見よ,Посмотри на мои мускулы,"Диви, які м'язи",Sieh dir meine Muskeln an,Mira qué músculos,Admira Esses Músculos,내 근육 좀 볼래
 PerkDescription_LookAtMyMuscles,"{1}. Increases <style=KeyWord>Maximum</style> {2} by {3}.
@@ -14272,6 +14272,7 @@ Zu treffende Gegner: {2}","{0}
 Enemigos por golpear: {2}","{0}
 Inimigos a serem golpeados: {2}","{0}
 명중해야 하는 적: {2}"
+PerkName_AgainstTheWall,Against the Wall,Dos au mur,背靠墙壁,背靠牆壁,壁際,К стене,Позаду стіна,Gegen die Wand,Contra la pared,Contra a Parede,벽에 기대어
 PerkDescription_AgainstTheWall,"Whenever the Hero is <style=KeyWord>adjacent to a building, defense or obstacle</style>:
 {0}, increased by {1} for each <style=KeyWord>Level</style> of the Hero.
 {3}, increased by {4} for each <style=KeyWord>Level</style> of the Hero.
@@ -14317,7 +14318,18 @@ PerkDescription_AgainstTheWall,"Whenever the Hero is <style=KeyWord>adjacent to 
 {3} (영웅 <style=KeyWord>레벨</style> 하나당 {4}만큼 증가)
 
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
-PerkEffectInformations_AgainstTheWall,{2} {5},{2} {5},{2} {5},{2} {5},{2} {5},{2} {5},{2} {5},{2} {5},{2} {5},{2} {5},{2} {5}
+PerkEffectInformations_AgainstTheWall,"{2}
+{5}","{2}
+{5}","{2}
+{5}","{2}
+{5}","{2}
+{5}","{2}
+{5}","{2}
+{5}","{2}
+{5}","{2}
+{5}","{2}
+{5}","{2}
+{5}"
 PerkName_StoneheartShield,Stoneheart Shield,Coeur de pierre,石心之盾,石心之盾,石の心臓シールド,Щит Каменного Сердца,Щит кам'яного серця,Steinherz-Schild,Escudo impasible,Escudo do Empedernido,돌심장 방패
 PerkDescription_StoneheartShield,"Every {3} enemies <style=Keyword>killed</style>: {0}, up to {1}.
 <style=Attenuated>The bonus lasts as long as the Hero keeps this item.</style>
