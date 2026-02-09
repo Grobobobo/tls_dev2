@@ -1183,13 +1183,13 @@
                   <Malus>30</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
-               <RemoveStatus>
+                  <RemoveStatus>
                   <BaseChance>1</BaseChance>
-                  <Status>RemovablePositive</Status>
+                  <Status>Buff</Status>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-               </RemoveStatus>
-            </SkillEffects>
+               </RemoveStatus>            
+               </SkillEffects>
          </Generic>
       </SkillAction>
 
@@ -1263,9 +1263,9 @@
                   <Malus>33</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
-               <RemoveStatus>
+                  <RemoveStatus>
                   <BaseChance>1</BaseChance>
-                  <Status>RemovablePositive</Status>
+                  <Status>Buff</Status>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                </RemoveStatus>
@@ -1293,12 +1293,13 @@
                   <Malus>35</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
-               <RemoveStatus>
+                  <RemoveStatus>
                   <BaseChance>1</BaseChance>
-                  <Status>RemovablePositive</Status>
+                  <Status>Buff</Status>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-               </RemoveStatus>
+               </RemoveStatus>            
+
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -1323,12 +1324,13 @@
                   <Malus>38</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
-               <RemoveStatus>
+                  <RemoveStatus>
                   <BaseChance>1</BaseChance>
-                  <Status>RemovablePositive</Status>
+                  <Status>Buff</Status>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-               </RemoveStatus>
+               </RemoveStatus>            
+
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -1353,12 +1355,13 @@
                   <Malus>41</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
-               <RemoveStatus>
+                  <RemoveStatus>
                   <BaseChance>1</BaseChance>
-                  <Status>RemovablePositive</Status>
+                  <Status>Buff</Status>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-               </RemoveStatus>
+               </RemoveStatus>            
+
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -1383,12 +1386,13 @@
                   <Malus>45</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
-               <RemoveStatus>
+                  <RemoveStatus>
                   <BaseChance>1</BaseChance>
-                  <Status>RemovablePositive</Status>
+                  <Status>Buff</Status>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-               </RemoveStatus>
+               </RemoveStatus>            
+
             </SkillEffects>
          </Generic>
       </SkillAction>
