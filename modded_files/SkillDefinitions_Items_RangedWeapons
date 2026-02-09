@@ -900,7 +900,7 @@
    <SkillDefinition Id="LongShot">
       <ActionPointsCost>1</ActionPointsCost>
       <UsesPerTurnCount>5</UsesPerTurnCount>
-      <Range Min="5" Max="14" CardinalDirectionOnly="false" Modifiable="true"/>
+      <Range Min="5" Max="12" CardinalDirectionOnly="false" Modifiable="true"/>
       <AreaOfEffect OriginX="0" OriginY="0">
          X
       </AreaOfEffect>
@@ -983,7 +983,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                   <Stat Id="Dodge"/>
-                  <Bonus>30</Bonus>
+                  <Bonus>40</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
                <Buff>
@@ -1161,7 +1161,7 @@
       </ValidTargets>
       <ActionPointsCost>1</ActionPointsCost>
       <UsesPerTurnCount>2</UsesPerTurnCount>
-      <Range Min="5" Max="14" CardinalDirectionOnly="false" Modifiable="true"/>
+      <Range Min="5" Max="12" CardinalDirectionOnly="false" Modifiable="true"/>
       <AreaOfEffect OriginX="0" OriginY="0">
          X
       </AreaOfEffect>
@@ -1404,7 +1404,7 @@
       <MovePointsCost>1</MovePointsCost>
       <ManaCost>1</ManaCost>
       <UsesPerTurnCount>3</UsesPerTurnCount>
-      <Range Min="7" Max="18" CardinalDirectionOnly="false" Modifiable="true"/>
+      <Range Min="7" Max="16" CardinalDirectionOnly="false" Modifiable="true"/>
       <AreaOfEffect OriginX="0" OriginY="0">
          X
       </AreaOfEffect>
@@ -1470,7 +1470,7 @@
       <ActionPointsCost>2</ActionPointsCost>
       <ManaCost>2</ManaCost>
       <UsesPerTurnCount>2</UsesPerTurnCount>
-      <Range Min="5" Max="14" Modifiable="true"/>
+      <Range Min="5" Max="12" Modifiable="true"/>
       <AreaOfEffect OriginX="1" OriginY="1">
          XXX
          XXX
@@ -2022,7 +2022,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
-            <DamageMultiplier>0.9</DamageMultiplier>
+            <DamageMultiplier>0.8</DamageMultiplier>
             <SkillEffects>
                <Propagation PropagationsCount="3"/>
                <NoDodge/>

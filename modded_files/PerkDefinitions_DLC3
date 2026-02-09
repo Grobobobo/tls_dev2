@@ -1786,7 +1786,7 @@
       <TokenVariables>
          <TokenVariable Key="HasSkillBeenUsedEnough" Value="FirstSkillUsages > UsesRequired - 1"/>
          <TokenVariable Key="FirstSkillUsages" Value="Min(Module.Buffer,UsesRequired)"/>
-         <TokenVariable Key="UsesRequired" Value="2"/>
+         <TokenVariable Key="UsesRequired" Value="3"/>
          <TokenVariable Key="FirstSkillId" Value="Bash"/> <!--unused-->
          <TokenVariable Key="MultiHitBonus" Value="3"/>
       </TokenVariables>

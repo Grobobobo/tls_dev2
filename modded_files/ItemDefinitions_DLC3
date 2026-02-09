@@ -340,9 +340,6 @@
       <Level Id="0">
         <BaseDamage Min="111 * (1 + PlayableUnitLevel/12)" Max="170 * (1 + PlayableUnitLevel/12)" Interpreted="true" />
         <BasePrice>10</BasePrice>
-        <BaseStatBonuses>
-          <BaseStatBonus Stat="PropagationDamage">-25</BaseStatBonus>
-        </BaseStatBonuses>
         <Skills>
           <Skill>RifleShot</Skill>
           <Skill>SmallRifleShot</Skill>

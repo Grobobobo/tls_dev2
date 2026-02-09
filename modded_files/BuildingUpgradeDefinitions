@@ -570,6 +570,39 @@
       </CastFXs>
    </BuildingUpgradeDefinition>
 
+   <BuildingUpgradeDefinition Id="UpgradeFillGaugeProductionPotion">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>120</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="ImprovePassive" PassiveId="FillEffectGauge20" UpgradedBonusValue="20"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+
+
+
    <!-- ███████████████████████████████████████████████████████████████ -->
    <!-- BLACKSMITH -->
    <!-- ███████████████████████████████████████████████████████████████ -->

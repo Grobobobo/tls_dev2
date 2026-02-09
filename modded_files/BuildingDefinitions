@@ -2899,23 +2899,18 @@
 
       <Upgrade>
          <BuildingUpgradeDefinitions>
-            <BuildingUpgradeDefinition Id="UpgradeFillGaugeProduction"/>
+            <BuildingUpgradeDefinition Id="UpgradeFillGaugeProductionPotion"/>
             <BuildingUpgradeDefinition Id="UpgradeHelpPotionMaker"/>
             <BuildingUpgradeDefinition Id="UpgradeProductionLevel"/>
          </BuildingUpgradeDefinitions>
       </Upgrade>
 
       <Passives>
-         <BuildingPassiveDefinition Id="FillEffectGauge10"/>
+         <BuildingPassiveDefinition Id="FillEffectGauge20"/>
       </Passives>
 
       <Production>
          <BuildingGaugeEffectDefinition TriggeredOnConstruction="false">
-            <CreateItem>
-               <BuildingLevelModifiersList Id="BuildingProduction" />
-               <ItemsList Id="ItemList_PotionMakerProd"/>
-               <ItemRaritiesList Id="AlwaysCommon"/>
-            </CreateItem>
             <CreateItem>
                <BuildingLevelModifiersList Id="BuildingProduction" />
                <ItemsList Id="ItemList_PotionMakerProd"/>
