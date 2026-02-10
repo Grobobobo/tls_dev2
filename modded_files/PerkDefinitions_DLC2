@@ -768,12 +768,12 @@
       <TokenVariables>
          <TokenVariable Key="IsAnAllyInRange" Value="Owner.ClosestAllyDistance > AllyRange"/>
          <TokenVariable Key="AllyRange" Value="12"/>
-         <TokenVariable Key="IsolationBonus" Value="25"/>
+         <TokenVariable Key="ResistanceBonus" Value="20"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="AllyRange" Style="KeyWordNb"/>
          <LocalizedArgument Value="SkillEffectName_IgnoreLineOfSight" Style="Vision"/>
-         <StatArgument Stat="IsolatedAttacks" Value="IsolationBonus"/>
+         <StatArgument Stat="Resistance" Value="ResistanceBonus"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -788,7 +788,7 @@
       <Modules>
          <BufferModule>
             <Effects>
-               <StatModifier Stat="IsolatedAttacks" Value="IsolationBonus">
+               <StatModifier Stat="Resistance" Value="ResistanceBonus">
                   <Conditions>
                      <IsTrue Value="IsAnAllyInRange"/>
                   </Conditions>

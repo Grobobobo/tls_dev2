@@ -1366,6 +1366,19 @@ BuildingUpgradeTooltipDescription_UpgradeFillGaugeProduction0,"Upgrades passive 
  • <style=KeyWord>Objetos</style> fabricados <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>.","Melhora a <style=ProductionEffect>produção</style> passiva:
  • <style=KeyWord>Item(ns)</style> produzido(s) <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>.","기본 <style=ProductionEffect>생산</style> 강화:
  • 제작 <style=KeyWord>아이템</style> <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>"
+BuildingUpgradeTooltipName_UpgradeFillGaugeProductionPotion0,Production +,Production +,生产力 +,生產力 +,生産量+,Производство +,Виробництво +,Produktion +,Producción +,Produção +,생산 +
+BuildingUpgradeTooltipDescription_UpgradeFillGaugeProductionPotion0,"Upgrades passive <style=ProductionEffect>production</style>:
+• <style=KeyWord>Item(s)</style> crafted <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>.","Améliore la <style=ProductionEffect>production</style> passive<nbsp>:
+• <style=KeyWord>Objets</style> fabriqués <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>.","升级自动<style=ProductionEffect>生产力</style>：
+ • 生产<style=KeyWord>物品</style>数量 <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>。","升級自動<style=ProductionEffect>生產力</style>：
+• 生產<style=KeyWord>物品</style>數量 <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>。","自動的な<style=ProductionEffect>生産</style>を強化する:
+ ・生産される<style=KeyWord>アイテム</style><style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>。","Улучшает пассивное <style=ProductionEffect>производство</style>:
+• <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style> предм. <style=KeyWord>каждое утро</style>.","Покращує пасивне <style=ProductionEffect>виробництво</style>:
+ • Створених <style=KeyWord>речей</style> <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>.","Verbessert die passive <style=ProductionEffect>Produktion</style>:
+ • <style=KeyWord>Gegenstände</style> hergestellt <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>.","Mejora la <style=ProductionEffect>producción</style> pasiva:
+ • <style=KeyWord>Objetos</style> fabricados <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>.","Melhora a <style=ProductionEffect>produção</style> passiva:
+ • <style=KeyWord>Item(ns)</style> produzido(s) <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>.","기본 <style=ProductionEffect>생산</style> 강화:
+ • 제작 <style=KeyWord>아이템</style> <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>"
 BuildingUpgradeTooltipName_UpgradeFillGaugeProduction1,Production ++,Production ++,生产力 ++,生產力 ++,生産量++,Производство ++,Виробництво ++,Produktion ++,Producción ++,Produção ++,생산 ++
 BuildingUpgradeTooltipDescription_UpgradeFillGaugeProduction1,"Upgrades passive <style=ProductionEffect>production</style>:
 • <style=KeyWord>Item(s)</style> crafted <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>.","Améliore la <style=ProductionEffect>production</style> passive<nbsp>:
@@ -5906,35 +5919,36 @@ Aumenta <style=KeyWord>{3} Máx.</style> para {4}.","영웅의 모든 {0}이(가
 PerkEffectInformations_QuantityVsQuality,{5},{5},{5},{5},{5},{5},{5},{5},{5},{5},{5}
 PerkName_SpikySkin,Spiky Counter,Contre épineux,以牙还牙,以牙還牙,スパイクカウンター,Ответные шипы,Шипована шкіра,Stachelkonter,Contrataque punzante,Contra-ataque Espinhoso,날카로운 반격
 PerkDescription_SpikySkin,"{5}.
+{6}.
 Whenever the Hero <style=KeyWord>is hit</style>:
 <style=KeyWord>Automatically</style> cast {2} on the attacker, with a base damage equal to {4} + {0} of the Hero's <style=KeyWord>{1}</style>.","{5}.
 Quand le Héros <style=KeyWord>est touché</style><nbsp>:
 Utilise <style=KeyWord>automatiquement</style> {2} sur l'attaquant, avec des dégâts de base égaux à {4} + {0} de <style=KeyWord>{1}</style> du Héros.","{5}
-
+{6}.
 当英雄<style=KeyWord>被击中</style>时：
 <style=KeyWord>自动</style>向攻击者施放{2}技能，基础伤害为 - {4}+英雄<style=KeyWord>{1}</style>的{0}","{5}
-
+{6}.
 當英雄<style=KeyWord>被擊中</style>時：
 <style=KeyWord>自動</style>向攻擊者施放{2}技能，基礎傷害為 - {4}+英雄<style=KeyWord>{1}</style>的{0}","{5}.
-
+{6}.
 英雄が<style=KeyWord>攻撃</style>を受ける度:
 英雄の<style=KeyWord>{1}</style>の{4}+{0}に等しい基本ダメージを<style=KeyWord>自動</style>で{2}を攻撃者へと使用。","{5}.
-
+{6}.
 Каждый раз, когда по герою <style=KeyWord>попадают атакой</style>:
 <style=KeyWord>Автоматически</style> применяет навык ""{2}"" против атакующего существа. Базовый урон автонавыка равен {4} плюс {0} <style=KeyWord>{1}</style> героя.","{5}.
-
+{6}.
 Коли герой зазнав <style=KeyWord>удару</style>:
 <style=KeyWord>Автоматично</style> задіює навичку {2} на нападника, базова шкода дорівнює {4} + {0} від <style=KeyWord>{1}</style> героя.","{5}.
-
+{6}.
 Wenn der Held <style=KeyWord>getroffen wird</style>:
 wird {2} <style=KeyWord>automatisch</style> gegen den Angreifer ausgelöst. Der Basisschaden ist {4} + {0} <style=KeyWord>{1}</style> des Helden.","{5}.
- 
+ {6}.
  Cuando el héroe <style=KeyWord>recibe un golpe</style>:
  Utiliza <style=KeyWord>automáticamente</style> {2} sobre el atacante, con un daño base igual al {4} + el {0} del atributo <style=KeyWord>{1}</style> del héroe.","{5}.
 
 Sempre que um Herói <style=KeyWord>sofrer um ataque</style>:
 Lança {2} <style=KeyWord>automaticamente</style> no atacante, com dano base igual a {4} + {0} do <style=KeyWord>{1}</style> do Herói.","{5}
-
+{6}.
 영웅이 공격에 <style=KeyWord>맞을</style> 때마다:
 공격자에게 <style=KeyWord>자동으로</style> {2} 스킬 시전 (기본 피해: {4} + 영웅이 보유한 <style=KeyWord>{1}</style>의 {0})"
 PerkEffectInformations_SpikySkin,Base damage: <style=Number>{3}</style>,Dégâts de base<nbsp>: <style=Number>{3}</style>,基础伤害：<style=Number>{3}</style>,基礎傷害：<style=Number>{3}</style>,基本ダメージ: <style=Number>{3}</style>,Базовый урон: <style=Number>{3}</style>,Базова шкода: <style=Number>{3}</style>,Basisschaden: <style=Number>{3}</style>,Daño base: <style=Number>{3}</style>,Dano base: <style=Number>{3}</style>,기본 피해: <style=Number>{3}</style>
@@ -16867,35 +16881,38 @@ PerkEffectInformations_DeadlyRanger,"Current bonus:
 {5}"
 PerkName_Sentry,Sentry,Sentinelle,哨兵,哨兵,番兵,Часовой,Сторож,Wächter,Centinela,Sentinela,보초병
 PerkDescription_Sentry,"As long as there is <style=KeyWord>no other Hero</style> within a <style=KeyWord>range of {0}</style>, all <style=""skill"">skills</style> get:
-{1}.
+{1} 
+and the Hero gets: {2}.
+
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Tant qu'<style=KeyWord>aucun autre Héros</style> n'est dans une <style=KeyWord>portée de {0}</style>, toutes les <style=""skill"">compétences</style> obtiennent<nbsp>:
-{1}.
+{1} et {2}.
+
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","只要<style=KeyWord>{0}格范围</style>内<style=KeyWord>没有其他英雄</style>，所有<style=""skill"">技能</style>获得：
-{1}。
+{1}和{2}。
 
 <style=""ElfIcon""></style><style=""ElfText"">《琥珀幽森的精灵》DLC</style>","{0}格<style=KeyWord>範圍內</style><style=KeyWord>沒有其他英雄</style>時，所有<style=""skill"">技能</style>獲得：
-{1}。
+{1}和{2}。
 
 <style=""ElfIcon""></style><style=""ElfText"">〈琥珀幽森的精靈〉DLC</style>","<style=KeyWord>{0}以内の距離</style>に<style=KeyWord>ほかの英雄がいない</style>状態のあいだ、全ての<style=""skill"">スキル</style>が以下の効果を得る:
-{1}。
+{1}と{2}。
 
 <style=""ElfIcon""></style><style=""ElfText"">アンバーワルドのエルフDLC</style>","Если на <style=KeyWord>расстоянии {0} яч.</style> вокруг героя <style=KeyWord>нет других героев</style>, все <style=""skill"">навыки</style> получают свойство:
-{1}.
+{1} и {2}.
 
 <style=""ElfIcon""></style><style=""ElfText"">Дополнительный контент ""Elves of Amberwald""</style>","Поки на <style=KeyWord>відстані {0}</style> <style=KeyWord>немає інших героїв</style>, усі <style=""skill"">вміння</style> отримують:
-{1}.
+{1} і {2}.
 
 <style=""ElfIcon""></style><style=""ElfText"">Доповнення Elves of Amberwald</style>","Wenn sich <style=KeyWord>kein anderer Held</style> innerhalb einer <style=KeyWord>Reichweite von {0} Feldern</style> befindet, erhalten alle <style=""skill"">Fähigkeiten</style>:
-{1}.
+{1} und {2}.
 
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Siempre que <style=KeyWord>no haya ningún otro héroe</style> a una <style=KeyWord>distancia máxima de {0} casillas</style>, todas las <style=""skill"">habilidades</style> obtienen:
-{1}.
+{1} y {2}.
 
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","Desde que <style=KeyWord>não haja outro Herói</style> em uma <style=KeyWord>distância de até {0}</style>, todas as <style=""skill"">habilidades</style> recebem:
-{1}.
+{1} e {2}.
 
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","<style=KeyWord>{0}타일</style> 이내에 <style=KeyWord>다른 영웅이 없을</style> 경우 모든 <style=""skill"">스킬</style>에 적용:
-{1}
+{1} 및 {2}
 
 <style=""ElfIcon""></style><style=""ElfText"">암버발트의 엘프 DLC</style>"
 PerkName_OneWithNature,One With Nature,Communion avec la Nature,与自然合一,天人合一,自然との一体化,Единение с природой,Єднання з природою,Eins mit der Natur,Comunión con la naturaleza,Comunhão com a Natureza,자연과 하나

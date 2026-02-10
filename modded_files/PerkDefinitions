@@ -2292,7 +2292,7 @@
          <TokenVariable Key="OverallDamageBonus" Value="Min(BonusMax, Module.Buffer)"/>
          <TokenVariable Key="DynamicMultiplierValue" Value="BooleanChoice(Skill.IsPhysicalDamage, PhysicalMultiplierValue, DefaultMultiplierValue)"/>
          <TokenVariable Key="DefaultMultiplierValue" Value="7"/>
-         <TokenVariable Key="PhysicalMultiplierValue" Value="10"/>
+         <TokenVariable Key="PhysicalMultiplierValue" Value="8"/>
          <TokenVariable Key="BonusMax" Value="80"/>
          <TokenVariable Key="MalusValue" Value="2"/>
       </TokenVariables>
