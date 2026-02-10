@@ -2252,7 +2252,7 @@
    <!-- Swapped name with cherry picking to preserve stuff  -->
    <PerkDefinition Id="FirstBlood">
       <TokenVariables>
-         <TokenVariable Key="CriticalBonus" Value="15"/>
+         <TokenVariable Key="CriticalBonus" Value="20"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="Critical" Value="CriticalBonus"/>
@@ -3311,7 +3311,7 @@
 
    <PerkDefinition Id="Flexibility">
       <TokenVariables>
-         <TokenVariable Key="OverallDamageBonus" Value="25"/>
+         <TokenVariable Key="OverallDamageBonus" Value="30"/>
       </TokenVariables>
       <LocArguments>
          <!--<StatArgument Stat="OverallDamage" Value="OverallDamageBonus"/>-->

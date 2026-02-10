@@ -21,7 +21,7 @@
    <ApocalypseModifierStepDefinition Id="EnemyHealthModifier_1">
       <ApocalypseLevel>2</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="HealthModifier" Value="10"/>
+         <TokenVariable Key="HealthModifier" Value="15"/>
       </TokenVariables>
       <Effects>
          <EnemiesStatBaseValueModifier Stat="HealthTotal" Value="HealthModifier">
@@ -39,14 +39,14 @@
    <ApocalypseModifierStepDefinition Id="EnemyHealthModifier_2" TemplateId="EnemyHealthModifier_1">
       <ApocalypseLevel>4</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="HealthModifier" Value="20"/>
+         <TokenVariable Key="HealthModifier" Value="30"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="EnemyHealthModifier_3" TemplateId="EnemyHealthModifier_1">
       <ApocalypseLevel>6</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="HealthModifier" Value="30"/>
+         <TokenVariable Key="HealthModifier" Value="45"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 
@@ -368,9 +368,9 @@
 
    <!-- Clawer Quantity Steps -->
    <ApocalypseModifierStepDefinition Id="ClawerQuantityModifier_1">
-      <ApocalypseLevel>3</ApocalypseLevel>
+      <ApocalypseLevel>2</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="WeightMultiplier" Value="0.25"/>
+         <TokenVariable Key="WeightMultiplier" Value="0.2"/>
          <TokenVariable Key="WeightMultiplierPercentage" Value="WeightMultiplier * 100"/>
       </TokenVariables>
       <Effects>
@@ -387,16 +387,16 @@
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="ClawerQuantityModifier_2" TemplateId="ClawerQuantityModifier_1">
-      <ApocalypseLevel>6</ApocalypseLevel>
+      <ApocalypseLevel>4</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="WeightMultiplier" Value="0.5"/>
+         <TokenVariable Key="WeightMultiplier" Value="0.4"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="ClawerQuantityModifier_3" TemplateId="ClawerQuantityModifier_1">
-      <ApocalypseLevel>9</ApocalypseLevel>
+      <ApocalypseLevel>6</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="WeightMultiplier" Value="0.75"/>
+         <TokenVariable Key="WeightMultiplier" Value="0.6"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 
@@ -438,18 +438,18 @@
    
    <!-- Enemy Progression Offset Modifier Steps -->
    <ApocalypseModifierStepDefinition Id="EnemyProgressionOffsetModifier_1">
-      <ApocalypseLevel>2</ApocalypseLevel>
+      <ApocalypseLevel>3</ApocalypseLevel>
       <TokenVariables>
          <TokenVariable Key="ProgressionMultiplier" Value="1.15"/>
          <TokenVariable Key="ExcludeStatMovePoints" Value="MovePointsTotal"/>
-         <TokenVariable Key="ExcludeStatDodge" Value="Dodge"/>
+         <TokenVariable Key="ExcludeStatAccuracy" Value="Accuracy"/>
          <TokenVariable Key="ExcludeStatResistance" Value="Resistance"/>
       </TokenVariables>
       <Effects>
           <EnemiesStatProgressionMultiplier Value="ProgressionMultiplier">
               <ExcludeStats>
                   <ExcludeStat Id="ExcludeStatMovePoints"/>
-                  <ExcludeStat Id="ExcludeStatDodge"/>
+                  <ExcludeStat Id="ExcludeStatAccuracy"/>
                   <ExcludeStat Id="ExcludeStatResistance"/>
               </ExcludeStats>
           </EnemiesStatProgressionMultiplier>
@@ -460,21 +460,21 @@
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="EnemyProgressionOffsetModifier_2" TemplateId="EnemyProgressionOffsetModifier_1">
-      <ApocalypseLevel>4</ApocalypseLevel>
+      <ApocalypseLevel>6</ApocalypseLevel>
       <TokenVariables>
          <TokenVariable Key="ProgressionMultiplier" Value="1.3"/>
          <TokenVariable Key="ExcludeStatMovePoints" Value="MovePointsTotal"/>
-         <TokenVariable Key="ExcludeStatDodge" Value="Dodge"/>
+         <TokenVariable Key="ExcludeStatAccuracy" Value="Accuracy"/>
          <TokenVariable Key="ExcludeStatResistance" Value="Resistance"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="EnemyProgressionOffsetModifier_3" TemplateId="EnemyProgressionOffsetModifier_1">
-      <ApocalypseLevel>6</ApocalypseLevel>
+      <ApocalypseLevel>9</ApocalypseLevel>
       <TokenVariables>
          <TokenVariable Key="ProgressionMultiplier" Value="1.45"/>
          <TokenVariable Key="ExcludeStatMovePoints" Value="MovePointsTotal"/>
-         <TokenVariable Key="ExcludeStatDodge" Value="Dodge"/>
+         <TokenVariable Key="ExcludeStatAccuracy" Value="Accuracy"/>
          <TokenVariable Key="ExcludeStatResistance" Value="Resistance"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
