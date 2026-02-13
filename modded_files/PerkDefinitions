@@ -3203,7 +3203,7 @@
          <!--<TokenVariable Key="PropDamageBonus" Value="50"/>-->
          <TokenVariable Key="TransformedPropBounceValue" Value="Floor(Owner.UnlockedPropagationBouncesModifier * TransformedPropBouncePercentage / 100)"/>
          <TokenVariable Key="TransformedPropBouncePercentage" Value="800"/>
-         <TokenVariable Key="BaseGamePropDmgCap" Value="100"/>
+         <TokenVariable Key="BaseGamePropDmgCap" Value="105"/>
          <TokenVariable Key="IncreaseToPropDmgCap" Value="50"/>
       </TokenVariables>
       <LocArguments>

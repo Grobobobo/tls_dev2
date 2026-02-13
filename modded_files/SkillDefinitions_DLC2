@@ -705,7 +705,7 @@
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <Stun>
-                  <BaseChance>0.5</BaseChance>
+                  <BaseChance>0.6</BaseChance>
                </Stun>
             </SkillEffects>
 
@@ -715,7 +715,7 @@
 
 
 
-      <CastFXs TotalDuration="0.52" MultiHitDelay="0.2">
+      <CastFXs TotalDuration="0.52" PropagationDelay="0.2">
 
          <VisualEffect>
 
@@ -759,7 +759,22 @@
 
          </VisualEffect>
 
-         
+         <VisualEffect>
+
+            <Paths>
+
+               <Path>Boomerang/CrescentSwing/CrescentSwing_Propagation</Path>
+
+            </Paths>
+
+            <Delay>0.4</Delay>
+
+            <SortingDepth>Before</SortingDepth>
+
+            <Target>PropagationTiles</Target>
+
+         </VisualEffect>
+
 
          <SoundEffect>
 
@@ -802,7 +817,7 @@
                   <Stun>
                      <BaseChance>0.5</BaseChance>
                   </Stun>
-                  <MultiHit HitsCount="2"/>
+               <Propagation PropagationsCount="2"/>
             </SkillEffects>
 
          </Attack>
@@ -1472,7 +1487,7 @@
 
             <AttackType>Ranged</AttackType>
 
-            <DamageMultiplier>1.7</DamageMultiplier>
+            <DamageMultiplier>1.5</DamageMultiplier>
 
             <SkillEffects>
 
@@ -1480,14 +1495,14 @@
 
                   <Stun>
 
-                     <BaseChance>0.5</BaseChance>
+                     <BaseChance>0.6</BaseChance>
 
                   </Stun>
 
                <SurroundingEffect>
 
                   <Stun>
-                     <BaseChance>0.5</BaseChance>
+                     <BaseChance>0.6</BaseChance>
                   </Stun>
 
                </SurroundingEffect>
@@ -1673,7 +1688,7 @@
 
             <AttackType>Ranged</AttackType>
 
-            <DamageMultiplier>1.7</DamageMultiplier>
+            <DamageMultiplier>1.5</DamageMultiplier>
 
             <SkillEffects>
 
@@ -1681,7 +1696,7 @@
 
                   <Stun>
 
-                     <BaseChance>0.5</BaseChance>
+                     <BaseChance>0.6</BaseChance>
 
                   </Stun>
 
@@ -2450,7 +2465,7 @@
 
             <AttackType>Ranged</AttackType>
 
-            <DamageMultiplier>1.7</DamageMultiplier>
+            <DamageMultiplier>1.5</DamageMultiplier>
 
             <SkillEffects>
 
@@ -2458,14 +2473,14 @@
 
                   <Stun>
 
-                     <BaseChance>0.5</BaseChance>
+                     <BaseChance>0.6</BaseChance>
 
                   </Stun>
 
                <SurroundingEffect>
 
                   <Stun>
-                     <BaseChance>0.5</BaseChance>
+                     <BaseChance>0.6</BaseChance>
                   </Stun>
 
                </SurroundingEffect>
