@@ -298,7 +298,8 @@
             <AddBuildingModifiers Id="Walls" IsIdsList="true">
                 <BuildingCostModifier>WallsCostModifier * -1</BuildingCostModifier>
                 <IgnoreLineOfSight/>
-            </AddBuildingModifiers>
+                <UpgradeCostModifier>WallsCostModifier * -1</UpgradeCostModifier>
+                </AddBuildingModifiers>
         </Effects>
     </ResearchDefinition>
    

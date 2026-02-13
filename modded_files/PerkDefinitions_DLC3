@@ -116,12 +116,12 @@
          <TokenVariable Key="MinimumThreshold" Value="100"/>
       </TokenVariables>
       <LocArguments>
-         <LocArgument Value="PhysAttackThreshold" Style="KeyWordNb"/>
+         <LocArgument Value="PhysAttackThreshold" Suffix="%" Style="GoodNb"/>
          <StatArgument Stat="PhysicalDamage"/>
          <LocArgument Value="MinimumThreshold" Style="KeyWordNb"/>
          <StatArgument Stat="Block" Value="BlockBonus"/>
          <StatArgument Stat="Block" Value="BlockBonus * BonusMultiplier" Interpreted="true"/>
-         <StatArgument Stat="PhysicalDamage" Value="NextThreshold" Interpreted="true" DisplaySign="false" Style="KeyWordNb"/>
+         <StatArgument Stat="PhysicalDamage" Value="NextThreshold" Interpreted="true" DisplaySign="false"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -148,12 +148,12 @@
          <TokenVariable Key="MinimumThreshold" Value="100"/>
       </TokenVariables>
       <LocArguments>
-         <LocArgument Value="RangAttackThreshold" Style="KeyWordNb"/>
+         <LocArgument Value="RangAttackThreshold" Suffix="%" Style="GoodNb"/>
          <StatArgument Stat="RangedDamage"/>
          <LocArgument Value="MinimumThreshold" Style="KeyWordNb"/>
          <StatArgument Stat="SkillRangeModifier" Value="SkillRangeBonus"/>
          <StatArgument Stat="SkillRangeModifier" Value="SkillRangeBonus * BonusMultiplier" Interpreted="true"/>
-         <StatArgument Stat="RangedDamage" Value="NextThreshold" Interpreted="true" DisplaySign="false" Style="KeyWordNb"/>
+         <StatArgument Stat="RangedDamage" Value="NextThreshold" Interpreted="true" DisplaySign="false"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -180,12 +180,12 @@
          <TokenVariable Key="MinimumThreshold" Value="100"/>
       </TokenVariables>
       <LocArguments>
-         <LocArgument Value="MagicAttackThreshold" Style="KeyWordNb"/>
+         <LocArgument Value="MagicAttackThreshold" Suffix="%" Style="GoodNb"/>
          <StatArgument Stat="MagicalDamage"/>
          <LocArgument Value="MinimumThreshold" Style="KeyWordNb"/>
          <StatArgument Stat="ManaRegen" Value="ManaRegBonus"/>
          <StatArgument Stat="ManaRegen" Value="ManaRegBonus * BonusMultiplier" Interpreted="true"/>
-         <StatArgument Stat="MagicalDamage" Value="NextThreshold" Interpreted="true" DisplaySign="false" Style="KeyWordNb"/>
+         <StatArgument Stat="MagicalDamage" Value="NextThreshold" Interpreted="true" DisplaySign="false"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -315,7 +315,7 @@
                </Event>
             </Events>
             <Effects>
-               <DealDamage Value="StunDamage">
+               <DealDamage Value="StunDamage" CanBeTriggeredByPerk="true">
                   <PerkTargeting TargetingReference="Target" TargetingMethod="Self"/>
                </DealDamage>
             </Effects>
@@ -832,6 +832,12 @@
                      <DecreaseBuffer BufferIndex="Buffer" Value="DamageToBlockThreshold"/>
                   </Actions>
                </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
             </Events>
             <Effects>
                <StatModifier Stat="ExperienceGainMultiplier" Value="CurrentExperienceBonus"/>
@@ -886,7 +892,7 @@
       <Modules>
          <BufferModule>
             <Events>
-               <Event EffectTime="OnStartTurn">
+               <Event EffectTime="OnStartNightTurnPlayable">
                   <Conditions>
                      <IsFalse Value="IsEnemyTurn"/>
                   </Conditions>
@@ -2227,6 +2233,9 @@
          <TokenVariable Key="SkillUsages" Value="Module.Buffer"/>
          <TokenVariable Key="SkillUsageThreshold" Value="5"/>
          <TokenVariable Key="ActionPointsRestoreValue" Value="10"/>
+
+         <TokenVariable Key="HasUnitBeenKilledDuringSkillCast" Value="Module.Buffer2 > 0"/>
+         
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="SkillUsageThreshold" Style="KeyWordNb"/>
@@ -2242,36 +2251,64 @@
       <Modules>
          <BufferModule>
             <Events>
-               <Event EffectTime="OnSkillCastEnd">
+               <Event EffectTime="OnSkillCastBegin">
                   <Conditions>
                      <IsTrue Value="Skill.IsFromItemWithTag('HandCrossbowUnique')"/>
-                     <IsFalse Value="HasSkillBeenUsedEnough"/>
                   </Conditions>
                   <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/> <!--buffer 2 will be used to check if a unit has been killed during the skill. If buffer 2 > 0 then yes.-->
                   </Actions>
                </Event>
-               <Event EffectTime="OnSkillCastEnd">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsFromItemWithTag('HandCrossbowUnique')"/>
-                     <IsTrue Value="HasSkillBeenUsedEnough"/>
-                  </Conditions>
-                  <Actions>
-                     <TriggerEffects/>
-                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
-                  </Actions>
-               </Event>
+               
                <Event EffectTime="OnTargetKilled">
                   <Conditions>
                      <IsTrue Value="Skill.IsFromItemWithTag('HandCrossbowUnique')"/>
                   </Conditions>
                   <Actions>
-                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="1"/>
                   </Actions>
                </Event>
+
+               <Event EffectTime="OnSkillCastEnd"> <!--case = no unit killed, threshold not reached-->
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('HandCrossbowUnique')"/>
+                     <IsFalse Value="HasUnitBeenKilledDuringSkillCast"/>
+                     <IsFalse Value="HasSkillBeenUsedEnough"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               
+               <Event EffectTime="OnSkillCastEnd"> <!--case = no unit killed, threshold reached-->
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('HandCrossbowUnique')"/>
+                     <IsFalse Value="HasUnitBeenKilledDuringSkillCast"/>
+                     <IsTrue Value="HasSkillBeenUsedEnough"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+
+               <Event EffectTime="OnSkillCastEnd"> <!--case = unit killed-->
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('HandCrossbowUnique')"/>
+                     <IsTrue Value="HasUnitBeenKilledDuringSkillCast"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               
                <Event EffectTime="OnStartProductionTurn">
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
                   </Actions>
                </Event>
             </Events>
@@ -2345,7 +2382,8 @@
       </TokenVariables>
       <LocArguments>
          <LocalizedArgument Value="ItemName_NoDLCTag_LongbowUnique" Style="Unique"/>
-         <StatArgument Stat="OverallDamage" Value="DamageBonusStep"/>
+         <!--<StatArgument Stat="OverallDamage" Value="DamageBonusStep"/>-->
+         <LocArgument Value="DamageBonusStep" Prefix="+" Suffix="%" Style="GoodNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -2374,8 +2412,10 @@
       </TokenVariables>
       <LocArguments>
          <LocalizedArgument Value="ItemName_NoDLCTag_CrossbowUnique" Style="Unique"/>
-         <StatArgument Stat="OverallDamage" Value="DamageBonusStep"/>
-         <StatArgument Stat="OverallDamage" Value="DamageBonusValue" DisplaySign="true" Interpreted="true"/>
+         <!--<StatArgument Stat="OverallDamage" Value="DamageBonusStep"/>-->
+         <LocArgument Value="DamageBonusStep" Prefix="+" Suffix="%" Style="GoodNb"/>
+         <!--<StatArgument Stat="OverallDamage" Value="DamageBonusValue" DisplaySign="true" Interpreted="true"/>-->
+         <LocArgument Value="DamageBonusValue" Prefix="+" Suffix="%" Interpreted="true" Style="GoodNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -3615,7 +3655,6 @@
 			<TokenVariable Key="EnemiesHitThreshold" Value="4"/>
 			<TokenVariable Key="CanActivatePerk" Value="Module.Buffer3"/>
          <TokenVariable Key="UniqueBonusStunChance" Value="50"/>
-
       </TokenVariables>
 		<LocArguments>
              <LocArgument Value="EnemiesHitThreshold" Style="KeyWordNb"/>
@@ -3783,7 +3822,7 @@
          <TokenVariable Key="PoisonScalingOnLevel" Value="(Floor(PlayableUnitLevel/PerLevelHeroScale) * PoisonScalingLevelMultiplicative)"/>
          <TokenVariable Key="PlayableUnitLevel" Value="(BooleanChoice(HasOwner,Owner.Level,1))"/>
          <TokenVariable Key="PlayerPoisonScalingOnHit" Value="0.25"/>
-         <TokenVariable Key="PerLevelHeroScale" Value="3"/>
+         <TokenVariable Key="PerLevelHeroScale" Value="6"/>
 
          <TokenVariable Key="ApplyStatusRange" Value="4"/>
          <TokenVariable Key="PoisonPlayerDuration" Value="3"/>

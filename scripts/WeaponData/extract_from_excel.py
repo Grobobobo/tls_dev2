@@ -1007,13 +1007,13 @@ for item_def in root.findall('ItemDefinition'):
         
         # Replace /10 with /12 in the formula
         if old_min and 'PlayableUnitLevel/10' in old_min:
-            new_min = old_min.replace('PlayableUnitLevel/10', 'PlayableUnitLevel/12')
+            new_min = old_min.replace('PlayableUnitLevel/10', 'PlayableUnitLevel/13')
             base_damage.set('Min', new_min)
             total_offhand_updated += 1
             print(f"  {item_id}: Min formula updated")
         
         if old_max and 'PlayableUnitLevel/10' in old_max:
-            new_max = old_max.replace('PlayableUnitLevel/10', 'PlayableUnitLevel/12')
+            new_max = old_max.replace('PlayableUnitLevel/10', 'PlayableUnitLevel/13')
             base_damage.set('Max', new_max)
 
 tree.write('../../modded_files/ItemDefinitions_DLC3', encoding='utf-8', xml_declaration=True)
