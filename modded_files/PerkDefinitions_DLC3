@@ -743,19 +743,18 @@
 
    <PerkDefinition Id="DodgePractice">
       <TokenVariables>
-         <TokenVariable Key="AddedBonusDodgeValue" Value="BooleanChoice(MaxDodgeBonus > Module.Buffer * BonusDodgeValueMultiplier,Module.Buffer * BonusDodgeValueMultiplier,MaxDodgeBonus)"/>
-         <TokenVariable Key="BonusDodgeValueMultiplier" Value="1"/>
-         <TokenVariable Key="MaxDodgeBonus" Value="50"/>
+         <TokenVariable Key="TotalBonusDodgeValue" Value="Module.Buffer * BonusDodgeValueMultiplier"/>
+         <TokenVariable Key="BonusDodgeValueMultiplier" Value="5"/>
+         <TokenVariable Key="BuffTurnsCount" Value="1"/>
       </TokenVariables>
       <LocArguments>
-         <StatArgument Stat="Dodge" Value="BonusDodgeValueMultiplier" DisplaySign="true"/>
-         <LocArgument Value="MaxDodgeBonus" Prefix="+" Suffix="%" Style="KeyWordNb"/>
-         <StatArgument Stat="Dodge" Value="AddedBonusDodgeValue" Interpreted="true" DisplaySign="true"/>
+         <StatusArgument Status="Buff" Value="BonusDodgeValueMultiplier" TurnsCount="BuffTurnsCount" Stat="ActionPointsTotal"/>
       </LocArguments>
       <View>
-         <DisplayInHUD>
-            <Bonus Value="AddedBonusDodgeValue"/>
-         </DisplayInHUD>
+         <DisplayInHUD/>
+         <CompendiumEntries>
+            <CompendiumEntry Id="SkillEffect_Buff"/>
+         </CompendiumEntries>
       </View>
       <Modules>
          <BufferModule>
@@ -768,12 +767,23 @@
                      <IncreaseBuffer Value="1"/>
                   </Actions>
                </Event>
+               <Event EffectTime="OnDodge"> 
+                  <Conditions>
+                     <IsTrue Value="IsCasterPlayableUnit"/>
+                  </Conditions>
+                  <Actions>
+                     <!-- Hero turn: trigger the effect instanlty and display the feedback -->
+                     <InstantiateBuffEffectDisplay Stat="Dodge" Value="TotalBonusDodgeValue"/>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
                <Event EffectTime="OnDodge">
                   <Conditions>
                      <IsFalse Value="IsCasterPlayableUnit"/>
                   </Conditions>
                   <Actions>
-                     <SetBufferTo BufferIndex="Buffer2" Value="1"/>
+                     <!-- Enemy turn: wait for the end of the cluster to display the feedback -->
+                     <SetBufferTo BufferIndex="Buffer2" Value="1"/> 
                   </Actions>
                </Event>
                <Event EffectTime="OnBehaviorClusterExecutionEnd">
@@ -781,12 +791,25 @@
                      <IsTrue Value="Module.Buffer2 > 0"/>
                   </Conditions>
                   <Actions>
+                     <!-- Enemy turn: display the feedback at the end of the cluster (the current one only)-->
+                     <InstantiateBuffEffectDisplay Stat="Dodge" Value="TotalBonusDodgeValue"/>
                      <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartNightTurnPlayable">
+                  <Actions>
+                     <TriggerEffects/>
                   </Actions>
                </Event>
             </Events>
             <Effects>
-               <StatModifier Stat="Dodge" Value="AddedBonusDodgeValue"/>
+               <ApplyStatus Status="Buff" Stat="Dodge" TurnsCount="BuffTurnsCount" Value="TotalBonusDodgeValue" HideDisplayEffect="true"/>
+               <ResetBuffer/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -794,25 +817,18 @@
 
    <PerkDefinition Id="BlockPractice">
       <TokenVariables>
-         <TokenVariable Key="CurrentExperienceBonus" Value="XPBonus * BuffInstances"/>
-         <TokenVariable Key="BuffInstances" Value="Module.Buffer2"/>
-         
          <TokenVariable Key="DamageLeftToBlock" Value="DamageToBlockThreshold - BlockedDamageSinceLastThresholdReached"/>
          <TokenVariable Key="BlockedDamageSinceLastThresholdReached" Value="Module.Buffer"/>
          <TokenVariable Key="DamageToBlockThreshold" Value="160"/>
-
-         <TokenVariable Key="XPBonus" Value="10"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="DamageToBlockThreshold" Interpreted="true" Style="KeyWordNb"/>
-         <StatArgument Stat="ExperienceGainMultiplier" Value="XPBonus" DisplaySign="true" Interpreted="true"/>
-         <StatArgument Stat="ExperienceGainMultiplier" Value="CurrentExperienceBonus" DisplaySign="true" Interpreted="true"/>
+         <StatusArgument Status="Buff" Value="1" TurnsCount="1" Stat="ActionPointsTotal"/>
          <LocArgument Value="DamageLeftToBlock" Interpreted="true" Style="KeyWordNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
             <Buffer Value="DamageLeftToBlock"/>
-            <Bonus Value="CurrentExperienceBonus"/>
          </DisplayInHUD>
       </View>
       <Modules>
@@ -828,19 +844,20 @@
                      <IsTrue Value="BlockedDamageSinceLastThresholdReached > DamageToBlockThreshold"/>
                   </Conditions>
                   <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
+                     <TriggerEffects/>
                      <DecreaseBuffer BufferIndex="Buffer" Value="DamageToBlockThreshold"/>
                   </Actions>
                </Event>
                <Event EffectTime="OnStartProductionTurn">
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer" Value="0"/>
-                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
                   </Actions>
                </Event>
             </Events>
             <Effects>
-               <StatModifier Stat="ExperienceGainMultiplier" Value="CurrentExperienceBonus"/>
+               <ApplyStatus Status="Buff" Stat="ActionPointsTotal" Value="1" TurnsCount="1" RefreshHUD="true">
+                  <PerkTargeting TargetingReference="Owner" TargetingMethod="Self"/>
+               </ApplyStatus> 
             </Effects>
          </BufferModule>
       </Modules>
@@ -881,7 +898,7 @@
 
    <PerkDefinition Id="ViciousVenom">
       <TokenVariables>
-         <TokenVariable Key="PoisonBonus" Value="10"/>
+         <TokenVariable Key="PoisonBonus" Value="20"/>
       </TokenVariables>
       <LocArguments>
          <StatusArgument Status="Buff" Stat="PoisonDamageModifier" Value="PoisonBonus" TurnsCount="-1" Interpreted="true"/>
@@ -902,7 +919,7 @@
                </Event>
             </Events>
             <Effects>
-               <ApplyStatus Status="Buff" Stat="PoisonDamageModifier" Value="10" TurnsCount="-1" RefreshHUD="true">
+               <ApplyStatus Status="Buff" Stat="PoisonDamageModifier" Value="20" TurnsCount="-1" RefreshHUD="true">
                   <PerkTargeting TargetingReference="Owner" TargetingMethod="Self"/>
                </ApplyStatus> 
             </Effects>
@@ -2956,7 +2973,7 @@
          <TokenVariable Key="PerkStacks" Value="Min(Max(0,Module.Buffer), MaxStacks)"/>
          <TokenVariable Key="MaxStacks" Value="20"/>
          <TokenVariable Key="WasAttackedThisTurn" Value="Module.Buffer2"/>
-         <TokenVariable Key="StackPerEnemy" Value="2"/>
+         <TokenVariable Key="StackPerEnemy" Value="3"/>
          <TokenVariable Key="StackLoosePerSkill" Value="1"/>
          <TokenVariable Key="IsStackConsumePrevented" Value="Module.Buffer3"/>
          <!--Added by uniaue perk-->

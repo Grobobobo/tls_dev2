@@ -19689,19 +19689,41 @@ ResearchDescription_RepelResistClawersResearch,Grants the perk {0} to all Heroes
 ResearchName_RepelGargoylesResearch,Big Stomp,Piétinement énorme,重踏,大力踐踏,ビッグストンプ,Тяжёлый шаг,Тупіт гіганта,Riesenstampfer,Pisotón mayor,Esmago Grande,크게 내려찍기
 ResearchDescription_RepelGargoylesResearch,Grants the perk {0} to all Heroes.,Confère le talent {0} à tous les Héros.,所有英雄获得天赋“{0}”。,所有英雄獲得天賦「{0}」。,全英雄に{0}のパークを付与。,"Все герои получают особую черту ""{0}"".",Усім героям надається риса {0}.,Gewährt allen Helden den Vorteil „{0}“.,Otorga el beneficio «{0}» a todos los héroes.,Concede a vantagem {0} a todos os Heróis.,모든 영웅에게 {0} 특전을 부여합니다.
 ResearchName_RepelLumberjacksResearch,Armor Crusher,Broyeur d'Armure,碎甲,碎甲,アーマークラッシャー,Клевцы,Бронелам,Rüstungsbrecher,Partearmaduras,Tritura-armadura,갑옷 분쇄자
-ResearchDescription_RepelLumberjacksResearch,<style=PhysicalDamage>Physical Damage</style> now deals {0} damage to <style=Armor>Armor</style>.,Les <style=PhysicalDamage>dégâts physique</style> font maitenant {0} dégât à l'<style=Armor>Armure</style>.,<style=PhysicalDamage>物理伤害</style>现在对<style=Armor>护甲</style>造成{0}伤害。,<style=PhysicalDamage>物理傷害</style>現在對<style=Armor>護甲</style>造成{0}傷害。,<style=PhysicalDamage>物理ダメージ</style>が<style=Armor>アーマー</style>に{0}ダメージを与える。,<style=PhysicalDamage>Физический урон</style> наносит {0} урона <style=Armor>броне</style>.,<style=PhysicalDamage>Фізична шкода</style> тепер завдає {0} шкоди <style=Armor>броні</style>.,<style=PhysicalDamage>Physischer Schaden</style> fügt <style=Armor>Rüstung</style> nun {0} Schaden zu.,Ahora el <style=PhysicalDamage>daño físico</style> inflige un {0} de daño a la <style=Armor>armadura</style>.,<style=PhysicalDamage>Dano Físico</style> agora causa {0} de dano à <style=Armor>Armadura</style>.,<style=PhysicalDamage>물리 피해</style>가 이제 <style=Armor>장갑</style>에 {0}의 피해를 줍니다.
+ResearchDescription_RepelLumberjacksResearch,"{1}.
+<style=PhysicalDamage>Physical Damage</style> now deals {0} damage to <style=Armor>Armor</style>.","{1}. 
+Les <style=PhysicalDamage>dégâts physique</style> font maitenant {0} dégât à l'<style=Armor>Armure</style>.","{1}. 
+<style=PhysicalDamage>物理伤害</style>现在对<style=Armor>护甲</style>造成{0}伤害","{1}
+<style=PhysicalDamage>物理傷害</style>現在對<style=Armor>護甲</style>造成{0}傷害。","{1}.
+<style=PhysicalDamage>物理ダメージ</style>が<style=Armor>アーマー</style>に{0}ダメージを与える。","{1}
+<style=PhysicalDamage>Физический урон</style> наносит {0} урона <style=Armor>броне</style>.","{1}.
+<style=PhysicalDamage>Фізична шкода</style> тепер завдає {0} шкоди <style=Armor>броні</style>.","{1}.
+<style=PhysicalDamage>Physischer Schaden</style> fügt <style=Armor>Rüstung</style> nun {0} Schaden zu.","{1}
+Ahora el <style=PhysicalDamage>daño físico</style> inflige un {0} de daño a la <style=Armor>armadura</style>.","{1}
+<style=PhysicalDamage>Dano Físico</style> agora causa {0} de dano à <style=Armor>Armadura</style>.","{1}
+<style=PhysicalDamage>물리 피해</style>가 이제 <style=Armor>장갑</style>에 {0}의 피해를 줍니다."
 ResearchName_RepelArchersResearch,Clear Sight,Vision Claire,眼明眸清,視線清晰,開けた視界,Острый глаз,Чітка видимість,Beste Sicht,Vista despejada,Visão Clara,명확한 시야
-ResearchDescription_RepelArchersResearch,"The <style=RangedDamage>Ranged Damage</style> <style=Dodge>Dodge</style> <style=KeyWord>multiplier</style> is reduced by {0}.
-<style=Attenuated>In cases where the multiplier becomes less than 1, enemy Dodge is reduced instead of being increased.</style>","Le <style=KeyWord>multiplicateur</style> d'<style=Dodge>Esquive</style> des <style=RangedDamage>Dégâts à distance</style> est réduit de {0}.
-<style=Attenuated>Dans les cas où le multiplicateur devient inférieur à 1, l'esquive ennemi est réduite au lieu d'être augmenté.</style>","敌人的<style=RangedDamage>远程伤害</style><style=Dodge>闪避</style><style=KeyWord>倍率</style>降低{0}。
-<style=Attenuated>当倍率小于1时，敌人的闪避将下降而非上升。</style>","<style=RangedDamage>遠程傷害</style><style=Dodge>閃避</style><style=KeyWord>加成係數</style>降低{0}。
-<style=Attenuated>加成係數低於1時，敵人閃避不會增加，而會減少。</style>","<style=RangedDamage>遠距離ダメージ</style>と<style=Dodge>ドッジ</style>の<style=KeyWord>倍率</style>が{0}減少する。
-<style=Attenuated>倍率が1を下回る場合、エネミーのドッジは減少せず、増加する。</style>","<style=KeyWord>Множитель</style> <style=Dodge>уклонения</style> цели при стрельбе из <style=RangedDamage>стрелкового оружия</style> уменьшается на {0}.
-<style=Attenuated>Если множитель опустился ниже 1, с расстоянием уклонение цели будет только падать.</style>","<style=KeyWord>Множник</style> <style=Dodge>ухиляння</style> від <style=RangedDamage>стрілецької шкоди</style> зменшено на {0}.
-<style=Attenuated>Якщо множник стає меншим за 1, ухиляння ворога зменшується, а не збільшується.</style>","Der <style=RangedDamage>Fernkampfschaden</style>-<style=Dodge>Ausweichmultiplikator</style> wird um {0} reduziert.
-<style=Attenuated>Wenn der <style=KeyWord>Multiplikator</style> weniger als 1 beträgt, wird das Ausweichen des Gegners reduziert und nicht erhöht.</style>","El <style=KeyWord>multiplicador</style> de <style=Dodge>evasión</style> del <style=RangedDamage>daño a distancia</style> se reduce un {0}.
-<style=Attenuated>Si el multiplicador es inferior a 1, la evasión del enemigo disminuye en vez de aumentar.</style>","O <style=KeyWord>multiplicador</style> de <style=Dodge>Esquiva</style> de <style=RangedDamage>Dano à Distância</style> é reduzido em {0}.
-<style=Attenuated>Quando o multiplicador se torna inferior a 1, a Esquiva do inimigo é reduzida em vez de aumentar.</style>","<style=RangedDamage>사격 피해</style> <style=Dodge>회피</style> <style=KeyWord>배율</style>이 {0}만큼 감소합니다.
+ResearchDescription_RepelArchersResearch,"{1}.
+The <style=RangedDamage>Ranged Damage</style> <style=Dodge>Dodge</style> <style=KeyWord>multiplier</style> is reduced by {0}.
+<style=Attenuated>In cases where the multiplier becomes less than 1, enemy Dodge is reduced instead of being increased.</style>","{1}.
+Le <style=KeyWord>multiplicateur</style> d'<style=Dodge>Esquive</style> des <style=RangedDamage>Dégâts à distance</style> est réduit de {0}.
+<style=Attenuated>Dans les cas où le multiplicateur devient inférieur à 1, l'esquive ennemi est réduite au lieu d'être augmenté.</style>","{1}.
+敌人的<style=RangedDamage>远程伤害</style><style=Dodge>闪避</style><style=KeyWord>倍率</style>降低{0}。
+<style=Attenuated>当倍率小于1时，敌人的闪避将下降而非上升。</style>","{1}.
+<style=RangedDamage>遠程傷害</style><style=Dodge>閃避</style><style=KeyWord>加成係數</style>降低{0}。
+<style=Attenuated>加成係數低於1時，敵人閃避不會增加，而會減少。</style>","{1}.
+<style=RangedDamage>遠距離ダメージ</style>と<style=Dodge>ドッジ</style>の<style=KeyWord>倍率</style>が{0}減少する。
+<style=Attenuated>倍率が1を下回る場合、エネミーのドッジは減少せず、増加する。</style>","{1}.
+<style=KeyWord>Множитель</style> <style=Dodge>уклонения</style> цели при стрельбе из <style=RangedDamage>стрелкового оружия</style> уменьшается на {0}.
+<style=Attenuated>Если множитель опустился ниже 1, с расстоянием уклонение цели будет только падать.</style>","{1}.
+<style=KeyWord>Множник</style> <style=Dodge>ухиляння</style> від <style=RangedDamage>стрілецької шкоди</style> зменшено на {0}.
+<style=Attenuated>Якщо множник стає меншим за 1, ухиляння ворога зменшується, а не збільшується.</style>","{1}.
+Der <style=RangedDamage>Fernkampfschaden</style>-<style=Dodge>Ausweichmultiplikator</style> wird um {0} reduziert.
+<style=Attenuated>Wenn der <style=KeyWord>Multiplikator</style> weniger als 1 beträgt, wird das Ausweichen des Gegners reduziert und nicht erhöht.</style>","{1}.
+El <style=KeyWord>multiplicador</style> de <style=Dodge>evasión</style> del <style=RangedDamage>daño a distancia</style> se reduce un {0}.
+<style=Attenuated>Si el multiplicador es inferior a 1, la evasión del enemigo disminuye en vez de aumentar.</style>","{1}.
+O <style=KeyWord>multiplicador</style> de <style=Dodge>Esquiva</style> de <style=RangedDamage>Dano à Distância</style> é reduzido em {0}.
+<style=Attenuated>Quando o multiplicador se torna inferior a 1, a Esquiva do inimigo é reduzida em vez de aumentar.</style>","{1}.
+<style=RangedDamage>사격 피해</style> <style=Dodge>회피</style> <style=KeyWord>배율</style>이 {0}만큼 감소합니다.
 <style=Attenuated>배율이 1 미만이 되는 경우 적의 회피가 증가하지 않고 감소합니다.</style>"
 ResearchName_RepelBountyHuntersResearch,Zealous Aim,Viser avec Zèle,狂热瞄射,積極瞄準,熱烈な狙い,Точность аскета,Ревна влучність,Eifriges Zielen,Puntería ardiente,Mira Zelosa,열성적인 조준
 ResearchDescription_RepelBountyHuntersResearch,Grants the perk {0} to all Heroes.,Confére le talent {0} à tous les Héros.,所有英雄获得天赋“{0}”。,所有英雄獲得天賦「{0}」。,全英雄に{0}のパークを付与。,"Все герои получают особую черту ""{0}"".",Усім героям надається риса {0}.,Gewährt allen Helden den Vorteil „{0}“.,Otorga el beneficio «{0}» a todos los héroes.,Concede a vantagem {0} a todos os Heróis.,모든 영웅에게 {0} 특전을 부여합니다.
@@ -21217,105 +21239,76 @@ Caso contrário:
 "
 PerkName_DodgePractice,Agility Practice,Exercices d'agilité,敏捷练习,敏捷訓練,敏捷性の特訓,Тренировка ловкости,Тренування спритності,Agilitätsübung,Ejercicio de agilidad,Treino de Agilidade,민첩 연습
 PerkDescription_DodgePractice,"Whenever the Hero <style=Dodge>dodges</style>:
-{0}, up to {1}.
+{0}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>
 ","Quand le Héros effectue une <style=Dodge>Esquive</style><nbsp>:
-{0}, jusqu'à un maximum de {1}.","当英雄成功<style=Dodge>闪避</style>时：
-{0}，最高{1}。
+{0}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>
+","当英雄成功<style=Dodge>闪避</style>时：
+{0}。
 
 <style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","英雄<style=Dodge>閃避</style>時：
-{0}，最多{1}。
+{0}。
 
 <style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","英雄が攻撃を<style=Dodge>ドッジ</style>した場合:
-{0}、最大{1}。
+{0}。
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","Каждый раз, когда герой <style=Dodge>уклоняется</style> от атаки, он получает бонус:
-{0}, вплоть до {1}.
+{0}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Коли герой <style=Dodge>ухиляється</style>:
-{0}, аж до {1}.
+{0}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Immer wenn der Held <style=Dodge>ausweicht</style>:
-{0}, bis zu {1}.
+{0}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Cuando el héroe <style=Dodge>esquiva</style>:
-{0} (máximo: {1}).
+{0}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","Sempre que o Herói se <style=Dodge>esquivar</style>:
-{0}, até {1}.
+{0}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","영웅이 <style=Dodge>회피</style>할 때마다:
-{0}, 최대 {1}
+{0}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
-PerkEffectInformations_DodgePractice,"Current Bonus:
-{2}","Bonus actuel<nbsp>:
-{2}","当前加成：
-{2}","目前加成：
-{2}","現在のボーナス:
-{2}","Текущий бонус:
-{2}.","Поточний бонус:
-{2}","Aktueller Bonus:
-{2}","Bonificación actual:
-{2}","Bônus atual:
-{2}","현재 보너스:
-{2}"
+PerkEffectInformations_DodgePractice,,,,,,,,,,,
 PerkName_BlockPractice,Guard Practice,Exercices de parade,守卫练习,防守訓練,防御の特訓,Тренировка блока,Тренування оборони,Wachübung,Ejercicio de defensa,Treino de Bloqueio,방어 연습
 PerkDescription_BlockPractice,"Every {0} damage <style=Block>blocked</style>:
-{1} until the end of the <style=Night>night</style>.
+{1}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Tous les {0} dégâts <style=Block>bloqués</style><nbsp>:
 {1} jusqu'à la fin de la <style=Night>nuit</style>.","每<style=Block>格挡</style>{0}点伤害：
-{1}，效果持续至<style=Night>夜晚</style>结束。
+{1}。
 
 <style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","每<style=Block>格擋</style>{0}傷害：
-{1}，持續到<style=Night>夜晚</style>結束為止。
+{1}。
 
 <style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","ダメージを{0}<style=Block>ブロック</style>するごとに:
 <style=Night>夜</style>終了まで{1}。
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","За каждые {0} ед. <style=Block>заблокированного</style> урона герой получает бонус:
-{1} до конца этой <style=Night>ночи</style>.
+{1}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Кожна {0} <style=Block>заблокована</style> шкода:
-{1} до кінця <style=Night>ночі</style>.
+{1}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Pro {0} Schaden, der <style=Block>geblockt</style> wird:
-{1} bis zum Ende der <style=Night>Nacht</style>.
+{1}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Por cada {0} de daño <style=Block>bloqueado</style>:
-{1} hasta que acabe la <style=Night>noche</style>.
+{1}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","A cada {0} de dano <style=Block>bloqueado</style>:
-{1} até o fim da <style=Night>noite</style>.
+{1}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","피해를 {0} <style=Block>막을</style> 때마다:
-<style=Night>밤</style>이 끝날 때까지 {1}
+{1}
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
-PerkEffectInformations_BlockPractice,"Current Bonus: {2}
-Damage left to block: {3} 
-","Bonus actuel<nbsp>: {2}
-Dégâts restants à bloquer<nbsp>: {3}","当前加成：{2}
-还需格挡的伤害：{3}点
-","目前加成：{2}
-尚須格擋傷害量：{3}
-","現在のボーナス: {2}
-ブロックする残りダメージ: {3} 
-","Текущий бонус: {2}.
-Осталось заблокировать урона: {3} ед. 
-","Поточний бонус: {2}
-Шкоди для блоку: {3} 
-","Aktueller Bonus: {2}
-Noch zu blockender Schaden: {3} 
-","Bonificación actual: {2}
-Daño por bloquear: {3} 
-","Bônus Atual: {2}
-Dano restante a bloquear: {3}
-","현재 보너스: {2}
-막아야 할 잔여 피해: {3} 
-"
+PerkEffectInformations_BlockPractice,"Damage left to block: {2}","Dégâts restants à bloquer<nbsp>: {2}","还需格挡的伤害：{2}点","尚須格擋傷害量：{2}","ブロックする残りダメージ: {2} ","Осталось заблокировать урона: {2} ед. ","Шкоди для блоку: {2} ","Noch zu blockender Schaden: {2} ","Daño por bloquear: {2} ","Dano restante a bloquear: {2}","막아야 할 잔여 피해: {2}"
 PerkName_ResistancePractice,Protection Practice,Exercices de protection,防护练习,保護訓練,守りの特訓,Тренировка сопротивления,Тренування захисту,Schutzübung,Ejercicio de protección,Treino de Proteção,보호 연습
 PerkDescription_ResistancePractice,"Every {0} <style=KeyWord> {1}</style> after {2}:
 {3}.

@@ -1259,10 +1259,12 @@
    
     <ResearchDefinition Id="RepelLumberjacksResearch">
         <TokenVariables>
+            <TokenVariable Key="DamageValue" Value="5"/>
             <TokenVariable Key="MeleeArmorShreddingBonusMultiplierValue" Value="2"/>
         </TokenVariables>
         <LocArguments>
             <LocArgument Value="MeleeArmorShreddingBonusMultiplierValue * 2 * 100" Suffix="%" Style="GoodNb" Interpreted="true"/>
+            <StatArgument Stat="PhysicalDamage" Value="DamageBonus"/>
         </LocArguments>
         <Tags>
             <Tag>Hero</Tag>
@@ -1270,16 +1272,19 @@
         </Tags>
         <TierId>LowCost</TierId>
         <Effects>
+            <AddPlayableUnitStatModifier Stat="PhysicalDamage" Value="DamageValue"/>
             <AddMeleeArmorShreddingBonusMultiplier Value="MeleeArmorShreddingBonusMultiplierValue"/>
         </Effects>
     </ResearchDefinition>
    
     <ResearchDefinition Id="RepelArchersResearch">
         <TokenVariables>
+            <TokenVariable Key="DamageValue" Value="5"/>
             <TokenVariable Key="PlayableUnitTargetsDodgeModifierValue" Value="-50"/>
         </TokenVariables>
         <LocArguments>
             <LocArgument Value="PlayableUnitTargetsDodgeModifierValue" Suffix="%" Style="GoodNb" Interpreted="true"/>
+            <StatArgument Stat="RangedDamage" Value="DamageBonus"/>
         </LocArguments>
         <Tags>
             <Tag>Hero</Tag>
@@ -1287,6 +1292,7 @@
         </Tags>
         <TierId>LowCost</TierId>
         <Effects>
+            <AddPlayableUnitStatModifier Stat="RangedDamage" Value="DamageValue"/>
             <DodgeMultipliersByDistanceModifier Value="PlayableUnitTargetsDodgeModifierValue"/>
         </Effects>
     </ResearchDefinition>
