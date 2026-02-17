@@ -1937,13 +1937,12 @@
          <TokenVariable Key="RemainingUnitsToKill" Value="UnitKilledThreshold - Module.Buffer"/>
          <TokenVariable Key="HasKilledEnoughUnits" Value="Module.Buffer > UnitKilledThreshold - 1"/>
          <TokenVariable Key="UnitKilledThreshold" Value="5"/>
-         <TokenVariable Key="MultiHitBonus" Value="2"/>
+         <TokenVariable Key="PerkDamageBonus" Value="300"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="UnitKilledThreshold" Interpreted="true" Style="KeywordNb"/>
          <LocalizedArgument Prefix="SkillName_" Value="DaggerThrow" Style="Skill"/>
-         <LocArgument Value="2" Style="GoodNb" Prefix="+"/>
-         <LocalizedArgument Value="SkillEffectName_MultiHit" Style="MultiHit"/>
+         <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -1998,16 +1997,14 @@
                </Event>
             </Events>
             <Effects>
-               <AddSkillEffect>
+               <SkillModifier ComputationStat="OverallDamage" Value="PerkDamageBonus">
                   <Conditions>
-                     <IsTrue Value="HasKilledEnoughUnits"/>
+                     <IsTrue Value="HasSkill"/>
                      <IsTrue Value="Skill.IsSkillID('DaggerThrow')"/>
                      <IsTrue Value="Skill.IsFromItemWithTag('DaggerUnique')"/>
+                     <IsTrue Value="HasKilledEnoughUnits"/>
                   </Conditions>
-                  <SkillEffects>
-                     <MultiHit HitsCount="MultiHitBonus"/>
-                  </SkillEffects>
-               </AddSkillEffect>
+               </SkillModifier>
             </Effects>
          </BufferModule>
       </Modules>
@@ -2356,7 +2353,13 @@
       <Modules>
          <BufferModule>
             <Events>
-               <Event EffectTime="OnEnemyMovementEnd">
+               <Event EffectTime="OnTargetKilled">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="IsTargetEnemyUnit"/>
+                     <IsFalse Value="TargetUnit.HealthTotal > AttackData.HealthDamage"/>
+                     <IsTrue Value="Skill.IsIsSkillId('MagicOrbUnique')"/>
+                  </Conditions>
                   <Actions>
                      <TriggerEffects/>
                   </Actions>
@@ -2735,30 +2738,30 @@
    <!--Magic Orb-->
    <PerkDefinition Id="MagicOrbUniquePerk">
       <TokenVariables>
-         <TokenVariable Key="DamageBonusValue" Value="(Module.Buffer * DamageBonusStep)"/>
-         <TokenVariable Key="DamageBonusStep" Value="1"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="HealthTotal"/>
          <LocalizedArgument Value="ItemName_NoDLCTag_MagicOrbUnique" Style="Unique"/>
-         <StatArgument Stat="OverallDamage" Value="DamageBonusStep"/>
-      <StatArgument Stat="OverallDamage" Value="DamageBonusValue" DisplaySign="true" Interpreted="true"/>
+         <LocalizedArgument Prefix="SkillName_" Value="Infect_Unique" Style="Skill"/>
       </LocArguments>
       <View>
-         <DisplayInHUD>
-            <Bonus Value="DamageBonusValue"/>
-         </DisplayInHUD>
+         <SkillsToShow>
+            <SkillToShow Id="Infect_Unique"/>
+         </SkillsToShow>
       </View>
       <Modules>
          <BufferModule>
             <Events>
-               <Event EffectTime="OnTargetHit">
+               <Event EffectTime="OnTargetKilled">
                   <Conditions>
                      <IsTrue Value="Skill.IsAttack"/>
                      <IsTrue Value="IsTargetEnemyUnit"/>
+                     <IsFalse Value="TargetUnit.HealthTotal > AttackData.HealthDamage"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('MagicOrbUnique')"/>
+                     <IsTrue Value="TargetUnit.IsIsolated"/>
                   </Conditions>
                   <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
+                     <TriggerEffects/>
                   </Actions>
                </Event>
                <Event EffectTime="OnTargetKilled">
@@ -2766,25 +2769,19 @@
                      <IsTrue Value="Skill.IsAttack"/>
                      <IsTrue Value="IsTargetEnemyUnit"/>
                      <IsFalse Value="TargetUnit.HealthTotal > AttackData.HealthDamage"/>
-                     <IsTrue Value="Skill.IsFromItemWithTag('MagicOrbUnique')"/>
+                     <IsTrue Value="Skill.IsSkillID('Infect_Unique')"/>
+                     <IsTrue Value="TargetUnit.IsIsolated"/>
                   </Conditions>
                   <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer" Value="DamageBonusStep"/>
-                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
-                  </Actions>
-               </Event>
-               <Event EffectTime="OnSkillCastEnd">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsAttack"/>
-                     <IsTrue Value="Module.Buffer2 > 1"/>
-                  </Conditions>
-                  <Actions>
-                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <TriggerEffects/>
                   </Actions>
                </Event>
             </Events>
             <Effects>
-               <StatModifier Stat="OverallDamage" Value="DamageBonusValue"/>
+               <CastSkill SkillId="Infect_Unique">
+                  <PerkTargeting TargetingReference="Owner" TargetingMethod="ClosestTarget" Amount="1" >
+                  </PerkTargeting>
+               </CastSkill>
             </Effects>
          </BufferModule>
       </Modules>

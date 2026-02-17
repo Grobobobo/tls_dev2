@@ -1800,7 +1800,7 @@
     <UsesPerTurnCount>1</UsesPerTurnCount>
     <SkillAction>
       <Attack>
-        <BaseDamage Min="70 * (1 + Level/10)" Max="85 * (1 + Level/10)" />
+        <BaseDamage Min="70 * (1 + Level/13)" Max="85 * (1 + Level/13)" />
         <AttackType>Adaptative</AttackType>
         <DamageMultiplier>1.35</DamageMultiplier>
         <SkillEffects>
@@ -1809,6 +1809,35 @@
       </Attack>
     </SkillAction>
   </SkillDefinition>
+  <SkillDefinition Id="Infect_Unique" TemplateId="Infect" GroupId="Infect_Unique">
+    <ValidTargets>
+      <EnemyUnits />
+    </ValidTargets>
+    <UsesPerTurnCount>99</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+          <BaseDamage Min="74 * (1 + Level/13)" Max="93 * (1 + Level/13)" />
+            <AttackType>Adaptive</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <Isolated>
+                  <DamageMultiplier>1.75</DamageMultiplier>
+               </Isolated>
+               <CasterEffect>
+                  <Buff>
+                     <BaseChance>1</BaseChance>
+                     <CanAffectCaster>true</CanAffectCaster>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <Bonus>12</Bonus>
+                     <Stat Id="PoisonDamageModifier"/>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+  </SkillDefinition>
+
   <SkillDefinition Id="PreciseShotUnique" TemplateId="PreciseShot" GroupId="ShortbowUnique">
     <AreaOfEffect OriginX="1" OriginY="0">
          e_e
@@ -1975,7 +2004,7 @@
       </AreaOfEffect>
     <SkillAction>
       <Attack>
-        <BaseDamage Min="76 * 0.5 * (1 + Level/10)" Max="126 * 0.5 * (1 + Level/10)" />
+        <BaseDamage Min="76 * 0.5 * (1 + Level/13)" Max="126 * 0.5 * (1 + Level/13)" />
         <AttackType>Magical</AttackType>
         <DamageMultiplier>1</DamageMultiplier>
       </Attack>
