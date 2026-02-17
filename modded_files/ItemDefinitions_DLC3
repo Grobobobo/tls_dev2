@@ -120,7 +120,7 @@
           <Skill>SwordBlast</Skill>
         </Skills>
         <Perks>
-          <Perk>2HSwordUniquePerk</Perk>
+          <Perk>2HAxeUniquePerk</Perk>
         </Perks>
       </Level>
     </LevelVariations>
@@ -170,7 +170,7 @@
           <Skill>SuperSpin</Skill>
         </Skills>
         <Perks>
-          <Perk>2HAxeUniquePerk</Perk>
+          <Perk>2HSwordUniquePerk</Perk>
         </Perks>
       </Level>
     </LevelVariations>
@@ -245,7 +245,7 @@
           <Skill>Grapeshot</Skill>
         </Skills>
         <Perks>
-          <Perk>PistolUniquePerk</Perk>
+          <Perk>RifleUniquePerk</Perk>
         </Perks>
       </Level>
     </LevelVariations>
@@ -801,7 +801,7 @@
         <BaseDamage Min="0" Max="0" />
         <BasePrice>94</BasePrice>
         <Skills>
-          <Skill>PortableBarricadeSkill</Skill>
+          <Skill OverallUsesCount="10">PortableBarricadeSkill</Skill>
         </Skills>
       </Level>
     </LevelVariations>

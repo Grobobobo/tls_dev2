@@ -2475,17 +2475,17 @@
       </Modules>
    </PerkDefinition>
    
-   <!--Rifle-->
+   <!--Behavior switched with Pistol-->
    <PerkDefinition Id="RifleUniquePerk">
       <TokenVariables>
          <TokenVariable Key="HasPerkAlreadyActivatedThisTurn" Value="Module.Buffer > 0"/>
          <TokenVariable Key="MoveDebuffValue" Value="3"/>
          <TokenVariable Key="AccDebuffValue" Value="50"/>
-         <TokenVariable Key="DebuffDuration" Value="2"/>
+         <TokenVariable Key="DebuffDuration" Value="1"/>
       </TokenVariables>
 
       <LocArguments>
-         <LocalizedArgument Value="ItemName_NoDLCTag_RifleUnique" Style="Unique"/>
+         <LocalizedArgument Value="ItemName_NoDLCTag_PistolUnique" Style="Unique"/>
          <StatusArgument Status="Debuff" Stat="MovePointsTotal" Value="-1 * MoveDebuffValue" TurnsCount="DebuffDuration" Interpreted="true"/>
          <StatusArgument Status="Debuff" Stat="Accuracy" Value="-1 * AccDebuffValue" TurnsCount="DebuffDuration" Interpreted="true"/>
       </LocArguments>
@@ -2505,7 +2505,7 @@
                   <Conditions>
                      <IsFalse Value="HasPerkAlreadyActivatedThisTurn"/>
                      <IsTrue Value="IsTargetEnemyUnit"/>
-                     <IsTrue Value="Skill.IsFromItemWithTag('RifleUnique')"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('PistolUnique')"/>
                   </Conditions>
                   <Actions>
                      <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
@@ -2520,13 +2520,13 @@
             </Events>
             <Effects>
                <ApplyStatus Status="Debuff" Stat="MovePointsTotal" Value="MoveDebuffValue" TurnsCount="DebuffDuration">
-                  <PerkTargeting TargetingReference="Target" TargetingMethod="DamageablesInRange">
+                  <PerkTargeting TargetingReference="Target" Range="3" TargetingMethod="DamageablesInRange">
                      <DamageableTarget Type="Enemy"/>
                      <DamageableTarget Type="Boss"/>
                   </PerkTargeting>
                </ApplyStatus>
                <ApplyStatus Status="Debuff" Stat="Accuracy" Value="AccDebuffValue" TurnsCount="DebuffDuration">
-                  <PerkTargeting TargetingReference="Target" TargetingMethod="DamageablesInRange">
+                  <PerkTargeting TargetingReference="Target" Range="3" TargetingMethod="DamageablesInRange">
                      <DamageableTarget Type="Enemy"/>
                      <DamageableTarget Type="Boss"/>
                   </PerkTargeting>
