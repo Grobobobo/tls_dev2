@@ -2053,37 +2053,61 @@
    <!--2HHammer-->
    <PerkDefinition Id="2HHammerUniquePerk">
       <TokenVariables>
-         <TokenVariable Key="ActionCostReduction" Value="1"/>
+         <TokenVariable Key="EnoughEnemiesStunned" Value="EnemiesStunned > StunsRequired - 1"/>
+         <TokenVariable Key="EnemiesStunned" Value="Min(Module.Buffer,StunsRequired)"/>
+         <TokenVariable Key="StunsRequired" Value="6"/>
+         <TokenVariable Key="FirstSkillId" Value="GroundSmash"/> <!--unused-->
+         <TokenVariable Key="MultiHitBonus" Value="3"/>
       </TokenVariables>
+      
       <LocArguments>
-         <LocalizedArgument Prefix="SkillName_" Value="HammerStrike" Style="Skill"/>
-         <StatArgument Stat="ActionPointsTotal" Value="0" DisplaySign="false"/>
+         <LocalizedArgument Prefix="SkillName_" Value="GroundSmash" Style="Skill"/>
+         <LocArgument Value="StunsRequired" Interpreted="true" Style="KeywordNb"/>
+         <LocalizedArgument Value="SkillEffectName_MultiHit" Style="MultiHit"/>
+         <LocArgument Value="MultiHitBonus" Style="GoodNb" Prefix="+"/>
+         <LocalizedArgument Value="ItemName_NoDLCTag_2HHammerUnique" Style="Unique"/>
       </LocArguments>
+
       <View>
          <DisplayInHUD>
+            <Buffer Value="EnemiesStunned"/>
             <Highlight>
-               <IsTrue Value="HasSkill"/>
-               <IsTrue Value="Skill.IsFromItemWithTag('2HHammerUnique')"/>
-               <IsTrue Value="Skill.IsSkillID('HammerStrike')"/>
-               <IsTrue Value="HasTargetTile"/>
-               <IsFalse Value="IsTargetUnit"/>
-               <IsFalse Value="IsTargetBuilding"/>
+               <IsTrue Value="EnoughEnemiesStunned"/>
             </Highlight>
          </DisplayInHUD>
       </View>
+
       <Modules>
          <BufferModule>
-            <Effects>
-               <SkillModifier ComputationStat="ActionPointsCost" Value="1">
+            <Events>
+               <Event EffectTime="OnStatusApplied">
                   <Conditions>
-                     <IsTrue Value="HasSkill"/>
+                     <IsTrue Value="AppliedStun"/>
                      <IsTrue Value="Skill.IsFromItemWithTag('2HHammerUnique')"/>
-                     <IsTrue Value="Skill.IsSkillID('HammerStrike')"/>
-                     <IsTrue Value="HasTargetTile"/>
-                     <IsFalse Value="IsTargetUnit"/>
-                     <IsFalse Value="IsTargetBuilding"/>
                   </Conditions>
-               </SkillModifier>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <AddSkillEffect>
+                  <Conditions>
+                     <IsTrue Value="HasPerkData"/>
+                     <IsTrue Value="HasSkill"/>
+                     <IsTrue Value="EnoughEnemiesStunned"/>
+                     <IsTrue Value="Skill.IsSkillID('GroundSmash')"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('2HHammerUnique')"/>
+                  </Conditions>
+                  <SkillEffects>
+                     <MultiHit HitsCount="MultiHitBonus"/>
+                  </SkillEffects>
+               </AddSkillEffect>
             </Effects>
          </BufferModule>
       </Modules>
