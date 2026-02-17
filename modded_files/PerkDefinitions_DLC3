@@ -2339,15 +2339,15 @@
       </TokenVariables>
 
       <LocArguments>
-         <LocalizedArgument Prefix="SkillName_" Value="Grapeshot" Style="Skill"/>
+         <LocalizedArgument Prefix="SkillName_" Value="Assassinate" Style="Skill"/>
+         <RestoreStatArgument Stat="ActionPointsTotal" Value="ActionPointsRestore" DisplaySign="false" DisplayRestoreText="true"/>
+         <StatArgument Stat="HealthTotal"/>
+         <LocalizedArgument Value="ItemName_NoDLCTag_RifleUnique" Style="Unique"/>
       </LocArguments>
 
       <View>
          <DisplayInHUD>
          </DisplayInHUD>
-         <SkillsToShow>
-            <SkillToShow Id="PistolShot_UniquePerk"/>
-         </SkillsToShow>
       </View>
 
       <Modules>
@@ -2358,7 +2358,7 @@
                      <IsTrue Value="Skill.IsAttack"/>
                      <IsTrue Value="IsTargetEnemyUnit"/>
                      <IsFalse Value="TargetUnit.HealthTotal > AttackData.HealthDamage"/>
-                     <IsTrue Value="Skill.IsIsSkillId('MagicOrbUnique')"/>
+                     <IsTrue Value="Skill.IsSkillID('Assassinate_Unique')"/>
                   </Conditions>
                   <Actions>
                      <TriggerEffects/>
@@ -2366,10 +2366,7 @@
                </Event>
             </Events>
             <Effects>
-               <CastSkill SkillId="PistolShot_UniquePerk">
-                  <PerkTargeting TargetingReference="Owner" TargetingMethod="ClosestTarget" Amount="1" >
-                  </PerkTargeting>
-               </CastSkill>
+               <RestoreStat Stat="ActionPoints" Value="1"/>
             </Effects>
          </BufferModule>
       </Modules>

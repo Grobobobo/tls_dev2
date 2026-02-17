@@ -1838,6 +1838,26 @@
       </SkillAction>
   </SkillDefinition>
 
+
+<SkillDefinition Id="Assassinate_Unique" TemplateId="Assassinate" GroupId="Assassinate_Unique">
+      <UsesPerTurnCount>3</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Ranged</AttackType>
+            <DamageMultiplier>1.25</DamageMultiplier>
+            <SkillEffects>
+               <Isolated>
+                  <DamageMultiplier>2</DamageMultiplier>
+               </Isolated>
+               <Opportunistic>
+                  <DamageMultiplier>2</DamageMultiplier>
+               </Opportunistic>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+  </SkillDefinition>
+
+
   <SkillDefinition Id="PreciseShotUnique" TemplateId="PreciseShot" GroupId="ShortbowUnique">
     <AreaOfEffect OriginX="1" OriginY="0">
          e_e

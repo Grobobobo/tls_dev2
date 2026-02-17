@@ -3458,6 +3458,7 @@ SkillName_RifleShot,Shrapnel Shot,Tir à shrapnel,爆射,破片射擊,榴弾シ�
 SkillName_SmallRifleShot,Hip Shot,Tir à la hanche,腰部射击,腰部射擊,ヒップショット,Быстрая стрельба,Гострий постріл,Hüftschuss,Disparo desde la cadera,Descadeiramento,비조준 사격
 SkillName_SuppressiveFire,Suppressive Fire,Tir de suppression,火力压制,火力壓制,抑制射撃,Огонь на подавление,Вогонь для придушення,Unterdrückungsfeuer,Fuego de supresión,Disparo Supressivo,제압 사격
 SkillName_Assassinate,Assassinate,Assassinat,暗杀,暗殺,暗殺,Стрельба наповал,Убивство,Meucheln,Asesinato,Assassinato,암살
+SkillName_Assassinate_Unique,Assassinate,Assassinat,暗杀,暗殺,暗殺,Стрельба наповал,Убивство,Meucheln,Asesinato,Assassinato,암살
 SkillName_Grapeshot,Grapeshot,Tir de mitraille,葡萄弹,葡萄彈,ブドウ弾,Дробь,Картечний постріл,Kartätschenschuss,Disparo de metralla,Metralhada,포도탄
 SkillName_SwordOfDamocles,Sword Of Damocles,Épée de Damoclès,达摩克利斯之剑,達摩克利斯之劍,ダモクレスの剣,Дамоклов меч,Дамоклів меч,Damoklesschwert,Espada de Damocles,Espada de Dâmocles,다모클레스의 검
 SkillName_Transfer,Transfer,Transfert,能量转移,能量轉移,転送,Передача силы,Передавання,Übergeben,Transferencia,Transferência,기력 전달
@@ -3470,6 +3471,7 @@ SkillName_WindWalk,Wind Walk,Marche-vent,疾风步,疾風步,ウィンドウォ�
 SkillName_LightningRod,Lightning Rod,Paratonnerre,闪电权杖,閃電權杖,避雷針,Громоотвод,Блискавичник,Blitzableiter,Pararrayos,Para-raios,피뢰침
 SkillName_PutridBall,Putrid Ball,Sphère putride,腐败之球,腐敗之球,腐敗玉,Сфера гниения,Огидна куля,Fauliger Ball,Bola pútrida,Bola Podre,부패의 구체
 SkillName_Infect,Infect,Infection,感染,感染,汚染,Зараза,Зараження,Infizieren,Infección,Infecção,감염
+SkillName_Infect_Unique,Infect,Infection,感染,感染,汚染,Зараза,Зараження,Infizieren,Infección,Infecção,감염
 SkillName_DeathRay,Death Ray,Rayon de la mort,死亡光线,死亡光線,死の光芒,Луч смерти,Смертельний промінь,Todesstrahl,Rayo de la muerte,Raio da Morte,죽음의 광선
 SkillName_PillarOfLight,Pillar of Light,Pilier de lumière,光柱,光柱,光の柱,Сноп света,Стовп світла,Lichtsäule,Pilar de luz,Pilar de Luz,빛의 기둥
 SkillName_ScorchingWave,Scorching Wave,Vague de feu,炎炎热浪,炎炎熱浪,熱波,Волна пламени,Розпечена хвиля,Sengende Welle,Ola abrasadora,Onda Escaldante,불길 파동
@@ -21770,28 +21772,33 @@ PerkDescription_HandCrossbowUniquePerk,"After using {0} of {1}'s <style=Skill>sk
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","유닛을 처치하지 않고 {1}의 <style=Skill>스킬</style>을 {0}번 사용한 후: 영웅의 모든 {2} <style=RegenStat>회복</style>
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
-PerkName_PistolUniquePerk,Point Blank,À bout portant,贴脸爆射,貼臉射擊,至近距離,Стрельба в упор,Впритул,Kernschuss,A quemarropa,Queima-roupa,지근거리 사격
-PerkDescription_PistolUniquePerk,"At the end of the enemy movement phase, the Hero <style=KeyWord>automatically</style> attacks the <style=KeyWord>closest</style> enemy with the {0} skill.
+PerkName_PistolUniquePerk,Headshot,Tir à la tête,爆头,爆頭,ヘッドショット,Выстрел в голову,Постріл у голову,Kopfschuss,Disparo a la cabeza,Tiro na Cabeça,헤드샷
+PerkDescription_PistolUniquePerk,"{0} Can be used more often and is stronger. After <style=KeyWord>attacking and killing</style> an enemy unit that was <style=KeyWord>at full {2}</style> with {3}'s {0}:
+{1}
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","{0} peut être utilisé plus souvent et est plus puissant. Après avoir <style=KeyWord>attaqué et tué</style> une unité ennemie qui avait <style=KeyWord>toute sa {2}</style> avec {0} de {3}<nbsp>:
+{1}
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","{0}使用频率更高，伤害更强。使用{3}的{0}<style=KeyWord>攻击并击杀</style>一名<style=KeyWord>拥有满{2}</style>的敌方单位后：
+{1}
 
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","À la fin de la phase de mouvement des ennemis, le Héros attaque <style=KeyWord>automatiquement</style> l'ennemi le <style=KeyWord>plus proche</style> avec la compétence {0}.
+<style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","{0}使用頻率更高，傷害更強。使用{3}的{0}<style=KeyWord>政擊並擊殺</style><style=KeyWord>{2}全滿</style>的敵方單位時：
+{1}
+<style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","{0}の使用頻度が上がり、威力が増す。{3}の{0}で<style=KeyWord>{2}が満タン</style>のエネミーユニットを<style=KeyWord>攻撃して倒す</style>と:
+{1}
 
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","敌人移动阶段结束时，英雄会使用“{0}”技能<style=KeyWord>自动</style>攻击<style=KeyWord>距离最近</style>的敌人。
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","{0} можно использовать чаще, и он сильнее. <style=KeyWord>Атаковав и убив</style> существо с <style=KeyWord>полным запасом {2}</style> при помощи {0} оружия {3}:
+{1}
+<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","{0} можна використовувати частіше, і вона сильніша. Після <style=KeyWord>враження й убивства</style> ворога, що мав <style=KeyWord>макс. {2}</style>, навичкою {0} речі {3}:
+{1}
 
-<style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","敵人移動階段結束時，英雄<style=KeyWord>自動</style>用「{0}」技能攻擊<style=KeyWord>最近</style>的敵人。
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","{0} kann öfter eingesetzt werden und ist stärker. Nachdem eine gegnerische Einheit, die <style=KeyWord>bei voller {2}</style> war, mit {0} von {3} <style=KeyWord>angegriffen und getötet</style> wurde:
+{1}
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","{0} se puede usar más a menudo y es más fuerte. Después de <style=KeyWord>atacar y matar</style> a una unidad enemiga que estaba <style=KeyWord>al máximo de {2}</style> con {0} de {3}:
+{1}
 
-<style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","エネミーの移動フェーズ終了時、英雄が<style=KeyWord>自動的に</style><style=KeyWord>最も近い</style>エネミーにスキル「{0}」を使用する。
-
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","В конце каждого перемещения врагов герой <style=KeyWord>автоматически</style> атакует <style=KeyWord>ближайшего</style> врага навыком ""{0}"".
-
-<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Наприкінці фази ходу ворога герой <style=KeyWord>автоматично</style> атакує <style=KeyWord>найближчого</style> ворога навичкою «{0}».
-
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Am Ende der gegnerischen Bewegungsphase greift der Held <style=KeyWord>automatisch</style> den <style=KeyWord>nächsten</style> Gegner mit der Fähigkeit {0} an.
-
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Al final de la fase de movimiento enemiga, el héroe ataca <style=KeyWord>automáticamente</style> al enemigo <style=KeyWord>más cercano</style> con la habilidad {0}.
-
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","Ao fim da fase de movimento inimiga, o Herói ataca <style=KeyWord>automaticamente</style> o inimigo <style=KeyWord>mais próximo</style> com a habilidade {0}.
-
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","적 이동 단계가 끝날 때마다 영웅이 {0} 스킬로 <style=KeyWord>가장 가까운</style> 적을 <style=KeyWord>자동</style> 공격
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","{0} pode ser usado com mais frequência e é mais forte. Após <style=KeyWord>atacar e abater</style> uma unidade inimiga que estava <style=KeyWord>com {2} máxima</style> com {0} de {3}:
+{1}
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","{0}을(를) 더 자주 사용할 수 있고 더 강력합니다. {3}의 {0}로 <style=KeyWord>최대 {2}</style>인 적 유닛을 <style=KeyWord>공격 및 처치</style>한 후:
+{1}
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
 PerkName_ShortbowUniquePerk,Bloodstorm,Têmpete sanguinaire,鲜血风暴,血暴,血の嵐,Кровавый дождь,Кривавий шторм,Blutsturm,Tormenta de sangre,Tempestade Sangrenta,피폭풍
