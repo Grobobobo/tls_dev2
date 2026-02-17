@@ -416,8 +416,8 @@
          <TokenVariable Key="RangeMaxBonus" Value="3"/>
          <TokenVariable Key="AccuracyMalusPerStep" Value="2"/>
          <TokenVariable Key="RangeMalusPerStep" Value="1"/>
-         <TokenVariable Key="AccuracyHealthStep" Value="10"/>
-         <TokenVariable Key="RangeHealthStep" Value="30"/>
+         <TokenVariable Key="AccuracyHealthStep" Value="12"/>
+         <TokenVariable Key="RangeHealthStep" Value="40"/>
          <TokenVariable Key="MinimumHealthThreshold" Value="125"/>
          <TokenVariable Key="MinMalusValue" Value="0"/>
       </TokenVariables>
@@ -504,8 +504,8 @@
    <PerkDefinition Id="StrongerMagic">
       <TokenVariables>
          <TokenVariable Key="SkillHasManaCost" Value="ManaCostBase > 0"/>
-         <TokenVariable Key="ManaCostReduction" Value="BooleanChoice(ResRedIsUpToClampPercentage, ManaCostBase * ReductionClampPercentage / 100, ManaCostBase * Owner.ResistanceReduction / 100)"/>
-         <TokenVariable Key="ResRedIsUpToClampPercentage" Value="Owner.ResistanceReduction > ReductionClampPercentage"/>
+         <TokenVariable Key="ManaCostReduction" Value="BooleanChoice(ResRedIsUpToClampPercentage, ManaCostBase * ReductionClampPercentage / 100, ManaCostBase * Owner.ResistanceReduction * 2 / 100)"/>
+         <TokenVariable Key="ResRedIsUpToClampPercentage" Value="(Owner.ResistanceReduction * 2) > ReductionClampPercentage"/>
          <TokenVariable Key="ManaCostBase" Value="BooleanChoice(Owner.IsManaCostLocked, 0, Skill.BaseManaCost)"/>
          <TokenVariable Key="ReductionClampPercentage" Value="70"/>
       </TokenVariables>
@@ -513,7 +513,7 @@
          <StatArgument Stat="ManaTotal"/>
          <StatArgument Stat="ResistanceReduction"/>
          <LocArgument Value="ReductionClampPercentage * -1" Interpreted="true" Suffix="%" Style="GoodNb"/>
-         <LocArgument Value="BooleanChoice(ResRedIsUpToClampPercentage, ReductionClampPercentage, Owner.ResistanceReduction)" Interpreted="true" Suffix="%" Style="GoodNb"/>
+         <LocArgument Value="BooleanChoice(ResRedIsUpToClampPercentage, ReductionClampPercentage, Owner.ResistanceReduction * 2)" Interpreted="true" Suffix="%" Style="GoodNb"/>
 
       </LocArguments>                          
       <View>

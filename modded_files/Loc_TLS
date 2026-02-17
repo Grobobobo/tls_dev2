@@ -20984,37 +20984,38 @@ PerkDescription_StrongerAllies,"Whenever the Hero applies a <style=Buff>Buff</st
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
 PerkEffectInformations_StrongerAllies,Current bonus: {1},Bonus actuel<nbsp>: {1},当前加成：{1},目前加成：{1},現在のボーナス: {1},Текущий бонус: {1},Поточний бонус: {1},Aktueller Bonus: {1},Bonificación actual: {1},Bônus atual: {1},현재 보너스: {1}
 PerkName_StrongerMagic,Ghastly Energy,Énergie Macabre,惊惧魔能,陰魂不散,不気味なエネルギー,Призрачная сила,Примарна енергія,Garstige Energie,Energía abominable,Energia Medonha,섬뜩한 에너지
-PerkDescription_StrongerMagic,"The {0} cost of <style=skill>skills</style> is <style=keyword>reduced</style> by the Hero's current {1}, up to {2} reduction of the skill's base cost.
+PerkDescription_StrongerMagic,"The {0} cost of <style=skill>skills</style> is <style=keyword>reduced</style> by 2 times the Hero's current {1}, up to {2} reduction of the skill's base cost.
 <style=Attenuated>On reduction, Mana Cost is rounded up.</style>
 
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Le coût en {0} des <style=skill>compétence</style> est <style=keyword>réduit</style> par la {1} actuelle du Héros, arrondi au supérieur, jusqu'à {2} de réduction du coût de base.
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Le coût en {0} des <style=skill>compétence</style> est <style=keyword>réduit</style> par 2 fois la {1} actuelle du Héros, jusqu'à {2} de réduction du coût de base.
+<style=Attenuated>Lors de la réduction, le coût de Mana est arrondi au supérieur.</style>
 
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","基于英雄当前的{1}<style=keyword>降低</style>其<style=skill>技能</style>的{0}消耗，最多{2}该技能的基础消耗。
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","基于英雄当前的{1}的2倍<style=keyword>降低</style>其<style=skill>技能</style>的{0}消耗，最多{2}该技能的基础消耗。
 <style=Attenuated>降低时，法力值消耗向上取整。</style>
 
-<style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","根據英雄目前的{1}<style=keyword>降低</style><style=skill>技能</style>的{0}消耗量，最多降低至基礎消耗量的{2}。
+<style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","根據英雄目前的{1}的2倍<style=keyword>降低</style><style=skill>技能</style>的{0}消耗量，最多降低至基礎消耗量的{2}。
 <style=Attenuated>法力消耗量降低後無條件進位。</style>
 
-<style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","<style=skill>スキル</style>の{0}コストが英雄の現在の{1}に応じて<style=keyword>減少</style>する。スキルのベースコストの最大{2}まで減少。
+<style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","<style=skill>スキル</style>の{0}コストが英雄の現在の{1}の2倍に応じて<style=keyword>減少</style>する。スキルのベースコストの最大{2}まで減少。
 <style=Attenuated>減少時のマナコストは切り上げられる。</style>
 
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","Текущее {1} героя <style=keyword>снижает</style> стоимость применения им <style=skill>навыков</style> ({0}) на соответствующую величину, вплоть до {2} к базовой стоимости этого навыка.
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","Удвоенное {1} героя <style=keyword>снижает</style> стоимость применения им <style=skill>навыков</style> ({0}) на соответствующую величину, вплоть до {2} к базовой стоимости этого навыка.
 <style=Attenuated>Итоговая стоимость округляется в большую сторону.</style>
 
-<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Вартість ({0}) <style=skill>навичок</style> <style=keyword>зменшено</style> на поточний показник ({1}) героя, до {2} від базової вартості навички.
-<style=Attenuated>Вартість у мані округлюється.</style>
+<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Вартість ({0}) <style=skill>навичок</style> <style=keyword>зменшено</style> на подвоєний поточний показник ({1}) героя, до {2} від базової вартості навички.
+<style=Attenuated>При зменшенні вартість у мані округлюється вгору.</style>
 
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Die {0}kosten von <style=skill>Fähigkeiten</style> werden um den aktuellen „{1}“-Wert des Helden <style=keyword>reduziert</style>, bis zu {2} Reduzierung der Basiskosten der Fähigkeit.
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Die {0}kosten von <style=skill>Fähigkeiten</style> werden um das Doppelte des aktuellen „{1}“-Werts des Helden <style=keyword>reduziert</style>, bis zu {2} Reduzierung der Basiskosten der Fähigkeit.
 <style=Attenuated>Bei der Reduzierung werden die Manakosten aufgerundet.</style>
 
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","El {0} del coste de las <style=skill>habilidades</style> se <style=keyword>reduce</style> con la {1} actual del héroe (reducción máxima: {2} del coste base de la habilidad).
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","El {0} del coste de las <style=skill>habilidades</style> se <style=keyword>reduce</style> con el doble de la {1} actual del héroe (reducción máxima: {2} del coste base de la habilidad).
 <style=Attenuated>Tras la reducción, el coste de maná se redondea hacia arriba.</style>
 
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","O custo de {0} das <style=skill>habilidades</style> é <style=keyword>reduzido</style> pelo valor atual da {1} do Herói (até {2} de redução do custo base da habilidade).
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","O custo de {0} das <style=skill>habilidades</style> é <style=keyword>reduzido</style> pelo dobro do valor atual da {1} do Herói (até {2} de redução do custo base da habilidade).
 <style=Attenuated>O Custo de Mana é arredondado para cima quando é reduzido.</style>
 
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","<style=skill>스킬</style>의 {0} 비용이 영웅의 현재 {1}에 따라 <style=keyword>감소</style>, 최대 기술의 기본 비용의 {2} 감소
-<style=Attenuated>감소 시 마나 비용이 반올림됨</style>
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","<style=skill>스킬</style>의 {0} 비용이 영웅의 현재 {1}의 2배에 따라 <style=keyword>감소</style>, 최대 기술의 기본 비용의 {2} 감소
+<style=Attenuated>감소 시 마나 비용이 올림됨</style>
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
 PerkEffectInformations_StrongerMagic,Current: {3} of skill's base cost,Actuellement<nbsp>: {3} du coût de base de la compétence,当前：技能基础消耗的{3},目前：技能基礎消耗量的{3},現在: スキルのベースコストの{3},Текущее значение: {3} от базовой стоимости навыка,Зараз: {3} від базової вартості навички,Aktuell: {3} der Basiskosten der Fähigkeit,Actual: {3} del coste base de la habilidad.,Atual: {3} do custo base da habilidade,현재: 스킬의 기본 비용의 {3}
