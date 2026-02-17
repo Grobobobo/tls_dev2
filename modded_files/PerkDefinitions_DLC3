@@ -2113,7 +2113,7 @@
       </Modules>
    </PerkDefinition>
    
-   <!--2HAxe-->
+   <!--Switched perks with 2hsword-->
    <PerkDefinition Id="2HAxeUniquePerk">
 
       <TokenVariables>
@@ -2124,7 +2124,7 @@
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="EnemyHitThreshold" Style="KeyWordNb"/>
-         <LocalizedArgument Prefix="SkillName_" Value="Swing" Style="Skill"/>
+         <LocalizedArgument Prefix="SkillName_" Value="SwordBlast" Style="Skill"/>
          <StatArgument Stat="MovePointsTotal" Value="MovePointsBuffValue" DisplaySign="true" Interpreted="true"/>
          <LocArgument Prefix="+" Value="MovePointsBuffValue" Style="KeyWordNb"/>
          <StatArgument Stat="MovePointsTotal"/>
@@ -2146,8 +2146,8 @@
                   <Conditions>
                      <IsTrue Value="IsTargetEnemyUnit"/>
                      <IsTrue Value="HasSkill"/>
-                     <IsTrue Value="Skill.IsSkillID('Swing')"/>
-                     <IsTrue Value="Skill.IsFromItemWithTag('2HAxeUnique')"/>
+                     <IsTrue Value="Skill.IsSkillID('SwordBlast')"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('2HSwordUnique')"/>
                   </Conditions>
                   <Actions>
                      <IncreaseBuffer Value="1"/>
