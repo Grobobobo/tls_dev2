@@ -2541,7 +2541,7 @@
       <TokenVariables>
          <TokenVariable Key="RemainingUnitsToKill" Value="UnitKilledThreshold - Module.Buffer"/>
          <TokenVariable Key="HasKilledEnoughUnits" Value="Module.Buffer > UnitKilledThreshold - 1"/>
-         <TokenVariable Key="UnitKilledThreshold" Value="12"/>
+         <TokenVariable Key="UnitKilledThreshold" Value="3"/>
          <TokenVariable Key="MultiHitSkillBaseValue" Value="4"/>
          <TokenVariable Key="MultiHitBonus" Value="Module.Buffer2"/>
          <TokenVariable Key="MultiHitStep" Value="1"/>
@@ -2581,6 +2581,12 @@
                   <Actions>
                      <IncreaseBuffer BufferIndex="Buffer2" Value="MultiHitStep"/>
                      <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartNightTurnPlayable">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
                   </Actions>
                </Event>
                <Event EffectTime="OnStartProductionTurn">
