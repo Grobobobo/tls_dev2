@@ -1,0 +1,1 @@
+The original fonts for the last spell are SourceSansPro (for the normal text) and Vinque (for the title text). Unfortunately we don't have the rights to publish the Vinque font so instead we've put an example custom font (Chomsky) for this mod (only displayed when the "Example Language" is selected).
