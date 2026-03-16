@@ -41,7 +41,7 @@
 
    <PerkDefinition Id="EnemiesInsideHavenPerk">
       <TokenVariables>
-         <TokenVariable Key="ActualDamageBonus" Value="BooleanChoice(IsEnemyInsideHavenThisNight=0,20,0)"/>
+         <TokenVariable Key="ActualDamageBonus" Value="BooleanChoice(IsEnemyInsideHavenThisNight=0,DamageGain,0)"/>
          <TokenVariable Key="DamageGain" Value="25"/>
          <TokenVariable Key="IsEnemyInsideHavenThisNight" Value="Module.Buffer"/>
       </TokenVariables>
@@ -374,6 +374,14 @@
          <BufferModule>
             <Events>
                <Event EffectTime="OnHitTaken">
+               <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+               </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnDodge">
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer" Value="1"/>
                   </Actions>

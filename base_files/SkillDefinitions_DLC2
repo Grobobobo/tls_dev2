@@ -817,6 +817,9 @@
          __X__X_
          ___XX__
       </AreaOfEffect>
+      <AffectedUnits>
+         <CanAffectCaster>false</CanAffectCaster>
+      </AffectedUnits>
       <UsesPerTurnCount>1</UsesPerTurnCount>
       <Range Min="1" Max="1"/>
       <CanFlip/>

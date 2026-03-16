@@ -2242,6 +2242,10 @@
 
       </AreaOfEffect>
 
+      <AffectedUnits>
+         <CanAffectCaster>false</CanAffectCaster>
+      </AffectedUnits>
+
       <UsesPerTurnCount>1</UsesPerTurnCount>
 
       <Range Min="1" Max="1"/>
