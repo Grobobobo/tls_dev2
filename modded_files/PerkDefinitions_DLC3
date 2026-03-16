@@ -756,7 +756,7 @@
          <TokenVariable Key="BuffTurnsCount" Value="1"/>
       </TokenVariables>
       <LocArguments>
-         <StatusArgument Status="Buff" Value="BonusDodgeValueMultiplier" TurnsCount="BuffTurnsCount" Stat="ActionPointsTotal"/>
+         <StatusArgument Status="Buff" Value="BonusDodgeValueMultiplier" TurnsCount="BuffTurnsCount" Stat="Dodge"/>
       </LocArguments>
       <View>
          <DisplayInHUD/>
@@ -2771,11 +2771,13 @@
       <LocArguments>
          <StatArgument Stat="HealthTotal"/>
          <LocalizedArgument Value="ItemName_NoDLCTag_MagicOrbUnique" Style="Unique"/>
-         <LocalizedArgument Prefix="SkillName_" Value="Infect_Unique" Style="Skill"/>
+         <LocalizedArgument Prefix="SkillName_" Value="InfectUnique" Style="Skill"/>
       </LocArguments>
       <View>
+         <DisplayInHUD>
+         </DisplayInHUD>
          <SkillsToShow>
-            <SkillToShow Id="Infect_Unique"/>
+            <SkillToShow Id="InfectUnique"/>
          </SkillsToShow>
       </View>
       <Modules>
@@ -2798,7 +2800,7 @@
                      <IsTrue Value="Skill.IsAttack"/>
                      <IsTrue Value="IsTargetEnemyUnit"/>
                      <IsFalse Value="TargetUnit.HealthTotal > AttackData.HealthDamage"/>
-                     <IsTrue Value="Skill.IsSkillID('Infect_Unique')"/>
+                     <IsTrue Value="Skill.IsSkillID('InfectUnique')"/>
                      <IsTrue Value="TargetUnit.IsIsolated"/>
                   </Conditions>
                   <Actions>
@@ -2807,8 +2809,10 @@
                </Event>
             </Events>
             <Effects>
-               <CastSkill SkillId="Infect_Unique">
+               <CastSkill SkillId="InfectUnique">
                   <PerkTargeting TargetingReference="Owner" TargetingMethod="ClosestTarget" Amount="1" >
+                     <DamageableTarget Type="Enemy"/>
+                     <DamageableTarget Type="Boss"/>
                   </PerkTargeting>
                </CastSkill>
             </Effects>

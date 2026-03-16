@@ -25,7 +25,7 @@ Zusätzliche <style=KeyWord>Konsumgüter</style> können mithilfe von <style=Wor
  • <style=KeyWord>Item(ns)</style> produzido(s) <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>.","기본 <style=ProductionEffect>생산</style> 강화:
  • 제작 <style=KeyWord>아이템</style> <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>"
 "SkillName_Assassinate_Unique","Assassinate","Assassinat","暗杀","暗殺","暗殺","Стрельба наповал","Убивство","Meucheln","Asesinato","Assassinato","암살"
-"SkillName_Infect_Unique","Infect","Infection","感染","感染","汚染","Зараза","Зараження","Infizieren","Infección","Infecção","감염"
+"SkillName_InfectUnique","Infect","Infection","感染","感染","汚染","Зараза","Зараження","Infizieren","Infección","Infecção","감염"
 "SkillName_SlowDeathOffhand","Slow Death (Off-hand)","Mort à petit feu (secondaire)","缓慢死亡（副手）","緩慢死亡（副手）","緩やかな死(オフハンド)","Долгая смерть (вторая рука)","Повільна смерть (допоміжне)","Langsamer Tot (Nebenhand)","Muerte lenta (mano secundaria)","Morte Lenta (mão secundária)","느린 죽음 (보조)"
 "SkillEffectDescription_ResupplyCharges","<style=KeyWord>Gives back</style> <style=GoodNb>2</style> <style=TrapUse>Charge</style> to the target trap.
 <style=Attenuated>Cannot overflow.</style>","<style=KeyWord>Rend</style> <style=GoodNb>2</style> <style=TrapUse>Charge</style> au piège ciblé.
@@ -814,39 +814,39 @@ As casas de {1} percorridas aumentam em {4}.
  • <style=Resistance>Resistencia</style> -20 % > <style=GoodNb>-30 %</style>","Melhora <style=KeyWord>Esporos Purgantes</style>:
  • <style=Resistance>Resistência</style> -10% > <style=GoodNb>-20%</style>","<style=KeyWord>숙청의 포자</style> 강화:
  • <style=Resistance>저항</style> -10% > <style=GoodNb>-20%</style>"
-"ResearchDescription_RepelLumberjacksResearch","{1}.
-<style=PhysicalDamage>Physical Damage</style> now deals {0} damage to <style=Armor>Armor</style>.","{1}. 
-Les <style=PhysicalDamage>dégâts physique</style> font maitenant {0} dégât à l'<style=Armor>Armure</style>.","{1}. 
-<style=PhysicalDamage>物理伤害</style>现在对<style=Armor>护甲</style>造成{0}伤害","{1}
-<style=PhysicalDamage>物理傷害</style>現在對<style=Armor>護甲</style>造成{0}傷害。","{1}.
-<style=PhysicalDamage>物理ダメージ</style>が<style=Armor>アーマー</style>に{0}ダメージを与える。","{1}
-<style=PhysicalDamage>Физический урон</style> наносит {0} урона <style=Armor>броне</style>.","{1}.
-<style=PhysicalDamage>Фізична шкода</style> тепер завдає {0} шкоди <style=Armor>броні</style>.","{1}.
-<style=PhysicalDamage>Physischer Schaden</style> fügt <style=Armor>Rüstung</style> nun {0} Schaden zu.","{1}
-Ahora el <style=PhysicalDamage>daño físico</style> inflige un {0} de daño a la <style=Armor>armadura</style>.","{1}
-<style=PhysicalDamage>Dano Físico</style> agora causa {0} de dano à <style=Armor>Armadura</style>.","{1}
+"ResearchDescription_RepelLumberjacksResearch","All Heroes Gain {1}.
+<style=PhysicalDamage>Physical Damage</style> now deals {0} damage to <style=Armor>Armor</style>.","Tous les héros gagnent {1}.
+Les <style=PhysicalDamage>dégâts physique</style> font maitenant {0} dégât à l'<style=Armor>Armure</style>.","所有英雄获得{1}。
+<style=PhysicalDamage>物理伤害</style>现在对<style=Armor>护甲</style>造成{0}伤害","所有英雄獲得{1}。
+<style=PhysicalDamage>物理傷害</style>現在對<style=Armor>護甲</style>造成{0}傷害。","すべての英雄は{1}を獲得する。
+<style=PhysicalDamage>物理ダメージ</style>が<style=Armor>アーマー</style>に{0}ダメージを与える。","Все герои получают {1}.
+<style=PhysicalDamage>Физический урон</style> наносит {0} урона <style=Armor>броне</style>.","Усі герої отримують {1}.
+<style=PhysicalDamage>Фізична шкода</style> тепер завдає {0} шкоди <style=Armor>броні</style>.","Alle Helden erhalten {1}.
+<style=PhysicalDamage>Physischer Schaden</style> fügt <style=Armor>Rüstung</style> nun {0} Schaden zu.","Todos los héroes obtienen {1}.
+Ahora el <style=PhysicalDamage>daño físico</style> inflige un {0} de daño a la <style=Armor>armadura</style>.","Todos os Heróis recebem {1}.
+<style=PhysicalDamage>Dano Físico</style> agora causa {0} de dano à <style=Armor>Armadura</style>.","모든 영웅이 {1}을(를) 획득합니다.
 <style=PhysicalDamage>물리 피해</style>가 이제 <style=Armor>장갑</style>에 {0}의 피해를 줍니다."
-"ResearchDescription_RepelArchersResearch","{1}.
+"ResearchDescription_RepelArchersResearch","All Heroes Gain {1}.
 The <style=RangedDamage>Ranged Damage</style> <style=Dodge>Dodge</style> <style=KeyWord>multiplier</style> is reduced by {0}.
-<style=Attenuated>In cases where the multiplier becomes less than 1, enemy Dodge is reduced instead of being increased.</style>","{1}.
+<style=Attenuated>In cases where the multiplier becomes less than 1, enemy Dodge is reduced instead of being increased.</style>","Tous les héros gagnent {1}.
 Le <style=KeyWord>multiplicateur</style> d'<style=Dodge>Esquive</style> des <style=RangedDamage>Dégâts à distance</style> est réduit de {0}.
-<style=Attenuated>Dans les cas où le multiplicateur devient inférieur à 1, l'esquive ennemi est réduite au lieu d'être augmenté.</style>","{1}.
+<style=Attenuated>Dans les cas où le multiplicateur devient inférieur à 1, l'esquive ennemi est réduite au lieu d'être augmenté.</style>","所有英雄获得{1}。
 敌人的<style=RangedDamage>远程伤害</style><style=Dodge>闪避</style><style=KeyWord>倍率</style>降低{0}。
-<style=Attenuated>当倍率小于1时，敌人的闪避将下降而非上升。</style>","{1}.
+<style=Attenuated>当倍率小于1时，敌人的闪避将下降而非上升。</style>","所有英雄獲得{1}。
 <style=RangedDamage>遠程傷害</style><style=Dodge>閃避</style><style=KeyWord>加成係數</style>降低{0}。
-<style=Attenuated>加成係數低於1時，敵人閃避不會增加，而會減少。</style>","{1}.
+<style=Attenuated>加成係數低於1時，敵人閃避不會增加，而會減少。</style>","すべての英雄は{1}を獲得する。
 <style=RangedDamage>遠距離ダメージ</style>と<style=Dodge>ドッジ</style>の<style=KeyWord>倍率</style>が{0}減少する。
-<style=Attenuated>倍率が1を下回る場合、エネミーのドッジは減少せず、増加する。</style>","{1}.
+<style=Attenuated>倍率が1を下回る場合、エネミーのドッジは減少せず、増加する。</style>","Все герои получают {1}.
 <style=KeyWord>Множитель</style> <style=Dodge>уклонения</style> цели при стрельбе из <style=RangedDamage>стрелкового оружия</style> уменьшается на {0}.
-<style=Attenuated>Если множитель опустился ниже 1, с расстоянием уклонение цели будет только падать.</style>","{1}.
+<style=Attenuated>Если множитель опустился ниже 1, с расстоянием уклонение цели будет только падать.</style>","Усі герої отримують {1}.
 <style=KeyWord>Множник</style> <style=Dodge>ухиляння</style> від <style=RangedDamage>стрілецької шкоди</style> зменшено на {0}.
-<style=Attenuated>Якщо множник стає меншим за 1, ухиляння ворога зменшується, а не збільшується.</style>","{1}.
+<style=Attenuated>Якщо множник стає меншим за 1, ухиляння ворога зменшується, а не збільшується.</style>","Alle Helden erhalten {1}.
 Der <style=RangedDamage>Fernkampfschaden</style>-<style=Dodge>Ausweichmultiplikator</style> wird um {0} reduziert.
-<style=Attenuated>Wenn der <style=KeyWord>Multiplikator</style> weniger als 1 beträgt, wird das Ausweichen des Gegners reduziert und nicht erhöht.</style>","{1}.
+<style=Attenuated>Wenn der <style=KeyWord>Multiplikator</style> weniger als 1 beträgt, wird das Ausweichen des Gegners reduziert und nicht erhöht.</style>","Todos los héroes obtienen {1}.
 El <style=KeyWord>multiplicador</style> de <style=Dodge>evasión</style> del <style=RangedDamage>daño a distancia</style> se reduce un {0}.
-<style=Attenuated>Si el multiplicador es inferior a 1, la evasión del enemigo disminuye en vez de aumentar.</style>","{1}.
+<style=Attenuated>Si el multiplicador es inferior a 1, la evasión del enemigo disminuye en vez de aumentar.</style>","Todos os Heróis recebem {1}.
 O <style=KeyWord>multiplicador</style> de <style=Dodge>Esquiva</style> de <style=RangedDamage>Dano à Distância</style> é reduzido em {0}.
-<style=Attenuated>Quando o multiplicador se torna inferior a 1, a Esquiva do inimigo é reduzida em vez de aumentar.</style>","{1}.
+<style=Attenuated>Quando o multiplicador se torna inferior a 1, a Esquiva do inimigo é reduzida em vez de aumentar.</style>","모든 영웅이 {1}을(를) 획득합니다.
 <style=RangedDamage>사격 피해</style> <style=Dodge>회피</style> <style=KeyWord>배율</style>이 {0}만큼 감소합니다.
 <style=Attenuated>배율이 1 미만이 되는 경우 적의 회피가 증가하지 않고 감소합니다.</style>"
 "PerkDescription_StrongerMagic","The {0} cost of <style=skill>skills</style> is <style=keyword>reduced</style> by 2 times the Hero's current {1}, up to {2} reduction of the skill's base cost.
@@ -1269,147 +1269,3 @@ Arremesso Forte ativa com mais frequência.
 강력한 투척이 더 자주 활성화됩니다.
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
 "PerkEffectInformations_StrongThrowUnique","Enemies to hit: {3}","Ennemis à toucher<nbsp>: {3}","还需击中敌人数：{3}","還需擊中敵人數：{3}","命中させるエネミー: {3}","Ещё попаданий: {3}","Залишилося ударити ворогів: {3}.","Zu treffende Gegner: {3}","Enemigos por golpear: {3}","Inimigos a serem golpeados: {3}","명중해야 하는 적: {3}"
-PerkDescription_LifeLoanUnique,"Whenever a <style=KeyWord>Sacred Flower</style> <style=Skill>attack</style> is cast:
-{0} <style=""Good"">Plague</style> for each {1} and {2} base cost.
-Each <style=""Good"">Plague</style> grants:
-{5} applied by the <color=#549EE4>Secondary Targets</color> of {3}, {6} every {11} Hero level.
-{7}
-Whenever {3} is cast, <style=""Good"">Plague</style> is reset.
-Whenever the Hero <style=bad>is hit</style>, {3} is <style=keyword>automatically</style> cast and the Hero is poisoned by {10} of the current <style=""Poison"">Poison</style>.
-
-<style=Perk>Corrupted Bonus: Vitality</style>
-{14} Max. {15}
-Every {12} <style=""Poison"">Poison</style> damage taken, permanently gain {13}.
-<style=Attenuated>The bonus lasts as long as the Hero keeps this item.</style>
-
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Quand une <style=Skill>attaque</style> de <style=KeyWord>Fleur Sacrée</style> est utilisée<nbsp>:
-{0} <style=""Good"">Peste</style> pour chaque {1} et {2} de coût de base.
-Chaque <style=""Good"">Peste</style> donne<nbsp>:
-{5} appliqué par les <color=#549EE4>Cibles Secondaires</color> de {3}, {6} tous les {11} niveaux du héros.
-{7}
-Quand {3} est utilisé, la valeur de <style=""Good"">Peste</style> est réinitialisée.
-Quand le Héros <style=bad>est touché</style>, {3} est <style=keyword>automatiquement</style> utilisé et le Héros est empoisonné à hauteur de {10} du <style=""Poison"">Poison</style> actuel.
-
-<style=Perk>Bonus de corruption<nbsp>: Vitalité</style>
-{14} {15} Max.
-Tous les {12} de dégâts de <style=""Poison"">Poison</style> subit, obtient {13}.
-<style=Attenuated>Le bonus dure tant que le héros conserve cet objet.</style>
-
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","每次施放<style=KeyWord>神圣花朵</style><style=Skill>攻击</style>后：
-每有一点{1}和{2}基础消耗，{0}层<style=""Good"">瘟疫</style>。
-每层<style=""Good"">瘟疫</style>赋予：
-{5}（这里指{3}对其<color=#549EE4>次要目标</color>施加的效果）。英雄每有{11}级，此效果再{6}。
-{7}
-每次施放{3}时，<style=""Good"">瘟疫</style>都会重置。
-每次英雄<style=bad>被击中</style>，{3}会<style=keyword>自动</style>施放，且当前<style=""Poison"">中毒</style>层数的{10}会施加到英雄身上。
-
-<style=Perk>腐化加成：活力绽放</style>
-至多{14}{15}。
-每受到{12}点<style=""Poison"">中毒</style>伤害，即可永久获得{13}。
-<style=Attenuated>只要英雄持有该物品，该加成就会一直存在。</style>
-
-<style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","每當施放<style=KeyWord>聖花</style><style=Skill>攻擊</style>時：
-根據{1}和{2}每點基礎消耗，{0}<style=""Good"">瘟疫</style>。
-每點<style=""Good"">瘟疫</style>提供：
-{5}，由{3}的<color=#549EE4>次要目標</color>施加，根據英雄等級每{11}級{6}。
-{7}
-每次施放{3}時，重置<style=""Good"">瘟疫</style>。
-每當英雄<style=bad>被擊中</style>時，<style=keyword>自動</style>施放{3}，且英雄受到目前<style=""Poison"">中毒</style>傷害的{10}。
-
-<style=Perk>腐化加成：生機</style>
-最大{15}{14}
-每受到{12}<style=""Poison"">中毒</style>傷害，永久獲得：{13}。
-<style=Attenuated>英雄持有此物品時，效果會持續生效。</style>
-
-<style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","<style=KeyWord>聖花</style>による<style=Skill>攻撃</style>が発動するたび、以下の効果を得る:
-{1}および{2}のベースコストごとに<style=""Good"">疫病</style>{0}。
-<style=""Good"">疫病</style>1ごとに以下の効果を得る:
-{3}の<color=#549EE4>2番目のターゲット</color>に{5}を与え、英雄のレベル{11}ごとに{6}。
-{7}
-{3}が発動するたび、<style=""Good"">疫病</style>はリセットされる。
-英雄に<style=bad>攻撃が命中</style>すると{3}が<style=keyword>自動的に</style>発動し、英雄がその時点での<style=""Poison"">毒</style>{10}ぶん、毒に侵される。
-
-<style=Perk>腐敗ボーナス: 生命力</style>
-{14} 最大{15}
-<style=""Poison"">毒</style>ダメージを{12}受けるごとに、恒久的に{13}を得る。
-<style=Attenuated>このボーナスは英雄がこのアイテムを所持している間、持続する。</style>
-
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","<style=Skill>Атаки</style> героя <style=KeyWord>Священным цветком</style> заполняют особую шкалу:
-{0} ед. <style=""Good"">Поветрия</style> за каждую единицу суммарной базовой стоимости применённого навыка ({1} + {2}).
-Каждая единица <style=""Good"">Поветрия</style> заставляет цели во <color=#549EE4>второй зоне</color>, которые поразили {3}, получать:
-{5} (+{6} за каждые дополнительные {11} уровня героя);
-{7}.
-Применяя ""{3}"", герой всякий раз начинает заполнять шкалу <style=""Good"">Поветрия</style> с нуля.
-<style=bad>Получая урон</style>, герой <style=keyword>автоматически</style> применяет ""{3}"", а сам при этом получает {10} текущего количества <style=""Poison"">яда</style>.
-
-<style=Perk>Бонус от порчи: Оздоровление</style>
-Макс. {15} {14}
-За каждые полученные {12} ед. урона <style=""Poison"">ядом</style> герой навсегда получает {13}.
-<style=Attenuated>Бонус сохраняется до тех пор, пока предмет остаётся при нём.</style>
-
-<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Під час <style=Skill>атаки</style> <style=KeyWord>священної квітки</style>:
-{0} <style=""Good"">чуми</style> ({1} і {2}, базова вартість).
-Кожна <style=""Good"">чума</style> дає:
-{5}, накладене <color=#549EE4>другорядними цілями</color> створіння {3}, {6} кож. {11} рівень героя.
-{7}
-Коли застосовується вміння «{3}», <style=""Good"">чума</style> скидається.
-Коли героя <style=bad>б'ють</style>, уміння «{3}» <style=keyword>автоматично</style> застосовується, а герой отримує отруєння в розмірі {10} від поточного <style=""Poison"">отруєння</style>.
-
-<style=Perk>Бонус спотворення: Живучість</style>
-{14} Макс. {15}
-За кож. {12} од. отриманої шкоди від <style=""Poison"">отрути</style> назавжди отримайте {13}.
-<style=Attenuated>Бонус триває, поки в героя є ця річ.</style>
-
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Wenn ein <style=Skill>Angriff</style> mit der <style=KeyWord>Heiligen Blume</style> gewirkt wird:
-Je {0} <style=""Good"">Pest</style> pro Punkt der Basiskosten von {1} + {2}.
-Jeder Punkt <style=""Good"">Pest</style> gewährt Folgendes:
-Die <color=#549EE4>Sekundärziele</color> von {3} wenden {5} an, {6} für je {11} Heldenlevel.
-{7}
-Wenn {3} gewirkt wird, wird die <style=""Good"">Pest</style> zurückgesetzt.
-Wenn der Held <style=bad>getroffen wird</style>, wird <style=keyword>automatisch</style> {3} gewirkt und der Held mit {10} des aktuellen <style=""Poison"">Gifts</style> vergiftet.
-
-<style=Perk>Verdorben-Bonus: Vitalität</style>
-{14} Max. {15}
-Pro {12} erlittenem <style=""Poison"">Giftschaden</style> erhältst du dauerhaft {13}.
-<style=Attenuated>Der Bonus hält an, solange der Held diesen Gegenstand trägt.</style>
-
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Cuando se lanza un <style=Skill>ataque</style> con <style=KeyWord>flor sagrada</style>:
-{0} de <style=""Good"">plaga</style> por cada {1} y coste base de {2}.
-Cada <style=""Good"">plaga</style> concede:
-{5} aplicado por <color=#549EE4>objetivos secundarios</color> de las {3}, {6} por cada {11} de nivel de héroe.
-{7}
-Cada vez que se lanza {3}, la <style=""Good"">plaga</style> se restablece.
-Cada vez que el héroe <style=bad>recibe un golpe</style>, {3} se lanza <style=keyword>automáticamente</style> y el héroe se envenena con {10} del <style=""Poison"">veneno</style> actual.
-
-<style=Perk>Bonificación de corrupción: Vitalidad</style>
-{14} de {15} máx.
-Por cada {12} de daño por <style=""Poison"">veneno</style> recibido, obtienes {13} permanente.
-<style=Attenuated>La bonificación se mantiene mientras el héroe conserve este objeto.</style>
-
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","Sempre que um <style=Skill>ataque</style> de <style=KeyWord>Flor Sagrada</style> é lançado:
-{0} <style=""Good"">de Peste</style> para cada custo base de {1} e {2}.
-Cada ponto de <style=""Good"">Peste</style> concede:
-{5} aplicado pelos <color=#549EE4>Alvos Secundários</color> de {3}, {6} a cada {11} níveis do Herói.
-{7}
-Sempre que a habilidade {3} é lançada, a <style=""Good"">Peste</style> é redefinida.
-Sempre que o Herói <style=bad>sofrer um ataque</style>, a habilidade {3} é lançada <style=keyword>automaticamente</style>, e o Herói recebe envenenamento equivalente a {10} do <style=""Poison"">Envenenamento</style> atual.
-
-<style=Perk>Bonificação Corrompida: Vitalidade</style>
-{14} de {15} Máx.
-A cada {12} de dano de <style=""Poison"">Envenenamento</style> sofrido, recebe {13} permanentemente.
-<style=Attenuated>A bonificação dura enquanto o Herói continuar com o item.</style>
-
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","<style=KeyWord>신성한 꽃</style> <style=Skill>공격</style>이 시전될 때마다:
-{1} 및 {2} 기본 비용 하나당 <style=""Good"">역병</style> {0}
-<style=""Good"">역병</style> 하나당 부여:
-{3}의 <color=#549EE4>보조 대상</color>이 {5} 적용, 영웅 레벨 {11}당 {6}
-{7}
-{3}이(가) 시전될 때마다 <style=""Good"">역병</style> 초기화
-영웅이 공격에 <style=bad>적중당할</style> 때마다 {3} <style=keyword>자동</style> 시전, 영웅은 현재 <style=""Poison"">중독</style>의 {10}만큼 중독
-
-<style=Perk>오염된 보너스: 기력</style>
-최대 {15} {14}
-<style=""Poison"">중독</style> 피해를 {12} 받을 때마다 영구적으로 {13} 획득
-<style=Attenuated>보너스는 영웅이 이 아이템을 보유하고 있는 동안 계속 지속</style>
-
-<style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"

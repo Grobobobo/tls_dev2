@@ -1813,15 +1813,15 @@
     </SkillAction>
   </SkillDefinition>
 
-  <SkillDefinition Id="Infect_Unique" TemplateId="Infect" GroupId="Infect_Unique">
+  <SkillDefinition Id="InfectUnique" TemplateId="Infect" GroupId="InfectUnique">
     <ValidTargets>
       <EnemyUnits />
     </ValidTargets>
     <UsesPerTurnCount>99</UsesPerTurnCount>
       <SkillAction>
          <Attack>
-          <BaseDamage Min="74 * (1 + Level/13)" Max="93 * (1 + Level/13)" />
-            <AttackType>Adaptive</AttackType>
+            <BaseDamage Min="74 * (1 + Level/13)" Max="93 * (1 + Level/13)" />
+            <AttackType>Adaptative</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <Isolated>
@@ -1841,8 +1841,6 @@
          </Attack>
       </SkillAction>
   </SkillDefinition>
-
-
 <SkillDefinition Id="Assassinate_Unique" TemplateId="Assassinate" GroupId="Assassinate_Unique">
       <UsesPerTurnCount>3</UsesPerTurnCount>
       <SkillAction>

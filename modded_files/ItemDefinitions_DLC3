@@ -341,8 +341,8 @@
         <BaseDamage Min="111 * (1 + PlayableUnitLevel/13)" Max="170 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
-          <Skill>RifleShot</Skill>
           <Skill>SmallRifleShot</Skill>
+          <Skill>RifleShot</Skill>
           <Skill>SuppressiveFire5</Skill>
           <Skill>Assassinate_Unique</Skill>
         </Skills>
