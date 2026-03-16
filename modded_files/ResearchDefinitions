@@ -1264,7 +1264,7 @@
         </TokenVariables>
         <LocArguments>
             <LocArgument Value="MeleeArmorShreddingBonusMultiplierValue * 2 * 100" Suffix="%" Style="GoodNb" Interpreted="true"/>
-            <StatArgument Stat="PhysicalDamage" Value="DamageBonus"/>
+            <StatArgument Stat="PhysicalDamage" Value="DamageValue"/>
         </LocArguments>
         <Tags>
             <Tag>Hero</Tag>
@@ -1284,7 +1284,7 @@
         </TokenVariables>
         <LocArguments>
             <LocArgument Value="PlayableUnitTargetsDodgeModifierValue" Suffix="%" Style="GoodNb" Interpreted="true"/>
-            <StatArgument Stat="RangedDamage" Value="DamageBonus"/>
+            <StatArgument Stat="RangedDamage" Value="DamageValue"/>
         </LocArguments>
         <Tags>
             <Tag>Hero</Tag>

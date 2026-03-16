@@ -412,9 +412,6 @@
       <Level Id="5">
         <BaseDamage Min="74 * (1 + PlayableUnitLevel/13)" Max="93 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
-        <BaseStatBonuses>
-          <BaseStatBonus Stat="HealthTotal">-25</BaseStatBonus>
-        </BaseStatBonuses>
         <Skills>
           <Skill>Infect</Skill>
           <Skill>PutridBall</Skill>
@@ -609,7 +606,7 @@
         <BaseDamage Min="82 * (1 + PlayableUnitLevel/13)" Max="102 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
-          <Skill>PreciseTargettingUnique</Skill>
+          <Skill>PreciseTargetting</Skill>
           <Skill>CrescentSwing</Skill>
           <Skill>PainfulSpin</Skill>
         </Skills>
