@@ -160,6 +160,9 @@
          <ModifyInnSlotRecruitmentLevel SlotIndex="2" LevelId="AverageUnitLevelApoc"/>
          <ModifyInnSlotRecruitmentLevel SlotIndex="3" LevelId="AverageUnitLevelApoc"/>
          <ModifyInnSlotRecruitmentLevel SlotIndex="4" LevelId="AverageUnitLevelApoc"/>
+         <ModifyInnUnitCost>
+            <Cost>50 + Round(20 * Pow(Level + 1, 1.25))</Cost>
+         </ModifyInnUnitCost>
       </Effects>
    </ApocalypseModifierStepDefinition>
 

@@ -325,13 +325,13 @@
 
          <StatProgression Id="Accuracy" Delay="4" IncreaseEveryXDay="2" MaxIncreases="5">7</StatProgression>
 
-         <StatProgression Id="ArmorTotal" Delay="1" IncreaseEveryXDay="2">46</StatProgression>
+         <StatProgression Id="ArmorTotal" Delay="1" IncreaseEveryXDay="2">52</StatProgression>
 
          <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">6</StatProgression>
 
-         <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">8</StatProgression>
+         <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">10</StatProgression>
 
-         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">193</StatProgression>
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">219</StatProgression>
 
          <StatProgression Id="MovePointsTotal" Delay="10" IncreaseEveryXDay="6">1</StatProgression>
 
@@ -418,7 +418,7 @@
 
          <Goals>
 
-            <!-- Targeted Death Ray : If this enemy has the “Charged” Flag, try to cast Death Ray and lose “Charged” Flag-->
+            <!-- Targeted Death Ray : If this enemy has the Ă˘â‚¬Ĺ›ChargedĂ˘â‚¬ĹĄ Flag, try to cast Death Ray and lose Ă˘â‚¬Ĺ›ChargedĂ˘â‚¬ĹĄ Flag-->
 
             <Goal Id="01_CorruptedMageDeathRay">
 
@@ -536,7 +536,7 @@
 
             </Goal>
 
-            <!--Charge death ray : If hero in 2-8 tile range and this enemy has no “Charged” Flag, skip turn and gain “Charged” flag-->
+            <!--Charge death ray : If hero in 2-8 tile range and this enemy has no Ă˘â‚¬Ĺ›ChargedĂ˘â‚¬ĹĄ Flag, skip turn and gain Ă˘â‚¬Ĺ›ChargedĂ˘â‚¬ĹĄ flag-->
 
             <Goal Id="03_CorruptedMageCharge">
 
@@ -740,7 +740,7 @@
 
          <StatProgression Id="Resistance" Delay="3" IncreaseEveryXDay="5">10</StatProgression>
 
-         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">166</StatProgression>
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">188</StatProgression>
 
          <StatProgression Id="MovePointsTotal" Delay="10" IncreaseEveryXDay="6">1</StatProgression>
 

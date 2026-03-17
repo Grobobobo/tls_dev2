@@ -468,6 +468,7 @@
       <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
       <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
       <CanAffectBossUnits>true</CanAffectBossUnits>
+      <CanAffectCaster>false</CanAffectCaster>
     </AffectedUnits>
     <SkillAction>
       <Attack>
@@ -477,6 +478,7 @@
           <Debuff>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+            <CanAffectCaster>false</CanAffectCaster>
             <BaseChance>1</BaseChance>
             <Stat Id="MovePointsTotal" />
             <Malus>3</Malus>
@@ -485,6 +487,7 @@
           <Debuff>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+            <CanAffectCaster>false</CanAffectCaster>
             <BaseChance>1</BaseChance>
             <Stat Id="OverallDamage" />
             <Malus>30</Malus>
@@ -908,7 +911,7 @@
         <Paths>
           <Path Orientation="SNEW">OffHandUnique/DwarfStatueOffHand/Skill_DwarfStatueOffHandBoss_HitTiles_NSEW</Path>
         </Paths>
-        <Delay>0.5</Delay>
+        <Delay>0.8</Delay>
         <SortingDepth>Before</SortingDepth>
         <Target>HitTiles</Target>
       </VisualEffect>
@@ -1633,7 +1636,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Physical</AttackType>
-        <BaseDamage Min="66 * (1 + PlayableUnitLevel/12)" Max="102 * (1 + PlayableUnitLevel/12)" Interpreted="true" />
+        <BaseDamage Min="66 * (1 + PlayableUnitLevel/13)" Max="102 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <DamageMultiplier>1.5</DamageMultiplier>
         <SkillEffects>
           <IgnoreLineOfSight />
@@ -1800,7 +1803,7 @@
     <UsesPerTurnCount>1</UsesPerTurnCount>
     <SkillAction>
       <Attack>
-        <BaseDamage Min="70 * (1 + Level/10)" Max="85 * (1 + Level/10)" />
+        <BaseDamage Min="70 * (1 + Level/13)" Max="85 * (1 + Level/13)" />
         <AttackType>Adaptative</AttackType>
         <DamageMultiplier>1.35</DamageMultiplier>
         <SkillEffects>
@@ -1809,6 +1812,54 @@
       </Attack>
     </SkillAction>
   </SkillDefinition>
+
+  <SkillDefinition Id="InfectUnique" TemplateId="Infect" GroupId="InfectUnique">
+    <ValidTargets>
+      <EnemyUnits />
+    </ValidTargets>
+    <UsesPerTurnCount>99</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <BaseDamage Min="74 * (1 + Level/13)" Max="93 * (1 + Level/13)" />
+            <AttackType>Adaptative</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <Isolated>
+                  <DamageMultiplier>1.75</DamageMultiplier>
+               </Isolated>
+               <CasterEffect>
+                  <Buff>
+                     <BaseChance>1</BaseChance>
+                     <CanAffectCaster>true</CanAffectCaster>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <Bonus>12</Bonus>
+                     <Stat Id="PoisonDamageModifier"/>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+  </SkillDefinition>
+<SkillDefinition Id="Assassinate_Unique" TemplateId="Assassinate" GroupId="Assassinate_Unique">
+      <UsesPerTurnCount>3</UsesPerTurnCount>
+      <SkillAction>
+         <Attack>
+            <AttackType>Ranged</AttackType>
+            <DamageMultiplier>1.25</DamageMultiplier>
+            <SkillEffects>
+               <Isolated>
+                  <DamageMultiplier>2</DamageMultiplier>
+               </Isolated>
+               <Opportunistic>
+                  <DamageMultiplier>2</DamageMultiplier>
+               </Opportunistic>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+  </SkillDefinition>
+
+
   <SkillDefinition Id="PreciseShotUnique" TemplateId="PreciseShot" GroupId="ShortbowUnique">
     <AreaOfEffect OriginX="1" OriginY="0">
          e_e
@@ -1975,7 +2026,7 @@
       </AreaOfEffect>
     <SkillAction>
       <Attack>
-        <BaseDamage Min="76 * 0.5 * (1 + Level/10)" Max="126 * 0.5 * (1 + Level/10)" />
+        <BaseDamage Min="76 * 0.5 * (1 + Level/13)" Max="126 * 0.5 * (1 + Level/13)" />
         <AttackType>Magical</AttackType>
         <DamageMultiplier>1</DamageMultiplier>
       </Attack>

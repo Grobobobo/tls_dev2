@@ -298,6 +298,7 @@
             <AddBuildingModifiers Id="Walls" IsIdsList="true">
                 <BuildingCostModifier>WallsCostModifier * -1</BuildingCostModifier>
                 <IgnoreLineOfSight/>
+                <UpgradeCostModifier>WallsCostModifier * -1</UpgradeCostModifier>
             </AddBuildingModifiers>
         </Effects>
     </ResearchDefinition>
@@ -1054,7 +1055,7 @@
         <LocArguments>
             <LocalizedArgument Prefix="ItemName_NoDLCTag_" Value="ItemId" Style="Unique"/>
         </LocArguments>
-        <TierId>LowCost</TierId>
+        <TierId>MediumCost</TierId>
         <Tags>
             <Tag>UniqueItem</Tag>
         </Tags>
@@ -1070,7 +1071,7 @@
         <LocArguments>
             <LocalizedArgument Prefix="ItemName_NoDLCTag_" Value="ItemId" Style="Unique"/>
         </LocArguments>
-        <TierId>HighCost</TierId>
+        <TierId>MediumCost</TierId>
         <Tags>
             <Tag>UniqueItem</Tag>
         </Tags>
@@ -1086,7 +1087,7 @@
         <LocArguments>
             <LocalizedArgument Prefix="ItemName_NoDLCTag_" Value="ItemId" Style="Unique"/>
         </LocArguments>
-        <TierId>MediumCost</TierId>
+        <TierId>HighCost</TierId>
         <Tags>
             <Tag>UniqueItem</Tag>
         </Tags>
@@ -1102,7 +1103,7 @@
         <LocArguments>
             <LocalizedArgument Prefix="ItemName_NoDLCTag_" Value="ItemId" Style="Unique"/>
         </LocArguments>
-        <TierId>MediumCost</TierId>
+        <TierId>HighCost</TierId>
         <Tags>
             <Tag>UniqueItem</Tag>
         </Tags>
@@ -1134,7 +1135,7 @@
         <LocArguments>
             <LocalizedArgument Prefix="ItemName_NoDLCTag_" Value="ItemId" Style="Unique"/>
         </LocArguments>
-        <TierId>LowCost</TierId>
+        <TierId>HighCost</TierId>
         <Tags>
             <Tag>UniqueItem</Tag>
         </Tags>

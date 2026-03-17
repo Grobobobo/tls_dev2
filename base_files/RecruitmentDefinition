@@ -2,9 +2,7 @@
                      xsi:noNamespaceSchemaLocation="RecruitmentDefinition.xsd">
 
    <UnitGenerationSettings>
-      <!-- Modify here the formula with the correct values and delete this comment -->
-      <!-- GeneratedLevelWithoutModifier is the level generated before we apply modifier like the new apocalypse effect (InnLevelModifier_1) -->
-      <Cost>50 + Round(20 * Pow(GeneratedLevelWithoutModifier - 1, 1.25))</Cost>
+      <Cost>50 + Round(20 * Pow(Level - 1, 1.25))</Cost>
       <Slot Id="0">
          <PlayableUnitGenerationDefinitions>
             <PlayableUnitGenerationDefinition ArchetypeId="Melee"/>
@@ -47,6 +45,6 @@
       <ProbabilityIncreasedPerReRoll>50</ProbabilityIncreasedPerReRoll>
    </MageGenerationSettings>
 
-   <RosterRerollCost>50</RosterRerollCost>
+   <RosterRerollCost>25</RosterRerollCost>
 
 </RecruitmentDefinition>

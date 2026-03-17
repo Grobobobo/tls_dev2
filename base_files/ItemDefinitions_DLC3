@@ -8,7 +8,7 @@
 		<Hands>OneHand</Hands>
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
-			<Level Id="0">
+			<Level Id="5">
 				<BaseDamage Min="65 * (1 + PlayableUnitLevel/10)" Max="80 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
 				<Skills>
@@ -32,7 +32,7 @@
       <Hands>OneHand</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="124 * (1 + PlayableUnitLevel/10)" Max="144 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <Skills>
@@ -56,7 +56,7 @@
       <Hands>OneHand</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="69 * (1 + PlayableUnitLevel/10)" Max="105 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>58</BasePrice>
             <BaseStatBonuses>
@@ -83,7 +83,7 @@
 		<Hands>OneHand</Hands>
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
-			<Level Id="0">
+			<Level Id="5">
 				<BaseDamage Min="78 * (1 + PlayableUnitLevel/10)" Max="90 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
 				<BaseStatBonuses>
@@ -110,7 +110,7 @@
       <Hands>TwoHands</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="111 * (1 + PlayableUnitLevel/10)" Max="149 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <Skills>
@@ -135,7 +135,7 @@
       <Hands>TwoHands</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="110 * (1 + PlayableUnitLevel/10)" Max="140 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <Skills>
@@ -160,7 +160,7 @@
       <Hands>TwoHands</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="82 * (1 + PlayableUnitLevel/10)" Max="136 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <Skills>
@@ -185,7 +185,7 @@
       <Hands>TwoHands</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="99 * (1 + PlayableUnitLevel/10)" Max="126 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <Skills>
@@ -210,7 +210,7 @@
       <Hands>OneHand</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="49 * (1 + PlayableUnitLevel/10)" Max="58 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <Skills>
@@ -233,7 +233,7 @@
       <Hands>OneHand</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="70 * (1 + PlayableUnitLevel/10)" Max="85 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <BaseStatBonuses>
@@ -259,7 +259,7 @@
       <Hands>TwoHands</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="84 * (1 + PlayableUnitLevel/10)" Max="118 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <Skills>
@@ -284,7 +284,7 @@
 		<Hands>TwoHands</Hands>
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
-			<Level Id="0">
+			<Level Id="5">
 				<BaseDamage Min="78 * (1 + PlayableUnitLevel/10)" Max="120 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
 				<BaseStatBonuses>
@@ -312,7 +312,7 @@
       <Hands>TwoHands</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="100 * (1 + PlayableUnitLevel/10)" Max="130 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <Skills>
@@ -337,11 +337,11 @@
       <Hands>TwoHands</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="145 * (1 + PlayableUnitLevel/10)" Max="185 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <BaseStatBonuses>
-               <BaseStatBonus Stat="PropagationDamage">-25</BaseStatBonus>
+               <BaseStatBonus Stat="PropagationDamage">-10</BaseStatBonus>
             </BaseStatBonuses>
             <Skills>
                <Skill>RifleShot</Skill>
@@ -365,7 +365,7 @@
       <Hands>OneHand</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="72 * (1 + PlayableUnitLevel/10)" Max="101 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <Skills>
@@ -388,7 +388,7 @@
       <Hands>OneHand</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="60 * (1 + PlayableUnitLevel/10)" Max="80 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
             <Skills>
@@ -412,7 +412,7 @@
       <Hands>OneHand</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="71 * (1 + PlayableUnitLevel/10)" Max="93 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
 				<BaseStatBonuses>
@@ -438,7 +438,7 @@
       <Hands>TwoHands</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="90 * (1 + PlayableUnitLevel/10)" Max="116 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>10</BasePrice>
 				<Skills>
@@ -462,7 +462,7 @@
 		<Hands>TwoHands</Hands>
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
-			<Level Id="0">
+			<Level Id="5">
 				<BaseDamage Min="76 * (1 + PlayableUnitLevel/10)" Max="126 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
 				<Skills>
@@ -486,7 +486,7 @@
 		<Hands>TwoHands</Hands>
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
-			<Level Id="0">
+			<Level Id="5">
 				<BaseDamage Min="65 * (1 + PlayableUnitLevel/10)" Max="83 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
 				<Skills>
@@ -511,7 +511,7 @@
 		<Hands>TwoHands</Hands>
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
-			<Level Id="0">
+			<Level Id="5">
 				<BaseDamage Min="81 * (1 + PlayableUnitLevel/10)" Max="104 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
 				<Skills>
@@ -536,7 +536,7 @@
 		<Hands>TwoHands</Hands>
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
-			<Level Id="0">
+			<Level Id="5">
 				<BaseDamage Min="74 * (1 + PlayableUnitLevel/10)" Max="117 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
 				<Skills>
@@ -561,7 +561,7 @@
 		<Hands>OneHand</Hands>
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
-			<Level Id="0">
+			<Level Id="5">
 				<BaseDamage Min="91 * (1 + PlayableUnitLevel/10)" Max="108 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
 				<Skills>
@@ -584,7 +584,7 @@
 		<Hands>TwoHands</Hands>
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
-			<Level Id="0">
+			<Level Id="5">
 				<BaseDamage Min="55 * (1 + PlayableUnitLevel/10)" Max="105 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
 				<Skills>
@@ -608,7 +608,7 @@
 		<Hands>OneHand</Hands>
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
-			<Level Id="0">
+			<Level Id="5">
 				<BaseDamage Min="46 * (1 + PlayableUnitLevel/10)" Max="68 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
 				<Skills>
@@ -631,7 +631,7 @@
 		<Hands>TwoHands</Hands>
 		<IsUnique>true</IsUnique>
 		<LevelVariations>
-			<Level Id="0">
+			<Level Id="5">
 				<BaseDamage Min="89 * (1 + PlayableUnitLevel/10)" Max="124 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
 				<BasePrice>10</BasePrice>
             <!--<BaseStatBonuses>
@@ -655,7 +655,7 @@
       <Hands>OffHand</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="59 * (1 + PlayableUnitLevel/10)" Max="88 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>0</BasePrice>
             <Skills>
@@ -670,7 +670,7 @@
       <Hands>OffHand</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="59 * (1 + PlayableUnitLevel/10)" Max="88 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>0</BasePrice>
             <Skills>
@@ -685,7 +685,7 @@
       <Hands>OffHand</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BasePrice>0</BasePrice>
             <Skills>
                <Skill OverallUsesCount="3">PlayerFortress</Skill>
@@ -699,7 +699,7 @@
       <Hands>OffHand</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="59 * (1 + PlayableUnitLevel/10)" Max="88 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>0</BasePrice>
             <Skills>
@@ -714,7 +714,7 @@
       <Hands>OffHand</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="59 * (1 + PlayableUnitLevel/10)" Max="88 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>0</BasePrice>
             <Skills>
@@ -729,7 +729,7 @@
       <Hands>OffHand</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="59 * (1 + PlayableUnitLevel/10)" Max="88 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>0</BasePrice>
             <Skills>
@@ -744,7 +744,7 @@
       <Hands>OffHand</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BasePrice>0</BasePrice>
             <Skills>
                <Skill OverallUsesCount="3">PlayerRunestone</Skill>
@@ -758,7 +758,7 @@
       <Hands>OffHand</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="59 * (1 + PlayableUnitLevel/10)" Max="88 * (1 + PlayableUnitLevel/10)" Interpreted="true"/>
             <BasePrice>0</BasePrice>
             <Skills>
@@ -774,7 +774,7 @@
       <Hands>OffHand</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="0" Max="0"/>
             <BasePrice>94</BasePrice>
             <Skills>
@@ -789,7 +789,7 @@
       <Hands>OffHand</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="0" Max="0"/>
             <BasePrice>94</BasePrice>
             <Skills>
@@ -804,7 +804,7 @@
       <Hands>OffHand</Hands>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="0" Max="0"/>
             <BasePrice>94</BasePrice>
             <Skills>
@@ -818,7 +818,7 @@
       <Category>Trinket</Category>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <BaseDamage Min="0" Max="0"/>
             <BasePrice>94</BasePrice>
             <Skills>
@@ -832,7 +832,7 @@
       <Category>Trinket</Category>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <Skills>
                <Skill OverallUsesCount="2">UltimatePoison</Skill>
             </Skills>
@@ -844,7 +844,7 @@
       <Category>Trinket</Category>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <Skills>
                <Skill OverallUsesCount="2">UltimateAssassin</Skill>
             </Skills>
@@ -856,7 +856,7 @@
       <Category>Trinket</Category>
       <IsUnique>true</IsUnique>
       <LevelVariations>
-         <Level Id="0">
+         <Level Id="5">
             <Skills>
                <Skill OverallUsesCount="2">UltimateDebuff</Skill>
             </Skills>

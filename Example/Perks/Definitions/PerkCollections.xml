@@ -1,0 +1,22 @@
+<!-- COLLECTION DEFINITIONS-->
+<UnitPerkCollectionDefinitions>
+   
+   <UnitPerkCollectionDefinition Id="PerkMod" MultipleAllowed="false">
+      <UnitPerkTierDefinition Tier="1">
+         <UnitPerkDefinition Id="ModExemple"/>
+      </UnitPerkTierDefinition>
+      <UnitPerkTierDefinition Tier="2">
+         <UnitPerkDefinition Id="MartialPunch"/>
+      </UnitPerkTierDefinition>
+      <UnitPerkTierDefinition Tier="3">
+         <UnitPerkDefinition Id="Berserk"/>
+      </UnitPerkTierDefinition>
+      <UnitPerkTierDefinition Tier="4">
+         <UnitPerkDefinition Id="Boom"/>
+      </UnitPerkTierDefinition>
+      <UnitPerkTierDefinition Tier="5">
+         <UnitPerkDefinition Id="Relentless"/>
+      </UnitPerkTierDefinition>
+   </UnitPerkCollectionDefinition>
+   
+</UnitPerkCollectionDefinitions>

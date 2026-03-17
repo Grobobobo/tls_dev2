@@ -6,7 +6,7 @@
    <!-- Base Slot -->
    <ResearchSlotGeneration>
       <ResearchSlotPattern Id="BaseLowCost">
-         <SlotsAmount>1</SlotsAmount>
+         <SlotsAmount>4</SlotsAmount>
          <ResearchConditions>
             <HasAnyTiers>
                <TierId>LowCost</TierId>
@@ -15,7 +15,7 @@
       </ResearchSlotPattern>
 
       <ResearchSlotPattern Id="BaseMediumCost">
-         <SlotsAmount>1</SlotsAmount>
+         <SlotsAmount>3</SlotsAmount>
          <ResearchConditions>
             <HasAnyTiers>
                <TierId>MediumCost</TierId>
@@ -24,7 +24,7 @@
       </ResearchSlotPattern>
 
       <ResearchSlotPattern Id="BaseHighCost">
-         <SlotsAmount>1</SlotsAmount>
+         <SlotsAmount>2</SlotsAmount>
          <ResearchConditions>
             <HasAnyTiers>
                <TierId>HighCost</TierId>

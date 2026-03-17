@@ -298,7 +298,8 @@
             <AddBuildingModifiers Id="Walls" IsIdsList="true">
                 <BuildingCostModifier>WallsCostModifier * -1</BuildingCostModifier>
                 <IgnoreLineOfSight/>
-            </AddBuildingModifiers>
+                <UpgradeCostModifier>WallsCostModifier * -1</UpgradeCostModifier>
+                </AddBuildingModifiers>
         </Effects>
     </ResearchDefinition>
    
@@ -1258,10 +1259,12 @@
    
     <ResearchDefinition Id="RepelLumberjacksResearch">
         <TokenVariables>
+            <TokenVariable Key="DamageValue" Value="5"/>
             <TokenVariable Key="MeleeArmorShreddingBonusMultiplierValue" Value="2"/>
         </TokenVariables>
         <LocArguments>
             <LocArgument Value="MeleeArmorShreddingBonusMultiplierValue * 2 * 100" Suffix="%" Style="GoodNb" Interpreted="true"/>
+            <StatArgument Stat="PhysicalDamage" Value="DamageValue"/>
         </LocArguments>
         <Tags>
             <Tag>Hero</Tag>
@@ -1269,16 +1272,19 @@
         </Tags>
         <TierId>LowCost</TierId>
         <Effects>
+            <AddPlayableUnitStatModifier Stat="PhysicalDamage" Value="DamageValue"/>
             <AddMeleeArmorShreddingBonusMultiplier Value="MeleeArmorShreddingBonusMultiplierValue"/>
         </Effects>
     </ResearchDefinition>
    
     <ResearchDefinition Id="RepelArchersResearch">
         <TokenVariables>
+            <TokenVariable Key="DamageValue" Value="5"/>
             <TokenVariable Key="PlayableUnitTargetsDodgeModifierValue" Value="-50"/>
         </TokenVariables>
         <LocArguments>
             <LocArgument Value="PlayableUnitTargetsDodgeModifierValue" Suffix="%" Style="GoodNb" Interpreted="true"/>
+            <StatArgument Stat="RangedDamage" Value="DamageValue"/>
         </LocArguments>
         <Tags>
             <Tag>Hero</Tag>
@@ -1286,6 +1292,7 @@
         </Tags>
         <TierId>LowCost</TierId>
         <Effects>
+            <AddPlayableUnitStatModifier Stat="RangedDamage" Value="DamageValue"/>
             <DodgeMultipliersByDistanceModifier Value="PlayableUnitTargetsDodgeModifierValue"/>
         </Effects>
     </ResearchDefinition>
@@ -1750,7 +1757,7 @@
     <!--PAS INTE ENCORE-->
     <ResearchDefinition Id="HavenGlenwaldResearch">
         <TokenVariables>
-            <TokenVariable Key="BarricadesLimitIncrease" Value="15"/>
+            <TokenVariable Key="BarricadesLimitIncrease" Value="25"/>
         </TokenVariables>
         <Tags>
             <Tag>Defense</Tag>

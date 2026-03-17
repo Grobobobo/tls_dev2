@@ -1,0 +1,47 @@
+<!-- PERK DEFINITIONS -->
+<PerkDefinitions>
+   
+   <PerkDefinition Id="ModExemple">
+      <TokenVariables>
+         <TokenVariable Key="HealthBonus" Value="500"/>
+         <TokenVariable Key="DodgeBonus" Value="100"/>
+         <TokenVariable Key="BlockBonus" Value="100"/>
+         <TokenVariable Key="ResistanceBonus" Value="100"/>
+      </TokenVariables>
+      <LocArguments>
+         <StatArgument Stat="Health" Value="HealthBonus"/>
+         <StatArgument Stat="Dodge" Value="DodgeBonus"/>
+         <StatArgument Stat="Block" Value="BlockBonus"/>
+         <StatArgument Stat="Resistance" Value="ResistanceBonus"/>
+      </LocArguments>
+      <Modules>
+         <GaugeModule GaugeStat="Health" GaugeValue="HealthBonus">
+            <Effects>
+               <StatModifier Stat="Dodge" Value="DodgeBonus"/>
+               <StatModifier Stat="Block" Value="BlockBonus"/>
+               <StatModifier Stat="Resistance" Value="ResistanceBonus"/>
+            </Effects>
+         </GaugeModule>
+      </Modules>
+   </PerkDefinition>
+   
+   <PerkDefinition Id="MartialPunch">
+      <Modules>
+         <BufferModule>
+            <Effects>
+               <SkillModifier ComputationStat="Critical" Value="20">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsPunch"/>
+                  </Conditions>
+               </SkillModifier>
+               <SkillModifier ComputationStat="OverallDamage" Value="50">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsPunch"/>
+                  </Conditions>
+               </SkillModifier>
+            </Effects>
+         </BufferModule>
+      </Modules>
+   </PerkDefinition>
+   
+</PerkDefinitions>

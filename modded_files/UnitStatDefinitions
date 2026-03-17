@@ -559,15 +559,15 @@
          <CompendiumEntry Id="GameConcept_NegativeAlterations"/>
       </CompendiumEntries>
       <Boundaries UnitType="Playable">
-         <Min>5</Min>
+         <Min>15</Min>
          <Max>500</Max>
       </Boundaries>
       <Boundaries UnitType="Enemy">
-         <Min>0</Min>
+         <Min>15</Min>
          <Max>500</Max>
       </Boundaries>
       <Boundaries UnitType="Boss">
-         <Min>0</Min>
+         <Min>15</Min>
          <Max>500</Max>
       </Boundaries>
    </UnitStatDefinition>
@@ -578,15 +578,15 @@
          <CompendiumEntry Id="GameConcept_Isolated"/>
       </CompendiumEntries>
       <Boundaries UnitType="Playable">
-         <Min>5</Min>
+         <Min>15</Min>
          <Max>500</Max>
       </Boundaries>
       <Boundaries UnitType="Enemy">
-         <Min>0</Min>
+         <Min>15</Min>
          <Max>500</Max>
       </Boundaries>
       <Boundaries UnitType="Boss">
-         <Min>0</Min>
+         <Min>15</Min>
          <Max>500</Max>
       </Boundaries>
    </UnitStatDefinition>

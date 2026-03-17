@@ -529,6 +529,7 @@
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectBossUnits>true</CanAffectBossUnits>
+            <CanAffectCaster>false</CanAffectCaster>
          </AffectedUnits>
          <SkillAction>
             <Attack>
@@ -538,6 +539,7 @@
                   <Debuff>
                      <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectCaster>false</CanAffectCaster>
                      <BaseChance>1</BaseChance>
                      <Stat Id="MovePointsTotal"/>
                      <Malus>3</Malus>
@@ -546,6 +548,7 @@
                   <Debuff>
                      <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectCaster>false</CanAffectCaster>
                      <BaseChance>1</BaseChance>
                      <Stat Id="OverallDamage"/>
                      <Malus>30</Malus>
@@ -1043,11 +1046,11 @@
 
       <CastFXs TotalDuration="0.75">
 
-		  <VisualEffect>
+        <VisualEffect>
 			  <Paths>
 				  <Path Orientation="SNEW">OffHandUnique/DwarfStatueOffHand/Skill_DwarfStatueOffHandBoss_HitTiles_NSEW</Path>
 			  </Paths>
-			  <Delay>0.5</Delay>
+			  <Delay>0.8</Delay>
 			  <SortingDepth>Before</SortingDepth>
 			  <Target>HitTiles</Target>
 		  </VisualEffect>

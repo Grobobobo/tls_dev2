@@ -1,0 +1,50 @@
+﻿<RecruitmentDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:noNamespaceSchemaLocation="RecruitmentDefinition.xsd">
+
+   <UnitGenerationSettings>
+      <Cost>50 + Round(20 * Pow(Level - 1, 1.25))</Cost>
+      <Slot Id="0">
+         <PlayableUnitGenerationDefinitions>
+            <PlayableUnitGenerationDefinition ArchetypeId="Melee"/>
+            <PlayableUnitGenerationDefinition ArchetypeId="Range"/>
+            <PlayableUnitGenerationDefinition ArchetypeId="Magic"/>
+         </PlayableUnitGenerationDefinitions>
+         <UnitGenerationLevelDefinition Id="LowUnitLevel"/>
+      </Slot>
+      <Slot Id="1">
+         <PlayableUnitGenerationDefinitions>
+            <PlayableUnitGenerationDefinition ArchetypeId="Melee"/>
+            <PlayableUnitGenerationDefinition ArchetypeId="Range"/>
+            <PlayableUnitGenerationDefinition ArchetypeId="Magic"/>
+         </PlayableUnitGenerationDefinitions>
+         <UnitGenerationLevelDefinition Id="HighUnitLevel"/>
+      </Slot>
+      <Slot Id="2">
+         <PlayableUnitGenerationDefinitions>
+            <PlayableUnitGenerationDefinition ArchetypeId="Melee"/>
+         </PlayableUnitGenerationDefinitions>
+         <UnitGenerationLevelDefinition Id="AverageUnitLevel"/>
+      </Slot>
+      <Slot Id="3">
+         <PlayableUnitGenerationDefinitions>
+            <PlayableUnitGenerationDefinition ArchetypeId="Range"/>
+         </PlayableUnitGenerationDefinitions>
+         <UnitGenerationLevelDefinition Id="AverageUnitLevel"/>
+      </Slot>
+      <Slot Id="4">
+         <PlayableUnitGenerationDefinitions>
+            <PlayableUnitGenerationDefinition ArchetypeId="Magic"/>
+         </PlayableUnitGenerationDefinitions>
+         <UnitGenerationLevelDefinition Id="AverageUnitLevel"/>
+      </Slot>
+   </UnitGenerationSettings>
+
+   <MageGenerationSettings>
+      <Cost>30</Cost>
+      <StartProbability>0</StartProbability>
+      <ProbabilityIncreasedPerReRoll>50</ProbabilityIncreasedPerReRoll>
+   </MageGenerationSettings>
+
+   <RosterRerollCost>50</RosterRerollCost>
+
+</RecruitmentDefinition>

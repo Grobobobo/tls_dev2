@@ -41,7 +41,7 @@
 
    <PerkDefinition Id="EnemiesInsideHavenPerk">
       <TokenVariables>
-         <TokenVariable Key="ActualDamageBonus" Value="BooleanChoice(IsEnemyInsideHavenThisNight=0,20,0)"/>
+         <TokenVariable Key="ActualDamageBonus" Value="BooleanChoice(IsEnemyInsideHavenThisNight=0,DamageGain,0)"/>
          <TokenVariable Key="DamageGain" Value="25"/>
          <TokenVariable Key="IsEnemyInsideHavenThisNight" Value="Module.Buffer"/>
       </TokenVariables>
@@ -116,12 +116,12 @@
          <TokenVariable Key="MinimumThreshold" Value="100"/>
       </TokenVariables>
       <LocArguments>
-         <LocArgument Value="PhysAttackThreshold" Style="KeyWordNb"/>
+         <LocArgument Value="PhysAttackThreshold" Suffix="%" Style="GoodNb"/>
          <StatArgument Stat="PhysicalDamage"/>
          <LocArgument Value="MinimumThreshold" Style="KeyWordNb"/>
          <StatArgument Stat="Block" Value="BlockBonus"/>
          <StatArgument Stat="Block" Value="BlockBonus * BonusMultiplier" Interpreted="true"/>
-         <StatArgument Stat="PhysicalDamage" Value="NextThreshold" Interpreted="true" DisplaySign="false" Style="KeyWordNb"/>
+         <StatArgument Stat="PhysicalDamage" Value="NextThreshold" Interpreted="true" DisplaySign="false"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -148,12 +148,12 @@
          <TokenVariable Key="MinimumThreshold" Value="100"/>
       </TokenVariables>
       <LocArguments>
-         <LocArgument Value="RangAttackThreshold" Style="KeyWordNb"/>
+         <LocArgument Value="RangAttackThreshold" Suffix="%" Style="GoodNb"/>
          <StatArgument Stat="RangedDamage"/>
          <LocArgument Value="MinimumThreshold" Style="KeyWordNb"/>
          <StatArgument Stat="SkillRangeModifier" Value="SkillRangeBonus"/>
          <StatArgument Stat="SkillRangeModifier" Value="SkillRangeBonus * BonusMultiplier" Interpreted="true"/>
-         <StatArgument Stat="RangedDamage" Value="NextThreshold" Interpreted="true" DisplaySign="false" Style="KeyWordNb"/>
+         <StatArgument Stat="RangedDamage" Value="NextThreshold" Interpreted="true" DisplaySign="false"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -180,12 +180,12 @@
          <TokenVariable Key="MinimumThreshold" Value="100"/>
       </TokenVariables>
       <LocArguments>
-         <LocArgument Value="MagicAttackThreshold" Style="KeyWordNb"/>
+         <LocArgument Value="MagicAttackThreshold" Suffix="%" Style="GoodNb"/>
          <StatArgument Stat="MagicalDamage"/>
          <LocArgument Value="MinimumThreshold" Style="KeyWordNb"/>
          <StatArgument Stat="ManaRegen" Value="ManaRegBonus"/>
          <StatArgument Stat="ManaRegen" Value="ManaRegBonus * BonusMultiplier" Interpreted="true"/>
-         <StatArgument Stat="MagicalDamage" Value="NextThreshold" Interpreted="true" DisplaySign="false" Style="KeyWordNb"/>
+         <StatArgument Stat="MagicalDamage" Value="NextThreshold" Interpreted="true" DisplaySign="false"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -315,7 +315,7 @@
                </Event>
             </Events>
             <Effects>
-               <DealDamage Value="StunDamage">
+               <DealDamage Value="StunDamage" CanBeTriggeredByPerk="true">
                   <PerkTargeting TargetingReference="Target" TargetingMethod="Self"/>
                </DealDamage>
             </Effects>
@@ -374,6 +374,14 @@
          <BufferModule>
             <Events>
                <Event EffectTime="OnHitTaken">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnDodge">
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer" Value="1"/>
                   </Actions>
@@ -416,8 +424,8 @@
          <TokenVariable Key="RangeMaxBonus" Value="3"/>
          <TokenVariable Key="AccuracyMalusPerStep" Value="2"/>
          <TokenVariable Key="RangeMalusPerStep" Value="1"/>
-         <TokenVariable Key="AccuracyHealthStep" Value="10"/>
-         <TokenVariable Key="RangeHealthStep" Value="30"/>
+         <TokenVariable Key="AccuracyHealthStep" Value="12"/>
+         <TokenVariable Key="RangeHealthStep" Value="40"/>
          <TokenVariable Key="MinimumHealthThreshold" Value="125"/>
          <TokenVariable Key="MinMalusValue" Value="0"/>
       </TokenVariables>
@@ -504,8 +512,8 @@
    <PerkDefinition Id="StrongerMagic">
       <TokenVariables>
          <TokenVariable Key="SkillHasManaCost" Value="ManaCostBase > 0"/>
-         <TokenVariable Key="ManaCostReduction" Value="BooleanChoice(ResRedIsUpToClampPercentage, ManaCostBase * ReductionClampPercentage / 100, ManaCostBase * Owner.ResistanceReduction / 100)"/>
-         <TokenVariable Key="ResRedIsUpToClampPercentage" Value="Owner.ResistanceReduction > ReductionClampPercentage"/>
+         <TokenVariable Key="ManaCostReduction" Value="BooleanChoice(ResRedIsUpToClampPercentage, ManaCostBase * ReductionClampPercentage / 100, ManaCostBase * Owner.ResistanceReduction * 2 / 100)"/>
+         <TokenVariable Key="ResRedIsUpToClampPercentage" Value="(Owner.ResistanceReduction * 2) > ReductionClampPercentage"/>
          <TokenVariable Key="ManaCostBase" Value="BooleanChoice(Owner.IsManaCostLocked, 0, Skill.BaseManaCost)"/>
          <TokenVariable Key="ReductionClampPercentage" Value="70"/>
       </TokenVariables>
@@ -513,7 +521,7 @@
          <StatArgument Stat="ManaTotal"/>
          <StatArgument Stat="ResistanceReduction"/>
          <LocArgument Value="ReductionClampPercentage * -1" Interpreted="true" Suffix="%" Style="GoodNb"/>
-         <LocArgument Value="BooleanChoice(ResRedIsUpToClampPercentage, ReductionClampPercentage, Owner.ResistanceReduction)" Interpreted="true" Suffix="%" Style="GoodNb"/>
+         <LocArgument Value="BooleanChoice(ResRedIsUpToClampPercentage, ReductionClampPercentage, Owner.ResistanceReduction * 2)" Interpreted="true" Suffix="%" Style="GoodNb"/>
 
       </LocArguments>                          
       <View>
@@ -743,19 +751,18 @@
 
    <PerkDefinition Id="DodgePractice">
       <TokenVariables>
-         <TokenVariable Key="AddedBonusDodgeValue" Value="BooleanChoice(MaxDodgeBonus > Module.Buffer * BonusDodgeValueMultiplier,Module.Buffer * BonusDodgeValueMultiplier,MaxDodgeBonus)"/>
-         <TokenVariable Key="BonusDodgeValueMultiplier" Value="1"/>
-         <TokenVariable Key="MaxDodgeBonus" Value="50"/>
+         <TokenVariable Key="TotalBonusDodgeValue" Value="Module.Buffer * BonusDodgeValueMultiplier"/>
+         <TokenVariable Key="BonusDodgeValueMultiplier" Value="5"/>
+         <TokenVariable Key="BuffTurnsCount" Value="1"/>
       </TokenVariables>
       <LocArguments>
-         <StatArgument Stat="Dodge" Value="BonusDodgeValueMultiplier" DisplaySign="true"/>
-         <LocArgument Value="MaxDodgeBonus" Prefix="+" Suffix="%" Style="KeyWordNb"/>
-         <StatArgument Stat="Dodge" Value="AddedBonusDodgeValue" Interpreted="true" DisplaySign="true"/>
+         <StatusArgument Status="Buff" Value="BonusDodgeValueMultiplier" TurnsCount="BuffTurnsCount" Stat="Dodge"/>
       </LocArguments>
       <View>
-         <DisplayInHUD>
-            <Bonus Value="AddedBonusDodgeValue"/>
-         </DisplayInHUD>
+         <DisplayInHUD/>
+         <CompendiumEntries>
+            <CompendiumEntry Id="SkillEffect_Buff"/>
+         </CompendiumEntries>
       </View>
       <Modules>
          <BufferModule>
@@ -768,12 +775,23 @@
                      <IncreaseBuffer Value="1"/>
                   </Actions>
                </Event>
+               <Event EffectTime="OnDodge"> 
+                  <Conditions>
+                     <IsTrue Value="IsCasterPlayableUnit"/>
+                  </Conditions>
+                  <Actions>
+                     <!-- Hero turn: trigger the effect instanlty and display the feedback -->
+                     <InstantiateBuffEffectDisplay Stat="Dodge" Value="TotalBonusDodgeValue"/>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
                <Event EffectTime="OnDodge">
                   <Conditions>
                      <IsFalse Value="IsCasterPlayableUnit"/>
                   </Conditions>
                   <Actions>
-                     <SetBufferTo BufferIndex="Buffer2" Value="1"/>
+                     <!-- Enemy turn: wait for the end of the cluster to display the feedback -->
+                     <SetBufferTo BufferIndex="Buffer2" Value="1"/> 
                   </Actions>
                </Event>
                <Event EffectTime="OnBehaviorClusterExecutionEnd">
@@ -781,12 +799,25 @@
                      <IsTrue Value="Module.Buffer2 > 0"/>
                   </Conditions>
                   <Actions>
+                     <!-- Enemy turn: display the feedback at the end of the cluster (the current one only)-->
+                     <InstantiateBuffEffectDisplay Stat="Dodge" Value="TotalBonusDodgeValue"/>
                      <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartNightTurnPlayable">
+                  <Actions>
+                     <TriggerEffects/>
                   </Actions>
                </Event>
             </Events>
             <Effects>
-               <StatModifier Stat="Dodge" Value="AddedBonusDodgeValue"/>
+               <ApplyStatus Status="Buff" Stat="Dodge" TurnsCount="BuffTurnsCount" Value="TotalBonusDodgeValue" HideDisplayEffect="true"/>
+               <ResetBuffer/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -794,25 +825,18 @@
 
    <PerkDefinition Id="BlockPractice">
       <TokenVariables>
-         <TokenVariable Key="CurrentExperienceBonus" Value="XPBonus * BuffInstances"/>
-         <TokenVariable Key="BuffInstances" Value="Module.Buffer2"/>
-         
          <TokenVariable Key="DamageLeftToBlock" Value="DamageToBlockThreshold - BlockedDamageSinceLastThresholdReached"/>
          <TokenVariable Key="BlockedDamageSinceLastThresholdReached" Value="Module.Buffer"/>
          <TokenVariable Key="DamageToBlockThreshold" Value="160"/>
-
-         <TokenVariable Key="XPBonus" Value="10"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="DamageToBlockThreshold" Interpreted="true" Style="KeyWordNb"/>
-         <StatArgument Stat="ExperienceGainMultiplier" Value="XPBonus" DisplaySign="true" Interpreted="true"/>
-         <StatArgument Stat="ExperienceGainMultiplier" Value="CurrentExperienceBonus" DisplaySign="true" Interpreted="true"/>
+         <StatusArgument Status="Buff" Value="1" TurnsCount="1" Stat="ActionPointsTotal"/>
          <LocArgument Value="DamageLeftToBlock" Interpreted="true" Style="KeyWordNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
             <Buffer Value="DamageLeftToBlock"/>
-            <Bonus Value="CurrentExperienceBonus"/>
          </DisplayInHUD>
       </View>
       <Modules>
@@ -828,13 +852,20 @@
                      <IsTrue Value="BlockedDamageSinceLastThresholdReached > DamageToBlockThreshold"/>
                   </Conditions>
                   <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
+                     <TriggerEffects/>
                      <DecreaseBuffer BufferIndex="Buffer" Value="DamageToBlockThreshold"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
                   </Actions>
                </Event>
             </Events>
             <Effects>
-               <StatModifier Stat="ExperienceGainMultiplier" Value="CurrentExperienceBonus"/>
+               <ApplyStatus Status="Buff" Stat="ActionPointsTotal" Value="1" TurnsCount="1" RefreshHUD="true">
+                  <PerkTargeting TargetingReference="Owner" TargetingMethod="Self"/>
+               </ApplyStatus> 
             </Effects>
          </BufferModule>
       </Modules>
@@ -875,7 +906,7 @@
 
    <PerkDefinition Id="ViciousVenom">
       <TokenVariables>
-         <TokenVariable Key="PoisonBonus" Value="10"/>
+         <TokenVariable Key="PoisonBonus" Value="20"/>
       </TokenVariables>
       <LocArguments>
          <StatusArgument Status="Buff" Stat="PoisonDamageModifier" Value="PoisonBonus" TurnsCount="-1" Interpreted="true"/>
@@ -886,7 +917,7 @@
       <Modules>
          <BufferModule>
             <Events>
-               <Event EffectTime="OnStartTurn">
+               <Event EffectTime="OnStartNightTurnPlayable">
                   <Conditions>
                      <IsFalse Value="IsEnemyTurn"/>
                   </Conditions>
@@ -896,7 +927,7 @@
                </Event>
             </Events>
             <Effects>
-               <ApplyStatus Status="Buff" Stat="PoisonDamageModifier" Value="10" TurnsCount="-1" RefreshHUD="true">
+               <ApplyStatus Status="Buff" Stat="PoisonDamageModifier" Value="20" TurnsCount="-1" RefreshHUD="true">
                   <PerkTargeting TargetingReference="Owner" TargetingMethod="Self"/>
                </ApplyStatus> 
             </Effects>
@@ -1914,13 +1945,12 @@
          <TokenVariable Key="RemainingUnitsToKill" Value="UnitKilledThreshold - Module.Buffer"/>
          <TokenVariable Key="HasKilledEnoughUnits" Value="Module.Buffer > UnitKilledThreshold - 1"/>
          <TokenVariable Key="UnitKilledThreshold" Value="5"/>
-         <TokenVariable Key="MultiHitBonus" Value="2"/>
+         <TokenVariable Key="PerkDamageBonus" Value="300"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="UnitKilledThreshold" Interpreted="true" Style="KeywordNb"/>
          <LocalizedArgument Prefix="SkillName_" Value="DaggerThrow" Style="Skill"/>
-         <LocArgument Value="2" Style="GoodNb" Prefix="+"/>
-         <LocalizedArgument Value="SkillEffectName_MultiHit" Style="MultiHit"/>
+         <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -1975,16 +2005,14 @@
                </Event>
             </Events>
             <Effects>
-               <AddSkillEffect>
+               <SkillModifier ComputationStat="OverallDamage" Value="PerkDamageBonus">
                   <Conditions>
-                     <IsTrue Value="HasKilledEnoughUnits"/>
+                     <IsTrue Value="HasSkill"/>
                      <IsTrue Value="Skill.IsSkillID('DaggerThrow')"/>
                      <IsTrue Value="Skill.IsFromItemWithTag('DaggerUnique')"/>
+                     <IsTrue Value="HasKilledEnoughUnits"/>
                   </Conditions>
-                  <SkillEffects>
-                     <MultiHit HitsCount="MultiHitBonus"/>
-                  </SkillEffects>
-               </AddSkillEffect>
+               </SkillModifier>
             </Effects>
          </BufferModule>
       </Modules>
@@ -2033,43 +2061,67 @@
    <!--2HHammer-->
    <PerkDefinition Id="2HHammerUniquePerk">
       <TokenVariables>
-         <TokenVariable Key="ActionCostReduction" Value="1"/>
+         <TokenVariable Key="EnoughEnemiesStunned" Value="EnemiesStunned > StunsRequired - 1"/>
+         <TokenVariable Key="EnemiesStunned" Value="Min(Module.Buffer,StunsRequired)"/>
+         <TokenVariable Key="StunsRequired" Value="6"/>
+         <TokenVariable Key="FirstSkillId" Value="GroundSmash"/> <!--unused-->
+         <TokenVariable Key="MultiHitBonus" Value="3"/>
       </TokenVariables>
+      
       <LocArguments>
-         <LocalizedArgument Prefix="SkillName_" Value="HammerStrike" Style="Skill"/>
-         <StatArgument Stat="ActionPointsTotal" Value="0" DisplaySign="false"/>
+         <LocalizedArgument Prefix="SkillName_" Value="GroundSmash" Style="Skill"/>
+         <LocArgument Value="StunsRequired" Interpreted="true" Style="KeywordNb"/>
+         <LocalizedArgument Value="SkillEffectName_MultiHit" Style="MultiHit"/>
+         <LocArgument Value="MultiHitBonus" Style="GoodNb" Prefix="+"/>
+         <LocalizedArgument Value="ItemName_NoDLCTag_2HHammerUnique" Style="Unique"/>
       </LocArguments>
+
       <View>
          <DisplayInHUD>
+            <Buffer Value="EnemiesStunned"/>
             <Highlight>
-               <IsTrue Value="HasSkill"/>
-               <IsTrue Value="Skill.IsFromItemWithTag('2HHammerUnique')"/>
-               <IsTrue Value="Skill.IsSkillID('HammerStrike')"/>
-               <IsTrue Value="HasTargetTile"/>
-               <IsFalse Value="IsTargetUnit"/>
-               <IsFalse Value="IsTargetBuilding"/>
+               <IsTrue Value="EnoughEnemiesStunned"/>
             </Highlight>
          </DisplayInHUD>
       </View>
+
       <Modules>
          <BufferModule>
-            <Effects>
-               <SkillModifier ComputationStat="ActionPointsCost" Value="1">
+            <Events>
+               <Event EffectTime="OnStatusApplied">
                   <Conditions>
-                     <IsTrue Value="HasSkill"/>
+                     <IsTrue Value="AppliedStun"/>
                      <IsTrue Value="Skill.IsFromItemWithTag('2HHammerUnique')"/>
-                     <IsTrue Value="Skill.IsSkillID('HammerStrike')"/>
-                     <IsTrue Value="HasTargetTile"/>
-                     <IsFalse Value="IsTargetUnit"/>
-                     <IsFalse Value="IsTargetBuilding"/>
                   </Conditions>
-               </SkillModifier>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <AddSkillEffect>
+                  <Conditions>
+                     <IsTrue Value="HasPerkData"/>
+                     <IsTrue Value="HasSkill"/>
+                     <IsTrue Value="EnoughEnemiesStunned"/>
+                     <IsTrue Value="Skill.IsSkillID('GroundSmash')"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('2HHammerUnique')"/>
+                  </Conditions>
+                  <SkillEffects>
+                     <MultiHit HitsCount="MultiHitBonus"/>
+                  </SkillEffects>
+               </AddSkillEffect>
             </Effects>
          </BufferModule>
       </Modules>
    </PerkDefinition>
    
-   <!--2HAxe-->
+   <!--Switched perks with 2hsword-->
    <PerkDefinition Id="2HAxeUniquePerk">
 
       <TokenVariables>
@@ -2080,7 +2132,7 @@
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="EnemyHitThreshold" Style="KeyWordNb"/>
-         <LocalizedArgument Prefix="SkillName_" Value="Swing" Style="Skill"/>
+         <LocalizedArgument Prefix="SkillName_" Value="SwordBlast" Style="Skill"/>
          <StatArgument Stat="MovePointsTotal" Value="MovePointsBuffValue" DisplaySign="true" Interpreted="true"/>
          <LocArgument Prefix="+" Value="MovePointsBuffValue" Style="KeyWordNb"/>
          <StatArgument Stat="MovePointsTotal"/>
@@ -2102,8 +2154,8 @@
                   <Conditions>
                      <IsTrue Value="IsTargetEnemyUnit"/>
                      <IsTrue Value="HasSkill"/>
-                     <IsTrue Value="Skill.IsSkillID('Swing')"/>
-                     <IsTrue Value="Skill.IsFromItemWithTag('2HAxeUnique')"/>
+                     <IsTrue Value="Skill.IsSkillID('SwordBlast')"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('2HSwordUnique')"/>
                   </Conditions>
                   <Actions>
                      <IncreaseBuffer Value="1"/>
@@ -2227,6 +2279,9 @@
          <TokenVariable Key="SkillUsages" Value="Module.Buffer"/>
          <TokenVariable Key="SkillUsageThreshold" Value="5"/>
          <TokenVariable Key="ActionPointsRestoreValue" Value="10"/>
+
+         <TokenVariable Key="HasUnitBeenKilledDuringSkillCast" Value="Module.Buffer2 > 0"/>
+         
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="SkillUsageThreshold" Style="KeyWordNb"/>
@@ -2242,36 +2297,64 @@
       <Modules>
          <BufferModule>
             <Events>
-               <Event EffectTime="OnSkillCastEnd">
+               <Event EffectTime="OnSkillCastBegin">
                   <Conditions>
                      <IsTrue Value="Skill.IsFromItemWithTag('HandCrossbowUnique')"/>
-                     <IsFalse Value="HasSkillBeenUsedEnough"/>
                   </Conditions>
                   <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/> <!--buffer 2 will be used to check if a unit has been killed during the skill. If buffer 2 > 0 then yes.-->
                   </Actions>
                </Event>
-               <Event EffectTime="OnSkillCastEnd">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsFromItemWithTag('HandCrossbowUnique')"/>
-                     <IsTrue Value="HasSkillBeenUsedEnough"/>
-                  </Conditions>
-                  <Actions>
-                     <TriggerEffects/>
-                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
-                  </Actions>
-               </Event>
+               
                <Event EffectTime="OnTargetKilled">
                   <Conditions>
                      <IsTrue Value="Skill.IsFromItemWithTag('HandCrossbowUnique')"/>
                   </Conditions>
                   <Actions>
-                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="1"/>
                   </Actions>
                </Event>
+
+               <Event EffectTime="OnSkillCastEnd"> <!--case = no unit killed, threshold not reached-->
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('HandCrossbowUnique')"/>
+                     <IsFalse Value="HasUnitBeenKilledDuringSkillCast"/>
+                     <IsFalse Value="HasSkillBeenUsedEnough"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               
+               <Event EffectTime="OnSkillCastEnd"> <!--case = no unit killed, threshold reached-->
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('HandCrossbowUnique')"/>
+                     <IsFalse Value="HasUnitBeenKilledDuringSkillCast"/>
+                     <IsTrue Value="HasSkillBeenUsedEnough"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+
+               <Event EffectTime="OnSkillCastEnd"> <!--case = unit killed-->
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('HandCrossbowUnique')"/>
+                     <IsTrue Value="HasUnitBeenKilledDuringSkillCast"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               
                <Event EffectTime="OnStartProductionTurn">
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
                   </Actions>
                </Event>
             </Events>
@@ -2288,31 +2371,34 @@
       </TokenVariables>
 
       <LocArguments>
-         <LocalizedArgument Prefix="SkillName_" Value="Grapeshot" Style="Skill"/>
+         <LocalizedArgument Prefix="SkillName_" Value="Assassinate" Style="Skill"/>
+         <RestoreStatArgument Stat="ActionPointsTotal" Value="1" DisplaySign="false" DisplayRestoreText="true"/>
+         <StatArgument Stat="HealthTotal"/>
+         <LocalizedArgument Value="ItemName_NoDLCTag_RifleUnique" Style="Unique"/>
       </LocArguments>
 
       <View>
          <DisplayInHUD>
          </DisplayInHUD>
-         <SkillsToShow>
-            <SkillToShow Id="PistolShot_UniquePerk"/>
-         </SkillsToShow>
       </View>
 
       <Modules>
          <BufferModule>
             <Events>
-               <Event EffectTime="OnEnemyMovementEnd">
+               <Event EffectTime="OnTargetKilled">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="IsTargetEnemyUnit"/>
+                     <IsFalse Value="TargetUnit.HealthTotal > AttackData.HealthDamage"/>
+                     <IsTrue Value="Skill.IsSkillID('Assassinate_Unique')"/>
+                  </Conditions>
                   <Actions>
                      <TriggerEffects/>
                   </Actions>
                </Event>
             </Events>
             <Effects>
-               <CastSkill SkillId="PistolShot_UniquePerk">
-                  <PerkTargeting TargetingReference="Owner" TargetingMethod="ClosestTarget" Amount="1" >
-                  </PerkTargeting>
-               </CastSkill>
+               <RestoreStat Stat="ActionPoints" Value="1"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -2345,7 +2431,8 @@
       </TokenVariables>
       <LocArguments>
          <LocalizedArgument Value="ItemName_NoDLCTag_LongbowUnique" Style="Unique"/>
-         <StatArgument Stat="OverallDamage" Value="DamageBonusStep"/>
+         <!--<StatArgument Stat="OverallDamage" Value="DamageBonusStep"/>-->
+         <LocArgument Value="DamageBonusStep" Prefix="+" Suffix="%" Style="GoodNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -2374,8 +2461,10 @@
       </TokenVariables>
       <LocArguments>
          <LocalizedArgument Value="ItemName_NoDLCTag_CrossbowUnique" Style="Unique"/>
-         <StatArgument Stat="OverallDamage" Value="DamageBonusStep"/>
-         <StatArgument Stat="OverallDamage" Value="DamageBonusValue" DisplaySign="true" Interpreted="true"/>
+         <!--<StatArgument Stat="OverallDamage" Value="DamageBonusStep"/>-->
+         <LocArgument Value="DamageBonusStep" Prefix="+" Suffix="%" Style="GoodNb"/>
+         <!--<StatArgument Stat="OverallDamage" Value="DamageBonusValue" DisplaySign="true" Interpreted="true"/>-->
+         <LocArgument Value="DamageBonusValue" Prefix="+" Suffix="%" Interpreted="true" Style="GoodNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -2418,17 +2507,17 @@
       </Modules>
    </PerkDefinition>
    
-   <!--Rifle-->
+   <!--Behavior switched with Pistol-->
    <PerkDefinition Id="RifleUniquePerk">
       <TokenVariables>
          <TokenVariable Key="HasPerkAlreadyActivatedThisTurn" Value="Module.Buffer > 0"/>
          <TokenVariable Key="MoveDebuffValue" Value="3"/>
          <TokenVariable Key="AccDebuffValue" Value="50"/>
-         <TokenVariable Key="DebuffDuration" Value="2"/>
+         <TokenVariable Key="DebuffDuration" Value="1"/>
       </TokenVariables>
 
       <LocArguments>
-         <LocalizedArgument Value="ItemName_NoDLCTag_RifleUnique" Style="Unique"/>
+         <LocalizedArgument Value="ItemName_NoDLCTag_PistolUnique" Style="Unique"/>
          <StatusArgument Status="Debuff" Stat="MovePointsTotal" Value="-1 * MoveDebuffValue" TurnsCount="DebuffDuration" Interpreted="true"/>
          <StatusArgument Status="Debuff" Stat="Accuracy" Value="-1 * AccDebuffValue" TurnsCount="DebuffDuration" Interpreted="true"/>
       </LocArguments>
@@ -2448,7 +2537,7 @@
                   <Conditions>
                      <IsFalse Value="HasPerkAlreadyActivatedThisTurn"/>
                      <IsTrue Value="IsTargetEnemyUnit"/>
-                     <IsTrue Value="Skill.IsFromItemWithTag('RifleUnique')"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('PistolUnique')"/>
                   </Conditions>
                   <Actions>
                      <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
@@ -2463,13 +2552,13 @@
             </Events>
             <Effects>
                <ApplyStatus Status="Debuff" Stat="MovePointsTotal" Value="MoveDebuffValue" TurnsCount="DebuffDuration">
-                  <PerkTargeting TargetingReference="Target" TargetingMethod="DamageablesInRange">
+                  <PerkTargeting TargetingReference="Target" Range="3" TargetingMethod="DamageablesInRange">
                      <DamageableTarget Type="Enemy"/>
                      <DamageableTarget Type="Boss"/>
                   </PerkTargeting>
                </ApplyStatus>
                <ApplyStatus Status="Debuff" Stat="Accuracy" Value="AccDebuffValue" TurnsCount="DebuffDuration">
-                  <PerkTargeting TargetingReference="Target" TargetingMethod="DamageablesInRange">
+                  <PerkTargeting TargetingReference="Target" Range="3" TargetingMethod="DamageablesInRange">
                      <DamageableTarget Type="Enemy"/>
                      <DamageableTarget Type="Boss"/>
                   </PerkTargeting>
@@ -2484,7 +2573,7 @@
       <TokenVariables>
          <TokenVariable Key="RemainingUnitsToKill" Value="UnitKilledThreshold - Module.Buffer"/>
          <TokenVariable Key="HasKilledEnoughUnits" Value="Module.Buffer > UnitKilledThreshold - 1"/>
-         <TokenVariable Key="UnitKilledThreshold" Value="12"/>
+         <TokenVariable Key="UnitKilledThreshold" Value="3"/>
          <TokenVariable Key="MultiHitSkillBaseValue" Value="4"/>
          <TokenVariable Key="MultiHitBonus" Value="Module.Buffer2"/>
          <TokenVariable Key="MultiHitStep" Value="1"/>
@@ -2524,6 +2613,12 @@
                   <Actions>
                      <IncreaseBuffer BufferIndex="Buffer2" Value="MultiHitStep"/>
                      <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartNightTurnPlayable">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
                   </Actions>
                </Event>
                <Event EffectTime="OnStartProductionTurn">
@@ -2672,30 +2767,32 @@
    <!--Magic Orb-->
    <PerkDefinition Id="MagicOrbUniquePerk">
       <TokenVariables>
-         <TokenVariable Key="DamageBonusValue" Value="(Module.Buffer * DamageBonusStep)"/>
-         <TokenVariable Key="DamageBonusStep" Value="1"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="HealthTotal"/>
          <LocalizedArgument Value="ItemName_NoDLCTag_MagicOrbUnique" Style="Unique"/>
-         <StatArgument Stat="OverallDamage" Value="DamageBonusStep"/>
-      <StatArgument Stat="OverallDamage" Value="DamageBonusValue" DisplaySign="true" Interpreted="true"/>
+         <LocalizedArgument Prefix="SkillName_" Value="InfectUnique" Style="Skill"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
-            <Bonus Value="DamageBonusValue"/>
          </DisplayInHUD>
+         <SkillsToShow>
+            <SkillToShow Id="InfectUnique"/>
+         </SkillsToShow>
       </View>
       <Modules>
          <BufferModule>
             <Events>
-               <Event EffectTime="OnTargetHit">
+               <Event EffectTime="OnTargetKilled">
                   <Conditions>
                      <IsTrue Value="Skill.IsAttack"/>
                      <IsTrue Value="IsTargetEnemyUnit"/>
+                     <IsFalse Value="TargetUnit.HealthTotal > AttackData.HealthDamage"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('MagicOrbUnique')"/>
+                     <IsTrue Value="TargetUnit.IsIsolated"/>
                   </Conditions>
                   <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
+                     <TriggerEffects/>
                   </Actions>
                </Event>
                <Event EffectTime="OnTargetKilled">
@@ -2703,25 +2800,21 @@
                      <IsTrue Value="Skill.IsAttack"/>
                      <IsTrue Value="IsTargetEnemyUnit"/>
                      <IsFalse Value="TargetUnit.HealthTotal > AttackData.HealthDamage"/>
-                     <IsTrue Value="Skill.IsFromItemWithTag('MagicOrbUnique')"/>
+                     <IsTrue Value="Skill.IsSkillID('InfectUnique')"/>
+                     <IsTrue Value="TargetUnit.IsIsolated"/>
                   </Conditions>
                   <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer" Value="DamageBonusStep"/>
-                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
-                  </Actions>
-               </Event>
-               <Event EffectTime="OnSkillCastEnd">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsAttack"/>
-                     <IsTrue Value="Module.Buffer2 > 1"/>
-                  </Conditions>
-                  <Actions>
-                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <TriggerEffects/>
                   </Actions>
                </Event>
             </Events>
             <Effects>
-               <StatModifier Stat="OverallDamage" Value="DamageBonusValue"/>
+               <CastSkill SkillId="InfectUnique">
+                  <PerkTargeting TargetingReference="Owner" TargetingMethod="ClosestTarget" Amount="1" >
+                     <DamageableTarget Type="Enemy"/>
+                     <DamageableTarget Type="Boss"/>
+                  </PerkTargeting>
+               </CastSkill>
             </Effects>
          </BufferModule>
       </Modules>
@@ -2916,7 +3009,7 @@
          <TokenVariable Key="PerkStacks" Value="Min(Max(0,Module.Buffer), MaxStacks)"/>
          <TokenVariable Key="MaxStacks" Value="20"/>
          <TokenVariable Key="WasAttackedThisTurn" Value="Module.Buffer2"/>
-         <TokenVariable Key="StackPerEnemy" Value="2"/>
+         <TokenVariable Key="StackPerEnemy" Value="3"/>
          <TokenVariable Key="StackLoosePerSkill" Value="1"/>
          <TokenVariable Key="IsStackConsumePrevented" Value="Module.Buffer3"/>
          <!--Added by uniaue perk-->
@@ -3612,14 +3705,13 @@
    <PerkDefinition Id="StrongThrowUnique">
 		<TokenVariables>
          <TokenVariable Key="PerkStacks" Value="Max(0,EnemiesHitThreshold - Module.Buffer)"/>
-			<TokenVariable Key="EnemiesHitThreshold" Value="4"/>
+			<TokenVariable Key="EnemiesHitThreshold" Value="2"/>
 			<TokenVariable Key="CanActivatePerk" Value="Module.Buffer3"/>
          <TokenVariable Key="UniqueBonusStunChance" Value="50"/>
-
       </TokenVariables>
 		<LocArguments>
              <LocArgument Value="EnemiesHitThreshold" Style="KeyWordNb"/>
-               <LocalizedArgument Value="SkillEffectName_MultiHit" Style="MultiHit"/>
+               <LocalizedArgument Value="SkillEffectName_Propagation" Style="Propagation"/>
                <LocArgument Value="2" Style="DamageNb" Prefix=" x"/>
              <!--<LocArgument Prefix="+" Value="OverallDamageBonus" Suffix="%" Style="GoodNb"/>-->
              <LocArgument Value="PerkStacks" Interpreted="true" Style="KeyWordNb"/>
@@ -3783,7 +3875,7 @@
          <TokenVariable Key="PoisonScalingOnLevel" Value="(Floor(PlayableUnitLevel/PerLevelHeroScale) * PoisonScalingLevelMultiplicative)"/>
          <TokenVariable Key="PlayableUnitLevel" Value="(BooleanChoice(HasOwner,Owner.Level,1))"/>
          <TokenVariable Key="PlayerPoisonScalingOnHit" Value="0.25"/>
-         <TokenVariable Key="PerLevelHeroScale" Value="3"/>
+         <TokenVariable Key="PerLevelHeroScale" Value="6"/>
 
          <TokenVariable Key="ApplyStatusRange" Value="4"/>
          <TokenVariable Key="PoisonPlayerDuration" Value="3"/>
