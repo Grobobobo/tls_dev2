@@ -1,4 +1,4 @@
-﻿"KEY","English","Français","简体中文","繁體中文","日本語","Русский","Українська","Deutsch","Español","Português (Brasil)","한국어"
+ ,English,Français,简体中文,繁體中文,日本語,Русский,Українська,Deutsch,Español,Português (Brasil),한국어
 "BuildingDescription_PotionMaker","Crafts 2 <style=KeyWord>Consumables</style> every <style=Production>Production Phase</style>.
 Additional <style=KeyWord>Consumables</style> can be crafted with the help of <style=Workers>Workers</style>.","Fabrique 2 <style=KeyWord>Consommables</style> à chaque <style=Production>Phase de Production</style>.
 Des <style=KeyWord>Consommables</style> supplémentaires peuvent être fabriqués avec l'aide d'<style=Workers>Ouvriers</style>.","在每个<style=Production>整备阶段</style>产出2个<style=KeyWord>消耗品</style>。
@@ -686,51 +686,51 @@ Aumenta {6} <style=KeyWord>Máx.</style> em {5}.
 <style=Attenuated>보너스는 영웅이 이 아이템을 보유하고 있는 동안 계속 지속</style>
 <style=KeyWord>최대</style> {6} {5}만큼 증가
 <style=""DwarfIcon""></style> <style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
-"PerkDescription_StrongThrow","Every {0} enemies <style=KeyWord>damaged</style> with a <style=KeyWord>Boomerang</style> skill, the next <style=KeyWord>Boomerang</style> <style=""Skill"">skill</style> gets:
+"PerkDescription_StrongThrow","Every {0} enemies <style=KeyWord>damaged</style> with a <style=KeyWord>Boomerang</style> skill, the next <style=KeyWord>Boomerang</style> <style=Skill>skill</style> gets:
 <color=#549EE4>Secondary</color> tiles now count as <style=bad>Primary</style> tiles.
-Precise Targeting gets: {1}{2}.
+<style=Skill>Precise Targeting</style> gets: {1}{2}.
 <style=Attenuated>This modifier is reset every morning.</style>
-<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Tous les {0} ennemis <style=KeyWord>endommagés</style> avec une compétence <style=KeyWord>Boomerang</style>, la prochaine <style=""Skill"">compétence</style> <style=KeyWord>Boomerang</style> obtient<nbsp>:
-Les cases <color=#549EE4>secondaires</color> comptent maintenant comme des cases <style=bad>primaires</style>.
-Ciblage précis obtient<nbsp>: {1}{2}.
+<style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","Pour chaque {0} ennemis <style=KeyWord>endommagés</style> par une compétence <style=KeyWord>Boomerang</style>, la prochaine compétence <style=KeyWord>Boomerang</style> <style=Skill>compétence</style> obtient:
+Les cases <color=#549EE4>Secondaires</color> comptent désormais comme des cases <style=bad>Primaires</style>.
+<style=Skill>Ciblage Précis</style> obtient: {1}{2}.
 <style=Attenuated>Ce modificateur est réinitialisé chaque matin.</style>
-<style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","每用<style=KeyWord>回旋镖</style>技能<style=KeyWord>伤害</style>{0}个敌人，下一个<style=KeyWord>回旋镖</style><style=""Skill"">技能</style>获得：
-<color=#549EE4>次要</color>格子现在算作<style=bad>主要</style>格子。
-精确瞄准获得：{1}{2}。
-<style=Attenuated>此修正每天早上重置。</style>
-<style=""ElfIcon""></style><style=""ElfText"">《琥珀幽森的精灵》DLC</style>","每用<style=KeyWord>迴力鏢</style>技能<style=KeyWord>傷害</style>{0}個敵人，下一個<style=KeyWord>迴力鏢</style><style=""Skill"">技能</style>獲得：
-<color=#549EE4>次要</color>格子現在算作<style=bad>主要</style>格子。
-精確瞄準獲得：{1}{2}。
-<style=Attenuated>此修正每天早上重置。</style>
-<style=""ElfIcon""></style><style=""ElfText"">〈琥珀幽森的精靈〉DLC</style>","<style=KeyWord>ブーメラン</style>スキルで{0}体の敵に<style=KeyWord>ダメージ</style>を与えるたびに、次の<style=KeyWord>ブーメラン</style><style=""Skill"">スキル</style>は以下を獲得する：
-<color=#549EE4>セカンダリ</color>タイルが<style=bad>プライマリ</style>タイルとしてカウントされるようになる。
-精密照準の効果：{1}{2}。
-<style=Attenuated>この修正は毎朝リセットされます。</style>
-<style=""ElfIcon""></style><style=""ElfText"">アンバーワルドのエルフDLC</style>","Каждые {0} врагов, получивших <style=KeyWord>урон</style> от навыка <style=KeyWord>бумеранга</style>, следующий <style=""Skill"">навык</style> <style=KeyWord>бумеранга</style> получает:
-<color=#549EE4>Второстепенные</color> клетки теперь считаются <style=bad>основными</style> кл етками.
-Точное прицеливание получает: {1}{2}.
+<style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","每使用 <style=KeyWord> 回旋镖</style><style=Skill> 技能</style>对 {0} 名敌人 <style=KeyWord> 造成伤害</style>后，下一次 <style=KeyWord> 回旋镖</style><style=Skill> 技能</style>将获得：
+<color=#549EE4> 次要</color>格子现在视为 <style=bad> 主要</style>格子。
+<style=Skill> 精准锁定</style>获得：{1}{2}。
+<style=Attenuated> 该加成每天清晨重置。</style>
+<style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","每使用 <style=KeyWord> 迴旋鏢</style><style=Skill> 技能</style>對 {0} 名敵人 <style=KeyWord> 造成傷害</style>後，下一次 <style=KeyWord> 迴旋鏢</style><style=Skill> 技能</style>將獲得：
+<color=#549EE4> 次要</color>格子現在視為 <style=bad> 主要</style>格子。
+<style=Skill> 精確瞄準</style>獲得：{1}{2}。
+<style=Attenuated> 該加成每天清晨重置。</style>
+<style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","<style=KeyWord> ブーメラン</style><style=Skill> スキル</style>で {0} 体の敵に <style=KeyWord> ダメージを与える</style>ごとに、次の <style=KeyWord> ブーメラン</style><style=Skill> スキル</style>が以下を獲得します：
+<color=#549EE4> 二次</color>タイルが <style=bad> 一次</color>タイルとして扱われるようになります。
+<style=Skill> 精密なる狙い</style>が獲得: {1}{2}。
+<style=Attenuated> この補正は毎朝リセットされます。</style>
+<style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","Каждые {0} врагов, <style=KeyWord>получающих урон</style> от <style=KeyWord>бумеранга</style> <style=Skill>умения</style>, следующее <style=KeyWord>бумеранг</style> <style=Skill>умение</style> получает:
+<color=#549EE4>Вторичные</color> плитки считаются <style=bad>Основными</style> плитками.
+<style=Skill>Точное прицеливание</style> получает: {1}{2}.
 <style=Attenuated>Этот модификатор сбрасывается каждое утро.</style>
-<style=""ElfIcon""></style><style=""ElfText"">Дополнительный контент Elves of Amberwald</style>","Кожні {0} ворогів, яким завдано <style=KeyWord>шкоду</style> вмінням <style=KeyWord>бумеранга</style>, наступне <style=""Skill"">вміння</style> <style=KeyWord>бумер анга</style> отримує:
-<color=#549EE4>Вторинні</color> клітинки тепер рахуються як <style=bad>основні</style> клітинки.
-Точне прицілювання отримує: {1}{2}.
-<style=Attenuated>Цей модифікатор скидається щоранку.</style>
-<style=""ElfIcon""></style><style=""ElfText"">Доповнення Elves of Amberwald</style>","Jedes Mal, wenn {0} Gegner mit einer <style=KeyWord>Bumerang</style>-Fähigkeit <style=KeyWord>Schaden</style> erleiden, erhält die nächste <style=""Skill"">Fähigkeit</style> <style=KeyWord>Bumerang</style>:
-<color=#549EE4>Sekundäre</color> Felder zählen jetzt als <style=bad>primäre</style> Felder.
-Präzises Zielen erhält: {1}{2}.
+<style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","Кожні {0} ворогів, <style=KeyWord>отримуючі ушкодження</style> від <style=KeyWord>бумерангу</style> <style=Skill>навику</style>, наступний <style=KeyWord>бумеранг</style> <style=Skill>навик</style> отримує:
+<color=#549EE4>Вторинні</color> плитки вважаються <style=bad>Основними</style> плитками.
+<style=Skill>Точне прицілювання</style> отримує: {1}{2}.
+<style=Attenuated>Цей модифікатор скидається кожного ранку.</style>
+<style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","Für je {0} Feinde, die durch eine <style=KeyWord>Boomerang</style>-<style=Skill>Fertigkeit</style> <style=KeyWord>beschädigt</style> werden, erhält die nächste <style=KeyWord>Boomerang</style>-<style=Skill>Fertigkeit</style>:
+<color=#549EE4>Sekundäre</color> Felder zählen als <style=bad>Primäre</style> Felder.
+<style=Skill>Präzises Zielen</style> erhält: {1}{2}.
 <style=Attenuated>Dieser Modifikator wird jeden Morgen zurückgesetzt.</style>
-<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Cada {0} enemigos <style=KeyWord>dañados</style> con una habilidad de <style=KeyWord>bumerán</style>, la siguiente <style=""Skill"">habilidad</style> de <style=KeyWord>bumerán</style> obtiene:
-Las casillas <color=#549EE4>secundarias</color> ahora cuentan como casillas <style=bad>primarias</style>.
-Puntería precisa obtiene: {1}{2}.
+<style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","Por cada {0} enemigos <style=KeyWord>dañados</style> por una habilidad <style=KeyWord>Bumerán</style>, la siguiente habilidad <style=KeyWord>Bumerán</style> <style=Skill>habilidad</style> obtiene:
+Las casillas <color=#549EE4>Secundarias</color> cuentan como casillas <style=bad>Primarias</style>.
+<style=Skill>Apuntado preciso</style> obtiene: {1}{2}.
 <style=Attenuated>Este modificador se reinicia cada mañana.</style>
-<style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","A cada {0} inimigos <style=KeyWord>danificados</style> com uma habilidade de <style=KeyWord>Bumerangue</style>, a próxima <style=""Skill"">habilidade</style> de <style=KeyWord>Bumerangue</style> recebe:
-Quadrados <color=#549EE4>secundários</color> agora contam como quadrados <style=bad>primários</style>.
-Mira Precisa recebe: {1}{2}.
+<style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","Para cada {0} inimigos <style=KeyWord>danificados</style> por uma habilidade de <style=KeyWord>Bumerangue</style>, a próxima habilidade de <style=KeyWord>Bumerangue</style> <style=Skill>habilidade</style> ganha:
+As casas <color=#549EE4>Secundárias</color> contam como casas <style=bad>Primárias</style>.
+<style=Skill>Mira Precisa</style> ganha: {1}{2}.
 <style=Attenuated>Este modificador é redefinido todas as manhãs.</style>
-<style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","<style=KeyWord>부메랑</style> 스킬로 {0}명의 적에게 <style=KeyWord>피해</style>를 줄 때마다 다음 <style=KeyWord>부메랑</style> <style=""Skill"">스킬</style>이 획득:
-<color=#549EE4>보조</color> 타일은 이제 <style=bad>주요</style> 타일로 간주됩니다.
-정밀 조준 획득: {1}{2}.
-<style=Attenuated>이 수정치는 매일 아침 초기화됩니다.</style>
-<style=""ElfIcon""></style><style=""ElfText"">암버발트의 엘프 DLC</style>"
+<style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","<style=KeyWord>부메랑</style><style=Skill>스킬</style>로{0}명의 적에게<style=KeyWord>대미지를 입힐</style>때마다 다음<style=KeyWord>부메랑</style><style=Skill>스킬</style>이 다음을 얻습니다：
+<color=#549EE4>보조</color>타일이<style=bad>주</color>타일로 간주됩니다.
+<style=Skill>정밀 대상 지정</style> 획득: {1}{2}.
+<style=Attenuated>이 보정은 매일 아침 초기화됩니다.</style>
+<style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>"
 "PerkEffectInformations_StrongThrow","Enemies to hit: {3}","Ennemis à toucher<nbsp>: {3}","还需击中敌人数：{3}","還需擊中敵人數：{3}","命中させるエネミー: {3}","Ещё попаданий: {3}","Залишилося ударити ворогів: {3}.","Zu treffende Gegner: {3}","Enemigos por golpear: {3}","Inimigos a serem golpeados: {3}","명중해야 하는 적: {3}"
 "PerkDescription_Sentry","As long as there is <style=KeyWord>no other Hero</style> within a <style=KeyWord>range of {0}</style>, all <style=""skill"">skills</style> get:
 {1} 
@@ -1026,60 +1026,62 @@ a <style=KeyWord>inimigos a até 3 casas de distância</style>.
 <style=KeyWord>(3타일 이내의 적들에게)</style>
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
 "PerkDescription_MagicWandUniquePerk","Every {0} <style=KeyWord>units killed</style> with {1} <style=Skill>skills</style>:
-{2} gains {3} {4} for the turn.
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Toutes les {0} <style=keyword>unités tuées</style> avec des <style=skill>compétence</style> de {1}<nbsp>:
-{2} obtient {3} {4} pour le tour.
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","每使用{1}的<style=Skill>技能</style><style=KeyWord>击杀</style>{0}个单位：
-当前回合{2}获得{3}{4}。
-<style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","每用{1}的<style=Skill>技能</style><style=KeyWord>擊殺</style>{0}個單位：
-{2}獲得{3}{4}，持續到回合結束。
-<style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","{1}の<style=Skill>スキル</style>で<style=KeyWord>ユニットを{0}体倒す</style>ごとに:
-ターンの間、{2}が{3} {4}を得る。
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","За каждых {0} <style=KeyWord>врагов, убитых</style> <style=Skill>навыками</style> этого жезла, навык ""{2}"" до конца хода</style> получает бонус {3} {4}.
-<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","За кож. {0} <style=KeyWord>ворогів, убитих</style> <style=Skill>навичками</style> речі {1}:
-{2} отримує {3} {4} протягом ходу.
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Pro {0} <style=KeyWord>Einheiten</style>, die mit <style=Skill>Fähigkeiten</style> von {1} getötet wurden:
-{2} erhält {3} {4} für die Runde.
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Cada {0} <style=KeyWord>unidades eliminadas</style> con <style=Skill>habilidades</style> de {1}:
-{2} obtiene {3} {4} para ese turno.
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","A cada {0} <style=KeyWord>unidades abatidas</style> com <style=Skill>habilidades</style> de {1}:
-{2} recebe {3} de {4} durante este turno.
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","{1} <style=Skill>스킬</style>로 <style=KeyWord>유닛 {0}명을 처치</style>할 때마다:
-턴 동안 {2}이(가) {3} {4} 획득
-<style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
+<style=Skill>Magic Missiles</style> gains {3} {4} for the turn.
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Tous les {0} <style=KeyWord>unités tuées</style> avec {1} <style=Skill>compétences</style>:
+<style=Skill>Missiles magiques</style> gagne {3} {4} pour le tour.
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","每使用 {1} 个 <style=Skill> 技能</style><style=KeyWord> 击杀单位</style>达到 {0} 个时：
+<style=Skill> 魔法导弹</style>在本回合获得 {3} {4}。
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","每使用 {1} 個 <style=Skill> 技能</style><style=KeyWord> 擊殺單位</style>達到 {0} 個時：
+<style=Skill> 魔法導彈</style>在本回合獲得 {3} {4}。
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","{1} 個の <style=Skill> スキル</style>で <style=KeyWord> ユニットを撃破</style>するごとに {0} 回：
+<style=Skill> マジックミサイル</style>がターン中 {3} {4} を獲得します。
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Каждые {0} <style=KeyWord>юнитов убито</style> с помощью {1} <style=Skill>умений</style>:
+<style=Skill>Волшебные стрелы</style> получает {3} {4} на ход.
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Кожні {0} <style=KeyWord>юнітів вбито</style> за допомогою {1} <style=Skill>навиків</style>:
+<style=Skill>Магічні заряди</style> отримує {3} {4} на хід.
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Alle {0} <style=KeyWord>Einheiten getötet</style> mit {1} <style=Skill>Fertigkeiten</style>:
+<style=Skill>Magisches Geschoss</style> erhält {3} {4} für den Zug.
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Cada {0} <style=KeyWord>unidades muertas</style> con {1} <style=Skill>habilidades</style>:
+<style=Skill>Misiles mágicos</style> gana {3} {4} durante el turno.
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Cada {0} <style=KeyWord>unidades mortas</style> com {1} <style=Skill>habilidades</style>:
+<style=Skill>Mísseis Mágicos</style> ganha {3} {4} durante o turno.
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","{1}개의<style=Skill>스킬</style>로<style=KeyWord>유닛 처치</style>할 때마다{0}회：
+<style=Skill>마법 미사일</style>이 턴 동안 {3} {4}를 얻습니다.
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>"
 "PerkDescription_MagicOrbUniquePerk","After <style=KeyWord>attacking and killing</style> an enemy unit that was <style=KeyWord>at full {0}</style> and <style=Isolated>isolated</style> with one of {1}'s <style=skill>skills</style>:
 Hero <style=KeyWord>automatically</style> attacks the <style=KeyWord>closest</style> enemy with the {2} skill.
 <style=Attenuated>Can trigger itself.</style>
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Après avoir <style=KeyWord>attaqué et tué</style> une unité ennemie qui avais <style=KeyWord>toute sa {0}</style> avec une <style=skill>compétence</skill> de {1}<nbsp>:
-{2}
-<style=Attenuated>Ce bonus dure tant que le héros conserve cet objet.</style>","使用{1}的<style=skill>技能</style><style=KeyWord>攻击并击杀</style>一名<style=KeyWord>拥有满{0}</style>的敌方单位：
-{2}。
-<style=Attenuated>只要英雄持有该物品，该加成就会一直存在。</style>
-<style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","用{1}的<style=skill>技能</style><style=KeyWord>攻擊並擊殺</style><style=KeyWord>{0}全滿</style>且<style=Isolated>落單</style>的敵方單位時：
-英雄<style=KeyWord>自動</style>使用{2}技能攻擊<style=KeyWord>最近的</style>敵人。
-<style=Attenuated>可以觸發自身。</style>
-<style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","{1}の<style=skill>スキル</style>で<style=KeyWord>{0}が満タン</style>で<style=Isolated>孤立している</style>エネミーユニットを<style=KeyWord>攻撃して倒す</style>と:
-ヒーローは{2}スキルで<style=KeyWord>最も近い</style>エネミーを<style=KeyWord>自動的に</style>攻撃する。
-<style=Attenuated>自身を発動可能。</style>
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","<style=KeyWord>Атаковав и убив</style> <style=Isolated>изолированное</style> существо с <style=KeyWord>полным запасом {0}</style> при помощи <style=skill>навыков</style> этой сферы:
-Герой <style=KeyWord>автоматически</style> атакует <style=KeyWord>ближайшего</style> врага навыком {2}.
-<style=Attenuated>Может активировать сам себя.</style>
-<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Після <style=KeyWord>враження й убивства</style> <style=Isolated>відокремленого</style> ворога, що мав <style=KeyWord>макс. {0}</style>, однією з <style=skill>навичок</style> речі {1}:
-Герой <style=KeyWord>автоматично</style> атакує <style=KeyWord>найближчого</style> ворога навичкою {2}.
-<style=Attenuated>Може активувати сам себе.</style>
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Nachdem eine <style=Isolated>isolierte</style> gegnerische Einheit, die <style=KeyWord>bei voller {0}</style> war, mit einer <style=skill>Fähigkeit</style> von {1} <style=KeyWord>angegriffen und getötet</style> wurde:
-Der Held greift <style=KeyWord>automatisch</style> den <style=KeyWord>nächsten</style> Gegner mit der Fähigkeit {2} an.
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Après avoir <style=KeyWord>attaqué et tué</style> une unité ennemie qui était <style=KeyWord>à {0} complet</style> et <style=Isolated>isolée</style> avec l'une des <style=skill>compétences</style> de {1}:
+Le héros <style=KeyWord>automatiquement</style> attaque l'ennemi <style=KeyWord>le plus proche</style> avec la compétence {2}.
+<style=Attenuated>Peut se déclencher elle-même.</style>
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","在 <style=KeyWord> 攻击并击杀</style>一名处于 <style=KeyWord> 满 {0}</style>且 <style=Isolated> 孤立</style>状态的敌方单位后，若使用的是 {1} 的 <style=skill> 技能</style>：
+英雄 <style=KeyWord> 自动</style>使用 {2} 技能攻击 <style=KeyWord> 最近</style>的敌人。
+<style=Attenuated> 可自我触发。</style>
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","在 <style=KeyWord> 攻擊並擊殺</style>一名處於 <style=KeyWord> 滿 {0}</style>且 <style=Isolated> 孤立</style>狀態的敵方單位後，若使用的是 {1} 的 <style=skill> 技能</style>：
+英雄 <style=KeyWord> 自動</style>使用 {2} 技能攻擊 <style=KeyWord> 最近</style>的敵人。
+<style=Attenuated> 可自我觸發。</style>
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","{1} の <style=skill> スキル</style>で、<style=KeyWord> 満 {0}</style>かつ <style=Isolated> 孤立</style>状態の敵ユニットを <style=KeyWord> 攻撃撃破</style>した後：
+味方ヒーローは <style=KeyWord> 自動</style>で <style=KeyWord> 最も近い</style>敵を {2} スキルで攻撃する。
+<style=Attenuated> 自己発動可能。</style>
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","После <style=KeyWord>атаки и убийства</style> вражеского юнита, который был <style=KeyWord>на полном {0}</style> и <style=Isolated>изолирован</style>, с помощью одного из <style=skill>умений</style> {1}:
+Герой <style=KeyWord>автоматически</style> атакует <style=KeyWord>ближайшего</style> врага умением {2}.
+<style=Attenuated>Может активироваться само.</style>
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Після <style=KeyWord>атаки та вбивства</style> ворожого одиниці, яка була <style=KeyWord>на повному {0}</style> та <style=Isolated>ізольована</style>, за допомогою одного з <style=skill>навиків</style> {1}:
+Герой <style=KeyWord>автоматично</style> атакує <style=KeyWord>найближчого</style> ворога навиком {2}.
+<style=Attenuated>Може активуватися само.</style>
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Nachdem du einen feindlichen Einheit, die <style=KeyWord>voll bei {0}</style> und <style=Isolated>isoliert</style> war, mit einer der <style=skill>Fertigkeiten</style> von {1} <style=KeyWord>angegriffen und getötet</style> hast:
+Der Held <style=KeyWord>automatisch</style> angreift den <style=KeyWord>nächsten</style> Feind mit der Fertigkeit {2}.
 <style=Attenuated>Kann sich selbst auslösen.</style>
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Después de <style=KeyWord>atacar y matar</style> a una unidad enemiga <style=Isolated>aislada</style> que estaba <style=KeyWord>al máximo de {0}</style> con una de las <style=skill>habilidades</style> de {1}:
-El héroe ataca <style=KeyWord>automáticamente</style> al enemigo más <style=KeyWord>cercano</style> con la habilidad {2}.
-<style=Attenuated>Puede activarse a sí mismo.</style>
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","Após <style=KeyWord>atacar e abater</style> uma unidade inimiga <style=Isolated>isolada</style> que estava <style=KeyWord>com {0} máxima</style> com uma das <style=skill>habilidades</style> de {1}:
-O Herói ataca <style=KeyWord>automaticamente</style> o inimigo mais <style=KeyWord>próximo</style> com a habilidade {2}.
-<style=Attenuated>Pode se ativar.</style>
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","{1}의 <style=skill>스킬</style> 중 하나로 <style=KeyWord>최대 {0}</style>이고 <style=Isolated>고립</style>된 적 유닛을 <style=KeyWord>공격 및 처치</style>한 후:
-영웅이 {2} 스킬로 <style=KeyWord>가장 가까운</style> 적을 <style=KeyWord>자동으로</style> 공격합니다.
-<style=Attenuated>자체적으로 발동 가능.</style>
-<style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Después de <style=KeyWord>atacar y matar</style> a una unidad enemiga que estaba <style=KeyWord>al {0} completo</style> y <style=Isolated>aislada</style> con una de las <style=skill>habilidades</style> de {1}:
+El héroe <style=KeyWord>automáticamente</style> ataca al enemigo <style=KeyWord>más cercano</style> con la habilidad {2}.
+<style=Attenuated>Puede activarse a sí misma.</style>
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Depois de <style=KeyWord>atacar e matar</style> uma unidade inimiga que estava <style=KeyWord>com {0} cheio</style> e <style=Isolated>isolada</style> com uma das <style=skill>habilidades</style> de {1}:
+O herói <style=KeyWord>automaticamente</style> ataca o inimigo <style=KeyWord>mais próximo</style> com a habilidade {2}.
+<style=Attenuated>Pode se auto-ativar.</style>
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","{1}의<style=skill>스킬</style>로<style=KeyWord>최대{0}</style>상태이고<style=Isolated>고립</style>된 적 유닛을<style=KeyWord>공격하여 처치</style>한 후：
+영웅은<style=KeyWord>자동</style>으로<style=KeyWord>가장 가까운</style>적을{2}스킬로 공격합니다.
+<style=Attenuated>자체적으로 발동 가능합니다.</style>
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>"
 "PerkDescription_OverheatUniquePerk","Whenever a <style=KeyWord>Cannon</style> <style=Skill>skill</style> is cast:
 {7} <style=Bad>Heat</style> for each {8} and {9} base cost.
 Whenever <style=Bad>Heat</style> reaches {0}, every <style=KeyWord>Cannon</style> <style=Skill>skill</style> gets:
@@ -1202,70 +1204,71 @@ A cada {10} unidades atingidas por uma única <style=Skill>habilidade</style> de
 <style=Perk>오염된 보너스: 화력</style>
 단일 {11} <style=Skill>스킬</style>을 유닛 {10}명에게 적중시킬 때마다 영웅에게 {4} 자동 시전
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
-"PerkDescription_StrongThrowUnique","Every {0} enemies <style=KeyWord>damaged</style> with a <style=KeyWord>Boomerang</style> skill, the next <style=KeyWord>Boomerang</style> <style=""Skill"">skill</style> gets:
+"PerkDescription_StrongThrowUnique","Every {0} enemies <style=KeyWord>damaged</style> with a <style=KeyWord>Boomerang</style> skill, the next <style=KeyWord>Boomerang</style> <style=Skill>skill</style> gets:
 <color=#549EE4>Secondary</color> tiles now count as <style=bad>Primary</style> tiles.
-Precise Targeting gets: {1}{2}.
+<style=Skill>Precise Targeting</style> gets: {1}{2}.
 <style=Attenuated>This modifier is reset every morning.</style>
 <style=Perk>Corrupted Bonus: Whiplash</style>
 Strong Throw activates more often.
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Tous les {0} ennemis <style=KeyWord>touchés</style> avec une compétence de <style=KeyWord>Boomerang</style>, la prochaine <style=""Skill"">compétence</style> de <style=KeyWord>Boomerang</style> obtient :
-Les cases <color=#549EE4>secondaires</color> comptent maintenant comme des cases <style=bad>primaires</style>.
-Ciblage précis obtient : {1}{2}.
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","For every {0} enemies <style=KeyWord>damaged</style> by a <style=KeyWord>Boomerang</style> <style=Skill>skill</style>, the next <style=KeyWord>Boomerang</style> <style=Skill>skill</style> gains:
+<color=#549EE4>Secondary</color> tiles count as <style=bad>Primary</style> tiles.
+<style=Skill>Ciblage Précis</style> gains: {1}{2}.
 <style=Attenuated>Ce modificateur est réinitialisé chaque matin.</style>
-<style=Perk>Bonus de Corruption<nbsp>: Coup de fouet</style>
-Lancer Puissant active plus souvent.
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","每{0}个被<style=KeyWord>回旋镖</style>技能<style=KeyWord>伤害</style>的敌人，下一个<style=KeyWord>回旋镖</style><style=""Skill"">技能</style>获得：
-<color=#549EE4>次要</color>格子现在视为<style=bad>主要</style>格子。
-精确瞄准获得：{1}{2}。
-<style=Attenuated>此修正每天早上重置。</style>
-<style=Perk>腐化加成：断颈旋击</style>
-强力投掷激活频率提高。
-<style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","每{0}個被<style=KeyWord>迴力鏢</style>技能<style=KeyWord>傷害</style>的敵人，下一個<style=KeyWord>迴力鏢</style><style=""Skill"">技能</style>獲得：
-<color=#549EE4>次要</color>格子現在視為<style=bad>主要</style>格子。
-精確瞄準獲得：{1}{2}。
-<style=Attenuated>此修正每天早上重置。</style>
-<style=Perk>腐化加成：頭部重擊</style>
-奮力丟擲激活頻率提高。
-<style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","<style=KeyWord>ブーメラン</style>スキルで{0}体のエネミーに<style=KeyWord>ダメージ</style>を与えるごとに、次の<style=KeyWord>ブーメラン</style><style=""Skill"">スキル</style>は以下を得る:
-<color=#549EE4>副次</color>タイルが<style=bad>主要</style>タイルとしてカウントされる。
-精密照準が以下を得る: {1}{2}。
-<style=Attenuated>この修正は毎朝リセットされる。</style>
-<style=Perk>腐敗ボーナス: 鞭打ち</style>
-強肩の一投がより頻繁に発動する。
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","Каждые {0} врагов, получивших <style=KeyWord>урон</style> от навыка <style=KeyWord>бумеранга</style>, следующий <style=""Skill"">навык</style> <style=KeyWord>бумеранга</style> получает:
-Клетки <color=#549EE4>вторичных целей</color> теперь считаются клетками <style=bad>первичных</style> целей.
-Точное наведение получает: {1}{2}.
+<style=Perk>Bonus corrompu : Whiplash</style>
+Lancer Puissant s'active plus fréquemment.
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","每使用 <style=KeyWord> 回旋镖</style><style=Skill> 技能</style>对 {0} 名敌人 <style=KeyWord> 造成伤害</style>后，下一次 <style=KeyWord> 回旋镖</style><style=Skill> 技能</style>将获得：
+<color=#549EE4> 次要</color>格子现在视为 <style=bad> 主要</style>格子。
+<style=Skill> 精准锁定</style>获得：{1}{2}。
+<style=Attenuated> 该加成每天清晨重置。</style>
+<style=Perk> 腐化加成：鞭击</style>
+强力投掷触发频率更高。
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","每使用 <style=KeyWord> 迴旋鏢</style><style=Skill> 技能</style>對 {0} 名敵人 <style=KeyWord> 造成傷害</style>後，下一次 <style=KeyWord> 迴旋鏢</style><style=Skill> 技能</style>將獲得：
+<color=#549EE4> 次要</color>格子現在視為 <style=bad> 主要</style>格子。
+<style=Skill> 精確瞄準</style>獲得：{1}{2}。
+<style=Attenuated> 該加成每天清晨重置。</style>
+<style=Perk> 腐化加成：鞭擊</style>
+強力投擲觸發頻率更高。
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","<style=KeyWord> ブーメラン</style><style=Skill> スキル</style>で {0} 体の敵に <style=KeyWord> ダメージを与える</style>ごとに、次の <style=KeyWord> ブーメラン</style><style=Skill> スキル</style>が以下を獲得します：
+<color=#549EE4> 二次</color>タイルが <style=bad> 一次</color>タイルとして扱われるようになります。
+<style=Skill> 精密なる狙い</style>が獲得: {1}{2}。
+<style=Attenuated> この補正は毎朝リセットされます。</style>
+<style=Perk> 堕落ボーナス：ウィップラッシュ</style>
+強力投げの発動頻度が上がります。
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Каждые {0} враги, <style=KeyWord>получающие урон</style> от <style=KeyWord>бумеранга</style> <style=Skill>умения</style>, следующее <style=KeyWord>бумеранг</style> <style=Skill>умение</style> получает:
+<color=#549EE4>Вторичные</color> плитки считаются <style=bad>Основными</style> плитками.
+<style=Skill>Точное прицеливание</style> получает: {1}{2}.
 <style=Attenuated>Этот модификатор сбрасывается каждое утро.</style>
-<style=Perk>Бонус от порчи: Хлёсткий удар</style>
-Бросок с силой срабатывает чаще.
-<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Під час кожної <style=Skill>атаки</style> <style=KeyWord>бумерангом</style>:
-до найближчого <style=Stun>дезорієнтованого</style> ворога в радіусі {0} <style=Keyword>автоматично</style> застосовується «{1}», завдаючи базової шкоди в розмірі {6} + {2} від {3} героя.
-У разі застосування вміння «{7}» {1} автоматично спрацьовує <style=Keyword>вдруге.</style>
-<style=Perk>Бонус спотворення: Хлист</style>
-Могутній кидок спрацьовує частіше.
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Bei jedem <style=Skill>Angriff</style> mit dem <style=KeyWord>Bumerang</style> geschieht Folgendes:
-<color=#549EE4>Sekundäre</color> Felder zählen jetzt als <style=bad>primäre</style> Felder.
-Präzise Zielerfassung erhält: {1}{2}.
+<style=Perk>Испорченный бонус: Хлыст</style>
+Сильный бросок срабатывает чаще.
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Кожні {0} вороги, <style=KeyWord>отримуючі ушкодження</style> від <style=KeyWord>бумерангу</style> <style=Skill>навику</style>, наступний <style=KeyWord>бумеранг</style> <style=Skill>навик</style> отримує:
+<color=#549EE4>Вторинні</color> плитки вважаються <style=bad>Основними</style> плитками.
+<style=Skill>Точне прицілювання</style> отримує: {1}{2}.
+<style=Attenuated>Цей модифікатор скидається кожного ранку.</style>
+<style=Perk>Порочений бонус: Хипляш</style>
+Сильний кидок спрацьовує частіше.
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Für je {0} Feinde, die durch eine <style=KeyWord>Boomerang</style>-<style=Skill>Fertigkeit</style> <style=KeyWord>beschädigt</style> werden, erhält die nächste <style=KeyWord>Boomerang</style>-<style=Skill>Fertigkeit</style>:
+<color=#549EE4>Sekundäre</color> Felder zählen als <style=bad>Primäre</style> Felder.
+<style=Skill>Präzises Zielen</style> erhält: {1}{2}.
 <style=Attenuated>Dieser Modifikator wird jeden Morgen zurückgesetzt.</style>
-<style=Perk>Verdorben-Bonus: Schleudertrauma</style>
+<style=Perk>Verderbter Bonus: Peitschenhieb</style>
 Starker Wurf wird häufiger aktiviert.
-<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Cada {0} enemigos <style=KeyWord>dañados</style> con una habilidad de <style=KeyWord>bumerán</style>, la próxima <style=""Skill"">habilidad</style> de <style=KeyWord>bumerán</style> obtiene:
-Las casillas <color=#549EE4>secundarias</color> ahora cuentan como casillas <style=bad>primarias</style>.
-Objetivo preciso obtiene: {1}{2}.
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Por cada {0} enemigos <style=KeyWord>dañados</style> por un <style=KeyWord>Bumerán</style> <style=Skill>habilidad</style>, la siguiente <style=KeyWord>Bumerán</style> <style=Skill>habilidad</style> obtiene:
+Las casillas <color=#549EE4>Secundarias</color> cuentan como casillas <style=bad>Primarias</style>.
+<style=Skill>Apuntado preciso</style> obtiene: {1}{2}.
 <style=Attenuated>Este modificador se reinicia cada mañana.</style>
-<style=Perk>Bonificación de corrupción: Latigazo</style>
-Lanzamiento potente se activa más a menudo.
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","A cada {0} inimigos <style=KeyWord>danificados</style> com uma habilidade de <style=KeyWord>Bumerangue</style>, a próxima <style=""Skill"">habilidade</style> de <style=KeyWord>Bumerangue</style> recebe:
-Casas <color=#549EE4>Secundárias</color> agora contam como casas <style=bad>Primárias</style>.
-Mira Precisa recebe: {1}{2}.
+<style=Perk>Bonus corrupto: Latigazo</style>
+Lanzamiento Fuerte se activa más a menudo.
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Para cada {0} inimigos <style=KeyWord>danificados</style> por uma <style=Skill>habilidade</style> de <style=KeyWord>Bumerangue</style>, a próxima <style=Skill>habilidade</style> de <style=KeyWord>Bumerangue</style> ganha:
+As casas <color=#549EE4>Secundárias</color> contam como casas <style=bad>Primárias</style>.
+<style=Skill>Mira Precisa</style> ganha: {1}{2}.
 <style=Attenuated>Este modificador é redefinido todas as manhãs.</style>
-<style=Perk>Bonificação Corrompida: Contusão</style>
-Arremesso Forte ativa com mais frequência.
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","<style=KeyWord>부메랑</style> 스킬로 {0}명의 적에게 <style=KeyWord>피해</style>를 입힐 때마다 다음 <style=KeyWord>부메랑</style> <style=""Skill"">스킬</style>이 획득:
-<color=#549EE4>보조</color> 타일이 이제 <style=bad>주요</style> 타일로 간주됩니다.
-정밀 조준이 획득: {1}{2}.
-<style=Attenuated>이 수정치는 매일 아침 초기화됩니다.</style>
-<style=Perk>오염된 보너스: 채찍질</style>
-강력한 투척이 더 자주 활성화됩니다.
-<style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
+<style=Perk>Bônus corrompido: Chicote</style>
+Lançamento Forte é ativado com mais frequência.
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","<style=KeyWord>부메랑</style><style=Skill>스킬</style>로{0}명의 적에게<style=KeyWord>대미지를 입힐</style>때마다 다음<style=KeyWord>부메랑</style><style=Skill>스킬</style>이 다음을 얻습니다：
+<color=#549EE4>보조</color>타일이<style=bad>주</color>타일로 간주됩니다.
+<style=Skill>정밀 대상 지정</style> 획득: {1}{2}.
+<style=Attenuated>이 보정은 매일 아침 초기화됩니다.</style>
+<style=Perk>부패 보너스: 휘플래시</style>
+강력 던지기의 발동 빈도가 증가합니다.
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>"
 "PerkEffectInformations_StrongThrowUnique","Enemies to hit: {3}","Ennemis à toucher<nbsp>: {3}","还需击中敌人数：{3}","還需擊中敵人數：{3}","命中させるエネミー: {3}","Ещё попаданий: {3}","Залишилося ударити ворогів: {3}.","Zu treffende Gegner: {3}","Enemigos por golpear: {3}","Inimigos a serem golpeados: {3}","명중해야 하는 적: {3}"
