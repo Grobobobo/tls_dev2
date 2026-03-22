@@ -256,14 +256,14 @@
          <!--<TokenVariable Key="APGain" Value="2"/>-->
          <TokenVariable Key="SkillUsePerTurnBonus" Value="1"/>
          <TokenVariable Key="MovePointsGain" Value="5"/>
-         <TokenVariable Key="MaxMovePointsGain" Value="3"/>
+         <TokenVariable Key="IncreaseToMaximumMP" Value="3"/>
       </TokenVariables>
       <LocArguments>
          <!--<StatArgument Stat="ActionPointsTotal" Value="APGain"/>-->
          <LocArgument Prefix="+" Value="SkillUsePerTurnBonus" Style="GoodNb"/>
          <StatArgument Stat="MovePointsTotal" Value="MovePointsGain"/>
          <StatArgument Stat="MovePointsTotal"/>
-         <LocArgument Value="MaxMovePointsGain" Interpreted="true" Style="KeyWordNb"/>
+         <LocArgument Value="IncreaseToMaximumMP" Interpreted="true" Style="KeyWordNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD/>
@@ -274,7 +274,7 @@
                <!--<StatModifier Stat="ActionPointsTotal" Value="APGain"/>-->
                <StatModifier Stat="BonusSkillUses" Value ="SkillUsePerTurnBonus"/>
                <StatModifier Stat="MovePointsTotal" Value="MovePointsGain" ChildStatFollows="true"/>
-               <StatBoundaryModifier Stat="MovePointsTotal" MaxModifier="MaxMovePointsGain"/>
+               <StatBoundaryModifier Stat="MovePointsTotal" MaxModifier="IncreaseToMaximumMP"/>
                <EquipmentSlotModifier SlotId="Body" Value="-1"/>
             </Effects>
          </BufferModule>
@@ -1176,7 +1176,7 @@
             </Events>
             <Effects>
                <CastSkill SkillId="CollateralDamageSkill">
-                  <PerkTargeting TargetingReference="Target" TargetingMethod="DamageablesInRange" Amount="1" Range="Module.CastSkillEffect.Skill.MaxRange">
+                  <PerkTargeting TargetingReference="Caster" TargetingMethod="DamageablesInRange" Amount="1" Range="Module.CastSkillEffect.Skill.MaxRange">
                      <DamageableTarget Type="Enemy"/>
                      <DamageableTarget Type="Boss"/>
                   </PerkTargeting>

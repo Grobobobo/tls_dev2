@@ -42,6 +42,8 @@
       </TraitTier>
       <TraitTier Id="EpicGood" IsBackground="false">
          <Cost Value="3"/>
+         <Cost Value="4"/>
+         <Cost Value="5"/>
       </TraitTier>
    </UnitTraitTiers>
 
@@ -695,8 +697,8 @@
 
    <UnitTraitDefinition Id="Hero" IsBackgroundTrait="true">
       <Cost Value ="3"/>
-      <StatModifier Stat="ActionPointsTotal">1</StatModifier>
-      <StatModifier Stat="MovePointsTotal">1</StatModifier>
+      <StatModifier Stat="ArmorTotal">25</StatModifier>
+      <StatModifier Stat="MovePointsTotal">3</StatModifier>
       <StatModifier Stat="HealthTotal">40</StatModifier>
    </UnitTraitDefinition>
 
