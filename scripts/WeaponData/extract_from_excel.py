@@ -22,6 +22,21 @@ import sys
 if sys.stdout.encoding != 'utf-8':
     sys.stdout.reconfigure(encoding='utf-8')
 
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parent.parent
+EXCEL_PATH = SCRIPT_DIR / 'tls_weapon_docs.xlsx'
+
+
+def modded_path(*parts):
+    return REPO_ROOT.joinpath('modded_files', *parts)
+
+
+SKILL_DEFINITION_PATHS = [
+    modded_path('SkillDefinitions_Items_Usables'),
+    modded_path('SkillDefinitions_DLC1'),
+    modded_path('SkillDefinitions_DLC2'),
+]
+
 print("=" * 80)
 print("WEAPON DATA CONSOLIDATION SCRIPT")
 print("=" * 80)
@@ -32,7 +47,7 @@ print("=" * 80)
 print("\n[PHASE 1] Extracting weapon variant stats from Excel...")
 print("-" * 80)
 
-wb = openpyxl.load_workbook('tls_weapon_docs.xlsx', data_only=True)
+wb = openpyxl.load_workbook(EXCEL_PATH, data_only=True)
 
 # Extract variant names from each weapon sheet (row 22)
 variant_stats = {}
@@ -118,7 +133,7 @@ print(f"✓ Tier 2: {len(tier2_headers)} stat headers, {len(tier2_data)} data ro
 print("\n[PHASE 2] Extracting weapon damage data from Excel...")
 print("-" * 80)
 
-wb_data = openpyxl.load_workbook('tls_weapon_docs.xlsx', data_only=True)
+wb_data = openpyxl.load_workbook(EXCEL_PATH, data_only=True)
 sheets = wb_data.sheetnames
 weapon_data = {}
 
@@ -363,6 +378,54 @@ def find_excel_weapon_name(xml_base):
     
     return None
 
+
+def load_skill_definitions(file_paths):
+    skill_definitions = {}
+
+    for file_path in file_paths:
+        tree = ET.parse(file_path)
+        root = tree.getroot()
+
+        for skill_def in root.findall('SkillDefinition'):
+            skill_id = skill_def.get('Id')
+            if skill_id:
+                skill_definitions[skill_id] = skill_def
+
+    return skill_definitions
+
+
+skill_definitions = load_skill_definitions(SKILL_DEFINITION_PATHS)
+
+
+def get_skill_damage_multiplier(skill_id, visited=None):
+    if not skill_id:
+        return None
+
+    if visited is None:
+        visited = set()
+
+    if skill_id in visited:
+        return None
+
+    visited.add(skill_id)
+    skill_def = skill_definitions.get(skill_id)
+    if skill_def is None:
+        return None
+
+    damage_multiplier = skill_def.find('./SkillAction/Attack/DamageMultiplier')
+    if damage_multiplier is not None and damage_multiplier.text:
+        try:
+            return float(damage_multiplier.text)
+        except ValueError:
+            return None
+
+    template_id = skill_def.get('TemplateId')
+    if template_id:
+        return get_skill_damage_multiplier(template_id, visited)
+
+    return None
+
+
 # ============================================================================
 # PHASE 4: UPDATE WEAPON DAMAGE VALUES IN XML FILES
 # ============================================================================
@@ -469,9 +532,9 @@ all_damage_changes = []
 total_damage_updates = 0
 
 files_to_process_damage = [
-    '../../modded_files/ItemDefinitions_Weapons',
-    '../../modded_files/ItemDefinitions_DLC1',
-    '../../modded_files/ItemDefinitions_DLC2',
+    modded_path('ItemDefinitions_Weapons'),
+    modded_path('ItemDefinitions_DLC1'),
+    modded_path('ItemDefinitions_DLC2'),
 ]
 
 for file_path in files_to_process_damage:
@@ -736,9 +799,9 @@ all_stat_changes = []
 total_stat_updates = 0
 
 files_to_process = [
-    '../../modded_files/ItemDefinitions_Weapons',
-    '../../modded_files/ItemDefinitions_DLC1',
-    '../../modded_files/ItemDefinitions_DLC2',
+    modded_path('ItemDefinitions_Weapons'),
+    modded_path('ItemDefinitions_DLC1'),
+    modded_path('ItemDefinitions_DLC2'),
 ]
 
 for file_path in files_to_process:
@@ -776,95 +839,116 @@ scroll_mapping = {
     'FireballScroll': ('Tome of Secrets', 'Tome of Secrets'),
     'LightningStrikeScroll': ('Tome of Secrets', 'Tome of Secrets'),
     'BeeStingScroll': ('druid staff', 'druid staff'),
+    'MovingWallScroll': ('War Shield', 'WarShield'),
+    'WallsOfPainScroll': ('War Shield', 'WarShield'),
+    'ArmageddonScroll': ('Cannon', 'Cannon'),
+    'GeoCannonScroll': ('Gauntlet', 'Gauntlet'),
+    'PiercingClawsScroll': ('Claws', 'Claws'),
+    'PainfulSpinScroll': ('Boomerang', 'Boomerang'),
+    'PetalStormScroll': ('Sacred Flower', 'SacredFlower'),
     'TeleportationScroll': None,
 }
-
-tree = ET.parse('../../modded_files/ItemDefinitions_Usables')
-root = tree.getroot()
 
 scroll_changes = []
 total_scroll_updated = 0
 total_removed = 0
 
-for item_def in root.findall('ItemDefinition'):
-    item_id = item_def.get('Id')
-    
-    if item_id not in scroll_mapping:
-        continue
-    
-    mapping = scroll_mapping[item_id]
-    
-    # Special case: TeleportationScroll should not have BaseDamage elements
-    if mapping is None:
-        print(f"\n{item_id}: removing damage values")
-        level_variations = item_def.find('LevelVariations')
-        if level_variations is not None:
-            for level_elem in level_variations.findall('Level'):
-                base_damage = level_elem.find('BaseDamage')
-                if base_damage is not None:
-                    level_id = level_elem.get('Id')
-                    level_elem.remove(base_damage)
-                    total_removed += 1
-        continue
-    
-    excel_sheet, weapon_prefix = mapping
-    
-    if excel_sheet not in weapon_data:
-        print(f"Warning: {excel_sheet} not in weapon data")
-        continue
-    
-    levels = weapon_data[excel_sheet]['levels']
-    print(f"\n{item_id} (from {excel_sheet}):")
-    
-    # Scrolls use Excel levels 0-5 (same as weapons ending in 1-5, NOT like weapons ending in 0)
-    level_mapping = {0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5}
-    
-    level_variations = item_def.find('LevelVariations')
-    if level_variations is None:
-        continue
-    
-    updated_count = 0
-    for level_elem in level_variations.findall('Level'):
-        level_id = level_elem.get('Id')
-        try:
-            level_id_int = int(level_id)
-        except (ValueError, TypeError):
-            continue
-        
-        if level_id_int not in level_mapping:
-            continue
-        
-        excel_level = level_mapping[level_id_int]
-        
-        if excel_level not in levels:
-            continue
-        
-        base_damage = level_elem.find('BaseDamage')
-        if base_damage is None:
-            continue
-        
-        old_min = base_damage.get('Min')
-        old_max = base_damage.get('Max')
-        new_min = levels[excel_level]['min']
-        new_max = levels[excel_level]['max']
-        
-        if old_min != str(new_min) or old_max != str(new_max):
-            base_damage.set('Min', str(new_min))
-            base_damage.set('Max', str(new_max))
-            scroll_changes.append({
-                'scroll': item_id,
-                'level': level_id,
-                'old': f"{old_min}-{old_max}",
-                'new': f"{new_min}-{new_max}"
-            })
-            updated_count += 1
-            total_scroll_updated += 1
-            print(f"  Level {level_id}: {old_min}-{old_max} -> {new_min}-{new_max}")
-    
-    if updated_count == 0:
-        print(f"  No updates needed")
 
-tree.write('../../modded_files/ItemDefinitions_Usables', encoding='utf-8', xml_declaration=True)
+def update_scroll_file(file_path):
+    global total_scroll_updated, total_removed
+
+    tree = ET.parse(file_path)
+    root = tree.getroot()
+
+    print(f"\nProcessing {file_path}...")
+
+    for item_def in root.findall('ItemDefinition'):
+        item_id = item_def.get('Id')
+
+        if item_id not in scroll_mapping:
+            continue
+
+        mapping = scroll_mapping[item_id]
+
+        if mapping is None:
+            print(f"\n  {item_id}: removing damage values")
+            level_variations = item_def.find('LevelVariations')
+            if level_variations is not None:
+                for level_elem in level_variations.findall('Level'):
+                    base_damage = level_elem.find('BaseDamage')
+                    if base_damage is not None:
+                        level_elem.remove(base_damage)
+                        total_removed += 1
+            continue
+
+        excel_sheet, _weapon_prefix = mapping
+
+        if excel_sheet not in weapon_data:
+            print(f"  Warning: {excel_sheet} not in weapon data")
+            continue
+
+        levels = weapon_data[excel_sheet]['levels']
+        print(f"\n  {item_id} (from {excel_sheet}):")
+
+        level_variations = item_def.find('LevelVariations')
+        if level_variations is None:
+            continue
+
+        updated_count = 0
+        for level_elem in level_variations.findall('Level'):
+            level_id = level_elem.get('Id')
+            try:
+                excel_level = int(level_id)
+            except (ValueError, TypeError):
+                continue
+
+            if excel_level not in levels:
+                continue
+
+            base_damage = level_elem.find('BaseDamage')
+            if base_damage is None:
+                continue
+
+            old_min = base_damage.get('Min')
+            old_max = base_damage.get('Max')
+            new_min = levels[excel_level]['min']
+            new_max = levels[excel_level]['max']
+
+            skill_name = level_elem.findtext('./Skills/Skill')
+            damage_multiplier = get_skill_damage_multiplier(skill_name)
+            if damage_multiplier is not None:
+                new_min = round(new_min * damage_multiplier)
+                new_max = round(new_max * damage_multiplier)
+
+            if old_min != str(new_min) or old_max != str(new_max):
+                base_damage.set('Min', str(new_min))
+                base_damage.set('Max', str(new_max))
+                scroll_changes.append({
+                    'file': file_path,
+                    'scroll': item_id,
+                    'level': level_id,
+                    'old': f"{old_min}-{old_max}",
+                    'new': f"{new_min}-{new_max}"
+                })
+                updated_count += 1
+                total_scroll_updated += 1
+                print(f"    Level {level_id}: {old_min}-{old_max} -> {new_min}-{new_max}")
+
+        if updated_count == 0:
+            print("    No updates needed")
+
+    tree.write(file_path, encoding='utf-8', xml_declaration=True)
+
+
+scroll_files = [
+    modded_path('ItemDefinitions_Usables'),
+    modded_path('ItemDefinitions_DLC1'),
+    modded_path('ItemDefinitions_DLC2'),
+]
+
+for scroll_file in scroll_files:
+    update_scroll_file(scroll_file)
+
 print(f"\nUpdated {total_scroll_updated} scroll damage values")
 print(f"Removed {total_removed} damage values from special scrolls")
 
@@ -904,7 +988,7 @@ unique_weapon_mapping = {
     'ManaFlowerUnique': 'Sacred Flower',
 }
 
-tree = ET.parse('../../modded_files/ItemDefinitions_DLC3')
+tree = ET.parse(modded_path('ItemDefinitions_DLC3'))
 root = tree.getroot()
 
 unique_changes = []
@@ -949,9 +1033,9 @@ for item_def in root.findall('ItemDefinition'):
         old_min = base_damage.get('Min')
         old_max = base_damage.get('Max')
         
-        # Create new formula with level 0 values and /12 scaling
-        new_min = f"{level0_min} * (1 + PlayableUnitLevel/12)"
-        new_max = f"{level0_max} * (1 + PlayableUnitLevel/12)"
+        # Create new formula with level 0 values and /13 scaling
+        new_min = f"{level0_min} * (1 + PlayableUnitLevel/13)"
+        new_max = f"{level0_max} * (1 + PlayableUnitLevel/13)"
         
         # Update the BaseDamage attributes
         base_damage.set('Min', new_min)
@@ -971,17 +1055,17 @@ for item_def in root.findall('ItemDefinition'):
         print(f"    Old: Min=\"{old_min}\" Max=\"{old_max}\"")
         print(f"    New: Min=\"{new_min}\" Max=\"{new_max}\"")
 
-tree.write('../../modded_files/ItemDefinitions_DLC3', encoding='utf-8', xml_declaration=True)
+tree.write(modded_path('ItemDefinitions_DLC3'), encoding='utf-8', xml_declaration=True)
 print(f"\n✓ Updated {total_unique_updated} unique weapon damage formulas")
 
-# Also update offhand unique weapons (they share common values, just change /10 to /12)
-print("\nUpdating unique offhand weapons (changing /10 to /12)...")
+# Also update offhand unique weapons (they share common values, just change /10 to /13)
+print("\nUpdating unique offhand weapons (changing /10 to /13  )...")
 offhand_unique_weapons = [
     'HarpyOffHandUnique', 'CetusiaOffHandUnique', 'ArchivistOffHandUnique',
     'SchadenOffHandUnique', 'FreudeOffHandUnique', 'FleshcloudOffHandUnique'
 ]
 
-tree = ET.parse('../../modded_files/ItemDefinitions_DLC3')
+tree = ET.parse(modded_path('ItemDefinitions_DLC3'))
 root = tree.getroot()
 
 total_offhand_updated = 0
@@ -1005,7 +1089,7 @@ for item_def in root.findall('ItemDefinition'):
         old_min = base_damage.get('Min')
         old_max = base_damage.get('Max')
         
-        # Replace /10 with /12 in the formula
+        # Replace /10 with /13 in the formula
         if old_min and 'PlayableUnitLevel/10' in old_min:
             new_min = old_min.replace('PlayableUnitLevel/10', 'PlayableUnitLevel/13')
             base_damage.set('Min', new_min)
@@ -1016,7 +1100,7 @@ for item_def in root.findall('ItemDefinition'):
             new_max = old_max.replace('PlayableUnitLevel/10', 'PlayableUnitLevel/13')
             base_damage.set('Max', new_max)
 
-tree.write('../../modded_files/ItemDefinitions_DLC3', encoding='utf-8', xml_declaration=True)
+tree.write(modded_path('ItemDefinitions_DLC3'), encoding='utf-8', xml_declaration=True)
 print(f"✓ Updated {total_offhand_updated} offhand weapon formulas")
 
 # Update IntimidatingScreamUnique skill in SkillDefinitions_DLC3
@@ -1028,7 +1112,7 @@ if excel_sheet in weapon_data and 0 in weapon_data[excel_sheet]['levels']:
     axe_level0_min = weapon_data[excel_sheet]['levels'][0]['min']
     axe_level0_max = weapon_data[excel_sheet]['levels'][0]['max']
     
-    tree = ET.parse('../../modded_files/SkillDefinitions_DLC3')
+    tree = ET.parse(modded_path('SkillDefinitions_DLC3'))
     root = tree.getroot()
     
     for skill_def in root.findall('.//SkillDefinition[@Id="IntimidatingScreamUnique"]'):
@@ -1040,8 +1124,8 @@ if excel_sheet in weapon_data and 0 in weapon_data[excel_sheet]['levels']:
                 old_max = base_damage.get('Max')
                 
                 # Create new formula with Excel level 0 values and PlayableUnitLevel/12
-                new_min = f"{axe_level0_min} * (1 + PlayableUnitLevel/12)"
-                new_max = f"{axe_level0_max} * (1 + PlayableUnitLevel/12)"
+                new_min = f"{axe_level0_min} * (1 + PlayableUnitLevel/13)"
+                new_max = f"{axe_level0_max} * (1 + PlayableUnitLevel/13)"
                 
                 base_damage.set('Min', new_min)
                 base_damage.set('Max', new_max)
@@ -1051,7 +1135,7 @@ if excel_sheet in weapon_data and 0 in weapon_data[excel_sheet]['levels']:
                 print(f"    Old: Min=\"{old_min}\" Max=\"{old_max}\"")
                 print(f"    New: Min=\"{new_min}\" Max=\"{new_max}\"")
     
-    tree.write('../../modded_files/SkillDefinitions_DLC3', encoding='utf-8', xml_declaration=True)
+    tree.write(modded_path('SkillDefinitions_DLC3'), encoding='utf-8', xml_declaration=True)
     print(f"✓ Updated IntimidatingScreamUnique skill")
 else:
     print(f"⚠️  Warning: Could not find Axe level 0 data for IntimidatingScreamUnique")
@@ -1094,12 +1178,12 @@ def reformat_xml_file(file_path):
 
 # Reformat all modified files
 files_to_reformat = [
-    '../../modded_files/ItemDefinitions_Weapons',
-    '../../modded_files/ItemDefinitions_DLC1',
-    '../../modded_files/ItemDefinitions_DLC2',
-    '../../modded_files/ItemDefinitions_Usables',
-    '../../modded_files/ItemDefinitions_DLC3',
-    '../../modded_files/SkillDefinitions_DLC3',
+    modded_path('ItemDefinitions_Weapons'),
+    modded_path('ItemDefinitions_DLC1'),
+    modded_path('ItemDefinitions_DLC2'),
+    modded_path('ItemDefinitions_Usables'),
+    modded_path('ItemDefinitions_DLC3'),
+    modded_path('SkillDefinitions_DLC3'),
 ]
 
 for file_path in files_to_reformat:

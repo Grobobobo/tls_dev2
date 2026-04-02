@@ -1812,54 +1812,51 @@
       </Attack>
     </SkillAction>
   </SkillDefinition>
-
   <SkillDefinition Id="PutridBallUnique" TemplateId="Infect" GroupId="PutridBallUnique">
     <ValidTargets>
       <EnemyUnits />
     </ValidTargets>
     <UsesPerTurnCount>99</UsesPerTurnCount>
-      <SkillAction>
-         <Attack>
-            <BaseDamage Min="74 * (1 + Level/13)" Max="93 * (1 + Level/13)" />
-            <AttackType>Adaptative</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
-            <SkillEffects>
-               <Isolated>
-                  <DamageMultiplier>1.75</DamageMultiplier>
-               </Isolated>
-               <CasterEffect>
-                  <Buff>
-                     <BaseChance>1</BaseChance>
-                     <CanAffectCaster>true</CanAffectCaster>
-                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                     <Bonus>12</Bonus>
-                     <Stat Id="PoisonDamageModifier"/>
-                     <TurnsCount>1</TurnsCount>
-                  </Buff>
-               </CasterEffect>
-            </SkillEffects>
-         </Attack>
-      </SkillAction>
+    <SkillAction>
+      <Attack>
+        <BaseDamage Min="74 * (1 + Level/13)" Max="93 * (1 + Level/13)" />
+        <AttackType>Adaptative</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <Isolated>
+            <DamageMultiplier>1.75</DamageMultiplier>
+          </Isolated>
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>12</Bonus>
+              <Stat Id="PoisonDamageModifier" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
   </SkillDefinition>
-<SkillDefinition Id="Assassinate_Unique" TemplateId="Assassinate" GroupId="Assassinate_Unique">
-      <UsesPerTurnCount>3</UsesPerTurnCount>
-      <SkillAction>
-         <Attack>
-            <AttackType>Ranged</AttackType>
-            <DamageMultiplier>1.25</DamageMultiplier>
-            <SkillEffects>
-               <Isolated>
-                  <DamageMultiplier>2</DamageMultiplier>
-               </Isolated>
-               <Opportunistic>
-                  <DamageMultiplier>2</DamageMultiplier>
-               </Opportunistic>
-            </SkillEffects>
-         </Attack>
-      </SkillAction>
+  <SkillDefinition Id="Assassinate_Unique" TemplateId="Assassinate" GroupId="Assassinate_Unique">
+    <UsesPerTurnCount>3</UsesPerTurnCount>
+    <SkillAction>
+      <Attack>
+        <AttackType>Ranged</AttackType>
+        <DamageMultiplier>1.25</DamageMultiplier>
+        <SkillEffects>
+          <Isolated>
+            <DamageMultiplier>2</DamageMultiplier>
+          </Isolated>
+          <Opportunistic>
+            <DamageMultiplier>2</DamageMultiplier>
+          </Opportunistic>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
   </SkillDefinition>
-
-
   <SkillDefinition Id="PreciseShotUnique" TemplateId="PreciseShot" GroupId="ShortbowUnique">
     <AreaOfEffect OriginX="1" OriginY="0">
          e_e
