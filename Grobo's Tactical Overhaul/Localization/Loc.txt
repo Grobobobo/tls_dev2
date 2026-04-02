@@ -25,7 +25,7 @@ Zusätzliche <style=KeyWord>Konsumgüter</style> können mithilfe von <style=Wor
  • <style=KeyWord>Item(ns)</style> produzido(s) <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>.","기본 <style=ProductionEffect>생산</style> 강화:
  • 제작 <style=KeyWord>아이템</style> <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>"
 "SkillName_Assassinate_Unique","Assassinate","Assassinat","暗杀","暗殺","暗殺","Стрельба наповал","Убивство","Meucheln","Asesinato","Assassinato","암살"
-"SkillName_InfectUnique","Infect","Infection","感染","感染","汚染","Зараза","Зараження","Infizieren","Infección","Infecção","감염"
+"SkillName_PutridBallUnique","Putrid Ball","Sphère putride","腐败之球","腐敗之球","腐敗玉","Сфера гниения","Огидна куля","Fauliger Ball","Bola pútrida","Bola Podre","부패의 구체"
 "SkillName_SlowDeathOffhand","Slow Death (Off-hand)","Mort à petit feu (secondaire)","缓慢死亡（副手）","緩慢死亡（副手）","緩やかな死(オフハンド)","Долгая смерть (вторая рука)","Повільна смерть (допоміжне)","Langsamer Tot (Nebenhand)","Muerte lenta (mano secundaria)","Morte Lenta (mão secundária)","느린 죽음 (보조)"
 "SkillEffectDescription_ResupplyCharges","<style=KeyWord>Gives back</style> <style=GoodNb>2</style> <style=TrapUse>Charge</style> to the target trap.
 <style=Attenuated>Cannot overflow.</style>","<style=KeyWord>Rend</style> <style=GoodNb>2</style> <style=TrapUse>Charge</style> au piège ciblé.
@@ -1050,37 +1050,29 @@ a <style=KeyWord>inimigos a até 3 casas de distância</style>.
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>"
 "PerkDescription_MagicOrbUniquePerk","After <style=KeyWord>attacking and killing</style> an enemy unit that was <style=KeyWord>at full {0}</style> and <style=Isolated>isolated</style> with one of {1}'s <style=skill>skills</style>:
 Hero <style=KeyWord>automatically</style> attacks the <style=KeyWord>closest</style> enemy with the {2} skill.
-<style=Attenuated>Can trigger itself.</style>
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Après avoir <style=KeyWord>attaqué et tué</style> une unité ennemie qui était <style=KeyWord>à {0} complet</style> et <style=Isolated>isolée</style> avec l'une des <style=skill>compétences</style> de {1}:
 Le héros <style=KeyWord>automatiquement</style> attaque l'ennemi <style=KeyWord>le plus proche</style> avec la compétence {2}.
 <style=Attenuated>Peut se déclencher elle-même.</style>
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","在 <style=KeyWord> 攻击并击杀</style>一名处于 <style=KeyWord> 满 {0}</style>且 <style=Isolated> 孤立</style>状态的敌方单位后，若使用的是 {1} 的 <style=skill> 技能</style>：
 英雄 <style=KeyWord> 自动</style>使用 {2} 技能攻击 <style=KeyWord> 最近</style>的敌人。
-<style=Attenuated> 可自我触发。</style>
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","在 <style=KeyWord> 攻擊並擊殺</style>一名處於 <style=KeyWord> 滿 {0}</style>且 <style=Isolated> 孤立</style>狀態的敵方單位後，若使用的是 {1} 的 <style=skill> 技能</style>：
 英雄 <style=KeyWord> 自動</style>使用 {2} 技能攻擊 <style=KeyWord> 最近</style>的敵人。
-<style=Attenuated> 可自我觸發。</style>
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","{1} の <style=skill> スキル</style>で、<style=KeyWord> 満 {0}</style>かつ <style=Isolated> 孤立</style>状態の敵ユニットを <style=KeyWord> 攻撃撃破</style>した後：
 味方ヒーローは <style=KeyWord> 自動</style>で <style=KeyWord> 最も近い</style>敵を {2} スキルで攻撃する。
 <style=Attenuated> 自己発動可能。</style>
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","После <style=KeyWord>атаки и убийства</style> вражеского юнита, который был <style=KeyWord>на полном {0}</style> и <style=Isolated>изолирован</style>, с помощью одного из <style=skill>умений</style> {1}:
 Герой <style=KeyWord>автоматически</style> атакует <style=KeyWord>ближайшего</style> врага умением {2}.
-<style=Attenuated>Может активироваться само.</style>
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Після <style=KeyWord>атаки та вбивства</style> ворожого одиниці, яка була <style=KeyWord>на повному {0}</style> та <style=Isolated>ізольована</style>, за допомогою одного з <style=skill>навиків</style> {1}:
 Герой <style=KeyWord>автоматично</style> атакує <style=KeyWord>найближчого</style> ворога навиком {2}.
-<style=Attenuated>Може активуватися само.</style>
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Nachdem du einen feindlichen Einheit, die <style=KeyWord>voll bei {0}</style> und <style=Isolated>isoliert</style> war, mit einer der <style=skill>Fertigkeiten</style> von {1} <style=KeyWord>angegriffen und getötet</style> hast:
 Der Held <style=KeyWord>automatisch</style> angreift den <style=KeyWord>nächsten</style> Feind mit der Fertigkeit {2}.
-<style=Attenuated>Kann sich selbst auslösen.</style>
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Después de <style=KeyWord>atacar y matar</style> a una unidad enemiga que estaba <style=KeyWord>al {0} completo</style> y <style=Isolated>aislada</style> con una de las <style=skill>habilidades</style> de {1}:
 El héroe <style=KeyWord>automáticamente</style> ataca al enemigo <style=KeyWord>más cercano</style> con la habilidad {2}.
-<style=Attenuated>Puede activarse a sí misma.</style>
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Depois de <style=KeyWord>atacar e matar</style> uma unidade inimiga que estava <style=KeyWord>com {0} cheio</style> e <style=Isolated>isolada</style> com uma das <style=skill>habilidades</style> de {1}:
 O herói <style=KeyWord>automaticamente</style> ataca o inimigo <style=KeyWord>mais próximo</style> com a habilidade {2}.
 <style=Attenuated>Pode se auto-ativar.</style>
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","{1}의<style=skill>스킬</style>로<style=KeyWord>최대{0}</style>상태이고<style=Isolated>고립</style>된 적 유닛을<style=KeyWord>공격하여 처치</style>한 후：
 영웅은<style=KeyWord>자동</style>으로<style=KeyWord>가장 가까운</style>적을{2}스킬로 공격합니다.
-<style=Attenuated>자체적으로 발동 가능합니다.</style>
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>"
 "PerkDescription_OverheatUniquePerk","Whenever a <style=KeyWord>Cannon</style> <style=Skill>skill</style> is cast:
 {7} <style=Bad>Heat</style> for each {8} and {9} base cost.
@@ -1272,3 +1264,24 @@ Lançamento Forte é ativado com mais frequência.
 강력 던지기의 발동 빈도가 증가합니다.
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>"
 "PerkEffectInformations_StrongThrowUnique","Enemies to hit: {3}","Ennemis à toucher<nbsp>: {3}","还需击中敌人数：{3}","還需擊中敵人數：{3}","命中させるエネミー: {3}","Ещё попаданий: {3}","Залишилося ударити ворогів: {3}.","Zu treffende Gegner: {3}","Enemigos por golpear: {3}","Inimigos a serem golpeados: {3}","명중해야 하는 적: {3}"
+PerkDescription_QuantityVsQuality,"{6}. All of the Hero's {0} is <style=KeyWord>transformed</style> into {1} (conversion rate: {2}).
+Increases <style=KeyWord>Maximum {3}</style> to {4}.","{6}. La totalité des {0} est <style=KeyWord>transformée</style> en {1} (taux de conversion: {2}).
+Augmente le <style=KeyWord>Maximum de {3}</style> à {4}.","{6}. 英雄的所有{0}都将<style=KeyWord>转化</style>为{1}（转化率：{2}）。
+
+将<style=KeyWord>{3}上限</style>提高至{4}。","{6}. 英雄的所有{0}<style=KeyWord>轉化</style>為{1}（轉化率：{2}）。
+
+<style=KeyWord>{3}上限</style>提升至{4}。","{6}. 英雄の全{0}が{1}に<style=KeyWord>変換される</style>(変換率: {2})。
+
+<style=KeyWord>最大{3}</style>が{4}に上がる。","{6}. {0} героя <style=KeyWord>преобразуется</style> в {1} (с эффективностью в {2}).
+
+<style=KeyWord>Макс. {3}</style> увеличивается до {4}.","{6}. {0} героя <style=KeyWord>тепер</style> — {1} (коефіцієнт перетворення: {2}).
+
+Збільшує <style=KeyWord>максимум {3}</style> до {4}.","{6}. Der Held <style=KeyWord>wandelt</style> {0} vollständig in {1} um (Wechselkurs: {2}).
+
+<style=KeyWord>Max. {3}</style> auf {4} erhöht.","{6}. El total de {0} del héroe se <style=KeyWord>transforma</style> en {1} (tasa de conversión: {2}).
+
+Aumenta el <style=KeyWord>máximo de {3}</style> al {4}.","{6}. O total de {0} do Herói é <style=KeyWord>transformado</style> em {1} (taxa de conversão: {2}).
+
+Aumenta <style=KeyWord>{3} Máx.</style> para {4}.","{6}. 영웅의 모든 {0}이(가) {1}(으)로 <style=KeyWord>변환</style> (변환율: {2})
+
+<style=KeyWord>최대 {3}</style> {4}(으)로 증가"

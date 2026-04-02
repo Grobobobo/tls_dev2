@@ -2861,7 +2861,7 @@
       <View>
          <DisplayInHUD>
             <HoverDisplay>
-               <HoverRange Range="15"/>
+               <HoverRange Range="12"/>
             </HoverDisplay>
          </DisplayInHUD>
          <SkillsToShow>
@@ -3200,11 +3200,11 @@
    
    <PerkDefinition Id="QuantityVsQuality">
       <TokenVariables>
-         <!--<TokenVariable Key="PropDamageBonus" Value="50"/>-->
-         <TokenVariable Key="TransformedPropBounceValue" Value="Floor(Owner.UnlockedPropagationBouncesModifier * TransformedPropBouncePercentage / 100)"/>
-         <TokenVariable Key="TransformedPropBouncePercentage" Value="800"/>
+         <TokenVariable Key="BasePropDamageBonus" Value="10"/>
+         <TokenVariable Key="TransformedPropBounceValue" Value="BasePropDamageBonus + Floor(Owner.UnlockedPropagationBouncesModifier * TransformedPropBouncePercentage / 100)"/>
+         <TokenVariable Key="TransformedPropBouncePercentage" Value="400"/>
          <TokenVariable Key="BaseGamePropDmgCap" Value="105"/>
-         <TokenVariable Key="IncreaseToPropDmgCap" Value="50"/>
+         <TokenVariable Key="IncreaseToPropDmgCap" Value="10"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="PropagationBouncesModifier"/>
@@ -3213,6 +3213,7 @@
          <StatArgument Stat="PropagationDamage"/>
          <LocArgument Value="BaseGamePropDmgCap + IncreaseToPropDmgCap" Interpreted="true" Style="KeyWordNb"/>
          <StatArgument Stat="PropagationDamage" DisplaySign="true" Value="TransformedPropBounceValue" Interpreted="true"/>
+         <StatArgument Stat="PropagationDamage" DisplaySign="true" Value="BasePropDamageBonus" Interpreted="true"/>
       </LocArguments>
       <View>
          <DisplayBonusBeforePurchase/>

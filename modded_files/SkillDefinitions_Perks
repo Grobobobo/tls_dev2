@@ -49,7 +49,7 @@
       </ValidTargets>
       <InvalidCastDisplayBehaviour>DisplayedUnavailable</InvalidCastDisplayBehaviour>
       <UsesPerTurnCount>1</UsesPerTurnCount>
-      <Range Min="1" Max="15"/>
+      <Range Min="1" Max="12"/>
       <SkillAction>
          <Generic>
             <SkillEffects>
@@ -58,7 +58,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                   <Stat Id="OverallDamage"/>
-                  <Bonus>12</Bonus>
+                  <Bonus>16</Bonus>
                   <TurnsCount>2</TurnsCount>
                </Buff>
                <IgnoreLineOfSight/>
