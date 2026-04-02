@@ -16,6 +16,7 @@ SCROLL_XML_PATHS = [
 CHANGE_LOG_PATH = SCRIPT_DIR / 'scroll_item_changes_corrected.json'
 SKILL_DEFINITION_PATHS = [
     REPO_ROOT / 'modded_files' / 'SkillDefinitions_Items_Usables',
+    REPO_ROOT / 'modded_files' / 'SkillDefinitions_Items_MagicWeapons',
     REPO_ROOT / 'modded_files' / 'SkillDefinitions_DLC1',
     REPO_ROOT / 'modded_files' / 'SkillDefinitions_DLC2',
 ]
@@ -102,14 +103,22 @@ def get_skill_damage_multiplier(skill_id, skill_definitions, visited=None):
     if skill_def is None:
         return None
 
+    template_id = skill_def.get('TemplateId')
     damage_multiplier = skill_def.find('./SkillAction/Attack/DamageMultiplier')
     if damage_multiplier is not None and damage_multiplier.text:
         try:
-            return float(damage_multiplier.text)
+            parsed_multiplier = float(damage_multiplier.text)
         except ValueError:
             return None
 
-    template_id = skill_def.get('TemplateId')
+        # Some scroll definitions keep a neutral 1.0 override while real scaling is on template.
+        if parsed_multiplier == 1.0 and template_id and skill_id.endswith('Scroll'):
+            template_multiplier = get_skill_damage_multiplier(template_id, skill_definitions, visited)
+            if template_multiplier is not None:
+                return template_multiplier
+
+        return parsed_multiplier
+
     if template_id:
         return get_skill_damage_multiplier(template_id, skill_definitions, visited)
 
