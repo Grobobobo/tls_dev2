@@ -1,0 +1,72 @@
+﻿<ApocalypseConfigurationDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                    xsi:noNamespaceSchemaLocation="ApocalypseConfigurationsDefinitions.xsd">
+   
+   <EnemyStatModifierConfiguration>
+      <StatModifiableValueType>
+         <StatWithModifierType Id="Armor" Type="Percentage"/>
+         <StatWithModifierType Id="ArmorTotal" Type="Percentage"/>
+         <StatWithModifierType Id="Health" Type="Percentage"/>
+         <StatWithModifierType Id="HealthTotal" Type="Percentage"/>
+         <StatWithModifierType Id="Mana" Type="Percentage"/>
+         <StatWithModifierType Id="ManaTotal" Type="Percentage"/>
+         <StatWithModifierType Id="ActionPoints" Type="Percentage"/>
+         <StatWithModifierType Id="ActionPointsTotal" Type="Percentage"/>
+         <StatWithModifierType Id="Block" Type="Percentage"/>
+         <StatWithModifierType Id="Critical" Type="Percentage"/>
+         <StatWithModifierType Id="Dodge" Type="Percentage"/>
+         <StatWithModifierType Id="Resistance" Type="Percentage"/>
+         <StatWithModifierType Id="PhysicalDamage" Type="Percentage"/>
+         <StatWithModifierType Id="MagicalDamage" Type="Percentage"/>
+         <StatWithModifierType Id="InjuryDamageMultiplier" Type="Percentage"/>
+         <StatWithModifierType Id="HealthRegen" Type="Percentage"/>
+         <StatWithModifierType Id="ManaRegen" Type="Percentage"/>
+         <StatWithModifierType Id="MovePoints" Type="Number"/>
+         <StatWithModifierType Id="MovePointsTotal" Type="Number"/>
+         <StatWithModifierType Id="RangedDamage" Type="Percentage"/>
+         <StatWithModifierType Id="PropagationDamage" Type="Percentage"/>
+         <StatWithModifierType Id="CriticalPower" Type="Percentage"/>
+         <StatWithModifierType Id="HealingReceived" Type="Percentage"/>
+         <StatWithModifierType Id="SkillRangeModifier" Type="Percentage"/>
+         <StatWithModifierType Id="ExperienceGainMultiplier" Type="Percentage"/>
+         <StatWithModifierType Id="OverallDamage" Type="Percentage"/>
+         <StatWithModifierType Id="Reliability" Type="Percentage"/>
+         <StatWithModifierType Id="Accuracy" Type="Percentage"/>
+         <StatWithModifierType Id="StunChanceModifier" Type="Percentage"/>
+         <StatWithModifierType Id="PropagationBouncesModifier" Type="Percentage"/>
+         <StatWithModifierType Id="ResistanceReduction" Type="Percentage"/>
+         <StatWithModifierType Id="MomentumAttacks" Type="Percentage"/>
+         <StatWithModifierType Id="OpportunisticAttacks" Type="Percentage"/>
+         <StatWithModifierType Id="IsolatedAttacks" Type="Percentage"/>
+         <StatWithModifierType Id="PoisonDamageModifier" Type="Percentage"/>
+         <StatWithModifierType Id="StunResistance" Type="Percentage"/>
+         <StatWithModifierType Id="Panic" Type="Number"/>
+         <StatWithModifierType Id="DamnedSoulsEarned" Type="Number"/>
+         <StatWithModifierType Id="ExperienceGain" Type="Number"/>
+         <StatWithModifierType Id="PoisonDurationModifier" Type="Number"/>
+         <StatWithModifierType Id="DebuffDurationModifier" Type="Number"/>
+         <StatWithModifierType Id="BuffDurationModifier" Type="Number"/>
+         <StatWithModifierType Id="PotionRangeModifier" Type="Number"/>
+         <StatWithModifierType Id="PercentageResistanceReduction" Type="Percentage"/>
+         <StatWithModifierType Id="BonusSkillUses" Type="Number"/>
+         <StatWithModifierType Id="BonusUsableItemsUses" Type="Number"/>
+         <StatWithModifierType Id="StunDurationModifier" Type="Number"/>
+         <StatWithModifierType Id="ContagionDurationModifier" Type="Number"/>
+         <StatWithModifierType Id="ArmorShreddingAttacks" Type="Percentage"/>
+         <StatWithModifierType Id="EnemyEvolutionDamageMultiplier" Type="Percentage"/>
+
+         <!--Biggs-->
+         <StatWithModifierType Id="GauntletRangeModifier" Type="Number"/>
+         <StatWithModifierType Id="BonusMainHandSkillUses" Type="Number"/>
+
+      </StatModifiableValueType>
+   </EnemyStatModifierConfiguration>
+   
+   <UnlockCondition>
+      <RunCompletedInCity Id="Felderland" Value="1"/>
+   </UnlockCondition>
+   
+   <DamnedSoulsPercentagePerLevel>5</DamnedSoulsPercentagePerLevel>
+   
+   <GaugeDisplayMaxApocalypseLevel>40</GaugeDisplayMaxApocalypseLevel>
+   
+</ApocalypseConfigurationDefinitions>
