@@ -1138,7 +1138,7 @@
 
       <SkillAction>
          <Attack>
-            <BaseDamage Min="130 * (1 + PlayableUnitLevel/13)" Max="260 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+            <BaseDamage Min="130 * (1 + Level/13)" Max="260 * (1 + Level/13)" />
             <AttackType>Ranged</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
@@ -1370,12 +1370,7 @@
    </SkillDefinition>
 
    <SkillDefinition Id="CollateralDamageSkill">
-      <Range Min="1" Max="2" Modifiable="false"/>
-         <AreaOfEffect OriginX="1" OriginY="1">
-         _X_
-         XXX
-         _X_
-      </AreaOfEffect>
+      <Range Min="1" Max="4"/>
       <AffectedUnits>
          <CanAffectCaster>false</CanAffectCaster>
          <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
@@ -1383,7 +1378,7 @@
       </AffectedUnits>
       <SkillAction>
          <Attack>
-            <BaseDamage Min="125" Max="250"/>
+            <BaseDamage Min="150" Max="300"/>
             <AttackType>Adaptative</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>

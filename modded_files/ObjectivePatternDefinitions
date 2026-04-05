@@ -116,7 +116,7 @@
       </ObjectiveConstraints>
 
       <ObjectiveDurations>
-         <ObjectiveDuration Value="NormalInverted2Turns" Weight="1"/>
+         <ObjectiveDuration Value="DontKillInverted2Turns" Weight="1"/>
       </ObjectiveDurations>
    </ObjectivePatternDefinition>
 
@@ -137,7 +137,7 @@
       </ObjectiveConstraints>
 
       <ObjectiveDurations>
-         <ObjectiveDuration Value="NormalInverted2Turns" Weight="1"/>
+         <ObjectiveDuration Value="DontDealDamagesInverted2Turns" Weight="1"/>
       </ObjectiveDurations>
    </ObjectivePatternDefinition>
 
@@ -146,12 +146,11 @@
       <ObjectiveAction Invert="true">UseSkill</ObjectiveAction>
 
       <ObjectiveConstraints>
-         <ObjectiveConstraint Value="IsPunch" Weight="1"/>
          <ObjectiveConstraint Value="IsJump"  Weight="1"/>
       </ObjectiveConstraints>
 
       <ObjectiveDurations>
-         <ObjectiveDuration Value="NormalInverted2Turns" Weight="1"/>
+         <ObjectiveDuration Value="DontUseSkill" Weight="1"/>
       </ObjectiveDurations>
    </ObjectivePatternDefinition>
 
@@ -163,7 +162,7 @@
       </ObjectiveConstraints>
 
       <ObjectiveDurations>
-         <ObjectiveDuration Value="NormalInverted2Turns" Weight="1"/>
+         <ObjectiveDuration Value="DontGetHit" Weight="1"/>
       </ObjectiveDurations>
    </ObjectivePatternDefinition>
 
@@ -175,7 +174,7 @@
       </ObjectiveConstraints>
 
       <ObjectiveDurations>
-         <ObjectiveDuration Value="NormalInverted2Turns" Weight="1"/>
+         <ObjectiveDuration Value="DontUseMana" Weight="1"/>
       </ObjectiveDurations>
    </ObjectivePatternDefinition>
 
@@ -187,7 +186,7 @@
       </ObjectiveConstraints>
 
       <ObjectiveDurations>
-         <ObjectiveDuration Value="NormalInverted2Turns" Weight="1"/>
+         <ObjectiveDuration Value="DontUseMovePoints" Weight="1"/>
       </ObjectiveDurations>
    </ObjectivePatternDefinition>
    
@@ -199,7 +198,7 @@
       </ObjectiveConstraints>
 
       <ObjectiveDurations>
-         <ObjectiveDuration Value="NormalInverted2Turns" Weight="1"/>
+         <ObjectiveDuration Value="DontGeneratePanic" Weight="1"/>
       </ObjectiveDurations>
    </ObjectivePatternDefinition>
 

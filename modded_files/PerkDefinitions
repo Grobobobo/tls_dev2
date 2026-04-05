@@ -42,7 +42,6 @@
          <SkillsToShow>
             <SkillToShow Id="FinishHim"/>
          </SkillsToShow>
-         <DisplayBonusBeforePurchase/>
          <DisplayInHUD>
             <GreyOut>
                <IsFalse Value="ContextualSkillActive"/>
@@ -930,7 +929,7 @@
    <PerkDefinition Id="ExplosiveAtoms">
       <TokenVariables>
          <TokenVariable Key="TriggerCondition" Value="BooleanChoice(Owner.IsManaCostLocked, 0, Skill.BaseManaCost) > 0"/>
-         <TokenVariable Key="PerkDamageBonus" Value="20"/>
+         <TokenVariable Key="PerkDamageBonus" Value="30"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb"/>
@@ -1541,9 +1540,9 @@
    <PerkDefinition Id="WeaknessFinder">
       <TokenVariables>
          <TokenVariable Key="IsolatedAttacksBonus" Value="Floor(Owner.Accuracy * (AccuracyPercentage / 100))"/>
-         <TokenVariable Key="AccuracyPercentage" Value="200"/>
+         <TokenVariable Key="AccuracyPercentage" Value="150"/>
          <TokenVariable Key="OpportunisticAttacksBonus" Value="Floor(Owner.ResistanceReduction * (ResReducPercentage / 100))"/>
-         <TokenVariable Key="ResReducPercentage" Value="200"/>
+         <TokenVariable Key="ResReducPercentage" Value="150"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="AccuracyPercentage" Suffix="%" Style="KeyWordNb"/>
@@ -2283,6 +2282,8 @@
          <TokenVariable Key="MalusValue" Value="3"/>
       </TokenVariables>
       <LocArguments>
+         <StatArgument Stat="OverallDamage" Value="DefaultMultiplierValue"/>
+         <StatArgument Stat="OverallDamage" Value="DefaultMultiplierValue"/>
          <StatArgument Stat="OverallDamage" Value="DefaultMultiplierValue"/>
          <LocArgument Value="BonusMax" Suffix="%" Style="KeyWordNb"/>
          <StatArgument Stat="OverallDamage" Value="OverallDamageBonus" Interpreted="true"/>
@@ -3185,10 +3186,10 @@
    <PerkDefinition Id="QuantityVsQuality">
       <TokenVariables>
          <TokenVariable Key="BasePropagDamage" Value="10"/>
-         <TokenVariable Key="TransformedPropBounceValue" Value="BasePropagDamage + Floor(Owner.UnlockedPropagationBouncesModifier * TransformedPropBouncePercentage / 100)"/>
+         <TokenVariable Key="TransformedPropBounceValue" Value="Floor(Owner.UnlockedPropagationBouncesModifier * TransformedPropBouncePercentage / 100)"/>
          <TokenVariable Key="TransformedPropBouncePercentage" Value="400"/>
          <TokenVariable Key="BaseGamePropDmgCap" Value="105"/>
-         <TokenVariable Key="IncreaseToPropDmgCap" Value="10"/>
+         <TokenVariable Key="IncreaseToPropDmgCap" Value="20"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="PropagationBouncesModifier"/>
@@ -3196,13 +3197,13 @@
          <LocArgument Value="TransformedPropBouncePercentage" Suffix="%" Style="KeyWordNb"/>
          <StatArgument Stat="PropagationDamage"/>
          <LocArgument Value="BaseGamePropDmgCap + IncreaseToPropDmgCap" Interpreted="true" Style="KeyWordNb"/>
-         <StatArgument Stat="PropagationDamage" DisplaySign="true" Value="TransformedPropBounceValue" Interpreted="true"/>
+         <StatArgument Stat="PropagationDamage" DisplaySign="true" Value="TransformedPropBounceValue + BasePropagDamage" Interpreted="true"/>
          <StatArgument Stat="PropagationDamage" DisplaySign="true" Value="BasePropagDamage" Interpreted="true"/>
       </LocArguments>
       <View>
          <DisplayBonusBeforePurchase/>
          <DisplayInHUD>
-            <Bonus Value="TransformedPropBounceValue"/>
+            <Bonus Value="TransformedPropBounceValue + BasePropagDamage"/>
          </DisplayInHUD>
          <CompendiumEntries>
             <CompendiumEntry Id="SkillEffect_Propagation"/>
@@ -3212,7 +3213,7 @@
          <BufferModule>
             <Effects>
                <StatBoundaryModifier Stat="PropagationDamage" MaxModifier="IncreaseToPropDmgCap"/>
-               <StatModifier Stat="PropagationDamage" Value="TransformedPropBounceValue"/>
+               <StatModifier Stat="PropagationDamage" Value="TransformedPropBounceValue + BasePropagDamage"/>
                <StatLocker Stat="PropagationBouncesModifier"/>
             </Effects>
          </BufferModule>

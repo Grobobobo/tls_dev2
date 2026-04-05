@@ -1636,7 +1636,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Physical</AttackType>
-        <BaseDamage Min="66 * (1 + PlayableUnitLevel/13)" Max="102 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="66 * (1 + Level/13)" Max="102 * (1 + Level/13)"  />
         <DamageMultiplier>1.5</DamageMultiplier>
         <SkillEffects>
           <IgnoreLineOfSight />
@@ -1813,30 +1813,35 @@
     </SkillAction>
   </SkillDefinition>
   
-  <SkillDefinition Id="PutridBallUnique" TemplateId="PutridBall" GroupId="PutridBallUnique">
+  <SkillDefinition Id="InfectUnique" TemplateId="Infect" GroupId="InfectUnique">
     <ValidTargets>
       <EnemyUnits />
     </ValidTargets>
     <UsesPerTurnCount>99</UsesPerTurnCount>
-    <SkillAction>
-      <Attack>
-        <BaseDamage Min="148 * (1 + PlayableUnitLevel/13)" Max="186 * (1 + PlayableUnitLevel/13)" />
-        <AttackType>Adaptative</AttackType>
-        <DamageMultiplier>1</DamageMultiplier>
+    <ActionPointsCost>0</ActionPointsCost>
+    <ManaCost>0</ManaCost>
+         <SkillAction>
+         <Attack>
+            <BaseDamage Min="74 * (1 + Level/13)" Max="93 * (1 + Level/13)" />
+            <AttackType>Adaptative</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
-               <Poison>
-                  <DamagePerTurn>30</DamagePerTurn>
-                  <TurnsCount>4</TurnsCount>
-               </Poison>
-               <SurroundingEffect>
-                  <Poison>
-                     <DamagePerTurn>30</DamagePerTurn>
-                     <TurnsCount>4</TurnsCount>
-                  </Poison>
-               </SurroundingEffect>
+               <Isolated>
+                  <DamageMultiplier>1.75</DamageMultiplier>
+               </Isolated>
+               <CasterEffect>
+                  <Buff>
+                     <BaseChance>1</BaseChance>
+                     <CanAffectCaster>true</CanAffectCaster>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <Bonus>12</Bonus>
+                     <Stat Id="PoisonDamageModifier"/>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
             </SkillEffects>
-      </Attack>
-    </SkillAction>
+         </Attack>
+      </SkillAction>
   </SkillDefinition>
 
   <SkillDefinition Id="Assassinate_Unique" TemplateId="Assassinate" GroupId="Assassinate_Unique">
@@ -2133,28 +2138,14 @@
       </Attack>
     </SkillAction>
   </SkillDefinition>
-  <SkillDefinition Id="PreciseTargettingUniqueStrongThrow" TemplateId="PreciseTargetting">
-    <SkillAction>
-      <Attack>
-        <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1</DamageMultiplier>
-        <SkillEffects>
-          <Stun>
-            <BaseChance>1</BaseChance>
-          </Stun>
-          <MultiHit HitsCount="2" />
-        </SkillEffects>
-      </Attack>
-    </SkillAction>
-  </SkillDefinition>
 
-   <SkillDefinition Id="OverheatUniqueSkill">
+   <SkillDefinition Id="OverheatUniqueSkill" TemplateId="OverheatSkill">
       <ActionPointsCost>0</ActionPointsCost>
       <Range Min="0" Max="0"/>
       <SkillAction>
          <Attack>
-            <BaseDamage Min="130 * (1 + PlayableUnitLevel/13)" Max="260 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
-            <AttackType>Ranged</AttackType>
+            <BaseDamage Min="130 * (1 + Level/13)" Max="260 * (1 + Level/13)"  />
+            <AttackType>Adaptative</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <NoDodge/>

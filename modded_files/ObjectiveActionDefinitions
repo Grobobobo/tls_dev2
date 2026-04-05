@@ -4,32 +4,32 @@
 
    <!--Old diff multi: 4-->
    <ObjectiveActionDefinition Type="KillEnemy" DifficultyMultiplier="2" MinGoalValue="-1" MaxGoalValue="100">
-      <InvertedSettings MinGoalValue="4" MaxGoalValue="4"/>
+      <InvertedSettings MinGoalValue="1" MaxGoalValue="100"/>
    </ObjectiveActionDefinition>
    
    <!--Old diff multi: 0.0375-->
    <ObjectiveActionDefinition Type="DealDamage" DifficultyMultiplier="0.0325" MinGoalValue="120" MaxGoalValue="-1">
-      <InvertedSettings MinGoalValue="500" MaxGoalValue="500"/>
+      <InvertedSettings MinGoalValue="120" MaxGoalValue="-1"/>
    </ObjectiveActionDefinition>
 
    <!--Old diff multi: 6.6-->
    <ObjectiveActionDefinition Type="UseSkill" DifficultyMultiplier="6.6" MinGoalValue="-1" MaxGoalValue="8">
-      <InvertedSettings MinGoalValue="2" MaxGoalValue="2"/>
+      <InvertedSettings MinGoalValue="1" MaxGoalValue="8"/>
    </ObjectiveActionDefinition>
    
    <!--Old diff multi: 20-->
-   <ObjectiveActionDefinition Type="GetHit" DifficultyMultiplier="20" MinGoalValue="-1" MaxGoalValue="30">
-      <InvertedSettings MinGoalValue="5" MaxGoalValue="5"/>
+   <ObjectiveActionDefinition Type="GetHit" DifficultyMultiplier="40" MinGoalValue="1" MaxGoalValue="15">
+      <InvertedSettings MinGoalValue="1" MaxGoalValue="15"/>
    </ObjectiveActionDefinition>
 
    <!--Old diff multi: 6.6-->
-   <ObjectiveActionDefinition Type="UseMana" DifficultyMultiplier="6.6" MinGoalValue="10" MaxGoalValue="120">
-      <InvertedSettings MinGoalValue="10" MaxGoalValue="10"/>
+   <ObjectiveActionDefinition Type="UseMana" DifficultyMultiplier="8" MinGoalValue="10" MaxGoalValue="120">
+      <InvertedSettings MinGoalValue="5" MaxGoalValue="60"/>
    </ObjectiveActionDefinition>
 
    <!--Old diff multi: 5.3-->
    <ObjectiveActionDefinition Type="UseMovePoints" DifficultyMultiplier="5.3" MinGoalValue="15" MaxGoalValue="-1">
-      <InvertedSettings MinGoalValue="15" MaxGoalValue="15"/>
+      <InvertedSettings MinGoalValue="10" MaxGoalValue="-1"/>
    </ObjectiveActionDefinition>
 
    <!--Old diff multi: 5-->

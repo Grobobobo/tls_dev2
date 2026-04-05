@@ -2796,11 +2796,13 @@
    <!--Magic Orb-->
    <PerkDefinition Id="MagicOrbUniquePerk">
       <TokenVariables>
+      <TokenVariable Key="SkillCount" Value="2"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="HealthTotal"/>
          <LocalizedArgument Value="ItemName_NoDLCTag_MagicOrbUnique" Style="Unique"/>
          <LocalizedArgument Prefix="SkillName_" Value="InfectUnique" Style="Skill"/>
+         <LocArgument Value="SkillCount" Style="KeyWordNb"/>
       </LocArguments>
       <View>
          <SkillsToShow>
@@ -2822,22 +2824,10 @@
                      <TriggerEffects/>
                   </Actions>
                </Event>
-               <Event EffectTime="OnTargetKilled">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsAttack"/>
-                     <IsTrue Value="IsTargetEnemyUnit"/>
-                     <IsFalse Value="TargetUnit.HealthTotal > AttackData.HealthDamage"/>
-                     <IsTrue Value="Skill.IsSkillID('InfectUnique')"/>
-                     <IsTrue Value="TargetUnit.IsIsolated"/>
-                  </Conditions>
-                  <Actions>
-                     <TriggerEffects/>
-                  </Actions>
-               </Event>
             </Events>
             <Effects>
                <CastSkill SkillId="InfectUnique">
-                  <PerkTargeting TargetingReference="Owner" TargetingMethod="ClosestTarget" Amount="1" >
+                  <PerkTargeting TargetingReference="Owner" TargetingMethod="ClosestTarget" Amount="SkillCount" >
                      <DamageableTarget Type="Enemy"/>
                      <DamageableTarget Type="Boss"/>
                   </PerkTargeting>
@@ -3229,7 +3219,7 @@
       </LocArguments>
       <View>
          <SkillsToShow>
-            <SkillToShow Id="OverheatSkill"/>
+            <SkillToShow Id="OverheatUniqueSkill"/>
          </SkillsToShow>
          <DisplayInHUD>
             <Buffer Value="SkillUsed"/>
@@ -3547,8 +3537,8 @@
       <TokenVariables>
          <TokenVariable Key="PerkStack" Value="Max(0,Threshold - Module.Buffer)"/>
          <TokenVariable Key="IsTargetIsolated" Value="TargetUnit.IsIsolated"/>
-         <TokenVariable Key="Threshold" Value="3"/>
-         <TokenVariable Key="DebuffDamage" Value="-40"/>
+         <TokenVariable Key="Threshold" Value="2"/>
+         <TokenVariable Key="DebuffDamage" Value="-35"/>
          <TokenVariable Key="PerkCanBeClean" Value="Module.Buffer2"/>
          <TokenVariable Key="TargetWasHit" Value="Module.Buffer3"/>
          <!--Unique perk bonus-->
@@ -3896,8 +3886,8 @@
          <TokenVariable Key="DurationPoisonEnemies" Value="2"/>
 
          <TokenVariable Key="IsPoisonThresholdReached" Value="Module.Buffer5 > PoisonDamageThreshold - 1"/>
-         <TokenVariable Key="PoisonDamageThreshold" Value="15"/>
-         <TokenVariable Key="PoisonedBonusStacks" Value="10"/>
+         <TokenVariable Key="PoisonDamageThreshold" Value="5"/>
+         <TokenVariable Key="PoisonedBonusStacks" Value="4"/>
          <TokenVariable Key="TotalPoisonProc" Value="Module.Buffer5"/>
       </TokenVariables>
       <LocArguments>
@@ -3995,8 +3985,8 @@
                      <IsTrue Value="IsPoisonThresholdReached"/>
                   </Conditions>
                   <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer" Value="PoisonedBonusStacks"/>
-                     <SetBufferTo BufferIndex="Buffer5" Value="Module.Buffer5 - PoisonDamageThreshold"/>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="PoisonedBonusStacks * Floor(Module.Buffer5/PoisonDamageThreshold) "/>
+                     <SetBufferTo BufferIndex="Buffer5" Value="Module.Buffer5 % PoisonDamageThreshold"/>
                      <!--<Log Formatting="Vie augmentée de : {0}" Value="MaxHealthBonus"/>-->
                   </Actions>
                </Event>
