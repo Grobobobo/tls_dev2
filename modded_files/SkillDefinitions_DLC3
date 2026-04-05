@@ -1820,9 +1820,9 @@
     <UsesPerTurnCount>99</UsesPerTurnCount>
     <SkillAction>
       <Attack>
-        <BaseDamage Min="74 * (1 + Level/13)" Max="93 * (1 + Level/13)" />
+        <BaseDamage Min="148 * (1 + PlayableUnitLevel/13)" Max="186 * (1 + PlayableUnitLevel/13)" />
         <AttackType>Adaptative</AttackType>
-        <DamageMultiplier>2</DamageMultiplier>
+        <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <Poison>
                   <DamagePerTurn>30</DamagePerTurn>
