@@ -598,6 +598,30 @@
                      <TriggerEffects/>
                   </Actions>
                </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('TossMeSkill')"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('TossMeSkillCatapult')"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('TossMeSkill2')"/>
+                  </Conditions>
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
             </Events>
             <Effects>
                <SkillModifier ComputationStat="MovePointsCost" Value="MovePointReduction">
@@ -628,6 +652,11 @@
                <SkillModifier ComputationStat="MovePointsCost" Value="MovePointReduction">
                   <Conditions>
                      <IsTrue Value="Skill.IsSkillID('TossMeSkillCatapult')"/>
+                  </Conditions>
+               </SkillModifier>
+               <SkillModifier ComputationStat="MovePointsCost" Value="MovePointReduction">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('TossMeSkill2')"/>
                   </Conditions>
                </SkillModifier>
                <CastSkill SkillId="HeavyJumpOver">
@@ -752,8 +781,8 @@
    <PerkDefinition Id="DodgePractice">
       <TokenVariables>
          <TokenVariable Key="TotalBonusDodgeValue" Value="Module.Buffer * BonusDodgeValueMultiplier"/>
-         <TokenVariable Key="BonusDodgeValueMultiplier" Value="5"/>
-         <TokenVariable Key="BuffTurnsCount" Value="1"/>
+         <TokenVariable Key="BonusDodgeValueMultiplier" Value="3"/>
+         <TokenVariable Key="BuffTurnsCount" Value="3"/>
       </TokenVariables>
       <LocArguments>
          <StatusArgument Status="Buff" Value="BonusDodgeValueMultiplier" TurnsCount="BuffTurnsCount" Stat="Dodge"/>
@@ -991,7 +1020,7 @@
    <PerkDefinition Id="ArmorBreakCurse_2">
       <TokenVariables>
          <TokenVariable Key="DamageDealt" Value="Owner.ArmorTotal * ArmorToDamageMultiplier"/>
-         <TokenVariable Key="ArmorToDamageMultiplier" Value="1"/>
+         <TokenVariable Key="ArmorToDamageMultiplier" Value="0.8"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="ArmorTotal" Value="0" Style="KeyWordNb"/>
@@ -1101,7 +1130,7 @@
    
    <PerkDefinition Id="ManaDrainCurse_2">
       <TokenVariables>
-         <TokenVariable Key="EnemiesToKill" Value="3"/>
+         <TokenVariable Key="EnemiesToKill" Value="4"/>
          <TokenVariable Key="EnemiesKilled" Value="Module.Buffer"/>
          <TokenVariable Key="ManaLost" Value="5"/>
       </TokenVariables>
@@ -1172,8 +1201,8 @@
          <TokenVariable Key="TilesCrossedThisTurnBeforeCast" Value="Module.Buffer2"/>
          <TokenVariable Key="TilesCrossedUnusedFromPreviousTurns" Value="Module.Buffer3"/>
 
-         <TokenVariable Key="TilesCrossedThreshold" Value="5"/>
-         <TokenVariable Key="DamageMalus" Value="-30"/>
+         <TokenVariable Key="TilesCrossedThreshold" Value="4"/>
+         <TokenVariable Key="DamageMalus" Value="-50"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="TilesCrossedThreshold" Style="KeyWordNb"/>
@@ -1276,7 +1305,7 @@
          <TokenVariable Key="TilesCrossedUnusedFromPreviousTurns" Value="Module.Buffer3"/>
 
          <TokenVariable Key="TilesCrossedThreshold" Value="2"/>
-         <TokenVariable Key="DamageMalus" Value="-30"/>
+         <TokenVariable Key="DamageMalus" Value="-50"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="TilesCrossedThreshold" Style="KeyWordNb"/>
@@ -1476,7 +1505,7 @@
 
    <PerkDefinition Id="NegativeAlterationCurse_2">
       <TokenVariables>
-         <TokenVariable Key="HealthBonus" Value="75"/>
+         <TokenVariable Key="HealthBonus" Value="60"/>
       </TokenVariables>
       <LocArguments>
          <StatusArgument Status="Buff" Stat="HealthTotal" Value="HealthBonus" Interpreted="true" TurnsCount="-1"/>
@@ -1519,7 +1548,7 @@
    <!--Hit Armor Curse-->
    <PerkDefinition Id="HitArmorCurse">
       <TokenVariables>
-         <TokenVariable Key="HealthLost" Value="10"/>
+         <TokenVariable Key="HealthLost" Value="3"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="ArmorTotal"/>
@@ -1559,7 +1588,7 @@
 
    <PerkDefinition Id="HitArmorCurse_2">
       <TokenVariables>
-         <TokenVariable Key="HealthLost" Value="25"/>
+         <TokenVariable Key="HealthLost" Value="6"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="ArmorTotal"/>
@@ -1727,7 +1756,7 @@
    <!--Adjacent Building Malus Curse-->
    <PerkDefinition Id="AdjacentBuildingMalusCurse">
       <TokenVariables>
-         <TokenVariable Key="AccuracyMalus" Value="-25"/>
+         <TokenVariable Key="AccuracyMalus" Value="-20"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="Accuracy" Value="AccuracyMalus" Interpreted="true" Style="BadNb" DisplaySign="true"/>
@@ -1758,7 +1787,7 @@
 
    <PerkDefinition Id="AdjacentBuildingMalusCurse_2">
       <TokenVariables>
-         <TokenVariable Key="AccuracyMalus" Value="-60"/>
+         <TokenVariable Key="AccuracyMalus" Value="-40"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="Accuracy" Value="AccuracyMalus" Interpreted="true" Style="BadNb" DisplaySign="true"/>
@@ -3178,14 +3207,11 @@
          <TokenVariable Key="SkillUsed" Value="Module.Buffer"/>
          <TokenVariable Key="OverheatThreshold" Value="7"/>
 			<TokenVariable Key="CooldownPerTurn" Value="4"/>
-			<TokenVariable Key="SkillId" Value="OverheatSkill"/>
+			<TokenVariable Key="SkillId" Value="OverheatUniqueSkill"/>
 			<TokenVariable Key="BastHealthCost" Value="12"/>
 			<TokenVariable Key="HeatlCostPerPoint" Value="4"/>
          <TokenVariable Key="HeatIncrease" Value="1"/>
          <TokenVariable Key="CanTriggerOverheat" Value ="Module.Buffer3"/>
-         <TokenVariable Key="HasHitEnoughUnits" Value="Module.Buffer2 > UnitsHitThreshold - 1"/>
-         <TokenVariable Key="CurrentUnitsHit" Value="Module.Buffer2"/>
-         <TokenVariable Key="UnitsHitThreshold" Value="5"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="OverheatThreshold" Style="KeyWordNb"/>
@@ -3312,24 +3338,6 @@
                      <SetBufferTo BufferIndex="Buffer" Value="0"/>
                   </Actions>
                </Event>
-               <Event EffectTime="OnTargetHit">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsFromItemWithTag('CannonUnique')"/>
-                  </Conditions>
-                  <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
-                  </Actions>
-               </Event>
-               <Event EffectTime="OnTargetHit">
-                  <Conditions>
-                     <IsTrue Value="HasHitEnoughUnits"/>
-                     <IsTrue Value="Skill.IsFromItemWithTag('CannonUnique')"/>
-                  </Conditions>
-                  <Actions>
-                     <TriggerEffects/>
-                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
-                  </Actions>
-               </Event>
                <Event EffectTime="OnSkillCastBegin">
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer2" Value="0"/>
@@ -3345,7 +3353,7 @@
                      <IsTrue Value="SkillUsed > OverheatThreshold - 1"/>
                   </Conditions>
                </SkillModifier>
-               <CastSkill SkillId="OverheatSkill">
+               <CastSkill SkillId="OverheatUniqueSkill">
                   <PerkTargeting TargetingReference="Caster" TargetingMethod="Self"/>
                </CastSkill>
             </Effects>
@@ -3355,7 +3363,7 @@
                
             </Events>
             <Effects>
-               <CastSkill SkillId="OverheatSkill">
+               <CastSkill SkillId="OverheatUniqueSkill">
                   <PerkTargeting TargetingReference="Caster" TargetingMethod="Self"/>
                </CastSkill>
             </Effects>
@@ -3710,7 +3718,7 @@
 		<LocArguments>
              <LocArgument Value="EnemiesHitThreshold" Style="KeyWordNb"/>
                <LocalizedArgument Value="SkillEffectName_Propagation" Style="Propagation"/>
-               <LocArgument Value="2" Style="DamageNb" Prefix=" x"/>
+               <LocArgument Value="3" Style="DamageNb" Prefix=" x"/>
              <!--<LocArgument Prefix="+" Value="OverallDamageBonus" Suffix="%" Style="GoodNb"/>-->
              <LocArgument Value="PerkStacks" Interpreted="true" Style="KeyWordNb"/>
             <LocalizedArgument Prefix="SkillName_" Value="PreciseTargetting" Style="Skill"/>
@@ -3887,12 +3895,10 @@
          <TokenVariable Key="AdditionnalStackPerCost" Value="1"/>
          <TokenVariable Key="DurationPoisonEnemies" Value="2"/>
 
-         <TokenVariable Key="IsPoisonThresholdReached" Value="Module2.Buffer5 > PoisonDamageThreshold - 1"/>
+         <TokenVariable Key="IsPoisonThresholdReached" Value="Module.Buffer5 > PoisonDamageThreshold - 1"/>
          <TokenVariable Key="PoisonDamageThreshold" Value="15"/>
-         <TokenVariable Key="MaxHealthBonus" Value="40"/>
-         <TokenVariable Key="TotalPoisonProc" Value="Module2.Buffer5"/>
-
-         <TokenVariable Key="BonusToMaximumHealth" Value="1000"/>
+         <TokenVariable Key="PoisonedBonusStacks" Value="10"/>
+         <TokenVariable Key="TotalPoisonProc" Value="Module.Buffer5"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="AdditionnalStackPerCost" Style="GoodNb"/>
@@ -3907,12 +3913,8 @@
          <StatusArgument Value="Round(PoisonedEnemies*PlayerPoisonScalingOnHit)" Style="GoodNb" Status="Poison" TurnsCount="DurationPoisonEnemies" Interpreted="true"/>
          <LocArgument Value="PlayerPoisonScalingOnHit*100" Interpreted="true" Suffix="%" Style="KeywordNb"/>
          <LocArgument Value="PerLevelHeroScale" Style="KeywordNb"/>
-         
          <LocArgument Value="PoisonDamageThreshold" Style="GoodNb"/>
-         <StatArgument Stat="HealthTotal" Value="MaxHealthBonus" DisplaySign="true"/>
-         
-         <LocArgument Value="BonusToMaximumHealth" Prefix="+" Style="GoodNb"/>
-         <StatArgument Stat="HealthTotal"/>
+         <LocArgument Value="PoisonedBonusStacks" Style="KeywordNb"/>
       </LocArguments>
       <View>
          <CompendiumEntries>
@@ -3977,7 +3979,33 @@
                      <SetBufferTo BufferIndex="Buffer" Value="0"/>
                   </Actions>
                </Event>
-
+              <Event EffectTime="OnPoisonProc">
+                  <Conditions>
+                     <IsTrue Value="OwnerIsTarget"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer5" Value="AttackData.HealthDamage"/>
+                     <!--<Log Formatting="Dégâts de poison subit : {0}" Value="AttackData.HealthDamage"/>
+                     <Log Formatting="Dégâts de poison subit totaux : {0}" Value="TotalPoisonProc"/>-->
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnPoisonProc">
+                  <Conditions>
+                     <IsTrue Value="OwnerIsTarget"/>
+                     <IsTrue Value="IsPoisonThresholdReached"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="PoisonedBonusStacks"/>
+                     <SetBufferTo BufferIndex="Buffer5" Value="Module.Buffer5 - PoisonDamageThreshold"/>
+                     <!--<Log Formatting="Vie augmentée de : {0}" Value="MaxHealthBonus"/>-->
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <!--<SetBufferTo BufferIndex="Buffer8" Value="0"/>-->
+                     <SetBufferTo BufferIndex="Buffer5" Value="0"/>
+                  </Actions>
+               </Event>
                
             </Events>
             <Effects>
@@ -4030,41 +4058,6 @@
                      </SurroundingEffect>
                   </SkillEffects>
                </AddSkillEffect>
-            </Effects>
-         </BufferModule>
-         <BufferModule>
-            <Events>
-               <Event EffectTime="OnPoisonProc">
-                  <Conditions>
-                     <IsTrue Value="OwnerIsTarget"/>
-                  </Conditions>
-                  <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer5" Value="AttackData.HealthDamage"/>
-                     <!--<Log Formatting="Dégâts de poison subit : {0}" Value="AttackData.HealthDamage"/>
-                     <Log Formatting="Dégâts de poison subit totaux : {0}" Value="TotalPoisonProc"/>-->
-                  </Actions>
-               </Event>
-               <Event EffectTime="OnPoisonProc">
-                  <Conditions>
-                     <IsTrue Value="OwnerIsTarget"/>
-                     <IsTrue Value="IsPoisonThresholdReached"/>
-                  </Conditions>
-                  <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer8" Value="MaxHealthBonus"/>
-                     <SetBufferTo BufferIndex="Buffer5" Value="Module2.Buffer5 - PoisonDamageThreshold"/>
-                     <!--<Log Formatting="Vie augmentée de : {0}" Value="MaxHealthBonus"/>-->
-                  </Actions>
-               </Event>
-               <Event EffectTime="OnStartProductionTurn">
-                  <Actions>
-                     <!--<SetBufferTo BufferIndex="Buffer8" Value="0"/>-->
-                     <SetBufferTo BufferIndex="Buffer5" Value="0"/>
-                  </Actions>
-               </Event>
-            </Events>
-            <Effects>
-               <StatModifier Stat="HealthTotal" Value="Module2.Buffer8"/>
-               <StatBoundaryModifier MaxModifier="BonusToMaximumHealth" Stat="HealthTotal"/>
             </Effects>
          </BufferModule>
       </Modules>

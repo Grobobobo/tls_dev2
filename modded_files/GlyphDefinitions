@@ -194,7 +194,7 @@
 
          <ModifyItemRarity Tag="Sword">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -262,7 +262,7 @@
 
          <ModifyItemRarity Tag="Axe">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -330,7 +330,7 @@
 
          <ModifyItemRarity Tag="Dagger">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -398,7 +398,7 @@
 
          <ModifyItemRarity Tag="Hammer">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -460,7 +460,7 @@
 
          <ModifyItemRarity Tag="2HSword">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -522,7 +522,7 @@
 
          <ModifyItemRarity Tag="2HAxe">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -584,7 +584,7 @@
 
          <ModifyItemRarity Tag="2HHammer">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -646,7 +646,7 @@
 
          <ModifyItemRarity Tag="Spear">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -718,7 +718,7 @@
 
          <ModifyItemRarity Tag="MagicWand">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -786,7 +786,7 @@
 
          <ModifyItemRarity Tag="MagicOrb">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -854,7 +854,7 @@
 
          <ModifyItemRarity Tag="MagicScepter">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -916,7 +916,7 @@
 
          <ModifyItemRarity Tag="TomeOfMagic">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -978,7 +978,7 @@
 
          <ModifyItemRarity Tag="MagicStaff">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -1040,7 +1040,7 @@
 
          <ModifyItemRarity Tag="DruidicStaff">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -1112,7 +1112,7 @@
 
          <ModifyItemRarity Tag="HandCrossbow">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -1180,7 +1180,7 @@
 
          <ModifyItemRarity Tag="Pistol">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -1242,7 +1242,7 @@
 
          <ModifyItemRarity Tag="Crossbow">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -1304,7 +1304,7 @@
 
          <ModifyItemRarity Tag="Shortbow">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -1366,7 +1366,7 @@
 
          <ModifyItemRarity Tag="Longbow">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -1428,7 +1428,7 @@
 
          <ModifyItemRarity Tag="Rifle">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -1502,7 +1502,7 @@
 
    <!-- FOG -->
 
-   <GlyphDefinition Id="ThinnerFog" Cost="2">
+   <GlyphDefinition Id="ThinnerFog" Cost="1">
 
       <GlyphEffects>
 
@@ -2812,17 +2812,19 @@
 
          <ModifyLevelProbabilityTree TreeId="ShopProduction">
 
-            <Probability Weight="24">-1</Probability>
+            <Probability Weight="25">0</Probability>
 
-            <Probability Weight="15">0</Probability>
+         </ModifyLevelProbabilityTree>
+
+         <ModifyLevelProbabilityTree TreeId="PanicRewardLow">
+
+            <Probability Weight="25">2</Probability>
 
          </ModifyLevelProbabilityTree>
 
          <ModifyLevelProbabilityTree TreeId="PanicReward">
 
-            <Probability Weight="20">1</Probability>
-
-            <Probability Weight="5">2</Probability>
+            <Probability Weight="25">2</Probability>
 
          </ModifyLevelProbabilityTree>
 
@@ -2834,7 +2836,7 @@
 
          <ModifyLevelProbabilityTree TreeId="BonePile">
 
-            <Probability Weight="20">0</Probability>
+            <Probability Weight="25">2</Probability>
 
          </ModifyLevelProbabilityTree>
 
@@ -2856,19 +2858,19 @@
 
          <ModifyRarityProbabilityTree TreeId="ShopProduction">
 
-            <Probability Weight="14">2</Probability>
+            <Probability Weight="20">2</Probability>
 
          </ModifyRarityProbabilityTree>
 
          <ModifyRarityProbabilityTree TreeId="PanicRewardBasic">
 
-            <Probability Weight="21">2</Probability>
+            <Probability Weight="20">2</Probability>
 
          </ModifyRarityProbabilityTree>
 
          <ModifyRarityProbabilityTree TreeId="HeroGeneration">
 
-            <Probability Weight="18">2</Probability>
+            <Probability Weight="20">2</Probability>
 
          </ModifyRarityProbabilityTree>
 
@@ -2880,61 +2882,61 @@
 
          <ModifyRarityProbabilityTree TreeId="BuildingProduction">
 
-            <Probability Weight="10">3</Probability>
+            <Probability Weight="15">3</Probability>
 
          </ModifyRarityProbabilityTree>
 
          <ModifyRarityProbabilityTree TreeId="ShopProduction">
 
-            <Probability Weight="7">3</Probability>
+            <Probability Weight="15">3</Probability>
 
          </ModifyRarityProbabilityTree>
 
          <ModifyRarityProbabilityTree TreeId="PanicRewardBasic">
 
-            <Probability Weight="7">3</Probability>
+            <Probability Weight="15">3</Probability>
 
          </ModifyRarityProbabilityTree>
 
          <ModifyRarityProbabilityTree TreeId="PanicRewardHigh">
 
-            <Probability Weight="17">3</Probability>
+            <Probability Weight="15">3</Probability>
 
          </ModifyRarityProbabilityTree>
 
          <ModifyRarityProbabilityTree TreeId="HeroGeneration">
 
-            <Probability Weight="6">3</Probability>
+            <Probability Weight="15">3</Probability>
 
          </ModifyRarityProbabilityTree>
 
          <ModifyRarityProbabilityTree TreeId="BonePile">
 
-            <Probability Weight="10">3</Probability>
+            <Probability Weight="15">3</Probability>
 
          </ModifyRarityProbabilityTree>
 
          <ModifyRarityProbabilityTree TreeId="BuildingProduction">
 
-            <Probability Weight="4">4</Probability>
+            <Probability Weight="8">4</Probability>
 
          </ModifyRarityProbabilityTree>
 
          <ModifyRarityProbabilityTree TreeId="ShopProduction">
 
-            <Probability Weight="3">4</Probability>
+            <Probability Weight="8">4</Probability>
 
          </ModifyRarityProbabilityTree>
 
          <ModifyRarityProbabilityTree TreeId="PanicRewardHigh">
 
-            <Probability Weight="5">4</Probability>
+            <Probability Weight="8">4</Probability>
 
          </ModifyRarityProbabilityTree>
 
          <ModifyRarityProbabilityTree TreeId="BonePile">
 
-            <Probability Weight="4">4</Probability>
+            <Probability Weight="8">4</Probability>
 
          </ModifyRarityProbabilityTree>
 
@@ -3224,7 +3226,7 @@
 
          <ModifyItemRarity Tag="Cannon">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -3292,7 +3294,7 @@
 
          <ModifyItemRarity Tag="Gauntlet">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -3354,7 +3356,7 @@
 
          <ModifyItemRarity Tag="WarShield">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -3420,7 +3422,7 @@
 
          <ModifyItemRarity Tag="Claws">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -3488,7 +3490,7 @@
 
          <ModifyItemRarity Tag="ManaFlower">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 
@@ -3556,7 +3558,7 @@
 
          <ModifyItemRarity Tag="Boomerang">
 
-            <MinRarity>2</MinRarity>
+            <MinRarity>3</MinRarity>
 
          </ModifyItemRarity>
 

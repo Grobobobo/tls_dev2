@@ -1,4 +1,4 @@
- ,English,Français,简体中文,繁體中文,日本語,Русский,Українська,Deutsch,Español,Português (Brasil),한국어
+﻿ ,English,Français,简体中文,繁體中文,日本語,Русский,Українська,Deutsch,Español,Português (Brasil),한국어
 "BuildingDescription_PotionMaker","Crafts 2 <style=KeyWord>Consumables</style> every <style=Production>Production Phase</style>.
 Additional <style=KeyWord>Consumables</style> can be crafted with the help of <style=Workers>Workers</style>.","Fabrique 2 <style=KeyWord>Consommables</style> à chaque <style=Production>Phase de Production</style>.
 Des <style=KeyWord>Consommables</style> supplémentaires peuvent être fabriqués avec l'aide d'<style=Workers>Ouvriers</style>.","在每个<style=Production>整备阶段</style>产出2个<style=KeyWord>消耗品</style>。
@@ -1304,10 +1304,8 @@ Chaque <style=""Good"">Peste</style> donne<nbsp>:
 Quand {3} est utilisé, la valeur de <style=""Good"">Peste</style> est réinitialisée.
 Quand le Héros <style=bad>est touché</style>, {3} est <style=keyword>automatiquement</style> utilisé et le Héros est empoisonné à hauteur de {10} du <style=""Poison"">Poison</style> actuel.
 
-<style=Perk>Bonus de corruption<nbsp>: Vitalité</style>
-{14} {15} Max.
-Tous les {12} de dégâts de <style=""Poison"">Poison</style> subit, obtient {13}.
-<style=Attenuated>Le bonus dure tant que le héros conserve cet objet.</style>
+<style=Perk>Bonus de corruption<nbsp>: Rituel Gu</style>
+Tous les {12} de dégâts de <style=""Poison"">Poison</style> subis, {13} <style=""Good"">Peste</style>.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","每次施放<style=KeyWord>神圣花朵</style><style=Skill>攻击</style>后：
 每有一点{1}和{2}基础消耗，{0}层<style=""Good"">瘟疫</style>。
@@ -1317,10 +1315,8 @@ Tous les {12} de dégâts de <style=""Poison"">Poison</style> subit, obtient {13
 每次施放{3}时，<style=""Good"">瘟疫</style>都会重置。
 每次英雄<style=bad>被击中</style>，{3}会<style=keyword>自动</style>施放，且当前<style=""Poison"">中毒</style>层数的{10}会施加到英雄身上。
 
-<style=Perk>腐化加成：活力绽放</style>
-至多{14}{15}。
-每受到{12}点<style=""Poison"">中毒</style>伤害，即可永久获得{13}。
-<style=Attenuated>只要英雄持有该物品，该加成就会一直存在。</style>
+<style=Perk>腐化加成：蛊术仪式</style>
+每受到{12}点<style=""Poison"">中毒</style>伤害，获得{13} <style=""Good"">瘟疫</style>。
 
 <style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","每當施放<style=KeyWord>聖花</style><style=Skill>攻擊</style>時：
 根據{1}和{2}每點基礎消耗，{0}<style=""Good"">瘟疫</style>。
@@ -1330,10 +1326,8 @@ Tous les {12} de dégâts de <style=""Poison"">Poison</style> subit, obtient {13
 每次施放{3}時，重置<style=""Good"">瘟疫</style>。
 每當英雄<style=bad>被擊中</style>時，<style=keyword>自動</style>施放{3}，且英雄受到目前<style=""Poison"">中毒</style>傷害的{10}。
 
-<style=Perk>腐化加成：生機</style>
-最大{15}{14}
-每受到{12}<style=""Poison"">中毒</style>傷害，永久獲得：{13}。
-<style=Attenuated>英雄持有此物品時，效果會持續生效。</style>
+<style=Perk>腐化加成：蛊術儀式</style>
+每受到{12}<style=""Poison"">中毒</style>傷害，獲得{13} <style=""Good"">瘟疫</style>。
 
 <style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","<style=KeyWord>聖花</style>による<style=Skill>攻撃</style>が発動するたび、以下の効果を得る:
 {1}および{2}のベースコストごとに<style=""Good"">疫病</style>{0}。
@@ -1343,10 +1337,8 @@ Tous les {12} de dégâts de <style=""Poison"">Poison</style> subit, obtient {13
 {3}が発動するたび、<style=""Good"">疫病</style>はリセットされる。
 英雄に<style=bad>攻撃が命中</style>すると{3}が<style=keyword>自動的に</style>発動し、英雄がその時点での<style=""Poison"">毒</style>{10}ぶん、毒に侵される。
 
-<style=Perk>腐敗ボーナス: 生命力</style>
-{14} 最大{15}
-<style=""Poison"">毒</style>ダメージを{12}受けるごとに、恒久的に{13}を得る。
-<style=Attenuated>このボーナスは英雄がこのアイテムを所持している間、持続する。</style>
+<style=Perk>腐敗ボーナス: 蛊の儀式</style>
+<style=""Poison"">毒</style>ダメージを{12}受けるごとに、{13} <style=""Good"">疫病</style>を得る。
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","<style=Skill>Атаки</style> героя <style=KeyWord>Священным цветком</style> заполняют особую шкалу:
 {0} ед. <style=""Good"">Поветрия</style> за каждую единицу суммарной базовой стоимости применённого навыка ({1} + {2}).
@@ -1356,10 +1348,8 @@ Tous les {12} de dégâts de <style=""Poison"">Poison</style> subit, obtient {13
 Применяя ""{3}"", герой всякий раз начинает заполнять шкалу <style=""Good"">Поветрия</style> с нуля.
 <style=bad>Получая урон</style>, герой <style=keyword>автоматически</style> применяет ""{3}"", а сам при этом получает {10} текущего количества <style=""Poison"">яда</style>.
 
-<style=Perk>Бонус от порчи: Оздоровление</style>
-Макс. {15} {14}
-За каждые полученные {12} ед. урона <style=""Poison"">ядом</style> герой навсегда получает {13}.
-<style=Attenuated>Бонус сохраняется до тех пор, пока предмет остаётся при нём.</style>
+<style=Perk>Бонус от порчи: Ритуал Гу</style>
+За каждые полученные {12} ед. урона <style=""Poison"">ядом</style>, {13} <style=""Good"">Поветрия</style>.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Під час <style=Skill>атаки</style> <style=KeyWord>священної квітки</style>:
 {0} <style=""Good"">чуми</style> ({1} і {2}, базова вартість).
@@ -1369,10 +1359,8 @@ Tous les {12} de dégâts de <style=""Poison"">Poison</style> subit, obtient {13
 Коли застосовується вміння «{3}», <style=""Good"">чума</style> скидається.
 Коли героя <style=bad>б'ють</style>, уміння «{3}» <style=keyword>автоматично</style> застосовується, а герой отримує отруєння в розмірі {10} від поточного <style=""Poison"">отруєння</style>.
 
-<style=Perk>Бонус спотворення: Живучість</style>
-{14} Макс. {15}
-За кож. {12} од. отриманої шкоди від <style=""Poison"">отрути</style> назавжди отримайте {13}.
-<style=Attenuated>Бонус триває, поки в героя є ця річ.</style>
+<style=Perk>Бонус спотворення: Ритуал Гу</style>
+За кож. {12} од. отриманої шкоди від <style=""Poison"">отрути</style>, {13} <style=""Good"">чуми</style>.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Wenn ein <style=Skill>Angriff</style> mit der <style=KeyWord>Heiligen Blume</style> gewirkt wird:
 Je {0} <style=""Good"">Pest</style> pro Punkt der Basiskosten von {1} + {2}.
@@ -1382,10 +1370,8 @@ Die <color=#549EE4>Sekundärziele</color> von {3} wenden {5} an, {6} für je {11
 Wenn {3} gewirkt wird, wird die <style=""Good"">Pest</style> zurückgesetzt.
 Wenn der Held <style=bad>getroffen wird</style>, wird <style=keyword>automatisch</style> {3} gewirkt und der Held mit {10} des aktuellen <style=""Poison"">Gifts</style> vergiftet.
 
-<style=Perk>Verdorben-Bonus: Vitalität</style>
-{14} Max. {15}
-Pro {12} erlittenem <style=""Poison"">Giftschaden</style> erhältst du dauerhaft {13}.
-<style=Attenuated>Der Bonus hält an, solange der Held diesen Gegenstand trägt.</style>
+<style=Perk>Verdorben-Bonus: Gu-Ritual</style>
+Pro {12} erlittenem <style=""Poison"">Giftschaden</style>, {13} <style=""Good"">Pest</style>.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Cuando se lanza un <style=Skill>ataque</style> con <style=KeyWord>flor sagrada</style>:
 {0} de <style=""Good"">plaga</style> por cada {1} y coste base de {2}.
@@ -1395,10 +1381,8 @@ Cada <style=""Good"">plaga</style> concede:
 Cada vez que se lanza {3}, la <style=""Good"">plaga</style> se restablece.
 Cada vez que el héroe <style=bad>recibe un golpe</style>, {3} se lanza <style=keyword>automáticamente</style> y el héroe se envenena con {10} del <style=""Poison"">veneno</style> actual.
 
-<style=Perk>Bonificación de corrupción: Vitalidad</style>
-{14} de {15} máx.
-Por cada {12} de daño por <style=""Poison"">veneno</style> recibido, obtienes {13} permanente.
-<style=Attenuated>La bonificación se mantiene mientras el héroe conserve este objeto.</style>
+<style=Perk>Bonificación de corrupción: Ritual Gu</style>
+Por cada {12} de daño por <style=""Poison"">veneno</style> recibido, {13} <style=""Good"">plaga</style>.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","Sempre que um <style=Skill>ataque</style> de <style=KeyWord>Flor Sagrada</style> é lançado:
 {0} <style=""Good"">de Peste</style> para cada custo base de {1} e {2}.
@@ -1408,10 +1392,8 @@ Cada ponto de <style=""Good"">Peste</style> concede:
 Sempre que a habilidade {3} é lançada, a <style=""Good"">Peste</style> é redefinida.
 Sempre que o Herói <style=bad>sofrer um ataque</style>, a habilidade {3} é lançada <style=keyword>automaticamente</style>, e o Herói recebe envenenamento equivalente a {10} do <style=""Poison"">Envenenamento</style> atual.
 
-<style=Perk>Bonificação Corrompida: Vitalidade</style>
-{14} de {15} Máx.
-A cada {12} de dano de <style=""Poison"">Envenenamento</style> sofrido, recebe {13} permanentemente.
-<style=Attenuated>A bonificação dura enquanto o Herói continuar com o item.</style>
+<style=Perk>Bonificação Corrompida: Ritual Gu</style>
+A cada {12} de dano de <style=""Poison"">Envenenamento</style> sofrido, {13} <style=""Good"">Peste</style>.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","<style=KeyWord>신성한 꽃</style> <style=Skill>공격</style>이 시전될 때마다:
 {1} 및 {2} 기본 비용 하나당 <style=""Good"">역병</style> {0}
@@ -1421,52 +1403,49 @@ A cada {12} de dano de <style=""Poison"">Envenenamento</style> sofrido, recebe {
 {3}이(가) 시전될 때마다 <style=""Good"">역병</style> 초기화
 영웅이 공격에 <style=bad>적중당할</style> 때마다 {3} <style=keyword>자동</style> 시전, 영웅은 현재 <style=""Poison"">중독</style>의 {10}만큼 중독
 
-<style=Perk>오염된 보너스: 기력</style>
-최대 {15} {14}
-<style=""Poison"">중독</style> 피해를 {12} 받을 때마다 영구적으로 {13} 획득
-<style=Attenuated>보너스는 영웅이 이 아이템을 보유하고 있는 동안 계속 지속</style>
+<style=Perk>오염된 보너스: 고독 의식</style>
+<style=""Poison"">중독</style> 피해를 {12} 받을 때마다 {13} <style=""Good"">역병</style>
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
 PerkDescription_Duelist,"Whenever an <style=KeyWord>isolated</style> unit is <style=KeyWord>killed</style>:
 {0}, up to {3}.
 <style=KeyWord>Hitting</style> a <style=Bad>non</style> <style=KeyWord>isolated</style> unit decreases this bonus by {5}, down to <style=KeyWordNb>0%</style>.
 <style=Attenuated>This modifier is reset every morning.</style>","Quand une unité <style=KeyWord>isolée</style> est <style=KeyWord>tuée</style><nbsp>:
-{0}, ou {1} lors de l'utilisation de {2}, jusqu'à un maximum de {3}.
+{0}, jusqu'à {3}.
 <style=KeyWord>Toucher</style> une unité <style=Bad>non</style> <style=KeyWord>isolée</style> réduit ce bonus de {5}, jusqu'à <style=KeyWordNb>0%</style>.
 <style=Attenuated>Ce modificateur est réinitialisé tous les matins.</style>","每当<style=KeyWord>击杀</style>一名<style=KeyWord>落单的</style>敌人，可获得：
-{0}，当使用{2}时{1}，最高可达到{3}
+{0}，最高可达到{3}。
 
 <style=KeyWord>攻击</style><style=Bad>并未</style><style=KeyWord>落单</style>的敌人时，此加成将降低{5}，下限为<style=KeyWordNb>0%</style>。
 <style=Attenuated>此加成在每个白天也会重置。</style>","每當<style=KeyWord>擊殺</style>一名<style=KeyWord>落單的</style>敵人，可獲得：
-{0}，當使用{2}時{1}，最高可達到{3}
+{0}，最高可達到{3}。
 
 <style=KeyWord>攻擊</style><style=Bad>並未</style><style=KeyWord>落單</style>的敵人時，此加成將降低{5}，下限為<style=KeyWordNb>0%</style>。
 <style=Attenuated>此加成在每個白天也會重置。</style>","<style=KeyWord>孤立</style>したユニットを<style=KeyWord>倒す</style>度: 
-{0}、または{2}使用時に{1}で最大{3}。
+{0}、最大{3}。
 
-<style=KeyWord>孤立</style><style=Bad>していない</style>ユニットに<style=KeyWord>攻撃する</style>とボーナスが-{5}になる(<style=KeyWordNb>0%</style>になるまで続く)とリセットされる。
+<style=KeyWord>孤立</style><style=Bad>していない</style>ユニットに<style=KeyWord>当たる</style>とこのボーナスが{5}減少する(<style=KeyWordNb>0%</style>まで)。
 <style=Attenuated>この効果は毎朝リセットされる。</style>","Каждый раз, когда герой <style=KeyWord>убивает</style> <style=KeyWord>изолированного</style> врага, он получает бонус:
-{0}, либо {1} {2}, но не более {3}.
+{0}, но не более {3}.
 
 Если герой <style=KeyWord>попадёт</style> по <style=Bad>не</style><style=KeyWord>изолированному</style> врагу, эффект уменьшается на {5}, вплоть до <style=KeyWordNb>0%</style>.
 <style=Attenuated>Эффект сбрасывается каждое утро.</style>","За <style=KeyWord>вбивство</style> <style=KeyWord>відокремленого</style> монстра:
-{0}, або {1}, якщо застосована {2}, не більше {3}.
+{0}, не більше {3}.
  
 <style=KeyWord>Удар</style> по <style=Bad>не</style> <style=KeyWord>відокремленому</style> ворогу зменшує цей бонус на {5}, але не менше <style=KeyWordNb>0%</style>.
 <style=Attenuated>Щоранку цей модифікатор скидається.</style>","Wenn eine <style=KeyWord>isolierter</style> Gegner <style=KeyWord>getötet</style> wird:
-{0}, oder {1} wenn {2} genutzt wird, bis zu {3}.
-
-Das <style=KeyWord>Treffen</style> eines <style=Bad>nicht</style> <style=KeyWord>isolierten</style> Gegners, setzt den Bonus zurück.
+{0}, bis zu {3}.
+<style=KeyWord>Treffen</style> eines <style=Bad>nicht</style> <style=KeyWord>isolierten</style> Gegners verringert diesen Bonus um {5}, bis auf <style=KeyWordNb>0%</style>.
 <style=Attenuated>Dieser Modifikator wird jeden Morgen zurückgesetzt.</style>","Cuando una unidad <style=KeyWord>aislada</style> <style=KeyWord>muere</style>:
- {0} o {1} al usar {2}, hasta el {3}.
+ {0}, hasta el {3}.
  
  <style=KeyWord>Golpear a</style> una unidad que <style=Bad>no esté</style> <style=KeyWord>aislada</style> reduce la bonificación un {5} hasta llegar al <style=KeyWordNb>0%</style>.
  <style=Attenuated>Este modificador se reinicia cada mañana.</style>","Sempre que uma unidade <style=KeyWord>isolada</style> for <style=KeyWord>abatida</style>:
-{0}, ou {1} quando usar {2}, até o máximo de {3}.
+{0}, até o máximo de {3}.
 
 <style=KeyWord>Acertar</style> uma unidade <style=Bad>não</style> <style=KeyWord>isolada</style> reduzirá esta bonificação em {5}, até <style=KeyWordNb>0%</style>.
 <style=Attenuated>Este modificador é redefinido todas as manhãs.</style>","<style=KeyWord>고립</style>된 유닛을 <style=KeyWord>처치</style>할 때마다:
-{0} ({2} 사용 시 {1}, 최대 {3})
+{0}, 최대 {3}.
 
 <style=KeyWord>고립</style>되지 <style=Bad>않은</style> 유닛이 <style=KeyWord>공격</style>에 맞으면 보너스 {5} 감소 (최대 <style=KeyWordNb>0%</style>까지)
 <style=Attenuated>보정치는 매일 아침 초기화</style>"
@@ -1482,403 +1461,403 @@ PerkDescription_Fatality,"Unlocks the {0} skill, allowing to <style=Execute>Exec
 ","{0} 스킬 잠금 해제: {1}타일 이내의 <size=14><sprite name=""Wound2""></size><style=""Bad"">심한 부상</style>을 당한 모든 유닛 <style=Execute>처형</style> 가능.
 "
 PerkDescription_ViciousKiller,"Unlocks the {0} skill, allowing to <style=Execute>Execute</style> any units in range of {1} who is <size=14><sprite name=""Wound1""></size><style=""Bad"">Wounded</style>.
-<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Débloque la compétence {0}, donnant la possibilité d'<style=Execute>Exécuter</style> n'importe quelle unité <size=14><sprite name=""Wound2""></size><style=""Bad"">Grièvement Blessé</style> dans une portée de {1}.
-<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","解锁{0}技能，该技能可<style=Execute>处决</style>{1}格范围内任何处于<size=14><sprite name=""Wound2""></size><style=""Bad"">重伤</style>状态的单位。
+<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Débloque la compétence {0}, donnant la possibilité d'<style=Execute>Exécuter</style> n'importe quelle unité <size=14><sprite name=""Wound1""></size><style=""Bad"">Blessé</style> dans une portée de {1}.
+<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","解锁{0}技能，该技能可<style=Execute>处决</style>{1}格范围内任何处于<size=14><sprite name=""Wound1""></size><style=""Bad"">受伤</style>状态的单位。
 
-<style=""ElfIcon""></style><style=""ElfText"">《琥珀幽森的精灵》DLC</style>","解鎖{0}技能，可<style=Execute>處決</style>{1}格範圍內<size=14><sprite name=""Wound2""></size><style=""Bad"">重傷</style>的單位。
+<style=""ElfIcon""></style><style=""ElfText"">《琥珀幽森的精灵》DLC</style>","解鎖{0}技能，可<style=Execute>處決</style>{1}格範圍內<size=14><sprite name=""Wound1""></size><style=""Bad"">受傷</style>的單位。
 
-<style=""ElfIcon""></style><style=""ElfText"">〈琥珀幽森的精靈〉DLC</style>","<size=14><sprite name=""Wound2""></size><style=""Bad"">重傷</style>かつ{1}距離内にいるユニット全てを<style=Execute>処刑</style>するスキル「{0}」が解放される。
+<style=""ElfIcon""></style><style=""ElfText"">〈琥珀幽森的精靈〉DLC</style>","<size=14><sprite name=""Wound1""></size><style=""Bad"">負傷</style>かつ{1}距離内にいるユニット全てを<style=Execute>処刑</style>するスキル「{0}」が解放される。
 
-<style=""ElfIcon""></style><style=""ElfText"">アンバーワルドのエルフDLC</style>","Даёт герою навык ""{0}"", позволяя <style=Execute>казнить</style> любого врага с <size=14><sprite name=""Wound2""></size><style=""Bad"">глубокими ранами</style> в пределах {1} яч.
+<style=""ElfIcon""></style><style=""ElfText"">アンバーワルドのエルフDLC</style>","Даёт герою навык ""{0}"", позволяя <style=Execute>казнить</style> любого врага с <size=14><sprite name=""Wound1""></size><style=""Bad"">ранами</style> в пределах {1} яч.
 
-<style=""ElfIcon""></style><style=""ElfText"">Дополнительный контент ""Elves of Amberwald""</style>","Розблоковує вміння «{0}», що дозволяє у радіусі {1} <style=Execute>страчувати</style> ворогів, які <size=14><sprite name=""Wound2""></size><style=""Bad"">сильно поранені</style>.
+<style=""ElfIcon""></style><style=""ElfText"">Дополнительный контент ""Elves of Amberwald""</style>","Розблоковує вміння «{0}», що дозволяє у радіусі {1} <style=Execute>страчувати</style> ворогів, які <size=14><sprite name=""Wound1""></size><style=""Bad"">поранені</style>.
 
-<style=""ElfIcon""></style><style=""ElfText"">Доповнення Elves of Amberwald</style>","Schaltet die Fähigkeit {0} frei, die es ermöglicht, jede <size=14><sprite name=""Wound2""></size><style=""Bad"">schwer verwundete</style> Einheit innerhalb einer Reichweite von {1} <style=Execute>hinzurichten</style>.
+<style=""ElfIcon""></style><style=""ElfText"">Доповнення Elves of Amberwald</style>","Schaltet die Fähigkeit {0} frei, die es ermöglicht, jede <size=14><sprite name=""Wound1""></size><style=""Bad"">verwundete</style> Einheit innerhalb einer Reichweite von {1} <style=Execute>hinzurichten</style>.
 
-<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Desbloquea la habilidad {0}, lo cual permite <style=Execute>ejecutar</style> a cualquier unidad a una distancia máxima de {1} que tenga una <size=14><sprite name=""Wound2""></size><style=""Bad"">herida de gravedad</style>.
+<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Desbloquea la habilidad {0}, lo cual permite <style=Execute>ejecutar</style> a cualquier unidad a una distancia máxima de {1} que esté <size=14><sprite name=""Wound1""></size><style=""Bad"">herida</style>.
 
-<style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","Desbloqueia a habilidade {0}, permitindo <style=Execute>Executar</style> qualquer unidade em uma distância de até {1} e que está com um <size=14><sprite name=""Wound2""></size><style=""Bad"">ferimento grave</style>.
+<style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","Desbloqueia a habilidade {0}, permitindo <style=Execute>Executar</style> qualquer unidade em uma distância de até {1} e que está com um <size=14><sprite name=""Wound1""></size><style=""Bad"">ferimento</style>.
 
-<style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","{0} 스킬 잠금 해제: {1}타일 이내의 <size=14><sprite name=""Wound2""></size><style=""Bad"">심한 부상</style>을 당한 모든 유닛 <style=Execute>처형</style> 가능.
+<style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","{0} 스킬 잠금 해제: {1}타일 이내의 <size=14><sprite name=""Wound1""></size><style=""Bad"">부상</style>을 당한 모든 유닛 <style=Execute>처형</style> 가능.
 
 <style=""ElfIcon""></style><style=""ElfText"">암버발트의 엘프 DLC</style>"
-GlyphDescription_DefensesSpecializedTraps,"All types of <style=DarkShopKW>Traps</style> and <style=DarkShopKW>Seeds</style> have their <style=DarkShopKW>skill improved</style>, able to affect more targets.",Tous les types de <style=DarkShopKW>pièges</style> ont des <style=DarkShopKW>compétences améliorées</style> leur permettant de toucher plus de cibles.,所有类型的<style=DarkShopKW>陷阱</style>其<style=DarkShopKW>技能都得到了升级</style>，能够作用到更多的目标上。,所有類型的<style=DarkShopKW>陷阱</style>其<style=DarkShopKW>技能都得到了升級</style>，能夠作用到更多的目標上。,<style=DarkShopKW>トラップ</style>全種類の<style=DarkShopKW>スキルが向上</style>し、より多くの標的に影響を与える。,Все <style=DarkShopKW>ловушки</style> становятся <style=DarkShopKW>более эффективными</style> и могут поражать больше врагов.,Всі типи <style=DarkShopKW>пасток</style> мають <style=DarkShopKW>покращене вміння</style> і здатні ушкодити більше цілей.,Alle Arten von <style=DarkShopKW>Fallen</style> haben ihre <style=DarkShopKW>Fähigkeiten verbessert</style> und können nun mehr Ziele treffen.,Todos los tipos de <style=DarkShopKW>trampas</style> tienen <style=DarkShopKW>habilidades mejoradas</style> y afectan a más objetivos.,"Todos os tipos de <style=DarkShopKW>Armadilhas</style> têm suas <style=DarkShopKW>habilidades melhoradas</style>, podendo afetar mais alvos.",모든 유형의 <style=DarkShopKW>함정</style>이 지닌 <style=DarkShopKW>스킬이 향상</style>되어 더 많은 대상에 영향을 미칠 수 있습니다.
+GlyphDescription_DefensesSpecializedTraps,"All types of <style=DarkShopKW>Traps</style> and <style=DarkShopKW>Seeds</style> have their <style=DarkShopKW>skill improved</style>, able to affect more targets.",Tous les types de <style=DarkShopKW>pièges</style> et de <style=DarkShopKW>bourgeons</style> ont des <style=DarkShopKW>compétences améliorées</style> leur permettant de toucher plus de cibles.,所有类型的<style=DarkShopKW>陷阱</style>和<style=DarkShopKW>种子</style>其<style=DarkShopKW>技能都得到了升级</style>，能够作用到更多的目标上。,所有類型的<style=DarkShopKW>陷阱</style>和<style=DarkShopKW>種子</style>其<style=DarkShopKW>技能都得到了升級</style>，能夠作用到更多的目標上。,<style=DarkShopKW>トラップ</style>と<style=DarkShopKW>シード</style>全種類の<style=DarkShopKW>スキルが向上</style>し、より多くの標的に影響を与える。,Все <style=DarkShopKW>ловушки</style> и <style=DarkShopKW>семена</style> становятся <style=DarkShopKW>более эффективными</style> и могут поражать больше врагов.,Всі типи <style=DarkShopKW>пасток</style> та <style=DarkShopKW>зерен</style> мають <style=DarkShopKW>покращене вміння</style> і здатні ушкодити більше цілей.,Alle Arten von <style=DarkShopKW>Fallen</style> und <style=DarkShopKW>Saaten</style> haben ihre <style=DarkShopKW>Fähigkeiten verbessert</style> und können nun mehr Ziele treffen.,Todos los tipos de <style=DarkShopKW>trampas</style> y <style=DarkShopKW>semillas</style> tienen <style=DarkShopKW>habilidades mejoradas</style> y afectan a más objetivos.,"Todos os tipos de <style=DarkShopKW>Armadilhas</style> e <style=DarkShopKW>Sementes</style> têm suas <style=DarkShopKW>habilidades melhoradas</style>, podendo afetar mais alvos.",모든 유형의 <style=DarkShopKW>함정</style> 및 <style=DarkShopKW>씨앗</style>이 지닌 <style=DarkShopKW>스킬이 향상</style>되어 더 많은 대상에 영향을 미칠 수 있습니다.
 GlyphDescription_ItemWeaponMoreSword,"<style=DarkShopKW>Swords</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.","Les <style=DarkShopKW>Epées</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.","<style=DarkShopKW>剑</style>出现概率提高。
-不会再出现“普通”品质的此类武器。","<style=DarkShopKW>劍</style>出現機率提高。
-此類武器不會出現「普通」品質。","<style=DarkShopKW>剣</style>の出現率が上がる。
-「コモン」にはならないアイテムです。","<style=DarkShopKW>Мечи</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.","<style=DarkShopKW>Мечі</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.","<style=DarkShopKW>Schwerter</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>espadas</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.","<style=DarkShopKW>Espadas</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.","<style=DarkShopKW>검</style>이 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다."
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.","<style=DarkShopKW>剑</style>出现概率提高。
+不会再出现“普通”和“罕见”品质的此类武器。","<style=DarkShopKW>劍</style>出現機率提高。
+此類武器不會出現「普通」和「罕見」品質。","<style=DarkShopKW>剣</style>の出現率が上がる。
+「コモン」と「アンコモン」にはならないアイテムです。","<style=DarkShopKW>Мечи</style> будут встречаться чаще.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.","<style=DarkShopKW>Мечі</style> з'являються частіше.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.","<style=DarkShopKW>Schwerter</style> erscheinen öfter.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>espadas</style> aparecen con mayor frecuencia.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.","<style=DarkShopKW>Espadas</style> aparecem com mais frequência.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.","<style=DarkShopKW>검</style>이 더 자주 등장합니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다."
 GlyphDescription_ItemWeaponMoreAxe,"<style=DarkShopKW>Axes</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.","Les <style=DarkShopKW>Haches</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.","<style=DarkShopKW>斧</style>出现概率提高。
-不会再出现“普通”品质的此类武器。","<style=DarkShopKW>戰斧</style>出現機率提高。
-此類武器不會出現「普通」品質。","<style=DarkShopKW>斧</style>の出現率が上がる。
-「コモン」にはならないアイテムです。","<style=DarkShopKW>Топоры</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.","<style=DarkShopKW>Сокири</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.","<style=DarkShopKW>Äxte</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>hachas</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.","<style=DarkShopKW>Machados</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.","<style=DarkShopKW>도끼</style>가 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다."
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.","<style=DarkShopKW>斧</style>出现概率提高。
+不会再出现“普通”和“罕见”品质的此类武器。","<style=DarkShopKW>戰斧</style>出現機率提高。
+此類武器不會出現「普通」和「罕見」品質。","<style=DarkShopKW>斧</style>の出現率が上がる。
+「コモン」と「アンコモン」にはならないアイテムです。","<style=DarkShopKW>Топоры</style> будут встречаться чаще.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.","<style=DarkShopKW>Сокири</style> з'являються частіше.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.","<style=DarkShopKW>Äxte</style> erscheinen öfter.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>hachas</style> aparecen con mayor frecuencia.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.","<style=DarkShopKW>Machados</style> aparecem com mais frequência.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.","<style=DarkShopKW>도끼</style>가 더 자주 등장합니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다."
 GlyphDescription_ItemWeaponMoreDagger,"<style=DarkShopKW>Daggers</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.","Les <style=DarkShopKW>Dagues</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.","<style=DarkShopKW>匕首</style>出现概率提高。
-不会再出现“普通”品质的此类武器。","<style=DarkShopKW>匕首</style>出現機率提高。
-此類武器不會出現「普通」品質。","<style=DarkShopKW>短剣</style>の出現率が上がる。
-「コモン」にはならないアイテムです。","<style=DarkShopKW>Кинжалы</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.","<style=DarkShopKW>Кинджали</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.","<style=DarkShopKW>Dolche</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>dagas</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.","<style=DarkShopKW>Adagas</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.","<style=DarkShopKW>단검</style>이 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다."
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.","<style=DarkShopKW>匕首</style>出现概率提高。
+不会再出现“普通”和“罕见”品质的此类武器。","<style=DarkShopKW>匕首</style>出現機率提高。
+此類武器不會出現「普通」和「罕見」品質。","<style=DarkShopKW>短剣</style>の出現率が上がる。
+「コモン」と「アンコモン」にはならないアイテムです。","<style=DarkShopKW>Кинжалы</style> будут встречаться чаще.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.","<style=DarkShopKW>Кинджали</style> з'являються частіше.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.","<style=DarkShopKW>Dolche</style> erscheinen öfter.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>dagas</style> aparecen con mayor frecuencia.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.","<style=DarkShopKW>Adagas</style> aparecem com mais frequência.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.","<style=DarkShopKW>단검</style>이 더 자주 등장합니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다."
 GlyphDescription_ItemWeaponMoreHammer,"<style=DarkShopKW>Hammers</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.","Les <style=DarkShopKW>Marteaux</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.","<style=DarkShopKW>锤子</style>出现概率提高。
-不会再出现“普通”品质的此类武器。","<style=DarkShopKW>戰錘</style>出現機率提高。
-此類武器不會出現「普通」品質。","<style=DarkShopKW>ハンマー</style>の出現率が上がる。
-「コモン」にはならないアイテムです。","<style=DarkShopKW>Молоты</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.","<style=DarkShopKW>Молоти</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.","<style=DarkShopKW>Hämmer</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.","Los <style=DarkShopKW>martillos</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.","<style=DarkShopKW>Martelos</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.","<style=DarkShopKW>망치</style>가 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다."
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.","<style=DarkShopKW>锤子</style>出现概率提高。
+不会再出现“普通”和“罕见”品质的此类武器。","<style=DarkShopKW>戰錘</style>出現機率提高。
+此類武器不會出現「普通」和「罕見」品質。","<style=DarkShopKW>ハンマー</style>の出現率が上がる。
+「コモン」と「アンコモン」にはならないアイテムです。","<style=DarkShopKW>Молоты</style> будут встречаться чаще.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.","<style=DarkShopKW>Молоти</style> з'являються частіше.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.","<style=DarkShopKW>Hämmer</style> erscheinen öfter.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.","Los <style=DarkShopKW>martillos</style> aparecen con mayor frecuencia.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.","<style=DarkShopKW>Martelos</style> aparecem com mais frequência.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.","<style=DarkShopKW>망치</style>가 더 자주 등장합니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다."
 GlyphDescription_ItemWeaponMore2HSword,"<style=DarkShopKW>Two-Handed Swords</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.","Les <style=DarkShopKW>Epées à deux mains</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.","<style=DarkShopKW>双手剑</style>出现概率提高。
-不会再出现“普通”品质的此类武器。","<style=DarkShopKW>雙手劍</style>出現機率提高。
-此類武器不會出現「普通」品質。","<style=DarkShopKW>両手剣</style>の出現率が上がる。
-「コモン」にはならないアイテムです。","<style=DarkShopKW>Двуручные мечи</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.","<style=DarkShopKW>Дворучні мечі</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.","<style=DarkShopKW>Zweihandschwerter</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>espadas a dos manos</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.","<style=DarkShopKW>Espadas de Duas Mãos</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.","<style=DarkShopKW>양손검</style>이 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다."
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.","<style=DarkShopKW>双手剑</style>出现概率提高。
+不会再出现“普通”和“罕见”品质的此类武器。","<style=DarkShopKW>雙手劍</style>出現機率提高。
+此類武器不會出現「普通」和「罕見」品質。","<style=DarkShopKW>両手剣</style>の出現率が上がる。
+「コモン」と「アンコモン」にはならないアイテムです。","<style=DarkShopKW>Двуручные мечи</style> будут встречаться чаще.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.","<style=DarkShopKW>Дворучні мечі</style> з'являються частіше.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.","<style=DarkShopKW>Zweihandschwerter</style> erscheinen öfter.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>espadas a dos manos</style> aparecen con mayor frecuencia.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.","<style=DarkShopKW>Espadas de Duas Mãos</style> aparecem com mais frequência.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.","<style=DarkShopKW>양손검</style>이 더 자주 등장합니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다."
 GlyphDescription_ItemWeaponMore2HAxe,"<style=DarkShopKW>Great Axes</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.","Les <style=DarkShopKW>Haches de guerre</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.","<style=DarkShopKW>大斧</style>出现概率提高。
-不会再出现“普通”品质的此类武器。","<style=DarkShopKW>雙手斧</style>出現機率提高。
-此類武器不會出現「普通」品質。","<style=DarkShopKW>大斧</style>の出現率が上がる。
-「コモン」にはならないアイテムです。","<style=DarkShopKW>Большие топоры</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.","<style=DarkShopKW>Бойові сокири</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.","<style=DarkShopKW>Großäxte</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>hachas de guerra</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.","<style=DarkShopKW>Machados Gigantes</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.","<style=DarkShopKW>대형 도끼</style>가 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다."
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.","<style=DarkShopKW>大斧</style>出现概率提高。
+不会再出现“普通”和“罕见”品质的此类武器。","<style=DarkShopKW>雙手斧</style>出現機率提高。
+此類武器不會出現「普通」和「罕見」品質。","<style=DarkShopKW>大斧</style>の出現率が上がる。
+「コモン」と「アンコモン」にはならないアイテムです。","<style=DarkShopKW>Большие топоры</style> будут встречаться чаще.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.","<style=DarkShopKW>Бойові сокири</style> з'являються частіше.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.","<style=DarkShopKW>Großäxte</style> erscheinen öfter.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>hachas de guerra</style> aparecen con mayor frecuencia.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.","<style=DarkShopKW>Machados Gigantes</style> aparecem com mais frequência.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.","<style=DarkShopKW>대형 도끼</style>가 더 자주 등장합니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다."
 GlyphDescription_ItemWeaponMore2HHammer,"<style=DarkShopKW>Sledgehammers</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.","Les <style=DarkShopKW>Masses</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.","<style=DarkShopKW>大锤</style>出现概率提高。
-不会再出现“普通”品质的此类武器。","<style=DarkShopKW>雙手錘</style>出現機率提高。
-此類武器不會出現「普通」品質。","<style=DarkShopKW>スレッジハンマー</style>の出現率が上がる。
-「コモン」にはならないアイテムです。","<style=DarkShopKW>Кувалды</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.","<style=DarkShopKW>Кувалди</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.","<style=DarkShopKW>Vorschlaghämmer</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>almádenas</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.","<style=DarkShopKW>Marretas</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.","<style=DarkShopKW>대형 망치</style>가 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다."
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.","<style=DarkShopKW>大锤</style>出现概率提高。
+不会再出现“普通”和“罕见”品质的此类武器。","<style=DarkShopKW>雙手錘</style>出現機率提高。
+此類武器不會出現「普通」和「罕見」品質。","<style=DarkShopKW>スレッジハンマー</style>の出現率が上がる。
+「コモン」と「アンコモン」にはならないアイテムです。","<style=DarkShopKW>Кувалды</style> будут встречаться чаще.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.","<style=DarkShopKW>Кувалди</style> з'являються частіше.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.","<style=DarkShopKW>Vorschlaghämmer</style> erscheinen öfter.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>almádenas</style> aparecen con mayor frecuencia.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.","<style=DarkShopKW>Marretas</style> aparecem com mais frequência.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.","<style=DarkShopKW>대형 망치</style>가 더 자주 등장합니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다."
 GlyphDescription_ItemWeaponMoreSpear,"<style=DarkShopKW>Spears</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.","Les <style=DarkShopKW>Lances</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.","<style=DarkShopKW>长矛</style>出现概率提高。
-不会再出现“普通”品质的此类武器。","<style=DarkShopKW>長矛</style>出現機率提高。
-此類武器不會出現「普通」品質。","<style=DarkShopKW>槍</style>の出現率が上がる。
-「コモン」にはならないアイテムです。","<style=DarkShopKW>Копья</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.","<style=DarkShopKW>Списи</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.","<style=DarkShopKW>Speere</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>lanzas</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.","<style=DarkShopKW>Lanças</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.","<style=DarkShopKW>창</style>이 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다."
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.","<style=DarkShopKW>长矛</style>出现概率提高。
+不会再出现“普通”和“罕见”品质的此类武器。","<style=DarkShopKW>長矛</style>出現機率提高。
+此類武器不會出現「普通」和「罕見」品質。","<style=DarkShopKW>槍</style>の出現率が上がる。
+「コモン」と「アンコモン」にはならないアイテムです。","<style=DarkShopKW>Копья</style> будут встречаться чаще.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.","<style=DarkShopKW>Списи</style> з'являються частіше.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.","<style=DarkShopKW>Speere</style> erscheinen öfter.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>lanzas</style> aparecen con mayor frecuencia.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.","<style=DarkShopKW>Lanças</style> aparecem com mais frequência.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.","<style=DarkShopKW>창</style>이 더 자주 등장합니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다."
 GlyphDescription_ItemWeaponMoreMagicWand,"<style=DarkShopKW>Wands</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.","Les <style=DarkShopKW>Baguettes</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.","<style=DarkShopKW>魔杖</style>出现概率提高。
-不会再出现“普通”品质的此类武器。","<style=DarkShopKW>魔杖</style>出現機率提高。
-此類武器不會出現「普通」品質。","<style=DarkShopKW>杖</style>の出現率が上がる。
-「コモン」にはならないアイテムです。","<style=DarkShopKW>Жезлы</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.","<style=DarkShopKW>Чарівні палички</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.","<style=DarkShopKW>Zauberstäbe</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>varitas</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.","<style=DarkShopKW>Varinhas</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.","<style=DarkShopKW>마법봉</style>이 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다."
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.","<style=DarkShopKW>魔杖</style>出现概率提高。
+不会再出现“普通”和“罕见”品质的此类武器。","<style=DarkShopKW>魔杖</style>出現機率提高。
+此類武器不會出現「普通」和「罕見」品質。","<style=DarkShopKW>杖</style>の出現率が上がる。
+「コモン」と「アンコモン」にはならないアイテムです。","<style=DarkShopKW>Жезлы</style> будут встречаться чаще.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.","<style=DarkShopKW>Чарівні палички</style> з'являються частіше.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.","<style=DarkShopKW>Zauberstäbe</style> erscheinen öfter.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>varitas</style> aparecen con mayor frecuencia.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.","<style=DarkShopKW>Varinhas</style> aparecem com mais frequência.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.","<style=DarkShopKW>마법봉</style>이 더 자주 등장합니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다."
 GlyphDescription_ItemWeaponMoreMagicOrb,"<style=DarkShopKW>Magic Orbs</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.","Les <style=DarkShopKW>Orbes Magiques</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.","<style=DarkShopKW>魔法球</style>出现概率提高。
-不会再出现“普通”品质的此类武器。","<style=DarkShopKW>魔法球</style>出現機率提高。
-此類武器不會出現「普通」品質。","<style=DarkShopKW>マジックオーブ</style>の出現率が上がる。
-「コモン」にはならないアイテムです。","<style=DarkShopKW>Магические сферы</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.","<style=DarkShopKW>Чарівні кулі</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.","<style=DarkShopKW>Magische Kugeln</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>esferas mágicas</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.","<style=DarkShopKW>Orbes Mágicos</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.","<style=DarkShopKW>마법 보주</style>가 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다."
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.","<style=DarkShopKW>魔法球</style>出现概率提高。
+不会再出现“普通”和“罕见”品质的此类武器。","<style=DarkShopKW>魔法球</style>出現機率提高。
+此類武器不會出現「普通」和「罕見」品質。","<style=DarkShopKW>マジックオーブ</style>の出現率が上がる。
+「コモン」と「アンコモン」にはならないアイテムです。","<style=DarkShopKW>Магические сферы</style> будут встречаться чаще.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.","<style=DarkShopKW>Чарівні кулі</style> з'являються частіше.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.","<style=DarkShopKW>Magische Kugeln</style> erscheinen öfter.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>esferas mágicas</style> aparecen con mayor frecuencia.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.","<style=DarkShopKW>Orbes Mágicos</style> aparecem com mais frequência.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.","<style=DarkShopKW>마법 보주</style>가 더 자주 등장합니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다."
 GlyphDescription_ItemWeaponMoreMagicScepter,"<style=DarkShopKW>Scepters</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.","Les <style=DarkShopKW>Sceptres</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.","<style=DarkShopKW>权杖</style>出现概率提高。
-不会再出现“普通”品质的此类武器。","<style=DarkShopKW>權杖</style>出現機率提高。
-此類武器不會出現「普通」品質。","<style=DarkShopKW>セプター</style>の出現率が上がる。
-「コモン」にはならないアイテムです。","<style=DarkShopKW>Скипетры</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.","<style=DarkShopKW>Скіпетри</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.","<style=DarkShopKW>Zepter</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.","Los <style=DarkShopKW>cetros</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.","<style=DarkShopKW>Cetros</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.","<style=DarkShopKW>마법 홀</style>이 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다."
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.","<style=DarkShopKW>权杖</style>出现概率提高。
+不会再出现“普通”和“罕见”品质的此类武器。","<style=DarkShopKW>權杖</style>出現機率提高。
+此類武器不會出現「普通」和「罕見」品質。","<style=DarkShopKW>セプター</style>の出現率が上がる。
+「コモン」と「アンコモン」にはならないアイテムです。","<style=DarkShopKW>Скипетры</style> будут встречаться чаще.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.","<style=DarkShopKW>Скіпетри</style> з'являються частіше.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.","<style=DarkShopKW>Zepter</style> erscheinen öfter.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.","Los <style=DarkShopKW>cetros</style> aparecen con mayor frecuencia.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.","<style=DarkShopKW>Cetros</style> aparecem com mais frequência.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.","<style=DarkShopKW>마법 홀</style>이 더 자주 등장합니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다."
 GlyphDescription_ItemWeaponMoreTomeOfMagic,"<style=DarkShopKW>Tomes of Secrets</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.","Les <style=DarkShopKW>Tomes des secrets</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.","<style=DarkShopKW>秘卷</style>出现概率提高。
-不会再出现“普通”品质的此类武器。","<style=DarkShopKW>秘卷</style>出現機率提高。
-此類武器不會出現「普通」品質。","<style=DarkShopKW>魔導書</style>の出現率が上がる。
-「コモン」にはならないアイテムです。","<style=DarkShopKW>Книги Тайн</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.","<style=DarkShopKW>Книги секретів</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.","<style=DarkShopKW>Folianten der Geheimnisse</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.","Los <style=DarkShopKW>tomos de los secretos</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.","<style=DarkShopKW>Tomos dos Segredos</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.","<style=DarkShopKW>비전서</style>가 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다."
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.","<style=DarkShopKW>秘卷</style>出现概率提高。
+不会再出现“普通”和“罕见”品质的此类武器。","<style=DarkShopKW>秘卷</style>出現機率提高。
+此類武器不會出現「普通」和「罕見」品質。","<style=DarkShopKW>魔導書</style>の出現率が上がる。
+「コモン」と「アンコモン」にはならないアイテムです。","<style=DarkShopKW>Книги Тайн</style> будут встречаться чаще.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.","<style=DarkShopKW>Книги секретів</style> з'являються частіше.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.","<style=DarkShopKW>Folianten der Geheimnisse</style> erscheinen öfter.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.","Los <style=DarkShopKW>tomos de los secretos</style> aparecen con mayor frecuencia.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.","<style=DarkShopKW>Tomos dos Segredos</style> aparecem com mais frequência.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.","<style=DarkShopKW>비전서</style>가 더 자주 등장합니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다."
 GlyphDescription_ItemWeaponMoreMagicStaff,"<style=DarkShopKW>Power Staffs</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.","Les <style=DarkShopKW>Bâtons de puissance</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.","<style=DarkShopKW>能量法杖</style>出现概率提高。
-不会再出现“普通”品质的此类武器。","<style=DarkShopKW>能量法杖</style>出現機率提高。
-此類武器不會出現「普通」品質。","<style=DarkShopKW>パワースタッフ</style>の出現率が上がる。
-「コモン」にはならないアイテムです。","<style=DarkShopKW>Посохи силы</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.","<style=DarkShopKW>Посохи</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.","<style=DarkShopKW>Machtstäbe</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.","Los <style=DarkShopKW>báculos</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.","<style=DarkShopKW>Cajados de Poder</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.","<style=DarkShopKW>전투 지팡이</style>가 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다."
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.","<style=DarkShopKW>能量法杖</style>出现概率提高。
+不会再出现“普通”和“罕见”品质的此类武器。","<style=DarkShopKW>能量法杖</style>出現機率提高。
+此類武器不會出現「普通」和「罕見」品質。","<style=DarkShopKW>パワースタッフ</style>の出現率が上がる。
+「コモン」と「アンコモン」にはならないアイテムです。","<style=DarkShopKW>Посохи силы</style> будут встречаться чаще.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.","<style=DarkShopKW>Посохи</style> з'являються частіше.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.","<style=DarkShopKW>Machtstäbe</style> erscheinen öfter.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.","Los <style=DarkShopKW>báculos</style> aparecen con mayor frecuencia.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.","<style=DarkShopKW>Cajados de Poder</style> aparecem com mais frequência.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.","<style=DarkShopKW>전투 지팡이</style>가 더 자주 등장합니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다."
 GlyphDescription_ItemWeaponMoreDruidicStaff,"<style=DarkShopKW>Druidic Staffs</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.","Les <style=DarkShopKW>Bâtons druidiques</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.","<style=DarkShopKW>德鲁伊法杖</style>出现概率提高。
-不会再出现“普通”品质的此类武器。","<style=DarkShopKW>德魯伊法杖</style>出現機率提高。
-此類武器不會出現「普通」品質。","<style=DarkShopKW>ドルイドの杖</style>の出現率が上がる。
-「コモン」にはならないアイテムです。","<style=DarkShopKW>Посохи друидов</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.","<style=DarkShopKW>Посохи друїда</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.","<style=DarkShopKW>Druidenstäbe</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.","Los <style=DarkShopKW>bastones de druida</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.","<style=DarkShopKW>Cajados Druidas</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.","<style=DarkShopKW>드루이드 지팡이</style>가 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다."
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.","<style=DarkShopKW>德鲁伊法杖</style>出现概率提高。
+不会再出现“普通”和“罕见”品质的此类武器。","<style=DarkShopKW>德魯伊法杖</style>出現機率提高。
+此類武器不會出現「普通」和「罕見」品質。","<style=DarkShopKW>ドルイドの杖</style>の出現率が上がる。
+「コモン」と「アンコモン」にはならないアイテムです。","<style=DarkShopKW>Посохи друидов</style> будут встречаться чаще.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.","<style=DarkShopKW>Посохи друїда</style> з'являються частіше.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.","<style=DarkShopKW>Druidenstäbe</style> erscheinen öfter.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.","Los <style=DarkShopKW>bastones de druida</style> aparecen con mayor frecuencia.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.","<style=DarkShopKW>Cajados Druidas</style> aparecem com mais frequência.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.","<style=DarkShopKW>드루이드 지팡이</style>가 더 자주 등장합니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다."
 GlyphDescription_ItemWeaponMoreHandCrossbow,"<style=DarkShopKW>Hand Crossbows</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.","Les <style=DarkShopKW>Arbalètes à une main</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.","<style=DarkShopKW>手弩</style>出现概率提高。
-不会再出现“普通”品质的此类武器。","<style=DarkShopKW>手弩</style>出現機率提高。
-此類武器不會出現「普通」品質。","<style=DarkShopKW>ハンドクロスボウ</style>の出現率が上がる。
-「コモン」にはならないアイテムです。","<style=DarkShopKW>Малые арбалеты</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.","<style=DarkShopKW>Ручні арбалети</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.","<style=DarkShopKW>Handarmbrüste</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>ballestas de mano</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.","<style=DarkShopKW>Bestas de Mão</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.","<style=DarkShopKW>손쇠뇌</style>가 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다."
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.","<style=DarkShopKW>手弩</style>出现概率提高。
+不会再出现“普通”和“罕见”品质的此类武器。","<style=DarkShopKW>手弩</style>出現機率提高。
+此類武器不會出現「普通」和「罕見」品質。","<style=DarkShopKW>ハンドクロスボウ</style>の出現率が上がる。
+「コモン」と「アンコモン」にはならないアイテムです。","<style=DarkShopKW>Малые арбалеты</style> будут встречаться чаще.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.","<style=DarkShopKW>Ручні арбалети</style> з'являються частіше.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.","<style=DarkShopKW>Handarmbrüste</style> erscheinen öfter.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>ballestas de mano</style> aparecen con mayor frecuencia.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.","<style=DarkShopKW>Bestas de Mão</style> aparecem com mais frequência.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.","<style=DarkShopKW>손쇠뇌</style>가 더 자주 등장합니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다."
 GlyphDescription_ItemWeaponMorePistol,"<style=DarkShopKW>Pistols</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.","Les <style=DarkShopKW>Pistolets</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.","<style=DarkShopKW>手枪</style>出现概率提高。
-不会再出现“普通”品质的此类武器。","<style=DarkShopKW>手槍</style>出現機率提高。
-此類武器不會出現「普通」品質。","<style=DarkShopKW>ピストル</style>の出現率が上がる。
-「コモン」にはならないアイテムです。","<style=DarkShopKW>Пистолеты</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.","<style=DarkShopKW>Пістолети</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.","<style=DarkShopKW>Pistolen</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>pistolas</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.","<style=DarkShopKW>Pistolas</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.","<style=DarkShopKW>권총</style>이 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다."
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.","<style=DarkShopKW>手枪</style>出现概率提高。
+不会再出现“普通”和“罕见”品质的此类武器。","<style=DarkShopKW>手槍</style>出現機率提高。
+此類武器不會出現「普通」和「罕見」品質。","<style=DarkShopKW>ピストル</style>の出現率が上がる。
+「コモン」と「アンコモン」にはならないアイテムです。","<style=DarkShopKW>Пистолеты</style> будут встречаться чаще.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.","<style=DarkShopKW>Пістолети</style> з'являються частіше.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.","<style=DarkShopKW>Pistolen</style> erscheinen öfter.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>pistolas</style> aparecen con mayor frecuencia.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.","<style=DarkShopKW>Pistolas</style> aparecem com mais frequência.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.","<style=DarkShopKW>권총</style>이 더 자주 등장합니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다."
 GlyphDescription_ItemWeaponMoreCrossbow,"<style=DarkShopKW>Crossbows</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.","Les <style=DarkShopKW>Arbalètes</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.","<style=DarkShopKW>十字弓</style>出现概率提高。
-不会再出现“普通”品质的此类武器。","<style=DarkShopKW>十字弓</style>出現機率提高。
-此類武器不會出現「普通」品質。","<style=DarkShopKW>クロスボウ</style>の出現率が上がる。
-「コモン」にはならないアイテムです。","<style=DarkShopKW>Арбалеты</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.","<style=DarkShopKW>Важкі арбалети</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.","<style=DarkShopKW>Armbrüste</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>ballestas</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.","<style=DarkShopKW>Bestas</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.","<style=DarkShopKW>쇠뇌</style>가 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다."
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.","<style=DarkShopKW>十字弓</style>出现概率提高。
+不会再出现“普通”和“罕见”品质的此类武器。","<style=DarkShopKW>十字弓</style>出現機率提高。
+此類武器不會出現「普通」和「罕見」品質。","<style=DarkShopKW>クロスボウ</style>の出現率が上がる。
+「コモン」と「アンコモン」にはならないアイテムです。","<style=DarkShopKW>Арбалеты</style> будут встречаться чаще.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.","<style=DarkShopKW>Важкі арбалети</style> з'являються частіше.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.","<style=DarkShopKW>Armbrüste</style> erscheinen öfter.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.","Las <style=DarkShopKW>ballestas</style> aparecen con mayor frecuencia.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.","<style=DarkShopKW>Bestas</style> aparecem com mais frequência.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.","<style=DarkShopKW>쇠뇌</style>가 더 자주 등장합니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다."
 GlyphDescription_ItemWeaponMoreShortbow,"<style=DarkShopKW>Shortbows</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.","Les <style=DarkShopKW>Arcs courts</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.","<style=DarkShopKW>短弓</style>出现概率提高。
-不会再出现“普通”品质的此类武器。","<style=DarkShopKW>短弓</style>出現機率提高。
-此類武器不會出現「普通」品質。","<style=DarkShopKW>短弓</style>の出現率が上がる。
-「コモン」にはならないアイテムです。","<style=DarkShopKW>Короткие луки</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.","<style=DarkShopKW>Короткі луки</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.","<style=DarkShopKW>Kurzbögen</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.","Los <style=DarkShopKW>arcos cortos</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.","<style=DarkShopKW>Arcos Curtos</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.","<style=DarkShopKW>단궁</style>이 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다."
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.","<style=DarkShopKW>短弓</style>出现概率提高。
+不会再出现“普通”和“罕见”品质的此类武器。","<style=DarkShopKW>短弓</style>出現機率提高。
+此類武器不會出現「普通」和「罕見」品質。","<style=DarkShopKW>短弓</style>の出現率が上がる。
+「コモン」と「アンコモン」にはならないアイテムです。","<style=DarkShopKW>Короткие луки</style> будут встречаться чаще.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.","<style=DarkShopKW>Короткі луки</style> з'являються частіше.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.","<style=DarkShopKW>Kurzbögen</style> erscheinen öfter.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.","Los <style=DarkShopKW>arcos cortos</style> aparecen con mayor frecuencia.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.","<style=DarkShopKW>Arcos Curtos</style> aparecem com mais frequência.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.","<style=DarkShopKW>단궁</style>이 더 자주 등장합니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다."
 GlyphDescription_ItemWeaponMoreLongbow,"<style=DarkShopKW>Longbows</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.","Les <style=DarkShopKW>Arcs longs</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.","<style=DarkShopKW>长弓</style>出现概率提高。
-不会再出现“普通”品质的此类武器。","<style=DarkShopKW>長弓</style>出現機率提高。
-此類武器不會出現「普通」品質。","<style=DarkShopKW>長弓</style>の出現率が上がる。
-「コモン」にはならないアイテムです。","<style=DarkShopKW>Длинные луки</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.","<style=DarkShopKW>Великі луки</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.","<style=DarkShopKW>Langbögen</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.","Los <style=DarkShopKW>arcos largos</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.","<style=DarkShopKW>Arcos Longos</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.","<style=DarkShopKW>장궁</style>이 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다."
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.","<style=DarkShopKW>长弓</style>出现概率提高。
+不会再出现“普通”和“罕见”品质的此类武器。","<style=DarkShopKW>長弓</style>出現機率提高。
+此類武器不會出現「普通」和「罕見」品質。","<style=DarkShopKW>長弓</style>の出現率が上がる。
+「コモン」と「アンコモン」にはならないアイテムです。","<style=DarkShopKW>Длинные луки</style> будут встречаться чаще.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.","<style=DarkShopKW>Великі луки</style> з'являються частіше.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.","<style=DarkShopKW>Langbögen</style> erscheinen öfter.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.","Los <style=DarkShopKW>arcos largos</style> aparecen con mayor frecuencia.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.","<style=DarkShopKW>Arcos Longos</style> aparecem com mais frequência.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.","<style=DarkShopKW>장궁</style>이 더 자주 등장합니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다."
 GlyphDescription_ItemWeaponMoreRifle,"<style=DarkShopKW>Rifles</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.","Les <style=DarkShopKW>Fusils</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.","<style=DarkShopKW>步枪</style>出现概率提高。
-不会再出现“普通”品质的此类武器。","<style=DarkShopKW>步槍</style>出現機率提高。
-此類武器不會出現「普通」品質。","<style=DarkShopKW>ライフル</style>の出現率が上がる。
-「コモン」にはならないアイテムです。","<style=DarkShopKW>Ружья</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.","<style=DarkShopKW>Рушниці</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.","<style=DarkShopKW>Gewehre</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.","Los <style=DarkShopKW>fusiles</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.","<style=DarkShopKW>Rifles</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.","<style=DarkShopKW>소총</style>이 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다."
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.","<style=DarkShopKW>步枪</style>出现概率提高。
+不会再出现“普通”和“罕见”品质的此类武器。","<style=DarkShopKW>步槍</style>出現機率提高。
+此類武器不會出現「普通」和「罕見」品質。","<style=DarkShopKW>ライフル</style>の出現率が上がる。
+「コモン」と「アンコモン」にはならないアイテムです。","<style=DarkShopKW>Ружья</style> будут встречаться чаще.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.","<style=DarkShopKW>Рушниці</style> з'являються частіше.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.","<style=DarkShopKW>Gewehre</style> erscheinen öfter.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.","Los <style=DarkShopKW>fusiles</style> aparecen con mayor frecuencia.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.","<style=DarkShopKW>Rifles</style> aparecem com mais frequência.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.","<style=DarkShopKW>소총</style>이 더 자주 등장합니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다."
 GlyphDescription_ItemWeaponMoreCannon,"<style=DarkShopKW>Cannons</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Les <style=DarkShopKW>Canons</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","<style=DarkShopKW>加农炮</style>出现概率提高。
-不会再出现“普通”品质的此类武器。
+不会再出现“普通”和“罕见”品质的此类武器。
 <style=""DwarfIcon""></style><style=""DwarfText"">《卢恩堡的矮人》DLC</style>","<style=DarkShopKW>加農炮</style>出現機率提高。
-此類武器不會出現「普通」品質。
+此類武器不會出現「普通」和「罕見」品質。
 <style=""DwarfIcon""></style><style=""DwarfText"">〈盧恩堡的矮人〉DLC</style>","<style=DarkShopKW>大砲</style>の出現率が上がる。
-「コモン」にはならないアイテムです。
+「コモン」と「アンコモン」にはならないアイテムです。
 <style=""DwarfIcon""></style><style=""DwarfText"">ルーネンベルクのドワーフDLC</style>","<style=DarkShopKW>Пушки</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.
 <style=""DwarfIcon""></style><style=""DwarfText"">Дополнительный контент ""Dwarves of Runenberg""</style>","<style=DarkShopKW>Гармати</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.
 <style=""DwarfIcon""></style><style=""DwarfText"">Доповнення Dwarves of Runenberg</style>","<style=DarkShopKW>Kanonen</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Los <style=DarkShopKW>cañones</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","<style=DarkShopKW>Canhões</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","<style=DarkShopKW>대포</style>가 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다.
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
 GlyphDescription_ItemWeaponMoreGauntlet,"<style=DarkShopKW>Gauntlets</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Les <style=DarkShopKW>Gantelets</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","<style=DarkShopKW>臂铠</style>出现概率提高。
-不会再出现“普通”品质的此类武器。
+不会再出现“普通”和“罕见”品质的此类武器。
 <style=""DwarfIcon""></style><style=""DwarfText"">《卢恩堡的矮人》DLC</style>","<style=DarkShopKW>臂鎧</style>出現機率提高。
-此類武器不會出現「普通」品質。
+此類武器不會出現「普通」和「罕見」品質。
 <style=""DwarfIcon""></style><style=""DwarfText"">〈盧恩堡的矮人〉DLC</style>","<style=DarkShopKW>こて</style>の出現率が上がる。
-「コモン」にはならないアイテムです。
+「コモン」と「アンコモン」にはならないアイテムです。
 <style=""DwarfIcon""></style><style=""DwarfText"">ルーネンベルクのドワーフDLC</style>","<style=DarkShopKW>Рукавицы</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.
 <style=""DwarfIcon""></style><style=""DwarfText"">Дополнительный контент ""Dwarves of Runenberg""</style>","<style=DarkShopKW>Краги</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.
 <style=""DwarfIcon""></style><style=""DwarfText"">Доповнення Dwarves of Runenberg</style>","<style=DarkShopKW>Kampfhandschuhe</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Los <style=DarkShopKW>guanteletes</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","<style=DarkShopKW>Manoplas</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","<style=DarkShopKW>건틀릿</style>이 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다.
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
 GlyphDescription_ItemWeaponMoreWarShield,"<style=DarkShopKW>War Shields</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Les <style=DarkShopKW>Boucliers de guerre</style> apparaissent plus souvent.
-La qualité ""commune"" ne peut plus apparaître pour cette famille d'objet.
+Les qualités ""commune"" et ""peu courante"" ne peuvent plus apparaître pour cette famille d'objet.
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","<style=DarkShopKW>战盾</style>出现概率提高。
-不会再出现“普通”品质的此类武器。
+不会再出现“普通”和“罕见”品质的此类武器。
 <style=""DwarfIcon""></style><style=""DwarfText"">《卢恩堡的矮人》DLC</style>","<style=DarkShopKW>戰盾</style>出現機率提高。
-此類武器不會出現「普通」品質。
+此類武器不會出現「普通」和「罕見」品質。
 <style=""DwarfIcon""></style><style=""DwarfText"">〈盧恩堡的矮人〉DLC</style>","<style=DarkShopKW>戦闘用シールド</style>の出現率が上がる。
-「コモン」にはならないアイテムです。
+「コモン」と「アンコモン」にはならないアイテムです。
 <style=""DwarfIcon""></style><style=""DwarfText"">ルーネンベルクのドワーフDLC</style>","<style=DarkShopKW>Боевые щиты</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.
 <style=""DwarfIcon""></style><style=""DwarfText"">Дополнительный контент ""Dwarves of Runenberg""</style>","<style=DarkShopKW>Бойові щити</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.
 <style=""DwarfIcon""></style><style=""DwarfText"">Доповнення Dwarves of Runenberg</style>","<style=DarkShopKW>Kriegsschilde</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Los <style=DarkShopKW>escudos de guerra</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","<style=DarkShopKW>Escudos de Guerra</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","<style=DarkShopKW>전쟁 방패</style>가 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다.
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
 GlyphDescription_ItemWeaponMoreClaws,"<style=DarkShopKW>Claws</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Les <style=DarkShopKW>griffes</style> apparaissent plus souvent.
-La qualité ""courante"" n'apparaîtra plus pour cette catégorie d'objets.
+Les qualités ""courante"" et ""peu courante"" n'apparaîtront plus pour cette catégorie d'objets.
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","<style=DarkShopKW>爪刃</style>出现概率提高。
-不会再出现“普通”品质的此类武器。
+不会再出现“普通”和“罕见”品质的此类武器。
 <style=""ElfIcon""></style><style=""ElfText"">《琥珀幽森的精灵》DLC</style>","<style=DarkShopKW>銳爪</style>出現機率提高。
-此類武器不會出現「普通」品質。
+此類武器不會出現「普通」和「罕見」品質。
 <style=""ElfIcon""></style><style=""ElfText"">〈琥珀幽森的精靈〉DLC</style>","<style=DarkShopKW>鉤爪</style>の出現率が上がる。
-「コモン」にはならないアイテムです。
+「コモン」と「アンコモン」にはならないアイテムです。
 <style=""ElfIcon""></style><style=""ElfText"">アンバーワルドのエルフDLC</style>","<style=DarkShopKW>Когти</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.
 <style=""ElfIcon""></style><style=""ElfText"">Дополнительный контент ""Elves of Amberwald""</style>","<style=DarkShopKW>Кігті</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.
 <style=""ElfIcon""></style><style=""ElfText"">Доповнення Elves of Amberwald</style>","<style=DarkShopKW>Krallen</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Las <style=DarkShopKW>garras</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","<style=DarkShopKW>Garras</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","<style=DarkShopKW>발톱</style>이 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다.
 <style=""ElfIcon""></style><style=""ElfText"">암버발트의 엘프 DLC</style>"
 GlyphDescription_ItemWeaponMoreBoomerang,"<style=DarkShopKW>Boomerangs</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Les <style=DarkShopKW>boomerangs</style> apparaissent plus souvent.
-La qualité ""courante"" n'apparaîtra plus pour cette catégorie d'objets.
+Les qualités ""courante"" et ""peu courante"" n'apparaîtront plus pour cette catégorie d'objets.
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","<style=DarkShopKW>回旋镖</style>出现概率提高。
-不会再出现“普通”品质的此类武器。
+不会再出现“普通”和“罕见”品质的此类武器。
 <style=""ElfIcon""></style><style=""ElfText"">《琥珀幽森的精灵》DLC</style>","<style=DarkShopKW>迴力鏢</style>出現機率提高。
-此類武器不會出現「普通」品質。
+此類武器不會出現「普通」和「罕見」品質。
 <style=""ElfIcon""></style><style=""ElfText"">〈琥珀幽森的精靈〉DLC</style>","<style=DarkShopKW>ブーメラン</style>の出現率が上がる。
-「コモン」にはならないアイテムです。
+「コモン」と「アンコモン」にはならないアイテムです。
 <style=""ElfIcon""></style><style=""ElfText"">アンバーワルドのエルフDLC</style>","<style=DarkShopKW>Бумеранги</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.
 <style=""ElfIcon""></style><style=""ElfText"">Дополнительный контент ""Elves of Amberwald""</style>","<style=DarkShopKW>Бумеранги</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.
 <style=""ElfIcon""></style><style=""ElfText"">Доповнення Elves of Amberwald</style>","<style=DarkShopKW>Bumerangs</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Los <style=DarkShopKW>bumeranes</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","<style=DarkShopKW>Bumerangues</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","<style=DarkShopKW>부메랑</style>이 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다.
 <style=""ElfIcon""></style><style=""ElfText"">암버발트의 엘프 DLC</style>"
 GlyphDescription_ItemWeaponMoreManaFlower,"<style=DarkShopKW>Sacred Flowers</style> appear more often.
 The ""common"" and ""uncommon"" qualities cannot appear for this item family.
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Les <style=DarkShopKW>fleurs sacrées</style> apparaissent plus souvent.
-La qualité ""courante"" n'apparaîtra plus pour cette catégorie d'objets.
+Les qualités ""courante"" et ""peu courante"" n'apparaîtront plus pour cette catégorie d'objets.
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","<style=DarkShopKW>神圣花朵</style>出现概率提高。
-不会再出现“普通”品质的此类武器。
+不会再出现“普通”和“罕见”品质的此类武器。
 <style=""ElfIcon""></style><style=""ElfText"">《琥珀幽森的精灵》DLC</style>","<style=DarkShopKW>聖花</style>出現機率提高。
-此類武器不會出現「普通」品質。
+此類武器不會出現「普通」和「罕見」品質。
 <style=""ElfIcon""></style><style=""ElfText"">〈琥珀幽森的精靈〉DLC</style>","<style=DarkShopKW>聖花</style>の出現率が上がる。
-「コモン」にはならないアイテムです。
+「コモン」と「アンコモン」にはならないアイテムです。
 <style=""ElfIcon""></style><style=""ElfText"">アンバーワルドのエルフDLC</style>","<style=DarkShopKW>Священные цветки</style> будут встречаться чаще.
-В этой группе предметов больше не будут попадаться вещи обычного качества.
+В этой группе предметов больше не будут попадаться вещи обычного и необычного качества.
 <style=""ElfIcon""></style><style=""ElfText"">Дополнительный контент ""Elves of Amberwald""</style>","<style=DarkShopKW>Священні квітки</style> з'являються частіше.
-Якість «поширене» не може з'явитися для цієї групи речей.
+Якості «поширене» та «незвичайне» не можуть з'явитися для цієї групи речей.
 <style=""ElfIcon""></style><style=""ElfText"">Доповнення Elves of Amberwald</style>","<style=DarkShopKW>Heilige Blumen</style> erscheinen öfter.
-Die Qualität „Häufig“ kommt bei dieser Gegenstandsgruppe nicht vor.
+Die Qualitäten „Häufig“ und „Ungewöhnlich“ kommen bei dieser Gegenstandsgruppe nicht vor.
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Las <style=DarkShopKW>flores sagradas</style> aparecen con mayor frecuencia.
-La cualidad «común» no puede aparecer en esta familia de objetos.
+Las cualidades «común» y «poco común» no pueden aparecer en esta familia de objetos.
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","<style=DarkShopKW>Flores Sagradas</style> aparecem com mais frequência.
-A qualidade ""comum"" não aparece para itens desta família.
+As qualidades ""comum"" e ""notável"" não aparecem para itens desta família.
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","<style=DarkShopKW>신성한 꽃</style>이 더 자주 등장합니다.
-이 아이템 계열의 ""일반"" 품질이 등장하지 않습니다.
+이 아이템 계열의 ""일반"" 및 ""고급"" 품질이 등장하지 않습니다.
 <style=""ElfIcon""></style><style=""ElfText"">암버발트의 엘프 DLC</style>"
 SkillName_OverheatUniqueSkill,Fire Blast,Explosion de feu,火焰冲击,火焰衝擊,炎の爆発,Огненный взрыв,Спалах полум'я,Feuerexplosion,Ráfaga ígnea,Explosão Incendiária,화염 폭발

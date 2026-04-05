@@ -308,7 +308,7 @@
                <Debuff>
                   <BaseChance>1</BaseChance>
                   <Stat Id="Resistance"/>
-                  <Malus>12</Malus>
+                  <Malus>15</Malus>
                   <TurnsCount>1</TurnsCount>
                </Debuff>
 
@@ -457,7 +457,7 @@
             <DamageMultiplier>1.5</DamageMultiplier>
             <SkillEffects>
                <Stun>
-                  <BaseChance>1</BaseChance>
+                  <BaseChance>1.25</BaseChance>
                </Stun>
                <SurroundingEffect>
                   <Damage Multiplier="0.5"/>
@@ -2330,7 +2330,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Physical</AttackType>
-            <DamageMultiplier>1.05</DamageMultiplier>
+            <DamageMultiplier>1.1</DamageMultiplier>
             <SkillEffects>
                <MultiHit HitsCount="3"/>
                <NoDodge></NoDodge>

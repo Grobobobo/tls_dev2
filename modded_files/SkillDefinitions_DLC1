@@ -984,7 +984,7 @@
 				<SkillEffects>
 					<IgnoreLineOfSight/>
                <Momentum>
-                  <DamageBonusPerTile>0.15</DamageBonusPerTile>
+                  <DamageBonusPerTile>0.2</DamageBonusPerTile>
                </Momentum>
 					<SurroundingEffect>
                   <Stun>
@@ -1138,7 +1138,7 @@
 
       <SkillAction>
          <Attack>
-            <BaseDamage Min="170" Max="340"/>
+            <BaseDamage Min="130 * (1 + PlayableUnitLevel/13)" Max="260 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
             <AttackType>Ranged</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>

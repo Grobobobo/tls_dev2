@@ -1,44 +1,32 @@
 ﻿<DivergenceDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                        xsi:noNamespaceSchemaLocation="DivergenceDefinitions.xsd">
    
-   <DivergenceDefinition Id="AddEnemies" Weight="10" MinDifficulty="1" MaxDifficulty="1000">
+   <DivergenceDefinition Id="AddEnemies" Weight="10" MinDifficulty="1" MaxDifficulty="184">
       <AddEnemies>
          <EnemyTiers>
             <EnemyTier Weight="2" Value="1">
-               <Difficulty Value="1" EnemiesCount="1"/>
-               <Difficulty Value="10" EnemiesCount="5"/>
-               <Difficulty Value="50" EnemiesCount="10"/>
-               <Difficulty Value="100" EnemiesCount="20"/>
-               <Difficulty Value="200" EnemiesCount="40"/>
-               <Difficulty Value="500" EnemiesCount="80"/>
-               <Difficulty Value="1000" EnemiesCount="120"/>
+               <Difficulty Value="1" EnemiesCount="8"/>
+               <Difficulty Value="50" EnemiesCount="8"/>
+               <Difficulty Value="184" EnemiesCount="12"/>
+               <Difficulty Value="1000" EnemiesCount="12"/>
             </EnemyTier>
             <EnemyTier Weight="4" Value="2">
-               <Difficulty Value="1" EnemiesCount="1"/>
-               <Difficulty Value="10" EnemiesCount="2"/>
-               <Difficulty Value="50" EnemiesCount="7"/>
-               <Difficulty Value="100" EnemiesCount="14"/>
-               <Difficulty Value="200" EnemiesCount="25"/>
-               <Difficulty Value="500" EnemiesCount="45"/>
-               <Difficulty Value="1000" EnemiesCount="90"/>
+               <Difficulty Value="1" EnemiesCount="4"/>
+               <Difficulty Value="185" EnemiesCount="4"/>
+               <Difficulty Value="320" EnemiesCount="6"/>
+               <Difficulty Value="1000" EnemiesCount="6"/>
             </EnemyTier>
             <EnemyTier Weight="6" Value="3">
-               <Difficulty Value="1" EnemiesCount="1"/>
-               <Difficulty Value="10" EnemiesCount="1"/>
-               <Difficulty Value="50" EnemiesCount="5"/>
-               <Difficulty Value="100" EnemiesCount="8"/>
-               <Difficulty Value="200" EnemiesCount="13"/>
-               <Difficulty Value="500" EnemiesCount="25"/>
-               <Difficulty Value="1000" EnemiesCount="40"/>
+               <Difficulty Value="1" EnemiesCount="2"/>
+               <Difficulty Value="50" EnemiesCount="2"/>
+               <Difficulty Value="184" EnemiesCount="4"/>
+               <Difficulty Value="1000" EnemiesCount="4"/>
             </EnemyTier>
             <EnemyTier Weight="8" Value="4">
                <Difficulty Value="1" EnemiesCount="1"/>
-               <Difficulty Value="10" EnemiesCount="1"/>
                <Difficulty Value="50" EnemiesCount="1"/>
-               <Difficulty Value="100" EnemiesCount="2"/>
-               <Difficulty Value="200" EnemiesCount="4"/>
-               <Difficulty Value="500" EnemiesCount="10"/>
-               <Difficulty Value="1000" EnemiesCount="20"/>
+               <Difficulty Value="184" EnemiesCount="2"/>
+               <Difficulty Value="1000" EnemiesCount="2"/>
             </EnemyTier>
          </EnemyTiers>
          <PickInWave>false</PickInWave>
@@ -46,44 +34,32 @@
       </AddEnemies>
    </DivergenceDefinition>
    
-   <DivergenceDefinition Id="AddElites" Weight="8" MinDifficulty="50" MaxDifficulty="1000">
+   <DivergenceDefinition Id="AddElites" Weight="8" MinDifficulty="185" MaxDifficulty="1000">
       <AddElites>
          <EnemyTiers>
-            <EnemyTier Weight="2" Value="1">
-               <Difficulty Value="1" EnemiesCount="1"/>
-               <Difficulty Value="10" EnemiesCount="1"/>
-               <Difficulty Value="50" EnemiesCount="2"/>
-               <Difficulty Value="100" EnemiesCount="4"/>
-               <Difficulty Value="200" EnemiesCount="6"/>
-               <Difficulty Value="500" EnemiesCount="15"/>
-               <Difficulty Value="1000" EnemiesCount="32"/>
+            <EnemyTier Weight="6" Value="1">
+               <Difficulty Value="1" EnemiesCount="4"/>
+               <Difficulty Value="185" EnemiesCount="4"/>
+               <Difficulty Value="320" EnemiesCount="5"/>
+               <Difficulty Value="1000" EnemiesCount="5"/>
             </EnemyTier>
-            <EnemyTier Weight="4" Value="2">
-               <Difficulty Value="1" EnemiesCount="1"/>
-               <Difficulty Value="10" EnemiesCount="1"/>
-               <Difficulty Value="50" EnemiesCount="1"/>
-               <Difficulty Value="100" EnemiesCount="2"/>
-               <Difficulty Value="200" EnemiesCount="4"/>
-               <Difficulty Value="500" EnemiesCount="10"/>
-               <Difficulty Value="1000" EnemiesCount="24"/>
+            <EnemyTier Weight="6" Value="2">
+               <Difficulty Value="1" EnemiesCount="3"/>
+               <Difficulty Value="185" EnemiesCount="3"/>
+               <Difficulty Value="320" EnemiesCount="4"/>
+               <Difficulty Value="1000" EnemiesCount="4"/>
             </EnemyTier>
             <EnemyTier Weight="6" Value="3">
-               <Difficulty Value="1" EnemiesCount="1"/>
-               <Difficulty Value="10" EnemiesCount="1"/>
-               <Difficulty Value="50" EnemiesCount="1"/>
-               <Difficulty Value="100" EnemiesCount="1"/>
-               <Difficulty Value="200" EnemiesCount="2"/>
-               <Difficulty Value="500" EnemiesCount="6"/>
-               <Difficulty Value="1000" EnemiesCount="12"/>
+               <Difficulty Value="1" EnemiesCount="2"/>
+               <Difficulty Value="185" EnemiesCount="2"/>
+               <Difficulty Value="320" EnemiesCount="3"/>
+               <Difficulty Value="1000" EnemiesCount="3"/>
             </EnemyTier>
-            <EnemyTier Weight="2" Value="4">
+            <EnemyTier Weight="6" Value="4">
                <Difficulty Value="1" EnemiesCount="1"/>
-               <Difficulty Value="10" EnemiesCount="1"/>
-               <Difficulty Value="50" EnemiesCount="1"/>
-               <Difficulty Value="100" EnemiesCount="1"/>
-               <Difficulty Value="200" EnemiesCount="1"/>
-               <Difficulty Value="500" EnemiesCount="2"/>
-               <Difficulty Value="1000" EnemiesCount="8"/>
+               <Difficulty Value="185" EnemiesCount="1"/>
+               <Difficulty Value="320" EnemiesCount="2"/>
+               <Difficulty Value="1000" EnemiesCount="2"/>
             </EnemyTier>
          </EnemyTiers>
          <PickInWave>false</PickInWave>
@@ -118,10 +94,10 @@
                <Difficulty Value="1" PerkId="HitArmorCurse"/>
                <Difficulty Value="1000" PerkId="HitArmorCurse_2"/>
             </Perk>
-            <Perk Weight="1">
+            <!-- <Perk Weight="1">
                <Difficulty Value="1" PerkId="ReduceCritCurse"/>
                <Difficulty Value="1000" PerkId="ReduceCritCurse_2"/>
-            </Perk>
+            </Perk> -->
             <Perk Weight="1">
                <Difficulty Value="1" PerkId="AdjacentBuildingMalusCurse"/>
                <Difficulty Value="1000" PerkId="AdjacentBuildingMalusCurse_2"/>
@@ -130,7 +106,7 @@
       </AddPerk>
    </DivergenceDefinition>
    
-   <DivergenceDefinition Id="ClawerQuantity" Weight="6" MinDifficulty="1" MaxDifficulty="1000" UseDifficultyLerpToPickValue="false">
+   <DivergenceDefinition Id="ClawerQuantity" Weight="1" MinDifficulty="500" MaxDifficulty="1000" UseDifficultyLerpToPickValue="false">
       <ClawerQuantity>
          <EnemyTiers>
             <EnemyTier Weight="2" Value="1">
@@ -187,65 +163,46 @@
       <EnemyStatBonus>
          <StatIds>
             <StatId Weight="10" Value="HealthTotal">
-               <Difficulty Value="1" StatValue="1"/>
-               <Difficulty Value="10" StatValue="20"/>
-               <Difficulty Value="50" StatValue="30"/>
-               <Difficulty Value="100" StatValue="60"/>
-               <Difficulty Value="200" StatValue="100"/>
-               <Difficulty Value="500" StatValue="200"/>
-               <Difficulty Value="1000" StatValue="900"/>
+               <Difficulty Value="1" StatValue="20"/>
+               <Difficulty Value="50" StatValue="20"/>
+               <Difficulty Value="320" StatValue="60"/>
+               <Difficulty Value="1000" StatValue="60"/>
             </StatId>
             <StatId Weight="10" Value="Armor">
-               <Difficulty Value="1" StatValue="1"/>
-               <Difficulty Value="10" StatValue="8"/>
-               <Difficulty Value="50" StatValue="25"/>
-               <Difficulty Value="100" StatValue="60"/>
-               <Difficulty Value="200" StatValue="125"/>
-               <Difficulty Value="500" StatValue="300"/>
-               <Difficulty Value="1000" StatValue="800"/>
+               <Difficulty Value="1" StatValue="20"/>
+               <Difficulty Value="50" StatValue="20"/>
+               <Difficulty Value="320" StatValue="60"/>
+               <Difficulty Value="1000" StatValue="60"/>
             </StatId>
             <StatId Weight="10" Value="Dodge">
-               <Difficulty Value="1" StatValue="1"/>
-               <Difficulty Value="10" StatValue="5"/>
+               <Difficulty Value="1" StatValue="8"/>
                <Difficulty Value="50" StatValue="8"/>
-               <Difficulty Value="100" StatValue="16"/>
-               <Difficulty Value="200" StatValue="30"/>
-               <Difficulty Value="500" StatValue="60"/>
-               <Difficulty Value="1000" StatValue="80"/>
+               <Difficulty Value="320" StatValue="16"/>
+               <Difficulty Value="1000" StatValue="16"/>
             </StatId>
             <StatId Weight="10" Value="Block">
-               <Difficulty Value="1" StatValue="1"/>
-               <Difficulty Value="10" StatValue="6"/>
-               <Difficulty Value="50" StatValue="10"/>
-               <Difficulty Value="100" StatValue="16"/>
-               <Difficulty Value="200" StatValue="25"/>
-               <Difficulty Value="500" StatValue="40"/>
-               <Difficulty Value="1000" StatValue="80"/>
+               <Difficulty Value="1" StatValue="15"/>
+               <Difficulty Value="50" StatValue="15"/>
+               <Difficulty Value="320" StatValue="45"/>
+               <Difficulty Value="1000" StatValue="45"/>
             </StatId>
             <StatId Weight="10" Value="Resistance">
-               <Difficulty Value="1" StatValue="1"/>
-               <Difficulty Value="10" StatValue="8"/>
-               <Difficulty Value="50" StatValue="12"/>
-               <Difficulty Value="100" StatValue="18"/>
-               <Difficulty Value="200" StatValue="35"/>
-               <Difficulty Value="500" StatValue="50"/>
-               <Difficulty Value="1000" StatValue="90"/>
+               <Difficulty Value="1" StatValue="15"/>
+               <Difficulty Value="50" StatValue="15"/>
+               <Difficulty Value="320" StatValue="15"/>
+               <Difficulty Value="1000" StatValue="15"/>
             </StatId>
             <StatId Weight="10" Value="MovePointsTotal">
                <Difficulty Value="1" StatValue="1"/>
-               <Difficulty Value="100" StatValue="1"/>
-               <Difficulty Value="200" StatValue="2"/>
-               <Difficulty Value="500" StatValue="3"/>
-               <Difficulty Value="1000" StatValue="4"/>
+               <Difficulty Value="50" StatValue="1"/>
+               <Difficulty Value="320" StatValue="1"/>
+               <Difficulty Value="1000" StatValue="1"/>
             </StatId>
             <StatId Weight="10" Value="OverallDamage">
-               <Difficulty Value="1" StatValue="1"/>
-               <Difficulty Value="10" StatValue="4"/>
-               <Difficulty Value="50" StatValue="10"/>
-               <Difficulty Value="100" StatValue="25"/>  
-               <Difficulty Value="200" StatValue="60"/>
-               <Difficulty Value="500" StatValue="150"/>
-               <Difficulty Value="1000" StatValue="300"/>
+               <Difficulty Value="1" StatValue="20"/>
+               <Difficulty Value="50" StatValue="20"/>
+               <Difficulty Value="320" StatValue="60"/>
+               <Difficulty Value="1000" StatValue="60"/>
             </StatId>
          </StatIds>
       </EnemyStatBonus>
@@ -260,24 +217,21 @@
                <Difficulty Value="200" StatValue="150"/>
             </StatId>-->
             <StatId Weight="10" Value="ArmorTotal">
-               <Difficulty Value="1" StatValue="1"/>
-               <Difficulty Value="10" StatValue="8"/>
+               <Difficulty Value="1" StatValue="50"/>
                <Difficulty Value="50" StatValue="50"/>
-               <Difficulty Value="100" StatValue="100"/>
-               <Difficulty Value="200" StatValue="220"/>
-               <Difficulty Value="500" StatValue="500"/>
-               <Difficulty Value="1000" StatValue="800"/>
+               <Difficulty Value="320" StatValue="200"/>
+               <Difficulty Value="1000" StatValue="200"/>
             </StatId>
-            <StatId Weight="12" Value="Dodge">
-               <Difficulty Value="1" StatValue="2"/><!--1-->
-               <Difficulty Value="10" StatValue="10"/><!--5-->
-               <Difficulty Value="50" StatValue="30"/><!--20-->
-               <Difficulty Value="100" StatValue="47"/><!--35-->
-               <Difficulty Value="200" StatValue="65"/><!--50-->
-               <Difficulty Value="500" StatValue="100"/><!--100-->
-               <Difficulty Value="1000" StatValue="100"/><!--100-->
-            </StatId>
-            <StatId Weight="8" Value="Block">
+            <!-- <StatId Weight="12" Value="Dodge">
+               <Difficulty Value="1" StatValue="2"/>
+               <Difficulty Value="10" StatValue="10"/>
+               <Difficulty Value="50" StatValue="30"/>
+               <Difficulty Value="100" StatValue="47"/>
+               <Difficulty Value="200" StatValue="65"/>
+               <Difficulty Value="500" StatValue="100"/>
+               <Difficulty Value="1000" StatValue="100"/>
+            </StatId> -->
+            <!-- <StatId Weight="8" Value="Block">
                <Difficulty Value="1" StatValue="1"/>
                <Difficulty Value="10" StatValue="2"/>
                <Difficulty Value="50" StatValue="10"/>
@@ -285,32 +239,25 @@
                <Difficulty Value="200" StatValue="40"/>
                <Difficulty Value="500" StatValue="100"/>
                <Difficulty Value="1000" StatValue="100"/>
-            </StatId>
+            </StatId> -->
             <StatId Weight="10" Value="Resistance">
-               <Difficulty Value="1" StatValue="1"/>
-               <Difficulty Value="10" StatValue="2"/>
-               <Difficulty Value="50" StatValue="10"/>
-               <Difficulty Value="100" StatValue="20"/>
-               <Difficulty Value="200" StatValue="35"/>
-               <Difficulty Value="500" StatValue="60"/>
-               <Difficulty Value="1000" StatValue="60"/>
+               <Difficulty Value="1" StatValue="25"/>
+               <Difficulty Value="50" StatValue="25"/>
+               <Difficulty Value="320" StatValue="25"/>
+               <Difficulty Value="1000" StatValue="25"/>
             </StatId>
-            <StatId Weight="4" Value="MovePointsTotal">
-               <Difficulty Value="1" StatValue="1"/>
-               <Difficulty Value="100" StatValue="1"/>
-               <Difficulty Value="200" StatValue="2"/>
-               <Difficulty Value="500" StatValue="3"/>
+            <StatId Weight="5" Value="MovePointsTotal">
+               <Difficulty Value="1" StatValue="2"/>
+               <Difficulty Value="50" StatValue="2"/>
+               <Difficulty Value="320" StatValue="4"/>
                <Difficulty Value="1000" StatValue="4"/>
             </StatId>
-            <!--<StatId Weight="10" Value="Accuracy">
-               <Difficulty Value="1" StatValue="1"/>
-               <Difficulty Value="10" StatValue="2"/>
+            <StatId Weight="5" Value="Accuracy">
+               <Difficulty Value="1" StatValue="10"/>
                <Difficulty Value="50" StatValue="10"/>
-               <Difficulty Value="100" StatValue="22"/>
-               <Difficulty Value="200" StatValue="35"/>
-               <Difficulty Value="500" StatValue="50"/>
-               <Difficulty Value="1000" StatValue="90"/>
-            </StatId>-->
+               <Difficulty Value="320" StatValue="20"/>
+               <Difficulty Value="1000" StatValue="20"/>
+            </StatId>
             <!--<StatId Weight="4" Value="OverallDamage">
                <Difficulty Value="1" StatValue="1"/>
                <Difficulty Value="10" StatValue="4"/>
@@ -320,38 +267,33 @@
                <Difficulty Value="500" StatValue="90"/>
                <Difficulty Value="1000" StatValue="120"/>
             </StatId>-->
-            <StatId Weight="4" Value="ActionPointsTotal">
+            <!-- <StatId Weight="4" Value="ActionPointsTotal">
                <Difficulty Value="1" StatValue="1"/>
                <Difficulty Value="100" StatValue="1"/>
                <Difficulty Value="200" StatValue="2"/>
                <Difficulty Value="500" StatValue="3"/>
                <Difficulty Value="1000" StatValue="4"/>
-            </StatId>
+            </StatId> -->
             <StatId Weight="4" Value="ManaTotal">
-               <Difficulty Value="1" StatValue="1"/>
-               <Difficulty Value="10" StatValue="4"/>
+               <Difficulty Value="1" StatValue="12"/>
                <Difficulty Value="50" StatValue="12"/>
-               <Difficulty Value="100" StatValue="16"/>
-               <Difficulty Value="200" StatValue="30"/>
-               <Difficulty Value="500" StatValue="50"/>
-               <Difficulty Value="1000" StatValue="50"/>
+               <Difficulty Value="320" StatValue="24"/>
+               <Difficulty Value="1000" StatValue="24"/>
             </StatId>
             <StatId Weight="4" Value="SkillRangeModifier">
-               <Difficulty Value="1" StatValue="1"/>
-               <Difficulty Value="50" StatValue="1"/>
-               <Difficulty Value="100" StatValue="2"/>
-               <Difficulty Value="200" StatValue="3"/>
-               <Difficulty Value="500" StatValue="5"/>
-               <Difficulty Value="1000" StatValue="7"/>
+               <Difficulty Value="1" StatValue="2"/>
+               <Difficulty Value="50" StatValue="2"/>
+               <Difficulty Value="320" StatValue="4"/>
+               <Difficulty Value="1000" StatValue="4"/>
             </StatId>
-            <StatId Weight="4" Value="Critical">
-               <Difficulty Value="1" StatValue="2"/><!--1-->
-               <Difficulty Value="10" StatValue="20"/><!--2-->
-               <Difficulty Value="50" StatValue="25"/><!--10-->
-               <Difficulty Value="100" StatValue="45"/><!--25-->
-               <Difficulty Value="200" StatValue="80"/><!--50-->
-               <Difficulty Value="500" StatValue="100"/><!--100-->
-               <Difficulty Value="1000" StatValue="100"/><!--80-->
+            <!-- <StatId Weight="4" Value="Critical">
+               <Difficulty Value="1" StatValue="2"/>
+               <Difficulty Value="10" StatValue="20"/>
+               <Difficulty Value="50" StatValue="25"/>
+               <Difficulty Value="100" StatValue="45"/>
+               <Difficulty Value="200" StatValue="80"/>
+               <Difficulty Value="500" StatValue="100"/>
+               <Difficulty Value="1000" StatValue="100"/>
             </StatId>
             <StatId Weight="4" Value="CriticalPower">
                <Difficulty Value="1" StatValue="1"/>
@@ -361,34 +303,28 @@
                <Difficulty Value="200" StatValue="140"/>
                <Difficulty Value="500" StatValue="250"/>
                <Difficulty Value="1000" StatValue="400"/>
-            </StatId>
+            </StatId> -->
             <StatId Weight="4" Value="OpportunisticAttacks">
-               <Difficulty Value="1" StatValue="1"/>
-               <Difficulty Value="10" StatValue="10"/>
-               <Difficulty Value="50" StatValue="20"/>
-               <Difficulty Value="100" StatValue="40"/>
-               <Difficulty Value="200" StatValue="100"/>
-               <Difficulty Value="500" StatValue="250"/>
-               <Difficulty Value="1000" StatValue="400"/>
+               <Difficulty Value="1" StatValue="15"/>
+               <Difficulty Value="50" StatValue="15"/>
+               <Difficulty Value="320" StatValue="30"/>
+               <Difficulty Value="1000" StatValue="30"/>
             </StatId>
             <StatId Weight="4" Value="IsolatedAttacks">
-               <Difficulty Value="1" StatValue="2"/><!--1-->
-               <Difficulty Value="10" StatValue="15"/><!--10-->
-               <Difficulty Value="50" StatValue="30"/><!--20-->
-               <Difficulty Value="100" StatValue="55"/><!--40-->
-               <Difficulty Value="200" StatValue="125"/><!--100-->
-               <Difficulty Value="500" StatValue="325"/><!--250-->
-               <Difficulty Value="1000" StatValue="500"/><!--400-->
+               <Difficulty Value="1" StatValue="15"/>
+               <Difficulty Value="50" StatValue="15"/>
+               <Difficulty Value="320" StatValue="30"/>
+               <Difficulty Value="1000" StatValue="30"/>            
             </StatId>
-            <StatId Weight="4" Value="PoisonDamageModifier">
-               <Difficulty Value="1" StatValue="2"/><!--1-->
-               <Difficulty Value="10" StatValue="14"/><!--10-->
-               <Difficulty Value="50" StatValue="28"/><!--20-->
-               <Difficulty Value="100" StatValue="60"/><!--40-->
-               <Difficulty Value="200" StatValue="150"/><!--100-->
-               <Difficulty Value="500" StatValue="325"/><!--250-->
-               <Difficulty Value="1000" StatValue="550"/><!--400-->
-            </StatId>
+            <!-- <StatId Weight="4" Value="PoisonDamageModifier">
+               <Difficulty Value="1" StatValue="2"/>
+               <Difficulty Value="10" StatValue="14"/>
+               <Difficulty Value="50" StatValue="28"/>
+               <Difficulty Value="100" StatValue="60"/>
+               <Difficulty Value="200" StatValue="150"/>
+               <Difficulty Value="500" StatValue="325"/>
+               <Difficulty Value="1000" StatValue="550"/>
+            </StatId> -->
             <!--<StatId Weight="4" Value="StunChanceModifier">
                <Difficulty Value="1" StatValue="1"/>
                <Difficulty Value="10" StatValue="4"/>
@@ -419,8 +355,8 @@
 
    <DivergenceDefinition Id="WaveSizeModifier" Weight="5" MinDifficulty="1" MaxDifficulty="1000" UseDifficultyLerpToPickValue="false">
       <WaveSizeModifier>
-         <Difficulty Value="1" Modifier="0.2"/>
-         <Difficulty Value="1000" Modifier="0.5"/>
+         <Difficulty Value="1" Modifier="0.1"/>
+         <Difficulty Value="1000" Modifier="0.2"/>
       </WaveSizeModifier>
       
       <!--<WaveSizeModifier>

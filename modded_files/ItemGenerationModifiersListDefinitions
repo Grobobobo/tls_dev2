@@ -23,8 +23,7 @@
    </ItemGenerationModifiersListDefinition>
 
    <ItemGenerationModifiersListDefinition Id="ShopProduction">
-      <Probability Weight="100">-2</Probability>
-      <Probability Weight="66">-1</Probability>
+      <Probability Weight="100">-1</Probability>
       <Probability Weight="25">0</Probability>
    </ItemGenerationModifiersListDefinition>
 
@@ -36,6 +35,7 @@
 
    <ItemGenerationModifiersListDefinition Id="PanicRewardLow">
       <Probability Weight="100">1</Probability>
+      <Probability Weight="0">2</Probability>
    </ItemGenerationModifiersListDefinition>
 
    <ItemGenerationModifiersListDefinition Id="PanicReward">
@@ -49,12 +49,13 @@
    </ItemGenerationModifiersListDefinition>
 
    <ItemGenerationModifiersListDefinition Id="BonePile">
-      <Probability Weight="100">-1</Probability>
-      <Probability Weight="35">0</Probability>
+      <Probability Weight="100">1</Probability>
+      <Probability Weight="0">2</Probability>
    </ItemGenerationModifiersListDefinition>
    
    <ItemGenerationModifiersListDefinition Id="BonePileElite">
-      <Probability Weight="100">0</Probability>
+      <Probability Weight="100">1</Probability>
+      <Probability Weight="0">2</Probability>
    </ItemGenerationModifiersListDefinition>
    
    <!-- PLAYABLE UNIT GENERATION -->

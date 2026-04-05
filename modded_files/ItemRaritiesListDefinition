@@ -15,8 +15,8 @@
    <ItemRaritiesListDefinition Id="ShopProduction">
       <Probability Weight="100">1</Probability>
       <Probability Weight="20">2</Probability>
-      <Probability Weight="12">3</Probability>
-      <Probability Weight="0">4</Probability> <!-- 0 because this part is unlocked via meta -->
+      <Probability Weight="15">3</Probability>
+      <Probability Weight="5">4</Probability> <!-- 0 because this part is unlocked via meta -->
    </ItemRaritiesListDefinition>
    
    <ItemRaritiesListDefinition Id="PanicRewardBasic">
@@ -40,7 +40,7 @@
    <ItemRaritiesListDefinition Id="BonePile">
       <Probability Weight="100">1</Probability>
       <Probability Weight="20">2</Probability>
-      <Probability Weight="15">2</Probability>
+      <Probability Weight="15">3</Probability>
       <Probability Weight="6">4</Probability>
    </ItemRaritiesListDefinition>
 

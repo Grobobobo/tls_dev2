@@ -167,7 +167,7 @@
 		<LocArguments>
              <LocArgument Value="EnemiesHitThreshold" Style="KeyWordNb"/>
                <LocalizedArgument Value="SkillEffectName_Propagation" Style="Propagation"/>
-               <LocArgument Value="2" Style="DamageNb" Prefix=" x"/>
+               <LocArgument Value="3" Style="DamageNb" Prefix=" x"/>
              <!--<LocArgument Prefix="+" Value="OverallDamageBonus" Suffix="%" Style="GoodNb"/>-->
              <LocArgument Value="PerkStacks" Interpreted="true" Style="KeyWordNb"/>
       </LocArguments>
@@ -1200,7 +1200,7 @@
       </TokenVariables>
       <LocArguments>
          <LocalizedArgument Prefix="SkillName_" Value="SkillId" Style="Skill"/>
-         <LocArgument Value="3" Style="KeywordNb"/>
+         <LocArgument Value="2" Style="KeywordNb"/>
       </LocArguments>
       <View>
          <SkillsToShow>
@@ -1282,7 +1282,7 @@
    <PerkDefinition Id="PlagueDoctor">
       <TokenVariables>
          <TokenVariable Key="BuffDuration" Value="2"/>
-         <TokenVariable Key="BuffBaseValue" Value="8"/>
+         <TokenVariable Key="BuffBaseValue" Value="5"/>
          <TokenVariable Key="TargetTouch" Value="Module.Buffer"/>
       </TokenVariables>
       <LocArguments>

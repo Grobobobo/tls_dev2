@@ -486,7 +486,7 @@
 
             <AttackType>Physical</AttackType>
 
-            <DamageMultiplier>1.2</DamageMultiplier>
+            <DamageMultiplier>1.25</DamageMultiplier>
 
             <SkillEffects>
 
@@ -699,7 +699,7 @@
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <Stun>
-                  <BaseChance>0.6</BaseChance>
+                  <BaseChance>0.7</BaseChance>
                </Stun>
             </SkillEffects>
 
@@ -809,9 +809,9 @@
 
             <SkillEffects>
                   <Stun>
-                     <BaseChance>0.5</BaseChance>
+                     <BaseChance>0.7</BaseChance>
                   </Stun>
-               <Propagation PropagationsCount="2"/>
+               <Propagation PropagationsCount="3"/>
             </SkillEffects>
 
          </Attack>
@@ -2604,11 +2604,11 @@
 
       <ContextualConditions>
 
-         <MinTargetInjuryStage>2</MinTargetInjuryStage>
+         <MinTargetInjuryStage>1</MinTargetInjuryStage>
 
       </ContextualConditions>
 
-      <Range Min="1" Max="3"/>
+      <Range Min="1" Max="2"/>
 
       <SkillAction>
 
@@ -3355,6 +3355,62 @@
 
    </SkillDefinition>
 
+<SkillDefinition Id="Spe_PoisonSeedSkill" TemplateId="PoisonSeedSkill">
+
+
+      <AreaOfEffect OriginX="2" OriginY="2">
+         __e__
+         _eee_
+         eeXee
+         _eee_
+         __e__
+      </AreaOfEffect>
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <Contagion>
+
+                  <BaseChance>100</BaseChance>
+
+                  <TurnsCount>2</TurnsCount>
+
+               </Contagion>
+
+               <Poison>
+
+                  <BaseChance>1</BaseChance>
+
+                  <DamagePerTurn>50</DamagePerTurn>
+
+                  <TurnsCount>2</TurnsCount>
+
+               </Poison>
+
+            <SurroundingEffect>
+
+               <Poison>
+
+                  <BaseChance>1</BaseChance>
+
+                  <DamagePerTurn>50</DamagePerTurn>
+
+                  <TurnsCount>2</TurnsCount>
+
+               </Poison>
+
+            </SurroundingEffect>
+
+            </SkillEffects>
+         
+         </Generic>
+
+      </SkillAction>
+
+   </SkillDefinition>
    
 
    <SkillDefinition Id="PoisonSeedSkill2" TemplateId="PoisonSeedSkill">
@@ -3405,9 +3461,66 @@
 
    </SkillDefinition>
 
-	
+<SkillDefinition Id="Spe_PoisonSeedSkill2" TemplateId="PoisonSeedSkill2">
+
+
+      <AreaOfEffect OriginX="2" OriginY="2">
+         __e__
+         _eee_
+         eeXee
+         _eee_
+         __e__
+      </AreaOfEffect>
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <Contagion>
+
+                  <BaseChance>100</BaseChance>
+
+                  <TurnsCount>3</TurnsCount>
+
+               </Contagion>
+
+               <Poison>
+
+                  <BaseChance>1</BaseChance>
+
+                  <DamagePerTurn>75</DamagePerTurn>
+
+                  <TurnsCount>3</TurnsCount>
+
+               </Poison>
+
+               <SurroundingEffect>
+
+                  <Poison>
+
+                     <BaseChance>1</BaseChance>
+
+                     <DamagePerTurn>75</DamagePerTurn>
+
+                     <TurnsCount>3</TurnsCount>
+
+                  </Poison>
+
+               </SurroundingEffect>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
 
   <SkillDefinition Id="IsolationSeedSkill">
+
 
       <Range Min="0" Max="6"/>
 
@@ -3533,6 +3646,54 @@
 
    </SkillDefinition>
 
+   <SkillDefinition Id="Spe_IsolationSeedSkill" TemplateId="IsolationSeedSkill">
+
+      <AreaOfEffect OriginX="1" OriginY="1">
+
+         e_e
+
+         _X_
+
+         e_e
+
+      </AreaOfEffect>
+      <Range Min="0" Max="6"/>
+
+
+      <SkillAction>
+
+         <Attack>
+
+            <BaseDamage Min="90" Max="110"/>
+
+            <AttackType>Physical</AttackType>
+
+            <DamageMultiplier>1</DamageMultiplier>
+
+            <SkillEffects>
+
+               <MultiHit HitsCount="4"/>
+
+               <Isolated>
+
+                  <DamageMultiplier>2</DamageMultiplier>
+
+               </Isolated>
+
+               <NoDodge/>
+               <NoBlock/>
+               <IgnoreLineOfSight/>
+               <SurroundingEffect>
+                  <Damage Multiplier="0.5"/>
+               </SurroundingEffect>
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+   </SkillDefinition>
 
 
    <SkillDefinition Id="IsolationSeedSkill2" TemplateId="IsolationSeedSkill">
@@ -3568,7 +3729,7 @@
                </Isolated>
 
                <NoDodge/>
-
+               <NoBlock/>
                <IgnoreLineOfSight/>
 
             </SkillEffects>
@@ -3579,6 +3740,54 @@
 
    </SkillDefinition>
 
+   <SkillDefinition Id="Spe_IsolationSeedSkill2" TemplateId="IsolationSeedSkill">
+
+      <AreaOfEffect OriginX="1" OriginY="1">
+
+         e_e
+
+         _X_
+
+         e_e
+
+      </AreaOfEffect>
+      <Range Min="0" Max="6"/>
+
+
+      <SkillAction>
+
+         <Attack>
+
+            <BaseDamage Min="140" Max="160"/>
+
+            <AttackType>Physical</AttackType>
+
+            <DamageMultiplier>1</DamageMultiplier>
+
+            <SkillEffects>
+
+               <MultiHit HitsCount="4"/>
+
+               <Isolated>
+
+                  <DamageMultiplier>2</DamageMultiplier>
+
+               </Isolated>
+
+               <NoDodge/>
+               <NoBlock/>
+               <IgnoreLineOfSight/>
+               <SurroundingEffect>
+                  <Damage Multiplier="0.5"/>
+               </SurroundingEffect>
+
+            </SkillEffects>
+
+         </Attack>
+
+      </SkillAction>
+
+   </SkillDefinition>
 
 
    <SkillDefinition Id="PurgingSeedSkill">
@@ -3720,6 +3929,63 @@
    </SkillDefinition>
 
 
+   <SkillDefinition Id="Spe_PurgingSeedSkill" TemplateId="PurgingSeedSkill">
+
+      <Range Min="0" Max="6"/>
+
+      <AreaOfEffect OriginX="2" OriginY="2">
+         _XXX_
+         XXXXX
+         XXXXX
+         XXXXX
+         _XXX_
+      </AreaOfEffect>
+
+      <AffectedUnits>
+
+         <CanAffectBuildings>false</CanAffectBuildings>
+
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+      </AffectedUnits>
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <Debuff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Stat Id="Resistance"/>
+
+                  <TurnsCount>2</TurnsCount>
+
+                  <Malus>10</Malus>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+               </Debuff>
+
+               <RemoveStatus>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Status>RemovablePositive</Status>
+
+               </RemoveStatus>
+
+               <IgnoreLineOfSight/>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+   </SkillDefinition>
 
    <SkillDefinition Id="PurgingSeedSkill2" TemplateId="PurgingSeedSkill">
 
@@ -3785,7 +4051,64 @@
 
    </SkillDefinition>
 
-	
+	   <SkillDefinition Id="Spe_PurgingSeedSkill2" TemplateId="PurgingSeedSkill">
+
+      <Range Min="0" Max="6"/>
+
+      <AreaOfEffect OriginX="2" OriginY="2">
+         _XXX_
+         XXXXX
+         XXXXX
+         XXXXX
+         _XXX_
+      </AreaOfEffect>
+
+      <AffectedUnits>
+
+         <CanAffectBuildings>false</CanAffectBuildings>
+
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+      </AffectedUnits>
+
+      <SkillAction>
+
+         <Generic>
+
+            <SkillEffects>
+
+               <Debuff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Stat Id="Resistance"/>
+
+                  <TurnsCount>2</TurnsCount>
+
+                  <Malus>20</Malus>
+
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+
+               </Debuff>
+
+               <RemoveStatus>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Status>RemovablePositive</Status>
+
+               </RemoveStatus>
+
+               <IgnoreLineOfSight/>
+
+            </SkillEffects>
+
+         </Generic>
+
+      </SkillAction>
+
+   </SkillDefinition>
+
 
    <!-- ███████████████████████████████████████████████████████████████ -->
 

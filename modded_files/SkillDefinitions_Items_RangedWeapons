@@ -47,9 +47,9 @@
       <SkillAction>
          <Attack>
             <AttackType>Ranged</AttackType>
-            <DamageMultiplier>1.4</DamageMultiplier>
+            <DamageMultiplier>1.15</DamageMultiplier>
             <SkillEffects>
-               <MultiHit HitsCount="3"/>
+               <MultiHit HitsCount="4"/>
                <Inaccurate>
                   <Malus>1</Malus>
                </Inaccurate>
@@ -106,7 +106,7 @@
             <SkillEffects>
                <Poison>
                   <BaseChance>1</BaseChance>
-                  <DamagePerTurn>45</DamagePerTurn>
+                  <DamagePerTurn>50</DamagePerTurn>
                   <TurnsCount>2</TurnsCount>
                </Poison>
             </SkillEffects>
@@ -983,7 +983,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                   <Stat Id="Dodge"/>
-                  <Bonus>40</Bonus>
+                  <Bonus>50</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
                <Buff>

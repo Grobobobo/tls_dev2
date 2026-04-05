@@ -753,7 +753,7 @@
         <BaseDamage Min="100 * (1 + PlayableUnitLevel/13)" Max="100 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>0</BasePrice>
         <Skills>
-          <Skill>PlayerZeppelinExplosion</Skill>
+          <Skill OverallUsesCount="2">PlayerZeppelinExplosion</Skill>
         </Skills>
       </Level>
     </LevelVariations>

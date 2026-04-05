@@ -1975,34 +1975,14 @@
   <ItemDefinition Id="MedalPerkViciousKiller">
     <Category>Trinket</Category>
     <LevelVariations>
-      <Level Id="2">
-        <BasePrice>42</BasePrice>
-        <Perks>
-          <Perk>ViciousKiller</Perk>
-        </Perks>
-      </Level>
-      <Level Id="3">
-        <MainStatBonus Stat="Reliability">15</MainStatBonus>
-        <BasePrice>59</BasePrice>
-        <Perks>
-          <Perk>ViciousKiller</Perk>
-        </Perks>
-      </Level>
-      <Level Id="4">
-        <MainStatBonus Stat="Reliability">30</MainStatBonus>
-        <BasePrice>83</BasePrice>
-        <Perks>
-          <Perk>ViciousKiller</Perk>
-        </Perks>
-      </Level>
-      <Level Id="5">
-        <MainStatBonus Stat="Reliability">45</MainStatBonus>
-        <BasePrice>115</BasePrice>
-        <Perks>
-          <Perk>ViciousKiller</Perk>
-        </Perks>
-      </Level>
-    </LevelVariations>
+			<Level Id="5">
+				<MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
+				<BasePrice>148</BasePrice>
+				<Perks>
+					<Perk>ViciousKiller</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
   </ItemDefinition>
 
   <ItemDefinition Id="MedalPerkMercyKill">
@@ -2010,14 +1990,14 @@
     <LevelVariations>
       <Level Id="4">
         <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
-        <BasePrice>70</BasePrice>
+        <BasePrice>100</BasePrice>
         <Perks>
           <Perk>MercyKill</Perk>
         </Perks>
       </Level>
       <Level Id="5">
         <MainStatBonus Stat="PoisonDamageModifier">18</MainStatBonus>
-        <BasePrice>93</BasePrice>
+        <BasePrice>135</BasePrice>
         <Perks>
           <Perk>MercyKill</Perk>
         </Perks>
@@ -2028,22 +2008,29 @@
   <ItemDefinition Id="MedalPerkPlagueDoctor">
     <Category>Trinket</Category>
     <LevelVariations>
+    <Level Id="2">
+        <BasePrice>42</BasePrice>
+        <Perks>
+          <Perk>PlagueDoctor</Perk>
+        </Perks>
+      </Level>
       <Level Id="3">
-        <BasePrice>65</BasePrice>
+        <MainStatBonus Stat="OpportunisticAttacks">7</MainStatBonus>
+        <BasePrice>59</BasePrice>
         <Perks>
           <Perk>PlagueDoctor</Perk>
         </Perks>
       </Level>
       <Level Id="4">
-        <MainStatBonus Stat="OpportunisticAttacks">7</MainStatBonus>
-        <BasePrice>93</BasePrice>
+        <MainStatBonus Stat="OpportunisticAttacks">14</MainStatBonus>
+        <BasePrice>83</BasePrice>
         <Perks>
           <Perk>PlagueDoctor</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="OpportunisticAttacks">14</MainStatBonus>
-        <BasePrice>118</BasePrice>
+        <MainStatBonus Stat="OpportunisticAttacks">21</MainStatBonus>
+        <BasePrice>115</BasePrice>
         <Perks>
           <Perk>PlagueDoctor</Perk>
         </Perks>
