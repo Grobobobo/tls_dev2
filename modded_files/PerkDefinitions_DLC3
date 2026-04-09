@@ -9,7 +9,11 @@
          <TokenVariables>
             <TokenVariable Key="TotalMovePointGain" Value="MovepointGainPerStep * NumberOfStepsReached"/>
             <TokenVariable Key="MovepointGainPerStep" Value="1"/>
-            <TokenVariable Key="ActualMoveBonus" Value="BooleanChoice(PanicValue > 99,3,0)"/>
+            <TokenVariable Key="TotalCriticalPowerGain" Value="CriticalPowerGainPerStep * NumberOfStepsReached"/>
+            <TokenVariable Key="CriticalPowerGainPerStep" Value="10"/>
+            <TokenVariable Key="TotalActionPointGain" Value="BooleanChoice(CurrentPanic > 59, ActionPointGain, 0)"/>
+            <TokenVariable Key="ActionPointGain" Value="1"/>
+            <TokenVariable Key="ActionPointThreshold" Value="60"/>
             <TokenVariable Key="NextThresholdReachedIn" Value="((NumberOfStepsReached + 1) *StepValue) - CurrentPanic"/>
             <TokenVariable Key="NumberOfStepsReached" Value="Floor(CurrentPanic/StepValue)"/>
             <TokenVariable Key="StepValue" Value="20"/>
@@ -21,6 +25,11 @@
             <LocArgument Value="CurrentPanic" Suffix="%" Interpreted="true" Style="KeyWordNb"/>
             <StatArgument Value="TotalMovePointGain" Interpreted="true" DisplaySign="true" Stat="MovePointsTotal"/>
             <LocArgument Value="NextThresholdReachedIn" Suffix="%" Interpreted="true" Style="KeyWordNb"/>
+            <StatArgument Value="CriticalPowerGainPerStep" Stat="CriticalPower" DisplaySign="true" Interpreted="true"/>
+            <StatArgument Value="TotalCriticalPowerGain" Interpreted="true" DisplaySign="true" Stat="CriticalPower"/>
+            <LocArgument Value="ActionPointThreshold" Suffix="%" Style="KeyWordNb"/>
+            <StatArgument Value="ActionPointGain" Stat="ActionPointsTotal" DisplaySign="true" Interpreted="true"/>
+            <StatArgument Value="TotalActionPointGain" Interpreted="true" DisplaySign="true" Stat="ActionPointsTotal"/>
          </LocArguments>
          <View>
             <DisplayInHUD>
@@ -34,6 +43,8 @@
             <BufferModule>
                <Effects>
                   <StatModifier Stat="MovePointsTotal" Value="TotalMovePointGain" ChildStatFollows="true"/>
+                  <StatModifier Stat="CriticalPower" Value="TotalCriticalPowerGain"/>
+                  <StatModifier Stat="ActionPointsTotal" Value="TotalActionPointGain" ChildStatFollows="true"/>
                </Effects>
             </BufferModule>
          </Modules>
@@ -42,7 +53,7 @@
    <PerkDefinition Id="EnemiesInsideHavenPerk">
       <TokenVariables>
          <TokenVariable Key="ActualDamageBonus" Value="BooleanChoice(IsEnemyInsideHavenThisNight=0,DamageGain,0)"/>
-         <TokenVariable Key="DamageGain" Value="25"/>
+         <TokenVariable Key="DamageGain" Value="20"/>
          <TokenVariable Key="IsEnemyInsideHavenThisNight" Value="Module.Buffer"/>
       </TokenVariables>
       <LocArguments>
@@ -82,7 +93,7 @@
    <PerkDefinition Id="ExperienceBonusPerHeroes">
       <TokenVariables>
          <TokenVariable Key="ActualExperienceBonus" Value="(BaseXpBonus + XpMalusPerHeroes) - (NumberOfPlayableUnit * XpMalusPerHeroes)"/>
-         <TokenVariable Key="XpMalusPerHeroes" Value="8"/>
+         <TokenVariable Key="XpMalusPerHeroes" Value="12"/>
          <TokenVariable Key="BaseXpBonus" Value="60"/>
       </TokenVariables>
       <LocArguments>
@@ -107,31 +118,28 @@
 
    <PerkDefinition Id="HeroesBlockPhysDamagePerk">
       <TokenVariables>
-         <TokenVariable Key="BonusMultiplier" Value="Floor(BooleanChoice(Owner.PhysicalDamage-MinimumThreshold > 0, Owner.PhysicalDamage-MinimumThreshold, 0)/PhysAttackThreshold)"/>
-         <TokenVariable Key="NextThreshold" Value="MinimumThreshold + (NumberOfStepsReached + 1) * PhysAttackThreshold"/>
-         <TokenVariable Key="NumberOfStepsReached" Value="Floor(CurrentPhysOverThreshold / PhysAttackThreshold)"/>
-         <TokenVariable Key="CurrentPhysOverThreshold" Value="Max(0, Owner.PhysicalDamage - MinimumThreshold)"/>
-         <TokenVariable Key="BlockBonus" Value="10"/>
-         <TokenVariable Key="PhysAttackThreshold" Value="10"/>
-         <TokenVariable Key="MinimumThreshold" Value="100"/>
+         <TokenVariable Key="BonusMultiplier" Value="Floor(Owner.Block / BlockThreshold)"/>
+         <TokenVariable Key="NextThreshold" Value="(NumberOfStepsReached + 1) * BlockThreshold"/>
+         <TokenVariable Key="NumberOfStepsReached" Value="Floor(Owner.Block / BlockThreshold)"/>
+         <TokenVariable Key="PhysDamageBonus" Value="10"/>
+         <TokenVariable Key="BlockThreshold" Value="10"/>
       </TokenVariables>
       <LocArguments>
-         <LocArgument Value="PhysAttackThreshold" Suffix="%" Style="GoodNb"/>
-         <StatArgument Stat="PhysicalDamage"/>
-         <LocArgument Value="MinimumThreshold" Style="KeyWordNb"/>
-         <StatArgument Stat="Block" Value="BlockBonus"/>
-         <StatArgument Stat="Block" Value="BlockBonus * BonusMultiplier" Interpreted="true"/>
-         <StatArgument Stat="PhysicalDamage" Value="NextThreshold" Interpreted="true" DisplaySign="false"/>
+         <LocArgument Value="BlockThreshold" Style="GoodNb"/>
+         <StatArgument Stat="Block"/>
+         <StatArgument Stat="PhysicalDamage" Value="PhysDamageBonus"/>
+         <StatArgument Stat="PhysicalDamage" Value="PhysDamageBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="Block" Value="NextThreshold" Interpreted="true" DisplaySign="false"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
-            <Bonus Value="BlockBonus * BonusMultiplier"/>
+            <Bonus Value="PhysDamageBonus * BonusMultiplier"/>
          </DisplayInHUD>
       </View>
       <Modules>
          <BufferModule>
             <Effects>
-               <StatModifier Stat="Block" Value="BlockBonus * BonusMultiplier"/>
+               <StatModifier Stat="PhysicalDamage" Value="PhysDamageBonus * BonusMultiplier"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -139,31 +147,32 @@
 
    <PerkDefinition Id="HeroesSkillRangeRangedDamagePerk">
       <TokenVariables>
-         <TokenVariable Key="BonusMultiplier" Value="Floor(BooleanChoice(Owner.RangedDamage-MinimumThreshold > 0, Owner.RangedDamage-MinimumThreshold, 0)/RangAttackThreshold)"/>
-         <TokenVariable Key="NextThreshold" Value="MinimumThreshold + (NumberOfStepsReached + 1) * RangAttackThreshold"/>
-         <TokenVariable Key="NumberOfStepsReached" Value="Floor(CurrentRangeOverThreshold / RangAttackThreshold)"/>
-         <TokenVariable Key="CurrentRangeOverThreshold" Value="Max(0, Owner.RangedDamage - MinimumThreshold)"/>
-         <TokenVariable Key="SkillRangeBonus" Value="2"/>
-         <TokenVariable Key="RangAttackThreshold" Value="10"/>
-         <TokenVariable Key="MinimumThreshold" Value="100"/>
+         <TokenVariable Key="BonusMultiplier" Value="Floor(Owner.Dodge / DodgeThreshold)"/>
+         <TokenVariable Key="NextThreshold" Value="(NumberOfStepsReached + 1) * DodgeThreshold"/>
+         <TokenVariable Key="NumberOfStepsReached" Value="Floor(Owner.Dodge / DodgeThreshold)"/>
+         <TokenVariable Key="RangedDamageBonus" Value="5"/>
+         <TokenVariable Key="DodgeBonus" Value="5"/>
+         <TokenVariable Key="DodgeThreshold" Value="5"/>
       </TokenVariables>
       <LocArguments>
-         <LocArgument Value="RangAttackThreshold" Suffix="%" Style="GoodNb"/>
-         <StatArgument Stat="RangedDamage"/>
-         <LocArgument Value="MinimumThreshold" Style="KeyWordNb"/>
-         <StatArgument Stat="SkillRangeModifier" Value="SkillRangeBonus"/>
-         <StatArgument Stat="SkillRangeModifier" Value="SkillRangeBonus * BonusMultiplier" Interpreted="true"/>
-         <StatArgument Stat="RangedDamage" Value="NextThreshold" Interpreted="true" DisplaySign="false"/>
+         <LocArgument Value="DodgeThreshold" Style="GoodNb"/>
+         <StatArgument Stat="Dodge"/>
+         <StatArgument Stat="RangedDamage" Value="RangedDamageBonus"/>
+         <StatArgument Stat="Dodge" Value="DodgeBonus"/>
+         <StatArgument Stat="RangedDamage" Value="RangedDamageBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="Dodge" Value="DodgeBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="Dodge" Value="NextThreshold" Interpreted="true" DisplaySign="false"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
-            <Bonus Value="SkillRangeBonus * BonusMultiplier"/>
+            <Bonus Value="RangedDamageBonus * BonusMultiplier"/>
          </DisplayInHUD>
       </View>
       <Modules>
          <BufferModule>
             <Effects>
-               <StatModifier Stat="SkillRangeModifier" Value="SkillRangeBonus * BonusMultiplier"/>
+               <StatModifier Stat="RangedDamage" Value="RangedDamageBonus * BonusMultiplier"/>
+               <StatModifier Stat="Dodge" Value="DodgeBonus * BonusMultiplier"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -171,31 +180,28 @@
 
    <PerkDefinition Id="HeroesManaRegMagicDamagePerk">
       <TokenVariables>
-         <TokenVariable Key="BonusMultiplier" Value="Floor(BooleanChoice(Owner.MagicalDamage-MinimumThreshold > 0, Owner.MagicalDamage-MinimumThreshold, 0)/MagicAttackThreshold)"/>
-         <TokenVariable Key="NextThreshold" Value="MinimumThreshold + (NumberOfStepsReached + 1) * MagicAttackThreshold"/>
-         <TokenVariable Key="NumberOfStepsReached" Value="Floor(CurrentMagicOverThreshold / MagicAttackThreshold)"/>
-         <TokenVariable Key="CurrentMagicOverThreshold" Value="Max(0, Owner.MagicalDamage - MinimumThreshold)"/>
-         <TokenVariable Key="ManaRegBonus" Value="8"/>
-         <TokenVariable Key="MagicAttackThreshold" Value="10"/>
-         <TokenVariable Key="MinimumThreshold" Value="100"/>
+         <TokenVariable Key="BonusMultiplier" Value="Floor(Owner.ManaRegen / ManaRegenThreshold)"/>
+         <TokenVariable Key="NextThreshold" Value="(NumberOfStepsReached + 1) * ManaRegenThreshold"/>
+         <TokenVariable Key="NumberOfStepsReached" Value="Floor(Owner.ManaRegen / ManaRegenThreshold)"/>
+         <TokenVariable Key="MagicDamageBonus" Value="5"/>
+         <TokenVariable Key="ManaRegenThreshold" Value="4"/>
       </TokenVariables>
       <LocArguments>
-         <LocArgument Value="MagicAttackThreshold" Suffix="%" Style="GoodNb"/>
-         <StatArgument Stat="MagicalDamage"/>
-         <LocArgument Value="MinimumThreshold" Style="KeyWordNb"/>
-         <StatArgument Stat="ManaRegen" Value="ManaRegBonus"/>
-         <StatArgument Stat="ManaRegen" Value="ManaRegBonus * BonusMultiplier" Interpreted="true"/>
-         <StatArgument Stat="MagicalDamage" Value="NextThreshold" Interpreted="true" DisplaySign="false"/>
+         <LocArgument Value="ManaRegenThreshold" Style="GoodNb"/>
+         <StatArgument Stat="ManaRegen"/>
+         <StatArgument Stat="MagicalDamage" Value="MagicDamageBonus"/>
+         <StatArgument Stat="MagicalDamage" Value="MagicDamageBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="ManaRegen" Value="NextThreshold" Interpreted="true" DisplaySign="false"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
-            <Bonus Value="ManaRegBonus * BonusMultiplier"/>
+            <Bonus Value="MagicDamageBonus * BonusMultiplier"/>
          </DisplayInHUD>
       </View>
       <Modules>
          <BufferModule>
             <Effects>
-               <StatModifier Stat="ManaRegen" Value="ManaRegBonus * BonusMultiplier"/>
+               <StatModifier Stat="MagicalDamage" Value="MagicDamageBonus * BonusMultiplier"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -231,9 +237,9 @@
 
    <PerkDefinition Id="CorruptedMageResearchPerk">
       <TokenVariables>
-         <TokenVariable Key="ManaToSpend" Value="16"/> <!--Base: 12-->
+         <TokenVariable Key="ManaToSpend" Value="12"/> <!--Base: 12-->
          <TokenVariable Key="ManaSpent" Value="Module.Buffer"/>
-         <TokenVariable Key="ResistanceGained" Value="90"/>
+         <TokenVariable Key="ResistanceGained" Value="50"/>
          <TokenVariable Key="HasAlreadyActivatedThisTurn" Value="Module.Buffer2 > 0"/>
          <TokenVariable Key="BuffDuration" Value="1"/>
       </TokenVariables>

@@ -39,7 +39,7 @@
         <LocArguments>
             <LocalizedArgument Prefix="PerkName_" Value="PerkId" Style="Perk"/>
         </LocArguments>
-        <TierId>MediumCost</TierId>
+        <TierId>LowCost</TierId>
         <Tags>
             <Tag>Hero</Tag>
             <Tag>Perk</Tag>
@@ -56,7 +56,7 @@
         <LocArguments>
             <LocalizedArgument Prefix="PerkName_" Value="PerkId" Style="Perk"/>
         </LocArguments>
-        <TierId>HighCost</TierId>
+        <TierId>MediumCost</TierId>
         <Tags>
             <Tag>Hero</Tag>
             <Tag>Perk</Tag>
@@ -243,7 +243,7 @@
     <ResearchDefinition Id="HeroCapacityResearch">
         <TokenVariables>
             <TokenVariable Key="HeroesCapacityModifier" Value="1"/>
-            <TokenVariable Key="PriceModifier" Value="20"/>
+            <TokenVariable Key="PriceModifier" Value="50"/>
         </TokenVariables>
         <LocArguments>
             <LocArgument Prefix="+" Value="HeroesCapacityModifier" Style="KeyWordNb"/>
@@ -261,12 +261,12 @@
    
     <ResearchDefinition Id="BetterMineYieldsResearch">
         <TokenVariables>
-            <TokenVariable Key="ProductionResourceModifier" Value="50"/>
+            <TokenVariable Key="ProductionResourceModifier" Value="30"/>
         </TokenVariables>
         <LocArguments>
             <LocArgument Value="ProductionResourceModifier" Suffix="%" Style="KeyWordNb"/>
         </LocArguments>
-        <TierId>HighCost</TierId>
+        <TierId>MediumCost</TierId>
         <Tags>
             <Tag>Economy</Tag>
             <Tag>Production</Tag>
@@ -486,7 +486,7 @@
         <LocArguments>
             <LocalizedArgument Prefix="ItemName_NoDLCTag_" Value="ItemId" Style="Unique"/>
         </LocArguments>
-        <TierId>MediumCost</TierId>
+        <TierId>LowCost</TierId>
         <Tags>
             <Tag>UniqueItem</Tag>
         </Tags>
@@ -1135,7 +1135,7 @@
         <LocArguments>
             <LocalizedArgument Prefix="ItemName_NoDLCTag_" Value="ItemId" Style="Unique"/>
         </LocArguments>
-        <TierId>LowCost</TierId>
+        <TierId>MediumCost</TierId>
         <Tags>
             <Tag>UniqueItem</Tag>
         </Tags>
@@ -1424,7 +1424,7 @@
         <LocArguments>
             <LocalizedArgument Prefix="PerkName_" Value="PerkId" Style="Perk"/>
         </LocArguments>
-        <TierId>MediumCost</TierId>
+        <TierId>HighCost</TierId>
         <Tags>
             <Tag>Hero</Tag>
             <Tag>Perk</Tag>

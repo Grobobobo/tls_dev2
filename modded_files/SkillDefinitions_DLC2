@@ -2812,7 +2812,7 @@
 
          <Attack>
 
-            <BaseDamage Min="10 + Floor(Dodge * 2)" Max="10 + Floor(Dodge * 2)"/>
+            <BaseDamage Min="125 + Floor(Dodge * 3)" Max="125 + Floor(Dodge * 3)"/>
 
             <AttackType>Adaptative</AttackType>
 
@@ -2908,7 +2908,7 @@
 
          <Attack>
 
-            <BaseDamage Min="30 + Floor(Dodge * 3)" Max="30 + Floor(Dodge * 3)"/>
+            <BaseDamage Min="200 + Floor(Dodge * 5)" Max="200 + Floor(Dodge * 5)"/>
 
             <AttackType>Adaptative</AttackType>
 
@@ -3143,7 +3143,7 @@
 
          <Attack>
 
-            <BaseDamage Min="50 + Floor(Dodge * 1.75)" Max="50 + Floor(Dodge * 1.75)"/>
+            <BaseDamage Min="150 + Floor(Dodge * 0.5)" Max="150 + Floor(Dodge * 0.5)"/>
 
             <AttackType>Adaptative</AttackType>
 

@@ -604,7 +604,7 @@
       <InfiniteRange/>
       <SkillAction>
          <Attack>
-            <BaseDamage Min="50 + Floor(Block * 2)" Max="50 + Floor(Block * 2)"/> <!-- 200% of hero's block -->
+            <BaseDamage Min="50 + Floor(Block * 3)" Max="50 + Floor(Block * 3)"/> <!-- 200% of hero's block -->
             <AttackType>Physical</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
          </Attack>

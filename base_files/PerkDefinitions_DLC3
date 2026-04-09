@@ -82,7 +82,7 @@
    <PerkDefinition Id="ExperienceBonusPerHeroes">
       <TokenVariables>
          <TokenVariable Key="ActualExperienceBonus" Value="(BaseXpBonus + XpMalusPerHeroes) - (NumberOfPlayableUnit * XpMalusPerHeroes)"/>
-         <TokenVariable Key="XpMalusPerHeroes" Value="8"/>
+         <TokenVariable Key="XpMalusPerHeroes" Value="12"/>
          <TokenVariable Key="BaseXpBonus" Value="60"/>
       </TokenVariables>
       <LocArguments>
