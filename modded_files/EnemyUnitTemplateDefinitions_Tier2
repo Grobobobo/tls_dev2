@@ -36,7 +36,7 @@
 
       <StunResistance>15</StunResistance>
 
-      <Accuracy>-25</Accuracy>
+      <Accuracy>-30</Accuracy>
 
       <DamageSkillId>ArcherAttack</DamageSkillId>
 
@@ -388,7 +388,7 @@
 
       <Weight>10</Weight>
 
-      <HealthTotal>180</HealthTotal>
+      <HealthTotal>160</HealthTotal>
 
       <HealthGaugeSize>Small</HealthGaugeSize>
 
@@ -696,7 +696,7 @@
 
          <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">6</StatProgression>
 
-         <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">10</StatProgression>
+         <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">12</StatProgression>
 
          <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">47</StatProgression>
 
@@ -736,7 +736,7 @@
 
       <Weight>10</Weight>
 
-      <HealthTotal>150</HealthTotal>
+      <HealthTotal>140</HealthTotal>
 
       <HealthGaugeSize>Small</HealthGaugeSize>
 
@@ -1504,7 +1504,7 @@
 
       <StunResistance>15</StunResistance>
 
-      <Accuracy>-20</Accuracy>
+      <Accuracy>-25</Accuracy>
 
       <DamageSkillId>PoisonFrogAttack</DamageSkillId>
 

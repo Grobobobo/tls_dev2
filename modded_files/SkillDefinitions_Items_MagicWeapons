@@ -546,7 +546,7 @@
 
    <SkillDefinition Id="ShockingTouch">
       <ActionPointsCost>1</ActionPointsCost>
-      <ManaCost>2</ManaCost>
+      <ManaCost>1</ManaCost>
       <UsesPerTurnCount>2</UsesPerTurnCount>
       <Range Min="1" Max="1"/>
       <AreaOfEffect OriginX="1" OriginY="0">
@@ -1446,7 +1446,7 @@
       <SkillAction>
          <Attack>
             <AttackType>Magical</AttackType>
-            <DamageMultiplier>0.8</DamageMultiplier>
+            <DamageMultiplier>0.9</DamageMultiplier>
             <SkillEffects>
                <Opportunistic>
                   <DamageMultiplier>2</DamageMultiplier>

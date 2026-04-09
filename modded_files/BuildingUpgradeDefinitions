@@ -1457,6 +1457,7 @@
             <MaterialCost>40</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapSkill" OldSkillId="PoisonSeedSkill" NewSkillId="PoisonSeedSkill2"/>
+               <UpgradeEffect Id="SwapSkill" OldSkillId="Spe_PoisonSeedSkill" NewSkillId="Spe_PoisonSeedSkill2"/>
             </UpgradeEffects>
          </UpgradeLevel>
       </UpgradeLevels>
@@ -1488,6 +1489,7 @@
             <MaterialCost>40</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapSkill" OldSkillId="IsolationSeedSkill" NewSkillId="IsolationSeedSkill2"/>
+               <UpgradeEffect Id="SwapSkill" OldSkillId="Spe_IsolationSeedSkill" NewSkillId="Spe_IsolationSeedSkill2"/>
             </UpgradeEffects>
          </UpgradeLevel>
       </UpgradeLevels>
@@ -1519,6 +1521,7 @@
             <MaterialCost>40</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapSkill" OldSkillId="PurgingSeedSkill" NewSkillId="PurgingSeedSkill2"/>
+               <UpgradeEffect Id="SwapSkill" OldSkillId="Spe_PurgingSeedSkill" NewSkillId="Spe_PurgingSeedSkill2"/>
             </UpgradeEffects>
          </UpgradeLevel>
       </UpgradeLevels>

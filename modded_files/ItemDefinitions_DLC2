@@ -1832,42 +1832,42 @@
     <Category>Scroll</Category>
     <LevelVariations>
       <Level Id="0">
-        <BaseDamage Min="58" Max="116" />
+        <BaseDamage Min="93" Max="186" />
         <BasePrice>14</BasePrice>
         <Skills>
           <Skill OverallUsesCount="2">PiercingClawsScroll</Skill>
         </Skills>
       </Level>
       <Level Id="1">
-        <BaseDamage Min="64" Max="128" />
+        <BaseDamage Min="102" Max="205" />
         <BasePrice>20</BasePrice>
         <Skills>
           <Skill OverallUsesCount="2">PiercingClawsScroll</Skill>
         </Skills>
       </Level>
       <Level Id="2">
-        <BaseDamage Min="71" Max="141" />
+        <BaseDamage Min="114" Max="226" />
         <BasePrice>30</BasePrice>
         <Skills>
           <Skill OverallUsesCount="3">PiercingClawsScroll1</Skill>
         </Skills>
       </Level>
       <Level Id="3">
-        <BaseDamage Min="78" Max="155" />
+        <BaseDamage Min="125" Max="248" />
         <BasePrice>45</BasePrice>
         <Skills>
           <Skill OverallUsesCount="3">PiercingClawsScroll1</Skill>
         </Skills>
       </Level>
       <Level Id="4">
-        <BaseDamage Min="86" Max="171" />
+        <BaseDamage Min="138" Max="274" />
         <BasePrice>66</BasePrice>
         <Skills>
           <Skill OverallUsesCount="4">PiercingClawsScroll2</Skill>
         </Skills>
       </Level>
       <Level Id="5">
-        <BaseDamage Min="94" Max="188" />
+        <BaseDamage Min="150" Max="301" />
         <BasePrice>94</BasePrice>
         <Skills>
           <Skill OverallUsesCount="4">PiercingClawsScroll2</Skill>
@@ -1880,42 +1880,42 @@
     <Category>Scroll</Category>
     <LevelVariations>
       <Level Id="0">
-        <BaseDamage Min="82" Max="102" />
+        <BaseDamage Min="123" Max="153" />
         <BasePrice>14</BasePrice>
         <Skills>
           <Skill OverallUsesCount="2">PainfulSpinScroll</Skill>
         </Skills>
       </Level>
       <Level Id="1">
-        <BaseDamage Min="90" Max="112" />
+        <BaseDamage Min="135" Max="168" />
         <BasePrice>20</BasePrice>
         <Skills>
           <Skill OverallUsesCount="2">PainfulSpinScroll</Skill>
         </Skills>
       </Level>
       <Level Id="2">
-        <BaseDamage Min="98" Max="123" />
+        <BaseDamage Min="147" Max="184" />
         <BasePrice>30</BasePrice>
         <Skills>
           <Skill OverallUsesCount="3">PainfulSpinScroll1</Skill>
         </Skills>
       </Level>
       <Level Id="3">
-        <BaseDamage Min="108" Max="135" />
+        <BaseDamage Min="162" Max="202" />
         <BasePrice>45</BasePrice>
         <Skills>
           <Skill OverallUsesCount="3">PainfulSpinScroll1</Skill>
         </Skills>
       </Level>
       <Level Id="4">
-        <BaseDamage Min="119" Max="149" />
+        <BaseDamage Min="178" Max="224" />
         <BasePrice>66</BasePrice>
         <Skills>
           <Skill OverallUsesCount="4">PainfulSpinScroll2</Skill>
         </Skills>
       </Level>
       <Level Id="5">
-        <BaseDamage Min="131" Max="164" />
+        <BaseDamage Min="196" Max="246" />
         <BasePrice>94</BasePrice>
         <Skills>
           <Skill OverallUsesCount="4">PainfulSpinScroll2</Skill>
@@ -1928,42 +1928,42 @@
     <Category>Scroll</Category>
     <LevelVariations>
       <Level Id="0">
-        <BaseDamage Min="75" Max="150" />
+        <BaseDamage Min="98" Max="195" />
         <BasePrice>14</BasePrice>
         <Skills>
           <Skill OverallUsesCount="2">PetalStormScroll</Skill>
         </Skills>
       </Level>
       <Level Id="1">
-        <BaseDamage Min="83" Max="165" />
+        <BaseDamage Min="108" Max="214" />
         <BasePrice>20</BasePrice>
         <Skills>
           <Skill OverallUsesCount="2">PetalStormScroll</Skill>
         </Skills>
       </Level>
       <Level Id="2">
-        <BaseDamage Min="91" Max="182" />
+        <BaseDamage Min="118" Max="237" />
         <BasePrice>30</BasePrice>
         <Skills>
           <Skill OverallUsesCount="3">PetalStormScroll1</Skill>
         </Skills>
       </Level>
       <Level Id="3">
-        <BaseDamage Min="100" Max="200" />
+        <BaseDamage Min="130" Max="260" />
         <BasePrice>45</BasePrice>
         <Skills>
           <Skill OverallUsesCount="3">PetalStormScroll1</Skill>
         </Skills>
       </Level>
       <Level Id="4">
-        <BaseDamage Min="110" Max="220" />
+        <BaseDamage Min="143" Max="286" />
         <BasePrice>66</BasePrice>
         <Skills>
           <Skill OverallUsesCount="4">PetalStormScroll2</Skill>
         </Skills>
       </Level>
       <Level Id="5">
-        <BaseDamage Min="121" Max="242" />
+        <BaseDamage Min="157" Max="315" />
         <BasePrice>94</BasePrice>
         <Skills>
           <Skill OverallUsesCount="4">PetalStormScroll2</Skill>
@@ -1975,34 +1975,14 @@
   <ItemDefinition Id="MedalPerkViciousKiller">
     <Category>Trinket</Category>
     <LevelVariations>
-      <Level Id="2">
-        <BasePrice>42</BasePrice>
-        <Perks>
-          <Perk>ViciousKiller</Perk>
-        </Perks>
-      </Level>
-      <Level Id="3">
-        <MainStatBonus Stat="Reliability">15</MainStatBonus>
-        <BasePrice>59</BasePrice>
-        <Perks>
-          <Perk>ViciousKiller</Perk>
-        </Perks>
-      </Level>
-      <Level Id="4">
-        <MainStatBonus Stat="Reliability">30</MainStatBonus>
-        <BasePrice>83</BasePrice>
-        <Perks>
-          <Perk>ViciousKiller</Perk>
-        </Perks>
-      </Level>
-      <Level Id="5">
-        <MainStatBonus Stat="Reliability">45</MainStatBonus>
-        <BasePrice>115</BasePrice>
-        <Perks>
-          <Perk>ViciousKiller</Perk>
-        </Perks>
-      </Level>
-    </LevelVariations>
+			<Level Id="5">
+				<MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
+				<BasePrice>148</BasePrice>
+				<Perks>
+					<Perk>ViciousKiller</Perk>
+				</Perks>
+			</Level>
+		</LevelVariations>
   </ItemDefinition>
 
   <ItemDefinition Id="MedalPerkMercyKill">
@@ -2010,14 +1990,14 @@
     <LevelVariations>
       <Level Id="4">
         <MainStatBonus Stat="OverallDamage">-10</MainStatBonus>
-        <BasePrice>70</BasePrice>
+        <BasePrice>100</BasePrice>
         <Perks>
           <Perk>MercyKill</Perk>
         </Perks>
       </Level>
       <Level Id="5">
         <MainStatBonus Stat="PoisonDamageModifier">18</MainStatBonus>
-        <BasePrice>93</BasePrice>
+        <BasePrice>135</BasePrice>
         <Perks>
           <Perk>MercyKill</Perk>
         </Perks>
@@ -2028,22 +2008,29 @@
   <ItemDefinition Id="MedalPerkPlagueDoctor">
     <Category>Trinket</Category>
     <LevelVariations>
+    <Level Id="2">
+        <BasePrice>42</BasePrice>
+        <Perks>
+          <Perk>PlagueDoctor</Perk>
+        </Perks>
+      </Level>
       <Level Id="3">
-        <BasePrice>65</BasePrice>
+        <MainStatBonus Stat="OpportunisticAttacks">7</MainStatBonus>
+        <BasePrice>59</BasePrice>
         <Perks>
           <Perk>PlagueDoctor</Perk>
         </Perks>
       </Level>
       <Level Id="4">
-        <MainStatBonus Stat="OpportunisticAttacks">7</MainStatBonus>
-        <BasePrice>93</BasePrice>
+        <MainStatBonus Stat="OpportunisticAttacks">14</MainStatBonus>
+        <BasePrice>83</BasePrice>
         <Perks>
           <Perk>PlagueDoctor</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="OpportunisticAttacks">14</MainStatBonus>
-        <BasePrice>118</BasePrice>
+        <MainStatBonus Stat="OpportunisticAttacks">21</MainStatBonus>
+        <BasePrice>115</BasePrice>
         <Perks>
           <Perk>PlagueDoctor</Perk>
         </Perks>

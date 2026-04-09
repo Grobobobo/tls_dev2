@@ -1879,11 +1879,15 @@
          </BuildingUpgradeDefinitions>
       </Upgrade>
 
+         
       <Battle>
          <HasDisabledState>true</HasDisabledState>
          <Skills>
             <Skill NightUsesCount="3">PoisonSeedSkill</Skill>
          </Skills>
+         <SkillProgressions>
+            <SkillProgression Id="Spe_PoisonSeedSkill" GlyphFlagUnlock="SpecializedTraps"/>
+         </SkillProgressions>
       </Battle>
    </BuildingDefinition>
 
@@ -1926,6 +1930,9 @@
          <Skills>
             <Skill NightUsesCount="3">IsolationSeedSkill</Skill>
          </Skills>
+         <SkillProgressions>
+            <SkillProgression Id="Spe_IsolationSeedSkill" GlyphFlagUnlock="SpecializedTraps"/>
+         </SkillProgressions>
       </Battle>
    </BuildingDefinition>
 
@@ -1969,6 +1976,9 @@
          <Skills>
             <Skill NightUsesCount="3">PurgingSeedSkill</Skill>
          </Skills>
+         <SkillProgressions>
+            <SkillProgression Id="Spe_PurgingSeedSkill" GlyphFlagUnlock="SpecializedTraps"/>
+         </SkillProgressions>
       </Battle>
    </BuildingDefinition>
 
@@ -3050,7 +3060,7 @@
       </Blueprint>
 
       <Construction>
-         <GoldCost>140</GoldCost>
+         <GoldCost>70</GoldCost>
          <BuildLimit>1</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -5033,7 +5043,7 @@
    <!-- BUILDING LIMITS -->
    <!-- ███████████████████████████████████████████████████████████████ -->
 
-   <BuildingLimitGroupDefinition Id="Gates" Limit="6"/>
+   <BuildingLimitGroupDefinition Id="Gates" Limit="12"/>
    <BuildingLimitGroupDefinition Id="Ballistas" Limit="32"/>
    <BuildingLimitGroupDefinition Id="Barricades" Limit="0" ResearchFlag="BarricadesLimit"/>
    <BuildingLimitGroupDefinition Id="ProdBuildings" Limit="4"/>

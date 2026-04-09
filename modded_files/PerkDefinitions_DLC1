@@ -1138,10 +1138,12 @@
       <TokenVariables>
          <TokenVariable Key="SkillId" Value="CollateralDamageSkill"/>
          <TokenVariable Key="DodgeCount" Value="Module.Buffer"/>
+         <TokenVariable Key="SkillCount" Value="3"/>
       </TokenVariables>
       <LocArguments>
          <LocalizedArgument Prefix="SkillName_" Value="CollateralDamageSkill" Style="Skill"/>
          <LocArgument Value="Module.CastSkillEffect.Skill.MaxRange" Interpreted="true"/>
+         <LocArgument Value="SkillCount" Style="KeyWordNb"/>
       </LocArguments>
       <View>
          <SkillsToShow>
@@ -1176,7 +1178,7 @@
             </Events>
             <Effects>
                <CastSkill SkillId="CollateralDamageSkill">
-                  <PerkTargeting TargetingReference="Caster" TargetingMethod="DamageablesInRange" Amount="1" Range="Module.CastSkillEffect.Skill.MaxRange">
+                  <PerkTargeting TargetingReference="Caster" TargetingMethod="ClosestDamageablesInRange" Amount="SkillCount" Range="Module.CastSkillEffect.Skill.MaxRange">
                      <DamageableTarget Type="Enemy"/>
                      <DamageableTarget Type="Boss"/>
                   </PerkTargeting>

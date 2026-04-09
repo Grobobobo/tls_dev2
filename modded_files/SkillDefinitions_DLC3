@@ -1636,7 +1636,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Physical</AttackType>
-        <BaseDamage Min="66 * (1 + PlayableUnitLevel/13)" Max="102 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="66 * (1 + Level/13)" Max="102 * (1 + Level/13)"  />
         <DamageMultiplier>1.5</DamageMultiplier>
         <SkillEffects>
           <IgnoreLineOfSight />
@@ -1812,13 +1812,15 @@
       </Attack>
     </SkillAction>
   </SkillDefinition>
-
+  
   <SkillDefinition Id="InfectUnique" TemplateId="Infect" GroupId="InfectUnique">
     <ValidTargets>
       <EnemyUnits />
     </ValidTargets>
     <UsesPerTurnCount>99</UsesPerTurnCount>
-      <SkillAction>
+    <ActionPointsCost>0</ActionPointsCost>
+    <ManaCost>0</ManaCost>
+         <SkillAction>
          <Attack>
             <BaseDamage Min="74 * (1 + Level/13)" Max="93 * (1 + Level/13)" />
             <AttackType>Adaptative</AttackType>
@@ -1841,25 +1843,24 @@
          </Attack>
       </SkillAction>
   </SkillDefinition>
-<SkillDefinition Id="Assassinate_Unique" TemplateId="Assassinate" GroupId="Assassinate_Unique">
-      <UsesPerTurnCount>3</UsesPerTurnCount>
-      <SkillAction>
-         <Attack>
-            <AttackType>Ranged</AttackType>
-            <DamageMultiplier>1.25</DamageMultiplier>
-            <SkillEffects>
-               <Isolated>
-                  <DamageMultiplier>2</DamageMultiplier>
-               </Isolated>
-               <Opportunistic>
-                  <DamageMultiplier>2</DamageMultiplier>
-               </Opportunistic>
-            </SkillEffects>
-         </Attack>
-      </SkillAction>
+
+  <SkillDefinition Id="Assassinate_Unique" TemplateId="Assassinate" GroupId="Assassinate_Unique">
+    <UsesPerTurnCount>3</UsesPerTurnCount>
+    <SkillAction>
+      <Attack>
+        <AttackType>Ranged</AttackType>
+        <DamageMultiplier>1.25</DamageMultiplier>
+        <SkillEffects>
+          <Isolated>
+            <DamageMultiplier>2</DamageMultiplier>
+          </Isolated>
+          <Opportunistic>
+            <DamageMultiplier>2</DamageMultiplier>
+          </Opportunistic>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
   </SkillDefinition>
-
-
   <SkillDefinition Id="PreciseShotUnique" TemplateId="PreciseShot" GroupId="ShortbowUnique">
     <AreaOfEffect OriginX="1" OriginY="0">
          e_e
@@ -2137,18 +2138,31 @@
       </Attack>
     </SkillAction>
   </SkillDefinition>
-  <SkillDefinition Id="PreciseTargettingUniqueStrongThrow" TemplateId="PreciseTargetting">
-    <SkillAction>
-      <Attack>
-        <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1</DamageMultiplier>
-        <SkillEffects>
-          <Stun>
-            <BaseChance>1</BaseChance>
-          </Stun>
-          <MultiHit HitsCount="2" />
-        </SkillEffects>
-      </Attack>
-    </SkillAction>
-  </SkillDefinition>
+
+   <SkillDefinition Id="OverheatUniqueSkill" TemplateId="OverheatSkill">
+      <ActionPointsCost>0</ActionPointsCost>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Attack>
+            <BaseDamage Min="130 * (1 + Level/13)" Max="260 * (1 + Level/13)"  />
+            <AttackType>Adaptative</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <NoDodge/>
+                <Debuff>
+                  <BaseChance>1</BaseChance>
+                  <Stat Id="Resistance"/>
+                  <Malus>100</Malus>
+                  <TurnsCount>1</TurnsCount>
+               </Debuff>
+                <Debuff>
+                  <BaseChance>1</BaseChance>
+                  <Stat Id="Block"/>
+                  <Malus>100</Malus>
+                  <TurnsCount>1</TurnsCount>
+               </Debuff>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
 </SkillDefinitions>

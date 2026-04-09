@@ -32,27 +32,16 @@
 
    <PerkDefinition Id="Fatality">
       <TokenVariables>
-         <TokenVariable Key="HealthThresholdCurrent" Value="HealthThresholdBase + CurrentPhysDmgOverThreshold * 1"/> <!--Warning : when changing this formula or other values in this perk, also need to change it in SkillDefinitions_Perks.xml-->
-         <TokenVariable Key="HealthThresholdBase" Value="15"/>
-         <TokenVariable Key="HealthThresholdGainedPerPhysDmg" Value="1"/>
          <TokenVariable Key="SkillId" Value="FinishHim"/>
-         <TokenVariable Key="CurrentPhysDmgOverThreshold" Value="Max(0, Owner.PhysicalDamage - MinimumPhysDmgThreshold)"/>
-         <TokenVariable Key="PhysDmgStepSize" Value="1"/>
-         <TokenVariable Key="MinimumPhysDmgThreshold" Value="100"/>
       </TokenVariables>
       <LocArguments>
-         <StatArgument Stat="HealthTotal" Value="HealthThresholdBase" DisplaySign="false" Style="KeyWordNb"/>
-         <LocArgument Value="HealthThresholdGainedPerPhysDmg" Style="KeyWordNb"/>
-         <StatArgument Stat="HealthTotal" Value="HealthThresholdCurrent" Interpreted="true" Style="KeyWordNb"/>
          <LocalizedArgument Prefix="SkillName_" Value="SkillId" Style="Skill"/>
-         <StatArgument Stat="PhysicalDamage" Value="PhysDmgStepSize" DisplaySign="false" Interpreted="true"/>
-         <LocArgument Value="MinimumPhysDmgThreshold" Interpreted="true" Style="KeyWordNb"/>
+         <LocArgument Value="2" Style="KeywordNb"/>
       </LocArguments>
       <View>
          <SkillsToShow>
-            <SkillToShow Id="FinishHim"/> <!-- TODO use "SkillId" TokenVariable if ever implemented-->
+            <SkillToShow Id="FinishHim"/>
          </SkillsToShow>
-         <DisplayBonusBeforePurchase/>
          <DisplayInHUD>
             <GreyOut>
                <IsFalse Value="ContextualSkillActive"/>
@@ -62,12 +51,11 @@
       <Modules>
          <BufferModule>
             <Effects>
-               <UnlockContextualSkill ContextualSkillId="FinishHim"/> <!-- TODO use "SkillId" TokenVariable if ever implemented-->
+               <UnlockContextualSkill ContextualSkillId="FinishHim"/>
             </Effects>
          </BufferModule>
       </Modules>
    </PerkDefinition>
-
    <!-- T2 -->
    <PerkDefinition Id="Bodybuilder">
       <TokenVariables>
@@ -770,8 +758,7 @@
    <PerkDefinition Id="Thrifty">
       <TokenVariables>
          <TokenVariable Key="SkillHasManaCost" Value="ManaCostBase > 0"/>
-         <TokenVariable Key="ReductionIsActive" Value="ActionPointsToSpendLeft = 0"/>
-         <TokenVariable Key="ManaCostReduction" Value="Ceil(ManaCostBase / ManaCostDivider)"/>
+         <TokenVariable Key="ManaCostReduction" Value="Ceil((ManaCostDivider -1 ) * ManaCostBase / ManaCostDivider)"/>
          <TokenVariable Key="ManaCostBase" Value="BooleanChoice(Owner.IsManaCostLocked, 0, Skill.BaseManaCost)"/>
          <TokenVariable Key="ManaCostDivider" Value="5"/>
          <TokenVariable Key="ActionPointsToSpendLeft" Value="Max(0, ActionPointsSpentThreshold - Module.Buffer)"/>
@@ -942,7 +929,7 @@
    <PerkDefinition Id="ExplosiveAtoms">
       <TokenVariables>
          <TokenVariable Key="TriggerCondition" Value="BooleanChoice(Owner.IsManaCostLocked, 0, Skill.BaseManaCost) > 0"/>
-         <TokenVariable Key="PerkDamageBonus" Value="20"/>
+         <TokenVariable Key="PerkDamageBonus" Value="30"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb"/>
@@ -1553,9 +1540,9 @@
    <PerkDefinition Id="WeaknessFinder">
       <TokenVariables>
          <TokenVariable Key="IsolatedAttacksBonus" Value="Floor(Owner.Accuracy * (AccuracyPercentage / 100))"/>
-         <TokenVariable Key="AccuracyPercentage" Value="200"/>
+         <TokenVariable Key="AccuracyPercentage" Value="150"/>
          <TokenVariable Key="OpportunisticAttacksBonus" Value="Floor(Owner.ResistanceReduction * (ResReducPercentage / 100))"/>
-         <TokenVariable Key="ResReducPercentage" Value="200"/>
+         <TokenVariable Key="ResReducPercentage" Value="150"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="AccuracyPercentage" Suffix="%" Style="KeyWordNb"/>
@@ -2290,16 +2277,14 @@
       <TokenVariables>
          <TokenVariable Key="DamageDeltaEachHit" Value="Module.Buffer2"/>
          <TokenVariable Key="OverallDamageBonus" Value="Min(BonusMax, Module.Buffer)"/>
-         <TokenVariable Key="DynamicMultiplierValue" Value="BooleanChoice(Skill.IsPhysicalDamage, PhysicalMultiplierValue, DefaultMultiplierValue)"/>
-         <TokenVariable Key="DefaultMultiplierValue" Value="7"/>
-         <TokenVariable Key="PhysicalMultiplierValue" Value="8"/>
-         <TokenVariable Key="BonusMax" Value="80"/>
-         <TokenVariable Key="MalusValue" Value="2"/>
+         <TokenVariable Key="DefaultMultiplierValue" Value="10"/>
+         <TokenVariable Key="BonusMax" Value="60"/>
+         <TokenVariable Key="MalusValue" Value="3"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="OverallDamage" Value="DefaultMultiplierValue"/>
-         <LocArgument Value="PhysicalMultiplierValue" Prefix="+" Suffix="%" Style="GoodNb"/>
-         <StatArgument Stat="PhysicalDamage"/>
+         <StatArgument Stat="OverallDamage" Value="DefaultMultiplierValue"/>
+         <StatArgument Stat="OverallDamage" Value="DefaultMultiplierValue"/>
          <LocArgument Value="BonusMax" Suffix="%" Style="KeyWordNb"/>
          <StatArgument Stat="OverallDamage" Value="OverallDamageBonus" Interpreted="true"/>
          <LocArgument Value="MalusValue" Suffix="%" Style="BadNb"/>
@@ -2332,8 +2317,8 @@
                      <IsTrue Value="BonusMax > OverallDamageBonus"/>
                   </Conditions>
                   <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer" Value="DynamicMultiplierValue"/>
-                     <IncreaseBuffer BufferIndex="Buffer2" Value="DynamicMultiplierValue"/>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="DefaultMultiplierValue"/>
+                     <IncreaseBuffer BufferIndex="Buffer2" Value="DefaultMultiplierValue"/>
                   </Actions>
                </Event>
                <Event EffectTime="OnTargetHit">
@@ -2861,7 +2846,7 @@
       <View>
          <DisplayInHUD>
             <HoverDisplay>
-               <HoverRange Range="15"/>
+               <HoverRange Range="12"/>
             </HoverDisplay>
          </DisplayInHUD>
          <SkillsToShow>
@@ -2912,7 +2897,7 @@
    <!-- T2 -->
    <PerkDefinition Id="AvidLearner">
       <TokenVariables>
-         <TokenVariable Key="ExperienceGainMultiplierBonus" Value="35"/>
+         <TokenVariable Key="ExperienceGainMultiplierBonus" Value="45"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="ExperienceGainMultiplier" Value="ExperienceGainMultiplierBonus"/>
@@ -3200,11 +3185,11 @@
    
    <PerkDefinition Id="QuantityVsQuality">
       <TokenVariables>
-         <!--<TokenVariable Key="PropDamageBonus" Value="50"/>-->
+         <TokenVariable Key="BasePropagDamage" Value="10"/>
          <TokenVariable Key="TransformedPropBounceValue" Value="Floor(Owner.UnlockedPropagationBouncesModifier * TransformedPropBouncePercentage / 100)"/>
-         <TokenVariable Key="TransformedPropBouncePercentage" Value="800"/>
+         <TokenVariable Key="TransformedPropBouncePercentage" Value="400"/>
          <TokenVariable Key="BaseGamePropDmgCap" Value="105"/>
-         <TokenVariable Key="IncreaseToPropDmgCap" Value="50"/>
+         <TokenVariable Key="IncreaseToPropDmgCap" Value="20"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="PropagationBouncesModifier"/>
@@ -3212,12 +3197,13 @@
          <LocArgument Value="TransformedPropBouncePercentage" Suffix="%" Style="KeyWordNb"/>
          <StatArgument Stat="PropagationDamage"/>
          <LocArgument Value="BaseGamePropDmgCap + IncreaseToPropDmgCap" Interpreted="true" Style="KeyWordNb"/>
-         <StatArgument Stat="PropagationDamage" DisplaySign="true" Value="TransformedPropBounceValue" Interpreted="true"/>
+         <StatArgument Stat="PropagationDamage" DisplaySign="true" Value="TransformedPropBounceValue + BasePropagDamage" Interpreted="true"/>
+         <StatArgument Stat="PropagationDamage" DisplaySign="true" Value="BasePropagDamage" Interpreted="true"/>
       </LocArguments>
       <View>
          <DisplayBonusBeforePurchase/>
          <DisplayInHUD>
-            <Bonus Value="TransformedPropBounceValue"/>
+            <Bonus Value="TransformedPropBounceValue + BasePropagDamage"/>
          </DisplayInHUD>
          <CompendiumEntries>
             <CompendiumEntry Id="SkillEffect_Propagation"/>
@@ -3227,7 +3213,7 @@
          <BufferModule>
             <Effects>
                <StatBoundaryModifier Stat="PropagationDamage" MaxModifier="IncreaseToPropDmgCap"/>
-               <StatModifier Stat="PropagationDamage" Value="TransformedPropBounceValue"/>
+               <StatModifier Stat="PropagationDamage" Value="TransformedPropBounceValue + BasePropagDamage"/>
                <StatLocker Stat="PropagationBouncesModifier"/>
             </Effects>
          </BufferModule>
@@ -3997,11 +3983,11 @@
       <TokenVariables>
          <TokenVariable Key="SkillHasHealthCost" Value="Skill.HasBaseManaOrHealthCost"/>
          <TokenVariable Key="ReductionIsActive" Value="ActionPointsToSpendLeft = 0"/>
-         <TokenVariable Key="HealthCostReduction" Value="Ceil(HealthCostBase / HealthCostDivider)"/>
+         <TokenVariable Key="HealthCostReduction" Value="Ceil((HealthCostDivider - 1) * HealthCostBase / HealthCostDivider)"/>
          <TokenVariable Key="HealthCostBase" Value="Skill.HealthCost"/>
          <TokenVariable Key="HealthCostDivider" Value="20"/>
          <TokenVariable Key="ActionPointsToSpendLeft" Value="Max(0, ActionPointsSpentThreshold - Module.Buffer)"/>
-         <TokenVariable Key="ActionPointsSpentThreshold" Value="8"/>
+         <TokenVariable Key="ActionPointsSpentThreshold" Value="4"/>
          <TokenVariable Key="RealActionPointsSpend" Value="Module.Buffer3"/>
       </TokenVariables>
       <LocArguments>

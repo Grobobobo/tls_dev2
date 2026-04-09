@@ -1,0 +1,43 @@
+﻿<ObjectiveActionDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ObjectiveActionDefinitions.xsd">
+   
+   <!-- For MinGoalValue and MaxGoalValue, no limit parameter is -1 -->
+
+   <!--Old diff multi: 4-->
+   <ObjectiveActionDefinition Type="KillEnemy" DifficultyMultiplier="2" MinGoalValue="-1" MaxGoalValue="100">
+      <InvertedSettings MinGoalValue="1" MaxGoalValue="100"/>
+   </ObjectiveActionDefinition>
+   
+   <!--Old diff multi: 0.0375-->
+   <ObjectiveActionDefinition Type="DealDamage" DifficultyMultiplier="0.0325" MinGoalValue="120" MaxGoalValue="-1">
+      <InvertedSettings MinGoalValue="120" MaxGoalValue="-1"/>
+   </ObjectiveActionDefinition>
+
+   <!--Old diff multi: 6.6-->
+   <ObjectiveActionDefinition Type="UseSkill" DifficultyMultiplier="6.6" MinGoalValue="-1" MaxGoalValue="8">
+      <InvertedSettings MinGoalValue="1" MaxGoalValue="8"/>
+   </ObjectiveActionDefinition>
+   
+   <!--Old diff multi: 20-->
+   <ObjectiveActionDefinition Type="GetHit" DifficultyMultiplier="40" MinGoalValue="1" MaxGoalValue="15">
+      <InvertedSettings MinGoalValue="1" MaxGoalValue="15"/>
+   </ObjectiveActionDefinition>
+
+   <!--Old diff multi: 6.6-->
+   <ObjectiveActionDefinition Type="UseMana" DifficultyMultiplier="8" MinGoalValue="10" MaxGoalValue="120">
+      <InvertedSettings MinGoalValue="5" MaxGoalValue="60"/>
+   </ObjectiveActionDefinition>
+
+   <!--Old diff multi: 5.3-->
+   <ObjectiveActionDefinition Type="UseMovePoints" DifficultyMultiplier="5.3" MinGoalValue="15" MaxGoalValue="-1">
+      <InvertedSettings MinGoalValue="10" MaxGoalValue="-1"/>
+   </ObjectiveActionDefinition>
+
+   <!--Old diff multi: 5-->
+   <ObjectiveActionDefinition Type="GeneratePanic" DifficultyMultiplier="5">
+      <InvertedSettings MinGoalValue="21" MaxGoalValue="21"/> <!-- Level 2 (B) -->
+      <!-- max goal value needs to be set to 1 in order to fail the action when panic is generated -->
+   </ObjectiveActionDefinition>
+   
+   <!--<ObjectiveActionDefinition Type="HitEnemy" DifficultyMultiplier="1"/>-->
+
+</ObjectiveActionDefinitions>
