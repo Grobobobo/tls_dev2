@@ -215,11 +215,6 @@
          </DisplayInHUD>     
       </View>
       <Modules>
-         <StatModifierModule>
-            <Effects>
-               <StatBoundaryModifier Stat="Block" MaxModifier="IncreaseToMaximumBlock"/>
-            </Effects>
-         </StatModifierModule>
          <BufferModule>
             <Events>
                <Event EffectTime="OnSkillCastBegin">
@@ -246,6 +241,11 @@
             </Events>
             <Effects>
                <ApplyStatus Status="Buff" Stat="Block" TurnsCount="BuffDuration" Value="TotalGain"/>
+            </Effects>
+         </BufferModule>
+         <BufferModule>
+            <Effects>
+               <StatBoundaryModifier Stat="Block" MaxModifier="IncreaseToMaximumBlock"/>
             </Effects>
          </BufferModule>
       </Modules>

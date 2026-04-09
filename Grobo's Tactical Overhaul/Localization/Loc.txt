@@ -1261,8 +1261,8 @@ Lançamento Forte é ativado com mais frequência.
 강력 던지기의 발동 빈도가 증가합니다.
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>"
 "PerkEffectInformations_StrongThrowUnique","Enemies to hit: {3}","Ennemis à toucher<nbsp>: {3}","还需击中敌人数：{3}","還需擊中敵人數：{3}","命中させるエネミー: {3}","Ещё попаданий: {3}","Залишилося ударити ворогів: {3}.","Zu treffende Gegner: {3}","Enemigos por golpear: {3}","Inimigos a serem golpeados: {3}","명중해야 하는 적: {3}"
-PerkDescription_QuantityVsQuality,"{6}. All of the Hero's {0} is <style=KeyWord>transformed</style> into {1} (conversion rate: {2}).
-Increases <style=KeyWord>Maximum {3}</style> to {4}.","{6}. La totalité des {0} est <style=KeyWord>transformée</style> en {1} (taux de conversion: {2}).
+PerkDescription_QuantityVsQuality,"{0}. Increases <style=KeyWord>Maximum {1}</style> to {2}.
+Decreases <style=KeyWord>Maximum {3}</style> by {4}.","{6}. La totalité des {0} est <style=KeyWord>transformée</style> en {1} (taux de conversion: {2}).
 Augmente le <style=KeyWord>Maximum de {3}</style> à {4}.","{6}. 英雄的所有{0}都将<style=KeyWord>转化</style>为{1}（转化率：{2}）。
 
 将<style=KeyWord>{3}上限</style>提高至{4}。","{6}. 英雄的所有{0}<style=KeyWord>轉化</style>為{1}（轉化率：{2}）。
@@ -1898,3 +1898,149 @@ lança <style=KeyWord>automaticamente</style> a habilidade {0} em um <style=KeyW
 <style=KeyWord>{1}타일 범위 내에 있는 무작위 적</style>에게 {0} 스킬 <style=KeyWord>자동</style> 시전
 
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
+PerkDescription_MagicScepterUniquePerk,"After dealing {0} or more damage in a single hit of {1}:
+{2} gains {3}
+Increase this threshold by {4}
+After dealing {5} or more damage in a single use of {2}:
+{1} gains {6} <style=PerkDamage>Perk Damage</style>.
+Increase this threshold by {7}
+<style=Attenuated>The bonus is reset every morning.</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Après avoir infligé {0} dégâts ou plus en un seul coup avec {1}<nbsp>:
+{2} obtient {3}
+Augmente ce seuil de {4}
+Après avoir étourdi {5} ou plus unité en une seule utilisation de {2}<nbsp>:
+{1} obtient {6} <style=PerkDamage>Dégâts de talent</style>
+Augment ce seuil de {7}
+<style=Attenuated>Le bonus est réinitialisé chaque matin</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style","若技能“{1}”单次击中造成超过{0}点伤害：
+“{2}”获得{3}
+该阈值提高{4}
+若单次使用“{2}”眩晕至少{5}个单位：
+“{1}”获得{6}<style=PerkDamage>天赋伤害</style>。
+该阈值提高{7}
+<style=Attenuated>该加成每天早上会重置。</style>
+
+<style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","單次{1}造成至少{0}點傷害時：
+{2}獲得{3}
+此效果的觸發條件提升{4}
+單次{2}使至少{5}個單位暈眩時：
+{1}獲得<style=PerkDamage>天賦傷害</style>{6}。
+此效果的觸發條件提升{7}
+<style=Attenuated>此加成在每個白天重置。</style>
+
+<style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","{1}1発でダメージを{0}以上与えると:
+{2}が{3}を得る
+この値が{4}増加
+{2}1回でユニット{5}体以上を気絶させると:
+{1}が{6}<style=PerkDamage>パークダメージ</style>を得る。
+この値が{7}増加
+<style=Attenuated>このボーナスは毎朝リセットされる。</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","Если одним применением навыка ""{1}"" герой нанёс {0} и более ед. урона:
+""{2}"" получает бонус {3};
+порог срабатывания черты увеличивается до {4}.
+Если одним применением навыка ""{2}"" герой оглушил {5} и более врагов:
+""{1}"" получает {6} к <style=PerkDamage>особому урону</style>;
+порог срабатывания черты увеличивается до {7}.
+<style=Attenuated>Этот эффект сбрасывается каждое утро.</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Після завдавання {0} чи більше шкоди одним влученням навичкою «{1}»:
+навичка «{2}» отримує {3}
+Це порогове значення збільшується на {4}
+Після приголомшення {5} чи більше ворогів одним застосуванням навички «{2}»:
+{1} отримує {6} до <style=PerkDamage>шкоди від риси</style>.
+Це порогове значення збільшується на {7}
+<style=Attenuated>Бонус скидається щоранку.</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Nachdem mit {1} {0} oder mehr Schaden mit einem einzigen Treffer zugefügt wurde:
+{2} erhält {3}
+Dieser Schwellenwert wird um {4} erhöht.
+Nachdem {5} oder mehr Einheiten mit einer einzigen Benutzung von {2} betäubt wurden:
+{1} erhält {6} <style=PerkDamage>Vorteilsschaden</style>.
+Dieser Schwellenwert wird um {7} erhöht.
+<style=Attenuated>Der Bonus wird jeden Morgen zurückgesetzt.</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Después de infligir {0} de daño o más con un solo impacto de {1}:
+{2} obtiene {3}.
+Aumenta el límite en {4}.
+Después de aturdir a {5} unidades o más con un solo uso de {2}:
+{1} obtiene {6} de <style=PerkDamage>daño de beneficio</style>.
+Aumenta el límite en {7}
+<style=Attenuated>Esta bonificación se restablece cada mañana.</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","Após causar {0} ou mais de dano em um único golpe de {1}:
+{2} recebe {3}
+Aumenta este limite em {4}
+Após atordoar {5} ou mais unidades com um único uso de {2}:
+{1} recebe {6} de <style=PerkDamage>Dano de Vantagem</style>.
+Aumenta este limite em {7}
+<style=Attenuated>A bonificação é redefinida todas as manhãs.</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","{1} 일격으로 {0} 이상의 피해를 준 후:
+{2}이(가) {3} 획득
+이 기준 {4}만큼 증가
+{2}을(를) 한 번 사용하여 유닛 {5}명 이상을 기절시킨 후:
+{1}이(가) <style=PerkDamage>특전 피해</style> {6} 획득
+이 기준 {7}만큼 증가
+<style=Attenuated>보너스는 매일 아침 초기화</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
+PerkEffectInformations_MagicScepterUniquePerk,"Damage threshold: {8}
+{9}
+Damage threshold: {10}
+{11} <style=PerkDamage>Perk Damage</style>.","Seuil de dégât : {8}
+{9}
+Seuil d'unité étourdit : {10}
+{11} <style=PerkDamage>dégât de talent</style>.","伤害阈值：{8}点
+{9}
+眩晕单位阈值：{10}
+{11}<style=PerkDamage>天赋伤害</style>。","傷害觸發條件：{8}
+{9}
+暈眩單位觸發數：{10}
+<style=PerkDamage>天賦傷害</style>{11}。","ダメージ数: {8}
+{9}
+気絶ユニット数: {10}
+{11} <style=PerkDamage>パークダメージ</style>。","Порог по урону: {8};
+{9}.
+Порог по оглушению: {10};
+{11} к <style=PerkDamage>особому урону</style>.","Порогове значення шкоди: {8}
+{9}
+Порогове значення оглушених ворогів: {10}
+{11} <style=PerkDamage>шкоди від риси</style>.","Schwellenwert für Schaden: {8}
+{9}
+Schwellenwert für betäubte Einheiten: {10}
+{11} <style=PerkDamage>Vorteilsschaden</style>.","Umbral de daño: {8}
+{9}
+Umbral de unidades aturdidas: {10}
+{11} <style=PerkDamage>Daño de beneficio</style>.","Limite de dano: {8}
+{9}
+Limite de unidades atordoadas: {10}
+{11} de <style=PerkDamage>Dano de Vantagem</style>.","피해 기준: {8}
+{9}
+유닛 기절 기준: {10}
+{11} <style=PerkDamage>특전 피해</style>"
+ResearchDescription_HavenRunenbergResearch,"Grants the perk {0} to all Heroes.
+Adds <style=keyword>Dwarf</style> <style=perk>perks</style> into the <style=keyword>miscellaneous perk tree</style> (except that one) and <style=keyword>rerolls</style> all miscellaneous <style=perk>perk</style> trees.
+",Ajoute les <style=perk>talents</style> des <style=keyword>Nains</style> dans la <style=keyword>collection de talent Divers</style> et <style=keyword>relance</style> toutes les collections de talent Divers.,"添加<style=keyword>矮人</style><style=perk>天赋</style>至<style=keyword>混杂天赋树</style>，并<style=keyword>刷新</style>所有混杂<style=perk>天赋</style>树。
+","<style=keyword>「其他」天賦樹</style>新增<style=keyword>矮人</style><style=perk>天賦</style>，同時<style=keyword>刷新</style>所有「其他」類別的<style=perk>天賦</style>樹。
+","<style=keyword>雑多なパークツリー</style>に<style=keyword>ドワーフ</style>の<style=perk>パーク</style>が追加され、すべての雑多な<style=perk>パーク</style>ツリーを<style=keyword>リロール</style>する。
+","Добавляет в <style=keyword>дерево различных особых черт</style> <style=perk>особые черты</style> <style=keyword>гномов</style> и делает <style=keyword>переброс</style> всех деревьев различных <style=perk>особых черт</style>.
+","Додає <style=perk>риси</style> <style=keyword>гномів</style> до <style=keyword>дерева різноманітних рис</style> і <style=keyword>оновлює</style> всі різноманітні дерева <style=perk>рис</style>.
+","Fügt dem <style=keyword>Sonstiges-Vorteilsbaum</style> <style=keyword>Zwerg</style>-<style=perk>Vorteile</style> hinzu und <style=keyword>würfelt</style> alle sonstigen <style=perk>Vorteilsbäume</style> neu.
+","Añade <style=perk>beneficios</style> de <style=keyword>enano</style> al <style=keyword>árbol de beneficios variado</style> y modifica la <style=keyword>selección</style> de todos los árboles de <style=perk>beneficios</style> variados.
+","Adiciona <style=perk>vantagens</style> de <style=keyword>Anão</style> à <style=keyword>árvore de vantagens variadas</style> e <style=keyword>troca</style> todas as árvores de <style=perk>vantagens</style> variadas.
+","<style=keyword>드워프</style> <style=perk>특전</style>을 <style=keyword>기타 특전 트리</style>에 추가하고, 모든 기타 <style=perk>특전</style> 트리를 <style=keyword>재굴림</style>합니다."
+ResearchDescription_HavenAmberwaldResearch,"Grants the perk {0} to all Heroes.
+Adds <style=keyword>Elf</style> <style=perk>perks</style> into the <style=keyword>miscellaneous perk tree</style> and <style=keyword>rerolls</style> all miscellaneous <style=perk>perk</style> trees.
+",Ajoute les <style=perk>talents</style> des <style=keyword>Elfs</style> dans la <style=keyword>collection de talent Divers</style> et <style=keyword>relance</style> toutes les collections de talent Divers.,"添加<style=keyword>精灵</style><style=perk>天赋</style>至<style=keyword>混杂天赋树</style>，并<style=keyword>刷新</style>所有混杂<style=perk>天赋</style>树。
+","<style=keyword>「其他」天賦樹</style>新增<style=keyword>精靈</style><style=perk>天賦</style>，同時<style=keyword>刷新</style>所有「其他」類別的<style=perk>天賦</style>樹。
+","<style=keyword>雑多なパークツリー</style>に<style=keyword>エルフ</style>の<style=perk>パーク</style>が追加され、すべての雑多な<style=perk>パーク</style>ツリーを<style=keyword>リロール</style>する。
+","Добавляет в <style=keyword>дерево различных особых черт</style> <style=perk>особые черты</style> <style=keyword>эльфов</style> и делает <style=keyword>переброс</style> всех деревьев различных <style=perk>особых черт</style>.
+","Додає <style=perk>риси</style> <style=keyword>ельфів</style> до <style=keyword>дерева різноманітних рис</style> й <style=keyword>оновлює</style> всі різноманітні дерева <style=perk>рис</style>.
+","Fügt dem <style=keyword>Sonstiges-Vorteilsbaum</style> <style=keyword>Elfen</style>-<style=perk>Vorteile</style> hinzu und <style=keyword>würfelt</style> alle sonstigen <style=perk>Vorteilsbäume</style> neu.
+","Añade <style=perk>beneficios</style> de <style=keyword>elfo</style> al <style=keyword>árbol de beneficios variado</style> y modifica la <style=keyword>selección</style> de todos los árboles de <style=perk>beneficios</style> variados.
+","Adiciona <style=perk>vantagens</style> de <style=keyword>Elfo</style> à <style=keyword>árvore de vantagens variadas</style> e <style=keyword>troca</style> todas as árvores de <style=perk>vantagens</style> variadas.
+","<style=keyword>엘프</style> <style=perk>특전</style>을 <style=keyword>기타 특전 트리</style>에 추가하고, 모든 기타 <style=perk>특전</style> 트리를 <style=keyword>재굴림</style>합니다.
+"

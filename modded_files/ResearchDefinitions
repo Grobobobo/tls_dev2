@@ -261,7 +261,7 @@
    
     <ResearchDefinition Id="BetterMineYieldsResearch">
         <TokenVariables>
-            <TokenVariable Key="ProductionResourceModifier" Value="30"/>
+            <TokenVariable Key="ProductionResourceModifier" Value="50"/>
         </TokenVariables>
         <LocArguments>
             <LocArgument Value="ProductionResourceModifier" Suffix="%" Style="KeyWordNb"/>
@@ -1661,7 +1661,7 @@
         <Tags>
             <Tag>Defense</Tag>
         </Tags>
-        <TierId>HighCost</TierId>
+        <TierId>MediumCost</TierId>
         <LocArguments>
             <LocArgument Value="BuildingLimitIncrease" Style="GoodNb"/>
         </LocArguments>
@@ -1866,7 +1866,14 @@
            <Tag>Perk</Tag>
         </Tags>
         <TierId>MediumCost</TierId>
+        <TokenVariables>
+            <TokenVariable Key="PerkId" Value="JollyDrinker"/>
+        </TokenVariables>
+        <LocArguments>
+            <LocalizedArgument Prefix="PerkName_" Value="PerkId" Style="Perk"/>
+        </LocArguments>
         <Effects>
+            <AddPerk PerkId="PerkId"/>
             <AddPerkGenerationFlag Flag="DwarvesPerksInMisc"/>
             <RerollPerks CollectionId="Misc"/>
         </Effects>
@@ -1878,8 +1885,15 @@
            <Tag>Hero</Tag>
            <Tag>Perk</Tag>
         </Tags>
-        <TierId>MediumCost</TierId>
+        <TierId>LowCost</TierId>
+        <TokenVariables>
+            <TokenVariable Key="PerkId" Value="OneWithNature"/>
+        </TokenVariables>
+        <LocArguments>
+            <LocalizedArgument Prefix="PerkName_" Value="PerkId" Style="Perk"/>
+        </LocArguments>
         <Effects>
+            <AddPerk PerkId="PerkId"/>
             <AddPerkGenerationFlag Flag="ElvesPerksInMisc"/>
             <RerollPerks CollectionId="Misc"/>
         </Effects>

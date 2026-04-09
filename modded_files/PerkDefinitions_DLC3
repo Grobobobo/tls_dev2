@@ -781,11 +781,11 @@
    <PerkDefinition Id="DodgePractice">
       <TokenVariables>
          <TokenVariable Key="TotalBonusDodgeValue" Value="Module.Buffer * BonusDodgeValueMultiplier"/>
-         <TokenVariable Key="BonusDodgeValueMultiplier" Value="3"/>
-         <TokenVariable Key="BuffTurnsCount" Value="3"/>
+         <TokenVariable Key="BonusDodgeValueMultiplier" Value="8"/>
+         <TokenVariable Key="BuffTurnsCount" Value="1"/>
       </TokenVariables>
       <LocArguments>
-         <StatusArgument Status="Buff" Value="BonusDodgeValueMultiplier" TurnsCount="BuffTurnsCount" Stat="Dodge"/>
+         <StatusArgument Status="Buff" Value="BonusDodgeValueMultiplier" TurnsCount="BuffTurnsCount" Stat="OverallDamage"/>
       </LocArguments>
       <View>
          <DisplayInHUD/>
@@ -2675,20 +2675,20 @@
    <!--Magic Scepter-->
    <PerkDefinition Id="MagicScepterUniquePerk">
       <TokenVariables>
-         <TokenVariable Key="DamageAboveThresholdValue" Value="AttackData.TotalDamage > DamageThresholdTotal"/>
-         <TokenVariable Key="DamageThresholdCurrent" Value="DamageThresholdTotal - DamageThreshold"/>
-         <TokenVariable Key="DamageThresholdTotal" Value="400 + DamageThreshold"/>
-         <TokenVariable Key="DamageThreshold" Value="Module.Buffer"/>
-         <TokenVariable Key="DmgThresholdIncrease" Value="600"/>
+         <TokenVariable Key="BashDamageAboveThresholdValue" Value="AttackData.TotalDamage > BashDamageThresholdTotal"/>
+         <TokenVariable Key="BashDamageThresholdCurrent" Value="BashDamageThresholdTotal - BufferBashDamageThreshold"/>
+         <TokenVariable Key="BashDamageThresholdTotal" Value="400 + BufferBashDamageThreshold"/>
+         <TokenVariable Key="BufferBashDamageThreshold" Value="Module.Buffer"/>
+         <TokenVariable Key="BashDmgThresholdIncrease" Value="600"/>
+
+         <TokenVariable Key="HammerDamageAboveThresholdValue" Value="AttackData.TotalDamage > HammerDamageThresholdTotal"/>
+         <TokenVariable Key="HammerDamageThresholdCurrent" Value="HammerDamageThresholdTotal - BufferHammerDamageThreshold"/>
+         <TokenVariable Key="HammerDamageThresholdTotal" Value="600 + BufferHammerDamageThreshold"/>
+         <TokenVariable Key="BufferHammerDamageThreshold" Value="Module.Buffer3"/>
+         <TokenVariable Key="HammerDmgThresholdIncrease" Value="900"/>
          <TokenVariable Key="PropBounceSkillNewValue" Value="PropBounceSkillBaseValue + PropBounceBonus"/>
          <TokenVariable Key="PropBounceBonus" Value="Module.Buffer2"/>
          <TokenVariable Key="PropBounceIncrease" Value="1"/>
-         <TokenVariable Key="StunningAboveThresholdValue" Value="Module.Buffer3 > StunningThresholdTotal - 1"/>
-         <TokenVariable Key="PerkDamageSteps" Value="Floor(Module.Buffer3 / StunningThresholdTotal)"/>
-         <TokenVariable Key="StunningThresholdCurrent" Value="StunningThresholdTotal - StunningThreshold"/>
-         <TokenVariable Key="StunningThresholdTotal" Value="(3 + StunningThreshold)"/>
-         <TokenVariable Key="StunningThreshold" Value="Module.Buffer4"/>
-         <TokenVariable Key="StunNbThresholdIncrease" Value="1"/>
          <TokenVariable Key="PerkDamageBonus" Value="Module.Buffer5"/>
          <TokenVariable Key="PerkDamageIncrease" Value="10"/>
          <TokenVariable Key="PropBounceSkillBaseValue" Value="6"/>
@@ -2696,19 +2696,19 @@
          <TokenVariable Key="Skill2ID" Value="HammerOfFaithUnique"/>
       </TokenVariables>
       <LocArguments>
-         <StatArgument Value="DamageThresholdCurrent" Style="KeyWordNb" Interpreted="true"/>
+         <StatArgument Value="BashDamageThresholdCurrent" Style="KeyWordNb" Interpreted="true"/>
          <LocalizedArgument Prefix="SkillName_" Value="Skill1ID" Style="Skill"/>
          <LocalizedArgument Prefix="SkillName_" Value="HammerOfFaith" Style="Skill"/>
          <StatArgument Stat="PropagationBouncesModifier" Value="PropBounceIncrease"/>
-         <LocArgument Value="DmgThresholdIncrease" Style="KeyWordNb"/>
+         <LocArgument Value="BashDmgThresholdIncrease" Style="KeyWordNb"/>
 
-         <StatArgument Value="StunningThresholdCurrent" Style="KeyWordNb" Interpreted="true"/>
+         <StatArgument Value="HammerDamageThresholdCurrent" Style="KeyWordNb" Interpreted="true"/>
          <LocArgument Value="PerkDamageIncrease" Prefix="+" Suffix="%" Style="GoodNb"/>
-         <LocArgument Value="StunNbThresholdIncrease" Style="KeyWordNb"/>
+         <LocArgument Value="HammerDmgThresholdIncrease" Style="KeyWordNb"/>
 
-         <StatArgument Value="DamageThresholdTotal" Style="KeyWordNb" Interpreted="true"/>
+         <StatArgument Value="BashDamageThresholdTotal" Style="KeyWordNb" Interpreted="true"/>
          <StatArgument Stat="PropagationBouncesModifier" Value="PropBounceBonus" Interpreted="true"/>
-         <StatArgument Value="StunningThresholdTotal" Style="KeyWordNb" Interpreted="true"/>
+         <StatArgument Value="HammerDamageThresholdTotal" Style="KeyWordNb" Interpreted="true"/>
          <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb" Interpreted="true"/>
       </LocArguments>
       <View>
@@ -2723,43 +2723,22 @@
                   <Conditions>
                      <IsTrue Value="Skill.IsFromItemWithTag('MagicScepterUnique')"/>
                      <IsTrue Value="Skill.IsSkillID('Skill1ID')"/>
-                     <IsTrue Value="DamageAboveThresholdValue"/>
+                     <IsTrue Value="BashDamageAboveThresholdValue"/>
                   </Conditions>
                   <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer" Value="DmgThresholdIncrease"/>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="BashDmgThresholdIncrease"/>
                      <IncreaseBuffer BufferIndex="Buffer2" Value="PropBounceIncrease"/>
                   </Actions>
                </Event>
-               <Event EffectTime="OnStatusApplied">
-                  <Conditions>
-                     <IsTrue Value="IsTargetUnit"/>
-                     <IsTrue Value="AppliedStun"/>
-                     <IsFalse Value="OwnerIsTarget"/>
-                  </Conditions>
-                  <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer3" Value="1"/>
-                  </Actions>
-               </Event>
-               <Event EffectTime="OnSkillCastEnd"> 
+               <Event EffectTime="OnTargetHit"> <!--After dealing enough damage with Skill2, increase dmg for Skill1 + increase threshold-->
                   <Conditions>
                      <IsTrue Value="Skill.IsFromItemWithTag('MagicScepterUnique')"/>
                      <IsTrue Value="Skill.IsSkillID('Skill2ID')"/>
-                     <IsTrue Value="StunningAboveThresholdValue"/>
+                     <IsTrue Value="HammerDamageAboveThresholdValue"/>
                   </Conditions>
                   <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer5" Value="PerkDamageIncrease * PerkDamageSteps"/>
-                     <IncreaseBuffer BufferIndex="Buffer4" Value="StunNbThresholdIncrease * PerkDamageSteps"/>
-                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
-                  </Actions>
-               </Event>
-               <Event EffectTime="OnSkillCastEnd">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsFromItemWithTag('MagicScepterUnique')"/>
-                     <IsTrue Value="Skill.IsSkillID('Skill2ID')"/>
-                     <IsFalse Value="StunningAboveThresholdValue"/>
-                  </Conditions>
-                  <Actions>
-                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                     <IncreaseBuffer BufferIndex="Buffer3" Value="HammerDmgThresholdIncrease"/>
+                     <IncreaseBuffer BufferIndex="Buffer5" Value="PerkDamageIncrease"/>
                   </Actions>
                </Event>
                <Event EffectTime="OnStartProductionTurn">
@@ -2767,7 +2746,6 @@
                      <SetBufferTo BufferIndex="Buffer" Value="0"/>
                      <SetBufferTo BufferIndex="Buffer2" Value="0"/>
                      <SetBufferTo BufferIndex="Buffer3" Value="0"/>
-                     <SetBufferTo BufferIndex="Buffer4" Value="0"/>
                      <SetBufferTo BufferIndex="Buffer5" Value="0"/>
                   </Actions>
                </Event>

@@ -2027,8 +2027,8 @@
       </AreaOfEffect>
     <SkillAction>
       <Attack>
-        <BaseDamage Min="76 * 0.5 * (1 + Level/13)" Max="126 * 0.5 * (1 + Level/13)" />
-        <AttackType>Magical</AttackType>
+        <BaseDamage Min="50 * (1 + Level/13)" Max="100 * (1 + Level/13)" />
+        <AttackType>Adaptative</AttackType>
         <DamageMultiplier>1</DamageMultiplier>
       </Attack>
     </SkillAction>
