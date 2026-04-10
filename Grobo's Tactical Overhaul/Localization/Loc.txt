@@ -111,47 +111,81 @@ Zusätzliche <style=KeyWord>Konsumgüter</style> können mithilfe von <style=Wor
 Every {2} units <style=KeyWord>killed</style> at a <style=KeyWord>distance of {3} or more:</style>
 {4}.
 {7}.
+Increase the distance required by 1.
 <style=Attenuated>This modifier is reset every morning.</style>","Augmente le <style=KeyWord>Maximum de {0}</style> à {1}.
 Toutes les {2} unités <style=KeyWord>tuées</style> à une <style=KeyWord>distance de {3} ou plus</style><nbsp>:
 {4}.
 {7}.
+Augmente la distance requise de 1.
 <style=Attenuated> Ce modificateur est réinitialisé tous les matins.</style>","将<style=KeyWord>{0}上限</style>提升至{1}。
 每<style=KeyWord>击杀</style>{2}个<style=KeyWord>距离{3}格或以外的单位：</style>
 {4}。
 {7}。
+所需距离增加1格。
 <style=Attenuated>此加成在每个白天重置。</style>","<style=KeyWord>{0}上限</style>提升到{1}。
 每從距離<style=KeyWord>{3}格（含）以外的距離</style><style=KeyWord>擊殺</style>{2}個單位：
 {4}。
 {7}。
+所需距離增加1格。
 <style=Attenuated>此加成在每個白天重置。</style>","<style=KeyWord>最大{0}</style>が{1}に増加する。
 <style=KeyWord>距離{3}以上</style>の{2}ユニットを<style=KeyWord>撃破</style>するたびに、以下の効果を得る:
 {4}。
 {7}。
+必要距離が1増加する。
 <style=Attenuated>この効果は毎朝リセットされる。</style>","<style=KeyWord>Макс. {0}</style> увеличивается до {1}.
 За каждого {2}-го врага, <style=KeyWord>убитого</style> с <style=KeyWord>расстояния в {3} яч. или более, герой получает бонус:</style>
 {4}.
 {7}.
+Необходимое расстояние увеличивается на 1.
 <style=Attenuated>Эффект сбрасывается каждое утро.</style>","Збільшує <style=KeyWord>максимум {0}</style> до {1}.
 Кож. {2} од. персонажів, <style=KeyWord>убитих</style> на <style=KeyWord>відстані {3} чи більше:</style>
 {4}.
 {7}.
+Необхідна відстань збільшується на 1.
 <style=Attenuated>Модифікатор скидається щоранку.</style>","<style=KeyWord>Max. {0}</style> auf {1} erhöht.
 Für je {2} Einheiten, die auf eine <style=KeyWord>Entfernung von {3} oder mehr</style> <style=KeyWord>getötet</style> werden:</style>
 {4}.
 {7}.
+Erhöht die erforderliche Entfernung um 1.
 <style=Attenuated>Dieser Modifikator wird jeden Morgen zurückgesetzt.</style>","Aumenta el <style=KeyWord>máximo de {0}</style> a {1}.
 Cada {2} unidades <style=KeyWord>eliminadas</style> a una <style=KeyWord>distancia de {3} o más:</style>
 {4}.
 {7}.
+Aumenta la distancia requerida en 1.
 <style=Attenuated>Este modificador se reinicia cada mañana.</style>","Aumenta <style=KeyWord>{0} Máx. </style> para {1}.
 A cada {2} unidades <style=KeyWord>abatidas</style> a <style=KeyWord>{3} de distância ou mais:</style>
 {4}.
 {7}.
+Aumenta a distância necessária em 1.
 <style=Attenuated>Este modificador é redefinido todas as manhãs.</style>","<style=KeyWord>최대 {0}</style> {1}(으)로 증가
 <style=KeyWord>{3}타일 이상의 거리</style>에서 유닛을 {2}명 <style=KeyWord>처치</style>할 때마다:
 {4}.
 {7}.
+필요한 거리가 1 증가합니다.
 <style=Attenuated>Este modificador é redefinido todas as manhãs.</style>"
+PerkEffectInformations_FieldStudy,"{5}
+{8}
+Units to kill: {6}","{5}
+{8}
+Unités à tuer<nbsp>: {6}","{5}
+{8}
+需要击杀的单位数：{6}","{5}
+{8}
+需擊殺的單位：{6}","{5}
+{8}
+撃破するユニット: {6}","{5}
+{8}
+Ещё врагов до бонуса: {6}","{5}
+{8}
+Ще вбити ворогів: {6}","{5}
+{8}
+Noch zu tötende Einheiten: {6}","{5}
+{8}
+Unidades que matar: {6}","{5}
+{8}
+Unidades a serem abatidas: {6}.","{5}
+{8}
+처치할 유닛: {6}"
 "PerkDescription_ExplosiveAtoms","When <style=KeyWord>attacking</style> with a <style=Mana>Mana-consuming</style> <style=""Skill"">skill</style>, the attack gets:
 {0} <style=PerkDamage>Perk Damage</style>.","Lorsqu'une <style=""Skill"">compétence</style> qui <style=Mana>coûte du Mana</style> est utilisée pour <style=KeyWord>attaquer</style>, l'attaque obtient :
 {0} de <style=PerkDamage>Dégâts de talent</style>.","当使用<style=Mana>消耗法力值</style>的<style=KeyWord>攻击</style><style=""Skill"">技能</style>时，此次攻击可获得：
@@ -1261,27 +1295,51 @@ Lançamento Forte é ativado com mais frequência.
 강력 던지기의 발동 빈도가 증가합니다.
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>"
 "PerkEffectInformations_StrongThrowUnique","Enemies to hit: {3}","Ennemis à toucher<nbsp>: {3}","还需击中敌人数：{3}","還需擊中敵人數：{3}","命中させるエネミー: {3}","Ещё попаданий: {3}","Залишилося ударити ворогів: {3}.","Zu treffende Gegner: {3}","Enemigos por golpear: {3}","Inimigos a serem golpeados: {3}","명중해야 하는 적: {3}"
-PerkDescription_QuantityVsQuality,"{0}. Increases <style=KeyWord>Maximum {1}</style> to {2}.
-Decreases <style=KeyWord>Maximum {3}</style> by {4}.","{6}. La totalité des {0} est <style=KeyWord>transformée</style> en {1} (taux de conversion: {2}).
-Augmente le <style=KeyWord>Maximum de {3}</style> à {4}.","{6}. 英雄的所有{0}都将<style=KeyWord>转化</style>为{1}（转化率：{2}）。
-
-将<style=KeyWord>{3}上限</style>提高至{4}。","{6}. 英雄的所有{0}<style=KeyWord>轉化</style>為{1}（轉化率：{2}）。
-
-<style=KeyWord>{3}上限</style>提升至{4}。","{6}. 英雄の全{0}が{1}に<style=KeyWord>変換される</style>(変換率: {2})。
-
-<style=KeyWord>最大{3}</style>が{4}に上がる。","{6}. {0} героя <style=KeyWord>преобразуется</style> в {1} (с эффективностью в {2}).
-
-<style=KeyWord>Макс. {3}</style> увеличивается до {4}.","{6}. {0} героя <style=KeyWord>тепер</style> — {1} (коефіцієнт перетворення: {2}).
-
-Збільшує <style=KeyWord>максимум {3}</style> до {4}.","{6}. Der Held <style=KeyWord>wandelt</style> {0} vollständig in {1} um (Wechselkurs: {2}).
-
-<style=KeyWord>Max. {3}</style> auf {4} erhöht.","{6}. El total de {0} del héroe se <style=KeyWord>transforma</style> en {1} (tasa de conversión: {2}).
-
-Aumenta el <style=KeyWord>máximo de {3}</style> al {4}.","{6}. O total de {0} do Herói é <style=KeyWord>transformado</style> em {1} (taxa de conversão: {2}).
-
-Aumenta <style=KeyWord>{3} Máx.</style> para {4}.","{6}. 영웅의 모든 {0}이(가) {1}(으)로 <style=KeyWord>변환</style> (변환율: {2})
-
-<style=KeyWord>최대 {3}</style> {4}(으)로 증가"
+PerkDescription_QuantityVsQuality,"{0}.
+Increases <style=KeyWord>Maximum</style>
+{1} to {2}.
+Decreases <style=KeyWord>Maximum</style>
+{3} by {4}.","{0}.
+Augmente le <style=KeyWord>Maximum</style> de
+{1} à {2}.
+Réduit le <style=KeyWord>Maximum</style> de
+{3} de {4}.","{0}。
+提升<style=KeyWord>上限</style>
+{1}至{2}。
+降低<style=KeyWord>上限</style>
+{3}{4}。","{0}。
+提升<style=KeyWord>上限</style>
+{1}至{2}。
+降低<style=KeyWord>上限</style>
+{3}{4}。","{0}。
+<style=KeyWord>最大</style>
+{1}が{2}に増加する。
+<style=KeyWord>最大</style>
+{3}が{4}減少する。","{0}.
+Повышает <style=KeyWord>макс.</style>
+{1} до {2}.
+Понижает <style=KeyWord>макс.</style>
+{3} на {4}.","{0}.
+Збільшує <style=KeyWord>макс.</style>
+{1} до {2}.
+Зменшує <style=KeyWord>макс.</style>
+{3} на {4}.","{0}.
+Erhöht den <style=KeyWord>Maximalwert</style> von
+{1} auf {2}.
+Verringert den <style=KeyWord>Maximalwert</style> von
+{3} um {4}.","{0}.
+Aumenta el <style=KeyWord>máximo</style> de
+{1} a {2}.
+Reduce el <style=KeyWord>máximo</style> de
+{3} en {4}.","{0}.
+Aumenta o <style=KeyWord>Máximo</style> de
+{1} para {2}.
+Reduz o <style=KeyWord>Máximo</style> de
+{3} em {4}.","{0}.
+<style=KeyWord>최대</style>
+{1}을(를) {2}(으)로 증가시킵니다.
+<style=KeyWord>최대</style>
+{3}을(를) {4}만큼 감소시킵니다."
 PerkDescription_LifeLoanUnique,"Whenever a <style=KeyWord>Sacred Flower</style> <style=Skill>attack</style> is cast:
 {0} <style=""Good"">Plague</style> for each {1} and {2} base cost.
 Each <style=""Good"">Plague</style> grants:
@@ -2346,27 +2404,38 @@ Aumenta o <style=keyword>limite</style> de construções que produzem itens em {
 생산 건물의 <style=keyword>상한</style>이 {1}만큼 증가합니다."
 PerkDescription_VolatileReaction,"<style=KeyWord>Propagation</style> can now bounce <style=KeyWord>diagonally</style>.
 {0}.
-Increases <style=KeyWord>Maximum {1}</style> by {2}.","La <style=KeyWord>Propagation</style> peut maintenant rebondir en <style=KeyWord>diagonale</style>.
+Increases <style=KeyWord>Maximum</style>
+{1} by {2}.","La <style=KeyWord>Propagation</style> peut maintenant rebondir en <style=KeyWord>diagonale</style>.
 {0}.
-Augmente le <style=KeyWord>Maximum</style> de {1} de {2}.","<style=KeyWord>蔓延</style>可以<style=KeyWord>斜向</style>传递。
+Augmente le <style=KeyWord>Maximum</style> de
+{1} de {2}.","<style=KeyWord>蔓延</style>可以<style=KeyWord>斜向</style>传递。
 {0}。
-{1}<style=KeyWord>上限</style>提高{2}。","<style=KeyWord>蔓延</style>可以<style=KeyWord>斜向</style>傳遞。
+提升<style=KeyWord>上限</style>
+{1}{2}。","<style=KeyWord>蔓延</style>可以<style=KeyWord>斜向</style>傳遞。
 {0}。
-{1}<style=KeyWord>最大值</style>提升{2}。","<style=KeyWord>伝染</style>が<style=KeyWord>斜め方向</style>へ伝わるようになる。
+提升<style=KeyWord>上限</style>
+{1}{2}。","<style=KeyWord>伝染</style>が<style=KeyWord>斜め方向</style>へ伝わるようになる。
 {0}。
-<style=KeyWord>最大</style>{1}が{2}増加する。","Атаки героя с эффектом <style=KeyWord>""Цепной удар""</style> могут перескакивать <style=KeyWord>по диагонали</style>.
+<style=KeyWord>最大</style>
+{1}が{2}増加する。","Атаки героя с эффектом <style=KeyWord>""Цепной удар""</style> могут перескакивать <style=KeyWord>по диагонали</style>.
 {0}.
-Повышает <style=KeyWord>макс.</style> {1} на {2}.","<style=KeyWord>Відскок</style> тепер працює <style=KeyWord>по діагоналі</style>.
+Повышает <style=KeyWord>макс.</style>
+{1} на {2}.","<style=KeyWord>Відскок</style> тепер працює <style=KeyWord>по діагоналі</style>.
 {0}.
-Збільшує <style=KeyWord>макс.</style> {1} на {2}.","<style=KeyWord>Ausbreitung</style> kann jetzt <style=KeyWord>diagonal</style> passieren.
+Збільшує <style=KeyWord>макс.</style>
+{1} на {2}.","<style=KeyWord>Ausbreitung</style> kann jetzt <style=KeyWord>diagonal</style> passieren.
 {0}.
-Erhöht den <style=KeyWord>Maximalwert</style> von {1} um {2}.","Permite que la <style=KeyWord>propagación</style> salte en <style=KeyWord>diagonal</style>.
+Erhöht den <style=KeyWord>Maximalwert</style> von
+{1} um {2}.","Permite que la <style=KeyWord>propagación</style> salte en <style=KeyWord>diagonal</style>.
 {0}.
-Aumenta el <style=KeyWord>máximo</style> de {1} en {2}.","Agora, <style=KeyWord>Propagação</style> pode ricochetear na <style=KeyWord>diagonal</style>.
+Aumenta el <style=KeyWord>máximo</style> de
+{1} en {2}.","Agora, <style=KeyWord>Propagação</style> pode ricochetear na <style=KeyWord>diagonal</style>.
 {0}.
-Aumenta {1} <style=KeyWord>Máx.</style> em {2}.","<style=KeyWord>전파</style> 효과를 <style=KeyWord>대각선</style>으로도 연쇄 가능
+Aumenta o <style=KeyWord>Máximo</style> de
+{1} em {2}.","<style=KeyWord>전파</style> 효과를 <style=KeyWord>대각선</style>으로도 연쇄 가능
 {0}
-<style=KeyWord>최대</style> {1}을(를) {2}만큼 증가시킵니다."
+<style=KeyWord>최대</style>
+{1}을(를) {2}만큼 증가시킵니다."
 DivergenceEffectFullDescription_AddPerk_AdjacentBuildingMalusCurse,"When attacking a tile adjacent to an obstacle, the attack gets: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style> <style=divergenceOutline><style=accuracy>Accuracy</style></style>","Lorsqu'une tuile adjacente à un obstacle est attaquée, l'attaque obtient: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style> <style=divergenceOutline><style=accuracy>Précision</style></style>",若攻击的格子与障碍物相邻，则该攻击：<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style><style=divergenceOutline><style=accuracy>命中</style></style>,攻擊與障礙物相鄰的方格時，該攻擊獲得：<style=divergenceOutline><style=accuracy>命中</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style>。,物体に隣接したタイルを攻撃すると、攻撃が以下の効果を得る:<style=divergenceOutline><style=accuracy>精度</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style>,"Атакуя противника на ячейке, смежной с препятствием, вы получите <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style> к <style=divergenceOutline><style=accuracy>меткости</style></style>","<style=divergenceOutline><style=accuracy>Точність</style></style> атаки на плитку, суміжну з перешкодою, зменшується на <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style>","Beim Angriff auf ein Feld, das an ein Hindernis angrenzt, erhält der Angriff: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20 %</style></style> <style=divergenceOutline><style=accuracy>Genauigkeit</style></style>.","Al atacar una casilla adyacente a un obstáculo, el ataque obtiene: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20 %</style></style> de <style=divergenceOutline><style=accuracy>precisión</style></style>.","Quando atacar uma casa próxima a um obstáculo, o ataque recebe: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style> de <style=divergenceOutline><style=accuracy>Precisão</style></style>",장애물에 인접한 타일을 공격할 때 공격에 적용: <style=divergenceOutline><style=accuracy>명중률</style></style> <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style>
 DivergenceEffectFullDescriptionTooltip_AddPerk_AdjacentBuildingMalusCurse,"When attacking a tile adjacent to an obstacle, the attack gets: <style=KeywordNb>-20%</style> <style=accuracy>Accuracy</style>","Lorsqu'une tuile adjacente à un obstacle est attaquée, l'attaque obtient: <style=KeywordNb>-20%</style> <style=accuracy>Précision</style>",若攻击的格子与障碍物相邻，则该攻击：<style=KeywordNb>-20%</style><style=accuracy>命中</style>,攻擊與障礙物相鄰的方格時，該攻擊獲得：<style=accuracy>命中</style><style=KeywordNb>-20%</style>。,物体に隣接したタイルを攻撃すると、攻撃が以下の効果を得る:<style=accuracy>精度</style><style=KeywordNb>-20%</style>,"Атакуя противника на ячейке, смежной с препятствием, вы получите <style=KeywordNb>-20%</style> к <style=accuracy>меткости</style>","<style=accuracy>Точність</style> атаки на плитку, суміжну з перешкодою, зменшується на <style=KeywordNb>-20%</style>.","Beim Angriff auf ein Feld, das an ein Hindernis angrenzt, erhält der Angriff: <style=KeywordNb>-20 %</style> <style=accuracy>Genauigkeit</style>.","Al atacar una casilla adyacente a un obstáculo, el ataque obtiene: <style=KeywordNb>-20 %</style> de <style=accuracy>precisión</style>.","Quando atacar uma casa próxima a um obstáculo, o ataque recebe: <style=KeywordNb>-20%</style> de <style=accuracy>Precisão</style>",장애물에 인접한 타일을 공격할 때 공격에 적용: <style=accuracy>명중률</style> <style=KeywordNb>-20%</style>
 DivergenceEffectShortDescription_AddPerk_AdjacentBuildingMalusCurse,<style=Number>-20%</style> <style=accuracy>Accuracy</style>,<style=Number>-20%</style> <style=accuracy>Précision</style>,<style=Number>-20%</style> <style=accuracy>命中</style>,<style=accuracy>命中</style><style=Number>-20%</style>,<style=accuracy>精度</style><style=Number>-20%</style>,<style=Number>-20%</style> к <style=accuracy>меткости</style>,<style=Number>-20%</style> до <style=accuracy>точності</style>,<style=Number>-20 %</style> <style=accuracy>Genauigkeit</style>,<style=Number>-20 %</style> de <style=accuracy>precisión</style>,<style=Number>-20%</style> de <style=accuracy>Precisão</style>,<style=accuracy>명중률</style> <style=Number>-20%</style>

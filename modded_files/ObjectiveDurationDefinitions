@@ -20,13 +20,13 @@
    </ObjectiveDurationDefinition>
 
    <ObjectiveDurationDefinition Type="EndTurn" Id="DontKillInverted2Turns" DifficultyMultiplier="1">
-      <Turn Value="1" Weight="8" DifficultyMultiplier="4"/>
-      <Turn Value="2" Weight="4" DifficultyMultiplier="1"/>
+      <Turn Value="1" Weight="8" DifficultyMultiplier="2"/>
+      <Turn Value="2" Weight="4" DifficultyMultiplier="0.75"/>
    </ObjectiveDurationDefinition>
 
    <ObjectiveDurationDefinition Type="EndTurn" Id="DontDealDamagesInverted2Turns" DifficultyMultiplier="1">
-      <Turn Value="1" Weight="8" DifficultyMultiplier="4"/>
-      <Turn Value="2" Weight="4" DifficultyMultiplier="1"/>
+      <Turn Value="1" Weight="8" DifficultyMultiplier="2"/>
+      <Turn Value="2" Weight="4" DifficultyMultiplier="0.75"/>
    </ObjectiveDurationDefinition>
 
    <ObjectiveDurationDefinition Type="EndTurn" Id="DontGetHit" DifficultyMultiplier="1">

@@ -59,9 +59,6 @@
       <Level Id="5">
         <BaseDamage Min="66 * (1 + PlayableUnitLevel/13)" Max="102 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>58</BasePrice>
-        <BaseStatBonuses>
-          <BaseStatBonus Stat="OpportunisticAttacks">19</BaseStatBonus>
-        </BaseStatBonuses>
         <Skills>
           <Skill>Shred</Skill>
           <Skill>IntimidatingScream</Skill>
@@ -86,10 +83,6 @@
       <Level Id="5">
         <BaseDamage Min="80 * (1 + PlayableUnitLevel/13)" Max="100 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
-        <BaseStatBonuses>
-          <BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
-          <BaseStatBonus Stat="Critical">3</BaseStatBonus>
-        </BaseStatBonuses>
         <Skills>
           <Skill>Backstab</Skill>
           <Skill>DaggerThrow</Skill>
@@ -236,9 +229,6 @@
       <Level Id="5">
         <BaseDamage Min="76 * (1 + PlayableUnitLevel/13)" Max="95 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
-        <BaseStatBonuses>
-          <BaseStatBonus Stat="CriticalPower">10</BaseStatBonus>
-        </BaseStatBonuses>
         <Skills>
           <Skill>PistolShot</Skill>
           <Skill>GrapplinShot</Skill>
@@ -287,9 +277,6 @@
       <Level Id="5">
         <BaseDamage Min="68 * (1 + PlayableUnitLevel/13)" Max="136 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
-        <BaseStatBonuses>
-          <BaseStatBonus Stat="Reliability">-10</BaseStatBonus>
-        </BaseStatBonuses>
         <Skills>
           <Skill>LongShot</Skill>
           <Skill>TakeAim5</Skill>

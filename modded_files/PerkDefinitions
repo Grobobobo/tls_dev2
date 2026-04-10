@@ -1426,8 +1426,8 @@
          <TokenVariable Key="CurrentResistanceReductionBonus" Value="Module.Buffer2 * ResistanceReductionBonus"/>
          <TokenVariable Key="BonusStacksGrantedByCurrentTrigger" Value="Floor(Module.Buffer / EnemyUnitsToKill)"/>
          <TokenVariable Key="RemainingEnemiesToKill" Value="EnemyUnitsToKill - Min(Module.Buffer,EnemyUnitsToKill)"/>
-         <TokenVariable Key="EnemyUnitsToKill" Value="8"/>
-         <TokenVariable Key="MinimumDistanceToIncreaseBuffer" Value="6"/>
+         <TokenVariable Key="EnemyUnitsToKill" Value="10"/>
+         <TokenVariable Key="MinimumDistanceToIncreaseBuffer" Value="5 + Module.Buffer2"/>
          <TokenVariable Key="SkillRangeModifierBonus" Value="1"/>
          <TokenVariable Key="ResistanceReductionBonus" Value="5"/>
          <TokenVariable Key="BaseGameSkillRangeCap" Value="8"/> <!--The base game value of max skill range, to be updated manually-->
@@ -1437,7 +1437,7 @@
          <StatArgument Stat="SkillRangeModifier"/>
          <LocArgument Value="AdditionnalSkillRangeCap + BaseGameSkillRangeCap" Interpreted="true" Style="KeyWordNb"/>
          <LocArgument Value="EnemyUnitsToKill" Style="KeyWordNb"/>
-         <LocArgument Value="MinimumDistanceToIncreaseBuffer" Style="KeyWordNb"/>
+         <LocArgument Value="MinimumDistanceToIncreaseBuffer" Interpreted="true" Style="KeyWordNb"/>
          <StatArgument Stat="SkillRangeModifier" Value="SkillRangeModifierBonus"/>
          <StatArgument Stat="SkillRangeModifier" Value="CurrentSkillRangeModifierBonus" Interpreted="true"/>
          <LocArgument Value="RemainingEnemiesToKill" Interpreted="true" Style="KeyWordNb"/>
