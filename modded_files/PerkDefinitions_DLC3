@@ -122,7 +122,7 @@
          <TokenVariable Key="NextThreshold" Value="(NumberOfStepsReached + 1) * BlockThreshold"/>
          <TokenVariable Key="NumberOfStepsReached" Value="Floor(Owner.Block / BlockThreshold)"/>
          <TokenVariable Key="PhysDamageBonus" Value="5"/>
-         <TokenVariable Key="BlockThreshold" Value="5"/>
+         <TokenVariable Key="BlockThreshold" Value="7"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="BlockThreshold" Style="GoodNb"/>
@@ -151,7 +151,7 @@
          <TokenVariable Key="NextThreshold" Value="(NumberOfStepsReached + 1) * DodgeThreshold"/>
          <TokenVariable Key="NumberOfStepsReached" Value="Floor(Owner.Dodge / DodgeThreshold)"/>
          <TokenVariable Key="RangedDamageBonus" Value="5"/>
-         <TokenVariable Key="DodgeThreshold" Value="6"/>
+         <TokenVariable Key="DodgeThreshold" Value="9"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="DodgeThreshold" Style="GoodNb"/>
