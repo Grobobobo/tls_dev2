@@ -1680,7 +1680,7 @@
         <TierId>MediumCost</TierId>
         <LocArguments>
             <LocArgument Value="BuildingLimitIncrease" Style="GoodNb"/>
-            <LocArgument Value="DefensesCostModifier" Style="GoodNb"/>
+            <LocArgument Value="DefensesCostModifier" Suffix="%" Style="GoodNb"/>
         </LocArguments>
         <Effects>
             
@@ -1930,7 +1930,7 @@
            <Tag>Hero</Tag>
            <Tag>Perk</Tag>
         </Tags>
-        <TierId>LowCost</TierId>
+        <TierId>MediumCost</TierId>
         <TokenVariables>
             <TokenVariable Key="PerkId" Value="OneWithNature"/>
         </TokenVariables>

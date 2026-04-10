@@ -1549,7 +1549,7 @@
    <!--Hit Armor Curse-->
    <PerkDefinition Id="HitArmorCurse">
       <TokenVariables>
-         <TokenVariable Key="HealthLost" Value="3"/>
+         <TokenVariable Key="HealthLost" Value="5"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="ArmorTotal"/>
@@ -1589,7 +1589,7 @@
 
    <PerkDefinition Id="HitArmorCurse_2">
       <TokenVariables>
-         <TokenVariable Key="HealthLost" Value="6"/>
+         <TokenVariable Key="HealthLost" Value="10"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="ArmorTotal"/>

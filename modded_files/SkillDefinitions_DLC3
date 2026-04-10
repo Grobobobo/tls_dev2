@@ -1661,6 +1661,7 @@
       </AreaOfEffect>
     <SkillAction>
       <Attack>
+        <BaseDamage Min="107 * (1 + Level/13)" Max="134 * (1 + Level/13)"  />
         <AttackType>Adaptative</AttackType>
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
@@ -1722,6 +1723,7 @@
       </AreaOfEffect>
     <SkillAction>
       <Attack>
+        <BaseDamage Min="107 * (1 + Level/13)" Max="134 * (1 + Level/13)"/>
         <AttackType>Adaptative</AttackType>
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
