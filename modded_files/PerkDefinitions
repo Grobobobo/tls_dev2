@@ -3327,6 +3327,8 @@
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="PropagationBouncesModifier" Value="PropagationBouncesModifierBonus"/>
+         <StatArgument Stat="PropagationBouncesModifier"/>
+         <LocArgument Value="PropagationMaxBouncesModifierBonus" Interpreted="true" Style="KeyWordNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD/>
