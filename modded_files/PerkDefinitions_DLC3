@@ -121,8 +121,8 @@
          <TokenVariable Key="BonusMultiplier" Value="Floor(Owner.Block / BlockThreshold)"/>
          <TokenVariable Key="NextThreshold" Value="(NumberOfStepsReached + 1) * BlockThreshold"/>
          <TokenVariable Key="NumberOfStepsReached" Value="Floor(Owner.Block / BlockThreshold)"/>
-         <TokenVariable Key="PhysDamageBonus" Value="10"/>
-         <TokenVariable Key="BlockThreshold" Value="10"/>
+         <TokenVariable Key="PhysDamageBonus" Value="5"/>
+         <TokenVariable Key="BlockThreshold" Value="5"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="BlockThreshold" Style="GoodNb"/>
@@ -151,17 +151,13 @@
          <TokenVariable Key="NextThreshold" Value="(NumberOfStepsReached + 1) * DodgeThreshold"/>
          <TokenVariable Key="NumberOfStepsReached" Value="Floor(Owner.Dodge / DodgeThreshold)"/>
          <TokenVariable Key="RangedDamageBonus" Value="5"/>
-         <TokenVariable Key="DodgeBonus" Value="5"/>
-         <TokenVariable Key="DodgeThreshold" Value="5"/>
+         <TokenVariable Key="DodgeThreshold" Value="6"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="DodgeThreshold" Style="GoodNb"/>
          <StatArgument Stat="Dodge"/>
          <StatArgument Stat="RangedDamage" Value="RangedDamageBonus"/>
-         <StatArgument Stat="Dodge" Value="DodgeBonus"/>
          <StatArgument Stat="RangedDamage" Value="RangedDamageBonus * BonusMultiplier" Interpreted="true"/>
-         <StatArgument Stat="Dodge" Value="DodgeBonus * BonusMultiplier" Interpreted="true"/>
-         <StatArgument Stat="Dodge" Value="NextThreshold" Interpreted="true" DisplaySign="false"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -172,7 +168,6 @@
          <BufferModule>
             <Effects>
                <StatModifier Stat="RangedDamage" Value="RangedDamageBonus * BonusMultiplier"/>
-               <StatModifier Stat="Dodge" Value="DodgeBonus * BonusMultiplier"/>
             </Effects>
          </BufferModule>
       </Modules>

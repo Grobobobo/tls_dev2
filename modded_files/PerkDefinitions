@@ -3323,6 +3323,7 @@
    <PerkDefinition Id="VolatileReaction">
       <TokenVariables>
          <TokenVariable Key="PropagationBouncesModifierBonus" Value="3"/>
+         <TokenVariable Key="PropagationMaxBouncesModifierBonus" Value="3"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="PropagationBouncesModifier" Value="PropagationBouncesModifierBonus"/>
@@ -3338,6 +3339,7 @@
             <Effects>
                <AllowDiagonalPropagation/>
                <StatModifier Stat="PropagationBouncesModifier" Value="PropagationBouncesModifierBonus"/>
+               <StatBoundaryModifier Stat="PropagationBouncesModifier" MaxModifier="PropagationMaxBouncesModifierBonus"/>
             </Effects>
          </BufferModule>
       </Modules>

@@ -2007,7 +2007,8 @@
       <IsAnAlly>true</IsAnAlly>
 
       <MovePointsTotal>6</MovePointsTotal>
-      
+      <MoveMethod Method="Flying"/>
+
       <DamageSkillId>UnnamedStunningBash_Allied</DamageSkillId>
       <SkillsToDisplay>
          <SkillToDisplay>UnnamedStunningBash_Allied</SkillToDisplay>
@@ -2048,6 +2049,7 @@
 
    <EnemyUnitTemplateDefinition Id="AlliedUnnamedCrossbow" TemplateId="UnnamedCrossbow" UseTemplateAssets="false">
       <IsAnAlly>true</IsAnAlly>
+      <MoveMethod Method="Flying"/>
 
       <MovePointsTotal>5</MovePointsTotal>
       
@@ -2096,7 +2098,7 @@
 
    <EnemyUnitTemplateDefinition Id="AlliedUnnamedWand" TemplateId="UnnamedWand" UseTemplateAssets="false">
       <IsAnAlly>true</IsAnAlly>
-
+      <MoveMethod Method="Flying"/>
       <MovePointsTotal>5</MovePointsTotal>
       
       <DamageSkillId>UnnamedTransfer_Allied</DamageSkillId>
