@@ -1909,7 +1909,7 @@ Increase this threshold by {7}
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Après avoir infligé {0} dégâts ou plus en un seul coup avec {1}<nbsp>:
 {2} obtient {3}
 Augmente ce seuil de {4}
-Après avoir étourdi {5} ou plus unité en une seule utilisation de {2}<nbsp>:
+Après avoir infligé {5} dégâts ou plus en une seule utilisation de {2}<nbsp>:
 {1} obtient {6} <style=PerkDamage>Dégâts de talent</style>
 Augment ce seuil de {7}
 <style=Attenuated>Le bonus est réinitialisé chaque matin</style>
@@ -1917,7 +1917,7 @@ Augment ce seuil de {7}
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style","若技能“{1}”单次击中造成超过{0}点伤害：
 “{2}”获得{3}
 该阈值提高{4}
-若单次使用“{2}”眩晕至少{5}个单位：
+若单次使用“{2}”造成超过{5}点伤害：
 “{1}”获得{6}<style=PerkDamage>天赋伤害</style>。
 该阈值提高{7}
 <style=Attenuated>该加成每天早上会重置。</style>
@@ -1925,7 +1925,7 @@ Augment ce seuil de {7}
 <style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","單次{1}造成至少{0}點傷害時：
 {2}獲得{3}
 此效果的觸發條件提升{4}
-單次{2}使至少{5}個單位暈眩時：
+單次{2}造成至少{5}點傷害時：
 {1}獲得<style=PerkDamage>天賦傷害</style>{6}。
 此效果的觸發條件提升{7}
 <style=Attenuated>此加成在每個白天重置。</style>
@@ -1933,7 +1933,7 @@ Augment ce seuil de {7}
 <style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","{1}1発でダメージを{0}以上与えると:
 {2}が{3}を得る
 この値が{4}増加
-{2}1回でユニット{5}体以上を気絶させると:
+{2}1回で{5}以上のダメージを与えると:
 {1}が{6}<style=PerkDamage>パークダメージ</style>を得る。
 この値が{7}増加
 <style=Attenuated>このボーナスは毎朝リセットされる。</style>
@@ -1941,7 +1941,7 @@ Augment ce seuil de {7}
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","Если одним применением навыка ""{1}"" герой нанёс {0} и более ед. урона:
 ""{2}"" получает бонус {3};
 порог срабатывания черты увеличивается до {4}.
-Если одним применением навыка ""{2}"" герой оглушил {5} и более врагов:
+Если одним применением навыка ""{2}"" герой нанёс {5} и более ед. урона:
 ""{1}"" получает {6} к <style=PerkDamage>особому урону</style>;
 порог срабатывания черты увеличивается до {7}.
 <style=Attenuated>Этот эффект сбрасывается каждое утро.</style>
@@ -1949,7 +1949,7 @@ Augment ce seuil de {7}
 <style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Після завдавання {0} чи більше шкоди одним влученням навичкою «{1}»:
 навичка «{2}» отримує {3}
 Це порогове значення збільшується на {4}
-Після приголомшення {5} чи більше ворогів одним застосуванням навички «{2}»:
+Після завдавання {5} чи більше шкоди одним застосуванням навички «{2}»:
 {1} отримує {6} до <style=PerkDamage>шкоди від риси</style>.
 Це порогове значення збільшується на {7}
 <style=Attenuated>Бонус скидається щоранку.</style>
@@ -1957,7 +1957,7 @@ Augment ce seuil de {7}
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Nachdem mit {1} {0} oder mehr Schaden mit einem einzigen Treffer zugefügt wurde:
 {2} erhält {3}
 Dieser Schwellenwert wird um {4} erhöht.
-Nachdem {5} oder mehr Einheiten mit einer einzigen Benutzung von {2} betäubt wurden:
+Nachdem {5} oder mehr Schaden mit einer einzigen Benutzung von {2} zugefügt wurde:
 {1} erhält {6} <style=PerkDamage>Vorteilsschaden</style>.
 Dieser Schwellenwert wird um {7} erhöht.
 <style=Attenuated>Der Bonus wird jeden Morgen zurückgesetzt.</style>
@@ -1965,7 +1965,7 @@ Dieser Schwellenwert wird um {7} erhöht.
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Después de infligir {0} de daño o más con un solo impacto de {1}:
 {2} obtiene {3}.
 Aumenta el límite en {4}.
-Después de aturdir a {5} unidades o más con un solo uso de {2}:
+Después de infligir {5} de daño o más con un solo uso de {2}:
 {1} obtiene {6} de <style=PerkDamage>daño de beneficio</style>.
 Aumenta el límite en {7}
 <style=Attenuated>Esta bonificación se restablece cada mañana.</style>
@@ -1973,7 +1973,7 @@ Aumenta el límite en {7}
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","Após causar {0} ou mais de dano em um único golpe de {1}:
 {2} recebe {3}
 Aumenta este limite em {4}
-Após atordoar {5} ou mais unidades com um único uso de {2}:
+Após causar {5} ou mais de dano com um único uso de {2}:
 {1} recebe {6} de <style=PerkDamage>Dano de Vantagem</style>.
 Aumenta este limite em {7}
 <style=Attenuated>A bonificação é redefinida todas as manhãs.</style>
@@ -1981,7 +1981,7 @@ Aumenta este limite em {7}
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","{1} 일격으로 {0} 이상의 피해를 준 후:
 {2}이(가) {3} 획득
 이 기준 {4}만큼 증가
-{2}을(를) 한 번 사용하여 유닛 {5}명 이상을 기절시킨 후:
+{2}을(를) 한 번 사용하여 {5} 이상의 피해를 준 후:
 {1}이(가) <style=PerkDamage>특전 피해</style> {6} 획득
 이 기준 {7}만큼 증가
 <style=Attenuated>보너스는 매일 아침 초기화</style>
@@ -1992,57 +1992,80 @@ PerkEffectInformations_MagicScepterUniquePerk,"Damage threshold: {8}
 Damage threshold: {10}
 {11} <style=PerkDamage>Perk Damage</style>.","Seuil de dégât : {8}
 {9}
-Seuil d'unité étourdit : {10}
+Seuil de dégât : {10}
 {11} <style=PerkDamage>dégât de talent</style>.","伤害阈值：{8}点
 {9}
-眩晕单位阈值：{10}
+伤害阈值：{10}
 {11}<style=PerkDamage>天赋伤害</style>。","傷害觸發條件：{8}
 {9}
-暈眩單位觸發數：{10}
+傷害觸發條件：{10}
 <style=PerkDamage>天賦傷害</style>{11}。","ダメージ数: {8}
 {9}
-気絶ユニット数: {10}
+ダメージ数: {10}
 {11} <style=PerkDamage>パークダメージ</style>。","Порог по урону: {8};
 {9}.
-Порог по оглушению: {10};
+Порог по урону: {10};
 {11} к <style=PerkDamage>особому урону</style>.","Порогове значення шкоди: {8}
 {9}
-Порогове значення оглушених ворогів: {10}
+Порогове значення шкоди: {10}
 {11} <style=PerkDamage>шкоди від риси</style>.","Schwellenwert für Schaden: {8}
 {9}
-Schwellenwert für betäubte Einheiten: {10}
+Schwellenwert für Schaden: {10}
 {11} <style=PerkDamage>Vorteilsschaden</style>.","Umbral de daño: {8}
 {9}
-Umbral de unidades aturdidas: {10}
+Umbral de daño: {10}
 {11} <style=PerkDamage>Daño de beneficio</style>.","Limite de dano: {8}
 {9}
-Limite de unidades atordoadas: {10}
+Limite de dano: {10}
 {11} de <style=PerkDamage>Dano de Vantagem</style>.","피해 기준: {8}
 {9}
-유닛 기절 기준: {10}
+피해 기준: {10}
 {11} <style=PerkDamage>특전 피해</style>"
 ResearchDescription_HavenRunenbergResearch,"Grants the perk {0} to all Heroes.
 Adds <style=keyword>Dwarf</style> <style=perk>perks</style> into the <style=keyword>miscellaneous perk tree</style> (except that one) and <style=keyword>rerolls</style> all miscellaneous <style=perk>perk</style> trees.
-",Ajoute les <style=perk>talents</style> des <style=keyword>Nains</style> dans la <style=keyword>collection de talent Divers</style> et <style=keyword>relance</style> toutes les collections de talent Divers.,"添加<style=keyword>矮人</style><style=perk>天赋</style>至<style=keyword>混杂天赋树</style>，并<style=keyword>刷新</style>所有混杂<style=perk>天赋</style>树。
-","<style=keyword>「其他」天賦樹</style>新增<style=keyword>矮人</style><style=perk>天賦</style>，同時<style=keyword>刷新</style>所有「其他」類別的<style=perk>天賦</style>樹。
-","<style=keyword>雑多なパークツリー</style>に<style=keyword>ドワーフ</style>の<style=perk>パーク</style>が追加され、すべての雑多な<style=perk>パーク</style>ツリーを<style=keyword>リロール</style>する。
-","Добавляет в <style=keyword>дерево различных особых черт</style> <style=perk>особые черты</style> <style=keyword>гномов</style> и делает <style=keyword>переброс</style> всех деревьев различных <style=perk>особых черт</style>.
-","Додає <style=perk>риси</style> <style=keyword>гномів</style> до <style=keyword>дерева різноманітних рис</style> і <style=keyword>оновлює</style> всі різноманітні дерева <style=perk>рис</style>.
-","Fügt dem <style=keyword>Sonstiges-Vorteilsbaum</style> <style=keyword>Zwerg</style>-<style=perk>Vorteile</style> hinzu und <style=keyword>würfelt</style> alle sonstigen <style=perk>Vorteilsbäume</style> neu.
-","Añade <style=perk>beneficios</style> de <style=keyword>enano</style> al <style=keyword>árbol de beneficios variado</style> y modifica la <style=keyword>selección</style> de todos los árboles de <style=perk>beneficios</style> variados.
-","Adiciona <style=perk>vantagens</style> de <style=keyword>Anão</style> à <style=keyword>árvore de vantagens variadas</style> e <style=keyword>troca</style> todas as árvores de <style=perk>vantagens</style> variadas.
-","<style=keyword>드워프</style> <style=perk>특전</style>을 <style=keyword>기타 특전 트리</style>에 추가하고, 모든 기타 <style=perk>특전</style> 트리를 <style=keyword>재굴림</style>합니다."
+","Accorde le talent {0} a tous les Héros.
+Ajoute les <style=perk>talents</style> des <style=keyword>Nains</style> dans la <style=keyword>collection de talent Divers</style> (sauf celui-ci) et <style=keyword>relance</style> toutes les collections de talent Divers.
+","授予所有英雄天赋{0}。
+添加<style=keyword>矮人</style><style=perk>天赋</style>至<style=keyword>混杂天赋树</style>（该天赋除外），并<style=keyword>刷新</style>所有混杂<style=perk>天赋</style>树。
+","授予所有英雄天賦{0}。
+<style=keyword>「其他」天賦樹</style>新增<style=keyword>矮人</style><style=perk>天賦</style>（該天賦除外），同時<style=keyword>刷新</style>所有「其他」類別的<style=perk>天賦</style>樹。
+","全ヒーローにパーク{0}を付与する。
+<style=keyword>雑多なパークツリー</style>に<style=keyword>ドワーフ</style>の<style=perk>パーク</style>が追加され（このパークを除く）、すべての雑多な<style=perk>パーク</style>ツリーを<style=keyword>リロール</style>する。
+","Даёт всем героям особую черту {0}.
+Добавляет в <style=keyword>дерево различных особых черт</style> <style=perk>особые черты</style> <style=keyword>гномов</style> (кроме этой) и делает <style=keyword>переброс</style> всех деревьев различных <style=perk>особых черт</style>.
+","Надає всім героям рису {0}.
+Додає <style=perk>риси</style> <style=keyword>гномів</style> до <style=keyword>дерева різноманітних рис</style> (окрім цієї) й <style=keyword>оновлює</style> всі різноманітні дерева <style=perk>рис</style>.
+","Gewährt allen Helden den Vorteil {0}.
+Fügt dem <style=keyword>Sonstiges-Vorteilsbaum</style> <style=keyword>Zwerg</style>-<style=perk>Vorteile</style> hinzu (außer diesem) und <style=keyword>würfelt</style> alle sonstigen <style=perk>Vorteilsbäume</style> neu.
+","Otorga el beneficio {0} a todos los héroes.
+Añade <style=perk>beneficios</style> de <style=keyword>enano</style> al <style=keyword>árbol de beneficios variado</style> (excepto este) y modifica la <style=keyword>selección</style> de todos los árboles de <style=perk>beneficios</style> variados.
+","Concede a vantagem {0} a todos os heróis.
+Adiciona <style=perk>vantagens</style> de <style=keyword>Anão</style> à <style=keyword>árvore de vantagens variadas</style> (exceto esta) e <style=keyword>troca</style> todas as árvores de <style=perk>vantagens</style> variadas.
+","모든 영웅에게 특전 {0}을(를) 부여합니다.
+<style=keyword>드워프</style> <style=perk>특전</style>을 <style=keyword>기타 특전 트리</style>에 추가하고(해당 특전 제외), 모든 기타 <style=perk>특전</style> 트리를 <style=keyword>재굴림</style>합니다.
+"
 ResearchDescription_HavenAmberwaldResearch,"Grants the perk {0} to all Heroes.
 Adds <style=keyword>Elf</style> <style=perk>perks</style> into the <style=keyword>miscellaneous perk tree</style> and <style=keyword>rerolls</style> all miscellaneous <style=perk>perk</style> trees.
-",Ajoute les <style=perk>talents</style> des <style=keyword>Elfs</style> dans la <style=keyword>collection de talent Divers</style> et <style=keyword>relance</style> toutes les collections de talent Divers.,"添加<style=keyword>精灵</style><style=perk>天赋</style>至<style=keyword>混杂天赋树</style>，并<style=keyword>刷新</style>所有混杂<style=perk>天赋</style>树。
-","<style=keyword>「其他」天賦樹</style>新增<style=keyword>精靈</style><style=perk>天賦</style>，同時<style=keyword>刷新</style>所有「其他」類別的<style=perk>天賦</style>樹。
-","<style=keyword>雑多なパークツリー</style>に<style=keyword>エルフ</style>の<style=perk>パーク</style>が追加され、すべての雑多な<style=perk>パーク</style>ツリーを<style=keyword>リロール</style>する。
-","Добавляет в <style=keyword>дерево различных особых черт</style> <style=perk>особые черты</style> <style=keyword>эльфов</style> и делает <style=keyword>переброс</style> всех деревьев различных <style=perk>особых черт</style>.
-","Додає <style=perk>риси</style> <style=keyword>ельфів</style> до <style=keyword>дерева різноманітних рис</style> й <style=keyword>оновлює</style> всі різноманітні дерева <style=perk>рис</style>.
-","Fügt dem <style=keyword>Sonstiges-Vorteilsbaum</style> <style=keyword>Elfen</style>-<style=perk>Vorteile</style> hinzu und <style=keyword>würfelt</style> alle sonstigen <style=perk>Vorteilsbäume</style> neu.
-","Añade <style=perk>beneficios</style> de <style=keyword>elfo</style> al <style=keyword>árbol de beneficios variado</style> y modifica la <style=keyword>selección</style> de todos los árboles de <style=perk>beneficios</style> variados.
-","Adiciona <style=perk>vantagens</style> de <style=keyword>Elfo</style> à <style=keyword>árvore de vantagens variadas</style> e <style=keyword>troca</style> todas as árvores de <style=perk>vantagens</style> variadas.
-","<style=keyword>엘프</style> <style=perk>특전</style>을 <style=keyword>기타 특전 트리</style>에 추가하고, 모든 기타 <style=perk>특전</style> 트리를 <style=keyword>재굴림</style>합니다.
+","Accorde le talent {0} a tous les Héros.
+Ajoute les <style=perk>talents</style> des <style=keyword>Elfs</style> dans la <style=keyword>collection de talent Divers</style> et <style=keyword>relance</style> toutes les collections de talent Divers.
+","授予所有英雄天赋{0}。
+添加<style=keyword>精灵</style><style=perk>天赋</style>至<style=keyword>混杂天赋树</style>，并<style=keyword>刷新</style>所有混杂<style=perk>天赋</style>树。
+","授予所有英雄天賦{0}。
+<style=keyword>「其他」天賦樹</style>新增<style=keyword>精靈</style><style=perk>天賦</style>，同時<style=keyword>刷新</style>所有「其他」類別的<style=perk>天賦</style>樹。
+","全ヒーローにパーク{0}を付与する。
+<style=keyword>雑多なパークツリー</style>に<style=keyword>エルフ</style>の<style=perk>パーク</style>が追加され、すべての雑多な<style=perk>パーク</style>ツリーを<style=keyword>リロール</style>する。
+","Даёт всем героям особую черту {0}.
+Добавляет в <style=keyword>дерево различных особых черт</style> <style=perk>особые черты</style> <style=keyword>эльфов</style> и делает <style=keyword>переброс</style> всех деревьев различных <style=perk>особых черт</style>.
+","Надає всім героям рису {0}.
+Додає <style=perk>риси</style> <style=keyword>ельфів</style> до <style=keyword>дерева різноманітних рис</style> й <style=keyword>оновлює</style> всі різноманітні дерева <style=perk>рис</style>.
+","Gewährt allen Helden den Vorteil {0}.
+Fügt dem <style=keyword>Sonstiges-Vorteilsbaum</style> <style=keyword>Elfen</style>-<style=perk>Vorteile</style> hinzu und <style=keyword>würfelt</style> alle sonstigen <style=perk>Vorteilsbäume</style> neu.
+","Otorga el beneficio {0} a todos los héroes.
+Añade <style=perk>beneficios</style> de <style=keyword>elfo</style> al <style=keyword>árbol de beneficios variado</style> y modifica la <style=keyword>selección</style> de todos los árboles de <style=perk>beneficios</style> variados.
+","Concede a vantagem {0} a todos os heróis.
+Adiciona <style=perk>vantagens</style> de <style=keyword>Elfo</style> à <style=keyword>árvore de vantagens variadas</style> e <style=keyword>troca</style> todas as árvores de <style=perk>vantagens</style> variadas.
+","모든 영웅에게 특전 {0}을(를) 부여합니다.
+<style=keyword>엘프</style> <style=perk>특전</style>을 <style=keyword>기타 특전 트리</style>에 추가하고, 모든 기타 <style=perk>특전</style> 트리를 <style=keyword>재굴림</style>합니다.
 "
 PerkName_HeroesBlockPhysDamagePerk,The Rock,La Roche,石,堅石,岩,Камень,Камінь,Der Fels,La roca,Rocha,바위
 PerkDescription_HeroesBlockPhysDamagePerk,"Every {0} {1}: {2}.
@@ -2155,85 +2178,56 @@ Próximo passo: {4}.","{3}
 PerkDescription_HuntersArsenal,"Every {0} after {1}:
 All <style=KeyWord>non-<style=Poison>Poison</style></style> attacks using {2} and {3} get {4}.
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Tous les {0} après {1}<nbsp>:
-Toutes les attaques <style=KeyWord>non-<style=Momentum>Inertie</style></style> utilisant des {2} obtiennent
-{3}.
-Toutes les attaques <style=KeyWord>non-<style=Poison>Poison</style></style> utilisant des {4} obtiennent {5}.
+Toutes les attaques <style=KeyWord>non-<style=Poison>Poison</style></style> utilisant {2} et {3} obtiennent {4}.
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","达到{1}后每超出{0}：
 
-所有造成{2}且<style=KeyWord>不具有<style=Momentum>横冲直撞</style>效果的</style>攻击获得{3}。
-
-所有造成{4}且<style=KeyWord>不具有<style=Poison>中毒</style>效果的</style>攻击获得{5}。
+所有使用{2}和{3}的<style=KeyWord>非<style=Poison>中毒</style></style>攻击获得{4}。
 
 <style=""ElfIcon""></style><style=""ElfText"">《琥珀幽森的精灵》DLC</style>","{1}後，每有{0}：
 
-所有使用{2}的<style=KeyWord>非<style=Momentum>橫衝直撞</style></style>攻擊獲得{3}。
-
-所有使用{4}的<style=KeyWord>非<style=Poison>中毒</style></style>攻擊獲得{5}。
+所有使用{2}和{3}的<style=KeyWord>非<style=Poison>中毒</style></style>攻擊獲得{4}。
 
 <style=""ElfIcon""></style><style=""ElfText"">〈琥珀幽森的精靈〉DLC</style>","{1}以降の{0}ごとに以下の効果を得る:
 
-{2}となる全ての<style=Momentum>衝撃</style><style=KeyWord>でない</style>攻撃が{3}を得る。
-
-{4}となる全ての<style=Poison>毒</style><style=KeyWord>でない</style>攻撃が{5}を得る。
+{2}と{3}を使う全ての<style=Poison>毒</style><style=KeyWord>でない</style>攻撃が{4}を得る。
 
 <style=""ElfIcon""></style><style=""ElfText"">アンバーワルドのエルフDLC</style>","За каждые {0} свыше {1} ед.:
 
-все атаки <style=KeyWord>без свойства ""<style=Momentum>Разгон</style>""</style>, наносящие {2}, дают ""{3}"";
-
-все <style=KeyWord>не <style=Poison>отравляющие</style></style> атаки, наносящие {4}, дают {5}.
+все <style=KeyWord>не <style=Poison>отравляющие</style></style> атаки, наносящие {2} и {3}, дают {4}.
 
 <style=""ElfIcon""></style><style=""ElfText"">Дополнительный контент ""Elves of Amberwald""</style>","Кож. {0} після {1}:
 
-усі <style=KeyWord>атаки без <style=Momentum>імпульсу</style></style> з використанням «{2}» отримують {3}.
-
-Усі <style=KeyWord>атаки без <style=Poison>отрути</style></style> з використанням «{4}» отримують: {5}.
+усі <style=KeyWord>атаки без <style=Poison>отрути</style></style> з використанням {2} та {3} отримують {4}.
 
 <style=""ElfIcon""></style><style=""ElfText"">Доповнення Elves of Amberwald</style>","Für je {0}, die den Wert {1} überschreiten, geschieht Folgendes:
 
-Alle Angriffe <style=KeyWord>ohne <style=Momentum>Wucht</style></style>, die die Schadensart {2} verwenden, erhalten {3}.
-Alle Angriffe <style=KeyWord>ohne <style=Poison>Gift</style></style>, die die Schadensart {4} verwenden, erhalten {5}.
+Alle Angriffe <style=KeyWord>ohne <style=Poison>Gift</style></style>, die {2} und {3} verwenden, erhalten {4}.
 
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Cada {0} pasados los {1}:
 
-Todos los ataques que <style=KeyWord>no sean de <style=Momentum>impulso</style></style> y usen {2} obtienen{3}.
-
-Todos los ataques <style=KeyWord>que no sean de <style=Poison>veneno</style></style> y usen {4} obtienen {5}.
+Todos los ataques <style=KeyWord>que no sean de <style=Poison>veneno</style></style> que usen {2} y {3} obtienen {4}.
 
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","Para cada {0} após {1}:
 
-Todos os ataques <style=KeyWord>sem <style=Momentum>Impulso</style></style> que usam {2} recebem {3}.
-
-Todos os ataques <style=KeyWord>sem <style=Poison>Envenenamento</style></style> que usam {4} recebem {5}.
+Todos os ataques <style=KeyWord>sem <style=Poison>Envenenamento</style></style> que usam {2} e {3} recebem {4}.
 
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","{1} 이후 {0}마다:
 
-{2}을(를) 사용하는 <style=KeyWord><style=Momentum>기세</style>가 아닌</style> 모든 공격이 {3} 획득
-
-{4}을(를) 사용하는 <style=KeyWord><style=Poison>중독</style>이 아닌</style> 모든 공격이 {5} 획득
+{2}와(과) {3}을(를) 사용하는 <style=KeyWord><style=Poison>중독</style>이 아닌</style> 모든 공격이 {4} 획득
 
 <style=""ElfIcon""></style><style=""ElfText"">암버발트의 엘프 DLC</style>"
 PerkEffectInformations_HuntersArsenal,"Current bonus:
-{5}","Bonus actuels<nbsp>:
-{6}
-{7}","当前加成：
-{6}
-{7}","目前加成：
-{6}
-{7}","現在のボーナス:
-{6}
-{7}","Текущие бонусы:
-{6}
-{7}","Поточні бонуси:
-{6}
-{7}","Aktuelle Boni:
-{6}
-{7}","Bonificaciones actuales:
-{6}
-{7}","Bônus atual:
-{6}
-{7}","현재 보너스:
-{6}
-{7}"
+{5}","Bonus actuel<nbsp>:
+{5}","当前加成：
+{5}","目前加成：
+{5}","現在のボーナス:
+{5}","Текущий бонус:
+{5}","Поточний бонус:
+{5}","Aktueller Bonus:
+{5}","Bonificación actual:
+{5}","Bônus atual:
+{5}","현재 보너스:
+{5}"
 PerkName_PanicMovePoint,Stay Panic,Panique générale,胆战心惊,持續恐慌,滞在パニック,Стимулирующая паника,Панікуйте на здоров'я,Immer mit der Panik,Pánico constante,Pânico Estático,공포 유지
 PerkDescription_PanicMovePoint,"Every {0} of the <style=Panic>Panic Gauge</style> filled, get:
 {1}
@@ -2325,66 +2319,67 @@ Acima de {7}: {9}
 현재 보너스: {3} {6}
 {7} 초과 시: {9}"
 ResearchDescription_HavenGlintfeinResearch,"The effects of <style=keyword>Temple</style> and <style=keyword>Mana Well</style> are <style=good>doubled</style>, and actions no longer cost <style=Workers>Workers</style>.
-Grant {0} to <style=keyword>Temple</style> and {1} to <style=keyword>Mana Well</style>. They are only usable once per <style=night>night</style>.","Les effets du <style=keyword>Temple</style> et du <style=keyword>Puit de Mana</style> sont <style=good>doublées</style>.
-Confére {0} au <style=keyword>Temple</style> et {1} au <style=keyword>Puit de Mana</style>.Ils sont seulement utilisable une fois par <style=night>nuit</style>.","<style=keyword>神庙</style>和<style=keyword>魔泉</style>的效果<style=good>翻倍</style>。
-<style=keyword>神庙</style>获得{0}，<style=keyword>魔泉</style>获得{1}。它们每个<style=night>夜晚</style>仅能使用一次。","<style=keyword>神廟</style>和<style=keyword>魔泉</style>的效果<style=good>翻倍</style>。
-<style=keyword>神廟</style>獲得{0}，<style=keyword>魔泉</style>獲得{1}。以上兩種建築物每個<style=night>黑夜</style>只能使用一次。","<style=keyword>聖堂</style>と<style=keyword>マナの泉</style>の効果が<style=good>2倍</style>になる。
-<style=keyword>聖堂</style>が{0}を得て、<style=keyword>マナの泉</style>が{1}を得る。1<style=night>夜</style>に1度のみ使用可能。","Эффект от <style=keyword>Святилища</style> и <style=keyword>Источника маны</style> <style=good>удваивается</style>.
-<style=keyword>Святилище</style> получает ""{0}"", а <style=keyword>Источник маны</style> — ""{1}"". Их можно применить только раз за <style=night>ночь</style>.","Ефекти <style=keyword>храму</style> й <style=keyword>колодязя мани</style> <style=good>подвоюються</style>.
-Дає «{0}» <style=keyword>храму</style> й «{1}» <style=keyword>колодязю мани</style>. Можна використати лише раз за <style=night>ніч</style>.","Die Effekte von <style=keyword>Tempel</style> und <style=keyword>Manabrunnen</style> werden <style=good>verdoppelt</style>.
-Gewährt dem <style=keyword>Tempel</style> {0} und dem <style=keyword>Manabrunnen</style> {1}. Nur einmal pro <style=night>Nacht</style> nutzbar.","Los efectos del <style=keyword>templo</style> y el <style=keyword>pozo de maná</style> se <style=good>duplican</style>.
-Otorga {0} al <style=keyword>templo</style> y {1} al <style=keyword>pozo de maná</style>. Solo pueden utilizarse una vez por <style=night>noche</style>.","<style=good>Dobra</style> os efeitos do <style=keyword>Templo</style> e do <style=keyword>Poço de Mana</style>.
-Concede {0} ao <style=keyword>Templo</style> e {1} ao <style=keyword>Poço de Mana</style>. Só é possível utilizá-los uma vez por <style=night>noite</style>.","<style=keyword>사원</style>과 <style=keyword>마나 우물</style>의 효과가 <style=good>2배</style>가 됩니다.
+Grant {0} to <style=keyword>Temple</style> and {1} to <style=keyword>Mana Well</style>. They are only usable once per <style=night>night</style>.","Les effets du <style=keyword>Temple</style> et du <style=keyword>Puit de Mana</style> sont <style=good>doublés</style>, et les actions ne coûtent plus de <style=Workers>Ouvriers</style>.
+Confère {0} au <style=keyword>Temple</style> et {1} au <style=keyword>Puit de Mana</style>.Ils sont seulement utilisable une fois par <style=night>nuit</style>.","<style=keyword>神庙</style>和<style=keyword>魔泉</style>的效果<style=good>翻倍</style>，且操作不再消耗<style=Workers>工人</style>。
+<style=keyword>神庙</style>获得{0}，<style=keyword>魔泉</style>获得{1}。它们每个<style=night>夜晚</style>仅能使用一次。","<style=keyword>神廟</style>和<style=keyword>魔泉</style>的效果<style=good>翻倍</style>，且操作不再消耗<style=Workers>工人</style>。
+<style=keyword>神廟</style>獲得{0}，<style=keyword>魔泉</style>獲得{1}。以上兩種建築物每個<style=night>黑夜</style>只能使用一次。","<style=keyword>聖堂</style>と<style=keyword>マナの泉</style>の効果が<style=good>2倍</style>になり、アクションに<style=Workers>労働者</style>を消費しなくなる。
+<style=keyword>聖堂</style>が{0}を得て、<style=keyword>マナの泉</style>が{1}を得る。1<style=night>夜</style>に1度のみ使用可能。","Эффект от <style=keyword>Святилища</style> и <style=keyword>Источника маны</style> <style=good>удваивается</style>, а действия больше не стоят <style=Workers>рабочих</style>.
+<style=keyword>Святилище</style> получает ""{0}"", а <style=keyword>Источник маны</style> — ""{1}"". Их можно применить только раз за <style=night>ночь</style>.","Ефекти <style=keyword>храму</style> й <style=keyword>колодязя мани</style> <style=good>подвоюються</style>, а дії більше не потребують <style=Workers>робітників</style>.
+Дає «{0}» <style=keyword>храму</style> й «{1}» <style=keyword>колодязю мани</style>. Можна використати лише раз за <style=night>ніч</style>.","Die Effekte von <style=keyword>Tempel</style> und <style=keyword>Manabrunnen</style> werden <style=good>verdoppelt</style>, und Aktionen kosten keine <style=Workers>Arbeiter</style> mehr.
+Gewährt dem <style=keyword>Tempel</style> {0} und dem <style=keyword>Manabrunnen</style> {1}. Nur einmal pro <style=night>Nacht</style> nutzbar.","Los efectos del <style=keyword>templo</style> y el <style=keyword>pozo de maná</style> se <style=good>duplican</style>, y las acciones ya no cuestan <style=Workers>trabajadores</style>.
+Otorga {0} al <style=keyword>templo</style> y {1} al <style=keyword>pozo de maná</style>. Solo pueden utilizarse una vez por <style=night>noche</style>.","<style=good>Dobra</style> os efeitos do <style=keyword>Templo</style> e do <style=keyword>Poço de Mana</style>, e as ações não custam mais <style=Workers>Trabalhadores</style>.
+Concede {0} ao <style=keyword>Templo</style> e {1} ao <style=keyword>Poço de Mana</style>. Só é possível utilizá-los uma vez por <style=night>noite</style>.","<style=keyword>사원</style>과 <style=keyword>마나 우물</style>의 효과가 <style=good>2배</style>가 되며, 행동에 <style=Workers>일꾼</style>이 더 이상 소모되지 않습니다.
 <style=keyword>사원</style>에 {0}, <style=keyword>마나 우물</style>에 {1}을(를) 부여합니다. <style=night>밤</style>마다 한 번씩만 사용할 수 있습니다."
-ResearchDescription_VeteranGlenwaldResearch,<style=keyword>All structures</style> are <style=keyword>repaired for free</style> every <style=Production>morning</style>.,Les <style=keyword>pièges</style> sont <style=keyword>réparés gratuitement</style> chaque <style=Production>matin</style>.,每到<style=Production>早上</style>，<style=keyword>陷阱</style>会<style=keyword>免费修复</style>。,每個<style=Production>白天</style>，<style=keyword>免費修復</style><style=keyword>陷阱</style>。,<style=Production>毎朝</style>、<style=keyword>トラップ</style>が<style=keyword>無料で修理</style>される。,С наступлением <style=Production>утра</style> все <style=keyword>ловушки</style> <style=keyword>ремонтируются бесплатно</style>.,<style=keyword>Пастки</style> <style=keyword>лагодяться задарма</style> <style=Production>щоранку</style>.,<style=keyword>Fallen</style> werden jeden <style=Production>Morgen</style> <style=keyword>umsonst repariert</style>.,Las <style=keyword>trampas</style> se <style=keyword>reparan gratis</style> cada <style=Production>mañana</style>.,<style=keyword>Armadilhas</style> são <style=keyword>reparadas gratuitamente</style> a cada <style=Production>manhã</style>.,매일 <style=Production>아침</style> <style=keyword>함정<style=keyword>이 </style>무료로 수리</style>됩니다.
-ResearchDescription_VeteranGlintfeinResearch,Decrease the cost of non-wall defenses by {1}. Increase <style=keyword>Defense</style> building <style=keyword>cap</style> by {0}.,Augment la <style=keyword>limite</style> des bâtiments de <style=keyword>Défense</style> de {0}.,<style=keyword>防御设施</style>建筑的<style=keyword>数量上限</style>提高{0}。,<style=keyword>防禦設施</style><style=keyword>上限</style>提升{0}。,<style=keyword>防衛</style>施設の<style=keyword>上限</style>が{0}増加。,<style=keyword>Максимум</style> <style=keyword>укреплений</style> увеличивается на {0}.,Збільшує <style=keyword>ліміт</style> накопичення <style=keyword>захисту</style> на {0}.,Erhöht das <style=keyword>Limit</style> von <style=keyword>Verteidigungsanlagen</style> um {0}.,Aumenta el <style=keyword>límite</style> de <style=keyword>defensas</style> del edificio en {0}.,Aumenta o <style=keyword>limite</style> de construções de <style=keyword>Defesa</style> em {0}.,<style=keyword>방어 시설</style> 건물의 <style=keyword>한도</style>가 {0}만큼 증가합니다.
+ResearchDescription_VeteranGlenwaldResearch,<style=keyword>All structures</style> are <style=keyword>repaired for free</style> every <style=Production>morning</style>.,Toutes les <style=keyword>structures</style> sont <style=keyword>réparées gratuitement</style> chaque <style=Production>matin</style>.,每到<style=Production>早上</style>，<style=keyword>所有建筑物</style>会<style=keyword>免费修复</style>。,每個<style=Production>白天</style>，<style=keyword>免費修復</style><style=keyword>所有建築物</style>。,<style=Production>毎朝</style>、<style=keyword>全ての建造物</style>が<style=keyword>無料で修理</style>される。,С наступлением <style=Production>утра</style> все <style=keyword>строения</style> <style=keyword>ремонтируются бесплатно</style>.,<style=keyword>Усі споруди</style> <style=keyword>лагодяться задарма</style> <style=Production>щоранку</style>.,<style=keyword>Alle Gebäude</style> werden jeden <style=Production>Morgen</style> <style=keyword>umsonst repariert</style>.,Todas las <style=keyword>estructuras</style> se <style=keyword>reparan gratis</style> cada <style=Production>mañana</style>.,Todas as <style=keyword>estruturas</style> são <style=keyword>reparadas gratuitamente</style> a cada <style=Production>manhã</style>.,매일 <style=Production>아침</style> <style=keyword>모든 건물</style>이 <style=keyword>무료로 수리</style>됩니다.
+ResearchDescription_VeteranGlintfeinResearch,Decrease the cost of non-wall defenses by {1}. Increase <style=keyword>Defense</style> building <style=keyword>cap</style> by {0}.,Réduit le coût des défenses non murales de {1}. Augmente la <style=keyword>limite</style> des bâtiments de <style=keyword>Défense</style> de {0}.,非城墙防御设施的成本降低{1}。<style=keyword>防御设施</style>建筑的<style=keyword>数量上限</style>提高{0}。,非城牆防禦設施的成本降低{1}。<style=keyword>防禦設施</style><style=keyword>上限</style>提升{0}。,壁以外の防衛施設のコストを{1}減少させる。<style=keyword>防衛</style>施設の<style=keyword>上限</style>が{0}増加。,Уменьшает стоимость защитных сооружений (кроме стен) на {1}. <style=keyword>Максимум</style> <style=keyword>укреплений</style> увеличивается на {0}.,Зменшує вартість немурових оборонних споруд на {1}. Збільшує <style=keyword>ліміт</style> накопичення <style=keyword>захисту</style> на {0}.,Verringert die Kosten nicht-mauerartiger Verteidigungsanlagen um {1}. Erhöht das <style=keyword>Limit</style> von <style=keyword>Verteidigungsanlagen</style> um {0}.,Reduce el coste de las defensas que no sean murallas en {1}. Aumenta el <style=keyword>límite</style> de <style=keyword>defensas</style> del edificio en {0}.,Diminui o custo das defesas que não são muralhas em {1}. Aumenta o <style=keyword>limite</style> de construções de <style=keyword>Defesa</style> em {0}.,벽이 아닌 방어 시설의 비용이 {1}만큼 감소합니다. <style=keyword>방어 시설</style> 건물의 <style=keyword>한도</style>가 {0}만큼 증가합니다.
 ResearchDescription_CheaperProductionResearch,"Reduce the <style=keyword>cost</style> of production buildings and their <style=keyword>upgrades</style> by {0}.
-Increase production building <style=keyword>limit</style> by {1}.","Réduit le <style=keyword>coût</style> des <style=keyword>amélioration</style> des bâtiments de production de {0}.
-Augmente la <style=keyword>limite</style> de bâtiment de production de {1}.","<style=keyword>升级</style>生产类建筑的<style=keyword>成本</style>减少{0}。
-生产类建筑的<style=keyword>数量上限</style>增加{1}。","生產型建築的<style=keyword>升級</style><style=keyword>消耗</style>降低{0}。
-生產型建築<style=keyword>上限</style>提升{1}。","製造施設の<style=keyword>強化</style>の<style=keyword>コスト</style>を{0}減少させる。
-製造施設の<style=keyword>上限</style>が{1}増加する。","Снижает <style=keyword>стоимость</style> <style=keyword>улучшений</style> всех производственных зданий на {0}.
-Увеличивает <style=keyword>максимум</style> производственных зданий на {1}.","Знижує <style=keyword>вартість</style> <style=keyword>поліпшень</style> для виробничих споруд на {0}.
-Збільшує <style=keyword>ліміт</style> виробничих споруд на {1}.","Reduziert die <style=keyword>Kosten</style> von Produktionsgebäude-<style=keyword>Verbesserungen</style> um {0}.
-Erhöht das Produktionsgebäude-<style=keyword>Limit</style> um {1}.","Reduce el <style=keyword>coste</style> de las <style=keyword>mejoras</style> de los edificios de producción en un {0}.
-Aumenta el <style=keyword>límite</style> de los edificios de producción en {1}.","Reduz o <style=keyword>custo</style> de <style=keyword>melhorias</style> de construções que produzem itens em {0}.
-Aumenta o <style=keyword>limite</style> de construções que produzem itens em {1}.","생산 건물 <style=keyword>강화</style>의 <style=keyword>비용</style>이 {0}만큼 감소합니다.
+Increase production building <style=keyword>limit</style> by {1}.","Réduit le <style=keyword>coût</style> des bâtiments de production et de leurs <style=keyword>améliorations</style> de {0}.
+Augmente la <style=keyword>limite</style> de bâtiment de production de {1}.","生产类建筑及其<style=keyword>升级</style>的<style=keyword>成本</style>减少{0}。
+生产类建筑的<style=keyword>数量上限</style>增加{1}。","生產型建築及其<style=keyword>升級</style>的<style=keyword>消耗</style>降低{0}。
+生產型建築<style=keyword>上限</style>提升{1}。","製造施設とその<style=keyword>強化</style>の<style=keyword>コスト</style>を{0}減少させる。
+製造施設の<style=keyword>上限</style>が{1}増加する。","Снижает <style=keyword>стоимость</style> производственных зданий и их <style=keyword>улучшений</style> на {0}.
+Увеличивает <style=keyword>максимум</style> производственных зданий на {1}.","Знижує <style=keyword>вартість</style> виробничих споруд та їхніх <style=keyword>поліпшень</style> на {0}.
+Збільшує <style=keyword>ліміт</style> виробничих споруд на {1}.","Reduziert die <style=keyword>Kosten</style> von Produktionsgebäuden und ihren <style=keyword>Verbesserungen</style> um {0}.
+Erhöht das Produktionsgebäude-<style=keyword>Limit</style> um {1}.","Reduce el <style=keyword>coste</style> de los edificios de producción y sus <style=keyword>mejoras</style> en {0}.
+Aumenta el <style=keyword>límite</style> de los edificios de producción en {1}.","Reduz o <style=keyword>custo</style> de construções que produzem itens e suas <style=keyword>melhorias</style> em {0}.
+Aumenta o <style=keyword>limite</style> de construções que produzem itens em {1}.","생산 건물과 <style=keyword>강화</style>의 <style=keyword>비용</style>이 {0}만큼 감소합니다.
 생산 건물의 <style=keyword>상한</style>이 {1}만큼 증가합니다."
 PerkDescription_VolatileReaction,"<style=KeyWord>Propagation</style> can now bounce <style=KeyWord>diagonally</style>.
 {0}.
 Increases <style=KeyWord>Maximum {1}</style> by {2}.","La <style=KeyWord>Propagation</style> peut maintenant rebondir en <style=KeyWord>diagonale</style>.
-{0}.","<style=KeyWord>蔓延</style>可以<style=KeyWord>斜向</style>传递。
+{0}.
+Augmente le <style=KeyWord>Maximum</style> de {1} de {2}.","<style=KeyWord>蔓延</style>可以<style=KeyWord>斜向</style>传递。
+{0}。
+{1}<style=KeyWord>上限</style>提高{2}。","<style=KeyWord>蔓延</style>可以<style=KeyWord>斜向</style>傳遞。
+{0}。
+{1}<style=KeyWord>最大值</style>提升{2}。","<style=KeyWord>伝染</style>が<style=KeyWord>斜め方向</style>へ伝わるようになる。
+{0}。
+<style=KeyWord>最大</style>{1}が{2}増加する。","Атаки героя с эффектом <style=KeyWord>""Цепной удар""</style> могут перескакивать <style=KeyWord>по диагонали</style>.
+{0}.
+Повышает <style=KeyWord>макс.</style> {1} на {2}.","<style=KeyWord>Відскок</style> тепер працює <style=KeyWord>по діагоналі</style>.
+{0}.
+Збільшує <style=KeyWord>макс.</style> {1} на {2}.","<style=KeyWord>Ausbreitung</style> kann jetzt <style=KeyWord>diagonal</style> passieren.
+{0}.
+Erhöht den <style=KeyWord>Maximalwert</style> von {1} um {2}.","Permite que la <style=KeyWord>propagación</style> salte en <style=KeyWord>diagonal</style>.
+{0}.
+Aumenta el <style=KeyWord>máximo</style> de {1} en {2}.","Agora, <style=KeyWord>Propagação</style> pode ricochetear na <style=KeyWord>diagonal</style>.
+{0}.
+Aumenta {1} <style=KeyWord>Máx.</style> em {2}.","<style=KeyWord>전파</style> 효과를 <style=KeyWord>대각선</style>으로도 연쇄 가능
+{0}
+<style=KeyWord>최대</style> {1}을(를) {2}만큼 증가시킵니다."
 
-{0}","<style=KeyWord>蔓延</style>可以<style=KeyWord>斜向</style>傳遞。
-
-{0}","<style=KeyWord>伝染</style>が<style=KeyWord>斜め方向</style>へ伝わるようになる。
-
-{0}。","Атаки героя с эффектом <style=KeyWord>""Цепной удар""</style> могут перескакивать <style=KeyWord>по диагонали</style>.
-
-{0}.","<style=KeyWord>Відскок</style> тепер працює <style=KeyWord>по діагоналі</style>.
-
-{0}.","<style=KeyWord>Ausbreitung</style> kann jetzt <style=KeyWord>diagonal</style> passieren.
- 
-{0}.","Permite que la <style=KeyWord>propagación</style> salte en <style=KeyWord>diagonal</style>.
-
-{0}.","Agora, <style=KeyWord>Propagação</style> pode ricochetear na <style=KeyWord>diagonal</style>.
-
-{0}.","<style=KeyWord>전파</style> 효과를 <style=KeyWord>대각선</style>으로도 연쇄 가능
-
-{0}"
-
-DivergenceEffectFullDescription_AddPerk_AdjacentBuildingMalusCurse,"When attacking a tile adjacent to an obstacle, the attack gets: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style> <style=divergenceOutline><style=accuracy>Accuracy</style></style>","Lorsqu'une tuile adjacente à un obstacle est attaquée, l'attaque obtient: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-25%</style></style> <style=divergenceOutline><style=accuracy>Précision</style></style>",若攻击的格子与障碍物相邻，则该攻击：<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-25%</style></style><style=divergenceOutline><style=accuracy>命中</style></style>,攻擊與障礙物相鄰的方格時，該攻擊獲得：<style=divergenceOutline><style=accuracy>命中</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-25%</style></style>。,物体に隣接したタイルを攻撃すると、攻撃が以下の効果を得る:<style=divergenceOutline><style=accuracy>精度</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-25%</style></style>,"Атакуя противника на ячейке, смежной с препятствием, вы получите <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-25%</style></style> к <style=divergenceOutline><style=accuracy>меткости</style></style>","<style=divergenceOutline><style=accuracy>Точність</style></style> атаки на плитку, суміжну з перешкодою, зменшується на <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-25%</style></style>","Beim Angriff auf ein Feld, das an ein Hindernis angrenzt, erhält der Angriff: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-25 %</style></style> <style=divergenceOutline><style=accuracy>Genauigkeit</style></style>.","Al atacar una casilla adyacente a un obstáculo, el ataque obtiene: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-25 %</style></style> de <style=divergenceOutline><style=accuracy>precisión</style></style>.","Quando atacar uma casa próxima a um obstáculo, o ataque recebe: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-25%</style></style> de <style=divergenceOutline><style=accuracy>Precisão</style></style>",장애물에 인접한 타일을 공격할 때 공격에 적용: <style=divergenceOutline><style=accuracy>명중률</style></style> <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-25%</style></style>
-DivergenceEffectFullDescriptionTooltip_AddPerk_AdjacentBuildingMalusCurse,"When attacking a tile adjacent to an obstacle, the attack gets: <style=KeywordNb>-20%</style> <style=accuracy>Accuracy</style>","Lorsqu'une tuile adjacente à un obstacle est attaquée, l'attaque obtient: <style=KeywordNb>-25%</style> <style=accuracy>Précision</style>",若攻击的格子与障碍物相邻，则该攻击：<style=KeywordNb>-25%</style><style=accuracy>命中</style>,攻擊與障礙物相鄰的方格時，該攻擊獲得：<style=accuracy>命中</style><style=KeywordNb>-25%</style>。,物体に隣接したタイルを攻撃すると、攻撃が以下の効果を得る:<style=accuracy>精度</style><style=KeywordNb>-25%</style>,"Атакуя противника на ячейке, смежной с препятствием, вы получите <style=KeywordNb>-25%</style> к <style=accuracy>меткости</style>","<style=accuracy>Точність</style> атаки на плитку, суміжну з перешкодою, зменшується на <style=KeywordNb>-25%</style>.","Beim Angriff auf ein Feld, das an ein Hindernis angrenzt, erhält der Angriff: <style=KeywordNb>-25 %</style> <style=accuracy>Genauigkeit</style>.","Al atacar una casilla adyacente a un obstáculo, el ataque obtiene: <style=KeywordNb>-25 %</style> de <style=accuracy>precisión</style>.","Quando atacar uma casa próxima a um obstáculo, o ataque recebe: <style=KeywordNb>-25%</style> de <style=accuracy>Precisão</style>",장애물에 인접한 타일을 공격할 때 공격에 적용: <style=accuracy>명중률</style> <style=KeywordNb>-25%</style>
-DivergenceEffectShortDescription_AddPerk_AdjacentBuildingMalusCurse,<style=Number>-20%</style> <style=accuracy>Accuracy</style>,<style=Number>-25%</style> <style=accuracy>Précision</style>,<style=Number>-25%</style> <style=accuracy>命中</style>,<style=accuracy>命中</style><style=Number>-25%</style>,<style=accuracy>精度</style><style=Number>-25%</style>,<style=Number>-25%</style> к <style=accuracy>меткости</style>,<style=Number>-25%</style> до <style=accuracy>точності</style>,<style=Number>-25 %</style> <style=accuracy>Genauigkeit</style>,<style=Number>-25 %</style> de <style=accuracy>precisión</style>,<style=Number>-25%</style> de <style=accuracy>Precisão</style>,<style=accuracy>명중률</style> <style=Number>-25%</style>
-DivergenceEffectFullDescription_AddPerk_AdjacentBuildingMalusCurse_2,"When attacking a tile adjacent to an obstacle, the attack gets: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40%</style></style> <style=divergenceOutline><style=accuracy>Accuracy</style></style>","Lorsqu'une tuile adjacente à un obstacle est attaquée, l'attaque obtient: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-60%</style></style> <style=divergenceOutline><style=accuracy>Précision</style></style>",若攻击的格子与障碍物相邻，则该攻击：<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-60%</style></style><style=divergenceOutline><style=accuracy>命中</style></style>,攻擊與障礙物相鄰的方格時，該攻擊獲得：<style=divergenceOutline><style=accuracy>命中</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-60%</style></style>。,物体に隣接したタイルを攻撃すると、攻撃が以下の効果を得る:<style=divergenceOutline><style=accuracy>精度</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-60%</style></style>,"Атакуя противника на ячейке, смежной с препятствием, вы получите <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-60%</style></style> к <style=divergenceOutline><style=accuracy>меткости</style></style>","<style=divergenceOutline><style=accuracy>Точність</style></style> атаки на плитку, суміжну з перешкодою, зменшується на <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-60%</style></style>","Beim Angriff auf ein Feld, das an ein Hindernis angrenzt, erhält der Angriff: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-60 %</style></style> <style=divergenceOutline><style=accuracy>Genauigkeit</style></style>.","Al atacar una casilla adyacente a un obstáculo, el ataque obtiene: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-60 %</style></style> de <style=divergenceOutline><style=accuracy>precisión</style></style>.","Quando atacar uma casa próxima a um obstáculo, o ataque recebe: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-60%</style></style> de <style=divergenceOutline><style=accuracy>Precisão</style></style>",장애물에 인접한 타일을 공격할 때 공격에 적용: <style=divergenceOutline><style=accuracy>명중률</style></style> <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-60%</style></style>
-DivergenceEffectFullDescriptionTooltip_AddPerk_AdjacentBuildingMalusCurse_2,"When attacking a tile adjacent to an obstacle, the attack gets: <style=KeywordNb>-40%</style> <style=accuracy>Accuracy</style>","Lorsqu'une tuile adjacente à un obstacle est attaquée, l'attaque obtient: <style=KeywordNb>-60%</style> <style=accuracy>Précision</style>",若攻击的格子与障碍物相邻，则该攻击：<style=KeywordNb>-60%</style><style=accuracy>命中</style>,攻擊與障礙物相鄰的方格時，該攻擊獲得：<style=accuracy>命中</style><style=KeywordNb>-60%</style>。,物体に隣接したタイルを攻撃すると、攻撃が以下の効果を得る:<style=accuracy>精度</style><style=KeywordNb>-60%</style>,"Атакуя противника на ячейке, смежной с препятствием, вы получите <style=KeywordNb>-60%</style> к <style=accuracy>меткости</style>","<style=accuracy>Точність</style> атаки на плитку, суміжну з перешкодою, зменшується на <style=KeywordNb>-60%</style>","Beim Angriff auf ein Feld, das an ein Hindernis angrenzt, erhält der Angriff: <style=KeywordNb>-60 %</style> <style=accuracy>Genauigkeit</style>.","Al atacar una casilla adyacente a un obstáculo, el ataque obtiene: <style=KeywordNb>-60 %</style> de <style=accuracy>precisión</style>.","Quando atacar uma casa próxima a um obstáculo, o ataque recebe: <style=KeywordNb>-60%</style> de <style=accuracy>Precisão</style>",장애물에 인접한 타일을 공격할 때 공격에 적용: <style=accuracy>명중률</style> <style=KeywordNb>-60%</style>
-DivergenceEffectShortDescription_AddPerk_AdjacentBuildingMalusCurse_2,<style=Number>-40%</style> <style=accuracy>Accuracy</style>,<style=Number>-60%</style> <style=accuracy>Précision</style>,<style=Number>-60%</style> <style=accuracy>命中</style>,<style=accuracy>命中</style><style=Number>-60%</style>,<style=accuracy>精度</style><style=Number>-60%</style>,<style=Number>-60%</style> к <style=accuracy>меткости</style>,<style=Number>-60%</style> до <style=accuracy>точності</style>,<style=Number>-60 %</style> <style=accuracy>Genauigkeit</style>,<style=Number>-60 %</style> de <style=accuracy>precisión</style>,<style=Number>-60%</style> de <style=accuracy>Precisão</style>,<style=accuracy>명중률</style> <style=Number>-60%</style>
+DivergenceEffectFullDescription_AddPerk_AdjacentBuildingMalusCurse,"When attacking a tile adjacent to an obstacle, the attack gets: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style> <style=divergenceOutline><style=accuracy>Accuracy</style></style>","Lorsqu'une tuile adjacente à un obstacle est attaquée, l'attaque obtient: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style> <style=divergenceOutline><style=accuracy>Précision</style></style>",若攻击的格子与障碍物相邻，则该攻击：<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style><style=divergenceOutline><style=accuracy>命中</style></style>,攻擊與障礙物相鄰的方格時，該攻擊獲得：<style=divergenceOutline><style=accuracy>命中</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style>。,物体に隣接したタイルを攻撃すると、攻撃が以下の効果を得る:<style=divergenceOutline><style=accuracy>精度</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style>,"Атакуя противника на ячейке, смежной с препятствием, вы получите <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style> к <style=divergenceOutline><style=accuracy>меткости</style></style>","<style=divergenceOutline><style=accuracy>Точність</style></style> атаки на плитку, суміжну з перешкодою, зменшується на <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style>","Beim Angriff auf ein Feld, das an ein Hindernis angrenzt, erhält der Angriff: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20 %</style></style> <style=divergenceOutline><style=accuracy>Genauigkeit</style></style>.","Al atacar una casilla adyacente a un obstáculo, el ataque obtiene: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20 %</style></style> de <style=divergenceOutline><style=accuracy>precisión</style></style>.","Quando atacar uma casa próxima a um obstáculo, o ataque recebe: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style> de <style=divergenceOutline><style=accuracy>Precisão</style></style>",장애물에 인접한 타일을 공격할 때 공격에 적용: <style=divergenceOutline><style=accuracy>명중률</style></style> <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style>
+DivergenceEffectFullDescriptionTooltip_AddPerk_AdjacentBuildingMalusCurse,"When attacking a tile adjacent to an obstacle, the attack gets: <style=KeywordNb>-20%</style> <style=accuracy>Accuracy</style>","Lorsqu'une tuile adjacente à un obstacle est attaquée, l'attaque obtient: <style=KeywordNb>-20%</style> <style=accuracy>Précision</style>",若攻击的格子与障碍物相邻，则该攻击：<style=KeywordNb>-20%</style><style=accuracy>命中</style>,攻擊與障礙物相鄰的方格時，該攻擊獲得：<style=accuracy>命中</style><style=KeywordNb>-20%</style>。,物体に隣接したタイルを攻撃すると、攻撃が以下の効果を得る:<style=accuracy>精度</style><style=KeywordNb>-20%</style>,"Атакуя противника на ячейке, смежной с препятствием, вы получите <style=KeywordNb>-20%</style> к <style=accuracy>меткости</style>","<style=accuracy>Точність</style> атаки на плитку, суміжну з перешкодою, зменшується на <style=KeywordNb>-20%</style>.","Beim Angriff auf ein Feld, das an ein Hindernis angrenzt, erhält der Angriff: <style=KeywordNb>-20 %</style> <style=accuracy>Genauigkeit</style>.","Al atacar una casilla adyacente a un obstáculo, el ataque obtiene: <style=KeywordNb>-20 %</style> de <style=accuracy>precisión</style>.","Quando atacar uma casa próxima a um obstáculo, o ataque recebe: <style=KeywordNb>-20%</style> de <style=accuracy>Precisão</style>",장애물에 인접한 타일을 공격할 때 공격에 적용: <style=accuracy>명중률</style> <style=KeywordNb>-20%</style>
+DivergenceEffectShortDescription_AddPerk_AdjacentBuildingMalusCurse,<style=Number>-20%</style> <style=accuracy>Accuracy</style>,<style=Number>-20%</style> <style=accuracy>Précision</style>,<style=Number>-20%</style> <style=accuracy>命中</style>,<style=accuracy>命中</style><style=Number>-20%</style>,<style=accuracy>精度</style><style=Number>-20%</style>,<style=Number>-20%</style> к <style=accuracy>меткости</style>,<style=Number>-20%</style> до <style=accuracy>точності</style>,<style=Number>-20 %</style> <style=accuracy>Genauigkeit</style>,<style=Number>-20 %</style> de <style=accuracy>precisión</style>,<style=Number>-20%</style> de <style=accuracy>Precisão</style>,<style=accuracy>명중률</style> <style=Number>-20%</style>
+DivergenceEffectFullDescription_AddPerk_AdjacentBuildingMalusCurse_2,"When attacking a tile adjacent to an obstacle, the attack gets: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40%</style></style> <style=divergenceOutline><style=accuracy>Accuracy</style></style>","Lorsqu'une tuile adjacente à un obstacle est attaquée, l'attaque obtient: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40%</style></style> <style=divergenceOutline><style=accuracy>Précision</style></style>",若攻击的格子与障碍物相邻，则该攻击：<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40%</style></style><style=divergenceOutline><style=accuracy>命中</style></style>,攻擊與障礙物相鄰的方格時，該攻擊獲得：<style=divergenceOutline><style=accuracy>命中</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40%</style></style>。,物体に隣接したタイルを攻撃すると、攻撃が以下の効果を得る:<style=divergenceOutline><style=accuracy>精度</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40%</style></style>,"Атакуя противника на ячейке, смежной с препятствием, вы получите <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40%</style></style> к <style=divergenceOutline><style=accuracy>меткости</style></style>","<style=divergenceOutline><style=accuracy>Точність</style></style> атаки на плитку, суміжну з перешкодою, зменшується на <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40%</style></style>","Beim Angriff auf ein Feld, das an ein Hindernis angrenzt, erhält der Angriff: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40 %</style></style> <style=divergenceOutline><style=accuracy>Genauigkeit</style></style>.","Al atacar una casilla adyacente a un obstáculo, el ataque obtiene: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40 %</style></style> de <style=divergenceOutline><style=accuracy>precisión</style></style>.","Quando atacar uma casa próxima a um obstáculo, o ataque recebe: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40%</style></style> de <style=divergenceOutline><style=accuracy>Precisão</style></style>",장애물에 인접한 타일을 공격할 때 공격에 적용: <style=divergenceOutline><style=accuracy>명중률</style></style> <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40%</style></style>
+DivergenceEffectFullDescriptionTooltip_AddPerk_AdjacentBuildingMalusCurse_2,"When attacking a tile adjacent to an obstacle, the attack gets: <style=KeywordNb>-40%</style> <style=accuracy>Accuracy</style>","Lorsqu'une tuile adjacente à un obstacle est attaquée, l'attaque obtient: <style=KeywordNb>-40%</style> <style=accuracy>Précision</style>",若攻击的格子与障碍物相邻，则该攻击：<style=KeywordNb>-40%</style><style=accuracy>命中</style>,攻擊與障礙物相鄰的方格時，該攻擊獲得：<style=accuracy>命中</style><style=KeywordNb>-40%</style>。,物体に隣接したタイルを攻撃すると、攻撃が以下の効果を得る:<style=accuracy>精度</style><style=KeywordNb>-40%</style>,"Атакуя противника на ячейке, смежной с препятствием, вы получите <style=KeywordNb>-40%</style> к <style=accuracy>меткости</style>","<style=accuracy>Точність</style> атаки на плитку, суміжну з перешкодою, зменшується на <style=KeywordNb>-40%</style>","Beim Angriff auf ein Feld, das an ein Hindernis angrenzt, erhält der Angriff: <style=KeywordNb>-40 %</style> <style=accuracy>Genauigkeit</style>.","Al atacar una casilla adyacente a un obstáculo, el ataque obtiene: <style=KeywordNb>-40 %</style> de <style=accuracy>precisión</style>.","Quando atacar uma casa próxima a um obstáculo, o ataque recebe: <style=KeywordNb>-40%</style> de <style=accuracy>Precisão</style>",장애물에 인접한 타일을 공격할 때 공격에 적용: <style=accuracy>명중률</style> <style=KeywordNb>-40%</style>
+DivergenceEffectShortDescription_AddPerk_AdjacentBuildingMalusCurse_2,<style=Number>-40%</style> <style=accuracy>Accuracy</style>,<style=Number>-40%</style> <style=accuracy>Précision</style>,<style=Number>-40%</style> <style=accuracy>命中</style>,<style=accuracy>命中</style><style=Number>-40%</style>,<style=accuracy>精度</style><style=Number>-40%</style>,<style=Number>-40%</style> к <style=accuracy>меткости</style>,<style=Number>-40%</style> до <style=accuracy>точності</style>,<style=Number>-40 %</style> <style=accuracy>Genauigkeit</style>,<style=Number>-40 %</style> de <style=accuracy>precisión</style>,<style=Number>-40%</style> de <style=accuracy>Precisão</style>,<style=accuracy>명중률</style> <style=Number>-40%</style>
 DivergenceEffectFullDescription_AddPerk_ArmorBreakCurse,"When the Hero falls down to 0 <style=divergenceOutline><style=armor>Armor</style></style>, they take <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40%</style></style> of their Max <style=divergenceOutline><style=armor>Armor</style></style> value as damage.","Quand un Héros tombe à 0 d'<style=divergenceOutline><style=armor>Armure</style></style>, il subit <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40%</style></style> de son Maximum d'<style=divergenceOutline><style=armor>Armure</style></style> en dégâts.",英雄<style=divergenceOutline><style=armor>护甲</style></style>归零时会受到相当于自身<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40%</style></style>最大<style=divergenceOutline><style=armor>护甲</style></style>值的伤害。,英雄的<style=divergenceOutline><style=armor>護甲值</style></style>歸零時，該英雄受到最大<style=divergenceOutline><style=armor>護甲值</style></style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40%</style>的傷害。,英雄の<style=divergenceOutline><style=armor>アーマー</style></style>が0になると、<style=divergenceOutline><style=armor>アーマー</style></style>の最大値の<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40%</style></style>をダメージとして受ける。,"Если у героя остаётся 0 <style=divergenceOutline><style=armor>брони</style></style>, он получает урон в размере <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40%</style></style> от своего максимума <style=divergenceOutline><style=armor>брони</style></style>.","Коли в героя лишається 0 <style=divergenceOutline><style=armor>броні</style></style>, він зазнає шкоди, що дорівнює <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40%</style></style> від макс. <style=divergenceOutline><style=armor>броні</style></style> героя.","Wenn die <style=divergenceOutline><style=armor>Rüstung</style></style> des Helden auf 0 fällt, nimmt dieser <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40 %</style></style> seiner <style=divergenceOutline><style=armor>maximalen Rüstung</style></style> als Schaden.","Cuando la <style=divergenceOutline><style=armor>armadura</style></style> del héroe llega a 0, sufre un daño equivalente al <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40 %</style></style> de su <style=divergenceOutline><style=armor>armadura</style></style> máxima.","Quando o Herói fica com 0 de <style=divergenceOutline><style=armor>Armadura</style></style>, ele sofre <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40%</style></style> do Máximo de <style=divergenceOutline><style=armor>Armadura</style></style> como dano.","영웅의 <style=divergenceOutline><style=armor>장갑</style></style>이 0으로 떨어지면, 최대 <style=divergenceOutline><style=armor>장갑</style></style>의 <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40%</style></style>를 피해로 받음"
 DivergenceEffectFullDescriptionTooltip_AddPerk_ArmorBreakCurse,"When the Hero falls down to 0 <style=armor>Armor</style>, they take <style=KeywordNb>40%</style> of their Max <style=armor>Armor</style> value as damage.","Quand un Héros tombe à 0 <style=armor>Armure</style>, il subit <style=KeywordNb>40%</style> de son Maximum d'<style=armor>Armure</style> en dégâts.",英雄<style=armor>护甲</style>归零时会受到相当于自身<style=KeywordNb>40%</style>最大<style=armor>护甲</style>值的伤害。,英雄的<style=armor>護甲值</style>歸零時，該英雄受到最大<style=armor>護甲值</style><style=KeywordNb>40%</style>的傷害。,英雄の<style=armor>アーマー</style>が0になると、<style=armor>アーマー</style>の最大値の<style=KeywordNb>40%</style>をダメージとして受ける。,"Если у героя остаётся 0 <style=armor>брони</style>, он получает урон в размере <style=KeywordNb>40%</style> от своего максимума <style=armor>брони</style>.","Коли в героя лишається 0 <style=armor>броні</style>, він зазнає шкоди, що дорівнює <style=KeywordNb>40%</style> від макс. <style=armor>броні</style> героя.","Wenn die <style=armor>Rüstung</style> des Helden auf 0 fällt, nimmt dieser <style=KeywordNb>40 %</style> seiner <style=armor>maximalen Rüstung</style> als Schaden.","Cuando la <style=armor>armadura</style> del héroe llega a 0, sufre un daño equivalente al <style=KeywordNb>40 %</style> de su <style=armor>armadura</style> máxima.","Quando o Herói fica com 0 de <style=armor>Armadura</style>, ele sofre <style=KeywordNb>40%</style> do Máximo de <style=armor>Armadura</style> como dano.","영웅의 <style=armor>장갑</style>이 0으로 떨어지면, 최대 <style=armor>장갑</style>의 <style=KeywordNb>40%</style>를 피해로 받음"
 DivergenceEffectShortDescription_AddPerk_ArmorBreakCurse,<style=Number>40%</style> of their Max <style=armor>Armor</style>,<style=Number>40%</style> de son Maximum d'<style=armor>Armure</style>,<style=Number>40%</style> 最大<style=armor>护甲</style>,最大<style=armor>護甲值</style><style=Number>40%</style>傷害,最大<style=armor>アーマー</style>の<style=Number>40%</style>,<style=Number>40%</style> от максимума <style=armor>брони</style>,<style=Number>40%</style> від макс. <style=armor>броні</style>,<style=Number>40 %</style> der <style=armor>maximalen Rüstung</style>,<style=Number>40 %</style> de su <style=armor>armadura</style> máxima,<style=Number>40%</style> da <style=armor>Armadura</style> Máxima,최대 <style=armor>장갑</style>의 <style=Number>40%</style>
-DivergenceEffectFullDescription_AddPerk_ArmorBreakCurse_2,"When the Hero falls down to 0 <style=divergenceOutline><style=armor>Armor</style></style>, they take <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style> of their Max <style=divergenceOutline><style=armor>Armor</style></style> value as damage.","Quand un Héros tombe à 0 d'<style=divergenceOutline><style=armor>Armure</style></style>, il subit <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style> de son Maximum d'<style=divergenceOutline><style=armor>Armure</style></style> en dégâts.",英雄<style=divergenceOutline><style=armor>护甲</style></style>归零时会受到相当于自身<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style>最大<style=divergenceOutline><style=armor>护甲</style></style>值的伤害。,英雄的<style=divergenceOutline><style=armor>護甲值</style></style>歸零時，該英雄受到最大<style=divergenceOutline><style=armor>護甲值</style></style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style>的傷害。,英雄の<style=divergenceOutline><style=armor>アーマー</style></style>が0になると、<style=divergenceOutline><style=armor>アーマー</style></style>の最大値の<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style>をダメージとして受ける。,"Если у героя остаётся 0 <style=divergenceOutline><style=armor>брони</style></style>, он получает урон в размере <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style> от своего максимума <style=divergenceOutline><style=armor>брони</style></style>.","Коли в героя лишається 0 <style=divergenceOutline><style=armor>броні</style></style>, він зазнає шкоди, що дорівнює <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style> від макс. <style=divergenceOutline><style=armor>броні</style></style> героя.","Wenn die <style=divergenceOutline><style=armor>Rüstung</style></style> des Helden auf 0 fällt, nimmt dieser <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>100 %</style></style> seiner <style=divergenceOutline><style=armor>maximalen Rüstung</style></style> als Schaden.","Cuando la <style=divergenceOutline><style=armor>armadura</style></style> del héroe llega a 0, sufre un daño equivalente al <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>100 %</style></style> de su <style=divergenceOutline><style=armor>armadura</style></style> máxima.","Quando o Herói fica com 0 de <style=divergenceOutline><style=armor>Armadura</style></style>, ele sofre <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style> do Máximo de <style=divergenceOutline><style=armor>Armadura</style></style> como dano.","영웅의 <style=divergenceOutline><style=armor>장갑</style></style>이 0으로 떨어지면, 최대 <style=divergenceOutline><style=armor>장갑</style></style>의 <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style>를 피해로 받음"
-DivergenceEffectFullDescriptionTooltip_AddPerk_ArmorBreakCurse_2,"When the Hero falls down to 0 <style=armor>Armor</style>, they take <style=KeywordNb>80%</style> of their Max <style=armor>Armor</style> value as damage.","Quand un Héros tombe à 0 <style=armor>Armure</style>, il subit <style=KeywordNb>80%</style> de son Maximum d'<style=armor>Armure</style> en dégâts.",英雄<style=armor>护甲</style>归零时会受到相当于自身<style=KeywordNb>80%</style>最大<style=armor>护甲</style>值的伤害。,英雄的<style=armor>護甲值</style>歸零時，該英雄受到最大<style=armor>護甲值</style><style=KeywordNb>80%</style>的傷害。,英雄の<style=armor>アーマー</style>が0になると、<style=armor>アーマー</style>の最大値の<style=KeywordNb>80%</style>をダメージとして受ける。,"Если у героя остаётся 0 <style=armor>брони</style>, он получает урон в размере <style=KeywordNb>80%</style> от своего максимума <style=armor>брони</style>.","Коли в героя лишається 0 <style=armor>броні</style>, він зазнає шкоди, що дорівнює <style=KeywordNb>80%</style> від макс. <style=armor>броні</style> героя.","Wenn die <style=armor>Rüstung</style> des Helden auf 0 fällt, nimmt dieser <style=KeywordNb>100 %</style> seiner <style=armor>maximalen Rüstung</style> als Schaden.","Cuando la <style=armor>armadura</style> del héroe llega a 0, sufre un daño equivalente al <style=KeywordNb>100 %</style> de su <style=armor>armadura</style> máxima.","Quando o Herói fica com 0 de <style=armor>Armadura</style>, ele sofre <style=KeywordNb>80%</style> do Máximo de <style=armor>Armadura</style> como dano.","영웅의 <style=armor>장갑</style>이 0으로 떨어지면, 최대 <style=armor>장갑</style>의 <style=KeywordNb>80%</style>를 피해로 받음"
-DivergenceEffectShortDescription_AddPerk_ArmorBreakCurse_2,<style=Number>80%</style> of their Max <style=armor>Armor</style>,<style=Number>80%</style> de son Maximum d'<style=armor>Armure</style>,<style=Number>80%</style> 最大<style=armor>护甲</style>,最大<style=armor>護甲值</style><style=Number>80%</style>傷害,最大<style=armor>アーマー</style>の<style=Number>80%</style>,<style=Number>80%</style> от максимума <style=armor>брони</style>,<style=Number>80%</style> від макс. <style=armor>броні</style>,<style=Number>100 %</style> der <style=armor>maximalen Rüstung</style>,<style=Number>100 %</style> de su <style=armor>armadura</style> máxima,<style=Number>80%</style> da <style=armor>Armadura</style> Máxima,최대 <style=armor>장갑</style>의 <style=Number>80%</style>
+DivergenceEffectFullDescription_AddPerk_ArmorBreakCurse_2,"When the Hero falls down to 0 <style=divergenceOutline><style=armor>Armor</style></style>, they take <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style> of their Max <style=divergenceOutline><style=armor>Armor</style></style> value as damage.","Quand un Héros tombe à 0 d'<style=divergenceOutline><style=armor>Armure</style></style>, il subit <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style> de son Maximum d'<style=divergenceOutline><style=armor>Armure</style></style> en dégâts.",英雄<style=divergenceOutline><style=armor>护甲</style></style>归零时会受到相当于自身<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style>最大<style=divergenceOutline><style=armor>护甲</style></style>值的伤害。,英雄的<style=divergenceOutline><style=armor>護甲值</style></style>歸零時，該英雄受到最大<style=divergenceOutline><style=armor>護甲值</style></style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style>的傷害。,英雄の<style=divergenceOutline><style=armor>アーマー</style></style>が0になると、<style=divergenceOutline><style=armor>アーマー</style></style>の最大値の<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style>をダメージとして受ける。,"Если у героя остаётся 0 <style=divergenceOutline><style=armor>брони</style></style>, он получает урон в размере <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style> от своего максимума <style=divergenceOutline><style=armor>брони</style></style>.","Коли в героя лишається 0 <style=divergenceOutline><style=armor>броні</style></style>, він зазнає шкоди, що дорівнює <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style> від макс. <style=divergenceOutline><style=armor>броні</style></style> героя.","Wenn die <style=divergenceOutline><style=armor>Rüstung</style></style> des Helden auf 0 fällt, nimmt dieser <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80 %</style></style> seiner <style=divergenceOutline><style=armor>maximalen Rüstung</style></style> als Schaden.","Cuando la <style=divergenceOutline><style=armor>armadura</style></style> del héroe llega a 0, sufre un daño equivalente al <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80 %</style></style> de su <style=divergenceOutline><style=armor>armadura</style></style> máxima.","Quando o Herói fica com 0 de <style=divergenceOutline><style=armor>Armadura</style></style>, ele sofre <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style> do Máximo de <style=divergenceOutline><style=armor>Armadura</style></style> como dano.","영웅의 <style=divergenceOutline><style=armor>장갑</style></style>이 0으로 떨어지면, 최대 <style=divergenceOutline><style=armor>장갑</style></style>의 <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style>를 피해로 받음"
+DivergenceEffectFullDescriptionTooltip_AddPerk_ArmorBreakCurse_2,"When the Hero falls down to 0 <style=armor>Armor</style>, they take <style=KeywordNb>80%</style> of their Max <style=armor>Armor</style> value as damage.","Quand un Héros tombe à 0 <style=armor>Armure</style>, il subit <style=KeywordNb>80%</style> de son Maximum d'<style=armor>Armure</style> en dégâts.",英雄<style=armor>护甲</style>归零时会受到相当于自身<style=KeywordNb>80%</style>最大<style=armor>护甲</style>值的伤害。,英雄的<style=armor>護甲值</style>歸零時，該英雄受到最大<style=armor>護甲值</style><style=KeywordNb>80%</style>的傷害。,英雄の<style=armor>アーマー</style>が0になると、<style=armor>アーマー</style>の最大値の<style=KeywordNb>80%</style>をダメージとして受ける。,"Если у героя остаётся 0 <style=armor>брони</style>, он получает урон в размере <style=KeywordNb>80%</style> от своего максимума <style=armor>брони</style>.","Коли в героя лишається 0 <style=armor>броні</style>, він зазнає шкоди, що дорівнює <style=KeywordNb>80%</style> від макс. <style=armor>броні</style> героя.","Wenn die <style=armor>Rüstung</style> des Helden auf 0 fällt, nimmt dieser <style=KeywordNb>80 %</style> seiner <style=armor>maximalen Rüstung</style> als Schaden.","Cuando la <style=armor>armadura</style> del héroe llega a 0, sufre un daño equivalente al <style=KeywordNb>80 %</style> de su <style=armor>armadura</style> máxima.","Quando o Herói fica com 0 de <style=armor>Armadura</style>, ele sofre <style=KeywordNb>80%</style> do Máximo de <style=armor>Armadura</style> como dano.","영웅의 <style=armor>장갑</style>이 0으로 떨어지면, 최대 <style=armor>장갑</style>의 <style=KeywordNb>80%</style>를 피해로 받음"
+DivergenceEffectShortDescription_AddPerk_ArmorBreakCurse_2,<style=Number>80%</style> of their Max <style=armor>Armor</style>,<style=Number>80%</style> de son Maximum d'<style=armor>Armure</style>,<style=Number>80%</style> 最大<style=armor>护甲</style>,最大<style=armor>護甲值</style><style=Number>80%</style>傷害,最大<style=armor>アーマー</style>の<style=Number>80%</style>,<style=Number>80%</style> от максимума <style=armor>брони</style>,<style=Number>80%</style> від макс. <style=armor>броні</style>,<style=Number>80 %</style> der <style=armor>maximalen Rüstung</style>,<style=Number>80 %</style> de su <style=armor>armadura</style> máxima,<style=Number>80%</style> da <style=armor>Armadura</style> Máxima,최대 <style=armor>장갑</style>의 <style=Number>80%</style>
 DivergenceEffectFullDescription_AddPerk_BadMovementCurse,"Every <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> tiles travelled, the next skill gets: -50% <style=divergenceOutline><style=overalldamage>Damage</style></style>","Toutes les <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> tuiles traversées, la prochaine compétence obient<nbsp>: -50% <style=divergenceOutline><style=overalldamage>Dégâts</style></style>",每移动<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style>格，下次技能：-50%<style=divergenceOutline><style=overalldamage>伤害</style></style>,每移動<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style>格，下一次技能獲得：<style=divergenceOutline><style=overalldamage>傷害</style></style>-50%,<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style>タイル移動するごとに、次のスキルが以下の効果を得る:<style=divergenceOutline><style=overalldamage>ダメージ</style></style>-50%,После каждых <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> пройденных ячеек герои наносят следующим навыком на 30% меньше <style=divergenceOutline><style=overalldamage>урона</style></style>,За кожні <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> подоланих плиток <style=divergenceOutline><style=overalldamage>шкода</style></style> наступної навички знижується на -50%,Für alle <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> zurückgelegten Felder erhält die nächste Fähigkeit: -50 % <style=divergenceOutline><style=overalldamage>Schaden</style></style>,"Por cada <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> casillas recorridas, la siguiente habilidad obtiene: -50 % de <style=divergenceOutline><style=overalldamage>daño</style></style>.","A cada <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> casas percorridas, a próxima habilidade recebe: -50% de <style=divergenceOutline><style=overalldamage>Dano</style></style>",<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style>타일 이동할 때마다 다음 스킬에 적용: <style=divergenceOutline><style=overalldamage>피해</style></style> -50%
 DivergenceEffectFullDescriptionTooltip_AddPerk_BadMovementCurse,"Every <style=KeywordNb>4</style> tiles travelled, the next skill gets: -50% <style=overalldamage>Damage</style>","Toutes les <style=KeywordNb>4</style> tuiles traversées, la prochaine compétence obient<nbsp>: -50% <style=overalldamage>Dégâts</style>",每移动<style=KeywordNb>4</style>格，下次技能：-50%<style=overalldamage>伤害</style>,每移動<style=KeywordNb>4</style>格，下一次技能獲得：<style=overalldamage>傷害</style>-50%,<style=KeywordNb>4</style>タイル移動するごとに、次のスキルが以下の効果を得る:<style=overalldamage>ダメージ</style>-50%,После каждых <style=KeywordNb>4</style> пройденных ячеек герои наносят следующим навыком на 30% меньше <style=overalldamage>урона</style>,За кожні <style=KeywordNb>4</style> подоланих плиток <style=overalldamage>шкода</style> наступної навички знижується на -50%,Für alle <style=KeywordNb>4</style> zurückgelegten Felder erhält die nächste Fähigkeit: -50 % <style=overalldamage>Schaden</style>,"Por cada <style=KeywordNb>4</style> casillas recorridas, la siguiente habilidad obtiene: -50 % de <style=overalldamage>daño</style>.","A cada <style=KeywordNb>4</style> casas percorridas, a próxima habilidade recebe: -50% de <style=overalldamage>Dano</style>",<style=KeywordNb>4</style>타일 이동할 때마다 다음 스킬에 적용: <style=overalldamage>피해</style> -50%
 DivergenceEffectShortDescription_AddPerk_BadMovementCurse,Every <style=Number>4</style> tiles,Toutes les <style=Number>4</style> tuiles,每移动<style=Number>4</style>格,每<style=Number>4</style>格,<style=Number>4</style>タイルごと,После каждых <style=Number>4</style> ячеек,Кожні <style=Number>4</style> плиток,Alle <style=Number>4</style> Felder,Por cada <style=Number>4</style> casillas,A cada <style=Number>4</style> casas,<style=Number>4</style>타일마다
