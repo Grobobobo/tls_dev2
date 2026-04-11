@@ -936,10 +936,10 @@
          <TokenVariable Key="TransformedValue" Value="Floor(Owner.UnlockedArmorTotal * TransformedPercentage / 100)"/>
          <TokenVariable Key="TransformedPercentage" Value="30"/>
          <TokenVariable Key="ElusiveSkillRange" Value="5"/>
-         <TokenVariable Key="ElusiveSkillBaseDamage" Value="10"/>
-         <TokenVariable Key="ElusiveSkillScalingDamage" Value="50"/>
-         <TokenVariable Key="ElusiveSkill2BaseDamage" Value="30"/>
-         <TokenVariable Key="ElusiveSkill2ScalingDamage" Value="175"/>
+         <TokenVariable Key="ElusiveSkillBaseDamage" Value="125"/>
+         <TokenVariable Key="ElusiveSkillScalingDamage" Value="300"/>
+         <TokenVariable Key="ElusiveSkill2BaseDamage" Value="200"/>
+         <TokenVariable Key="ElusiveSkill2ScalingDamage" Value="500"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="ArmorTotal"/>
@@ -1022,8 +1022,8 @@
          <TokenVariable Key="NbrOfEnemyHit" Value="Module.Buffer"/>
          <TokenVariable Key="RangeTargeting" Value="2"/>
          <TokenVariable Key="AmountOfTarget" Value="1"/>
-         <TokenVariable Key="DodgePercentage" Value="90"/>
-         <TokenVariable Key="BaseDamage" Value="25"/>
+         <TokenVariable Key="DodgePercentage" Value="50"/>
+         <TokenVariable Key="BaseDamage" Value="150"/>
       </TokenVariables>
       <LocArguments>
          <LocalizedArgument Prefix="SkillName_" Value="WarDanceSkill" Style="Skill"/>
@@ -1081,21 +1081,17 @@
    <PerkDefinition Id="HuntersArsenal">
       <TokenVariables>
 
-         <!--Momentuml bonus calculation-->
-         <TokenVariable Key="MomentumBonusTotal" Value="(MomentumBonusBase+(NumberOfStepsReached*MomentumBonusPerStep))/100"/>
-         <TokenVariable Key="MomentumBonusPerStep" Value="3"/>
-         <TokenVariable Key="MomentumBonusBase" Value="0"/> <!--Unused ! If set to 1 or more, needs to be added back to the localization key !-->
 
          <!--Poison bonus calculation-->
          <TokenVariable Key="PoisonBonusTotal" Value="(PoisonBonusBase+(NumberOfStepsReached*PoisonBonusPerStep))"/>
-         <TokenVariable Key="PoisonBonusPerStep" Value="180"/>
+         <TokenVariable Key="PoisonBonusPerStep" Value="30"/>
          <TokenVariable Key="PoisonBonusBase" Value="0"/> <!--Unused ! If set to 1 or more, needs to be added back to the localization key !-->
          <TokenVariable Key="PoisonAppliedDuration" Value="2"/>
          
          <!--Range Damage Steps-->
          <TokenVariable Key="NextThreshold" Value="(MinimumRangedDamageThreshold + (NumberOfStepsReached + 1) * RangedDamageStep)"/>
          <TokenVariable Key="NumberOfStepsReached" Value="(Floor(CurrentRangedDamageOverThreshold / RangedDamageStep))"/>
-         <TokenVariable Key="RangedDamageStep" Value="25"/>
+         <TokenVariable Key="RangedDamageStep" Value="5"/>
          <TokenVariable Key="CurrentRangedDamageOverThreshold" Value="(Max(0, Owner.RangedDamage - MinimumRangedDamageThreshold))"/>
          <TokenVariable Key="MinimumRangedDamageThreshold" Value="100"/>
       </TokenVariables>
@@ -1103,10 +1099,8 @@
          <StatArgument Stat="RangedDamage" Value="RangedDamageStep" DisplaySign="false" />
          <LocArgument Value="MinimumRangedDamageThreshold" Style="KeyWordNb"/>
          <AttackTypeArgument AttackType="Physical"/>
-         <StatArgument Stat="MomentumAttacks" Value="MomentumBonusPerStep" DisplaySign="false"/>
          <AttackTypeArgument AttackType="Magical"/>
          <StatusArgument Status="Poison" Value="PoisonBonusPerStep" TurnsCount="PoisonAppliedDuration"/>
-         <StatArgument Stat="MomentumAttacks" Value="MomentumBonusTotal * 100" DisplaySign="false" Interpreted="true"/>
          <StatusArgument Status="Poison" Value="PoisonBonusTotal" TurnsCount="PoisonAppliedDuration" Interpreted="true"/>
       </LocArguments>
       <View>
@@ -1121,12 +1115,15 @@
                      <IsTrue Value="HasPerkData"/>
                      <IsTrue Value="Skill.IsAttack"/>
                      <IsTrue Value="Skill.IsPhysicalDamage"/>
-                     <IsFalse Value="Skill.HasNativeMomentum"/>
+                     <IsFalse Value="Skill.HasNativePoison"/>
                   </Conditions>
                   <SkillEffects>
-                     <Momentum>
-                        <DamageBonusPerTile>MomentumBonusTotal</DamageBonusPerTile>
-                     </Momentum>
+                     <Poison>
+                        <BaseChance>1</BaseChance>
+                        <DamagePerTurn>PoisonBonusTotal</DamagePerTurn>
+                        <TurnsCount>2</TurnsCount>
+                        <IgnorePoisonDamageScale/>
+                     </Poison>
                   </SkillEffects>
                </AddSkillEffect>
                <AddSkillEffect>

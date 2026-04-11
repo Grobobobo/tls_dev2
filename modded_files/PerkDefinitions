@@ -929,7 +929,7 @@
    <PerkDefinition Id="ExplosiveAtoms">
       <TokenVariables>
          <TokenVariable Key="TriggerCondition" Value="BooleanChoice(Owner.IsManaCostLocked, 0, Skill.BaseManaCost) > 0"/>
-         <TokenVariable Key="PerkDamageBonus" Value="30"/>
+         <TokenVariable Key="PerkDamageBonus" Value="25"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb"/>
@@ -1426,8 +1426,8 @@
          <TokenVariable Key="CurrentResistanceReductionBonus" Value="Module.Buffer2 * ResistanceReductionBonus"/>
          <TokenVariable Key="BonusStacksGrantedByCurrentTrigger" Value="Floor(Module.Buffer / EnemyUnitsToKill)"/>
          <TokenVariable Key="RemainingEnemiesToKill" Value="EnemyUnitsToKill - Min(Module.Buffer,EnemyUnitsToKill)"/>
-         <TokenVariable Key="EnemyUnitsToKill" Value="8"/>
-         <TokenVariable Key="MinimumDistanceToIncreaseBuffer" Value="6"/>
+         <TokenVariable Key="EnemyUnitsToKill" Value="10"/>
+         <TokenVariable Key="MinimumDistanceToIncreaseBuffer" Value="5 + Module.Buffer2"/>
          <TokenVariable Key="SkillRangeModifierBonus" Value="1"/>
          <TokenVariable Key="ResistanceReductionBonus" Value="5"/>
          <TokenVariable Key="BaseGameSkillRangeCap" Value="8"/> <!--The base game value of max skill range, to be updated manually-->
@@ -1437,7 +1437,7 @@
          <StatArgument Stat="SkillRangeModifier"/>
          <LocArgument Value="AdditionnalSkillRangeCap + BaseGameSkillRangeCap" Interpreted="true" Style="KeyWordNb"/>
          <LocArgument Value="EnemyUnitsToKill" Style="KeyWordNb"/>
-         <LocArgument Value="MinimumDistanceToIncreaseBuffer" Style="KeyWordNb"/>
+         <LocArgument Value="MinimumDistanceToIncreaseBuffer" Interpreted="true" Style="KeyWordNb"/>
          <StatArgument Stat="SkillRangeModifier" Value="SkillRangeModifierBonus"/>
          <StatArgument Stat="SkillRangeModifier" Value="CurrentSkillRangeModifierBonus" Interpreted="true"/>
          <LocArgument Value="RemainingEnemiesToKill" Interpreted="true" Style="KeyWordNb"/>
@@ -1540,9 +1540,9 @@
    <PerkDefinition Id="WeaknessFinder">
       <TokenVariables>
          <TokenVariable Key="IsolatedAttacksBonus" Value="Floor(Owner.Accuracy * (AccuracyPercentage / 100))"/>
-         <TokenVariable Key="AccuracyPercentage" Value="150"/>
+         <TokenVariable Key="AccuracyPercentage" Value="100"/>
          <TokenVariable Key="OpportunisticAttacksBonus" Value="Floor(Owner.ResistanceReduction * (ResReducPercentage / 100))"/>
-         <TokenVariable Key="ResReducPercentage" Value="150"/>
+         <TokenVariable Key="ResReducPercentage" Value="100"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="AccuracyPercentage" Suffix="%" Style="KeyWordNb"/>
@@ -2813,7 +2813,7 @@
    <PerkDefinition Id="Coagulation">
       <TokenVariables>
          <TokenVariable Key="BlockBonus" Value="Floor(Owner.HealthRegen * HealthRegenPercentage / 100)"/>
-         <TokenVariable Key="HealthRegenPercentage" Value="35"/>
+         <TokenVariable Key="HealthRegenPercentage" Value="30"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="HealthRegenPercentage" Suffix="%" Style="KeyWordNb"/>
@@ -3186,25 +3186,18 @@
    <PerkDefinition Id="QuantityVsQuality">
       <TokenVariables>
          <TokenVariable Key="BasePropagDamage" Value="10"/>
-         <TokenVariable Key="TransformedPropBounceValue" Value="Floor(Owner.UnlockedPropagationBouncesModifier * TransformedPropBouncePercentage / 100)"/>
-         <TokenVariable Key="TransformedPropBouncePercentage" Value="400"/>
+         <TokenVariable Key="PropBouncesPenalty" Value="-6"/>
          <TokenVariable Key="BaseGamePropDmgCap" Value="105"/>
          <TokenVariable Key="IncreaseToPropDmgCap" Value="20"/>
       </TokenVariables>
       <LocArguments>
-         <StatArgument Stat="PropagationBouncesModifier"/>
-         <StatArgument Stat="PropagationDamage"/>
-         <LocArgument Value="TransformedPropBouncePercentage" Suffix="%" Style="KeyWordNb"/>
+         <StatArgument Stat="PropagationDamage" DisplaySign="true" Value="BasePropagDamage" Interpreted="true"/>
          <StatArgument Stat="PropagationDamage"/>
          <LocArgument Value="BaseGamePropDmgCap + IncreaseToPropDmgCap" Interpreted="true" Style="KeyWordNb"/>
-         <StatArgument Stat="PropagationDamage" DisplaySign="true" Value="TransformedPropBounceValue + BasePropagDamage" Interpreted="true"/>
-         <StatArgument Stat="PropagationDamage" DisplaySign="true" Value="BasePropagDamage" Interpreted="true"/>
+         <StatArgument Stat="PropagationBouncesModifier"/>
+         <LocArgument Value="PropBouncesPenalty" Interpreted="true" Style="BadNb"/>
       </LocArguments>
       <View>
-         <DisplayBonusBeforePurchase/>
-         <DisplayInHUD>
-            <Bonus Value="TransformedPropBounceValue + BasePropagDamage"/>
-         </DisplayInHUD>
          <CompendiumEntries>
             <CompendiumEntry Id="SkillEffect_Propagation"/>
          </CompendiumEntries>
@@ -3213,8 +3206,8 @@
          <BufferModule>
             <Effects>
                <StatBoundaryModifier Stat="PropagationDamage" MaxModifier="IncreaseToPropDmgCap"/>
-               <StatModifier Stat="PropagationDamage" Value="TransformedPropBounceValue + BasePropagDamage"/>
-               <StatLocker Stat="PropagationBouncesModifier"/>
+               <StatBoundaryModifier Stat="PropagationBouncesModifier" MaxModifier="PropBouncesPenalty"/>
+               <StatModifier Stat="PropagationDamage" Value="BasePropagDamage"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -3330,9 +3323,12 @@
    <PerkDefinition Id="VolatileReaction">
       <TokenVariables>
          <TokenVariable Key="PropagationBouncesModifierBonus" Value="3"/>
+         <TokenVariable Key="PropagationMaxBouncesModifierBonus" Value="3"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="PropagationBouncesModifier" Value="PropagationBouncesModifierBonus"/>
+         <StatArgument Stat="PropagationBouncesModifier"/>
+         <LocArgument Value="PropagationMaxBouncesModifierBonus" Interpreted="true" Style="KeyWordNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD/>
@@ -3345,6 +3341,7 @@
             <Effects>
                <AllowDiagonalPropagation/>
                <StatModifier Stat="PropagationBouncesModifier" Value="PropagationBouncesModifierBonus"/>
+               <StatBoundaryModifier Stat="PropagationBouncesModifier" MaxModifier="PropagationMaxBouncesModifierBonus"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -4131,7 +4128,7 @@
    <PerkDefinition Id="ExplosiveHemoglobin">
       <TokenVariables>
          <TokenVariable Key="TriggerCondition" Value="Skill.HealthCost > 0"/>
-         <TokenVariable Key="PerkDamageBonus" Value="20"/>
+         <TokenVariable Key="PerkDamageBonus" Value="25"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb"/>

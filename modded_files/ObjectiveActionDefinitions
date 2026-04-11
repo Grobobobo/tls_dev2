@@ -18,18 +18,18 @@
    </ObjectiveActionDefinition>
    
    <!--Old diff multi: 20-->
-   <ObjectiveActionDefinition Type="GetHit" DifficultyMultiplier="40" MinGoalValue="1" MaxGoalValue="15">
+   <ObjectiveActionDefinition Type="GetHit" DifficultyMultiplier="21" MinGoalValue="1" MaxGoalValue="15">
       <InvertedSettings MinGoalValue="1" MaxGoalValue="15"/>
    </ObjectiveActionDefinition>
 
    <!--Old diff multi: 6.6-->
    <ObjectiveActionDefinition Type="UseMana" DifficultyMultiplier="8" MinGoalValue="10" MaxGoalValue="120">
-      <InvertedSettings MinGoalValue="5" MaxGoalValue="60"/>
+      <InvertedSettings MinGoalValue="4" MaxGoalValue="60"/>
    </ObjectiveActionDefinition>
 
    <!--Old diff multi: 5.3-->
-   <ObjectiveActionDefinition Type="UseMovePoints" DifficultyMultiplier="5.3" MinGoalValue="15" MaxGoalValue="-1">
-      <InvertedSettings MinGoalValue="10" MaxGoalValue="-1"/>
+   <ObjectiveActionDefinition Type="UseMovePoints" DifficultyMultiplier="5.3" MinGoalValue="12" MaxGoalValue="-1">
+      <InvertedSettings MinGoalValue="2" MaxGoalValue="-1"/>
    </ObjectiveActionDefinition>
 
    <!--Old diff multi: 5-->

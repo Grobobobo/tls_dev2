@@ -7479,7 +7479,8 @@ Settings_NoCamFocusOnHeroSelect_Description,Disables the automatic centering of 
 Settings_EraseSave,Reset campaign,Réinitialiser la campagne,重置战役进度,重置戰役進度,キャンペーンをリセット,Сбросить прогресс,Скинути кампанію,Kampagne zurücksetzen,Reiniciar campaña,Recomeçar campanha,캠페인 초기화
 Settings_ReturnToMainMenuToEraseSave,This can only be done from the main menu.,Ceci ne peut être effectué que depuis le menu principal.,此操作只能在主菜单执行,此操作只能在主菜單執行,メインメニューでのみ操作可能。,Вы можете сбросить прогресс только из главного меню.,Це можна зробити тільки з головного меню,Dies ist nur über das Hauptmenü möglich.,Solo se puede hacer desde el menú principal.,Só pode ser feito no menu principal.,메인 메뉴에서만 가능한 작업입니다.
 Settings_ConfirmEraseSaveText,"This will <style=KeyWord>reset</style> all meta progression and delete existing save files and backups. <style=Bad>This cannot be undone.</style>
-<style=KeyWord>Are you sure you want to do this?</style>","Cela va <style=KeyWord>réinitialiser</style> toute la progression méta et supprimer toutes données sauvegardées, ainsi que les copies de secours. <style=Bad>Ceci ne peut pas être annulé.</style><style=KeyWord>Voulez-vous vraiment continuer<nbsp>?</style>","此操作将<style=KeyWord>重置</style>所有永久强化条目，并彻底删除存档及备份文件。注意，此操作<style=Bad>不可撤销</style>。
+<style=KeyWord>Are you sure you want to do this?</style>","Cela va <style=KeyWord>réinitialiser</style> toute la progression méta et supprimer toutes données sauvegardées, ainsi que les copies de secours. <style=Bad>Ceci ne peut pas être annulé.</style>
+<style=KeyWord>Voulez-vous vraiment continuer<nbsp>?</style>","此操作将<style=KeyWord>重置</style>所有永久强化条目，并彻底删除存档及备份文件。注意，此操作<style=Bad>不可撤销</style>。
 
 <style=KeyWord>您确定要这么做吗？</style>","此操作將<style=KeyWord>重置</style>所有永久強化條目，並徹底刪除存檔及備份檔。注意，此操作<style=Bad>不可撤銷</style>。
 
@@ -12099,7 +12100,8 @@ GlintfeinEnding_Slide_CommanderEyeShine_2,"Through his quest for redemption, he 
 ","Em sua jornada pela redenção, acabou se tornando um escolhido dos Éons.",텔러는 구원을 위한 임무 끝에 이온의 적자가 되었다.
 GlintfeinEnding_Slide_CommanderEyeShine_3,"<delay=0.6>A</delay>nointed by the <#f5d6b3>Eye of Law</color>, he is bound to fix the infinite echoes of his mistakes.","<delay=0.6>C</delay>onsacré par <#f5d6b3>l'Oeil de la Loi</color>, il devra réparer les échos infinis de ses erreurs.",<delay=0.6>作</delay>为<#f5d6b3>法则之眼</color>选定之人，他注定将要修复因其犯错所引起的无限个回响。,<delay=0.6>作</delay>為<#f5d6b3>法則之眼</color>選定之人，他註定將要修復因其犯錯所引起的無限個迴響。,<delay=0.6>彼</delay>は<#f5d6b3>法の目</color>に清められ、自らの過ちのこだまを正すことになる。,"<delay=0.6>П</delay>омеченный <#f5d6b3>Оком Закона</color>, отныне и навеки он обречён исправлять бесконечные отголоски своих ошибок.","<delay=0.6>П</delay>омазаник <#f5d6b3>Ока Закону</color>, тепер його обов'язок — виправити нескінченні відлуння своїх помилок.","<delay=0.6>G</delay>esalbt vom <#f5d6b3>Auge des Gesetzes</color>, ist er verpflichtet, die unendlichen Echos seiner Fehler zu beheben.","<delay=0.6>E</delay>l <#f5d6b3>Ojo de la Ley</color> lo había consagrado, y ahora debía vagar, destinado a corregir los infinitos ecos de sus errores.","<delay=0.6>U</delay>ngido pelo <#f5d6b3>Olho da Lei</color>, está fadado a consertar os infinitos ecos de seus erros.",<delay=0.6>결</delay>국 <#f5d6b3>율법의 눈</color>의 사역자가 된 그는 자신의 실수로 생긴 무한한 반향들을 복구하는 처지가 되었다.
 GlintfeinEnding_Slide_CommanderEyeShine_4,"But his daughters were chosen by the <#d260ed>Maws of Chaos.</color>
-<delay=0.6>A</delay>nd they struggle to break free...","Mais ses filles ont été choisies par les <#d260ed>Mâchoires du Chaos.</color><delay=0.6>E</delay>t elles luttent pour se libérer...","然而他的女儿们却被<#d260ed>混沌之喉</color>选中了。
+<delay=0.6>A</delay>nd they struggle to break free...","Mais ses filles ont été choisies par les <#d260ed>Mâchoires du Chaos.</color>
+<delay=0.6>E</delay>t elles luttent pour se libérer...","然而他的女儿们却被<#d260ed>混沌之喉</color>选中了。
 <delay=0.6>她</delay>们挣扎着，想要打破枷锁……","然而他的女兒們卻被<#d260ed>混沌之喉</color>選中了。 
 <delay=0.6>她</delay>們掙扎著，想要打破枷鎖……","しかし彼の娘たちは<#d260ed>混沌の淵</color>に選ばれた。
 <delay=0.6>二</delay>人は逃げ出そうともがいている...。","Но <#d260ed>Клыки Хаоса</color> избрали его дочерей. 
@@ -13060,7 +13062,11 @@ PerkDescription_GeoReservoir,"Every {0} enemies <style=KeyWord>hit</style> with 
 {4} <Style=Keyword>Range</style>, increased by {5} for each {6} of the Hero.
 {1}.
 {8}.
-<style=Attenuated>This modifier is reset every morning.</style>","Tous les {0} ennemis <style=KeyWord>touchés</style> par une <style=""Skill"">compétence</style> du <style=KeyWord>Gantelet</style>, la prochaine <style=""Skill"">compétence</style> du <style=KeyWord>Gantelet</style> obtient<nbsp>:{4} de <Style=Keyword>Portée</style>, augmenté de {5} pour chaque {6} du Héros.{1}.{8}.<style=Attenuated>Ce modificateur est réinitialisé tous les matins.</style>","每使用<style=KeyWord>臂铠</style><style=""Skill"">技能</style><style=KeyWord>击中</style>{0}名敌人，下个<style=KeyWord>臂铠</style><style=""Skill"">技能</style>获得：
+<style=Attenuated>This modifier is reset every morning.</style>","Tous les {0} ennemis <style=KeyWord>touchés</style> par une <style=""Skill"">compétence</style> du <style=KeyWord>Gantelet</style>, la prochaine <style=""Skill"">compétence</style> du <style=KeyWord>Gantelet</style> obtient<nbsp>:
+{4} de <Style=Keyword>Portée</style>, augmenté de {5} pour chaque {6} du Héros.
+{1}.
+{8}.
+<style=Attenuated>Ce modificateur est réinitialisé tous les matins.</style>","每使用<style=KeyWord>臂铠</style><style=""Skill"">技能</style><style=KeyWord>击中</style>{0}名敌人，下个<style=KeyWord>臂铠</style><style=""Skill"">技能</style>获得：
 {4}<Style=Keyword>范围</style>，英雄每拥有一点{6}，范围提升{5}。
 {1}。
 {8}。
@@ -13098,7 +13104,8 @@ PerkDescription_GeoReservoir,"Every {0} enemies <style=KeyWord>hit</style> with 
 {8}
 <style=Attenuated>보정치는 매일 아침 초기화</style>"
 PerkEffectInformations_GeoReservoir,"Enemies to hit: {3}
-{7} <Style=Keyword>Range</style>","Ennemis à toucher<nbsp>: {3}{7} de <Style=Keyword>Portée</style>","还需击中敌人数：{3}
+{7} <Style=Keyword>Range</style>","Ennemis à toucher<nbsp>: {3}
+{7} de <Style=Keyword>Portée</style>","还需击中敌人数：{3}
 {7}<Style=Keyword>范围</style>","還需擊中敵人數：{3}
 {7}格<Style=Keyword>範圍</style>","命中させるエネミー: {3}
 <Style=Keyword>射程</style>: {7}","Ещё попаданий: {3}
@@ -14637,7 +14644,9 @@ Nananinanão.","뭐? 쉰다니...
 그럴 순 없지."
 Bark_Victory_GildenbergRedux_PlayableUnitPostExplosion3_0,Let's throw a party! So that at least a part of dwarven culture survives the night.,Festoyons ! Pour qu'au moins une partie de la culture naine survive à cette nuit.,来一起派对吧！这样至少还有一部分矮人的文化在今晚留存了下来。,來一起派對吧！這樣至少還有一部分矮人的文化在今晚留存了下來。,パーティーだ! パーティをすれば、少なくともドワーフの文化の一部が夜を乗り越える。,Давайте устроим вечеринку! Чтобы хоть часть гномьей культуры пережила эту ночь.,Влаштуймо гулянку! Нехай хоча б дрібка гном'ячої культури переживе цю ніч.,Lasst uns eine Party schmeißen! Damit wenigstens ein Teil der zwergischen Kultur die Nacht überlebt.,"¡Hay que montar una fiesta! Así, al menos una parte de la cultura enana habrá sobrevivido esta noche.","Vamos festejar, para que pelo menos uma parte da cultura anã sobreviva à noite!",파티를 열자! 그래도 드워프들의 유산이 일부나마 살아남았잖아.
 Bark_Victory_GildenbergRedux_PlayableUnitPostExplosion4_0,<anim=happy>ALRIGHT GET THE BOOZE FLOWING!</anim>,"<anim=happy>OKAY, QUE L'ALCOOL COULE À FLOTS !</anim>",<anim=happy>让酒流动起来吧！</anim>,<anim=happy>讓酒流動起來吧！</anim>,<anim=happy>よし、酒を呑むぞ!</anim>,<anim=happy>ЧТО Ж! ПУСТЬ ВЫПИВКА ТЕЧЁТ РЕКОЙ!</anim>,<anim=happy>НЕСІТЬ ВИПИВКУ! ТРЕБА БІЛЬШЕ ПИВА!</anim>,<anim=happy>LASST DEN SCHNAPS FLIESSEN!</anim>,"<anim=happy>¡VENGA, QUE FLUYA EL BEBERCIO!</anim>","<anim=happy>BELEZA, ENCHAM OS CANECOS!</anim>","<anim=happy>그래, 오늘은 코가 비뚤어지게 마셔보자!</anim>"
-Bark_Victory_GildenbergRedux_PlayableUnitPostExplosion5_0,AND BRING THE MAGES TO THE BRIDGE! LET THEM <#A60C09>LEARN HOW TO <anim=happy>FLY!</anim></color> <anim=Pissed><size=125%>HAHAHA</size></anim>,"ET AMENEZ LES MAGES AU PONT !ON VA LEUR<#A60C09>APPRENDRE À <anim=happy>VOLER</anim></color> !<anim=Pissed><size=125%>HAHAHA</size></anim>","把法师们带到桥上！
+Bark_Victory_GildenbergRedux_PlayableUnitPostExplosion5_0,AND BRING THE MAGES TO THE BRIDGE! LET THEM <#A60C09>LEARN HOW TO <anim=happy>FLY!</anim></color> <anim=Pissed><size=125%>HAHAHA</size></anim>,"ET AMENEZ LES MAGES AU PONT !
+ON VA LEUR<#A60C09>APPRENDRE À <anim=happy>VOLER</anim></color> !
+<anim=Pissed><size=125%>HAHAHA</size></anim>","把法师们带到桥上！
 让他们<#A60C09>学学怎么<anim=happy>飞翔！</anim></color>
 <anim=Pissed><size=125%>哈哈哈</size></anim>","把法師們帶到橋上！
 讓他們<#A60C09>學學怎麼<anim=happy>飛翔！</anim></color>

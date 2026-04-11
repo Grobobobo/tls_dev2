@@ -39,7 +39,7 @@
         <LocArguments>
             <LocalizedArgument Prefix="PerkName_" Value="PerkId" Style="Perk"/>
         </LocArguments>
-        <TierId>MediumCost</TierId>
+        <TierId>LowCost</TierId>
         <Tags>
             <Tag>Hero</Tag>
             <Tag>Perk</Tag>
@@ -56,7 +56,7 @@
         <LocArguments>
             <LocalizedArgument Prefix="PerkName_" Value="PerkId" Style="Perk"/>
         </LocArguments>
-        <TierId>HighCost</TierId>
+        <TierId>MediumCost</TierId>
         <Tags>
             <Tag>Hero</Tag>
             <Tag>Perk</Tag>
@@ -243,7 +243,7 @@
     <ResearchDefinition Id="HeroCapacityResearch">
         <TokenVariables>
             <TokenVariable Key="HeroesCapacityModifier" Value="1"/>
-            <TokenVariable Key="PriceModifier" Value="20"/>
+            <TokenVariable Key="PriceModifier" Value="50"/>
         </TokenVariables>
         <LocArguments>
             <LocArgument Prefix="+" Value="HeroesCapacityModifier" Style="KeyWordNb"/>
@@ -266,7 +266,7 @@
         <LocArguments>
             <LocArgument Value="ProductionResourceModifier" Suffix="%" Style="KeyWordNb"/>
         </LocArguments>
-        <TierId>HighCost</TierId>
+        <TierId>MediumCost</TierId>
         <Tags>
             <Tag>Economy</Tag>
             <Tag>Production</Tag>
@@ -412,7 +412,7 @@
         <LocArguments>
             <LocalizedArgument Prefix="SkillName_" Value="SkillId" Style="Skill"/>
         </LocArguments>
-        <TierId>LowCost</TierId>
+        <TierId>HighCost</TierId>
         <Tags>
             <Tag>Defense</Tag>
             <Tag>Skill</Tag>
@@ -486,7 +486,7 @@
         <LocArguments>
             <LocalizedArgument Prefix="ItemName_NoDLCTag_" Value="ItemId" Style="Unique"/>
         </LocArguments>
-        <TierId>MediumCost</TierId>
+        <TierId>LowCost</TierId>
         <Tags>
             <Tag>UniqueItem</Tag>
         </Tags>
@@ -1135,7 +1135,7 @@
         <LocArguments>
             <LocalizedArgument Prefix="ItemName_NoDLCTag_" Value="ItemId" Style="Unique"/>
         </LocArguments>
-        <TierId>LowCost</TierId>
+        <TierId>MediumCost</TierId>
         <Tags>
             <Tag>UniqueItem</Tag>
         </Tags>
@@ -1424,7 +1424,7 @@
         <LocArguments>
             <LocalizedArgument Prefix="PerkName_" Value="PerkId" Style="Perk"/>
         </LocArguments>
-        <TierId>MediumCost</TierId>
+        <TierId>HighCost</TierId>
         <Tags>
             <Tag>Hero</Tag>
             <Tag>Perk</Tag>
@@ -1611,6 +1611,21 @@
            <!--<AddBuildingModifiers Id="Traps" IsIdsList="true">
                 <BuildingCostModifier Type="Offset">TrapCostReductionOffset</BuildingCostModifier>
             </AddBuildingModifiers>-->
+            <RepairBuildingForFree Id="TownBuildings" IsIdsList="true">
+                <Triggers>
+                    <OnStartProductionTurn/>
+                </Triggers>
+            </RepairBuildingForFree>
+            <RepairBuildingForFree Id="Walls" IsIdsList="true">
+                <Triggers>
+                    <OnStartProductionTurn/>
+                </Triggers>
+            </RepairBuildingForFree>
+            <RepairBuildingForFree Id="SpecialDefenses" IsIdsList="true">
+                <Triggers>
+                    <OnStartProductionTurn/>
+                </Triggers>
+            </RepairBuildingForFree>
             <RepairBuildingForFree Id="Traps" IsIdsList="true">
                 <Triggers>
                     <OnStartProductionTurn/>
@@ -1656,16 +1671,34 @@
     <!--PAS INTE ENCORE-->
     <ResearchDefinition Id="VeteranGlintfeinResearch">
         <TokenVariables>
-            <TokenVariable Key="BuildingLimitIncrease" Value="10"/>
+            <TokenVariable Key="BuildingLimitIncrease" Value="5"/>
+            <TokenVariable Key="DefensesCostModifier" Value="15"/>
         </TokenVariables>
         <Tags>
             <Tag>Defense</Tag>
         </Tags>
-        <TierId>HighCost</TierId>
+        <TierId>MediumCost</TierId>
         <LocArguments>
             <LocArgument Value="BuildingLimitIncrease" Style="GoodNb"/>
+            <LocArgument Value="DefensesCostModifier" Suffix="%" Style="GoodNb"/>
         </LocArguments>
         <Effects>
+            
+            <AddBuildingModifiers Id="Seeds" IsIdsList="true">
+                <BuildingCostModifier>DefensesCostModifier * -1</BuildingCostModifier>
+                <IgnoreLineOfSight/>
+                <UpgradeCostModifier>DefensesCostModifier * -1</UpgradeCostModifier>
+            </AddBuildingModifiers>
+            <AddBuildingModifiers Id="Traps" IsIdsList="true">
+                <BuildingCostModifier>DefensesCostModifier * -1</BuildingCostModifier>
+                <IgnoreLineOfSight/>
+                <UpgradeCostModifier>DefensesCostModifier * -1</UpgradeCostModifier>
+            </AddBuildingModifiers>
+            <AddBuildingModifiers Id="SpecialDefenses" IsIdsList="true">
+                <BuildingCostModifier>DefensesCostModifier * -1</BuildingCostModifier>
+                <IgnoreLineOfSight/>
+                <UpgradeCostModifier>DefensesCostModifier * -1</UpgradeCostModifier>
+            </AddBuildingModifiers>
             <AddBuildingLimitModifier Id="Ballistas" Modifier="BuildingLimitIncrease" IsGroupId="true"/>
             <AddBuildingLimitModifier Id="Barricades" Modifier="BuildingLimitIncrease" IsGroupId="true"/>
             <AddBuildingLimitModifier Id="Gates" Modifier="BuildingLimitIncrease" IsGroupId="true"/>
@@ -1673,6 +1706,9 @@
             <AddBuildingLimitModifier Id="Catapult" Modifier="BuildingLimitIncrease"/>
             <AddBuildingLimitModifier Id="Teleporter" Modifier="BuildingLimitIncrease"/>
             <AddBuildingLimitModifier Id="Watchtower" Modifier="BuildingLimitIncrease"/>
+            <AddBuildingLimitModifier Id="StunTrap" Modifier="BuildingLimitIncrease"/>
+            <AddBuildingLimitModifier Id="DamageTrap" Modifier="BuildingLimitIncrease"/>
+            <AddBuildingLimitModifier Id="SlowTrap" Modifier="BuildingLimitIncrease"/>
         </Effects>
     </ResearchDefinition>
    
@@ -1757,12 +1793,12 @@
     <!--PAS INTE ENCORE-->
     <ResearchDefinition Id="HavenGlenwaldResearch">
         <TokenVariables>
-            <TokenVariable Key="BarricadesLimitIncrease" Value="25"/>
+            <TokenVariable Key="BarricadesLimitIncrease" Value="20"/>
         </TokenVariables>
         <Tags>
             <Tag>Defense</Tag>
         </Tags>
-        <TierId>HighCost</TierId>
+        <TierId>MediumCost</TierId>
         <Effects>
             <AddBuildingLimitGroupFlag Flag="BarricadesLimit"/>
             <AddBuildingLimitModifier Id="Barricades" Modifier="BarricadesLimitIncrease" IsGroupId="true"/>
@@ -1853,7 +1889,16 @@
             <AddBuildingModifiers Id="Temple">
                 <ActionHealModifier>100</ActionHealModifier>
             </AddBuildingModifiers>
-            
+            <ModifyBuildingActionsCostPerDay EffectId="BonePilesActionsCostReduction" ActionsUsePerDay="99" CostReductionValue="WorkerCostReduction">
+                <AvailableBuildingAction Id="Blessing"/>
+                <AvailableBuildingAction Id="Blessing_1"/>
+                <AvailableBuildingAction Id="Heal"/>
+                <AvailableBuildingAction Id="Heal_1"/>
+                <AvailableBuildingAction Id="HealMana"/>
+                <AvailableBuildingAction Id="HealMana_1"/>
+                <AvailableBuildingAction Id="Gift"/>
+                <AvailableBuildingAction Id="Gift_1"/>
+            </ModifyBuildingActionsCostPerDay>
            <UnlockBuildingSkill Id="Temple" ResearchSkillUnlockedFlag="TempleManaWellNightSkill"/>
            <UnlockBuildingSkill Id="ManaWell" ResearchSkillUnlockedFlag="TempleManaWellNightSkill"/>
         </Effects>
@@ -1866,7 +1911,14 @@
            <Tag>Perk</Tag>
         </Tags>
         <TierId>MediumCost</TierId>
+        <TokenVariables>
+            <TokenVariable Key="PerkId" Value="JollyDrinker"/>
+        </TokenVariables>
+        <LocArguments>
+            <LocalizedArgument Prefix="PerkName_" Value="PerkId" Style="Perk"/>
+        </LocArguments>
         <Effects>
+            <AddPerk PerkId="PerkId"/>
             <AddPerkGenerationFlag Flag="DwarvesPerksInMisc"/>
             <RerollPerks CollectionId="Misc"/>
         </Effects>
@@ -1879,7 +1931,14 @@
            <Tag>Perk</Tag>
         </Tags>
         <TierId>MediumCost</TierId>
+        <TokenVariables>
+            <TokenVariable Key="PerkId" Value="OneWithNature"/>
+        </TokenVariables>
+        <LocArguments>
+            <LocalizedArgument Prefix="PerkName_" Value="PerkId" Style="Perk"/>
+        </LocArguments>
         <Effects>
+            <AddPerk PerkId="PerkId"/>
             <AddPerkGenerationFlag Flag="ElvesPerksInMisc"/>
             <RerollPerks CollectionId="Misc"/>
         </Effects>

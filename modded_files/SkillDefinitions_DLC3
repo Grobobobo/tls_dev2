@@ -829,7 +829,7 @@
   <SkillDefinition Id="PlayerZeppelinExplosion">
     <OverrideArtId>ZeppelinExplosion</OverrideArtId>
     <Range Min="0" Max="0" CardinalDirectionOnly="true" />
-    <HealthCost>100</HealthCost>
+    <HealthCost>75</HealthCost>
     <AreaOfEffect OriginX="5" OriginY="5">
          __XXXXXXX__
          _XXXXXXXXX_
@@ -1661,6 +1661,7 @@
       </AreaOfEffect>
     <SkillAction>
       <Attack>
+        <BaseDamage Min="107 * (1 + Level/13)" Max="134 * (1 + Level/13)"  />
         <AttackType>Adaptative</AttackType>
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
@@ -1722,6 +1723,7 @@
       </AreaOfEffect>
     <SkillAction>
       <Attack>
+        <BaseDamage Min="107 * (1 + Level/13)" Max="134 * (1 + Level/13)"/>
         <AttackType>Adaptative</AttackType>
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
@@ -2027,8 +2029,8 @@
       </AreaOfEffect>
     <SkillAction>
       <Attack>
-        <BaseDamage Min="76 * 0.5 * (1 + Level/13)" Max="126 * 0.5 * (1 + Level/13)" />
-        <AttackType>Magical</AttackType>
+        <BaseDamage Min="50 * (1 + Level/13)" Max="100 * (1 + Level/13)" />
+        <AttackType>Adaptative</AttackType>
         <DamageMultiplier>1</DamageMultiplier>
       </Attack>
     </SkillAction>

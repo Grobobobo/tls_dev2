@@ -111,47 +111,81 @@ Zusätzliche <style=KeyWord>Konsumgüter</style> können mithilfe von <style=Wor
 Every {2} units <style=KeyWord>killed</style> at a <style=KeyWord>distance of {3} or more:</style>
 {4}.
 {7}.
+Increase the distance required by 1.
 <style=Attenuated>This modifier is reset every morning.</style>","Augmente le <style=KeyWord>Maximum de {0}</style> à {1}.
 Toutes les {2} unités <style=KeyWord>tuées</style> à une <style=KeyWord>distance de {3} ou plus</style><nbsp>:
 {4}.
 {7}.
+Augmente la distance requise de 1.
 <style=Attenuated> Ce modificateur est réinitialisé tous les matins.</style>","将<style=KeyWord>{0}上限</style>提升至{1}。
 每<style=KeyWord>击杀</style>{2}个<style=KeyWord>距离{3}格或以外的单位：</style>
 {4}。
 {7}。
+所需距离增加1格。
 <style=Attenuated>此加成在每个白天重置。</style>","<style=KeyWord>{0}上限</style>提升到{1}。
 每從距離<style=KeyWord>{3}格（含）以外的距離</style><style=KeyWord>擊殺</style>{2}個單位：
 {4}。
 {7}。
+所需距離增加1格。
 <style=Attenuated>此加成在每個白天重置。</style>","<style=KeyWord>最大{0}</style>が{1}に増加する。
 <style=KeyWord>距離{3}以上</style>の{2}ユニットを<style=KeyWord>撃破</style>するたびに、以下の効果を得る:
 {4}。
 {7}。
+必要距離が1増加する。
 <style=Attenuated>この効果は毎朝リセットされる。</style>","<style=KeyWord>Макс. {0}</style> увеличивается до {1}.
 За каждого {2}-го врага, <style=KeyWord>убитого</style> с <style=KeyWord>расстояния в {3} яч. или более, герой получает бонус:</style>
 {4}.
 {7}.
+Необходимое расстояние увеличивается на 1.
 <style=Attenuated>Эффект сбрасывается каждое утро.</style>","Збільшує <style=KeyWord>максимум {0}</style> до {1}.
 Кож. {2} од. персонажів, <style=KeyWord>убитих</style> на <style=KeyWord>відстані {3} чи більше:</style>
 {4}.
 {7}.
+Необхідна відстань збільшується на 1.
 <style=Attenuated>Модифікатор скидається щоранку.</style>","<style=KeyWord>Max. {0}</style> auf {1} erhöht.
 Für je {2} Einheiten, die auf eine <style=KeyWord>Entfernung von {3} oder mehr</style> <style=KeyWord>getötet</style> werden:</style>
 {4}.
 {7}.
+Erhöht die erforderliche Entfernung um 1.
 <style=Attenuated>Dieser Modifikator wird jeden Morgen zurückgesetzt.</style>","Aumenta el <style=KeyWord>máximo de {0}</style> a {1}.
 Cada {2} unidades <style=KeyWord>eliminadas</style> a una <style=KeyWord>distancia de {3} o más:</style>
 {4}.
 {7}.
+Aumenta la distancia requerida en 1.
 <style=Attenuated>Este modificador se reinicia cada mañana.</style>","Aumenta <style=KeyWord>{0} Máx. </style> para {1}.
 A cada {2} unidades <style=KeyWord>abatidas</style> a <style=KeyWord>{3} de distância ou mais:</style>
 {4}.
 {7}.
+Aumenta a distância necessária em 1.
 <style=Attenuated>Este modificador é redefinido todas as manhãs.</style>","<style=KeyWord>최대 {0}</style> {1}(으)로 증가
 <style=KeyWord>{3}타일 이상의 거리</style>에서 유닛을 {2}명 <style=KeyWord>처치</style>할 때마다:
 {4}.
 {7}.
+필요한 거리가 1 증가합니다.
 <style=Attenuated>Este modificador é redefinido todas as manhãs.</style>"
+PerkEffectInformations_FieldStudy,"{5}
+{8}
+Units to kill: {6}","{5}
+{8}
+Unités à tuer<nbsp>: {6}","{5}
+{8}
+需要击杀的单位数：{6}","{5}
+{8}
+需擊殺的單位：{6}","{5}
+{8}
+撃破するユニット: {6}","{5}
+{8}
+Ещё врагов до бонуса: {6}","{5}
+{8}
+Ще вбити ворогів: {6}","{5}
+{8}
+Noch zu tötende Einheiten: {6}","{5}
+{8}
+Unidades que matar: {6}","{5}
+{8}
+Unidades a serem abatidas: {6}.","{5}
+{8}
+처치할 유닛: {6}"
 "PerkDescription_ExplosiveAtoms","When <style=KeyWord>attacking</style> with a <style=Mana>Mana-consuming</style> <style=""Skill"">skill</style>, the attack gets:
 {0} <style=PerkDamage>Perk Damage</style>.","Lorsqu'une <style=""Skill"">compétence</style> qui <style=Mana>coûte du Mana</style> est utilisée pour <style=KeyWord>attaquer</style>, l'attaque obtient :
 {0} de <style=PerkDamage>Dégâts de talent</style>.","当使用<style=Mana>消耗法力值</style>的<style=KeyWord>攻击</style><style=""Skill"">技能</style>时，此次攻击可获得：
@@ -1261,27 +1295,51 @@ Lançamento Forte é ativado com mais frequência.
 강력 던지기의 발동 빈도가 증가합니다.
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>"
 "PerkEffectInformations_StrongThrowUnique","Enemies to hit: {3}","Ennemis à toucher<nbsp>: {3}","还需击中敌人数：{3}","還需擊中敵人數：{3}","命中させるエネミー: {3}","Ещё попаданий: {3}","Залишилося ударити ворогів: {3}.","Zu treffende Gegner: {3}","Enemigos por golpear: {3}","Inimigos a serem golpeados: {3}","명중해야 하는 적: {3}"
-PerkDescription_QuantityVsQuality,"{6}. All of the Hero's {0} is <style=KeyWord>transformed</style> into {1} (conversion rate: {2}).
-Increases <style=KeyWord>Maximum {3}</style> to {4}.","{6}. La totalité des {0} est <style=KeyWord>transformée</style> en {1} (taux de conversion: {2}).
-Augmente le <style=KeyWord>Maximum de {3}</style> à {4}.","{6}. 英雄的所有{0}都将<style=KeyWord>转化</style>为{1}（转化率：{2}）。
-
-将<style=KeyWord>{3}上限</style>提高至{4}。","{6}. 英雄的所有{0}<style=KeyWord>轉化</style>為{1}（轉化率：{2}）。
-
-<style=KeyWord>{3}上限</style>提升至{4}。","{6}. 英雄の全{0}が{1}に<style=KeyWord>変換される</style>(変換率: {2})。
-
-<style=KeyWord>最大{3}</style>が{4}に上がる。","{6}. {0} героя <style=KeyWord>преобразуется</style> в {1} (с эффективностью в {2}).
-
-<style=KeyWord>Макс. {3}</style> увеличивается до {4}.","{6}. {0} героя <style=KeyWord>тепер</style> — {1} (коефіцієнт перетворення: {2}).
-
-Збільшує <style=KeyWord>максимум {3}</style> до {4}.","{6}. Der Held <style=KeyWord>wandelt</style> {0} vollständig in {1} um (Wechselkurs: {2}).
-
-<style=KeyWord>Max. {3}</style> auf {4} erhöht.","{6}. El total de {0} del héroe se <style=KeyWord>transforma</style> en {1} (tasa de conversión: {2}).
-
-Aumenta el <style=KeyWord>máximo de {3}</style> al {4}.","{6}. O total de {0} do Herói é <style=KeyWord>transformado</style> em {1} (taxa de conversão: {2}).
-
-Aumenta <style=KeyWord>{3} Máx.</style> para {4}.","{6}. 영웅의 모든 {0}이(가) {1}(으)로 <style=KeyWord>변환</style> (변환율: {2})
-
-<style=KeyWord>최대 {3}</style> {4}(으)로 증가"
+PerkDescription_QuantityVsQuality,"{0}.
+Increases <style=KeyWord>Maximum</style>
+{1} to {2}.
+Decreases <style=KeyWord>Maximum</style>
+{3} by {4}.","{0}.
+Augmente le <style=KeyWord>Maximum</style> de
+{1} à {2}.
+Réduit le <style=KeyWord>Maximum</style> de
+{3} de {4}.","{0}。
+提升<style=KeyWord>上限</style>
+{1}至{2}。
+降低<style=KeyWord>上限</style>
+{3}{4}。","{0}。
+提升<style=KeyWord>上限</style>
+{1}至{2}。
+降低<style=KeyWord>上限</style>
+{3}{4}。","{0}。
+<style=KeyWord>最大</style>
+{1}が{2}に増加する。
+<style=KeyWord>最大</style>
+{3}が{4}減少する。","{0}.
+Повышает <style=KeyWord>макс.</style>
+{1} до {2}.
+Понижает <style=KeyWord>макс.</style>
+{3} на {4}.","{0}.
+Збільшує <style=KeyWord>макс.</style>
+{1} до {2}.
+Зменшує <style=KeyWord>макс.</style>
+{3} на {4}.","{0}.
+Erhöht den <style=KeyWord>Maximalwert</style> von
+{1} auf {2}.
+Verringert den <style=KeyWord>Maximalwert</style> von
+{3} um {4}.","{0}.
+Aumenta el <style=KeyWord>máximo</style> de
+{1} a {2}.
+Reduce el <style=KeyWord>máximo</style> de
+{3} en {4}.","{0}.
+Aumenta o <style=KeyWord>Máximo</style> de
+{1} para {2}.
+Reduz o <style=KeyWord>Máximo</style> de
+{3} em {4}.","{0}.
+<style=KeyWord>최대</style>
+{1}을(를) {2}(으)로 증가시킵니다.
+<style=KeyWord>최대</style>
+{3}을(를) {4}만큼 감소시킵니다."
 PerkDescription_LifeLoanUnique,"Whenever a <style=KeyWord>Sacred Flower</style> <style=Skill>attack</style> is cast:
 {0} <style=""Good"">Plague</style> for each {1} and {2} base cost.
 Each <style=""Good"">Plague</style> grants:
@@ -1898,3 +1956,531 @@ lança <style=KeyWord>automaticamente</style> a habilidade {0} em um <style=KeyW
 <style=KeyWord>{1}타일 범위 내에 있는 무작위 적</style>에게 {0} 스킬 <style=KeyWord>자동</style> 시전
 
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
+PerkDescription_MagicScepterUniquePerk,"After dealing {0} or more damage in a single hit of {1}:
+{2} gains {3}
+Increase this threshold by {4}
+After dealing {5} or more damage in a single use of {2}:
+{1} gains {6} <style=PerkDamage>Perk Damage</style>.
+Increase this threshold by {7}
+<style=Attenuated>The bonus is reset every morning.</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Après avoir infligé {0} dégâts ou plus en un seul coup avec {1}<nbsp>:
+{2} obtient {3}
+Augmente ce seuil de {4}
+Après avoir infligé {5} dégâts ou plus en une seule utilisation de {2}<nbsp>:
+{1} obtient {6} <style=PerkDamage>Dégâts de talent</style>
+Augment ce seuil de {7}
+<style=Attenuated>Le bonus est réinitialisé chaque matin</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style","若技能“{1}”单次击中造成超过{0}点伤害：
+“{2}”获得{3}
+该阈值提高{4}
+若单次使用“{2}”造成超过{5}点伤害：
+“{1}”获得{6}<style=PerkDamage>天赋伤害</style>。
+该阈值提高{7}
+<style=Attenuated>该加成每天早上会重置。</style>
+
+<style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","單次{1}造成至少{0}點傷害時：
+{2}獲得{3}
+此效果的觸發條件提升{4}
+單次{2}造成至少{5}點傷害時：
+{1}獲得<style=PerkDamage>天賦傷害</style>{6}。
+此效果的觸發條件提升{7}
+<style=Attenuated>此加成在每個白天重置。</style>
+
+<style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","{1}1発でダメージを{0}以上与えると:
+{2}が{3}を得る
+この値が{4}増加
+{2}1回で{5}以上のダメージを与えると:
+{1}が{6}<style=PerkDamage>パークダメージ</style>を得る。
+この値が{7}増加
+<style=Attenuated>このボーナスは毎朝リセットされる。</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","Если одним применением навыка ""{1}"" герой нанёс {0} и более ед. урона:
+""{2}"" получает бонус {3};
+порог срабатывания черты увеличивается до {4}.
+Если одним применением навыка ""{2}"" герой нанёс {5} и более ед. урона:
+""{1}"" получает {6} к <style=PerkDamage>особому урону</style>;
+порог срабатывания черты увеличивается до {7}.
+<style=Attenuated>Этот эффект сбрасывается каждое утро.</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Після завдавання {0} чи більше шкоди одним влученням навичкою «{1}»:
+навичка «{2}» отримує {3}
+Це порогове значення збільшується на {4}
+Після завдавання {5} чи більше шкоди одним застосуванням навички «{2}»:
+{1} отримує {6} до <style=PerkDamage>шкоди від риси</style>.
+Це порогове значення збільшується на {7}
+<style=Attenuated>Бонус скидається щоранку.</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Nachdem mit {1} {0} oder mehr Schaden mit einem einzigen Treffer zugefügt wurde:
+{2} erhält {3}
+Dieser Schwellenwert wird um {4} erhöht.
+Nachdem {5} oder mehr Schaden mit einer einzigen Benutzung von {2} zugefügt wurde:
+{1} erhält {6} <style=PerkDamage>Vorteilsschaden</style>.
+Dieser Schwellenwert wird um {7} erhöht.
+<style=Attenuated>Der Bonus wird jeden Morgen zurückgesetzt.</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Después de infligir {0} de daño o más con un solo impacto de {1}:
+{2} obtiene {3}.
+Aumenta el límite en {4}.
+Después de infligir {5} de daño o más con un solo uso de {2}:
+{1} obtiene {6} de <style=PerkDamage>daño de beneficio</style>.
+Aumenta el límite en {7}
+<style=Attenuated>Esta bonificación se restablece cada mañana.</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","Após causar {0} ou mais de dano em um único golpe de {1}:
+{2} recebe {3}
+Aumenta este limite em {4}
+Após causar {5} ou mais de dano com um único uso de {2}:
+{1} recebe {6} de <style=PerkDamage>Dano de Vantagem</style>.
+Aumenta este limite em {7}
+<style=Attenuated>A bonificação é redefinida todas as manhãs.</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","{1} 일격으로 {0} 이상의 피해를 준 후:
+{2}이(가) {3} 획득
+이 기준 {4}만큼 증가
+{2}을(를) 한 번 사용하여 {5} 이상의 피해를 준 후:
+{1}이(가) <style=PerkDamage>특전 피해</style> {6} 획득
+이 기준 {7}만큼 증가
+<style=Attenuated>보너스는 매일 아침 초기화</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
+PerkEffectInformations_MagicScepterUniquePerk,"Damage threshold: {8}
+{9}
+Damage threshold: {10}
+{11} <style=PerkDamage>Perk Damage</style>.","Seuil de dégât : {8}
+{9}
+Seuil de dégât : {10}
+{11} <style=PerkDamage>dégât de talent</style>.","伤害阈值：{8}点
+{9}
+伤害阈值：{10}
+{11}<style=PerkDamage>天赋伤害</style>。","傷害觸發條件：{8}
+{9}
+傷害觸發條件：{10}
+<style=PerkDamage>天賦傷害</style>{11}。","ダメージ数: {8}
+{9}
+ダメージ数: {10}
+{11} <style=PerkDamage>パークダメージ</style>。","Порог по урону: {8};
+{9}.
+Порог по урону: {10};
+{11} к <style=PerkDamage>особому урону</style>.","Порогове значення шкоди: {8}
+{9}
+Порогове значення шкоди: {10}
+{11} <style=PerkDamage>шкоди від риси</style>.","Schwellenwert für Schaden: {8}
+{9}
+Schwellenwert für Schaden: {10}
+{11} <style=PerkDamage>Vorteilsschaden</style>.","Umbral de daño: {8}
+{9}
+Umbral de daño: {10}
+{11} <style=PerkDamage>Daño de beneficio</style>.","Limite de dano: {8}
+{9}
+Limite de dano: {10}
+{11} de <style=PerkDamage>Dano de Vantagem</style>.","피해 기준: {8}
+{9}
+피해 기준: {10}
+{11} <style=PerkDamage>특전 피해</style>"
+ResearchDescription_HavenRunenbergResearch,"Grants the perk {0} to all Heroes.
+Adds <style=keyword>Dwarf</style> <style=perk>perks</style> into the <style=keyword>miscellaneous perk tree</style> (except that one) and <style=keyword>rerolls</style> all miscellaneous <style=perk>perk</style> trees.
+","Accorde le talent {0} a tous les Héros.
+Ajoute les <style=perk>talents</style> des <style=keyword>Nains</style> dans la <style=keyword>collection de talent Divers</style> (sauf celui-ci) et <style=keyword>relance</style> toutes les collections de talent Divers.
+","授予所有英雄天赋{0}。
+添加<style=keyword>矮人</style><style=perk>天赋</style>至<style=keyword>混杂天赋树</style>（该天赋除外），并<style=keyword>刷新</style>所有混杂<style=perk>天赋</style>树。
+","授予所有英雄天賦{0}。
+<style=keyword>「其他」天賦樹</style>新增<style=keyword>矮人</style><style=perk>天賦</style>（該天賦除外），同時<style=keyword>刷新</style>所有「其他」類別的<style=perk>天賦</style>樹。
+","全ヒーローにパーク{0}を付与する。
+<style=keyword>雑多なパークツリー</style>に<style=keyword>ドワーフ</style>の<style=perk>パーク</style>が追加され（このパークを除く）、すべての雑多な<style=perk>パーク</style>ツリーを<style=keyword>リロール</style>する。
+","Даёт всем героям особую черту {0}.
+Добавляет в <style=keyword>дерево различных особых черт</style> <style=perk>особые черты</style> <style=keyword>гномов</style> (кроме этой) и делает <style=keyword>переброс</style> всех деревьев различных <style=perk>особых черт</style>.
+","Надає всім героям рису {0}.
+Додає <style=perk>риси</style> <style=keyword>гномів</style> до <style=keyword>дерева різноманітних рис</style> (окрім цієї) й <style=keyword>оновлює</style> всі різноманітні дерева <style=perk>рис</style>.
+","Gewährt allen Helden den Vorteil {0}.
+Fügt dem <style=keyword>Sonstiges-Vorteilsbaum</style> <style=keyword>Zwerg</style>-<style=perk>Vorteile</style> hinzu (außer diesem) und <style=keyword>würfelt</style> alle sonstigen <style=perk>Vorteilsbäume</style> neu.
+","Otorga el beneficio {0} a todos los héroes.
+Añade <style=perk>beneficios</style> de <style=keyword>enano</style> al <style=keyword>árbol de beneficios variado</style> (excepto este) y modifica la <style=keyword>selección</style> de todos los árboles de <style=perk>beneficios</style> variados.
+","Concede a vantagem {0} a todos os heróis.
+Adiciona <style=perk>vantagens</style> de <style=keyword>Anão</style> à <style=keyword>árvore de vantagens variadas</style> (exceto esta) e <style=keyword>troca</style> todas as árvores de <style=perk>vantagens</style> variadas.
+","모든 영웅에게 특전 {0}을(를) 부여합니다.
+<style=keyword>드워프</style> <style=perk>특전</style>을 <style=keyword>기타 특전 트리</style>에 추가하고(해당 특전 제외), 모든 기타 <style=perk>특전</style> 트리를 <style=keyword>재굴림</style>합니다.
+"
+ResearchDescription_HavenAmberwaldResearch,"Grants the perk {0} to all Heroes.
+Adds <style=keyword>Elf</style> <style=perk>perks</style> into the <style=keyword>miscellaneous perk tree</style> and <style=keyword>rerolls</style> all miscellaneous <style=perk>perk</style> trees.
+","Accorde le talent {0} a tous les Héros.
+Ajoute les <style=perk>talents</style> des <style=keyword>Elfs</style> dans la <style=keyword>collection de talent Divers</style> et <style=keyword>relance</style> toutes les collections de talent Divers.
+","授予所有英雄天赋{0}。
+添加<style=keyword>精灵</style><style=perk>天赋</style>至<style=keyword>混杂天赋树</style>，并<style=keyword>刷新</style>所有混杂<style=perk>天赋</style>树。
+","授予所有英雄天賦{0}。
+<style=keyword>「其他」天賦樹</style>新增<style=keyword>精靈</style><style=perk>天賦</style>，同時<style=keyword>刷新</style>所有「其他」類別的<style=perk>天賦</style>樹。
+","全ヒーローにパーク{0}を付与する。
+<style=keyword>雑多なパークツリー</style>に<style=keyword>エルフ</style>の<style=perk>パーク</style>が追加され、すべての雑多な<style=perk>パーク</style>ツリーを<style=keyword>リロール</style>する。
+","Даёт всем героям особую черту {0}.
+Добавляет в <style=keyword>дерево различных особых черт</style> <style=perk>особые черты</style> <style=keyword>эльфов</style> и делает <style=keyword>переброс</style> всех деревьев различных <style=perk>особых черт</style>.
+","Надає всім героям рису {0}.
+Додає <style=perk>риси</style> <style=keyword>ельфів</style> до <style=keyword>дерева різноманітних рис</style> й <style=keyword>оновлює</style> всі різноманітні дерева <style=perk>рис</style>.
+","Gewährt allen Helden den Vorteil {0}.
+Fügt dem <style=keyword>Sonstiges-Vorteilsbaum</style> <style=keyword>Elfen</style>-<style=perk>Vorteile</style> hinzu und <style=keyword>würfelt</style> alle sonstigen <style=perk>Vorteilsbäume</style> neu.
+","Otorga el beneficio {0} a todos los héroes.
+Añade <style=perk>beneficios</style> de <style=keyword>elfo</style> al <style=keyword>árbol de beneficios variado</style> y modifica la <style=keyword>selección</style> de todos los árboles de <style=perk>beneficios</style> variados.
+","Concede a vantagem {0} a todos os heróis.
+Adiciona <style=perk>vantagens</style> de <style=keyword>Elfo</style> à <style=keyword>árvore de vantagens variadas</style> e <style=keyword>troca</style> todas as árvores de <style=perk>vantagens</style> variadas.
+","모든 영웅에게 특전 {0}을(를) 부여합니다.
+<style=keyword>엘프</style> <style=perk>특전</style>을 <style=keyword>기타 특전 트리</style>에 추가하고, 모든 기타 <style=perk>특전</style> 트리를 <style=keyword>재굴림</style>합니다.
+"
+PerkName_HeroesBlockPhysDamagePerk,The Rock,La Roche,石,堅石,岩,Камень,Камінь,Der Fels,La roca,Rocha,바위
+PerkDescription_HeroesBlockPhysDamagePerk,"Every {0} {1}: {2}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Tous les {0} {1}<nbsp>: {2}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","每{0}{1}：{2}。
+
+<style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","每{0}{1}：{2}。
+
+<style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","{0} {1}ごとに: {2}。
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","Каждые {0} ед. {1}: {2}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Кож. {0} од. {1}: {2}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Pro {0} {1}: {2}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Por cada {0} de {1}: {2}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","A cada {0} de {1}: {2}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","{0} {1}마다: {2}
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
+PerkEffectInformations_HeroesBlockPhysDamagePerk,"{3}
+Next step: {4}","{3}
+Prochaine étape<nbsp>: {4}","{3}
+下一阶段：{4}","{3}
+下一級：{4}","{3}
+次のステップ: {4}","{3}
+След. шаг бонуса: {4}","{3}
+Наступний крок: {4}","{3}
+Nächster Schritt: {4}","{3}
+Siguiente paso: {4}","{3}.
+Próximo passo: {4}.","{3}
+다음 단계: {4}"
+PerkName_HeroesSkillRangeRangedDamagePerk,The Wind,Le Vent,风,勁風,風,Ветер,Вітер,Der Wind,El viento,Vento,바람
+PerkDescription_HeroesSkillRangeRangedDamagePerk,"Every {0} {1}: {2}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Tous les {0} {1}<nbsp>: {2}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","每{0}{1}：{2}。
+
+<style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","每{0}{1}：{2}。
+
+<style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","{0} {1}ごとに: {2}。
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","Каждые {0} ед. {1}: {2}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Кож. {0} од. {1} після {2}: {3}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Pro {0} {1}: {2}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Por cada {0} de {1}: {2}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","A cada {0} de {1}: {2}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","{0} {1}마다: {2}
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
+PerkEffectInformations_HeroesSkillRangeRangedDamagePerk,"{3}
+Next step: {4}","{3}
+Prochaine étape<nbsp>: {4}","{3}
+下一阶段：{4}","{3}
+下一級：{4}","{3}
+次のステップ: {4}","{3}
+След. шаг бонуса: {4}","{3}
+Наступний крок: {4}","{3}
+Nächster Schritt: {4}","{3}
+Siguiente paso: {4}","{3}.
+Próximo passo: {4}.","{3}
+다음 단계: {4}"
+PerkName_HeroesManaRegMagicDamagePerk,The Water,L'Eau,水,淨水,水,Вода,Вода,Das Wasser,El agua,Água,물
+PerkDescription_HeroesManaRegMagicDamagePerk,"Every {0} {1}: {2}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Tous les {0} {1}<nbsp>: {2}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","每{0}{1}：{2}。
+
+<style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","每{0}{1}：{2}。
+
+<style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","{0} {1}ごとに: {2}。
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","Каждые {0} ед. {1}: {2}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Кож. {0} од. {1} після {2}: {3}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Pro {0} {1}: {2}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Por cada {0} de {1}: {2}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","A cada {0} de {1}: {2}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","{0} {1}마다: {2}
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
+PerkEffectInformations_HeroesManaRegMagicDamagePerk,"{3}
+Next step: {4}","{3}
+Prochaine étape<nbsp>: {4}","{3}
+下一阶段：{4}","{3}
+下一級：{4}","{3}
+次のステップ: {4}","{3}
+След. шаг бонуса: {4}","{3}
+Наступний крок: {4}","{3}
+Nächster Schritt: {4}","{3}
+Siguiente paso: {4}","{3}.
+Próximo passo: {4}.","{3}
+다음 단계: {4}"
+PerkDescription_HuntersArsenal,"Every {0} after {1}:
+All <style=KeyWord>non-<style=Poison>Poison</style></style> attacks using {2} and {3} get {4}.
+<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Tous les {0} après {1}<nbsp>:
+Toutes les attaques <style=KeyWord>non-<style=Poison>Poison</style></style> utilisant {2} et {3} obtiennent {4}.
+<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","达到{1}后每超出{0}：
+
+所有使用{2}和{3}的<style=KeyWord>非<style=Poison>中毒</style></style>攻击获得{4}。
+
+<style=""ElfIcon""></style><style=""ElfText"">《琥珀幽森的精灵》DLC</style>","{1}後，每有{0}：
+
+所有使用{2}和{3}的<style=KeyWord>非<style=Poison>中毒</style></style>攻擊獲得{4}。
+
+<style=""ElfIcon""></style><style=""ElfText"">〈琥珀幽森的精靈〉DLC</style>","{1}以降の{0}ごとに以下の効果を得る:
+
+{2}と{3}を使う全ての<style=Poison>毒</style><style=KeyWord>でない</style>攻撃が{4}を得る。
+
+<style=""ElfIcon""></style><style=""ElfText"">アンバーワルドのエルフDLC</style>","За каждые {0} свыше {1} ед.:
+
+все <style=KeyWord>не <style=Poison>отравляющие</style></style> атаки, наносящие {2} и {3}, дают {4}.
+
+<style=""ElfIcon""></style><style=""ElfText"">Дополнительный контент ""Elves of Amberwald""</style>","Кож. {0} після {1}:
+
+усі <style=KeyWord>атаки без <style=Poison>отрути</style></style> з використанням {2} та {3} отримують {4}.
+
+<style=""ElfIcon""></style><style=""ElfText"">Доповнення Elves of Amberwald</style>","Für je {0}, die den Wert {1} überschreiten, geschieht Folgendes:
+
+Alle Angriffe <style=KeyWord>ohne <style=Poison>Gift</style></style>, die {2} und {3} verwenden, erhalten {4}.
+
+<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Cada {0} pasados los {1}:
+
+Todos los ataques <style=KeyWord>que no sean de <style=Poison>veneno</style></style> que usen {2} y {3} obtienen {4}.
+
+<style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","Para cada {0} após {1}:
+
+Todos os ataques <style=KeyWord>sem <style=Poison>Envenenamento</style></style> que usam {2} e {3} recebem {4}.
+
+<style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","{1} 이후 {0}마다:
+
+{2}와(과) {3}을(를) 사용하는 <style=KeyWord><style=Poison>중독</style>이 아닌</style> 모든 공격이 {4} 획득
+
+<style=""ElfIcon""></style><style=""ElfText"">암버발트의 엘프 DLC</style>"
+PerkEffectInformations_HuntersArsenal,"Current bonus:
+{5}","Bonus actuel<nbsp>:
+{5}","当前加成：
+{5}","目前加成：
+{5}","現在のボーナス:
+{5}","Текущий бонус:
+{5}","Поточний бонус:
+{5}","Aktueller Bonus:
+{5}","Bonificación actual:
+{5}","Bônus atual:
+{5}","현재 보너스:
+{5}"
+PerkName_PanicMovePoint,Stay Panic,Panique générale,胆战心惊,持續恐慌,滞在パニック,Стимулирующая паника,Панікуйте на здоров'я,Immer mit der Panik,Pánico constante,Pânico Estático,공포 유지
+PerkDescription_PanicMovePoint,"Every {0} of the <style=Panic>Panic Gauge</style> filled, get:
+{1}
+{5}
+Over {7}: {8}
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Tous les {0} de la <style=Panic>jauge de panique</style> remplis, obtenez :
+{1}
+{5}
+Au-dessus de {7} : {8}
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>>","每填满{0}的<style=Panic>恐慌计量条</style>，获得：
+{1}
+{5}
+超过{7}时：{8}
+
+<style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","<style=Panic>恐慌值</style>每累積{0}，獲得：
+{1}
+{5}
+超過{7}時：{8}
+
+<style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","<style=Panic>パニックゲージ</style>が{0}溜まるごとに以下を獲得:
+{1}
+{5}
+{7}以上で: {8}
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","За каждые {0} <style=Panic>паники</style> герой получает:
+{1}
+{5}
+Свыше {7}: {8}
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","За кож. {0} од. <style=Panic>шкали паніки</style> надається:
+{1}
+{5}
+Понад {7}: {8}
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Pro {0}, die sich die <style=Panic>Panikleiste</style> füllt, erhältst du:
+{1}
+{5}
+Über {7}: {8}
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Por cada {0} del <style=Panic>medidor de pánico</style> que llenes, obtienes:
+{1}
+{5}
+Más de {7}: {8}
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","A cada {0} do <style=Panic>Medidor de Pânico</style> preenchido, receba:
+{1}.
+{5}
+Acima de {7}: {8}
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","채워진 <style=Panic>공포 게이지</style> {0}당 획득:
+{1}
+{5}
+{7} 초과 시: {8}
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
+PerkEffectInformations_PanicMovePoint,"Current Panic: {2}
+Current Bonus: {3}
+{6}
+{9}","Panique actuelle<nbsp>: {2}
+Bonus actuel<nbsp>: {3} {6}
+Au-dessus de {7}<nbsp>: {9}
+","当前恐慌度：{2}
+当前加成：{3} {6}
+超过{7}时：{9}
+","目前恐慌值{2}
+目前加成：{3} {6}
+超過{7}時：{9}
+","現在のパニック: {2}
+現在のボーナス: {3} {6}
+{7}以上で: {9}
+","Текущий уровень паники: {2};
+текущий бонус: {3} {6}
+Свыше {7}: {9}
+.","Поточна паніка: {2}
+Поточний бонус: {3} {6}
+Понад {7}: {9}
+","Aktuelle Panik: {2}
+Aktueller Bonus: {3} {6}
+Über {7}: {9}
+","Pánico actual: {2}
+Bonificación actual: {3} {6}
+Más de {7}: {9}
+","Pânico Atual: {2}
+Bônus Atual: {3} {6}
+Acima de {7}: {9}
+","현재 공포: {2}
+현재 보너스: {3} {6}
+{7} 초과 시: {9}"
+ResearchDescription_HavenGlintfeinResearch,"The effects of <style=keyword>Temple</style> and <style=keyword>Mana Well</style> are <style=good>doubled</style>, and actions no longer cost <style=Workers>Workers</style>.
+Grant {0} to <style=keyword>Temple</style> and {1} to <style=keyword>Mana Well</style>. They are only usable once per <style=night>night</style>.","Les effets du <style=keyword>Temple</style> et du <style=keyword>Puit de Mana</style> sont <style=good>doublés</style>, et les actions ne coûtent plus de <style=Workers>Ouvriers</style>.
+Confère {0} au <style=keyword>Temple</style> et {1} au <style=keyword>Puit de Mana</style>.Ils sont seulement utilisable une fois par <style=night>nuit</style>.","<style=keyword>神庙</style>和<style=keyword>魔泉</style>的效果<style=good>翻倍</style>，且操作不再消耗<style=Workers>工人</style>。
+<style=keyword>神庙</style>获得{0}，<style=keyword>魔泉</style>获得{1}。它们每个<style=night>夜晚</style>仅能使用一次。","<style=keyword>神廟</style>和<style=keyword>魔泉</style>的效果<style=good>翻倍</style>，且操作不再消耗<style=Workers>工人</style>。
+<style=keyword>神廟</style>獲得{0}，<style=keyword>魔泉</style>獲得{1}。以上兩種建築物每個<style=night>黑夜</style>只能使用一次。","<style=keyword>聖堂</style>と<style=keyword>マナの泉</style>の効果が<style=good>2倍</style>になり、アクションに<style=Workers>労働者</style>を消費しなくなる。
+<style=keyword>聖堂</style>が{0}を得て、<style=keyword>マナの泉</style>が{1}を得る。1<style=night>夜</style>に1度のみ使用可能。","Эффект от <style=keyword>Святилища</style> и <style=keyword>Источника маны</style> <style=good>удваивается</style>, а действия больше не стоят <style=Workers>рабочих</style>.
+<style=keyword>Святилище</style> получает ""{0}"", а <style=keyword>Источник маны</style> — ""{1}"". Их можно применить только раз за <style=night>ночь</style>.","Ефекти <style=keyword>храму</style> й <style=keyword>колодязя мани</style> <style=good>подвоюються</style>, а дії більше не потребують <style=Workers>робітників</style>.
+Дає «{0}» <style=keyword>храму</style> й «{1}» <style=keyword>колодязю мани</style>. Можна використати лише раз за <style=night>ніч</style>.","Die Effekte von <style=keyword>Tempel</style> und <style=keyword>Manabrunnen</style> werden <style=good>verdoppelt</style>, und Aktionen kosten keine <style=Workers>Arbeiter</style> mehr.
+Gewährt dem <style=keyword>Tempel</style> {0} und dem <style=keyword>Manabrunnen</style> {1}. Nur einmal pro <style=night>Nacht</style> nutzbar.","Los efectos del <style=keyword>templo</style> y el <style=keyword>pozo de maná</style> se <style=good>duplican</style>, y las acciones ya no cuestan <style=Workers>trabajadores</style>.
+Otorga {0} al <style=keyword>templo</style> y {1} al <style=keyword>pozo de maná</style>. Solo pueden utilizarse una vez por <style=night>noche</style>.","<style=good>Dobra</style> os efeitos do <style=keyword>Templo</style> e do <style=keyword>Poço de Mana</style>, e as ações não custam mais <style=Workers>Trabalhadores</style>.
+Concede {0} ao <style=keyword>Templo</style> e {1} ao <style=keyword>Poço de Mana</style>. Só é possível utilizá-los uma vez por <style=night>noite</style>.","<style=keyword>사원</style>과 <style=keyword>마나 우물</style>의 효과가 <style=good>2배</style>가 되며, 행동에 <style=Workers>일꾼</style>이 더 이상 소모되지 않습니다.
+<style=keyword>사원</style>에 {0}, <style=keyword>마나 우물</style>에 {1}을(를) 부여합니다. <style=night>밤</style>마다 한 번씩만 사용할 수 있습니다."
+ResearchDescription_VeteranGlenwaldResearch,<style=keyword>All structures</style> are <style=keyword>repaired for free</style> every <style=Production>morning</style>.,Toutes les <style=keyword>structures</style> sont <style=keyword>réparées gratuitement</style> chaque <style=Production>matin</style>.,每到<style=Production>早上</style>，<style=keyword>所有建筑物</style>会<style=keyword>免费修复</style>。,每個<style=Production>白天</style>，<style=keyword>免費修復</style><style=keyword>所有建築物</style>。,<style=Production>毎朝</style>、<style=keyword>全ての建造物</style>が<style=keyword>無料で修理</style>される。,С наступлением <style=Production>утра</style> все <style=keyword>строения</style> <style=keyword>ремонтируются бесплатно</style>.,<style=keyword>Усі споруди</style> <style=keyword>лагодяться задарма</style> <style=Production>щоранку</style>.,<style=keyword>Alle Gebäude</style> werden jeden <style=Production>Morgen</style> <style=keyword>umsonst repariert</style>.,Todas las <style=keyword>estructuras</style> se <style=keyword>reparan gratis</style> cada <style=Production>mañana</style>.,Todas as <style=keyword>estruturas</style> são <style=keyword>reparadas gratuitamente</style> a cada <style=Production>manhã</style>.,매일 <style=Production>아침</style> <style=keyword>모든 건물</style>이 <style=keyword>무료로 수리</style>됩니다.
+ResearchDescription_VeteranGlintfeinResearch,Decrease the cost of non-wall defenses by {1}. Increase <style=keyword>Defense</style> building <style=keyword>cap</style> by {0}.,Réduit le coût des défenses non murales de {1}. Augmente la <style=keyword>limite</style> des bâtiments de <style=keyword>Défense</style> de {0}.,非城墙防御设施的成本降低{1}。<style=keyword>防御设施</style>建筑的<style=keyword>数量上限</style>提高{0}。,非城牆防禦設施的成本降低{1}。<style=keyword>防禦設施</style><style=keyword>上限</style>提升{0}。,壁以外の防衛施設のコストを{1}減少させる。<style=keyword>防衛</style>施設の<style=keyword>上限</style>が{0}増加。,Уменьшает стоимость защитных сооружений (кроме стен) на {1}. <style=keyword>Максимум</style> <style=keyword>укреплений</style> увеличивается на {0}.,Зменшує вартість немурових оборонних споруд на {1}. Збільшує <style=keyword>ліміт</style> накопичення <style=keyword>захисту</style> на {0}.,Verringert die Kosten nicht-mauerartiger Verteidigungsanlagen um {1}. Erhöht das <style=keyword>Limit</style> von <style=keyword>Verteidigungsanlagen</style> um {0}.,Reduce el coste de las defensas que no sean murallas en {1}. Aumenta el <style=keyword>límite</style> de <style=keyword>defensas</style> del edificio en {0}.,Diminui o custo das defesas que não são muralhas em {1}. Aumenta o <style=keyword>limite</style> de construções de <style=keyword>Defesa</style> em {0}.,벽이 아닌 방어 시설의 비용이 {1}만큼 감소합니다. <style=keyword>방어 시설</style> 건물의 <style=keyword>한도</style>가 {0}만큼 증가합니다.
+ResearchDescription_CheaperProductionResearch,"Reduce the <style=keyword>cost</style> of production buildings and their <style=keyword>upgrades</style> by {0}.
+Increase production building <style=keyword>limit</style> by {1}.","Réduit le <style=keyword>coût</style> des bâtiments de production et de leurs <style=keyword>améliorations</style> de {0}.
+Augmente la <style=keyword>limite</style> de bâtiment de production de {1}.","生产类建筑及其<style=keyword>升级</style>的<style=keyword>成本</style>减少{0}。
+生产类建筑的<style=keyword>数量上限</style>增加{1}。","生產型建築及其<style=keyword>升級</style>的<style=keyword>消耗</style>降低{0}。
+生產型建築<style=keyword>上限</style>提升{1}。","製造施設とその<style=keyword>強化</style>の<style=keyword>コスト</style>を{0}減少させる。
+製造施設の<style=keyword>上限</style>が{1}増加する。","Снижает <style=keyword>стоимость</style> производственных зданий и их <style=keyword>улучшений</style> на {0}.
+Увеличивает <style=keyword>максимум</style> производственных зданий на {1}.","Знижує <style=keyword>вартість</style> виробничих споруд та їхніх <style=keyword>поліпшень</style> на {0}.
+Збільшує <style=keyword>ліміт</style> виробничих споруд на {1}.","Reduziert die <style=keyword>Kosten</style> von Produktionsgebäuden und ihren <style=keyword>Verbesserungen</style> um {0}.
+Erhöht das Produktionsgebäude-<style=keyword>Limit</style> um {1}.","Reduce el <style=keyword>coste</style> de los edificios de producción y sus <style=keyword>mejoras</style> en {0}.
+Aumenta el <style=keyword>límite</style> de los edificios de producción en {1}.","Reduz o <style=keyword>custo</style> de construções que produzem itens e suas <style=keyword>melhorias</style> em {0}.
+Aumenta o <style=keyword>limite</style> de construções que produzem itens em {1}.","생산 건물과 <style=keyword>강화</style>의 <style=keyword>비용</style>이 {0}만큼 감소합니다.
+생산 건물의 <style=keyword>상한</style>이 {1}만큼 증가합니다."
+PerkDescription_VolatileReaction,"<style=KeyWord>Propagation</style> can now bounce <style=KeyWord>diagonally</style>.
+{0}.
+Increases <style=KeyWord>Maximum</style>
+{1} by {2}.","La <style=KeyWord>Propagation</style> peut maintenant rebondir en <style=KeyWord>diagonale</style>.
+{0}.
+Augmente le <style=KeyWord>Maximum</style> de
+{1} de {2}.","<style=KeyWord>蔓延</style>可以<style=KeyWord>斜向</style>传递。
+{0}。
+提升<style=KeyWord>上限</style>
+{1}{2}。","<style=KeyWord>蔓延</style>可以<style=KeyWord>斜向</style>傳遞。
+{0}。
+提升<style=KeyWord>上限</style>
+{1}{2}。","<style=KeyWord>伝染</style>が<style=KeyWord>斜め方向</style>へ伝わるようになる。
+{0}。
+<style=KeyWord>最大</style>
+{1}が{2}増加する。","Атаки героя с эффектом <style=KeyWord>""Цепной удар""</style> могут перескакивать <style=KeyWord>по диагонали</style>.
+{0}.
+Повышает <style=KeyWord>макс.</style>
+{1} на {2}.","<style=KeyWord>Відскок</style> тепер працює <style=KeyWord>по діагоналі</style>.
+{0}.
+Збільшує <style=KeyWord>макс.</style>
+{1} на {2}.","<style=KeyWord>Ausbreitung</style> kann jetzt <style=KeyWord>diagonal</style> passieren.
+{0}.
+Erhöht den <style=KeyWord>Maximalwert</style> von
+{1} um {2}.","Permite que la <style=KeyWord>propagación</style> salte en <style=KeyWord>diagonal</style>.
+{0}.
+Aumenta el <style=KeyWord>máximo</style> de
+{1} en {2}.","Agora, <style=KeyWord>Propagação</style> pode ricochetear na <style=KeyWord>diagonal</style>.
+{0}.
+Aumenta o <style=KeyWord>Máximo</style> de
+{1} em {2}.","<style=KeyWord>전파</style> 효과를 <style=KeyWord>대각선</style>으로도 연쇄 가능
+{0}
+<style=KeyWord>최대</style>
+{1}을(를) {2}만큼 증가시킵니다."
+DivergenceEffectFullDescription_AddPerk_AdjacentBuildingMalusCurse,"When attacking a tile adjacent to an obstacle, the attack gets: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style> <style=divergenceOutline><style=accuracy>Accuracy</style></style>","Lorsqu'une tuile adjacente à un obstacle est attaquée, l'attaque obtient: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style> <style=divergenceOutline><style=accuracy>Précision</style></style>",若攻击的格子与障碍物相邻，则该攻击：<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style><style=divergenceOutline><style=accuracy>命中</style></style>,攻擊與障礙物相鄰的方格時，該攻擊獲得：<style=divergenceOutline><style=accuracy>命中</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style>。,物体に隣接したタイルを攻撃すると、攻撃が以下の効果を得る:<style=divergenceOutline><style=accuracy>精度</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style>,"Атакуя противника на ячейке, смежной с препятствием, вы получите <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style> к <style=divergenceOutline><style=accuracy>меткости</style></style>","<style=divergenceOutline><style=accuracy>Точність</style></style> атаки на плитку, суміжну з перешкодою, зменшується на <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style>","Beim Angriff auf ein Feld, das an ein Hindernis angrenzt, erhält der Angriff: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20 %</style></style> <style=divergenceOutline><style=accuracy>Genauigkeit</style></style>.","Al atacar una casilla adyacente a un obstáculo, el ataque obtiene: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20 %</style></style> de <style=divergenceOutline><style=accuracy>precisión</style></style>.","Quando atacar uma casa próxima a um obstáculo, o ataque recebe: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style> de <style=divergenceOutline><style=accuracy>Precisão</style></style>",장애물에 인접한 타일을 공격할 때 공격에 적용: <style=divergenceOutline><style=accuracy>명중률</style></style> <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-20%</style></style>
+DivergenceEffectFullDescriptionTooltip_AddPerk_AdjacentBuildingMalusCurse,"When attacking a tile adjacent to an obstacle, the attack gets: <style=KeywordNb>-20%</style> <style=accuracy>Accuracy</style>","Lorsqu'une tuile adjacente à un obstacle est attaquée, l'attaque obtient: <style=KeywordNb>-20%</style> <style=accuracy>Précision</style>",若攻击的格子与障碍物相邻，则该攻击：<style=KeywordNb>-20%</style><style=accuracy>命中</style>,攻擊與障礙物相鄰的方格時，該攻擊獲得：<style=accuracy>命中</style><style=KeywordNb>-20%</style>。,物体に隣接したタイルを攻撃すると、攻撃が以下の効果を得る:<style=accuracy>精度</style><style=KeywordNb>-20%</style>,"Атакуя противника на ячейке, смежной с препятствием, вы получите <style=KeywordNb>-20%</style> к <style=accuracy>меткости</style>","<style=accuracy>Точність</style> атаки на плитку, суміжну з перешкодою, зменшується на <style=KeywordNb>-20%</style>.","Beim Angriff auf ein Feld, das an ein Hindernis angrenzt, erhält der Angriff: <style=KeywordNb>-20 %</style> <style=accuracy>Genauigkeit</style>.","Al atacar una casilla adyacente a un obstáculo, el ataque obtiene: <style=KeywordNb>-20 %</style> de <style=accuracy>precisión</style>.","Quando atacar uma casa próxima a um obstáculo, o ataque recebe: <style=KeywordNb>-20%</style> de <style=accuracy>Precisão</style>",장애물에 인접한 타일을 공격할 때 공격에 적용: <style=accuracy>명중률</style> <style=KeywordNb>-20%</style>
+DivergenceEffectShortDescription_AddPerk_AdjacentBuildingMalusCurse,<style=Number>-20%</style> <style=accuracy>Accuracy</style>,<style=Number>-20%</style> <style=accuracy>Précision</style>,<style=Number>-20%</style> <style=accuracy>命中</style>,<style=accuracy>命中</style><style=Number>-20%</style>,<style=accuracy>精度</style><style=Number>-20%</style>,<style=Number>-20%</style> к <style=accuracy>меткости</style>,<style=Number>-20%</style> до <style=accuracy>точності</style>,<style=Number>-20 %</style> <style=accuracy>Genauigkeit</style>,<style=Number>-20 %</style> de <style=accuracy>precisión</style>,<style=Number>-20%</style> de <style=accuracy>Precisão</style>,<style=accuracy>명중률</style> <style=Number>-20%</style>
+DivergenceEffectFullDescription_AddPerk_AdjacentBuildingMalusCurse_2,"When attacking a tile adjacent to an obstacle, the attack gets: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40%</style></style> <style=divergenceOutline><style=accuracy>Accuracy</style></style>","Lorsqu'une tuile adjacente à un obstacle est attaquée, l'attaque obtient: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40%</style></style> <style=divergenceOutline><style=accuracy>Précision</style></style>",若攻击的格子与障碍物相邻，则该攻击：<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40%</style></style><style=divergenceOutline><style=accuracy>命中</style></style>,攻擊與障礙物相鄰的方格時，該攻擊獲得：<style=divergenceOutline><style=accuracy>命中</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40%</style></style>。,物体に隣接したタイルを攻撃すると、攻撃が以下の効果を得る:<style=divergenceOutline><style=accuracy>精度</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40%</style></style>,"Атакуя противника на ячейке, смежной с препятствием, вы получите <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40%</style></style> к <style=divergenceOutline><style=accuracy>меткости</style></style>","<style=divergenceOutline><style=accuracy>Точність</style></style> атаки на плитку, суміжну з перешкодою, зменшується на <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40%</style></style>","Beim Angriff auf ein Feld, das an ein Hindernis angrenzt, erhält der Angriff: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40 %</style></style> <style=divergenceOutline><style=accuracy>Genauigkeit</style></style>.","Al atacar una casilla adyacente a un obstáculo, el ataque obtiene: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40 %</style></style> de <style=divergenceOutline><style=accuracy>precisión</style></style>.","Quando atacar uma casa próxima a um obstáculo, o ataque recebe: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40%</style></style> de <style=divergenceOutline><style=accuracy>Precisão</style></style>",장애물에 인접한 타일을 공격할 때 공격에 적용: <style=divergenceOutline><style=accuracy>명중률</style></style> <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-40%</style></style>
+DivergenceEffectFullDescriptionTooltip_AddPerk_AdjacentBuildingMalusCurse_2,"When attacking a tile adjacent to an obstacle, the attack gets: <style=KeywordNb>-40%</style> <style=accuracy>Accuracy</style>","Lorsqu'une tuile adjacente à un obstacle est attaquée, l'attaque obtient: <style=KeywordNb>-40%</style> <style=accuracy>Précision</style>",若攻击的格子与障碍物相邻，则该攻击：<style=KeywordNb>-40%</style><style=accuracy>命中</style>,攻擊與障礙物相鄰的方格時，該攻擊獲得：<style=accuracy>命中</style><style=KeywordNb>-40%</style>。,物体に隣接したタイルを攻撃すると、攻撃が以下の効果を得る:<style=accuracy>精度</style><style=KeywordNb>-40%</style>,"Атакуя противника на ячейке, смежной с препятствием, вы получите <style=KeywordNb>-40%</style> к <style=accuracy>меткости</style>","<style=accuracy>Точність</style> атаки на плитку, суміжну з перешкодою, зменшується на <style=KeywordNb>-40%</style>","Beim Angriff auf ein Feld, das an ein Hindernis angrenzt, erhält der Angriff: <style=KeywordNb>-40 %</style> <style=accuracy>Genauigkeit</style>.","Al atacar una casilla adyacente a un obstáculo, el ataque obtiene: <style=KeywordNb>-40 %</style> de <style=accuracy>precisión</style>.","Quando atacar uma casa próxima a um obstáculo, o ataque recebe: <style=KeywordNb>-40%</style> de <style=accuracy>Precisão</style>",장애물에 인접한 타일을 공격할 때 공격에 적용: <style=accuracy>명중률</style> <style=KeywordNb>-40%</style>
+DivergenceEffectShortDescription_AddPerk_AdjacentBuildingMalusCurse_2,<style=Number>-40%</style> <style=accuracy>Accuracy</style>,<style=Number>-40%</style> <style=accuracy>Précision</style>,<style=Number>-40%</style> <style=accuracy>命中</style>,<style=accuracy>命中</style><style=Number>-40%</style>,<style=accuracy>精度</style><style=Number>-40%</style>,<style=Number>-40%</style> к <style=accuracy>меткости</style>,<style=Number>-40%</style> до <style=accuracy>точності</style>,<style=Number>-40 %</style> <style=accuracy>Genauigkeit</style>,<style=Number>-40 %</style> de <style=accuracy>precisión</style>,<style=Number>-40%</style> de <style=accuracy>Precisão</style>,<style=accuracy>명중률</style> <style=Number>-40%</style>
+DivergenceEffectFullDescription_AddPerk_ArmorBreakCurse,"When the Hero falls down to 0 <style=divergenceOutline><style=armor>Armor</style></style>, they take <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40%</style></style> of their Max <style=divergenceOutline><style=armor>Armor</style></style> value as damage.","Quand un Héros tombe à 0 d'<style=divergenceOutline><style=armor>Armure</style></style>, il subit <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40%</style></style> de son Maximum d'<style=divergenceOutline><style=armor>Armure</style></style> en dégâts.",英雄<style=divergenceOutline><style=armor>护甲</style></style>归零时会受到相当于自身<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40%</style></style>最大<style=divergenceOutline><style=armor>护甲</style></style>值的伤害。,英雄的<style=divergenceOutline><style=armor>護甲值</style></style>歸零時，該英雄受到最大<style=divergenceOutline><style=armor>護甲值</style></style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40%</style>的傷害。,英雄の<style=divergenceOutline><style=armor>アーマー</style></style>が0になると、<style=divergenceOutline><style=armor>アーマー</style></style>の最大値の<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40%</style></style>をダメージとして受ける。,"Если у героя остаётся 0 <style=divergenceOutline><style=armor>брони</style></style>, он получает урон в размере <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40%</style></style> от своего максимума <style=divergenceOutline><style=armor>брони</style></style>.","Коли в героя лишається 0 <style=divergenceOutline><style=armor>броні</style></style>, він зазнає шкоди, що дорівнює <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40%</style></style> від макс. <style=divergenceOutline><style=armor>броні</style></style> героя.","Wenn die <style=divergenceOutline><style=armor>Rüstung</style></style> des Helden auf 0 fällt, nimmt dieser <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40 %</style></style> seiner <style=divergenceOutline><style=armor>maximalen Rüstung</style></style> als Schaden.","Cuando la <style=divergenceOutline><style=armor>armadura</style></style> del héroe llega a 0, sufre un daño equivalente al <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40 %</style></style> de su <style=divergenceOutline><style=armor>armadura</style></style> máxima.","Quando o Herói fica com 0 de <style=divergenceOutline><style=armor>Armadura</style></style>, ele sofre <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40%</style></style> do Máximo de <style=divergenceOutline><style=armor>Armadura</style></style> como dano.","영웅의 <style=divergenceOutline><style=armor>장갑</style></style>이 0으로 떨어지면, 최대 <style=divergenceOutline><style=armor>장갑</style></style>의 <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>40%</style></style>를 피해로 받음"
+DivergenceEffectFullDescriptionTooltip_AddPerk_ArmorBreakCurse,"When the Hero falls down to 0 <style=armor>Armor</style>, they take <style=KeywordNb>40%</style> of their Max <style=armor>Armor</style> value as damage.","Quand un Héros tombe à 0 <style=armor>Armure</style>, il subit <style=KeywordNb>40%</style> de son Maximum d'<style=armor>Armure</style> en dégâts.",英雄<style=armor>护甲</style>归零时会受到相当于自身<style=KeywordNb>40%</style>最大<style=armor>护甲</style>值的伤害。,英雄的<style=armor>護甲值</style>歸零時，該英雄受到最大<style=armor>護甲值</style><style=KeywordNb>40%</style>的傷害。,英雄の<style=armor>アーマー</style>が0になると、<style=armor>アーマー</style>の最大値の<style=KeywordNb>40%</style>をダメージとして受ける。,"Если у героя остаётся 0 <style=armor>брони</style>, он получает урон в размере <style=KeywordNb>40%</style> от своего максимума <style=armor>брони</style>.","Коли в героя лишається 0 <style=armor>броні</style>, він зазнає шкоди, що дорівнює <style=KeywordNb>40%</style> від макс. <style=armor>броні</style> героя.","Wenn die <style=armor>Rüstung</style> des Helden auf 0 fällt, nimmt dieser <style=KeywordNb>40 %</style> seiner <style=armor>maximalen Rüstung</style> als Schaden.","Cuando la <style=armor>armadura</style> del héroe llega a 0, sufre un daño equivalente al <style=KeywordNb>40 %</style> de su <style=armor>armadura</style> máxima.","Quando o Herói fica com 0 de <style=armor>Armadura</style>, ele sofre <style=KeywordNb>40%</style> do Máximo de <style=armor>Armadura</style> como dano.","영웅의 <style=armor>장갑</style>이 0으로 떨어지면, 최대 <style=armor>장갑</style>의 <style=KeywordNb>40%</style>를 피해로 받음"
+DivergenceEffectShortDescription_AddPerk_ArmorBreakCurse,<style=Number>40%</style> of their Max <style=armor>Armor</style>,<style=Number>40%</style> de son Maximum d'<style=armor>Armure</style>,<style=Number>40%</style> 最大<style=armor>护甲</style>,最大<style=armor>護甲值</style><style=Number>40%</style>傷害,最大<style=armor>アーマー</style>の<style=Number>40%</style>,<style=Number>40%</style> от максимума <style=armor>брони</style>,<style=Number>40%</style> від макс. <style=armor>броні</style>,<style=Number>40 %</style> der <style=armor>maximalen Rüstung</style>,<style=Number>40 %</style> de su <style=armor>armadura</style> máxima,<style=Number>40%</style> da <style=armor>Armadura</style> Máxima,최대 <style=armor>장갑</style>의 <style=Number>40%</style>
+DivergenceEffectFullDescription_AddPerk_ArmorBreakCurse_2,"When the Hero falls down to 0 <style=divergenceOutline><style=armor>Armor</style></style>, they take <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style> of their Max <style=divergenceOutline><style=armor>Armor</style></style> value as damage.","Quand un Héros tombe à 0 d'<style=divergenceOutline><style=armor>Armure</style></style>, il subit <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style> de son Maximum d'<style=divergenceOutline><style=armor>Armure</style></style> en dégâts.",英雄<style=divergenceOutline><style=armor>护甲</style></style>归零时会受到相当于自身<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style>最大<style=divergenceOutline><style=armor>护甲</style></style>值的伤害。,英雄的<style=divergenceOutline><style=armor>護甲值</style></style>歸零時，該英雄受到最大<style=divergenceOutline><style=armor>護甲值</style></style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style>的傷害。,英雄の<style=divergenceOutline><style=armor>アーマー</style></style>が0になると、<style=divergenceOutline><style=armor>アーマー</style></style>の最大値の<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style>をダメージとして受ける。,"Если у героя остаётся 0 <style=divergenceOutline><style=armor>брони</style></style>, он получает урон в размере <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style> от своего максимума <style=divergenceOutline><style=armor>брони</style></style>.","Коли в героя лишається 0 <style=divergenceOutline><style=armor>броні</style></style>, він зазнає шкоди, що дорівнює <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style> від макс. <style=divergenceOutline><style=armor>броні</style></style> героя.","Wenn die <style=divergenceOutline><style=armor>Rüstung</style></style> des Helden auf 0 fällt, nimmt dieser <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80 %</style></style> seiner <style=divergenceOutline><style=armor>maximalen Rüstung</style></style> als Schaden.","Cuando la <style=divergenceOutline><style=armor>armadura</style></style> del héroe llega a 0, sufre un daño equivalente al <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80 %</style></style> de su <style=divergenceOutline><style=armor>armadura</style></style> máxima.","Quando o Herói fica com 0 de <style=divergenceOutline><style=armor>Armadura</style></style>, ele sofre <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style> do Máximo de <style=divergenceOutline><style=armor>Armadura</style></style> como dano.","영웅의 <style=divergenceOutline><style=armor>장갑</style></style>이 0으로 떨어지면, 최대 <style=divergenceOutline><style=armor>장갑</style></style>의 <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>80%</style></style>를 피해로 받음"
+DivergenceEffectFullDescriptionTooltip_AddPerk_ArmorBreakCurse_2,"When the Hero falls down to 0 <style=armor>Armor</style>, they take <style=KeywordNb>80%</style> of their Max <style=armor>Armor</style> value as damage.","Quand un Héros tombe à 0 <style=armor>Armure</style>, il subit <style=KeywordNb>80%</style> de son Maximum d'<style=armor>Armure</style> en dégâts.",英雄<style=armor>护甲</style>归零时会受到相当于自身<style=KeywordNb>80%</style>最大<style=armor>护甲</style>值的伤害。,英雄的<style=armor>護甲值</style>歸零時，該英雄受到最大<style=armor>護甲值</style><style=KeywordNb>80%</style>的傷害。,英雄の<style=armor>アーマー</style>が0になると、<style=armor>アーマー</style>の最大値の<style=KeywordNb>80%</style>をダメージとして受ける。,"Если у героя остаётся 0 <style=armor>брони</style>, он получает урон в размере <style=KeywordNb>80%</style> от своего максимума <style=armor>брони</style>.","Коли в героя лишається 0 <style=armor>броні</style>, він зазнає шкоди, що дорівнює <style=KeywordNb>80%</style> від макс. <style=armor>броні</style> героя.","Wenn die <style=armor>Rüstung</style> des Helden auf 0 fällt, nimmt dieser <style=KeywordNb>80 %</style> seiner <style=armor>maximalen Rüstung</style> als Schaden.","Cuando la <style=armor>armadura</style> del héroe llega a 0, sufre un daño equivalente al <style=KeywordNb>80 %</style> de su <style=armor>armadura</style> máxima.","Quando o Herói fica com 0 de <style=armor>Armadura</style>, ele sofre <style=KeywordNb>80%</style> do Máximo de <style=armor>Armadura</style> como dano.","영웅의 <style=armor>장갑</style>이 0으로 떨어지면, 최대 <style=armor>장갑</style>의 <style=KeywordNb>80%</style>를 피해로 받음"
+DivergenceEffectShortDescription_AddPerk_ArmorBreakCurse_2,<style=Number>80%</style> of their Max <style=armor>Armor</style>,<style=Number>80%</style> de son Maximum d'<style=armor>Armure</style>,<style=Number>80%</style> 最大<style=armor>护甲</style>,最大<style=armor>護甲值</style><style=Number>80%</style>傷害,最大<style=armor>アーマー</style>の<style=Number>80%</style>,<style=Number>80%</style> от максимума <style=armor>брони</style>,<style=Number>80%</style> від макс. <style=armor>броні</style>,<style=Number>80 %</style> der <style=armor>maximalen Rüstung</style>,<style=Number>80 %</style> de su <style=armor>armadura</style> máxima,<style=Number>80%</style> da <style=armor>Armadura</style> Máxima,최대 <style=armor>장갑</style>의 <style=Number>80%</style>
+DivergenceEffectFullDescription_AddPerk_BadMovementCurse,"Every <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> tiles travelled, the next skill gets: -50% <style=divergenceOutline><style=overalldamage>Damage</style></style>","Toutes les <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> tuiles traversées, la prochaine compétence obient<nbsp>: -50% <style=divergenceOutline><style=overalldamage>Dégâts</style></style>",每移动<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style>格，下次技能：-50%<style=divergenceOutline><style=overalldamage>伤害</style></style>,每移動<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style>格，下一次技能獲得：<style=divergenceOutline><style=overalldamage>傷害</style></style>-50%,<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style>タイル移動するごとに、次のスキルが以下の効果を得る:<style=divergenceOutline><style=overalldamage>ダメージ</style></style>-50%,После каждых <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> пройденных ячеек герои наносят следующим навыком на 30% меньше <style=divergenceOutline><style=overalldamage>урона</style></style>,За кожні <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> подоланих плиток <style=divergenceOutline><style=overalldamage>шкода</style></style> наступної навички знижується на -50%,Für alle <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> zurückgelegten Felder erhält die nächste Fähigkeit: -50 % <style=divergenceOutline><style=overalldamage>Schaden</style></style>,"Por cada <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> casillas recorridas, la siguiente habilidad obtiene: -50 % de <style=divergenceOutline><style=overalldamage>daño</style></style>.","A cada <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> casas percorridas, a próxima habilidade recebe: -50% de <style=divergenceOutline><style=overalldamage>Dano</style></style>",<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style>타일 이동할 때마다 다음 스킬에 적용: <style=divergenceOutline><style=overalldamage>피해</style></style> -50%
+DivergenceEffectFullDescriptionTooltip_AddPerk_BadMovementCurse,"Every <style=KeywordNb>4</style> tiles travelled, the next skill gets: -50% <style=overalldamage>Damage</style>","Toutes les <style=KeywordNb>4</style> tuiles traversées, la prochaine compétence obient<nbsp>: -50% <style=overalldamage>Dégâts</style>",每移动<style=KeywordNb>4</style>格，下次技能：-50%<style=overalldamage>伤害</style>,每移動<style=KeywordNb>4</style>格，下一次技能獲得：<style=overalldamage>傷害</style>-50%,<style=KeywordNb>4</style>タイル移動するごとに、次のスキルが以下の効果を得る:<style=overalldamage>ダメージ</style>-50%,После каждых <style=KeywordNb>4</style> пройденных ячеек герои наносят следующим навыком на 30% меньше <style=overalldamage>урона</style>,За кожні <style=KeywordNb>4</style> подоланих плиток <style=overalldamage>шкода</style> наступної навички знижується на -50%,Für alle <style=KeywordNb>4</style> zurückgelegten Felder erhält die nächste Fähigkeit: -50 % <style=overalldamage>Schaden</style>,"Por cada <style=KeywordNb>4</style> casillas recorridas, la siguiente habilidad obtiene: -50 % de <style=overalldamage>daño</style>.","A cada <style=KeywordNb>4</style> casas percorridas, a próxima habilidade recebe: -50% de <style=overalldamage>Dano</style>",<style=KeywordNb>4</style>타일 이동할 때마다 다음 스킬에 적용: <style=overalldamage>피해</style> -50%
+DivergenceEffectShortDescription_AddPerk_BadMovementCurse,Every <style=Number>4</style> tiles,Toutes les <style=Number>4</style> tuiles,每移动<style=Number>4</style>格,每<style=Number>4</style>格,<style=Number>4</style>タイルごと,После каждых <style=Number>4</style> ячеек,Кожні <style=Number>4</style> плиток,Alle <style=Number>4</style> Felder,Por cada <style=Number>4</style> casillas,A cada <style=Number>4</style> casas,<style=Number>4</style>타일마다
+DivergenceEffectFullDescription_AddPerk_BadMovementCurse_2,"Every <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>2</style></style> tiles travelled, the next skill gets: -50% <style=divergenceOutline><style=overalldamage>Damage</style></style>","Toutes les <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>2</style></style> tuiles traversées, la prochaine compétence obient<nbsp>: -50% <style=divergenceOutline><style=overalldamage>Dégâts</style></style>",每移动<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>2</style></style>格，下次技能：-50%<style=divergenceOutline><style=overalldamage>伤害</style></style>,每移動<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>2</style></style>格，下一次技能獲得：<style=divergenceOutline><style=overalldamage>傷害</style></style>-50%,<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>2</style></style>タイル移動するごとに、次のスキルが以下の効果を得る:<style=divergenceOutline><style=overalldamage>ダメージ</style></style>-50%,После каждых <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>2</style></style> пройденных ячеек герои наносят следующим навыком на 30% меньше <style=divergenceOutline><style=overalldamage>урона</style></style>,За кожні <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>2</style></style> подолані плитки <style=divergenceOutline><style=overalldamage>шкода</style></style> наступної навички знижується на -50%,Für alle <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>2</style></style> zurückgelegten Felder erhält die nächste Fähigkeit: -50 % <style=divergenceOutline><style=overalldamage>Schaden</style></style>,"Por cada <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>2</style></style> casillas recorridas, la siguiente habilidad obtiene: -50 % de <style=divergenceOutline><style=overalldamage>daño</style></style>.","A cada <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>2</style></style> casas percorridas, a próxima habilidade recebe: -50% de <style=divergenceOutline><style=overalldamage>Dano</style></style>",<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>2</style></style>타일 이동할 때마다 다음 스킬에 적용: <style=divergenceOutline><style=overalldamage>피해</style></style> -50%
+DivergenceEffectFullDescriptionTooltip_AddPerk_BadMovementCurse_2,"Every <style=KeywordNb>2</style> tiles travelled, the next skill gets: -50% <style=overalldamage>Damage</style>","Toutes les <style=KeywordNb>2</style> tuiles traversées, la prochaine compétence obient<nbsp>: -50% <style=overalldamage>Dégâts</style>",每移动<style=KeywordNb>2</style>格，下次技能：-50%<style=overalldamage>伤害</style>,每移動<style=KeywordNb>2</style>格，下一次技能獲得：<style=overalldamage>傷害</style>-50%,<style=KeywordNb>2</style>タイル移動するごとに、次のスキルが以下の効果を得る:<style=overalldamage>ダメージ</style>-50%,После каждых <style=KeywordNb>2</style> пройденных ячеек герои наносят следующим навыком на 30% меньше <style=overalldamage>урона</style>,За кожні <style=KeywordNb>2</style> подолані плитки <style=overalldamage>шкода</style> наступної навички знижується на -50%,Für alle <style=KeywordNb>2</style> zurückgelegten Felder erhält die nächste Fähigkeit: -50 % <style=overalldamage>Schaden</style>,"Por cada <style=KeywordNb>2</style> casillas recorridas, la siguiente habilidad obtiene: -50 % de <style=overalldamage>daño</style>.","A cada <style=KeywordNb>2</style> casas percorridas, a próxima habilidade recebe: -50% de <style=overalldamage>Dano</style>",<style=KeywordNb>2</style>타일 이동할 때마다 다음 스킬에 적용: <style=overalldamage>피해</style> -50%
+DivergenceEffectShortDescription_AddPerk_BadMovementCurse_2,Every <style=Number>2</style> tiles,Toutes les <style=Number>2</style> tuiles,每移动<style=Number>2</style>格,每<style=Number>2</style>格,<style=Number>2</style>タイルごと,После каждых <style=Number>2</style> ячеек,Кожні <style=Number>2</style> плитки,Alle <style=Number>2</style> Felder,Por cada <style=Number>2</style> casillas,A cada <style=Number>2</style> casas,<style=Number>2</style>타일마다
+DivergenceEffectFullDescription_AddPerk_HitArmorCurse,"After dealing damage to the <style=divergenceOutline><style=armor>Armor</style></style> of an enemy, the Hero loses <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>5</style></style> <style=divergenceOutline><style=healthtotal>Health</style></style>.","Après avoir fait des dégâts à l'<style=divergenceOutline><style=armor>Armure</style></style> d'un ennemi, le Héros perd <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>5</style></style> <style=divergenceOutline><style=healthtotal>Vie</style></style>.",对敌人的<style=divergenceOutline><style=armor>护甲</style></style>造成伤害后，英雄失去<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>5</style></style>点<style=divergenceOutline><style=healthtotal>生命值</style></style>。,英雄對敵人的<style=divergenceOutline><style=armor>護甲</style></style>造成傷害後，損失<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>5</style></style>點<style=divergenceOutline><style=healthtotal>生命值</style></style>。,エネミーの<style=divergenceOutline><style=armor>アーマー</style></style>にダメージを与えると、英雄が<style=divergenceOutline><style=healthtotal>体力</style></style>を<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>5</style></style>失う。,"Повреждая <style=divergenceOutline><style=armor>броню</style></style> противника, герои теряют <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>5</style></style> <style=divergenceOutline><style=healthtotal>ОЗ</style></style>.","Завдавши шкоди <style=divergenceOutline><style=armor>броні</style></style> ворога, герой втрачає <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>5</style></style> од. <style=divergenceOutline><style=healthtotal>здоров'я</style></style>.","Nachdem der <style=divergenceOutline><style=armor>Rüstung</style></style> eines Gegners Schaden zugefügt wurde, verliert der Held <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>5</style></style> <style=divergenceOutline><style=healthtotal>Gesundheit</style></style>.","Al infligir daño a la <style=divergenceOutline><style=armor>armadura</style></style> de un enemigo, el héroe pierde <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>5</style></style> de <style=divergenceOutline><style=healthtotal>salud</style></style>.","Após causar dano à <style=divergenceOutline><style=armor>Armadura</style></style> de um inimigo, o Herói perde <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>5</style></style> de <style=divergenceOutline><style=healthtotal>Vida</style></style>.","적의 <style=divergenceOutline><style=armor>장갑</style></style>에 피해를 준 후, 영웅이 <style=divergenceOutline><style=healthtotal>체력</style></style> <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>5</style></style> 상실"
+DivergenceEffectFullDescriptionTooltip_AddPerk_HitArmorCurse,"After dealing damage to the <style=armor>Armor</style> of an enemy, the Hero loses <style=KeywordNb>5</style> <style=healthtotal>Health</style>.","Après avoir fait des dégâts à l'<style=armor>Armure</style> d'un ennemi, le Héros perd <style=DivergenceKeywordOutline>5</style> <style=divergenceOutline><style=healthtotal>Vie</style></style>.",对敌人的<style=armor>护甲</style>造成伤害后，英雄失去<style=KeywordNb>5</style>点<style=healthtotal>生命值</style>。,英雄對敵人的<style=armor>護甲</style>造成傷害後，損失<style=KeywordNb>5</style>點<style=healthtotal>生命值</style>。,エネミーの<style=armor>アーマー</style>にダメージを与えると、英雄が<style=healthtotal>体力</style>を<style=KeywordNb>5</style>失う。,"Повреждая <style=armor>броню</style> противника, герои теряют <style=KeywordNb>5</style> <style=healthtotal>ОЗ</style>.","Завдавши шкоди <style=armor>броні</style> ворога, герой втрачає <style=KeywordNb>5</style> од. <style=healthtotal>здоров'я</style>.","Nachdem der <style=armor>Rüstung</style> eines Gegners Schaden zugefügt wurde, verliert der Held <style=KeywordNb>5</style> <style=healthtotal>Gesundheit</style>.","Al infligir daño a la <style=armor>armadura</style> de un enemigo, el héroe pierde <style=KeywordNb>5</style> de <style=healthtotal>salud</style>.","Após causar dano à <style=armor>Armadura</style> de um inimigo, o Herói perde <style=KeywordNb>5</style> de <style=healthtotal>Vida</style>.","적의 <style=armor>장갑</style>에 피해를 준 후, 영웅이 <style=healthtotal>체력</style> <style=KeywordNb>5</style> 상실"
+DivergenceEffectShortDescription_AddPerk_HitArmorCurse,The Hero loses <style=Number>5</style> <style=healthtotal>Health</style>.,Le Héros perd <style=Number>5</style> <style=healthtotal>Vie</style>.,英雄失去<style=Number>5</style>点<style=healthtotal>生命值</style>。,英雄損失<style=Number>5</style>點<style=healthtotal>生命值</style>。,英雄が<style=healthtotal>体力</style>を<style=Number>5</style>失う。,Герои теряют по <style=Number>5</style> <style=healthtotal>ОЗ</style>.,Герой втрачає <style=Number>5</style> од. <style=healthtotal>здоров'я</style>.,Der Held verliert <style=Number>5</style> <style=healthtotal>Gesundheit</style>.,El héroe pierde <style=Number>5</style> de <style=healthtotal>salud</style>.,O Herói perde <style=Number>5</style> de <style=healthtotal>Vida</style>.,영웅이 <style=healthtotal>체력</style> <style=Number>5</style> 상실
+DivergenceEffectFullDescription_AddPerk_HitArmorCurse_2,"After dealing damage to the <style=divergenceOutline><style=armor>Armor</style></style> of an enemy, the Hero loses <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>10</style></style> <style=divergenceOutline><style=healthtotal>Health</style></style>.","Après avoir fait des dégâts à l'<style=divergenceOutline><style=armor>Armure</style></style> d'un ennemi, le Héros perd <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>10</style></style> <style=divergenceOutline><style=healthtotal>Vie</style></style>.",对敌人的<style=divergenceOutline><style=armor>护甲</style></style>造成伤害后，英雄失去<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>10</style></style>点<style=divergenceOutline><style=healthtotal>生命值</style></style>。,英雄對敵人的<style=divergenceOutline><style=armor>護甲</style></style>造成傷害後，損失<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>10</style></style>點<style=divergenceOutline><style=healthtotal>生命值</style></style>。,エネミーの<style=divergenceOutline><style=armor>アーマー</style></style>にダメージを与えると、英雄が<style=divergenceOutline><style=healthtotal>体力</style></style>を<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>10</style></style>失う。,"Повреждая <style=divergenceOutline><style=armor>броню</style></style> противника, герои теряют <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>10</style></style> <style=divergenceOutline><style=healthtotal>ОЗ</style></style>.","Завдавши шкоди <style=divergenceOutline><style=armor>броні</style></style> ворога, герой втрачає <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>10</style></style> од. <style=divergenceOutline><style=healthtotal>здоров'я</style></style>.","Nachdem der <style=divergenceOutline><style=armor>Rüstung</style></style> eines Gegners Schaden zugefügt wurde, verliert der Held <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>10</style></style> <style=divergenceOutline><style=healthtotal>Gesundheit</style></style>.","Al infligir daño a la <style=divergenceOutline><style=armor>armadura</style></style> de un enemigo, el héroe pierde <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>10</style></style> de <style=divergenceOutline><style=healthtotal>salud</style></style>.","Após causar dano à <style=divergenceOutline><style=armor>Armadura</style></style> de um inimigo, o Herói perde <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>10</style></style> de <style=divergenceOutline><style=healthtotal>Vida</style></style>.","적의 <style=divergenceOutline><style=armor>장갑</style></style>에 피해를 준 후, 영웅이 <style=divergenceOutline><style=healthtotal>체력</style></style> <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>10</style></style> 상실"
+DivergenceEffectFullDescriptionTooltip_AddPerk_HitArmorCurse_2,"After dealing damage to the <style=armor>Armor</style> of an enemy, the Hero loses <style=KeywordNb>10</style> <style=healthtotal>Health</style>.","Après avoir fait des dégâts à l'<style=divergenceOutline><style=armor>Armure</style></style> d'un ennemi, le Héros perd <style=KeywordNb>10</style> <style=healthtotal>Vie</style>.",对敌人的<style=armor>护甲</style>造成伤害后，英雄失去<style=KeywordNb>10</style>点<style=healthtotal>生命值</style>。,英雄對敵人的<style=armor>護甲</style>造成傷害後，損失<style=KeywordNb>10</style>點<style=healthtotal>生命值</style>。,エネミーの<style=armor>アーマー</style>にダメージを与えると、英雄が<style=healthtotal>体力</style>を<style=KeywordNb>10</style>失う。,"Повреждая <style=armor>броню</style> противника, герои теряют <style=KeywordNb>10</style> <style=healthtotal>ОЗ</style>.","Завдавши шкоди <style=armor>броні</style> ворога, герой втрачає <style=KeywordNb>10</style> од. <style=healthtotal>здоров'я</style>.","Nachdem der <style=armor>Rüstung</style> eines Gegners Schaden zugefügt wurde, verliert der Held <style=KeywordNb>10</style> <style=healthtotal>Gesundheit</style>.","Al infligir daño a la <style=armor>armadura</style> de un enemigo, el héroe pierde <style=KeywordNb>10</style> de <style=healthtotal>salud</style>.","Após causar dano à <style=armor>Armadura</style> de um inimigo, o Herói perde <style=KeywordNb>10</style> de <style=healthtotal>Vida</style>.","적의 <style=armor>장갑</style>에 피해를 준 후, 영웅이 <style=healthtotal>체력</style> <style=KeywordNb>10</style> 상실"
+DivergenceEffectShortDescription_AddPerk_HitArmorCurse_2,The Hero loses <style=Number>10</style> <style=healthtotal>Health</style>.,Le Héros perd <style=Number>10</style> <style=healthtotal>Vie</style>.,英雄失去<style=Number>10</style>点<style=healthtotal>生命值</style>。,英雄損失<style=Number>10</style>點<style=healthtotal>生命值</style>。,英雄が<style=healthtotal>体力</style>を<style=Number>10</style>失う。,Герои теряют по <style=Number>10</style> <style=healthtotal>ОЗ</style>.,Герой втрачає <style=Number>10</style> од. <style=healthtotal>здоров'я</style>.,Der Held verliert <style=Number>10</style> <style=healthtotal>Gesundheit</style>.,El héroe pierde <style=Number>10</style> de <style=healthtotal>salud</style>.,O Herói perde <style=Number>10</style> de <style=healthtotal>Vida</style>.,영웅이 <style=healthtotal>체력</style> <style=Number>10</style> 상실
+DivergenceEffectFullDescription_AddPerk_ManaDrainCurse,"Every <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>8</style></style> enemies killed, the Hero loses 5 <style=divergenceOutline><style=manatotal>Mana</style></style>. The modifier is reset every turn.","Tous les <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>8</style></style> ennemis tués, le Héros perd 5 <style=divergenceOutline><style=manatotal>Mana</style></style>. Le modificateur est réinitisalisé à chaque tour.",每击杀<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>8</style></style>名敌人，英雄就会失去5点<style=divergenceOutline><style=manatotal>法力值</style></style>。计数每回合重置。,英雄每擊殺<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>8</style></style>個敵人，損失5點<style=divergenceOutline><style=manatotal>法力值</style></style>。此效果每回合重置。,エネミーを<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>8</style></style>体倒すごとに、英雄が5<style=divergenceOutline><style=manatotal>マナ</style></style>を失う。この効果は毎ターンリセットされる。,За каждых <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>8</style></style> убитых врагов герои теряют по 5 ед. <style=divergenceOutline><style=manatotal>маны</style></style>. Этот эффект сбрасывается каждый ход.,За кожних <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>8</style></style> убитих ворогів герой втрачає 5 од. <style=divergenceOutline><style=manatotal>мани</style></style>. Щоходу цей модифікатор скидається.,Für alle <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>8</style></style> getöteten Gegner verliert der Held 5 <style=divergenceOutline><style=manatotal>Mana</style></style>. Der Modifikator wird in jeder Runde zurückgesetzt.,"Por cada <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>8</style></style> enemigos muertos, el héroe pierde 5 de <style=divergenceOutline><style=manatotal>maná</style></style>. Este modificador se reinicia cada turno.","A cada <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>8</style></style> inimigos abatidos, o Herói perde 5 de <style=divergenceOutline><style=manatotal>Mana</style></style>. O modificador é redefinido a cada turno.",적 <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>8</style></style>명을 처치할 때마다 영웅이 <style=divergenceOutline><style=manatotal>마나</style></style> 5 상실. 보정치는 턴마다 초기화.
+DivergenceEffectFullDescriptionTooltip_AddPerk_ManaDrainCurse,"Every <style=KeywordNb>8</style> enemies killed, the Hero loses 5 <style=manatotal>Mana</style>. The modifier is reset every turn.","Tous les <style=KeywordNb>8</style> ennemis tués, le Héros perd 5 <style=manatotal>Mana</style>. Le modificateur est réinitisalisé à chaque tour.",每击杀<style=KeywordNb>8</style>名敌人，英雄就会失去5点<style=manatotal>法力值</style>。计数每回合重置。,英雄每擊殺<style=KeywordNb>8</style>個敵人，損失5點<style=manatotal>法力值</style>。此效果每回合重置。,エネミーを<style=KeywordNb>8</style>体倒すごとに、英雄が5<style=manatotal>マナ</style>を失う。この効果は毎ターンリセットされる。,За каждых <style=KeywordNb>8</style> убитых врагов герои теряют по 5 ед. <style=manatotal>маны</style>. Этот эффект сбрасывается каждый ход.,За кожних <style=KeywordNb>8</style> убитих ворогів герой втрачає 5 од. <style=manatotal>мани</style>. Щоходу цей модифікатор скидається.,Für alle <style=KeywordNb>8</style> getöteten Gegner verliert der Held 5 <style=manatotal>Mana</style>. Der Modifikator wird in jeder Runde zurückgesetzt.,"Por cada <style=KeywordNb>8</style> enemigos muertos, el héroe pierde 5 de <style=manatotal>maná</style>. Este modificador se reinicia cada turno.","A cada <style=KeywordNb>8</style> inimigos abatidos, o Herói perde 5 de <style=manatotal>Mana</style>. O modificador é redefinido a cada turno.",적 <style=KeywordNb>8</style>명을 처치할 때마다 영웅이 <style=manatotal>마나</style> 5 상실. 보정치는 턴마다 초기화.
+DivergenceEffectShortDescription_AddPerk_ManaDrainCurse,Every <style=Number>8</style> enemies killed,Tous les <style=Number>8</style> ennemis tués,每击杀<style=Number>8</style>名敌人,每擊殺<style=Number>8</style>個敵人,エネミーを<style=Number>8</style>体倒すごと,За каждых <style=Number>8</style> убитых врагов,За кожних <style=Number>8</style> убитих ворогів,Alle <style=Number>8</style> getöteten Gegner,Por cada <style=Number>8</style> enemigos muertos,A cada <style=Number>8</style> inimigos abatidos,적 <style=Number>8</style>명을 처치할 때마다
+DivergenceEffectFullDescription_AddPerk_ManaDrainCurse_2,"Every <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> enemies killed, the Hero loses 5 <style=divergenceOutline><style=manatotal>Mana</style></style>. The modifier is reset every turn.","Tous les <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> ennemis tués, le Héros perd 5 <style=divergenceOutline><style=manatotal>Mana</style></style>. Le modificateur est réinitisalisé à chaque tour.",每击杀<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style>名敌人，英雄就会失去5点<style=divergenceOutline><style=manatotal>法力值</style></style>。计数每回合重置。,英雄每擊殺<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style>個敵人，損失5點<style=divergenceOutline><style=manatotal>法力值</style></style>。此效果每回合重置。,エネミーを<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style>体倒すごとに、英雄が5<style=divergenceOutline><style=manatotal>マナ</style></style>を失う。この効果は毎ターンリセットされる。,За каждых <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> убитых врагов герои теряют по 5 ед. <style=divergenceOutline><style=manatotal>маны</style></style>. Этот эффект сбрасывается каждый ход.,За кожних <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> убитих ворогів герой втрачає 5 од. <style=divergenceOutline><style=manatotal>мани</style></style>. Щоходу цей модифікатор скидається.,Für alle <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> getöteten Gegner verliert der Held 5 <style=divergenceOutline><style=manatotal>Mana</style></style>. Der Modifikator wird in jeder Runde zurückgesetzt.,"Por cada <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> enemigos muertos, el héroe pierde 5 de <style=divergenceOutline><style=manatotal>maná</style></style>. Este modificador se reinicia cada turno.","A cada <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style> inimigos abatidos, o Herói perde 5 de <style=divergenceOutline><style=manatotal>Mana</style></style>. O modificador é redefinido a cada turno.",적 <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>4</style></style>명을 처치할 때마다 영웅이 <style=divergenceOutline><style=manatotal>마나</style></style> 5 상실. 보정치는 턴마다 초기화.
+DivergenceEffectFullDescriptionTooltip_AddPerk_ManaDrainCurse_2,"Every <style=KeywordNb>4</style> enemies killed, the Hero loses 5 <style=manatotal>Mana</style>. The modifier is reset every turn.","Tous les <style=KeywordNb>4</style> ennemis tués, le Héros perd 5 <style=manatotal>Mana</style>. Le modificateur est réinitisalisé à chaque tour.",每击杀<style=KeywordNb>4</style>名敌人，英雄就会失去5点<style=manatotal>法力值</style>。计数每回合重置。,英雄每擊殺<style=KeywordNb>4</style>個敵人，損失5點<style=manatotal>法力值</style>。此效果每回合重置。,エネミーを<style=KeywordNb>4</style>体倒すごとに、英雄が5<style=manatotal>マナ</style>を失う。この効果は毎ターンリセットされる。,За каждых <style=KeywordNb>4</style> убитых врагов герои теряют по 5 ед. <style=manatotal>маны</style>. Этот эффект сбрасывается каждый ход.,За кожних <style=KeywordNb>4</style> убитих ворогів герой втрачає 5 од. <style=manatotal>мани</style>. Щоходу цей модифікатор скидається.,Für alle <style=KeywordNb>4</style> getöteten Gegner verliert der Held 5 <style=manatotal>Mana</style>. Der Modifikator wird in jeder Runde zurückgesetzt.,"Por cada <style=KeywordNb>4</style> enemigos muertos, el héroe pierde 5 de <style=manatotal>maná</style>. Este modificador se reinicia cada turno.","A cada <style=KeywordNb>4</style> inimigos abatidos, o Herói perde 5 de <style=manatotal>Mana</style>. O modificador é redefinido a cada turno.",적 <style=KeywordNb>4</style>명을 처치할 때마다 영웅이 <style=manatotal>마나</style> 5 상실. 보정치는 턴마다 초기화.
+DivergenceEffectShortDescription_AddPerk_ManaDrainCurse_2,Every <style=Number>4</style> enemies killed,Tous les <style=Number>4</style> ennemis tués,每击杀<style=Number>4</style>名敌人,每擊殺<style=Number>4</style>個敵人,エネミーを<style=Number>4</style>体倒すごと,За каждых <style=Number>4</style> убитых врагов,За кожних <style=Number>4</style> убитих ворогів,Alle <style=Number>4</style> getöteten Gegner,Por cada <style=Number>4</style> enemigos muertos,A cada <style=Number>4</style> inimigos abatidos,적 <style=Number>4</style>명을 처치할 때마다
+DivergenceEffectFullDescription_AddPerk_MissingManaCurse,Every <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>12%</style></style> of missing <style=divergenceOutline><style=manatotal>Mana</style></style>: -1 <style=DivergenceOutline><style=movepoints>Move</style></style>,Tous les <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>12%</style></style> de <style=divergenceOutline><style=manatotal>Mana</style></style> manquant<nbsp>: -1 <style=DivergenceOutline><style=movepoints>Mouvement</style></style>,每缺失<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>12%</style></style><style=divergenceOutline><style=manatotal>法力值</style></style>：-1<style=DivergenceOutline><style=movepoints>步数</style></style>,<style=divergenceOutline><style=manatotal>法力值</style></style>未滿時，每少<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>12%</style></style>：<style=DivergenceOutline><style=movepoints>步數</style></style>-1,失った<style=divergenceOutline><style=manatotal>マナ</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>12%</style></style>ごとに:<style=DivergenceOutline><style=movepoints>移動</style></style> -1,За каждые потраченные <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>12%</style></style> <style=divergenceOutline><style=manatotal>маны</style></style> герои теряют по 1 <style=DivergenceOutline><style=movepoints>ОП</style></style>.,За кожні <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>12%</style></style> витраченої <style=divergenceOutline><style=manatotal>мани</style></style>: -1 <style=DivergenceOutline><style=movepoints>очко руху</style></style>,Pro <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>12 %</style></style> verbrauchtes <style=divergenceOutline><style=manatotal>Mana</style></style>: -1 <style=DivergenceOutline><style=movepoints>Bewegung</style></style>,Por cada <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>12 %</style></style> de <style=divergenceOutline><style=manatotal>maná perdido</style></style>: -1 de <style=DivergenceOutline><style=movepoints>movimiento</style></style>,A cada <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>12%</style></style> de <style=divergenceOutline><style=manatotal>Mana</style></style> gasto: -1 <style=DivergenceOutline><style=movepoints>Movimento</style></style>,상실한 <style=divergenceOutline><style=manatotal>마나</style></style> <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>12%</style></style>마다: <style=DivergenceOutline><style=movepoints>이동력</style></style> -1
+DivergenceEffectFullDescriptionTooltip_AddPerk_MissingManaCurse,Every <style=KeywordNb>12%</style> of missing <style=manatotal>Mana</style>: -1 <style=DivergenceOutline><style=movepoints>Move</style></style>,Tous les <style=KeywordNb>12%</style> de <style=manatotal>Mana</style> manquant<nbsp>: -1 <style=movepoints>Mouvement</style>,每缺失<style=KeywordNb>12%</style><style=manatotal>法力值</style>：-1<style=DivergenceOutline><style=movepoints>步数</style></style>,<style=manatotal>法力值</style>未滿時，每少<style=KeywordNb>12%</style>：<style=DivergenceOutline><style=movepoints>步數</style></style>-1,失った<style=manatotal>マナ</style><style=KeywordNb>12%</style>ごとに:<style=DivergenceOutline><style=movepoints>移動</style></style> -1,За каждые потраченные <style=KeywordNb>12%</style> <style=manatotal>маны</style> герои теряют по 1 <style=DivergenceOutline><style=movepoints>ОП</style></style>.,За кожні <style=KeywordNb>12%</style> витраченої <style=manatotal>мани</style>: -1 <style=DivergenceOutline><style=movepoints>очко руху</style></style>,Pro <style=KeywordNb>12 %</style> verbrauchtes <style=manatotal>Mana</style>: -1 <style=DivergenceOutline><style=movepoints>Bewegung</style></style>,Por cada <style=KeywordNb>12 %</style> de <style=manatotal>maná perdido</style>: -1 de <style=DivergenceOutline> <style=movepoints>movimiento</style></style>,A cada <style=KeywordNb>12%</style> de <style=manatotal>Mana</style> gasto: -1 <style=DivergenceOutline><style=movepoints>Movimento</style></style>,상실한 <style=manatotal>마나</style> <style=KeywordNb>12%</style>마다: <style=DivergenceOutline><style=movepoints>이동력</style></style> -1
+DivergenceEffectShortDescription_AddPerk_MissingManaCurse,Every <style=Number>12%</style> of missing <style=manatotal>Mana</style>,Tous les <style=Number>12%</style> de <style=manatotal>Mana</style> manquant,每缺失<style=Number>12%</style><style=manatotal>法力值</style>,每少<style=Number>12%</style><style=manatotal>法力值</style>,失った<style=manatotal>マナ</style><style=Number>12%</style>ごと,За каждые потраченные <style=Number>12%</style> <style=manatotal>маны</style>,За кожні <style=Number>12%</style> витраченої <style=manatotal>мани</style>,Pro <style=Number>12 %</style> verbrauchtes <style=manatotal>Mana</style>,Por cada <style=Number>12 %</style> de <style=manatotal>maná</style> perdido,A cada <style=Number>12%</style> de <style=manatotal>Mana</style> gasto,상실한 <style=manatotal>마나</style> <style=Number>12%</style>마다
+DivergenceEffectFullDescription_AddPerk_MissingManaCurse_2,Every <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>6%</style></style> of missing <style=divergenceOutline><style=manatotal>Mana</style></style>: -1 <style=DivergenceOutline><style=movepoints>Move</style></style>,Tous les <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>6%</style></style> de <style=divergenceOutline><style=manatotal>Mana</style></style>: manquant<nbsp>: -1 <style=DivergenceOutline><style=movepoints>Mouvement</style></style>,每缺失<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>6%</style></style><style=divergenceOutline><style=manatotal>法力值</style></style>：-1<style=DivergenceOutline><style=movepoints>步数</style></style>,<style=divergenceOutline><style=manatotal>法力值</style></style>未滿時，每少<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>6%</style></style>：<style=DivergenceOutline><style=movepoints>步數</style></style>-1,失った<style=divergenceOutline><style=manatotal>マナ</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>6%</style></style>ごとに:<style=DivergenceOutline><style=movepoints>移動</style></style> -1,За каждые потраченные <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>6%</style></style> <style=divergenceOutline><style=manatotal>маны</style></style> герои теряют по 1 <style=DivergenceOutline><style=movepoints>ОП</style></style>.,За кожні <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>6%</style></style> витраченої <style=divergenceOutline><style=manatotal>мани</style></style>: -1 <style=DivergenceOutline><style=movepoints>очко руху</style></style>,Pro <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>6 %</style></style> verbrauchtes <style=divergenceOutline><style=manatotal>Mana</style></style>: -1 <style=DivergenceOutline><style=movepoints>Bewegung</style></style>,Por cada <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>6 %</style></style> de <style=divergenceOutline><style=manatotal>maná</style> perdido</style>: -1 <style=DivergenceOutline> de <style=movepoints>movimiento</style></style>,A cada <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>6%</style></style> de <style=divergenceOutline><style=manatotal>Mana</style></style> gasto: -1 <style=DivergenceOutline><style=movepoints>Movimento</style></style>,상실한 <style=divergenceOutline><style=manatotal>마나</style></style> <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>6%</style></style>마다: <style=DivergenceOutline><style=movepoints>이동력</style></style> -1
+DivergenceEffectFullDescriptionTooltip_AddPerk_MissingManaCurse_2,Every <style=KeywordNb>6%</style> of missing <style=manatotal>Mana</style>: -1 <style=DivergenceOutline><style=movepoints>Move</style></style>,Tous les <style=KeywordNb>6%</style> de <style=manatotal>Mana</style> manquant<nbsp>: -1 <style=movepoints>Mouvement</style>$,每缺失<style=KeywordNb>6%</style><style=manatotal>法力值</style>：-1<style=DivergenceOutline><style=movepoints>步数</style></style>,<style=manatotal>法力值</style>未滿時，每少<style=KeywordNb>6%</style>：<style=DivergenceOutline><style=movepoints>步數</style></style>-1,失った<style=manatotal>マナ</style><style=KeywordNb>6%</style>ごとに:<style=DivergenceOutline><style=movepoints>移動</style></style> -1,За каждые потраченные <style=KeywordNb>6%</style> <style=manatotal>маны</style> герои теряют по 1 <style=DivergenceOutline><style=movepoints>ОП</style></style>.,За кожні <style=KeywordNb>6%</style> витраченої <style=manatotal>мани</style>: -1 <style=DivergenceOutline><style=movepoints>очко руху</style></style>,Pro <style=KeywordNb>6 %</style> verbrauchtes <style=manatotal>Mana</style>: -1 <style=DivergenceOutline><style=movepoints>Bewegung</style></style>,Por cada <style=KeywordNb>6 %</style> de <style=manatotal>maná perdido</style>: -1 <style=DivergenceOutline> de <style=movepoints>movimiento</style></style>,A cada <style=KeywordNb>6%</style> de <style=manatotal>Mana</style> gasto: -1 <style=DivergenceOutline><style=movepoints>Movimento</style></style>,상실한 <style=manatotal>마나</style> <style=KeywordNb>6%</style>마다: <style=DivergenceOutline><style=movepoints>이동력</style></style> -1
+DivergenceEffectShortDescription_AddPerk_MissingManaCurse_2,Every <style=Number>6%</style> of missing <style=manatotal>Mana</style>,Tous les <style=Number>6%</style> de <style=manatotal>Mana</style> manquant,每缺失<style=Number>6%</style><style=manatotal>法力值</style>,每少<style=Number>6%</style><style=manatotal>法力值</style>,失った<style=manatotal>マナ</style><style=Number>6%</style>ごと,За каждые потраченные <style=Number>6%</style> <style=manatotal>маны</style>,За кожні <style=Number>6%</style> витраченої <style=manatotal>мани</style>,Pro <style=Number>6 %</style> verbrauchtes <style=manatotal>Mana</style>,Por cada <style=Number>6 %</style> de <style=manatotal>maná</style> perdido,A cada <style=Number>6%</style> de <style=manatotal>Mana</style> gasto,상실한 <style=manatotal>마나</style> <style=Number>6%</style>마다
+DivergenceEffectFullDescription_AddPerk_NegativeAlterationCurse,"Whenever a <style=divergenceoutline><style=negativealterations>negative alteration</style></style> is applied by the Hero, also apply <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>+30</style></style><style=divergenceoutline><style=healthtotal> Health</style></style> to the target.","Lorsqu'une <style=divergenceoutline><style=negativealterations>altération négative</style></style> est appliqué par le Héros, applique aussi <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>+30</style></style><style=divergenceoutline><style=healthtotal> Vie</style></style> à la cible.",每当英雄对敌人<style=divergenceoutline><style=negativealterations>施加</style></style>一个负面状态时，目标获得<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>+30</style></style>点<style=divergenceoutline><style=healthtotal>生命值</style></style>。,當英雄施加<style=divergenceoutline><style=negativealterations>負面狀態</style></style>時，也對目標施加<style=divergenceoutline><style=healthtotal>生命值</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>+30</style></style>,英雄が<style=divergenceoutline><style=negativealterations>状態異常</style></style>を付与する際、対象にさらに<style=divergenceoutline><style=healthtotal>体力</style></style>を<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>+30</style></style>付与。,"Накладывая на врага <style=divergenceoutline><style=negativealterations>негативный эффект</style></style>, герои также добавляют ему <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>30</style></style><style=divergenceoutline><style=healthtotal> ОЗ</style></style>.","Коли герой <style=divergenceoutline><style=negativealterations>застосовує</style></style> негативний стан, ціль отримує <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>+30</style></style> од.<style=divergenceoutline><style=healthtotal> здоров'я</style></style>.","Wenn ein <style=divergenceoutline><style=negativealterations>negativer Statuseffekt</style></style> vom Helden angewendet wird, wird ebenfalls <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>+30</style></style><style=divergenceoutline><style=healthtotal> Gesundheit</style></style> auf das Ziel angewendet.","Cuando el héroe provoca una <style=divergenceoutline><style=negativealterations>alteración negativa</style></style>, también otorga <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>+30</style></style> de <style=divergenceoutline> <style=healthtotal>salud</style></style> al objetivo.","Sempre que uma <style=divergenceoutline><style=negativealterations>alteração negativa</style></style> for aplicada pelo Herói, também aplica <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>+30</style></style> de<style=divergenceoutline><style=healthtotal> Vida</style></style> ao alvo.",영웅이 <style=divergenceoutline><style=negativealterations>부정적 상태</style></style>를 유발할 때마다 대상에게 <style=divergenceoutline><style=healthtotal>체력</style></style> <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>+30</style></style>도 유발
+DivergenceEffectFullDescriptionTooltip_AddPerk_NegativeAlterationCurse,"Whenever a <style=negativealterations>negative alteration</style> is applied by the Hero, also apply <style=KeywordNb>+30</style><style=healthtotal> Health</style> to the target.","Lorsqu'une <style=negativealterations>altération négative</style> est appliqué par le Héros, applique aussi <style=KeywordNb>+30</style><style=healthtotal> Vie</style> à la cible.",每当英雄对敌人<style=negativealterations>施加</style>一个负面状态时，目标获得<style=KeywordNb>+30</style>点<style=healthtotal>生命值</style>。,當英雄施加<style=negativealterations>負面狀態</style>時，也對目標施加<style=healthtotal>生命值</style><style=KeywordNb>+30</style>,英雄が<style=negativealterations>状態異常</style>を付与する際、対象にさらに<style=healthtotal>体力</style>を<style=KeywordNb>+30</style>付与。,"Накладывая на врага <style=negativealterations>негативный эффект</style>, герои также добавляют ему <style=KeywordNb>30</style><style=healthtotal> ОЗ</style>.","Коли герой <style=negativealterations>застосовує</style> негативний стан, ціль отримує <style=KeywordNb>+30</style> од.<style=healthtotal> здоров'я</style>.","Wenn ein <style=negativealterations>negativer Statuseffekt</style> vom Helden angewendet wird, wird ebenfalls <style=KeywordNb>+30</style><style=healthtotal> Gesundheit</style> auf das Ziel angewendet.","Cuando el héroe provoca una <style=negativealterations>alteración negativa</style>, también otorga <style=KeywordNb>+30</style> de <style=healthtotal>salud</style> al objetivo.","Sempre que uma <style=negativealterations>alteração negativa</style> for aplicada pelo Herói, também aplica <style=KeywordNb>+30</style> de<style=healthtotal> Vida</style> ao alvo.",영웅이 <style=negativealterations>부정적 상태</style>를 유발할 때마다 대상에게 <style=healthtotal>체력</style> <style=KeywordNb>+30</style>도 유발
+DivergenceEffectShortDescription_AddPerk_NegativeAlterationCurse,Apply <style=Number>+30</style><style=healthtotal> Health</style>,Applique <style=Number>+30</style><style=healthtotal> Vie</style>,目标获得<style=Number>+30</style>点<style=healthtotal>生命值</style>,施加<style=healthtotal>生命值</style><style=Number>+30</style>,<style=healthtotal>体力</style>を<style=Number>+30</style>付与,Добавляет <style=Number>30</style> <style=healthtotal>ОЗ</style>,Надається <style=Number>+30</style> од. <style=healthtotal>здоров'я</style>,Wendet <style=Number>+30</style><style=healthtotal> Gesundheit</style> an,Otorga <style=Number>+30</style> de <style=healthtotal>salud</style>,Aplica <style=Number>+30%</style> de <style=healthtotal>Vida</style>,<style=healthtotal>체력</style> <style=Number>+30</style> 유발
+DivergenceEffectFullDescription_AddPerk_NegativeAlterationCurse_2,"Whenever a <style=divergenceoutline><style=negativealterations>negative alteration</style></style> is applied by the Hero, also apply <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>+60</style></style><style=divergenceoutline><style=healthtotal> Health</style></style> to the target.","Lorsqu'une <style=divergenceoutline><style=negativealterations>altération négative</style></style> est appliqué par le Héros, applique aussi <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>+60</style></style><style=divergenceoutline><style=healthtotal> Vie</style></style> à la cible.",每当英雄对敌人<style=divergenceoutline><style=negativealterations>施加</style></style>一个负面状态时，目标获得<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>+60</style></style>点<style=divergenceoutline><style=healthtotal>生命值</style></style>。,當英雄施加<style=divergenceoutline><style=negativealterations>負面狀態</style></style>時，也對目標施加<style=divergenceoutline><style=healthtotal>生命值</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>+60</style></style>,英雄が<style=divergenceoutline><style=negativealterations>状態異常</style></style>を付与する際、対象にさらに<style=divergenceoutline><style=healthtotal>体力</style></style>を<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>+60</style></style>付与。,"Накладывая на врага <style=divergenceoutline><style=negativealterations>негативный эффект</style></style>, герои также добавляют ему <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>60</style></style><style=divergenceoutline><style=healthtotal> ОЗ</style></style>.","Коли герой <style=divergenceoutline><style=negativealterations>застосовує</style></style> негативний стан, ціль отримує <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>+60</style></style> од.<style=divergenceoutline><style=healthtotal> здоров'я</style></style>.","Wenn ein <style=divergenceoutline><style=negativealterations>negativer Statuseffekt</style></style> vom Helden angewendet wird, wird ebenfalls <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>+60</style></style><style=divergenceoutline><style=healthtotal> Gesundheit</style></style> auf das Ziel angewendet.","Cuando el héroe provoca una <style=divergenceoutline><style=negativealterations>alteración negativa</style></style>, también otorga <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>+60</style></style><style=divergenceoutline> de <style=healthtotal>salud</style></style> al objetivo.","Sempre que uma <style=divergenceoutline><style=negativealterations>alteração negativa</style></style> for aplicada pelo Herói, também aplica <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>+60</style></style> de<style=divergenceoutline><style=healthtotal> Vida</style></style> ao alvo.",영웅이 <style=divergenceoutline><style=negativealterations>부정적 상태</style></style>를 유발할 때마다 대상에게 <style=divergenceoutline><style=healthtotal>체력</style></style> <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>+60</style></style>도 유발
+DivergenceEffectFullDescriptionTooltip_AddPerk_NegativeAlterationCurse_2,"Whenever a <style=negativealterations>negative alteration</style> is applied by the Hero, also apply <style=KeywordNb>+60</style><style=healthtotal> Health</style> to the target.","Lorsqu'une <style=negativealterations>altération négative</style> est appliqué par le Héros, applique aussi <style=KeywordNb>+60</style><style=healthtotal> Vie</style> à la cible.",每当英雄对敌人<style=negativealterations>施加</style>一个负面状态时，目标获得<style=KeywordNb>+60</style>点<style=healthtotal>生命值</style>。,當英雄施加<style=negativealterations>負面狀態</style>時，也對目標施加<style=healthtotal>生命值</style><style=KeywordNb>+60</style>,英雄が<style=negativealterations>状態異常</style>を付与する際、対象にさらに<style=healthtotal>体力</style>を<style=KeywordNb>+60</style>付与。,"Накладывая на врага <style=negativealterations>негативный эффект</style>, герои также добавляют ему <style=KeywordNb>60</style><style=healthtotal> ОЗ</style>.","Коли герой <style=negativealterations>застосовує</style> негативний стан, ціль отримує <style=KeywordNb>+60</style> од.<style=healthtotal> здоров'я</style>.","Wenn ein <style=negativealterations>negativer Statuseffekt</style> vom Helden angewendet wird, wird ebenfalls <style=KeywordNb>+60</style><style=healthtotal> Gesundheit</style> auf das Ziel angewendet.","Cuando el héroe provoca una <style=negativealterations>alteración negativa</style>, también otorga <style=KeywordNb>+60</style> de <style=healthtotal>salud</style> al objetivo.","Sempre que uma <style=negativealterations>alteração negativa</style> for aplicada pelo Herói, também aplica <style=KeywordNb>+60</style> de<style=healthtotal> Vida</style> ao alvo.",영웅이 <style=negativealterations>부정적 상태</style>를 유발할 때마다 대상에게 <style=healthtotal>체력</style> <style=KeywordNb>+60</style>도 유발
+DivergenceEffectShortDescription_AddPerk_NegativeAlterationCurse_2,Apply <style=Number>+60</style><style=healthtotal> Health</style>,Applique <style=Number>+60</style><style=healthtotal> Vie</style>,目标获得<style=Number>+60</style>点<style=healthtotal>生命值</style>,施加<style=healthtotal>生命值</style><style=Number>+60</style>,<style=healthtotal>体力</style>を<style=Number>+60</style>付与,Добавляет <style=Number>60</style><style=healthtotal> ОЗ</style>,Надається <style=Number>+60</style> од. <style=healthtotal>здоров'я</style>,Wendet <style=Number>+60</style><style=healthtotal> Gesundheit</style> an,Otorga <style=Number>+60</style> de <style=healthtotal>salud</style>,Aplica <style=Number>+60%</style> de <style=healthtotal>Vida</style>,<style=healthtotal>체력</style> <style=Number>+60</style> 유발
+DivergenceEffectFullDescription_AddPerk_ReduceCritCurse,Whenever a <style=divergenceOutline><style=KeyWord>critical hit</style></style> is landed: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-3%</style></style> <style=divergenceoutline><style=critical>Critical</style></style> until the end of the <style=divergenceOutline><style=Night>Night</style></style>.,Quand un <style=divergenceOutline><style=Critical>Coup Critique</style></style> est infligé<nbsp>: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-3%</style></style> <style=divergenceoutline><style=critical>Critique</style></style> jusqu'à la fin de la <style=divergenceOutline><style=Night>Nuit</style></style>.,每造成一次<style=divergenceOutline><style=KeyWord>暴击</style></style>：<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-3%</style></style><style=divergenceOutline><style=critical>暴击</style></style>，效果持续至<style=divergenceOutline><style=Night>夜晚</style></style>结束。,每當造成一次<style=divergenceOutline><style=KeyWord>暴擊</style></style>時：<style=divergenceoutline><style=critical>暴擊</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-3%</style></style>，持續到<style=divergenceOutline><style=Night>夜晚</style></style>結束為止。,<style=divergenceOutline><style=KeyWord>会心ヒット</style></style>発生時:<style=divergenceOutline><style=Night>夜</style></style>終了まで<style=divergenceoutline><style=critical>会心</style></style> <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-3%</style></style>。,За каждый <style=divergenceOutline><style=KeyWord>критический удар</style></style> герои до конца <style=divergenceOutline><style=Night>ночи</style></style> получают <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-3%</style></style> к <style=divergenceoutline><style=critical>шансу критического урона</style></style>.,Коли завдано <style=divergenceOutline><style=KeyWord>критичний удар</style></style>: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-3%</style></style> <style=divergenceoutline><style=critical>шансу критичного удару</style></style> до кінця <style=divergenceOutline><style=Night>ночі</style></style>.,Immer wenn ein <style=divergenceOutline><style=KeyWord>kritischer Treffer</style></style> gelandet wird: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-3 %</style></style> <style=divergenceoutline><style=critical>kritischer Treffer</style></style> bis zum Ende der <style=divergenceOutline><style=Night>Nacht</style></style>.,Cuando se inflige un <style=divergenceOutline><style=KeyWord>golpe crítico</style></style>: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-3 %</style></style> al <style=divergenceoutline><style=critical>crítico</style></style> hasta que acabe la <style=divergenceOutline><style=Night>noche</style></style>.,Sempre que houver um <style=divergenceOutline><style=KeyWord>acerto crítico</style></style>: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-3%</style></style> de <style=divergenceoutline><style=critical>Crítico</style></style> até o fim da <style=divergenceOutline><style=Night>Noite</style></style>.,<style=divergenceOutline><style=KeyWord>치명타</style></style>가 발생할 때마다: <style=divergenceOutline><style=Night>밤</style></style>이 끝날 때까지 <style=divergenceoutline><style=critical>치명타</style></style> <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-3%</style></style>
+DivergenceEffectFullDescriptionTooltip_AddPerk_ReduceCritCurse,Whenever a <style=KeyWord>critical hit</style> is landed: <style=KeywordNb>-3%</style> <style=critical>Critical</style> until the end of the <style=Night>Night</style>.,Quand un <style=Critical>Coup Critique</style> est infligé<nbsp>: <style=KeywordNb>-3%</style> <style=critical>Critique</style> jusqu'à la fin de la <style=Night>Nuit</style>.,每造成一次<style=KeyWord>暴击</style>：<style=KeywordNb>-3%</style><style=critical>暴击</style>，效果持续至<style=Night>夜晚</style>结束。,每當造成一次<style=KeyWord>暴擊</style>時：<style=critical>暴擊</style><style=KeywordNb>-3%</style>，持續到<style=Night>夜晚</style>結束為止。,<style=KeyWord>会心ヒット</style>発生時:<style=Night>夜</style>終了まで<style=critical>会心</style><style=KeywordNb>-3%</style>。,За каждый <style=KeyWord>критический удар</style> герои до конца <style=Night>ночи</style> получают <style=KeywordNb>-3%</style> к <style=critical>шансу критического урона</style>.,Коли завдано <style=KeyWord>критичний удар</style>: <style=KeywordNb>-3%</style> <style=critical>шансу критичного удару</style> до кінця <style=Night>ночі</style>.,Immer wenn ein <style=KeyWord>kritischer Treffer</style> gelandet wird: <style=KeywordNb>-3 % </style><style=critical>kritischer Treffer</style> bis zum Ende der <style=Night>Nacht</style>.,Cuando se inflige un <style=KeyWord>golpe crítico</style>: <style=KeywordNb>-3 % al</style> <style=critical>crítico</style> hasta que acabe la <style=Night>noche</style>.,Sempre que houver um <style=KeyWord>acerto crítico</style>: <style=KeywordNb>-3%</style> de <style=critical>Crítico</style> até o fim da <style=Night>Noite</style>.,<style=KeyWord>치명타</style>가 발생할 때마다: <style=Night>밤</style>이 끝날 때까지 </style><style=critical>치명타 <style=KeywordNb>-3%</style>
+DivergenceEffectShortDescription_AddPerk_ReduceCritCurse,<style=Number>-3%</style> <style=critical>Critical</style>,<style=Number>-3%</style> <style=critical>Critique</style>,<style=Number>-3%</style> <style=critical>暴击</style>,<style=critical>暴擊</style><style=Number>-3%</style>,<style=critical>会心</style><style=Number>-3%</style>,<style=Number>-3%</style> к <style=critical>шансу критического урона</style>,<style=Number>-3%</style> <style=critical>шансу критичного удару</style>,<style=Number>-3 %</style> <style=critical>kritischer Treffer</style>,<style=Number>-3 %</style> al <style=critical>crítico</style>,<style=Number>-3%</style> de <style=critical>Crítico</style>,<style=critical>치명타</style> <style=Number>-3%</style>
+DivergenceEffectFullDescription_AddPerk_ReduceCritCurse_2,Whenever a <style=divergenceOutline><style=KeyWord>critical hit</style></style> is landed: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style> <style=divergenceoutline><style=critical>Critical</style></style> until the end of the <style=divergenceOutline><style=Night>Night</style></style>.,Quand un <style=divergenceOutline><style=Critical>Coup Critique</style></style> est infligé<nbsp>: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style> <style=divergenceoutline><style=critical>Critique</style></style> jusqu'à la fin de la <style=divergenceOutline><style=Night>Nuit</style></style>.,每造成一次<style=divergenceOutline><style=KeyWord>暴击</style></style>：<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style><style=divergenceOutline><style=critical>暴击</style></style>，效果持续至<style=divergenceOutline><style=Night>夜晚</style></style>结束。,每當造成一次<style=divergenceOutline><style=KeyWord>暴擊</style></style>時：<style=divergenceoutline><style=critical>暴擊</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style>，持續到<style=divergenceOutline><style=Night>夜晚</style></style>結束為止。,<style=divergenceOutline><style=KeyWord>会心ヒット</style></style>発生時:<style=divergenceOutline><style=Night>夜</style></style>終了まで<style=divergenceoutline><style=critical>会心</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style>。,За каждый <style=divergenceOutline><style=KeyWord>критический удар</style></style> герои до конца <style=divergenceOutline><style=Night>ночи</style></style> получают <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style> к <style=divergenceoutline><style=critical>шансу критического урона</style></style>.,Коли завдано <style=divergenceOutline><style=KeyWord>критичний удар</style></style>: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style> <style=divergenceoutline><style=critical>шансу критичного удару</style></style> до кінця <style=divergenceOutline><style=Night>ночі</style></style>.,Immer wenn ein <style=divergenceOutline><style=KeyWord>kritischer Treffer</style></style> gelandet wird: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7 %</style></style> <style=divergenceoutline><style=critical>kritischer Treffer</style></style> bis zum Ende der <style=divergenceOutline><style=Night>Nacht</style></style>.,Cuando se inflige un <style=divergenceOutline><style=KeyWord>golpe crítico</style></style>: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7 %</style></style> al <style=divergenceoutline><style=critical>crítico</style></style> hasta que acabe la <style=divergenceOutline><style=Night>noche</style></style>.,Sempre que houver um <style=divergenceOutline><style=KeyWord>acerto crítico</style></style>: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style> de <style=divergenceoutline><style=critical>Crítico</style></style> até o fim da <style=divergenceOutline><style=Night>Noite</style></style>.,<style=divergenceOutline><style=KeyWord>치명타</style></style>가 발생할 때마다: <style=divergenceOutline><style=Night>밤</style></style>이 끝날 때까지 <style=divergenceoutline><style=critical>치명타</style></style> <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style>
+DivergenceEffectFullDescriptionTooltip_AddPerk_ReduceCritCurse_2,Whenever a <style=KeyWord>critical hit</style> is landed: <style=KeywordNb>-7%</style> <style=critical>Critical</style> until the end of the <style=Night>Night</style>.,Quand un <style=Critical>Coup Critique</style> est infligé<nbsp>: <style=KeywordNb>-7%</style> <style=critical>Critique</style> jusqu'à la fin de la <style=Night>Nuit</style>.,每造成一次<style=KeyWord>暴击</style>：<style=KeywordNb>-7%</style><style=critical>暴击</style>，效果持续至<style=Night>夜晚</style>结束。,每當造成一次<style=KeyWord>暴擊</style>時：<style=critical>暴擊</style><style=KeywordNb>-7%</style>，持續到<style=Night>夜晚</style>結束為止。,<style=KeyWord>会心ヒット</style>発生時:<style=Night>夜</style>終了まで<style=critical>会心</style><style=KeywordNb>-7%</style>。,За каждый <style=KeyWord>критический удар</style> герои до конца <style=Night>ночи</style> получают <style=KeywordNb>-7%</style> к <style=critical>шансу критического урона</style>.,Коли завдано <style=KeyWord>критичний удар</style>: <style=KeywordNb>-7% </style><style=critical>шансу критичного удару</style> до кінця <style=Night>ночі</style>.,Immer wenn ein <style=KeyWord>kritischer Treffer</style> gelandet wird: <style=KeywordNb>-7 % </style><style=critical>kritischer Treffer</style> bis zum Ende der <style=Night>Nacht</style>.,Cuando se inflige un <style=KeyWord>golpe crítico</style>: <style=KeywordNb>-7 %</style> al <style=critical>crítico</style> hasta que acabe la <style=Night>noche</style>.,Sempre que houver um <style=KeyWord>acerto crítico</style>: <style=KeywordNb>-7% de </style><style=critical>Crítico</style> até o fim da <style=Night>Noite</style>.,<style=KeyWord>치명타</style>가 발생할 때마다: <style=Night>밤</style>이 끝날 때까지 </style><style=critical>치명타 <style=KeywordNb>-7%</style>
+DivergenceEffectShortDescription_AddPerk_ReduceCritCurse_2,<style=Number>-7%</style> <style=critical>Critical</style>,<style=Number>-7%</style> <style=critical>Critique</style>,<style=Number>-7%</style> <style=critical>暴击</style>,<style=critical>暴擊</style><style=Number>-7%</style>,<style=critical>会心</style><style=Number>-7%</style>,<style=Number>-7%</style> к <style=critical>шансу критического урона</style>,<style=Number>-7%</style> <style=critical>шансу критичного удару</style>,<style=Number>-7 %</style> <style=critical>kritischer Treffer</style>,<style=Number>-7 %</style> al <style=critical>crítico</style>,<style=Number>-7%</style> de <style=critical>Crítico</style>,<style=critical>치명타</style> <style=Number>-7%</style>

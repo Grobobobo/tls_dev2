@@ -153,7 +153,7 @@
 
    <!-- Inn Level Modifier Steps -->
    <ApocalypseModifierStepDefinition Id="InnLevelModifier_1">
-      <ApocalypseLevel>2</ApocalypseLevel>
+      <ApocalypseLevel>4</ApocalypseLevel>
       <Effects>
          <ModifyInnSlotRecruitmentLevel SlotIndex="0" LevelId="LowUnitLevelApoc"/>
          <ModifyInnSlotRecruitmentLevel SlotIndex="1" LevelId="HighUnitLevelApoc"/>
@@ -584,7 +584,7 @@
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="TraitsParametersModifier_1">
-      <ApocalypseLevel>4</ApocalypseLevel>
+      <ApocalypseLevel>2</ApocalypseLevel>
       <TokenVariables>
          <TokenVariable Key="TotalModifier" Value="10"/>
          <TokenVariable Key="BoundariesMinModifier" Value="3"/>
