@@ -886,10 +886,10 @@
    <PerkDefinition Id="ResistancePractice">
       <TokenVariables>
          <TokenVariable Key="ResistanceBonus" Value="NumberOfStepsReached * ResistancePercentage"/>
-         <TokenVariable Key="ResistancePercentage" Value="3"/>
+         <TokenVariable Key="ResistancePercentage" Value="2"/>
          <TokenVariable Key="NextThreshold" Value="MinimumXPThreshold + (NumberOfStepsReached + 1) * XPStep"/>
          <TokenVariable Key="NumberOfStepsReached" Value="Floor(CurrentXPOverThreshold / XPStep)"/>
-         <TokenVariable Key="XPStep" Value="10"/>
+         <TokenVariable Key="XPStep" Value="5"/>
          <TokenVariable Key="CurrentXPOverThreshold" Value="Max(0, Owner.ExperienceGainMultiplier - MinimumXPThreshold)"/>
          <TokenVariable Key="MinimumXPThreshold" Value="100"/>
       </TokenVariables>
