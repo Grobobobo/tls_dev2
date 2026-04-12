@@ -2329,7 +2329,7 @@ PerkEffectInformations_HuntersArsenal,"Current bonus:
 {5}","Bônus atual:
 {5}","현재 보너스:
 {5}"
-PerkName_PanicMovePoint,Stay Panic,Panique générale,胆战心惊,持續恐慌,滞在パニック,Стимулирующая паника,Панікуйте на здоров'я,Immer mit der Panik,Pánico constante,Pânico Estático,공포 유지
+PerkName_PanicMovePoint,Embrace Chaos,Étreindre le Chaos,拥抱混乱,擁抱混沌,混沌を抱く,Объять Хаос,Прийняти Хаос,Chaos Umarmen,Abrazar el Caos,Abraçar o Caos,혼돈 수용
 PerkDescription_PanicMovePoint,"Every {0} of the <style=Panic>Panic Gauge</style> filled, get:
 {1}
 {5}
@@ -2748,3 +2748,49 @@ O <style=KeyWord>dano</style> aumenta com o <style=KeyWord>nível</style> do Her
 <style=KeyWord>피해</style>가 영웅의 <style=KeyWord>레벨</style>에 따라 증가"
 "PerkEffectInformations_MartialPunch","","","","","","","","","","",""
 "ApocalypseModifierTitle_EnemyLateBuffModifier","Last-Ditch Charge","Charge Désespérée","背水一战","背水一戰","最後の突撃","Отчаянный Натиск","Відчайдушний Натиск","Verzweifelter Ansturm","Carga Desesperada","Investida Desesperada","최후의 돌격"
+"BuildingUpgradeTooltipDescription_UpgradeBallistaToBallistaSplit0","Becomes a <style=KeyWord>Split Ballista</style>:
+• <style=OverallDamage>Damage</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• <style=KeyWord>Fires</style> <style=""GoodNbOutlined"">3 times</style> per turn, assuming targets are available (<style=KeyWord>can't shoot the same target twice</style>).
+• <style=""Bad"">Blocks</style> <style=LineOfSight>Line of Sight</style>.
+<style=Attenuated>Incompatible with upgrades Mounted Ballista and Heavy Ballista</style>","Améliorer en <style=KeyWord>Balliste à multiple projectile</style>:
+• <style=OverallDamage>Dégâts</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• <style=KeyWord>Tire</style> <style=""GoodNbOutlined"">3 fois</style> par tour, s'il y a des cibles valide (<style=KeyWord>ne peut pas tirer deux fois sur la même cible</style>).
+• <style=""Bad"">Bloque</style> la <style=LineOfSight>Ligne de vue</style>.
+<style=Attenuated>Incompatible avec les améliorations Balliste Montée et Balliste Lourde</style>","升级为<style=KeyWord>散射弩车</style>：
+• <style=OverallDamage>伤害</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• 有符合条件目标的情况下每回合可<style=KeyWord>发射</style><style=""GoodNbOutlined"">3次</style>（<style=KeyWord>无法重复攻击同一个目标</style>）。
+• 会<style=""Bad"">阻挡</style><style=LineOfSight>视线</style>。
+<style=Attenuated>无法与兼容升级价高弩车或重型弩车兼容</style>","升級為<style=KeyWord>多發弩車</style>：
+• <style=OverallDamage>傷害</style><style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>。
+• 目標足夠時，每回合最多可<style=KeyWord>發射</style><style=""GoodNbOutlined"">3次</style>（<style=KeyWord>單一回合無法重複射擊同一目標</style>）。
+• 會<style=""Bad"">阻擋</style><style=LineOfSight>視線</style>。
+<style=Attenuated>此升級、「加高弩車」、「重型弩車」只能擇一使用</style>","<style=KeyWord>スプリットバリスタ</style>になる:
+・<style=OverallDamage>ダメージ</style><style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+・有効なターゲットがいる場合、1ターンに<style=""GoodNbOutlined"">3回</style><style=KeyWord>発射</style>する(<style=KeyWord>同じターゲットを2回以上撃つことはない</style>)。
+・<style=LineOfSight>視界</style>を<style=""Bad"">遮る</style>。
+<style=Attenuated>固定バリスタとヘビーバリスタの強化とは両立できない。</style>","Улучшает до <style=KeyWord>залповой баллисты</style>:
+• наносит <style=""Number"">124–190</style> > <style=""BadNbOutlined"">100–140</style> <style=OverallDamage>урона</style>;
+• <style=KeyWord>стреляет</style> <style=""GoodNbOutlined"">трижды</style> за ход, если есть цели;<style=KeyWord>не стреляет дважды в одну цель</style>;
+• <style=""Bad"">блокирует</style> <style=LineOfSight>линию видимости</style>.
+<style=Attenuated>Несовместимо с улучшениями ""Высокая баллиста"" и ""Тяжёлая баллиста""</style>","Стане <style=KeyWord>рознесеною балістою</style>:
+• <style=OverallDamage>Шкода</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• <style=KeyWord>Стріляє</style> <style=""GoodNbOutlined"">3 рази</style> за хід, якщо є цілі (<style=KeyWord>не може вразити одну ціль двічі</style>).
+• <style=""Bad"">Блокує</style> <style=LineOfSight>лінію видимості</style>.
+<style=Attenuated>Несумісно з поліпшеннями «Балiста на опорi» й «Важка баліста»</style>","Wird zu <style=KeyWord>Dreischuss-Balliste</style>:
+ • <style=OverallDamage>Schaden</style> <style=""Number"">124–190</style> > <style=""BadNbOutlined"">100–140</style>
+ • <style=KeyWord>Schießt</style> <style=""GoodNbOutlined"">dreimal</style> pro Runde, vorausgesetzt Ziele sind verfügbar (<style=KeyWord>kann nicht zweimal auf das gleiche Ziel schießen</style>).
+ • <style=""Bad"">Blockiert</style> die <style=LineOfSight>Sichtlinie</style>.
+<style=Attenuated>Nicht kompatibel mit den Verbesserungen „Erhöhte Balliste“ und „Schwere Balliste“</style>.","Se convierte en una <style=KeyWord>balista triple</style>:
+• <style=OverallDamage>Daño</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• <style=KeyWord>Dispara</style> <style=""GoodNbOutlined"">3 veces</style> por turno mientras haya objetivos disponibles (<style=KeyWord>no puede disparar dos veces al mismo objetivo</style>).
+• <style=""Bad"">Obstaculiza</style> el <style=LineOfSight>campo visual</style>.
+<style=Attenuated>Incompatible con las siguientes mejoras: balista elevada y balista pesada</style>.","Vira uma <style=KeyWord>Balista Dividida</style>:
+• <style=OverallDamage>Dano</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• <style=KeyWord>Dispara</style> <style=""GoodNbOutlined"">3 vezes</style> por turno, desde que haja alvos disponíveis (<style=KeyWord>não atira no mesmo alvo duas vezes</style>).
+• <style=""Bad"">Bloqueia</style> a <style=LineOfSight>Linha de Visão</style>.
+<style=Attenuated>Incompatível com as melhorias Balista Montada e Balista Pesada</style>","<style=KeyWord>분할 노포</style>로 강화:
+• <style=OverallDamage>피해</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• 표적을 전부 확보한 경우 한 턴에 <style=""GoodNbOutlined"">3번</style> <style=KeyWord>발사</style>합니다(<style=KeyWord>한 대상에 2번 발사하지는 않습니다</style>).
+• <style=LineOfSight>조준선</style>을 <style=""Bad"">가로막습니다</style>.
+<style=Attenuated>증축 노포 및 중형 노포 강화와 호환 불가</style>"
+"ResearchName_PerkPanicMovePointResearch","Embrace Chaos","Étreindre le Chaos","拥抱混乱","擁抱混沌","混沌を抱く","Объять Хаос","Прийняти Хаос","Chaos Umarmen","Abrazar el Caos","Abraçar o Caos","혼돈 수용"

@@ -696,7 +696,7 @@
         <BaseDamage Min="6" Max="66" />
         <BasePrice>0</BasePrice>
         <Skills>
-          <Skill>PlayerSchadenKill</Skill>
+          <Skill OverallUsesCount="1">PlayerSchadenKill</Skill>
         </Skills>
       </Level>
     </LevelVariations>
