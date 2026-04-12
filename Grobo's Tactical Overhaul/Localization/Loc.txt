@@ -53,16 +53,27 @@ Zusätzliche <style=KeyWord>Konsumgüter</style> können mithilfe von <style=Wor
 <style=Attenuated>최대치를 초과할 수 없습니다.</style>"
 "PerkName_FirstBlood","Cherry Picking","Tri sélectif","就是你了","就是你了","いいとこ取り","Враг одиночества","Вередливий","Wählerisch","Tiquismiquis","Escolhendo a Dedo","골라 먹기"
 "PerkDescription_FirstBlood","When <style=KeyWord>attacking</style> an <style=KeyWord>isolated</style> unit, the attack gets:
-{0}.","Lorsqu'une unité <style=KeyWord>isolée</style> est <style=KeyWord>attaquée</style>, l'attaque obtient<nbsp>:
-{0}.","当<style=KeyWord>攻击</style><style=KeyWord>落单</style>的敌人时，此次攻击获得：
-{0}","當<style=KeyWord>攻擊</style><style=KeyWord>落單</style>的敵人時，此次攻擊獲得：
-{0}","<style=KeyWord>孤立した</style>ユニットへ<style=KeyWord>攻撃</style>時、以下の効果を得る: {0}。","Если цель <style=KeyWord>атаки</style> героя <style=KeyWord>изолирована</style>, атака получает бонус:
-{0}.","Під час <style=KeyWord>атаки</style> <style=KeyWord>відокремленого</style> монстра, атака отримує:
-{0}.","Beim <style=KeyWord>Angriff</style> auf einen <style=KeyWord>isolierte</style> Einheit, erhält der Angriff:
-{0}.","Al <style=KeyWord>atacar</style> a una unidad <style=KeyWord>aislada</style>, el ataque obtiene:
-{0}.","Quando <style=KeyWord>atacar</style> uma unidade <style=KeyWord>isolada</style>, o ataque recebe:
-{0}.","<style=KeyWord>고립</style> 상태인 유닛을 <style=KeyWord>공격</style>할 경우:
-{0}"
+{0}.
+{1}.","Lorsqu'une unité <style=KeyWord>isolée</style> est <style=KeyWord>attaquée</style>, l'attaque obtient<nbsp>:
+{0}.
+{1}.","当<style=KeyWord>攻击</style><style=KeyWord>落单</style>的敌人时，此次攻击获得：
+{0}
+{1}","當<style=KeyWord>攻擊</style><style=KeyWord>落單</style>的敵人時，此次攻擊獲得：
+{0}
+{1}","<style=KeyWord>孤立した</style>ユニットへ<style=KeyWord>攻撃</style>時、以下の効果を得る: {0}。
+{1}。","Если цель <style=KeyWord>атаки</style> героя <style=KeyWord>изолирована</style>, атака получает бонус:
+{0}.
+{1}.","Під час <style=KeyWord>атаки</style> <style=KeyWord>відокремленого</style> монстра, атака отримує:
+{0}.
+{1}.","Beim <style=KeyWord>Angriff</style> auf einen <style=KeyWord>isolierte</style> Einheit, erhält der Angriff:
+{0}.
+{1}.","Al <style=KeyWord>atacar</style> a una unidad <style=KeyWord>aislada</style>, el ataque obtiene:
+{0}.
+{1}.","Quando <style=KeyWord>atacar</style> uma unidade <style=KeyWord>isolada</style>, o ataque recebe:
+{0}.
+{1}.","<style=KeyWord>고립</style> 상태인 유닛을 <style=KeyWord>공격</style>할 경우:
+{0}
+{1}"
 "PerkName_CherryPicking","First Blood","Premier sang","第一滴血","第一滴血","先制の血","Первая кровь","Перша кров","Erstschlag","Primera sangre","Sangue Fresco","선제 타격"
 "PerkDescription_CherryPicking","When <style=KeyWord>attacking</style> a unit with <style=KeyWord>full</style> {0}, the attack gets:
 {1}.","Lorsqu'une unité avec toute sa {0} est <style=KeyWord>attaquée</style>, l'attaque obtient<nbsp>:
@@ -200,27 +211,27 @@ Unidades a serem abatidas: {6}.","{5}
 {0}.","<style=Mana>마나 소모</style> <style=""Skill"">스킬</style>로 <style=KeyWord>공격</style>할 경우:
 {0}"
 "PerkDescription_ThirdEye","Every {0} enemies <style=KeyWord>hit</style>, the next <style=""Skill"">skill</style> gets:
-{1}, {2}, {3}.
+{1}, {2}, {3}, {5}.
 <style=Attenuated>This modifier doesn't stack.</style>","Tous les {0} ennemis <style=KeyWord>touchés</style>, la prochaine <style=""Skill"">compétence</style> obtient<nbsp>:
-{1}, {2}, {3}.
+{1}, {2}, {3}, {5}.
 <style=Attenuated>Ce modificateur n'est pas cumulable.</style>","每<style=KeyWord>击中</style>{0}个敌人，下一次使用<style=""Skill"">技能</style>时获得效果：
-{1}, {2}, {3}。
+{1}, {2}, {3}, {5}。
 <style=Attenuated>此加成不可叠加。</style>","每<style=KeyWord>擊中</style>{0}個敵人，下一次使用<style=""Skill"">技能</style>時獲得效果：
-{1}, {2}, {3}。
+{1}, {2}, {3}, {5}。
 <style=Attenuated>此加成不可疊加。</style>","{0}体のエネミーに<style=KeyWord>攻撃</style>する毎に、次の<style=""Skill"">スキル</style>は以下の効果を得る:
-{1}, {2}, {3}。
+{1}, {2}, {3}, {5}。
 <style=ATTenuated>この効果は重複しない。</style>","За <style=KeyWord>попадания</style> по {0} врагам следующий <style=""Skill"">навык</style> получает:
-{1}, {2}, {3}.
+{1}, {2}, {3}, {5}.
 <style=Attenuated>Эффект не накапливается.</style>","За кожних {0} ворогів, яким завдано <style=KeyWord>удар</style>, наступне <style=""Skill"">вміння</style> отримає:
-{1}, {2}, {3}.
+{1}, {2}, {3}, {5}.
 <style=Attenuated>Цей модифікатор не поєднується.</style>","Jeder {0} <style=KeyWord>getroffene</style> Gegner, gibt dem nächsten Angriff:
-{1}, {2}, {3}.
+{1}, {2}, {3}, {5}.
 <style=Attenuated>Dieser Modifikator ist nicht stapelbar.</style>","Cada {0} enemigos <style=KeyWord>golpeados</style>, la siguiente <style=""Skill"">habilidad</style> obtiene:
-{1}, {2}, {3}.
+{1}, {2}, {3}, {5}.
 <style=Attenuated>Este modificador no es acumulable.</style>","A cada {0} inimigos <style=KeyWord>golpeados</style>, a próxima <style=""Skill"">habilidade</style> recebe:
-{1}.
+{1}, {5}.
 <style=Attenuated>Este modificador não acumula.</style>","적 {0}명에 <style=KeyWord>명중</style>할 때마다 다음 <style=""Skill"">스킬</style>에 적용:
-{1}
+{1}, {5}
 <style=Attenuated>해당 보정치는 중첩되지 않음</style>"
 "PerkDescription_GlassCannon","{0}.
 {1} <style=PerkDamage>Perk Damage</style>.","{0}.
@@ -767,28 +778,60 @@ As casas <color=#549EE4>Secundárias</color> contam como casas <style=bad>Primá
 <style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>"
 "PerkEffectInformations_StrongThrow","Enemies to hit: {3}","Ennemis à toucher<nbsp>: {3}","还需击中敌人数：{3}","還需擊中敵人數：{3}","命中させるエネミー: {3}","Ещё попаданий: {3}","Залишилося ударити ворогів: {3}.","Zu treffende Gegner: {3}","Enemigos por golpear: {3}","Inimigos a serem golpeados: {3}","명중해야 하는 적: {3}"
 "PerkDescription_Sentry","As long as there is <style=KeyWord>no other Hero</style> within a <style=KeyWord>range of {0}</style>, all <style=""skill"">skills</style> get:
-{1} 
+{1}
 and the Hero gets: {2}.
-<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Tant qu'<style=KeyWord>aucun autre Héros</style> n'est dans une <style=KeyWord>portée de {0}</style>, toutes les <style=""skill"">compétences</style> obtiennent<nbsp>:
-{1} et {2}.
-<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","只要<style=KeyWord>{0}格范围</style>内<style=KeyWord>没有其他英雄</style>，所有<style=""skill"">技能</style>获得：
-{1}和{2}。
-<style=""ElfIcon""></style><style=""ElfText"">《琥珀幽森的精灵》DLC</style>","{0}格<style=KeyWord>範圍內</style><style=KeyWord>沒有其他英雄</style>時，所有<style=""skill"">技能</style>獲得：
-{1}和{2}。
+As long as there is <style=KeyWord>no other Hero</style> within a <style=KeyWord>range of {3}</style>, the Hero also gets: {4}.
+<style=Attenuated>This modifier is added to the previous one.</style>
+<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Tant qu'<style=KeyWord>aucun autre Héros</style> n'est dans une <style=KeyWord>portée de {0}</style>, toutes les <style=""skill"">compétences</style> obtiennent :
+{1}
+et le Héros obtient : {2}.
+Tant qu'<style=KeyWord>aucun autre Héros</style> n'est dans une <style=KeyWord>portée de {3}</style>, le Héros obtient aussi : {4}.
+<style=Attenuated>Ce modificateur est ajouté au précédent.</style>
+<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","当<style=KeyWord>周围{0}格范围内</style>都<style=KeyWord>没有其他英雄</style>时，所有<style=""skill"">技能</style>获得：
+{1}
+英雄获得：{2}。
+当<style=KeyWord>周围{3}格范围内</style>都<style=KeyWord>没有其他英雄</style>时，英雄还获得：{4}。
+<style=Attenuated>加成效果可叠加。</style>
+<style=""ElfIcon""></style><style=""ElfText"">《琥珀幽森的精灵》DLC</style>","當<style=KeyWord>{0}格範圍內</style><style=KeyWord>沒有其他英雄</style>時，所有<style=""skill"">技能</style>獲得：
+{1}
+英雄獲得：{2}。
+當<style=KeyWord>{3}格範圍內</style><style=KeyWord>沒有其他英雄</style>時，英雄還獲得：{4}。
+<style=Attenuated>加成效果可疊加。</style>
 <style=""ElfIcon""></style><style=""ElfText"">〈琥珀幽森的精靈〉DLC</style>","<style=KeyWord>{0}以内の距離</style>に<style=KeyWord>ほかの英雄がいない</style>状態のあいだ、全ての<style=""skill"">スキル</style>が以下の効果を得る:
-{1}と{2}。
+{1}
+英雄は以下の効果も得る: {2}。
+<style=KeyWord>{3}以内の距離</style>に<style=KeyWord>ほかの英雄がいない</style>状態なら、さらに: {4}。
+<style=Attenuated>この補正は前の補正に追加される。</style>
 <style=""ElfIcon""></style><style=""ElfText"">アンバーワルドのエルフDLC</style>","Если на <style=KeyWord>расстоянии {0} яч.</style> вокруг героя <style=KeyWord>нет других героев</style>, все <style=""skill"">навыки</style> получают свойство:
-{1} и {2}.
+{1}
+герой получает: {2}.
+Если вокруг нет героев на <style=KeyWord>расстоянии {3} яч.</style>, герой также получает: {4}.
+<style=Attenuated>Первый эффект складывается со вторым.</style>
 <style=""ElfIcon""></style><style=""ElfText"">Дополнительный контент ""Elves of Amberwald""</style>","Поки на <style=KeyWord>відстані {0}</style> <style=KeyWord>немає інших героїв</style>, усі <style=""skill"">вміння</style> отримують:
-{1} і {2}.
+{1}
+герой отримує: {2}.
+Поки на <style=KeyWord>відстані {3}</style> <style=KeyWord>немає інших героїв</style>, герой також отримує: {4}.
+<style=Attenuated>Цей модифікатор додається до попереднього.</style>
 <style=""ElfIcon""></style><style=""ElfText"">Доповнення Elves of Amberwald</style>","Wenn sich <style=KeyWord>kein anderer Held</style> innerhalb einer <style=KeyWord>Reichweite von {0} Feldern</style> befindet, erhalten alle <style=""skill"">Fähigkeiten</style>:
-{1} und {2}.
+{1}
+und der Held erhält: {2}.
+Wenn sich <style=KeyWord>kein anderer Held</style> innerhalb von <style=KeyWord>{3} Feldern</style> befindet, erhält der Held auch: {4}.
+<style=Attenuated>Dieser Modifikator wird zum vorherigen addiert.</style>
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Siempre que <style=KeyWord>no haya ningún otro héroe</style> a una <style=KeyWord>distancia máxima de {0} casillas</style>, todas las <style=""skill"">habilidades</style> obtienen:
-{1} y {2}.
+{1}
+y el héroe obtiene: {2}.
+Si <style=KeyWord>no hay otro héroe</style> a una <style=KeyWord>distancia de {3} casillas</style>, el héroe también obtiene: {4}.
+<style=Attenuated>Este modificador se suma al anterior.</style>
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","Desde que <style=KeyWord>não haja outro Herói</style> em uma <style=KeyWord>distância de até {0}</style>, todas as <style=""skill"">habilidades</style> recebem:
-{1} e {2}.
+{1}
+e o Herói recebe: {2}.
+Se <style=KeyWord>não houver outro Herói</style> em uma <style=KeyWord>distância de até {3}</style>, o Herói também recebe: {4}.
+<style=Attenuated>Este modificador se soma ao anterior.</style>
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","<style=KeyWord>{0}타일</style> 이내에 <style=KeyWord>다른 영웅이 없을</style> 경우 모든 <style=""skill"">스킬</style>에 적용:
-{1} 및 {2}
+{1}
+영웅에게 적용: {2}
+<style=KeyWord>{3}타일</style> 이내에 <style=KeyWord>다른 영웅이 없을</style> 경우 영웅에게 추가 적용: {4}
+<style=Attenuated>해당 보정치는 중첩됨</style>
 <style=""ElfIcon""></style><style=""ElfText"">암버발트의 엘프 DLC</style>"
 "PerkDescription_Longstrider","Every {0} tiles traveled by a Hero with a {2} or {3} <style=Skill>skill</style>:
 {1}.
@@ -2484,3 +2527,132 @@ DivergenceEffectShortDescription_AddPerk_ReduceCritCurse,<style=Number>-3%</styl
 DivergenceEffectFullDescription_AddPerk_ReduceCritCurse_2,Whenever a <style=divergenceOutline><style=KeyWord>critical hit</style></style> is landed: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style> <style=divergenceoutline><style=critical>Critical</style></style> until the end of the <style=divergenceOutline><style=Night>Night</style></style>.,Quand un <style=divergenceOutline><style=Critical>Coup Critique</style></style> est infligé<nbsp>: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style> <style=divergenceoutline><style=critical>Critique</style></style> jusqu'à la fin de la <style=divergenceOutline><style=Night>Nuit</style></style>.,每造成一次<style=divergenceOutline><style=KeyWord>暴击</style></style>：<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style><style=divergenceOutline><style=critical>暴击</style></style>，效果持续至<style=divergenceOutline><style=Night>夜晚</style></style>结束。,每當造成一次<style=divergenceOutline><style=KeyWord>暴擊</style></style>時：<style=divergenceoutline><style=critical>暴擊</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style>，持續到<style=divergenceOutline><style=Night>夜晚</style></style>結束為止。,<style=divergenceOutline><style=KeyWord>会心ヒット</style></style>発生時:<style=divergenceOutline><style=Night>夜</style></style>終了まで<style=divergenceoutline><style=critical>会心</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style>。,За каждый <style=divergenceOutline><style=KeyWord>критический удар</style></style> герои до конца <style=divergenceOutline><style=Night>ночи</style></style> получают <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style> к <style=divergenceoutline><style=critical>шансу критического урона</style></style>.,Коли завдано <style=divergenceOutline><style=KeyWord>критичний удар</style></style>: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style> <style=divergenceoutline><style=critical>шансу критичного удару</style></style> до кінця <style=divergenceOutline><style=Night>ночі</style></style>.,Immer wenn ein <style=divergenceOutline><style=KeyWord>kritischer Treffer</style></style> gelandet wird: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7 %</style></style> <style=divergenceoutline><style=critical>kritischer Treffer</style></style> bis zum Ende der <style=divergenceOutline><style=Night>Nacht</style></style>.,Cuando se inflige un <style=divergenceOutline><style=KeyWord>golpe crítico</style></style>: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7 %</style></style> al <style=divergenceoutline><style=critical>crítico</style></style> hasta que acabe la <style=divergenceOutline><style=Night>noche</style></style>.,Sempre que houver um <style=divergenceOutline><style=KeyWord>acerto crítico</style></style>: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style> de <style=divergenceoutline><style=critical>Crítico</style></style> até o fim da <style=divergenceOutline><style=Night>Noite</style></style>.,<style=divergenceOutline><style=KeyWord>치명타</style></style>가 발생할 때마다: <style=divergenceOutline><style=Night>밤</style></style>이 끝날 때까지 <style=divergenceoutline><style=critical>치명타</style></style> <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style>
 DivergenceEffectFullDescriptionTooltip_AddPerk_ReduceCritCurse_2,Whenever a <style=KeyWord>critical hit</style> is landed: <style=KeywordNb>-7%</style> <style=critical>Critical</style> until the end of the <style=Night>Night</style>.,Quand un <style=Critical>Coup Critique</style> est infligé<nbsp>: <style=KeywordNb>-7%</style> <style=critical>Critique</style> jusqu'à la fin de la <style=Night>Nuit</style>.,每造成一次<style=KeyWord>暴击</style>：<style=KeywordNb>-7%</style><style=critical>暴击</style>，效果持续至<style=Night>夜晚</style>结束。,每當造成一次<style=KeyWord>暴擊</style>時：<style=critical>暴擊</style><style=KeywordNb>-7%</style>，持續到<style=Night>夜晚</style>結束為止。,<style=KeyWord>会心ヒット</style>発生時:<style=Night>夜</style>終了まで<style=critical>会心</style><style=KeywordNb>-7%</style>。,За каждый <style=KeyWord>критический удар</style> герои до конца <style=Night>ночи</style> получают <style=KeywordNb>-7%</style> к <style=critical>шансу критического урона</style>.,Коли завдано <style=KeyWord>критичний удар</style>: <style=KeywordNb>-7% </style><style=critical>шансу критичного удару</style> до кінця <style=Night>ночі</style>.,Immer wenn ein <style=KeyWord>kritischer Treffer</style> gelandet wird: <style=KeywordNb>-7 % </style><style=critical>kritischer Treffer</style> bis zum Ende der <style=Night>Nacht</style>.,Cuando se inflige un <style=KeyWord>golpe crítico</style>: <style=KeywordNb>-7 %</style> al <style=critical>crítico</style> hasta que acabe la <style=Night>noche</style>.,Sempre que houver um <style=KeyWord>acerto crítico</style>: <style=KeywordNb>-7% de </style><style=critical>Crítico</style> até o fim da <style=Night>Noite</style>.,<style=KeyWord>치명타</style>가 발생할 때마다: <style=Night>밤</style>이 끝날 때까지 </style><style=critical>치명타 <style=KeywordNb>-7%</style>
 DivergenceEffectShortDescription_AddPerk_ReduceCritCurse_2,<style=Number>-7%</style> <style=critical>Critical</style>,<style=Number>-7%</style> <style=critical>Critique</style>,<style=Number>-7%</style> <style=critical>暴击</style>,<style=critical>暴擊</style><style=Number>-7%</style>,<style=critical>会心</style><style=Number>-7%</style>,<style=Number>-7%</style> к <style=critical>шансу критического урона</style>,<style=Number>-7%</style> <style=critical>шансу критичного удару</style>,<style=Number>-7 %</style> <style=critical>kritischer Treffer</style>,<style=Number>-7 %</style> al <style=critical>crítico</style>,<style=Number>-7%</style> de <style=critical>Crítico</style>,<style=critical>치명타</style> <style=Number>-7%</style>
+"PerkEffectInformations_ThirdEye","Enemies to hit: {4}","Ennemis à toucher<nbsp>: {4}","还需击中的敌人数量：{4}","還需擊中的敵人數量：{4}","攻撃するエネミー: {4}","Ещё попаданий: {4}","Ще ударити ворогів: {4}","zu treffende Gegner: {4}","Enemigos por golpear: {4}","Inimigos a serem golpeados: {4}","명중해야 하는 적: {4}"
+"PerkDescription_HeadOn","Every <style=KeyWord>{0} tiles traveled</style> (excluding <style=""Skill"">skills</style> with <style=NoMomentum>No Momentum</style>), the next attack gets:
+{1}.
+{2}, {4}.
+<style=Attenuated>This modifier doesn't stack.</style>","Toutes les <style=KeyWord>{0} cases parcourues</style> (excluant les <style=""Skill"">compétences</style> <style=NoMomentum>Sans Inertie</style>), la prochaine attaque gagne<nbsp>:
+{1}.
+{2}, {4}.
+<style=Attenuated>Ce modificateur n'est pas cumulable.</style>","每<style=KeyWord>移动{0}格</style>（不包含<style=NoMomentum>横冲直撞无效</style>的<style=""Skill"">技能</style>），下一次攻击将获得：
+{1}
+{2}, {4}
+<style=Attenuated>此加成不可叠加。</style>","每<style=KeyWord>移動{0}格</style>（不包含<style=NoMomentum>橫衝直撞無效</style>的<style=""Skill"">技能</style>），下一次攻擊將獲得：
+{1}
+{2}, {4}
+<style=Attenuated>此加成不可疊加。</style>","<style=KeyWord>{0}タイル移動</style>するごとに(<style=NoMomentum>衝撃無し</style><style=""Skill"">スキル</style>は除く)、次の攻撃に以下の効果を付与する:
+{1}。
+{2}, {4}。
+<style=Attenuated>この効果は重複しない</style>。","<style=KeyWord>Пройдя {0} яч.</style> (<style=""Skill"">навыки</style> со свойством <style=NoMomentum>""Без разгона""</style> не считаются), герой получает бонус к следующей атаке:
+{1}.
+{2}, {4}.
+<style=Attenuated>Эффект не накапливается.</style>","За кожні <style=KeyWord>{0} подолані плитки</style> (за винятком <style=""Skill"">вмінь</style> <style=NoMomentum>без імпульсу</style>), наступна атака отримує:
+{1}.
+{2}, {4}.
+<style=Attenuated>Цей модифікатор не поєднується.</style>","Für alle <style=KeyWord>{0} zurückgelegten Felder</style> (mit Ausnahme von <style=""Skill"">Fähigkeiten</style> mit <style=NoMomentum>Kein Momentum</style>), hat der nächste Angriff:
+{1}.
+{2}, {4}.
+<style=Attenuated>Dieser Modifikator ist nicht stapelbar.</style>","Al cruzar <style=KeyWord>{0} casillas</style> (excepto con <style=""Skill"">habilidades</style> <style=NoMomentum>sin impulso</style>), el siguiente ataque obtiene:
+{1}.
+{2}, {4}.
+<style=Attenuated>Este modificador no se acumula.</style>","A cada <style=KeyWord>{0} casas percorridas</style> (excluindo <style=""Skill"">habilidades</style> <style=NoMomentum>Sem Impulso</style>), o próximo ataque recebe:
+{1}.
+{2}, {4}.
+<style=Attenuated>Este modificador não acumula.</style>","<style=KeyWord>{0}타일을 이동</style>할 때마다 (<style=NoMomentum>기세 없음</style>을 보유한 <style=""Skill"">스킬</style> 제외) 다음 차례 공격에 적용:
+{1}
+{2}, {4}
+<style=Attenuated>해당 보정치는 중첩되지 않음</style>"
+"PerkEffectInformations_HeadOn","Tiles to travel: {3}","Cases à parcourir<nbsp>: {3}","还需移动格数：{3}","還需移動格數：{3}","移動するタイル: {3}","Осталось пройти: {3} яч.","Подолати плиток: {3}","Felder zurückzulegen: {3}","Casillas que atravesar: {3}","Casas a serem percorridas: {3}.","이동 타일: {3}"
+"PerkDescription_Nimble","As long as the Hero is at <style=KeyWord>full Health</style>:
+{0}.
+{1}.
+{2}.","Tant que le Héros est en <style=KeyWord>pleine santé</style><nbsp>:
+{0}.
+{1}.
+{2}.","当英雄处于<style=KeyWord>满血状态</style>时：
+{0}
+{1}
+{2}","當英雄處於<style=KeyWord>滿血狀態</style>時：
+{0}
+{1}
+{2}","英雄の体力が<style=KeyWord>満タン</style>の間:
+{0}。
+{1}。
+{2}。","Пока у героя <style=KeyWord>полное здоровье</style>:
+{0}.
+{1}.
+{2}.","Поки герой має <style=KeyWord>повне здоров'я</style>:
+ {0}.
+ {1}.
+{2}.","Solange der Held <style=KeyWord>volle Gesundheit</style> hat:
+{0}.
+{1}.
+{2}.","Mientras el héroe tenga <style=KeyWord>salud plena</style>:
+{0}.
+{1}.
+{2}.","Enquanto o Herói estiver com <style=KeyWord>Saúde cheia</style>:
+{0}.
+{1}.
+{2}.","영웅이 <style=KeyWord>체력 만땅</style>인 경우:
+{0}
+{1}
+{2}"
+"PerkDescription_DeadlyRanger","For each {4} <style=Keyword>equipped</style>: {0}.
+For each {5} <style=Keyword>equipped</style>: {1}.
+<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Pour chaque {4} <style=Keyword>équipée</style> : {0}.
+Pour chaque {5} <style=Keyword>équipée</style> : {1}.
+<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","每<style=Keyword>装备</style>一件{4}：{0}。
+每<style=Keyword>装备</style>一件{5}：{1}。
+<style=""ElfIcon""></style><style=""ElfText"">《琥珀幽森的精灵》DLC</style>","每<style=Keyword>裝備</style>一個{4}：{0}。
+每<style=Keyword>裝備</style>一個{5}：{1}。
+<style=""ElfIcon""></style><style=""ElfText"">〈琥珀幽森的精靈〉DLC</style>","<style=Keyword>装備している</style>{4}ごとに: {0}。
+<style=Keyword>装備している</style>{5}ごとに: {1}。
+<style=""ElfIcon""></style><style=""ElfText"">アンバーワルドのエルフDLC</style>","Каждое <style=Keyword>взятое в руки</style> {4} даёт бонус: {0}.
+Каждое <style=Keyword>взятое в руки</style> {5} даёт бонус: {1}.
+<style=""ElfIcon""></style><style=""ElfText"">Дополнительный контент ""Elves of Amberwald""</style>","За кож. {4} <style=Keyword>у спорядженні</style>: {0}.
+За кож. {5} <style=Keyword>у спорядженні</style>: {1}.
+<style=""ElfIcon""></style><style=""ElfText"">Доповнення Elves of Amberwald</style>","Für jede <style=Keyword>ausgerüstete</style> {4}: {0}.
+Für jede <style=Keyword>ausgerüstete</style> {5}: {1}.
+<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Por cada {4} <style=Keyword>equipada</style>: {0}.
+Por cada {5} <style=Keyword>equipada</style>: {1}.
+<style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","Para cada {4} <style=Keyword>equipada</style>: {0}.
+Para cada {5} <style=Keyword>equipada</style>: {1}.
+<style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","<style=Keyword>장착</style>한 {4} 하나당: {0}
+<style=Keyword>장착</style>한 {5} 하나당: {1}
+<style=""ElfIcon""></style><style=""ElfText"">암버발트의 엘프 DLC</style>"
+"PerkEffectInformations_DeadlyRanger","Current bonus:
+{2}
+{3}","Bonus actuel :
+{2}
+{3}","当前加成：
+{2}
+{3}","目前加成：
+{2}
+{3}","現在のボーナス:
+{2}
+{3}","Текущий бонус:
+{2};
+{3}.","Поточний бонус:
+{2}
+{3}","Aktueller Bonus:
+{2}
+{3}","Bonificación actual:
+{2}
+{3}","Bônus atual:
+{2}
+{3}","현재 보너스:
+{2}
+{3}"
+"PerkEffectInformations_Sentry","{5}","{5}","{5}","{5}","{5}","{5}","{5}","{5}","{5}","{5}","{5}"
+"PerkDescription_Stunning","{0}.
+When <style=KeyWord>attacking</style> a <style=Stun>stunned</style> unit: {1} <style=PerkDamage>Perk Damage</style>.","{0}.
+Lorsqu'une unité <style=Stun>étourdie</style> est <style=KeyWord>attaquée</style> : {1} de <style=PerkDamage>Dégâts de talent</style>.","{0}
+当<style=KeyWord>攻击</style><style=Stun>眩晕</style>的敌人时：{1}<style=PerkDamage>天赋伤害</style>","{0}
+當<style=KeyWord>攻擊</style><style=Stun>眩暈</style>的敵人時：{1}<style=PerkDamage>天賥傷害</style>","{0}。
+<style=Stun>スタン</style>状態のユニットを<style=KeyWord>攻撃</style>時: {1}<style=PerkDamage>パークダメージ</style>。","{0}.
+При <style=KeyWord>атаке</style> <style=Stun>оглушённой</style> цели: {1} <style=PerkDamage>Урона от перка</style>.","{0}.
+Під час <style=KeyWord>атаки</style> <style=Stun>оглушеного</style> монстра: {1} <style=PerkDamage>Шкоди від перка</style>.","{0}.
+Beim <style=KeyWord>Angriff</style> auf eine <style=Stun>betäubte</style> Einheit: {1} <style=PerkDamage>Perk-Schaden</style>.","{0}.
+Al <style=KeyWord>atacar</style> a una unidad <style=Stun>aturdida</style>: {1} de <style=PerkDamage>Daño de beneficio</style>.","{0}.
+Quando <style=KeyWord>atacar</style> uma unidade <style=Stun>atordoada</style>: {1} de <style=PerkDamage>Dano de Vantagem</style>.","{0}
+<style=Stun>기절</style> 상태인 유닛을 <style=KeyWord>공격</style>할 경우: {1}"
