@@ -1421,6 +1421,8 @@
             <MaterialCost>100</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="IncreaseMaximumTrapCharges" Value="1"/>
+               <UpgradeEffect Id="SwapSkill" OldSkillId="StunTrapTriggered" NewSkillId="StunTrapTriggered_Upgraded"/>
+               <UpgradeEffect Id="SwapSkill" OldSkillId="Spe_StunTrapTriggered" NewSkillId="Spe_StunTrapTriggered_Upgraded"/>
             </UpgradeEffects>
          </UpgradeLevel>
       </UpgradeLevels>

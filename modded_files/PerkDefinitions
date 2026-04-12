@@ -1053,11 +1053,11 @@
    <!-- T1 -->
    <PerkDefinition Id="SteadyAim">
       <TokenVariables>
-         <TokenVariable Key="RangedDamageBonus" Value="12"/>
-         <TokenVariable Key="SkillRangeModifier" Value="2"/>
+         <TokenVariable Key="OverallDamageBonus" Value="15"/>
+         <TokenVariable Key="SkillRangeModifier" Value="1"/>
       </TokenVariables>
       <LocArguments>
-         <StatArgument Stat="RangedDamage" Value="RangedDamageBonus"/>
+         <StatArgument Stat="OverallDamage" Value="OverallDamageBonus"/>
          <StatArgument Stat="SkillRangeModifier" Value="SkillRangeModifier"/>
       </LocArguments>
       <View>
@@ -1093,7 +1093,7 @@
                </Event>
             </Events>
             <Effects>
-               <StatModifier Stat="RangedDamage" Value="RangedDamageBonus"/>
+               <StatModifier Stat="OverallDamage" Value="OverallDamageBonus"/>
                <StatModifier Stat="SkillRangeModifier" Value="SkillRangeModifier"/>
             </Effects>
          </BufferModule>
@@ -2955,57 +2955,19 @@
       <TokenVariables>
          <TokenVariable Key="LockedSkillId" Value="Punch"/>
          <TokenVariable Key="AddedSkillId" Value="MartialPunch"/>
-         <TokenVariable Key="EnemiesToKillUntilNextBonus" Value="BonusDamageKillThreshold - Module.Buffer3"/>
-         <!--<TokenVariable Key="DamageCapIsReached" Value="TotalBonusDamage > BonusDamageCap - 1"/>-->
-         <TokenVariable Key="BonusDamagePerKill" Value="1"/> <!--gain X damage every...-->
-         <TokenVariable Key="BonusDamageKillThreshold" Value="KillThresholdBaseValue + Floor(TotalBonusDamage / IncreaseThresholdEveryXBonusDamage)"/> <!--... every Y kills.-->
-         <TokenVariable Key="KillThresholdBaseValue" Value="1"/>
-         <TokenVariable Key="IncreaseThresholdEveryXBonusDamage" Value="50"/> <!--where Y is increased by 1 every Z kills-->
-         <TokenVariable Key="PunchKills" Value="Module.Buffer"/>
-         <TokenVariable Key="TotalBonusDamage" Value="Module.Buffer2"/>
       </TokenVariables>
       <LocArguments>
          <LocalizedArgument Prefix="SkillName_" Value="LockedSkillId" Style="Skill"/>
          <LocalizedArgument Prefix="SkillName_" Value="AddedSkillId" Style="Skill"/>
-         <LocArgument Value="BonusDamagePerKill" Interpreted="true" Style="KeyWordNb"/>
-         <LocArgument Value="IncreaseThresholdEveryXBonusDamage" Interpreted="true" Style="KeyWordNb"/>
-         <LocArgument Value="KillThresholdBaseValue" Interpreted="true" Style="KeyWordNb"/>
-         <LocArgument Value="1" Style="KeyWordNb"/>
-         <LocArgument Value="TotalBonusDamage" Interpreted="true" Style="KeyWordNb"/>
-         <LocArgument Value="EnemiesToKillUntilNextBonus" Interpreted="true" Style="KeyWordNb"/>
       </LocArguments>
       <View>
-         <DisplayInHUD>
-            <Bonus Value="TotalBonusDamage"/>
-         </DisplayInHUD>
+         <DisplayInHUD/>
          <SkillsToShow>
             <SkillToShow Id="MartialPunch" />
          </SkillsToShow>
       </View>
       <Modules>
          <BufferModule>
-            <Events>
-               <Event EffectTime="OnTargetKilled">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsSkillID('MartialPunch')"/>
-                     <IsTrue Value="IsTargetEnemyUnit"/>
-                  </Conditions>
-                  <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/> <!--Buffer 1 = total punch kills-->
-                     <IncreaseBuffer BufferIndex="Buffer3" Value="1"/> <!--Buffer 3 = punch kills since last damage increase-->
-                  </Actions>
-               </Event>
-               <Event EffectTime="OnSkillCastEnd">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsSkillID('MartialPunch')"/>
-                     <IsTrue Value="Module.Buffer3 > BonusDamageKillThreshold -1"/>
-                  </Conditions>
-                  <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/> <!--Buffer 2 = accumulated punch bonus damage-->
-                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
-                  </Actions>
-               </Event>
-            </Events>
             <Effects>
                <AddSkill SkillId="MartialPunch"/>
                <LockSkill SkillId="Punch"/>
