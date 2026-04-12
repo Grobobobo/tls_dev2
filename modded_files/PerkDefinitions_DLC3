@@ -93,7 +93,7 @@
    <PerkDefinition Id="ExperienceBonusPerHeroes">
       <TokenVariables>
          <TokenVariable Key="ActualExperienceBonus" Value="(BaseXpBonus + XpMalusPerHeroes) - (NumberOfPlayableUnit * XpMalusPerHeroes)"/>
-         <TokenVariable Key="XpMalusPerHeroes" Value="12"/>
+         <TokenVariable Key="XpMalusPerHeroes" Value="10"/>
          <TokenVariable Key="BaseXpBonus" Value="60"/>
       </TokenVariables>
       <LocArguments>
@@ -904,10 +904,10 @@
    <PerkDefinition Id="ResistancePractice">
       <TokenVariables>
          <TokenVariable Key="ResistanceBonus" Value="NumberOfStepsReached * ResistancePercentage"/>
-         <TokenVariable Key="ResistancePercentage" Value="3"/>
+         <TokenVariable Key="ResistancePercentage" Value="2"/>
          <TokenVariable Key="NextThreshold" Value="MinimumXPThreshold + (NumberOfStepsReached + 1) * XPStep"/>
          <TokenVariable Key="NumberOfStepsReached" Value="Floor(CurrentXPOverThreshold / XPStep)"/>
-         <TokenVariable Key="XPStep" Value="10"/>
+         <TokenVariable Key="XPStep" Value="5"/>
          <TokenVariable Key="CurrentXPOverThreshold" Value="Max(0, Owner.ExperienceGainMultiplier - MinimumXPThreshold)"/>
          <TokenVariable Key="MinimumXPThreshold" Value="100"/>
       </TokenVariables>
@@ -3003,7 +3003,7 @@
       <TokenVariables>
          <TokenVariable Key="DamagePerStack" Value="4"/>
          <TokenVariable Key="PerkStacks" Value="Min(Max(0,Module.Buffer), MaxStacks)"/>
-         <TokenVariable Key="MaxStacks" Value="20"/>
+         <TokenVariable Key="MaxStacks" Value="15"/>
          <TokenVariable Key="WasAttackedThisTurn" Value="Module.Buffer2"/>
          <TokenVariable Key="StackPerEnemy" Value="3"/>
          <TokenVariable Key="StackLoosePerSkill" Value="1"/>
@@ -3850,7 +3850,7 @@
          <TokenVariable Key="PoisonScalingOnLevel" Value="(Floor(PlayableUnitLevel/PerLevelHeroScale) * PoisonScalingLevelMultiplicative)"/>
          <TokenVariable Key="PlayableUnitLevel" Value="(BooleanChoice(HasOwner,Owner.Level,1))"/>
          <TokenVariable Key="PlayerPoisonScalingOnHit" Value="0.25"/>
-         <TokenVariable Key="PerLevelHeroScale" Value="6"/>
+         <TokenVariable Key="PerLevelHeroScale" Value="4"/>
 
          <TokenVariable Key="ApplyStatusRange" Value="4"/>
          <TokenVariable Key="PoisonPlayerDuration" Value="3"/>

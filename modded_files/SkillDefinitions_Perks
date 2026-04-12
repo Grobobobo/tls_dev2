@@ -626,7 +626,7 @@
       <Range Min="1" Max="1" CardinalDirectionOnly="true" Modifiable="false"/>
       <SkillAction>
          <Attack>
-            <BaseDamage Min="80 + GetPerkModuleBuffer('MartialPunch', 1, 2) * 1" Max="100 + GetPerkModuleBuffer('MartialPunch', 1, 2) * 1"/>
+            <BaseDamage Min="100 * (1 + Level/13)" Max="200 * (1 + Level/13)"/>
             <AttackType>Physical</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
@@ -635,7 +635,7 @@
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <Malus>3</Malus>
                   <Stat Id="MovePointsTotal"/>
-                  <TurnsCount>1</TurnsCount>
+                  <TurnsCount>2</TurnsCount>
                </Debuff>
             </SkillEffects>
          </Attack>

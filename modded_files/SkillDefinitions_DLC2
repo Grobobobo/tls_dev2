@@ -867,7 +867,7 @@
 
             <SkillEffects>
 
-               <IgnoreLineOfSight/>
+
 
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -979,7 +979,7 @@
 
             <SkillEffects>
 
-               <IgnoreLineOfSight/>
+
 
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -1010,7 +1010,7 @@
             <DamageMultiplier>1.3</DamageMultiplier>
 
             <SkillEffects>
-               <IgnoreLineOfSight/>
+
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
@@ -1066,7 +1066,7 @@
 
             <SkillEffects>
 
-               <IgnoreLineOfSight/>
+
 
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -1097,7 +1097,7 @@
 
             <SkillEffects>
 
-               <IgnoreLineOfSight/>
+
 
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -1154,7 +1154,7 @@
 
             <SkillEffects>
 
-               <IgnoreLineOfSight/>
+
 
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -1185,7 +1185,7 @@
 
             <SkillEffects>
 
-               <IgnoreLineOfSight/>
+
 
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -1242,7 +1242,7 @@
 
             <SkillEffects>
 
-               <IgnoreLineOfSight/>
+
 
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -1273,7 +1273,7 @@
 
             <SkillEffects>
 
-               <IgnoreLineOfSight/>
+
 
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -1330,7 +1330,7 @@
 
             <SkillEffects>
 
-               <IgnoreLineOfSight/>
+
 
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -1361,7 +1361,7 @@
 
             <SkillEffects>
 
-               <IgnoreLineOfSight/>
+
 
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -1418,7 +1418,7 @@
 
             <SkillEffects>
 
-               <IgnoreLineOfSight/>
+
 
                <Debuff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -1485,7 +1485,7 @@
 
             <SkillEffects>
 
-               <IgnoreLineOfSight/>
+
 
                   <Stun>
 
@@ -1686,7 +1686,7 @@
 
             <SkillEffects>
 
-               <IgnoreLineOfSight/>
+
 
                   <Stun>
 
@@ -1731,7 +1731,6 @@
       <UsesPerTurnCount>3</UsesPerTurnCount>
 
 
-
       <SkillAction>
 
          <Attack>
@@ -1742,19 +1741,15 @@
 
             <SkillEffects>
 
-               <Poison>
-
-                  <DamagePerTurn>35</DamagePerTurn>
-
-                  <TurnsCount>3</TurnsCount>
-
-               </Poison>
+               <Momentum>
+                  <DamageBonusPerTile>0.2</DamageBonusPerTile>
+               </Momentum>
 
                <SurroundingEffect>
 
                   <Poison>
 
-                     <DamagePerTurn>35</DamagePerTurn>
+                     <DamagePerTurn>40</DamagePerTurn>
 
                      <TurnsCount>3</TurnsCount>
 
@@ -2044,9 +2039,9 @@
 
    <SkillDefinition Id="ContagiousPollen">
 
-      <ActionPointsCost>1</ActionPointsCost>
+      <ActionPointsCost>2</ActionPointsCost>
 
-      <ManaCost>2</ManaCost>
+      <ManaCost>1</ManaCost>
 
       <Range Min="1" Max="6" Modifiable="true"/>
 
@@ -2070,14 +2065,17 @@
 
             <AttackType>Magical</AttackType>
 
-            <DamageMultiplier>1.3</DamageMultiplier>
+            <DamageMultiplier>1.7</DamageMultiplier>
 
             <SkillEffects>
 
                <Follow/>
 
                <SurroundingEffect>
-
+                  <Damage Multiplier="0.5"/>
+                  <Stun>
+                     <BaseChance>1</BaseChance>
+                  </Stun>
                   <Contagion>
 
                      <BaseChance>1</BaseChance>
@@ -2467,7 +2465,7 @@
 
             <SkillEffects>
 
-               <IgnoreLineOfSight/>
+
 
                   <Stun>
 
@@ -3258,12 +3256,13 @@
          <Generic>
 
             <SkillEffects>
+               <IgnoreLineOfSight/>
 
                <Contagion>
 
                   <BaseChance>100</BaseChance>
 
-                  <TurnsCount>2</TurnsCount>
+                  <TurnsCount>3</TurnsCount>
 
                </Contagion>
 
@@ -3273,7 +3272,7 @@
 
                   <DamagePerTurn>50</DamagePerTurn>
 
-                  <TurnsCount>2</TurnsCount>
+                  <TurnsCount>3</TurnsCount>
 
                </Poison>
 
@@ -3285,7 +3284,7 @@
 
                   <DamagePerTurn>50</DamagePerTurn>
 
-                  <TurnsCount>2</TurnsCount>
+                  <TurnsCount>3</TurnsCount>
 
                </Poison>
 
@@ -3371,12 +3370,13 @@
          <Generic>
 
             <SkillEffects>
+               <IgnoreLineOfSight/>
 
                <Contagion>
 
                   <BaseChance>100</BaseChance>
 
-                  <TurnsCount>2</TurnsCount>
+                  <TurnsCount>3</TurnsCount>
 
                </Contagion>
 
@@ -3386,7 +3386,7 @@
 
                   <DamagePerTurn>50</DamagePerTurn>
 
-                  <TurnsCount>2</TurnsCount>
+                  <TurnsCount>3</TurnsCount>
 
                </Poison>
 
@@ -3398,7 +3398,7 @@
 
                   <DamagePerTurn>50</DamagePerTurn>
 
-                  <TurnsCount>2</TurnsCount>
+                  <TurnsCount>3</TurnsCount>
 
                </Poison>
 
@@ -3420,12 +3420,13 @@
          <Generic>
 
             <SkillEffects>
+               <IgnoreLineOfSight/>
 
                <Contagion>
 
                   <BaseChance>100</BaseChance>
 
-                  <TurnsCount>3</TurnsCount>
+                  <TurnsCount>4</TurnsCount>
 
                </Contagion>
 
@@ -3435,7 +3436,7 @@
 
                   <DamagePerTurn>75</DamagePerTurn>
 
-                  <TurnsCount>3</TurnsCount>
+                  <TurnsCount>4</TurnsCount>
 
                </Poison>
 
@@ -3447,7 +3448,7 @@
 
                      <DamagePerTurn>75</DamagePerTurn>
 
-                     <TurnsCount>3</TurnsCount>
+                     <TurnsCount>4</TurnsCount>
 
                   </Poison>
 
@@ -3477,12 +3478,13 @@
          <Generic>
 
             <SkillEffects>
+               <IgnoreLineOfSight/>
 
                <Contagion>
 
                   <BaseChance>100</BaseChance>
 
-                  <TurnsCount>3</TurnsCount>
+                  <TurnsCount>4</TurnsCount>
 
                </Contagion>
 
@@ -3492,7 +3494,7 @@
 
                   <DamagePerTurn>75</DamagePerTurn>
 
-                  <TurnsCount>3</TurnsCount>
+                  <TurnsCount>4</TurnsCount>
 
                </Poison>
 
@@ -3504,7 +3506,7 @@
 
                      <DamagePerTurn>75</DamagePerTurn>
 
-                     <TurnsCount>3</TurnsCount>
+                     <TurnsCount>4</TurnsCount>
 
                   </Poison>
 

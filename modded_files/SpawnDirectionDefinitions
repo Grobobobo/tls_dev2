@@ -1,0 +1,2079 @@
+﻿<SpawnDirectionsDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:noNamespaceSchemaLocation="SpawnDirectionsDefinitions.xsd">
+
+
+   <!-- Naming Convention : -->
+   <!-- [KeyWord]_[FirstLetterDirection][NbProportion]-[NbSpawnPoints][Equidistant(Noted E to simplify)]-->
+   <!-- [KeyWord] : just a word to identify quickly what the direction is about. The possible choices are : AllIn, Corner, Parallel, Three, Four  -->
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!--  ONE DIRECTION -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   
+   <SpawnDirectionsDefinition Id="AllIn_T100-1">
+      <Direction Id="Top">
+         <Proportion>100</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="AllIn_T100-2">
+      <Direction Id="Top">
+         <Proportion>100</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="AllIn_T100-2E">
+      <Direction Id="Top">
+         <Proportion>100</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="AllIn_T100-3">
+      <Direction Id="Top">
+         <Proportion>100</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="AllIn_T100-3E">
+      <Direction Id="Top">
+         <Proportion>100</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="2"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="AllIn_T100-5E">
+      <Direction Id="Top">
+         <Proportion>100</Proportion>
+         <SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+  <SpawnDirectionsDefinition Id="AllIn_T100-4E">
+    <Direction Id="Top">
+      <Proportion>100</Proportion>
+      <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+      <Equidistant BordersMargin="0"/>
+    </Direction>
+  </SpawnDirectionsDefinition>
+
+	<!--- Gildenberg Redux -->
+
+	<SpawnDirectionsDefinition Id="AllIn_B100-5E">
+		<Direction Id="Bottom">
+			<Proportion>100</Proportion>
+			<SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+			<Equidistant BordersMargin="1"/>
+		</Direction>
+	</SpawnDirectionsDefinition>
+
+	<SpawnDirectionsDefinition Id="AllIn_L100-2E">
+		<Direction Id="Left">
+			<Proportion>100</Proportion>
+			<SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+		</Direction>
+	</SpawnDirectionsDefinition>
+
+
+	<SpawnDirectionsDefinition Id="AllIn_R100-2E">
+		<Direction Id="Right">
+			<Proportion>100</Proportion>
+			<SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+		</Direction>
+	</SpawnDirectionsDefinition>
+
+	<SpawnDirectionsDefinition Id="AllIn_T100-8">
+		<Direction Id="Top">
+			<Proportion>100</Proportion>
+			<SpawnPointsPerDirectionCount>8</SpawnPointsPerDirectionCount>
+		</Direction>
+	</SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="AllIn_R100-4">
+      <Direction Id="Right">
+         <Proportion>100</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+	<!--Elderlicht-->
+
+   <SpawnDirectionsDefinition Id="AllIn_T100-8E">
+      <Direction Id="Top">
+         <Proportion>100</Proportion>
+         <SpawnPointsPerDirectionCount>8</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="AllIn_T30-2E_T20-2E_T20-2E_R30-2_L30-2">
+      <Direction Id="Top">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="27"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="16"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="18"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+   
+   <!--GLENWALD REDUX-->
+   <SpawnDirectionsDefinition Id="AllIn_T40-1E_T60-4E">
+      <Direction Id="Top">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>60</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+   
+	<SpawnDirectionsDefinition Id="AllIn_B100-2E">
+		<Direction Id="Bottom">
+			<Proportion>100</Proportion>
+			<SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+			<Equidistant BordersMargin="1"/>
+		</Direction>
+	</SpawnDirectionsDefinition>
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!--  TWO DIRECTIONS CORNER -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+   <SpawnDirectionsDefinition Id="Corner_T50-2_L50-2">
+      <Direction Id="Top">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Corner_T60-1_L40-1">
+      <Direction Id="Top">
+         <Proportion>60</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Corner_T65-1_L45-1">
+      <Direction Id="Top">
+         <Proportion>65</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>45</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Corner_T60-3_L40-2">
+      <Direction Id="Top">
+         <Proportion>60</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Corner_T70-3E_L30-1">
+      <Direction Id="Top">
+         <Proportion>70</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="2"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <!--Elderlicht-->
+   
+   <SpawnDirectionsDefinition Id="Corner_T35-1E_T30-1_L35-1">
+      <Direction Id="Top">
+         <Proportion>35</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="5"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Corner_T60-2_L40-2">
+      <Direction Id="Top">
+         <Proportion>60</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Corner_T30-2E_T35-2_L35-3">
+      <Direction Id="Top">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="17"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>35</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>35</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Corner_T40-2E_T30-3_L30-3"> <!--night 8 elderlicht-->
+      <Direction Id="Top">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="15"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Corner_T70-5_L30-3">
+      <Direction Id="Top">
+         <Proportion>70</Proportion>
+         <SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Corner_T70-6_L30-4">
+      <Direction Id="Top">
+         <Proportion>70</Proportion>
+         <SpawnPointsPerDirectionCount>6</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+   
+   <!--GLINTFEIN-->
+
+   <SpawnDirectionsDefinition Id="Corner_T70-1_L30-1">
+      <Direction Id="Top">
+         <Proportion>70</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Corner_T65-1_L35-1">
+      <Direction Id="Top">
+         <Proportion>65</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>35</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Corner_T65-2E_L35-1">
+      <Direction Id="Top">
+         <Proportion>65</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>35</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Corner_T65-1_L35-2E">
+      <Direction Id="Top">
+         <Proportion>65</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>35</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+	<!--Gildenberg Redux-->
+
+	<SpawnDirectionsDefinition Id="Corner_T65-5E_L35-1">
+		<Direction Id="Top">
+			<Proportion>65</Proportion>
+			<SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+			<Equidistant BordersMargin="1"/>
+		</Direction>
+		<Direction Id="Left">
+			<Proportion>35</Proportion>
+			<SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+		</Direction>
+	</SpawnDirectionsDefinition>
+
+	<SpawnDirectionsDefinition Id="Corner_B60-5E_R40-3">
+		<Direction Id="Top">
+			<Proportion>60</Proportion>
+			<SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+			<Equidistant BordersMargin="1"/>
+		</Direction>
+		<Direction Id="Left">
+			<Proportion>40</Proportion>
+			<SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+		</Direction>
+	</SpawnDirectionsDefinition>
+
+	<SpawnDirectionsDefinition Id="Corner_T65-5E_R35-1">
+		<Direction Id="Top">
+			<Proportion>65</Proportion>
+			<SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+			<Equidistant BordersMargin="1"/>
+		</Direction>
+		<Direction Id="Right">
+			<Proportion>35</Proportion>
+			<SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+		</Direction>
+	</SpawnDirectionsDefinition>
+
+	<SpawnDirectionsDefinition Id="Corner_B60-5E_L40-3">
+		<Direction Id="Bottom">
+			<Proportion>60</Proportion>
+			<SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+			<Equidistant BordersMargin="1"/>
+		</Direction>
+		<Direction Id="Left">
+			<Proportion>40</Proportion>
+			<SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+		</Direction>
+	</SpawnDirectionsDefinition>
+   
+   <!--GLENWALD REDUX-->
+   <SpawnDirectionsDefinition Id="Corner_T50-2E_T10-1E_L30-2">
+      <Direction Id="Top">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Corner_T50-2E_T10-1E_R30-2">
+      <Direction Id="Top">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <!--Night 8-->
+   <SpawnDirectionsDefinition Id="Corner_T30-3E_T25-5E_R25-2E_R20-5E">
+      <Direction Id="Top">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="10"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="10"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <!--Night 8-->
+   <SpawnDirectionsDefinition Id="Corner_T25-2E_T20-5E_R30-3E_R25-5E">
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="10"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="10"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!--  TWO DIRECTIONS PARALLEL -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <SpawnDirectionsDefinition Id="Parallel_T50-1_B50-1">
+      <Direction Id="Top">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Parallel_T50-2_B50-2">
+      <Direction Id="Top">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Parallel_T60-3E_B40-2">
+      <Direction Id="Top">
+         <Proportion>60</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="2"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Parallel_T80-3_B20-1">
+      <Direction Id="Top">
+         <Proportion>80</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Parallel_T50-4E_B50-4E">
+      <Direction Id="Top">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+   
+   <!--Elderlicht-->
+
+   <SpawnDirectionsDefinition Id="Parallel_T50-2E_B50-2E">
+      <Direction Id="Top">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="6"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="6"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Parallel_T50-3_B50-3">
+      <Direction Id="Top">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Parallel_T30-2E_T20-3_B30-2E_B20-3">
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="28"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="16"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="28"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="16"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+   
+   <!--GLINTFEIN-->
+
+   <SpawnDirectionsDefinition Id="Parallel_T50-8E_B50-8E">
+      <Direction Id="Top">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>8</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="0"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>8</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="0"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+   
+   <!-- GildenbergRedux -->
+   <SpawnDirectionsDefinition Id="Parallel_L50-5E_R50-5E">
+      <Direction Id="Left">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Parallel_L50-10E_R50-10E">
+      <Direction Id="Left">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>10</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>10</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+   
+   <SpawnDirectionsDefinition Id="Parallel_T50-10E_B50-10E">
+      <Direction Id="Top">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>10</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>10</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Parallel_T80-8E_B20-5E">
+      <Direction Id="Top">
+         <Proportion>80</Proportion>
+         <SpawnPointsPerDirectionCount>8</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   
+   <!-- GlenwaldRedux -->
+   <SpawnDirectionsDefinition Id="Parallel_L40-1E_R60-5E"> <!--Night 6-->
+      <Direction Id="Left">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>60</Proportion>
+         <SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Parallel_L35-1E_R65-5"> <!--Night 6-->
+      <Direction Id="Left">
+         <Proportion>35</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>65</Proportion>
+         <SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+   
+   
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!--  THREE DIRECTIONS -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <SpawnDirectionsDefinition Id="Three_T40-1_L20-1_B40-1">
+      <Direction Id="Top">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Three_T25-1_L25-1_B25-1">
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Three_T60-3_L20-1_B20-1">
+      <Direction Id="Top">
+         <Proportion>60</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Three_T50-3E_L25-1_B25-1">
+      <Direction Id="Top">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Three_T80-4_L10-1_B10-1">
+      <Direction Id="Top">
+         <Proportion>80</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Three_T40-3E_L40-3E_B20-1">
+      <Direction Id="Top">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+  <SpawnDirectionsDefinition Id="Three_T50-2E_L50-2E"> <!--This direction is for the corner waves of FelderLand-->
+    <Direction Id="Top">
+      <Proportion>34</Proportion>
+      <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+    </Direction>
+    <Direction Id="Left">
+      <Proportion>33</Proportion>
+      <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+    </Direction>
+     <Direction Id="Bottom">
+        <Proportion>33</Proportion>
+        <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+     </Direction>
+     <!--<Direction Id="Top">
+        <Proportion>60</Proportion>
+        <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+        <Equidistant BordersMargin="0"/>
+     </Direction>
+     <Direction Id="Left">
+        <Proportion>40</Proportion>
+        <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+        <Equidistant BordersMargin="10"/>
+     </Direction>-->
+  </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Three_T30_L40_B30">
+      <!--GILDENBERG BOSS WAVE-->
+      <Direction Id="Top">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+   
+   <!--Elderlicht-->
+
+   <SpawnDirectionsDefinition Id="Three_T25-2E_L15-1_B25-2E">
+      <!--Night 6-->
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="12"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="2"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Three_10-1_L30-2E_B20-2E">
+      <!--Night 6-->
+      <Direction Id="Top">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="12"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="2"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Three_T25-4_L25-3_B25-3">
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Three_T50-6_L25-2_B25-2">
+      <Direction Id="Top">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>6</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Three_T30-2_L35-4_B35-4">
+      <Direction Id="Top">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>35</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>35</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Three_T35-2E_T15-2E_L25-1_B25-1">
+      <Direction Id="Top">
+         <Proportion>35</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="17"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="4"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Three_T25-1_L35-2E_L15-2E_B25-1">
+      <Direction Id="Top">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>35</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="17"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="4"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+   
+   <!--GLINTFEIN-->
+
+   <SpawnDirectionsDefinition Id="Three_T30-1_L40-2E_B30-1">
+      <Direction Id="Top">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Three_T30-1_L30-1_B40-2E">
+      <Direction Id="Top">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Three_T30-2E_L30-1_B30-1">
+      <Direction Id="Top">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Three_T35-1_L45-2_B20-1">
+      <Direction Id="Top">
+         <Proportion>35</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>45</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Three_T40-2_L30-1_B25-1">
+      <Direction Id="Top">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Three_T25-1_L40-2_B35-1">
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>35</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Three_T25-1_L50-2_B25-1">
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+   
+   <!--GLENWALD REDUX-->
+   
+   <SpawnDirectionsDefinition Id="Three_T30-1E_L35-1_B35-1">
+      <Direction Id="Top">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>35</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>35</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Three_T25-1E_T15-2_L20-1_B40-1"> <!--Night 6-->
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Three_T60-3E_L20-1_B20-1"> <!--Night 6-->
+      <Direction Id="Top">
+         <Proportion>60</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+   
+   
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!--  FOUR DIRECTIONS -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <SpawnDirectionsDefinition Id="Four_T40-1_L20-1_B40-1_R20-1">
+      <Direction Id="Top">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+   
+   
+   <SpawnDirectionsDefinition Id="Four_T25-1_L25-1_B25-1_R25-1">
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Four_T25-2_L25-2_B25-2_R25-2">
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Four_T33-2_L33-2_B17-1_R17-1">
+      <Direction Id="Top">
+         <Proportion>33</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>33</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>17</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>17</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Four_T33-2_L17-1_B33-2_R17-2">
+      <Direction Id="Top">
+         <Proportion>33</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>17</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>33</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>17</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Four_T50-2_L15-1_B15-1_R20-1">
+      <Direction Id="Top">
+         <Proportion>50</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Four_T25-3_L25-3_B25-3_R25-3">
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Four_T25-4E_L25-4E_B25-4E_R25-4E">
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <!--LAKEBURG BOSS NIGHT-->
+   <SpawnDirectionsDefinition Id="Four_T40-2_L40-2_B20-2_R20-2">
+      <Direction Id="Top">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <!--GLENWALD BOSS NIGHT-->
+   <SpawnDirectionsDefinition Id="Four_T30-4E_L20-3_B30-4E_R20-3">
+      <Direction Id="Top">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+   
+   
+   <!--ELDERLICHT-->
+   
+   <SpawnDirectionsDefinition Id="Four_T25-1_L15-1_B25-1_R25-1">
+      <!--Elderlicht night 2-->
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Four_T25-1_L15-1_B15-1_R25-1">
+      <!--Elderlicht night 2-->
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Four_T25-4_L25-4_B25-4_R25-4E">
+      <!--Elderlicht wave 12-->
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+
+   <SpawnDirectionsDefinition Id="Four_T40-6E_L20-3_B20-4_R20-3">
+      <!--Elderlicht waves 12-->
+      <Direction Id="Top">
+         <Proportion>40</Proportion>
+         <SpawnPointsPerDirectionCount>6</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+
+   <SpawnDirectionsDefinition Id="Four_T35-5E_L15-3_B35-5E_R15-3">
+      <!--Elderlicht waves 12-->
+      <Direction Id="Top">
+         <Proportion>35</Proportion>
+         <SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="6"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>35</Proportion>
+         <SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="0"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Four_T30-2E_T10-2_L10-3_B30-2E_B10-2_R10-3">
+      <!--Night 10 Elderlicht-->
+      <Direction Id="Top">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="17"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="17"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Four_T10-2_L20-2E_L10-2_B35-2E_B15-2_R20-3">
+      <!--Night 10 Elderlicht-->
+      <Direction Id="Top">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="17"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>35</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="17"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Four_T25-2E_T10-2_L25-2E_L10-2_B25-2E_B10-2_R25-2E_R10-2">
+      <!--Boss Night Elderlicht-->
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="22"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="22"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="22"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="22"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+   
+   <!--GLINTFEIN-->
+
+   <!--Schaden Wave-->
+   <SpawnDirectionsDefinition Id="Four_T15-1E_T15-4E_L20-3_B15-1E_B15-4E_R20-3E">
+      <Direction Id="Top">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="0"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="0"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <!--Freude Wave-->
+   <SpawnDirectionsDefinition Id="Four_Freude">
+      <Direction Id="Top">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="6"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="10"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="8"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="8"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="10"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+   
+   <!--Boss wave-->
+   <SpawnDirectionsDefinition Id="Four_Boss">
+      <Direction Id="Top">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="18"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>5</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="4"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="16"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>5</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="4"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="14"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>5</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="4"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="16"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>5</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="4"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <!--other Glintfein waves-->
+   <SpawnDirectionsDefinition Id="Four_T30-2_L20-1_B30-2_R20-1">
+      <Direction Id="Top">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Four_T45-2_L30-2_B15-1_R10-1">
+      <Direction Id="Top">
+         <Proportion>45</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Four_T10-1_L30-2_B15-1_R45-2">
+      <Direction Id="Top">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>45</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Four_T25-2E_L25-2E_B25-2E_R25-2E">
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <!-- Gildenberg Redux -->
+
+	<SpawnDirectionsDefinition Id="Four_T25-5E_L25-2E_B25-5E_R25-2E">
+		<Direction Id="Top">
+			<Proportion>25</Proportion>
+			<SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+			<Equidistant BordersMargin="1"/>
+		</Direction>
+		<Direction Id="Left">
+			<Proportion>25</Proportion>
+			<SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+			<Equidistant BordersMargin="1"/>
+		</Direction>
+		<Direction Id="Bottom">
+			<Proportion>25</Proportion>
+			<SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+			<Equidistant BordersMargin="1"/>
+		</Direction>
+		<Direction Id="Right">
+			<Proportion>25</Proportion>
+			<SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+			<Equidistant BordersMargin="1"/>
+		</Direction>
+	</SpawnDirectionsDefinition>
+
+	<SpawnDirectionsDefinition Id="Four_T35-5E_L15-2_B35-5E_R15-2">
+		<Direction Id="Top">
+			<Proportion>35</Proportion>
+			<SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+			<Equidistant BordersMargin="1"/>
+		</Direction>
+		<Direction Id="Left">
+			<Proportion>15</Proportion>
+			<SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+		</Direction>
+		<Direction Id="Bottom">
+			<Proportion>35</Proportion>
+			<SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+			<Equidistant BordersMargin="1"/>
+		</Direction>
+		<Direction Id="Right">
+			<Proportion>15</Proportion>
+			<SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+		</Direction>
+	</SpawnDirectionsDefinition>
+
+	<SpawnDirectionsDefinition Id="Four_T15-5E_L35-2E_B15-5E_R35-2E">
+		<Direction Id="Top">
+			<Proportion>15</Proportion>
+			<SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+			<Equidistant BordersMargin="1"/>
+		</Direction>
+		<Direction Id="Left">
+			<Proportion>35</Proportion>
+			<SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+		</Direction>
+		<Direction Id="Bottom">
+			<Proportion>15</Proportion>
+			<SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+			<Equidistant BordersMargin="1"/>
+		</Direction>
+		<Direction Id="Right">
+			<Proportion>35</Proportion>
+			<SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+		</Direction>
+	</SpawnDirectionsDefinition>
+   
+	<SpawnDirectionsDefinition Id="Four_T35-5E_L15-4E_B35-5E_R15-4E">
+		<Direction Id="Top">
+			<Proportion>35</Proportion>
+			<SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+			<Equidistant BordersMargin="1"/>
+		</Direction>
+		<Direction Id="Left">
+			<Proportion>15</Proportion>
+			<SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+		</Direction>
+		<Direction Id="Bottom">
+			<Proportion>35</Proportion>
+			<SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+			<Equidistant BordersMargin="1"/>
+		</Direction>
+		<Direction Id="Right">
+			<Proportion>15</Proportion>
+			<SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+		</Direction>
+	</SpawnDirectionsDefinition>
+
+	<SpawnDirectionsDefinition Id="Four_T15-5E_L35-4E_B15-5E_R35-4E">
+		<Direction Id="Top">
+			<Proportion>15</Proportion>
+			<SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+			<Equidistant BordersMargin="1"/>
+		</Direction>
+		<Direction Id="Left">
+			<Proportion>35</Proportion>
+			<SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+		</Direction>
+		<Direction Id="Bottom">
+			<Proportion>15</Proportion>
+			<SpawnPointsPerDirectionCount>5</SpawnPointsPerDirectionCount>
+			<Equidistant BordersMargin="1"/>
+		</Direction>
+		<Direction Id="Right">
+			<Proportion>35</Proportion>
+			<SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+		</Direction>
+	</SpawnDirectionsDefinition>
+   
+   <!--GLENWALD REDUX-->
+
+   
+   <SpawnDirectionsDefinition Id="Four_T15-1_L35-1E_B25-1_R25-1"> <!--Night 5-->
+      <Direction Id="Top">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>35</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Four_T30-1_L30-1_B20-1E_R20-1E"> <!--Night 5-->
+      <Direction Id="Top">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>30</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Four_T25-1E_L25-1E_B25-1E_R25-1E">
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Four_T15-1E_T10-4E_L15-1E_L10-4E_B15-1E_B10-4E_R15-1E_R10-4E">
+      <Direction Id="Top">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Four_T15-2E_T10-2E_L25-2E_B15-2E_B10-2E_R25-2E"> <!--NIGHT 9-->
+      <Direction Id="Top">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="10"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="12"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>15</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>10</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="10"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>3</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="12"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+
+   <SpawnDirectionsDefinition Id="Four_T20-4E_T5-1E_L20-4E_L5-1E_B20-4E_B5-1E_R20-4E_R5-1E"> <!--Boss night-->
+      <Direction Id="Top">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Top">
+         <Proportion>5</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>5</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>5</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>20</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>5</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>
+   </SpawnDirectionsDefinition>
+   
+
+   <!--<SpawnDirectionsDefinition Id="Four_T25-2E_L25-2E_B25-2E_R25-2E">
+      <Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Left">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Bottom">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+      <Direction Id="Right">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>2</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="1"/>
+      </Direction>
+   </SpawnDirectionsDefinition>-->
+
+
+	<!-- ███████████████████████████████████████████████████████████████ -->
+   <!--  TEST -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+   <SpawnDirectionsDefinition Id="Test_DualSide">
+      <Direction Id="Top">
+         <Proportion>75</Proportion>
+         <SpawnPointsPerDirectionCount>1</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="20"/>
+      </Direction>
+      <!--<Direction Id="Top">
+         <Proportion>25</Proportion>
+         <SpawnPointsPerDirectionCount>4</SpawnPointsPerDirectionCount>
+         <Equidistant BordersMargin="3"/>
+      </Direction>-->
+   </SpawnDirectionsDefinition>
+
+</SpawnDirectionsDefinitions>

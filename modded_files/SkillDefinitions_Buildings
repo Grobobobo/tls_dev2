@@ -102,7 +102,7 @@
       </AreaOfEffect>
       <SkillAction>
          <Attack>
-            <BaseDamage Min="20" Max="30"></BaseDamage>
+            <BaseDamage Min="80" Max="130"></BaseDamage>
             <AttackType>Magical</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
@@ -158,7 +158,122 @@
       </AreaOfEffect>
       <SkillAction>
          <Attack>
-            <BaseDamage Min="20" Max="30"></BaseDamage>
+            <BaseDamage Min="80" Max="130"></BaseDamage>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <Stun>
+                  <BaseChance>1.5</BaseChance>
+               </Stun>
+               <NoDodge/>
+               <SurroundingEffect>
+                  <Stun>
+                     <BaseChance>1</BaseChance>
+                  </Stun>
+               </SurroundingEffect>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">Traps/StunTrap/StunTrap_TargetFrontNSEW</Path>
+            </Paths>
+            <Delay>0</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">Traps/StunTrap/StunTrap_TargetBehindNSEW</Path>
+            </Paths>
+            <Delay>0</Delay>
+            <SortingDepth>Behind</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <!--<SoundEffect>
+            <Path>HandCrossbow/Blaze/SFX_Skill_HandCrossbow_Blaze</Path>
+            <Delay>0</Delay>
+         </SoundEffect>-->
+
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="StunTrapTriggered_Upgraded" GroupId="SkillGroup_StunTrapTriggered_Upgraded">
+      <OverrideArtId>StunTrapTriggered</OverrideArtId>
+      <ValidTargets>
+         <EnemyUnits/>
+      </ValidTargets>
+      <AffectedUnits>
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+         <CanAffectBuildings>false</CanAffectBuildings>
+      </AffectedUnits>
+      <Range Min="0" Max="0"/>
+      <AreaOfEffect OriginX="0" OriginY="0">
+         X
+      </AreaOfEffect>
+      <SkillAction>
+         <Attack>
+            <BaseDamage Min="120" Max="195"></BaseDamage>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <Stun>
+                  <BaseChance>1.5</BaseChance>
+               </Stun>
+               <NoDodge/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">Traps/StunTrap/StunTrap_TargetFrontNSEW</Path>
+            </Paths>
+            <Delay>0</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">Traps/StunTrap/StunTrap_TargetBehindNSEW</Path>
+            </Paths>
+            <Delay>0</Delay>
+            <SortingDepth>Behind</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <!--<SoundEffect>
+            <Path>HandCrossbow/Blaze/SFX_Skill_HandCrossbow_Blaze</Path>
+            <Delay>0</Delay>
+         </SoundEffect>-->
+
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="Spe_StunTrapTriggered_Upgraded" GroupId="SkillGroup_StunTrapTriggered_Upgraded">
+      <OverrideArtId>StunTrapTriggered</OverrideArtId>
+      <ValidTargets>
+         <EnemyUnits/>
+      </ValidTargets>
+      <AffectedUnits>
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+         <CanAffectBuildings>false</CanAffectBuildings>
+      </AffectedUnits>
+      <Range Min="0" Max="0"/>
+      <AreaOfEffect OriginX="1" OriginY="1">
+         _e_
+         eXe
+         _e_
+      </AreaOfEffect>
+      <SkillAction>
+         <Attack>
+            <BaseDamage Min="120" Max="195"></BaseDamage>
             <AttackType>Magical</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
@@ -220,7 +335,7 @@
       </AreaOfEffect>
       <SkillAction>
          <Attack>
-            <BaseDamage Min="40" Max="60"></BaseDamage>
+            <BaseDamage Min="40" Max="70"></BaseDamage>
             <AttackType>Magical</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
@@ -278,7 +393,7 @@
       </AreaOfEffect>
       <SkillAction>
          <Attack>
-            <BaseDamage Min="40" Max="60"></BaseDamage>
+            <BaseDamage Min="40" Max="70"></BaseDamage>
             <AttackType>Magical</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
@@ -343,7 +458,7 @@
       </AreaOfEffect>
       <SkillAction>
          <Attack>
-            <BaseDamage Min="40" Max="60"></BaseDamage>
+            <BaseDamage Min="60" Max="105"></BaseDamage>
             <AttackType>Magical</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
@@ -401,7 +516,7 @@
       </AreaOfEffect>
       <SkillAction>
          <Attack>
-            <BaseDamage Min="40" Max="60"></BaseDamage>
+            <BaseDamage Min="60" Max="105"></BaseDamage>
             <AttackType>Magical</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>

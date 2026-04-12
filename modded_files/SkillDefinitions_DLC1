@@ -980,7 +980,7 @@
 		<SkillAction>
 			<Attack>
 				<AttackType>Ranged</AttackType>
-				<DamageMultiplier>1.0</DamageMultiplier>
+				<DamageMultiplier>1.15</DamageMultiplier>
 				<SkillEffects>
 					<IgnoreLineOfSight/>
                <Momentum>
@@ -1138,7 +1138,7 @@
 
       <SkillAction>
          <Attack>
-            <BaseDamage Min="130 * (1 + Level/13)" Max="260 * (1 + Level/13)" />
+            <BaseDamage Min="150 * (1 + Level/13)" Max="300 * (1 + Level/13)" />
             <AttackType>Ranged</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>

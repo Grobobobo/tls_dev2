@@ -76,13 +76,13 @@
    <BuildingUpgradeDefinition Id="UnlockHealFree">
       <UpgradeLevels>
         <UpgradeLevel>
-          <GoldCost>40</GoldCost>
+          <GoldCost>30</GoldCost>
           <UpgradeEffects>
             <UpgradeEffect Id="SwapAction" OldActionId="HealFree" NewActionId="HealFree_1"/>
           </UpgradeEffects>
         </UpgradeLevel>
         <UpgradeLevel>
-          <GoldCost>80</GoldCost>
+          <GoldCost>50</GoldCost>
           <UpgradeEffects>
             <UpgradeEffect Id="SwapAction" OldActionId="HealFree_1" NewActionId="HealFree_2"/>
           </UpgradeEffects>
@@ -113,7 +113,7 @@
    <BuildingUpgradeDefinition Id="UpgradeHeal">
       <UpgradeLevels>
          <UpgradeLevel>
-            <GoldCost>40</GoldCost>
+            <GoldCost>30</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="Heal" NewActionId="Heal_1"/>
             </UpgradeEffects>
@@ -144,7 +144,7 @@
    <BuildingUpgradeDefinition Id="UnlockBlessing">
       <UpgradeLevels>
          <UpgradeLevel>
-            <GoldCost>50</GoldCost>
+            <GoldCost>30</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="Blessing" NewActionId="Blessing_1"/>
             </UpgradeEffects>
@@ -179,7 +179,7 @@
    <BuildingUpgradeDefinition Id="UnlockHealManaFree">
       <UpgradeLevels>
         <UpgradeLevel>
-          <GoldCost>30</GoldCost>
+          <GoldCost>25</GoldCost>
           <UpgradeEffects>
             <UpgradeEffect Id="SwapAction" OldActionId="HealManaFree" NewActionId="HealManaFree_1"/>
           </UpgradeEffects>
@@ -210,7 +210,7 @@
    <BuildingUpgradeDefinition Id="UpgradeHealMana">
       <UpgradeLevels>
          <UpgradeLevel>
-            <GoldCost>40</GoldCost>
+            <GoldCost>30</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="HealMana" NewActionId="HealMana_1"/>
             </UpgradeEffects>
@@ -241,7 +241,7 @@
    <BuildingUpgradeDefinition Id="UnlockGift">
       <UpgradeLevels>
          <UpgradeLevel>
-            <GoldCost>50</GoldCost>
+            <GoldCost>30</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="Gift" NewActionId="Gift_1"/>
             </UpgradeEffects>
@@ -321,7 +321,7 @@
    <BuildingUpgradeDefinition Id="UpgradeFillGaugeGoldMine">
       <UpgradeLevels>
          <UpgradeLevel>
-            <GoldCost>75</GoldCost>
+            <GoldCost>60</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="ImproveGaugeEffect" UpgradedBonusValue="25"/>
             </UpgradeEffects>
@@ -364,13 +364,13 @@
    <BuildingUpgradeDefinition Id="UpgradeMine">
       <UpgradeLevels>
          <UpgradeLevel>
-            <GoldCost>10</GoldCost>
+            <GoldCost>5</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="Mine" NewActionId="Mine_1"/>
             </UpgradeEffects>
          </UpgradeLevel>
         <UpgradeLevel>
-          <GoldCost>15</GoldCost>
+          <GoldCost>10</GoldCost>
           <UpgradeEffects>
             <UpgradeEffect Id="SwapAction" OldActionId="Mine_1" NewActionId="Mine_2"/>
           </UpgradeEffects>
@@ -413,7 +413,7 @@
    <BuildingUpgradeDefinition Id="UpgradeFillGaugeScavenger">
       <UpgradeLevels>
          <UpgradeLevel>
-            <GoldCost>75</GoldCost>
+            <GoldCost>60</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="ImproveGaugeEffect" UpgradedBonusValue="50"/>
             </UpgradeEffects>
@@ -456,13 +456,13 @@
    <BuildingUpgradeDefinition Id="UpgradeScavenge">
       <UpgradeLevels>
          <UpgradeLevel>
-            <GoldCost>10</GoldCost>
+            <GoldCost>5</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="Scavenge" NewActionId="Scavenge_1"/>
             </UpgradeEffects>
          </UpgradeLevel>
         <UpgradeLevel>
-          <GoldCost>15</GoldCost>
+          <GoldCost>10</GoldCost>
           <UpgradeEffects>
             <UpgradeEffect Id="SwapAction" OldActionId="Scavenge_1" NewActionId="Scavenge_2"/>
           </UpgradeEffects>
@@ -499,19 +499,19 @@
    <BuildingUpgradeDefinition Id="UpgradeProductionLevel" IsGlobal="true">
       <UpgradeLevels>
          <UpgradeLevel>
-            <GoldCost>150</GoldCost>
+            <GoldCost>135</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="ImproveLevel"/>
             </UpgradeEffects>
          </UpgradeLevel>
          <UpgradeLevel>
-            <GoldCost>270</GoldCost>
+            <GoldCost>245</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="ImproveLevel"/>
             </UpgradeEffects>
          </UpgradeLevel>
          <UpgradeLevel>
-            <GoldCost>500</GoldCost>
+            <GoldCost>450</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="ImproveLevel"/>
             </UpgradeEffects>
@@ -610,19 +610,19 @@
    <BuildingUpgradeDefinition Id="UpgradeHelpBlacksmith">
       <UpgradeLevels>
          <UpgradeLevel>
-            <GoldCost>40</GoldCost>
+            <GoldCost>10</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="HelpBlacksmith" NewActionId="HelpBlacksmith_1"/>
             </UpgradeEffects>
          </UpgradeLevel>
          <UpgradeLevel>
-            <GoldCost>70</GoldCost>
+            <GoldCost>15</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="HelpBlacksmith_1" NewActionId="HelpBlacksmith_2"/>
             </UpgradeEffects>
          </UpgradeLevel>
          <UpgradeLevel>
-            <GoldCost>90</GoldCost>
+            <GoldCost>20</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="HelpBlacksmith_2" NewActionId="HelpBlacksmith_3"/>
             </UpgradeEffects>
@@ -657,19 +657,19 @@
    <BuildingUpgradeDefinition Id="UpgradeHelpBowyer">
       <UpgradeLevels>
          <UpgradeLevel>
-            <GoldCost>40</GoldCost>
+            <GoldCost>10</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="HelpBowyer" NewActionId="HelpBowyer_1"/>
             </UpgradeEffects>
          </UpgradeLevel>
          <UpgradeLevel>
-            <GoldCost>70</GoldCost>
+            <GoldCost>15</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="HelpBowyer_1" NewActionId="HelpBowyer_2"/>
             </UpgradeEffects>
          </UpgradeLevel>
          <UpgradeLevel>
-            <GoldCost>90</GoldCost>
+            <GoldCost>20</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="HelpBowyer_2" NewActionId="HelpBowyer_3"/>
             </UpgradeEffects>
@@ -704,19 +704,19 @@
    <BuildingUpgradeDefinition Id="UpgradeHelpMagicShop">
       <UpgradeLevels>
          <UpgradeLevel>
-            <GoldCost>40</GoldCost>
+            <GoldCost>10</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="HelpMagicShop" NewActionId="HelpMagicShop_1"/>
             </UpgradeEffects>
          </UpgradeLevel>
          <UpgradeLevel>
-            <GoldCost>70</GoldCost>
+            <GoldCost>15</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="HelpMagicShop_1" NewActionId="HelpMagicShop_2"/>
             </UpgradeEffects>
          </UpgradeLevel>
          <UpgradeLevel>
-            <GoldCost>90</GoldCost>
+            <GoldCost>20</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="HelpMagicShop_2" NewActionId="HelpMagicShop_3"/>
             </UpgradeEffects>
@@ -751,19 +751,19 @@
    <BuildingUpgradeDefinition Id="UpgradeHelpArmorMaker">
       <UpgradeLevels>
          <UpgradeLevel>
-            <GoldCost>40</GoldCost>
+            <GoldCost>10</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="HelpArmorMaker" NewActionId="HelpArmorMaker_1"/>
             </UpgradeEffects>
          </UpgradeLevel>
          <UpgradeLevel>
-            <GoldCost>70</GoldCost>
+            <GoldCost>15</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="HelpArmorMaker_1" NewActionId="HelpArmorMaker_2"/>
             </UpgradeEffects>
          </UpgradeLevel>
          <UpgradeLevel>
-            <GoldCost>90</GoldCost>
+            <GoldCost>20</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="HelpArmorMaker_2" NewActionId="HelpArmorMaker_3"/>
             </UpgradeEffects>
@@ -798,19 +798,19 @@
    <BuildingUpgradeDefinition Id="UpgradeHelpTrinketMaker">
       <UpgradeLevels>
          <UpgradeLevel>
-            <GoldCost>40</GoldCost>
+            <GoldCost>10</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="HelpTrinketMaker" NewActionId="HelpTrinketMaker_1"/>
             </UpgradeEffects>
          </UpgradeLevel>
          <UpgradeLevel>
-            <GoldCost>70</GoldCost>
+            <GoldCost>15</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="HelpTrinketMaker_1" NewActionId="HelpTrinketMaker_2"/>
             </UpgradeEffects>
          </UpgradeLevel>
          <UpgradeLevel>
-            <GoldCost>90</GoldCost>
+            <GoldCost>20</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="HelpTrinketMaker_2" NewActionId="HelpTrinketMaker_3"/>
             </UpgradeEffects>
@@ -845,19 +845,19 @@
    <BuildingUpgradeDefinition Id="UpgradeHelpPotionMaker">
       <UpgradeLevels>
          <UpgradeLevel>
-            <GoldCost>40</GoldCost>
+            <GoldCost>10</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="HelpPotionMaker" NewActionId="HelpPotionMaker_1"/>
             </UpgradeEffects>
          </UpgradeLevel>
          <UpgradeLevel>
-            <GoldCost>70</GoldCost>
+            <GoldCost>15</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="HelpPotionMaker_1" NewActionId="HelpPotionMaker_2"/>
             </UpgradeEffects>
          </UpgradeLevel>
          <UpgradeLevel>
-            <GoldCost>90</GoldCost>
+            <GoldCost>20</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapAction" OldActionId="HelpPotionMaker_2" NewActionId="HelpPotionMaker_3"/>
             </UpgradeEffects>
@@ -1273,46 +1273,6 @@
    <BuildingUpgradeDefinition Id="UpgradeBallistaDamageGlobal" IsGlobal="true">
       <UpgradeLevels>
          <UpgradeLevel>
-            <MaterialCost>200</MaterialCost>
-            <UpgradeEffects>
-               <UpgradeEffect Id="AddDamageModifier" DamageModifier="25" />
-            </UpgradeEffects>
-         </UpgradeLevel>
-         <UpgradeLevel>
-            <MaterialCost>400</MaterialCost>
-            <UpgradeEffects>
-               <UpgradeEffect Id="AddDamageModifier" DamageModifier="25" />
-            </UpgradeEffects>
-         </UpgradeLevel>
-      </UpgradeLevels>
-
-      <CastFXs TotalDuration="0.5">
-         <VisualEffect>
-            <Paths>
-               <Path>00_Others/SelfBuff_CasterBefore</Path>
-            </Paths>
-            <SortingDepth>Before</SortingDepth>
-            <Target>HitTiles</Target>
-         </VisualEffect>
-
-         <SoundEffect>
-            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
-            <Delay>0</Delay>
-         </SoundEffect>
-
-         <CamShake>
-            <Id>Soft Hit-CamShake</Id>
-            <Delay>0.4</Delay>
-         </CamShake>
-      </CastFXs>
-   </BuildingUpgradeDefinition>
-   
-   
-   <!--CATAPULTS-->
-
-   <BuildingUpgradeDefinition Id="UpgradeCatapultDamageGlobal" IsGlobal="true">
-      <UpgradeLevels>
-         <UpgradeLevel>
             <MaterialCost>150</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="AddDamageModifier" DamageModifier="25" />
@@ -1347,12 +1307,52 @@
       </CastFXs>
    </BuildingUpgradeDefinition>
    
+   
+   <!--CATAPULTS-->
+
+   <BuildingUpgradeDefinition Id="UpgradeCatapultDamageGlobal" IsGlobal="true">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <MaterialCost>100</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="AddDamageModifier" DamageModifier="25" />
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <MaterialCost>200</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="AddDamageModifier" DamageModifier="25" />
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+   
    <!--TRAPS-->
 
    <BuildingUpgradeDefinition Id="UpgradeSlowTrap" IsGlobal="true">
       <UpgradeLevels>
          <UpgradeLevel>
-            <MaterialCost>150</MaterialCost>
+            <MaterialCost>100</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapSkill" OldSkillId="SlowTrapTriggered" NewSkillId="SlowTrapTriggered_Upgraded"/>
                <UpgradeEffect Id="SwapSkill" OldSkillId="Spe_SlowTrapTriggered" NewSkillId="Spe_SlowTrapTriggered_Upgraded"/>
@@ -1385,7 +1385,7 @@
       <UpgradeLevels>
          <UpgradeLevel>
             <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
-            <MaterialCost>150</MaterialCost>
+            <MaterialCost>100</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapSkill" OldSkillId="DamageTrapTriggered" NewSkillId="DamageTrapTriggered_Upgraded"/>
                <UpgradeEffect Id="SwapSkill" OldSkillId="Spe_DamageTrapTriggered" NewSkillId="Spe_DamageTrapTriggered_Upgraded"/>
@@ -1418,7 +1418,7 @@
       <UpgradeLevels>
          <UpgradeLevel>
             <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
-            <MaterialCost>150</MaterialCost>
+            <MaterialCost>100</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="IncreaseMaximumTrapCharges" Value="1"/>
             </UpgradeEffects>
@@ -1454,7 +1454,7 @@
    <BuildingUpgradeDefinition Id="UpgradePoisonSeed">
       <UpgradeLevels>
          <UpgradeLevel>
-            <MaterialCost>40</MaterialCost>
+            <MaterialCost>44</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapSkill" OldSkillId="PoisonSeedSkill" NewSkillId="PoisonSeedSkill2"/>
                <UpgradeEffect Id="SwapSkill" OldSkillId="Spe_PoisonSeedSkill" NewSkillId="Spe_PoisonSeedSkill2"/>
@@ -1486,7 +1486,7 @@
    <BuildingUpgradeDefinition Id="UpgradeIsolationSeed">
       <UpgradeLevels>
          <UpgradeLevel>
-            <MaterialCost>40</MaterialCost>
+            <MaterialCost>44</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapSkill" OldSkillId="IsolationSeedSkill" NewSkillId="IsolationSeedSkill2"/>
                <UpgradeEffect Id="SwapSkill" OldSkillId="Spe_IsolationSeedSkill" NewSkillId="Spe_IsolationSeedSkill2"/>
@@ -1518,7 +1518,7 @@
    <BuildingUpgradeDefinition Id="UpgradePurgingSeed">
       <UpgradeLevels>
          <UpgradeLevel>
-            <MaterialCost>40</MaterialCost>
+            <MaterialCost>44</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapSkill" OldSkillId="PurgingSeedSkill" NewSkillId="PurgingSeedSkill2"/>
                <UpgradeEffect Id="SwapSkill" OldSkillId="Spe_PurgingSeedSkill" NewSkillId="Spe_PurgingSeedSkill2"/>

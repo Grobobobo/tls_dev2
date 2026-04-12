@@ -6,9 +6,9 @@
 
    <SinkDataDefinition Id="Attribute">
 
-      <BasePrice>1000</BasePrice>
+      <BasePrice>20000</BasePrice>
 
-      <RerollMultiplier>100</RerollMultiplier>
+      <RerollMultiplier>5</RerollMultiplier>
 
       <RoundedTo>50</RoundedTo>
 
@@ -20,9 +20,9 @@
 
    <SinkDataDefinition Id="ItemReward">
 
-      <BasePrice>1000</BasePrice>
+      <BasePrice>20000</BasePrice>
 
-      <RerollMultiplier>100</RerollMultiplier>
+      <RerollMultiplier>5</RerollMultiplier>
 
       <RoundedTo>50</RoundedTo>
 
@@ -36,9 +36,9 @@
 
       <BasePrice>1000</BasePrice>
 
-      <PricePerPerk>1000</PricePerPerk>
+      <PricePerPerk>10000</PricePerPerk>
 
-      <RerollMultiplier>10</RerollMultiplier>
+      <RerollMultiplier>5</RerollMultiplier>
 
       <RoundedTo>50</RoundedTo>
 

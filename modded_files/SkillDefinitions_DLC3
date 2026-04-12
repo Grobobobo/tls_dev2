@@ -829,7 +829,7 @@
   <SkillDefinition Id="PlayerZeppelinExplosion">
     <OverrideArtId>ZeppelinExplosion</OverrideArtId>
     <Range Min="0" Max="0" CardinalDirectionOnly="true" />
-    <HealthCost>75</HealthCost>
+    <HealthCost>100</HealthCost>
     <AreaOfEffect OriginX="5" OriginY="5">
          __XXXXXXX__
          _XXXXXXXXX_
@@ -849,7 +849,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Adaptative</AttackType>
-        <DamageMultiplier>2</DamageMultiplier>
+        <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
           <NoDodge />
           <NoBlock />
@@ -1571,15 +1571,32 @@
   <SkillDefinition Id="UnnamedStunningBash_Allied" TemplateId="UnnamedStunningBash" GroupId="UnnamedStunningBash_Allied">
     <OverrideArtId>UnnamedStunningBash</OverrideArtId>
     <OverrideLocalizationId>UnnamedStunningBash</OverrideLocalizationId>
+      <AreaOfEffect OriginX="1" OriginY="1">
+         eee
+         eXe
+         e_e
+      </AreaOfEffect>
+    <AffectedUnits>
+      <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+      <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+    </AffectedUnits>
     <SkillAction>
       <Attack>
-        <BaseDamage Min="140" Max="180" />
+        <BaseDamage Min="210" Max="270" />
         <AttackType>Physical</AttackType>
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
           <Stun>
             <BaseChance>2</BaseChance>
           </Stun>
+          <NoDodge />
+          <NoBlock />
+          <SurroundingEffect>
+            <Damage Multiplier="0.35"/>
+            <Stun>
+                <BaseChance>1</BaseChance>
+            </Stun>
+          </SurroundingEffect>
         </SkillEffects>
       </Attack>
     </SkillAction>
@@ -1587,6 +1604,7 @@
   <SkillDefinition Id="UnnamedExplosiveBolt_Allied" TemplateId="UnnamedExplosiveBolt" GroupId="UnnamedExplosiveBolt_Allied">
     <OverrideArtId>UnnamedExplosiveBolt</OverrideArtId>
     <OverrideLocalizationId>UnnamedExplosiveBolt</OverrideLocalizationId>
+    <Range Min="2" Max="8"/>
     <SkillAction>
       <Attack>
         <BaseDamage Min="250" Max="320" />
@@ -1596,6 +1614,7 @@
     </SkillAction>
   </SkillDefinition>
   <SkillDefinition Id="UnnamedTransfer_Allied" TemplateId="UnnamedTransfer" GroupId="UnnamedTransfer_Allied">
+    <Range Min="2" Max="11"/>
     <OverrideArtId>UnnamedTransfer</OverrideArtId>
     <OverrideLocalizationId>UnnamedTransfer</OverrideLocalizationId>
     <AreaOfEffect OriginX="0" OriginY="0">

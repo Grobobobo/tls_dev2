@@ -331,6 +331,7 @@
          <StatArgument Stat="PhysicalDamage" Value="PhysicalDamageBonus"/>
          <LocalizedArgument Value="SkillEffectName_NoDodge" Style="NoDodge"/>
          <LocArgument Value="RemainingTilesToCross" Interpreted="true" Style="KeyWordNb"/>
+         <LocalizedArgument Value="SkillEffectName_NoBlock" Style="NoBlock"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -346,6 +347,7 @@
          </DisplayInHUD>
          <CompendiumEntries>
             <CompendiumEntry Id="SkillEffect_NoDodge"/>
+            <CompendiumEntry Id="SkillEffect_NoBlock"/>
             <CompendiumEntry Id="SkillEffect_NoMomentum"/>
          </CompendiumEntries>
          <FeedbackActivationConditions>
@@ -414,6 +416,7 @@
                   </Conditions>
                   <SkillEffects>
                      <NoDodge/>
+                     <NoBlock/>
                   </SkillEffects>
                </AddSkillEffect>
             </Effects>
@@ -1183,6 +1186,7 @@
          <TokenVariable Key="ThresholdIsReached" Value="Module.Buffer > HitThreshold - 1"/>
          <TokenVariable Key="ThresholdWasReached" Value="Module.Buffer2 > HitThreshold - 1"/>
          <TokenVariable Key="HitThreshold" Value="2"/>
+         <TokenVariable Key="CriticalBonus" Value="12"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="HitThreshold" Style="KeyWordNb"/>
@@ -1190,6 +1194,7 @@
          <LocalizedArgument Value="SkillEffectName_ArmorPiercing" Style="ArmorPiercing"/>
          <LocalizedArgument Value="SkillEffectName_NoBlock" Style="NoBlock"/>
          <LocArgument Value="RemainingEnemiesToHit" Interpreted="true" Style="KeyWordNb"/>
+         <StatArgument Stat="Critical" Value="CriticalBonus"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -1278,6 +1283,11 @@
                      <NoBlock/>
                   </SkillEffects>
                </AddSkillEffect>
+               <StatModifier Stat="Critical" Value="CriticalBonus">
+                  <Conditions>
+                     <IsTrue Value="ThresholdIsReached"/>
+                  </Conditions>
+               </StatModifier>
             </Effects>
          </BufferModule>
       </Modules>
@@ -1660,18 +1670,36 @@
    <!-- T1 -->
    <PerkDefinition Id="Stunning">
       <TokenVariables>
-         <TokenVariable Key="StunChanceModifierBonus" Value="15"/>
+         <TokenVariable Key="StunChanceModifierBonus" Value="10"/>
+         <TokenVariable Key="PerkDamageBonus" Value="15"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="StunChanceModifier" Value="StunChanceModifierBonus"/>
+         <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb"/>
       </LocArguments>
       <View>
-         <DisplayInHUD/>
+         <DisplayInHUD>
+            <Highlight>
+               <IsTrue Value="Skill.IsAttack"/>
+               <IsTrue Value="IsTargetUnit"/>
+               <IsTrue Value="TargetUnit.IsStunned"/>
+            </Highlight>
+         </DisplayInHUD>
+         <CompendiumEntries>
+            <CompendiumEntry Id="GameConcept_Stun"/>
+         </CompendiumEntries>
       </View>
       <Modules>
          <BufferModule>
             <Effects>
                <StatModifier Stat="StunChanceModifier" Value="StunChanceModifierBonus"/>
+               <SkillModifier ComputationStat="OverallDamage" Value="PerkDamageBonus">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="IsTargetUnit"/>
+                     <IsTrue Value="TargetUnit.IsStunned"/>
+                  </Conditions>
+               </SkillModifier>
             </Effects>
          </BufferModule>
       </Modules>
@@ -2239,16 +2267,18 @@
    <!-- Swapped name with cherry picking to preserve stuff  -->
    <PerkDefinition Id="FirstBlood">
       <TokenVariables>
-         <TokenVariable Key="CriticalBonus" Value="20"/>
+         <TokenVariable Key="CriticalBonus" Value="15"/>
+         <TokenVariable Key="CriticalPowerBonus" Value="15"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="Critical" Value="CriticalBonus"/>
+         <StatArgument Stat="CriticalPower" Value="CriticalPowerBonus"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
             <Highlight>
                <IsTrue Value="Skill.IsAttack"/>
-               <IsTrue Value="IsTargetUnit"/>
+               <IsTrue Value="IsTargetEnemyUnit"/>
                <IsTrue Value="TargetUnit.IsIsolated"/>
             </Highlight>
          </DisplayInHUD>
@@ -2262,7 +2292,14 @@
                <SkillModifier ComputationStat="Critical" Value="CriticalBonus">
                   <Conditions>
                      <IsTrue Value="Skill.IsAttack"/>
-                     <IsTrue Value="IsTargetUnit"/>
+                     <IsTrue Value="IsTargetEnemyUnit"/>
+                     <IsTrue Value="TargetUnit.IsIsolated"/>
+                  </Conditions>
+               </SkillModifier>
+               <SkillModifier ComputationStat="CriticalPower" Value="CriticalPowerBonus">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="IsTargetEnemyUnit"/>
                      <IsTrue Value="TargetUnit.IsIsolated"/>
                   </Conditions>
                </SkillModifier>
@@ -3006,29 +3043,30 @@
       <TokenVariables>
          <TokenVariable Key="MovePointsBonus" Value="4"/>
          <TokenVariable Key="DodgeBonus" Value="25"/>
+         <TokenVariable Key="CriticalBonus" Value="15"/>
+         <TokenVariable Key="IsAtFullHealth" Value="Owner.Health = Owner.HealthTotal"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="Dodge" Value="DodgeBonus"/>
          <StatArgument Stat="MovePointsTotal" Value="MovePointsBonus"/>
+         <StatArgument Stat="Critical" Value="CriticalBonus"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
             <GreyOut>
-               <IsFalse Value="Owner.InjuryStage = 0"/>
+               <IsFalse Value="IsAtFullHealth"/>
             </GreyOut>
          </DisplayInHUD>
-         <CompendiumEntries>
-            <CompendiumEntry Id="GameConcept_Wounds"/>
-         </CompendiumEntries>
       </View>
       <Modules>
          <BufferModule>
             <Conditions>
-               <IsTrue Value="Owner.InjuryStage = 0"/>
+               <IsTrue Value="IsAtFullHealth"/>
             </Conditions>
             <Effects>
                <StatModifier Stat="Dodge" Value="DodgeBonus"/>
                <StatModifier Stat="MovePointsTotal" ChildStatFollows="false" Value="MovePointsBonus"/>
+               <StatModifier Stat="Critical" Value="CriticalBonus"/>
             </Effects>
          </BufferModule>
       </Modules>

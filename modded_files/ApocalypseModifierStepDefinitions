@@ -93,7 +93,7 @@
    <ApocalypseModifierStepDefinition Id="DefenseCostModifier_1">
       <ApocalypseLevel>2</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="CostModifier" Value="15"/>
+         <TokenVariable Key="CostModifier" Value="20"/>
       </TokenVariables>
       <Effects>
          <IncreasePrices Type="All" ResourceCostType="Materials" Value="CostModifier"/>
@@ -109,14 +109,14 @@
    <ApocalypseModifierStepDefinition Id="DefenseCostModifier_2" TemplateId="DefenseCostModifier_1">
       <ApocalypseLevel>4</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="CostModifier" Value="30"/>
+         <TokenVariable Key="CostModifier" Value="40"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="DefenseCostModifier_3" TemplateId="DefenseCostModifier_1">
       <ApocalypseLevel>6</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="CostModifier" Value="45"/>
+         <TokenVariable Key="CostModifier" Value="60"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 
@@ -324,7 +324,7 @@
 
    <!-- Super Elite Modifier Steps -->
    <ApocalypseModifierStepDefinition Id="SuperEliteModifier_1">
-      <ApocalypseLevel>3</ApocalypseLevel>
+      <ApocalypseLevel>2</ApocalypseLevel>
       <TokenVariables>
          <TokenVariable Key="HealthModifier" Value="50"/>
       </TokenVariables>
@@ -351,7 +351,7 @@
 
    <!-- Berserk Enemies Modifier Steps -->
    <ApocalypseModifierStepDefinition Id="BerserkerEnemiesModifier_1">
-      <ApocalypseLevel>2</ApocalypseLevel>
+      <ApocalypseLevel>3</ApocalypseLevel>
       <TokenVariables>
          <TokenVariable Key="DamageModifier" Value="50"/>
       </TokenVariables>
@@ -405,7 +405,7 @@
 
    <!-- Enemy Late Buff Modifier Steps -->
    <ApocalypseModifierStepDefinition Id="EnemyLateBuffModifier_1">
-      <ApocalypseLevel>2</ApocalypseLevel>
+      <ApocalypseLevel>3</ApocalypseLevel>
       <TokenVariables>
          <TokenVariable Key="ActivationTurn" Value="6"/>
       </TokenVariables>
@@ -544,7 +544,7 @@
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="LoneWolfModifier_2">
-      <ApocalypseLevel>10</ApocalypseLevel>
+      <ApocalypseLevel>11</ApocalypseLevel>
       <TokenVariables>
          <TokenVariable Key="RemovedStartingHeroes" Value="2"/>
       </TokenVariables>

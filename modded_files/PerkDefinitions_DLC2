@@ -383,7 +383,7 @@
          <TokenVariable Key="MagicDamageBonus" Value="Plague * ScalingMagicDamage"/>
          <TokenVariable Key="PoisonScalingOnLevel" Value="(Floor(Owner.Level/PerLevelHeroScale) * PoisonScalingLevelMultiplicative)"/>
          <TokenVariable Key="PlayerPoisonScalingOnHit" Value="0.25"/>
-         <TokenVariable Key="PerLevelHeroScale" Value="6"/>
+         <TokenVariable Key="PerLevelHeroScale" Value="4"/>
 
          <TokenVariable Key="ApplyStatusRange" Value="4"/>
          <TokenVariable Key="PoisonPlayerDuration" Value="3"/>
@@ -731,24 +731,18 @@
      
    <PerkDefinition Id="DeadlyRanger">
       <TokenVariables>
-         <TokenVariable Key="TotalOneHandStat" Value="(Owner.OffHandEquippedItemsNumber + Owner.OneHandEquippedItemsNumber) * (BaseOneHandStatBonus + (Floor(Owner.Level/LevelThreshold) * OneHandStatMultiplier))"/>
-         <TokenVariable Key="TotalTwoHandStat" Value="Owner.TwoHandEquippedItemsNumber * (BaseTwoHandsStatBonus + (Floor(Owner.Level/LevelThreshold) * TwoHandStatMultiplier))"/>
-         <TokenVariable Key="OneHandStatMultiplier" Value="6"/>
-         <TokenVariable Key="TwoHandStatMultiplier" Value="3"/>
-         <TokenVariable Key="BaseOneHandStatBonus" Value="10"/>
-         <TokenVariable Key="BaseTwoHandsStatBonus" Value="6"/>
-         <TokenVariable Key="LevelThreshold" Value="5"/>
+         <TokenVariable Key="TotalOneHandStat" Value="(Owner.OffHandEquippedItemsNumber + Owner.OneHandEquippedItemsNumber) * BaseOneHandStatBonus"/>
+         <TokenVariable Key="TotalTwoHandStat" Value="Owner.TwoHandEquippedItemsNumber * BaseTwoHandsStatBonus"/>
+         <TokenVariable Key="BaseOneHandStatBonus" Value="15"/>
+         <TokenVariable Key="BaseTwoHandsStatBonus" Value="15"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="CriticalPower" Value="BaseOneHandStatBonus" Interpreted="true"/>
          <StatArgument Stat="Critical" Value="BaseTwoHandsStatBonus" Interpreted="true"/>
-         <LocArgument Value="OneHandStatMultiplier" Suffix="%" Style="GoodNb" Interpreted="true"/>
-         <LocArgument Value="TwoHandStatMultiplier" Suffix="%" Style="GoodNb" Interpreted="true"/>
          <StatArgument Stat="CriticalPower" Value="TotalOneHandStat" Interpreted="true"/>
          <StatArgument Stat="Critical" Value="TotalTwoHandStat" Interpreted="true"/>
          <LocalizedArgument Value="WeaponType_OneHand" Style="Keyword"/>
          <LocalizedArgument Value="WeaponType_TwoHands" Style="Keyword"/>
-         <LocArgument Value="LevelThreshold" Style="KeywordNb"/>
       </LocArguments>
       <View>
          <DisplayBonusBeforePurchase/>
@@ -766,36 +760,43 @@
 
    <PerkDefinition Id="Sentry">
       <TokenVariables>
-         <TokenVariable Key="IsAnAllyInRange" Value="Owner.ClosestAllyDistance > AllyRange"/>
-         <TokenVariable Key="AllyRange" Value="12"/>
-         <TokenVariable Key="ResistanceBonus" Value="20"/>
+         <TokenVariable Key="TotalResistanceBonus" Value="BooleanChoice(FirstCondition, FirstResistanceBonus, 0) + BooleanChoice(SecondCondition, SecondResistanceBonus, 0)"/>
+         <TokenVariable Key="FirstCondition" Value="Owner.ClosestAllyDistance > FirstDistanceThreshold"/>
+         <TokenVariable Key="FirstDistanceThreshold" Value="8"/>
+         <TokenVariable Key="FirstResistanceBonus" Value="15"/>
+         <TokenVariable Key="SecondCondition" Value="Owner.ClosestAllyDistance > SecondDistanceThreshold"/>
+         <TokenVariable Key="SecondDistanceThreshold" Value="15"/>
+         <TokenVariable Key="SecondResistanceBonus" Value="15"/>
       </TokenVariables>
       <LocArguments>
-         <LocArgument Value="AllyRange" Style="KeyWordNb"/>
+         <LocArgument Value="FirstDistanceThreshold" Style="KeyWordNb"/>
          <LocalizedArgument Value="SkillEffectName_IgnoreLineOfSight" Style="Vision"/>
-         <StatArgument Stat="Resistance" Value="ResistanceBonus"/>
+         <StatArgument Stat="Resistance" Value="FirstResistanceBonus"/>
+         <LocArgument Value="SecondDistanceThreshold" Style="KeyWordNb"/>
+         <StatArgument Stat="Resistance" Value="SecondResistanceBonus"/>
+         <StatArgument Stat="Resistance" Value="TotalResistanceBonus" Interpreted="true"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
             <GreyOut>
-               <IsFalse Value="IsAnAllyInRange"/>
+               <IsFalse Value="FirstCondition"/>
             </GreyOut>
+            <Bonus Value="TotalResistanceBonus"/>
             <HoverDisplay>
-               <HoverRange Range="AllyRange"/>
+               <HoverRange Range="FirstDistanceThreshold"/>
+               <HoverRange Range="SecondDistanceThreshold"/>
             </HoverDisplay>
          </DisplayInHUD>
       </View>
       <Modules>
          <BufferModule>
             <Effects>
-               <StatModifier Stat="Resistance" Value="ResistanceBonus">
-                  <Conditions>
-                     <IsTrue Value="IsAnAllyInRange"/>
-                  </Conditions>
-               </StatModifier>
+               <StatModifier Stat="Resistance" Value="TotalResistanceBonus"/>
                <AddSkillEffect>
                   <Conditions>
-                     <IsTrue Value="IsAnAllyInRange"/>
+                     <IsTrue Value="FirstCondition"/>
+                     <IsTrue Value="HasPerkData"/>
+                     <IsTrue Value="HasSkill"/>
                   </Conditions>
                   <SkillEffects>
                      <IgnoreLineOfSight/>

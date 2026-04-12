@@ -156,7 +156,6 @@
          <EnemyTier Value="1"/>
          <EnemyTier Value="2"/>
          <EnemyTier Value="3" WeightMultiplier="0.8"/>
-         <EnemyTier Value="4" WeightMultiplier="0.2"/>
       </EnemyUnitTemplateDefinitions>
       <TemporalDistribution>
          <Turn Id="1" Weight="10"/>
@@ -182,7 +181,6 @@
          <EnemyUnitTemplateDefinition Id="Archer" Weight="3"/>
          <EnemyUnitTemplateDefinition Id="Lumberjack" Weight="3"/>
          <EnemyTier Value="3" WeightMultiplier="0.6"/>
-         <EnemyTier Value="4" WeightMultiplier="0.2"/>
       </EnemyUnitTemplateDefinitions>
       <TemporalDistribution>
          <Turn Id="1" Weight="10"/>

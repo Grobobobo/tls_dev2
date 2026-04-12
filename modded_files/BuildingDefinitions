@@ -1112,7 +1112,7 @@
 
       <Construction>
          <MaterialsCost>11</MaterialsCost>
-         <BuildLimit>32</BuildLimit>
+         <BuildLimit>27</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
             <GroundCategory>Outside</GroundCategory>
@@ -1181,7 +1181,7 @@
 
       <Construction>
          <MaterialsCost>9</MaterialsCost>
-         <BuildLimit>34</BuildLimit>
+         <BuildLimit>29</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
             <GroundCategory>Outside</GroundCategory>
@@ -1250,7 +1250,7 @@
 
       <Construction>
          <MaterialsCost>13</MaterialsCost>
-         <BuildLimit>30</BuildLimit>
+         <BuildLimit>25</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
             <GroundCategory>Outside</GroundCategory>
@@ -1860,7 +1860,7 @@
       </Damageable>
 
       <Construction>
-         <MaterialsCost>72</MaterialsCost>
+         <MaterialsCost>80</MaterialsCost>
          <BuildLimit>Seeds</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -1906,7 +1906,7 @@
       </Damageable>
 
       <Construction>
-         <MaterialsCost>72</MaterialsCost>
+         <MaterialsCost>80</MaterialsCost>
          <BuildLimit>Seeds</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -1952,7 +1952,7 @@
       </Damageable>
 
       <Construction>
-         <MaterialsCost>72</MaterialsCost>
+         <MaterialsCost>80</MaterialsCost>
          <BuildLimit>Seeds</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -2078,7 +2078,7 @@
       </Blueprint>
 
       <Construction>
-         <GoldCost>50</GoldCost>
+         <GoldCost>45</GoldCost>
          <BuildLimit>3</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -2133,7 +2133,7 @@
       </Blueprint>
 
       <Construction>
-         <GoldCost>50</GoldCost>
+         <GoldCost>45</GoldCost>
          <BuildLimit>3</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -2194,7 +2194,7 @@
       </Blueprint>
 
       <Construction>
-         <GoldCost>70</GoldCost>
+         <GoldCost>40</GoldCost>
          <BuildLimit>1</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -5044,7 +5044,7 @@
    <!-- ███████████████████████████████████████████████████████████████ -->
 
    <BuildingLimitGroupDefinition Id="Gates" Limit="12"/>
-   <BuildingLimitGroupDefinition Id="Ballistas" Limit="32"/>
+   <BuildingLimitGroupDefinition Id="Ballistas" Limit="22"/>
    <BuildingLimitGroupDefinition Id="Barricades" Limit="0" ResearchFlag="BarricadesLimit"/>
    <BuildingLimitGroupDefinition Id="ProdBuildings" Limit="4"/>
    <BuildingLimitGroupDefinition Id="Seeds" Limit="8"/>
@@ -5478,7 +5478,7 @@
       </Construction>
 
       <Damageable>
-         <HealthTotal>50</HealthTotal>
+         <HealthTotal>150</HealthTotal>
          <!-- 160 -> 300 -->
          <DamagedParticles Id="Damaged_Particles_Rock"/>
       </Damageable>

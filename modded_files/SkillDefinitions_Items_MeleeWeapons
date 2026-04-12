@@ -1461,7 +1461,7 @@
             <AttackType>Physical</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
-               <Propagation PropagationsCount="5"/>
+               <Propagation PropagationsCount="6"/>
                <Debuff>
                   <BaseChance>1</BaseChance>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -2268,7 +2268,7 @@
             <DamageMultiplier>1.15</DamageMultiplier>
             <SkillEffects>
                <Momentum>
-                  <DamageBonusPerTile>0.15</DamageBonusPerTile>
+                  <DamageBonusPerTile>0.2</DamageBonusPerTile>
                </Momentum>
             </SkillEffects>
          </Attack>

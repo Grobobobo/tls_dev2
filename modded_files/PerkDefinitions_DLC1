@@ -283,11 +283,12 @@
 
    <PerkDefinition Id="Warcry">
       <TokenVariables>
-         <TokenVariable Key="TotalDmgBonus" Value="DmgBonusFromArmor + DmgBonusFromHealth"/>
+         <TokenVariable Key="TotalDmgBonus" Value="Min(DmgBonusFromArmor + DmgBonusFromHealth, DamageThreshold)"/>
+         <TokenVariable Key="DamageThreshold" Value="45"/>
          <TokenVariable Key="DmgBonusFromArmor" Value="Floor(MissingArmor / ArmorThreshold) * BonusDmgPerArmorStep"/>
          <TokenVariable Key="DmgBonusFromHealth" Value="Floor(MissingHealth / HealthThreshold) * BonusDmgPerHealthStep"/>
-         <TokenVariable Key="ArmorThreshold" Value="15"/>
-         <TokenVariable Key="HealthThreshold" Value="15"/>
+         <TokenVariable Key="ArmorThreshold" Value="12"/>
+         <TokenVariable Key="HealthThreshold" Value="12"/>
          <TokenVariable Key="BonusDmgPerArmorStep" Value="1"/>
          <TokenVariable Key="BonusDmgPerHealthStep" Value="1"/>
          <TokenVariable Key="BuffDuration" Value="1"/>
@@ -303,6 +304,7 @@
          <LocArgument Value="TotalDmgBonus" Interpreted="true" Style="GoodNb" Prefix="+"/>
          <LocArgument Value="MissingArmor" Interpreted="true" Style="KeyWordNb"/>
          <LocArgument Value="MissingHealth" Interpreted="true" Style="KeyWordNb"/>
+         <LocArgument Value="DamageThreshold" Interpreted="true" Style="GoodNb" Prefix="+"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -570,7 +572,7 @@
 		<TokenVariables>
 			<TokenVariable Key="DamagePerStack" Value="4"/>
 			<TokenVariable Key="PerkStacks" Value="Min(Max(0,Module.Buffer), MaxStacks)"/>
-         <TokenVariable Key="MaxStacks" Value="20"/>
+         <TokenVariable Key="MaxStacks" Value="15"/>
          <TokenVariable Key="WasAttackedThisTurn" Value="Module.Buffer2"/>
          <TokenVariable Key="StackPerEnemy" Value="3"/>
          <TokenVariable Key="StackLoosePerSkill" Value="1"/>
@@ -1559,8 +1561,8 @@
          <TokenVariable Key="PerkNeedUpdate" Value="Module.Buffer ! IsPerkActive"/>
          <TokenVariable Key="IsPerkActive" Value="BooleanChoice(Owner.IsBackProtectionValid, 1, -1)"/>
          <TokenVariable Key="TotalDamageBonus" Value="BaseDamageBonus + ScalingDamageBonus * Owner.Level"/>
-         <TokenVariable Key="BaseDamageBonus" Value="10"/>
-         <TokenVariable Key="ScalingDamageBonus" Value="2"/>
+         <TokenVariable Key="BaseDamageBonus" Value="15"/>
+         <TokenVariable Key="ScalingDamageBonus" Value="1"/>
          <TokenVariable Key="TotalArmorBonus" Value="BaseArmorBonus + ScalingArmorBonus * Owner.Level"/>
          <TokenVariable Key="BaseArmorBonus" Value="25"/>
          <TokenVariable Key="ScalingArmorBonus" Value="5"/>
@@ -1712,10 +1714,10 @@
    <PerkDefinition Id="Aggressiveness">
       <TokenVariables>
          <TokenVariable Key="DamageBonus" Value="Min(Floor((DepletedHealth/HealthConversionRate)) * DamageConversionRate, DamageThreshold)"/>
-         <TokenVariable Key="TotalHealth" Value="Owner.HealthPointsTotal"/>
-         <TokenVariable Key="DepletedHealth" Value="(Owner.HealthPointsTotal - Owner.HealthPoints)"/>
+         <TokenVariable Key="TotalHealth" Value="Owner.HealthTotal"/>
+         <TokenVariable Key="DepletedHealth" Value="(Owner.HealthTotal - Owner.Health)"/>
          <TokenVariable Key="DamageConversionRate" Value="3"/>
-         <TokenVariable Key="DamageThreshold" Value="60"/>
+         <TokenVariable Key="DamageThreshold" Value="45"/>
          <TokenVariable Key="HealthConversionRate" Value="10"/>
          <TokenVariable Key="BuffDuration" Value="1"/>
       </TokenVariables>

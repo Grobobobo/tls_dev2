@@ -737,10 +737,10 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="100 * (1 + PlayableUnitLevel/13)" Max="100 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="300 * (1 + PlayableUnitLevel/13)" Max="300 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>0</BasePrice>
         <Skills>
-          <Skill OverallUsesCount="3">PlayerZeppelinExplosion</Skill>
+          <Skill OverallUsesCount="1">PlayerZeppelinExplosion</Skill>
         </Skills>
       </Level>
     </LevelVariations>
