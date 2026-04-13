@@ -24,7 +24,7 @@
 
       <MovePointsTotal>4</MovePointsTotal>
 
-      <Block>50</Block>
+      <Block>40</Block>
 
       <Dodge>4</Dodge>
 
@@ -356,7 +356,7 @@
 
          <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">6</StatProgression>
 
-         <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">20</StatProgression>
+         <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">15</StatProgression>
 
       </StatsProgressions>
 
@@ -1642,7 +1642,7 @@
 
       <Weight>5</Weight>
 
-      <HealthTotal>230</HealthTotal>
+      <HealthTotal>207</HealthTotal>
 
       <HealthGaugeSize>Large</HealthGaugeSize>
 
@@ -1926,7 +1926,7 @@
 
          <StatProgression Id="Resistance" Delay="3" IncreaseEveryXDay="5">10</StatProgression>
 
-         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">65</StatProgression>
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">59</StatProgression>
 
          <StatProgression Id="MovePointsTotal" Delay="8" IncreaseEveryXDay="6">1</StatProgression>
 

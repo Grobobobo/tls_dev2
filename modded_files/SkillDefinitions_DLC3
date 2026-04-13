@@ -2165,7 +2165,7 @@
       <Range Min="0" Max="0"/>
       <SkillAction>
          <Attack>
-            <BaseDamage Min="130 * (1 + Level/13)" Max="260 * (1 + Level/13)"  />
+            <BaseDamage Min="225 * (1 + Level/13)" Max="225 * (1 + Level/13)"  />
             <AttackType>Adaptative</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>

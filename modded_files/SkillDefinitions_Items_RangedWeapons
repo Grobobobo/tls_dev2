@@ -899,7 +899,7 @@
    <!-- Long Bow -->
    <SkillDefinition Id="LongShot">
       <ActionPointsCost>1</ActionPointsCost>
-      <UsesPerTurnCount>5</UsesPerTurnCount>
+      <UsesPerTurnCount>4</UsesPerTurnCount>
       <Range Min="5" Max="12" CardinalDirectionOnly="false" Modifiable="true"/>
       <AreaOfEffect OriginX="0" OriginY="0">
          X

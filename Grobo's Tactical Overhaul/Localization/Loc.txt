@@ -211,39 +211,83 @@ Unidades a serem abatidas: {6}.","{5}
 {0}.","<style=Mana>마나 소모</style> <style=""Skill"">스킬</style>로 <style=KeyWord>공격</style>할 경우:
 {0}"
 "PerkDescription_ThirdEye","Every {0} enemies <style=KeyWord>hit</style>, the next <style=""Skill"">skill</style> gets:
-{1}, {2}, {3}, {5}.
+{1}, 
+{2}, 
+{3}, 
+{5}.
 <style=Attenuated>This modifier doesn't stack.</style>","Tous les {0} ennemis <style=KeyWord>touchés</style>, la prochaine <style=""Skill"">compétence</style> obtient<nbsp>:
-{1}, {2}, {3}, {5}.
+{1}, 
+{2}, 
+{3}, 
+{5}.
 <style=Attenuated>Ce modificateur n'est pas cumulable.</style>","每<style=KeyWord>击中</style>{0}个敌人，下一次使用<style=""Skill"">技能</style>时获得效果：
-{1}, {2}, {3}, {5}。
+{1}, 
+{2}, 
+{3}, 
+{5}。
 <style=Attenuated>此加成不可叠加。</style>","每<style=KeyWord>擊中</style>{0}個敵人，下一次使用<style=""Skill"">技能</style>時獲得效果：
-{1}, {2}, {3}, {5}。
+{1}, 
+{2}, 
+{3}, 
+{5}。
 <style=Attenuated>此加成不可疊加。</style>","{0}体のエネミーに<style=KeyWord>攻撃</style>する毎に、次の<style=""Skill"">スキル</style>は以下の効果を得る:
-{1}, {2}, {3}, {5}。
+{1}, 
+{2}, 
+{3}, 
+{5}。
 <style=ATTenuated>この効果は重複しない。</style>","За <style=KeyWord>попадания</style> по {0} врагам следующий <style=""Skill"">навык</style> получает:
-{1}, {2}, {3}, {5}.
+{1}, 
+{2}, 
+{3}, 
+{5}.
 <style=Attenuated>Эффект не накапливается.</style>","За кожних {0} ворогів, яким завдано <style=KeyWord>удар</style>, наступне <style=""Skill"">вміння</style> отримає:
-{1}, {2}, {3}, {5}.
+{1}, 
+{2}, 
+{3}, 
+{5}.
 <style=Attenuated>Цей модифікатор не поєднується.</style>","Jeder {0} <style=KeyWord>getroffene</style> Gegner, gibt dem nächsten Angriff:
-{1}, {2}, {3}, {5}.
+{1}, 
+{2}, 
+{3}, 
+{5}.
 <style=Attenuated>Dieser Modifikator ist nicht stapelbar.</style>","Cada {0} enemigos <style=KeyWord>golpeados</style>, la siguiente <style=""Skill"">habilidad</style> obtiene:
-{1}, {2}, {3}, {5}.
+{1}, 
+{2}, 
+{3}, 
+{5}.
 <style=Attenuated>Este modificador no es acumulable.</style>","A cada {0} inimigos <style=KeyWord>golpeados</style>, a próxima <style=""Skill"">habilidade</style> recebe:
-{1}, {5}.
+{1}, 
+{2}, 
+{3}, 
+{5}.
 <style=Attenuated>Este modificador não acumula.</style>","적 {0}명에 <style=KeyWord>명중</style>할 때마다 다음 <style=""Skill"">스킬</style>에 적용:
-{1}, {5}
+{1}, 
+{2}, 
+{3}, 
+{5}.
 <style=Attenuated>해당 보정치는 중첩되지 않음</style>"
-"PerkDescription_GlassCannon","{0}.
-{1} <style=PerkDamage>Perk Damage</style>.","{0}.
-{1} de <style=PerkDamage>Dégâts de talent</style>.","{0}
-{1}<style=PerkDamage>天赋伤害</style>","{0}
+"PerkDescription_GlassCannon","{0}. 
+{2}.
+{1} <style=PerkDamage>Perk Damage</style>.","{0}. 
+{2}.
+{1} de <style=PerkDamage>Dégâts de talent</style>.","{0}。
+{2}。
+{1}<style=PerkDamage>天赋伤害</style>","{0}。
+{2}。
 {1}<style=PerkDamage>天賽傷害</style>","{0}。
-{1}<style=PerkDamage>パークダメージ</style>。","{0}.
-{1} <style=PerkDamage>Урона от перка</style>.","{0}.
-{1} <style=PerkDamage>Шкоди від перка</style>.","{0}.
-{1} <style=PerkDamage>Perk-Schaden</style>.","{0}.
-{1} de <style=PerkDamage>Daño de beneficio</style>.","{0}.
-{1} de <style=PerkDamage>Dano de Vantagem</style>.","{0}
+{2}。
+{1}<style=PerkDamage>パークダメージ</style>。","{0}. 
+{2}.
+{1} <style=PerkDamage>Урона от перка</style>.","{0}. 
+{2}.
+{1} <style=PerkDamage>Шкоди від перка</style>.","{0}. 
+{2}.
+{1} <style=PerkDamage>Perk-Schaden</style>.","{0}. 
+{2}.
+{1} de <style=PerkDamage>Daño de beneficio</style>.","{0}. 
+{2}.
+{1} de <style=PerkDamage>Dano de Vantagem</style>.","{0}。
+{2}。
 {1} <style=PerkDamage>특전 피해</style>"
 "PerkDescription_SpikySkin","{5}.
 {6}.
@@ -2734,19 +2778,6 @@ Quando <style=KeyWord>atacar</style> uma unidade <style=Stun>atordoada</style>: 
 <#F35934>Melhora de uma vez só <b>TODAS</b> as Armadilhas Atordoantes.</color>","• <style=TrapUse>하룻밤 사용 횟수</style> <style=Number>1</style> > <style=GoodNbOutlined>2</style>
 • <style=OverallDamage>피해</style> <style=""Number"">80-130</style> > <style=GoodNbOutlined>120-195</style>
 <#F35934><b>모든</b> 기절 함정을 동시에 강화합니다.</color>"
-"PerkDescription_MartialPunch","Upgrades the {0} skill to {1}, dealing more <style=KeyWord>damage</style> and allowing to <style=Debuff>Debuff</style> the target's <style=MovePoints>Move Points</style>.
-<style=KeyWord>Damage</style> scales with the Hero's <style=KeyWord>level</style>.","Transforme la compétence {0} en {1}, infligeant davantage de <style=KeyWord>dégâts</style> et donnant la possibilité d'<style=Debuff>altérer</style> le <style=MovePoints>mouvement</style> de la cible.
-Les <style=KeyWord>dégâts</style> augmentent avec le <style=KeyWord>niveau</style> du Héros.","将{0}技能升级为{1}，造成更多<style=KeyWord>伤害</style>，且可以<style=Debuff>减少</style>目标的<style=MovePoints>步数</style>。
-<style=KeyWord>伤害</style>随英雄<style=KeyWord>等级</style>提升。","{0}技能升級為{1}，造成更多<style=KeyWord>傷害</style>，並可<style=Debuff>降低</style>目標的<style=MovePoints>步數</style>。
-<style=KeyWord>傷害</style>隨英雄<style=KeyWord>等級</style>提升。","スキル「{0}」が「{1}」に強化され、<style=KeyWord>ダメージ</style>が増加し、ターゲットの<style=MovePoints>移動ポイント</style>を<style=Debuff>低下</style>させるようになる。
-<style=KeyWord>ダメージ</style>は英雄の<style=KeyWord>レベル</style>に応じて増加する。","Улучшает навык ""{0}"" до навыка ""{1}"". Последний наносит больше <style=KeyWord>урона</style> и <style=Debuff>понижает</style> количество <style=MovePoints>ОП</style> цели.
-<style=KeyWord>Урон</style> увеличивается с <style=KeyWord>уровнем</style> героя.","Поліпшує вміння «{0}» до «{1}», що завдає більше <style=KeyWord>шкоди</style> й дозволяє <style=Debuff>погіршувати</style> <style=MovePoints>очки руху</style> цілі.
-<style=KeyWord>Шкода</style> зростає з <style=KeyWord>рівнем</style> героя.","Verbessert die Fähigkeit {0} zu {1}, sodass sie mehr <style=KeyWord>Schaden</style> verursacht und die <style=MovePoints>Bewegungspunkte</style> des Ziels <style=Debuff>verringert</style>.
-<style=KeyWord>Schaden</style> steigt mit dem <style=KeyWord>Level</style> des Helden.","Mejora la habilidad {0} a {1}, por lo que inflige más <style=KeyWord>daño</style> y permite utilizar una <style=Debuff>desventaja</style> sobre los <style=MovePoints>puntos de movimiento</style> del objetivo.
-El <style=KeyWord>daño</style> aumenta con el <style=KeyWord>nivel</style> del héroe.","Melhora a habilidade {0} para {1}, causando mais <style=KeyWord>dano</style> e concedendo <style=Debuff>Ônus</style> aos <style=MovePoints>Pontos de Movimento</style> do alvo.
-O <style=KeyWord>dano</style> aumenta com o <style=KeyWord>nível</style> do Herói.","{0} 스킬을 {1}(으)로 강화: 추가 <style=KeyWord>피해</style>를 주고 대상의 <style=MovePoints>이동력</style>을 <style=Debuff>디버프</style>할 수 있음
-<style=KeyWord>피해</style>가 영웅의 <style=KeyWord>레벨</style>에 따라 증가"
-"PerkEffectInformations_MartialPunch","","","","","","","","","","",""
 "ApocalypseModifierTitle_EnemyLateBuffModifier","Last-Ditch Charge","Charge Désespérée","背水一战","背水一戰","最後の突撃","Отчаянный Натиск","Відчайдушний Натиск","Verzweifelter Ansturm","Carga Desesperada","Investida Desesperada","최후의 돌격"
 "BuildingUpgradeTooltipDescription_UpgradeBallistaToBallistaSplit0","Becomes a <style=KeyWord>Split Ballista</style>:
 • <style=OverallDamage>Damage</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
@@ -2794,3 +2825,4 @@ O <style=KeyWord>dano</style> aumenta com o <style=KeyWord>nível</style> do Her
 • <style=LineOfSight>조준선</style>을 <style=""Bad"">가로막습니다</style>.
 <style=Attenuated>증축 노포 및 중형 노포 강화와 호환 불가</style>"
 "ResearchName_PerkPanicMovePointResearch","Embrace Chaos","Étreindre le Chaos","拥抱混乱","擁抱混沌","混沌を抱く","Объять Хаос","Прийняти Хаос","Chaos Umarmen","Abrazar el Caos","Abraçar o Caos","혼돈 수용"
+"PerkDescription_FastToxins","{0}.","{0}.","{0}.","{0}.","{0}。","{0}.","{0}.","{0}.","{0}.","{0}.","{0}"

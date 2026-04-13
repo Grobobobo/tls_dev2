@@ -1186,7 +1186,7 @@
          <TokenVariable Key="ThresholdIsReached" Value="Module.Buffer > HitThreshold - 1"/>
          <TokenVariable Key="ThresholdWasReached" Value="Module.Buffer2 > HitThreshold - 1"/>
          <TokenVariable Key="HitThreshold" Value="2"/>
-         <TokenVariable Key="CriticalBonus" Value="12"/>
+         <TokenVariable Key="ReliabilityBonus" Value="30"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="HitThreshold" Style="KeyWordNb"/>
@@ -1194,7 +1194,7 @@
          <LocalizedArgument Value="SkillEffectName_ArmorPiercing" Style="ArmorPiercing"/>
          <LocalizedArgument Value="SkillEffectName_NoBlock" Style="NoBlock"/>
          <LocArgument Value="RemainingEnemiesToHit" Interpreted="true" Style="KeyWordNb"/>
-         <StatArgument Stat="Critical" Value="CriticalBonus"/>
+         <StatArgument Stat="Reliability" Value="ReliabilityBonus"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -1283,7 +1283,7 @@
                      <NoBlock/>
                   </SkillEffects>
                </AddSkillEffect>
-               <StatModifier Stat="Critical" Value="CriticalBonus">
+               <StatModifier Stat="Reliability" Value="ReliabilityBonus">
                   <Conditions>
                      <IsTrue Value="ThresholdIsReached"/>
                   </Conditions>
@@ -2198,12 +2198,10 @@
    <!-- T5 -->
    <PerkDefinition Id="FastToxins">
       <TokenVariables>
-         <TokenVariable Key="PoisonDamageModifierBonus" Value="200"/>
-         <TokenVariable Key="PoisonTurnsCountModifier" Value="-1"/>
+         <TokenVariable Key="PoisonDamageModifierBonus" Value="100"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="PoisonDamageModifier" Value="PoisonDamageModifierBonus"/>
-         <LocArgument Value="PoisonTurnsCountModifier" Style="BadNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -2219,7 +2217,6 @@
          <BufferModule>
             <Effects>
                <StatModifier Stat="PoisonDamageModifier" Value="PoisonDamageModifierBonus"/>
-               <StatModifier Stat="PoisonDurationModifier" Value="PoisonTurnsCountModifier"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -2955,19 +2952,57 @@
       <TokenVariables>
          <TokenVariable Key="LockedSkillId" Value="Punch"/>
          <TokenVariable Key="AddedSkillId" Value="MartialPunch"/>
+         <TokenVariable Key="EnemiesToKillUntilNextBonus" Value="BonusDamageKillThreshold - Module.Buffer3"/>
+         <!--<TokenVariable Key="DamageCapIsReached" Value="TotalBonusDamage > BonusDamageCap - 1"/>-->
+         <TokenVariable Key="BonusDamagePerKill" Value="1"/> <!--gain X damage every...-->
+         <TokenVariable Key="BonusDamageKillThreshold" Value="KillThresholdBaseValue + Floor(TotalBonusDamage / IncreaseThresholdEveryXBonusDamage)"/> <!--... every Y kills.-->
+         <TokenVariable Key="KillThresholdBaseValue" Value="1"/>
+         <TokenVariable Key="IncreaseThresholdEveryXBonusDamage" Value="75"/> <!--where Y is increased by 1 every Z kills-->
+         <TokenVariable Key="PunchKills" Value="Module.Buffer"/>
+         <TokenVariable Key="TotalBonusDamage" Value="Module.Buffer2"/>
       </TokenVariables>
       <LocArguments>
          <LocalizedArgument Prefix="SkillName_" Value="LockedSkillId" Style="Skill"/>
          <LocalizedArgument Prefix="SkillName_" Value="AddedSkillId" Style="Skill"/>
+         <LocArgument Value="BonusDamagePerKill" Interpreted="true" Style="KeyWordNb"/>
+         <LocArgument Value="IncreaseThresholdEveryXBonusDamage" Interpreted="true" Style="KeyWordNb"/>
+         <LocArgument Value="KillThresholdBaseValue" Interpreted="true" Style="KeyWordNb"/>
+         <LocArgument Value="1" Style="KeyWordNb"/>
+         <LocArgument Value="TotalBonusDamage" Interpreted="true" Style="KeyWordNb"/>
+         <LocArgument Value="EnemiesToKillUntilNextBonus" Interpreted="true" Style="KeyWordNb"/>
       </LocArguments>
       <View>
-         <DisplayInHUD/>
+         <DisplayInHUD>
+            <Bonus Value="TotalBonusDamage"/>
+         </DisplayInHUD>
          <SkillsToShow>
             <SkillToShow Id="MartialPunch" />
          </SkillsToShow>
       </View>
       <Modules>
          <BufferModule>
+            <Events>
+               <Event EffectTime="OnTargetKilled">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('MartialPunch')"/>
+                     <IsTrue Value="IsTargetEnemyUnit"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/> <!--Buffer 1 = total punch kills-->
+                     <IncreaseBuffer BufferIndex="Buffer3" Value="1"/> <!--Buffer 3 = punch kills since last damage increase-->
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('MartialPunch')"/>
+                     <IsTrue Value="Module.Buffer3 > BonusDamageKillThreshold -1"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/> <!--Buffer 2 = accumulated punch bonus damage-->
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
             <Effects>
                <AddSkill SkillId="MartialPunch"/>
                <LockSkill SkillId="Punch"/>
@@ -2980,10 +3015,12 @@
       <TokenVariables>
          <TokenVariable Key="HealthTotalBonus" Value="-80"/>
          <TokenVariable Key="PerkDamageBonus" Value="15"/>
+         <TokenVariable Key="ResistanceBonus" Value="-100"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="HealthTotal" Value="HealthTotalBonus"/>
          <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb"/>
+         <StatArgument Stat="Resistance" Value="ResistanceBonus"/>
       </LocArguments>
       <View>
          <DisplayInHUD/>
@@ -2996,6 +3033,7 @@
             <Effects>
                <StatModifier Stat="HealthTotal" Value="HealthTotalBonus" ChildStatFollows="false"/>
                <SkillModifier ComputationStat="OverallDamage" Value="PerkDamageBonus"/>
+               <StatModifier Stat="Resistance" Value="ResistanceBonus"/>
             </Effects>
          </BufferModule>
       </Modules>

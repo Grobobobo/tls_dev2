@@ -626,7 +626,7 @@
       <Range Min="1" Max="1" CardinalDirectionOnly="true" Modifiable="false"/>
       <SkillAction>
          <Attack>
-            <BaseDamage Min="100 * (1 + Level/13)" Max="200 * (1 + Level/13)"/>
+            <BaseDamage Min="80 + GetPerkModuleBuffer('MartialPunch', 1, 2) * 1" Max="160 + GetPerkModuleBuffer('MartialPunch', 1, 2) * 1"/>
             <AttackType>Physical</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>

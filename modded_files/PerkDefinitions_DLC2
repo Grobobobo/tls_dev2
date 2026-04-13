@@ -763,10 +763,10 @@
          <TokenVariable Key="TotalResistanceBonus" Value="BooleanChoice(FirstCondition, FirstResistanceBonus, 0) + BooleanChoice(SecondCondition, SecondResistanceBonus, 0)"/>
          <TokenVariable Key="FirstCondition" Value="Owner.ClosestAllyDistance > FirstDistanceThreshold"/>
          <TokenVariable Key="FirstDistanceThreshold" Value="8"/>
-         <TokenVariable Key="FirstResistanceBonus" Value="15"/>
+         <TokenVariable Key="FirstResistanceBonus" Value="12"/>
          <TokenVariable Key="SecondCondition" Value="Owner.ClosestAllyDistance > SecondDistanceThreshold"/>
          <TokenVariable Key="SecondDistanceThreshold" Value="15"/>
-         <TokenVariable Key="SecondResistanceBonus" Value="15"/>
+         <TokenVariable Key="SecondResistanceBonus" Value="18"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="FirstDistanceThreshold" Style="KeyWordNb"/>

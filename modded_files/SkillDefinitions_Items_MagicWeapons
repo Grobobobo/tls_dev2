@@ -1823,7 +1823,7 @@
    <!-- Druidic Staff -->
    <SkillDefinition Id="Flytrap">
       <ActionPointsCost>1</ActionPointsCost>
-      <UsesPerTurnCount>4</UsesPerTurnCount>
+      <UsesPerTurnCount>5</UsesPerTurnCount>
       <Range Min="1" Max="8" CardinalDirectionOnly="false" Modifiable="true"/>
       <SkillAction>
          <Attack>
@@ -1969,7 +1969,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <Stat Id="Block"/>
-                  <Malus>30</Malus>
+                  <Malus>40</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
@@ -2031,7 +2031,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <Stat Id="Block"/>
-                  <Malus>33</Malus>
+                  <Malus>44</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
@@ -2060,7 +2060,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <Stat Id="Block"/>
-                  <Malus>35</Malus>
+                  <Malus>48</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
@@ -2089,7 +2089,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <Stat Id="Block"/>
-                  <Malus>38</Malus>
+                  <Malus>52</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
@@ -2118,7 +2118,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <Stat Id="Block"/>
-                  <Malus>41</Malus>
+                  <Malus>56</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
@@ -2147,7 +2147,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
                   <Stat Id="Block"/>
-                  <Malus>45</Malus>
+                  <Malus>60</Malus>
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <Debuff>
