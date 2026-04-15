@@ -1273,6 +1273,46 @@
    <BuildingUpgradeDefinition Id="UpgradeBallistaDamageGlobal" IsGlobal="true">
       <UpgradeLevels>
          <UpgradeLevel>
+            <MaterialCost>200</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="AddDamageModifier" DamageModifier="25" />
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <MaterialCost>400</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="AddDamageModifier" DamageModifier="25" />
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+   
+   
+   <!--CATAPULTS-->
+
+   <BuildingUpgradeDefinition Id="UpgradeCatapultDamageGlobal" IsGlobal="true">
+      <UpgradeLevels>
+         <UpgradeLevel>
             <MaterialCost>150</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="AddDamageModifier" DamageModifier="25" />
@@ -1307,52 +1347,12 @@
       </CastFXs>
    </BuildingUpgradeDefinition>
    
-   
-   <!--CATAPULTS-->
-
-   <BuildingUpgradeDefinition Id="UpgradeCatapultDamageGlobal" IsGlobal="true">
-      <UpgradeLevels>
-         <UpgradeLevel>
-            <MaterialCost>100</MaterialCost>
-            <UpgradeEffects>
-               <UpgradeEffect Id="AddDamageModifier" DamageModifier="25" />
-            </UpgradeEffects>
-         </UpgradeLevel>
-         <UpgradeLevel>
-            <MaterialCost>200</MaterialCost>
-            <UpgradeEffects>
-               <UpgradeEffect Id="AddDamageModifier" DamageModifier="25" />
-            </UpgradeEffects>
-         </UpgradeLevel>
-      </UpgradeLevels>
-
-      <CastFXs TotalDuration="0.5">
-         <VisualEffect>
-            <Paths>
-               <Path>00_Others/SelfBuff_CasterBefore</Path>
-            </Paths>
-            <SortingDepth>Before</SortingDepth>
-            <Target>HitTiles</Target>
-         </VisualEffect>
-
-         <SoundEffect>
-            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
-            <Delay>0</Delay>
-         </SoundEffect>
-
-         <CamShake>
-            <Id>Soft Hit-CamShake</Id>
-            <Delay>0.4</Delay>
-         </CamShake>
-      </CastFXs>
-   </BuildingUpgradeDefinition>
-   
    <!--TRAPS-->
 
    <BuildingUpgradeDefinition Id="UpgradeSlowTrap" IsGlobal="true">
       <UpgradeLevels>
          <UpgradeLevel>
-            <MaterialCost>100</MaterialCost>
+            <MaterialCost>150</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapSkill" OldSkillId="SlowTrapTriggered" NewSkillId="SlowTrapTriggered_Upgraded"/>
                <UpgradeEffect Id="SwapSkill" OldSkillId="Spe_SlowTrapTriggered" NewSkillId="Spe_SlowTrapTriggered_Upgraded"/>
@@ -1385,7 +1385,7 @@
       <UpgradeLevels>
          <UpgradeLevel>
             <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
-            <MaterialCost>100</MaterialCost>
+            <MaterialCost>150</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="SwapSkill" OldSkillId="DamageTrapTriggered" NewSkillId="DamageTrapTriggered_Upgraded"/>
                <UpgradeEffect Id="SwapSkill" OldSkillId="Spe_DamageTrapTriggered" NewSkillId="Spe_DamageTrapTriggered_Upgraded"/>
@@ -1418,7 +1418,7 @@
       <UpgradeLevels>
          <UpgradeLevel>
             <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
-            <MaterialCost>100</MaterialCost>
+            <MaterialCost>150</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="IncreaseMaximumTrapCharges" Value="1"/>
                <UpgradeEffect Id="SwapSkill" OldSkillId="StunTrapTriggered" NewSkillId="StunTrapTriggered_Upgraded"/>

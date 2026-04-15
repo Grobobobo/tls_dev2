@@ -1825,11 +1825,13 @@
    <!--Sword-->
    <PerkDefinition Id="SwordUniquePerk">
       <TokenVariables>
+         <TokenVariable Key="SkillRangeBonus" Value="4"/>
       </TokenVariables>
 
       <LocArguments>
          <LocalizedArgument Prefix="SkillName_" Value="Slash" Interpreted="false" Style="Skill"/>
          <LocalizedArgument Prefix="SkillName_" Value="BladeRush" Interpreted="false" Style="Skill"/>
+         <StatArgument Stat="SkillRangeModifier" Value="SkillRangeBonus"/>
       </LocArguments>
 
       <View>
@@ -1837,7 +1839,11 @@
       </View>
 
       <Modules>
-         <BufferModule/>
+         <BufferModule>
+            <Effects>
+               <StatModifier Stat="SkillRangeModifier" Value="SkillRangeBonus"/>
+            </Effects>
+         </BufferModule>
       </Modules>
    </PerkDefinition>
    

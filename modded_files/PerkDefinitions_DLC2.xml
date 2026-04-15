@@ -1327,7 +1327,7 @@
       <TokenVariables>
          <TokenVariable Key="MovePointsRestore" Value="Floor(MovePointsGainedPerSkill/MovePointsThreshold)"/>
          <TokenVariable Key="MovePointsThreshold" Value="2"/>
-         <TokenVariable Key="MomentumGainedPerSkill" Value="Max(0 , FinishTile - StartingTile)"/>
+         <TokenVariable Key="MovePointsGainedPerSkill" Value="Max(0 , FinishTile - StartingTile)"/>
          <TokenVariable Key="StartingTile" Value="Module.Buffer"/>
          <TokenVariable Key="FinishTile" Value="Module.Buffer2"/>
       </TokenVariables>
