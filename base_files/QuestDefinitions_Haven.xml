@@ -1,0 +1,1442 @@
+﻿<QuestDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                  xsi:noNamespaceSchemaLocation="QuestDefinitions.xsd">
+
+
+   <!--////////////////////-->
+   <!--// HAVEN QUESTS //-->
+   <!--////////////////////-->
+
+
+   <!--Gildenberg-->
+   <QuestDefinition Id="HavenGildenberg">
+      <ShopCategories>
+         <Category>Economy</Category>
+      </ShopCategories>
+      
+      <TokenVariables>
+         <TokenVariable Key="Quest1Completed" Value="Quest1HighRankNights > Quest1NightsNeeded - 1"/>
+         <TokenVariable Key="Quest1HighRankNights" Value="Module.Buffer"/>
+         <TokenVariable Key="Quest1NightsNeeded" Value="4"/>
+         <TokenVariable Key="Quest1MaxPanicLevel" Value="0"/>
+
+         <TokenVariable Key="Quest2Completed" Value="Quest2OrdealCompleted > Quest2OrdealNeeded - 1"/>
+         <TokenVariable Key="Quest2OrdealCompleted" Value="Module.Buffer2"/>
+         <TokenVariable Key="Quest2OrdealNeeded" Value="5"/>
+         
+         <TokenVariable Key="Quest3Completed" Value="Quest3MaterialGained > Quest3MaterialNeeded - 1"/>
+         <TokenVariable Key="Quest3MaterialGained" Value="Module.Buffer3"/>
+         <TokenVariable Key="Quest3MaterialNeeded" Value="4000"/>
+
+         <TokenVariable Key="ApocMin" Value="18"/>
+         <TokenVariable Key="RequiredCity" Value="Felderland"/>
+         <TokenVariable Key="HasBeenQuickstarted" Value="Module.Buffer4"/>
+      </TokenVariables>
+
+      <LocArguments>
+         <LocArgument Value="ApocMin" Style="KeyWordNb"/>
+         <LocalizedArgument Prefix="WorldMap_CityName_" Value="RequiredCity" Style="KeyWord"/>
+         <LocArgument Value="Quest1NightsNeeded" Style="KeyWordNb"/>
+         <LocArgument Value="Quest2OrdealNeeded" Style="KeyWordNb"/>
+         <LocArgument Value="Quest3MaterialNeeded" Style="KeyWordNb"/>
+      </LocArguments>
+
+      <Display>
+         <Unlocks>
+            <Unlock>
+               <LocalizationKey Value="QuestUnlock1_HavenGildenberg"/>
+            </Unlock>
+         </Unlocks>
+         <Requirements>
+            <Title>
+               <LocalizationKey Value="QuestRequirementTitle_HavenGildenberg"/>
+            </Title>
+            <Requirement>
+               <IsDone Value="Quest1Completed"/>
+               <Progression>
+                  <CurrentValue Value="Quest1HighRankNights"/>
+                  <GoalValue Value="Quest1NightsNeeded"/>
+               </Progression>
+               <LocalizationKey Value="QuestRequirement1_HavenGildenberg"/>
+            </Requirement>
+            <Requirement>
+               <IsDone Value="Quest2Completed"/>
+               <Progression>
+                  <CurrentValue Value="Quest2OrdealCompleted"/>
+                  <GoalValue Value="Quest2OrdealNeeded"/>
+               </Progression>
+               <LocalizationKey Value="QuestRequirement2_HavenGildenberg"/>
+            </Requirement>
+            <Requirement>
+               <IsDone Value="Quest3Completed"/>
+               <Progression>
+                  <CurrentValue Value="Quest3MaterialGained"/>
+                  <GoalValue Value="Quest3MaterialNeeded"/>
+               </Progression>
+               <LocalizationKey Value="QuestRequirement3_HavenGildenberg"/>
+            </Requirement>
+         </Requirements>
+      </Display>
+
+      <States>
+         <UnlockedState>
+            <Conditions>
+               <IsTrue Value="IsMetaUpgradeActivated('UnlockFelderlandCity')"/>
+               <IsTrue Value="ApocalypseTierIsUnlocked('2')"/>
+            </Conditions>
+         </UnlockedState>
+         <FulfilledState>
+            <Conditions>
+               <IsTrue Value="Quest1Completed"/>
+               <IsTrue Value="Quest2Completed"/>
+               <IsTrue Value="Quest3Completed"/>
+            </Conditions>
+         </FulfilledState>
+      </States>
+
+      <Effects>
+         <UnlockResearch ResearchId="HavenGildenbergResearch"/>
+      </Effects>
+
+      <Modules>
+         <BufferModule>
+            <Events>
+               <!--Quest 1-->
+               <Event EffectTime="OnNightReportAppear">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="PanicLevel = Quest1MaxPanicLevel"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>
+               <!--End Quest 1-->
+
+               <!--Quest 2-->
+               <Event EffectTime="OnObjectiveCompleted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
+                  </Actions>
+               </Event>
+               <!--End Quest 2-->
+
+               <!--Quest 3-->
+               <Event EffectTime="OnResourceGained">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasResourceGained"/>
+                     <IsTrue Value="ResourceGainedData.HasMaterials"/>
+                  </Conditions>
+                  <Actions>
+                     <!--<Log Value="ResourceGainedData.MaterialsAmount" Formatting="Materials gained: {0}"/>-->
+                     <IncreaseBuffer BufferIndex="Buffer3" Value="ResourceGainedData.MaterialsAmount"/>
+                  </Actions>
+               </Event>
+               <!--End Quest 3-->
+               
+               <!--Quests Reset-->
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 0"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 1"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 2"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="Quest3MaterialNeeded"/>
+                  </Actions>
+               </Event>
+               <!--Quests Reset End-->
+               <!--QuickStart part 1-->
+               <Event EffectTime="OnQuickStart">
+                  <Conditions>
+                     <IsTrue Value="HighestApocalypseReachedOnCity('RequiredCity') > 21"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer4" Value="1"/>
+                  </Actions>
+               </Event>
+               <!--QuickStart part 2-->
+               <Event EffectTime="OnQuickStart">
+                  <Conditions>
+                     <IsTrue Value="HighestApocalypseReachedOnCity('RequiredCity') > 35"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="Quest3MaterialNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer4" Value="2"/>
+                  </Actions>
+               </Event>
+            </Events>
+         </BufferModule>
+      </Modules>
+   </QuestDefinition>
+
+   <!-- Lakeburg -->
+   <QuestDefinition Id="HavenLakeburg">
+      <ShopCategories>
+         <Category>Defense</Category>
+      </ShopCategories>
+      
+      <TokenVariables>
+         <TokenVariable Key="Quest1Completed" Value="Quest1HighRankNights > Quest1NightsNeeded - 1"/>
+         <TokenVariable Key="Quest1HighRankNights" Value="Module.Buffer"/>
+         <TokenVariable Key="Quest1NightsNeeded" Value="7"/>
+         <TokenVariable Key="Quest1MaxPanicLevel" Value="0"/>
+
+         <TokenVariable Key="Quest2Completed" Value="Quest2OrdealCompleted > Quest2OrdealNeeded - 1"/>
+         <TokenVariable Key="Quest2OrdealCompleted" Value="Module.Buffer2"/>
+         <TokenVariable Key="Quest2OrdealNeeded" Value="9"/>
+         
+         <TokenVariable Key="Quest3Completed" Value="Quest3GoldGained > Quest3GoldNeeded - 1"/>
+         <TokenVariable Key="Quest3GoldGained" Value="Module.Buffer3"/>
+         <TokenVariable Key="Quest3GoldNeeded" Value="5000"/>
+
+         <TokenVariable Key="ApocMin" Value="18"/>
+         <TokenVariable Key="RequiredCity" Value="LakeBurg"/>
+         <TokenVariable Key="HasBeenQuickstarted" Value="Module.Buffer4"/>
+      </TokenVariables>
+
+      <LocArguments>
+         <LocArgument Value="ApocMin" Style="KeyWordNb"/>
+         <LocalizedArgument Prefix="WorldMap_CityName_" Value="RequiredCity" Style="KeyWord"/>
+         <LocArgument Value="Quest1NightsNeeded" Style="KeyWordNb"/>
+         <LocArgument Value="Quest2OrdealNeeded" Style="KeyWordNb"/>
+         <LocArgument Value="Quest3GoldNeeded" Style="KeyWordNb"/>
+      </LocArguments>
+
+      <Display>
+         <Unlocks>
+            <Unlock>
+               <LocalizationKey Value="QuestUnlock1_HavenLakeburg"/>
+            </Unlock>
+         </Unlocks>
+         <Requirements>
+            <Title>
+               <LocalizationKey Value="QuestRequirementTitle_HavenLakeburg"/>
+            </Title>
+            <Requirement>
+               <IsDone Value="Quest1Completed"/>
+               <Progression>
+                  <CurrentValue Value="Quest1HighRankNights"/>
+                  <GoalValue Value="Quest1NightsNeeded"/>
+               </Progression>
+               <LocalizationKey Value="QuestRequirement1_HavenLakeburg"/>
+            </Requirement>
+            <Requirement>
+               <IsDone Value="Quest2Completed"/>
+               <Progression>
+                  <CurrentValue Value="Quest2OrdealCompleted"/>
+                  <GoalValue Value="Quest2OrdealNeeded"/>
+               </Progression>
+               <LocalizationKey Value="QuestRequirement2_HavenLakeburg"/>
+            </Requirement>
+            <Requirement>
+               <IsDone Value="Quest3Completed"/>
+               <Progression>
+                  <CurrentValue Value="Quest3GoldGained"/>
+                  <GoalValue Value="Quest3GoldNeeded"/>
+               </Progression>
+               <LocalizationKey Value="QuestRequirement3_HavenLakeburg"/>
+            </Requirement>
+         </Requirements>
+      </Display>
+
+      <States>
+         <UnlockedState>
+            <Conditions>
+               <IsTrue Value="IsMetaUpgradeActivated('UnlockLakeburgCity')"/>
+               <IsTrue Value="IsMetaUpgradeActivated('UnlockCatapult')"/>
+               <IsTrue Value="ApocalypseTierIsUnlocked('2')"/>
+            </Conditions>
+         </UnlockedState>
+         <FulfilledState>
+            <Conditions>
+               <IsTrue Value="Quest1Completed"/>
+               <IsTrue Value="Quest2Completed"/>
+               <IsTrue Value="Quest3Completed"/>
+            </Conditions>
+         </FulfilledState>
+      </States>
+
+      <Effects>
+         <UnlockResearch ResearchId="HavenLakeburgResearch"/>
+      </Effects>
+
+      <Modules>
+         <BufferModule>
+            <Events>
+               <!--Quest 1-->
+               <Event EffectTime="OnNightReportAppear">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="PanicLevel = Quest1MaxPanicLevel"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>
+               <!--End Quest 1-->
+
+               <!--Quest 2-->
+               <Event EffectTime="OnObjectiveCompleted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
+                  </Actions>
+               </Event>
+               <!--End Quest 2-->
+
+               <!--Quest 3-->
+               <Event EffectTime="OnResourceGained">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasResourceGained"/>
+                     <IsTrue Value="ResourceGainedData.HasGold"/>
+                  </Conditions>
+                  <Actions>
+                     <!--<Log Value="ResourceGainedData.GoldAmount" Formatting="Gold gained: {0}"/>-->
+                     <IncreaseBuffer BufferIndex="Buffer3" Value="ResourceGainedData.GoldAmount"/>
+                  </Actions>
+               </Event>
+               <!--End Quest 3-->
+
+               <!--Quests Reset-->
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 0"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 1"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 2"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="Quest3MaterialNeeded"/>
+                  </Actions>
+               </Event>
+               <!--Quests Reset End-->
+               <!--QuickStart part 1-->
+               <Event EffectTime="OnQuickStart">
+                  <Conditions>
+                     <IsTrue Value="HighestApocalypseReachedOnCity('RequiredCity') > 21"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer4" Value="1"/>
+                  </Actions>
+               </Event>
+               <!--QuickStart part 2-->
+               <Event EffectTime="OnQuickStart">
+                  <Conditions>
+                     <IsTrue Value="HighestApocalypseReachedOnCity('RequiredCity') > 35"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="Quest3MaterialNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer4" Value="2"/>
+                  </Actions>
+               </Event>
+            </Events>
+         </BufferModule>
+      </Modules>
+   </QuestDefinition>
+
+   <!-- Glenwald -->
+   <QuestDefinition Id="HavenGlenwald">
+      <ShopCategories>
+         <Category>Defense</Category>
+      </ShopCategories>
+      
+      <TokenVariables>
+         <TokenVariable Key="Quest1Completed" Value="Quest1HighRankNights > Quest1NightsNeeded - 1"/>
+         <TokenVariable Key="Quest1HighRankNights" Value="Module.Buffer"/>
+         <TokenVariable Key="Quest1NightsNeeded" Value="6"/>
+         <TokenVariable Key="Quest1MaxPanicLevel" Value="0"/>
+
+         <TokenVariable Key="Quest2Completed" Value="Quest2OrdealCompleted > Quest2OrdealNeeded - 1"/>
+         <TokenVariable Key="Quest2OrdealCompleted" Value="Module.Buffer2"/>
+         <TokenVariable Key="Quest2OrdealNeeded" Value="7"/>
+         
+         <TokenVariable Key="Quest3Completed" Value="Quest3WorkerUsed > Quest3WorkerNeeded - 1"/>
+         <TokenVariable Key="Quest3WorkerUsed" Value="Module.Buffer3"/>
+         <TokenVariable Key="Quest3WorkerNeeded" Value="75"/>
+
+         <TokenVariable Key="ApocMin" Value="18"/>
+         <TokenVariable Key="RequiredCity" Value="Glenwald"/>
+         <TokenVariable Key="HasBeenQuickstarted" Value="Module.Buffer4"/>
+      </TokenVariables>
+
+      <LocArguments>
+         <LocArgument Value="ApocMin" Style="KeyWordNb"/>
+         <LocalizedArgument Prefix="WorldMap_CityName_" Value="RequiredCity" Style="KeyWord"/>
+         <LocArgument Value="Quest1NightsNeeded" Style="KeyWordNb"/>
+         <LocArgument Value="Quest2OrdealNeeded" Style="KeyWordNb"/>
+         <LocArgument Value="Quest3WorkerNeeded" Style="KeyWordNb"/>
+      </LocArguments>
+
+      <Display>
+         <Unlocks>
+            <Unlock>
+               <LocalizationKey Value="QuestUnlock1_HavenGlenwald"/>
+            </Unlock>
+         </Unlocks>
+         <Requirements>
+            <Title>
+               <LocalizationKey Value="QuestRequirementTitle_HavenGlenwald"/>
+            </Title>
+            <Requirement>
+               <IsDone Value="Quest1Completed"/>
+               <Progression>
+                  <CurrentValue Value="Quest1HighRankNights"/>
+                  <GoalValue Value="Quest1NightsNeeded"/>
+               </Progression>
+               <LocalizationKey Value="QuestRequirement1_HavenGlenwald"/>
+            </Requirement>
+            <Requirement>
+               <IsDone Value="Quest2Completed"/>
+               <Progression>
+                  <CurrentValue Value="Quest2OrdealCompleted"/>
+                  <GoalValue Value="Quest2OrdealNeeded"/>
+               </Progression>
+               <LocalizationKey Value="QuestRequirement2_HavenGlenwald"/>
+            </Requirement>
+            <Requirement>
+               <IsDone Value="Quest3Completed"/>
+               <Progression>
+                  <CurrentValue Value="Quest3WorkerUsed"/>
+                  <GoalValue Value="Quest3WorkerNeeded"/>
+               </Progression>
+               <LocalizationKey Value="QuestRequirement3_HavenGlenwald"/>
+            </Requirement>
+         </Requirements>
+      </Display>
+
+      <States>
+         <UnlockedState>
+            <Conditions>
+               <IsTrue Value="IsMetaUpgradeActivated('UnlockGlenwaldCity')"/>
+               <IsTrue Value="ApocalypseTierIsUnlocked('2')"/>
+            </Conditions>
+         </UnlockedState>
+         <FulfilledState>
+            <Conditions>
+               <IsTrue Value="Quest1Completed"/>
+               <IsTrue Value="Quest2Completed"/>
+               <IsTrue Value="Quest3Completed"/>
+            </Conditions>
+         </FulfilledState>
+      </States>
+
+      <Effects>
+         <UnlockResearch ResearchId="HavenGlenwaldResearch"/>
+      </Effects>
+
+      <Modules>
+         <BufferModule>
+            <Events>
+               <!--Quest 1-->
+               <Event EffectTime="OnNightReportAppear">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="PanicLevel = Quest1MaxPanicLevel"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>
+               <!--End Quest 1-->
+
+               <!--Quest 2-->
+               <Event EffectTime="OnObjectiveCompleted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
+                  </Actions>
+               </Event>
+               <!--End Quest 2-->
+
+               <!--Quest 3-->
+               <Event EffectTime="OnBuildingActionUsed">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBuildingActionUsed"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer3" Value="BuildingActionUsedData.WorkersCost"/>
+                     <!--<Log Value="BuildingActionUsedData.WorkersCost" Formatting="WorkersCost: {0}"/>-->
+                  </Actions>
+               </Event>
+               <!--End Quest 3-->
+
+               <!--Quests Reset-->
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 0"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 1"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 2"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="Quest3MaterialNeeded"/>
+                  </Actions>
+               </Event>
+               <!--Quests Reset End-->
+               <!--QuickStart part 1-->
+               <Event EffectTime="OnQuickStart">
+                  <Conditions>
+                     <IsTrue Value="HighestApocalypseReachedOnCity('RequiredCity') > 21"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer4" Value="1"/>
+                  </Actions>
+               </Event>
+               <!--QuickStart part 2-->
+               <Event EffectTime="OnQuickStart">
+                  <Conditions>
+                     <IsTrue Value="HighestApocalypseReachedOnCity('RequiredCity') > 35"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="Quest3MaterialNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer4" Value="2"/>
+                  </Actions>
+               </Event>
+            </Events>
+         </BufferModule>
+      </Modules>
+   </QuestDefinition>
+
+   <!-- Elderlicht -->
+   <QuestDefinition Id="HavenElderlicht">
+      <ShopCategories>
+         <Category>Defense</Category>
+      </ShopCategories>
+      
+      <TokenVariables>
+         <TokenVariable Key="Quest1Completed" Value="Quest1HighRankNights > Quest1NightsNeeded - 1"/>
+         <TokenVariable Key="Quest1HighRankNights" Value="Module.Buffer"/>
+         <TokenVariable Key="Quest1NightsNeeded" Value="8"/>
+         <TokenVariable Key="Quest1MaxPanicLevel" Value="0"/>
+
+         <TokenVariable Key="Quest2Completed" Value="Quest2OrdealCompleted > Quest2OrdealNeeded - 1"/>
+         <TokenVariable Key="Quest2OrdealCompleted" Value="Module.Buffer2"/>
+         <TokenVariable Key="Quest2OrdealNeeded" Value="11"/>
+         
+         <TokenVariable Key="Quest3Completed" Value="Quest3RepelUsed > Quest3RepelNeeded - 1"/>
+         <TokenVariable Key="Quest3RepelUsed" Value="Module.Buffer3"/>
+         <TokenVariable Key="Quest3RepelNeeded" Value="6"/>
+         <TokenVariable Key="RepelActionId" Value="RepelFog"/>
+
+         <TokenVariable Key="ApocMin" Value="18"/>
+         <TokenVariable Key="RequiredCity" Value="Elderlicht"/>
+         <TokenVariable Key="HasBeenQuickstarted" Value="Module.Buffer4"/>
+      </TokenVariables>
+
+      <LocArguments>
+         <LocArgument Value="ApocMin" Style="KeyWordNb"/>
+         <LocalizedArgument Prefix="WorldMap_CityName_" Value="RequiredCity" Style="KeyWord"/>
+         <LocArgument Value="Quest1NightsNeeded" Style="KeyWordNb"/>
+         <LocArgument Value="Quest2OrdealNeeded" Style="KeyWordNb"/>
+         <LocArgument Value="Quest3RepelNeeded" Style="KeyWordNb"/>
+      </LocArguments>
+
+      <Display>
+         <Unlocks>
+            <Unlock>
+               <LocalizationKey Value="QuestUnlock1_HavenElderlicht"/>
+            </Unlock>
+         </Unlocks>
+         <Requirements>
+            <Title>
+               <LocalizationKey Value="QuestRequirementTitle_HavenElderlicht"/>
+            </Title>
+            <Requirement>
+               <IsDone Value="Quest1Completed"/>
+               <Progression>
+                  <CurrentValue Value="Quest1HighRankNights"/>
+                  <GoalValue Value="Quest1NightsNeeded"/>
+               </Progression>
+               <LocalizationKey Value="QuestRequirement1_HavenElderlicht"/>
+            </Requirement>
+            <Requirement>
+               <IsDone Value="Quest2Completed"/>
+               <Progression>
+                  <CurrentValue Value="Quest2OrdealCompleted"/>
+                  <GoalValue Value="Quest2OrdealNeeded"/>
+               </Progression>
+               <LocalizationKey Value="QuestRequirement2_HavenElderlicht"/>
+            </Requirement>
+            <Requirement>
+               <IsDone Value="Quest3Completed"/>
+               <Progression>
+                  <CurrentValue Value="Quest3RepelUsed"/>
+                  <GoalValue Value="Quest3RepelNeeded"/>
+               </Progression>
+               <LocalizationKey Value="QuestRequirement3_HavenElderlicht"/>
+            </Requirement>
+         </Requirements>
+      </Display>
+
+      <States>
+         <UnlockedState>
+            <Conditions>
+               <IsTrue Value="IsMetaUpgradeActivated('UnlockElderlichtCity')"/>
+               <!--<IsTrue Value="IsQuestActivated('QuestVeteran_Elderlicht')"/>-->
+               <IsTrue Value="ApocalypseTierIsUnlocked('2')"/>
+            </Conditions>
+         </UnlockedState>
+         <FulfilledState>
+            <Conditions>
+               <IsTrue Value="Quest1Completed"/>
+               <IsTrue Value="Quest2Completed"/>
+               <IsTrue Value="Quest3Completed"/>
+            </Conditions>
+         </FulfilledState>
+      </States>
+
+      <Effects>
+         <UnlockResearch ResearchId="HavenElderlichtResearch"/>
+      </Effects>
+
+      <Modules>
+         <BufferModule>
+            <Events>
+               <!--Quest 1-->
+               <Event EffectTime="OnNightReportAppear">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="PanicLevel = Quest1MaxPanicLevel"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>
+               <!--End Quest 1-->
+
+               <!--Quest 2-->
+               <Event EffectTime="OnObjectiveCompleted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
+                  </Actions>
+               </Event>
+               <!--End Quest 2-->
+
+               <!--Quest 3-->
+               <Event EffectTime="OnBuildingActionUsed">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="BuildingActionUsedData.IsBuildingActionId('RepelActionId')"/>
+                     <IsTrue Value="HasBuildingActionUsed"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer3" Value="1"/>
+                     <!--<Log Value="BuildingActionUsedData.ActionId" Formatting="ActionId : {0}"/>-->
+                  </Actions>
+               </Event>
+               <!--End Quest 3-->
+
+               <!--Quests Reset-->
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 0"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 1"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 2"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="Quest3MaterialNeeded"/>
+                  </Actions>
+               </Event>
+               <!--Quests Reset End-->
+               <!--QuickStart part 1-->
+               <Event EffectTime="OnQuickStart">
+                  <Conditions>
+                     <IsTrue Value="HighestApocalypseReachedOnCity('RequiredCity') > 21"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer4" Value="1"/>
+                  </Actions>
+               </Event>
+               <!--QuickStart part 2-->
+               <Event EffectTime="OnQuickStart">
+                  <Conditions>
+                     <IsTrue Value="HighestApocalypseReachedOnCity('RequiredCity') > 35"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="Quest3MaterialNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer4" Value="2"/>
+                  </Actions>
+               </Event>
+            </Events>
+         </BufferModule>
+      </Modules>
+   </QuestDefinition>
+
+   <!-- Glintfein -->
+   <QuestDefinition Id="HavenGlintfein">
+      <ShopCategories>
+         <Category>Defense</Category>
+      </ShopCategories>
+      
+      <TokenVariables>
+         <TokenVariable Key="Quest1Completed" Value="Quest1HighRankNights > Quest1NightsNeeded - 1"/>
+         <TokenVariable Key="Quest1HighRankNights" Value="Module.Buffer"/>
+         <TokenVariable Key="Quest1NightsNeeded" Value="4"/>
+         <TokenVariable Key="Quest1MaxPanicLevel" Value="0"/>
+
+         <TokenVariable Key="Quest2Completed" Value="Quest2OrdealCompleted > Quest2OrdealNeeded - 1"/>
+         <TokenVariable Key="Quest2OrdealCompleted" Value="Module.Buffer2"/>
+         <TokenVariable Key="Quest2OrdealNeeded" Value="5"/>
+         
+         <TokenVariable Key="Quest3Completed" Value="Quest3StructureBuilt > Quest3StructureNeeded - 1"/>
+         <TokenVariable Key="Quest3StructureBuilt" Value="Module.Buffer3"/>
+         <TokenVariable Key="Quest3StructureNeeded" Value="17"/>
+
+         <TokenVariable Key="ApocMin" Value="18"/>
+         <TokenVariable Key="RequiredCity" Value="Glintfein"/>
+         <TokenVariable Key="HasBeenQuickstarted" Value="Module.Buffer4"/>
+      </TokenVariables>
+
+      <LocArguments>
+         <LocArgument Value="ApocMin" Style="KeyWordNb"/>
+         <LocalizedArgument Prefix="WorldMap_CityName_" Value="RequiredCity" Style="KeyWord"/>
+         <LocArgument Value="Quest1NightsNeeded" Style="KeyWordNb"/>
+         <LocArgument Value="Quest2OrdealNeeded" Style="KeyWordNb"/>
+         <LocArgument Value="Quest3StructureNeeded" Style="KeyWordNb"/>
+      </LocArguments>
+
+      <Display>
+         <Unlocks>
+            <Unlock>
+               <LocalizationKey Value="QuestUnlock1_HavenGlintfein"/>
+            </Unlock>
+         </Unlocks>
+         <Requirements>
+            <Title>
+               <LocalizationKey Value="QuestRequirementTitle_HavenGlintfein"/>
+            </Title>
+            <Requirement>
+               <IsDone Value="Quest1Completed"/>
+               <Progression>
+                  <CurrentValue Value="Quest1HighRankNights"/>
+                  <GoalValue Value="Quest1NightsNeeded"/>
+               </Progression>
+               <LocalizationKey Value="QuestRequirement1_HavenGlintfein"/>
+            </Requirement>
+            <Requirement>
+               <IsDone Value="Quest2Completed"/>
+               <Progression>
+                  <CurrentValue Value="Quest2OrdealCompleted"/>
+                  <GoalValue Value="Quest2OrdealNeeded"/>
+               </Progression>
+               <LocalizationKey Value="QuestRequirement2_HavenGlintfein"/>
+            </Requirement>
+            <Requirement>
+               <IsDone Value="Quest3Completed"/>
+               <Progression>
+                  <CurrentValue Value="Quest3StructureBuilt"/>
+                  <GoalValue Value="Quest3StructureNeeded"/>
+               </Progression>
+               <LocalizationKey Value="QuestRequirement3_HavenGlintfein"/>
+            </Requirement>
+         </Requirements>
+      </Display>
+
+      <States>
+         <UnlockedState>
+            <Conditions>
+               <IsTrue Value="IsMetaUpgradeActivated('UnlockGlintfeinCity')"/>
+               <IsTrue Value="ApocalypseTierIsUnlocked('2')"/>
+            </Conditions>
+         </UnlockedState>
+         <FulfilledState>
+            <Conditions>
+               <IsTrue Value="Quest1Completed"/>
+               <IsTrue Value="Quest2Completed"/>
+               <IsTrue Value="Quest3Completed"/>
+            </Conditions>
+         </FulfilledState>
+      </States>
+
+      <Effects>
+         <UnlockResearch ResearchId="HavenGlintfeinResearch"/>
+      </Effects>
+
+      <Modules>
+         <BufferModule>
+            <Events>
+               <!--Quest 1-->
+               <Event EffectTime="OnNightReportAppear">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="PanicLevel = Quest1MaxPanicLevel"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>
+               <!--End Quest 1-->
+
+               <!--Quest 2-->
+               <Event EffectTime="OnObjectiveCompleted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
+                  </Actions>
+               </Event>
+               <!--End Quest 2-->
+
+               <!--Quest 3-->
+               <Event EffectTime="OnBuildingBuilt">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="BuildingBuiltData.Building.IsProduction"/>
+                     <IsTrue Value="HasBuildingBuilt"/>
+                  </Conditions>
+                  <Actions>
+                     <IncreaseBuffer BufferIndex="Buffer3" Value="1"/>
+                     <!--<Log Value="BuildingBuiltData.Building.IsProduction" Formatting="IsProduction : {0}"/>-->
+                  </Actions>
+               </Event>
+               <!--End Quest 3-->
+
+               <!--Quests Reset-->
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 0"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 1"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 2"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="Quest3MaterialNeeded"/>
+                  </Actions>
+               </Event>
+               <!--Quests Reset End-->
+               <!--QuickStart part 1-->
+               <Event EffectTime="OnQuickStart">
+                  <Conditions>
+                     <IsTrue Value="HighestApocalypseReachedOnCity('RequiredCity') > 21"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer4" Value="1"/>
+                  </Actions>
+               </Event>
+               <!--QuickStart part 2-->
+               <Event EffectTime="OnQuickStart">
+                  <Conditions>
+                     <IsTrue Value="HighestApocalypseReachedOnCity('RequiredCity') > 35"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="Quest3MaterialNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer4" Value="2"/>
+                  </Actions>
+               </Event>
+            </Events>
+         </BufferModule>
+      </Modules>
+   </QuestDefinition>
+
+	<!--Runenberg-->
+	<QuestDefinition Id="HavenRunenberg" DLCId="Dwarves">
+      <ShopCategories>
+         <Category>Hero</Category>
+      </ShopCategories>
+      
+		<TokenVariables>
+			<TokenVariable Key="Quest1Completed" Value="Quest1HighRankNights > Quest1NightsNeeded - 1"/>
+			<TokenVariable Key="Quest1HighRankNights" Value="Module.Buffer"/>
+			<TokenVariable Key="Quest1NightsNeeded" Value="4"/>
+			<TokenVariable Key="Quest1MaxPanicLevel" Value="0"/>
+
+			<TokenVariable Key="Quest2Completed" Value="Quest2OrdealCompleted > Quest2OrdealNeeded - 1"/>
+			<TokenVariable Key="Quest2OrdealCompleted" Value="Module.Buffer2"/>
+			<TokenVariable Key="Quest2OrdealNeeded" Value="5"/>
+
+			<TokenVariable Key="Quest3Completed" Value="Quest3MaterialGained > Quest3MaterialNeeded - 1"/>
+			<TokenVariable Key="Quest3MaterialGained" Value="Module.Buffer3"/>
+			<TokenVariable Key="Quest3MaterialNeeded" Value="25000"/>
+
+			<TokenVariable Key="ApocMin" Value="18"/>
+			<TokenVariable Key="RequiredCity" Value="GildenbergRedux"/>
+         <TokenVariable Key="HasBeenQuickstarted" Value="Module.Buffer4"/>
+      </TokenVariables>
+
+		<LocArguments>
+			<LocArgument Value="ApocMin" Style="KeyWordNb"/>
+         <LocalizedArgument Prefix="WorldMap_CityName_" Value="RequiredCity" Style="KeyWord"/>
+			<LocArgument Value="Quest1NightsNeeded" Style="KeyWordNb"/>
+			<LocArgument Value="Quest2OrdealNeeded" Style="KeyWordNb"/>
+			<LocArgument Value="Quest3MaterialNeeded" Style="KeyWordNb"/>
+		</LocArguments>
+
+		<Display>
+			<Unlocks>
+				<Unlock>
+					<LocalizationKey Value="QuestUnlock1_HavenRunenberg"/>
+				</Unlock>
+			</Unlocks>
+			<Requirements>
+				<Title>
+					<LocalizationKey Value="QuestRequirementTitle_HavenRunenberg"/>
+				</Title>
+				<Requirement>
+					<IsDone Value="Quest1Completed"/>
+					<Progression>
+						<CurrentValue Value="Quest1HighRankNights"/>
+						<GoalValue Value="Quest1NightsNeeded"/>
+					</Progression>
+					<LocalizationKey Value="QuestRequirement1_HavenRunenberg"/>
+				</Requirement>
+				<Requirement>
+					<IsDone Value="Quest2Completed"/>
+					<Progression>
+						<CurrentValue Value="Quest2OrdealCompleted"/>
+						<GoalValue Value="Quest2OrdealNeeded"/>
+					</Progression>
+					<LocalizationKey Value="QuestRequirement2_HavenRunenberg"/>
+				</Requirement>
+				<Requirement>
+					<IsDone Value="Quest3Completed"/>
+					<Progression>
+						<CurrentValue Value="Quest3MaterialGained"/>
+						<GoalValue Value="Quest3MaterialNeeded"/>
+					</Progression>
+					<LocalizationKey Value="QuestRequirement3_HavenRunenberg"/>
+				</Requirement>
+			</Requirements>
+		</Display>
+
+
+		<States>
+			<UnlockedState>
+				<Conditions>
+					<IsTrue Value="IsMetaUpgradeActivated('UnlockGildenbergReduxCity')"/>
+               <IsTrue Value="IsMetaUpgradeActivated('UnlockDwarf')"/>
+					<IsTrue Value="ApocalypseTierIsUnlocked('2')"/>
+				</Conditions>
+			</UnlockedState>
+			<FulfilledState>
+				<Conditions>
+					<IsTrue Value="Quest1Completed"/>
+					<IsTrue Value="Quest2Completed"/>
+					<IsTrue Value="Quest3Completed"/>
+				</Conditions>
+			</FulfilledState>
+		</States>
+
+		<Effects>
+			<UnlockResearch ResearchId="HavenRunenbergResearch"/>
+		</Effects>
+
+		<Modules>
+			<BufferModule>
+				<Events>
+					<!--Quest 1-->
+					<Event EffectTime="OnNightReportAppear">
+						<Conditions>
+							<IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+							<IsTrue Value="PanicLevel = Quest1MaxPanicLevel"/>
+							<IsTrue Value="IsCityId('RequiredCity')"/>
+						</Conditions>
+						<Actions>
+							<IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+						</Actions>
+					</Event>
+					<!--End Quest 1-->
+
+					<!--Quest 2-->
+					<Event EffectTime="OnObjectiveCompleted">
+						<Conditions>
+							<IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+							<IsTrue Value="IsCityId('RequiredCity')"/>
+						</Conditions>
+						<Actions>
+							<IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
+						</Actions>
+					</Event>
+					<!--End Quest 2-->
+
+					<!--Quest 3-->
+					<Event EffectTime="OnResourceGained">
+						<Conditions>
+							<IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+							<IsTrue Value="IsCityId('RequiredCity')"/>
+							<IsTrue Value="HasResourceGained"/>
+							<IsTrue Value="ResourceGainedData.HasMaterials"/>
+						</Conditions>
+						<Actions>
+							<!--<Log Value="ResourceGainedData.MaterialsAmount" Formatting="Materials gained: {0}"/>-->
+							<IncreaseBuffer BufferIndex="Buffer3" Value="ResourceGainedData.MaterialsAmount"/>
+						</Actions>
+					</Event>
+					<Event EffectTime="OnResourceGained">
+						<Conditions>
+							<IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+							<IsTrue Value="IsCityId('RequiredCity')"/>
+							<IsTrue Value="HasResourceGained"/>
+							<IsTrue Value="ResourceGainedData.HasGold"/>
+						</Conditions>
+						<Actions>
+							<!--<Log Value="ResourceGainedData.GoldAmount" Formatting="Gold gained: {0}"/>-->
+							<IncreaseBuffer BufferIndex="Buffer3" Value="ResourceGainedData.GoldAmount"/>
+						</Actions>
+					</Event>
+					<!--End Quest 3-->
+
+               <!--Quests Reset-->
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 0"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 1"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 2"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="Quest3MaterialNeeded"/>
+                  </Actions>
+               </Event>
+               <!--Quests Reset End-->
+               <!--QuickStart part 1-->
+               <Event EffectTime="OnQuickStart">
+                  <Conditions>
+                     <IsTrue Value="HighestApocalypseReachedOnCity('RequiredCity') > 21"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer4" Value="1"/>
+                  </Actions>
+               </Event>
+               <!--QuickStart part 2-->
+               <Event EffectTime="OnQuickStart">
+                  <Conditions>
+                     <IsTrue Value="HighestApocalypseReachedOnCity('RequiredCity') > 35"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="Quest3MaterialNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer4" Value="2"/>
+                  </Actions>
+               </Event>
+            </Events>
+			</BufferModule>
+		</Modules>
+	</QuestDefinition>
+
+	<!--Amberwald-->
+	<QuestDefinition Id="HavenAmberwald" DLCId="Elves">
+      <ShopCategories>
+         <Category>Hero</Category>
+      </ShopCategories>
+      
+		<TokenVariables>
+			<TokenVariable Key="Quest1Completed" Value="Quest1HighRankNights > Quest1NightsNeeded - 1"/>
+			<TokenVariable Key="Quest1HighRankNights" Value="Module.Buffer"/>
+			<TokenVariable Key="Quest1NightsNeeded" Value="4"/>
+			<TokenVariable Key="Quest1MaxPanicLevel" Value="0"/>
+
+			<TokenVariable Key="Quest2Completed" Value="Quest2OrdealCompleted > Quest2OrdealNeeded - 1"/>
+			<TokenVariable Key="Quest2OrdealCompleted" Value="Module.Buffer2"/>
+			<TokenVariable Key="Quest2OrdealNeeded" Value="5"/>
+
+			<TokenVariable Key="Quest3Completed" Value="Quest3EnemiesHit > Quest3EnemiesNeeded - 1"/>
+			<TokenVariable Key="Quest3EnemiesHit" Value="Module.Buffer3"/>
+			<TokenVariable Key="Quest3EnemiesNeeded" Value="75"/>
+
+			<TokenVariable Key="ApocMin" Value="18"/>
+			<TokenVariable Key="RequiredCity" Value="GlenwaldRedux"/>
+         <TokenVariable Key="HasBeenQuickstarted" Value="Module.Buffer4"/>
+      </TokenVariables>
+
+		<LocArguments>
+			<LocArgument Value="ApocMin" Style="KeyWordNb"/>
+         <LocalizedArgument Prefix="WorldMap_CityName_" Value="RequiredCity" Style="KeyWord"/>
+			<LocArgument Value="Quest1NightsNeeded" Style="KeyWordNb"/>
+			<LocArgument Value="Quest2OrdealNeeded" Style="KeyWordNb"/>
+			<LocArgument Value="Quest3EnemiesNeeded" Style="KeyWordNb"/>
+		</LocArguments>
+
+		<Display>
+			<Unlocks>
+				<Unlock>
+					<LocalizationKey Value="QuestUnlock1_HavenAmberwald"/>
+				</Unlock>
+			</Unlocks>
+			<Requirements>
+				<Title>
+					<LocalizationKey Value="QuestRequirementTitle_HavenAmberwald"/>
+				</Title>
+				<Requirement>
+					<IsDone Value="Quest1Completed"/>
+					<Progression>
+						<CurrentValue Value="Quest1HighRankNights"/>
+						<GoalValue Value="Quest1NightsNeeded"/>
+					</Progression>
+					<LocalizationKey Value="QuestRequirement1_HavenAmberwald"/>
+				</Requirement>
+				<Requirement>
+					<IsDone Value="Quest2Completed"/>
+					<Progression>
+						<CurrentValue Value="Quest2OrdealCompleted"/>
+						<GoalValue Value="Quest2OrdealNeeded"/>
+					</Progression>
+					<LocalizationKey Value="QuestRequirement2_HavenAmberwald"/>
+				</Requirement>
+				<Requirement>
+					<IsDone Value="Quest3Completed"/>
+					<Progression>
+						<CurrentValue Value="Quest3EnemiesHit"/>
+						<GoalValue Value="Quest3EnemiesNeeded"/>
+					</Progression>
+					<LocalizationKey Value="QuestRequirement3_HavenAmberwald"/>
+				</Requirement>
+			</Requirements>
+		</Display>
+
+		<States>
+			<UnlockedState>
+				<Conditions>
+					<IsTrue Value="IsMetaUpgradeActivated('UnlockGlenwaldReduxCity')"/>
+               <IsTrue Value="IsMetaUpgradeActivated('UnlockElf')"/>
+					<!--<IsTrue Value="IsQuestActivated('QuestVeteran_Amberwald')"/>-->
+					<IsTrue Value="ApocalypseTierIsUnlocked('2')"/>
+				</Conditions>
+			</UnlockedState>
+			<FulfilledState>
+				<Conditions>
+					<IsTrue Value="Quest1Completed"/>
+					<IsTrue Value="Quest2Completed"/>
+					<IsTrue Value="Quest3Completed"/>
+				</Conditions>
+			</FulfilledState>
+		</States>
+
+		<Effects>
+			<UnlockResearch ResearchId="HavenAmberwaldResearch"/>
+		</Effects>
+
+		<Modules>
+			<BufferModule>
+				<Events>
+					<!--Quest 1-->
+					<Event EffectTime="OnNightReportAppear">
+						<Conditions>
+							<IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+							<IsTrue Value="PanicLevel = Quest1MaxPanicLevel"/>
+							<IsTrue Value="IsCityId('RequiredCity')"/>
+						</Conditions>
+						<Actions>
+							<IncreaseBuffer BufferIndex="Buffer" Value="1"/>
+						</Actions>
+					</Event>
+					<!--End Quest 1-->
+
+					<!--Quest 2-->
+					<Event EffectTime="OnObjectiveCompleted">
+						<Conditions>
+							<IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+							<IsTrue Value="IsCityId('RequiredCity')"/>
+						</Conditions>
+						<Actions>
+							<IncreaseBuffer BufferIndex="Buffer2" Value="1"/>
+						</Actions>
+					</Event>
+					<!--End Quest 2-->
+
+					<!--Quest 3-->
+					<Event EffectTime="OnEnemyAnyDamageTaken">
+						<Conditions>
+							<IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+							<IsTrue Value="IsCityId('RequiredCity')"/>
+							<IsTrue Value="IsCasterBuilding"/>
+							<IsTrue Value="Caster.Id = 'PoisonSeed'"/>
+						</Conditions>
+						<Actions>
+							<IncreaseBuffer BufferIndex="Buffer3" Value="1"/>
+						</Actions>
+					</Event>
+					<Event EffectTime="OnEnemyAnyDamageTaken">
+						<Conditions>
+							<IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+							<IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasSkill"/>
+							<IsTrue Value="Skill.IsSkillID('IsolationSeedSkill')"/>
+						</Conditions>
+						<Actions>
+							<IncreaseBuffer BufferIndex="Buffer3" Value="1"/>
+						</Actions>
+					</Event>
+					<Event EffectTime="OnEnemyAnyDamageTaken">
+						<Conditions>
+							<IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+							<IsTrue Value="IsCityId('RequiredCity')"/>
+							<IsTrue Value="HasSkill"/>
+							<IsTrue Value="Skill.IsSkillID('IsolationSeedSkill2')"/>
+						</Conditions>
+						<Actions>
+							<IncreaseBuffer BufferIndex="Buffer3" Value="1"/>
+						</Actions>
+					</Event>
+					<Event EffectTime="OnGenericSkillApplied">
+						<Conditions>
+							<IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+							<IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasSkill"/>
+							<IsTrue Value="Skill.IsSkillID('PurgingSeedSkill')"/>
+						</Conditions>
+						<Actions>
+							<IncreaseBuffer BufferIndex="Buffer3" Value="1"/>
+						</Actions>
+					</Event>
+					<Event EffectTime="OnGenericSkillApplied">
+						<Conditions>
+							<IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+							<IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasSkill"/>
+							<IsTrue Value="Skill.IsSkillID('PurgingSeedSkill2')"/>
+						</Conditions>
+						<Actions>
+							<IncreaseBuffer BufferIndex="Buffer3" Value="1"/>
+						</Actions>
+					</Event>
+					<!--End Quest 3-->
+
+               <!--Quests Reset-->
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 0"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 1"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnNewRunStarted">
+                  <Conditions>
+                     <IsTrue Value="IsAtApocalypseLevelOrMore(ApocMin)"/>
+                     <IsTrue Value="IsCityId('RequiredCity')"/>
+                     <IsTrue Value="HasBeenQuickstarted = 2"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="Quest3MaterialNeeded"/>
+                  </Actions>
+               </Event>
+               <!--Quests Reset End-->
+               <!--QuickStart part 1-->
+               <Event EffectTime="OnQuickStart">
+                  <Conditions>
+                     <IsTrue Value="HighestApocalypseReachedOnCity('RequiredCity') > 21"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer4" Value="1"/>
+                  </Actions>
+               </Event>
+               <!--QuickStart part 2-->
+               <Event EffectTime="OnQuickStart">
+                  <Conditions>
+                     <IsTrue Value="HighestApocalypseReachedOnCity('RequiredCity') > 35"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="Quest1NightsNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer3" Value="Quest3MaterialNeeded"/>
+                     <SetBufferTo BufferIndex="Buffer4" Value="2"/>
+                  </Actions>
+               </Event>
+            </Events>
+			</BufferModule>
+		</Modules>
+	</QuestDefinition>
+</QuestDefinitions>

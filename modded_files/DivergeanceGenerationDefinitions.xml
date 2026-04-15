@@ -1,0 +1,78 @@
+﻿<DivergenceGenerationDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                 xsi:noNamespaceSchemaLocation="DivergenceGenerationDefinitions.xsd">
+   
+   <DivergenceGenerationDefinition Id="LakeBurg">
+      <BaseGenerationChance>0</BaseGenerationChance>
+      <IncreaseGenerationChance>1.0</IncreaseGenerationChance>
+      <!--Besoin d'un "ResetGenerationChance" comme dans les ordalies-->
+      <ResetGenerationChance>1.0</ResetGenerationChance>
+      
+      <DivergenceDifficultyMultipliers>
+         <DivergenceDifficultyMultiplier>1</DivergenceDifficultyMultiplier>
+         <!-- additional divergences -->
+         <DivergenceDifficultyMultiplier>2</DivergenceDifficultyMultiplier>
+      </DivergenceDifficultyMultipliers>
+      
+      <DifficultyValues>
+         <DifficultyValue StartingNight="1">Corruption</DifficultyValue>
+         <DifficultyValue StartingNight="12">0</DifficultyValue>
+      </DifficultyValues>
+   </DivergenceGenerationDefinition>
+
+   <DivergenceGenerationDefinition Id="Glenwald" TemplateId="LakeBurg">
+      <DifficultyValues>
+         <DifficultyValue StartingNight="1">Corruption</DifficultyValue>
+         <DifficultyValue StartingNight="10">0</DifficultyValue>
+      </DifficultyValues>
+   </DivergenceGenerationDefinition>
+
+   <DivergenceGenerationDefinition Id="Felderland" TemplateId="LakeBurg">
+      <DifficultyValues>
+         <DifficultyValue StartingNight="1">Corruption</DifficultyValue>
+         <DifficultyValue StartingNight="7">0</DifficultyValue>
+      </DifficultyValues>
+   </DivergenceGenerationDefinition>
+
+   <DivergenceGenerationDefinition Id="Elderlicht" TemplateId="LakeBurg">
+      <DifficultyValues>
+         <DifficultyValue StartingNight="1">Corruption</DifficultyValue>
+         <DifficultyValue StartingNight="14">0</DifficultyValue>
+      </DifficultyValues>
+   </DivergenceGenerationDefinition>
+
+   <DivergenceGenerationDefinition Id="Glintfein" TemplateId="LakeBurg">
+      <DifficultyValues>
+         <DifficultyValue StartingNight="1">Corruption</DifficultyValue>
+         <DifficultyValue StartingNight="7">0</DifficultyValue>
+      </DifficultyValues>
+   </DivergenceGenerationDefinition>
+
+   <DivergenceGenerationDefinition Id="GildenbergRedux" TemplateId="LakeBurg">
+      <DifficultyValues>
+         <DifficultyValue StartingNight="1">Corruption</DifficultyValue>
+         <DifficultyValue StartingNight="10">0</DifficultyValue>
+      </DifficultyValues>
+   </DivergenceGenerationDefinition>
+
+   <DivergenceGenerationDefinition Id="GlenwaldRedux" TemplateId="LakeBurg">
+      <DifficultyValues>
+         <DifficultyValue StartingNight="1">Corruption</DifficultyValue>
+         <DifficultyValue StartingNight="10">0</DifficultyValue>
+      </DifficultyValues>
+   </DivergenceGenerationDefinition>
+
+   <DivergenceGenerationDefinition Id="TutorialMap">
+      <BaseGenerationChance>0</BaseGenerationChance>
+      <IncreaseGenerationChance>0</IncreaseGenerationChance>
+      <ResetGenerationChance>0</ResetGenerationChance>
+
+      <DivergenceDifficultyMultipliers>
+         <DivergenceDifficultyMultiplier>0</DivergenceDifficultyMultiplier>
+      </DivergenceDifficultyMultipliers>
+
+      <DifficultyValues>
+         <DifficultyValue StartingNight="1">0</DifficultyValue>
+      </DifficultyValues>
+   </DivergenceGenerationDefinition>
+
+</DivergenceGenerationDefinitions>

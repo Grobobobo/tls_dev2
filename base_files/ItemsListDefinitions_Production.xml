@@ -1,0 +1,36 @@
+<ItemsListDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation = "../ItemsListDefinitions.xsd">
+
+<!-- ******************************************************************* -->
+<!-- Generated from "macro_items2.xlsm" => "Generation Production" tab. Count = 11 entries, split into 6 lists. -->
+<!-- ******************************************************************* -->
+
+	<ItemsListDefinition Id="ItemList_BlacksmithProd">
+		<Item Id="ItemList_MeleeWeapons" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_MagicShopProd">
+		<Item Id="ItemList_MagicWeapons" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_BowyerProd">
+		<Item Id="ItemList_RangedWeapons" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ArmorMakerProd">
+		<Item Id="ItemList_BodyArmor" Odd="5"/>
+		<Item Id="ItemList_Pants" Odd="5"/>
+		<Item Id="ItemList_Helmet" Odd="5"/>
+		<Item Id="ItemList_Shield" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_TrinketMakerProd">
+		<Item Id="ItemList_Trinket" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_PotionMakerProd">
+		<Item Id="ItemList_Potion" Odd="4"/>
+		<Item Id="ItemList_Scroll_All" Odd="1"/>
+		<Item Id="ItemList_Beer" Odd="3"/>
+	</ItemsListDefinition>
+
+</ItemsListDefinitions>

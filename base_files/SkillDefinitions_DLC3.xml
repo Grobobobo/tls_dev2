@@ -1,0 +1,2421 @@
+<SkillDefinitions xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+                  xs:noNamespaceSchemaLocation="SkillDefinitions.xsd">
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- DLC3 SKILLS -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+      <SkillDefinition Id="BarricadeAttackOnDeath">
+         <OverrideArtId>DamnedBombAttack</OverrideArtId>
+         <Range Min="0" Max="0"/>
+         <AreaOfEffect OriginX="1" OriginY="1">
+            XXX
+            X_X
+            XXX
+         </AreaOfEffect>
+         <AffectedUnits>
+            <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+            <CanAffectBuildings>false</CanAffectBuildings>
+         </AffectedUnits>
+         <SkillAction>
+            <Attack>
+               <BaseDamage Min="140" Max="140"/>
+               <AttackType>Physical</AttackType>
+               <DamageMultiplier>1</DamageMultiplier>
+               <SkillEffects>
+                  <NoDodge/>
+               </SkillEffects>
+            </Attack>
+         </SkillAction>
+
+         <CastFXs TotalDuration="1">
+            <VisualEffect>
+               <Paths>
+                  <Path>Enemy Units/BoomerExplosion/BoomerExplosion</Path>
+               </Paths>
+               <Delay>0.76</Delay>
+               <SortingDepth>Before</SortingDepth>
+               <Target>AoeOrigin</Target>
+            </VisualEffect>
+
+            <SoundEffect>
+               <Path>Enemy Units/BoomerExplosion/SFX_Ennemies_Boomer_1</Path>
+               <Delay>0</Delay>
+            </SoundEffect>
+
+            <CamShake>
+               <Id>Hard Hit-CamShake</Id>
+               <Delay>0.76</Delay>
+            </CamShake>
+         </CastFXs>
+      </SkillDefinition>
+
+   <!--TAVERN & HOUSE SKILLS-->
+   
+   <SkillDefinition Id="TavernSlice">
+      <Range Min="1" Max="1" CardinalDirectionOnly="true"/>
+      <SkillAction>
+         <Attack>
+            <BaseDamage Min="450" Max="550"/>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+         </Attack>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.25">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="S">ShortSword/Slice/Slice_Caster_S</Path>
+               <Path Orientation="N">ShortSword/Slice/Slice_Caster_N</Path>
+               <Path Orientation="W">ShortSword/Slice/Slice_Caster_W</Path>
+               <Path Orientation="E">ShortSword/Slice/Slice_Caster_E</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+         <SoundEffect>
+            <Path>ShortSword/Slice/SFX_Skill_Sword_Slice</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+         <FollowFx>
+            <Speed>1000</Speed>
+            <Delay>0.13</Delay>
+         </FollowFx>
+
+         <CamShake>
+            <Id>Hard Hit-CamShake</Id>
+            <Delay>0.13</Delay>
+         </CamShake>
+      </CastFXs>
+   </SkillDefinition>
+   
+   <!--PRODUCTION BUILDING BUFFS-->
+
+   <SkillDefinition Id="BlacksmithBuff">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <Range Min="0" Max="1"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="PhysicalDamage"/>
+                  <Bonus>25</Bonus>
+                  <TurnsCount>-1</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+      
+      <CastFXs TotalDuration="0.25">
+         <VisualEffect>
+            <Paths>
+               <Path>Axe/Rage/Axe_Rage_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitUnits</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>Axe/Rage/SFX_Skill_Axe_Rage</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Hard Hit-CamShake</Id>
+            <Delay>0.25</Delay>
+         </CamShake>
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="BowyerBuff">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <Range Min="0" Max="1"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="RangedDamage"/>
+                  <Bonus>25</Bonus>
+                  <TurnsCount>-1</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.25">
+         <VisualEffect>
+            <Paths>
+               <Path>Axe/Rage/Axe_Rage_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitUnits</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>Axe/Rage/SFX_Skill_Axe_Rage</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Hard Hit-CamShake</Id>
+            <Delay>0.25</Delay>
+         </CamShake>
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="MagicShopBuff">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <Range Min="0" Max="1"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="MagicalDamage"/>
+                  <Bonus>25</Bonus>
+                  <TurnsCount>-1</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.25">
+         <VisualEffect>
+            <Paths>
+               <Path>Axe/Rage/Axe_Rage_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitUnits</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>Axe/Rage/SFX_Skill_Axe_Rage</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Hard Hit-CamShake</Id>
+            <Delay>0.25</Delay>
+         </CamShake>
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="ArmorMakerBuff">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <Range Min="0" Max="1"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="ArmorTotal"/>
+                  <Bonus>150</Bonus>
+                  <TurnsCount>-1</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.25">
+         <VisualEffect>
+            <Paths>
+               <Path>Axe/Rage/Axe_Rage_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitUnits</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>Axe/Rage/SFX_Skill_Axe_Rage</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Hard Hit-CamShake</Id>
+            <Delay>0.25</Delay>
+         </CamShake>
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="TrinketMakerBuff">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <Range Min="0" Max="1"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="ActionPointsTotal"/>
+                  <Bonus>1</Bonus>
+                  <TurnsCount>-1</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.25">
+         <VisualEffect>
+            <Paths>
+               <Path>Axe/Rage/Axe_Rage_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitUnits</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>Axe/Rage/SFX_Skill_Axe_Rage</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Hard Hit-CamShake</Id>
+            <Delay>0.25</Delay>
+         </CamShake>
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="PotionMakerBuff">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <Range Min="0" Max="1"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="MovePointsTotal"/>
+                  <Bonus>3</Bonus>
+                  <TurnsCount>-1</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.25">
+         <VisualEffect>
+            <Paths>
+               <Path>Axe/Rage/Axe_Rage_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitUnits</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>Axe/Rage/SFX_Skill_Axe_Rage</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Hard Hit-CamShake</Id>
+            <Delay>0.25</Delay>
+         </CamShake>
+      </CastFXs>
+   </SkillDefinition>
+   
+   <!--WALL SKILLS-->
+   <SkillDefinition Id="WallSpikes">
+      <OverrideArtId>ShieldUp</OverrideArtId>
+      <Range Min="1" Max="1" CardinalDirectionOnly="true"/>
+      <SkillAction>
+         <Attack>
+            <BaseDamage Min="40" Max="80"/>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <NoDodge/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+      
+      <CastFXs TotalDuration="0.25">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="N">Warshield/ShieldUp/ShieldUp_TargetN</Path>
+               <Path Orientation="S">Warshield/ShieldUp/ShieldUp_TargetS</Path>
+               <Path Orientation="E">Warshield/ShieldUp/ShieldUp_TargetE</Path>
+               <Path Orientation="W">Warshield/ShieldUp/ShieldUp_TargetW</Path>
+            </Paths>
+
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>Shield\ShieldUp\SFX_Skill_ShieldUp</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CasterAnim>
+            <Delay>0.05</Delay>
+         </CasterAnim>
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.2</Delay>
+         </CamShake>
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="WallSpikes1" TemplateId="WallSpikes">
+      <SkillAction>
+         <Attack>
+            <BaseDamage Min="60" Max="100"/>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <NoDodge/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="WallSpikes2" TemplateId="WallSpikes">
+      <SkillAction>
+         <Attack>
+            <BaseDamage Min="80" Max="120"/>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <NoDodge/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="WallSpikes3" TemplateId="WallSpikes">
+      <SkillAction>
+         <Attack>
+            <BaseDamage Min="120" Max="160"/>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <NoDodge/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+   <!-- Boss Offhand -->
+
+      <SkillDefinition Id="PlayerFlyingAssault">
+         <OverrideArtId>HarpyFlyingAssault</OverrideArtId>
+         <OverrideLocalizationId>HarpyFlyingAssault</OverrideLocalizationId>
+         <Range Min="2" Max="8" Modifiable="true"/>
+         <ActionPointsCost>1</ActionPointsCost>
+         <UsesPerTurnCount>2</UsesPerTurnCount>
+         <CanRotate/>
+         <AreaOfEffect OriginX="0" OriginY="1">
+            X
+            M
+         </AreaOfEffect>
+         <SkillAction>
+            <Attack>
+               <AttackType>Physical</AttackType>
+               <DamageMultiplier>1</DamageMultiplier>
+               <SkillEffects>
+                  <CasterEffect>
+                     <Buff>
+                        <BaseChance>1</BaseChance>
+                        <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                        <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+                        <Stat Id="MovePointsTotal"/>
+                        <Bonus>2</Bonus>
+                        <TurnsCount>3</TurnsCount>
+                     </Buff>
+                  </CasterEffect>
+                  <Maneuver/>
+                  <IgnoreLineOfSight/>
+               </SkillEffects>
+            </Attack>
+         </SkillAction>
+
+         <CastFXs TotalDuration="0.8">
+
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="SE">OffHandUnique/HarpyOffHand/FlyingAssault_Caster_SE</Path>
+                  <Path Orientation="NW">OffHandUnique/HarpyOffHand/FlyingAssault_Caster_NW</Path>
+               </Paths>
+               <SortingDepth>Before</SortingDepth>
+               <Target>Caster</Target>
+            </VisualEffect>
+
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="SE">OffHandUnique/HarpyOffHand/FlyingAssault_FollowCaster_SE</Path>
+                  <Path Orientation="NW">OffHandUnique/HarpyOffHand/FlyingAssault_FollowCaster_NW</Path>
+               </Paths>
+               <Delay>0.65</Delay>
+               <SortingDepth>Before</SortingDepth>
+               <Target>FollowCaster</Target>
+            </VisualEffect>
+
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="NSEW">Enemy Boss/HarpyBoss/FlyingAssault/FlyingAssault_Shockwave_NSEW</Path>
+               </Paths>
+               <Delay>0.15</Delay>
+               <SortingDepth>Behind</SortingDepth>
+               <Target>Caster</Target>
+            </VisualEffect>
+
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="NSEW">Enemy Boss/HarpyBoss/FlyingAssault/FlyingAssault_Shockwave_NSEW</Path>
+               </Paths>
+               <Delay>0.65</Delay>
+               <SortingDepth>Behind</SortingDepth>
+               <Target>FollowCaster</Target>
+            </VisualEffect>
+
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="SE">Enemy Boss/HarpyBoss/FlyingAssault/FlyingAssault_Target_SE</Path>
+                  <Path Orientation="NW">Enemy Boss/HarpyBoss/FlyingAssault/FlyingAssault_Target_NW</Path>
+               </Paths>
+               <Delay>0.65</Delay>
+               <SortingDepth>Before</SortingDepth>
+               <Target>HitTiles</Target>
+            </VisualEffect>
+
+            <SoundEffect>
+               <Path>Harpy/SFX_Enemy_Skill_Harpy_FlyingAssault</Path>
+               <Delay>0</Delay>
+            </SoundEffect>
+
+            <CasterAnim>
+               <Path>HarpyBoss_CastSkill_FlyingAssault_</Path>
+               <Delay>0.15</Delay>
+            </CasterAnim>
+
+            <ManeuverFx>
+               <Speed>10000</Speed>
+               <Delay>0.5</Delay>
+            </ManeuverFx>
+
+         </CastFXs>
+      </SkillDefinition>
+
+      <SkillDefinition Id="PlayerHeadSplash">
+         <OverrideArtId>NessieBossHeadSplash</OverrideArtId>
+         <Range Min="1" Max="6" Modifiable="true"/>
+         <CanRotate/>
+         <ActionPointsCost>1</ActionPointsCost>
+         <MovePointsCost>1</MovePointsCost>
+         <UsesPerTurnCount>1</UsesPerTurnCount>
+         <AreaOfEffect OriginX="1" OriginY="1">
+            XXX
+            XMX
+            XXX
+         </AreaOfEffect>
+         <AffectedUnits>
+            <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+            <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+            <CanAffectBossUnits>true</CanAffectBossUnits>
+            <CanAffectCaster>false</CanAffectCaster>
+         </AffectedUnits>
+         <SkillAction>
+            <Attack>
+               <AttackType>Magical</AttackType>
+               <DamageMultiplier>1</DamageMultiplier>
+               <SkillEffects>
+                  <Debuff>
+                     <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectCaster>false</CanAffectCaster>
+                     <BaseChance>1</BaseChance>
+                     <Stat Id="MovePointsTotal"/>
+                     <Malus>3</Malus>
+                     <TurnsCount>1</TurnsCount>
+                  </Debuff>
+                  <Debuff>
+                     <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectCaster>false</CanAffectCaster>
+                     <BaseChance>1</BaseChance>
+                     <Stat Id="OverallDamage"/>
+                     <Malus>30</Malus>
+                     <TurnsCount>1</TurnsCount>
+                  </Debuff>
+                  <Maneuver/>
+                  <IgnoreLineOfSight/>
+               </SkillEffects>
+            </Attack>
+         </SkillAction>
+
+         <CastFXs TotalDuration="4">
+
+            <CamShake>
+               <Id>RainOfArrows-CamShake</Id>
+               <!--<Id>MegaStompPropagation-CamShake</Id>-->
+               <Delay>0</Delay>
+            </CamShake>
+
+            <SoundEffect>
+               <Path>Nessie/SFX_Enemy_Skill_Nessy_Splash</Path>
+               <Delay>0</Delay>
+            </SoundEffect>
+
+            <CamShake>
+               <Id>Soft Hit-CamShake</Id>
+               <Delay>0.7</Delay>
+            </CamShake>
+
+            <!--NESSIE'S TILES-->
+
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="NSEW">Enemy Boss/NessieBoss/Nessie_Splash/Nessie_Splash_Target</Path>
+               </Paths>
+               <Delay>Random(0, 0.1)</Delay>
+               <SortingDepth>Before</SortingDepth>
+               <Target XTileOffset="0" YTileOffset="0">CastFxSourceTile</Target>
+            </VisualEffect>
+
+            <!--FADE IN-->
+            <!--NESSIE'S TILES-->
+
+
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="NSEW">Enemy Boss/NessieBoss/Nessie_Splash/Nessie_Splash_Target</Path>
+               </Paths>
+               <Delay>Random(3.5, 3.6)</Delay>
+               <SortingDepth>TargetDynamic</SortingDepth>
+               <Target XTileOffset="0" YTileOffset="0">AoeOrigin</Target>
+            </VisualEffect>
+
+            <!--FIRST RING-->
+
+
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="NSEW">Enemy Boss/NessieBoss/Nessie_Splash/Nessie_Splash_Target</Path>
+               </Paths>
+               <Delay>Random(3.5, 3.6)</Delay>
+               <SortingDepth>TargetDynamic</SortingDepth>
+               <Target XTileOffset="-1" YTileOffset="1">AoeOrigin</Target>
+            </VisualEffect>
+
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="NSEW">Enemy Boss/NessieBoss/Nessie_Splash/Nessie_Splash_Target</Path>
+               </Paths>
+               <Delay>Random(3.5, 3.6)</Delay>
+               <SortingDepth>TargetDynamic</SortingDepth>
+               <Target XTileOffset="0" YTileOffset="1">AoeOrigin</Target>
+            </VisualEffect>
+
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="NSEW">Enemy Boss/NessieBoss/Nessie_Splash/Nessie_Splash_Target</Path>
+               </Paths>
+               <Delay>Random(3.5, 3.6)</Delay>
+               <SortingDepth>TargetDynamic</SortingDepth>
+               <Target XTileOffset="1" YTileOffset="1">AoeOrigin</Target>
+            </VisualEffect>
+
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="NSEW">Enemy Boss/NessieBoss/Nessie_Splash/Nessie_Splash_Target</Path>
+               </Paths>
+               <Delay>Random(3.5, 3.6)</Delay>
+               <SortingDepth>TargetDynamic</SortingDepth>
+               <Target XTileOffset="1" YTileOffset="0">AoeOrigin</Target>
+            </VisualEffect>
+
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="NSEW">Enemy Boss/NessieBoss/Nessie_Splash/Nessie_Splash_Target</Path>
+               </Paths>
+               <Delay>Random(3.5, 3.6)</Delay>
+               <SortingDepth>TargetDynamic</SortingDepth>
+               <Target XTileOffset="-1" YTileOffset="0">AoeOrigin</Target>
+            </VisualEffect>
+
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="NSEW">Enemy Boss/NessieBoss/Nessie_Splash/Nessie_Splash_Target</Path>
+               </Paths>
+               <Delay>Random(3.5, 3.6)</Delay>
+               <SortingDepth>TargetDynamic</SortingDepth>
+               <Target XTileOffset="-1" YTileOffset="-1">AoeOrigin</Target>
+            </VisualEffect>
+
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="NSEW">Enemy Boss/NessieBoss/Nessie_Splash/Nessie_Splash_Target</Path>
+               </Paths>
+               <Delay>Random(3.5, 3.6)</Delay>
+               <SortingDepth>TargetDynamic</SortingDepth>
+               <Target XTileOffset="0" YTileOffset="-1">AoeOrigin</Target>
+            </VisualEffect>
+
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="NSEW">Enemy Boss/NessieBoss/Nessie_Splash/Nessie_Splash_Target</Path>
+               </Paths>
+               <Delay>Random(3.5, 3.6)</Delay>
+               <SortingDepth>TargetDynamic</SortingDepth>
+               <Target XTileOffset="1" YTileOffset="-1">AoeOrigin</Target>
+            </VisualEffect>
+
+            <CasterAnim>
+               <Path>Hero_CastSkill_NessieBossSplash_</Path>
+               <Delay>0.7</Delay>
+            </CasterAnim>
+
+            <ManeuverFx>
+               <Speed>30</Speed>
+               <Delay>2</Delay>
+            </ManeuverFx>
+
+            <CamShake>
+               <Id>Hard Hit-CamShake</Id>
+               <Delay>4.2</Delay>
+            </CamShake>
+
+            <CamShake>
+               <Id>Hard Hit-CamShake</Id>
+               <Delay>5.2</Delay>
+            </CamShake>
+         </CastFXs>
+      </SkillDefinition>
+
+      <SkillDefinition Id="PlayerFortress">
+         <Range Min="0" Max="0"/>
+         <AreaOfEffect OriginX="1" OriginY="1">
+            XXX
+            X_X
+            XXX
+         </AreaOfEffect>
+         <ActionPointsCost>1</ActionPointsCost>
+         <UsesPerTurnCount>1</UsesPerTurnCount>
+         <SkillAction>
+            <Build Delay="0.85">
+               <Location>
+                  <SkillTargeting/>
+               </Location>
+               <Placement>
+                  <IgnoreUnit>false</IgnoreUnit>
+                  <IgnoreBuilding>false</IgnoreBuilding>
+               </Placement>
+               <Buildings>
+                  <Building Id="PlayerForteressWall" Weight="1"/>
+               </Buildings>
+            </Build>
+         </SkillAction>
+
+         <CastFXs>
+            <VisualEffect>
+               <Paths>
+                  <Path>Enemy Boss/SpawnerBoss/Spawn/SpawnerBoss_Spawn_TargetBefore</Path>
+               </Paths>
+               <Delay>Random(0, 0.35)</Delay>
+               <SortingDepth>Dynamic</SortingDepth>
+               <Target>HitTiles</Target>
+            </VisualEffect>
+
+           <CasterAnim>
+             <Path>Hero_CastSkill_Entangle_Cast_</Path>
+           </CasterAnim>
+           
+            <CamShake>
+               <Id>Soft Hit-CamShake</Id>
+               <Delay>0.85</Delay>
+            </CamShake>
+
+            <SoundEffect>
+               <Path>Boss/SFX_Ennemies_Boss_SpawnerBossFortress</Path>
+               <Delay>0.0</Delay>
+            </SoundEffect>
+
+         </CastFXs>
+
+      </SkillDefinition>
+
+      <SkillDefinition Id="PlayerEternalFlame">
+         <OverrideArtId>MonarchEternalFlame</OverrideArtId>
+         <OverrideLocalizationId>MonarchEternalFlame</OverrideLocalizationId>
+         <Range Min="1" Max="3"/>
+         <ActionPointsCost>3</ActionPointsCost>
+         <UsesPerTurnCount>1</UsesPerTurnCount>
+         <AreaOfEffect OriginX="0" OriginY="0">
+            X
+         </AreaOfEffect>
+         <SkillAction>
+            <Attack>
+               <BaseDamage Min="1680" Max="1680"/>
+               <AttackType>Magical</AttackType>
+               <DamageMultiplier>1</DamageMultiplier>
+               <SkillEffects>
+                  <CasterEffect>
+                     <RemoveStatus>
+                        <BaseChance>1</BaseChance>
+                        <Status>AllNegative</Status>
+                     </RemoveStatus>
+                  </CasterEffect>
+                  <IgnoreLineOfSight/>
+               </SkillEffects>
+            </Attack>
+         </SkillAction>
+
+         <CastFXs TotalDuration="2.5">
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="SNEW">Enemy Boss/MonarchBoss/EternalFlames/EternalFlames_TargetBefore</Path>
+               </Paths>
+               <Delay>0.58</Delay>
+               <SortingDepth>Before</SortingDepth>
+               <Target>HitTiles</Target>
+            </VisualEffect>
+
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="SNEW">Enemy Boss/MonarchBoss/EternalFlames/EternalFlames_TargetBehind</Path>
+               </Paths>
+               <Delay>2</Delay>
+               <SortingDepth>Behind</SortingDepth>
+               <Target>HitTiles</Target>
+            </VisualEffect>
+
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="SNEW">Enemy Boss/MonarchBoss/EternalFlames/EternalFlames_CasterBehind</Path>
+               </Paths>
+               <SortingDepth>Behind</SortingDepth>
+               <Target>Caster</Target>
+            </VisualEffect>
+
+            <CasterAnim>
+                 <Path>Hero_CastSkill_DruidicStaff_LightningStrike_Cast_</Path>
+               <Delay>1.4</Delay>
+            </CasterAnim>
+
+            <SoundEffect>
+               <OnImpact>true</OnImpact>
+               <Path>ThroneTower/SFX_Enemy_Skill_ThroneTowerBoss_Annihilation</Path>
+               <Delay>0</Delay>
+            </SoundEffect>
+
+            <CamShake>
+               <Id>Hard Hit-CamShake</Id>
+               <Delay>2</Delay>
+            </CamShake>
+
+         </CastFXs>
+      </SkillDefinition>
+
+      <SkillDefinition Id="PlayerSchadenKill">
+         <OverrideArtId>SchadenKill</OverrideArtId>
+         <OverrideLocalizationId>SchadenInstantKill</OverrideLocalizationId>
+         <Range Min="1" Max="6"/>
+         <UsesPerTurnCount>1</UsesPerTurnCount>
+         <HealthCost>200</HealthCost>
+         <SkillAction>
+            <Generic>
+               <SkillEffects>
+                  <Kill/>
+                  <IgnoreLineOfSight/>
+               </SkillEffects>
+            </Generic>
+         </SkillAction>
+
+         <CastFXs TotalDuration="2">
+
+           <VisualEffect>
+             <Paths>
+               <Path Orientation="SEWN">OffHandUnique/SchadenOffHand/SchadenOffHand_Caster</Path>
+             </Paths>
+             <SortingDepth>Before</SortingDepth>
+             <Target>Caster</Target>
+           </VisualEffect>
+           
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="SE">Enemy Boss/SchadenBoss/SchadenKill/SchadenKill_Target_S</Path>
+                  <Path Orientation="NW">Enemy Boss/SchadenBoss/SchadenKill/SchadenKill_Target_N</Path>
+               </Paths>
+               <Delay>0.75</Delay>
+               <SortingDepth>AboveAll</SortingDepth>
+               <Target>HitTiles</Target>
+            </VisualEffect>
+
+           <CasterAnim>
+             <Path>Hero_CastSkill_TakeDmg_</Path>
+           </CasterAnim>
+           
+            <SoundEffect>
+               <!--<OnImpact>false</OnImpact>-->
+               <Path>Schaden/SFX_Schaden_Kill</Path>
+               <Delay>0.0</Delay>
+            </SoundEffect>
+
+            <CamShake>
+               <Id>Hard Hit-CamShake</Id>
+               <Delay>1.8</Delay>
+            </CamShake>
+
+            <!-- <CasterAnim> -->
+            <!-- <Path>Default</Path> -->
+            <!-- <Delay>0</Delay> -->
+            <!-- </CasterAnim> -->
+
+         </CastFXs>
+      </SkillDefinition>
+
+      <SkillDefinition Id="PlayerFreudeOffenseBuff">
+         <OverrideArtId>FreudeOffenseBuff</OverrideArtId>
+         <OverrideLocalizationId>FreudeOffenseBuff</OverrideLocalizationId>
+         <ManaCost>4</ManaCost>
+         <UsesPerTurnCount>1</UsesPerTurnCount>
+         <AffectedUnits>
+            <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+         </AffectedUnits>
+         <SkillAction>
+            <Generic>
+               <SkillEffects>
+                  <CasterEffect>
+                     <Buff>
+                        <BaseChance>1</BaseChance>
+                        <Bonus>200</Bonus>
+                        <Stat Id="OverallDamage"/>
+                        <TurnsCount>1</TurnsCount>
+                     </Buff>
+                     <NegativeStatusImmunityEffect>
+                        <Type Id="Debuff"/>
+                        <TurnsCount>1</TurnsCount>
+                     </NegativeStatusImmunityEffect>
+                  </CasterEffect>
+               </SkillEffects>
+            </Generic>
+         </SkillAction>
+
+         <CastFXs TotalDuration="1.3">
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="NSEW">Enemy Boss/FreudeBoss/FreudeOffenseBuff/FreudeOffenseBuff_Target</Path>
+               </Paths>
+               <Delay>Random(1.4, 1.6)</Delay>
+               <SortingDepth>Before</SortingDepth>
+               <Target>HitPlayableUnits</Target>
+            </VisualEffect>
+
+            <VisualEffect>
+               <Paths>
+                  <Path Orientation="NSEW">Enemy Boss/FreudeBoss/FreudeOffenseBuff/FreudeOffenseBuff_Before</Path>
+               </Paths>
+               <Delay>0.31</Delay>
+               <SortingDepth>Before</SortingDepth>
+               <Target>HitTiles</Target>
+            </VisualEffect>
+
+		    <VisualEffect>
+               <Paths>
+                  <Path Orientation="NSEW">OffHandUnique/FreudeOffHand/FreudeOffHand_Behind</Path>
+               </Paths>
+               <Delay>0.31</Delay>
+               <SortingDepth>Behind</SortingDepth>
+               <Target>HitTiles</Target>
+            </VisualEffect>
+			
+
+            <SoundEffect>
+               <OnImpact>true</OnImpact>
+               <Path>Freude/SFX_Freude_OffenseBuff</Path>
+               <Delay>0.0</Delay>
+            </SoundEffect>
+
+            <CamShake>
+               <Id>Soft Hit-CamShake</Id>
+               <Delay>1.2</Delay>
+            </CamShake>
+           
+           <CasterAnim>
+             <Path>Hero_CastSkill_DruidicStaff_LightningStrike_Cast_</Path>
+           </CasterAnim>
+           
+         </CastFXs>
+      </SkillDefinition>
+
+   <SkillDefinition Id="PlayerZeppelinExplosion">
+      <OverrideArtId>ZeppelinExplosion</OverrideArtId>
+      <Range Min="0" Max="0" CardinalDirectionOnly="true"/>
+      <AreaOfEffect OriginX="5" OriginY="5" >
+         __XXXXXXX__
+         _XXXXXXXXX_
+         XXXXXXXXXXX
+         XXXXXXXXXXX
+         XXXXXXXXXXX
+         XXXXXXXXXXX
+         XXXXXXXXXXX
+         XXXXXXXXXXX
+         XXXXXXXXXXX
+         _XXXXXXXXX_
+         __XXXXXXX__
+      </AreaOfEffect>
+      <AffectedUnits>
+         <CanAffectCaster>true</CanAffectCaster>
+      </AffectedUnits>
+      <SkillAction>
+         <Attack>
+            <BaseDamage Min="400" Max="400"/>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <NoDodge/>
+               <NoBlock/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.75">
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="SE">OffHandUnique/FleshCloudOffHand/FleshCloudOffHand_Before_SE</Path>
+			   <Path Orientation="NW">OffHandUnique/FleshCloudOffHand/FleshCloudOffHand_Before_NW</Path>
+            </Paths>
+            <Delay>0</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>AoeOrigin</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="SNEW">Enemy Boss/ZeppelinBoss/Explosion/ZeppelinBoss_Explosion_Behind_NSEW</Path>
+            </Paths>
+            <Delay>0.75</Delay>
+            <SortingDepth>Behind</SortingDepth>
+            <Target>AoeOrigin</Target>
+         </VisualEffect>
+
+         <CamShake>
+            <Id>Hard Hit-CamShake</Id>
+            <Delay>0.75</Delay>
+         </CamShake>
+
+         <SoundEffect>
+            <Path>Zeppelin/SFX_Skill_Zeppelin_AtomicBurst</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+		 <CasterAnim>
+			<Path>Enemy_NoAnimation_</Path>
+		 </CasterAnim>
+
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="PlayerRunestone">
+      <ActionPointsCost>1</ActionPointsCost>
+      <Range Min="1" Max="4"/>
+      <SkillAction>
+         <Build Delay="0.75">
+            <Location>
+               <SkillTargeting/>
+            </Location>
+            <Placement>
+               <IgnoreUnit>false</IgnoreUnit>
+               <IgnoreBuilding>false</IgnoreBuilding>
+            </Placement>
+            <Buildings>
+               <Building Id="PlayerCrystalPoisonOn" Weight="1"/>
+               <Building Id="PlayerCrystalFrostOn" Weight="1"/>
+               <Building Id="PlayerCrystalExplosiveOn" Weight="1"/>
+            </Buildings>
+         </Build>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.75">
+
+        <VisualEffect>
+			  <Paths>
+				  <Path Orientation="SNEW">OffHandUnique/DwarfStatueOffHand/Skill_DwarfStatueOffHandBoss_HitTiles_NSEW</Path>
+			  </Paths>
+			  <Delay>0.8</Delay>
+			  <SortingDepth>Before</SortingDepth>
+			  <Target>HitTiles</Target>
+		  </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.75</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_DruidicStaff_LightningStrike_Cast_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+   <!-- Portable skills -->
+   <SkillDefinition Id="PortableBallistaSkill">
+      <Range Min="1" Max="4"/>
+      <ActionPointsCost>1</ActionPointsCost>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <SkillAction>
+         <Build Delay="3.5">
+            <Location>
+               <SkillTargeting/>
+            </Location>
+            <Placement>
+               <IgnoreUnit>false</IgnoreUnit>
+               <IgnoreBuilding>false</IgnoreBuilding>
+            </Placement>
+            <Buildings>
+               <Building Id="PortableBallista" Weight="1"/>
+            </Buildings>
+         </Build>
+      </SkillAction>
+
+      <CastFXs TotalDuration="3.5">
+          <VisualEffect>
+            <Paths>
+               <Path Orientation="NW">EngineerTrinketUnique/EngineerTrinketUnique_Caster_N</Path>
+               <Path Orientation="SE">EngineerTrinketUnique/EngineerTrinketUnique_Caster_S</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="SEWN">EngineerTrinketUnique/EngineerTrinketUnique_Target_SEWN</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+            <Delay>2.3</Delay>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>2.3</Delay>
+         </CamShake>
+
+         <CasterAnim>
+			<Path>Enemy_NoAnimation_</Path>
+		 </CasterAnim>
+
+       <SoundEffect>
+               <Path>EngineerTrinketUnique\SFX_SKILL_EngineerTrinketSkill</Path>
+               <Delay>0</Delay>
+         </SoundEffect>
+
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="PortableWatchtowerSkill">
+      <Range Min="1" Max="4"/>
+      <MovePointsCost>1</MovePointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Build Delay="1.3">
+            <Location>
+               <SkillTargeting/>
+            </Location>
+            <Placement>
+               <IgnoreUnit>false</IgnoreUnit>
+               <IgnoreBuilding>false</IgnoreBuilding>
+            </Placement>
+            <Buildings>
+               <Building Id="PortableWatchtower" Weight="1"/>
+            </Buildings>
+         </Build>
+      </SkillAction>
+
+      <CastFXs TotalDuration="1.3">
+         <VisualEffect>
+            <Paths>
+				<Path Orientation="NSEW">00_Others/Spawn_WatchTower</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="PortableBallistaSproutSkill">
+      <Range Min="1" Max="4"/>
+      <ActionPointsCost>2</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <SkillAction>
+         <Build Delay="1.5">
+            <Location>
+               <SkillTargeting/>
+            </Location>
+            <Placement>
+               <IgnoreUnit>false</IgnoreUnit>
+               <IgnoreBuilding>false</IgnoreBuilding>
+            </Placement>
+            <Buildings>
+               <Building Id="PlayerLivingForestBallistaSprout" Weight="1"/>
+            </Buildings>
+         </Build>
+      </SkillAction>
+
+      <CastFXs TotalDuration="1.5">
+         <VisualEffect>
+            <Paths>
+              <Path Orientation="NSEW">00_Others/Spawn_BallistaSprout</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+   
+   <SkillDefinition Id="PortableBarricadeSkill">
+      <Range Min="1" Max="6"/>
+      <MovePointsCost>2</MovePointsCost>
+      <UsesPerTurnCount>4</UsesPerTurnCount>
+      <SkillAction>
+         <Build Delay="0.1">
+            <Location>
+               <SkillTargeting/>
+            </Location>
+            <Placement>
+               <IgnoreUnit>false</IgnoreUnit>
+               <IgnoreBuilding>false</IgnoreBuilding>
+            </Placement>
+            <Buildings>
+               <Building Id="PlayerBarricade" Weight="1"/>
+            </Buildings>
+         </Build>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/Spawn_Barricade</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+
+   <!--NEGATIVE PERK SKILLS-->
+   <SkillDefinition Id="ManaDrainSkill">
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <DecreaseStat>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="Mana"/>
+                  <LossValue>5</LossValue>
+               </DecreaseStat>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="1.3">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="N">Enemy Units/Ghost/ShortRangeDebuff/Ghost_ShortRangeDebuff_TargetN</Path>
+               <Path Orientation="S">Enemy Units/Ghost/ShortRangeDebuff/Ghost_ShortRangeDebuff_TargetS</Path>
+               <Path Orientation="W">Enemy Units/Ghost/ShortRangeDebuff/Ghost_ShortRangeDebuff_TargetW</Path>
+               <Path Orientation="E">Enemy Units/Ghost/ShortRangeDebuff/Ghost_ShortRangeDebuff_TargetE</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="N">Enemy Units/Ghost/ShortRangeDebuff/Ghost_ShortRangeDebuff_CasterN</Path>
+               <Path Orientation="S">Enemy Units/Ghost/ShortRangeDebuff/Ghost_ShortRangeDebuff_CasterS</Path>
+               <Path Orientation="W">Enemy Units/Ghost/ShortRangeDebuff/Ghost_ShortRangeDebuff_CasterW</Path>
+               <Path Orientation="E">Enemy Units/Ghost/ShortRangeDebuff/Ghost_ShortRangeDebuff_CasterE</Path>
+            </Paths>
+            <Delay>0.68</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <CasterAnim>
+            <Path>Enemy_CastSkill_Ghost_ShortRangeDebuff_</Path>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+   <!--REPEL PERK SKILLS-->
+   
+   <SkillDefinition Id="BloodyResearchSkill" IsContextual="true" IsLockedByPerk="true">
+     <OverrideSoundId>BloodyEatFriend</OverrideSoundId>
+      <Range Min="1" Max="1" CardinalDirectionOnly="true"/>
+      <ValidTargets>
+         <EnemyUnits/>
+      </ValidTargets>
+      <InvalidCastDisplayBehaviour>DisplayedUnavailable</InvalidCastDisplayBehaviour>
+      <AffectedUnits>
+         <CanAffectBossUnits>false</CanAffectBossUnits>
+         <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+      </AffectedUnits>
+      <ActionPointsCost>1</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <ContextualConditions>
+         <EnemyUnitId>Clawer</EnemyUnitId>
+      </ContextualConditions>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Kill/>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="Health"/>
+                     <Bonus>40</Bonus>
+                  </RegenStat>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.36">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="SE">Enemy Units/SpeedyClawer/Bite_SE</Path>
+               <Path Orientation="NW">Enemy Units/SpeedyClawer/Bite_NW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>AoeOrigin</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <CasterAnim>
+            <Path>Enemy_CastSkill_SpeedyClawer_</Path>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="PlayerBoomerAttack">
+      <Range Min="1" Max="1" CardinalDirectionOnly="true"/>
+      <AreaOfEffect OriginX="1" OriginY="1" >
+         XXX
+         X_X
+         XXX
+      </AreaOfEffect>
+      <AffectedUnits>
+         <CanAffectCaster>false</CanAffectCaster>
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+         <CanAffectBuildings>false</CanAffectBuildings>
+      </AffectedUnits>
+      <SkillAction>
+         <Attack>
+            <BaseDamage Min="120" Max="120"/>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <NoDodge></NoDodge>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+
+      <CastFXs TotalDuration="1">
+         <VisualEffect>
+            <Paths>
+               <Path>Enemy Units/BoomerExplosion/BoomerExplosion</Path>
+            </Paths>
+            <Delay>0.76</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>AoeOrigin</Target>
+         </VisualEffect>
+
+
+         <CamShake>
+            <Id>Hard Hit-CamShake</Id>
+            <Delay>0.76</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Enemy_CastSkill_Boomer_</Path>
+            <Delay>0.0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="HeavyJumpOver">
+      <AreaOfEffect OriginX="1" OriginY="1">
+         XXX
+         X_X
+         XXX
+      </AreaOfEffect>
+      <AffectedUnits>
+         <CanAffectCaster>false</CanAffectCaster>
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+         <CanAffectBuildings>false</CanAffectBuildings>
+      </AffectedUnits>
+      <SkillAction>
+         <Attack>
+            <BaseDamage Min="100" Max="100"/>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <NoDodge></NoDodge>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+   <!--ULTIMATE TRINKETS-->
+   <SkillDefinition Id="UltimatePoison">
+      <ActionPointsCost>3</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="1" Max="3" CardinalDirectionOnly="false" Modifiable="true"/>
+      <AreaOfEffect OriginX="1" OriginY="0">
+         XXX
+         XXX
+      </AreaOfEffect>
+      <SkillAction>
+         <Attack>
+            <BaseDamage Min="15" Max="35"/>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <Poison>
+                  <DamagePerTurn>300</DamagePerTurn>
+                  <TurnsCount>3</TurnsCount>
+               </Poison>
+               <Debuff>
+                  <Stat Id="OverallDamage"/>
+                  <Malus>60</Malus>
+                  <TurnsCount>3</TurnsCount>
+               </Debuff>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+
+      <CastFXs TotalDuration="2.4">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NW">PoisonTrinketUnique/PoisonTrinketUnique_Caster_N</Path>
+               <Path Orientation="SE">PoisonTrinketUnique/PoisonTrinketUnique_Caster_S</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="SEWN">PoisonTrinketUnique/PoisonTrinketUnique_TargetBefore_SEWN</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+            <Delay>0.93</Delay>
+         </VisualEffect>
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="SEWN">PoisonTrinketUnique/PoisonTrinketUnique_TargetBehind_SEWN</Path>
+            </Paths>
+            <SortingDepth>Behind</SortingDepth>
+            <Target>HitTiles</Target>
+            <Delay>0.93</Delay>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>MagicOrb/PutridBall/SFX_Skill_MagicOrb_PutridBall1</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <SoundEffect>
+            <Path>MagicOrb/PutridBall/SFX_Skill_MagicOrb_PutridBall2</Path>
+            <Delay>1.68</Delay>
+         </SoundEffect>
+
+         <CamShake>
+             <Id>Soft Hit-CamShake</Id>
+            <Delay>2.4</Delay>
+         </CamShake>
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.9</Delay>
+         </CamShake>
+
+         <CasterAnim>
+			<Path>Enemy_NoAnimation_</Path>
+		 </CasterAnim>
+
+        <SoundEffect>
+               <Path>PoisonTrinketUnique\SFX_SKILL_UltimatePoison</Path>
+               <Delay>0</Delay>
+         </SoundEffect>
+
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="UltimateAssassin">
+      <ActionPointsCost>3</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="6" Max="12" Modifiable="true"/>
+      <AreaOfEffect OriginX="4" OriginY="4">
+         ____X____
+         ___X_X___
+         __X_X_X__
+         _X_X_X_X_
+         X_X_X_X_X
+         _X_X_X_X_
+         __X_X_X__
+         ___X_X___
+         ____X____
+      </AreaOfEffect>
+      <CanRotate/>
+      <SkillAction>
+         <Attack>
+            <BaseDamage Min="250" Max="350"/>
+            <AttackType>Adaptative</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <Isolated>
+                  <DamageMultiplier>1.5</DamageMultiplier>
+               </Isolated>
+               <IgnoreLineOfSight/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+
+      <CastFXs TotalDuration="1.25">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NW">AssassinTrinketUnique/AssassinTrinketUnique_Caster_N</Path>
+               <Path Orientation="SE">AssassinTrinketUnique/AssassinTrinketUnique_Caster_S</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NWES">AssassinTrinketUnique/AssassinTrinketUnique_Target</Path>
+            </Paths>
+            <Delay>1</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>ShortBow/RainOfArrows/SFX_Skill_ShortBow_RainOfArrows1</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <SoundEffect>
+            <Path>ShortBow/RainOfArrows/SFX_Skill_ShortBow_RainOfArrows2</Path>
+            <Delay>0.9</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>RainOfArrows-CamShake</Id>
+            <Delay>1.25</Delay>
+         </CamShake>
+
+         <CasterAnim>
+			<Path>Enemy_NoAnimation_</Path>
+		 </CasterAnim>
+
+        <SoundEffect>
+               <Path>AssassinTrinketUnique\SFX_SKILL_UltimateAssassin</Path>
+               <Delay>0</Delay>
+         </SoundEffect>
+
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="UltimateDebuff">
+      <ActionPointsCost>3</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="2" Max="6" CardinalDirectionOnly="false" Modifiable="true"/>
+      <AreaOfEffect OriginX="0" OriginY="0">
+         e
+         X
+      </AreaOfEffect>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Contagion>
+                  <BaseChance>1</BaseChance>
+                  <Count>2</Count>
+                  <TurnsCount>-1</TurnsCount>
+               </Contagion>
+               <Debuff>
+                  <BaseChance>1</BaseChance>
+                  <Stat Id="MovePointsTotal"/>
+                  <Malus>5</Malus>
+                  <TurnsCount>-1</TurnsCount>
+               </Debuff>
+               <SurroundingEffect>
+                  <Debuff>
+                     <Stat Id="Resistance"/>
+                     <Malus>50</Malus>
+                     <TurnsCount>-1</TurnsCount>
+                  </Debuff>
+                  <Debuff>
+                     <Stat Id="ArmorTotal"/>
+                     <Malus>400</Malus>
+                     <TurnsCount>-1</TurnsCount>
+                  </Debuff>
+                  <Debuff>
+                     <Stat Id="Dodge"/>
+                     <Malus>80</Malus>
+                     <TurnsCount>-1</TurnsCount>
+                  </Debuff>
+                  <Debuff>
+                     <Stat Id="Block"/>
+                     <Malus>100</Malus>
+                     <TurnsCount>-1</TurnsCount>
+                  </Debuff>
+               </SurroundingEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+      
+      <CastFXs TotalDuration="0.87">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NW">DebuffTrinketUnique/DebuffTrinketUnique_Caster_N</Path>
+               <Path Orientation="SE">DebuffTrinketUnique/DebuffTrinketUnique_Caster_S</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NWES">DebuffTrinketUnique/DebuffTrinketUnique_Target_NSEW</Path>
+            </Paths>
+            <Delay>0.87</Delay>
+            <SortingDepth>Before</SortingDepth>  
+            <Target>AoeOrigin</Target>
+         </VisualEffect>
+          <VisualEffect>
+            <Paths>
+               <Path Orientation="NWES">DebuffTrinketUnique/DebuffTrinketUnique_SecondaryEffect_NSEW</Path>
+            </Paths>
+            <Delay>0.87</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target XTileOffset="0" YTileOffset="1">AoeOrigin</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>ShortBow/RainOfArrows/SFX_Skill_ShortBow_RainOfArrows1</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <SoundEffect>
+            <Path>ShortBow/RainOfArrows/SFX_Skill_ShortBow_RainOfArrows2</Path>
+            <Delay>0.8</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>RainOfArrows-CamShake</Id>
+            <Delay>0.9</Delay>
+         </CamShake>
+
+         <CasterAnim>
+			<Path>Enemy_NoAnimation_</Path>
+		 </CasterAnim>
+
+        <SoundEffect>
+               <Path>DebuffTrinketUnique\SFX_SKILL_UltimateDebuff</Path>
+               <Delay>0</Delay>
+         </SoundEffect>
+
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="Temple_HealNight">
+      <OverrideArtId>Heal</OverrideArtId>
+      <ValidTargets>
+         <PlayableUnits>
+            <MustHaveMissingHealth/>
+         </PlayableUnits>
+      </ValidTargets>
+      <Range Min="1" Max="5"/>
+      
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <RegenStat>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <Stat Id="Health"/>
+                  <Bonus>50</Bonus>
+               </RegenStat>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/Heal_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_Temple_Heal</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="ManaWell_HealNight">
+      <OverrideArtId>HealMana</OverrideArtId>
+      <ValidTargets>
+         <PlayableUnits>
+            <MustHaveMissingMana/>
+         </PlayableUnits>
+      </ValidTargets>
+      <Range Min="1" Max="5"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <RegenStat>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <Stat Id="Mana"/>
+                  <Bonus>8</Bonus>
+               </RegenStat>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/HealMana_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/Building/SFX_Skill_Building_ManaWell_Heal</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+   
+   <!--ALLIED GHOSTS MODIFIED SKILLS-->
+
+   <SkillDefinition Id="UnnamedStunningBash_Allied" TemplateId="UnnamedStunningBash" GroupId="UnnamedStunningBash_Allied">
+      <OverrideArtId>UnnamedStunningBash</OverrideArtId>
+      <OverrideLocalizationId>UnnamedStunningBash</OverrideLocalizationId>
+      <SkillAction>
+         <Attack>
+            <BaseDamage Min="140" Max="180"/>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <Stun>
+                  <BaseChance>2</BaseChance>
+               </Stun>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="UnnamedExplosiveBolt_Allied" TemplateId="UnnamedExplosiveBolt" GroupId="UnnamedExplosiveBolt_Allied">
+      <OverrideArtId>UnnamedExplosiveBolt</OverrideArtId>
+      <OverrideLocalizationId>UnnamedExplosiveBolt</OverrideLocalizationId>
+      <SkillAction>
+         <Attack>
+            <BaseDamage Min="250" Max="320"/>
+            <AttackType>Ranged</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="UnnamedTransfer_Allied" TemplateId="UnnamedTransfer" GroupId="UnnamedTransfer_Allied">
+      <OverrideArtId>UnnamedTransfer</OverrideArtId>
+      <OverrideLocalizationId>UnnamedTransfer</OverrideLocalizationId>
+      <AreaOfEffect OriginX="0" OriginY="0">
+         X
+      </AreaOfEffect>
+      <AffectedUnits>
+         <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+         <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+      </AffectedUnits>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <IgnoreLineOfSight/>
+               <Buff>
+                  <Stat Id="OverallDamage"/>
+                  <Bonus>50</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+               <Buff>
+                  <Stat Id="MovePointsTotal"/>
+                  <Bonus>2</Bonus>
+                  <TurnsCount>2</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <!--////////////////////////////////////////-->
+   <!--CORRUPTED WEAPONS MODIFIED OR NEW SKILLS-->
+   <!--////////////////////////////////////////-->
+
+
+   <!--Sword-->
+   <SkillDefinition Id="SliceUnique" TemplateId="Slice">
+      <Range Min="1" Max="1" CardinalDirectionOnly="false"/>
+   </SkillDefinition>
+
+   <SkillDefinition Id="SlashUnique" TemplateId="Slash">
+      <Range Min="1" Max="1" CardinalDirectionOnly="false" Modifiable="true"/>
+   </SkillDefinition>
+
+   <SkillDefinition Id="BladeRushUnique" TemplateId="BladeRush">
+      <Range Min="1" Max="1" CardinalDirectionOnly="false" Modifiable="true"/>
+   </SkillDefinition>
+   <!--Hammer-->
+
+
+   <!--Axe-->
+   <SkillDefinition Id="IntimidatingScreamUnique" TemplateId="IntimidatingScream">
+      <SkillAction>
+         <Attack>
+            <AttackType>Physical</AttackType>
+            <BaseDamage Min="69 * (1 + Level/10)" Max="105 * (1 + Level/10)"/>
+            <DamageMultiplier>1.5</DamageMultiplier>
+            <SkillEffects>
+               <IgnoreLineOfSight/>
+               <Debuff>
+                  <BaseChance>1</BaseChance>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                  <Stat Id="OverallDamage"/>
+                  <Malus>33</Malus>
+                  <TurnsCount>1</TurnsCount>
+               </Debuff>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+   <!--Dagger-->
+
+
+   <!--2HSword-->
+
+
+   <!--2HHammer-->
+
+
+   <!--2HAxe-->
+
+
+   <!--Spear-->
+   <SkillDefinition Id="ImpaleUnique" TemplateId="Impale" GroupId="Spear_UniquePerk">
+      <AreaOfEffect OriginX="1" OriginY="0">
+         eXe
+         eXe
+         eXe
+      </AreaOfEffect>
+      <SkillAction>
+         <Attack>
+            <AttackType>Adaptative</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <SurroundingEffect>
+                  <Damage Multiplier="0.7"/>
+               </SurroundingEffect>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+      <CastFXs TotalDuration="0.45">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="S">Spear/Impale/Impale_Caster_S</Path>
+               <Path Orientation="N">Spear/Impale/Impale_Caster_N</Path>
+               <Path Orientation="E">Spear/Impale/Impale_Caster_E</Path>
+               <Path Orientation="W">Spear/Impale/Impale_Caster_W</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="S">Spear/Impale/Impale_Caster_S_SecondaryEffect</Path>
+               <Path Orientation="N">Spear/Impale/Impale_Caster_N_SecondaryEffect</Path>
+               <Path Orientation="E">Spear/Impale/Impale_Caster_E_SecondaryEffect</Path>
+               <Path Orientation="W">Spear/Impale/Impale_Caster_W_SecondaryEffect</Path>
+            </Paths>
+            <Target XTileOffset="-1" YTileOffset="0">CastFxSourceTile</Target>
+            <Delay>0.1</Delay>
+            <SortingDepth>Before</SortingDepth>
+         </VisualEffect>
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="S">Spear/Impale/Impale_Caster_S_SecondaryEffect</Path>
+               <Path Orientation="N">Spear/Impale/Impale_Caster_N_SecondaryEffect</Path>
+               <Path Orientation="E">Spear/Impale/Impale_Caster_E_SecondaryEffect</Path>
+               <Path Orientation="W">Spear/Impale/Impale_Caster_W_SecondaryEffect</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target XTileOffset="1" YTileOffset="0">CastFxSourceTile</Target>
+            <Delay>0.1</Delay>
+          </VisualEffect>
+            <SoundEffect>
+            <Path>Spear/Impale/SFX_Skill_Spear_Impale</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+         <SoundEffect>
+            <Path>Spear/Impale/SFX_Skill_Spear_Impale</Path>
+            <Delay>0.15</Delay>
+         </SoundEffect>
+         
+          </CastFXs>
+         
+   </SkillDefinition>
+
+   <SkillDefinition Id="ImpaleUnique2" TemplateId="Impale" GroupId="Spear_UniquePerk">
+      <AreaOfEffect OriginX="2" OriginY="0">
+         eeXee
+         eeXee
+         eeXee
+      </AreaOfEffect>
+      <SkillAction>
+         <Attack>
+            <AttackType>Adaptative</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <SurroundingEffect>
+                  <Damage Multiplier="0.7"/>
+               </SurroundingEffect>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+      <CastFXs TotalDuration="0.45">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="S">Spear/Impale/Impale_Caster_S</Path>
+               <Path Orientation="N">Spear/Impale/Impale_Caster_N</Path>
+               <Path Orientation="E">Spear/Impale/Impale_Caster_E</Path>
+               <Path Orientation="W">Spear/Impale/Impale_Caster_W</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="S">Spear/Impale/Impale_Caster_S_SecondaryEffect</Path>
+               <Path Orientation="N">Spear/Impale/Impale_Caster_N_SecondaryEffect</Path>
+               <Path Orientation="E">Spear/Impale/Impale_Caster_E_SecondaryEffect</Path>
+               <Path Orientation="W">Spear/Impale/Impale_Caster_W_SecondaryEffect</Path>
+            </Paths>
+            <Target XTileOffset="-1" YTileOffset="0">CastFxSourceTile</Target>
+            <Delay>0.1</Delay>
+            <SortingDepth>Before</SortingDepth>
+         </VisualEffect>
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="S">Spear/Impale/Impale_Caster_S_SecondaryEffect</Path>
+               <Path Orientation="N">Spear/Impale/Impale_Caster_N_SecondaryEffect</Path>
+               <Path Orientation="E">Spear/Impale/Impale_Caster_E_SecondaryEffect</Path>
+               <Path Orientation="W">Spear/Impale/Impale_Caster_W_SecondaryEffect</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target XTileOffset="1" YTileOffset="0">CastFxSourceTile</Target>
+            <Delay>0.1</Delay>
+          </VisualEffect>
+          <VisualEffect>
+            <Paths>
+               <Path Orientation="S">Spear/Impale/Impale_Caster_S_SecondaryEffect</Path>
+               <Path Orientation="N">Spear/Impale/Impale_Caster_N_SecondaryEffect</Path>
+               <Path Orientation="E">Spear/Impale/Impale_Caster_E_SecondaryEffect</Path>
+               <Path Orientation="W">Spear/Impale/Impale_Caster_W_SecondaryEffect</Path>
+            </Paths>
+            <Target XTileOffset="-2" YTileOffset="0">CastFxSourceTile</Target>
+            <Delay>0.2</Delay>
+            <SortingDepth>Before</SortingDepth>
+         </VisualEffect>
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="S">Spear/Impale/Impale_Caster_S_SecondaryEffect</Path>
+               <Path Orientation="N">Spear/Impale/Impale_Caster_N_SecondaryEffect</Path>
+               <Path Orientation="E">Spear/Impale/Impale_Caster_E_SecondaryEffect</Path>
+               <Path Orientation="W">Spear/Impale/Impale_Caster_W_SecondaryEffect</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target XTileOffset="2" YTileOffset="0">CastFxSourceTile</Target>
+            <Delay>0.2</Delay>
+          </VisualEffect>
+
+           <SoundEffect>
+            <Path>Spear/Impale/SFX_Skill_Spear_Impale</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+         <SoundEffect>
+            <Path>Spear/Impale/SFX_Skill_Spear_Impale</Path>
+            <Delay>0.15</Delay>
+         </SoundEffect>
+
+          </CastFXs>
+   </SkillDefinition>
+
+   <!--Hand Crossbow-->
+
+
+   <!--Pistol-->
+   <SkillDefinition Id="PistolShot_UniquePerk" TemplateId="Grapeshot" GroupId="PistolShot_UniquePerk">
+      <ValidTargets>
+         <EnemyUnits/>
+      </ValidTargets>
+
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      
+      <SkillAction>
+         <Attack>
+            <BaseDamage Min="70 * (1 + Level/10)" Max="85 * (1 + Level/10)"/>
+            <AttackType>Adaptative</AttackType>
+            <DamageMultiplier>1.35</DamageMultiplier>
+            <SkillEffects>
+               <NoDodge/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <!--Shortbow-->
+   <SkillDefinition Id="PreciseShotUnique" TemplateId="PreciseShot" GroupId="ShortbowUnique">
+      <AreaOfEffect OriginX="1" OriginY="0">
+         e_e
+         _X_
+      </AreaOfEffect>
+	  <CanRotate/>
+      <SkillAction>
+         <Attack>
+            <AttackType>Ranged</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <SurroundingEffect>
+                  <Damage Multiplier="0.55"/>
+               </SurroundingEffect>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+	
+   <SkillDefinition Id="PowerShotUnique" TemplateId="PowerShot" GroupId="ShortbowUnique">
+      <AreaOfEffect OriginX="0" OriginY="0">
+         e
+         X
+      </AreaOfEffect>
+	  <CanRotate/>
+      <SkillAction>
+         <Attack>
+            <AttackType>Ranged</AttackType>
+            <DamageMultiplier>1.45</DamageMultiplier>
+            <SkillEffects>
+               <SurroundingEffect>
+                  <Damage Multiplier="0.4"/>
+               </SurroundingEffect>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+	
+   <SkillDefinition Id="TightVolleyUnique" TemplateId="TightVolley" GroupId="ShortbowUnique">
+      <AreaOfEffect OriginX="2" OriginY="2">
+         _e_e_
+         eXXXe
+         eXXXe
+         _e_e_
+      </AreaOfEffect>
+      <SkillAction>
+         <Attack>
+            <AttackType>Ranged</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <Debuff>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                  <Stat Id="MovePointsTotal"/>
+                  <Malus>3</Malus>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
+               <SurroundingEffect>
+                  <Damage Multiplier="0.4"/>
+               </SurroundingEffect>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+	
+   <SkillDefinition Id="RainOfArrowsUnique" TemplateId="RainOfArrows" GroupId="ShortbowUnique">
+      <AreaOfEffect OriginX="3" OriginY="2">
+         _e_e_e_
+         e_X_X_e
+         _X_X_X_
+         e_X_X_e
+         _e_e_e_
+      </AreaOfEffect>
+      <SkillAction>
+         <Attack>
+            <AttackType>Ranged</AttackType>
+            <DamageMultiplier>1.65</DamageMultiplier>
+            <SkillEffects>
+               <IgnoreLineOfSight/>
+               <SurroundingEffect>
+                  <Damage Multiplier="0.4"/>
+               </SurroundingEffect>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+   <!--Longbow-->
+
+
+   <!--Crossbow-->
+
+
+   <!--Rifle-->
+
+
+   <!--Magic Wand-->
+   <SkillDefinition Id="MagicMissilesUnique" TemplateId="MagicMissiles">
+      <SkillAction>
+         <Attack>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>0.85</DamageMultiplier>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+   <!--Magic Scepter-->
+   <SkillDefinition Id="HammerOfFaithUnique" TemplateId="HammerOfFaith" GroupId="MagicScepterUnique">
+      <SkillAction>
+         <Attack>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1.4</DamageMultiplier>
+            <SkillEffects>
+               <Stun>
+                  <BaseChance>0.6</BaseChance>
+               </Stun>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+   <!--Magic Orb-->
+
+
+   <!--Magic Staff-->
+   <SkillDefinition Id="ImmortalityVisualEffect">
+      <AreaOfEffect OriginX="0" OriginY="0">
+         X
+      </AreaOfEffect>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.4">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicStaff/StunningEntrance/StunningEntrance_CasterNSEW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicStaff/StunningEntrance/StunningEntrance_CasterNSEW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>AoeOrigin</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicStaff/StunningEntrance/StunningEntrance_AoeNSEW</Path>
+            </Paths>
+            <SortingDepth>Behind</SortingDepth>
+            <Target>AoeOrigin</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>MagicStaff/StunningEntrance/SFX_Skill_MagicStaff_StunningEntrance</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_StunningEntrance_</Path>
+            <Delay>0.35</Delay>
+         </CasterAnim>
+
+         <FollowFx>
+            <Speed>1000</Speed>
+            <Delay>0.37</Delay>
+         </FollowFx>
+
+         <CamShake>
+            <Id>Hard Hit-CamShake</Id>
+            <Delay>0.93</Delay>
+         </CamShake>
+      </CastFXs>
+   </SkillDefinition>
+
+
+   <!--Tome Of Magic-->
+   <SkillDefinition Id="LightningStrike_1TileAuto">
+      <OverrideArtId>LightningStrike</OverrideArtId>
+      <Range Min="0" Max="10" Modifiable="true"/>
+      <AreaOfEffect OriginX="0" OriginY="0">
+         X
+      </AreaOfEffect>
+      <SkillAction>
+         <Attack>
+            <BaseDamage Min="76 * 0.5 * (1 + Level/10)" Max="126 * 0.5 * (1 + Level/10)"/>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+         </Attack>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.81" PropagationDelay="0.11">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">DruidicStaff/Lightning Strike/LightningStrike_ThunderNSEW</Path>
+            </Paths>
+            <Delay>0.56</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_DruidicStaff_LightningStrike_Cast_</Path>
+         </CasterAnim>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">DruidicStaff/Lightning Strike/LightningStrike_GroundNSEW</Path>
+            </Paths>
+            <Delay>0.81</Delay>
+            <SortingDepth>Behind</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NS">DruidicStaff/Lightning Strike/LightningStrike_CastNS</Path>
+               <Path Orientation="EW">DruidicStaff/Lightning Strike/LightningStrike_CastEW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">DruidicStaff/Lightning Strike/LightningStrike_PropagationNSEW</Path>
+            </Paths>
+            <Delay>0.9</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>PropagationTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>TomeOfMagic/LightningStrike/SFX_Skill_TomeOfMagic_LightningStrike</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Hard Hit-CamShake</Id>
+            <Delay>0.81</Delay>
+         </CamShake>
+      </CastFXs>
+   </SkillDefinition>
+
+
+   <!--Druidic Staff-->
+   <SkillDefinition Id="DruidicStaffKill">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Kill/>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.92">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">DruidicStaff/Flytrap/Flytrap_CasterNSEW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">DruidicStaff/Flytrap/Flytrap_CasterBehindNSEW</Path>
+            </Paths>
+            <SortingDepth>Behind</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">DruidicStaff/Flytrap/Flytrap_TargetNSEW</Path>
+            </Paths>
+            <Delay>0.78</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>DruidicStaff/FlyTrap/SFX_Skill_DruidicStaff_FlyTrap</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Entangle_Cast_</Path>
+         </CasterAnim>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.92</Delay>
+         </CamShake>
+      </CastFXs>
+   </SkillDefinition>
+
+
+   <!--WarShield-->
+
+
+   <!--Cannon-->
+
+
+   <!--Gauntlet-->
+
+
+   <!--Claws-->
+   <SkillDefinition Id="TearingGraspUnique" TemplateId="TearingGrasp">
+      <Range Min="1" Max="3" Modifiable="true"/>
+   </SkillDefinition>
+
+
+   <!--Boomerang-->
+   <SkillDefinition Id="PreciseTargettingUnique" TemplateId="PreciseTargetting">
+      <SkillAction>
+         <Attack>
+            <AttackType>Ranged</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <MultiHit HitsCount="3"/>
+               <Stun>
+                  <BaseChance>0.5</BaseChance>
+               </Stun>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+   <!--Mana FLower-->
+
+
+</SkillDefinitions>

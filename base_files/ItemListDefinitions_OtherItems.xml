@@ -1,0 +1,180 @@
+<ItemsListDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation = "../ItemsListDefinitions.xsd">
+
+<!-- ******************************************************************* -->
+<!-- Generated from "macro_items2.xlsm" => "Generation OtherItems" tab. Count = 131 entries, split into 14 lists. -->
+<!-- ******************************************************************* -->
+
+	<ItemsListDefinition Id="ItemList_Trinket">
+		<Item Id="ItemList_Trinket_Base" Odd="3"/>
+		<Item Id="ItemList_Trinket_Special" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_Trinket_Base">
+		<Item Id="DodgeBoots0" Odd="16"/>
+		<Item Id="DodgeBoots1" Odd="8"/>
+		<Item Id="DodgeBoots2" Odd="16"/>
+		<Item Id="DodgeBoots3" Odd="10"/>
+		<Item Id="DodgeBoots4" Odd="5"/>
+		<Item Id="EvasionCape0" Odd="5"/>
+		<Item Id="EvasionCape1" Odd="8"/>
+		<Item Id="EvasionCape2" Odd="3"/>
+		<Item Id="EvasionCape3" Odd="8"/>
+		<Item Id="EvasionCape4" Odd="8"/>
+		<Item Id="DefensiveCharm0" Odd="10"/>
+		<Item Id="DefensiveCharm1" Odd="3"/>
+		<Item Id="DefensiveCharm2" Odd="8"/>
+		<Item Id="DefensiveCharm3" Odd="16"/>
+		<Item Id="DefensiveCharm4" Odd="5"/>
+		<Item Id="MagicAmulet0" Odd="5"/>
+		<Item Id="MagicAmulet1" Odd="8"/>
+		<Item Id="MagicAmulet2" Odd="10"/>
+		<Item Id="MagicAmulet3" Odd="8"/>
+		<Item Id="MagicAmulet4" Odd="8"/>
+		<Item Id="TurtleShell0" Odd="5"/>
+		<Item Id="TurtleShell1" Odd="5"/>
+		<Item Id="TurtleShell2" Odd="10"/>
+		<Item Id="TurtleShell3" Odd="10"/>
+		<Item Id="TurtleShell4" Odd="10"/>
+		<Item Id="RunningShoes0" Odd="8"/>
+		<Item Id="RunningShoes1" Odd="5"/>
+		<Item Id="RunningShoes2" Odd="5"/>
+		<Item Id="RunningShoes3" Odd="5"/>
+		<Item Id="RunningShoes4" Odd="8"/>
+		<Item Id="DefensiveStone0" Odd="8"/>
+		<Item Id="DefensiveStone1" Odd="5"/>
+		<Item Id="DefensiveStone2" Odd="5"/>
+		<Item Id="DefensiveStone3" Odd="8"/>
+		<Item Id="DefensiveStone4" Odd="8"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_Trinket_Special">
+		<Item Id="ItemList_TrinketPerk_Free" Odd="1"/>
+		<Item Id="ItemList_TrinketPerkDlc1" Odd="1"/>
+		<Item Id="ItemList_TrinketPerkDlc2" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_TrinketPerk_Free">
+		<Item Id="MedalPerkHeadOn" Odd="1"/>
+		<Item Id="MedalPerkOrganicArmor" Odd="1"/>
+		<Item Id="MedalPerkBerserk" Odd="1"/>
+		<Item Id="MedalPerkBoom" Odd="1"/>
+		<Item Id="MedalPerkBlink" Odd="1"/>
+		<Item Id="MedalPerkExplosiveAtoms" Odd="1"/>
+		<Item Id="MedalPerkManaCollector" Odd="1"/>
+		<Item Id="MedalPerkSheerPower" Odd="1"/>
+		<Item Id="MedalPerkFieldStudy" Odd="1"/>
+		<Item Id="MedalPerkProximityShot" Odd="1"/>
+		<Item Id="MedalPerkWeaknessFinder" Odd="1"/>
+		<Item Id="MedalPerkSurgicalStrike" Odd="1"/>
+		<Item Id="MedalPerkSadist" Odd="1"/>
+		<Item Id="MedalPerkHex" Odd="1"/>
+		<Item Id="MedalPerkEpidemic" Odd="1"/>
+		<Item Id="MedalPerkFastToxins" Odd="1"/>
+		<Item Id="MedalPerkCriticalMaster" Odd="1"/>
+		<Item Id="MedalPerkLegendaryAssassin" Odd="1"/>
+		<Item Id="MedalPerkHumanBallista" Odd="1"/>
+		<Item Id="MedalPerkFortressMaster" Odd="1"/>
+		<Item Id="MedalPerkSpecialist" Odd="1"/>
+		<Item Id="MedalPerkVolatileReaction" Odd="1"/>
+		<Item Id="MedalPerkInertia" Odd="1"/>
+		<Item Id="MedalPerkManaShield" Odd="1"/>
+		<Item Id="MedalPerkFlexibility" Odd="1"/>
+		<Item Id="MedalPerkAdrenalineRush" Odd="1"/>
+		<Item Id="MedalPerkDontPanic" Odd="1"/>
+		<Item Id="MedalPerkBlessing" Odd="1"/>
+		<Item Id="MedalPerkNightOwl" Odd="1"/>
+		<Item Id="MedalPerkBigGameHunter" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_TrinketPerkDlc1"  DLCId="Dwarves">
+		<Item Id="MedalPerkForgeMastery" Odd="1"/>
+		<Item Id="MedalPerkShowerofBlows" Odd="1"/>
+		<Item Id="MedalPerkCollateralDamage" Odd="1"/>
+		<Item Id="MedalPerkFearOfDeath" Odd="1"/>
+		<Item Id="MedalPerkDontYouDareMoving" Odd="1"/>
+		<Item Id="MedalPerkSmithsAnvil" Odd="1"/>
+		<Item Id="MedalPerkLikeAShark" Odd="1"/>
+		<Item Id="MedalPerkEarthquakeStrike" Odd="1"/>
+		<Item Id="MedalPerkAgainstTheWall" Odd="1"/>
+		<Item Id="MedalPerkStoneheartShield" Odd="1"/>
+		<Item Id="MedalPerkAggressiveness" Odd="1"/>
+		<Item Id="MedalPerkFYouInParticular" Odd="1"/>
+		<Item Id="MedalPerkMoodSwings" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_TrinketPerkDlc2"  DLCId="Elves">
+		<Item Id="MedalPerkMercyKill" Odd="1"/>
+		<Item Id="MedalPerkPlagueDoctor" Odd="1"/>
+		<Item Id="MedalPerkLongstrider" Odd="1"/>
+		<Item Id="MedalPerkViciousKiller" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_Usable">
+		<Item Id="ItemList_Potion" Odd="5"/>
+		<Item Id="ItemList_Scroll_All" Odd="2"/>
+		<Item Id="ItemList_Beer" Odd="3"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_Potion">
+		<Item Id="ItemList_PotionHeal" Odd="1"/>
+		<Item Id="EnergyPotion" Odd="1"/>
+		<Item Id="SpeedPotion" Odd="1"/>
+		<Item Id="InvisibilityPotion" Odd="1"/>
+		<Item Id="StonePotion" Odd="1"/>
+		<Item Id="StrengthPotion" Odd="1"/>
+		<Item Id="DispelPotion" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_PotionHeal">
+		<Item Id="HealthPotion" Odd="1"/>
+		<Item Id="ManaPotion" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_Scroll_All">
+		<Item Id="ItemList_Scroll" Odd="20"/>
+		<Item Id="ItemList_ScrollDlc1" Odd="4"/>
+		<Item Id="ItemList_ScrollDlc2" Odd="3"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_Scroll">
+		<Item Id="AxeBoomerangScroll" Odd="1"/>
+		<Item Id="ThrowingDaggersScroll" Odd="1"/>
+		<Item Id="ChargeScroll" Odd="1"/>
+		<Item Id="SwordBlastScroll" Odd="1"/>
+		<Item Id="SuperSpinScroll" Odd="1"/>
+		<Item Id="GroundSmashScroll" Odd="1"/>
+		<Item Id="TripleSwipeScroll" Odd="1"/>
+		<Item Id="GrapeshotScroll" Odd="1"/>
+		<Item Id="RainOfArrowsScroll" Odd="1"/>
+		<Item Id="ExplosiveBoltScroll" Odd="1"/>
+		<Item Id="AssassinateScroll" Odd="1"/>
+		<Item Id="MagicMissilesScroll" Odd="1"/>
+		<Item Id="HammerOfFaithScroll" Odd="1"/>
+		<Item Id="DeathRayScroll" Odd="1"/>
+		<Item Id="FireThrowerScroll" Odd="1"/>
+		<Item Id="FireballScroll" Odd="1"/>
+		<Item Id="LightningStrikeScroll" Odd="1"/>
+		<Item Id="BeeStingScroll" Odd="1"/>
+		<Item Id="TeleportationScroll" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_Beer"  DLCId="Dwarves">
+		<Item Id="StoutBeer" Odd="1"/>
+		<Item Id="AmberBeer" Odd="1"/>
+		<Item Id="PilsnerBeer" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ScrollDlc1"  DLCId="Dwarves">
+		<Item Id="MovingWallScroll" Odd="1"/>
+		<Item Id="WallsOfPainScroll" Odd="1"/>
+		<Item Id="ArmageddonScroll" Odd="1"/>
+		<Item Id="GeoCannonScroll" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ScrollDlc2"  DLCId="Elves">
+		<Item Id="PiercingClawsScroll" Odd="1"/>
+		<Item Id="PainfulSpinScroll" Odd="1"/>
+		<Item Id="PetalStormScroll" Odd="1"/>
+	</ItemsListDefinition>
+
+</ItemsListDefinitions>

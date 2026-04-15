@@ -1,0 +1,144 @@
+﻿<UnitPerkTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+                     xsi:noNamespaceSchemaLocation="UnitPerkTemplateDefinition.xsd">
+
+
+
+   <!-- Required amount of perks to unlock the different tiers. -->
+
+   <UnitPerkTiers>
+
+      <UnitPerkTier Index="1">
+
+         <RequiredPerksCount>0</RequiredPerksCount>
+
+      </UnitPerkTier>
+
+      <UnitPerkTier Index="2">
+
+         <RequiredPerksCount>1</RequiredPerksCount>
+
+      </UnitPerkTier>
+
+      <UnitPerkTier Index="3">
+
+         <RequiredPerksCount>3</RequiredPerksCount>
+
+      </UnitPerkTier>
+
+      <UnitPerkTier Index="4">
+
+         <RequiredPerksCount>5</RequiredPerksCount>
+
+      </UnitPerkTier>
+
+      <UnitPerkTier Index="5">
+
+         <RequiredPerksCount>7</RequiredPerksCount>
+
+      </UnitPerkTier>
+
+   </UnitPerkTiers>
+
+   
+
+   <!-- Collection sets. -->
+
+   <UnitPerkCollectionSetDefinitions>
+
+      <!-- Primary -->
+
+      <!-- 1st set -->
+
+      <UnitPerkCollectionSetDefinition Index="1">
+
+         <UnitPerkCollectionDefinition Id="Warrior" Weight="1"/>
+
+      </UnitPerkCollectionSetDefinition>
+
+      <!-- 2nd set -->
+
+      <UnitPerkCollectionSetDefinition Index="2">
+
+         <UnitPerkCollectionDefinition Id="Mage" Weight="1"/>
+
+      </UnitPerkCollectionSetDefinition>
+
+      <!-- 3rd set -->
+
+      <UnitPerkCollectionSetDefinition Index="3">
+
+         <UnitPerkCollectionDefinition Id="Archer" Weight="1"/>
+
+      </UnitPerkCollectionSetDefinition>
+
+      
+
+      <!-- Secondary -->
+
+      <!-- 4th set -->
+
+      <UnitPerkCollectionSetDefinition Index="4">
+
+         <UnitPerkCollectionDefinition Id="Hexer" Weight="1"/>
+
+         <UnitPerkCollectionDefinition Id="Plague" Weight="1"/>
+
+         <UnitPerkCollectionDefinition Id="Assassin" Weight="1"/>
+
+         <UnitPerkCollectionDefinition Id="Engineer" Weight="1"/>
+
+      </UnitPerkCollectionSetDefinition>
+
+      <!-- 5th set -->
+
+      <UnitPerkCollectionSetDefinition Index="5">
+
+         <UnitPerkCollectionDefinition Id="Hexer" Weight="1"/>
+
+         <UnitPerkCollectionDefinition Id="Plague" Weight="1"/>
+
+         <UnitPerkCollectionDefinition Id="Assassin" Weight="1"/>
+
+         <UnitPerkCollectionDefinition Id="Engineer" Weight="1"/>
+
+      </UnitPerkCollectionSetDefinition>
+
+
+
+      <!-- Misc -->
+
+      <!-- 6th set -->
+
+      <UnitPerkCollectionSetDefinition Index="6">
+
+         <UnitPerkCollectionDefinition Id="Human" Weight="1" RestrictedToRaceId="Human"/>
+
+         <UnitPerkCollectionDefinition Id="Dwarf" Weight="1" RestrictedToRaceId="Dwarf"/>
+
+         <UnitPerkCollectionDefinition Id="Elf" Weight="1" RestrictedToRaceId="Elf"/>
+
+      </UnitPerkCollectionSetDefinition>
+
+      <!-- 7th set -->
+
+      <UnitPerkCollectionSetDefinition Index="7">
+
+         <UnitPerkCollectionDefinition Id="Misc" Weight="1"/>
+
+      </UnitPerkCollectionSetDefinition>
+
+      <!-- 8th set -->
+
+      <UnitPerkCollectionSetDefinition Index="8">
+
+         <UnitPerkCollectionDefinition Id="Misc" Weight="1"/>
+
+      </UnitPerkCollectionSetDefinition>
+
+   </UnitPerkCollectionSetDefinitions>
+
+   
+
+</UnitPerkTemplateDefinition>
+

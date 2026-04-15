@@ -1,0 +1,50 @@
+﻿<ShopDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation="ShopDefinition.xsd">
+
+   <SellingMultiplier>30</SellingMultiplier>
+
+   <Rerolls>
+      <Price Id="1">10</Price>
+      <Price Id="2">25</Price>
+      <Price Id="3">35</Price>
+      <Price Id="4">50</Price>
+   </Rerolls>
+   
+   <ShopEvolutions>
+      <ShopEvolution Id="Lakeburg">
+         <Day Index="2" Level="2"/>
+         <Day Index="4" Level="3"/>
+         <Day Index="6" Level="4"/>
+         <Day Index="9" Level="5"/>
+      </ShopEvolution>
+      
+      <ShopEvolution Id="Glenwald">
+         <Day Index="2" Level="2"/>
+         <Day Index="3" Level="3"/>
+         <Day Index="5" Level="4"/>
+         <Day Index="8" Level="5"/>
+      </ShopEvolution>
+
+      <ShopEvolution Id="Glintfein">
+         <Day Index="1" Level="2"/>
+         <Day Index="2" Level="3"/>
+         <Day Index="4" Level="4"/>
+         <Day Index="5" Level="5"/>
+      </ShopEvolution>
+
+	   <ShopEvolution Id="GildenbergRedux">
+		   <Day Index="1" Level="2"/>
+		   <Day Index="2" Level="3"/>
+		   <Day Index="3" Level="4"/>
+		   <Day Index="5" Level="5"/>
+	   </ShopEvolution>
+
+      <ShopEvolution Id="GlenwaldRedux">
+         <Day Index="1" Level="2"/>
+         <Day Index="2" Level="3"/>
+         <Day Index="3" Level="4"/>
+         <Day Index="5" Level="5"/>
+      </ShopEvolution>
+	   
+   </ShopEvolutions>
+</ShopDefinition>

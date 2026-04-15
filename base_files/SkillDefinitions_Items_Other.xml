@@ -1,0 +1,2003 @@
+﻿<!--<SkillDefinitions xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+                  xs:noNamespaceSchemaLocation="http://cccp-dev.cblue.be/tmp/tls/SkillDefinitions.xsd">-->
+
+<!--
+  - SkillDefinition
+    - Element ValidTargets (optional) :
+        If not specified, all targets are valid.
+        If specified, only mentioned targets are targetable.
+        Usable targets : PlayableUnits, EnemyUnits, EmptyTiles, Building Id="BuildingId", SlotEffect Id="SlotEffectId".
+        Example : 
+        <ValidTargets>
+          <SlotEffect Id="FillEffectGauge"></SlotEffect>
+        </ValidTargets>
+    - Element AttackEffects (optional) :
+        Example :
+        <AttackEffects>
+          <AttackEffect Id="ArmorPiercing"/>
+          <AttackEffect Id="NoBlock"/>
+        </AttackEffects>
+    - Element Conditions (optional) :
+        If not specified, the skill will always be displayed
+        If specified, all conditions need to be valid
+        Usable conditions : InWatchtower, TargetInRange, OnlyDuringPhase (Production OR Deployment OR Night. In the following example, the skill will be available 
+         during the production phase OR the night AND if the target is in range)
+        Example : 
+        <Conditions>
+          <OnlyDuringPhase>
+            <Production/>
+            <Night/>
+          </OnlyDuringPhase>
+          <TargetInRange/>
+        </Conditions>
+-->
+
+<SkillDefinitions xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+                  xs:noNamespaceSchemaLocation="SkillDefinitions.xsd">
+   
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- OFF HANDS -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <SkillDefinition Id="Teleportation">
+      <ManaCost>4</ManaCost>
+      <UsesPerTurnCount>3</UsesPerTurnCount>
+      <Range Min="1" Max="8" CardinalDirectionOnly="false"/>
+      <AreaOfEffect OriginX="0" OriginY="0">
+         M
+      </AreaOfEffect>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <IgnoreLineOfSight/>
+               <Maneuver/>
+               <NoMomentum/>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="2">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">WarpCrystal/Teleportation/Teleportation_Caster_BeforeNSEW</Path>
+            </Paths>
+            <Delay>0.44</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>CastFxSourceTile</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">WarpCrystal/Teleportation/Teleportation_Caster_BehindNSEW</Path>
+            </Paths>
+            <SortingDepth>Behind</SortingDepth>
+            <Target>CastFxSourceTile</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">WarpCrystal/Teleportation/Teleportation_Target_BeforeNSEW</Path>
+            </Paths>
+            <Delay>1.5</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>AoeOrigin</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">WarpCrystal/Teleportation/Teleportation_Target_BehindNSEW</Path>
+            </Paths>
+            <Delay>1.62</Delay>
+            <SortingDepth>Behind</SortingDepth>
+            <Target>AoeOrigin</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>WarpCrystal/Teleportation/SFX_Skill_WarpCrystal_Teleportation1</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <SoundEffect>
+            <Path>WarpCrystal/Teleportation/SFX_Skill_WarpCrystal_Teleportation2</Path>
+            <Delay>1.62</Delay>
+         </SoundEffect>
+
+         <ManeuverFx>
+            <Speed>10000</Speed>
+            <Delay>0.69</Delay>
+         </ManeuverFx>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Teleportation_</Path>
+            <Delay>0.69</Delay>
+         </CasterAnim>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.69</Delay>
+         </CamShake>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>2</Delay>
+         </CamShake>
+
+      </CastFXs>
+   </SkillDefinition>
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ARMORS -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <SkillDefinition Id="Evasion">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <ActionPointsCost>1</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <BaseChance>1</BaseChance>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Dodge"/>
+                     <Bonus>20</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+   
+    <SkillDefinition Id="Evasion1" TemplateId="Evasion">
+      <SkillAction>
+        <Generic>
+          <SkillEffects>
+             <CasterEffect>
+                <Buff>
+                   <Stat Id="Dodge"/>
+                   <Bonus>23</Bonus>
+                   <TurnsCount>1</TurnsCount>
+                </Buff>
+             </CasterEffect>
+          </SkillEffects>
+        </Generic>
+      </SkillAction>
+    </SkillDefinition>
+
+   
+  <SkillDefinition Id="Evasion2" TemplateId="Evasion">
+    <SkillAction>
+      <Generic>
+        <SkillEffects>
+           <CasterEffect>
+              <Buff>
+                 <Stat Id="Dodge"/>
+                 <Bonus>26</Bonus>
+                 <TurnsCount>1</TurnsCount>
+              </Buff>
+           </CasterEffect>
+        </SkillEffects>
+      </Generic>
+    </SkillAction>
+  </SkillDefinition>
+   
+
+  <SkillDefinition Id="Evasion3" TemplateId="Evasion">
+    <SkillAction>
+      <Generic>
+        <SkillEffects>
+           <CasterEffect>
+              <Buff>
+                 <Stat Id="Dodge"/>
+                 <Bonus>29</Bonus>
+                 <TurnsCount>1</TurnsCount>
+              </Buff>
+           </CasterEffect>
+        </SkillEffects>
+      </Generic>
+    </SkillAction>
+  </SkillDefinition>
+
+
+  <SkillDefinition Id="Evasion4" TemplateId="Evasion">
+    <SkillAction>
+      <Generic>
+        <SkillEffects>
+           <CasterEffect>
+              <Buff>
+                 <Stat Id="Dodge"/>
+                 <Bonus>32</Bonus>
+                 <TurnsCount>1</TurnsCount>
+              </Buff>
+           </CasterEffect>
+        </SkillEffects>
+      </Generic>
+    </SkillAction>
+  </SkillDefinition>
+   
+
+  <SkillDefinition Id="Evasion5" TemplateId="Evasion">
+    <SkillAction>
+      <Generic>
+        <SkillEffects>
+           <CasterEffect>
+              <Buff>
+                 <Stat Id="Dodge"/>
+                 <Bonus>35</Bonus>
+                 <TurnsCount>1</TurnsCount>
+              </Buff>
+           </CasterEffect>
+        </SkillEffects>
+      </Generic>
+    </SkillAction>
+  </SkillDefinition>
+
+   
+   <SkillDefinition Id="LightDefend">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <ActionPointsCost>1</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <BaseChance>1</BaseChance>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="ArmorTotal"/>
+                     <Bonus>35</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/LightDefend/SFX_Skill_Armor_LightDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+   
+
+  <SkillDefinition Id="LightDefend1" TemplateId="LightDefend">
+    <SkillAction>
+      <Generic>
+        <SkillEffects>
+           <CasterEffect>
+              <Buff>
+                 <Stat Id="ArmorTotal"/>
+                 <Bonus>45</Bonus>
+                 <TurnsCount>1</TurnsCount>
+              </Buff>
+           </CasterEffect>
+        </SkillEffects>
+      </Generic>
+    </SkillAction>
+  </SkillDefinition>
+
+   
+  <SkillDefinition Id="LightDefend2" TemplateId="LightDefend">
+    <SkillAction>
+      <Generic>
+        <SkillEffects>
+           <CasterEffect>
+              <Buff>
+                 <Stat Id="ArmorTotal"/>
+                 <Bonus>60</Bonus>
+                 <TurnsCount>1</TurnsCount>
+              </Buff>
+           </CasterEffect>
+        </SkillEffects>
+      </Generic>
+    </SkillAction>
+  </SkillDefinition>
+
+   
+  <SkillDefinition Id="LightDefend3" TemplateId="LightDefend">
+    <SkillAction>
+      <Generic>
+        <SkillEffects>
+           <CasterEffect>
+              <Buff>
+                 <Stat Id="ArmorTotal"/>
+                 <Bonus>75</Bonus>
+                 <TurnsCount>1</TurnsCount>
+              </Buff>
+           </CasterEffect>
+        </SkillEffects>
+      </Generic>
+    </SkillAction>
+  </SkillDefinition>
+   
+
+  <SkillDefinition Id="LightDefend4" TemplateId="LightDefend">
+    <SkillAction>
+      <Generic>
+        <SkillEffects>
+           <CasterEffect>
+              <Buff>
+                 <Stat Id="ArmorTotal"/>
+                 <Bonus>100</Bonus>
+                 <TurnsCount>1</TurnsCount>
+              </Buff>
+           </CasterEffect>
+        </SkillEffects>
+      </Generic>
+    </SkillAction>
+  </SkillDefinition>
+
+   
+  <SkillDefinition Id="LightDefend5" TemplateId="LightDefend">
+    <SkillAction>
+      <Generic>
+        <SkillEffects>
+           <CasterEffect>
+              <Buff>
+                 <Stat Id="ArmorTotal"/>
+                 <Bonus>125</Bonus>
+                 <TurnsCount>1</TurnsCount>
+              </Buff>
+           </CasterEffect>
+        </SkillEffects>
+      </Generic>
+    </SkillAction>
+  </SkillDefinition>
+
+   
+   <SkillDefinition Id="HeavyDefend">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <ActionPointsCost>1</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="0" />
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <BaseChance>1</BaseChance>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Block"/>
+                     <Bonus>7</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+   
+  <SkillDefinition Id="HeavyDefend1" TemplateId="HeavyDefend">
+    <SkillAction>
+      <Generic>
+        <SkillEffects>
+           <CasterEffect>
+              <Buff>
+                 <Stat Id="Block"/>
+                 <Bonus>10</Bonus>
+                 <TurnsCount>1</TurnsCount>
+              </Buff>
+           </CasterEffect>
+        </SkillEffects>
+      </Generic>
+    </SkillAction>
+  </SkillDefinition>
+
+   
+  <SkillDefinition Id="HeavyDefend2" TemplateId="HeavyDefend">
+    <SkillAction>
+      <Generic>
+        <SkillEffects>
+           <CasterEffect>
+              <Buff>
+                 <Stat Id="Block"/>
+                 <Bonus>14</Bonus>
+                 <TurnsCount>1</TurnsCount>
+              </Buff>
+           </CasterEffect>
+        </SkillEffects>
+      </Generic>
+    </SkillAction>
+  </SkillDefinition>
+
+   
+  <SkillDefinition Id="HeavyDefend3" TemplateId="HeavyDefend">
+    <SkillAction>
+      <Generic>
+        <SkillEffects>
+           <CasterEffect>
+              <Buff>
+                 <Stat Id="Block"/>
+                 <Bonus>19</Bonus>
+                 <TurnsCount>1</TurnsCount>
+              </Buff>
+           </CasterEffect>
+        </SkillEffects>
+      </Generic>
+    </SkillAction>
+  </SkillDefinition>
+
+   
+  <SkillDefinition Id="HeavyDefend4" TemplateId="HeavyDefend">
+    <SkillAction>
+      <Generic>
+        <SkillEffects>
+           <CasterEffect>
+              <Buff>
+                 <Stat Id="Block"/>
+                 <Bonus>25</Bonus>
+                 <TurnsCount>1</TurnsCount>
+              </Buff>
+           </CasterEffect>
+        </SkillEffects>
+      </Generic>
+    </SkillAction>
+  </SkillDefinition>
+
+   
+  <SkillDefinition Id="HeavyDefend5" TemplateId="HeavyDefend">
+    <SkillAction>
+      <Generic>
+        <SkillEffects>
+           <CasterEffect>
+              <Buff>
+                 <Stat Id="Block"/>
+                 <Bonus>32</Bonus>
+                 <TurnsCount>1</TurnsCount>
+              </Buff>
+           </CasterEffect>
+        </SkillEffects>
+      </Generic>
+    </SkillAction>
+  </SkillDefinition>
+   
+
+   <SkillDefinition Id="Vicious">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <ActionPointsCost>1</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Critical"/>
+                     <Bonus>4</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+   
+   <SkillDefinition Id="Vicious1" TemplateId="Vicious">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Critical"/>
+                     <Bonus>5</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   
+   <SkillDefinition Id="Vicious2" TemplateId="Vicious">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Critical"/>
+                     <Bonus>6</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   
+   <SkillDefinition Id="Vicious3" TemplateId="Vicious">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Critical"/>
+                     <Bonus>7</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   
+   <SkillDefinition Id="Vicious4" TemplateId="Vicious">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Critical"/>
+                     <Bonus>8</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="Vicious5" TemplateId="Vicious">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Critical"/>
+                     <Bonus>9</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="Track">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <ActionPointsCost>1</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="IsolatedAttacks"/>
+                     <Bonus>10</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>  
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="Track1" TemplateId="Track">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="IsolatedAttacks"/>
+                     <Bonus>12</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="Track2" TemplateId="Track">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="IsolatedAttacks"/>
+                     <Bonus>14</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="Track3" TemplateId="Track">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="IsolatedAttacks"/>
+                     <Bonus>16</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="Track4" TemplateId="Track">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="IsolatedAttacks"/>
+                     <Bonus>18</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="Track5" TemplateId="Track">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="IsolatedAttacks"/>
+                     <Bonus>20</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="Warmup">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <ActionPointsCost>1</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="MomentumAttacks"/>
+                     <Bonus>3</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>  
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+         <CamShake>
+            <Id>Soft Hit-CamShakie</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="Warmup1" TemplateId="Warmup">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="MomentumAttacks"/>
+                     <Bonus>4</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="Warmup2" TemplateId="Warmup">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="MomentumAttacks"/>
+                     <Bonus>5</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="Warmup3" TemplateId="Warmup">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="MomentumAttacks"/>
+                     <Bonus>6</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="Warmup4" TemplateId="Warmup">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="MomentumAttacks"/>
+                     <Bonus>7</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="Warmup5" TemplateId="Warmup">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="MomentumAttacks"/>
+                     <Bonus>8</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="EasyKills">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <ActionPointsCost>1</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="OpportunisticAttacks"/>
+                     <Bonus>7</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+         <CamShake>
+            <Id>Soft Hit-CamShakie</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+   
+   <SkillDefinition Id="EasyKills1" TemplateId="EasyKills">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="OpportunisticAttacks"/>
+                     <Bonus>8</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="EasyKills2" TemplateId="EasyKills">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="OpportunisticAttacks"/>
+                     <Bonus>9</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="EasyKills3" TemplateId="EasyKills">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="OpportunisticAttacks"/>
+                     <Bonus>10</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="EasyKills4" TemplateId="EasyKills">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="OpportunisticAttacks"/>
+                     <Bonus>11</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="EasyKills5" TemplateId="EasyKills">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="OpportunisticAttacks"/>
+                     <Bonus>12</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="Wrath">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <MovePointsCost>1</MovePointsCost>
+      <ManaCost>2</ManaCost>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="OverallDamage"/>
+                     <Bonus>8</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+         <CamShake>
+            <Id>Soft Hit-CamShakie</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="Wrath1" TemplateId="Wrath">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="OverallDamage"/>
+                     <Bonus>11</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="Wrath2" TemplateId="Wrath">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="OverallDamage"/>
+                     <Bonus>14</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="Wrath3" TemplateId="Wrath">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="OverallDamage"/>
+                     <Bonus>17</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="Wrath4" TemplateId="Wrath">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="OverallDamage"/>
+                     <Bonus>20</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="Wrath5" TemplateId="Wrath">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="OverallDamage"/>
+                     <Bonus>23</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="SharpEye">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <ActionPointsCost>1</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="SkillRangeModifier"/>
+                     <Bonus>1</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+         <CamShake>
+            <Id>Soft Hit-CamShakie</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="SharpEye1" TemplateId="SharpEye">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="SkillRangeModifier"/>
+                     <Bonus>2</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- TRINKETS -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <SkillDefinition Id="MeteorShower">
+      <ActionPointsCost>2</ActionPointsCost>
+      <ManaCost>8</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="5" Max="14" Modifiable="true"/>
+      <AreaOfEffect OriginX="2" OriginY="2">
+         __X__
+         _XXX_
+         XXXXX
+         _XXX_
+         __X__
+      </AreaOfEffect>
+
+      <SkillAction>
+         <Attack>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <IgnoreLineOfSight/>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.4">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="ES">MagicWand/Meteor/Meteor Lvl 1_S</Path>
+               <Path Orientation="NW">MagicWand/Meteor/Meteor Lvl 1_N</Path>
+            </Paths>
+            <Delay>Random(0,0.3)</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+      <SoundEffect>
+      <Path>MagicWand/MeteorShower/SFX_Skill_DefensiveCharmMeteorShower</Path>
+      <Delay>0</Delay>
+      </SoundEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="ES">2HHammer/GroundSmash/GroundSmash Target Behind_S</Path>
+               <Path Orientation="NW">2HHammer/GroundSmash/GroundSmash Target Behind_N</Path>
+            </Paths>
+            <Delay>0.35</Delay>
+            <SortingDepth>Behind</SortingDepth>
+            <Target>AoeOrigin</Target>
+         </VisualEffect>
+         <CamShake>
+            <Id>RainOfArrows-CamShake</Id>
+            <Delay>0.3</Delay>
+         </CamShake>
+         <CamShake>
+            <Id>Hard Hit-CamShake</Id>
+            <Delay>0.35</Delay>
+         </CamShake>
+      </CastFXs>
+   </SkillDefinition>
+
+   
+   <SkillDefinition Id="SuperEvasion">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <MovePointsCost>2</MovePointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <BaseChance>1</BaseChance>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Dodge"/>
+                     <Bonus>12</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+      </CastFXs>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="Run">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <ActionPointsCost>1</ActionPointsCost>
+      <UsesPerTurnCount>3</UsesPerTurnCount>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="MovePoints"/>
+                     <Bonus>3</Bonus>
+                  </RegenStat>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+      </CastFXs>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="RunFaster">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <ActionPointsCost>1</ActionPointsCost>
+      <UsesPerTurnCount>3</UsesPerTurnCount>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="MovePoints"/>
+                     <Bonus>4</Bonus>
+                  </RegenStat>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="Concentration">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <MovePointsCost>1</MovePointsCost>
+      <ManaCost>4</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="ActionPoints"/>
+                     <Bonus>1</Bonus>
+                  </RegenStat>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="SuperConcentration">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <MovePointsCost>2</MovePointsCost>
+      <ManaCost>6</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="ActionPoints"/>
+                     <Bonus>2</Bonus>
+                  </RegenStat>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="Inspiration">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <ActionPointsCost>1</ActionPointsCost>
+      <MovePointsCost>3</MovePointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="Mana"/>
+                     <Bonus>10</Bonus>
+                  </RegenStat>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="SuperInspiration">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <ActionPointsCost>1</ActionPointsCost>
+      <MovePointsCost>3</MovePointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="Mana"/>
+                     <Bonus>14</Bonus>
+                  </RegenStat>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+   
+   <SkillDefinition Id="TurtleStance">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <ActionPointsCost>1</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Block"/>
+                     <Bonus>3</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+   
+   <SkillDefinition Id="TurtleStance1" TemplateId="TurtleStance">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Block"/>
+                     <Bonus>4</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="TurtleStance2" TemplateId="TurtleStance">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Block"/>
+                     <Bonus>5</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="TurtleStance3" TemplateId="TurtleStance">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Block"/>
+                     <Bonus>6</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="TurtleStance4" TemplateId="TurtleStance">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Block"/>
+                     <Bonus>7</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="TurtleStance5" TemplateId="TurtleStance">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Block"/>
+                     <Bonus>8</Bonus>
+                     <TurnsCount>3</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="Vanish">
+      <MovePointsCost>1</MovePointsCost>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <Range Min="1" Max="3" CardinalDirectionOnly="false"/>
+      <AreaOfEffect OriginX="0" OriginY="0">
+         M
+      </AreaOfEffect>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <IgnoreLineOfSight/>
+               <Maneuver/>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="2">
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">WarpCrystal/Teleportation/Teleportation_Caster_BeforeNSEW</Path>
+            </Paths>
+            <Delay>0.44</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">WarpCrystal/Teleportation/Teleportation_Caster_BehindNSEW</Path>
+            </Paths>
+            <SortingDepth>Behind</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">WarpCrystal/Teleportation/Teleportation_Target_BeforeNSEW</Path>
+            </Paths>
+            <Delay>1.5</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>AoeOrigin</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">WarpCrystal/Teleportation/Teleportation_Target_BehindNSEW</Path>
+            </Paths>
+            <Delay>1.62</Delay>
+            <SortingDepth>Behind</SortingDepth>
+            <Target>AoeOrigin</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>WarpCrystal/Teleportation/SFX_Skill_WarpCrystal_Teleportation1</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <SoundEffect>
+            <Path>WarpCrystal/Teleportation/SFX_Skill_WarpCrystal_Teleportation2</Path>
+            <Delay>1.62</Delay>
+         </SoundEffect>
+
+         <ManeuverFx>
+            <Speed>10000</Speed>
+            <Delay>0.69</Delay>
+         </ManeuverFx>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Teleportation_</Path>
+            <Delay>0.69</Delay>
+         </CasterAnim>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.69</Delay>
+         </CamShake>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>2</Delay>
+         </CamShake>
+      </CastFXs>
+   </SkillDefinition>
+   
+
+   <SkillDefinition Id="Cleanse">
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <ActionPointsCost>2</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="8" Modifiable="true"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <NegativeStatusImmunityEffect>
+                  <Type Id="AllNegative"/>
+                  <TurnsCount>1</TurnsCount>
+               </NegativeStatusImmunityEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+</SkillDefinitions>

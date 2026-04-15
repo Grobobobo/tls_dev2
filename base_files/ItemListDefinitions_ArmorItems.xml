@@ -1,0 +1,255 @@
+<ItemsListDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation = "../ItemsListDefinitions.xsd">
+
+<!-- ******************************************************************* -->
+<!-- Generated from "macro_items2.xlsm" => "Generation ArmorItems" tab. Count = 140 entries, split into 36 lists. -->
+<!-- ******************************************************************* -->
+
+	<ItemsListDefinition Id="ItemList_BodyArmor">
+		<Item Id="ItemList_ClothArmor" Odd="1"/>
+		<Item Id="ItemList_LightArmor" Odd="1"/>
+		<Item Id="ItemList_MediumArmor" Odd="1"/>
+		<Item Id="ItemList_HeavyArmor" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_Pants">
+		<Item Id="ItemList_ClothPants" Odd="1"/>
+		<Item Id="ItemList_LightPants" Odd="1"/>
+		<Item Id="ItemList_MediumPants" Odd="1"/>
+		<Item Id="ItemList_HeavyPants" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_Helmet">
+		<Item Id="ItemList_ClothHelmet" Odd="1"/>
+		<Item Id="ItemList_LightHelmet" Odd="1"/>
+		<Item Id="ItemList_MediumHelmet" Odd="1"/>
+		<Item Id="ItemList_HeavyHelmet" Odd="1"/>
+		<Item Id="ItemList_GreatHelmet" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ClothArmor">
+		<Item Id="ItemList_ClothArmorBase" Odd="7"/>
+		<Item Id="ItemList_ClothArmorSpecial" Odd="3"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ClothArmorBase">
+		<Item Id="ClothArmor0" Odd="12"/>
+		<Item Id="ClothArmor1" Odd="12"/>
+		<Item Id="ClothArmor2" Odd="8"/>
+		<Item Id="ClothArmor3" Odd="5"/>
+		<Item Id="ClothArmor4" Odd="5"/>
+		<Item Id="ClothArmor5" Odd="3"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ClothArmorSpecial">
+		<Item Id="ChildOfTheForestArmor" Odd="1"/>
+		<Item Id="MagicianArmor" Odd="1"/>
+		<Item Id="PriestArmor" Odd="1"/>
+		<Item Id="BonesArmor" Odd="1"/>
+		<Item Id="RedSkirtArmor" Odd="1"/>
+		<Item Id="BarbarianArmor" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_LightArmor">
+		<Item Id="ItemList_LightArmorBase" Odd="7"/>
+		<Item Id="ItemList_LightArmorSpecial" Odd="3"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_LightArmorBase">
+		<Item Id="LightArmor0" Odd="12"/>
+		<Item Id="LightArmor1" Odd="12"/>
+		<Item Id="LightArmor2" Odd="8"/>
+		<Item Id="LightArmor3" Odd="5"/>
+		<Item Id="LightArmor4" Odd="5"/>
+		<Item Id="LightArmor5" Odd="3"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_LightArmorSpecial">
+		<Item Id="FallenLordArmor" Odd="1"/>
+		<Item Id="ThiefArmor" Odd="1"/>
+		<Item Id="CoatArmor" Odd="1"/>
+		<Item Id="MurdererArmor" Odd="1"/>
+		<Item Id="WhiteMonkArmor" Odd="1"/>
+		<Item Id="HoodArmor" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_MediumArmor">
+		<Item Id="ItemList_MediumArmorBase" Odd="7"/>
+		<Item Id="ItemList_MediumArmorSpecial" Odd="3"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_MediumArmorBase">
+		<Item Id="MediumArmor0" Odd="12"/>
+		<Item Id="MediumArmor1" Odd="12"/>
+		<Item Id="MediumArmor2" Odd="8"/>
+		<Item Id="MediumArmor3" Odd="5"/>
+		<Item Id="MediumArmor4" Odd="5"/>
+		<Item Id="MediumArmor5" Odd="3"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_MediumArmorSpecial">
+		<Item Id="LoneWolfArmor" Odd="1"/>
+		<Item Id="CommanderArmor" Odd="1"/>
+		<Item Id="ArcherArmor" Odd="1"/>
+		<Item Id="NecromancerArmor" Odd="1"/>
+		<Item Id="CrowArmor" Odd="1"/>
+		<Item Id="HunterArmor" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeavyArmor">
+		<Item Id="ItemList_HeavyArmorBase" Odd="7"/>
+		<Item Id="ItemList_HeavyArmorSpecial" Odd="3"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeavyArmorBase">
+		<Item Id="HeavyArmor0" Odd="12"/>
+		<Item Id="HeavyArmor1" Odd="12"/>
+		<Item Id="HeavyArmor2" Odd="8"/>
+		<Item Id="HeavyArmor3" Odd="5"/>
+		<Item Id="HeavyArmor4" Odd="5"/>
+		<Item Id="HeavyArmor5" Odd="3"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeavyArmorSpecial">
+		<Item Id="TheMountainArmor" Odd="1"/>
+		<Item Id="PorkEpicArmor" Odd="1"/>
+		<Item Id="DarknessArmor" Odd="1"/>
+		<Item Id="WarArmor" Odd="1"/>
+		<Item Id="FrostArmor" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ClothPants">
+		<Item Id="ItemList_ClothPantsBase" Odd="7"/>
+		<Item Id="ItemList_ClothPantsSpecial" Odd="3"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ClothPantsBase">
+		<Item Id="ClothPants0" Odd="1"/>
+		<Item Id="ClothPants1" Odd="1"/>
+		<Item Id="ClothPants2" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ClothPantsSpecial">
+		<Item Id="ChildOfTheForestPants" Odd="1"/>
+		<Item Id="MagicianPants" Odd="1"/>
+		<Item Id="PriestPants" Odd="1"/>
+		<Item Id="BonesPants" Odd="1"/>
+		<Item Id="RedSkirtPants" Odd="1"/>
+		<Item Id="BarbarianPants" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_LightPants">
+		<Item Id="ItemList_LightPantsBase" Odd="7"/>
+		<Item Id="ItemList_LightPantsSpecial" Odd="3"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_LightPantsBase">
+		<Item Id="ClothPants3" Odd="1"/>
+		<Item Id="ClothPants4" Odd="1"/>
+		<Item Id="ClothPants5" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_LightPantsSpecial">
+		<Item Id="FallenLordPants" Odd="1"/>
+		<Item Id="ThiefPants" Odd="1"/>
+		<Item Id="CoatPants" Odd="1"/>
+		<Item Id="MurdererPants" Odd="1"/>
+		<Item Id="WhiteMonkPants" Odd="1"/>
+		<Item Id="HoodPants" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_MediumPants">
+		<Item Id="ItemList_MediumPantsBase" Odd="7"/>
+		<Item Id="ItemList_MediumPantsSpecial" Odd="3"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_MediumPantsBase">
+		<Item Id="Pants0" Odd="1"/>
+		<Item Id="Pants1" Odd="1"/>
+		<Item Id="Pants2" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_MediumPantsSpecial">
+		<Item Id="LoneWolfPants" Odd="1"/>
+		<Item Id="CommanderPants" Odd="1"/>
+		<Item Id="ArcherPants" Odd="1"/>
+		<Item Id="NecromancerPants" Odd="1"/>
+		<Item Id="CrowPants" Odd="1"/>
+		<Item Id="HunterPants" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeavyPants">
+		<Item Id="ItemList_HeavyPantsBase" Odd="7"/>
+		<Item Id="ItemList_HeavyPantsSpecial" Odd="3"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeavyPantsBase">
+		<Item Id="Pants3" Odd="1"/>
+		<Item Id="Pants4" Odd="1"/>
+		<Item Id="Pants5" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeavyPantsSpecial">
+		<Item Id="TheMountainPants" Odd="1"/>
+		<Item Id="PorkEpicPants" Odd="1"/>
+		<Item Id="DarknessPants" Odd="1"/>
+		<Item Id="WarPants" Odd="1"/>
+		<Item Id="FrostPants" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ClothHelmet">
+		<Item Id="Helmet0" Odd="7"/>
+		<Item Id="ItemList_ClothHelmetSpecial" Odd="3"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_ClothHelmetSpecial">
+		<Item Id="ChildOfTheForestHelmet" Odd="1"/>
+		<Item Id="MagicianHelmet" Odd="1"/>
+		<Item Id="PriestHelmet" Odd="1"/>
+		<Item Id="TheShamanHelmet" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_LightHelmet">
+		<Item Id="Helmet1" Odd="7"/>
+		<Item Id="ItemList_LightHelmetSpecial" Odd="3"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_LightHelmetSpecial">
+		<Item Id="FallenLordHelmet" Odd="1"/>
+		<Item Id="PreciousScarfHelmet" Odd="1"/>
+		<Item Id="ThiefHelmet" Odd="1"/>
+		<Item Id="WhiteMonkHelmet" Odd="1"/>
+		<Item Id="HoodHelmet" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_MediumHelmet">
+		<Item Id="Helmet2" Odd="7"/>
+		<Item Id="ItemList_MediumHelmetSpecial" Odd="3"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_MediumHelmetSpecial">
+		<Item Id="LoneWolfHelmet" Odd="1"/>
+		<Item Id="Eyepatch" Odd="1"/>
+		<Item Id="NecromancerHelmet" Odd="1"/>
+		<Item Id="CrowHelmet" Odd="1"/>
+		<Item Id="HunterHelmet" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeavyHelmet">
+		<Item Id="Helmet3" Odd="7"/>
+		<Item Id="ItemList_HeavyHelmetSpecial" Odd="3"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeavyHelmetSpecial">
+		<Item Id="TheMountainHelmet" Odd="1"/>
+		<Item Id="PorkEpicHelmet" Odd="1"/>
+		<Item Id="DarknessHelmet" Odd="1"/>
+		<Item Id="WingedHelmet" Odd="1"/>
+		<Item Id="FrostHelmet" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_GreatHelmet">
+		<Item Id="Helmet4" Odd="1"/>
+		<Item Id="Helmet5" Odd="1"/>
+	</ItemsListDefinition>
+
+</ItemsListDefinitions>

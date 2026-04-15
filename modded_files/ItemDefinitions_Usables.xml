@@ -1,0 +1,1293 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ItemDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../ItemDefinitions.xsd">
+  <ItemDefinition Id="HealthPotion">
+    <Category>Potion</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">HealthPotion</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">HealthPotion1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">HealthPotion1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">HealthPotion2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">HealthPotion2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">HealthPotion3</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="ManaPotion">
+    <Category>Potion</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BasePrice>17</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">ManaPotion</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BasePrice>23</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">ManaPotion1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BasePrice>31</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">ManaPotion1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BasePrice>42</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">ManaPotion2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BasePrice>57</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">ManaPotion2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BasePrice>77</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">ManaPotion3</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="EnergyPotion">
+    <Category>Potion</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BasePrice>17</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">EnergyPotion</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BasePrice>23</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">EnergyPotion</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BasePrice>31</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">EnergyPotion</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BasePrice>42</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="5">EnergyPotion</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BasePrice>57</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">EnergyPotion1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BasePrice>77</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">EnergyPotion1</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="SpeedPotion">
+    <Category>Potion</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">SpeedPotion</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">SpeedPotion</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">SpeedPotion</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">SpeedPotion2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">SpeedPotion2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">SpeedPotion3</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="InvisibilityPotion">
+    <Category>Potion</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="1">InvisibilityPotion</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="1">InvisibilityPotion1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="1">InvisibilityPotion2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">InvisibilityPotion2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">InvisibilityPotion3</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">InvisibilityPotion4</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="StonePotion">
+    <Category>Potion</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="1">StonePotion</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="1">StonePotion1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="1">StonePotion2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">StonePotion2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">StonePotion3</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">StonePotion4</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="StrengthPotion">
+    <Category>Potion</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="1">StrengthPotion</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="1">StrengthPotion1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="1">StrengthPotion2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">StrengthPotion2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">StrengthPotion3</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">StrengthPotion4</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="DispelPotion">
+    <Category>Potion</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BasePrice>17</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="1">DispelPotion</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BasePrice>23</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="1">DispelPotion</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BasePrice>31</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="1">DispelPotion2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BasePrice>42</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">DispelPotion3</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BasePrice>57</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">DispelPotion4</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BasePrice>77</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">DispelPotion5</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="AxeBoomerangScroll">
+    <Category>Scroll</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BaseDamage Min="106" Max="163" />
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">AxeBoomerangScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BaseDamage Min="117" Max="179" />
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">AxeBoomerangScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BaseDamage Min="128" Max="197" />
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">AxeBoomerangScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BaseDamage Min="141" Max="216" />
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">AxeBoomerangScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BaseDamage Min="155" Max="238" />
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">AxeBoomerangScroll2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BaseDamage Min="171" Max="262" />
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">AxeBoomerangScroll2</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="ThrowingDaggersScroll">
+    <Category>Scroll</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BaseDamage Min="48" Max="60" />
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">ThrowingDaggersScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BaseDamage Min="53" Max="66" />
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">ThrowingDaggersScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BaseDamage Min="58" Max="73" />
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">ThrowingDaggersScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BaseDamage Min="64" Max="80" />
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">ThrowingDaggersScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BaseDamage Min="70" Max="88" />
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">ThrowingDaggersScroll2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BaseDamage Min="77" Max="97" />
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">ThrowingDaggersScroll2</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="ChargeScroll">
+    <Category>Scroll</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BaseDamage Min="113" Max="174" />
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">ChargeScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BaseDamage Min="124" Max="191" />
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">ChargeScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BaseDamage Min="137" Max="210" />
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">ChargeScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BaseDamage Min="150" Max="231" />
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">ChargeScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BaseDamage Min="165" Max="254" />
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">ChargeScroll2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BaseDamage Min="181" Max="279" />
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">ChargeScroll2</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="SwordBlastScroll">
+    <Category>Scroll</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BaseDamage Min="85" Max="130" />
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">SwordBlastScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BaseDamage Min="93" Max="143" />
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">SwordBlastScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BaseDamage Min="103" Max="158" />
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">SwordBlastScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BaseDamage Min="112" Max="173" />
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">SwordBlastScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BaseDamage Min="124" Max="190" />
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">SwordBlastScroll2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BaseDamage Min="136" Max="209" />
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">SwordBlastScroll2</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="SuperSpinScroll">
+    <Category>Scroll</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BaseDamage Min="85" Max="169" />
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">SuperSpinScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BaseDamage Min="94" Max="186" />
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">SuperSpinScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BaseDamage Min="102" Max="205" />
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">SuperSpinScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BaseDamage Min="113" Max="226" />
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">SuperSpinScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BaseDamage Min="124" Max="249" />
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">SuperSpinScroll2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BaseDamage Min="138" Max="274" />
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">SuperSpinScroll2</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="GroundSmashScroll">
+    <Category>Scroll</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BaseDamage Min="99" Max="198" />
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">GroundSmashScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BaseDamage Min="109" Max="218" />
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">GroundSmashScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BaseDamage Min="120" Max="240" />
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">GroundSmashScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BaseDamage Min="132" Max="264" />
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">GroundSmashScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BaseDamage Min="145" Max="290" />
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">GroundSmashScroll2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BaseDamage Min="160" Max="319" />
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">GroundSmashScroll2</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="TripleSwipeScroll">
+    <Category>Scroll</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BaseDamage Min="118" Max="147" />
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">TripleSwipeScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BaseDamage Min="130" Max="162" />
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">TripleSwipeScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BaseDamage Min="143" Max="178" />
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">TripleSwipeScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BaseDamage Min="156" Max="196" />
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">TripleSwipeScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BaseDamage Min="173" Max="216" />
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">TripleSwipeScroll2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BaseDamage Min="190" Max="238" />
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">TripleSwipeScroll2</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="GrapeshotScroll">
+    <Category>Scroll</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BaseDamage Min="103" Max="128" />
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">GrapeshotScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BaseDamage Min="113" Max="142" />
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">GrapeshotScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BaseDamage Min="126" Max="157" />
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">GrapeshotScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BaseDamage Min="138" Max="173" />
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">GrapeshotScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BaseDamage Min="153" Max="190" />
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">GrapeshotScroll2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BaseDamage Min="167" Max="209" />
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">GrapeshotScroll2</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="RainOfArrowsScroll">
+    <Category>Scroll</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BaseDamage Min="130" Max="259" />
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">RainOfArrowsScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BaseDamage Min="142" Max="285" />
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">RainOfArrowsScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BaseDamage Min="157" Max="313" />
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">RainOfArrowsScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BaseDamage Min="172" Max="344" />
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">RainOfArrowsScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BaseDamage Min="191" Max="379" />
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">RainOfArrowsScroll2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BaseDamage Min="209" Max="418" />
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">RainOfArrowsScroll2</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="ExplosiveBoltScroll">
+    <Category>Scroll</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BaseDamage Min="151" Max="188" />
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">ExplosiveBoltScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BaseDamage Min="165" Max="207" />
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">ExplosiveBoltScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BaseDamage Min="183" Max="228" />
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">ExplosiveBoltScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BaseDamage Min="200" Max="251" />
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">ExplosiveBoltScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BaseDamage Min="220" Max="276" />
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">ExplosiveBoltScroll2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BaseDamage Min="242" Max="303" />
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">ExplosiveBoltScroll2</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="AssassinateScroll">
+    <Category>Scroll</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BaseDamage Min="139" Max="212" />
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">AssassinateScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BaseDamage Min="152" Max="234" />
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">AssassinateScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BaseDamage Min="168" Max="258" />
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">AssassinateScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BaseDamage Min="185" Max="284" />
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">AssassinateScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BaseDamage Min="204" Max="312" />
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">AssassinateScroll2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BaseDamage Min="224" Max="344" />
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">AssassinateScroll2</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="MagicMissilesScroll">
+    <Category>Scroll</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BaseDamage Min="58" Max="88" />
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">MagicMissilesScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BaseDamage Min="63" Max="97" />
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">MagicMissilesScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BaseDamage Min="69" Max="106" />
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">MagicMissilesScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BaseDamage Min="76" Max="117" />
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">MagicMissilesScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BaseDamage Min="84" Max="129" />
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">MagicMissilesScroll2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BaseDamage Min="92" Max="142" />
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">MagicMissilesScroll2</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="HammerOfFaithScroll">
+    <Category>Scroll</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BaseDamage Min="95" Max="119" />
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">HammerOfFaithScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BaseDamage Min="105" Max="132" />
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">HammerOfFaithScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BaseDamage Min="115" Max="144" />
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">HammerOfFaithScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BaseDamage Min="126" Max="158" />
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">HammerOfFaithScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BaseDamage Min="139" Max="174" />
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">HammerOfFaithScroll2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BaseDamage Min="153" Max="190" />
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">HammerOfFaithScroll2</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="DeathRayScroll">
+    <Category>Scroll</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BaseDamage Min="296" Max="372" />
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">DeathRayScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BaseDamage Min="328" Max="408" />
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">DeathRayScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BaseDamage Min="360" Max="448" />
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">DeathRayScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BaseDamage Min="392" Max="492" />
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">DeathRayScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BaseDamage Min="432" Max="540" />
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">DeathRayScroll2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BaseDamage Min="476" Max="596" />
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">DeathRayScroll2</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="FireThrowerScroll">
+    <Category>Scroll</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BaseDamage Min="103" Max="160" />
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">FireThrowerScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BaseDamage Min="114" Max="175" />
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">FireThrowerScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BaseDamage Min="126" Max="193" />
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">FireThrowerScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BaseDamage Min="138" Max="212" />
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">FireThrowerScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BaseDamage Min="152" Max="234" />
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">FireThrowerScroll2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BaseDamage Min="168" Max="258" />
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">FireThrowerScroll2</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="ScorchingWaveScroll">
+    <Category>Scroll</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BaseDamage Min="77" Max="120" />
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">ScorchingWaveScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BaseDamage Min="86" Max="131" />
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">ScorchingWaveScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BaseDamage Min="94" Max="145" />
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">ScorchingWaveScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BaseDamage Min="104" Max="159" />
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">ScorchingWaveScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BaseDamage Min="114" Max="176" />
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">ScorchingWaveScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BaseDamage Min="126" Max="194" />
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">ScorchingWaveScroll</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="FireballScroll">
+    <Category>Scroll</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BaseDamage Min="104" Max="206" />
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">FireballScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BaseDamage Min="113" Max="227" />
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">FireballScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BaseDamage Min="125" Max="249" />
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">FireballScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BaseDamage Min="137" Max="274" />
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">FireballScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BaseDamage Min="151" Max="302" />
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">FireballScroll2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BaseDamage Min="167" Max="333" />
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">FireballScroll2</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="LightningStrikeScroll">
+    <Category>Scroll</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BaseDamage Min="118" Max="235" />
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">LightningStrikeScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BaseDamage Min="130" Max="259" />
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">LightningStrikeScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BaseDamage Min="142" Max="285" />
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">LightningStrikeScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BaseDamage Min="157" Max="314" />
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">LightningStrikeScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BaseDamage Min="173" Max="346" />
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">LightningStrikeScroll2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BaseDamage Min="190" Max="381" />
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">LightningStrikeScroll2</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="BeeStingScroll">
+    <Category>Scroll</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BaseDamage Min="71" Max="89" />
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">BeeStingScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BaseDamage Min="78" Max="98" />
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">BeeStingScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BaseDamage Min="86" Max="108" />
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">BeeStingScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BaseDamage Min="95" Max="119" />
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">BeeStingScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BaseDamage Min="105" Max="131" />
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">BeeStingScroll2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BaseDamage Min="115" Max="144" />
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">BeeStingScroll2</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  <ItemDefinition Id="TeleportationScroll">
+    <Category>Scroll</Category>
+    <LevelVariations>
+      <Level Id="0">
+        <BasePrice>14</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">TeleportationScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="1">
+        <BasePrice>19</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="2">TeleportationScroll</Skill>
+        </Skills>
+      </Level>
+      <Level Id="2">
+        <BasePrice>26</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">TeleportationScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="3">
+        <BasePrice>35</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="3">TeleportationScroll1</Skill>
+        </Skills>
+      </Level>
+      <Level Id="4">
+        <BasePrice>47</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">TeleportationScroll2</Skill>
+        </Skills>
+      </Level>
+      <Level Id="5">
+        <BasePrice>63</BasePrice>
+        <Skills>
+          <Skill OverallUsesCount="4">TeleportationScroll2</Skill>
+        </Skills>
+      </Level>
+    </LevelVariations>
+  </ItemDefinition>
+
+  </ItemDefinitions>

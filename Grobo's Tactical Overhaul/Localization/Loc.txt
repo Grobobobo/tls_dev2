@@ -53,16 +53,27 @@ Zusätzliche <style=KeyWord>Konsumgüter</style> können mithilfe von <style=Wor
 <style=Attenuated>최대치를 초과할 수 없습니다.</style>"
 "PerkName_FirstBlood","Cherry Picking","Tri sélectif","就是你了","就是你了","いいとこ取り","Враг одиночества","Вередливий","Wählerisch","Tiquismiquis","Escolhendo a Dedo","골라 먹기"
 "PerkDescription_FirstBlood","When <style=KeyWord>attacking</style> an <style=KeyWord>isolated</style> unit, the attack gets:
-{0}.","Lorsqu'une unité <style=KeyWord>isolée</style> est <style=KeyWord>attaquée</style>, l'attaque obtient<nbsp>:
-{0}.","当<style=KeyWord>攻击</style><style=KeyWord>落单</style>的敌人时，此次攻击获得：
-{0}","當<style=KeyWord>攻擊</style><style=KeyWord>落單</style>的敵人時，此次攻擊獲得：
-{0}","<style=KeyWord>孤立した</style>ユニットへ<style=KeyWord>攻撃</style>時、以下の効果を得る: {0}。","Если цель <style=KeyWord>атаки</style> героя <style=KeyWord>изолирована</style>, атака получает бонус:
-{0}.","Під час <style=KeyWord>атаки</style> <style=KeyWord>відокремленого</style> монстра, атака отримує:
-{0}.","Beim <style=KeyWord>Angriff</style> auf einen <style=KeyWord>isolierte</style> Einheit, erhält der Angriff:
-{0}.","Al <style=KeyWord>atacar</style> a una unidad <style=KeyWord>aislada</style>, el ataque obtiene:
-{0}.","Quando <style=KeyWord>atacar</style> uma unidade <style=KeyWord>isolada</style>, o ataque recebe:
-{0}.","<style=KeyWord>고립</style> 상태인 유닛을 <style=KeyWord>공격</style>할 경우:
-{0}"
+{0}.
+{1}.","Lorsqu'une unité <style=KeyWord>isolée</style> est <style=KeyWord>attaquée</style>, l'attaque obtient<nbsp>:
+{0}.
+{1}.","当<style=KeyWord>攻击</style><style=KeyWord>落单</style>的敌人时，此次攻击获得：
+{0}
+{1}","當<style=KeyWord>攻擊</style><style=KeyWord>落單</style>的敵人時，此次攻擊獲得：
+{0}
+{1}","<style=KeyWord>孤立した</style>ユニットへ<style=KeyWord>攻撃</style>時、以下の効果を得る: {0}。
+{1}。","Если цель <style=KeyWord>атаки</style> героя <style=KeyWord>изолирована</style>, атака получает бонус:
+{0}.
+{1}.","Під час <style=KeyWord>атаки</style> <style=KeyWord>відокремленого</style> монстра, атака отримує:
+{0}.
+{1}.","Beim <style=KeyWord>Angriff</style> auf einen <style=KeyWord>isolierte</style> Einheit, erhält der Angriff:
+{0}.
+{1}.","Al <style=KeyWord>atacar</style> a una unidad <style=KeyWord>aislada</style>, el ataque obtiene:
+{0}.
+{1}.","Quando <style=KeyWord>atacar</style> uma unidade <style=KeyWord>isolada</style>, o ataque recebe:
+{0}.
+{1}.","<style=KeyWord>고립</style> 상태인 유닛을 <style=KeyWord>공격</style>할 경우:
+{0}
+{1}"
 "PerkName_CherryPicking","First Blood","Premier sang","第一滴血","第一滴血","先制の血","Первая кровь","Перша кров","Erstschlag","Primera sangre","Sangue Fresco","선제 타격"
 "PerkDescription_CherryPicking","When <style=KeyWord>attacking</style> a unit with <style=KeyWord>full</style> {0}, the attack gets:
 {1}.","Lorsqu'une unité avec toute sa {0} est <style=KeyWord>attaquée</style>, l'attaque obtient<nbsp>:
@@ -200,39 +211,83 @@ Unidades a serem abatidas: {6}.","{5}
 {0}.","<style=Mana>마나 소모</style> <style=""Skill"">스킬</style>로 <style=KeyWord>공격</style>할 경우:
 {0}"
 "PerkDescription_ThirdEye","Every {0} enemies <style=KeyWord>hit</style>, the next <style=""Skill"">skill</style> gets:
-{1}, {2}, {3}.
+{1}, 
+{2}, 
+{3}, 
+{5}.
 <style=Attenuated>This modifier doesn't stack.</style>","Tous les {0} ennemis <style=KeyWord>touchés</style>, la prochaine <style=""Skill"">compétence</style> obtient<nbsp>:
-{1}, {2}, {3}.
+{1}, 
+{2}, 
+{3}, 
+{5}.
 <style=Attenuated>Ce modificateur n'est pas cumulable.</style>","每<style=KeyWord>击中</style>{0}个敌人，下一次使用<style=""Skill"">技能</style>时获得效果：
-{1}, {2}, {3}。
+{1}, 
+{2}, 
+{3}, 
+{5}。
 <style=Attenuated>此加成不可叠加。</style>","每<style=KeyWord>擊中</style>{0}個敵人，下一次使用<style=""Skill"">技能</style>時獲得效果：
-{1}, {2}, {3}。
+{1}, 
+{2}, 
+{3}, 
+{5}。
 <style=Attenuated>此加成不可疊加。</style>","{0}体のエネミーに<style=KeyWord>攻撃</style>する毎に、次の<style=""Skill"">スキル</style>は以下の効果を得る:
-{1}, {2}, {3}。
+{1}, 
+{2}, 
+{3}, 
+{5}。
 <style=ATTenuated>この効果は重複しない。</style>","За <style=KeyWord>попадания</style> по {0} врагам следующий <style=""Skill"">навык</style> получает:
-{1}, {2}, {3}.
+{1}, 
+{2}, 
+{3}, 
+{5}.
 <style=Attenuated>Эффект не накапливается.</style>","За кожних {0} ворогів, яким завдано <style=KeyWord>удар</style>, наступне <style=""Skill"">вміння</style> отримає:
-{1}, {2}, {3}.
+{1}, 
+{2}, 
+{3}, 
+{5}.
 <style=Attenuated>Цей модифікатор не поєднується.</style>","Jeder {0} <style=KeyWord>getroffene</style> Gegner, gibt dem nächsten Angriff:
-{1}, {2}, {3}.
+{1}, 
+{2}, 
+{3}, 
+{5}.
 <style=Attenuated>Dieser Modifikator ist nicht stapelbar.</style>","Cada {0} enemigos <style=KeyWord>golpeados</style>, la siguiente <style=""Skill"">habilidad</style> obtiene:
-{1}, {2}, {3}.
+{1}, 
+{2}, 
+{3}, 
+{5}.
 <style=Attenuated>Este modificador no es acumulable.</style>","A cada {0} inimigos <style=KeyWord>golpeados</style>, a próxima <style=""Skill"">habilidade</style> recebe:
-{1}.
+{1}, 
+{2}, 
+{3}, 
+{5}.
 <style=Attenuated>Este modificador não acumula.</style>","적 {0}명에 <style=KeyWord>명중</style>할 때마다 다음 <style=""Skill"">스킬</style>에 적용:
-{1}
+{1}, 
+{2}, 
+{3}, 
+{5}.
 <style=Attenuated>해당 보정치는 중첩되지 않음</style>"
-"PerkDescription_GlassCannon","{0}.
-{1} <style=PerkDamage>Perk Damage</style>.","{0}.
-{1} de <style=PerkDamage>Dégâts de talent</style>.","{0}
-{1}<style=PerkDamage>天赋伤害</style>","{0}
+"PerkDescription_GlassCannon","{0}. 
+{2}.
+{1} <style=PerkDamage>Perk Damage</style>.","{0}. 
+{2}.
+{1} de <style=PerkDamage>Dégâts de talent</style>.","{0}。
+{2}。
+{1}<style=PerkDamage>天赋伤害</style>","{0}。
+{2}。
 {1}<style=PerkDamage>天賽傷害</style>","{0}。
-{1}<style=PerkDamage>パークダメージ</style>。","{0}.
-{1} <style=PerkDamage>Урона от перка</style>.","{0}.
-{1} <style=PerkDamage>Шкоди від перка</style>.","{0}.
-{1} <style=PerkDamage>Perk-Schaden</style>.","{0}.
-{1} de <style=PerkDamage>Daño de beneficio</style>.","{0}.
-{1} de <style=PerkDamage>Dano de Vantagem</style>.","{0}
+{2}。
+{1}<style=PerkDamage>パークダメージ</style>。","{0}. 
+{2}.
+{1} <style=PerkDamage>Урона от перка</style>.","{0}. 
+{2}.
+{1} <style=PerkDamage>Шкоди від перка</style>.","{0}. 
+{2}.
+{1} <style=PerkDamage>Perk-Schaden</style>.","{0}. 
+{2}.
+{1} de <style=PerkDamage>Daño de beneficio</style>.","{0}. 
+{2}.
+{1} de <style=PerkDamage>Dano de Vantagem</style>.","{0}。
+{2}。
 {1} <style=PerkDamage>특전 피해</style>"
 "PerkDescription_SpikySkin","{5}.
 {6}.
@@ -767,28 +822,60 @@ As casas <color=#549EE4>Secundárias</color> contam como casas <style=bad>Primá
 <style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>"
 "PerkEffectInformations_StrongThrow","Enemies to hit: {3}","Ennemis à toucher<nbsp>: {3}","还需击中敌人数：{3}","還需擊中敵人數：{3}","命中させるエネミー: {3}","Ещё попаданий: {3}","Залишилося ударити ворогів: {3}.","Zu treffende Gegner: {3}","Enemigos por golpear: {3}","Inimigos a serem golpeados: {3}","명중해야 하는 적: {3}"
 "PerkDescription_Sentry","As long as there is <style=KeyWord>no other Hero</style> within a <style=KeyWord>range of {0}</style>, all <style=""skill"">skills</style> get:
-{1} 
+{1}
 and the Hero gets: {2}.
-<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Tant qu'<style=KeyWord>aucun autre Héros</style> n'est dans une <style=KeyWord>portée de {0}</style>, toutes les <style=""skill"">compétences</style> obtiennent<nbsp>:
-{1} et {2}.
-<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","只要<style=KeyWord>{0}格范围</style>内<style=KeyWord>没有其他英雄</style>，所有<style=""skill"">技能</style>获得：
-{1}和{2}。
-<style=""ElfIcon""></style><style=""ElfText"">《琥珀幽森的精灵》DLC</style>","{0}格<style=KeyWord>範圍內</style><style=KeyWord>沒有其他英雄</style>時，所有<style=""skill"">技能</style>獲得：
-{1}和{2}。
+As long as there is <style=KeyWord>no other Hero</style> within a <style=KeyWord>range of {3}</style>, the Hero also gets: {4}.
+<style=Attenuated>This modifier is added to the previous one.</style>
+<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Tant qu'<style=KeyWord>aucun autre Héros</style> n'est dans une <style=KeyWord>portée de {0}</style>, toutes les <style=""skill"">compétences</style> obtiennent :
+{1}
+et le Héros obtient : {2}.
+Tant qu'<style=KeyWord>aucun autre Héros</style> n'est dans une <style=KeyWord>portée de {3}</style>, le Héros obtient aussi : {4}.
+<style=Attenuated>Ce modificateur est ajouté au précédent.</style>
+<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","当<style=KeyWord>周围{0}格范围内</style>都<style=KeyWord>没有其他英雄</style>时，所有<style=""skill"">技能</style>获得：
+{1}
+英雄获得：{2}。
+当<style=KeyWord>周围{3}格范围内</style>都<style=KeyWord>没有其他英雄</style>时，英雄还获得：{4}。
+<style=Attenuated>加成效果可叠加。</style>
+<style=""ElfIcon""></style><style=""ElfText"">《琥珀幽森的精灵》DLC</style>","當<style=KeyWord>{0}格範圍內</style><style=KeyWord>沒有其他英雄</style>時，所有<style=""skill"">技能</style>獲得：
+{1}
+英雄獲得：{2}。
+當<style=KeyWord>{3}格範圍內</style><style=KeyWord>沒有其他英雄</style>時，英雄還獲得：{4}。
+<style=Attenuated>加成效果可疊加。</style>
 <style=""ElfIcon""></style><style=""ElfText"">〈琥珀幽森的精靈〉DLC</style>","<style=KeyWord>{0}以内の距離</style>に<style=KeyWord>ほかの英雄がいない</style>状態のあいだ、全ての<style=""skill"">スキル</style>が以下の効果を得る:
-{1}と{2}。
+{1}
+英雄は以下の効果も得る: {2}。
+<style=KeyWord>{3}以内の距離</style>に<style=KeyWord>ほかの英雄がいない</style>状態なら、さらに: {4}。
+<style=Attenuated>この補正は前の補正に追加される。</style>
 <style=""ElfIcon""></style><style=""ElfText"">アンバーワルドのエルフDLC</style>","Если на <style=KeyWord>расстоянии {0} яч.</style> вокруг героя <style=KeyWord>нет других героев</style>, все <style=""skill"">навыки</style> получают свойство:
-{1} и {2}.
+{1}
+герой получает: {2}.
+Если вокруг нет героев на <style=KeyWord>расстоянии {3} яч.</style>, герой также получает: {4}.
+<style=Attenuated>Первый эффект складывается со вторым.</style>
 <style=""ElfIcon""></style><style=""ElfText"">Дополнительный контент ""Elves of Amberwald""</style>","Поки на <style=KeyWord>відстані {0}</style> <style=KeyWord>немає інших героїв</style>, усі <style=""skill"">вміння</style> отримують:
-{1} і {2}.
+{1}
+герой отримує: {2}.
+Поки на <style=KeyWord>відстані {3}</style> <style=KeyWord>немає інших героїв</style>, герой також отримує: {4}.
+<style=Attenuated>Цей модифікатор додається до попереднього.</style>
 <style=""ElfIcon""></style><style=""ElfText"">Доповнення Elves of Amberwald</style>","Wenn sich <style=KeyWord>kein anderer Held</style> innerhalb einer <style=KeyWord>Reichweite von {0} Feldern</style> befindet, erhalten alle <style=""skill"">Fähigkeiten</style>:
-{1} und {2}.
+{1}
+und der Held erhält: {2}.
+Wenn sich <style=KeyWord>kein anderer Held</style> innerhalb von <style=KeyWord>{3} Feldern</style> befindet, erhält der Held auch: {4}.
+<style=Attenuated>Dieser Modifikator wird zum vorherigen addiert.</style>
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Siempre que <style=KeyWord>no haya ningún otro héroe</style> a una <style=KeyWord>distancia máxima de {0} casillas</style>, todas las <style=""skill"">habilidades</style> obtienen:
-{1} y {2}.
+{1}
+y el héroe obtiene: {2}.
+Si <style=KeyWord>no hay otro héroe</style> a una <style=KeyWord>distancia de {3} casillas</style>, el héroe también obtiene: {4}.
+<style=Attenuated>Este modificador se suma al anterior.</style>
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","Desde que <style=KeyWord>não haja outro Herói</style> em uma <style=KeyWord>distância de até {0}</style>, todas as <style=""skill"">habilidades</style> recebem:
-{1} e {2}.
+{1}
+e o Herói recebe: {2}.
+Se <style=KeyWord>não houver outro Herói</style> em uma <style=KeyWord>distância de até {3}</style>, o Herói também recebe: {4}.
+<style=Attenuated>Este modificador se soma ao anterior.</style>
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","<style=KeyWord>{0}타일</style> 이내에 <style=KeyWord>다른 영웅이 없을</style> 경우 모든 <style=""skill"">스킬</style>에 적용:
-{1} 및 {2}
+{1}
+영웅에게 적용: {2}
+<style=KeyWord>{3}타일</style> 이내에 <style=KeyWord>다른 영웅이 없을</style> 경우 영웅에게 추가 적용: {4}
+<style=Attenuated>해당 보정치는 중첩됨</style>
 <style=""ElfIcon""></style><style=""ElfText"">암버발트의 엘프 DLC</style>"
 "PerkDescription_Longstrider","Every {0} tiles traveled by a Hero with a {2} or {3} <style=Skill>skill</style>:
 {1}.
@@ -815,27 +902,27 @@ As casas de {1} percorridas aumentam em {4}.
 <style=""ElfIcon""></style><style=""ElfText"">암버발트의 엘프 DLC</style>"
 "BuildingUpgradeTooltipDescription_UpgradePoisonSeed0","Upgrades <style=KeyWord>Venomous Roots</style>:
 • <style=Poison>Poison</style> 50 > <style=GoodNb>75</style>
-• Duration 2 > <style=GoodNb>3</style>.","Améliore <style=KeyWord>Racines Vénéneuses</style><nbsp>:
+• Duration 3 > <style=GoodNb>4</style>.","Améliore <style=KeyWord>Racines Vénéneuses</style><nbsp>:
 • <style=Poison>Poison</style> 50 > <style=GoodNb>75</style>
-• Durée 2 > <style=GoodNb>3</style>.","升级<style=KeyWord>有毒根茎</style>：
+• Durée 3 > <style=GoodNb>4</style>.","升级<style=KeyWord>有毒根茎</style>：
  • <style=Poison>中毒</style>50 > <style=GoodNb>75</style>
- • 持续时间 2 > <style=GoodNb>3</style>.","升級<style=KeyWord>毒根</style>：
+ • 持续时间 3 > <style=GoodNb>4</style>.","升級<style=KeyWord>毒根</style>：
  • <style=Poison>中毒傷害</style>50 > <style=GoodNb>75</style>
- • 持續時間 2 > <style=GoodNb>3</style>.","<style=KeyWord>毒の根</style>を強化する:
+ • 持續時間 3 > <style=GoodNb>4</style>.","<style=KeyWord>毒の根</style>を強化する:
 • <style=Poison>毒</style>50 > <style=GoodNb>75</style>
-• 持続時間 2 > <style=GoodNb>3</style>.","Улучшает <style=KeyWord>Ядовитые корни</style>:
+• 持続時間 3 > <style=GoodNb>4</style>.","Улучшает <style=KeyWord>Ядовитые корни</style>:
  • <style=Poison>яд</style> 50 > <style=GoodNb>75</style>.
- • Длительность 2 > <style=GoodNb>3</style>.","Поліпшує <style=KeyWord>отруйні корені</style>:
+ • Длительность 3 > <style=GoodNb>4</style>.","Поліпшує <style=KeyWord>отруйні корені</style>:
  • <style=Poison>Отрута</style> 50 > <style=GoodNb>75</style>
- • Тривалість 2 > <style=GoodNb>3</style>.","Verbessert <style=KeyWord>Giftwurzeln</style>:
+ • Тривалість 3 > <style=GoodNb>4</style>.","Verbessert <style=KeyWord>Giftwurzeln</style>:
  • <style=Poison>Gift</style> 50 > <style=GoodNb>75</style>
- • Dauer 2 > <style=GoodNb>3</style>.","Mejora las <style=KeyWord>Raíces venenosas</style>:
+ • Dauer 3 > <style=GoodNb>4</style>.","Mejora las <style=KeyWord>Raíces venenosas</style>:
  • <style=Poison>Veneno</style> 50 > <style=GoodNb>75</style>
- • Duración 2 > <style=GoodNb>3</style>.","Melhora <style=KeyWord>Raízes Venenosas</style>:
+ • Duración 3 > <style=GoodNb>4</style>.","Melhora <style=KeyWord>Raízes Venenosas</style>:
  • <style=Poison>Envenenamento</style> 50 > <style=GoodNb>75</style>
- • Duração 2 > <style=GoodNb>3</style>.","<style=KeyWord>독성 뿌리</style> 강화:
+ • Duração 3 > <style=GoodNb>4</style>.","<style=KeyWord>독성 뿌리</style> 강화:
  • <style=Poison>중독</style> 50 > <style=GoodNb>75</style>
- • 지속 시간 2 > <style=GoodNb>3</style>."
+ • 지속 시간 3 > <style=GoodNb>4</style>."
 "BuildingUpgradeTooltipDescription_UpgradePurgingSeed0","Upgrades <style=KeyWord>Purging Spores</style>:
 • <style=Resistance>Resistance</style> -10% > <style=GoodNb>-20%</style>","Améliore <style=KeyWord>Spores Epurantes</style><nbsp>:
 • <style=Resistance>Resistance</style> -10% > <style=GoodNb>-20%</style>","升级<style=KeyWord>清除孢子</style>：
@@ -2286,7 +2373,7 @@ PerkEffectInformations_HuntersArsenal,"Current bonus:
 {5}","Bônus atual:
 {5}","현재 보너스:
 {5}"
-PerkName_PanicMovePoint,Stay Panic,Panique générale,胆战心惊,持續恐慌,滞在パニック,Стимулирующая паника,Панікуйте на здоров'я,Immer mit der Panik,Pánico constante,Pânico Estático,공포 유지
+PerkName_PanicMovePoint,Embrace Chaos,Étreindre le Chaos,拥抱混乱,擁抱混沌,混沌を抱く,Объять Хаос,Прийняти Хаос,Chaos Umarmen,Abrazar el Caos,Abraçar o Caos,혼돈 수용
 PerkDescription_PanicMovePoint,"Every {0} of the <style=Panic>Panic Gauge</style> filled, get:
 {1}
 {5}
@@ -2484,3 +2571,258 @@ DivergenceEffectShortDescription_AddPerk_ReduceCritCurse,<style=Number>-3%</styl
 DivergenceEffectFullDescription_AddPerk_ReduceCritCurse_2,Whenever a <style=divergenceOutline><style=KeyWord>critical hit</style></style> is landed: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style> <style=divergenceoutline><style=critical>Critical</style></style> until the end of the <style=divergenceOutline><style=Night>Night</style></style>.,Quand un <style=divergenceOutline><style=Critical>Coup Critique</style></style> est infligé<nbsp>: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style> <style=divergenceoutline><style=critical>Critique</style></style> jusqu'à la fin de la <style=divergenceOutline><style=Night>Nuit</style></style>.,每造成一次<style=divergenceOutline><style=KeyWord>暴击</style></style>：<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style><style=divergenceOutline><style=critical>暴击</style></style>，效果持续至<style=divergenceOutline><style=Night>夜晚</style></style>结束。,每當造成一次<style=divergenceOutline><style=KeyWord>暴擊</style></style>時：<style=divergenceoutline><style=critical>暴擊</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style>，持續到<style=divergenceOutline><style=Night>夜晚</style></style>結束為止。,<style=divergenceOutline><style=KeyWord>会心ヒット</style></style>発生時:<style=divergenceOutline><style=Night>夜</style></style>終了まで<style=divergenceoutline><style=critical>会心</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style>。,За каждый <style=divergenceOutline><style=KeyWord>критический удар</style></style> герои до конца <style=divergenceOutline><style=Night>ночи</style></style> получают <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style> к <style=divergenceoutline><style=critical>шансу критического урона</style></style>.,Коли завдано <style=divergenceOutline><style=KeyWord>критичний удар</style></style>: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style> <style=divergenceoutline><style=critical>шансу критичного удару</style></style> до кінця <style=divergenceOutline><style=Night>ночі</style></style>.,Immer wenn ein <style=divergenceOutline><style=KeyWord>kritischer Treffer</style></style> gelandet wird: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7 %</style></style> <style=divergenceoutline><style=critical>kritischer Treffer</style></style> bis zum Ende der <style=divergenceOutline><style=Night>Nacht</style></style>.,Cuando se inflige un <style=divergenceOutline><style=KeyWord>golpe crítico</style></style>: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7 %</style></style> al <style=divergenceoutline><style=critical>crítico</style></style> hasta que acabe la <style=divergenceOutline><style=Night>noche</style></style>.,Sempre que houver um <style=divergenceOutline><style=KeyWord>acerto crítico</style></style>: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style> de <style=divergenceoutline><style=critical>Crítico</style></style> até o fim da <style=divergenceOutline><style=Night>Noite</style></style>.,<style=divergenceOutline><style=KeyWord>치명타</style></style>가 발생할 때마다: <style=divergenceOutline><style=Night>밤</style></style>이 끝날 때까지 <style=divergenceoutline><style=critical>치명타</style></style> <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style>
 DivergenceEffectFullDescriptionTooltip_AddPerk_ReduceCritCurse_2,Whenever a <style=KeyWord>critical hit</style> is landed: <style=KeywordNb>-7%</style> <style=critical>Critical</style> until the end of the <style=Night>Night</style>.,Quand un <style=Critical>Coup Critique</style> est infligé<nbsp>: <style=KeywordNb>-7%</style> <style=critical>Critique</style> jusqu'à la fin de la <style=Night>Nuit</style>.,每造成一次<style=KeyWord>暴击</style>：<style=KeywordNb>-7%</style><style=critical>暴击</style>，效果持续至<style=Night>夜晚</style>结束。,每當造成一次<style=KeyWord>暴擊</style>時：<style=critical>暴擊</style><style=KeywordNb>-7%</style>，持續到<style=Night>夜晚</style>結束為止。,<style=KeyWord>会心ヒット</style>発生時:<style=Night>夜</style>終了まで<style=critical>会心</style><style=KeywordNb>-7%</style>。,За каждый <style=KeyWord>критический удар</style> герои до конца <style=Night>ночи</style> получают <style=KeywordNb>-7%</style> к <style=critical>шансу критического урона</style>.,Коли завдано <style=KeyWord>критичний удар</style>: <style=KeywordNb>-7% </style><style=critical>шансу критичного удару</style> до кінця <style=Night>ночі</style>.,Immer wenn ein <style=KeyWord>kritischer Treffer</style> gelandet wird: <style=KeywordNb>-7 % </style><style=critical>kritischer Treffer</style> bis zum Ende der <style=Night>Nacht</style>.,Cuando se inflige un <style=KeyWord>golpe crítico</style>: <style=KeywordNb>-7 %</style> al <style=critical>crítico</style> hasta que acabe la <style=Night>noche</style>.,Sempre que houver um <style=KeyWord>acerto crítico</style>: <style=KeywordNb>-7% de </style><style=critical>Crítico</style> até o fim da <style=Night>Noite</style>.,<style=KeyWord>치명타</style>가 발생할 때마다: <style=Night>밤</style>이 끝날 때까지 </style><style=critical>치명타 <style=KeywordNb>-7%</style>
 DivergenceEffectShortDescription_AddPerk_ReduceCritCurse_2,<style=Number>-7%</style> <style=critical>Critical</style>,<style=Number>-7%</style> <style=critical>Critique</style>,<style=Number>-7%</style> <style=critical>暴击</style>,<style=critical>暴擊</style><style=Number>-7%</style>,<style=critical>会心</style><style=Number>-7%</style>,<style=Number>-7%</style> к <style=critical>шансу критического урона</style>,<style=Number>-7%</style> <style=critical>шансу критичного удару</style>,<style=Number>-7 %</style> <style=critical>kritischer Treffer</style>,<style=Number>-7 %</style> al <style=critical>crítico</style>,<style=Number>-7%</style> de <style=critical>Crítico</style>,<style=critical>치명타</style> <style=Number>-7%</style>
+"PerkEffectInformations_ThirdEye","Enemies to hit: {4}","Ennemis à toucher<nbsp>: {4}","还需击中的敌人数量：{4}","還需擊中的敵人數量：{4}","攻撃するエネミー: {4}","Ещё попаданий: {4}","Ще ударити ворогів: {4}","zu treffende Gegner: {4}","Enemigos por golpear: {4}","Inimigos a serem golpeados: {4}","명중해야 하는 적: {4}"
+"PerkDescription_HeadOn","Every <style=KeyWord>{0} tiles traveled</style> (excluding <style=""Skill"">skills</style> with <style=NoMomentum>No Momentum</style>), the next attack gets:
+{1}.
+{2}, {4}.
+<style=Attenuated>This modifier doesn't stack.</style>","Toutes les <style=KeyWord>{0} cases parcourues</style> (excluant les <style=""Skill"">compétences</style> <style=NoMomentum>Sans Inertie</style>), la prochaine attaque gagne<nbsp>:
+{1}.
+{2}, {4}.
+<style=Attenuated>Ce modificateur n'est pas cumulable.</style>","每<style=KeyWord>移动{0}格</style>（不包含<style=NoMomentum>横冲直撞无效</style>的<style=""Skill"">技能</style>），下一次攻击将获得：
+{1}
+{2}, {4}
+<style=Attenuated>此加成不可叠加。</style>","每<style=KeyWord>移動{0}格</style>（不包含<style=NoMomentum>橫衝直撞無效</style>的<style=""Skill"">技能</style>），下一次攻擊將獲得：
+{1}
+{2}, {4}
+<style=Attenuated>此加成不可疊加。</style>","<style=KeyWord>{0}タイル移動</style>するごとに(<style=NoMomentum>衝撃無し</style><style=""Skill"">スキル</style>は除く)、次の攻撃に以下の効果を付与する:
+{1}。
+{2}, {4}。
+<style=Attenuated>この効果は重複しない</style>。","<style=KeyWord>Пройдя {0} яч.</style> (<style=""Skill"">навыки</style> со свойством <style=NoMomentum>""Без разгона""</style> не считаются), герой получает бонус к следующей атаке:
+{1}.
+{2}, {4}.
+<style=Attenuated>Эффект не накапливается.</style>","За кожні <style=KeyWord>{0} подолані плитки</style> (за винятком <style=""Skill"">вмінь</style> <style=NoMomentum>без імпульсу</style>), наступна атака отримує:
+{1}.
+{2}, {4}.
+<style=Attenuated>Цей модифікатор не поєднується.</style>","Für alle <style=KeyWord>{0} zurückgelegten Felder</style> (mit Ausnahme von <style=""Skill"">Fähigkeiten</style> mit <style=NoMomentum>Kein Momentum</style>), hat der nächste Angriff:
+{1}.
+{2}, {4}.
+<style=Attenuated>Dieser Modifikator ist nicht stapelbar.</style>","Al cruzar <style=KeyWord>{0} casillas</style> (excepto con <style=""Skill"">habilidades</style> <style=NoMomentum>sin impulso</style>), el siguiente ataque obtiene:
+{1}.
+{2}, {4}.
+<style=Attenuated>Este modificador no se acumula.</style>","A cada <style=KeyWord>{0} casas percorridas</style> (excluindo <style=""Skill"">habilidades</style> <style=NoMomentum>Sem Impulso</style>), o próximo ataque recebe:
+{1}.
+{2}, {4}.
+<style=Attenuated>Este modificador não acumula.</style>","<style=KeyWord>{0}타일을 이동</style>할 때마다 (<style=NoMomentum>기세 없음</style>을 보유한 <style=""Skill"">스킬</style> 제외) 다음 차례 공격에 적용:
+{1}
+{2}, {4}
+<style=Attenuated>해당 보정치는 중첩되지 않음</style>"
+"PerkEffectInformations_HeadOn","Tiles to travel: {3}","Cases à parcourir<nbsp>: {3}","还需移动格数：{3}","還需移動格數：{3}","移動するタイル: {3}","Осталось пройти: {3} яч.","Подолати плиток: {3}","Felder zurückzulegen: {3}","Casillas que atravesar: {3}","Casas a serem percorridas: {3}.","이동 타일: {3}"
+"PerkDescription_Nimble","As long as the Hero is at <style=KeyWord>full Health</style>:
+{0}.
+{1}.
+{2}.","Tant que le Héros est en <style=KeyWord>pleine santé</style><nbsp>:
+{0}.
+{1}.
+{2}.","当英雄处于<style=KeyWord>满血状态</style>时：
+{0}
+{1}
+{2}","當英雄處於<style=KeyWord>滿血狀態</style>時：
+{0}
+{1}
+{2}","英雄の体力が<style=KeyWord>満タン</style>の間:
+{0}。
+{1}。
+{2}。","Пока у героя <style=KeyWord>полное здоровье</style>:
+{0}.
+{1}.
+{2}.","Поки герой має <style=KeyWord>повне здоров'я</style>:
+ {0}.
+ {1}.
+{2}.","Solange der Held <style=KeyWord>volle Gesundheit</style> hat:
+{0}.
+{1}.
+{2}.","Mientras el héroe tenga <style=KeyWord>salud plena</style>:
+{0}.
+{1}.
+{2}.","Enquanto o Herói estiver com <style=KeyWord>Saúde cheia</style>:
+{0}.
+{1}.
+{2}.","영웅이 <style=KeyWord>체력 만땅</style>인 경우:
+{0}
+{1}
+{2}"
+"PerkDescription_DeadlyRanger","For each {4} <style=Keyword>equipped</style>: {0}.
+For each {5} <style=Keyword>equipped</style>: {1}.
+<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Pour chaque {4} <style=Keyword>équipée</style> : {0}.
+Pour chaque {5} <style=Keyword>équipée</style> : {1}.
+<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","每<style=Keyword>装备</style>一件{4}：{0}。
+每<style=Keyword>装备</style>一件{5}：{1}。
+<style=""ElfIcon""></style><style=""ElfText"">《琥珀幽森的精灵》DLC</style>","每<style=Keyword>裝備</style>一個{4}：{0}。
+每<style=Keyword>裝備</style>一個{5}：{1}。
+<style=""ElfIcon""></style><style=""ElfText"">〈琥珀幽森的精靈〉DLC</style>","<style=Keyword>装備している</style>{4}ごとに: {0}。
+<style=Keyword>装備している</style>{5}ごとに: {1}。
+<style=""ElfIcon""></style><style=""ElfText"">アンバーワルドのエルフDLC</style>","Каждое <style=Keyword>взятое в руки</style> {4} даёт бонус: {0}.
+Каждое <style=Keyword>взятое в руки</style> {5} даёт бонус: {1}.
+<style=""ElfIcon""></style><style=""ElfText"">Дополнительный контент ""Elves of Amberwald""</style>","За кож. {4} <style=Keyword>у спорядженні</style>: {0}.
+За кож. {5} <style=Keyword>у спорядженні</style>: {1}.
+<style=""ElfIcon""></style><style=""ElfText"">Доповнення Elves of Amberwald</style>","Für jede <style=Keyword>ausgerüstete</style> {4}: {0}.
+Für jede <style=Keyword>ausgerüstete</style> {5}: {1}.
+<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Por cada {4} <style=Keyword>equipada</style>: {0}.
+Por cada {5} <style=Keyword>equipada</style>: {1}.
+<style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","Para cada {4} <style=Keyword>equipada</style>: {0}.
+Para cada {5} <style=Keyword>equipada</style>: {1}.
+<style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","<style=Keyword>장착</style>한 {4} 하나당: {0}
+<style=Keyword>장착</style>한 {5} 하나당: {1}
+<style=""ElfIcon""></style><style=""ElfText"">암버발트의 엘프 DLC</style>"
+"PerkEffectInformations_DeadlyRanger","Current bonus:
+{2}
+{3}","Bonus actuel :
+{2}
+{3}","当前加成：
+{2}
+{3}","目前加成：
+{2}
+{3}","現在のボーナス:
+{2}
+{3}","Текущий бонус:
+{2};
+{3}.","Поточний бонус:
+{2}
+{3}","Aktueller Bonus:
+{2}
+{3}","Bonificación actual:
+{2}
+{3}","Bônus atual:
+{2}
+{3}","현재 보너스:
+{2}
+{3}"
+"PerkEffectInformations_Sentry","{5}","{5}","{5}","{5}","{5}","{5}","{5}","{5}","{5}","{5}","{5}"
+"PerkDescription_Stunning","{0}.
+When <style=KeyWord>attacking</style> a <style=Stun>stunned</style> unit: {1} <style=PerkDamage>Perk Damage</style>.","{0}.
+Lorsqu'une unité <style=Stun>étourdie</style> est <style=KeyWord>attaquée</style> : {1} de <style=PerkDamage>Dégâts de talent</style>.","{0}
+当<style=KeyWord>攻击</style><style=Stun>眩晕</style>的敌人时：{1}<style=PerkDamage>天赋伤害</style>","{0}
+當<style=KeyWord>攻擊</style><style=Stun>眩暈</style>的敵人時：{1}<style=PerkDamage>天賥傷害</style>","{0}。
+<style=Stun>スタン</style>状態のユニットを<style=KeyWord>攻撃</style>時: {1}<style=PerkDamage>パークダメージ</style>。","{0}.
+При <style=KeyWord>атаке</style> <style=Stun>оглушённой</style> цели: {1} <style=PerkDamage>Урона от перка</style>.","{0}.
+Під час <style=KeyWord>атаки</style> <style=Stun>оглушеного</style> монстра: {1} <style=PerkDamage>Шкоди від перка</style>.","{0}.
+Beim <style=KeyWord>Angriff</style> auf eine <style=Stun>betäubte</style> Einheit: {1} <style=PerkDamage>Perk-Schaden</style>.","{0}.
+Al <style=KeyWord>atacar</style> a una unidad <style=Stun>aturdida</style>: {1} de <style=PerkDamage>Daño de beneficio</style>.","{0}.
+Quando <style=KeyWord>atacar</style> uma unidade <style=Stun>atordoada</style>: {1} de <style=PerkDamage>Dano de Vantagem</style>.","{0}
+<style=Stun>기절</style> 상태인 유닛을 <style=KeyWord>공격</style>할 경우: {1}"
+"PerkDescription_Warcry","Every {0} <style=KeyWord>missing</style> {1} or {2}:
+{3}, up to {8}, to <style=KeyWord>all</style> Heroes at the <style=KeyWord>start</style> of the Heroes' turn.
+<style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Tous les {0} de {1} ou {2} <style=KeyWord>manquants</style><nbsp>:
+{3}, jusqu'à un maximum de {8}, à <style=KeyWord>tous</style> les Héros au <style=KeyWord>début</style> du tour des Héros.
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","{1} or {2} 每 <style=KeyWord>缺少</style> {0}  :
+在英雄回合<style=KeyWord>开始</style>时，<style=KeyWord>所有</style>英雄获得 {3}，上限为 {8}。
+
+<style=""DwarfIcon""></style><style=""DwarfText"">卢恩堡的矮人DLC</style>","{1} or {2} 每 <style=KeyWord>缺少</style> {0} :
+在英雄回合<style=KeyWord>開始</style>時，<style=KeyWord>所有</style>英雄獲得 {3}，上限為 {8}。
+
+<style=""DwarfIcon""></style><style=""DwarfText"">盧恩堡的矮人DLC</style>","{0}<style=KeyWord>失う</style>毎に{1}または{2}:
+英雄のターン<style=KeyWord>開始</style>時に<style=KeyWord>すべての</style>英雄に{3}（{8}まで）。
+
+<style=""DwarfIcon""></style><style=""DwarfText"">ルーネンベルクのドワーフDLC</style>","За каждые <style=KeyWord>недостающие </style> {0} ед. ({1} или {2}):
+{3} (но не более {8}) <style=KeyWord>всем</style> героям в <style=KeyWord>начале</style> хода.
+
+<style=""DwarfIcon""></style><style=""DwarfText"">Дополнительный контент ""Dwarves of Runenberg""</style>","За кожні {0} <style=KeyWord> браку параметра </style> {1} чи {2}:
+{3}, але не більше {8}, <style=KeyWord>всім</style> героям <style=KeyWord>на початку</style> ходу героїв.
+
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC «Dwarves of Runenberg»</style>","Jede {0} <style=KeyWord>, die</style> {1} oder {2} <style=KeyWord>verbraucht</style>:
+{3}, bis zu {8}, für <style=KeyWord>alle</style> Helden zu <style=KeyWord>Beginn</style>des Zuges der Helden.
+
+<style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Por cada {0} de {1} o {2} <style=KeyWord>que hayas perdido</style>:
+{3}, hasta un máximo de {8}, a <style=KeyWord>todos</style> los héroes al <style=KeyWord>comienzo</style> del turno de los héroes.
+
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","A cada {0} de {1} ou {2} a <style=KeyWord>menos</style>:
+{3}, até no máximo {8}, para <style=KeyWord>todos</style> os Heróis no <style=KeyWord>início</style> do turno dos Heróis.
+
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","{0} {1} 또는 {2}을 <style=KeyWord>상실</style>할 때마다:
+영웅의 턴이 <style=KeyWord>시작</style>될 때 <style=KeyWord>모든</style> 영웅에 {3}(최대 {8}) 효과 부여
+
+<style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
+"BuildingUpgradeTooltipDescription_UpgradeSlowTrap0","• <style=MovePoints>Move Points</style> <style=Debuff>Debuff</style> <style=Number>-2</style> > <style=GoodNbOutlined>-3</style>
+• <style=OverallDamage>Damage</style> <style=""Number"">40-70</style> > <style=GoodNbOutlined>60-105</style>
+<#F35934>This will upgrade <b>every</b> Slow Trap at once.</color>","• <style=Debuff>Atténuation</style> des <style=MovePoints>Points de Mouvement</style> <style=Number>-2</style> > <style=GoodNbOutlined>-3</style>
+• <style=OverallDamage>Dégâts</style> <style=""Number"">40-70</style> > <style=GoodNbOutlined>60-105</style>
+<#F35934>Cela améliorera <b>tous</b> les Pièges ralentissant en même temps.</color>","• <style=MovePoints>步数</style><style=Debuff>减益</style> <style=Number>-2</style> > <style=GoodNbOutlined>-3</style>
+• <style=OverallDamage>伤害</style> <style=""Number"">40-70</style> > <style=GoodNbOutlined>60-105</style>
+<#F35934>此升级将对<b>所有</b>缓速陷阱生效。</color>","• <style=MovePoints>步數</style><style=Debuff>減益效果</style><style=Number>-2</style> > <style=GoodNbOutlined>-3</style>
+• <style=OverallDamage>傷害</style> <style=""Number"">40-70</style> > <style=GoodNbOutlined>60-105</style>
+<#F35934>會同時升級<b>所有</b>緩速陷阱。</color>","・<style=MovePoints>移動ポイント</style> <style=Debuff>低下</style> <style=Number>-2</style> > <style=GoodNbOutlined>-3</style>
+・<style=OverallDamage>ダメージ</style> <style=""Number"">40-70</style> > <style=GoodNbOutlined>60-105</style>
+<#F35934>これは<b>すべて</b>のスロートラップを同時に強化する。</color>","• <style=MovePoints>Очки перемещения</style>: <style=Number>-2</style> > <style=GoodNbOutlined>-3</style>.
+• <style=OverallDamage>Урон</style>: <style=""Number"">40-70</style> > <style=GoodNbOutlined>60-105</style>
+<#F35934>Это улучшение действует <b>на все</b> замедляющие ловушки.</color>","• <style=Debuff>Штраф</style> до <style=MovePoints>очок руху</style> <style=Number>-2</style> > <style=GoodNbOutlined>-3</style>
+• <style=OverallDamage>Шкода</style> <style=""Number"">40-70</style> > <style=GoodNbOutlined>60-105</style>
+<#F35934>Це одразу поліпшує <b>всі</b> пастки сповільнення.</color>","• <style=MovePoints>Bewegungspunkte</style>-<style=Debuff>Schwächung</style> <style=Number>-2</style> > <style=GoodNbOutlined>-3</style>.
+• <style=OverallDamage>Schaden</style> <style=""Number"">40-70</style> > <style=GoodNbOutlined>60-105</style>
+<#F35934>Dadurch wird <b>jede</b> Verlangsamungsfalle auf einmal verbessert.</color>","• <style=Debuff>Desventaja</style> de los <style=MovePoints>puntos de movimiento</style>: <style=Number>-2</style> > <style=GoodNbOutlined>-3</style>
+• <style=OverallDamage>Daño</style> <style=""Number"">40-70</style> > <style=GoodNbOutlined>60-105</style>
+<#F35934>Mejora <b>todas</b> las trampas de ralentí a la vez.</color>","• <style=Debuff>Ônus</style> de <style=MovePoints>Pontos de Movimento:</style> <style=Number>-2</style> > <style=GoodNbOutlined>-3</style>
+• <style=OverallDamage>Dano</style> <style=""Number"">40-70</style> > <style=GoodNbOutlined>60-105</style>
+<#F35934>Melhora de uma vez só <b>TODAS</b> as Armadilhas Retardantes.</color>","• <style=MovePoints>이동력</style> <style=Debuff>디버프</style> <style=Number>-2</style> > <style=GoodNbOutlined>-3</style>
+• <style=OverallDamage>피해</style> <style=""Number"">40-70</style> > <style=GoodNbOutlined>60-105</style>
+<#F35934><b>모든</b> 둔화 함정을 동시에 강화합니다.</color>"
+"BuildingUpgradeTooltipDescription_UpgradeStunTrap0","• <style=TrapUse>Uses per Night</style> <style=Number>1</style> > <style=GoodNbOutlined>2</style>
+• <style=OverallDamage>Damage</style> <style=""Number"">80-130</style> > <style=GoodNbOutlined>120-195</style>
+<#F35934>This will upgrade <b>every</b> Stun Trap at once.</color>","• <style=TrapUse>Utilisations par nuit</style> <style=Number>1</style> > <style=GoodNbOutlined>2</style>
+• <style=OverallDamage>Dégâts</style> <style=""Number"">80-130</style> > <style=GoodNbOutlined>120-195</style>
+<#F35934>Cela améliorera <b>tous</b> les Pièges étourdissant en même temps.</color>","• <style=TrapUse>每晚使用次数</style> <style=Number>1</style> > <style=GoodNbOutlined>2</style>
+• <style=OverallDamage>伤害</style> <style=""Number"">80-130</style> > <style=GoodNbOutlined>120-195</style>
+<#F35934>此升级将对<b>所有</b>眩晕陷阱生效。</color>","• <style=TrapUse>每晚使用次數</style><style=Number>1</style> > <style=GoodNbOutlined>2</style>
+• <style=OverallDamage>傷害</style> <style=""Number"">80-130</style> > <style=GoodNbOutlined>120-195</style>
+<#F35934>會同時升級<b>所有</b>暈眩陷阱。</color>","・<style=TrapUse>1夜あたりの使用回数</style> <style=Number>1</style> > <style=GoodNbOutlined>2</style>
+・<style=OverallDamage>ダメージ</style> <style=""Number"">80-130</style> > <style=GoodNbOutlined>120-195</style>
+<#F35934>これは<b>すべて</b>のスタントラップを同時に強化する。</color>","• <style=TrapUse>Зарядов на ночь</style>: <style=Number>1</style> > <style=GoodNbOutlined>2</style>.
+• <style=OverallDamage>Урон</style>: <style=""Number"">80-130</style> > <style=GoodNbOutlined>120-195</style>
+<#F35934>Это улучшение действует <b>на все</b> оглушающие ловушки.</color>","• <style=TrapUse>Активацій за ніч</style> <style=Number>1</style> > <style=GoodNbOutlined>2</style>
+• <style=OverallDamage>Шкода</style> <style=""Number"">80-130</style> > <style=GoodNbOutlined>120-195</style>
+<#F35934>Це поліпшує <b>всі</b> пастки дезорієнтації одразу.</color>","• <style=TrapUse>Nutzung pro Nacht</style> <style=Number>1</style> > <style=GoodNbOutlined>2</style>
+• <style=OverallDamage>Schaden</style> <style=""Number"">80-130</style> > <style=GoodNbOutlined>120-195</style>
+<#F35934>Dadurch wird <b>jede</b> Betäubungsfalle auf einmal verbessert.</color>","• <style=TrapUse>Usos por noche</style>: <style=Number>1</style> > <style=GoodNbOutlined>2</style>
+• <style=OverallDamage>Daño</style> <style=""Number"">80-130</style> > <style=GoodNbOutlined>120-195</style>
+<#F35934>Mejora <b>todas</b> las trampas de aturdimiento a la vez.</color>","• <style=TrapUse>Usos por noite</style>: <style=Number>1</style> > <style=GoodNbOutlined>2</style>
+• <style=OverallDamage>Dano</style> <style=""Number"">80-130</style> > <style=GoodNbOutlined>120-195</style>
+<#F35934>Melhora de uma vez só <b>TODAS</b> as Armadilhas Atordoantes.</color>","• <style=TrapUse>하룻밤 사용 횟수</style> <style=Number>1</style> > <style=GoodNbOutlined>2</style>
+• <style=OverallDamage>피해</style> <style=""Number"">80-130</style> > <style=GoodNbOutlined>120-195</style>
+<#F35934><b>모든</b> 기절 함정을 동시에 강화합니다.</color>"
+"ApocalypseModifierTitle_EnemyLateBuffModifier","Last-Ditch Charge","Charge Désespérée","背水一战","背水一戰","最後の突撃","Отчаянный Натиск","Відчайдушний Натиск","Verzweifelter Ansturm","Carga Desesperada","Investida Desesperada","최후의 돌격"
+"BuildingUpgradeTooltipDescription_UpgradeBallistaToBallistaSplit0","Becomes a <style=KeyWord>Split Ballista</style>:
+• <style=OverallDamage>Damage</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• <style=KeyWord>Fires</style> <style=""GoodNbOutlined"">3 times</style> per turn, assuming targets are available (<style=KeyWord>can't shoot the same target twice</style>).
+• <style=""Bad"">Blocks</style> <style=LineOfSight>Line of Sight</style>.
+<style=Attenuated>Incompatible with upgrades Mounted Ballista and Heavy Ballista</style>","Améliorer en <style=KeyWord>Balliste à multiple projectile</style>:
+• <style=OverallDamage>Dégâts</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• <style=KeyWord>Tire</style> <style=""GoodNbOutlined"">3 fois</style> par tour, s'il y a des cibles valide (<style=KeyWord>ne peut pas tirer deux fois sur la même cible</style>).
+• <style=""Bad"">Bloque</style> la <style=LineOfSight>Ligne de vue</style>.
+<style=Attenuated>Incompatible avec les améliorations Balliste Montée et Balliste Lourde</style>","升级为<style=KeyWord>散射弩车</style>：
+• <style=OverallDamage>伤害</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• 有符合条件目标的情况下每回合可<style=KeyWord>发射</style><style=""GoodNbOutlined"">3次</style>（<style=KeyWord>无法重复攻击同一个目标</style>）。
+• 会<style=""Bad"">阻挡</style><style=LineOfSight>视线</style>。
+<style=Attenuated>无法与兼容升级价高弩车或重型弩车兼容</style>","升級為<style=KeyWord>多發弩車</style>：
+• <style=OverallDamage>傷害</style><style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>。
+• 目標足夠時，每回合最多可<style=KeyWord>發射</style><style=""GoodNbOutlined"">3次</style>（<style=KeyWord>單一回合無法重複射擊同一目標</style>）。
+• 會<style=""Bad"">阻擋</style><style=LineOfSight>視線</style>。
+<style=Attenuated>此升級、「加高弩車」、「重型弩車」只能擇一使用</style>","<style=KeyWord>スプリットバリスタ</style>になる:
+・<style=OverallDamage>ダメージ</style><style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+・有効なターゲットがいる場合、1ターンに<style=""GoodNbOutlined"">3回</style><style=KeyWord>発射</style>する(<style=KeyWord>同じターゲットを2回以上撃つことはない</style>)。
+・<style=LineOfSight>視界</style>を<style=""Bad"">遮る</style>。
+<style=Attenuated>固定バリスタとヘビーバリスタの強化とは両立できない。</style>","Улучшает до <style=KeyWord>залповой баллисты</style>:
+• наносит <style=""Number"">124–190</style> > <style=""BadNbOutlined"">100–140</style> <style=OverallDamage>урона</style>;
+• <style=KeyWord>стреляет</style> <style=""GoodNbOutlined"">трижды</style> за ход, если есть цели;<style=KeyWord>не стреляет дважды в одну цель</style>;
+• <style=""Bad"">блокирует</style> <style=LineOfSight>линию видимости</style>.
+<style=Attenuated>Несовместимо с улучшениями ""Высокая баллиста"" и ""Тяжёлая баллиста""</style>","Стане <style=KeyWord>рознесеною балістою</style>:
+• <style=OverallDamage>Шкода</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• <style=KeyWord>Стріляє</style> <style=""GoodNbOutlined"">3 рази</style> за хід, якщо є цілі (<style=KeyWord>не може вразити одну ціль двічі</style>).
+• <style=""Bad"">Блокує</style> <style=LineOfSight>лінію видимості</style>.
+<style=Attenuated>Несумісно з поліпшеннями «Балiста на опорi» й «Важка баліста»</style>","Wird zu <style=KeyWord>Dreischuss-Balliste</style>:
+ • <style=OverallDamage>Schaden</style> <style=""Number"">124–190</style> > <style=""BadNbOutlined"">100–140</style>
+ • <style=KeyWord>Schießt</style> <style=""GoodNbOutlined"">dreimal</style> pro Runde, vorausgesetzt Ziele sind verfügbar (<style=KeyWord>kann nicht zweimal auf das gleiche Ziel schießen</style>).
+ • <style=""Bad"">Blockiert</style> die <style=LineOfSight>Sichtlinie</style>.
+<style=Attenuated>Nicht kompatibel mit den Verbesserungen „Erhöhte Balliste“ und „Schwere Balliste“</style>.","Se convierte en una <style=KeyWord>balista triple</style>:
+• <style=OverallDamage>Daño</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• <style=KeyWord>Dispara</style> <style=""GoodNbOutlined"">3 veces</style> por turno mientras haya objetivos disponibles (<style=KeyWord>no puede disparar dos veces al mismo objetivo</style>).
+• <style=""Bad"">Obstaculiza</style> el <style=LineOfSight>campo visual</style>.
+<style=Attenuated>Incompatible con las siguientes mejoras: balista elevada y balista pesada</style>.","Vira uma <style=KeyWord>Balista Dividida</style>:
+• <style=OverallDamage>Dano</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• <style=KeyWord>Dispara</style> <style=""GoodNbOutlined"">3 vezes</style> por turno, desde que haja alvos disponíveis (<style=KeyWord>não atira no mesmo alvo duas vezes</style>).
+• <style=""Bad"">Bloqueia</style> a <style=LineOfSight>Linha de Visão</style>.
+<style=Attenuated>Incompatível com as melhorias Balista Montada e Balista Pesada</style>","<style=KeyWord>분할 노포</style>로 강화:
+• <style=OverallDamage>피해</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• 표적을 전부 확보한 경우 한 턴에 <style=""GoodNbOutlined"">3번</style> <style=KeyWord>발사</style>합니다(<style=KeyWord>한 대상에 2번 발사하지는 않습니다</style>).
+• <style=LineOfSight>조준선</style>을 <style=""Bad"">가로막습니다</style>.
+<style=Attenuated>증축 노포 및 중형 노포 강화와 호환 불가</style>"
+"ResearchName_PerkPanicMovePointResearch","Embrace Chaos","Étreindre le Chaos","拥抱混乱","擁抱混沌","混沌を抱く","Объять Хаос","Прийняти Хаос","Chaos Umarmen","Abrazar el Caos","Abraçar o Caos","혼돈 수용"
+"PerkDescription_FastToxins","{0}.","{0}.","{0}.","{0}.","{0}。","{0}.","{0}.","{0}.","{0}.","{0}.","{0}"

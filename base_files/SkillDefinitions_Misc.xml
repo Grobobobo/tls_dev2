@@ -1,0 +1,743 @@
+﻿<!--<SkillDefinitions xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+                  xs:noNamespaceSchemaLocation="http://cccp-dev.cblue.be/tmp/tls/SkillDefinitions.xsd">-->
+
+<!--
+  - SkillDefinition
+    - Element ValidTargets (optional) :
+        If not specified, all targets are valid.
+        If specified, only mentioned targets are targetable.
+        Usable targets : PlayableUnits, EnemyUnits, EmptyTiles, Building Id="BuildingId", SlotEffect Id="SlotEffectId".
+        Example : 
+        <ValidTargets>
+          <SlotEffect Id="FillEffectGauge"></SlotEffect>
+        </ValidTargets>
+    - Element AttackEffects (optional) :
+        Example :
+        <AttackEffects>
+          <AttackEffect Id="ArmorPiercing"/>
+          <AttackEffect Id="NoBlock"/>
+        </AttackEffects>
+    - Element Conditions (optional) :
+        If not specified, the skill will always be displayed
+        If specified, all conditions need to be valid
+        Usable conditions : InWatchtower, TargetInRange, OnlyDuringPhase (Production OR Deployment OR Night. In the following example, the skill will be available 
+         during the production phase OR the night AND if the target is in range)
+        Example : 
+        <Conditions>
+          <OnlyDuringPhase>
+            <Production/>
+            <Night/>
+          </OnlyDuringPhase>
+          <TargetInRange/>
+        </Conditions>
+-->
+
+<SkillDefinitions xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+                  xs:noNamespaceSchemaLocation="SkillDefinitions.xsd">
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- TESTS -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <SkillDefinition Id="TestFireball">
+      <DisplayDuringPhases>
+         <Deployment/>
+         <Night/>
+      </DisplayDuringPhases>
+      <AllowDuringPhases>
+         <Day/>
+      </AllowDuringPhases>
+      <ActionPointsCost>1</ActionPointsCost>
+      <ManaCost>6</ManaCost>
+      <Range Min="2" Max="5"/>
+      <AreaOfEffect OriginX="1" OriginY="1">
+         _X_
+         XXX
+         _X_
+      </AreaOfEffect>
+      <SkillAction>
+         <Attack>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <CriticProbability>10</CriticProbability>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="TestGeneric">
+      <ActionPointsCost>1</ActionPointsCost>
+      <Range Min="1" Max="8" CardinalDirectionOnly="false"/>
+      <AreaOfEffect OriginX="0" OriginY="0">
+         X
+         M
+      </AreaOfEffect>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <IgnoreLineOfSight/>
+               <Buff>
+                  <BaseChance>1</BaseChance>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="OverallDamage"/>
+                  <Bonus>30</Bonus>
+                  <TurnsCount>1</TurnsCount>
+               </Buff>
+               <Debuff>
+                  <BaseChance>1</BaseChance>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="Dodge"/>
+                  <Malus>15</Malus>
+                  <TurnsCount>1</TurnsCount>
+               </Debuff>
+               <Poison>
+                  <BaseChance>0.3</BaseChance>
+                  <DamagePerTurn>25</DamagePerTurn>
+                  <TurnsCount>2</TurnsCount>
+               </Poison>
+               <Stun>
+                  <BaseChance>0.9</BaseChance>
+               </Stun>
+               <Maneuver/>
+               <Propagation PropagationsCount="5"/>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.85" PropagationDelay="0.25">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="S">ShortBow/PowerShot/PowerShot_CasterBeforeS</Path>
+               <Path Orientation="N">ShortBow/PowerShot/PowerShot_CasterBeforeN</Path>
+               <Path Orientation="E">ShortBow/PowerShot/PowerShot_CasterBeforeE</Path>
+               <Path Orientation="W">ShortBow/PowerShot/PowerShot_CasterBeforeW</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>Caster</Target>
+         </VisualEffect>
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="S">ShortBow/PowerShot/PowerShot_TargetBeforeS</Path>
+               <Path Orientation="N">ShortBow/PowerShot/PowerShot_TargetBeforeN</Path>
+               <Path Orientation="E">ShortBow/PowerShot/PowerShot_TargetBeforeE</Path>
+               <Path Orientation="W">ShortBow/PowerShot/PowerShot_TargetBeforeW</Path>
+            </Paths>
+            <Delay>0.85</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>PropagationTiles</Target>
+         </VisualEffect>
+         <ManeuverFx>
+            <Speed>50</Speed>
+            <Delay>0</Delay>
+         </ManeuverFx>
+
+         <SoundEffect>
+            <Path>Shortbow/PowerShot/SFX_Skill_Shortbow_PowerShot</Path>
+            <Delay>0.0</Delay>
+         </SoundEffect>
+
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="TestRegen">
+      <ActionPointsCost>1</ActionPointsCost>
+      <Range Min="1" Max="8" CardinalDirectionOnly="false"/>
+      <AreaOfEffect OriginX="0" OriginY="0">
+         X
+      </AreaOfEffect>
+      <SkillAction>
+         <Generic>
+            <!--<AttackType>Physical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <CriticProbability>0</CriticProbability>-->
+            <SkillEffects>
+               <IgnoreLineOfSight/>
+               <RegenStat>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                  <Stat Id="Mana"/>
+                  <Bonus>15</Bonus>
+               </RegenStat>
+               <Propagation PropagationsCount="5"/>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.85" PropagationDelay="0.25">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicWand/Transfert/Transfert_AoeTargetNSEW</Path>
+            </Paths>
+            <Delay>0.31</Delay>
+            <SortingDepth>Behind</SortingDepth>
+            <Target>AoeOrigin</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicWand/Transfert/Transfert_TargetNSEW</Path>
+            </Paths>
+            <Delay>0.5</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicWand/Transfert/Transfert_HitTilesNSEW</Path>
+            </Paths>
+            <Delay>Random(0.62, 1)</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicWand/Transfert/Transfert_HitTilesNSEW</Path>
+            </Paths>
+            <Delay>Random(0.62, 1)</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>PropagationTiles</Target>
+         </VisualEffect>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Entangle_Cast_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="TestPoisonImmunity">
+      <ActionPointsCost>2</ActionPointsCost>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <NegativeStatusImmunityEffect>
+                  <Type Id="Poison"/>
+                  <TurnsCount>5</TurnsCount>
+               </NegativeStatusImmunityEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+      
+      <CastFXs TotalDuration="0.85" PropagationDelay="0.25">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicWand/Transfert/Transfert_AoeTargetNSEW</Path>
+            </Paths>
+            <Delay>0.31</Delay>
+            <SortingDepth>Behind</SortingDepth>
+            <Target>AoeOrigin</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicWand/Transfert/Transfert_TargetNSEW</Path>
+            </Paths>
+            <Delay>0.5</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicWand/Transfert/Transfert_HitTilesNSEW</Path>
+            </Paths>
+            <Delay>Random(0.62, 1)</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicWand/Transfert/Transfert_HitTilesNSEW</Path>
+            </Paths>
+            <Delay>Random(0.62, 1)</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>PropagationTiles</Target>
+         </VisualEffect>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Entangle_Cast_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="TestStunImmunity">
+      <ActionPointsCost>2</ActionPointsCost>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <NegativeStatusImmunityEffect>
+                  <Type Id="Stun"/>
+                  <TurnsCount>5</TurnsCount>
+               </NegativeStatusImmunityEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.85" PropagationDelay="0.25">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicWand/Transfert/Transfert_AoeTargetNSEW</Path>
+            </Paths>
+            <Delay>0.31</Delay>
+            <SortingDepth>Behind</SortingDepth>
+            <Target>AoeOrigin</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicWand/Transfert/Transfert_TargetNSEW</Path>
+            </Paths>
+            <Delay>0.5</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicWand/Transfert/Transfert_HitTilesNSEW</Path>
+            </Paths>
+            <Delay>Random(0.62, 1)</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicWand/Transfert/Transfert_HitTilesNSEW</Path>
+            </Paths>
+            <Delay>Random(0.62, 1)</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>PropagationTiles</Target>
+         </VisualEffect>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Entangle_Cast_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="TestDebuffImmunity">
+      <ActionPointsCost>2</ActionPointsCost>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <NegativeStatusImmunityEffect>
+                  <Type Id="Debuff"/>
+                  <TurnsCount>5</TurnsCount>
+               </NegativeStatusImmunityEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.85" PropagationDelay="0.25">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicWand/Transfert/Transfert_AoeTargetNSEW</Path>
+            </Paths>
+            <Delay>0.31</Delay>
+            <SortingDepth>Behind</SortingDepth>
+            <Target>AoeOrigin</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicWand/Transfert/Transfert_TargetNSEW</Path>
+            </Paths>
+            <Delay>0.5</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicWand/Transfert/Transfert_HitTilesNSEW</Path>
+            </Paths>
+            <Delay>Random(0.62, 1)</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicWand/Transfert/Transfert_HitTilesNSEW</Path>
+            </Paths>
+            <Delay>Random(0.62, 1)</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>PropagationTiles</Target>
+         </VisualEffect>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Entangle_Cast_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="TestAllNegativeImmunity">
+      <ActionPointsCost>2</ActionPointsCost>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <NegativeStatusImmunityEffect>
+                  <Type Id="AllNegative"/>
+                  <TurnsCount>2</TurnsCount>
+               </NegativeStatusImmunityEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.85" PropagationDelay="0.25">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicWand/Transfert/Transfert_AoeTargetNSEW</Path>
+            </Paths>
+            <Delay>0.31</Delay>
+            <SortingDepth>Behind</SortingDepth>
+            <Target>AoeOrigin</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicWand/Transfert/Transfert_TargetNSEW</Path>
+            </Paths>
+            <Delay>0.5</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicWand/Transfert/Transfert_HitTilesNSEW</Path>
+            </Paths>
+            <Delay>Random(0.62, 1)</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">MagicWand/Transfert/Transfert_HitTilesNSEW</Path>
+            </Paths>
+            <Delay>Random(0.62, 1)</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>PropagationTiles</Target>
+         </VisualEffect>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Entangle_Cast_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- PUNCH -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   
+   <SkillDefinition Id="Punch">
+      <ActionPointsCost>1</ActionPointsCost>
+      <Range Min="1" Max="1"/>
+      <SkillAction>
+         <Attack>
+            <BaseDamage Min="40" Max="50"/>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+         </Attack>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.2">
+         <SoundEffect>
+            <Path>00_Others/Punch/SFX_Skill_Punch</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.2</Delay>
+         </CamShake>
+      </CastFXs>
+   </SkillDefinition>
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- CONTEXTUAL SKILLS -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <SkillDefinition Id="GoIntoWatchtower" IsContextual="true">
+      <ValidTargets>
+         <Building Id="Watchtower" MustBeEmpty="true"/>
+      </ValidTargets>
+      <DisplayDuringPhases>
+         <Night/>
+      </DisplayDuringPhases>
+      <MovePointsCost>2</MovePointsCost>
+      <Range Min="1" Max="1"/>
+      <SkillAction>
+         <GoIntoWatchtower/>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="QuitWatchtower" IsContextual="true">
+      <ValidTargets>
+         <WalkableTiles/>
+      </ValidTargets>
+      <DisplayDuringPhases>
+         <Night/>
+      </DisplayDuringPhases>
+      <ContextualConditions>
+         <InWatchtower/>
+      </ContextualConditions>
+      <MovePointsCost>2</MovePointsCost>
+      <Range Min="1" Max="1"/>
+      <SkillAction>
+         <QuitWatchtower/>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="GoIntoWatchtowerFree" IsContextual="true">
+      <ValidTargets>
+         <Building Id="Watchtower" MustBeEmpty="true"/>
+      </ValidTargets>
+      <DisplayDuringPhases>
+         <Day/>
+      </DisplayDuringPhases>
+      <AllowDuringPhases>
+         <Day/>
+      </AllowDuringPhases>
+      <ContextualConditions>
+         <BuildingExist></BuildingExist>
+      </ContextualConditions>
+      <MovePointsCost>0</MovePointsCost>
+      <InfiniteRange/>
+      <SkillAction>
+         <GoIntoWatchtower/>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="QuitWatchtowerFree" IsContextual="true">
+      <ValidTargets>
+         <WalkableTiles/>
+      </ValidTargets>
+      <DisplayDuringPhases>
+         <Day/>
+      </DisplayDuringPhases>
+      <AllowDuringPhases>
+         <Day/>
+      </AllowDuringPhases>
+      <ContextualConditions>
+         <InWatchtower/>
+      </ContextualConditions>
+      <MovePointsCost>0</MovePointsCost>
+      <InfiniteRange/>
+      <SkillAction>
+         <QuitWatchtower/>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="JumpOverWall" IsContextual="true">
+      <ValidTargets>
+         <BuildingsList Id="JumpOverWallBuildingList"/>
+         <UncrossableGrounds/>
+      </ValidTargets>
+      <InvalidCastDisplayBehaviour>DisplayedUnavailable</InvalidCastDisplayBehaviour>
+      <MovePointsCost>3</MovePointsCost>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <Range Min="1" Max="1"/>
+      <AreaOfEffect OriginX="0" OriginY="0">
+         M
+         _
+      </AreaOfEffect>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Maneuver/>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.8">
+        <VisualEffect>
+          <Paths>
+            <Path Orientation="N">00_Others/TMP_EmptyAnimation</Path>
+            <Path Orientation="E">00_Others/TMP_EmptyAnimation</Path>
+            <Path Orientation="S">00_Others/JumpOverWall/JumpOverWall_CasterBehindS</Path>
+            <Path Orientation="W">00_Others/JumpOverWall/JumpOverWall_CasterBehindW</Path>
+          </Paths>
+          <Delay>0</Delay>
+          <SortingDepth>Behind</SortingDepth>
+          <Target>Caster</Target>
+        </VisualEffect>
+
+        <VisualEffect>
+          <Paths>
+            <Path Orientation="N">00_Others/JumpOverWall/JumpOverWall_CasterBeforeN</Path>
+            <Path Orientation="E">00_Others/JumpOverWall/JumpOverWall_CasterBeforeE</Path>
+            <Path Orientation="S">00_Others/TMP_EmptyAnimation</Path>
+            <Path Orientation="W">00_Others/TMP_EmptyAnimation</Path>
+          </Paths>
+          <Delay>0</Delay>
+          <SortingDepth>Before</SortingDepth>
+          <Target>Caster</Target>
+        </VisualEffect>
+
+        <VisualEffect>
+          <Paths>
+            <Path Orientation="S">00_Others/JumpOverWall/JumpOverWall_HitTilesBehindS</Path>
+            <Path Orientation="W">00_Others/JumpOverWall/JumpOverWall_HitTilesBehindW</Path>
+            <Path Orientation="N">00_Others/TMP_EmptyAnimation</Path>
+            <Path Orientation="E">00_Others/TMP_EmptyAnimation</Path>
+          </Paths>
+          <Delay>0.33</Delay>
+          <SortingDepth>Behind</SortingDepth>
+          <Target YTileOffset="1">AoeOrigin</Target>
+        </VisualEffect>
+
+        <VisualEffect>
+          <Paths>
+            <Path Orientation="N">00_Others/JumpOverWall/JumpOverWall_HitTilesBeforeN</Path>
+            <Path Orientation="E">00_Others/JumpOverWall/JumpOverWall_HitTilesBeforeE</Path>
+            <Path Orientation="S">00_Others/TMP_EmptyAnimation</Path>
+            <Path Orientation="W">00_Others/TMP_EmptyAnimation</Path>
+          </Paths>
+          <Delay>0.25</Delay>
+          <SortingDepth>Before</SortingDepth>
+          <Target YTileOffset="1">AoeOrigin</Target>
+        </VisualEffect>
+
+        <VisualEffect>
+          <Paths>
+            <Path Orientation="NSEW">00_Others/JumpOverWall/JumpOverWall_AoeBehindNSEW</Path>
+          </Paths>
+          <Delay>0.5</Delay>
+          <SortingDepth>Behind</SortingDepth>
+          <Target YTileOffset="1">AoeOrigin</Target>
+        </VisualEffect>
+        
+        <SoundEffect>
+          <Path>00_Others/JumpOverWall/SFX_Skill_WallLeap</Path>
+          <Delay>0</Delay>
+        </SoundEffect>
+
+        <ManeuverFx>
+          <Speed>20</Speed>
+          <Delay>0.17</Delay>
+        </ManeuverFx>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_JumpOverWall_</Path>
+         </CasterAnim>
+
+         <CamShake>
+            <Id>Hard Hit-CamShake</Id>
+            <Delay>0.5</Delay>
+         </CamShake>
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="UseTeleporter" IsContextual="true">
+      <ValidTargets>
+         <Building Id="Teleporter"/>
+      </ValidTargets>
+      <ContextualConditions>
+         <OntoBuilding>Teleporter</OntoBuilding>
+      </ContextualConditions>
+      <MovePointsCost>1</MovePointsCost>
+      <ManaCost>3</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <InfiniteRange/>
+      <AreaOfEffect OriginX="0" OriginY="0">
+         M
+      </AreaOfEffect>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Maneuver/>
+               <NoMomentum/>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="2">
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">WarpCrystal/Teleportation/Teleportation_Caster_BeforeNSEW</Path>
+            </Paths>
+            <Delay>0.44</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>CastFxSourceTile</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">WarpCrystal/Teleportation/Teleportation_Caster_BehindNSEW</Path>
+            </Paths>
+            <SortingDepth>Behind</SortingDepth>
+            <Target>CastFxSourceTile</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">WarpCrystal/Teleportation/Teleportation_Target_BeforeNSEW</Path>
+            </Paths>
+            <Delay>1.5</Delay>
+            <SortingDepth>Before</SortingDepth>
+            <Target>AoeOrigin</Target>
+         </VisualEffect>
+
+         <VisualEffect>
+            <Paths>
+               <Path Orientation="NSEW">WarpCrystal/Teleportation/Teleportation_Target_BehindNSEW</Path>
+            </Paths>
+            <Delay>1.62</Delay>
+            <SortingDepth>Behind</SortingDepth>
+            <Target>AoeOrigin</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>WarpCrystal/Teleportation/SFX_Skill_WarpCrystal_Teleportation1</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <SoundEffect>
+            <Path>WarpCrystal/Teleportation/SFX_Skill_WarpCrystal_Teleportation2</Path>
+            <Delay>1.62</Delay>
+         </SoundEffect>
+
+         <ManeuverFx>
+            <Speed>10000</Speed>
+            <Delay>0.69</Delay>
+         </ManeuverFx>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Teleportation_</Path>
+            <Delay>0.69</Delay>
+         </CasterAnim>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.69</Delay>
+         </CamShake>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>2</Delay>
+         </CamShake>
+      </CastFXs>
+   </SkillDefinition>
+</SkillDefinitions>

@@ -1,0 +1,88 @@
+﻿<ObjectiveDurationDefinitions xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+
+   <ObjectiveDurationDefinition Type="EndTurn" Id="Normal" DifficultyMultiplier="1">
+      <Turn Value="1" Weight="3" DifficultyMultiplier="4"/> <!--Old weight value : 3-->
+      <Turn Value="2" Weight="8" DifficultyMultiplier="2"/> <!--Old weight value : 7-->
+      <Turn Value="3" Weight="5" DifficultyMultiplier="1"/> <!--Old weight value : 2-->
+      <Turn Value="4" Weight="2" DifficultyMultiplier="0.5"/> <!--Old weight value : 1-->
+   </ObjectiveDurationDefinition>
+   
+   <ObjectiveDurationDefinition Type="EndTurn" Id="NormalInverted" DifficultyMultiplier="1">
+      <Turn Value="1" Weight="1" DifficultyMultiplier="0.75"/>
+      <Turn Value="2" Weight="4" DifficultyMultiplier="1.5"/>
+      <Turn Value="3" Weight="3" DifficultyMultiplier="2.5"/>
+      <Turn Value="4" Weight="1" DifficultyMultiplier="4"/>
+   </ObjectiveDurationDefinition>
+
+   <ObjectiveDurationDefinition Type="EndTurn" Id="NormalInverted2Turns" DifficultyMultiplier="1">
+      <Turn Value="1" Weight="8" DifficultyMultiplier="12"/>
+      <Turn Value="2" Weight="4" DifficultyMultiplier="4"/>
+   </ObjectiveDurationDefinition>
+
+   <ObjectiveDurationDefinition Type="EndTurn" Id="DontKillInverted2Turns" DifficultyMultiplier="1">
+      <Turn Value="1" Weight="8" DifficultyMultiplier="2"/>
+      <Turn Value="2" Weight="4" DifficultyMultiplier="0.75"/>
+   </ObjectiveDurationDefinition>
+
+   <ObjectiveDurationDefinition Type="EndTurn" Id="DontDealDamagesInverted2Turns" DifficultyMultiplier="1">
+      <Turn Value="1" Weight="8" DifficultyMultiplier="2"/>
+      <Turn Value="2" Weight="4" DifficultyMultiplier="0.75"/>
+   </ObjectiveDurationDefinition>
+
+   <ObjectiveDurationDefinition Type="EndTurn" Id="DontGetHit" DifficultyMultiplier="1">
+      <Turn Value="1" Weight="3" DifficultyMultiplier="8"/> 
+      <Turn Value="2" Weight="8" DifficultyMultiplier="4"/> 
+      <Turn Value="3" Weight="5" DifficultyMultiplier="2"/> 
+      <Turn Value="4" Weight="2" DifficultyMultiplier="1"/> 
+   </ObjectiveDurationDefinition>
+
+   <ObjectiveDurationDefinition Type="EndTurn" Id="DontUseMana" DifficultyMultiplier="1">
+      <Turn Value="1" Weight="3" DifficultyMultiplier="8"/> 
+      <Turn Value="2" Weight="8" DifficultyMultiplier="4"/> 
+      <Turn Value="3" Weight="5" DifficultyMultiplier="2"/> 
+      <Turn Value="4" Weight="2" DifficultyMultiplier="1"/> 
+   </ObjectiveDurationDefinition>
+
+   <ObjectiveDurationDefinition Type="EndTurn" Id="DontUseMovePoints" DifficultyMultiplier="1">
+      <Turn Value="1" Weight="3" DifficultyMultiplier="8"/> 
+      <Turn Value="2" Weight="8" DifficultyMultiplier="4"/> 
+      <Turn Value="3" Weight="5" DifficultyMultiplier="2"/> 
+      <Turn Value="4" Weight="2" DifficultyMultiplier="1"/> 
+   </ObjectiveDurationDefinition>
+
+   <ObjectiveDurationDefinition Type="EndTurn" Id="DontGeneratePanic" DifficultyMultiplier="1">
+      <Turn Value="1" Weight="5" DifficultyMultiplier="1"/> 
+   </ObjectiveDurationDefinition>
+
+   <ObjectiveDurationDefinition Type="EndTurn" Id="NormalMax2Turns" DifficultyMultiplier="1">
+      <Turn Value="1" Weight="5" DifficultyMultiplier="4"/>
+      <Turn Value="2" Weight="8" DifficultyMultiplier="1"/>
+   </ObjectiveDurationDefinition>
+
+   <ObjectiveDurationDefinition Type="EndTurn" Id="DontUseSkill" DifficultyMultiplier="1">
+      <Turn Value="1" Weight="3" DifficultyMultiplier="8"/> 
+      <Turn Value="2" Weight="8" DifficultyMultiplier="4"/> 
+      <Turn Value="3" Weight="5" DifficultyMultiplier="2"/> 
+      <Turn Value="4" Weight="2" DifficultyMultiplier="1"/> 
+   </ObjectiveDurationDefinition>
+
+   <ObjectiveDurationDefinition Type="EndTurn" Id="FastAndDifficult" DifficultyMultiplier="1">
+      <Turn Value="1" Weight="1" DifficultyMultiplier="2.5"/>
+      <Turn Value="2" Weight="1" DifficultyMultiplier="1"/>
+      <Turn Value="3" Weight="1" DifficultyMultiplier="0.75"/>
+      <Turn Value="4" Weight="1" DifficultyMultiplier="0.5"/>
+   </ObjectiveDurationDefinition>
+
+   <ObjectiveDurationDefinition Type="EndTurn" Id="VeryFast" DifficultyMultiplier="1">
+      <Turn Value="1" Weight="1" DifficultyMultiplier="2.5"/>
+      <Turn Value="2" Weight="1" DifficultyMultiplier="1"/>
+   </ObjectiveDurationDefinition>
+
+   <ObjectiveDurationDefinition Type="EndTurn" Id="DealDamageDuration" DifficultyMultiplier="1">
+      <Turn Value="1" Weight="4" DifficultyMultiplier="2"/> <!--Old weight value : 2-->
+      <Turn Value="2" Weight="8" DifficultyMultiplier="1"/> <!--Old weight value : 8-->
+      <Turn Value="3" Weight="3" DifficultyMultiplier="0.75"/> <!--Old weight value : 4-->
+      <Turn Value="4" Weight="2" DifficultyMultiplier="0.5"/> <!--Old weight value : 2-->
+   </ObjectiveDurationDefinition>
+
+</ObjectiveDurationDefinitions>

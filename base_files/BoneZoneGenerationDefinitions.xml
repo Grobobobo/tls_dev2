@@ -1,0 +1,34 @@
+﻿<BoneZoneDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:noNamespaceSchemaLocation="BoneZoneDefinitions.xsd">
+
+   
+   <BoneZoneDefinition Id="Z-1_Haven8">
+      <MinHavenDistance>8</MinHavenDistance>
+   </BoneZoneDefinition>
+ 
+   
+   <BoneZoneDefinition Id="Z0_Haven4">
+      <MinHavenDistance>4</MinHavenDistance>
+   </BoneZoneDefinition>
+
+   
+   <BoneZoneDefinition Id="Z1_Haven2">
+      <MinHavenDistance>2</MinHavenDistance>
+   </BoneZoneDefinition>
+
+   
+   <BoneZoneDefinition Id="Z2_Haven1">
+      <MinHavenDistance>1</MinHavenDistance>
+   </BoneZoneDefinition>
+   
+   
+   <BoneZoneDefinition Id="Z3_Haven">
+      <MinHavenDistance>0</MinHavenDistance>
+   </BoneZoneDefinition>
+
+   
+   <BoneZoneDefinition Id="Z4_Circle3">
+      <MaxMagicCircleDistance>3</MaxMagicCircleDistance>
+   </BoneZoneDefinition>
+
+</BoneZoneDefinitions>

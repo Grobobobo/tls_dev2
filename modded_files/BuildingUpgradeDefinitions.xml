@@ -1,0 +1,1650 @@
+﻿<BuildingUpgradeDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:noNamespaceSchemaLocation="BuildingUpgradeDefinitions.xsd">
+
+   <!--Full example-->
+   <!--<BuildingUpgradeDefinition Id="UnlockSomething">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>50</GoldCost>
+            <MaterialCost>5</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="UnlockAction" NewActionId="Mine"/>
+               <UpgradeEffect Id="SwapAction" OldActionId="Heal" NewActionId="HealUpgraded"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <GoldCost>50</GoldCost>
+            <MaterialCost>5</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="ImproveGaugeEffect" UpgradedBonusValue="5"/>
+               <UpgradeEffect Id="ImprovePassive" PassiveId="FillEffectGauge" UpgradedBonusValue="10"/>
+               <UpgradeEffect Id="ImproveLevel" UpgradedBonusValue="2"/>
+               <UpgradeEffect Id="ImproveUnitLimit"/>
+               <UpgradeEffect Id="ReplaceBuilding" NewBuildingId="StoneWall"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+   </BuildingUpgradeDefinition>-->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- SHOP -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <BuildingUpgradeDefinition Id="UpgradeSellRatio">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>30</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="ImproveSellRatio" UpgradedBonusValue="10"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <GoldCost>70</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="ImproveSellRatio" UpgradedBonusValue="10"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- TEMPLE -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <BuildingUpgradeDefinition Id="UnlockHealFree">
+      <UpgradeLevels>
+        <UpgradeLevel>
+          <GoldCost>30</GoldCost>
+          <UpgradeEffects>
+            <UpgradeEffect Id="SwapAction" OldActionId="HealFree" NewActionId="HealFree_1"/>
+          </UpgradeEffects>
+        </UpgradeLevel>
+        <UpgradeLevel>
+          <GoldCost>50</GoldCost>
+          <UpgradeEffects>
+            <UpgradeEffect Id="SwapAction" OldActionId="HealFree_1" NewActionId="HealFree_2"/>
+          </UpgradeEffects>
+        </UpgradeLevel>
+      </UpgradeLevels>
+     
+     <CastFXs TotalDuration="0.5">
+       <VisualEffect>
+         <Paths>
+           <Path>00_Others/SelfBuff_CasterBefore</Path>
+         </Paths>
+         <SortingDepth>Before</SortingDepth>
+         <Target>HitTiles</Target>
+       </VisualEffect>
+
+       <SoundEffect>
+         <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+         <Delay>0</Delay>
+       </SoundEffect>
+
+       <CamShake>
+         <Id>Soft Hit-CamShake</Id>
+         <Delay>0.4</Delay>
+       </CamShake>
+     </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <BuildingUpgradeDefinition Id="UpgradeHeal">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>30</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="Heal" NewActionId="Heal_1"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+     <CastFXs TotalDuration="0.5">
+       <VisualEffect>
+         <Paths>
+           <Path>00_Others/SelfBuff_CasterBefore</Path>
+         </Paths>
+         <SortingDepth>Before</SortingDepth>
+         <Target>HitTiles</Target>
+       </VisualEffect>
+
+       <SoundEffect>
+         <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+         <Delay>0</Delay>
+       </SoundEffect>
+
+       <CamShake>
+         <Id>Soft Hit-CamShake</Id>
+         <Delay>0.4</Delay>
+       </CamShake>
+     </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <BuildingUpgradeDefinition Id="UnlockBlessing">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>30</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="Blessing" NewActionId="Blessing_1"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- MANAWELL -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <BuildingUpgradeDefinition Id="UnlockHealManaFree">
+      <UpgradeLevels>
+        <UpgradeLevel>
+          <GoldCost>25</GoldCost>
+          <UpgradeEffects>
+            <UpgradeEffect Id="SwapAction" OldActionId="HealManaFree" NewActionId="HealManaFree_1"/>
+          </UpgradeEffects>
+        </UpgradeLevel>
+      </UpgradeLevels>
+
+     <CastFXs TotalDuration="0.5">
+       <VisualEffect>
+         <Paths>
+           <Path>00_Others/SelfBuff_CasterBefore</Path>
+         </Paths>
+         <SortingDepth>Before</SortingDepth>
+         <Target>HitTiles</Target>
+       </VisualEffect>
+
+       <SoundEffect>
+         <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+         <Delay>0</Delay>
+       </SoundEffect>
+
+       <CamShake>
+         <Id>Soft Hit-CamShake</Id>
+         <Delay>0.4</Delay>
+       </CamShake>
+     </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <BuildingUpgradeDefinition Id="UpgradeHealMana">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>30</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="HealMana" NewActionId="HealMana_1"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+     <CastFXs TotalDuration="0.5">
+       <VisualEffect>
+         <Paths>
+           <Path>00_Others/SelfBuff_CasterBefore</Path>
+         </Paths>
+         <SortingDepth>Before</SortingDepth>
+         <Target>HitTiles</Target>
+       </VisualEffect>
+
+       <SoundEffect>
+         <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+         <Delay>0</Delay>
+       </SoundEffect>
+
+       <CamShake>
+         <Id>Soft Hit-CamShake</Id>
+         <Delay>0.4</Delay>
+       </CamShake>
+     </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <BuildingUpgradeDefinition Id="UnlockGift">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>30</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="Gift" NewActionId="Gift_1"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- HOUSE-->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <BuildingUpgradeDefinition Id="UpgradeWorkers">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>40</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="ImprovePassive" PassiveId="IncreaseWorkers" UpgradedBonusValue="1"/>
+               <UpgradeEffect Id="IncreasePlaysPerTurn" Value="1"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+        <UpgradeLevel>
+          <GoldCost>70</GoldCost>
+          <UpgradeEffects>
+            <UpgradeEffect Id="ImprovePassive" PassiveId="IncreaseWorkers" UpgradedBonusValue="1"/>
+             <UpgradeEffect Id="IncreasePlaysPerTurn" Value="1"/>
+          </UpgradeEffects>
+        </UpgradeLevel>
+      </UpgradeLevels>
+
+     <CastFXs TotalDuration="0.5">
+       <VisualEffect>
+         <Paths>
+           <Path>00_Others/SelfBuff_CasterBefore</Path>
+         </Paths>
+         <SortingDepth>Before</SortingDepth>
+         <Target>HitTiles</Target>
+       </VisualEffect>
+
+       <SoundEffect>
+         <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+         <Delay>0</Delay>
+       </SoundEffect>
+
+       <CamShake>
+         <Id>Soft Hit-CamShake</Id>
+         <Delay>0.4</Delay>
+       </CamShake>
+     </CastFXs>
+   </BuildingUpgradeDefinition>
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- GOLD MINE-->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <BuildingUpgradeDefinition Id="UpgradeFillGaugeGoldMine">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>60</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="ImproveGaugeEffect" UpgradedBonusValue="25"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+        <!--<UpgradeLevel>
+          <GoldCost>90</GoldCost>
+          <UpgradeEffects>
+            <UpgradeEffect Id="ImprovePassive" PassiveId="FillEffectGauge10" UpgradedBonusValue="10"/>
+          </UpgradeEffects>
+        </UpgradeLevel>
+        <UpgradeLevel>
+          <GoldCost>200</GoldCost>
+          <UpgradeEffects>
+             <UpgradeEffect Id="ImproveGaugeEffect" UpgradedBonusValue="30"/>
+          </UpgradeEffects>
+        </UpgradeLevel>-->
+      </UpgradeLevels>
+
+     <CastFXs TotalDuration="0.5">
+       <VisualEffect>
+         <Paths>
+           <Path>00_Others/SelfBuff_CasterBefore</Path>
+         </Paths>
+         <SortingDepth>Before</SortingDepth>
+         <Target>HitTiles</Target>
+       </VisualEffect>
+
+       <SoundEffect>
+         <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+         <Delay>0</Delay>
+       </SoundEffect>
+
+       <CamShake>
+         <Id>Soft Hit-CamShake</Id>
+         <Delay>0.4</Delay>
+       </CamShake>
+     </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <BuildingUpgradeDefinition Id="UpgradeMine">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>5</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="Mine" NewActionId="Mine_1"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+        <UpgradeLevel>
+          <GoldCost>10</GoldCost>
+          <UpgradeEffects>
+            <UpgradeEffect Id="SwapAction" OldActionId="Mine_1" NewActionId="Mine_2"/>
+          </UpgradeEffects>
+        </UpgradeLevel>
+        <!--<UpgradeLevel>
+          <GoldCost>250</GoldCost>
+          <UpgradeEffects>
+            <UpgradeEffect Id="SwapAction" OldActionId="Mine_2" NewActionId="Mine_3"/>
+          </UpgradeEffects>
+        </UpgradeLevel>-->
+      </UpgradeLevels>
+
+     <CastFXs TotalDuration="0.5">
+       <VisualEffect>
+         <Paths>
+           <Path>00_Others/SelfBuff_CasterBefore</Path>
+         </Paths>
+         <SortingDepth>Before</SortingDepth>
+         <Target>HitTiles</Target>
+       </VisualEffect>
+
+       <SoundEffect>
+         <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+         <Delay>0</Delay>
+       </SoundEffect>
+
+       <CamShake>
+         <Id>Soft Hit-CamShake</Id>
+         <Delay>0.4</Delay>
+       </CamShake>
+     </CastFXs>
+   </BuildingUpgradeDefinition>
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- SCAVENGER CAMP-->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+   <BuildingUpgradeDefinition Id="UpgradeFillGaugeScavenger">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>60</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="ImproveGaugeEffect" UpgradedBonusValue="50"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+        <!--<UpgradeLevel>
+          <GoldCost>75</GoldCost>
+          <UpgradeEffects>
+            <UpgradeEffect Id="ImprovePassive" PassiveId="FillEffectGauge10" UpgradedBonusValue="10"/>
+          </UpgradeEffects>
+        </UpgradeLevel>
+        <UpgradeLevel>
+          <GoldCost>125</GoldCost>
+          <UpgradeEffects>
+             <UpgradeEffect Id="ImproveGaugeEffect" UpgradedBonusValue="35"/>
+          </UpgradeEffects>
+        </UpgradeLevel>-->
+      </UpgradeLevels>
+
+     <CastFXs TotalDuration="0.5">
+       <VisualEffect>
+         <Paths>
+           <Path>00_Others/SelfBuff_CasterBefore</Path>
+         </Paths>
+         <SortingDepth>Before</SortingDepth>
+         <Target>HitTiles</Target>
+       </VisualEffect>
+
+       <SoundEffect>
+         <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+         <Delay>0</Delay>
+       </SoundEffect>
+
+       <CamShake>
+         <Id>Soft Hit-CamShake</Id>
+         <Delay>0.4</Delay>
+       </CamShake>
+     </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <BuildingUpgradeDefinition Id="UpgradeScavenge">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>5</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="Scavenge" NewActionId="Scavenge_1"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+        <UpgradeLevel>
+          <GoldCost>10</GoldCost>
+          <UpgradeEffects>
+            <UpgradeEffect Id="SwapAction" OldActionId="Scavenge_1" NewActionId="Scavenge_2"/>
+          </UpgradeEffects>
+        </UpgradeLevel>
+      </UpgradeLevels>
+
+     <CastFXs TotalDuration="0.5">
+       <VisualEffect>
+         <Paths>
+           <Path>00_Others/SelfBuff_CasterBefore</Path>
+         </Paths>
+         <SortingDepth>Before</SortingDepth>
+         <Target>HitTiles</Target>
+       </VisualEffect>
+
+       <SoundEffect>
+         <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+         <Delay>0</Delay>
+       </SoundEffect>
+
+       <CamShake>
+         <Id>Soft Hit-CamShake</Id>
+         <Delay>0.4</Delay>
+       </CamShake>
+     </CastFXs>
+   </BuildingUpgradeDefinition>
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ALL ITEM PRODUCTION BUILDINGS (GENERIC) -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!-- /!\/!\ This upgrade should never be renamed and keep the name 'UpgradeProductionLevel' because it's directly linked to items production level in buildings producing items  /!\/!\ -->
+   <BuildingUpgradeDefinition Id="UpgradeProductionLevel" IsGlobal="true">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>135</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="ImproveLevel"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <GoldCost>245</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="ImproveLevel"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <GoldCost>450</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="ImproveLevel"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <BuildingUpgradeDefinition Id="UpgradeFillGaugeProduction">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>120</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="ImprovePassive" PassiveId="FillEffectGauge10" UpgradedBonusValue="10"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <BuildingUpgradeDefinition Id="UpgradeFillGaugeProductionPotion">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>120</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="ImprovePassive" PassiveId="FillEffectGauge20" UpgradedBonusValue="20"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- BLACKSMITH -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <BuildingUpgradeDefinition Id="UpgradeHelpBlacksmith">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>10</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="HelpBlacksmith" NewActionId="HelpBlacksmith_1"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <GoldCost>15</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="HelpBlacksmith_1" NewActionId="HelpBlacksmith_2"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <GoldCost>20</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="HelpBlacksmith_2" NewActionId="HelpBlacksmith_3"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+     <CastFXs TotalDuration="0.5">
+       <VisualEffect>
+         <Paths>
+           <Path>00_Others/SelfBuff_CasterBefore</Path>
+         </Paths>
+         <SortingDepth>Before</SortingDepth>
+         <Target>HitTiles</Target>
+       </VisualEffect>
+
+       <SoundEffect>
+         <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+         <Delay>0</Delay>
+       </SoundEffect>
+
+       <CamShake>
+         <Id>Soft Hit-CamShake</Id>
+         <Delay>0.4</Delay>
+       </CamShake>
+     </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- BOWYER -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <BuildingUpgradeDefinition Id="UpgradeHelpBowyer">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>10</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="HelpBowyer" NewActionId="HelpBowyer_1"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <GoldCost>15</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="HelpBowyer_1" NewActionId="HelpBowyer_2"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <GoldCost>20</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="HelpBowyer_2" NewActionId="HelpBowyer_3"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+     <CastFXs TotalDuration="0.5">
+       <VisualEffect>
+         <Paths>
+           <Path>00_Others/SelfBuff_CasterBefore</Path>
+         </Paths>
+         <SortingDepth>Before</SortingDepth>
+         <Target>HitTiles</Target>
+       </VisualEffect>
+
+       <SoundEffect>
+         <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+         <Delay>0</Delay>
+       </SoundEffect>
+
+       <CamShake>
+         <Id>Soft Hit-CamShake</Id>
+         <Delay>0.4</Delay>
+       </CamShake>
+     </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- MAGICSHOP -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <BuildingUpgradeDefinition Id="UpgradeHelpMagicShop">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>10</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="HelpMagicShop" NewActionId="HelpMagicShop_1"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <GoldCost>15</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="HelpMagicShop_1" NewActionId="HelpMagicShop_2"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <GoldCost>20</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="HelpMagicShop_2" NewActionId="HelpMagicShop_3"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+     <CastFXs TotalDuration="0.5">
+       <VisualEffect>
+         <Paths>
+           <Path>00_Others/SelfBuff_CasterBefore</Path>
+         </Paths>
+         <SortingDepth>Before</SortingDepth>
+         <Target>HitTiles</Target>
+       </VisualEffect>
+
+       <SoundEffect>
+         <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+         <Delay>0</Delay>
+       </SoundEffect>
+
+       <CamShake>
+         <Id>Soft Hit-CamShake</Id>
+         <Delay>0.4</Delay>
+       </CamShake>
+     </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ARMORMAKER -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <BuildingUpgradeDefinition Id="UpgradeHelpArmorMaker">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>10</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="HelpArmorMaker" NewActionId="HelpArmorMaker_1"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <GoldCost>15</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="HelpArmorMaker_1" NewActionId="HelpArmorMaker_2"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <GoldCost>20</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="HelpArmorMaker_2" NewActionId="HelpArmorMaker_3"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+     <CastFXs TotalDuration="0.5">
+       <VisualEffect>
+         <Paths>
+           <Path>00_Others/SelfBuff_CasterBefore</Path>
+         </Paths>
+         <SortingDepth>Before</SortingDepth>
+         <Target>HitTiles</Target>
+       </VisualEffect>
+
+       <SoundEffect>
+         <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+         <Delay>0</Delay>
+       </SoundEffect>
+
+       <CamShake>
+         <Id>Soft Hit-CamShake</Id>
+         <Delay>0.4</Delay>
+       </CamShake>
+     </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- TRINKETMAKER -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <BuildingUpgradeDefinition Id="UpgradeHelpTrinketMaker">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>10</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="HelpTrinketMaker" NewActionId="HelpTrinketMaker_1"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <GoldCost>15</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="HelpTrinketMaker_1" NewActionId="HelpTrinketMaker_2"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <GoldCost>20</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="HelpTrinketMaker_2" NewActionId="HelpTrinketMaker_3"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- POTIONMAKER -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <BuildingUpgradeDefinition Id="UpgradeHelpPotionMaker">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>10</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="HelpPotionMaker" NewActionId="HelpPotionMaker_1"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <GoldCost>15</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="HelpPotionMaker_1" NewActionId="HelpPotionMaker_2"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <GoldCost>20</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapAction" OldActionId="HelpPotionMaker_2" NewActionId="HelpPotionMaker_3"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- SEER -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!--<BuildingUpgradeDefinition Id="UpgradeSpawnWaveInfo">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>50</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="ImprovePassive" PassiveId="ImproveSpawnWaveInfo" UpgradedBonusValue="1"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+     <CastFXs TotalDuration="0.5">
+       <VisualEffect>
+         <Paths>
+           <Path>00_Others/SelfBuff_CasterBefore</Path>
+         </Paths>
+         <SortingDepth>Before</SortingDepth>
+         <Target>HitTiles</Target>
+       </VisualEffect>
+
+       <SoundEffect>
+         <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+         <Delay>0</Delay>
+       </SoundEffect>
+
+       <CamShake>
+         <Id>Soft Hit-CamShake</Id>
+         <Delay>0.4</Delay>
+       </CamShake>
+     </CastFXs>
+   </BuildingUpgradeDefinition>-->
+
+   <BuildingUpgradeDefinition Id="UpgradeGuessWho">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>30</GoldCost>
+            <UpgradeEffects> 
+               <!-- view the full list for each type of enemy + give the amount of each type of enemies passively  -->
+               <UpgradeEffect Id="ImproveGuessWho"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+     <CastFXs TotalDuration="0.5">
+       <VisualEffect>
+         <Paths>
+           <Path>00_Others/SelfBuff_CasterBefore</Path>
+         </Paths>
+         <SortingDepth>Before</SortingDepth>
+         <Target>HitTiles</Target>
+       </VisualEffect>
+
+       <SoundEffect>
+         <Path>00_Others/Building/SFX_Skill_Seer_Reveal_Enemies</Path>
+         <Delay>0</Delay>
+       </SoundEffect>
+
+       <CamShake>
+         <Id>Soft Hit-CamShake</Id>
+         <Delay>0.4</Delay>
+       </CamShake>
+     </CastFXs>
+   </BuildingUpgradeDefinition>
+
+  
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- Inn -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!--Take care it will need to have enough UnitLimit in RecruitmentDefinitions.xml-->
+   <BuildingUpgradeDefinition Id="UpgradePlayableUnitLimit">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>130</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="ImproveUnitLimit"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <GoldCost>200</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="ImproveUnitLimit"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+     <CastFXs TotalDuration="0.5">
+       <VisualEffect>
+         <Paths>
+           <Path>00_Others/SelfBuff_CasterBefore</Path>
+         </Paths>
+         <SortingDepth>Before</SortingDepth>
+         <Target>HitTiles</Target>
+       </VisualEffect>
+
+       <SoundEffect>
+         <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+         <Delay>0</Delay>
+       </SoundEffect>
+
+       <CamShake>
+         <Id>Soft Hit-CamShake</Id>
+         <Delay>0.4</Delay>
+       </CamShake>
+     </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- Walls -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <BuildingUpgradeDefinition Id="UpgradeWoodenWallToWoodenWallReinforced">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
+            <MaterialCost>8</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="ReplaceBuilding" NewBuildingId="WoodenWallReinforced"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+     <CastFXs TotalDuration="0.5">
+       <VisualEffect>
+         <Paths>
+           <Path>00_Others/SelfBuff_CasterBefore</Path>
+         </Paths>
+         <SortingDepth>Before</SortingDepth>
+         <Target>HitTiles</Target>
+       </VisualEffect>
+
+       <SoundEffect>
+         <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+         <Delay>0</Delay>
+       </SoundEffect>
+
+       <CamShake>
+         <Id>Soft Hit-CamShake</Id>
+         <Delay>0.4</Delay>
+       </CamShake>
+     </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   
+   <BuildingUpgradeDefinition Id="UpgradeWoodenWallReinforcedToStoneWall">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
+            <MaterialCost>5</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="ReplaceBuilding" NewBuildingId="StoneWall"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+     <CastFXs TotalDuration="0.5">
+       <VisualEffect>
+         <Paths>
+           <Path>00_Others/SelfBuff_CasterBefore</Path>
+         </Paths>
+         <SortingDepth>Before</SortingDepth>
+         <Target>HitTiles</Target>
+       </VisualEffect>
+
+       <SoundEffect>
+         <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+         <Delay>0</Delay>
+       </SoundEffect>
+
+       <CamShake>
+         <Id>Soft Hit-CamShake</Id>
+         <Delay>0.4</Delay>
+       </CamShake>
+     </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   
+   <BuildingUpgradeDefinition Id="UpgradeStoneWallToStoneWallReinforced">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
+            <MaterialCost>10</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="ReplaceBuilding" NewBuildingId="StoneWallReinforced"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+     <CastFXs TotalDuration="0.5">
+       <VisualEffect>
+         <Paths>
+           <Path>00_Others/SelfBuff_CasterBefore</Path>
+         </Paths>
+         <SortingDepth>Before</SortingDepth>
+         <Target>HitTiles</Target>
+       </VisualEffect>
+
+       <SoundEffect>
+         <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+         <Delay>0</Delay>
+       </SoundEffect>
+
+       <CamShake>
+         <Id>Soft Hit-CamShake</Id>
+         <Delay>0.4</Delay>
+       </CamShake>
+     </CastFXs>
+   </BuildingUpgradeDefinition>
+
+  <!-- ███████████████████████████████████████████████████████████████ -->
+  <!-- GATE -->
+  <!-- ███████████████████████████████████████████████████████████████ -->
+
+  <BuildingUpgradeDefinition Id="UpgradeWoodenGateToGateReinforced">
+    <UpgradeLevels>
+      <UpgradeLevel>
+        <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
+        <MaterialCost>13</MaterialCost>
+        <UpgradeEffects>
+          <UpgradeEffect Id="ReplaceBuilding" NewBuildingId="Gate"/>
+        </UpgradeEffects>
+      </UpgradeLevel>
+    </UpgradeLevels>
+
+    <CastFXs TotalDuration="0.5">
+      <VisualEffect>
+        <Paths>
+          <Path>00_Others/SelfBuff_CasterBefore</Path>
+        </Paths>
+        <SortingDepth>Before</SortingDepth>
+        <Target>HitTiles</Target>
+      </VisualEffect>
+
+      <SoundEffect>
+        <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+        <Delay>0</Delay>
+      </SoundEffect>
+
+      <CamShake>
+        <Id>Soft Hit-CamShake</Id>
+        <Delay>0.4</Delay>
+      </CamShake>
+    </CastFXs>
+  </BuildingUpgradeDefinition>
+  
+  <!-- ███████████████████████████████████████████████████████████████ -->
+  <!-- DEFENSES -->
+  <!-- ███████████████████████████████████████████████████████████████ -->
+   
+   <!--BALLISTAS-->
+
+  <BuildingUpgradeDefinition Id="IncreaseBallistaPlaysPerTurn">
+    <UpgradeLevels>
+      <UpgradeLevel>
+         <MaterialCost>1</MaterialCost>
+        <UpgradeEffects>
+          <UpgradeEffect Id="IncreasePlaysPerTurn" Value="2"/>
+        </UpgradeEffects>
+      </UpgradeLevel>
+    </UpgradeLevels>
+    <LinkedUpgrades>
+      <LinkedUpgrade Id="IncreaseBallistaPlaysPerTurn"/>
+    </LinkedUpgrades>
+
+    <CastFXs TotalDuration="0.5">
+      <VisualEffect>
+        <Paths>
+          <Path>00_Others/SelfBuff_CasterBefore</Path>
+        </Paths>
+        <SortingDepth>Before</SortingDepth>
+        <Target>HitTiles</Target>
+      </VisualEffect>
+
+      <SoundEffect>
+        <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+        <Delay>0</Delay>
+      </SoundEffect>
+
+      <CamShake>
+        <Id>Soft Hit-CamShake</Id>
+        <Delay>0.4</Delay>
+      </CamShake>
+    </CastFXs>
+  </BuildingUpgradeDefinition>
+
+  <BuildingUpgradeDefinition Id="UpgradeBallistaToBallistaTower">
+    <UpgradeLevels>
+      <UpgradeLevel>
+        <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
+        <MaterialCost>40</MaterialCost>
+        <UpgradeEffects>
+          <UpgradeEffect Id="ReplaceBuilding" NewBuildingId="BallistaTower"/>
+        </UpgradeEffects>
+      </UpgradeLevel>
+    </UpgradeLevels>
+
+    <CastFXs TotalDuration="0.5">
+      <VisualEffect>
+        <Paths>
+          <Path>00_Others/SelfBuff_CasterBefore</Path>
+        </Paths>
+        <SortingDepth>Before</SortingDepth>
+        <Target>HitTiles</Target>
+      </VisualEffect>
+
+      <SoundEffect>
+        <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+        <Delay>0</Delay>
+      </SoundEffect>
+
+      <CamShake>
+        <Id>Soft Hit-CamShake</Id>
+        <Delay>0.4</Delay>
+      </CamShake>
+    </CastFXs>
+  </BuildingUpgradeDefinition>
+
+   <BuildingUpgradeDefinition Id="UpgradeBallistaToBallistaHeavy">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
+            <MaterialCost>40</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="ReplaceBuilding" NewBuildingId="BallistaHeavy"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <BuildingUpgradeDefinition Id="UpgradeBallistaToBallistaSplit">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
+            <MaterialCost>40</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="ReplaceBuilding" NewBuildingId="BallistaSplit"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <BuildingUpgradeDefinition Id="UpgradeBallistaDamageGlobal" IsGlobal="true">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <MaterialCost>150</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="AddDamageModifier" DamageModifier="25" />
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <MaterialCost>300</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="AddDamageModifier" DamageModifier="25" />
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+   
+   
+   <!--CATAPULTS-->
+
+   <BuildingUpgradeDefinition Id="UpgradeCatapultDamageGlobal" IsGlobal="true">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <MaterialCost>100</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="AddDamageModifier" DamageModifier="25" />
+            </UpgradeEffects>
+         </UpgradeLevel>
+         <UpgradeLevel>
+            <MaterialCost>200</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="AddDamageModifier" DamageModifier="25" />
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+   
+   <!--TRAPS-->
+
+   <BuildingUpgradeDefinition Id="UpgradeSlowTrap" IsGlobal="true">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <MaterialCost>100</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapSkill" OldSkillId="SlowTrapTriggered" NewSkillId="SlowTrapTriggered_Upgraded"/>
+               <UpgradeEffect Id="SwapSkill" OldSkillId="Spe_SlowTrapTriggered" NewSkillId="Spe_SlowTrapTriggered_Upgraded"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <BuildingUpgradeDefinition Id="UpgradeDamageTrap" IsGlobal="true">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
+            <MaterialCost>100</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapSkill" OldSkillId="DamageTrapTriggered" NewSkillId="DamageTrapTriggered_Upgraded"/>
+               <UpgradeEffect Id="SwapSkill" OldSkillId="Spe_DamageTrapTriggered" NewSkillId="Spe_DamageTrapTriggered_Upgraded"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <BuildingUpgradeDefinition Id="UpgradeStunTrap" IsGlobal="true">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
+            <MaterialCost>100</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="IncreaseMaximumTrapCharges" Value="1"/>
+               <UpgradeEffect Id="SwapSkill" OldSkillId="StunTrapTriggered" NewSkillId="StunTrapTriggered_Upgraded"/>
+               <UpgradeEffect Id="SwapSkill" OldSkillId="Spe_StunTrapTriggered" NewSkillId="Spe_StunTrapTriggered_Upgraded"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- SEEDS DLC2 -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <BuildingUpgradeDefinition Id="UpgradePoisonSeed">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <MaterialCost>44</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapSkill" OldSkillId="PoisonSeedSkill" NewSkillId="PoisonSeedSkill2"/>
+               <UpgradeEffect Id="SwapSkill" OldSkillId="Spe_PoisonSeedSkill" NewSkillId="Spe_PoisonSeedSkill2"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+     <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <BuildingUpgradeDefinition Id="UpgradeIsolationSeed">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <MaterialCost>44</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapSkill" OldSkillId="IsolationSeedSkill" NewSkillId="IsolationSeedSkill2"/>
+               <UpgradeEffect Id="SwapSkill" OldSkillId="Spe_IsolationSeedSkill" NewSkillId="Spe_IsolationSeedSkill2"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <BuildingUpgradeDefinition Id="UpgradePurgingSeed">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <MaterialCost>44</MaterialCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="SwapSkill" OldSkillId="PurgingSeedSkill" NewSkillId="PurgingSeedSkill2"/>
+               <UpgradeEffect Id="SwapSkill" OldSkillId="Spe_PurgingSeedSkill" NewSkillId="Spe_PurgingSeedSkill2"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ALTAR UPGRADES -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   
+   <BuildingUpgradeDefinition Id="AltarUnlockMoreTier1">
+      <UpgradeLevels>
+        <UpgradeLevel>
+          <GoldCost>50</GoldCost>
+          <UpgradeEffects>
+             <UpgradeEffect Id="AddResearchSlotPatternFlag" Flag="MoreTier1"/>
+          </UpgradeEffects>
+        </UpgradeLevel>
+      </UpgradeLevels>
+     
+     <CastFXs TotalDuration="0.5">
+       <VisualEffect>
+         <Paths>
+           <Path>00_Others/SelfBuff_CasterBefore</Path>
+         </Paths>
+         <SortingDepth>Before</SortingDepth>
+         <Target>HitTiles</Target>
+       </VisualEffect>
+
+       <SoundEffect>
+         <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+         <Delay>0</Delay>
+       </SoundEffect>
+
+       <CamShake>
+         <Id>Soft Hit-CamShake</Id>
+         <Delay>0.4</Delay>
+       </CamShake>
+     </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <BuildingUpgradeDefinition Id="AltarUnlockMoreTier2">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>75</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="AddResearchSlotPatternFlag" Flag="MoreTier2"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+
+   <BuildingUpgradeDefinition Id="AltarUnlockMoreTier3">
+      <UpgradeLevels>
+         <UpgradeLevel>
+            <GoldCost>100</GoldCost>
+            <UpgradeEffects>
+               <UpgradeEffect Id="AddResearchSlotPatternFlag" Flag="MoreTier3"/>
+            </UpgradeEffects>
+         </UpgradeLevel>
+      </UpgradeLevels>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/HeavyDefend/SFX_Skill_Armor_HeavyDefend</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+      </CastFXs>
+   </BuildingUpgradeDefinition>
+   
+</BuildingUpgradeDefinitions>

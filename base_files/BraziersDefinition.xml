@@ -1,0 +1,523 @@
+﻿<BraziersDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:noNamespaceSchemaLocation="BrazierDefinition.xsd">
+   
+   <GuardiansGroups>
+
+      <!-- ███████████████████████████████████████████████████████████████ -->
+      <!-- ███████████████████████████████████████████████████████████████ -->
+      <!-- 2 BRAZIERS -->
+      <!-- ███████████████████████████████████████████████████████████████ -->
+      <!-- ███████████████████████████████████████████████████████████████ -->
+ 
+      <GuardiansGroup Id="2B_HamDag_01">
+         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedDagger" Weight="1"/>
+      </GuardiansGroup>
+
+      <!-- ███████████████████████████████████████████████████████████████ -->
+      <!-- ███████████████████████████████████████████████████████████████ -->
+      <!-- 3 BRAZIERS -->
+      <!-- ███████████████████████████████████████████████████████████████ -->
+      <!-- ███████████████████████████████████████████████████████████████ -->
+      
+      <GuardiansGroup Id="3B_HamShort_01">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="1"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="3B_HamWand_01">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="1"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="3B_HamShort_02">
+         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="3B_HamWand_02">
+         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="3B_DagShort_01">
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="1"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="3B_DagWand_01">
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="1"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="3B_DagShort_02">
+         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="3B_DagWand_02">
+         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="3B_HamShortWand_01">
+         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="1"/>
+         <Guardian Id="UnnamedWand" Weight="1"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="3B_DagShortWand_01">
+         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="1"/>
+         <Guardian Id="UnnamedWand" Weight="1"/>
+      </GuardiansGroup>
+
+      <!-- ███████████████████████████████████████████████████████████████ -->
+      <!-- ███████████████████████████████████████████████████████████████ -->
+      <!-- 4 BRAZIERS -->
+      <!-- ███████████████████████████████████████████████████████████████ -->
+      <!-- ███████████████████████████████████████████████████████████████ -->
+
+      <GuardiansGroup Id="4B_HamCrossWand_01">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="1"/>
+         <Guardian Id="UnnamedWand" Weight="1"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="4B_HamCrossWand_02">
+         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedCrossbow" Weight="1"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="4B_DagCrossWand_01">
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="1"/>
+         <Guardian Id="UnnamedWand" Weight="1"/>
+      </GuardiansGroup>
+      
+      <GuardiansGroup Id="4B_DagCrossWand_02">
+         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedCrossbow" Weight="1"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="4B_HamShortTome_01">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="1"/>
+         <Guardian Id="UnnamedTome" Weight="1"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="4B_HamShortTome_02">
+         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="1"/>
+         <Guardian Id="UnnamedTome" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="4B_DagShortTome_01">
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="1"/>
+         <Guardian Id="UnnamedTome" Weight="1"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="4B_DagShortTome_02">
+         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="1"/>
+         <Guardian Id="UnnamedTome" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="4B_HamCrossTome_01">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="1"/>
+         <Guardian Id="UnnamedTome" Weight="1"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="4B_DagCrossTome_01">
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="1"/>
+         <Guardian Id="UnnamedTome" Weight="1"/>
+      </GuardiansGroup>
+
+      <!-- ███████████████████████████████████████████████████████████████ -->
+      <!-- ███████████████████████████████████████████████████████████████ -->
+      <!-- 5 BRAZIERS -->
+      <!-- ███████████████████████████████████████████████████████████████ -->
+      <!-- ███████████████████████████████████████████████████████████████ -->
+
+      <!--Hammer Trios-->
+      
+      <GuardiansGroup Id="5B_HamShortWand_01">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="1"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_HamShortWand_02">
+         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_HamShortWand_03">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="1"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_HamCrossWand_01">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="1"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_HamCrossWand_02">
+         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_HamCrossWand_03">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="1"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_HamShortTome_01">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="1"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_HamShortTome_02">
+         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_HamShortTome_03">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="1"/>
+         <Guardian Id="UnnamedTome" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_HamCrossTome_01">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="1"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_HamCrossTome_02">
+         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_HamCrossTome_03">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="1"/>
+         <Guardian Id="UnnamedTome" Weight="2"/>
+      </GuardiansGroup>
+
+      <!--Dagger Trios-->
+
+      <GuardiansGroup Id="5B_DagShortWand_01">
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="1"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_DagShortWand_02">
+         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_DagShortWand_03">
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="1"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_DagCrossWand_01">
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="1"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_DagCrossWand_02">
+         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_DagCrossWand_03">
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="1"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_DagShortTome_01">
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="1"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_DagShortTome_02">
+         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_DagShortTome_03">
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="1"/>
+         <Guardian Id="UnnamedTome" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_DagCrossTome_01">
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="1"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_DagCrossTome_02">
+         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_DagCrossTome_03">
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="1"/>
+         <Guardian Id="UnnamedTome" Weight="2"/>
+      </GuardiansGroup>
+      
+      <!--Hammer&Dagger Trios-->
+
+      <GuardiansGroup Id="5B_HamDagShort_01">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_HamDagShort_02">
+         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_HamDagCross_01">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_HamDagCross_02">
+         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_HamDagWand_01">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_HamDagWand_02">
+         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_HamDagTome_01">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedTome" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="5B_HamDagTome_02">
+         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="2"/>
+      </GuardiansGroup>
+      
+      <!-- ███████████████████████████████████████████████████████████████ -->
+      <!-- ███████████████████████████████████████████████████████████████ -->
+      <!-- 8 BRAZIERS -->
+      <!-- ███████████████████████████████████████████████████████████████ -->
+      <!-- ███████████████████████████████████████████████████████████████ -->
+
+      <GuardiansGroup Id="8B_Quatuor_01">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="8B_Quatuor_02">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedWand" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="8B_Quatuor_03">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedShortbow" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="2"/>
+      </GuardiansGroup>
+
+      <GuardiansGroup Id="8B_Quatuor_04">
+         <Guardian Id="UnnamedHammer" Weight="2"/>
+         <Guardian Id="UnnamedDagger" Weight="2"/>
+         <Guardian Id="UnnamedCrossbow" Weight="2"/>
+         <Guardian Id="UnnamedTome" Weight="2"/>
+      </GuardiansGroup>
+      
+      <!-- ███████████████████████████████████████████████████████████████ -->
+      <!-- ███████████████████████████████████████████████████████████████ -->
+      <!-- 6 BRAZIERS -->
+      <!-- ███████████████████████████████████████████████████████████████ -->
+      <!-- ███████████████████████████████████████████████████████████████ -->
+      
+      <GuardiansGroup Id="6B_Everyone_01">
+         <Guardian Id="UnnamedHammer" Weight="1"/>
+         <Guardian Id="UnnamedDagger" Weight="1"/>
+         <Guardian Id="UnnamedShortbow" Weight="1"/>
+         <Guardian Id="UnnamedCrossbow" Weight="1"/>
+         <Guardian Id="UnnamedWand" Weight="1"/>
+         <Guardian Id="UnnamedTome" Weight="1"/>
+      </GuardiansGroup>
+      
+   </GuardiansGroups>
+   
+   <BrazierDefinition Id="ElderLicht">
+      <BraziersAmounts>
+         <BraziersAmount Night="1" Amount="2"/>
+         <BraziersAmount Night="2" Amount="3"/>
+         <BraziersAmount Night="5" Amount="4"/>
+         <BraziersAmount Night="8" Amount="5"/>
+         <BraziersAmount Night="12" Amount="8"/>
+         <BraziersAmount Night="13" Amount="6"/> 
+         <BraziersAmount Night="14" Amount="0"/> 
+      </BraziersAmounts>
+      
+      <BraziersToSpawn>
+         <BrazierToSpawn Night="1" BuildingId="Brazier_Prelit1"/>
+         <BrazierToSpawn Night="2" BuildingId="Brazier_Prelit2"/>
+         <BrazierToSpawn Night="5" BuildingId="Brazier_Prelit3"/>
+         <BrazierToSpawn Night="9" BuildingId="Brazier_Prelit4"/>
+         <BrazierToSpawn Night="13" BuildingId="Brazier_Prelit5"/>
+      </BraziersToSpawn>
+      
+      <Guardians>
+         
+         <GuardiansGroupsToSpawn Night="1">
+            <GuardiansGroupToSpawn Id="2B_HamDag_01"/>
+         </GuardiansGroupsToSpawn>
+         
+         <GuardiansGroupsToSpawn Night="2">
+            <GuardiansGroupToSpawn Id="3B_HamShort_01" Weight="1"/>
+            <GuardiansGroupToSpawn Id="3B_HamShort_02" Weight="1"/>
+            
+            <GuardiansGroupToSpawn Id="3B_DagShort_01" Weight="1"/>
+            <GuardiansGroupToSpawn Id="3B_DagShort_02" Weight="1"/>
+         </GuardiansGroupsToSpawn>
+
+         <GuardiansGroupsToSpawn Night="3">
+            <GuardiansGroupToSpawn Id="3B_HamWand_01" Weight="1"/>
+            <GuardiansGroupToSpawn Id="3B_HamWand_02" Weight="1"/>
+            
+            <GuardiansGroupToSpawn Id="3B_DagWand_01" Weight="1"/>
+            <GuardiansGroupToSpawn Id="3B_DagWand_02" Weight="1"/>
+         </GuardiansGroupsToSpawn>
+
+         <GuardiansGroupsToSpawn Night="4">
+            <GuardiansGroupToSpawn Id="3B_HamShortWand_01" Weight="1"/>
+            
+            <GuardiansGroupToSpawn Id="3B_DagShortWand_01" Weight="1"/>
+         </GuardiansGroupsToSpawn>
+
+         <GuardiansGroupsToSpawn Night="5">
+            <GuardiansGroupToSpawn Id="4B_HamCrossWand_01" Weight="1"/>
+            <GuardiansGroupToSpawn Id="4B_HamCrossWand_02" Weight="1"/>
+            
+            <GuardiansGroupToSpawn Id="4B_DagCrossWand_01" Weight="1"/>
+            <GuardiansGroupToSpawn Id="4B_DagCrossWand_02" Weight="1"/>
+         </GuardiansGroupsToSpawn>
+
+         <GuardiansGroupsToSpawn Night="6">
+            <GuardiansGroupToSpawn Id="4B_HamShortTome_01" Weight="1"/>
+            <GuardiansGroupToSpawn Id="4B_HamShortTome_02" Weight="1"/>
+            
+            <GuardiansGroupToSpawn Id="4B_DagShortTome_01" Weight="1"/>
+            <GuardiansGroupToSpawn Id="4B_DagShortTome_02" Weight="1"/>
+         </GuardiansGroupsToSpawn>
+         
+         <GuardiansGroupsToSpawn Night="7">
+            <GuardiansGroupToSpawn Id="4B_HamCrossTome_01" Weight="1"/>
+            <GuardiansGroupToSpawn Id="4B_DagCrossTome_01" Weight="1"/>
+         </GuardiansGroupsToSpawn>
+
+         <GuardiansGroupsToSpawn Night="8">
+            <GuardiansGroupToSpawn Id="5B_HamShortWand_01" Weight="2"/>
+            <GuardiansGroupToSpawn Id="5B_HamShortWand_02" Weight="2"/>
+            <GuardiansGroupToSpawn Id="5B_HamShortWand_03" Weight="2"/>
+
+            <GuardiansGroupToSpawn Id="5B_HamCrossWand_01" Weight="2"/>
+            <GuardiansGroupToSpawn Id="5B_HamCrossWand_02" Weight="2"/>
+            <GuardiansGroupToSpawn Id="5B_HamCrossWand_03" Weight="2"/>
+
+            <GuardiansGroupToSpawn Id="5B_HamShortTome_01" Weight="2"/>
+            <GuardiansGroupToSpawn Id="5B_HamShortTome_02" Weight="2"/>
+            <GuardiansGroupToSpawn Id="5B_HamShortTome_03" Weight="2"/>
+
+            <GuardiansGroupToSpawn Id="5B_HamCrossTome_01" Weight="2"/>
+            <GuardiansGroupToSpawn Id="5B_HamCrossTome_02" Weight="2"/>
+            <GuardiansGroupToSpawn Id="5B_HamCrossTome_03" Weight="2"/>
+
+            <GuardiansGroupToSpawn Id="5B_DagShortWand_01" Weight="2"/>
+            <GuardiansGroupToSpawn Id="5B_DagShortWand_02" Weight="2"/>
+            <GuardiansGroupToSpawn Id="5B_DagShortWand_03" Weight="2"/>
+
+            <GuardiansGroupToSpawn Id="5B_DagCrossWand_01" Weight="2"/>
+            <GuardiansGroupToSpawn Id="5B_DagCrossWand_02" Weight="2"/>
+            <GuardiansGroupToSpawn Id="5B_DagCrossWand_03" Weight="2"/>
+
+            <GuardiansGroupToSpawn Id="5B_DagShortTome_01" Weight="2"/>
+            <GuardiansGroupToSpawn Id="5B_DagShortTome_02" Weight="2"/>
+            <GuardiansGroupToSpawn Id="5B_DagShortTome_03" Weight="2"/>
+
+            <GuardiansGroupToSpawn Id="5B_DagCrossTome_01" Weight="2"/>
+            <GuardiansGroupToSpawn Id="5B_DagCrossTome_02" Weight="2"/>
+            <GuardiansGroupToSpawn Id="5B_DagCrossTome_03" Weight="2"/>
+
+            <GuardiansGroupToSpawn Id="5B_HamDagShort_01" Weight="3"/>
+            <GuardiansGroupToSpawn Id="5B_HamDagShort_02" Weight="3"/>
+
+            <GuardiansGroupToSpawn Id="5B_HamDagCross_01" Weight="3"/>
+            <GuardiansGroupToSpawn Id="5B_HamDagCross_02" Weight="3"/>
+
+            <GuardiansGroupToSpawn Id="5B_HamDagWand_01" Weight="3"/>
+            <GuardiansGroupToSpawn Id="5B_HamDagWand_02" Weight="3"/>
+
+            <GuardiansGroupToSpawn Id="5B_HamDagTome_01" Weight="3"/>
+            <GuardiansGroupToSpawn Id="5B_HamDagTome_02" Weight="3"/>
+         </GuardiansGroupsToSpawn>
+
+         <GuardiansGroupsToSpawn Night="12">
+            <GuardiansGroupToSpawn Id="8B_Quatuor_01" Weight="1"/>
+            <GuardiansGroupToSpawn Id="8B_Quatuor_02" Weight="1"/>
+            <GuardiansGroupToSpawn Id="8B_Quatuor_03" Weight="1"/>
+            <GuardiansGroupToSpawn Id="8B_Quatuor_04" Weight="1"/>
+         </GuardiansGroupsToSpawn>
+
+         <GuardiansGroupsToSpawn Night="13">
+            <GuardiansGroupToSpawn Id="6B_Everyone_01" Weight="1"/>
+         </GuardiansGroupsToSpawn>
+         
+      </Guardians>
+   </BrazierDefinition>
+</BraziersDefinition>
