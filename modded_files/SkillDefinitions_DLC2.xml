@@ -4422,6 +4422,30 @@
 
                </Debuff>
 
+               <Debuff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Malus>150</Malus>
+
+                  <Stat Id="Block"/>
+
+                  <TurnsCount>2</TurnsCount>
+
+               </Debuff>
+
+               <Debuff>
+
+                  <BaseChance>1</BaseChance>
+
+                  <Malus>5000</Malus>
+
+                  <Stat Id="ArmorTotal"/>
+
+                  <TurnsCount>2</TurnsCount>
+
+               </Debuff>
+
             </SkillEffects>
 
          </Attack>

@@ -1982,15 +1982,15 @@
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="IsolatedAttacks"/>
+                  <Stat Id="StunChancePercent"/>
                   <Bonus>12</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="OpportunisticAttacks"/>
-                  <Bonus>12</Bonus>
+                  <Stat Id="Reliability"/>
+                  <Bonus>20</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -2030,15 +2030,15 @@
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="IsolatedAttacks"/>
+                  <Stat Id="StunChancePercent"/>
                   <Bonus>14</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="OpportunisticAttacks"/>
-                  <Bonus>14</Bonus>
+                  <Stat Id="Reliability"/>
+                  <Bonus>24</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -2053,15 +2053,15 @@
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="IsolatedAttacks"/>
+                  <Stat Id="StunChancePercent"/>
                   <Bonus>16</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="OpportunisticAttacks"/>
-                  <Bonus>16</Bonus>
+                  <Stat Id="Reliability"/>
+                  <Bonus>28</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -2076,15 +2076,15 @@
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="IsolatedAttacks"/>
+                  <Stat Id="StunChancePercent"/>
                   <Bonus>19</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="OpportunisticAttacks"/>
-                  <Bonus>19</Bonus>
+                  <Stat Id="Reliability"/>
+                  <Bonus>32</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -2099,15 +2099,15 @@
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="IsolatedAttacks"/>
+                  <Stat Id="StunChancePercent"/>
                   <Bonus>22</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="OpportunisticAttacks"/>
-                  <Bonus>22</Bonus>
+                  <Stat Id="Reliability"/>
+                  <Bonus>36</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -2122,15 +2122,15 @@
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="IsolatedAttacks"/>
+                  <Stat Id="StunChancePercent"/>
                   <Bonus>24</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
                <Buff>
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
-                  <Stat Id="OpportunisticAttacks"/>
-                  <Bonus>24</Bonus>
+                  <Stat Id="Reliability"/>
+                  <Bonus>40</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -2152,7 +2152,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
                   <Stat Id="MomentumAttacks"/>
-                  <Bonus>7</Bonus>
+                  <Bonus>5</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
                <Buff>
@@ -2200,7 +2200,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
                   <Stat Id="MomentumAttacks"/>
-                  <Bonus>8</Bonus>
+                  <Bonus>6</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
                <Buff>
@@ -2223,7 +2223,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
                   <Stat Id="MomentumAttacks"/>
-                  <Bonus>11</Bonus>
+                  <Bonus>7</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
                <Buff>
@@ -2246,7 +2246,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
                   <Stat Id="MomentumAttacks"/>
-                  <Bonus>11</Bonus>
+                  <Bonus>8</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
                <Buff>
@@ -2269,7 +2269,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
                   <Stat Id="MomentumAttacks"/>
-                  <Bonus>13</Bonus>
+                  <Bonus>9</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
                <Buff>
@@ -2292,7 +2292,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
                   <Stat Id="MomentumAttacks"/>
-                  <Bonus>14</Bonus>
+                  <Bonus>10</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
                <Buff>
@@ -2328,7 +2328,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
                   <Stat Id="Accuracy"/>
-                  <Bonus>10</Bonus>
+                  <Bonus>6</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -2377,7 +2377,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
                   <Stat Id="Accuracy"/>
-                  <Bonus>10</Bonus>
+                  <Bonus>6</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -2400,7 +2400,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
                   <Stat Id="Accuracy"/>
-                  <Bonus>14</Bonus>
+                  <Bonus>8</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -2423,7 +2423,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
                   <Stat Id="Accuracy"/>
-                  <Bonus>15</Bonus>
+                  <Bonus>9</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -2446,7 +2446,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
                   <Stat Id="Accuracy"/>
-                  <Bonus>18</Bonus>
+                  <Bonus>10</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
             </SkillEffects>
@@ -2469,7 +2469,7 @@
                   <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                   <CanAffectCaster>true</CanAffectCaster>
                   <Stat Id="Accuracy"/>
-                  <Bonus>20</Bonus>
+                  <Bonus>12</Bonus>
                   <TurnsCount>1</TurnsCount>
                </Buff>
             </SkillEffects>

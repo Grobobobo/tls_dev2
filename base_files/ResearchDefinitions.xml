@@ -220,7 +220,7 @@
     <ResearchDefinition Id="CheaperProductionResearch">
         <TokenVariables>
             <TokenVariable Key="ProductionBuildingsLimitModifier" Value="2"/>
-            <TokenVariable Key="ProductionBuildingsCostModifier" Value="15"/>
+            <TokenVariable Key="ProductionBuildingsCostModifier" Value="20"/>
         </TokenVariables>
         <LocArguments>
             <LocArgument Value="ProductionBuildingsCostModifier" Suffix="%" Style="KeyWordNb"/>

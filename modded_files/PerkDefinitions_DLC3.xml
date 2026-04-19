@@ -2057,38 +2057,61 @@
    <!--2HSword-->
    <PerkDefinition Id="2HSwordUniquePerk">
       <TokenVariables>
-         <TokenVariable Key="DamageMalusValue" Value="DamageBonusValue - (DamageMalusMultiplier * NumberOfStepsReached)"/>
-         <TokenVariable Key="DamageMalusMultiplier" Value="10"/>
-         <TokenVariable Key="BlockBonusValue" Value="BlockBonusMultiplier * NumberOfStepsReached"/>
-         <TokenVariable Key="BlockBonusMultiplier" Value="10"/>
-         <TokenVariable Key="DamageBonusValue" Value="50"/>
-         <TokenVariable Key="NumberOfStepsReached" Value="Floor(CurrentMoveMissingPercentage / MissingMoveStepValue)"/>
-         <TokenVariable Key="MissingMoveStepValue" Value="20"/>
-         <TokenVariable Key="CurrentMoveMissingPercentage" Value="(100 - CurrentMovePercentage)"/>
-         <TokenVariable Key="CurrentMovePercentage" Value="Clamp(BooleanChoice(CurrentMP > 0, CurrentMP / TotalMP, 0) * 100, 0, 100)"/>
-         <TokenVariable Key="CurrentMP" Value="(BooleanChoice(HasOwner, Owner.MovePoints, 0))"/>
-         <TokenVariable Key="TotalMP" Value="(BooleanChoice(HasOwner, Owner.MovePointsTotal, 0))"/>
-         <TokenVariable Key="DamageMalusText" Value="-10"/>
+         <TokenVariable Key="ReliabilityBonus" Value="Floor((Owner.HealthTotal - Owner.Health) / HealthConversionRate) * ReliabilityConversionRate"/>
+         <TokenVariable Key="ReliabilityConversionRate" Value="5"/>
+         <TokenVariable Key="HealthConversionRate" Value="10"/>
+         <TokenVariable Key="DamageAboveThresholdValue" Value="AttackData.HealthDamage > Owner.Health - ImmortalityThreshold"/>
+         <TokenVariable Key="ImmortalityThreshold" Value="1"/>
+         <TokenVariable Key="HasImmortalityTriggered" Value="Module2.Buffer > 0"/>
       </TokenVariables>
       <LocArguments>
-         <StatArgument Stat="OverallDamage" Value="DamageBonusValue" Interpreted="true"/>
-         <LocArgument Value="MissingMoveStepValue" Suffix="%" Style="KeyWordNb"/>
-         <StatArgument Stat="MovePointsTotal"/>
-         <StatArgument Stat="OverallDamage" Value="DamageMalusText"/>
-         <StatArgument Stat="Block" Value="BlockBonusMultiplier"/>
-         <LocArgument Value="Floor(CurrentMoveMissingPercentage)" Suffix="%" Interpreted="true" Style="KeyWordNb"/>
-         <StatArgument Stat="OverallDamage" Value="DamageMalusValue" Interpreted="true"/>
-         <StatArgument Stat="Block" Value="BlockBonusValue" Interpreted="true"/>
+         <LocArgument Value="ReliabilityConversionRate" Suffix="%" Style="GoodNb"/>
+         <LocArgument Value="HealthConversionRate" Style="KeyWordNb"/>
+         <StatArgument Stat="HealthTotal"/>
+         <StatArgument Stat="Reliability" Value="ReliabilityBonus" Interpreted="true"/>
+         <StatusArgument Status="Invulnerable"/>
       </LocArguments>
       <View>
-         <DisplayBonusBeforePurchase/>
          <DisplayInHUD/>
       </View>
       <Modules>
          <BufferModule>
             <Effects>
-               <StatModifier Stat="OverallDamage" Value="DamageMalusValue"/>
-               <StatModifier Stat="Block" Value="BlockBonusValue"/>
+               <SkillModifier ComputationStat="Reliability" Value="ReliabilityBonus">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
+                  </Conditions>
+               </SkillModifier>
+            </Effects>
+         </BufferModule>
+         <BufferModule>
+            <Events>
+               <Event EffectTime="OnAttackDataComputed">
+                  <Conditions>
+                     <IsTrue Value="Module.Buffer = 0"/>
+                     <IsTrue Value="DamageAboveThresholdValue"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="1"/>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartProductionTurn">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <AttackDataModifier AttackDataParameter="HealthDamage" Value="Owner.Health - ImmortalityThreshold"/>
+               <ApplyStatus Status="Invulnerable" TurnsCount="-1">
+                  <PerkTargeting TargetingReference="Owner" TargetingMethod="Self">
+                     <DamageableTarget Type="Playable"/>
+                  </PerkTargeting>
+               </ApplyStatus>
+               <CastSkill SkillId="ImmortalityVisualEffect">
+                  <PerkTargeting TargetingReference="Owner" TargetingMethod="Self"/>
+               </CastSkill>
             </Effects>
          </BufferModule>
       </Modules>
@@ -2162,8 +2185,8 @@
 
       <TokenVariables>
          <TokenVariable Key="TotalMoveIncrease" Value="Stacks* MovePointsBuffValue"/>
-         <TokenVariable Key="MovePointsBuffValue" Value="2"/>
-         <TokenVariable Key="EnemyHitThreshold" Value="5"/>
+         <TokenVariable Key="MovePointsBuffValue" Value="3"/>
+         <TokenVariable Key="EnemyHitThreshold" Value="6"/>
          <TokenVariable Key="Stacks" Value="Module.Buffer2"/>
       </TokenVariables>
       <LocArguments>
@@ -2609,7 +2632,7 @@
       <TokenVariables>
          <TokenVariable Key="RemainingUnitsToKill" Value="UnitKilledThreshold - Module.Buffer"/>
          <TokenVariable Key="HasKilledEnoughUnits" Value="Module.Buffer > UnitKilledThreshold - 1"/>
-         <TokenVariable Key="UnitKilledThreshold" Value="3"/>
+         <TokenVariable Key="UnitKilledThreshold" Value="4"/>
          <TokenVariable Key="MultiHitSkillBaseValue" Value="4"/>
          <TokenVariable Key="MultiHitBonus" Value="Module.Buffer2"/>
          <TokenVariable Key="MultiHitStep" Value="1"/>
@@ -2825,51 +2848,49 @@
    <!--Magic Staff-->
    <PerkDefinition Id="MagicStaffUniquePerk">
       <TokenVariables>
-         <TokenVariable Key="DamageAboveThresholdValue" Value="AttackData.HealthDamage > Owner.Health - ThresholdValue"/>
-         <TokenVariable Key="ThresholdValue" Value="1"/>
-         <TokenVariable Key="HasPerkTriggeredAlready" Value="Module.Buffer > 0"/>
+         <TokenVariable Key="HasKilledThisTurn" Value="Module.Buffer > 0"/>
+         <TokenVariable Key="PerkDamageBonus" Value="100"/>
+         <TokenVariable Key="SkillHasManaCost" Value="Skill.ManaCost > 0"/>
       </TokenVariables>
       <LocArguments>
-         <StatArgument  Stat="HealthTotal" Value="ThresholdValue" DisplaySign="false" Style="KeyWordNb"/>
-         <StatusArgument Status="Invulnerable"/>
+         <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb"/>
+         <LocalizedArgument Prefix="SkillName_" Value="StunningEntrance" Style="Skill"/>
+         <LocalizedArgument Prefix="SkillName_" Value="ScorchingWave" Style="Skill"/>
+         <LocalizedArgument Prefix="SkillName_" Value="FireThrower" Style="Skill"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
             <GreyOut>
-               <IsTrue Value="HasPerkTriggeredAlready"/>
+               <IsTrue Value="HasKilledThisTurn"/>
             </GreyOut>
          </DisplayInHUD>
       </View>
       <Modules>
          <BufferModule>
             <Events>
-               <Event EffectTime="OnAttackDataComputed">
-                  <Conditions>
-                     <IsTrue Value="Module.Buffer = 0"/>
-                     <IsTrue Value="DamageAboveThresholdValue"/>
-                  </Conditions>
+               <Event EffectTime="OnTargetKilled">
                   <Actions>
-                     <!-- Activate the perk -->
                      <SetBufferTo BufferIndex="Buffer" Value="1"/>
-                     <TriggerEffects/>
                   </Actions>
                </Event>
-               <Event EffectTime="OnStartProductionTurn">
+               <Event EffectTime="OnStartNightTurnPlayable">
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer" Value="0"/>
                   </Actions>
                </Event>
             </Events>
+            <Conditions>
+               <IsTrue Value="Module.Buffer = 0"/>
+               <IsTrue Value="HasSkill"/>
+               <IsTrue Value="Skill.IsAttack"/>
+            </Conditions>
             <Effects>
-               <AttackDataModifier AttackDataParameter="HealthDamage" Value="Owner.Health - ThresholdValue"/>
-               <ApplyStatus Status="Invulnerable" TurnsCount ="-1">
-                  <PerkTargeting TargetingReference="Owner" TargetingMethod="Self">
-                     <DamageableTarget Type="Playable"/>
-                  </PerkTargeting>
-               </ApplyStatus>
-               <CastSkill SkillId="ImmortalityVisualEffect">
-                  <PerkTargeting TargetingReference="Owner" TargetingMethod="Self"/>
-               </CastSkill>
+               <SkillModifier ComputationStat="OverallDamage" Value="PerkDamageBonus">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('MagicStaffUnique')"/>
+                     <IsTrue Value="SkillHasManaCost"/>
+                  </Conditions>
+               </SkillModifier>
             </Effects>
          </BufferModule>
       </Modules>
@@ -2958,7 +2979,7 @@
    <PerkDefinition Id="DruidicStaffUniquePerk">
       <TokenVariables>
          <TokenVariable Key="MaxRange" Value="5"/>
-         <TokenVariable Key="HealthPercentageThreshold" Value="0.3"/>
+         <TokenVariable Key="HealthPercentageThreshold" Value="0.35"/>
       </TokenVariables>
 
       <LocArguments>
@@ -3015,7 +3036,7 @@
          <TokenVariable Key="StackLoosePerSkill" Value="1"/>
          <TokenVariable Key="IsStackConsumePrevented" Value="Module.Buffer3"/>
          <!--Added by uniaue perk-->
-         <TokenVariable Key="ResistanceDebuff" Value="15"/>
+         <TokenVariable Key="ResistanceDebuff" Value="25"/>
          <TokenVariable Key="EnemiesAmount" Value="5"/>
       </TokenVariables>
       <LocArguments>
@@ -3183,8 +3204,8 @@
          <TokenVariable Key="OverheatThreshold" Value="7"/>
 			<TokenVariable Key="CooldownPerTurn" Value="4"/>
 			<TokenVariable Key="SkillId" Value="OverheatUniqueSkill"/>
-			<TokenVariable Key="BastHealthCost" Value="12"/>
-			<TokenVariable Key="HeatlCostPerPoint" Value="4"/>
+			<TokenVariable Key="BastHealthCost" Value="9"/>
+			<TokenVariable Key="HeatlCostPerPoint" Value="1"/>
          <TokenVariable Key="HeatIncrease" Value="1"/>
          <TokenVariable Key="CanTriggerOverheat" Value ="Module.Buffer3"/>
       </TokenVariables>

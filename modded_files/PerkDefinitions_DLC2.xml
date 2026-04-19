@@ -934,8 +934,8 @@
 
    <PerkDefinition Id="Elusive">
       <TokenVariables>
-         <TokenVariable Key="TransformedValue" Value="Floor(Owner.UnlockedArmorTotal * TransformedPercentage / 100)"/>
-         <TokenVariable Key="TransformedPercentage" Value="30"/>
+         <TokenVariable Key="TransformedValue" Value="Floor(Owner.UnlockedBlock * TransformedPercentage / 100)"/>
+         <TokenVariable Key="TransformedPercentage" Value="200"/>
          <TokenVariable Key="ElusiveSkillRange" Value="5"/>
          <TokenVariable Key="ElusiveSkillBaseDamage" Value="125"/>
          <TokenVariable Key="ElusiveSkillScalingDamage" Value="300"/>
@@ -943,7 +943,7 @@
          <TokenVariable Key="ElusiveSkill2ScalingDamage" Value="500"/>
       </TokenVariables>
       <LocArguments>
-         <StatArgument Stat="ArmorTotal"/>
+         <StatArgument Stat="Block"/>
          <StatArgument Stat="Dodge"/>
          <StatArgument Stat="Dodge" Value="TransformedValue" Interpreted="true"/>
          <LocArgument Value="TransformedPercentage" Suffix="%" Style="KeyWordNb"/>
@@ -997,7 +997,7 @@
             </Events>
             <Effects>
                <StatModifier Stat="Dodge" Value="TransformedValue"/>
-               <StatLocker Stat="ArmorTotal"/>
+               <StatLocker Stat="Block"/>
                <CastSkill SkillId="ElusiveSkill2"> <!-- TODO use "SkillId" TokenVariable if ever implemented-->
                   <PerkTargeting TargetingReference="Owner" TargetingMethod="DamageablesInRange" Amount="Module.Buffer" Range="ElusiveSkillRange">
                      <DamageableTarget Type="Enemy"/>

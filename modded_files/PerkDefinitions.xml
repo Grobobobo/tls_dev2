@@ -1187,15 +1187,14 @@
          <TokenVariable Key="ThresholdIsReached" Value="Module.Buffer > HitThreshold - 1"/>
          <TokenVariable Key="ThresholdWasReached" Value="Module.Buffer2 > HitThreshold - 1"/>
          <TokenVariable Key="HitThreshold" Value="2"/>
-         <TokenVariable Key="ReliabilityBonus" Value="30"/>
+         <TokenVariable Key="RangedDamageBonus" Value="15"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="HitThreshold" Style="KeyWordNb"/>
          <LocalizedArgument Value="SkillEffectName_IgnoreLineOfSight" Style="Vision"/>
-         <LocalizedArgument Value="SkillEffectName_ArmorPiercing" Style="ArmorPiercing"/>
          <LocalizedArgument Value="SkillEffectName_NoBlock" Style="NoBlock"/>
          <LocArgument Value="RemainingEnemiesToHit" Interpreted="true" Style="KeyWordNb"/>
-         <StatArgument Stat="Reliability" Value="ReliabilityBonus"/>
+         <StatArgument Stat="RangedDamage" Value="RangedDamageBonus"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -1212,7 +1211,6 @@
          </DisplayInHUD>
          <CompendiumEntries>
             <CompendiumEntry Id="SkillEffect_IgnoreLineOfSight"/>
-            <CompendiumEntry Id="SkillEffect_IgnoreArmor"/>
             <CompendiumEntry Id="SkillEffect_NoBlock"/>
          </CompendiumEntries>
          <FeedbackActivationConditions>
@@ -1277,11 +1275,10 @@
                   </Conditions>
                   <SkillEffects>
                      <IgnoreLineOfSight/>
-                     <ArmorPiercing/>
                      <NoBlock/>
                   </SkillEffects>
                </AddSkillEffect>
-               <SkillModifier ComputationStat="Reliability" Value="ReliabilityBonus">
+               <SkillModifier ComputationStat="RangedDamage" Value="RangedDamageBonus">
                   <Conditions>
                      <IsTrue Value="Skill.IsAttack"/>
                      <IsTrue Value="ThresholdIsReached"/>
@@ -2764,8 +2761,8 @@
    <!-- T5 -->
    <PerkDefinition Id="FortressMaster">
       <TokenVariables>
-         <TokenVariable Key="PerkRange" Value="8"/>
-         <TokenVariable Key="DamageBonusPercentage" Value="50"/>
+         <TokenVariable Key="PerkRange" Value="10"/>
+         <TokenVariable Key="DamageBonusPercentage" Value="75"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="PerkRange" Style="KeyWordNb"/>
