@@ -291,7 +291,7 @@
 
    <PerkDefinition Id="TankyResearchPerk">
       <TokenVariables>
-         <TokenVariable Key="BonusStunChance" Value="25"/>
+         <TokenVariable Key="BonusStunChance" Value="15"/>
          <TokenVariable Key="StunDamage" Value="160"/>
       </TokenVariables>
       <View>
@@ -811,7 +811,7 @@
                   </Conditions>
                   <Actions>
                      <!-- Hero turn: trigger the effect instanlty and display the feedback -->
-                     <InstantiateBuffEffectDisplay Stat="Dodge" Value="TotalBonusDodgeValue"/>
+                     <InstantiateBuffEffectDisplay Stat="OverallDamage" Value="TotalBonusDodgeValue"/>
                      <TriggerEffects/>
                   </Actions>
                </Event>
@@ -830,7 +830,7 @@
                   </Conditions>
                   <Actions>
                      <!-- Enemy turn: display the feedback at the end of the cluster (the current one only)-->
-                     <InstantiateBuffEffectDisplay Stat="Dodge" Value="TotalBonusDodgeValue"/>
+                     <InstantiateBuffEffectDisplay Stat="OverallDamage" Value="TotalBonusDodgeValue"/>
                      <SetBufferTo BufferIndex="Buffer2" Value="0"/>
                   </Actions>
                </Event>
@@ -846,7 +846,7 @@
                </Event>
             </Events>
             <Effects>
-               <ApplyStatus Status="Buff" Stat="Dodge" TurnsCount="BuffTurnsCount" Value="TotalBonusDodgeValue" HideDisplayEffect="true"/>
+               <ApplyStatus Status="Buff" Stat="OverallDamage" TurnsCount="BuffTurnsCount" Value="TotalBonusDodgeValue" HideDisplayEffect="true"/>
                <ResetBuffer/>
             </Effects>
          </BufferModule>

@@ -761,16 +761,17 @@
    <PerkDefinition Id="Thrifty">
       <TokenVariables>
          <TokenVariable Key="SkillHasManaCost" Value="ManaCostBase > 0"/>
-         <TokenVariable Key="ManaCostReduction" Value="Ceil((ManaCostDivider -1 ) * ManaCostBase / ManaCostDivider)"/>
+         <TokenVariable Key="ReductionIsActive" Value="ActionPointsToSpendLeft = 0"/>
+         <TokenVariable Key="ManaCostReduction" Value="Ceil(ManaCostBase / ManaCostDivider)"/>
          <TokenVariable Key="ManaCostBase" Value="BooleanChoice(Owner.IsManaCostLocked, 0, Skill.BaseManaCost)"/>
-         <TokenVariable Key="ManaCostDivider" Value="5"/>
+         <TokenVariable Key="ManaCostDivider" Value="1.2"/>
          <TokenVariable Key="ActionPointsToSpendLeft" Value="Max(0, ActionPointsSpentThreshold - Module.Buffer)"/>
          <TokenVariable Key="ActionPointsSpentThreshold" Value="8"/>
          <TokenVariable Key="RealActionPointsSpent" Value="Module.Buffer3"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="ActionPointsTotal" Value="ActionPointsSpentThreshold" DisplaySign="false" Style="KeyWordNb"/>
-         <LocArgument Value="ManaCostDivider" Style="KeyWordNb"/>
+         <LocArgument Value="5" Style="KeyWordNb"/>
          <StatArgument Stat="ActionPointsTotal"/>
          <LocArgument Value="ActionPointsToSpendLeft" Interpreted="true" Style="KeyWordNb"/>
       </LocArguments>
@@ -932,7 +933,7 @@
    <PerkDefinition Id="ExplosiveAtoms">
       <TokenVariables>
          <TokenVariable Key="TriggerCondition" Value="BooleanChoice(Owner.IsManaCostLocked, 0, Skill.BaseManaCost) > 0"/>
-         <TokenVariable Key="PerkDamageBonus" Value="25"/>
+         <TokenVariable Key="PerkDamageBonus" Value="20"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb"/>
@@ -1204,11 +1205,9 @@
             </GreyOut>
             <Highlight>
                <IsTrue Value="HasSkill"/>
+               <IsTrue Value="Skill.IsAttack"/>
                <IsTrue Value="HasTargetTile"/>
                <IsTrue Value="ThresholdIsReached"/>
-               <IsFalse Value="Skill.HasNativeVision"/>
-               <IsTrue Value="Skill.MaxRange > 1"/>
-               <IsTrue Value="DistanceFromCaster > 1"/>
             </Highlight>
          </DisplayInHUD>
          <CompendiumEntries>
@@ -1239,10 +1238,10 @@
                </Event>
                <Event EffectTime="OnSkillNextHit">
                   <Conditions>
+                     <IsTrue Value="HasPerkData"/>
+                     <IsTrue Value="HasSkill"/>
+                     <IsTrue Value="Skill.IsAttack"/>
                      <IsTrue Value="ThresholdWasReached"/>
-                     <IsFalse Value="Skill.HasNativeVision"/>
-                     <IsTrue Value="Skill.MaxRange > 1"/>
-                     <IsTrue Value="DistanceFromCaster > 1"/>
                   </Conditions>
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer3" Value="1"/>
@@ -1273,9 +1272,8 @@
                   <Conditions>
                      <IsTrue Value="HasPerkData"/>
                      <IsTrue Value="HasSkill"/>
+                     <IsTrue Value="Skill.IsAttack"/>
                      <IsTrue Value="ThresholdIsReached"/>
-                     <IsFalse Value="Skill.HasNativeVision"/>
-                     <IsTrue Value="Skill.MaxRange > 1"/>
                   </Conditions>
                   <SkillEffects>
                      <IgnoreLineOfSight/>
@@ -1283,11 +1281,12 @@
                      <NoBlock/>
                   </SkillEffects>
                </AddSkillEffect>
-               <StatModifier Stat="Reliability" Value="ReliabilityBonus">
+               <SkillModifier ComputationStat="Reliability" Value="ReliabilityBonus">
                   <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
                      <IsTrue Value="ThresholdIsReached"/>
                   </Conditions>
-               </StatModifier>
+               </SkillModifier>
             </Effects>
          </BufferModule>
       </Modules>
@@ -4018,16 +4017,16 @@
       <TokenVariables>
          <TokenVariable Key="SkillHasHealthCost" Value="Skill.HasBaseManaOrHealthCost"/>
          <TokenVariable Key="ReductionIsActive" Value="ActionPointsToSpendLeft = 0"/>
-         <TokenVariable Key="HealthCostReduction" Value="Ceil((HealthCostDivider - 1) * HealthCostBase / HealthCostDivider)"/>
+         <TokenVariable Key="HealthCostReduction" Value="Ceil(HealthCostBase / HealthCostDivider)"/>
          <TokenVariable Key="HealthCostBase" Value="Skill.HealthCost"/>
-         <TokenVariable Key="HealthCostDivider" Value="20"/>
+         <TokenVariable Key="HealthCostDivider" Value="1.05"/>
          <TokenVariable Key="ActionPointsToSpendLeft" Value="Max(0, ActionPointsSpentThreshold - Module.Buffer)"/>
          <TokenVariable Key="ActionPointsSpentThreshold" Value="4"/>
          <TokenVariable Key="RealActionPointsSpend" Value="Module.Buffer3"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="ActionPointsTotal" Value="ActionPointsSpentThreshold" DisplaySign="false" Style="KeyWordNb"/>
-         <LocArgument Value="HealthCostDivider" Style="KeyWordNb"/>
+         <LocArgument Value="20" Style="KeyWordNb"/>
          <StatArgument Stat="ActionPointsTotal"/>
          <LocArgument Value="ActionPointsToSpendLeft" Interpreted="true" Style="KeyWordNb"/>
       </LocArguments>

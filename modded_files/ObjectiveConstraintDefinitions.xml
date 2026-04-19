@@ -157,7 +157,7 @@
 
    <ObjectiveConstraintDefinition Type="IsPunch" DifficultyMultiplier="2"/>
 
-   <ObjectiveConstraintDefinition Type="Isolated" DifficultyMultiplier="4">
+   <ObjectiveConstraintDefinition Type="Isolated" DifficultyMultiplier="3">
       <AdditionalConstraintCompatibilities>
          <Constraint Type="EnemyId"/>
          <!--<Constraint Type="EnemyTier"/>-->
@@ -170,7 +170,7 @@
       </AdditionalConstraintCompatibilities>
    </ObjectiveConstraintDefinition>
 
-   <ObjectiveConstraintDefinition Type="NegativeAlteration" DifficultyMultiplier="3">
+   <ObjectiveConstraintDefinition Type="NegativeAlteration" DifficultyMultiplier="2">
       <AdditionalConstraintCompatibilities>
          <Constraint Type="EnemyId"/>
          <!--<Constraint Type="EnemyTier"/>-->
