@@ -21,7 +21,7 @@
    <ApocalypseModifierStepDefinition Id="EnemyHealthModifier_1">
       <ApocalypseLevel>2</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="HealthModifier" Value="15"/>
+         <TokenVariable Key="HealthModifier" Value="10"/>
       </TokenVariables>
       <Effects>
          <EnemiesStatBaseValueModifier Stat="HealthTotal" Value="HealthModifier">
@@ -39,14 +39,14 @@
    <ApocalypseModifierStepDefinition Id="EnemyHealthModifier_2" TemplateId="EnemyHealthModifier_1">
       <ApocalypseLevel>4</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="HealthModifier" Value="30"/>
+         <TokenVariable Key="HealthModifier" Value="20"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="EnemyHealthModifier_3" TemplateId="EnemyHealthModifier_1">
       <ApocalypseLevel>6</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="HealthModifier" Value="45"/>
+         <TokenVariable Key="HealthModifier" Value="30"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 
@@ -405,7 +405,7 @@
 
    <!-- Enemy Late Buff Modifier Steps -->
    <ApocalypseModifierStepDefinition Id="EnemyLateBuffModifier_1">
-      <ApocalypseLevel>3</ApocalypseLevel>
+      <ApocalypseLevel>1</ApocalypseLevel>
       <TokenVariables>
          <TokenVariable Key="ActivationTurn" Value="6"/>
       </TokenVariables>
@@ -426,7 +426,7 @@
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="EnemyLateBuffModifier_2" TemplateId="EnemyLateBuffModifier_1">
-      <ApocalypseLevel>4</ApocalypseLevel>
+      <ApocalypseLevel>3</ApocalypseLevel>
       <TokenVariables>
          <TokenVariable Key="ActivationTurn" Value="5"/>
       </TokenVariables>
@@ -443,7 +443,7 @@
    <ApocalypseModifierStepDefinition Id="EnemyProgressionOffsetModifier_1">
       <ApocalypseLevel>3</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="ProgressionMultiplier" Value="1.2"/>
+         <TokenVariable Key="ProgressionMultiplier" Value="1.15"/>
          <TokenVariable Key="ExcludeStatMovePoints" Value="MovePointsTotal"/>
          <TokenVariable Key="ExcludeStatAccuracy" Value="Accuracy"/>
          <TokenVariable Key="ExcludeStatResistance" Value="Resistance"/>
@@ -465,7 +465,7 @@
    <ApocalypseModifierStepDefinition Id="EnemyProgressionOffsetModifier_2" TemplateId="EnemyProgressionOffsetModifier_1">
       <ApocalypseLevel>6</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="ProgressionMultiplier" Value="1.4"/>
+         <TokenVariable Key="ProgressionMultiplier" Value="1.30"/>
          <TokenVariable Key="ExcludeStatMovePoints" Value="MovePointsTotal"/>
          <TokenVariable Key="ExcludeStatAccuracy" Value="Accuracy"/>
          <TokenVariable Key="ExcludeStatResistance" Value="Resistance"/>
@@ -475,7 +475,7 @@
    <ApocalypseModifierStepDefinition Id="EnemyProgressionOffsetModifier_3" TemplateId="EnemyProgressionOffsetModifier_1">
       <ApocalypseLevel>9</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="ProgressionMultiplier" Value="1.6"/>
+         <TokenVariable Key="ProgressionMultiplier" Value="1.45"/>
          <TokenVariable Key="ExcludeStatMovePoints" Value="MovePointsTotal"/>
          <TokenVariable Key="ExcludeStatAccuracy" Value="Accuracy"/>
          <TokenVariable Key="ExcludeStatResistance" Value="Resistance"/>

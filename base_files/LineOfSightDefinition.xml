@@ -1,0 +1,84 @@
+﻿<LineOfSightDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:noNamespaceSchemaLocation="LineOfSightDefinition.xsd">
+
+   <Buildings>
+     <BuildingException Id="MagicCircle"/>
+     <BuildingException Id="LightFogSpawner_Dead"/>
+      <!-- Defences -->
+      <BuildingException Id="Barricade"/>
+      <BuildingException Id="PlayerBarricade"/>
+      <BuildingException Id="Gate"/>
+      <BuildingException Id="WoodenGate"/>
+      <BuildingException Id="WoodenWall"/>
+      <BuildingException Id="WoodenWallReinforced"/>
+      <BuildingException Id="Ballista"/>
+      <BuildingException Id="PortableBallista"/>
+      <!-- Defences on the ground -->
+      <BuildingException Id="Teleporter"/>
+      <BuildingException Id="DamageTrap"/>
+      <BuildingException Id="SlowTrap"/>
+      <BuildingException Id="StunTrap"/>
+      <!-- Obstacles -->
+      <BuildingException Id="TreeStump"/>
+      <BuildingException Id="Grave"/>
+      <BuildingException Id="WoodenFence"/>
+      <BuildingException Id="MinecartA"/>
+      <BuildingException Id="MinecartB"/>
+      <BuildingException Id="MinecartC"/>
+      <BuildingException Id="Barrels"/>
+      <BuildingException Id="Crates"/>
+      <BuildingException Id="RoadBlock_NSEW"/>
+      <BuildingException Id="RoadBlock_N"/>
+      <BuildingException Id="RoadBlock_S"/>
+      <BuildingException Id="RoadBlock_E"/>
+      <BuildingException Id="RoadBlock_W"/>
+      <BuildingException Id="Crate_Iron"/>
+      <BuildingException Id="SmallBoat_A"/>
+      <BuildingException Id="SmallBoat_B"/>
+      <BuildingException Id="PillarRubble"/>
+      <BuildingException Id="Brazier_Unlit"/>
+      <BuildingException Id="Brazier_Lit1"/>
+      <BuildingException Id="Brazier_Lit2"/>
+      <BuildingException Id="Brazier_Lit3"/>
+      <BuildingException Id="Brazier_Lit4"/>
+      <BuildingException Id="Brazier_Lit5"/>
+      <BuildingException Id="BrazierBoss_Unlit"/>
+      <BuildingException Id="BrazierBoss_Lit1"/>
+      <BuildingException Id="BrazierBoss_Lit2"/>
+      <BuildingException Id="BrazierBoss_Lit3"/>
+      <BuildingException Id="Brazier_Prelit1"/>
+      <BuildingException Id="Brazier_Prelit2"/>
+      <BuildingException Id="Brazier_Prelit3"/>
+      <BuildingException Id="Brazier_Prelit4"/>
+      <BuildingException Id="Brazier_Prelit5"/>
+	  <BuildingException Id="CorruptedCrate_Iron"/>
+	  <BuildingException Id="CorruptedTreeBreakable"/>
+	  <BuildingException Id="CorruptedRails"/>
+      <!-- BonePile -->
+      <BuildingException Id="BonePile1"/>
+      <BuildingException Id="BonePile2"/>
+      <BuildingException Id="BonePileElite"/>
+      <!-- Seeds -->
+      <BuildingException Id="IsolationSeed"/>
+      <BuildingException Id="PoisonSeed"/>
+      <BuildingException Id="PurgingSeed"/>
+      <!-- Sprout -->
+      <BuildingException Id="LivingForestWallSprout"/>
+      <BuildingException Id="LivingForestBallistaSprout"/>
+   </Buildings>
+   <!--<PlayableUnits></PlayableUnits>-->
+   <EnemyUnits>
+      <EnemyUnitsBlocking Id="Shieldman"></EnemyUnitsBlocking>
+      <EnemyUnitsBlocking Id="Blocker"></EnemyUnitsBlocking>
+      <EnemyUnitsBlocking Id="UnnamedHammer"></EnemyUnitsBlocking>
+      <EnemyUnitsBlocking Id="UnnamedSledgehammer"></EnemyUnitsBlocking>
+      <EnemyUnitsBlocking Id="UnnamedLongbow"></EnemyUnitsBlocking>
+      <EnemyUnitsBlocking Id="UnnamedDruidic"></EnemyUnitsBlocking>
+      <EnemyUnitsBlocking Id="NessieBossHead"></EnemyUnitsBlocking>
+      <EnemyUnitsBlocking Id="NessieBossTail"></EnemyUnitsBlocking>
+      <EnemyUnitsBlocking Id="NessieBossHeadArmor"></EnemyUnitsBlocking>
+      <EnemyUnitsBlocking Id="NessieBossTailArmor"></EnemyUnitsBlocking>
+      <EnemyUnitsBlocking Id="NessieBossHeadRage"></EnemyUnitsBlocking>
+   </EnemyUnits>
+
+</LineOfSightDefinition>

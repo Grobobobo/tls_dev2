@@ -157,7 +157,7 @@
 
    <ObjectiveConstraintDefinition Type="IsPunch" DifficultyMultiplier="2"/>
 
-   <ObjectiveConstraintDefinition Type="Isolated" DifficultyMultiplier="8">
+   <ObjectiveConstraintDefinition Type="Isolated" DifficultyMultiplier="3">
       <AdditionalConstraintCompatibilities>
          <Constraint Type="EnemyId"/>
          <!--<Constraint Type="EnemyTier"/>-->
@@ -170,7 +170,7 @@
       </AdditionalConstraintCompatibilities>
    </ObjectiveConstraintDefinition>
 
-   <ObjectiveConstraintDefinition Type="NegativeAlteration" DifficultyMultiplier="6">
+   <ObjectiveConstraintDefinition Type="NegativeAlteration" DifficultyMultiplier="2">
       <AdditionalConstraintCompatibilities>
          <Constraint Type="EnemyId"/>
          <!--<Constraint Type="EnemyTier"/>-->
@@ -233,7 +233,7 @@
    </ObjectiveConstraintDefinition>
 
    <ObjectiveConstraintDefinition Type="XTilesOrLessFromCaster" DifficultyMultiplier="1">
-      <TilesFromCaster Value="2" Weight="1" DifficultyMultiplier="3"/>
+      <TilesFromCaster Value="2" Weight="1" DifficultyMultiplier="4"/>
       <TilesFromCaster Value="4" Weight="1" DifficultyMultiplier="2"/>
       <TilesFromCaster Value="6" Weight="1" DifficultyMultiplier="1.5"/>
 
@@ -249,7 +249,7 @@
    <ObjectiveConstraintDefinition Type="XTilesOrMoreFromCaster" DifficultyMultiplier="1">
       <TilesFromCaster Value="3" Weight="1" DifficultyMultiplier="1.5"/>
       <TilesFromCaster Value="6" Weight="1" DifficultyMultiplier="2"/>
-      <TilesFromCaster Value="9" Weight="1" DifficultyMultiplier="3"/>
+      <TilesFromCaster Value="9" Weight="1" DifficultyMultiplier="4"/>
 
       <AdditionalConstraintCompatibilities>
          <Constraint Type="EnemyId"/>

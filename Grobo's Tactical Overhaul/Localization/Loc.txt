@@ -1,5 +1,5 @@
 ﻿ ,English,Français,简体中文,繁體中文,日本語,Русский,Українська,Deutsch,Español,Português (Brasil),한국어
-"BuildingDescription_PotionMaker","Crafts 2 <style=KeyWord>Consumables</style> every <style=Production>Production Phase</style>.
+BuildingDescription_PotionMaker,"Crafts 2 <style=KeyWord>Consumables</style> every <style=Production>Production Phase</style>.
 Additional <style=KeyWord>Consumables</style> can be crafted with the help of <style=Workers>Workers</style>.","Fabrique 2 <style=KeyWord>Consommables</style> à chaque <style=Production>Phase de Production</style>.
 Des <style=KeyWord>Consommables</style> supplémentaires peuvent être fabriqués avec l'aide d'<style=Workers>Ouvriers</style>.","在每个<style=Production>整备阶段</style>产出2个<style=KeyWord>消耗品</style>。
 在<style=Workers>工人</style>的帮助下可以生产出更多<style=KeyWord>消耗品</style>。","在每個<style=Production>整備階段</style>產出2個<style=KeyWord>消耗品</style>。
@@ -11,8 +11,8 @@ Zusätzliche <style=KeyWord>Konsumgüter</style> können mithilfe von <style=Wor
  Puede fabricar <style=KeyWord>objetos consumibles</style> adicionales con ayuda de <style=Workers>trabajadores</style>.","Produz 2 <style=KeyWord>Consumíveis</style> toda <style=Production>Fase de Produção</style>.
 <style=KeyWord>Consumíveis</style> adicionais podem ser produzidos com a ajuda de <style=Workers>Trabalhadores</style>.","<style=Production>생산 단계</style>를 시작할 때마다 <style=KeyWord>소모품</style> 2개를 제작합니다.
 <style=Workers>일꾼</style>의 도움을 받아 <style=KeyWord>소모품</style>을 더 제작할 수 있습니다."
-"BuildingUpgradeTooltipName_UpgradeFillGaugeProductionPotion0","Production +","Production +","生产力 +","生產力 +","生産量+","Производство +","Виробництво +","Produktion +","Producción +","Produção +","생산 +"
-"BuildingUpgradeTooltipDescription_UpgradeFillGaugeProductionPotion0","Upgrades passive <style=ProductionEffect>production</style>:
+BuildingUpgradeTooltipName_UpgradeFillGaugeProductionPotion0,Production +,Production +,生产力 +,生產力 +,生産量+,Производство +,Виробництво +,Produktion +,Producción +,Produção +,생산 +
+BuildingUpgradeTooltipDescription_UpgradeFillGaugeProductionPotion0,"Upgrades passive <style=ProductionEffect>production</style>:
 • <style=KeyWord>Item(s)</style> crafted <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>.","Améliore la <style=ProductionEffect>production</style> passive<nbsp>:
 • <style=KeyWord>Objets</style> fabriqués <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>.","升级自动<style=ProductionEffect>生产力</style>：
  • 生产<style=KeyWord>物品</style>数量 <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>。","升級自動<style=ProductionEffect>生產力</style>：
@@ -24,10 +24,10 @@ Zusätzliche <style=KeyWord>Konsumgüter</style> können mithilfe von <style=Wor
  • <style=KeyWord>Objetos</style> fabricados <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>.","Melhora a <style=ProductionEffect>produção</style> passiva:
  • <style=KeyWord>Item(ns)</style> produzido(s) <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>.","기본 <style=ProductionEffect>생산</style> 강화:
  • 제작 <style=KeyWord>아이템</style> <style=""Number"">{0}</style> > <style=""GoodNbOutlined"">{1}</style>"
-"SkillName_Assassinate_Unique","Assassinate","Assassinat","暗杀","暗殺","暗殺","Стрельба наповал","Убивство","Meucheln","Asesinato","Assassinato","암살"
-"SkillName_InfectUnique","Infect","Infection","感染","感染","汚染","Зараза","Зараження","Infizieren","Infección","Infecção","감염"
-"SkillName_SlowDeathOffhand","Slow Death (Off-hand)","Mort à petit feu (secondaire)","缓慢死亡（副手）","緩慢死亡（副手）","緩やかな死(オフハンド)","Долгая смерть (вторая рука)","Повільна смерть (допоміжне)","Langsamer Tot (Nebenhand)","Muerte lenta (mano secundaria)","Morte Lenta (mão secundária)","느린 죽음 (보조)"
-"SkillEffectDescription_ResupplyCharges","<style=KeyWord>Gives back</style> <style=GoodNb>2</style> <style=TrapUse>Charge</style> to the target trap.
+SkillName_Assassinate_Unique,Assassinate,Assassinat,暗杀,暗殺,暗殺,Стрельба наповал,Убивство,Meucheln,Asesinato,Assassinato,암살
+SkillName_InfectUnique,Infect,Infection,感染,感染,汚染,Зараза,Зараження,Infizieren,Infección,Infecção,감염
+SkillName_SlowDeathOffhand,Slow Death (Off-hand),Mort à petit feu (secondaire),缓慢死亡（副手）,緩慢死亡（副手）,緩やかな死(オフハンド),Долгая смерть (вторая рука),Повільна смерть (допоміжне),Langsamer Tot (Nebenhand),Muerte lenta (mano secundaria),Morte Lenta (mão secundária),느린 죽음 (보조)
+SkillEffectDescription_ResupplyCharges,"<style=KeyWord>Gives back</style> <style=GoodNb>2</style> <style=TrapUse>Charge</style> to the target trap.
 <style=Attenuated>Cannot overflow.</style>","<style=KeyWord>Rend</style> <style=GoodNb>2</style> <style=TrapUse>Charge</style> au piège ciblé.
 <style=Attenuated>Ne peut dépasser la valeur maximale de l'attribut.</style>","<style=KeyWord>补充</style>陷阱的<style=GoodNb>2次</style><style=TrapUse>使用次数</style>。
 <style=Attenuated>不能超过</style>上限。","<style=KeyWord>補充</style>陷阱的<style=GoodNb>2次</style><style=TrapUse>使用次數</style>。
@@ -39,7 +39,7 @@ Zusätzliche <style=KeyWord>Konsumgüter</style> können mithilfe von <style=Wor
 <style=Attenuated>No puede sobrepasar el máximo.</style>","<style=KeyWord>Devolve</style> <style=GoodNb>2</style> <style=TrapUse>Carga</style> à armadilha alvo.
 <style=Attenuated>Não excede o máximo.</style>","대상 함정에 <style=TrapUse>충전</style>을 <style=GoodNb>2</style>회만큼 <style=KeyWord>돌려줍니다</style>.
 <style=Attenuated>최대치를 초과할 수 없습니다.</style>"
-"SkillEffectDescription_ResupplyOverallUses","<style=KeyWord>Gives back</style> <style=GoodNb>3</style> <style=UsePerNight>Use per night</style> to the target defense.
+SkillEffectDescription_ResupplyOverallUses,"<style=KeyWord>Gives back</style> <style=GoodNb>3</style> <style=UsePerNight>Use per night</style> to the target defense.
 <style=Attenuated>Cannot overflow.</style>","<style=KeyWord>Rend</style> <style=GoodNb>3</style> <style=UsePerNight>utilisation par nuit</style> à la défense ciblée.
 <style=Attenuated>Ne peut dépasser la valeur maximale de l'attribut.</style>","<style=KeyWord>补充</style>防御设施的<style=GoodNb>3次</style><style=UsePerNight>每晚使用次数</style>。
 <style=Attenuated>不能超过</style>上限。","<style=KeyWord>補充</style>防禦設施的<style=GoodNb>3次</style><style=UsePerNight>每晚使用次數</style>。
@@ -51,8 +51,8 @@ Zusätzliche <style=KeyWord>Konsumgüter</style> können mithilfe von <style=Wor
 <style=Attenuated>No puede sobrepasar el máximo.</style>","<style=KeyWord>Devolve</style> <style=GoodNb>3</style> <style=UsePerNight>Uso por noite</style> à defesa do alvo.
 <style=Attenuated>Não excede o máximo.</style>","대상 방어 시설에 <style=UsePerNight>하룻밤 사용 횟수</style>를 <style=GoodNb>3</style>회만큼 <style=KeyWord>돌려줍니다</style>.
 <style=Attenuated>최대치를 초과할 수 없습니다.</style>"
-"PerkName_FirstBlood","Cherry Picking","Tri sélectif","就是你了","就是你了","いいとこ取り","Враг одиночества","Вередливий","Wählerisch","Tiquismiquis","Escolhendo a Dedo","골라 먹기"
-"PerkDescription_FirstBlood","When <style=KeyWord>attacking</style> an <style=KeyWord>isolated</style> unit, the attack gets:
+PerkName_FirstBlood,Cherry Picking,Tri sélectif,就是你了,就是你了,いいとこ取り,Враг одиночества,Вередливий,Wählerisch,Tiquismiquis,Escolhendo a Dedo,골라 먹기
+PerkDescription_FirstBlood,"When <style=KeyWord>attacking</style> an <style=KeyWord>isolated</style> unit, the attack gets:
 {0}.
 {1}.","Lorsqu'une unité <style=KeyWord>isolée</style> est <style=KeyWord>attaquée</style>, l'attaque obtient<nbsp>:
 {0}.
@@ -74,8 +74,8 @@ Zusätzliche <style=KeyWord>Konsumgüter</style> können mithilfe von <style=Wor
 {1}.","<style=KeyWord>고립</style> 상태인 유닛을 <style=KeyWord>공격</style>할 경우:
 {0}
 {1}"
-"PerkName_CherryPicking","First Blood","Premier sang","第一滴血","第一滴血","先制の血","Первая кровь","Перша кров","Erstschlag","Primera sangre","Sangue Fresco","선제 타격"
-"PerkDescription_CherryPicking","When <style=KeyWord>attacking</style> a unit with <style=KeyWord>full</style> {0}, the attack gets:
+PerkName_CherryPicking,First Blood,Premier sang,第一滴血,第一滴血,先制の血,Первая кровь,Перша кров,Erstschlag,Primera sangre,Sangue Fresco,선제 타격
+PerkDescription_CherryPicking,"When <style=KeyWord>attacking</style> a unit with <style=KeyWord>full</style> {0}, the attack gets:
 {1}.","Lorsqu'une unité avec toute sa {0} est <style=KeyWord>attaquée</style>, l'attaque obtient<nbsp>:
 {1}.","当<style=KeyWord>攻击</style>{0}<style=KeyWord>为满</style>的敌人时，此次攻击获得：
 {1}","當<style=KeyWord>攻擊</style>{0}<style=KeyWord>為滿</style>的敵人時，此次攻擊獲得：
@@ -87,38 +87,53 @@ Zusätzliche <style=KeyWord>Konsumgüter</style> können mithilfe von <style=Wor
 {1}.","Quando <style=KeyWord>atacar</style> uma unidade com a {0} ainda <style=KeyWord>cheia</style>, o ataque recebe:
 {1}.","<style=KeyWord>최대</style> {0} 상태인 유닛을 <style=KeyWord>공격할</style> 경우:
 {1}"
-"PerkDescription_Initiator","As long as the Hero <style=Bad>didn't</style> <style=KeyWord>kill</style> anything this turn:
-{0}.
-{1}.
-{2}.","Tant que le Héros <style=Bad>n'a pas</style> <style=KeyWord>tué</style> d'unité durant ce tour<nbsp>:
-{0}.
-{1}.
-{2}.","如果本回合内英雄<style=Bad>没有</style><style=KeyWord>击杀</style>任何单位：
-{0}。
-{1}。
-{2}。","當英雄此回合<style=Bad>沒有</style>任何<style=KeyWord>擊殺</style>時：
-{0}。
-{1}。
-{2}。","このターンで英雄が何も<style=KeyWord>撃破</style><style=Bad>しなかった</style>場合:
-{0}。
-{1}。
-{2}。","Пока герой <style=Bad>ещё не</style> <style=KeyWord>убил</style> никого в этот ход, он получает бонус:
-{0}.
-{1}.
-{2}.","Якщо герой упродовж цього ходу <style=Bad>не</style> <style=KeyWord>вбив</style> жодного ворога:
-{0}.
-{1}.
-{2}.","Solange der Held in dieser Runde noch <style=Bad>nicht</style> <style=KeyWord>getötet</style> hat:
-{0}.
-{1}.
-{2}.","Mientras el héroe <style=Bad>no</style> <style=KeyWord>mate</style> a nadie durante el turno:
+PerkDescription_Initiator,"As long as the Hero <style=Bad>didn't</style> <style=KeyWord>kill</style> anything this turn:
 {0}.
 {1}.
 {2}.
-{0}.","Desde que o Herói <style=Bad>não</style> <style=KeyWord>abata</style> ninguém neste turno:
-{0}.","영웅이 이번 턴에 아무도 <style=KeyWord>처치하지</style> <style=Bad>않은</style> 경우:
-{0}"
-"PerkDescription_FieldStudy","Increases <style=KeyWord>Maximum {0}</style> to {1}.
+{3}.","Tant que le Héros <style=Bad>n'a pas</style> <style=KeyWord>tué</style> d'unité durant ce tour<nbsp>:
+{0}.
+{1}.
+{2}.
+{3}.","如果本回合内英雄<style=Bad>没有</style><style=KeyWord>击杀</style>任何单位：
+{0}。
+{1}。
+{2}。
+{3}。","當英雄此回合<style=Bad>沒有</style>任何<style=KeyWord>擊殺</style>時：
+{0}。
+{1}。
+{2}。
+{3}。","このターンで英雄が何も<style=KeyWord>撃破</style><style=Bad>しなかった</style>場合:
+{0}。
+{1}。
+{2}。
+{3}。","Пока герой <style=Bad>ещё не</style> <style=KeyWord>убил</style> никого в этот ход, он получает бонус:
+{0}.
+{1}.
+{2}.
+{3}.","Якщо герой упродовж цього ходу <style=Bad>не</style> <style=KeyWord>вбив</style> жодного ворога:
+{0}.
+{1}.
+{2}.
+{3}.","Solange der Held in dieser Runde noch <style=Bad>nicht</style> <style=KeyWord>getötet</style> hat:
+{0}.
+{1}.
+{2}.
+{3}.","Mientras el héroe <style=Bad>no</style> <style=KeyWord>mate</style> a nadie durante el turno:
+{0}.
+{1}.
+{2}.
+{0}.
+{3}.","Desde que o Herói <style=Bad>não</style> <style=KeyWord>abata</style> ninguém neste turno:
+{0}.
+{1}.
+{2}.
+{3}.","영웅이 이번 턴에 아무도 <style=KeyWord>처치하지</style> <style=Bad>않은</style> 경우:
+{0}
+{1}
+{2}
+{3}"
+PerkDescription_FieldStudy,"Increases <style=KeyWord>Maximum {0}</style> to {1}.
 Every {2} units <style=KeyWord>killed</style> at a <style=KeyWord>distance of {3} or more:</style>
 {4}.
 {7}.
@@ -197,7 +212,7 @@ Unidades que matar: {6}","{5}
 Unidades a serem abatidas: {6}.","{5}
 {8}
 처치할 유닛: {6}"
-"PerkDescription_ExplosiveAtoms","When <style=KeyWord>attacking</style> with a <style=Mana>Mana-consuming</style> <style=""Skill"">skill</style>, the attack gets:
+PerkDescription_ExplosiveAtoms,"When <style=KeyWord>attacking</style> with a <style=Mana>Mana-consuming</style> <style=""Skill"">skill</style>, the attack gets:
 {0} <style=PerkDamage>Perk Damage</style>.","Lorsqu'une <style=""Skill"">compétence</style> qui <style=Mana>coûte du Mana</style> est utilisée pour <style=KeyWord>attaquer</style>, l'attaque obtient :
 {0} de <style=PerkDamage>Dégâts de talent</style>.","当使用<style=Mana>消耗法力值</style>的<style=KeyWord>攻击</style><style=""Skill"">技能</style>时，此次攻击可获得：
 {0}<style=PerkDamage>天赋伤害</style>","當使用<style=Mana>消耗法力值</style>的<style=KeyWord>攻擊</style><style=""Skill"">技能</style>時，此次攻擊可獲得：
@@ -210,63 +225,52 @@ Unidades a serem abatidas: {6}.","{5}
 {0} de <style=PerkDamage>Dano de Vantagem</style>.
 {0}.","<style=Mana>마나 소모</style> <style=""Skill"">스킬</style>로 <style=KeyWord>공격</style>할 경우:
 {0}"
-"PerkDescription_ThirdEye","Every {0} enemies <style=KeyWord>hit</style>, the next <style=""Skill"">skill</style> gets:
+PerkDescription_ThirdEye,"Every {0} enemies <style=KeyWord>hit</style>, the next <style=""Skill"">skill</style> gets:
 {1}, 
 {2}, 
-{3}, 
-{5}.
+{4}.
 <style=Attenuated>This modifier doesn't stack.</style>","Tous les {0} ennemis <style=KeyWord>touchés</style>, la prochaine <style=""Skill"">compétence</style> obtient<nbsp>:
 {1}, 
 {2}, 
-{3}, 
-{5}.
+{4}.
 <style=Attenuated>Ce modificateur n'est pas cumulable.</style>","每<style=KeyWord>击中</style>{0}个敌人，下一次使用<style=""Skill"">技能</style>时获得效果：
 {1}, 
 {2}, 
-{3}, 
-{5}。
+{4}。
 <style=Attenuated>此加成不可叠加。</style>","每<style=KeyWord>擊中</style>{0}個敵人，下一次使用<style=""Skill"">技能</style>時獲得效果：
 {1}, 
 {2}, 
-{3}, 
-{5}。
+{4}。
 <style=Attenuated>此加成不可疊加。</style>","{0}体のエネミーに<style=KeyWord>攻撃</style>する毎に、次の<style=""Skill"">スキル</style>は以下の効果を得る:
 {1}, 
 {2}, 
-{3}, 
-{5}。
+{4}。
 <style=ATTenuated>この効果は重複しない。</style>","За <style=KeyWord>попадания</style> по {0} врагам следующий <style=""Skill"">навык</style> получает:
 {1}, 
 {2}, 
-{3}, 
-{5}.
+{4}.
 <style=Attenuated>Эффект не накапливается.</style>","За кожних {0} ворогів, яким завдано <style=KeyWord>удар</style>, наступне <style=""Skill"">вміння</style> отримає:
 {1}, 
 {2}, 
-{3}, 
-{5}.
+{4}.
 <style=Attenuated>Цей модифікатор не поєднується.</style>","Jeder {0} <style=KeyWord>getroffene</style> Gegner, gibt dem nächsten Angriff:
 {1}, 
 {2}, 
-{3}, 
-{5}.
+{4}.
 <style=Attenuated>Dieser Modifikator ist nicht stapelbar.</style>","Cada {0} enemigos <style=KeyWord>golpeados</style>, la siguiente <style=""Skill"">habilidad</style> obtiene:
 {1}, 
 {2}, 
-{3}, 
-{5}.
+{4}.
 <style=Attenuated>Este modificador no es acumulable.</style>","A cada {0} inimigos <style=KeyWord>golpeados</style>, a próxima <style=""Skill"">habilidade</style> recebe:
 {1}, 
 {2}, 
-{3}, 
-{5}.
+{4}.
 <style=Attenuated>Este modificador não acumula.</style>","적 {0}명에 <style=KeyWord>명중</style>할 때마다 다음 <style=""Skill"">스킬</style>에 적용:
 {1}, 
 {2}, 
-{3}, 
-{5}.
+{4}.
 <style=Attenuated>해당 보정치는 중첩되지 않음</style>"
-"PerkDescription_GlassCannon","{0}. 
+PerkDescription_GlassCannon,"{0}. 
 {2}.
 {1} <style=PerkDamage>Perk Damage</style>.","{0}. 
 {2}.
@@ -289,10 +293,11 @@ Unidades a serem abatidas: {6}.","{5}
 {1} de <style=PerkDamage>Dano de Vantagem</style>.","{0}。
 {2}。
 {1} <style=PerkDamage>특전 피해</style>"
-"PerkDescription_SpikySkin","{5}.
+PerkDescription_SpikySkin,"{5}.
 {6}.
 Whenever the Hero <style=KeyWord>is hit</style>:
 <style=KeyWord>Automatically</style> cast {2} on the attacker, with a base damage equal to {4} + {0} of the Hero's <style=KeyWord>{1}</style>.","{5}.
+{6}.
 Quand le Héros <style=KeyWord>est touché</style><nbsp>:
 Utilise <style=KeyWord>automatiquement</style> {2} sur l'attaquant, avec des dégâts de base égaux à {4} + {0} de <style=KeyWord>{1}</style> du Héros.","{5}
 {6}.
@@ -316,12 +321,13 @@ wird {2} <style=KeyWord>automatisch</style> gegen den Angreifer ausgelöst. Der 
  {6}.
  Cuando el héroe <style=KeyWord>recibe un golpe</style>:
  Utiliza <style=KeyWord>automáticamente</style> {2} sobre el atacante, con un daño base igual al {4} + el {0} del atributo <style=KeyWord>{1}</style> del héroe.","{5}.
+{6}.
 Sempre que um Herói <style=KeyWord>sofrer um ataque</style>:
 Lança {2} <style=KeyWord>automaticamente</style> no atacante, com dano base igual a {4} + {0} do <style=KeyWord>{1}</style> do Herói.","{5}
 {6}.
 영웅이 공격에 <style=KeyWord>맞을</style> 때마다:
 공격자에게 <style=KeyWord>자동으로</style> {2} 스킬 시전 (기본 피해: {4} + 영웅이 보유한 <style=KeyWord>{1}</style>의 {0})"
-"PerkDescription_ExplosiveHemoglobin","When <style=KeyWord>attacking</style> with a <style=Health>Health-consuming</style> <style=""Skill"">skill</style>, the attack gets:
+PerkDescription_ExplosiveHemoglobin,"When <style=KeyWord>attacking</style> with a <style=Health>Health-consuming</style> <style=""Skill"">skill</style>, the attack gets:
 {0} <style=PerkDamage>Perk Damage</style>.","Lorsqu'une <style=Skill>compétence</style> qui <style=Health>coûte de la Vie</style> est utilisée pour <style=KeyWord>attaquer</style>, l'attaque obtient :
 {0} de <style=PerkDamage>Dégâts de talent</style>.","当使用<style=Health>消耗生命值</style>的<style=""Skill"">技能</style><style=KeyWord>攻击</style>时，该攻击获得：
 {0}<style=PerkDamage>天赋伤害</style>","當使用<style=Health>消耗生命值</style>的<style=""Skill"">技能</style><style=KeyWord>攻擊</style>時，該攻擊獲得：
@@ -334,8 +340,8 @@ Lança {2} <style=KeyWord>automaticamente</style> no atacante, com dano base igu
 {0} de <style=PerkDamage>Dano de Vantagem</style>.","<style=Health>체력 소모</style> <style=""Skill"">스킬</style>로 <style=KeyWord>공격</style>할 경우:
 {0} <style=PerkDamage>특전 피해</style>
 {0}"
-"ItemName_MedalPerkAgainstTheWall","<style=""DwarfIconItem""></style>Medal of Resupply","<style=""DwarfIconItem""></style>Médaille de Réapprovisionnement","<style=""DwarfIconItem""></style>补给兵徽章","<style=""DwarfIconItem""></style>補給兵徽章","<style=""DwarfIconItem""></style>再供給のメダル","<style=""DwarfIconItem""></style>Медаль за ""Зарядка укреплений""","<style=""DwarfIconItem""></style>Медаль за поповнення запасів","<style=""DwarfIconItem""></style>Medaille des Nachladens","<style=""DwarfIconItem""></style>Medalla de Reabastecimiento","<style=""DwarfIconItem""></style>Medalha de Reabastecimento","<style=""DwarfIconItem""></style>재보급 메달"
-"PerkDescription_Overheat","Whenever a <style=KeyWord>Cannon</style> <style=Skill>skills</style> is cast:
+ItemName_MedalPerkAgainstTheWall,"<style=""DwarfIconItem""></style>Medal of Resupply","<style=""DwarfIconItem""></style>Médaille de Réapprovisionnement","<style=""DwarfIconItem""></style>补给兵徽章","<style=""DwarfIconItem""></style>補給兵徽章","<style=""DwarfIconItem""></style>再供給のメダル","<style=""DwarfIconItem""></style>Медаль за ""Зарядка укреплений""","<style=""DwarfIconItem""></style>Медаль за поповнення запасів","<style=""DwarfIconItem""></style>Medaille des Nachladens","<style=""DwarfIconItem""></style>Medalla de Reabastecimiento","<style=""DwarfIconItem""></style>Medalha de Reabastecimento","<style=""DwarfIconItem""></style>재보급 메달"
+PerkDescription_Overheat,"Whenever a <style=KeyWord>Cannon</style> <style=Skill>skills</style> is cast:
 {7} <style=Bad>Heat</style> for each {8} and {9} base cost.
 Whenever <style=Bad>Heat</style> reaches {0}, every <style=KeyWord>Cannon</style> <style=Skill>skill</style> gets:
 {1} {2} <style=KeyWord>cost</style>, increased by {3} for each {8} and {9} base cost.
@@ -424,8 +430,8 @@ No <style=KeyWord>fim</style> do turno dos Heróis:
 영웅 턴이 <style=KeyWord>종료</style>될 때:
 {5} <style=Bad>열기</style>.
 <style=Attenuated>열기는 매일 아침 초기화됩니다.</style>"
-"PerkName_OverheatAlt1","Overheat","","过热","過熱","オーバーヒート","Перегрев","Перегрів","Überhitzung","Sobrecalentamiento","Superaquecimento","과열"
-"PerkDescription_HardAsARock","Whenever an enemy is <style=KeyWord>killed</style>:
+PerkName_OverheatAlt1,Overheat,,过热,過熱,オーバーヒート,Перегрев,Перегрів,Überhitzung,Sobrecalentamiento,Superaquecimento,과열
+PerkDescription_HardAsARock,"Whenever an enemy is <style=KeyWord>killed</style>:
 {0}.
 Increases <style=KeyWord>Maximum</style> {2} by {1}.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Quand un ennemi est <style=KeyWord>tué</style><nbsp>:
@@ -458,7 +464,7 @@ Aumenta {2} <style=KeyWord>Máximo</style> em {1}.
 {0}.
 <style=KeyWord>최대</style> {2}이(가) {1} 증가합니다.
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
-"PerkDescription_LookAtMyMuscles","{1}. Increases <style=KeyWord>Maximum</style> {2} by {3}.
+PerkDescription_LookAtMyMuscles,"{1}. Increases <style=KeyWord>Maximum</style> {2} by {3}.
 {0} <style=KeyWord>use</style> <style=Attenuated>(Limit per turn)</style> on every <style=""Skill"">skill</style> provided by any <style=KeyWord>weapon set</style> equipped <style=Attenuated>(provided by items in Hand slots)</style>
 <style=Bad>Disables the body armor slot</style>
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","{1}. Augmente le <style=KeyWord>Maximum</style> de {2} de {3}.
@@ -492,7 +498,7 @@ Aumenta {2} <style=KeyWord>Máximo</style> em {1}.
 장착한 <style=KeyWord>무기 세트</style><style=Attenuated>(손에 장착한 아이템)</style>가 제공하는 모든 <style=""Skill"">스킬</style> <style=KeyWord>사용 횟수</style> {0}회 <style=Attenuated>(턴당 제한)</style> 
 <style=Bad>갑옷 슬롯 비활성화</style>
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
-"PerkDescription_EmergencyTunnel","{1} <style=UsePerNight>Use per night</style> for every {2} item.
+PerkDescription_EmergencyTunnel,"{1} <style=UsePerNight>Use per night</style> for every {2} item.
 Unlocks the {0} skill, allowing the Hero to <style=KeyWord>teleport</style> to a Haven tile.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","{1} <style=UsePerNight>Utilisation par nuit</style> pour chaque objet {2}.
 Débloque la compétence {0}, donnant la possibilité au Héros de se <style=KeyWord>téléporter</style> sur une case du Bastion.
@@ -515,7 +521,7 @@ Desbloqueia a habilidade {0}, permitindo ao Herói <style=KeyWord>teleportar-se<
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","{2} 아이템마다 <style=UsePerNight>하룻밤 사용 횟수</style> {1}회
 {0} 스킬 잠금 해제: 영웅이 피난처 타일로 <style=KeyWord>순간이동</style> 가능
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
-"PerkDescription_JollyDrinker","{1} {2} equipment slot.
+PerkDescription_JollyDrinker,"{1} {2} equipment slot.
 Whenever a <style=KeyWord>Potion</style> is <style=KeyWord>used</style> on the Hero:
 {0}.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","{1} emplacement d'équipement {2}.
@@ -549,7 +555,7 @@ Sempre que uma <style=KeyWord>Poção</style> for <style=KeyWord>usada</style> n
 영웅에게 <style=KeyWord>물약</style>을 <style=KeyWord>사용</style>할 때마다:
 {0}
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
-"PerkDescription_ShowerofBlows","Whenever an enemy is <style=""KeyWord"">hit</style>:
+PerkDescription_ShowerofBlows,"Whenever an enemy is <style=""KeyWord"">hit</style>:
 {0}, up to {4}.
 {1}, down to {5}.
 <style=""KeyWord"">Missing</style> an enemy <style=""KeyWord"">resets</style> this modifier.
@@ -605,7 +611,7 @@ Al <style=""KeyWord"">fallar</style> el golpe, <style=""KeyWord"">reinicias</sty
 <style=""KeyWord"">적에 대한 공격이 빗나갈</style> 경우 이 보정치 <style=""KeyWord"">초기화</style>
 <style=Attenuated>이 보정치는 매일 아침 초기화.</style>
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
-"PerkDescription_FearOfDeath","Whenever an enemy is <style=""KeyWord"">hit</style>:
+PerkDescription_FearOfDeath,"Whenever an enemy is <style=""KeyWord"">hit</style>:
 {0}. {2}.
 <style=""KeyWord"">Landing</style> a <style=critical>critical hit</style> <style=""KeyWord"">resets</style> this bonus.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Quand un ennemi est <style=""KeyWord"">touché</style><nbsp>:
@@ -639,8 +645,8 @@ Al <style=""KeyWord"">fallar</style> el golpe, <style=""KeyWord"">reinicias</sty
 {0}. {2}.
 <style=critical>치명타</style>가 <style=""KeyWord"">적중</style>하면 해당 보너스 <style=""KeyWord"">초기화</style>
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
-"PerkEffectInformations_FearOfDeath","{1}. {3}","{1} {3}","{1} {3}","{1} {3}","{1} {3}","{1} {3}","{1} {3}","{1} {3}","{1} {3}","{1} {3}","{1} {3}"
-"PerkDescription_LikeAShark","When attacking a <style=""Wound"">wounded</style> <style=Keyword>enemy</style>, the attack gets:
+PerkEffectInformations_FearOfDeath,{1}. {3},{1} {3},{1} {3},{1} {3},{1} {3},{1} {3},{1} {3},{1} {3},{1} {3},{1} {3},{1} {3}
+PerkDescription_LikeAShark,"When attacking a <style=""Wound"">wounded</style> <style=Keyword>enemy</style>, the attack gets:
 {0} <style=PerkDamage>Perk Damage</style>.
 {1}.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","En attaquant un <style=Keyword>ennemi</style> <style=Wound>blessé</style>, l'attaque obtient<nbsp>:
@@ -674,7 +680,7 @@ Al <style=""KeyWord"">fallar</style> el golpe, <style=""KeyWord"">reinicias</sty
 {0} <style=PerkDamage>Perk Damage</style>
 {1}
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
-"PerkDescription_EarthquakeStrike","Every {1} enemies <style=KeyWord>hit</style>: Next skill Applies {0} to all <style=KeyWord>adjacent</style> enemies around the primary target.
+PerkDescription_EarthquakeStrike,"Every {1} enemies <style=KeyWord>hit</style>: Next skill Applies {0} to all <style=KeyWord>adjacent</style> enemies around the primary target.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Tous les {1} ennemis <style=KeyWord>touchés</style><nbsp>: Prochaine compétence applique {0} à tous les ennemis <style=KeyWord>adjacents</style>.
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","每 <style=KeyWord>击中</style> {1} 名敌人: 
 下一个技能对所有 <style=KeyWord>相邻的</style> 敌人施加 {0} .
@@ -695,7 +701,7 @@ Próxima habilidade aplica {0} a todos os inimigos <style=KeyWord>próximos</sty
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","적 {1}명에 <style=KeyWord>명중</style>할 때마다: 
 다음 스킬이 모든 <style=KeyWord>인접</style> 적에게 {0} 적용
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
-"PerkDescription_AgainstTheWall","Whenever the Hero is <style=KeyWord>adjacent to a building, defense or obstacle</style>:
+PerkDescription_AgainstTheWall,"Whenever the Hero is <style=KeyWord>adjacent to a building, defense or obstacle</style>:
 {0}, increased by {1} for each <style=KeyWord>Level</style> of the Hero.
 {3}, increased by {4} for each <style=KeyWord>Level</style> of the Hero.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Quand le Héros est <style=KeyWord>adjacent à un bâtiment, une défense ou un obstacle</style><nbsp>:
@@ -729,7 +735,7 @@ Próxima habilidade aplica {0} a todos os inimigos <style=KeyWord>próximos</sty
 {0} (영웅 <style=KeyWord>레벨</style> 하나당 {1}만큼 증가)
 {3} (영웅 <style=KeyWord>레벨</style> 하나당 {4}만큼 증가)
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
-"PerkEffectInformations_AgainstTheWall","{2}
+PerkEffectInformations_AgainstTheWall,"{2}
 {5}","{2}
 {5}","{2}
 {5}","{2}
@@ -741,7 +747,7 @@ Próxima habilidade aplica {0} a todos os inimigos <style=KeyWord>próximos</sty
 {5}","{2}
 {5}","{2}
 {5}"
-"PerkDescription_StoneheartShield","Every {3} enemies <style=Keyword>killed</style>: {0}, up to {1}.
+PerkDescription_StoneheartShield,"Every {3} enemies <style=Keyword>killed</style>: {0}, up to {1}.
 <style=Attenuated>The bonus lasts as long as the Hero keeps this item.</style>
 Increases <style=KeyWord>Maximum</style> {6} by {5}.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Tous les {3} ennemis <style=Keyword>tués</style><nbsp>: {0}, jusqu'à un maximum de {1}.
@@ -775,7 +781,7 @@ Aumenta {6} <style=KeyWord>Máx.</style> em {5}.
 <style=Attenuated>보너스는 영웅이 이 아이템을 보유하고 있는 동안 계속 지속</style>
 <style=KeyWord>최대</style> {6} {5}만큼 증가
 <style=""DwarfIcon""></style> <style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
-"PerkDescription_StrongThrow","Every {0} enemies <style=KeyWord>damaged</style> with a <style=KeyWord>Boomerang</style> skill, the next <style=KeyWord>Boomerang</style> <style=Skill>skill</style> gets:
+PerkDescription_StrongThrow,"Every {0} enemies <style=KeyWord>damaged</style> with a <style=KeyWord>Boomerang</style> skill, the next <style=KeyWord>Boomerang</style> <style=Skill>skill</style> gets:
 <color=#549EE4>Secondary</color> tiles now count as <style=bad>Primary</style> tiles.
 <style=Skill>Precise Targeting</style> gets: {1}{2}.
 <style=Attenuated>This modifier is reset every morning.</style>
@@ -820,8 +826,8 @@ As casas <color=#549EE4>Secundárias</color> contam como casas <style=bad>Primá
 <style=Skill>정밀 대상 지정</style> 획득: {1}{2}.
 <style=Attenuated>이 보정은 매일 아침 초기화됩니다.</style>
 <style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>"
-"PerkEffectInformations_StrongThrow","Enemies to hit: {3}","Ennemis à toucher<nbsp>: {3}","还需击中敌人数：{3}","還需擊中敵人數：{3}","命中させるエネミー: {3}","Ещё попаданий: {3}","Залишилося ударити ворогів: {3}.","Zu treffende Gegner: {3}","Enemigos por golpear: {3}","Inimigos a serem golpeados: {3}","명중해야 하는 적: {3}"
-"PerkDescription_Sentry","As long as there is <style=KeyWord>no other Hero</style> within a <style=KeyWord>range of {0}</style>, all <style=""skill"">skills</style> get:
+PerkEffectInformations_StrongThrow,Enemies to hit: {3},Ennemis à toucher<nbsp>: {3},还需击中敌人数：{3},還需擊中敵人數：{3},命中させるエネミー: {3},Ещё попаданий: {3},Залишилося ударити ворогів: {3}.,Zu treffende Gegner: {3},Enemigos por golpear: {3},Inimigos a serem golpeados: {3},명중해야 하는 적: {3}
+PerkDescription_Sentry,"As long as there is <style=KeyWord>no other Hero</style> within a <style=KeyWord>range of {0}</style>, all <style=""skill"">skills</style> get:
 {1}
 and the Hero gets: {2}.
 As long as there is <style=KeyWord>no other Hero</style> within a <style=KeyWord>range of {3}</style>, the Hero also gets: {4}.
@@ -877,30 +883,30 @@ Se <style=KeyWord>não houver outro Herói</style> em uma <style=KeyWord>distân
 <style=KeyWord>{3}타일</style> 이내에 <style=KeyWord>다른 영웅이 없을</style> 경우 영웅에게 추가 적용: {4}
 <style=Attenuated>해당 보정치는 중첩됨</style>
 <style=""ElfIcon""></style><style=""ElfText"">암버발트의 엘프 DLC</style>"
-"PerkDescription_Longstrider","Every {0} tiles traveled by a Hero with a {2} or {3} <style=Skill>skill</style>:
+PerkDescription_Longstrider,"Every {0} tiles traveled by a Hero with a {2} or {3} <style=Skill>skill</style>:
 {1}.
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Toutes les {0} cases parcourues par le Héros avec des <style=Skill>compétences</style> {2} ou {3}<nbsp>:
-Les cases parcourues de {1} sont augmentées de {4}.
+{1}.
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","英雄每使用{2}或{3}<style=Skill>技能</style>移动{0}格：
-{1}移动的格数提升{4}。
-<style=""ElfIcon""></style><style=""ElfText"">《琥珀幽森的精灵》DLC</style>","英雄每使用{2}或{3}<style=Skill>技能</style>移動{0}格方格：
-{1}的格數提升{4}。
-<style=""ElfIcon""></style><style=""ElfText"">〈琥珀幽森的精靈〉DLC</style>","{2}または{3}の<style=Skill>スキル</style>を使って英雄が{0}タイル移動するたび、以下の効果を得る:
-{1}のタイル移動が{4}増える。
+{1}。
+<style=""ElfIcon""></style><style=""ElfText"">《琥珀幽森的精灵》DLC</style>","英雄每使用{2}或{3}<style=Skill>技能</style>移動{0}格：
+{1}。
+<style=""ElfIcon""></style><style=""ElfText"">〈琥珀幽森的精靈〉DLC</style>","{2}または{3}の<style=Skill>スキル</style>を使って英雄が{0}タイル移動するたび:
+{1}。
 <style=""ElfIcon""></style><style=""ElfText"">アンバーワルドのエルフDLC</style>","За каждые {0} яч., пройденные героем с <style=Skill>навыком</style> ""{2}"" либо ""{3}"":
-{1} от пройденных ячеек получает +{4}.
+{1}.
 <style=""ElfIcon""></style><style=""ElfText"">Дополнительный контент ""Elves of Amberwald""</style>","Кожні {0} шт. плиток, по яких пройшов герой із <style=Skill>уміннями</style> «{2}» чи «{3}»:
-{1} плитки, що були пройдені, збільшуються на {4}.
-<style=""ElfIcon""></style><style=""ElfText"">Доповнення Elves of Amberwald</style>","Alle {0} Felder, die ein Held mit der <style=Skill>Fähigkeit</style> {2} oder {3} zurücklegt, geschieht Folgendes:
-Die Zahl der mit {1} zurückgelegten Felder erhöht sich um {4}.
+{1}.
+<style=""ElfIcon""></style><style=""ElfText"">Доповнення Elves of Amberwald</style>","Alle {0} Felder, die ein Held mit der <style=Skill>Fähigkeit</style> {2} oder {3} zurücklegt:
+{1}.
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Cada {0} casillas recorridas por un héroe con la <style=Skill>habilidad</style> {2} o {3}:
-Las casillas de {1} recorridas aumentan en {4}.
+{1}.
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","A cada {0} casas percorridas pelo Herói com uma <style=Skill>habilidade</style> de {2} ou {3}:
-As casas de {1} percorridas aumentam em {4}.
+{1}.
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","{2} 또는 {3} <style=Skill>스킬</style>로 영웅이 {0}타일 이동할 때마다:
-이동한 {1} 타일이 {4} 증가
+{1}.
 <style=""ElfIcon""></style><style=""ElfText"">암버발트의 엘프 DLC</style>"
-"BuildingUpgradeTooltipDescription_UpgradePoisonSeed0","Upgrades <style=KeyWord>Venomous Roots</style>:
+BuildingUpgradeTooltipDescription_UpgradePoisonSeed0,"Upgrades <style=KeyWord>Venomous Roots</style>:
 • <style=Poison>Poison</style> 50 > <style=GoodNb>75</style>
 • Duration 3 > <style=GoodNb>4</style>.","Améliore <style=KeyWord>Racines Vénéneuses</style><nbsp>:
 • <style=Poison>Poison</style> 50 > <style=GoodNb>75</style>
@@ -923,7 +929,7 @@ As casas de {1} percorridas aumentam em {4}.
  • Duração 3 > <style=GoodNb>4</style>.","<style=KeyWord>독성 뿌리</style> 강화:
  • <style=Poison>중독</style> 50 > <style=GoodNb>75</style>
  • 지속 시간 3 > <style=GoodNb>4</style>."
-"BuildingUpgradeTooltipDescription_UpgradePurgingSeed0","Upgrades <style=KeyWord>Purging Spores</style>:
+BuildingUpgradeTooltipDescription_UpgradePurgingSeed0,"Upgrades <style=KeyWord>Purging Spores</style>:
 • <style=Resistance>Resistance</style> -10% > <style=GoodNb>-20%</style>","Améliore <style=KeyWord>Spores Epurantes</style><nbsp>:
 • <style=Resistance>Resistance</style> -10% > <style=GoodNb>-20%</style>","升级<style=KeyWord>清除孢子</style>：
  • <style=Resistance>防御</style>-10% > <style=GoodNb>-20%</style>","升級<style=KeyWord>淨化孢子</style>：
@@ -935,7 +941,7 @@ As casas de {1} percorridas aumentam em {4}.
  • <style=Resistance>Resistencia</style> -20 % > <style=GoodNb>-30 %</style>","Melhora <style=KeyWord>Esporos Purgantes</style>:
  • <style=Resistance>Resistência</style> -10% > <style=GoodNb>-20%</style>","<style=KeyWord>숙청의 포자</style> 강화:
  • <style=Resistance>저항</style> -10% > <style=GoodNb>-20%</style>"
-"ResearchDescription_RepelLumberjacksResearch","All Heroes Gain {1}.
+ResearchDescription_RepelLumberjacksResearch,"All Heroes Gain {1}.
 <style=PhysicalDamage>Physical Damage</style> now deals {0} damage to <style=Armor>Armor</style>.","Tous les héros gagnent {1}.
 Les <style=PhysicalDamage>dégâts physique</style> font maitenant {0} dégât à l'<style=Armor>Armure</style>.","所有英雄获得{1}。
 <style=PhysicalDamage>物理伤害</style>现在对<style=Armor>护甲</style>造成{0}伤害","所有英雄獲得{1}。
@@ -947,7 +953,7 @@ Les <style=PhysicalDamage>dégâts physique</style> font maitenant {0} dégât �
 Ahora el <style=PhysicalDamage>daño físico</style> inflige un {0} de daño a la <style=Armor>armadura</style>.","Todos os Heróis recebem {1}.
 <style=PhysicalDamage>Dano Físico</style> agora causa {0} de dano à <style=Armor>Armadura</style>.","모든 영웅이 {1}을(를) 획득합니다.
 <style=PhysicalDamage>물리 피해</style>가 이제 <style=Armor>장갑</style>에 {0}의 피해를 줍니다."
-"ResearchDescription_RepelArchersResearch","All Heroes Gain {1}.
+ResearchDescription_RepelArchersResearch,"All Heroes Gain {1}.
 The <style=RangedDamage>Ranged Damage</style> <style=Dodge>Dodge</style> <style=KeyWord>multiplier</style> is reduced by {0}.
 <style=Attenuated>In cases where the multiplier becomes less than 1, enemy Dodge is reduced instead of being increased.</style>","Tous les héros gagnent {1}.
 Le <style=KeyWord>multiplicateur</style> d'<style=Dodge>Esquive</style> des <style=RangedDamage>Dégâts à distance</style> est réduit de {0}.
@@ -970,7 +976,7 @@ O <style=KeyWord>multiplicador</style> de <style=Dodge>Esquiva</style> de <style
 <style=Attenuated>Quando o multiplicador se torna inferior a 1, a Esquiva do inimigo é reduzida em vez de aumentar.</style>","모든 영웅이 {1}을(를) 획득합니다.
 <style=RangedDamage>사격 피해</style> <style=Dodge>회피</style> <style=KeyWord>배율</style>이 {0}만큼 감소합니다.
 <style=Attenuated>배율이 1 미만이 되는 경우 적의 회피가 증가하지 않고 감소합니다.</style>"
-"PerkDescription_StrongerMagic","The {0} cost of <style=skill>skills</style> is <style=keyword>reduced</style> by 2 times the Hero's current {1}, up to {2} reduction of the skill's base cost.
+PerkDescription_StrongerMagic,"The {0} cost of <style=skill>skills</style> is <style=keyword>reduced</style> by 2 times the Hero's current {1}, up to {2} reduction of the skill's base cost.
 <style=Attenuated>On reduction, Mana Cost is rounded up.</style>
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Le coût en {0} des <style=skill>compétence</style> est <style=keyword>réduit</style> par 2 fois la {1} actuelle du Héros, jusqu'à {2} de réduction du coût de base.
 <style=Attenuated>Lors de la réduction, le coût de Mana est arrondi au supérieur.</style>
@@ -993,7 +999,7 @@ O <style=KeyWord>multiplicador</style> de <style=Dodge>Esquiva</style> de <style
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","<style=skill>스킬</style>의 {0} 비용이 영웅의 현재 {1}의 2배에 따라 <style=keyword>감소</style>, 최대 기술의 기본 비용의 {2} 감소
 <style=Attenuated>감소 시 마나 비용이 올림됨</style>
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
-"PerkDescription_DodgePractice","Whenever the Hero <style=Dodge>dodges</style>:
+PerkDescription_DodgePractice,"Whenever the Hero <style=Dodge>dodges</style>:
 {0}.
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>
 ","Quand le Héros effectue une <style=Dodge>Esquive</style><nbsp>:
@@ -1018,8 +1024,8 @@ O <style=KeyWord>multiplicador</style> de <style=Dodge>Esquiva</style> de <style
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","영웅이 <style=Dodge>회피</style>할 때마다:
 {0}.
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
-"PerkEffectInformations_DodgePractice","","","","","","","","","","",""
-"PerkDescription_BlockPractice","Every {0} damage <style=Block>blocked</style>:
+PerkEffectInformations_DodgePractice,,,,,,,,,,,
+PerkDescription_BlockPractice,"Every {0} damage <style=Block>blocked</style>:
 {1}.
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Tous les {0} dégâts <style=Block>bloqués</style><nbsp>:
 {1} jusqu'à la fin de la <style=Night>nuit</style>.","每<style=Block>格挡</style>{0}点伤害：
@@ -1041,8 +1047,31 @@ O <style=KeyWord>multiplicador</style> de <style=Dodge>Esquiva</style> de <style
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","피해를 {0} <style=Block>막을</style> 때마다:
 {1}
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
-"PerkEffectInformations_BlockPractice","Damage left to block: {2}","Dégâts restants à bloquer<nbsp>: {2}","还需格挡的伤害：{2}点","尚須格擋傷害量：{2}","ブロックする残りダメージ: {2} ","Осталось заблокировать урона: {2} ед. ","Шкоди для блоку: {2} ","Noch zu blockender Schaden: {2} ","Daño por bloquear: {2} ","Dano restante a bloquear: {2}","막아야 할 잔여 피해: {2}"
-"PerkDescription_DaggerUniquePerk","Every {0} <style=Isolated>isolated</style> units <style=keyword>killed</style> or <style=poison>poisoned</style>, the next use of {1} gets: {2} <style=PerkDamage>Perk Damage</style>.
+PerkEffectInformations_BlockPractice,Damage left to block: {2},Dégâts restants à bloquer<nbsp>: {2},还需格挡的伤害：{2}点,尚須格擋傷害量：{2},ブロックする残りダメージ: {2} ,Осталось заблокировать урона: {2} ед. ,Шкоди для блоку: {2} ,Noch zu blockender Schaden: {2} ,Daño por bloquear: {2} ,Dano restante a bloquear: {2},막아야 할 잔여 피해: {2}
+PerkDescription_SwordUniquePerk,"{2}.
+{0} and {1} can be cast in <style=keyword>any</style> direction.
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","{2}.
+{0} et {1} peuvent être utilisées dans <style=keyword>n'importe</style> quelle direction.
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","{2}。
+{0}和{1}可以在<style=keyword>任意</style>方向施放。
+<style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","{2}。
+{0}和{1}可以在<style=keyword>任意</style>方向施放。
+<style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","{2}。
+{0}と{1}を<style=keyword>あらゆる</style>方向に発動できる。
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","{2}.
+{0} и {1} можно использовать в <style=keyword>любом</style> направлении.
+<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","{2}.
+{0} та {1} можна використовувати в <style=keyword>будь-якому</style> напрямку.
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","{2}.
+{0} und {1} können in <style=keyword>jede</style> Richtung gewirkt werden.
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","{2}.
+{0} y {1} pueden lanzarse en <style=keyword>cualquier</style> dirección.
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","{2}.
+{0} e {1} podem ser lançados em <style=keyword>qualquer</style> direção.
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","{2}.
+{0}과 {1}을 <style=keyword>모든</style> 방향으로 시전할 수 있습니다.
+<style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
+PerkDescription_DaggerUniquePerk,"Every {0} <style=Isolated>isolated</style> units <style=keyword>killed</style> or <style=poison>poisoned</style>, the next use of {1} gets: {2} <style=PerkDamage>Perk Damage</style>.
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Tous les {0} unités <style=isolated>isolées</style> <style=keyword>tuées</style> ou <style=poison>empoisonées</style>, la prochaine utilisation de {1} obtient<nbsp>:
 {2} <style=PerkDamage>Dégâts de Talent</style>
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","每有{0}个<style=Isolated>落单</style>的单位被<style=keyword>击杀</style>或<style=poison>中毒</style>，下次使用{1}时：{2}<style=PerkDamage>天赋伤害</style>。
@@ -1055,8 +1084,8 @@ O <style=KeyWord>multiplicador</style> de <style=Dodge>Esquiva</style> de <style
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","A cada {0} unidades <style=Isolated>isoladas</style> <style=keyword>abatidas</style> ou <style=poison>envenenadas</style>, o próximo uso de {1} recebe: {2} de <style=PerkDamage>Dano de Vantagem</style>.
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","<style=Isolated>고립</style>된 유닛을 {0}명 <style=keyword>처치</style> 또는 <style=poison>중독</style>시킬 때마다 다음에 사용하는 {1}이(가) 획득: {2} <style=PerkDamage>특전 피해</style>.
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
-"PerkName_2HHammerUniquePerk","Grand Smash","Grand fracas","大粉碎","強力粉碎","グランドスマッシュ","Великий удар","Грандіозний удар","Großer Schlag","Gran golpe","Grande Impacto","그랜드 스매시"
-"PerkDescription_2HHammerUniquePerk","After <style=keyword>stunning</style> {1} enemies with {4}'skills during this turn:
+PerkName_2HHammerUniquePerk,Grand Smash,Grand fracas,大粉碎,強力粉碎,グランドスマッシュ,Великий удар,Грандіозний удар,Großer Schlag,Gran golpe,Grande Impacto,그랜드 스매시
+PerkDescription_2HHammerUniquePerk,"After <style=keyword>stunning</style> {1} enemies with {4}'skills during this turn:
 {0} gains {3} {2} until the <style=keyword>end</style> of the turn.
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Après avoir <style=keyword>étourdi</style> {1} ennemis avec les compétences de {4} durant ce tour :
 {0} obtient {3} {2} jusqu'à la <style=keyword>fin</style> du tour.
@@ -1079,8 +1108,8 @@ O <style=KeyWord>multiplicador</style> de <style=Dodge>Esquiva</style> de <style
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","이번 턴 동안 {4}의 스킬로 {1}명의 적을 <style=keyword>기절</style>시킨 후:
 {0}이(가) 턴 <style=keyword>종료</style>까지 {3} {2} 획득
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
-"PerkName_PistolUniquePerk","Headshot","Tir à la tête","爆头","爆頭","ヘッドショット","Выстрел в голову","Постріл у голову","Kopfschuss","Disparo a la cabeza","Tiro na Cabeça","헤드샷"
-"PerkDescription_PistolUniquePerk","{0} Can be used more often and is stronger. After <style=KeyWord>attacking and killing</style> an enemy unit that was <style=KeyWord>at full {2}</style> with {3}'s {0}:
+PerkName_PistolUniquePerk,Headshot,Tir à la tête,爆头,爆頭,ヘッドショット,Выстрел в голову,Постріл у голову,Kopfschuss,Disparo a la cabeza,Tiro na Cabeça,헤드샷
+PerkDescription_PistolUniquePerk,"{0} Can be used more often and is stronger. After <style=KeyWord>attacking and killing</style> an enemy unit that was <style=KeyWord>at full {2}</style> with {3}'s {0}:
 {1}
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","{0} peut être utilisé plus souvent et est plus puissant. Après avoir <style=KeyWord>attaqué et tué</style> une unité ennemie qui avait <style=KeyWord>toute sa {2}</style> avec {0} de {3}<nbsp>:
 {1}
@@ -1103,7 +1132,7 @@ O <style=KeyWord>multiplicador</style> de <style=Dodge>Esquiva</style> de <style
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","{0}을(를) 더 자주 사용할 수 있고 더 강력합니다. {3}의 {0}로 <style=KeyWord>최대 {2}</style>인 적 유닛을 <style=KeyWord>공격 및 처치</style>한 후:
 {1}
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
-"PerkDescription_RifleUniquePerk","Once per turn, whenever an enemy is <style=KeyWord>killed</style> by {0}'s <style=Skill>skills</style>, apply:
+PerkDescription_RifleUniquePerk,"Once per turn, whenever an enemy is <style=KeyWord>killed</style> by {0}'s <style=Skill>skills</style>, apply:
 {1}
 {2}
 to <style=KeyWord>enemies within 3 tiles.</style> 
@@ -1122,7 +1151,7 @@ to <style=KeyWord>enemies within 3 tiles.</style>
 {1}
 {2}
 <style=KeyWord>3タイル以内のエネミー</style>へ。
-<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","Раз за ход, если герой <style=KeyWord>убивает</style> врага <style=Skill>навыком</style> этого ружья, <style=KeyWord>противники в радиусе 3 клеток</style> получают штраф:
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","Раз за ход, если герой <style=KeyWord>убивает</style> врага <style=Skill>навыком</style> {0}, <style=KeyWord>противники в радиусе 3 клеток</style> получают штраф:
 {1};
 {2}.
 <style=""WaltyIcon""></style> <style""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Раз на хід, після <style=KeyWord>убивства</style> ворога <style=Skill>навичками</style> речі {0}, застосуйте:
@@ -1146,7 +1175,7 @@ a <style=KeyWord>inimigos a até 3 casas de distância</style>.
 {2}
 <style=KeyWord>(3타일 이내의 적들에게)</style>
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
-"PerkDescription_MagicWandUniquePerk","Every {0} <style=KeyWord>units killed</style> with {1} <style=Skill>skills</style>:
+PerkDescription_MagicWandUniquePerk,"Every {0} <style=KeyWord>units killed</style> with {1} <style=Skill>skills</style>:
 <style=Skill>Magic Missiles</style> gains {3} {4} for the turn.
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Tous les {0} <style=KeyWord>unités tuées</style> avec {1} <style=Skill>compétences</style>:
 <style=Skill>Missiles magiques</style> gagne {3} {4} pour le tour.
@@ -1169,7 +1198,7 @@ a <style=KeyWord>inimigos a até 3 casas de distância</style>.
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","{1}개의<style=Skill>스킬</style>로<style=KeyWord>유닛 처치</style>할 때마다{0}회：
 <style=Skill>마법 미사일</style>이 턴 동안 {3} {4}를 얻습니다.
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>"
-"PerkDescription_MagicOrbUniquePerk","After <style=KeyWord>attacking and killing</style> an enemy unit that was <style=KeyWord>at full {0}</style> and <style=Isolated>isolated</style> with one of {1}'s <style=skill>skills</style>:
+PerkDescription_MagicOrbUniquePerk,"After <style=KeyWord>attacking and killing</style> an enemy unit that was <style=KeyWord>at full {0}</style> and <style=Isolated>isolated</style> with one of {1}'s <style=skill>skills</style>:
 Hero <style=KeyWord>automatically</style> attacks {3} <style=KeyWord>closest</style> enemies with the {2} skill.
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Après avoir <style=KeyWord>attaqué et tué</style> une unité ennemie qui était <style=KeyWord>à {0} complet</style> et <style=Isolated>isolée</style> avec l'une des <style=skill>compétences</style> de {1}:
 Le héros attaque <style=KeyWord>automatiquement</style> les {3} ennemis <style=KeyWord>les plus proches</style> avec la compétence {2}.
@@ -1192,7 +1221,7 @@ O herói <style=KeyWord>automaticamente</style> ataca os {3} inimigos <style=Key
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","{1}의<style=skill>스킬</style>로<style=KeyWord>최대{0}</style>상태이고<style=Isolated>고립</style>된 적 유닛을<style=KeyWord>공격하여 처치</style>한 후：
 영웅은 <style=KeyWord>자동</style>으로 <style=KeyWord>가장 가까운</style> {3}명의 적을 {2} 스킬로 공격합니다.
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>"
-"PerkDescription_OverheatUniquePerk","Whenever a <style=KeyWord>Cannon</style> <style=Skill>skill</style> is cast:
+PerkDescription_OverheatUniquePerk,"Whenever a <style=KeyWord>Cannon</style> <style=Skill>skill</style> is cast:
 {7} <style=Bad>Heat</style> for each {8} and {9} base cost.
 Whenever <style=Bad>Heat</style> reaches {0}, every <style=KeyWord>Cannon</style> <style=Skill>skill</style> gets:
 {1} {2} <style=KeyWord>cost</style>, increased by {3} for each {8} and {9} base cost.
@@ -1314,7 +1343,7 @@ No <style=KeyWord>fim</style> do turno dos Heróis:
 <style=Perk>오염된 보너스: 화력</style>
 {4}는 추가 효과가 있습니다.
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
-"PerkDescription_StrongThrowUnique","Every {0} enemies <style=KeyWord>damaged</style> with a <style=KeyWord>Boomerang</style> skill, the next <style=KeyWord>Boomerang</style> <style=Skill>skill</style> gets:
+PerkDescription_StrongThrowUnique,"Every {0} enemies <style=KeyWord>damaged</style> with a <style=KeyWord>Boomerang</style> skill, the next <style=KeyWord>Boomerang</style> <style=Skill>skill</style> gets:
 <color=#549EE4>Secondary</color> tiles now count as <style=bad>Primary</style> tiles.
 <style=Skill>Precise Targeting</style> gets: {1}{2}.
 <style=Attenuated>This modifier is reset every morning.</style>
@@ -1381,7 +1410,7 @@ Lançamento Forte é ativado com mais frequência.
 <style=Perk>부패 보너스: 휘플래시</style>
 강력 던지기의 발동 빈도가 증가합니다.
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>"
-"PerkEffectInformations_StrongThrowUnique","Enemies to hit: {3}","Ennemis à toucher<nbsp>: {3}","还需击中敌人数：{3}","還需擊中敵人數：{3}","命中させるエネミー: {3}","Ещё попаданий: {3}","Залишилося ударити ворогів: {3}.","Zu treffende Gegner: {3}","Enemigos por golpear: {3}","Inimigos a serem golpeados: {3}","명중해야 하는 적: {3}"
+PerkEffectInformations_StrongThrowUnique,Enemies to hit: {3},Ennemis à toucher<nbsp>: {3},还需击中敌人数：{3},還需擊中敵人數：{3},命中させるエネミー: {3},Ещё попаданий: {3},Залишилося ударити ворогів: {3}.,Zu treffende Gegner: {3},Enemigos por golpear: {3},Inimigos a serem golpeados: {3},명중해야 하는 적: {3}
 PerkDescription_QuantityVsQuality,"{0}.
 Increases <style=KeyWord>Maximum</style>
 {1} to {2}.
@@ -2014,33 +2043,33 @@ Total, están prácticamente muertas.","Abate os inimigos que estão com um <siz
 Eles já estão quase mortos mesmo.","<size=14><sprite name=""Wound1""></size><style=""BadOutlined"">부상</style>을 당한 유닛을 끝장냅니다. 
 어차피 죽은 목숨입니다."
 PerkDescription_CollateralDamage,"Whenever an <style=""KeyWord>enemy dodges</style>: cast <style=KeyWord>automatically</style> {0} skill on {2} <style=KeyWord>closest enemies within a range of {1}</style>.
-<style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Quand un <style=""KeyWord>ennemi esquive</style><nbsp>: utilise <style=KeyWord>automatiquement</style> la compétence {0} sur un <style=KeyWord>ennemi adjacent aléatoire dans une portée de {1}</style>.
+<style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Quand un <style=""KeyWord>ennemi esquive</style><nbsp>: utilise <style=KeyWord>automatiquement</style> la compétence {0} sur {2} <style=KeyWord>ennemis les plus proches dans une portée de {1}</style>.
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","当 <style=""KeyWord>敌人闪避</style>时：
-<style=KeyWord>自动</style>对<style=KeyWord>{1}格范围内的随机一名敌人施放{0}技能</style>。
+<style=KeyWord>自动</style>对<style=KeyWord>{1}格范围内的最近的{2}名敌人施放{0}技能</style>。
 
 <style=""DwarfIcon""></style><style=""DwarfText"">《卢恩堡的矮人》DLC</style>","每當<style=""KeyWord>敵人閃避</style>：
-<style=KeyWord>自動</style>對<style=KeyWord>{1}格範圍內的一個隨機敵人</style>施放{0}技能。
+<style=KeyWord>自動</style>對<style=KeyWord>{1}格範圍內的{2}個最近的敵人</style>施放{0}技能。
 
 <style=""DwarfIcon""></style><style=""DwarfText"">〈盧恩堡的矮人〉DLC</style>","<style=""KeyWord>エネミーにドッジ</style>されるたび、以下の効果を得る: 
-<style=KeyWord>距離{1}以内にいるランダムなエネミー</style>に対し、<style=KeyWord>自動的</style>にスキル「{0}」が発動する。
+<style=KeyWord>距離{1}以内にいる最も近い{2}体のエネミー</style>に対し、<style=KeyWord>自動的</style>にスキル「{0}」が発動する。
 
 <style=""DwarfIcon""></style><style=""DwarfText"">ルーネンベルクのドワーフDLC</style>","Если <style=""KeyWord>враг уклоняется от удара</style>: 
-<style=KeyWord>автоматически</style> используется навык ""{0}"" на <style=KeyWord>случайном враге в пределах {1} яч.</style>
+<style=KeyWord>автоматически</style> используется навык ""{0}"" на <style=KeyWord>{2} ближайших врагах в пределах {1} яч.</style>
 
 <style=""DwarfIcon""></style><style=""DwarfText"">Дополнительный контент ""Dwarves of Runenberg""</style>","Щоразу коли <style=""KeyWord>ворог ухиляється</style>: 
-<style=KeyWord>автоматично</style> застосовується вміння «{0}» на <style=KeyWord>випадкового ворога в радіусі {1}</style>.
+<style=KeyWord>автоматично</style> застосовується вміння «{0}» на <style=KeyWord>{2} найближчих ворогів в радіусі {1}</style>.
 
 <style=""DwarfIcon""></style><style=""DwarfText"">Доповнення Dwarves of Runenberg</style>","Wenn ein <style=""KeyWord>Gegner ausweicht</style>, geschieht Folgendes:
-Es wird <style=KeyWord>automatisch</style> die Fähigkeit {0} auf einen <style=KeyWord>zufälligen Gegner innerhalb einer Reichweite von {1}</style> gewirkt.
+Es wird <style=KeyWord>automatisch</style> die Fähigkeit {0} auf {2} <style=KeyWord>nächste Gegner innerhalb einer Reichweite von {1}</style> gewirkt.
 
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Cada vez que un <style=""KeyWord>enemigo evade</style>:
-Usa <style=KeyWord>automáticamente</style> la habilidad {0} contra un <style=KeyWord>enemigo aleatorio a una distancia máxima de {1}</style>.
+Usa <style=KeyWord>automáticamente</style> la habilidad {0} contra {2} <style=KeyWord>enemigos más cercanos a una distancia máxima de {1}</style>.
 
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","Sempre que um <style=""KeyWord>inimigo se esquivar</style>: 
-lança <style=KeyWord>automaticamente</style> a habilidade {0} em um <style=KeyWord>inimigo aleatório em uma distância de até {1}</style>.
+lança <style=KeyWord>automaticamente</style> a habilidade {0} em {2} <style=KeyWord>inimigos mais próximos em uma distância de até {1}</style>.
 
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","<style=""KeyWord>적이 회피</style>할 때마다: 
-<style=KeyWord>{1}타일 범위 내에 있는 무작위 적</style>에게 {0} 스킬 <style=KeyWord>자동</style> 시전
+<style=KeyWord>{1}타일 범위 내에 있는 가장 가까운 {2}명의 적</style>에게 {0} 스킬 <style=KeyWord>자동</style> 시전
 
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
 PerkDescription_MagicScepterUniquePerk,"After dealing {0} or more damage in a single hit of {1}:
@@ -2261,7 +2290,7 @@ PerkDescription_HeroesSkillRangeRangedDamagePerk,"Every {0} {1}: {2}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","Каждые {0} ед. {1}: {2}.
 
-<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Кож. {0} од. {1} після {2}: {3}.
+<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Кож. {0} од. {1}: {2}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Pro {0} {1}: {2}.
 
@@ -2297,7 +2326,7 @@ PerkDescription_HeroesManaRegMagicDamagePerk,"Every {0} {1}: {2}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","Каждые {0} ед. {1}: {2}.
 
-<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Кож. {0} од. {1} після {2}: {3}.
+<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Кож. {0} од. {1}: {2}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Pro {0} {1}: {2}.
 
@@ -2434,35 +2463,36 @@ PerkEffectInformations_PanicMovePoint,"Current Panic: {2}
 Current Bonus: {3}
 {6}
 {9}","Panique actuelle<nbsp>: {2}
-Bonus actuel<nbsp>: {3} {6}
-Au-dessus de {7}<nbsp>: {9}
-","当前恐慌度：{2}
-当前加成：{3} {6}
-超过{7}时：{9}
-","目前恐慌值{2}
-目前加成：{3} {6}
-超過{7}時：{9}
-","現在のパニック: {2}
-現在のボーナス: {3} {6}
-{7}以上で: {9}
-","Текущий уровень паники: {2};
-текущий бонус: {3} {6}
-Свыше {7}: {9}
-.","Поточна паніка: {2}
-Поточний бонус: {3} {6}
-Понад {7}: {9}
-","Aktuelle Panik: {2}
-Aktueller Bonus: {3} {6}
-Über {7}: {9}
-","Pánico actual: {2}
-Bonificación actual: {3} {6}
-Más de {7}: {9}
-","Pânico Atual: {2}
-Bônus Atual: {3} {6}
-Acima de {7}: {9}
-","현재 공포: {2}
-현재 보너스: {3} {6}
-{7} 초과 시: {9}"
+Bonus actuel<nbsp>: {3}
+{6}
+{9}","当前恐慌度：{2}
+当前加成：{3}
+{6}
+{9}","目前恐慌值{2}
+目前加成：{3}
+{6}
+{9}","現在のパニック: {2}
+現在のボーナス: {3}
+{6}
+{9}","Текущий уровень паники: {2};
+текущий бонус: {3}
+{6}
+{9}","Поточна паніка: {2}
+Поточний бонус: {3}
+{6}
+{9}","Aktuelle Panik: {2}
+Aktueller Bonus: {3}
+{6}
+{9}","Pánico actual: {2}
+Bonificación actual: {3}
+{6}
+{9}","Pânico Atual: {2}
+Bônus Atual: {3}
+{6}
+{9}","현재 공포: {2}
+현재 보너스: {3}
+{6}
+{9}"
 ResearchDescription_HavenGlintfeinResearch,"The effects of <style=keyword>Temple</style> and <style=keyword>Mana Well</style> are <style=good>doubled</style>, and actions no longer cost <style=Workers>Workers</style>.
 Grant {0} to <style=keyword>Temple</style> and {1} to <style=keyword>Mana Well</style>. They are only usable once per <style=night>night</style>.","Les effets du <style=keyword>Temple</style> et du <style=keyword>Puit de Mana</style> sont <style=good>doublés</style>, et les actions ne coûtent plus de <style=Workers>Ouvriers</style>.
 Confère {0} au <style=keyword>Temple</style> et {1} au <style=keyword>Puit de Mana</style>.Ils sont seulement utilisable une fois par <style=night>nuit</style>.","<style=keyword>神庙</style>和<style=keyword>魔泉</style>的效果<style=good>翻倍</style>，且操作不再消耗<style=Workers>工人</style>。
@@ -2571,43 +2601,54 @@ DivergenceEffectShortDescription_AddPerk_ReduceCritCurse,<style=Number>-3%</styl
 DivergenceEffectFullDescription_AddPerk_ReduceCritCurse_2,Whenever a <style=divergenceOutline><style=KeyWord>critical hit</style></style> is landed: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style> <style=divergenceoutline><style=critical>Critical</style></style> until the end of the <style=divergenceOutline><style=Night>Night</style></style>.,Quand un <style=divergenceOutline><style=Critical>Coup Critique</style></style> est infligé<nbsp>: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style> <style=divergenceoutline><style=critical>Critique</style></style> jusqu'à la fin de la <style=divergenceOutline><style=Night>Nuit</style></style>.,每造成一次<style=divergenceOutline><style=KeyWord>暴击</style></style>：<style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style><style=divergenceOutline><style=critical>暴击</style></style>，效果持续至<style=divergenceOutline><style=Night>夜晚</style></style>结束。,每當造成一次<style=divergenceOutline><style=KeyWord>暴擊</style></style>時：<style=divergenceoutline><style=critical>暴擊</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style>，持續到<style=divergenceOutline><style=Night>夜晚</style></style>結束為止。,<style=divergenceOutline><style=KeyWord>会心ヒット</style></style>発生時:<style=divergenceOutline><style=Night>夜</style></style>終了まで<style=divergenceoutline><style=critical>会心</style></style><style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style>。,За каждый <style=divergenceOutline><style=KeyWord>критический удар</style></style> герои до конца <style=divergenceOutline><style=Night>ночи</style></style> получают <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style> к <style=divergenceoutline><style=critical>шансу критического урона</style></style>.,Коли завдано <style=divergenceOutline><style=KeyWord>критичний удар</style></style>: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style> <style=divergenceoutline><style=critical>шансу критичного удару</style></style> до кінця <style=divergenceOutline><style=Night>ночі</style></style>.,Immer wenn ein <style=divergenceOutline><style=KeyWord>kritischer Treffer</style></style> gelandet wird: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7 %</style></style> <style=divergenceoutline><style=critical>kritischer Treffer</style></style> bis zum Ende der <style=divergenceOutline><style=Night>Nacht</style></style>.,Cuando se inflige un <style=divergenceOutline><style=KeyWord>golpe crítico</style></style>: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7 %</style></style> al <style=divergenceoutline><style=critical>crítico</style></style> hasta que acabe la <style=divergenceOutline><style=Night>noche</style></style>.,Sempre que houver um <style=divergenceOutline><style=KeyWord>acerto crítico</style></style>: <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style> de <style=divergenceoutline><style=critical>Crítico</style></style> até o fim da <style=divergenceOutline><style=Night>Noite</style></style>.,<style=divergenceOutline><style=KeyWord>치명타</style></style>가 발생할 때마다: <style=divergenceOutline><style=Night>밤</style></style>이 끝날 때까지 <style=divergenceoutline><style=critical>치명타</style></style> <style=DivergenceKeywordOutline><style=DivergenceKeywordColor>-7%</style></style>
 DivergenceEffectFullDescriptionTooltip_AddPerk_ReduceCritCurse_2,Whenever a <style=KeyWord>critical hit</style> is landed: <style=KeywordNb>-7%</style> <style=critical>Critical</style> until the end of the <style=Night>Night</style>.,Quand un <style=Critical>Coup Critique</style> est infligé<nbsp>: <style=KeywordNb>-7%</style> <style=critical>Critique</style> jusqu'à la fin de la <style=Night>Nuit</style>.,每造成一次<style=KeyWord>暴击</style>：<style=KeywordNb>-7%</style><style=critical>暴击</style>，效果持续至<style=Night>夜晚</style>结束。,每當造成一次<style=KeyWord>暴擊</style>時：<style=critical>暴擊</style><style=KeywordNb>-7%</style>，持續到<style=Night>夜晚</style>結束為止。,<style=KeyWord>会心ヒット</style>発生時:<style=Night>夜</style>終了まで<style=critical>会心</style><style=KeywordNb>-7%</style>。,За каждый <style=KeyWord>критический удар</style> герои до конца <style=Night>ночи</style> получают <style=KeywordNb>-7%</style> к <style=critical>шансу критического урона</style>.,Коли завдано <style=KeyWord>критичний удар</style>: <style=KeywordNb>-7% </style><style=critical>шансу критичного удару</style> до кінця <style=Night>ночі</style>.,Immer wenn ein <style=KeyWord>kritischer Treffer</style> gelandet wird: <style=KeywordNb>-7 % </style><style=critical>kritischer Treffer</style> bis zum Ende der <style=Night>Nacht</style>.,Cuando se inflige un <style=KeyWord>golpe crítico</style>: <style=KeywordNb>-7 %</style> al <style=critical>crítico</style> hasta que acabe la <style=Night>noche</style>.,Sempre que houver um <style=KeyWord>acerto crítico</style>: <style=KeywordNb>-7% de </style><style=critical>Crítico</style> até o fim da <style=Night>Noite</style>.,<style=KeyWord>치명타</style>가 발생할 때마다: <style=Night>밤</style>이 끝날 때까지 </style><style=critical>치명타 <style=KeywordNb>-7%</style>
 DivergenceEffectShortDescription_AddPerk_ReduceCritCurse_2,<style=Number>-7%</style> <style=critical>Critical</style>,<style=Number>-7%</style> <style=critical>Critique</style>,<style=Number>-7%</style> <style=critical>暴击</style>,<style=critical>暴擊</style><style=Number>-7%</style>,<style=critical>会心</style><style=Number>-7%</style>,<style=Number>-7%</style> к <style=critical>шансу критического урона</style>,<style=Number>-7%</style> <style=critical>шансу критичного удару</style>,<style=Number>-7 %</style> <style=critical>kritischer Treffer</style>,<style=Number>-7 %</style> al <style=critical>crítico</style>,<style=Number>-7%</style> de <style=critical>Crítico</style>,<style=critical>치명타</style> <style=Number>-7%</style>
-"PerkEffectInformations_ThirdEye","Enemies to hit: {4}","Ennemis à toucher<nbsp>: {4}","还需击中的敌人数量：{4}","還需擊中的敵人數量：{4}","攻撃するエネミー: {4}","Ещё попаданий: {4}","Ще ударити ворогів: {4}","zu treffende Gegner: {4}","Enemigos por golpear: {4}","Inimigos a serem golpeados: {4}","명중해야 하는 적: {4}"
-"PerkDescription_HeadOn","Every <style=KeyWord>{0} tiles traveled</style> (excluding <style=""Skill"">skills</style> with <style=NoMomentum>No Momentum</style>), the next attack gets:
+PerkEffectInformations_ThirdEye,Enemies to hit: {4},Ennemis à toucher<nbsp>: {4},还需击中的敌人数量：{4},還需擊中的敵人數量：{4},攻撃するエネミー: {4},Ещё попаданий: {4},Ще ударити ворогів: {4},zu treffende Gegner: {4},Enemigos por golpear: {4},Inimigos a serem golpeados: {4},명중해야 하는 적: {4}
+PerkDescription_HeadOn,"Every <style=KeyWord>{0} tiles traveled</style> (excluding <style=""Skill"">skills</style> with <style=NoMomentum>No Momentum</style>), the next attack gets:
 {1}.
-{2}, {4}.
+{2}
+{4}.
 <style=Attenuated>This modifier doesn't stack.</style>","Toutes les <style=KeyWord>{0} cases parcourues</style> (excluant les <style=""Skill"">compétences</style> <style=NoMomentum>Sans Inertie</style>), la prochaine attaque gagne<nbsp>:
 {1}.
-{2}, {4}.
+{2}
+{4}.
 <style=Attenuated>Ce modificateur n'est pas cumulable.</style>","每<style=KeyWord>移动{0}格</style>（不包含<style=NoMomentum>横冲直撞无效</style>的<style=""Skill"">技能</style>），下一次攻击将获得：
 {1}
-{2}, {4}
+{2}
+4}
 <style=Attenuated>此加成不可叠加。</style>","每<style=KeyWord>移動{0}格</style>（不包含<style=NoMomentum>橫衝直撞無效</style>的<style=""Skill"">技能</style>），下一次攻擊將獲得：
 {1}
-{2}, {4}
+{2}
+{4}
 <style=Attenuated>此加成不可疊加。</style>","<style=KeyWord>{0}タイル移動</style>するごとに(<style=NoMomentum>衝撃無し</style><style=""Skill"">スキル</style>は除く)、次の攻撃に以下の効果を付与する:
 {1}。
-{2}, {4}。
+{2}
+{4}。
 <style=Attenuated>この効果は重複しない</style>。","<style=KeyWord>Пройдя {0} яч.</style> (<style=""Skill"">навыки</style> со свойством <style=NoMomentum>""Без разгона""</style> не считаются), герой получает бонус к следующей атаке:
 {1}.
-{2}, {4}.
+{2}
+{4}.
 <style=Attenuated>Эффект не накапливается.</style>","За кожні <style=KeyWord>{0} подолані плитки</style> (за винятком <style=""Skill"">вмінь</style> <style=NoMomentum>без імпульсу</style>), наступна атака отримує:
 {1}.
-{2}, {4}.
+{2}
+{4}.
 <style=Attenuated>Цей модифікатор не поєднується.</style>","Für alle <style=KeyWord>{0} zurückgelegten Felder</style> (mit Ausnahme von <style=""Skill"">Fähigkeiten</style> mit <style=NoMomentum>Kein Momentum</style>), hat der nächste Angriff:
 {1}.
-{2}, {4}.
+{2}
+{4}.
 <style=Attenuated>Dieser Modifikator ist nicht stapelbar.</style>","Al cruzar <style=KeyWord>{0} casillas</style> (excepto con <style=""Skill"">habilidades</style> <style=NoMomentum>sin impulso</style>), el siguiente ataque obtiene:
 {1}.
-{2}, {4}.
+{2}
+{4}.
 <style=Attenuated>Este modificador no se acumula.</style>","A cada <style=KeyWord>{0} casas percorridas</style> (excluindo <style=""Skill"">habilidades</style> <style=NoMomentum>Sem Impulso</style>), o próximo ataque recebe:
 {1}.
-{2}, {4}.
+{2}
+{4}.
 <style=Attenuated>Este modificador não acumula.</style>","<style=KeyWord>{0}타일을 이동</style>할 때마다 (<style=NoMomentum>기세 없음</style>을 보유한 <style=""Skill"">스킬</style> 제외) 다음 차례 공격에 적용:
 {1}
-{2}, {4}
+{2}
+{4}
 <style=Attenuated>해당 보정치는 중첩되지 않음</style>"
-"PerkEffectInformations_HeadOn","Tiles to travel: {3}","Cases à parcourir<nbsp>: {3}","还需移动格数：{3}","還需移動格數：{3}","移動するタイル: {3}","Осталось пройти: {3} яч.","Подолати плиток: {3}","Felder zurückzulegen: {3}","Casillas que atravesar: {3}","Casas a serem percorridas: {3}.","이동 타일: {3}"
-"PerkDescription_Nimble","As long as the Hero is at <style=KeyWord>full Health</style>:
+PerkEffectInformations_HeadOn,Tiles to travel: {3},Cases à parcourir<nbsp>: {3},还需移动格数：{3},還需移動格數：{3},移動するタイル: {3},Осталось пройти: {3} яч.,Подолати плиток: {3},Felder zurückzulegen: {3},Casillas que atravesar: {3},Casas a serem percorridas: {3}.,이동 타일: {3}
+PerkDescription_Nimble,"As long as the Hero is at <style=KeyWord>full Health</style>:
 {0}.
 {1}.
 {2}.","Tant que le Héros est en <style=KeyWord>pleine santé</style><nbsp>:
@@ -2641,7 +2682,7 @@ DivergenceEffectShortDescription_AddPerk_ReduceCritCurse_2,<style=Number>-7%</st
 {0}
 {1}
 {2}"
-"PerkDescription_DeadlyRanger","For each {4} <style=Keyword>equipped</style>: {0}.
+PerkDescription_DeadlyRanger,"For each {4} <style=Keyword>equipped</style>: {0}.
 For each {5} <style=Keyword>equipped</style>: {1}.
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Pour chaque {4} <style=Keyword>équipée</style> : {0}.
 Pour chaque {5} <style=Keyword>équipée</style> : {1}.
@@ -2664,7 +2705,7 @@ Para cada {5} <style=Keyword>equipada</style>: {1}.
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","<style=Keyword>장착</style>한 {4} 하나당: {0}
 <style=Keyword>장착</style>한 {5} 하나당: {1}
 <style=""ElfIcon""></style><style=""ElfText"">암버발트의 엘프 DLC</style>"
-"PerkEffectInformations_DeadlyRanger","Current bonus:
+PerkEffectInformations_DeadlyRanger,"Current bonus:
 {2}
 {3}","Bonus actuel :
 {2}
@@ -2687,8 +2728,8 @@ Para cada {5} <style=Keyword>equipada</style>: {1}.
 {3}","현재 보너스:
 {2}
 {3}"
-"PerkEffectInformations_Sentry","{5}","{5}","{5}","{5}","{5}","{5}","{5}","{5}","{5}","{5}","{5}"
-"PerkDescription_Stunning","{0}.
+PerkEffectInformations_Sentry,{5},{5},{5},{5},{5},{5},{5},{5},{5},{5},{5}
+PerkDescription_Stunning,"{0}.
 When <style=KeyWord>attacking</style> a <style=Stun>stunned</style> unit: {1} <style=PerkDamage>Perk Damage</style>.","{0}.
 Lorsqu'une unité <style=Stun>étourdie</style> est <style=KeyWord>attaquée</style> : {1} de <style=PerkDamage>Dégâts de talent</style>.","{0}
 当<style=KeyWord>攻击</style><style=Stun>眩晕</style>的敌人时：{1}<style=PerkDamage>天赋伤害</style>","{0}
@@ -2700,7 +2741,7 @@ Beim <style=KeyWord>Angriff</style> auf eine <style=Stun>betäubte</style> Einhe
 Al <style=KeyWord>atacar</style> a una unidad <style=Stun>aturdida</style>: {1} de <style=PerkDamage>Daño de beneficio</style>.","{0}.
 Quando <style=KeyWord>atacar</style> uma unidade <style=Stun>atordoada</style>: {1} de <style=PerkDamage>Dano de Vantagem</style>.","{0}
 <style=Stun>기절</style> 상태인 유닛을 <style=KeyWord>공격</style>할 경우: {1}"
-"PerkDescription_Warcry","Every {0} <style=KeyWord>missing</style> {1} or {2}:
+PerkDescription_Warcry,"Every {0} <style=KeyWord>missing</style> {1} or {2}:
 {3}, up to {8}, to <style=KeyWord>all</style> Heroes at the <style=KeyWord>start</style> of the Heroes' turn.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Tous les {0} de {1} ou {2} <style=KeyWord>manquants</style><nbsp>:
 {3}, jusqu'à un maximum de {8}, à <style=KeyWord>tous</style> les Héros au <style=KeyWord>début</style> du tour des Héros.
@@ -2732,7 +2773,7 @@ Quando <style=KeyWord>atacar</style> uma unidade <style=Stun>atordoada</style>: 
 영웅의 턴이 <style=KeyWord>시작</style>될 때 <style=KeyWord>모든</style> 영웅에 {3}(최대 {8}) 효과 부여
 
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
-"BuildingUpgradeTooltipDescription_UpgradeSlowTrap0","• <style=MovePoints>Move Points</style> <style=Debuff>Debuff</style> <style=Number>-2</style> > <style=GoodNbOutlined>-3</style>
+BuildingUpgradeTooltipDescription_UpgradeSlowTrap0,"• <style=MovePoints>Move Points</style> <style=Debuff>Debuff</style> <style=Number>-2</style> > <style=GoodNbOutlined>-3</style>
 • <style=OverallDamage>Damage</style> <style=""Number"">40-70</style> > <style=GoodNbOutlined>60-105</style>
 <#F35934>This will upgrade <b>every</b> Slow Trap at once.</color>","• <style=Debuff>Atténuation</style> des <style=MovePoints>Points de Mouvement</style> <style=Number>-2</style> > <style=GoodNbOutlined>-3</style>
 • <style=OverallDamage>Dégâts</style> <style=""Number"">40-70</style> > <style=GoodNbOutlined>60-105</style>
@@ -2755,7 +2796,7 @@ Quando <style=KeyWord>atacar</style> uma unidade <style=Stun>atordoada</style>: 
 <#F35934>Melhora de uma vez só <b>TODAS</b> as Armadilhas Retardantes.</color>","• <style=MovePoints>이동력</style> <style=Debuff>디버프</style> <style=Number>-2</style> > <style=GoodNbOutlined>-3</style>
 • <style=OverallDamage>피해</style> <style=""Number"">40-70</style> > <style=GoodNbOutlined>60-105</style>
 <#F35934><b>모든</b> 둔화 함정을 동시에 강화합니다.</color>"
-"BuildingUpgradeTooltipDescription_UpgradeStunTrap0","• <style=TrapUse>Uses per Night</style> <style=Number>1</style> > <style=GoodNbOutlined>2</style>
+BuildingUpgradeTooltipDescription_UpgradeStunTrap0,"• <style=TrapUse>Uses per Night</style> <style=Number>1</style> > <style=GoodNbOutlined>2</style>
 • <style=OverallDamage>Damage</style> <style=""Number"">80-130</style> > <style=GoodNbOutlined>120-195</style>
 <#F35934>This will upgrade <b>every</b> Stun Trap at once.</color>","• <style=TrapUse>Utilisations par nuit</style> <style=Number>1</style> > <style=GoodNbOutlined>2</style>
 • <style=OverallDamage>Dégâts</style> <style=""Number"">80-130</style> > <style=GoodNbOutlined>120-195</style>
@@ -2778,51 +2819,228 @@ Quando <style=KeyWord>atacar</style> uma unidade <style=Stun>atordoada</style>: 
 <#F35934>Melhora de uma vez só <b>TODAS</b> as Armadilhas Atordoantes.</color>","• <style=TrapUse>하룻밤 사용 횟수</style> <style=Number>1</style> > <style=GoodNbOutlined>2</style>
 • <style=OverallDamage>피해</style> <style=""Number"">80-130</style> > <style=GoodNbOutlined>120-195</style>
 <#F35934><b>모든</b> 기절 함정을 동시에 강화합니다.</color>"
-"ApocalypseModifierTitle_EnemyLateBuffModifier","Last-Ditch Charge","Charge Désespérée","背水一战","背水一戰","最後の突撃","Отчаянный Натиск","Відчайдушний Натиск","Verzweifelter Ansturm","Carga Desesperada","Investida Desesperada","최후의 돌격"
-"BuildingUpgradeTooltipDescription_UpgradeBallistaToBallistaSplit0","Becomes a <style=KeyWord>Split Ballista</style>:
+ApocalypseModifierTitle_EnemyLateBuffModifier,Last-Ditch Charge,Charge Désespérée,背水一战,背水一戰,最後の突撃,Отчаянный Натиск,Відчайдушний Натиск,Verzweifelter Ansturm,Carga Desesperada,Investida Desesperada,최후의 돌격
+BuildingDescription_BallistaHeavy,"<style=KeyWord>Automatically fires</style> bolts at the incoming horde, targeting the <style=KeyWord>closest</style> enemy.
+Strengthened for improved <style=OverallDamage>Damage</style> and <style=ArmorPiercing>Armor Piercing</style>.","<style=KeyWord>Tire automatiquement</style> des carreaux sur les cibles en approche, ciblant l'ennemi <style=KeyWord>le plus proche</style>.
+Renforcé pour de meilleurs <style=OverallDamage>Dégât</style> et <style=ArmorPiercing>Perce-armure</style>.","向来袭怪物<style=KeyWord>自动发射</style>弩箭，以<style=KeyWord>最近的</style>敌人为目标。
+强化了<style=OverallDamage>伤害</style>和<style=ArmorPiercing>穿透护甲</style>的能力。","向來襲怪物<style=KeyWord>自動發射</style>弩箭，將<style=KeyWord>最近的</style>敵人作為目標。
+經過改良，<style=OverallDamage>傷害</style>和<style=ArmorPiercing>穿透護甲</style>效果提高。","襲撃時、<style=KeyWord>一番近い</style>エネミーに向けて<style=KeyWord>自動的にボルトを発射する</style>。
+より<style=OverallDamage>ダメージ</style>を与え<style=ArmorPiercing>アーマーを貫通</style>するために補強されたもの。","<style=KeyWord>Автоматически стреляет</style> в приближающихся врагов, выбирая <style=KeyWord>ближайшую</style> цель.
+Усиленная версия с повышенным <style=OverallDamage>уроном</style> и <style=ArmorPiercing>бронебойностью</style>.
+<style=""Bad"">Блокирует</style> <style=LineOfSight>линию видимости</style>.","<style=KeyWord>Автоматично стріляє</style> болтами в орду, обираючи <style=KeyWord>найближчого</style> ворога.
+Посилені <style=OverallDamage>шкода</style> й <style=ArmorPiercing>бронепроникність</style>.","<style=KeyWord>Feuert automatisch</style> Bolzen auf ankommende Horden. Zielt auf den <style=KeyWord>nächsten</style> Gegner.
+Verstärkt für mehr <style=OverallDamage>Schaden</style>. <style=ArmorPiercing>Ignoriert Rüstung</style>.","<style=KeyWord>Dispara automáticamente</style> virotes sobre la horda que se aproxima tras apuntar al enemigo <style=KeyWord>más cercano</style>.
+Reforzada para que inflija más <style=OverallDamage>daño</style> y <style=ArmorPiercing>perfore armadura</style>.","<style=KeyWord>Atira automaticamente</style> contra a horda, mirando as flechas nos inimigos <style=KeyWord>mais próximos</style>.
+Fortificada com <style=OverallDamage>Dano</style> melhorado e <style=ArmorPiercing>Perfuração de Armadura</style>.","몰려오는 군단을 대상으로 <style=KeyWord>가장 가까운</style> 적에게 볼트를 <style=KeyWord>자동 발사</style>합니다.
+강화되어 <style=OverallDamage>피해</style>와 <style=ArmorPiercing>장갑 관통</style>이 향상됩니다."
+BuildingDescription_BallistaSplit,"<style=KeyWord>Automatically fires</style> bolts at the incoming horde, targeting the <style=KeyWord>closest</style> enemy.
+Modified to hit <style=KeyWord>up to 3 targets</style>.","<style=KeyWord>Tire automatiquement</style> des carreaux sur les cibles en approche, ciblant l'ennemi <style=KeyWord>le plus proche</style>.
+Modifié pour <style=Keyword>toucher jusqu'a 3</style>.","向来袭怪物<style=KeyWord>自动发射</style>弩箭，以<style=KeyWord>最近的</style>敌人为目标。
+可以击中<style=KeyWord>最多3个目标</style>。","向來襲怪物<style=KeyWord>自動發射</style>弩箭，將<style=KeyWord>最近的</style>敵人作為目標。
+經過改良，<style=KeyWord>最多可擊中3個目標</style>。","襲撃時、<style=KeyWord>一番近い</style>エネミーに向けて<style=KeyWord>自動的にボルトを発射する</style>。
+<style=KeyWord>最大3体のターゲット</style>を攻撃するために改造されたもの。","<style=KeyWord>Автоматически стреляет</style> в приближающихся врагов, выбирая <style=KeyWord>ближайшую</style> цель.
+Усовершенствованная модель, способная поражать <style=KeyWord>до 3 целей</style> одновременно.
+<style=""Bad"">Блокирует</style> <style=LineOfSight>линию видимости</style>.","<style=KeyWord>Автоматично стріляє</style> болтами в орду, обираючи <style=KeyWord>найближчого</style> ворога.
+Модифікації дозволяють уражати <style=KeyWord>до 3 цілей</style>.","<style=KeyWord>Feuert automatisch</style> Bolzen auf ankommende Horden. Zielt auf den <style=KeyWord>nächsten</style> Gegner.
+Modifiziert, um <style=KeyWord>bis zu 3 Ziele</style> zu treffen.","<style=KeyWord>Dispara automáticamente</style> virotes sobre la horda que se aproxima tras apuntar al enemigo <style=KeyWord>más cercano</style>.
+Modificada para que impacte a <style=KeyWord>un máximo de 3 objetivos</style>.","<style=KeyWord>Atira automaticamente</style> contra a horda, mirando as flechas nos inimigos <style=KeyWord>mais próximos</style>.
+Modificada para atingir <style=KeyWord>até 3 alvos</style>.","몰려오는 군단을 대상으로 <style=KeyWord>가장 가까운</style> 적에게 볼트를 <style=KeyWord>자동 발사</style>합니다.
+변형되어 <style=KeyWord>최대 3개의 대상</style>에 공격이 적중합니다."
+BuildingUpgradeTooltipDescription_UpgradeBallistaToBallistaHeavy0,"Becomes a <style=KeyWord>Heavy Ballista</style>:
+• <style=OverallDamage>Damage</style> <style=""Number"">124-190</style> > <style=""GoodNbOutlined"">220-280</style>.
+• Gains <style=ArmorPiercing>Armor Piercing</style>.
+<style=Attenuated>Incompatible with upgrades Mounted Ballista and Split Ballista</style>","Améliorer en <style=KeyWord>Balliste Lourde</style>:
+• <style=OverallDamage>Dégâts</style> <style=""Number"">124-190</style> > <style=""GoodNbOutlined"">220-280</style>.
+• Gagne <style=ArmorPiercing>Perce-armure</style>.
+<style=Attenuated>Incompatible avec les améliorations Balliste Montée et Balliste à multiple projectile</style>","升级为<style=KeyWord>重型弩车</style>：
+• <style=OverallDamage>伤害</style> <style=""Number"">124-190</style> > <style=""GoodNbOutlined"">220-280</style>。
+• 获得<style=ArmorPiercing>穿透护甲</style>的能力。
+<style=Attenuated>无法与升级为加高弩车或散射弩车兼容</style>","升級為<style=KeyWord>重型弩車</style>：
+• <style=OverallDamage>傷害</style><style=""Number"">124-190</style> > <style=""GoodNbOutlined"">220-280</style>。
+• 獲得<style=ArmorPiercing>穿透護甲</style>效果。
+<style=Attenuated>此升級、「加高弩車」、「多發弩車」只能擇一使用</style>","<style=KeyWord>ヘビーバリスタ</style>になる:
+・<style=OverallDamage>ダメージ</style><style=""Number"">124-190</style> > <style=""GoodNbOutlined"">220-280</style>
+・<style=ArmorPiercing>鎧穿ち</style>を得る。
+<style=Attenuated>固定バリスタとスプリットバリスタの強化とは両立できない。</style>","Улучшает до <style=KeyWord>тяжёлой баллисты</style>:
+• наносит <style=""Number"">120–140</style> > <style=""GoodNbOutlined"">220–280</style> <style=OverallDamage>урона</style>;
+• получает <style=ArmorPiercing>бронебойность</style>;
+<style=Attenuated>Несовместимо с улучшениями ""Высокая баллиста"" и ""Залповая баллиста""</style>","Стане <style=KeyWord>важкою балістою</style>:
+• <style=OverallDamage>Шкода</style> <style=""Number"">124-190</style> > <style=""GoodNbOutlined"">220-280</style>.
+• Має <style=ArmorPiercing>бронепроникність</style>.
+<style=Attenuated>Несумісно з поліпшеннями «Балiста на опорi» й «Рознесена баліста»</style>","Wird zu <style=KeyWord>Schwere Balliste</style>:
+ • <style=OverallDamage>Schaden</style> <style=""Number"">120–140</style> > <style=""GoodNbOutlined"">220–280</style>.
+ • <style=ArmorPiercing>Ignoriert Rüstung</style>.
+<style=Attenuated>Nicht kompatibel mit den Verbesserungen „Erhöhte Balliste“ und „Dreischuss-Balliste“</style>.","Se convierte en una <style=KeyWord>balista pesada</style>:
+• <style=OverallDamage>Daño</style> <style=""Number"">124-190</style> > <style=""GoodNbOutlined"">220-280</style>.
+• Obtiene <style=ArmorPiercing>perforación de armadura</style>.
+<style=Attenuated>Incompatible con las siguientes mejoras: balista elevada y balista triple</style>.","Vira uma <style=KeyWord>Balista Pesada</style>:
+• <style=OverallDamage>Dano</style> <style=""Number"">124-190</style> > <style=""GoodNbOutlined"">220-280</style>.
+• Recebe <style=ArmorPiercing>Perfuração de Armadura</style>.
+<style=Attenuated>Incompatível com as melhorias Balista Montada e Balista Dividida</style>","<style=KeyWord>중형 노포</style>로 강화:
+• <style=OverallDamage>피해</style> <style=""Number"">124-190</style> > <style=""GoodNbOutlined"">220-280</style>.
+• <style=ArmorPiercing>장갑 관통</style> 획득
+<style=Attenuated>증축 노포 및 분할 노포 강화와 호환 불가</style>"
+BuildingUpgradeTooltipDescription_UpgradeBallistaToBallistaSplit0,"Becomes a <style=KeyWord>Split Ballista</style>:
 • <style=OverallDamage>Damage</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
 • <style=KeyWord>Fires</style> <style=""GoodNbOutlined"">3 times</style> per turn, assuming targets are available (<style=KeyWord>can't shoot the same target twice</style>).
-• <style=""Bad"">Blocks</style> <style=LineOfSight>Line of Sight</style>.
 <style=Attenuated>Incompatible with upgrades Mounted Ballista and Heavy Ballista</style>","Améliorer en <style=KeyWord>Balliste à multiple projectile</style>:
 • <style=OverallDamage>Dégâts</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
 • <style=KeyWord>Tire</style> <style=""GoodNbOutlined"">3 fois</style> par tour, s'il y a des cibles valide (<style=KeyWord>ne peut pas tirer deux fois sur la même cible</style>).
-• <style=""Bad"">Bloque</style> la <style=LineOfSight>Ligne de vue</style>.
 <style=Attenuated>Incompatible avec les améliorations Balliste Montée et Balliste Lourde</style>","升级为<style=KeyWord>散射弩车</style>：
 • <style=OverallDamage>伤害</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
 • 有符合条件目标的情况下每回合可<style=KeyWord>发射</style><style=""GoodNbOutlined"">3次</style>（<style=KeyWord>无法重复攻击同一个目标</style>）。
-• 会<style=""Bad"">阻挡</style><style=LineOfSight>视线</style>。
 <style=Attenuated>无法与兼容升级价高弩车或重型弩车兼容</style>","升級為<style=KeyWord>多發弩車</style>：
 • <style=OverallDamage>傷害</style><style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>。
 • 目標足夠時，每回合最多可<style=KeyWord>發射</style><style=""GoodNbOutlined"">3次</style>（<style=KeyWord>單一回合無法重複射擊同一目標</style>）。
-• 會<style=""Bad"">阻擋</style><style=LineOfSight>視線</style>。
 <style=Attenuated>此升級、「加高弩車」、「重型弩車」只能擇一使用</style>","<style=KeyWord>スプリットバリスタ</style>になる:
 ・<style=OverallDamage>ダメージ</style><style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
 ・有効なターゲットがいる場合、1ターンに<style=""GoodNbOutlined"">3回</style><style=KeyWord>発射</style>する(<style=KeyWord>同じターゲットを2回以上撃つことはない</style>)。
-・<style=LineOfSight>視界</style>を<style=""Bad"">遮る</style>。
 <style=Attenuated>固定バリスタとヘビーバリスタの強化とは両立できない。</style>","Улучшает до <style=KeyWord>залповой баллисты</style>:
 • наносит <style=""Number"">124–190</style> > <style=""BadNbOutlined"">100–140</style> <style=OverallDamage>урона</style>;
 • <style=KeyWord>стреляет</style> <style=""GoodNbOutlined"">трижды</style> за ход, если есть цели;<style=KeyWord>не стреляет дважды в одну цель</style>;
-• <style=""Bad"">блокирует</style> <style=LineOfSight>линию видимости</style>.
 <style=Attenuated>Несовместимо с улучшениями ""Высокая баллиста"" и ""Тяжёлая баллиста""</style>","Стане <style=KeyWord>рознесеною балістою</style>:
 • <style=OverallDamage>Шкода</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
 • <style=KeyWord>Стріляє</style> <style=""GoodNbOutlined"">3 рази</style> за хід, якщо є цілі (<style=KeyWord>не може вразити одну ціль двічі</style>).
-• <style=""Bad"">Блокує</style> <style=LineOfSight>лінію видимості</style>.
 <style=Attenuated>Несумісно з поліпшеннями «Балiста на опорi» й «Важка баліста»</style>","Wird zu <style=KeyWord>Dreischuss-Balliste</style>:
  • <style=OverallDamage>Schaden</style> <style=""Number"">124–190</style> > <style=""BadNbOutlined"">100–140</style>
  • <style=KeyWord>Schießt</style> <style=""GoodNbOutlined"">dreimal</style> pro Runde, vorausgesetzt Ziele sind verfügbar (<style=KeyWord>kann nicht zweimal auf das gleiche Ziel schießen</style>).
- • <style=""Bad"">Blockiert</style> die <style=LineOfSight>Sichtlinie</style>.
 <style=Attenuated>Nicht kompatibel mit den Verbesserungen „Erhöhte Balliste“ und „Schwere Balliste“</style>.","Se convierte en una <style=KeyWord>balista triple</style>:
 • <style=OverallDamage>Daño</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
 • <style=KeyWord>Dispara</style> <style=""GoodNbOutlined"">3 veces</style> por turno mientras haya objetivos disponibles (<style=KeyWord>no puede disparar dos veces al mismo objetivo</style>).
-• <style=""Bad"">Obstaculiza</style> el <style=LineOfSight>campo visual</style>.
 <style=Attenuated>Incompatible con las siguientes mejoras: balista elevada y balista pesada</style>.","Vira uma <style=KeyWord>Balista Dividida</style>:
 • <style=OverallDamage>Dano</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
 • <style=KeyWord>Dispara</style> <style=""GoodNbOutlined"">3 vezes</style> por turno, desde que haja alvos disponíveis (<style=KeyWord>não atira no mesmo alvo duas vezes</style>).
-• <style=""Bad"">Bloqueia</style> a <style=LineOfSight>Linha de Visão</style>.
 <style=Attenuated>Incompatível com as melhorias Balista Montada e Balista Pesada</style>","<style=KeyWord>분할 노포</style>로 강화:
 • <style=OverallDamage>피해</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
 • 표적을 전부 확보한 경우 한 턴에 <style=""GoodNbOutlined"">3번</style> <style=KeyWord>발사</style>합니다(<style=KeyWord>한 대상에 2번 발사하지는 않습니다</style>).
-• <style=LineOfSight>조준선</style>을 <style=""Bad"">가로막습니다</style>.
 <style=Attenuated>증축 노포 및 중형 노포 강화와 호환 불가</style>"
-"ResearchName_PerkPanicMovePointResearch","Embrace Chaos","Étreindre le Chaos","拥抱混乱","擁抱混沌","混沌を抱く","Объять Хаос","Прийняти Хаос","Chaos Umarmen","Abrazar el Caos","Abraçar o Caos","혼돈 수용"
-"PerkDescription_FastToxins","{0}.","{0}.","{0}.","{0}.","{0}。","{0}.","{0}.","{0}.","{0}.","{0}.","{0}"
+ResearchName_PerkPanicMovePointResearch,Embrace Chaos,Étreindre le Chaos,拥抱混乱,擁抱混沌,混沌を抱く,Объять Хаос,Прийняти Хаос,Chaos Umarmen,Abrazar el Caos,Abraçar o Caos,혼돈 수용
+PerkDescription_FastToxins,{0}.,{0}.,{0}.,{0}.,{0}。,{0}.,{0}.,{0}.,{0}.,{0}.,{0}
+PerkEffectInformations_QuantityVsQuality,{0}.,{0}.,{0}.,{0}.,{0}.,{0}.,{0}.,{0}.,{0}.,{0}.,
+PerkName_MagicStaffUniquePerk,First Impressions,Premières Impressions,先声夺人,先聲奪人,第一印象,Первое впечатление,Перше враження,Erster Eindruck,Primera impresión,Primeira Impressão,첫인상
+PerkDescription_MagicStaffUniquePerk,"As long as the Hero <style=Bad>didn't</style> <style=KeyWord>kill</style> anything this turn:
+{1}, {2} and {3} get {0} <style=PerkDamage>Perk Damage</style>.","Tant que le Héros <style=Bad>n'a pas</style> <style=KeyWord>tué</style> d'unité durant ce tour<nbsp>:
+{1}, {2} et {3} obtiennent {0} de <style=PerkDamage>Dégâts de talent</style>.","如果本回合内英雄<style=Bad>没有</style><style=KeyWord>击杀</style>任何单位：
+{1}、{2}和{3}获得{0}<style=PerkDamage>天赋伤害</style>。","當英雄此回合<style=Bad>沒有</style>任何<style=KeyWord>擊殺</style>時：
+{1}、{2}和{3}獲得{0}<style=PerkDamage>天賦傷害</style>。","このターンで英雄が何も<style=KeyWord>撃破</style><style=Bad>しなかった</style>場合:
+{1}、{2}と{3}に{0}<style=PerkDamage>パークダメージ</style>。","Пока герой <style=Bad>ещё не</style> <style=KeyWord>убил</style> никого в этот ход:
+{1}, {2} и {3} получают {0} <style=PerkDamage>Урона от перка</style>.","Якщо герой упродовж цього ходу <style=Bad>не</style> <style=KeyWord>вбив</style> жодного ворога:
+{1}, {2} і {3} отримують {0} <style=PerkDamage>Шкоди від перка</style>.","Solange der Held in dieser Runde noch <style=Bad>nicht</style> <style=KeyWord>getötet</style> hat:
+{1}, {2} und {3} erhalten {0} <style=PerkDamage>Perk-Schaden</style>.","Mientras el héroe <style=Bad>no</style> <style=KeyWord>mate</style> a nadie durante el turno:
+{1}, {2} y {3} obtienen {0} de <style=PerkDamage>Daño de beneficio</style>.","Desde que o Herói <style=Bad>não</style> <style=KeyWord>abata</style> ninguém neste turno:
+{1}, {2} e {3} recebem {0} de <style=PerkDamage>Dano de Vantagem</style>.","영웅이 이번 턴에 아무도 <style=KeyWord>처치하지</style> <style=Bad>않은</style> 경우:
+{1}, {2} 및 {3}에 {0} <style=PerkDamage>특전 피해</style>"
+PerkName_2HSwordUniquePerk,Immortal Berserker,Berserker Immortel,不灭狂战士,不滅狂戰士,不死の狂戦士,Бессмертный берсерк,Безсмертний берсерк,Unsterblicher Berserker,Berserker Inmortal,Berserker Imortal,불멸의 광전사
+PerkDescription_2HSwordUniquePerk,"Every {1} of <style=KeyWord>missing {2}</style>:
+{0} at the <style=KeyWord>start</style> of the Heroes' turn.
+Once per night, whenever the Hero <style=KeyWord>would be killed</style> for the first time:
+The Hero remains at <style=KeyWordNb>1</style> {2} and becomes {4} until the <style=KeyWord>end of the night</style>.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Tous les {1} de {2} <style=keyword>manquant</style><nbsp>:
+{0} au <style=KeyWord>début</style> du tour des Héros.
+Une fois par nuit, quand le Héros <style=KeyWord>aurait dû être tué</style> pour la première fois<nbsp>:
+le Héros reste à <style=KeyWordNb>1</style> {2} et devient {4} jusqu'à la <style=KeyWord>fin de la nuit</style>.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","每缺失{1}的<style=KeyWord>{2}</style>：
+在英雄回合<style=KeyWord>开始</style>时获得{0}。
+每晚一次，英雄首次<style=KeyWord>本该被击杀</style>时：
+英雄保留<style=KeyWordNb>1</style>{2}，并进入{4}状态，直至<style=KeyWord>夜晚结束</style>。
+
+<style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","每<style=KeyWord>損失{1}{2}</style>：
+在英雄回合<style=KeyWord>開始</style>時獲得{0}。
+每晚一次，英雄第一次<style=KeyWord>即將死亡</style>時：
+英雄維持<style=KeyWordNb>1</style>{2}，變得{4}，持續到<style=KeyWord>黑夜結束</style>。
+
+<style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","<style=KeyWord>失った{2}</style>{1}ごとに:
+英雄のターン<style=KeyWord>開始</style>時に{0}。
+1夜に1度、英雄が初めて<style=KeyWord>倒される</style>と:
+英雄が<style=KeyWordNb>1</style>{2}で留まり、<style=KeyWord>夜が終わる</style>まで{4}になる。
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","Если {2} героя не на максимуме, за каждые <style=KeyWord>недостающие {1} ед.</style> он получает:
+{0} в <style=KeyWord>начале</style> хода героев.
+Раз за ночь, если героя <style=KeyWord>того и гляди убьют</style> в первый раз:
+у героя остаётся <style=KeyWordNb>1</style> {2} и он до <style=KeyWord>конца этой ночи</style> получает {4}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","За кож. {1} <style=KeyWord>витрачених {2}</style>:
+{0} на <style=KeyWord>початку</style> ходу героїв.
+Раз за ніч, коли герой <style=KeyWord>мав би померти</style> вперше:
+у героя лишається <style=KeyWordNb>1</style> {2}, також він отримує статус «{4}» до <style=KeyWord>кінця ночі</style>.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Pro {1} <style=KeyWord>verbrauchte {2}</style>:
+{0} zu <style=KeyWord>Beginn</style> des Zuges der Helden.
+Einmal pro Nacht, wenn der Held zum ersten Mal <style=KeyWord>getötet würde</style>:
+Der Held bleibt bei <style=KeyWordNb>1</style> {2} und ist bis zum <style=KeyWord>Ende der Nacht</style> {4}.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Cada {1} de {2} <style=KeyWord>que se haya gastado</style>:
+{0} al <style=KeyWord>comienzo</style> del turno de los héroes.
+Una vez por noche, cuando el héroe está a punto de sufrir la <style=KeyWord>primera muerte</style>:
+El héroe sobrevive con <style=KeyWordNb>1</style> {2} y se vuelve {4} hasta que <style=KeyWord>acabe la noche</style>.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","A cada {1} de <style=KeyWord>{2} a menos</style>:
+{0} no <style=KeyWord>início</style> do turno dos Heróis.
+Uma vez por noite, na primeira vez em que o Herói <style=KeyWord>seria abatido</style>:
+O Herói mantém <style=KeyWordNb>1</style> {2} e se torna {4} até o <style=KeyWord>fim da noite</style>.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","<style=KeyWord>상실한 {2}</style> {1} 마다:
+영웅의 턴 <style=KeyWord>시작</style> 시 {0}.
+밤마다 한 번씩, 영웅이 처음 <style=KeyWord>사망</style>할 때마다:
+<style=KeyWordNb>1</style> {2} 상태로 생존하고 <style=KeyWord>밤의 끝</style>까지 {4} 상태 적용
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
+PerkEffectInformations_2HSwordUniquePerk,"Missing {2}: {5}
+{6} <style=KeyWord>value</style>: {7}","{2} manquant<nbsp>: {5}
+<style=KeyWord>Valeur</style> du {6}<nbsp>: {7}","当前缺少的 {2}: {5}
+{6} <style=KeyWord>为</style>: {7}","當前缺少的 {2}: {5}
+{6} <style=KeyWord>為</style>: {7}","{2}を失う: {5}
+{6}<style=KeyWord> = </style>: {7}","{2}: не хватает {5} ед.
+<style=KeyWord></style>{6}: {7}","Витрачено {2}: {5}
+<style=KeyWord>Значення</style> {6}: {7}","Verbrauchte {2}: {5}
+{6} <style=KeyWord>Wert</style>: {7}","{2} gastados: {5}
+<style=KeyWord>Valor</style> de {6}: {7}","{2} a menos: {5}
+<style=KeyWord>Valor</style> do {6}: {7}","상실한 {2}: {5}
+{6} <style=KeyWord>수치</style>: {7}"
+RaceTooltipDescription_Dwarf,"{0}
+{1}
+Increases <style=KeyWord>Maximum Block</style> by <style=KeyWordNb>15</style>.
+Dwarves have an <style=KeyWord>exclusive perk collection</style> focused on <style=KeyWord>toughness, ferocity and party</style>.
+<style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","{0}
+{1}
+Augmente le <style=KeyWord>Blocage Maximum</style> de <style=KeyWordNb>15</style>.
+Les Nains ont une <style=KeyWord>collection de Talents exclusive</style> basée sur la <style=KeyWord>robustesse, la férocité et le groupe</style>.
+<style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","{0}
+{1}
+增加<style=KeyWordNb>15</style>点<style=KeyWord>格挡上限</style>。
+矮人拥有侧重于<style=KeyWord>坚韧、凶猛和派对</style>的<style=KeyWord>独特天赋树</style>。
+<style=""DwarfIcon""></style><style=""DwarfText"">卢恩堡的矮人DLC</style>","{0}
+{1}
+增加<style=KeyWordNb>15</style>點<style=KeyWord>格擋上限</style>。
+矮人擁有側重於<style=KeyWord>堅韌、兇猛和派對</style>的<style=KeyWord>獨特天賦樹</style>。
+<style=""DwarfIcon""></style><style=""DwarfText"">盧恩堡的矮人DLC</style>","{0}
+{1}
+<style=KeyWord>最大ブロック</style>を<style=KeyWordNb>15</style>増加させる。
+ドワーフは、<style=KeyWord>強靭さ、凶暴さ、パーティ</style>に特化した<style=KeyWord>独自のパークコレクション</style>を保持している。
+<style=""DwarfIcon""></style><style=""DwarfText"">ルーネンベルクのドワーフDLC</style>","{0}
+{1}
+Увеличивает <style=KeyWord>максимальный блок</style> на <style=KeyWordNb>15</style>.
+У гномов есть <style=KeyWord>эксклюзивная коллекция особых черт</style>, ориентированная на <style=KeyWord>выносливость, свирепость и командный дух</style>.
+<style=""DwarfIcon""></style><style=""DwarfText"">Дополнительный контент ""Dwarves of Runenberg""</style>","{0}
+{1}
+Збільшує <style=KeyWord>максимальний блок</style> на <style=KeyWordNb>15</style>.
+Гноми мають <style=KeyWord>набір унікальних рис</style> завдяки своїй <style=KeyWord>міцній статурі, суворій вдачі та любові до гульбищ</style>.
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC «Dwarves of Runenberg»</style>","{0}
+{1}
+Erhöht den <style=KeyWord>maximalen Block</style> um <style=KeyWordNb>15</style>.
+Zwerge haben eine <style=KeyWord>exklusive Vorteilssammlung</style>, die sich auf <style=KeyWord>Zähigkeit, Wildheit und Party</style> konzentriert.
+<style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","{0}
+{1}
+Aumenta el <style=KeyWord>bloqueo máximo</style> en <style=KeyWordNb>15</style>.
+Los enanos tienen una <style=KeyWord>colección de beneficios exclusiva</style> que se centra en la <style=KeyWord>dureza, la ferocidad y en apoyar al grupo</style>.
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","{0}
+{1}
+Aumenta o <style=KeyWord>bloqueio máximo</style> em <style=KeyWordNb>15</style>.
+Anões possuem uma <style=KeyWord>coleção exclusiva de vantagens</style> focada em resistência, força e trabalho em equipe.
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","{0}
+{1}
+<style=KeyWord>최대 방어</style>가 <style=KeyWordNb>15</style> 증가합니다.
+<style=KeyWord>드워프는 튼튼한 몸과 난폭한 성격, 파티</style>에 중점을 둔 <style=KeyWord>전용 특전</style>을 보유합니다.
+<style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"

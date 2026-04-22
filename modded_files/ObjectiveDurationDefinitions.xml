@@ -44,10 +44,10 @@
    </ObjectiveDurationDefinition>
 
    <ObjectiveDurationDefinition Type="EndTurn" Id="DontUseMovePoints" DifficultyMultiplier="1">
-      <Turn Value="1" Weight="3" DifficultyMultiplier="8"/> 
-      <Turn Value="2" Weight="8" DifficultyMultiplier="4"/> 
-      <Turn Value="3" Weight="5" DifficultyMultiplier="2"/> 
-      <Turn Value="4" Weight="2" DifficultyMultiplier="1"/> 
+      <Turn Value="1" Weight="3" DifficultyMultiplier="6"/> 
+      <Turn Value="2" Weight="8" DifficultyMultiplier="3"/> 
+      <Turn Value="3" Weight="5" DifficultyMultiplier="1.5"/> 
+      <Turn Value="4" Weight="2" DifficultyMultiplier="0.75"/> 
    </ObjectiveDurationDefinition>
 
    <ObjectiveDurationDefinition Type="EndTurn" Id="DontGeneratePanic" DifficultyMultiplier="1">

@@ -761,16 +761,17 @@
    <PerkDefinition Id="Thrifty">
       <TokenVariables>
          <TokenVariable Key="SkillHasManaCost" Value="ManaCostBase > 0"/>
-         <TokenVariable Key="ManaCostReduction" Value="Ceil((ManaCostDivider -1 ) * ManaCostBase / ManaCostDivider)"/>
+         <TokenVariable Key="ReductionIsActive" Value="ActionPointsToSpendLeft = 0"/>
+         <TokenVariable Key="ManaCostReduction" Value="Ceil(ManaCostBase / ManaCostDivider)"/>
          <TokenVariable Key="ManaCostBase" Value="BooleanChoice(Owner.IsManaCostLocked, 0, Skill.BaseManaCost)"/>
-         <TokenVariable Key="ManaCostDivider" Value="5"/>
+         <TokenVariable Key="ManaCostDivider" Value="1.2"/>
          <TokenVariable Key="ActionPointsToSpendLeft" Value="Max(0, ActionPointsSpentThreshold - Module.Buffer)"/>
          <TokenVariable Key="ActionPointsSpentThreshold" Value="8"/>
          <TokenVariable Key="RealActionPointsSpent" Value="Module.Buffer3"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="ActionPointsTotal" Value="ActionPointsSpentThreshold" DisplaySign="false" Style="KeyWordNb"/>
-         <LocArgument Value="ManaCostDivider" Style="KeyWordNb"/>
+         <LocArgument Value="5" Style="KeyWordNb"/>
          <StatArgument Stat="ActionPointsTotal"/>
          <LocArgument Value="ActionPointsToSpendLeft" Interpreted="true" Style="KeyWordNb"/>
       </LocArguments>
@@ -932,7 +933,7 @@
    <PerkDefinition Id="ExplosiveAtoms">
       <TokenVariables>
          <TokenVariable Key="TriggerCondition" Value="BooleanChoice(Owner.IsManaCostLocked, 0, Skill.BaseManaCost) > 0"/>
-         <TokenVariable Key="PerkDamageBonus" Value="25"/>
+         <TokenVariable Key="PerkDamageBonus" Value="20"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb"/>
@@ -1186,15 +1187,14 @@
          <TokenVariable Key="ThresholdIsReached" Value="Module.Buffer > HitThreshold - 1"/>
          <TokenVariable Key="ThresholdWasReached" Value="Module.Buffer2 > HitThreshold - 1"/>
          <TokenVariable Key="HitThreshold" Value="2"/>
-         <TokenVariable Key="ReliabilityBonus" Value="30"/>
+         <TokenVariable Key="RangedDamageBonus" Value="15"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="HitThreshold" Style="KeyWordNb"/>
          <LocalizedArgument Value="SkillEffectName_IgnoreLineOfSight" Style="Vision"/>
-         <LocalizedArgument Value="SkillEffectName_ArmorPiercing" Style="ArmorPiercing"/>
          <LocalizedArgument Value="SkillEffectName_NoBlock" Style="NoBlock"/>
          <LocArgument Value="RemainingEnemiesToHit" Interpreted="true" Style="KeyWordNb"/>
-         <StatArgument Stat="Reliability" Value="ReliabilityBonus"/>
+         <StatArgument Stat="RangedDamage" Value="RangedDamageBonus"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -1204,16 +1204,13 @@
             </GreyOut>
             <Highlight>
                <IsTrue Value="HasSkill"/>
+               <IsTrue Value="Skill.IsAttack"/>
                <IsTrue Value="HasTargetTile"/>
                <IsTrue Value="ThresholdIsReached"/>
-               <IsFalse Value="Skill.HasNativeVision"/>
-               <IsTrue Value="Skill.MaxRange > 1"/>
-               <IsTrue Value="DistanceFromCaster > 1"/>
             </Highlight>
          </DisplayInHUD>
          <CompendiumEntries>
             <CompendiumEntry Id="SkillEffect_IgnoreLineOfSight"/>
-            <CompendiumEntry Id="SkillEffect_IgnoreArmor"/>
             <CompendiumEntry Id="SkillEffect_NoBlock"/>
          </CompendiumEntries>
          <FeedbackActivationConditions>
@@ -1239,10 +1236,10 @@
                </Event>
                <Event EffectTime="OnSkillNextHit">
                   <Conditions>
+                     <IsTrue Value="HasPerkData"/>
+                     <IsTrue Value="HasSkill"/>
+                     <IsTrue Value="Skill.IsAttack"/>
                      <IsTrue Value="ThresholdWasReached"/>
-                     <IsFalse Value="Skill.HasNativeVision"/>
-                     <IsTrue Value="Skill.MaxRange > 1"/>
-                     <IsTrue Value="DistanceFromCaster > 1"/>
                   </Conditions>
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer3" Value="1"/>
@@ -1273,21 +1270,20 @@
                   <Conditions>
                      <IsTrue Value="HasPerkData"/>
                      <IsTrue Value="HasSkill"/>
+                     <IsTrue Value="Skill.IsAttack"/>
                      <IsTrue Value="ThresholdIsReached"/>
-                     <IsFalse Value="Skill.HasNativeVision"/>
-                     <IsTrue Value="Skill.MaxRange > 1"/>
                   </Conditions>
                   <SkillEffects>
                      <IgnoreLineOfSight/>
-                     <ArmorPiercing/>
                      <NoBlock/>
                   </SkillEffects>
                </AddSkillEffect>
-               <StatModifier Stat="Reliability" Value="ReliabilityBonus">
+               <SkillModifier ComputationStat="RangedDamage" Value="RangedDamageBonus">
                   <Conditions>
+                     <IsTrue Value="Skill.IsAttack"/>
                      <IsTrue Value="ThresholdIsReached"/>
                   </Conditions>
-               </StatModifier>
+               </SkillModifier>
             </Effects>
          </BufferModule>
       </Modules>
@@ -2765,8 +2761,8 @@
    <!-- T5 -->
    <PerkDefinition Id="FortressMaster">
       <TokenVariables>
-         <TokenVariable Key="PerkRange" Value="8"/>
-         <TokenVariable Key="DamageBonusPercentage" Value="50"/>
+         <TokenVariable Key="PerkRange" Value="10"/>
+         <TokenVariable Key="DamageBonusPercentage" Value="75"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="PerkRange" Style="KeyWordNb"/>
@@ -3178,12 +3174,14 @@
       <TokenVariables>
          <TokenVariable Key="MultiHitBonus" Value="2"/>
          <TokenVariable Key="PropagationBouncesBonus" Value="3"/>
-         <TokenVariable Key="StunChanceBonus" Value="10"/>
+         <TokenVariable Key="StunChanceBonus" Value="15"/>
+         <TokenVariable Key="MomentumBonus" Value="10"/>
       </TokenVariables>
      <LocArguments>
          <StatArgument Stat="MultiHitsCountModifier" Value="MultiHitBonus"/>
          <StatArgument Stat="PropagationBouncesModifier" Value="PropagationBouncesBonus"/>
          <StatArgument Stat="StunChanceModifier" Value="StunChanceBonus"/>
+         <StatArgument Stat="MomentumAttacks" Value="MomentumBonus"/>
      </LocArguments>
       <View>
          <DisplayInHUD>
@@ -3216,6 +3214,7 @@
                <StatModifier Stat="MultiHitsCountModifier" Value="MultiHitBonus"/>
                <StatModifier Stat="PropagationBouncesModifier" Value="PropagationBouncesBonus"/>
                <StatModifier Stat="StunChanceModifier" Value="StunChanceBonus"/>
+               <StatModifier Stat="MomentumAttacks" Value="MomentumBonus"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -3525,8 +3524,8 @@
       <TokenVariables>
          <TokenVariable Key="SkillHasManaCost" Value="Skill.ManaCost > 0"/>
          <TokenVariable Key="ManaThresholdReached" Value="ManaToSpendLeft = 0"/>
-         <TokenVariable Key="BlockBonus" Value="3"/>
-         <TokenVariable Key="BlockTurnsCount" Value="3"/>
+         <TokenVariable Key="BlockBonus" Value="5"/>
+         <TokenVariable Key="BlockTurnsCount" Value="2"/>
          <TokenVariable Key="ManaToSpendLeft" Value="Max(0, ManaSpentThreshold - Module.Buffer)"/>
          <TokenVariable Key="ManaSpentThreshold" Value="2"/>
          <TokenVariable Key="RealManaSpent" Value="Module.Buffer3"/>
@@ -3820,7 +3819,7 @@
          <TokenVariable Key="OverallDamageBonus" Value="OverallDamage_BaseBonus + OverallDamage_ComputedDynamicBonus"/>
          <TokenVariable Key="OverallDamage_ComputedDynamicBonus" Value="Min(OverallDamage_DynamicBonus * OverallDamage_DynamicStepsAmount, OverallDamage_DynamicMax)"/>
          <TokenVariable Key="OverallDamage_DynamicStepsAmount" Value="Floor((TargetUnit.HealthTotal - HealthTotalThreshold) / OverallDamage_DynamicStepsValue)"/>
-         <TokenVariable Key="HealthTotalThreshold" Value="600"/>
+         <TokenVariable Key="HealthTotalThreshold" Value="900"/>
          <TokenVariable Key="OverallDamage_BonusMax" Value="OverallDamage_BaseBonus + OverallDamage_DynamicMax"/>
          <TokenVariable Key="OverallDamage_DynamicStepsValue" Value="120"/>
          <TokenVariable Key="OverallDamage_DynamicMax" Value="20"/>
@@ -4018,16 +4017,16 @@
       <TokenVariables>
          <TokenVariable Key="SkillHasHealthCost" Value="Skill.HasBaseManaOrHealthCost"/>
          <TokenVariable Key="ReductionIsActive" Value="ActionPointsToSpendLeft = 0"/>
-         <TokenVariable Key="HealthCostReduction" Value="Ceil((HealthCostDivider - 1) * HealthCostBase / HealthCostDivider)"/>
+         <TokenVariable Key="HealthCostReduction" Value="Ceil(HealthCostBase / HealthCostDivider)"/>
          <TokenVariable Key="HealthCostBase" Value="Skill.HealthCost"/>
-         <TokenVariable Key="HealthCostDivider" Value="20"/>
+         <TokenVariable Key="HealthCostDivider" Value="1.05"/>
          <TokenVariable Key="ActionPointsToSpendLeft" Value="Max(0, ActionPointsSpentThreshold - Module.Buffer)"/>
          <TokenVariable Key="ActionPointsSpentThreshold" Value="4"/>
          <TokenVariable Key="RealActionPointsSpend" Value="Module.Buffer3"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="ActionPointsTotal" Value="ActionPointsSpentThreshold" DisplaySign="false" Style="KeyWordNb"/>
-         <LocArgument Value="HealthCostDivider" Style="KeyWordNb"/>
+         <LocArgument Value="20" Style="KeyWordNb"/>
          <StatArgument Stat="ActionPointsTotal"/>
          <LocArgument Value="ActionPointsToSpendLeft" Interpreted="true" Style="KeyWordNb"/>
       </LocArguments>
@@ -4257,8 +4256,8 @@
       <TokenVariables>
          <TokenVariable Key="SkillHasHealthCost" Value="Skill.HealthCost > 0"/>
          <TokenVariable Key="HealthThresholdReached" Value="HealthToSpendLeft = 0"/>
-         <TokenVariable Key="BlockBonus" Value="3"/>
-         <TokenVariable Key="BlockTurnsCount" Value="3"/>
+         <TokenVariable Key="BlockBonus" Value="2"/>
+         <TokenVariable Key="BlockTurnsCount" Value="5"/>
          <TokenVariable Key="HealthToSpendLeft" Value="Max(0, HealthSpentThreshold - Module.Buffer)"/>
          <TokenVariable Key="HealthSpentThreshold" Value="12"/>
          <TokenVariable Key="RealHealthSpent" Value="Module.Buffer3"/>

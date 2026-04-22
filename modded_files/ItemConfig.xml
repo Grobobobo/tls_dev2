@@ -10,7 +10,7 @@
    </AffixesCountPerRarity>
 
    <ItemPriceEquation>(BasePrice * Pow(Constant1, Rarity - 1)) + (Constant2 * Pow((Rarity - 1), PowerConstant))</ItemPriceEquation>
-   <ItemPriceEquationConstant1>1.15</ItemPriceEquationConstant1>
-   <ItemPriceEquationConstant2>0</ItemPriceEquationConstant2>
+   <ItemPriceEquationConstant1>1.12</ItemPriceEquationConstant1>
+   <ItemPriceEquationConstant2>2</ItemPriceEquationConstant2>
    <ItemPriceEquationPowerConstant>1.8</ItemPriceEquationPowerConstant>
 </ItemConfig>

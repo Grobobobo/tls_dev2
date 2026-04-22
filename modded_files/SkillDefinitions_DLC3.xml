@@ -1571,7 +1571,7 @@
   <SkillDefinition Id="UnnamedStunningBash_Allied" TemplateId="UnnamedStunningBash" GroupId="UnnamedStunningBash_Allied">
     <OverrideArtId>UnnamedStunningBash</OverrideArtId>
     <OverrideLocalizationId>UnnamedStunningBash</OverrideLocalizationId>
-      <AreaOfEffect OriginX="1" OriginY="1">
+    <AreaOfEffect OriginX="1" OriginY="1">
          eee
          eXe
          e_e
@@ -1592,9 +1592,9 @@
           <NoDodge />
           <NoBlock />
           <SurroundingEffect>
-            <Damage Multiplier="0.35"/>
+            <Damage Multiplier="0.35" />
             <Stun>
-                <BaseChance>1</BaseChance>
+              <BaseChance>1</BaseChance>
             </Stun>
           </SurroundingEffect>
         </SkillEffects>
@@ -1604,7 +1604,7 @@
   <SkillDefinition Id="UnnamedExplosiveBolt_Allied" TemplateId="UnnamedExplosiveBolt" GroupId="UnnamedExplosiveBolt_Allied">
     <OverrideArtId>UnnamedExplosiveBolt</OverrideArtId>
     <OverrideLocalizationId>UnnamedExplosiveBolt</OverrideLocalizationId>
-    <Range Min="2" Max="8"/>
+    <Range Min="2" Max="8" />
     <SkillAction>
       <Attack>
         <BaseDamage Min="250" Max="320" />
@@ -1614,7 +1614,7 @@
     </SkillAction>
   </SkillDefinition>
   <SkillDefinition Id="UnnamedTransfer_Allied" TemplateId="UnnamedTransfer" GroupId="UnnamedTransfer_Allied">
-    <Range Min="2" Max="11"/>
+    <Range Min="2" Max="11" />
     <OverrideArtId>UnnamedTransfer</OverrideArtId>
     <OverrideLocalizationId>UnnamedTransfer</OverrideLocalizationId>
     <AreaOfEffect OriginX="0" OriginY="0">
@@ -1655,7 +1655,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Physical</AttackType>
-        <BaseDamage Min="66 * (1 + Level/13)" Max="102 * (1 + Level/13)"  />
+        <BaseDamage Min="70 * (1 + Level/13)" Max="108 * (1 + Level/13)" Interpreted="true" />
         <DamageMultiplier>1.5</DamageMultiplier>
         <SkillEffects>
           <IgnoreLineOfSight />
@@ -1680,7 +1680,7 @@
       </AreaOfEffect>
     <SkillAction>
       <Attack>
-        <BaseDamage Min="107 * (1 + Level/13)" Max="134 * (1 + Level/13)"  />
+        <BaseDamage Min="107 * (1 + Level/13)" Max="134 * (1 + Level/13)" />
         <AttackType>Adaptative</AttackType>
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
@@ -1742,7 +1742,7 @@
       </AreaOfEffect>
     <SkillAction>
       <Attack>
-        <BaseDamage Min="107 * (1 + Level/13)" Max="134 * (1 + Level/13)"/>
+        <BaseDamage Min="107 * (1 + Level/13)" Max="134 * (1 + Level/13)" />
         <AttackType>Adaptative</AttackType>
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
@@ -1833,7 +1833,6 @@
       </Attack>
     </SkillAction>
   </SkillDefinition>
-  
   <SkillDefinition Id="InfectUnique" TemplateId="Infect" GroupId="InfectUnique">
     <ValidTargets>
       <EnemyUnits />
@@ -1841,30 +1840,29 @@
     <UsesPerTurnCount>99</UsesPerTurnCount>
     <ActionPointsCost>0</ActionPointsCost>
     <ManaCost>0</ManaCost>
-         <SkillAction>
-         <Attack>
-            <BaseDamage Min="74 * (1 + Level/13)" Max="93 * (1 + Level/13)" />
-            <AttackType>Adaptative</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
-            <SkillEffects>
-               <Isolated>
-                  <DamageMultiplier>1.75</DamageMultiplier>
-               </Isolated>
-               <CasterEffect>
-                  <Buff>
-                     <BaseChance>1</BaseChance>
-                     <CanAffectCaster>true</CanAffectCaster>
-                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-                     <Bonus>12</Bonus>
-                     <Stat Id="PoisonDamageModifier"/>
-                     <TurnsCount>1</TurnsCount>
-                  </Buff>
-               </CasterEffect>
-            </SkillEffects>
-         </Attack>
-      </SkillAction>
+    <SkillAction>
+      <Attack>
+        <BaseDamage Min="74 * (1 + Level/13)" Max="93 * (1 + Level/13)" />
+        <AttackType>Adaptative</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <Isolated>
+            <DamageMultiplier>1.75</DamageMultiplier>
+          </Isolated>
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>12</Bonus>
+              <Stat Id="PoisonDamageModifier" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
   </SkillDefinition>
-
   <SkillDefinition Id="Assassinate_Unique" TemplateId="Assassinate" GroupId="Assassinate_Unique">
     <UsesPerTurnCount>3</UsesPerTurnCount>
     <SkillAction>
@@ -2159,31 +2157,30 @@
       </Attack>
     </SkillAction>
   </SkillDefinition>
-
-   <SkillDefinition Id="OverheatUniqueSkill" TemplateId="OverheatSkill">
-      <ActionPointsCost>0</ActionPointsCost>
-      <Range Min="0" Max="0"/>
-      <SkillAction>
-         <Attack>
-            <BaseDamage Min="225 * (1 + Level/13)" Max="225 * (1 + Level/13)"  />
-            <AttackType>Adaptative</AttackType>
-            <DamageMultiplier>1</DamageMultiplier>
-            <SkillEffects>
-               <NoDodge/>
-                <Debuff>
-                  <BaseChance>1</BaseChance>
-                  <Stat Id="Resistance"/>
-                  <Malus>100</Malus>
-                  <TurnsCount>1</TurnsCount>
-               </Debuff>
-                <Debuff>
-                  <BaseChance>1</BaseChance>
-                  <Stat Id="Block"/>
-                  <Malus>100</Malus>
-                  <TurnsCount>1</TurnsCount>
-               </Debuff>
-            </SkillEffects>
-         </Attack>
-      </SkillAction>
-   </SkillDefinition>
+  <SkillDefinition Id="OverheatUniqueSkill" TemplateId="OverheatSkill">
+    <ActionPointsCost>0</ActionPointsCost>
+    <Range Min="0" Max="0" />
+    <SkillAction>
+      <Attack>
+        <BaseDamage Min="225 * (1 + Level/13)" Max="225 * (1 + Level/13)" />
+        <AttackType>Adaptative</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoDodge />
+          <Debuff>
+            <BaseChance>1</BaseChance>
+            <Stat Id="Resistance" />
+            <Malus>100</Malus>
+            <TurnsCount>1</TurnsCount>
+          </Debuff>
+          <Debuff>
+            <BaseChance>1</BaseChance>
+            <Stat Id="Block" />
+            <Malus>100</Malus>
+            <TurnsCount>1</TurnsCount>
+          </Debuff>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
 </SkillDefinitions>

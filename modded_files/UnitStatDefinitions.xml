@@ -183,7 +183,7 @@
          <Max>500</Max>
       </Boundaries>
       <Boundaries UnitType="Boss">
-         <Min>-100</Min>
+         <Min>-33</Min>
          <Max>500</Max>
       </Boundaries>
    </UnitStatDefinition>
@@ -272,15 +272,15 @@
    <UnitStatDefinition Id="Dodge" ShownAsPercentage="1">
       <Boundaries UnitType="Playable">
          <Min>0</Min>
-         <Max>95</Max>
+         <Max>105</Max>
       </Boundaries>
       <Boundaries UnitType="Enemy">
          <Min>0</Min>
-         <Max>95</Max>
+         <Max>105</Max>
       </Boundaries>
       <Boundaries UnitType="Boss">
          <Min>0</Min>
-         <Max>95</Max>
+         <Max>105</Max>
       </Boundaries>
    </UnitStatDefinition>
    
@@ -311,7 +311,7 @@
          <Max>95</Max>
       </Boundaries>
       <Boundaries UnitType="Boss">
-         <Min>-50</Min>
+         <Min>-20</Min>
          <Max>100</Max>
       </Boundaries>
    </UnitStatDefinition>

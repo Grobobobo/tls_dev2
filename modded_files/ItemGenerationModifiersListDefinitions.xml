@@ -49,13 +49,13 @@
    </ItemGenerationModifiersListDefinition>
 
    <ItemGenerationModifiersListDefinition Id="BonePile">
-      <Probability Weight="100">1</Probability>
-      <Probability Weight="0">2</Probability>
+      <Probability Weight="100">0</Probability>
+      <Probability Weight="0">1</Probability>
    </ItemGenerationModifiersListDefinition>
    
    <ItemGenerationModifiersListDefinition Id="BonePileElite">
-      <Probability Weight="100">1</Probability>
-      <Probability Weight="0">2</Probability>
+      <Probability Weight="100">0</Probability>
+      <Probability Weight="0">1</Probability>
    </ItemGenerationModifiersListDefinition>
    
    <!-- PLAYABLE UNIT GENERATION -->

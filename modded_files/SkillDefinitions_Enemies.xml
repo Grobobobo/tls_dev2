@@ -4544,22 +4544,6 @@
 
                <CasterEffect>
 
-                  <Buff>
-
-                     <BaseChance>1</BaseChance>
-
-                     <Bonus>30</Bonus>
-
-                     <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-
-                     <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
-
-                     <Stat Id="Dodge"/>
-
-                     <TurnsCount>1</TurnsCount>
-
-                  </Buff>
-
                   <RemoveStatus>
 
                      <BaseChance>1</BaseChance>
@@ -4745,7 +4729,7 @@
 
                   <Stat Id="Block"/>
 
-                  <Malus>6</Malus>
+                  <Malus>8</Malus>
 
                   <TurnsCount>2</TurnsCount>
 
@@ -4857,7 +4841,7 @@
 
                   <Stat Id="Block"/>
 
-                  <Malus>8</Malus>
+                  <Malus>10</Malus>
 
                   <TurnsCount>2</TurnsCount>
 
@@ -4895,7 +4879,7 @@
 
                   <Stat Id="Block"/>
 
-                  <Malus>10</Malus>
+                  <Malus>12</Malus>
 
                   <TurnsCount>2</TurnsCount>
 
@@ -5083,8 +5067,6 @@
 
    <SkillDefinition Id="ApocPoisonFrogAttack1" TemplateId="PoisonFrogAttack1">
 
-      <Range Min="2" Max="5" CardinalDirectionOnly="false"/>
-
       <SkillAction>
 
          <Attack>
@@ -5158,8 +5140,6 @@
 
 
    <SkillDefinition Id="ApocPoisonFrogAttack2" TemplateId="PoisonFrogAttack2">
-
-      <Range Min="2" Max="5" CardinalDirectionOnly="false"/>
 
       <SkillAction>
 

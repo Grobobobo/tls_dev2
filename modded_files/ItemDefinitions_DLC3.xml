@@ -57,7 +57,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="66 * (1 + PlayableUnitLevel/13)" Max="102 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="70 * (1 + PlayableUnitLevel/13)" Max="108 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>58</BasePrice>
         <Skills>
           <Skill>Shred</Skill>
@@ -415,12 +415,13 @@
     <Category>MagicWeapon</Category>
     <Tags>
       <Tag>MagicStaff</Tag>
+      <Tag>MagicStaffUnique</Tag>
     </Tags>
     <Hands>TwoHands</Hands>
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="86 * (1 + PlayableUnitLevel/13)" Max="133 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="99 * (1 + PlayableUnitLevel/13)" Max="152 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
           <Skill>PillarOfLight5</Skill>
@@ -543,7 +544,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="83 * (1 + PlayableUnitLevel/13)" Max="104 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="88 * (1 + PlayableUnitLevel/13)" Max="110 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
           <Skill>Snap5</Skill>

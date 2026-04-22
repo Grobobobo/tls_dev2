@@ -13,6 +13,7 @@ Workflow:
 import openpyxl
 import json
 import os
+import re
 import shutil
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -32,12 +33,12 @@ def modded_path(*parts):
 
 
 SKILL_DEFINITION_PATHS = [
-    modded_path('SkillDefinitions_Items_Usables'),
-    modded_path('SkillDefinitions_Items_MagicWeapons'),
-    modded_path('SkillDefinitions_Items_MeleeWeapons'),
-    modded_path('SkillDefinitions_Items_RangedWeapons'),
-    modded_path('SkillDefinitions_DLC1'),
-    modded_path('SkillDefinitions_DLC2'),
+    modded_path('SkillDefinitions_Items_Usables.xml'),
+    modded_path('SkillDefinitions_Items_MagicWeapons.xml'),
+    modded_path('SkillDefinitions_Items_MeleeWeapons.xml'),
+    modded_path('SkillDefinitions_Items_RangedWeapons.xml'),
+    modded_path('SkillDefinitions_DLC1.xml'),
+    modded_path('SkillDefinitions_DLC2.xml'),
 ]
 
 print("=" * 80)
@@ -543,9 +544,9 @@ all_damage_changes = []
 total_damage_updates = 0
 
 files_to_process_damage = [
-    modded_path('ItemDefinitions_Weapons'),
-    modded_path('ItemDefinitions_DLC1'),
-    modded_path('ItemDefinitions_DLC2'),
+    modded_path('ItemDefinitions_Weapons.xml'),
+    modded_path('ItemDefinitions_DLC1.xml'),
+    modded_path('ItemDefinitions_DLC2.xml'),
 ]
 
 for file_path in files_to_process_damage:
@@ -810,9 +811,9 @@ all_stat_changes = []
 total_stat_updates = 0
 
 files_to_process = [
-    modded_path('ItemDefinitions_Weapons'),
-    modded_path('ItemDefinitions_DLC1'),
-    modded_path('ItemDefinitions_DLC2'),
+    modded_path('ItemDefinitions_Weapons.xml'),
+    modded_path('ItemDefinitions_DLC1.xml'),
+    modded_path('ItemDefinitions_DLC2.xml'),
 ]
 
 for file_path in files_to_process:
@@ -922,14 +923,9 @@ def update_scroll_file(file_path):
 
             old_min = base_damage.get('Min')
             old_max = base_damage.get('Max')
+            # Scroll BaseDamage = weapon base damage (no multiplier applied)
             new_min = levels[excel_level]['min']
             new_max = levels[excel_level]['max']
-
-            skill_name = level_elem.findtext('./Skills/Skill')
-            damage_multiplier = get_skill_damage_multiplier(skill_name)
-            if damage_multiplier is not None:
-                new_min = round(new_min * damage_multiplier)
-                new_max = round(new_max * damage_multiplier)
 
             if old_min != str(new_min) or old_max != str(new_max):
                 base_damage.set('Min', str(new_min))
@@ -952,9 +948,9 @@ def update_scroll_file(file_path):
 
 
 scroll_files = [
-    modded_path('ItemDefinitions_Usables'),
-    modded_path('ItemDefinitions_DLC1'),
-    modded_path('ItemDefinitions_DLC2'),
+    modded_path('ItemDefinitions_Usables.xml'),
+    modded_path('ItemDefinitions_DLC1.xml'),
+    modded_path('ItemDefinitions_DLC2.xml'),
 ]
 
 for scroll_file in scroll_files:
@@ -962,6 +958,83 @@ for scroll_file in scroll_files:
 
 print(f"\nUpdated {total_scroll_updated} scroll damage values")
 print(f"Removed {total_removed} damage values from special scrolls")
+
+# Sync scroll skill DamageMultiplier to match weapon skill
+print("\nChecking scroll skill DamageMultiplier vs weapon skill...")
+total_skill_synced = 0
+
+# Group scroll skills by their source file
+skill_file_updates = {}  # file_path -> list of (scroll_skill_id, weapon_skill_id, new_multiplier)
+
+for scroll_id in scroll_mapping:
+    if scroll_mapping[scroll_id] is None:
+        continue
+
+    # Find all scroll skill variants (e.g. AxeBoomerangScroll, AxeBoomerangScroll1, AxeBoomerangScroll2)
+    base_scroll_skill = scroll_id  # e.g. "AxeBoomerangScroll"
+    weapon_skill_name = re.sub(r'Scroll\d*$', '', base_scroll_skill)
+
+    # Get weapon skill's DamageMultiplier
+    weapon_multiplier = get_skill_damage_multiplier(weapon_skill_name)
+    if weapon_multiplier is None:
+        continue
+
+    # Check all scroll skill variants (base + numbered variants)
+    for skill_id, skill_def in skill_definitions.items():
+        if not skill_id.startswith(base_scroll_skill.replace('Scroll', 'Scroll')):
+            continue
+        # Must be the base scroll or a numbered variant
+        suffix = skill_id[len(base_scroll_skill.replace('Scroll', '')):]
+        if not (skill_id == base_scroll_skill or (suffix.startswith('Scroll') and suffix[6:].isdigit())):
+            # Check if it matches the pattern: base name + "Scroll" + optional digits
+            if skill_id != base_scroll_skill and not re.match(re.escape(base_scroll_skill) + r'\d*$', skill_id):
+                continue
+
+        scroll_attack = skill_def.find('./SkillAction/Attack')
+        if scroll_attack is None:
+            continue
+
+        scroll_dm = scroll_attack.find('DamageMultiplier')
+        if scroll_dm is None:
+            continue
+
+        try:
+            current_multiplier = float(scroll_dm.text)
+        except (ValueError, TypeError):
+            continue
+
+        if current_multiplier != weapon_multiplier:
+            print(f"  {skill_id}: DamageMultiplier {current_multiplier} -> {weapon_multiplier} (matching {weapon_skill_name})")
+            # Find which file this skill is in and queue the update
+            for file_path in SKILL_DEFINITION_PATHS:
+                tree = ET.parse(file_path)
+                root = tree.getroot()
+                for sd in root.findall('SkillDefinition'):
+                    if sd.get('Id') == skill_id:
+                        if file_path not in skill_file_updates:
+                            skill_file_updates[file_path] = []
+                        skill_file_updates[file_path].append((skill_id, weapon_multiplier))
+                        total_skill_synced += 1
+                        break
+        else:
+            pass  # Already matches
+
+# Apply all queued skill file updates
+for file_path, updates in skill_file_updates.items():
+    tree = ET.parse(file_path)
+    root = tree.getroot()
+    for skill_id, new_multiplier in updates:
+        for sd in root.findall('SkillDefinition'):
+            if sd.get('Id') == skill_id:
+                dm_elem = sd.find('./SkillAction/Attack/DamageMultiplier')
+                if dm_elem is not None:
+                    dm_elem.text = str(new_multiplier)
+    tree.write(file_path, encoding='utf-8', xml_declaration=True)
+
+if total_skill_synced > 0:
+    print(f"✓ Synced {total_skill_synced} scroll skill DamageMultiplier values")
+else:
+    print("✓ All scroll skill DamageMultiplier values already match weapon skills")
 
 # ============================================================================
 # PHASE 7: UPDATE UNIQUE WEAPONS IN ITEMDEFINITIONS_DLC3
@@ -999,7 +1072,7 @@ unique_weapon_mapping = {
     'ManaFlowerUnique': 'Sacred Flower',
 }
 
-tree = ET.parse(modded_path('ItemDefinitions_DLC3'))
+tree = ET.parse(modded_path('ItemDefinitions_DLC3.xml'))
 root = tree.getroot()
 
 unique_changes = []
@@ -1066,7 +1139,7 @@ for item_def in root.findall('ItemDefinition'):
         print(f"    Old: Min=\"{old_min}\" Max=\"{old_max}\"")
         print(f"    New: Min=\"{new_min}\" Max=\"{new_max}\"")
 
-tree.write(modded_path('ItemDefinitions_DLC3'), encoding='utf-8', xml_declaration=True)
+tree.write(modded_path('ItemDefinitions_DLC3.xml'), encoding='utf-8', xml_declaration=True)
 print(f"\n✓ Updated {total_unique_updated} unique weapon damage formulas")
 
 # Also update offhand unique weapons (they share common values, just change /10 to /13)
@@ -1076,7 +1149,7 @@ offhand_unique_weapons = [
     'SchadenOffHandUnique', 'FreudeOffHandUnique', 'FleshcloudOffHandUnique'
 ]
 
-tree = ET.parse(modded_path('ItemDefinitions_DLC3'))
+tree = ET.parse(modded_path('ItemDefinitions_DLC3.xml'))
 root = tree.getroot()
 
 total_offhand_updated = 0
@@ -1111,7 +1184,7 @@ for item_def in root.findall('ItemDefinition'):
             new_max = old_max.replace('PlayableUnitLevel/10', 'PlayableUnitLevel/13')
             base_damage.set('Max', new_max)
 
-tree.write(modded_path('ItemDefinitions_DLC3'), encoding='utf-8', xml_declaration=True)
+tree.write(modded_path('ItemDefinitions_DLC3.xml'), encoding='utf-8', xml_declaration=True)
 print(f"✓ Updated {total_offhand_updated} offhand weapon formulas")
 
 # Update IntimidatingScreamUnique skill in SkillDefinitions_DLC3
@@ -1123,7 +1196,7 @@ if excel_sheet in weapon_data and 0 in weapon_data[excel_sheet]['levels']:
     axe_level0_min = weapon_data[excel_sheet]['levels'][0]['min']
     axe_level0_max = weapon_data[excel_sheet]['levels'][0]['max']
     
-    tree = ET.parse(modded_path('SkillDefinitions_DLC3'))
+    tree = ET.parse(modded_path('SkillDefinitions_DLC3.xml'))
     root = tree.getroot()
     
     for skill_def in root.findall('.//SkillDefinition[@Id="IntimidatingScreamUnique"]'):
@@ -1134,9 +1207,9 @@ if excel_sheet in weapon_data and 0 in weapon_data[excel_sheet]['levels']:
                 old_min = base_damage.get('Min')
                 old_max = base_damage.get('Max')
                 
-                # Create new formula with Excel level 0 values and PlayableUnitLevel/12
-                new_min = f"{axe_level0_min} * (1 + PlayableUnitLevel/13)"
-                new_max = f"{axe_level0_max} * (1 + PlayableUnitLevel/13)"
+                # Skills use Level/13 (not PlayableUnitLevel/13 which is for weapons/items)
+                new_min = f"{axe_level0_min} * (1 + Level/13)"
+                new_max = f"{axe_level0_max} * (1 + Level/13)"
                 
                 base_damage.set('Min', new_min)
                 base_damage.set('Max', new_max)
@@ -1146,7 +1219,7 @@ if excel_sheet in weapon_data and 0 in weapon_data[excel_sheet]['levels']:
                 print(f"    Old: Min=\"{old_min}\" Max=\"{old_max}\"")
                 print(f"    New: Min=\"{new_min}\" Max=\"{new_max}\"")
     
-    tree.write(modded_path('SkillDefinitions_DLC3'), encoding='utf-8', xml_declaration=True)
+    tree.write(modded_path('SkillDefinitions_DLC3.xml'), encoding='utf-8', xml_declaration=True)
     print(f"✓ Updated IntimidatingScreamUnique skill")
 else:
     print(f"⚠️  Warning: Could not find Axe level 0 data for IntimidatingScreamUnique")
@@ -1188,14 +1261,14 @@ def reformat_xml_file(file_path):
     tree.write(file_path, encoding='utf-8', xml_declaration=True)
 
 # Reformat all modified files
-files_to_reformat = [
-    modded_path('ItemDefinitions_Weapons'),
-    modded_path('ItemDefinitions_DLC1'),
-    modded_path('ItemDefinitions_DLC2'),
-    modded_path('ItemDefinitions_Usables'),
-    modded_path('ItemDefinitions_DLC3'),
-    modded_path('SkillDefinitions_DLC3'),
-]
+files_to_reformat = list(dict.fromkeys([
+    modded_path('ItemDefinitions_Weapons.xml'),
+    modded_path('ItemDefinitions_DLC1.xml'),
+    modded_path('ItemDefinitions_DLC2.xml'),
+    modded_path('ItemDefinitions_Usables.xml'),
+    modded_path('ItemDefinitions_DLC3.xml'),
+    modded_path('SkillDefinitions_DLC3.xml'),
+] + list(SKILL_DEFINITION_PATHS)))
 
 for file_path in files_to_reformat:
     try:

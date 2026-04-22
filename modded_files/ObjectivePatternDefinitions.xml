@@ -104,7 +104,6 @@
       <ObjectiveAction Invert="true">KillEnemy</ObjectiveAction>
 
       <ObjectiveConstraints>
-         <ObjectiveConstraint Value="EnemyIdInvert" Weight="6"/>
          <ObjectiveConstraint Value="Isolated" Weight="2"/>
          <ObjectiveConstraint Value="NegativeAlteration" Weight="2"/>
          <!--<ObjectiveConstraint Value="XTilesFromFog" Weight="1"/>-->
@@ -126,8 +125,6 @@
 
       <ObjectiveConstraints>
          <ObjectiveConstraint Value="EnemyIdInvert" Weight="6"/>
-         <ObjectiveConstraint Value="Isolated" Weight="2"/>
-         <ObjectiveConstraint Value="NegativeAlteration" Weight="2"/>
          <!--<ObjectiveConstraint Value="XTilesFromFog" Weight="1"/>-->
          <ObjectiveConstraint Value="SkillCost" Weight="1"/>
          <!--<ObjectiveConstraint Value="TargetFullHealth" Weight="1"/>-->

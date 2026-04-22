@@ -29,7 +29,7 @@
       <Modules>
          <BufferModule>
             <Effects>
-               <EquipmentSlotModifier SlotId="Usables" Value="UsableSlotAmount"/>
+               <EquipmentSlotModifier SlotId="Usables" Value="ConsumableSlotAmount"/>
             </Effects>
          </BufferModule>
          <BufferModule>
@@ -465,7 +465,7 @@
    <PerkDefinition Id="EmergencyTunnel">
       <TokenVariables>
          <TokenVariable Key="SkillID" Value="EmergencyTunnelSkill"/>
-         <TokenVariable Key="OverallUsesBonus" Value="3"/>
+         <TokenVariable Key="OverallUsesBonus" Value="2"/>
          <TokenVariable Key="EquipmentSlotId" Value="Consumable"/>
          <TokenVariable Key="ConsumableSlotAmount" Value="1"/>
          <TokenVariable Key="BonusUsesItemId" Value="Usable"/>
@@ -478,7 +478,7 @@
       </LocArguments>
       <View>
          <SkillsToShow>
-            <SkillToShow Id="EmergencyTunnelSkill" OverallUses="3"/>
+            <SkillToShow Id="EmergencyTunnelSkill" OverallUses="2"/>
          </SkillsToShow>
          <DisplayInHUD>
             <HoverDisplay>
@@ -496,7 +496,7 @@
                </Event>
             </Events>
             <Effects>
-               <UnlockContextualSkill ContextualSkillId="EmergencyTunnelSkill" OverallUses="3"/>
+               <UnlockContextualSkill ContextualSkillId="EmergencyTunnelSkill" OverallUses="2"/>
                <StatModifier Stat="BonusUsableItemsUses" Value="BonusUsableItemsUsesAmount"/>
                <RestoreUses SlotId="Usables" Value="BonusUsableItemsUsesAmount"/>
             </Effects>
@@ -836,8 +836,8 @@
          <TokenVariable Key="OverheatThreshold" Value="7"/>
 			<TokenVariable Key="CooldownPerTurn" Value="4"/>
 			<TokenVariable Key="SkillId" Value="OverheatSkill"/>
-			<TokenVariable Key="BastHealthCost" Value="12"/>
-			<TokenVariable Key="HeatlCostPerPoint" Value="4"/>
+			<TokenVariable Key="BastHealthCost" Value="9"/>
+			<TokenVariable Key="HeatlCostPerPoint" Value="1"/>
          <TokenVariable Key="HeatIncrease" Value="1"/>
          <TokenVariable Key="CanTriggerOverheat" Value ="Module.Buffer3"/>
       </TokenVariables>
@@ -1453,7 +1453,7 @@
       <TokenVariables>
          <TokenVariable Key="IsTargetInjured" Value="TargetUnit.InjuryStage > 0"/>
          <TokenVariable Key="ReliabilityBonus" Value="100"/>
-         <TokenVariable Key="PerkDamageBonus" Value="15"/>
+         <TokenVariable Key="PerkDamageBonus" Value="35"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb"/>
@@ -1561,11 +1561,11 @@
          <TokenVariable Key="PerkNeedUpdate" Value="Module.Buffer ! IsPerkActive"/>
          <TokenVariable Key="IsPerkActive" Value="BooleanChoice(Owner.IsBackProtectionValid, 1, -1)"/>
          <TokenVariable Key="TotalDamageBonus" Value="BaseDamageBonus + ScalingDamageBonus * Owner.Level"/>
-         <TokenVariable Key="BaseDamageBonus" Value="15"/>
+         <TokenVariable Key="BaseDamageBonus" Value="10"/>
          <TokenVariable Key="ScalingDamageBonus" Value="1"/>
          <TokenVariable Key="TotalArmorBonus" Value="BaseArmorBonus + ScalingArmorBonus * Owner.Level"/>
-         <TokenVariable Key="BaseArmorBonus" Value="25"/>
-         <TokenVariable Key="ScalingArmorBonus" Value="5"/>
+         <TokenVariable Key="BaseArmorBonus" Value="60"/>
+         <TokenVariable Key="ScalingArmorBonus" Value="6"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="OverallDamage" Value="BaseDamageBonus"/>
