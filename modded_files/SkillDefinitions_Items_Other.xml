@@ -1654,8 +1654,9 @@
       <ValidTargets>
          <PlayableUnits/>
       </ValidTargets>
-      <ActionPointsCost>2</ActionPointsCost>
+      <ActionPointsCost>0</ActionPointsCost>
       <MovePointsCost>1</MovePointsCost>
+      <HealthCost>18</HealthCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
       <Range Min="0" Max="0"/>
       <SkillAction>
@@ -1664,7 +1665,7 @@
                <CasterEffect>
                   <RegenStat>
                      <Stat Id="Mana"/>
-                     <Bonus>10</Bonus>
+                     <Bonus>6</Bonus>
                   </RegenStat>
                </CasterEffect>
             </SkillEffects>
@@ -1702,8 +1703,9 @@
       <ValidTargets>
          <PlayableUnits/>
       </ValidTargets>
-      <ActionPointsCost>2</ActionPointsCost>
-      <MovePointsCost>3</MovePointsCost>
+      <ActionPointsCost>0</ActionPointsCost>
+      <MovePointsCost>4</MovePointsCost>
+      <HealthCost>18</HealthCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
       <Range Min="0" Max="0"/>
       <SkillAction>
@@ -1712,7 +1714,7 @@
                <CasterEffect>
                   <RegenStat>
                      <Stat Id="Mana"/>
-                     <Bonus>14</Bonus>
+                     <Bonus>9</Bonus>
                   </RegenStat>
                </CasterEffect>
             </SkillEffects>
