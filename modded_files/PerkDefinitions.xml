@@ -3174,12 +3174,14 @@
       <TokenVariables>
          <TokenVariable Key="MultiHitBonus" Value="2"/>
          <TokenVariable Key="PropagationBouncesBonus" Value="3"/>
-         <TokenVariable Key="StunChanceBonus" Value="10"/>
+         <TokenVariable Key="StunChanceBonus" Value="15"/>
+         <TokenVariable Key="MomentumBonus" Value="10"/>
       </TokenVariables>
      <LocArguments>
          <StatArgument Stat="MultiHitsCountModifier" Value="MultiHitBonus"/>
          <StatArgument Stat="PropagationBouncesModifier" Value="PropagationBouncesBonus"/>
          <StatArgument Stat="StunChanceModifier" Value="StunChanceBonus"/>
+         <StatArgument Stat="MomentumAttacks" Value="MomentumBonus"/>
      </LocArguments>
       <View>
          <DisplayInHUD>
@@ -3212,6 +3214,7 @@
                <StatModifier Stat="MultiHitsCountModifier" Value="MultiHitBonus"/>
                <StatModifier Stat="PropagationBouncesModifier" Value="PropagationBouncesBonus"/>
                <StatModifier Stat="StunChanceModifier" Value="StunChanceBonus"/>
+               <StatModifier Stat="MomentumAttacks" Value="MomentumBonus"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -3521,8 +3524,8 @@
       <TokenVariables>
          <TokenVariable Key="SkillHasManaCost" Value="Skill.ManaCost > 0"/>
          <TokenVariable Key="ManaThresholdReached" Value="ManaToSpendLeft = 0"/>
-         <TokenVariable Key="BlockBonus" Value="3"/>
-         <TokenVariable Key="BlockTurnsCount" Value="3"/>
+         <TokenVariable Key="BlockBonus" Value="5"/>
+         <TokenVariable Key="BlockTurnsCount" Value="2"/>
          <TokenVariable Key="ManaToSpendLeft" Value="Max(0, ManaSpentThreshold - Module.Buffer)"/>
          <TokenVariable Key="ManaSpentThreshold" Value="2"/>
          <TokenVariable Key="RealManaSpent" Value="Module.Buffer3"/>
@@ -3816,7 +3819,7 @@
          <TokenVariable Key="OverallDamageBonus" Value="OverallDamage_BaseBonus + OverallDamage_ComputedDynamicBonus"/>
          <TokenVariable Key="OverallDamage_ComputedDynamicBonus" Value="Min(OverallDamage_DynamicBonus * OverallDamage_DynamicStepsAmount, OverallDamage_DynamicMax)"/>
          <TokenVariable Key="OverallDamage_DynamicStepsAmount" Value="Floor((TargetUnit.HealthTotal - HealthTotalThreshold) / OverallDamage_DynamicStepsValue)"/>
-         <TokenVariable Key="HealthTotalThreshold" Value="600"/>
+         <TokenVariable Key="HealthTotalThreshold" Value="900"/>
          <TokenVariable Key="OverallDamage_BonusMax" Value="OverallDamage_BaseBonus + OverallDamage_DynamicMax"/>
          <TokenVariable Key="OverallDamage_DynamicStepsValue" Value="120"/>
          <TokenVariable Key="OverallDamage_DynamicMax" Value="20"/>
@@ -4253,8 +4256,8 @@
       <TokenVariables>
          <TokenVariable Key="SkillHasHealthCost" Value="Skill.HealthCost > 0"/>
          <TokenVariable Key="HealthThresholdReached" Value="HealthToSpendLeft = 0"/>
-         <TokenVariable Key="BlockBonus" Value="3"/>
-         <TokenVariable Key="BlockTurnsCount" Value="3"/>
+         <TokenVariable Key="BlockBonus" Value="2"/>
+         <TokenVariable Key="BlockTurnsCount" Value="5"/>
          <TokenVariable Key="HealthToSpendLeft" Value="Max(0, HealthSpentThreshold - Module.Buffer)"/>
          <TokenVariable Key="HealthSpentThreshold" Value="12"/>
          <TokenVariable Key="RealHealthSpent" Value="Module.Buffer3"/>

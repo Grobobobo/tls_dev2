@@ -1655,7 +1655,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Physical</AttackType>
-        <BaseDamage Min="66 * (1 + Level/13)" Max="102 * (1 + Level/13)" Interpreted="true" />
+        <BaseDamage Min="70 * (1 + Level/13)" Max="108 * (1 + Level/13)" Interpreted="true" />
         <DamageMultiplier>1.5</DamageMultiplier>
         <SkillEffects>
           <IgnoreLineOfSight />

@@ -2060,28 +2060,46 @@
          <TokenVariable Key="ReliabilityBonus" Value="Floor((Owner.HealthTotal - Owner.Health) / HealthConversionRate) * ReliabilityConversionRate"/>
          <TokenVariable Key="ReliabilityConversionRate" Value="5"/>
          <TokenVariable Key="HealthConversionRate" Value="10"/>
+         <TokenVariable Key="DepletedHealth" Value="(Owner.HealthTotal - Owner.Health)"/>
+         <TokenVariable Key="BuffDuration" Value="1"/>
          <TokenVariable Key="DamageAboveThresholdValue" Value="AttackData.HealthDamage > Owner.Health - ImmortalityThreshold"/>
          <TokenVariable Key="ImmortalityThreshold" Value="1"/>
          <TokenVariable Key="HasImmortalityTriggered" Value="Module2.Buffer > 0"/>
       </TokenVariables>
       <LocArguments>
-         <LocArgument Value="ReliabilityConversionRate" Suffix="%" Style="GoodNb"/>
+         <StatusArgument Status="Buff" Stat="Reliability" Value="ReliabilityConversionRate" TurnsCount="BuffDuration"/>
          <LocArgument Value="HealthConversionRate" Style="KeyWordNb"/>
          <StatArgument Stat="HealthTotal"/>
-         <StatArgument Stat="Reliability" Value="ReliabilityBonus" Interpreted="true"/>
+         <StatusArgument Status="Buff" Stat="Reliability" Value="ReliabilityConversionRate" TurnsCount="BuffDuration"/>
          <StatusArgument Status="Invulnerable"/>
+         <LocArgument Value="DepletedHealth" Interpreted="true" Style="KeyWordNb"/>
+         <StatusArgument Status="Buff"/>
+         <LocArgument Value="ReliabilityBonus" Interpreted="true" Style="GoodNb" Prefix="+"/>
       </LocArguments>
       <View>
          <DisplayInHUD/>
       </View>
       <Modules>
          <BufferModule>
-            <Effects>
-               <SkillModifier ComputationStat="Reliability" Value="ReliabilityBonus">
+            <Events>
+               <Event EffectTime="OnEndNightTurnEnemy">
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="ReliabilityBonus"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnStartNightTurnPlayable">
                   <Conditions>
-                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="Module.Buffer > 0"/>
                   </Conditions>
-               </SkillModifier>
+                  <Actions>
+                     <TriggerEffects/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Effects>
+               <ApplyStatus Status="Buff" Stat="Reliability" Value="Module.Buffer" TurnsCount="BuffDuration">
+                  <PerkTargeting Amount="1" Range="0" TargetingMethod="Self" TargetingReference="Owner"/>
+               </ApplyStatus>
             </Effects>
          </BufferModule>
          <BufferModule>
@@ -2848,9 +2866,9 @@
    <!--Magic Staff-->
    <PerkDefinition Id="MagicStaffUniquePerk">
       <TokenVariables>
-         <TokenVariable Key="HasKilledThisTurn" Value="Module.Buffer > 0"/>
+         <TokenVariable Key="HasNotKilledThisTurn" Value="Module.Buffer = 0"/>
          <TokenVariable Key="PerkDamageBonus" Value="100"/>
-         <TokenVariable Key="SkillHasManaCost" Value="Skill.ManaCost > 0"/>
+         <TokenVariable Key="TriggerCondition" Value="BooleanChoice(Owner.IsManaCostLocked, 0, Skill.BaseManaCost) > 0"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb"/>
@@ -2861,9 +2879,17 @@
       <View>
          <DisplayInHUD>
             <GreyOut>
-               <IsTrue Value="HasKilledThisTurn"/>
+               <IsFalse Value="HasNotKilledThisTurn"/>
             </GreyOut>
+            <Highlight>
+               <IsTrue Value="HasNotKilledThisTurn"/>
+               <IsTrue Value="TriggerCondition"/>
+               <IsTrue Value="Skill.IsFromItemWithTag('MagicStaffUnique')"/>
+            </Highlight>
          </DisplayInHUD>
+            <FeedbackActivationConditions>
+               <IsTrue Value="Module.Buffer = 0"/>
+            </FeedbackActivationConditions>
       </View>
       <Modules>
          <BufferModule>
@@ -2871,25 +2897,32 @@
                <Event EffectTime="OnTargetKilled">
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer" Value="1"/>
+                     <RefreshPerkActivationFeedback RefreshView="true"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Module.Buffer > 0"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer2" Value="1"/>
                   </Actions>
                </Event>
                <Event EffectTime="OnStartNightTurnPlayable">
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <RefreshPerkActivationFeedback RefreshView="true"/>
                   </Actions>
                </Event>
             </Events>
-            <Conditions>
-               <IsTrue Value="Module.Buffer = 0"/>
-               <IsTrue Value="HasSkill"/>
-               <IsTrue Value="Skill.IsAttack"/>
-            </Conditions>
             <Effects>
                <SkillModifier ComputationStat="OverallDamage" Value="PerkDamageBonus">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsFromItemWithTag('MagicStaffUnique')"/>
-                     <IsTrue Value="SkillHasManaCost"/>
-                  </Conditions>
+                <Conditions>
+                  <IsTrue Value="Module.Buffer2 = 0"/>
+                  <IsTrue Value="Skill.IsFromItemWithTag('MagicStaffUnique')"/>
+                  <IsTrue Value="TriggerCondition"/>
+                </Conditions>
                </SkillModifier>
             </Effects>
          </BufferModule>

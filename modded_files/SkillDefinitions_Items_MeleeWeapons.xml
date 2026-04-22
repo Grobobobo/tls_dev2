@@ -207,7 +207,7 @@
   </SkillDefinition>
   <SkillDefinition Id="Crush">
     <ActionPointsCost>1</ActionPointsCost>
-    <UsesPerTurnCount>2</UsesPerTurnCount>
+    <UsesPerTurnCount>3</UsesPerTurnCount>
     <Range Min="1" Max="2" CardinalDirectionOnly="true" Modifiable="true" />
     <AreaOfEffect OriginX="0" OriginY="0">
          X
@@ -264,7 +264,7 @@
             <BaseChance>1.25</BaseChance>
           </Stun>
           <SurroundingEffect>
-            <Damage Multiplier="0.5" />
+            <Damage Multiplier="0.66" />
             <Stun>
               <BaseChance>0.75</BaseChance>
             </Stun>
@@ -623,7 +623,7 @@
           <CasterEffect>
             <RegenStat>
               <Stat Id="MovePoints" />
-              <Bonus>3</Bonus>
+              <Bonus>4</Bonus>
             </RegenStat>
           </CasterEffect>
         </SkillEffects>
@@ -1749,7 +1749,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Physical</AttackType>
-        <DamageMultiplier>1.1</DamageMultiplier>
+        <DamageMultiplier>1.15</DamageMultiplier>
       </Attack>
     </SkillAction>
     <CastFXs TotalDuration="1.4">

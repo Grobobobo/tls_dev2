@@ -468,7 +468,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.1</DamageMultiplier>
+        <DamageMultiplier>1.2</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -530,7 +530,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.1</DamageMultiplier>
+        <DamageMultiplier>1.2</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -553,7 +553,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.1</DamageMultiplier>
+        <DamageMultiplier>1.2</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -576,7 +576,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.1</DamageMultiplier>
+        <DamageMultiplier>1.2</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -599,7 +599,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.1</DamageMultiplier>
+        <DamageMultiplier>1.2</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -622,7 +622,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.1</DamageMultiplier>
+        <DamageMultiplier>1.2</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -1191,7 +1191,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>0.9</DamageMultiplier>
+        <DamageMultiplier>0.8</DamageMultiplier>
         <SkillEffects>
           <Opportunistic>
             <DamageMultiplier>2</DamageMultiplier>
@@ -1247,7 +1247,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.2</DamageMultiplier>
+        <DamageMultiplier>1.1</DamageMultiplier>
       </Attack>
     </SkillAction>
     <CastFXs TotalDuration="0.9">
@@ -1336,7 +1336,7 @@
     <SkillAction>
       <Generic>
         <SkillEffects>
-          <Propagation PropagationsCount="8" />
+          <Propagation PropagationsCount="6" />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
@@ -1469,7 +1469,7 @@
         <AttackType>Magical</AttackType>
         <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
-          <Propagation PropagationsCount="10" />
+          <Propagation PropagationsCount="9" />
         </SkillEffects>
       </Attack>
     </SkillAction>

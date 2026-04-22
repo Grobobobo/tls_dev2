@@ -90,38 +90,49 @@ PerkDescription_CherryPicking,"When <style=KeyWord>attacking</style> a unit with
 PerkDescription_Initiator,"As long as the Hero <style=Bad>didn't</style> <style=KeyWord>kill</style> anything this turn:
 {0}.
 {1}.
-{2}.","Tant que le Héros <style=Bad>n'a pas</style> <style=KeyWord>tué</style> d'unité durant ce tour<nbsp>:
-{0}.
-{1}.
-{2}.","如果本回合内英雄<style=Bad>没有</style><style=KeyWord>击杀</style>任何单位：
-{0}。
-{1}。
-{2}。","當英雄此回合<style=Bad>沒有</style>任何<style=KeyWord>擊殺</style>時：
-{0}。
-{1}。
-{2}。","このターンで英雄が何も<style=KeyWord>撃破</style><style=Bad>しなかった</style>場合:
-{0}。
-{1}。
-{2}。","Пока герой <style=Bad>ещё не</style> <style=KeyWord>убил</style> никого в этот ход, он получает бонус:
-{0}.
-{1}.
-{2}.","Якщо герой упродовж цього ходу <style=Bad>не</style> <style=KeyWord>вбив</style> жодного ворога:
-{0}.
-{1}.
-{2}.","Solange der Held in dieser Runde noch <style=Bad>nicht</style> <style=KeyWord>getötet</style> hat:
-{0}.
-{1}.
-{2}.","Mientras el héroe <style=Bad>no</style> <style=KeyWord>mate</style> a nadie durante el turno:
+{2}.
+{3}.","Tant que le Héros <style=Bad>n'a pas</style> <style=KeyWord>tué</style> d'unité durant ce tour<nbsp>:
 {0}.
 {1}.
 {2}.
-{0}.","Desde que o Herói <style=Bad>não</style> <style=KeyWord>abata</style> ninguém neste turno:
+{3}.","如果本回合内英雄<style=Bad>没有</style><style=KeyWord>击杀</style>任何单位：
+{0}。
+{1}。
+{2}。
+{3}。","當英雄此回合<style=Bad>沒有</style>任何<style=KeyWord>擊殺</style>時：
+{0}。
+{1}。
+{2}。
+{3}。","このターンで英雄が何も<style=KeyWord>撃破</style><style=Bad>しなかった</style>場合:
+{0}。
+{1}。
+{2}。
+{3}。","Пока герой <style=Bad>ещё не</style> <style=KeyWord>убил</style> никого в этот ход, он получает бонус:
 {0}.
 {1}.
-{2}.","영웅이 이번 턴에 아무도 <style=KeyWord>처치하지</style> <style=Bad>않은</style> 경우:
+{2}.
+{3}.","Якщо герой упродовж цього ходу <style=Bad>не</style> <style=KeyWord>вбив</style> жодного ворога:
+{0}.
+{1}.
+{2}.
+{3}.","Solange der Held in dieser Runde noch <style=Bad>nicht</style> <style=KeyWord>getötet</style> hat:
+{0}.
+{1}.
+{2}.
+{3}.","Mientras el héroe <style=Bad>no</style> <style=KeyWord>mate</style> a nadie durante el turno:
+{0}.
+{1}.
+{2}.
+{0}.
+{3}.","Desde que o Herói <style=Bad>não</style> <style=KeyWord>abata</style> ninguém neste turno:
+{0}.
+{1}.
+{2}.
+{3}.","영웅이 이번 턴에 아무도 <style=KeyWord>처치하지</style> <style=Bad>않은</style> 경우:
 {0}
 {1}
-{2}"
+{2}
+{3}"
 PerkDescription_FieldStudy,"Increases <style=KeyWord>Maximum {0}</style> to {1}.
 Every {2} units <style=KeyWord>killed</style> at a <style=KeyWord>distance of {3} or more:</style>
 {4}.
@@ -217,58 +228,47 @@ PerkDescription_ExplosiveAtoms,"When <style=KeyWord>attacking</style> with a <st
 PerkDescription_ThirdEye,"Every {0} enemies <style=KeyWord>hit</style>, the next <style=""Skill"">skill</style> gets:
 {1}, 
 {2}, 
-{3}, 
-{5}.
+{4}.
 <style=Attenuated>This modifier doesn't stack.</style>","Tous les {0} ennemis <style=KeyWord>touchés</style>, la prochaine <style=""Skill"">compétence</style> obtient<nbsp>:
 {1}, 
 {2}, 
-{3}, 
-{5}.
+{4}.
 <style=Attenuated>Ce modificateur n'est pas cumulable.</style>","每<style=KeyWord>击中</style>{0}个敌人，下一次使用<style=""Skill"">技能</style>时获得效果：
 {1}, 
 {2}, 
-{3}, 
-{5}。
+{4}。
 <style=Attenuated>此加成不可叠加。</style>","每<style=KeyWord>擊中</style>{0}個敵人，下一次使用<style=""Skill"">技能</style>時獲得效果：
 {1}, 
 {2}, 
-{3}, 
-{5}。
+{4}。
 <style=Attenuated>此加成不可疊加。</style>","{0}体のエネミーに<style=KeyWord>攻撃</style>する毎に、次の<style=""Skill"">スキル</style>は以下の効果を得る:
 {1}, 
 {2}, 
-{3}, 
-{5}。
+{4}。
 <style=ATTenuated>この効果は重複しない。</style>","За <style=KeyWord>попадания</style> по {0} врагам следующий <style=""Skill"">навык</style> получает:
 {1}, 
 {2}, 
-{3}, 
-{5}.
+{4}.
 <style=Attenuated>Эффект не накапливается.</style>","За кожних {0} ворогів, яким завдано <style=KeyWord>удар</style>, наступне <style=""Skill"">вміння</style> отримає:
 {1}, 
 {2}, 
-{3}, 
-{5}.
+{4}.
 <style=Attenuated>Цей модифікатор не поєднується.</style>","Jeder {0} <style=KeyWord>getroffene</style> Gegner, gibt dem nächsten Angriff:
 {1}, 
 {2}, 
-{3}, 
-{5}.
+{4}.
 <style=Attenuated>Dieser Modifikator ist nicht stapelbar.</style>","Cada {0} enemigos <style=KeyWord>golpeados</style>, la siguiente <style=""Skill"">habilidad</style> obtiene:
 {1}, 
 {2}, 
-{3}, 
-{5}.
+{4}.
 <style=Attenuated>Este modificador no es acumulable.</style>","A cada {0} inimigos <style=KeyWord>golpeados</style>, a próxima <style=""Skill"">habilidade</style> recebe:
 {1}, 
 {2}, 
-{3}, 
-{5}.
+{4}.
 <style=Attenuated>Este modificador não acumula.</style>","적 {0}명에 <style=KeyWord>명중</style>할 때마다 다음 <style=""Skill"">스킬</style>에 적용:
 {1}, 
 {2}, 
-{3}, 
-{5}.
+{4}.
 <style=Attenuated>해당 보정치는 중첩되지 않음</style>"
 PerkDescription_GlassCannon,"{0}. 
 {2}.
@@ -2604,37 +2604,48 @@ DivergenceEffectShortDescription_AddPerk_ReduceCritCurse_2,<style=Number>-7%</st
 PerkEffectInformations_ThirdEye,Enemies to hit: {4},Ennemis à toucher<nbsp>: {4},还需击中的敌人数量：{4},還需擊中的敵人數量：{4},攻撃するエネミー: {4},Ещё попаданий: {4},Ще ударити ворогів: {4},zu treffende Gegner: {4},Enemigos por golpear: {4},Inimigos a serem golpeados: {4},명중해야 하는 적: {4}
 PerkDescription_HeadOn,"Every <style=KeyWord>{0} tiles traveled</style> (excluding <style=""Skill"">skills</style> with <style=NoMomentum>No Momentum</style>), the next attack gets:
 {1}.
-{2}, {4}.
+{2}
+{4}.
 <style=Attenuated>This modifier doesn't stack.</style>","Toutes les <style=KeyWord>{0} cases parcourues</style> (excluant les <style=""Skill"">compétences</style> <style=NoMomentum>Sans Inertie</style>), la prochaine attaque gagne<nbsp>:
 {1}.
-{2}, {4}.
+{2}
+{4}.
 <style=Attenuated>Ce modificateur n'est pas cumulable.</style>","每<style=KeyWord>移动{0}格</style>（不包含<style=NoMomentum>横冲直撞无效</style>的<style=""Skill"">技能</style>），下一次攻击将获得：
 {1}
-{2}, {4}
+{2}
+4}
 <style=Attenuated>此加成不可叠加。</style>","每<style=KeyWord>移動{0}格</style>（不包含<style=NoMomentum>橫衝直撞無效</style>的<style=""Skill"">技能</style>），下一次攻擊將獲得：
 {1}
-{2}, {4}
+{2}
+{4}
 <style=Attenuated>此加成不可疊加。</style>","<style=KeyWord>{0}タイル移動</style>するごとに(<style=NoMomentum>衝撃無し</style><style=""Skill"">スキル</style>は除く)、次の攻撃に以下の効果を付与する:
 {1}。
-{2}, {4}。
+{2}
+{4}。
 <style=Attenuated>この効果は重複しない</style>。","<style=KeyWord>Пройдя {0} яч.</style> (<style=""Skill"">навыки</style> со свойством <style=NoMomentum>""Без разгона""</style> не считаются), герой получает бонус к следующей атаке:
 {1}.
-{2}, {4}.
+{2}
+{4}.
 <style=Attenuated>Эффект не накапливается.</style>","За кожні <style=KeyWord>{0} подолані плитки</style> (за винятком <style=""Skill"">вмінь</style> <style=NoMomentum>без імпульсу</style>), наступна атака отримує:
 {1}.
-{2}, {4}.
+{2}
+{4}.
 <style=Attenuated>Цей модифікатор не поєднується.</style>","Für alle <style=KeyWord>{0} zurückgelegten Felder</style> (mit Ausnahme von <style=""Skill"">Fähigkeiten</style> mit <style=NoMomentum>Kein Momentum</style>), hat der nächste Angriff:
 {1}.
-{2}, {4}.
+{2}
+{4}.
 <style=Attenuated>Dieser Modifikator ist nicht stapelbar.</style>","Al cruzar <style=KeyWord>{0} casillas</style> (excepto con <style=""Skill"">habilidades</style> <style=NoMomentum>sin impulso</style>), el siguiente ataque obtiene:
 {1}.
-{2}, {4}.
+{2}
+{4}.
 <style=Attenuated>Este modificador no se acumula.</style>","A cada <style=KeyWord>{0} casas percorridas</style> (excluindo <style=""Skill"">habilidades</style> <style=NoMomentum>Sem Impulso</style>), o próximo ataque recebe:
 {1}.
-{2}, {4}.
+{2}
+{4}.
 <style=Attenuated>Este modificador não acumula.</style>","<style=KeyWord>{0}타일을 이동</style>할 때마다 (<style=NoMomentum>기세 없음</style>을 보유한 <style=""Skill"">스킬</style> 제외) 다음 차례 공격에 적용:
 {1}
-{2}, {4}
+{2}
+{4}
 <style=Attenuated>해당 보정치는 중첩되지 않음</style>"
 PerkEffectInformations_HeadOn,Tiles to travel: {3},Cases à parcourir<nbsp>: {3},还需移动格数：{3},還需移動格數：{3},移動するタイル: {3},Осталось пройти: {3} яч.,Подолати плиток: {3},Felder zurückzulegen: {3},Casillas que atravesar: {3},Casas a serem percorridas: {3}.,이동 타일: {3}
 PerkDescription_Nimble,"As long as the Hero is at <style=KeyWord>full Health</style>:
@@ -2905,7 +2916,7 @@ BuildingUpgradeTooltipDescription_UpgradeBallistaToBallistaSplit0,"Becomes a <st
 <style=Attenuated>증축 노포 및 중형 노포 강화와 호환 불가</style>"
 ResearchName_PerkPanicMovePointResearch,Embrace Chaos,Étreindre le Chaos,拥抱混乱,擁抱混沌,混沌を抱く,Объять Хаос,Прийняти Хаос,Chaos Umarmen,Abrazar el Caos,Abraçar o Caos,혼돈 수용
 PerkDescription_FastToxins,{0}.,{0}.,{0}.,{0}.,{0}。,{0}.,{0}.,{0}.,{0}.,{0}.,{0}
-PerkEffectInformations_QuantityVsQuality,,,,,,,,,,,
+PerkEffectInformations_QuantityVsQuality,{0}.,{0}.,{0}.,{0}.,{0}.,{0}.,{0}.,{0}.,{0}.,{0}.,
 PerkName_MagicStaffUniquePerk,First Impressions,Premières Impressions,先声夺人,先聲奪人,第一印象,Первое впечатление,Перше враження,Erster Eindruck,Primera impresión,Primeira Impressão,첫인상
 PerkDescription_MagicStaffUniquePerk,"As long as the Hero <style=Bad>didn't</style> <style=KeyWord>kill</style> anything this turn:
 {1}, {2} and {3} get {0} <style=PerkDamage>Perk Damage</style>.","Tant que le Héros <style=Bad>n'a pas</style> <style=KeyWord>tué</style> d'unité durant ce tour<nbsp>:
@@ -2921,58 +2932,115 @@ PerkDescription_MagicStaffUniquePerk,"As long as the Hero <style=Bad>didn't</sty
 {1}, {2} 및 {3}에 {0} <style=PerkDamage>특전 피해</style>"
 PerkName_2HSwordUniquePerk,Immortal Berserker,Berserker Immortel,不灭狂战士,不滅狂戰士,不死の狂戦士,Бессмертный берсерк,Безсмертний берсерк,Unsterblicher Berserker,Berserker Inmortal,Berserker Imortal,불멸의 광전사
 PerkDescription_2HSwordUniquePerk,"Every {1} of <style=KeyWord>missing {2}</style>:
-{3}.
+{0} at the <style=KeyWord>start</style> of the Heroes' turn.
 Once per night, whenever the Hero <style=KeyWord>would be killed</style> for the first time:
 The Hero remains at <style=KeyWordNb>1</style> {2} and becomes {4} until the <style=KeyWord>end of the night</style>.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Tous les {1} de {2} <style=keyword>manquant</style><nbsp>:
-{3}.
+{0} au <style=KeyWord>début</style> du tour des Héros.
 Une fois par nuit, quand le Héros <style=KeyWord>aurait dû être tué</style> pour la première fois<nbsp>:
 le Héros reste à <style=KeyWordNb>1</style> {2} et devient {4} jusqu'à la <style=KeyWord>fin de la nuit</style>.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","每缺失{1}的<style=KeyWord>{2}</style>：
-{3}。
+在英雄回合<style=KeyWord>开始</style>时获得{0}。
 每晚一次，英雄首次<style=KeyWord>本该被击杀</style>时：
 英雄保留<style=KeyWordNb>1</style>{2}，并进入{4}状态，直至<style=KeyWord>夜晚结束</style>。
 
 <style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","每<style=KeyWord>損失{1}{2}</style>：
-{3}。
+在英雄回合<style=KeyWord>開始</style>時獲得{0}。
 每晚一次，英雄第一次<style=KeyWord>即將死亡</style>時：
 英雄維持<style=KeyWordNb>1</style>{2}，變得{4}，持續到<style=KeyWord>黑夜結束</style>。
 
 <style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","<style=KeyWord>失った{2}</style>{1}ごとに:
-{3}。
+英雄のターン<style=KeyWord>開始</style>時に{0}。
 1夜に1度、英雄が初めて<style=KeyWord>倒される</style>と:
 英雄が<style=KeyWordNb>1</style>{2}で留まり、<style=KeyWord>夜が終わる</style>まで{4}になる。
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","Если {2} героя не на максимуме, за каждые <style=KeyWord>недостающие {1} ед.</style> он получает:
-{3}.
+{0} в <style=KeyWord>начале</style> хода героев.
 Раз за ночь, если героя <style=KeyWord>того и гляди убьют</style> в первый раз:
 у героя остаётся <style=KeyWordNb>1</style> {2} и он до <style=KeyWord>конца этой ночи</style> получает {4}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","За кож. {1} <style=KeyWord>витрачених {2}</style>:
-{3}.
+{0} на <style=KeyWord>початку</style> ходу героїв.
 Раз за ніч, коли герой <style=KeyWord>мав би померти</style> вперше:
 у героя лишається <style=KeyWordNb>1</style> {2}, також він отримує статус «{4}» до <style=KeyWord>кінця ночі</style>.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Pro {1} <style=KeyWord>verbrauchte {2}</style>:
-{3}.
+{0} zu <style=KeyWord>Beginn</style> des Zuges der Helden.
 Einmal pro Nacht, wenn der Held zum ersten Mal <style=KeyWord>getötet würde</style>:
 Der Held bleibt bei <style=KeyWordNb>1</style> {2} und ist bis zum <style=KeyWord>Ende der Nacht</style> {4}.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Cada {1} de {2} <style=KeyWord>que se haya gastado</style>:
-{3}.
+{0} al <style=KeyWord>comienzo</style> del turno de los héroes.
 Una vez por noche, cuando el héroe está a punto de sufrir la <style=KeyWord>primera muerte</style>:
 El héroe sobrevive con <style=KeyWordNb>1</style> {2} y se vuelve {4} hasta que <style=KeyWord>acabe la noche</style>.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","A cada {1} de <style=KeyWord>{2} a menos</style>:
-{3}.
+{0} no <style=KeyWord>início</style> do turno dos Heróis.
 Uma vez por noite, na primeira vez em que o Herói <style=KeyWord>seria abatido</style>:
 O Herói mantém <style=KeyWordNb>1</style> {2} e se torna {4} até o <style=KeyWord>fim da noite</style>.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","<style=KeyWord>상실한 {2}</style> {1} 마다:
-{3}.
+영웅의 턴 <style=KeyWord>시작</style> 시 {0}.
 밤마다 한 번씩, 영웅이 처음 <style=KeyWord>사망</style>할 때마다:
 <style=KeyWordNb>1</style> {2} 상태로 생존하고 <style=KeyWord>밤의 끝</style>까지 {4} 상태 적용
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
+PerkEffectInformations_2HSwordUniquePerk,"Missing {2}: {5}
+{6} <style=KeyWord>value</style>: {7}","{2} manquant<nbsp>: {5}
+<style=KeyWord>Valeur</style> du {6}<nbsp>: {7}","当前缺少的 {2}: {5}
+{6} <style=KeyWord>为</style>: {7}","當前缺少的 {2}: {5}
+{6} <style=KeyWord>為</style>: {7}","{2}を失う: {5}
+{6}<style=KeyWord> = </style>: {7}","{2}: не хватает {5} ед.
+<style=KeyWord></style>{6}: {7}","Витрачено {2}: {5}
+<style=KeyWord>Значення</style> {6}: {7}","Verbrauchte {2}: {5}
+{6} <style=KeyWord>Wert</style>: {7}","{2} gastados: {5}
+<style=KeyWord>Valor</style> de {6}: {7}","{2} a menos: {5}
+<style=KeyWord>Valor</style> do {6}: {7}","상실한 {2}: {5}
+{6} <style=KeyWord>수치</style>: {7}"
+RaceTooltipDescription_Dwarf,"{0}
+{1}
+Increases <style=KeyWord>Maximum Block</style> by <style=KeyWordNb>15</style>.
+Dwarves have an <style=KeyWord>exclusive perk collection</style> focused on <style=KeyWord>toughness, ferocity and party</style>.
+<style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","{0}
+{1}
+Augmente le <style=KeyWord>Blocage Maximum</style> de <style=KeyWordNb>15</style>.
+Les Nains ont une <style=KeyWord>collection de Talents exclusive</style> basée sur la <style=KeyWord>robustesse, la férocité et le groupe</style>.
+<style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","{0}
+{1}
+增加<style=KeyWordNb>15</style>点<style=KeyWord>格挡上限</style>。
+矮人拥有侧重于<style=KeyWord>坚韧、凶猛和派对</style>的<style=KeyWord>独特天赋树</style>。
+<style=""DwarfIcon""></style><style=""DwarfText"">卢恩堡的矮人DLC</style>","{0}
+{1}
+增加<style=KeyWordNb>15</style>點<style=KeyWord>格擋上限</style>。
+矮人擁有側重於<style=KeyWord>堅韌、兇猛和派對</style>的<style=KeyWord>獨特天賦樹</style>。
+<style=""DwarfIcon""></style><style=""DwarfText"">盧恩堡的矮人DLC</style>","{0}
+{1}
+<style=KeyWord>最大ブロック</style>を<style=KeyWordNb>15</style>増加させる。
+ドワーフは、<style=KeyWord>強靭さ、凶暴さ、パーティ</style>に特化した<style=KeyWord>独自のパークコレクション</style>を保持している。
+<style=""DwarfIcon""></style><style=""DwarfText"">ルーネンベルクのドワーフDLC</style>","{0}
+{1}
+Увеличивает <style=KeyWord>максимальный блок</style> на <style=KeyWordNb>15</style>.
+У гномов есть <style=KeyWord>эксклюзивная коллекция особых черт</style>, ориентированная на <style=KeyWord>выносливость, свирепость и командный дух</style>.
+<style=""DwarfIcon""></style><style=""DwarfText"">Дополнительный контент ""Dwarves of Runenberg""</style>","{0}
+{1}
+Збільшує <style=KeyWord>максимальний блок</style> на <style=KeyWordNb>15</style>.
+Гноми мають <style=KeyWord>набір унікальних рис</style> завдяки своїй <style=KeyWord>міцній статурі, суворій вдачі та любові до гульбищ</style>.
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC «Dwarves of Runenberg»</style>","{0}
+{1}
+Erhöht den <style=KeyWord>maximalen Block</style> um <style=KeyWordNb>15</style>.
+Zwerge haben eine <style=KeyWord>exklusive Vorteilssammlung</style>, die sich auf <style=KeyWord>Zähigkeit, Wildheit und Party</style> konzentriert.
+<style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","{0}
+{1}
+Aumenta el <style=KeyWord>bloqueo máximo</style> en <style=KeyWordNb>15</style>.
+Los enanos tienen una <style=KeyWord>colección de beneficios exclusiva</style> que se centra en la <style=KeyWord>dureza, la ferocidad y en apoyar al grupo</style>.
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","{0}
+{1}
+Aumenta o <style=KeyWord>bloqueio máximo</style> em <style=KeyWordNb>15</style>.
+Anões possuem uma <style=KeyWord>coleção exclusiva de vantagens</style> focada em resistência, força e trabalho em equipe.
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","{0}
+{1}
+<style=KeyWord>최대 방어</style>가 <style=KeyWordNb>15</style> 증가합니다.
+<style=KeyWord>드워프는 튼튼한 몸과 난폭한 성격, 파티</style>에 중점을 둔 <style=KeyWord>전용 특전</style>을 보유합니다.
+<style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"

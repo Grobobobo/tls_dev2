@@ -405,7 +405,7 @@
 
    <!-- Enemy Late Buff Modifier Steps -->
    <ApocalypseModifierStepDefinition Id="EnemyLateBuffModifier_1">
-      <ApocalypseLevel>3</ApocalypseLevel>
+      <ApocalypseLevel>1</ApocalypseLevel>
       <TokenVariables>
          <TokenVariable Key="ActivationTurn" Value="6"/>
       </TokenVariables>
@@ -426,7 +426,7 @@
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="EnemyLateBuffModifier_2" TemplateId="EnemyLateBuffModifier_1">
-      <ApocalypseLevel>4</ApocalypseLevel>
+      <ApocalypseLevel>3</ApocalypseLevel>
       <TokenVariables>
          <TokenVariable Key="ActivationTurn" Value="5"/>
       </TokenVariables>

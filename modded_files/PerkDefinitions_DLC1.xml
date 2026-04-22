@@ -1453,7 +1453,7 @@
       <TokenVariables>
          <TokenVariable Key="IsTargetInjured" Value="TargetUnit.InjuryStage > 0"/>
          <TokenVariable Key="ReliabilityBonus" Value="100"/>
-         <TokenVariable Key="PerkDamageBonus" Value="15"/>
+         <TokenVariable Key="PerkDamageBonus" Value="35"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb"/>
@@ -1561,11 +1561,11 @@
          <TokenVariable Key="PerkNeedUpdate" Value="Module.Buffer ! IsPerkActive"/>
          <TokenVariable Key="IsPerkActive" Value="BooleanChoice(Owner.IsBackProtectionValid, 1, -1)"/>
          <TokenVariable Key="TotalDamageBonus" Value="BaseDamageBonus + ScalingDamageBonus * Owner.Level"/>
-         <TokenVariable Key="BaseDamageBonus" Value="15"/>
+         <TokenVariable Key="BaseDamageBonus" Value="10"/>
          <TokenVariable Key="ScalingDamageBonus" Value="1"/>
          <TokenVariable Key="TotalArmorBonus" Value="BaseArmorBonus + ScalingArmorBonus * Owner.Level"/>
-         <TokenVariable Key="BaseArmorBonus" Value="25"/>
-         <TokenVariable Key="ScalingArmorBonus" Value="5"/>
+         <TokenVariable Key="BaseArmorBonus" Value="60"/>
+         <TokenVariable Key="ScalingArmorBonus" Value="6"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="OverallDamage" Value="BaseDamageBonus"/>

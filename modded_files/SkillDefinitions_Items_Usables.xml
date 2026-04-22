@@ -886,7 +886,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Physical</AttackType>
-        <DamageMultiplier>1.1</DamageMultiplier>
+        <DamageMultiplier>1.15</DamageMultiplier>
       </Attack>
     </SkillAction>
   </SkillDefinition>
@@ -904,7 +904,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.35</DamageMultiplier>
+        <DamageMultiplier>1.45</DamageMultiplier>
         <SkillEffects>
           <NoDodge />
         </SkillEffects>
@@ -1052,12 +1052,12 @@
   <SkillDefinition Id="ScorchingWaveScroll" TemplateId="ScorchingWave">
     <OverrideLocalizationId>ScorchingWaveScroll</OverrideLocalizationId>
     <ActionPointsCost>0</ActionPointsCost>
-    <ManaCost>3</ManaCost>
+    <ManaCost>2</ManaCost>
     <UsesPerTurnCount>1</UsesPerTurnCount>
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>0.9</DamageMultiplier>
+        <DamageMultiplier>0.8</DamageMultiplier>
         <SkillEffects>
           <Opportunistic>
             <DamageMultiplier>2</DamageMultiplier>
@@ -1074,7 +1074,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.2</DamageMultiplier>
+        <DamageMultiplier>1.1</DamageMultiplier>
       </Attack>
     </SkillAction>
   </SkillDefinition>
