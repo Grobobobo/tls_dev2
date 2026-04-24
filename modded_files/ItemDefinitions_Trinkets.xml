@@ -1722,9 +1722,9 @@
 		<LevelVariations>
 			<Level Id="0">
 				<BaseDamage Min="80" Max="160"/>
-				<MainStatBonus Stat="HealthTotal">36</MainStatBonus>
 				<BasePrice>12</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">36</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">4</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -1733,9 +1733,9 @@
 			</Level>
 			<Level Id="1">
 				<BaseDamage Min="88" Max="176"/>
-				<MainStatBonus Stat="HealthTotal">46</MainStatBonus>
 				<BasePrice>17</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">46</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">6</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -1744,9 +1744,9 @@
 			</Level>
 			<Level Id="2">
 				<BaseDamage Min="96" Max="193"/>
-				<MainStatBonus Stat="HealthTotal">55</MainStatBonus>
 				<BasePrice>26</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">55</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">7</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -1755,9 +1755,9 @@
 			</Level>
 			<Level Id="3">
 				<BaseDamage Min="105" Max="212"/>
-				<MainStatBonus Stat="HealthTotal">65</MainStatBonus>
 				<BasePrice>40</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">65</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">9</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -1766,9 +1766,9 @@
 			</Level>
 			<Level Id="4">
 				<BaseDamage Min="115" Max="233"/>
-				<MainStatBonus Stat="HealthTotal">74</MainStatBonus>
 				<BasePrice>60</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">74</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">10</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -1777,9 +1777,9 @@
 			</Level>
 			<Level Id="5">
 				<BaseDamage Min="126" Max="256"/>
-				<MainStatBonus Stat="HealthTotal">84</MainStatBonus>
 				<BasePrice>87</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">84</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">12</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -1788,9 +1788,9 @@
 			</Level>
 			<Level Id="6">
 				<BaseDamage Min="138" Max="281"/>
-				<MainStatBonus Stat="HealthTotal">94</MainStatBonus>
 				<BasePrice>122</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">94</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">14</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -1799,9 +1799,9 @@
 			</Level>
 			<Level Id="7">
 				<BaseDamage Min="151" Max="309"/>
-				<MainStatBonus Stat="HealthTotal">103</MainStatBonus>
 				<BasePrice>167</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">103</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">15</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -1810,9 +1810,9 @@
 			</Level>
 			<Level Id="8">
 				<BaseDamage Min="166" Max="339"/>
-				<MainStatBonus Stat="HealthTotal">113</MainStatBonus>
 				<BasePrice>224</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">113</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">17</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -1821,9 +1821,9 @@
 			</Level>
 			<Level Id="9">
 				<BaseDamage Min="182" Max="372"/>
-				<MainStatBonus Stat="HealthTotal">122</MainStatBonus>
 				<BasePrice>296</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">122</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">18</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -1832,9 +1832,9 @@
 			</Level>
 			<Level Id="10">
 				<BaseDamage Min="200" Max="409"/>
-				<MainStatBonus Stat="HealthTotal">132</MainStatBonus>
 				<BasePrice>385</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">132</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">20</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -3507,9 +3507,9 @@
 		<LevelVariations>
 			<Level Id="0">
 				<BaseDamage Min="120" Max="240"/>
-				<MainStatBonus Stat="HealthTotal">24</MainStatBonus>
 				<BasePrice>12</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">24</BaseStatBonus>
 					<BaseStatBonus Stat="HealingReceived">32</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -3518,9 +3518,9 @@
 			</Level>
 			<Level Id="1">
 				<BaseDamage Min="132" Max="264"/>
-				<MainStatBonus Stat="HealthTotal">34</MainStatBonus>
 				<BasePrice>17</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">34</BaseStatBonus>
 					<BaseStatBonus Stat="HealingReceived">38</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -3529,9 +3529,9 @@
 			</Level>
 			<Level Id="2">
 				<BaseDamage Min="145" Max="290"/>
-				<MainStatBonus Stat="HealthTotal">43</MainStatBonus>
 				<BasePrice>26</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">43</BaseStatBonus>
 					<BaseStatBonus Stat="HealingReceived">45</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -3540,9 +3540,9 @@
 			</Level>
 			<Level Id="3">
 				<BaseDamage Min="159" Max="319"/>
-				<MainStatBonus Stat="HealthTotal">53</MainStatBonus>
 				<BasePrice>40</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">53</BaseStatBonus>
 					<BaseStatBonus Stat="HealingReceived">51</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -3551,9 +3551,9 @@
 			</Level>
 			<Level Id="4">
 				<BaseDamage Min="174" Max="350"/>
-				<MainStatBonus Stat="HealthTotal">62</MainStatBonus>
 				<BasePrice>60</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">62</BaseStatBonus>
 					<BaseStatBonus Stat="HealingReceived">58</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -3562,9 +3562,9 @@
 			</Level>
 			<Level Id="5">
 				<BaseDamage Min="191" Max="385"/>
-				<MainStatBonus Stat="HealthTotal">72</MainStatBonus>
 				<BasePrice>87</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">72</BaseStatBonus>
 					<BaseStatBonus Stat="HealingReceived">64</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -3573,9 +3573,9 @@
 			</Level>
 			<Level Id="6">
 				<BaseDamage Min="210" Max="423"/>
-				<MainStatBonus Stat="HealthTotal">82</MainStatBonus>
 				<BasePrice>122</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">82</BaseStatBonus>
 					<BaseStatBonus Stat="HealingReceived">70</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -3584,9 +3584,9 @@
 			</Level>
 			<Level Id="7">
 				<BaseDamage Min="230" Max="465"/>
-				<MainStatBonus Stat="HealthTotal">91</MainStatBonus>
 				<BasePrice>167</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">91</BaseStatBonus>
 					<BaseStatBonus Stat="HealingReceived">77</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -3595,9 +3595,9 @@
 			</Level>
 			<Level Id="8">
 				<BaseDamage Min="253" Max="511"/>
-				<MainStatBonus Stat="HealthTotal">101</MainStatBonus>
 				<BasePrice>224</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">101</BaseStatBonus>
 					<BaseStatBonus Stat="HealingReceived">83</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -3606,9 +3606,9 @@
 			</Level>
 			<Level Id="9">
 				<BaseDamage Min="278" Max="562"/>
-				<MainStatBonus Stat="HealthTotal">110</MainStatBonus>
 				<BasePrice>296</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">110</BaseStatBonus>
 					<BaseStatBonus Stat="HealingReceived">90</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
@@ -3617,9 +3617,9 @@
 			</Level>
 			<Level Id="10">
 				<BaseDamage Min="305" Max="618"/>
-				<MainStatBonus Stat="HealthTotal">120</MainStatBonus>
 				<BasePrice>385</BasePrice>
 				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">120</BaseStatBonus>
 					<BaseStatBonus Stat="HealingReceived">96</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>

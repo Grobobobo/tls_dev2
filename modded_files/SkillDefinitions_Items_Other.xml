@@ -1279,7 +1279,14 @@
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="SkillRangeModifier"/>
                      <Bonus>1</Bonus>
-                     <TurnsCount>3</TurnsCount>
+                     <TurnsCount>2</TurnsCount>
+                  </Buff>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Reliability"/>
+                     <Bonus>10</Bonus>
+                     <TurnsCount>2</TurnsCount>
                   </Buff>
                </CasterEffect>
             </SkillEffects>
@@ -1321,8 +1328,15 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="SkillRangeModifier"/>
-                     <Bonus>2</Bonus>
-                     <TurnsCount>3</TurnsCount>
+                     <Bonus>1</Bonus>
+                     <TurnsCount>2</TurnsCount>
+                  </Buff>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Reliability"/>
+                     <Bonus>10</Bonus>
+                     <TurnsCount>2</TurnsCount>
                   </Buff>
                </CasterEffect>
             </SkillEffects>
@@ -1330,6 +1344,105 @@
       </SkillAction>
    </SkillDefinition>
 
+   <SkillDefinition Id="SharpEye2" TemplateId="SharpEye">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="SkillRangeModifier"/>
+                     <Bonus>1</Bonus>
+                     <TurnsCount>2</TurnsCount>
+                  </Buff>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Reliability"/>
+                     <Bonus>12</Bonus>
+                     <TurnsCount>2</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="SharpEye3" TemplateId="SharpEye">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="SkillRangeModifier"/>
+                     <Bonus>2</Bonus>
+                     <TurnsCount>2</TurnsCount>
+                  </Buff>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Reliability"/>
+                     <Bonus>12</Bonus>
+                     <TurnsCount>2</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="SharpEye4" TemplateId="SharpEye">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="SkillRangeModifier"/>
+                     <Bonus>2</Bonus>
+                     <TurnsCount>2</TurnsCount>
+                  </Buff>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Reliability"/>
+                     <Bonus>16</Bonus>
+                     <TurnsCount>2</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="SharpEye5" TemplateId="SharpEye">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="SkillRangeModifier"/>
+                     <Bonus>2</Bonus>
+                     <TurnsCount>2</TurnsCount>
+                  </Buff>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Reliability"/>
+                     <Bonus>20</Bonus>
+                     <TurnsCount>2</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
 
    <!-- ███████████████████████████████████████████████████████████████ -->
    <!-- ███████████████████████████████████████████████████████████████ -->
@@ -1399,6 +1512,7 @@
 
    <SkillDefinition Id="ShieldBash" TemplateId="ShieldUp">
     <OverrideLocalizationId>ShieldBash</OverrideLocalizationId>
+   <OverrideArtId>QuickCuts</OverrideArtId>
 
       <ActionPointsCost>1</ActionPointsCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
@@ -1417,9 +1531,7 @@
    </SkillDefinition>
 
 
-   <SkillDefinition Id="CripplingPunch">
-       <OverrideLocalizationId>CripplingPunch</OverrideLocalizationId>
-
+   <SkillDefinition Id="CripplingPunch" TemplateId="TankyAttack">
       <ActionPointsCost>0</ActionPointsCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
       <Range Min="1" Max="1" CardinalDirectionOnly="true" Modifiable="false"/>
@@ -1453,8 +1565,9 @@
    </SkillDefinition>
 
 
-   <SkillDefinition Id="Hemokinesis" TemplateId="CripplingPunch">
-       <OverrideLocalizationId>Hemokinesis</OverrideLocalizationId>
+   <SkillDefinition Id="Hemokinesis" TemplateId="BoomerAttackOnDeath">
+      <OverrideLocalizationId>Hemokinesis</OverrideLocalizationId>
+      <OverrideArtId>BoomerAttack</OverrideArtId>
 
       <ValidTargets>
          <PlayableUnits/>
@@ -1465,13 +1578,13 @@
          <CanAffectCaster>false</CanAffectCaster>
       </AffectedUnits>
       <ActionPointsCost>1</ActionPointsCost>
-      <HealthCost>12</HealthCost>
+      <HealthCost>16</HealthCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
       <Range Min="0" Max="0"/>
       <AreaOfEffect OriginX="1" OriginY="1">
-         eee
-         eXe
-         eee
+         XXX
+         X_X
+         XXX
       </AreaOfEffect>
       <SkillAction>
          <Attack>
@@ -1645,9 +1758,8 @@
    </SkillDefinition>
 
 
-   <SkillDefinition Id="ArmorRun" TemplateId="Run">
+   <SkillDefinition Id="ArmorRun" TemplateId="WindWalk">
     <OverrideLocalizationId>ArmorRun</OverrideLocalizationId>
-
       <ValidTargets>
          <PlayableUnits/>
       </ValidTargets>
@@ -1878,6 +1990,7 @@
 
 
    <SkillDefinition Id="Inspiration">
+      <OverrideArtId>GhostAttack</OverrideArtId>
       <ValidTargets>
          <PlayableUnits/>
       </ValidTargets>
@@ -1927,6 +2040,7 @@
 
    <SkillDefinition Id="ArmorInspiration" TemplateId="Inspiration">
     <OverrideLocalizationId>ArmorInspiration</OverrideLocalizationId>
+      <OverrideArtId>SpawnEnemiesTier3</OverrideArtId>
 
       <ValidTargets>
          <PlayableUnits/>
@@ -2056,6 +2170,8 @@
    </SkillDefinition>
 
    <SkillDefinition Id="SuperInspiration">
+      <OverrideArtId>ShieldmanBuffSingle</OverrideArtId>
+
       <ValidTargets>
          <PlayableUnits/>
       </ValidTargets>
@@ -2414,7 +2530,7 @@
 
    <SkillDefinition Id="ArmorCleanse" TemplateId="Cleanse">
     <OverrideLocalizationId>ArmorCleanse</OverrideLocalizationId>
-
+      <OverrideArtId>SupportCocoonSkill</OverrideArtId>
       <ValidTargets>
          <PlayableUnits/>
       </ValidTargets>
@@ -2560,6 +2676,7 @@
 
    <SkillDefinition Id="Command" TemplateId="Watchout">
     <OverrideLocalizationId>Command</OverrideLocalizationId>
+      <OverrideArtId>UnnamedBattleStance</OverrideArtId>
 
       <ValidTargets>
          <PlayableUnits/>

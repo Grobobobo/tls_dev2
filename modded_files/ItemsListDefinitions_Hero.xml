@@ -210,7 +210,9 @@
 	</ItemsListDefinition>
 
 	<ItemsListDefinition Id="ItemList_HeroGenShield">
-		<Item Id="ItemList_Shield" Odd="1"/>
+		<Item Id="Shield0" Odd="14"/>
+		<Item Id="Shield1" Odd="3"/>
+		<Item Id="Shield2" Odd="3"/>
 	</ItemsListDefinition>
 
 	<ItemsListDefinition Id="ItemList_HeroGenOffhandWeapon">
@@ -228,35 +230,39 @@
 	</ItemsListDefinition>
 
 	<ItemsListDefinition Id="ItemList_HeroGenClothBodyArmor">
-		<Item Id="ItemList_ClothArmorBase" Odd="7"/>
+		<Item Id="ClothArmor0" Odd="7"/>
+		<Item Id="ClothArmor1" Odd="3"/>
 	</ItemsListDefinition>
 
 	<ItemsListDefinition Id="ItemList_HeroGenLightBodyArmor">
-		<Item Id="ItemList_LightArmorBase" Odd="7"/>
+		<Item Id="LightArmor0" Odd="7"/>
+		<Item Id="LightArmor1" Odd="3"/>
 	</ItemsListDefinition>
 
 	<ItemsListDefinition Id="ItemList_HeroGenMediumBodyArmor">
-		<Item Id="ItemList_MediumArmorBase" Odd=""/>
+		<Item Id="MediumArmor0" Odd="7"/>
+		<Item Id="MediumArmor1" Odd="3"/>
 	</ItemsListDefinition>
 
 	<ItemsListDefinition Id="ItemList_HeroGenHeavyBodyArmor">
-		<Item Id="ItemList_HeavyArmorBase" Odd="7"/>
+		<Item Id="HeavyArmor0" Odd="7"/>
+		<Item Id="HeavyArmor1" Odd="3"/>
 	</ItemsListDefinition>
 
 	<ItemsListDefinition Id="ItemList_HeroGenClothPants">
-		<Item Id="ItemList_ClothPantsBase" Odd="1"/>
+		<Item Id="ClothPants0" Odd="1"/>
 	</ItemsListDefinition>
 
 	<ItemsListDefinition Id="ItemList_HeroGenLightPants">
-		<Item Id="ItemList_LightPantsBase" Odd="1"/>
+		<Item Id="ClothPants3" Odd="1"/>
 	</ItemsListDefinition>
 
 	<ItemsListDefinition Id="ItemList_HeroGenMediumPants">
-		<Item Id="ItemList_MediumPantsBase" Odd="1"/>
+		<Item Id="Pants0" Odd="1"/>
 	</ItemsListDefinition>
 
 	<ItemsListDefinition Id="ItemList_HeroGenHeavyPants">
-		<Item Id="ItemList_HeavyPantsBase" Odd="1"/>
+		<Item Id="Pants3" Odd="1"/>
 	</ItemsListDefinition>
 
 	<ItemsListDefinition Id="ItemList_HeroGenHelmet">
@@ -264,8 +270,6 @@
 		<Item Id="Helmet1" Odd="1"/>
 		<Item Id="Helmet2" Odd="1"/>
 		<Item Id="Helmet3" Odd="1"/>
-		<Item Id="Helmet4" Odd="1"/>
-		<Item Id="Helmet5" Odd="1"/>
 	</ItemsListDefinition>
 
 	<ItemsListDefinition Id="ItemList_HeroGenTrinket">
