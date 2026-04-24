@@ -1721,81 +1721,125 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="HealthTotal">45</MainStatBonus>
+				<BaseDamage Min="80" Max="160"/>
+				<MainStatBonus Stat="HealthTotal">36</MainStatBonus>
 				<BasePrice>12</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PhysicalDamage">5</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">4</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>CripplingPunch</Skill>
+				</Skills>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="HealthTotal">57</MainStatBonus>
+				<BaseDamage Min="88" Max="176"/>
+				<MainStatBonus Stat="HealthTotal">46</MainStatBonus>
 				<BasePrice>17</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="PhysicalDamage">6</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>CripplingPunch</Skill>
+				</Skills>
+			</Level>
+			<Level Id="2">
+				<BaseDamage Min="96" Max="193"/>
+				<MainStatBonus Stat="HealthTotal">55</MainStatBonus>
+				<BasePrice>26</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="PhysicalDamage">7</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>CripplingPunch</Skill>
+				</Skills>
 			</Level>
-			<Level Id="2">
-				<MainStatBonus Stat="HealthTotal">69</MainStatBonus>
-				<BasePrice>26</BasePrice>
+			<Level Id="3">
+				<BaseDamage Min="105" Max="212"/>
+				<MainStatBonus Stat="HealthTotal">65</MainStatBonus>
+				<BasePrice>40</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="PhysicalDamage">9</BaseStatBonus>
 				</BaseStatBonuses>
-			</Level>
-			<Level Id="3">
-				<MainStatBonus Stat="HealthTotal">81</MainStatBonus>
-				<BasePrice>40</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="PhysicalDamage">11</BaseStatBonus>
-				</BaseStatBonuses>
+				<Skills>
+					<Skill>CripplingPunch</Skill>
+				</Skills>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="HealthTotal">93</MainStatBonus>
+				<BaseDamage Min="115" Max="233"/>
+				<MainStatBonus Stat="HealthTotal">74</MainStatBonus>
 				<BasePrice>60</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PhysicalDamage">13</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">10</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>CripplingPunch</Skill>
+				</Skills>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="HealthTotal">105</MainStatBonus>
+				<BaseDamage Min="126" Max="256"/>
+				<MainStatBonus Stat="HealthTotal">84</MainStatBonus>
 				<BasePrice>87</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="PhysicalDamage">12</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>CripplingPunch</Skill>
+				</Skills>
+			</Level>
+			<Level Id="6">
+				<BaseDamage Min="138" Max="281"/>
+				<MainStatBonus Stat="HealthTotal">94</MainStatBonus>
+				<BasePrice>122</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="PhysicalDamage">14</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>CripplingPunch</Skill>
+				</Skills>
+			</Level>
+			<Level Id="7">
+				<BaseDamage Min="151" Max="309"/>
+				<MainStatBonus Stat="HealthTotal">103</MainStatBonus>
+				<BasePrice>167</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="PhysicalDamage">15</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>CripplingPunch</Skill>
+				</Skills>
 			</Level>
-			<Level Id="6">
-				<MainStatBonus Stat="HealthTotal">117</MainStatBonus>
-				<BasePrice>122</BasePrice>
+			<Level Id="8">
+				<BaseDamage Min="166" Max="339"/>
+				<MainStatBonus Stat="HealthTotal">113</MainStatBonus>
+				<BasePrice>224</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="PhysicalDamage">17</BaseStatBonus>
 				</BaseStatBonuses>
-			</Level>
-			<Level Id="7">
-				<MainStatBonus Stat="HealthTotal">129</MainStatBonus>
-				<BasePrice>167</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="PhysicalDamage">19</BaseStatBonus>
-				</BaseStatBonuses>
-			</Level>
-			<Level Id="8">
-				<MainStatBonus Stat="HealthTotal">141</MainStatBonus>
-				<BasePrice>224</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="PhysicalDamage">21</BaseStatBonus>
-				</BaseStatBonuses>
+				<Skills>
+					<Skill>CripplingPunch</Skill>
+				</Skills>
 			</Level>
 			<Level Id="9">
-				<MainStatBonus Stat="HealthTotal">153</MainStatBonus>
+				<BaseDamage Min="182" Max="372"/>
+				<MainStatBonus Stat="HealthTotal">122</MainStatBonus>
 				<BasePrice>296</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PhysicalDamage">23</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">18</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>CripplingPunch</Skill>
+				</Skills>
 			</Level>
 			<Level Id="10">
-				<MainStatBonus Stat="HealthTotal">165</MainStatBonus>
+				<BaseDamage Min="200" Max="409"/>
+				<MainStatBonus Stat="HealthTotal">132</MainStatBonus>
 				<BasePrice>385</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="PhysicalDamage">25</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">20</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>CripplingPunch</Skill>
+				</Skills>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -3462,81 +3506,125 @@
 		<Category>Trinket</Category>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="HealthTotal">30</MainStatBonus>
+				<BaseDamage Min="120" Max="240"/>
+				<MainStatBonus Stat="HealthTotal">24</MainStatBonus>
 				<BasePrice>12</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealingReceived">40</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">32</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>Hemokinesis</Skill>
+				</Skills>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="HealthTotal">42</MainStatBonus>
+				<BaseDamage Min="132" Max="264"/>
+				<MainStatBonus Stat="HealthTotal">34</MainStatBonus>
 				<BasePrice>17</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealingReceived">48</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">38</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>Hemokinesis</Skill>
+				</Skills>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="HealthTotal">54</MainStatBonus>
+				<BaseDamage Min="145" Max="290"/>
+				<MainStatBonus Stat="HealthTotal">43</MainStatBonus>
 				<BasePrice>26</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealingReceived">56</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">45</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>Hemokinesis</Skill>
+				</Skills>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="HealthTotal">66</MainStatBonus>
+				<BaseDamage Min="159" Max="319"/>
+				<MainStatBonus Stat="HealthTotal">53</MainStatBonus>
 				<BasePrice>40</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealingReceived">51</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>Hemokinesis</Skill>
+				</Skills>
+			</Level>
+			<Level Id="4">
+				<BaseDamage Min="174" Max="350"/>
+				<MainStatBonus Stat="HealthTotal">62</MainStatBonus>
+				<BasePrice>60</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealingReceived">58</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>Hemokinesis</Skill>
+				</Skills>
+			</Level>
+			<Level Id="5">
+				<BaseDamage Min="191" Max="385"/>
+				<MainStatBonus Stat="HealthTotal">72</MainStatBonus>
+				<BasePrice>87</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealingReceived">64</BaseStatBonus>
 				</BaseStatBonuses>
-			</Level>
-			<Level Id="4">
-				<MainStatBonus Stat="HealthTotal">78</MainStatBonus>
-				<BasePrice>60</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealingReceived">72</BaseStatBonus>
-				</BaseStatBonuses>
-			</Level>
-			<Level Id="5">
-				<MainStatBonus Stat="HealthTotal">90</MainStatBonus>
-				<BasePrice>87</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealingReceived">80</BaseStatBonus>
-				</BaseStatBonuses>
+				<Skills>
+					<Skill>Hemokinesis</Skill>
+				</Skills>
 			</Level>
 			<Level Id="6">
-				<MainStatBonus Stat="HealthTotal">102</MainStatBonus>
+				<BaseDamage Min="210" Max="423"/>
+				<MainStatBonus Stat="HealthTotal">82</MainStatBonus>
 				<BasePrice>122</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealingReceived">88</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">70</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>Hemokinesis</Skill>
+				</Skills>
 			</Level>
 			<Level Id="7">
-				<MainStatBonus Stat="HealthTotal">114</MainStatBonus>
+				<BaseDamage Min="230" Max="465"/>
+				<MainStatBonus Stat="HealthTotal">91</MainStatBonus>
 				<BasePrice>167</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealingReceived">77</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>Hemokinesis</Skill>
+				</Skills>
+			</Level>
+			<Level Id="8">
+				<BaseDamage Min="253" Max="511"/>
+				<MainStatBonus Stat="HealthTotal">101</MainStatBonus>
+				<BasePrice>224</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealingReceived">83</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>Hemokinesis</Skill>
+				</Skills>
+			</Level>
+			<Level Id="9">
+				<BaseDamage Min="278" Max="562"/>
+				<MainStatBonus Stat="HealthTotal">110</MainStatBonus>
+				<BasePrice>296</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealingReceived">90</BaseStatBonus>
+				</BaseStatBonuses>
+				<Skills>
+					<Skill>Hemokinesis</Skill>
+				</Skills>
+			</Level>
+			<Level Id="10">
+				<BaseDamage Min="305" Max="618"/>
+				<MainStatBonus Stat="HealthTotal">120</MainStatBonus>
+				<BasePrice>385</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealingReceived">96</BaseStatBonus>
 				</BaseStatBonuses>
-			</Level>
-			<Level Id="8">
-				<MainStatBonus Stat="HealthTotal">126</MainStatBonus>
-				<BasePrice>224</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealingReceived">104</BaseStatBonus>
-				</BaseStatBonuses>
-			</Level>
-			<Level Id="9">
-				<MainStatBonus Stat="HealthTotal">138</MainStatBonus>
-				<BasePrice>296</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealingReceived">112</BaseStatBonus>
-				</BaseStatBonuses>
-			</Level>
-			<Level Id="10">
-				<MainStatBonus Stat="HealthTotal">150</MainStatBonus>
-				<BasePrice>385</BasePrice>
-				<BaseStatBonuses>
-					<BaseStatBonus Stat="HealingReceived">120</BaseStatBonus>
-				</BaseStatBonuses>
+				<Skills>
+					<Skill>Hemokinesis</Skill>
+				</Skills>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>

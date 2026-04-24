@@ -190,7 +190,7 @@
    </SkillDefinition>
 
    <SkillDefinition Id="Blink" IsContextual="true" IsLockedByPerk="true">
-      <ManaCost>3</ManaCost>
+      <ManaCost>0</ManaCost>
       <UsesPerTurnCount>2</UsesPerTurnCount>
       <Range Min="1" Max="6" CardinalDirectionOnly="false"/>
       <AreaOfEffect OriginX="0" OriginY="0">
@@ -630,13 +630,12 @@
             <AttackType>Physical</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
-               <Debuff>
-                  <BaseChance>1</BaseChance>
-                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-                  <Malus>3</Malus>
-                  <Stat Id="MovePointsTotal"/>
-                  <TurnsCount>2</TurnsCount>
-               </Debuff>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="MovePoints"/>
+                     <Bonus>1</Bonus>
+                  </RegenStat>
+               </CasterEffect>
             </SkillEffects>
          </Attack>
       </SkillAction>

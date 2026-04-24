@@ -812,6 +812,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">20</BaseStatBonus>
 					<BaseStatBonus Stat="HealthRegen">8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-8</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
@@ -820,6 +821,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">28</BaseStatBonus>
 					<BaseStatBonus Stat="HealthRegen">12</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
@@ -828,6 +830,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">36</BaseStatBonus>
 					<BaseStatBonus Stat="HealthRegen">16</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-12</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
@@ -836,6 +839,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">44</BaseStatBonus>
 					<BaseStatBonus Stat="HealthRegen">20</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-13</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
@@ -844,6 +848,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">52</BaseStatBonus>
 					<BaseStatBonus Stat="HealthRegen">24</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
@@ -852,6 +857,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
 					<BaseStatBonus Stat="HealthRegen">28</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
@@ -860,6 +866,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
 					<BaseStatBonus Stat="HealthRegen">33</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
@@ -868,6 +875,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
 					<BaseStatBonus Stat="HealthRegen">38</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
@@ -876,6 +884,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
 					<BaseStatBonus Stat="HealthRegen">43</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
@@ -884,6 +893,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
 					<BaseStatBonus Stat="HealthRegen">48</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
@@ -892,6 +902,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
 					<BaseStatBonus Stat="HealthRegen">53</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -905,6 +916,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">20</BaseStatBonus>
 					<BaseStatBonus Stat="PropagationDamage">3</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-8</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
@@ -913,6 +925,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">28</BaseStatBonus>
 					<BaseStatBonus Stat="PropagationDamage">4</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
@@ -921,6 +934,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">36</BaseStatBonus>
 					<BaseStatBonus Stat="PropagationDamage">5</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-12</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
@@ -929,6 +943,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">44</BaseStatBonus>
 					<BaseStatBonus Stat="PropagationDamage">6</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-13</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
@@ -937,6 +952,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">52</BaseStatBonus>
 					<BaseStatBonus Stat="PropagationDamage">7</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
@@ -945,6 +961,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
 					<BaseStatBonus Stat="PropagationDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
@@ -953,6 +970,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
 					<BaseStatBonus Stat="PropagationDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
@@ -961,6 +979,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
 					<BaseStatBonus Stat="PropagationDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
@@ -969,6 +988,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
 					<BaseStatBonus Stat="PropagationDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
@@ -977,6 +997,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
 					<BaseStatBonus Stat="PropagationDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
@@ -985,6 +1006,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
 					<BaseStatBonus Stat="PropagationDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -998,6 +1020,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">20</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">4</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-8</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
@@ -1006,6 +1029,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">28</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">6</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
@@ -1014,6 +1038,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">36</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-12</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
@@ -1022,6 +1047,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">44</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">9</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-13</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
@@ -1030,6 +1056,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">52</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">11</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
@@ -1038,6 +1065,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
@@ -1046,6 +1074,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-21</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
@@ -1054,6 +1083,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-21</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
@@ -1062,6 +1092,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-21</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
@@ -1070,6 +1101,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-21</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
@@ -1078,6 +1110,7 @@
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-21</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -1289,7 +1322,7 @@
 					<BaseStatBonus Stat="ArmorTotal">25</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">4</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">4</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-8</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
@@ -1299,7 +1332,7 @@
 					<BaseStatBonus Stat="ArmorTotal">35</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">5</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">6</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-6</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
@@ -1309,7 +1342,7 @@
 					<BaseStatBonus Stat="ArmorTotal">45</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">6</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">8</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-7</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-12</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
@@ -1319,7 +1352,7 @@
 					<BaseStatBonus Stat="ArmorTotal">55</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">7</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">9</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-13</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
@@ -1329,7 +1362,7 @@
 					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">8</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">11</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-9</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
@@ -1339,7 +1372,7 @@
 					<BaseStatBonus Stat="ArmorTotal">75</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
@@ -1349,7 +1382,7 @@
 					<BaseStatBonus Stat="ArmorTotal">75</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
@@ -1359,7 +1392,7 @@
 					<BaseStatBonus Stat="ArmorTotal">75</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
@@ -1369,7 +1402,7 @@
 					<BaseStatBonus Stat="ArmorTotal">75</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
@@ -1379,7 +1412,7 @@
 					<BaseStatBonus Stat="ArmorTotal">75</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
@@ -1389,7 +1422,7 @@
 					<BaseStatBonus Stat="ArmorTotal">75</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
 					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -1602,7 +1635,7 @@
 					<BaseStatBonus Stat="OverallDamage">4</BaseStatBonus>
 					<BaseStatBonus Stat="Accuracy">3</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-8</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
@@ -1613,7 +1646,7 @@
 					<BaseStatBonus Stat="OverallDamage">6</BaseStatBonus>
 					<BaseStatBonus Stat="Accuracy">4</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-6</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
@@ -1624,7 +1657,7 @@
 					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
 					<BaseStatBonus Stat="Accuracy">5</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-7</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-12</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
@@ -1635,7 +1668,7 @@
 					<BaseStatBonus Stat="OverallDamage">11</BaseStatBonus>
 					<BaseStatBonus Stat="Accuracy">6</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-13</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
@@ -1646,7 +1679,7 @@
 					<BaseStatBonus Stat="OverallDamage">13</BaseStatBonus>
 					<BaseStatBonus Stat="Accuracy">7</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-9</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
@@ -1657,7 +1690,7 @@
 					<BaseStatBonus Stat="OverallDamage">15</BaseStatBonus>
 					<BaseStatBonus Stat="Accuracy">8</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
@@ -1668,7 +1701,7 @@
 					<BaseStatBonus Stat="OverallDamage">17</BaseStatBonus>
 					<BaseStatBonus Stat="Accuracy">9</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-21</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
@@ -1679,7 +1712,7 @@
 					<BaseStatBonus Stat="OverallDamage">19</BaseStatBonus>
 					<BaseStatBonus Stat="Accuracy">10</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-21</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
@@ -1690,7 +1723,7 @@
 					<BaseStatBonus Stat="OverallDamage">21</BaseStatBonus>
 					<BaseStatBonus Stat="Accuracy">11</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-21</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
@@ -1701,7 +1734,7 @@
 					<BaseStatBonus Stat="OverallDamage">23</BaseStatBonus>
 					<BaseStatBonus Stat="Accuracy">12</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-21</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
@@ -1712,7 +1745,7 @@
 					<BaseStatBonus Stat="OverallDamage">25</BaseStatBonus>
 					<BaseStatBonus Stat="Accuracy">13</BaseStatBonus>
 					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-21</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -1832,7 +1865,7 @@
 					<BaseStatBonus Stat="ManaTotal">3</BaseStatBonus>
 					<BaseStatBonus Stat="RangedDamage">3</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">3</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-8</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
@@ -1843,7 +1876,7 @@
 					<BaseStatBonus Stat="ManaTotal">4</BaseStatBonus>
 					<BaseStatBonus Stat="RangedDamage">4</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">4</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-6</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
@@ -1854,7 +1887,7 @@
 					<BaseStatBonus Stat="ManaTotal">6</BaseStatBonus>
 					<BaseStatBonus Stat="RangedDamage">5</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">5</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-7</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-12</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
@@ -1865,7 +1898,7 @@
 					<BaseStatBonus Stat="ManaTotal">7</BaseStatBonus>
 					<BaseStatBonus Stat="RangedDamage">6</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">6</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-13</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
@@ -1876,7 +1909,7 @@
 					<BaseStatBonus Stat="ManaTotal">9</BaseStatBonus>
 					<BaseStatBonus Stat="RangedDamage">7</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">7</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-9</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
@@ -1887,7 +1920,7 @@
 					<BaseStatBonus Stat="ManaTotal">10</BaseStatBonus>
 					<BaseStatBonus Stat="RangedDamage">8</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">8</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
@@ -1898,7 +1931,7 @@
 					<BaseStatBonus Stat="ManaTotal">6</BaseStatBonus>
 					<BaseStatBonus Stat="RangedDamage">9</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">9</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
@@ -1909,7 +1942,7 @@
 					<BaseStatBonus Stat="ManaTotal">7</BaseStatBonus>
 					<BaseStatBonus Stat="RangedDamage">10</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
@@ -1920,7 +1953,7 @@
 					<BaseStatBonus Stat="ManaTotal">8</BaseStatBonus>
 					<BaseStatBonus Stat="RangedDamage">11</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">11</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
@@ -1931,7 +1964,7 @@
 					<BaseStatBonus Stat="ManaTotal">9</BaseStatBonus>
 					<BaseStatBonus Stat="RangedDamage">12</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">12</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
@@ -1942,7 +1975,7 @@
 					<BaseStatBonus Stat="ManaTotal">10</BaseStatBonus>
 					<BaseStatBonus Stat="RangedDamage">13</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">13</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>
@@ -2971,7 +3004,7 @@
 				<BasePrice>19</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealthTotal">17</BaseStatBonus>
-					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-9</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
@@ -2980,7 +3013,7 @@
 				<BasePrice>25</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealthTotal">21</BaseStatBonus>
-					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-8</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
@@ -2989,7 +3022,7 @@
 				<BasePrice>34</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealthTotal">26</BaseStatBonus>
-					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-7</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
@@ -2998,7 +3031,7 @@
 				<BasePrice>46</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealthTotal">30</BaseStatBonus>
-					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-6</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
@@ -3007,7 +3040,7 @@
 				<BasePrice>61</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealthTotal">35</BaseStatBonus>
-					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-5</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
@@ -3016,7 +3049,7 @@
 				<BasePrice>79</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealthTotal">40</BaseStatBonus>
-					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-5</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
@@ -3025,7 +3058,7 @@
 				<BasePrice>100</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealthTotal">45</BaseStatBonus>
-					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-5</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
@@ -3034,7 +3067,7 @@
 				<BasePrice>124</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealthTotal">50</BaseStatBonus>
-					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-5</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
@@ -3043,7 +3076,7 @@
 				<BasePrice>151</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealthTotal">55</BaseStatBonus>
-					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-5</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
@@ -3052,7 +3085,7 @@
 				<BasePrice>181</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealthTotal">60</BaseStatBonus>
-					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-5</BaseStatBonus>
 					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
@@ -3381,7 +3414,7 @@
 					<BaseStatBonus Stat="ManaTotal">3</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">3</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">3</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-8</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
@@ -3392,7 +3425,7 @@
 					<BaseStatBonus Stat="ManaTotal">4</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">4</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">4</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-6</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
@@ -3403,7 +3436,7 @@
 					<BaseStatBonus Stat="ManaTotal">6</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">5</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">5</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-7</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-12</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
@@ -3414,7 +3447,7 @@
 					<BaseStatBonus Stat="ManaTotal">7</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">6</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">6</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-13</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
@@ -3425,7 +3458,7 @@
 					<BaseStatBonus Stat="ManaTotal">9</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">7</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">7</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-9</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
@@ -3436,7 +3469,7 @@
 					<BaseStatBonus Stat="ManaTotal">10</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">8</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">8</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
@@ -3447,7 +3480,7 @@
 					<BaseStatBonus Stat="ManaTotal">7</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">9</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">9</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="7">
@@ -3458,7 +3491,7 @@
 					<BaseStatBonus Stat="ManaTotal">8</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">10</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="8">
@@ -3469,7 +3502,7 @@
 					<BaseStatBonus Stat="ManaTotal">9</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">11</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">11</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="9">
@@ -3480,7 +3513,7 @@
 					<BaseStatBonus Stat="ManaTotal">10</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">12</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">12</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="10">
@@ -3491,7 +3524,7 @@
 					<BaseStatBonus Stat="ManaTotal">11</BaseStatBonus>
 					<BaseStatBonus Stat="PhysicalDamage">13</BaseStatBonus>
 					<BaseStatBonus Stat="MagicalDamage">13</BaseStatBonus>
-					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 		</LevelVariations>

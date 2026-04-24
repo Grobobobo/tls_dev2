@@ -10,28 +10,52 @@
 		<Hands>OffHand</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="Block">10</MainStatBonus>
+				<BaseDamage Min="80" Max="120"/>
+				<MainStatBonus Stat="Block">7</MainStatBonus>
 				<BasePrice>10</BasePrice>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="Block">12</MainStatBonus>
+				<BaseDamage Min="80" Max="120"/>
+				<MainStatBonus Stat="Block">9</MainStatBonus>
 				<BasePrice>15</BasePrice>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="Block">14</MainStatBonus>
+				<BaseDamage Min="80" Max="120"/>
+				<MainStatBonus Stat="Block">11</MainStatBonus>
 				<BasePrice>24</BasePrice>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="Block">16</MainStatBonus>
+				<BaseDamage Min="80" Max="120"/>
+				<MainStatBonus Stat="Block">13</MainStatBonus>
 				<BasePrice>38</BasePrice>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="Block">18</MainStatBonus>
+				<BaseDamage Min="80" Max="120"/>
+				<MainStatBonus Stat="Block">14</MainStatBonus>
 				<BasePrice>58</BasePrice>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="Block">20</MainStatBonus>
+				<BaseDamage Min="80" Max="120"/>
+				<MainStatBonus Stat="Block">15</MainStatBonus>
 				<BasePrice>85</BasePrice>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -41,46 +65,70 @@
 		<Hands>OffHand</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="Block">10</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">7</MainStatBonus>
 				<BasePrice>12</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">25</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="Block">12</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">9</MainStatBonus>
 				<BasePrice>17</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">31</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="Block">14</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">11</MainStatBonus>
 				<BasePrice>26</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">37</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="Block">16</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">13</MainStatBonus>
 				<BasePrice>40</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">43</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="Block">18</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">14</MainStatBonus>
 				<BasePrice>60</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">49</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="Block">20</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">15</MainStatBonus>
 				<BasePrice>87</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="ArmorTotal">55</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -90,46 +138,70 @@
 		<Hands>OffHand</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="Block">10</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">7</MainStatBonus>
 				<BasePrice>12</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Resistance">2</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="Block">12</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">9</MainStatBonus>
 				<BasePrice>17</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Resistance">3</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="Block">14</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">11</MainStatBonus>
 				<BasePrice>26</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Resistance">4</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="Block">16</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">13</MainStatBonus>
 				<BasePrice>40</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Resistance">5</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="Block">18</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">14</MainStatBonus>
 				<BasePrice>60</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Resistance">6</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="Block">20</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">15</MainStatBonus>
 				<BasePrice>87</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Resistance">7</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -139,52 +211,76 @@
 		<Hands>OffHand</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="Block">10</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">7</MainStatBonus>
 				<BasePrice>15</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
 					<BaseStatBonus Stat="Reliability">15</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="Block">12</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">9</MainStatBonus>
 				<BasePrice>21</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
 					<BaseStatBonus Stat="Reliability">21</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="Block">14</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">11</MainStatBonus>
 				<BasePrice>31</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
 					<BaseStatBonus Stat="Reliability">27</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="Block">16</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">13</MainStatBonus>
 				<BasePrice>46</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
 					<BaseStatBonus Stat="Reliability">33</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="Block">18</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">14</MainStatBonus>
 				<BasePrice>67</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
 					<BaseStatBonus Stat="Reliability">39</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="Block">20</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">15</MainStatBonus>
 				<BasePrice>95</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
 					<BaseStatBonus Stat="Reliability">45</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -194,52 +290,76 @@
 		<Hands>OffHand</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="Block">12</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">10</MainStatBonus>
 				<BasePrice>15</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="OverallDamage">5</BaseStatBonus>
 					<BaseStatBonus Stat="HealthTotal">20</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="Block">14</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">12</MainStatBonus>
 				<BasePrice>21</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="OverallDamage">6</BaseStatBonus>
 					<BaseStatBonus Stat="HealthTotal">24</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="Block">16</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">14</MainStatBonus>
 				<BasePrice>31</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="OverallDamage">7</BaseStatBonus>
 					<BaseStatBonus Stat="HealthTotal">28</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="Block">18</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">16</MainStatBonus>
 				<BasePrice>46</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
 					<BaseStatBonus Stat="HealthTotal">32</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="Block">21</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">18</MainStatBonus>
 				<BasePrice>67</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="OverallDamage">9</BaseStatBonus>
 					<BaseStatBonus Stat="HealthTotal">36</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="Block">24</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">20</MainStatBonus>
 				<BasePrice>95</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="OverallDamage">10</BaseStatBonus>
 					<BaseStatBonus Stat="HealthTotal">40</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>
@@ -249,52 +369,76 @@
 		<Hands>OffHand</Hands>
 		<LevelVariations>
 			<Level Id="0">
-				<MainStatBonus Stat="Block">15</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">7</MainStatBonus>
 				<BasePrice>15</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealingReceived">20</BaseStatBonus>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="Block">18</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">9</MainStatBonus>
 				<BasePrice>21</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealingReceived">24</BaseStatBonus>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="Block">21</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">11</MainStatBonus>
 				<BasePrice>31</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealingReceived">28</BaseStatBonus>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="Block">24</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">13</MainStatBonus>
 				<BasePrice>46</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealingReceived">32</BaseStatBonus>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="Block">27</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">14</MainStatBonus>
 				<BasePrice>67</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealingReceived">36</BaseStatBonus>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="Block">30</MainStatBonus>
+				<BaseDamage Min="90" Max="135"/>
+				<MainStatBonus Stat="Block">15</MainStatBonus>
 				<BasePrice>95</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="HealingReceived">40</BaseStatBonus>
 					<BaseStatBonus Stat="MovePointsTotal">-1</BaseStatBonus>
 				</BaseStatBonuses>
+				<Skills>
+					<Skill>ShieldBash</Skill>
+				</Skills>
 			</Level>
 		</LevelVariations>
 	</ItemDefinition>

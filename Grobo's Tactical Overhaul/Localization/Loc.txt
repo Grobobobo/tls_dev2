@@ -27,6 +27,17 @@ BuildingUpgradeTooltipDescription_UpgradeFillGaugeProductionPotion0,"Upgrades pa
 SkillName_Assassinate_Unique,Assassinate,Assassinat,暗杀,暗殺,暗殺,Стрельба наповал,Убивство,Meucheln,Asesinato,Assassinato,암살
 SkillName_InfectUnique,Infect,Infection,感染,感染,汚染,Зараза,Зараження,Infizieren,Infección,Infecção,감염
 SkillName_SlowDeathOffhand,Slow Death (Off-hand),Mort à petit feu (secondaire),缓慢死亡（副手）,緩慢死亡（副手）,緩やかな死(オフハンド),Долгая смерть (вторая рука),Повільна смерть (допоміжне),Langsamer Tot (Nebenhand),Muerte lenta (mano secundaria),Morte Lenta (mão secundária),느린 죽음 (보조)
+SkillName_Command,Command,Commandement,命令,命令,指令,Команда,Команда,Befehl,Comando,Comando,지휘
+SkillName_Inspiration,Overload,Overload,鼓舞,鼓舞,インスピレーション,Вдохновение,Натхнення,Inspiration,Inspiración,Inspiração,영감
+SkillName_ArmorInspiration,Sacrifice,Sacrifice,献祭,獻祭,捧げもの,Подношение,Підношення,Opfergabe,Ofrenda,Oferenda,제물
+SkillName_SuperInspiration,Heavy Overload,Heavy Overload,振奋鼓舞,振奮鼓舞,深いインスピレーション,Великое вдохновение,Глибоке натхнення,Starke Inspiration,Inspiración profunda,Inspiração Profunda,심오한 영감
+SkillName_ArmorCleanse,Faith,Faith,净化,淨化,安定,Стабилизация,Стабілізувати,Stabilisieren,Estabilización,Estabilidade,안정화
+SkillName_ArmorRun,Surge,Surge,激涌,激湧,サージ,Рывок,Ривок,Schub,Impulso,Surto,질주
+SkillName_MartialPunch,Martial Punch,Martial Punch,武术重拳,武術重拳,武術パンチ,Боевой удар,Бойовий удар,Kampfschlag,Golpe marcial,Soco marcial,무술 펀치
+SkillName_CripplingPunch,Crippling Punch,Crippling Punch,致残重拳,致殘重拳,壊滅パンチ,Калечащий удар,Калічний удар,Lähmender Schlag,Puñetazo debilitante,Soco debilitante,무력화 펀치
+PerkName_CripplingPunch,Crippling Punch,Crippling Punch,致残重拳,致殘重拳,壊滅パンチ,Калечащий удар,Калічний удар,Lähmender Schlag,Puñetazo debilitante,Soco debilitante,무력화 펀치
+SkillName_Hemokinesis,Hemokinesis,Hemokinesis,控血术,控血術,ヘモキネシス,Гемокинез,Гемокінез,Hämokinese,Hemocinesis,Hemocinese,헤모키네시스
+SkillName_ShieldBash,Shield Bash,Shield Bash,盾击,盾擊,シールドバッシュ,Удар щитом,Удар щитом,Schildstoß,Golpe de escudo,Golpe de escudo,방패 강타
 SkillEffectDescription_ResupplyCharges,"<style=KeyWord>Gives back</style> <style=GoodNb>2</style> <style=TrapUse>Charge</style> to the target trap.
 <style=Attenuated>Cannot overflow.</style>","<style=KeyWord>Rend</style> <style=GoodNb>2</style> <style=TrapUse>Charge</style> au piège ciblé.
 <style=Attenuated>Ne peut dépasser la valeur maximale de l'attribut.</style>","<style=KeyWord>补充</style>陷阱的<style=GoodNb>2次</style><style=TrapUse>使用次数</style>。
@@ -3046,4 +3057,3 @@ Anões possuem uma <style=KeyWord>coleção exclusiva de vantagens</style> focad
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
 ApocalypseModifierTitle_InnLevelModifier,Worse Inn Heroes,Réduction du Niveau des Héros de la Taverne,旅店英雄等级降低,旅店英雄等級降低,宿の英雄レベル低下,Ниже уровень героев в таверне,Зменште рівень героїв корчми,Reduziertes Heldenlevel im Gasthaus,Reducción del nivel de los héroes de la posada,Nível Reduzido de Heróis na Estalagem,여관 영웅 레벨 감소
 ApocalypseModifierDescription_InnLevelModifier,<style=Keyword>Reduces</style> the level of Heroes in the <style=Keyword>Inn</style> by <style=keywordnb>2</style> And Increases their price by <style=keywordnb>2</style> levels. ,<style=Keyword>Réduit</style> le niveau des Héros de la <style=Keyword>Taverne</style> par <style=keywordNb>2</style>.,<style=Keyword>旅店</style>英雄的等级<style=Keyword>降低</style><style=keywordnb>2</style>级。,<style=Keyword>旅店</style>中英雄的等級<style=Keyword>降低</style><style=keywordnb>2</style>。,<style=Keyword>宿</style>の英雄レベルが<style=keywordnb>2</style><style=Keyword>低下</style>する。,"Уровень героев, нанятых в <style=Keyword>таверне</style>, будет <style=Keyword>ниже</style> на <style=keywordnb>2</style>.",<style=Keyword>Зменшує</style> рівень героїв у <style=Keyword>корчмі</style> на <style=keywordnb>2</style>.,<style=Keyword>Reduziert</style> das Level der Helden im <style=Keyword>Gasthaus</style> um <style=keywordnb>2</style>.,<style=Keyword>Reduce</style> en <style=keywordnb>2</style> el nivel de los héroes de la <style=Keyword>posada</style>.,<style=Keyword>Reduz</style> o nível de Heróis na <style=Keyword>Estalagem</style> em <style=keywordnb>2</style>.,<style=Keyword>여관</style>의 영웅 레벨이 <style=keywordnb>2</style> <style=Keyword>감소합니다</style>.
-SkillName_ArmorInspiration,Inspiration,Inspiration,鼓舞,鼓舞,インスピレーション,Вдохновение,Натхнення,Inspiration,Inspiración,Inspiração,영감
