@@ -1,0 +1,932 @@
+﻿<MetaUpgradeDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:noNamespaceSchemaLocation="../MetaUpgradeDefinitions.xsd">
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- BASIC ARMORS -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <MetaUpgradeDefinition Id="UnlockClothArmorVariations">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Cloth" B="5"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockGlenwaldCity" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Cloth" B="35"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>ClothArmor3</Item>
+            <Item>ClothArmor4</Item>
+            <Item>ClothArmor5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>ClothArmor0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockLightArmorVariations">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Light" B="5"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockGlenwaldCity" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Light" B="35"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>LightArmor3</Item>
+            <Item>LightArmor4</Item>
+            <Item>LightArmor5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>LightArmor0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockMediumArmorVariations">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Medium" B="5"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockGlenwaldCity" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Medium" B="35"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>MediumArmor3</Item>
+            <Item>MediumArmor4</Item>
+            <Item>MediumArmor5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>MediumArmor0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockHeavyArmorVariations">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Heavy" B="5"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockGlenwaldCity" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Heavy" B="35"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>HeavyArmor3</Item>
+            <Item>HeavyArmor4</Item>
+            <Item>HeavyArmor5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>HeavyArmor0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockClothLightPantsVariations">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble Dodges" B="10"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble Dodges" B="50"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>ClothPants1</Item>
+            <Item>ClothPants2</Item>
+            <Item>ClothPants4</Item>
+            <Item>ClothPants5</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockMediumHeavyPantsVariations">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble DamageTakenOnArmor" B="200"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble DamageTakenOnArmor" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Pants1</Item>
+            <Item>Pants2</Item>
+            <Item>Pants4</Item>
+            <Item>Pants5</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockHelmetVariations">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble DamageMitigatedByResistance" B="100"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble DamageMitigatedByResistance" B="500"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Helmet4</Item>
+            <Item>Helmet5</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- SPECIAL ARMORS -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   
+   <MetaUpgradeDefinition Id="UnlockChildOfTheForestSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble DebuffsApplied" B="500"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble DebuffsApplied" B="1500"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>ChildOfTheForestHelmet</Item>
+            <Item>ChildOfTheForestArmor</Item>
+            <Item>ChildOfTheForestPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockTheMountainSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble StunnedEnemies" B="180"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble StunnedEnemies" B="900"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>TheMountainHelmet</Item>
+            <Item>TheMountainArmor</Item>
+            <Item>TheMountainPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockLoneWolfSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="ENVIRONMENT:GetMaxLifetimeStatValue DamageTakenTotal" B="400"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="ENVIRONMENT:GetMaxLifetimeStatValue DamageTakenTotal" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>LoneWolfHelmet</Item>
+            <Item>LoneWolfArmor</Item>
+            <Item>LoneWolfPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   <MetaUpgradeDefinition Id="UnlockPriestSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="RUN:MaxHeroStatValueReachedForStat HealthTotal" B="300"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="RUN:MaxHeroStatValueReachedForStat HealthTotal" B="500"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>PriestHelmet</Item>
+            <Item>PriestArmor</Item>
+            <Item>PriestPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   <MetaUpgradeDefinition Id="UnlockDarknessSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="RUN:GetDouble StunnedEnemies" B="200"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="RUN:GetDouble StunnedEnemies" B="300"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>DarknessHelmet</Item>
+            <Item>DarknessArmor</Item>
+            <Item>DarknessPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   <MetaUpgradeDefinition Id="UnlockArcherSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="ENVIRONMENT:GetMaxLifetimeStatValue CriticalHits" B="300"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="ENVIRONMENT:GetMaxLifetimeStatValue CriticalHits" B="400"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>ArcherArmor</Item>
+            <Item>ArcherPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   <MetaUpgradeDefinition Id="UnlockRedSkirtSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble GoldSpentInShop" B="1000"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble GoldSpentInShop" B="3000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>RedSkirtArmor</Item>
+            <Item>RedSkirtPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   <MetaUpgradeDefinition Id="UnlockWhiteMonkSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble PropagationBounces" B="240"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble PropagationBounces" B="600"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>WhiteMonkHelmet</Item>
+            <Item>WhiteMonkArmor</Item>
+            <Item>WhiteMonkPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   <MetaUpgradeDefinition Id="UnlockNecromancerSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:EnemiesKilledFromPoison" B="300"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:EnemiesKilledFromPoison" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>NecromancerHelmet</Item>
+            <Item>NecromancerArmor</Item>
+            <Item>NecromancerPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   <MetaUpgradeDefinition Id="UnlockCrowSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="ENVIRONMENT:GetMaxLifetimeStatValue Kills" B="300"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="ENVIRONMENT:GetMaxLifetimeStatValue Kills" B="450"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>CrowHelmet</Item>
+            <Item>CrowArmor</Item>
+            <Item>CrowPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockHunterSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:IsolatedEnemiesKilled" B="200"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:IsolatedEnemiesKilled" B="500"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>HunterHelmet</Item>
+            <Item>HunterArmor</Item>
+            <Item>HunterPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   <MetaUpgradeDefinition Id="UnlockFrostSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+			 <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble ManaSpent" B="600"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+			 <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble ManaSpent" B="800"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>FrostHelmet</Item>
+            <Item>FrostArmor</Item>
+            <Item>FrostPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockHoodSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+			 <NumberAGreaterThanOrEqualToB A="RUN:MaxHeroStatValueReachedForStat SkillRangeModifier" B="5"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+			 <NumberAGreaterThanOrEqualToB A="RUN:MaxHeroStatValueReachedForStat SkillRangeModifier" B="8"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>HoodHelmet</Item>
+            <Item>HoodArmor</Item>
+            <Item>HoodPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+
+   <!--ENEMIES KILLED SETS-->
+   <MetaUpgradeDefinition Id="UnlockPorkEpicSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:EnemiesKilledCount" B="500"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:EnemiesKilledCount" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>PorkEpicHelmet</Item>
+            <Item>PorkEpicArmor</Item>
+            <Item>PorkEpicPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   <MetaUpgradeDefinition Id="UnlockCommanderSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockPorkEpicSet" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:EnemiesKilledCount" B="2500"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Eyepatch</Item>
+            <Item>CommanderArmor</Item>
+            <Item>CommanderPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   <MetaUpgradeDefinition Id="UnlockWarSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockCommanderSet" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:EnemiesKilledCount" B="5000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>WarArmor</Item>
+            <Item>WarPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+
+   <!--TILES MOVED SETS-->
+   <MetaUpgradeDefinition Id="UnlockBonesSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble TilesCrossed" B="600"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble TilesCrossed" B="1200"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>BonesArmor</Item>
+            <Item>BonesPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   <MetaUpgradeDefinition Id="UnlockThiefSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockBonesSet" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble TilesCrossed" B="3000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>ThiefHelmet</Item>
+            <Item>ThiefArmor</Item>
+            <Item>ThiefPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   
+   <!--PHYS/MAG/RANG DAMAGE SETS-->
+   <MetaUpgradeDefinition Id="UnlockMagicianSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:HighestDamagesDealtOfType Magical" B="500"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:HighestDamagesDealtOfType Magical" B="700"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>MagicianHelmet</Item>
+            <Item>MagicianArmor</Item>
+            <Item>MagicianPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockCoatSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:HighestDamagesDealtOfType Ranged" B="500"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:HighestDamagesDealtOfType Ranged" B="700"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>PreciousScarfHelmet</Item>
+            <Item>CoatArmor</Item>
+            <Item>CoatPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   <MetaUpgradeDefinition Id="UnlockBarbarianSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:HighestDamagesDealtOfType Physical" B="500"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:HighestDamagesDealtOfType Physical" B="700"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>BarbarianArmor</Item>
+            <Item>BarbarianPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   
+   <!--MOMENTUM ONE SHOT SETS-->
+   <MetaUpgradeDefinition Id="UnlockFallenLordSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble MomentumOneShots" B="6"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble MomentumOneShots" B="30"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>FallenLordHelmet</Item>
+            <Item>FallenLordArmor</Item>
+            <Item>FallenLordPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   <MetaUpgradeDefinition Id="UnlockMurdererSet">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockFallenLordSet" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble MomentumOneShots" B="100"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>MurdererArmor</Item>
+            <Item>MurdererPants</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- OTHER ITEMS -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   
+   <!--SHIELDS-->
+   <MetaUpgradeDefinition Id="UnlockShieldVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble DamageBlocked" B="200"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble DamageBlocked" B="500"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Shield1</Item>
+            <Item>Shield2</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockShieldVariations2">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockShieldVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble DamageBlocked" B="3000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Shield3</Item>
+            <Item>Shield4</Item>
+            <Item>Shield5</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--POTIONS-->
+   <MetaUpgradeDefinition Id="UnlockMorePotions" Price="1200">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockLakeburgCity" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:NightsPlayed" B="21"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>EnergyPotion</Item>
+            <Item>SpeedPotion</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- TRINKETS A PERKS -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <MetaUpgradeDefinition Id="UnlockTrinketPerkFree1" Price="500">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ItemsBoughtOrProducedOfCategory Trinket" B="10"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>MedalPerkHeadOn</Item>
+            <Item>MedalPerkOrganicArmor</Item>
+            <Item>MedalPerkBlink</Item>
+            <Item>MedalPerkExplosiveAtoms</Item>
+            <Item>MedalPerkFieldStudy</Item>
+            <Item>MedalPerkProximityShot</Item>
+            <Item>MedalPerkSadist</Item>
+            <Item>MedalPerkEpidemic</Item>
+            <Item>MedalPerkCriticalMaster</Item>
+            <Item>MedalPerkHumanBallista</Item>
+         </UnlockItems>
+         
+         <!-- to unlock perk medals in the shop -->
+         <CreateItemModifier>
+            <CreateItemId>ShopMedalPerk</CreateItemId>
+            <Count>1</Count>
+         </CreateItemModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockTrinketPerkFree2" Price="500">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockTrinketPerkFree1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>MedalPerkSpecialist</Item>
+            <Item>MedalPerkVolatileReaction</Item>
+            <Item>MedalPerkInertia</Item>
+            <Item>MedalPerkManaShield</Item>
+            <Item>MedalPerkFlexibility</Item>
+            <Item>MedalPerkAdrenalineRush</Item>
+            <Item>MedalPerkDontPanic</Item>
+            <Item>MedalPerkBlessing</Item>
+            <Item>MedalPerkNightOwl</Item>
+            <Item>MedalPerkBigGameHunter</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockTrinketPerkFree3" Price="500">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockTrinketPerkFree2" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>MedalPerkBerserk</Item>
+            <Item>MedalPerkBoom</Item>
+            <Item>MedalPerkManaCollector</Item>
+            <Item>MedalPerkSheerPower</Item>
+            <Item>MedalPerkHex</Item>
+            <Item>MedalPerkFastToxins</Item>
+            <Item>MedalPerkLegendaryAssassin</Item>
+            <Item>MedalPerkFortressMaster</Item>
+            <Item>MedalPerkWeaknessFinder</Item>
+            <Item>MedalPerkSurgicalStrike</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+</MetaUpgradeDefinitions>

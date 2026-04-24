@@ -2847,101 +2847,53 @@
 
 
    <GlyphDefinition Id="ItemBetterRarity" Cost="2">
-
       <GlyphEffects>
-
          <ModifyRarityProbabilityTree TreeId="BuildingProduction">
-
             <Probability Weight="20">2</Probability>
-
          </ModifyRarityProbabilityTree>
-
          <ModifyRarityProbabilityTree TreeId="ShopProduction">
-
-            <Probability Weight="20">2</Probability>
-
+            <Probability Weight="14">2</Probability>
          </ModifyRarityProbabilityTree>
-
          <ModifyRarityProbabilityTree TreeId="PanicRewardBasic">
-
-            <Probability Weight="20">2</Probability>
-
+            <Probability Weight="21">2</Probability>
          </ModifyRarityProbabilityTree>
-
          <ModifyRarityProbabilityTree TreeId="HeroGeneration">
-
-            <Probability Weight="20">2</Probability>
-
+            <Probability Weight="18">2</Probability>
          </ModifyRarityProbabilityTree>
-
          <ModifyRarityProbabilityTree TreeId="BonePile">
-
             <Probability Weight="20">2</Probability>
-
          </ModifyRarityProbabilityTree>
-
          <ModifyRarityProbabilityTree TreeId="BuildingProduction">
-
-            <Probability Weight="15">3</Probability>
-
+            <Probability Weight="10">3</Probability>
          </ModifyRarityProbabilityTree>
-
          <ModifyRarityProbabilityTree TreeId="ShopProduction">
-
-            <Probability Weight="15">3</Probability>
-
+            <Probability Weight="7">3</Probability>
          </ModifyRarityProbabilityTree>
-
          <ModifyRarityProbabilityTree TreeId="PanicRewardBasic">
-
-            <Probability Weight="15">3</Probability>
-
+            <Probability Weight="7">3</Probability>
          </ModifyRarityProbabilityTree>
-
          <ModifyRarityProbabilityTree TreeId="PanicRewardHigh">
-
-            <Probability Weight="15">3</Probability>
-
+            <Probability Weight="17">3</Probability>
          </ModifyRarityProbabilityTree>
-
          <ModifyRarityProbabilityTree TreeId="HeroGeneration">
-
-            <Probability Weight="15">3</Probability>
-
+            <Probability Weight="6">3</Probability>
          </ModifyRarityProbabilityTree>
-
          <ModifyRarityProbabilityTree TreeId="BonePile">
-
-            <Probability Weight="15">3</Probability>
-
+            <Probability Weight="10">3</Probability>
          </ModifyRarityProbabilityTree>
-
          <ModifyRarityProbabilityTree TreeId="BuildingProduction">
-
-            <Probability Weight="8">4</Probability>
-
+            <Probability Weight="4">4</Probability>
          </ModifyRarityProbabilityTree>
-
          <ModifyRarityProbabilityTree TreeId="ShopProduction">
-
-            <Probability Weight="8">4</Probability>
-
+            <Probability Weight="3">4</Probability>
          </ModifyRarityProbabilityTree>
-
          <ModifyRarityProbabilityTree TreeId="PanicRewardHigh">
-
-            <Probability Weight="8">4</Probability>
-
+            <Probability Weight="5">4</Probability>
          </ModifyRarityProbabilityTree>
-
          <ModifyRarityProbabilityTree TreeId="BonePile">
-
-            <Probability Weight="8">4</Probability>
-
+            <Probability Weight="4">4</Probability>
          </ModifyRarityProbabilityTree>
-
       </GlyphEffects>
-
    </GlyphDefinition>
 
 

@@ -1,0 +1,3500 @@
+<ItemDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../ItemDefinitions.xsd">
+	<ItemDefinition Id="ClothPants0">
+		<Category>ClothBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Dodge">4</MainStatBonus>
+				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Dodge">5</MainStatBonus>
+				<BasePrice>15</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Dodge">7</MainStatBonus>
+				<BasePrice>21</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Dodge">8</MainStatBonus>
+				<BasePrice>30</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Dodge">10</MainStatBonus>
+				<BasePrice>42</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Dodge">11</MainStatBonus>
+				<BasePrice>57</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">14</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Dodge">12</MainStatBonus>
+				<BasePrice>75</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Dodge">13</MainStatBonus>
+				<BasePrice>96</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Dodge">14</MainStatBonus>
+				<BasePrice>120</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Dodge">15</MainStatBonus>
+				<BasePrice>147</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">14</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Dodge">16</MainStatBonus>
+				<BasePrice>177</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">15</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="ClothPants1">
+		<Category>ClothBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Dodge">4</MainStatBonus>
+				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Dodge">5</MainStatBonus>
+				<BasePrice>15</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Dodge">7</MainStatBonus>
+				<BasePrice>21</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Dodge">8</MainStatBonus>
+				<BasePrice>30</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Dodge">10</MainStatBonus>
+				<BasePrice>42</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Dodge">11</MainStatBonus>
+				<BasePrice>57</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Dodge">12</MainStatBonus>
+				<BasePrice>75</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Dodge">13</MainStatBonus>
+				<BasePrice>96</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Dodge">14</MainStatBonus>
+				<BasePrice>120</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Dodge">15</MainStatBonus>
+				<BasePrice>147</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Dodge">16</MainStatBonus>
+				<BasePrice>177</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="ClothPants2">
+		<Category>ClothBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Dodge">4</MainStatBonus>
+				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Dodge">5</MainStatBonus>
+				<BasePrice>15</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Dodge">7</MainStatBonus>
+				<BasePrice>21</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Dodge">8</MainStatBonus>
+				<BasePrice>30</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Dodge">10</MainStatBonus>
+				<BasePrice>42</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Dodge">11</MainStatBonus>
+				<BasePrice>57</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Dodge">12</MainStatBonus>
+				<BasePrice>75</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Dodge">13</MainStatBonus>
+				<BasePrice>96</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Dodge">14</MainStatBonus>
+				<BasePrice>120</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Dodge">15</MainStatBonus>
+				<BasePrice>147</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Dodge">16</MainStatBonus>
+				<BasePrice>177</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="ClothPants3">
+		<Category>LightBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="ArmorTotal">12</MainStatBonus>
+				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">3</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="ArmorTotal">16</MainStatBonus>
+				<BasePrice>15</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">4</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="ArmorTotal">21</MainStatBonus>
+				<BasePrice>21</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">5</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="ArmorTotal">25</MainStatBonus>
+				<BasePrice>30</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">6</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="ArmorTotal">30</MainStatBonus>
+				<BasePrice>42</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">7</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="ArmorTotal">34</MainStatBonus>
+				<BasePrice>57</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="ArmorTotal">35</MainStatBonus>
+				<BasePrice>75</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="ArmorTotal">36</MainStatBonus>
+				<BasePrice>96</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">14</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="ArmorTotal">37</MainStatBonus>
+				<BasePrice>120</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">17</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="ArmorTotal">38</MainStatBonus>
+				<BasePrice>147</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">20</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="ArmorTotal">39</MainStatBonus>
+				<BasePrice>177</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">23</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="ClothPants4">
+		<Category>LightBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="ArmorTotal">12</MainStatBonus>
+				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">3</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="ArmorTotal">16</MainStatBonus>
+				<BasePrice>15</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">4</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="ArmorTotal">21</MainStatBonus>
+				<BasePrice>21</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">5</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="ArmorTotal">25</MainStatBonus>
+				<BasePrice>30</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">6</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="ArmorTotal">30</MainStatBonus>
+				<BasePrice>42</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">7</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="ArmorTotal">34</MainStatBonus>
+				<BasePrice>57</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="ArmorTotal">35</MainStatBonus>
+				<BasePrice>75</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="ArmorTotal">36</MainStatBonus>
+				<BasePrice>96</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="ArmorTotal">37</MainStatBonus>
+				<BasePrice>120</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="ArmorTotal">38</MainStatBonus>
+				<BasePrice>147</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="ArmorTotal">39</MainStatBonus>
+				<BasePrice>177</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="ClothPants5">
+		<Category>LightBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="ArmorTotal">12</MainStatBonus>
+				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">3</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="ArmorTotal">16</MainStatBonus>
+				<BasePrice>15</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">4</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="ArmorTotal">21</MainStatBonus>
+				<BasePrice>21</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">5</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="ArmorTotal">25</MainStatBonus>
+				<BasePrice>30</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">6</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="ArmorTotal">30</MainStatBonus>
+				<BasePrice>42</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">7</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="ArmorTotal">34</MainStatBonus>
+				<BasePrice>57</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="ArmorTotal">35</MainStatBonus>
+				<BasePrice>75</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="ArmorTotal">36</MainStatBonus>
+				<BasePrice>96</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="ArmorTotal">37</MainStatBonus>
+				<BasePrice>120</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="ArmorTotal">38</MainStatBonus>
+				<BasePrice>147</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="ArmorTotal">39</MainStatBonus>
+				<BasePrice>177</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="Pants0">
+		<Category>MediumBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="ArmorTotal">20</MainStatBonus>
+				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">12</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="ArmorTotal">28</MainStatBonus>
+				<BasePrice>15</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">17</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="ArmorTotal">36</MainStatBonus>
+				<BasePrice>21</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">21</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="ArmorTotal">44</MainStatBonus>
+				<BasePrice>30</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">26</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="ArmorTotal">52</MainStatBonus>
+				<BasePrice>42</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">30</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="ArmorTotal">60</MainStatBonus>
+				<BasePrice>57</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">35</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="ArmorTotal">70</MainStatBonus>
+				<BasePrice>75</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">40</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="ArmorTotal">80</MainStatBonus>
+				<BasePrice>96</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">45</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="ArmorTotal">90</MainStatBonus>
+				<BasePrice>120</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">50</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">15</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="ArmorTotal">100</MainStatBonus>
+				<BasePrice>147</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">55</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">17</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="ArmorTotal">110</MainStatBonus>
+				<BasePrice>177</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">19</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="Pants1">
+		<Category>MediumBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="ArmorTotal">20</MainStatBonus>
+				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">12</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="ArmorTotal">28</MainStatBonus>
+				<BasePrice>15</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">17</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="ArmorTotal">36</MainStatBonus>
+				<BasePrice>21</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">21</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">16</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="ArmorTotal">44</MainStatBonus>
+				<BasePrice>30</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">26</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">19</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="ArmorTotal">52</MainStatBonus>
+				<BasePrice>42</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">30</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">22</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="ArmorTotal">60</MainStatBonus>
+				<BasePrice>57</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">35</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">25</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="ArmorTotal">70</MainStatBonus>
+				<BasePrice>75</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">40</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">28</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="ArmorTotal">80</MainStatBonus>
+				<BasePrice>96</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">45</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">31</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="ArmorTotal">90</MainStatBonus>
+				<BasePrice>120</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">50</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">34</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="ArmorTotal">100</MainStatBonus>
+				<BasePrice>147</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">55</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">37</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="ArmorTotal">110</MainStatBonus>
+				<BasePrice>177</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">40</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="Pants2">
+		<Category>MediumBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="ArmorTotal">20</MainStatBonus>
+				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">12</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="ArmorTotal">28</MainStatBonus>
+				<BasePrice>15</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">17</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="ArmorTotal">36</MainStatBonus>
+				<BasePrice>21</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">21</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="ArmorTotal">44</MainStatBonus>
+				<BasePrice>30</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">26</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="ArmorTotal">52</MainStatBonus>
+				<BasePrice>42</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">30</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="ArmorTotal">60</MainStatBonus>
+				<BasePrice>57</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">35</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="ArmorTotal">70</MainStatBonus>
+				<BasePrice>75</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">40</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="ArmorTotal">80</MainStatBonus>
+				<BasePrice>96</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">45</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="ArmorTotal">90</MainStatBonus>
+				<BasePrice>120</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">50</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">14</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="ArmorTotal">100</MainStatBonus>
+				<BasePrice>147</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">55</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">16</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="ArmorTotal">110</MainStatBonus>
+				<BasePrice>177</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">18</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="Pants3">
+		<Category>HeavyBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Block">4</MainStatBonus>
+				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">20</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Block">5</MainStatBonus>
+				<BasePrice>15</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">28</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Block">6</MainStatBonus>
+				<BasePrice>21</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">36</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">16</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Block">7</MainStatBonus>
+				<BasePrice>30</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">44</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">20</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Block">8</MainStatBonus>
+				<BasePrice>42</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">52</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">24</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Block">9</MainStatBonus>
+				<BasePrice>57</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">28</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Block">17</MainStatBonus>
+				<BasePrice>75</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">33</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Block">25</MainStatBonus>
+				<BasePrice>96</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">38</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Block">33</MainStatBonus>
+				<BasePrice>120</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">43</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Block">41</MainStatBonus>
+				<BasePrice>147</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">48</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Block">49</MainStatBonus>
+				<BasePrice>177</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">53</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="Pants4">
+		<Category>HeavyBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Block">4</MainStatBonus>
+				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">20</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationDamage">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Block">5</MainStatBonus>
+				<BasePrice>15</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">28</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationDamage">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Block">6</MainStatBonus>
+				<BasePrice>21</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">36</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationDamage">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Block">7</MainStatBonus>
+				<BasePrice>30</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">44</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationDamage">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Block">8</MainStatBonus>
+				<BasePrice>42</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">52</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationDamage">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Block">9</MainStatBonus>
+				<BasePrice>57</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationDamage">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Block">17</MainStatBonus>
+				<BasePrice>75</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationDamage">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Block">25</MainStatBonus>
+				<BasePrice>96</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationDamage">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Block">33</MainStatBonus>
+				<BasePrice>120</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationDamage">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Block">41</MainStatBonus>
+				<BasePrice>147</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationDamage">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Block">49</MainStatBonus>
+				<BasePrice>177</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationDamage">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="Pants5">
+		<Category>HeavyBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Block">4</MainStatBonus>
+				<BasePrice>12</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">20</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Block">5</MainStatBonus>
+				<BasePrice>15</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">28</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Block">6</MainStatBonus>
+				<BasePrice>21</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">36</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Block">7</MainStatBonus>
+				<BasePrice>30</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">44</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Block">8</MainStatBonus>
+				<BasePrice>42</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">52</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Block">9</MainStatBonus>
+				<BasePrice>57</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Block">17</MainStatBonus>
+				<BasePrice>75</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Block">25</MainStatBonus>
+				<BasePrice>96</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Block">33</MainStatBonus>
+				<BasePrice>120</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Block">41</MainStatBonus>
+				<BasePrice>147</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Block">49</MainStatBonus>
+				<BasePrice>177</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="FallenLordPants">
+		<Category>LightBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Dodge">4</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">3</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Dodge">5</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">4</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Dodge">6</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">6</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Dodge">7</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">7</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Dodge">8</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">9</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Dodge">9</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Dodge">15</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Dodge">21</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Dodge">27</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Dodge">33</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Dodge">39</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="ChildOfTheForestPants">
+		<Category>ClothBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Dodge">4</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">3</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Dodge">5</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">4</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Dodge">7</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">5</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Dodge">8</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">6</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Dodge">10</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">7</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Dodge">11</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">8</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Dodge">12</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">8</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">23</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Dodge">13</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">8</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">26</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Dodge">14</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">8</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">29</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Dodge">15</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">8</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">32</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Dodge">16</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">8</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">35</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="TheMountainPants">
+		<Category>HeavyBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Block">4</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">25</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">4</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">4</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Block">5</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">35</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">5</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">6</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Block">6</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">45</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">6</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Block">7</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">55</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">7</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">9</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Block">8</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">8</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">11</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Block">9</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">75</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Block">17</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">75</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Block">25</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">75</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Block">33</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">75</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Block">41</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">75</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Block">49</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">75</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
+					<BaseStatBonus Stat="StunChanceModifier">13</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="LoneWolfPants">
+		<Category>MediumBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="ArmorTotal">20</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">16</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">8</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="ArmorTotal">29</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">21</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">12</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="ArmorTotal">38</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">27</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">16</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">16</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="ArmorTotal">47</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">32</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">20</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">20</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="ArmorTotal">56</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">38</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">24</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">24</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="ArmorTotal">65</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">43</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">28</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">28</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="ArmorTotal">75</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">48</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">28</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">28</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="ArmorTotal">85</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">53</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">28</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">28</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="ArmorTotal">95</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">58</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">28</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">28</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="ArmorTotal">105</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">63</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">28</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">28</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="ArmorTotal">115</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">68</BaseStatBonus>
+					<BaseStatBonus Stat="HealthRegen">28</BaseStatBonus>
+					<BaseStatBonus Stat="HealingReceived">28</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="MagicianPants">
+		<Category>ClothBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Dodge">4</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">4</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Dodge">5</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">6</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Dodge">7</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">8</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Dodge">8</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">10</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Dodge">10</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">12</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Dodge">11</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">14</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Dodge">12</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">10</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Dodge">13</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">11</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Dodge">14</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">12</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Dodge">15</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">13</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Dodge">16</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ManaTotal">14</BaseStatBonus>
+					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="PorkEpicPants">
+		<Category>HeavyBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Block">4</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">20</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">4</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">3</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Block">5</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">29</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">6</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">4</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Block">6</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">38</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">5</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Block">7</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">47</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">11</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">6</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Block">8</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">56</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">13</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">7</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Block">9</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">15</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">8</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Block">17</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">17</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">9</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Block">25</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">19</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">10</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Block">33</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">21</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">11</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Block">41</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">23</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">12</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Block">49</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">25</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">13</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">-5</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-15</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="ThiefPants">
+		<Category>LightBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Dodge">4</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">3</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Dodge">5</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">4</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Dodge">6</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">6</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Dodge">7</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">7</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Dodge">8</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">9</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Dodge">9</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Dodge">9</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Dodge">9</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Dodge">9</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Dodge">9</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Dodge">9</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">14</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="DarknessPants">
+		<Category>HeavyBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Block">3</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">20</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">3</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">3</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">3</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Block">3</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">29</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">4</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">4</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">4</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Block">4</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">38</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">6</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">5</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">5</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Block">4</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">47</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">7</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">6</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">6</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Block">5</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">56</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">9</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">7</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">7</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Block">5</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">10</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Block">13</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">6</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">9</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">9</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Block">21</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">7</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Block">29</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">8</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">11</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">11</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Block">37</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">9</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">12</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">12</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Block">45</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">10</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">13</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">13</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="PriestPants">
+		<Category>ClothBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Dodge">4</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthRegen">8</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Dodge">5</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthRegen">12</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Dodge">7</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthRegen">16</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Dodge">8</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthRegen">20</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Dodge">10</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthRegen">24</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Dodge">11</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthRegen">28</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Dodge">12</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthRegen">28</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Dodge">13</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthRegen">28</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Dodge">14</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthRegen">28</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Dodge">15</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthRegen">28</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Dodge">16</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthRegen">28</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="BonesPants">
+		<Category>ClothBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Dodge">4</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Reliability">10</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Dodge">5</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Reliability">13</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Dodge">7</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Reliability">16</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Dodge">8</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Reliability">19</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Dodge">10</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Reliability">22</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Dodge">11</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Reliability">25</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Dodge">12</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Reliability">26</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Dodge">13</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Reliability">27</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">14</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Dodge">14</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Reliability">28</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">17</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Dodge">15</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Reliability">29</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">20</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Dodge">16</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Reliability">30</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">23</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="CommanderPants">
+		<Category>MediumBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="ArmorTotal">20</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">16</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">11</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="ArmorTotal">29</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">21</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">14</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="ArmorTotal">38</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">27</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">18</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="ArmorTotal">47</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">32</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">21</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="ArmorTotal">56</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">38</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">25</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="ArmorTotal">65</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">43</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">28</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="ArmorTotal">75</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">48</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">28</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="ArmorTotal">85</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">53</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">28</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="ArmorTotal">95</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">58</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">28</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">14</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="ArmorTotal">105</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">63</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">28</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">16</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="ArmorTotal">115</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">68</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">28</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">18</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="ArcherPants">
+		<Category>MediumBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="ArmorTotal">20</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">16</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">4</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="ArmorTotal">29</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">21</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">5</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="ArmorTotal">38</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">27</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">6</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="ArmorTotal">47</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">32</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">7</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="ArmorTotal">56</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">38</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">8</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="ArmorTotal">65</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">43</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="ArmorTotal">75</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">48</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">10</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="ArmorTotal">85</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">53</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">11</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="ArmorTotal">95</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">58</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">12</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="ArmorTotal">105</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">63</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">13</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="ArmorTotal">115</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">68</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">14</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="CoatPants">
+		<Category>LightBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="ArmorTotal">13</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">3</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">3</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="ArmorTotal">18</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">4</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">4</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="ArmorTotal">23</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">5</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">6</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="ArmorTotal">28</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">6</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">7</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="ArmorTotal">33</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">7</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">9</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="ArmorTotal">38</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="ArmorTotal">39</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="ArmorTotal">40</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="ArmorTotal">41</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="ArmorTotal">42</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="ArmorTotal">43</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="BarbarianPants">
+		<Category>ClothBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Dodge">4</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">12</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Dodge">5</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">16</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Dodge">7</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">21</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Dodge">8</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">25</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Dodge">10</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">30</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Dodge">11</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">34</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Dodge">17</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">34</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Dodge">23</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">34</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Dodge">29</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">34</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Dodge">35</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">34</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Dodge">41</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">34</BaseStatBonus>
+					<BaseStatBonus Stat="ResistanceReduction">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="RedSkirtPants">
+		<Category>ClothBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Dodge">4</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Dodge">5</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">14</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Dodge">7</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">18</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Dodge">8</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">21</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Dodge">10</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">25</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Dodge">11</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">28</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Dodge">12</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">33</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Dodge">13</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">38</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Dodge">14</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">43</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Dodge">15</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">48</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Dodge">16</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">53</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="MurdererPants">
+		<Category>LightBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Dodge">4</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">3</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">3</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Dodge">5</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">4</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">4</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Dodge">6</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">6</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">5</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Dodge">7</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">7</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">6</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Dodge">8</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">9</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">7</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Dodge">9</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Dodge">15</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Dodge">21</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">12</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Dodge">27</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">14</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Dodge">33</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">16</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Dodge">39</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">18</BaseStatBonus>
+					<BaseStatBonus Stat="MomentumAttacks">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="WarPants">
+		<Category>HeavyBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Block">4</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">20</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">3</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Block">5</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">29</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">4</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Block">6</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">38</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">5</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Block">7</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">47</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">1</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">6</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Block">8</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">56</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">7</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Block">9</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Block">17</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Block">25</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Block">33</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Block">41</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Block">49</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="MovePointsTotal">2</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="NecromancerPants">
+		<Category>MediumBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="ArmorTotal">20</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">16</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">4</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="ArmorTotal">29</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">21</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">5</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">15</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="ArmorTotal">38</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">27</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">6</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">19</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="ArmorTotal">47</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">32</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">7</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">23</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="ArmorTotal">56</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">38</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">8</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">27</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="ArmorTotal">65</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">43</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">31</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="ArmorTotal">75</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">48</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">31</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="ArmorTotal">85</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">53</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">31</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="ArmorTotal">95</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">58</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">31</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="ArmorTotal">105</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">63</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">31</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="ArmorTotal">115</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">68</BaseStatBonus>
+					<BaseStatBonus Stat="Critical">9</BaseStatBonus>
+					<BaseStatBonus Stat="PoisonDamageModifier">31</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="CrowPants">
+		<Category>MediumBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Dodge">3</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">12</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Dodge">4</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">17</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Dodge">5</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">21</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Dodge">6</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">26</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Dodge">7</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">30</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Dodge">8</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">35</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Dodge">18</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">40</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Dodge">28</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">45</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Dodge">38</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">50</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Dodge">48</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">55</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Dodge">58</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">60</BaseStatBonus>
+					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
+					<BaseStatBonus Stat="MultiHitsCountModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="WhiteMonkPants">
+		<Category>LightBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Dodge">4</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">3</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">10</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Dodge">5</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">4</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">13</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Dodge">6</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">6</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">16</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Dodge">7</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">7</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">19</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">1</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Dodge">8</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">9</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">22</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Dodge">9</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">25</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Dodge">15</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">28</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Dodge">21</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">31</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Dodge">27</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">34</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Dodge">33</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">37</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Dodge">39</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Resistance">10</BaseStatBonus>
+					<BaseStatBonus Stat="Reliability">40</BaseStatBonus>
+					<BaseStatBonus Stat="PropagationBouncesModifier">2</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="HoodPants">
+		<Category>LightBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="ArmorTotal">13</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">3</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">3</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="ArmorTotal">18</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">4</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">4</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="ArmorTotal">23</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">5</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">5</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="ArmorTotal">28</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">6</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">6</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="ArmorTotal">33</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">7</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">7</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="ArmorTotal">38</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="ArmorTotal">39</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">9</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="ArmorTotal">40</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="ArmorTotal">41</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">11</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">11</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="ArmorTotal">42</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">12</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">12</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="ArmorTotal">43</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">13</BaseStatBonus>
+					<BaseStatBonus Stat="RangedDamage">13</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="HunterPants">
+		<Category>MediumBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="ArmorTotal">20</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">16</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">10</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">3</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="ArmorTotal">29</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">21</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">14</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">4</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="ArmorTotal">38</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">27</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">17</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="ArmorTotal">47</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">32</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">21</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="ArmorTotal">56</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">38</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">24</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="ArmorTotal">65</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">43</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">28</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="ArmorTotal">75</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">48</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">33</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="ArmorTotal">85</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">53</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">38</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="ArmorTotal">95</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">58</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">43</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="ArmorTotal">105</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">63</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">48</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="ArmorTotal">115</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="HealthTotal">68</BaseStatBonus>
+					<BaseStatBonus Stat="CriticalPower">53</BaseStatBonus>
+					<BaseStatBonus Stat="Accuracy">8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+	<ItemDefinition Id="FrostPants">
+		<Category>HeavyBoots</Category>
+		<LevelVariations>
+			<Level Id="0">
+				<MainStatBonus Stat="Block">3</MainStatBonus>
+				<BasePrice>16</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">25</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">3</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">3</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">3</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-5</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="1">
+				<MainStatBonus Stat="Block">3</MainStatBonus>
+				<BasePrice>19</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">35</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">4</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">4</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">4</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-6</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="2">
+				<MainStatBonus Stat="Block">4</MainStatBonus>
+				<BasePrice>25</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">45</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">6</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">5</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">5</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-7</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="3">
+				<MainStatBonus Stat="Block">4</MainStatBonus>
+				<BasePrice>34</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">55</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">7</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">6</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">6</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-8</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="4">
+				<MainStatBonus Stat="Block">5</MainStatBonus>
+				<BasePrice>46</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">65</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">9</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">7</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">7</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-9</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="5">
+				<MainStatBonus Stat="Block">5</MainStatBonus>
+				<BasePrice>61</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">75</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">10</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="6">
+				<MainStatBonus Stat="Block">13</MainStatBonus>
+				<BasePrice>79</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">75</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">7</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">9</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">9</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="7">
+				<MainStatBonus Stat="Block">21</MainStatBonus>
+				<BasePrice>100</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">75</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">8</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="8">
+				<MainStatBonus Stat="Block">29</MainStatBonus>
+				<BasePrice>124</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">75</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">9</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">11</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">11</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="9">
+				<MainStatBonus Stat="Block">37</MainStatBonus>
+				<BasePrice>151</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">75</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">10</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">12</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">12</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+			<Level Id="10">
+				<MainStatBonus Stat="Block">45</MainStatBonus>
+				<BasePrice>181</BasePrice>
+				<BaseStatBonuses>
+					<BaseStatBonus Stat="ArmorTotal">75</BaseStatBonus>
+					<BaseStatBonus Stat="ManaTotal">11</BaseStatBonus>
+					<BaseStatBonus Stat="PhysicalDamage">13</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">13</BaseStatBonus>
+					<BaseStatBonus Stat="Dodge">-10</BaseStatBonus>
+				</BaseStatBonuses>
+			</Level>
+		</LevelVariations>
+	</ItemDefinition>
+</ItemDefinitions>
+

@@ -670,10 +670,10 @@
    <AffixDefinition Id="PropagationBouncesBonus" Droppable = "true" MaxOccurrences="2">
       <ItemLevel Min="0" Max="10"/>
       <ItemCategories>
-         <ItemCategory Weight="0">BodyArmor</ItemCategory>
+         <ItemCategory Weight="5">BodyArmor</ItemCategory>
          <ItemCategory Weight="3">Shield</ItemCategory>
-         <ItemCategory Weight="0">Boots</ItemCategory>
-         <ItemCategory Weight="0">Helm</ItemCategory>
+         <ItemCategory Weight="5">Boots</ItemCategory>
+         <ItemCategory Weight="5">Helm</ItemCategory>
          <ItemCategory Weight="5">MeleeWeapon</ItemCategory>
          <ItemCategory Weight="5">RangeWeapon</ItemCategory>
          <ItemCategory Weight="5">MagicWeapon</ItemCategory>
@@ -738,6 +738,9 @@
        <ItemCategory Weight="5">Trinket</ItemCategory>
     </ItemCategories>
     <Levels>
+      <Level Id="2">
+         <Modifier Stat="MultiHitsCountModifier">1</Modifier>
+      </Level>
       <Level Id="3">
         <Modifier Stat="MultiHitsCountModifier">1</Modifier>
       </Level>

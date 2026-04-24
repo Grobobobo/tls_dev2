@@ -1,0 +1,332 @@
+<ItemsListDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation = "../ItemsListDefinitions.xsd">
+
+<!-- ******************************************************************* -->
+<!-- Generated from "macro_items2.xlsm" => "Generation Hero" tab. Count = 182 entries, split into 49 lists. -->
+<!-- ******************************************************************* -->
+
+	<ItemsListDefinition Id="ItemList_HeroGenMeleeWeapons">
+		<Item Id="ItemList_HeroGenSwordBase" Odd="1"/>
+		<Item Id="ItemList_HeroGenHammerBase" Odd="1"/>
+		<Item Id="ItemList_HeroGenAxeBase" Odd="1"/>
+		<Item Id="ItemList_HeroGenDaggerBase" Odd="1"/>
+		<Item Id="ItemList_HeroGen2HSwordBase" Odd="1"/>
+		<Item Id="ItemList_HeroGen2HHammerBase" Odd="1"/>
+		<Item Id="ItemList_HeroGen2HAxeBase" Odd="1"/>
+		<Item Id="ItemList_HeroGenSpearBase" Odd="1"/>
+		<Item Id="ItemList_HeroGenWarShieldBase" Odd="1"/>
+		<Item Id="ItemList_HeroGenClawsBase" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenSwordBase">
+		<Item Id="Sword0" Odd="3"/>
+		<Item Id="Sword1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenHammerBase">
+		<Item Id="Hammer0" Odd="3"/>
+		<Item Id="Hammer1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenAxeBase">
+		<Item Id="Axe0" Odd="3"/>
+		<Item Id="Axe1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenDaggerBase">
+		<Item Id="Dagger0" Odd="3"/>
+		<Item Id="Dagger1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGen2HSwordBase">
+		<Item Id="2HSword0" Odd="3"/>
+		<Item Id="2HSword1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGen2HHammerBase">
+		<Item Id="2HHammer0" Odd="3"/>
+		<Item Id="2HHammer1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGen2HAxeBase">
+		<Item Id="2HAxe0" Odd="3"/>
+		<Item Id="2HAxe1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenSpearBase">
+		<Item Id="Spear0" Odd="3"/>
+		<Item Id="Spear1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenWarShieldBase"  DLCId="Dwarves">
+		<Item Id="WarShield0" Odd="3"/>
+		<Item Id="WarShield1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenClawsBase"  DLCId="Elves">
+		<Item Id="Claws0" Odd="3"/>
+		<Item Id="Claws1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenMeleeWeaponsVariations">
+		<Item Id="ItemList_SwordVariations" Odd="1"/>
+		<Item Id="ItemList_HammerVariations" Odd="1"/>
+		<Item Id="ItemList_AxeVariations" Odd="1"/>
+		<Item Id="ItemList_DaggerVariations" Odd="1"/>
+		<Item Id="ItemList_2HSwordVariations" Odd="1"/>
+		<Item Id="ItemList_2HHammerVariations" Odd="1"/>
+		<Item Id="ItemList_2HAxeVariations" Odd="1"/>
+		<Item Id="ItemList_SpearVariations" Odd="1"/>
+		<Item Id="ItemList_WarShieldVariations" Odd="1"/>
+		<Item Id="ItemList_ClawsVariations" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenMagicWeapons">
+		<Item Id="ItemList_HeroGenMagicWandBase" Odd="1"/>
+		<Item Id="ItemList_HeroGenMagicScepterBase" Odd="1"/>
+		<Item Id="ItemList_HeroGenMagicOrbBase" Odd="1"/>
+		<Item Id="ItemList_HeroGenMagicStaffBase" Odd="1"/>
+		<Item Id="ItemList_HeroGenTomeOfMagicBase" Odd="1"/>
+		<Item Id="ItemList_HeroGenDruidicStaffBase" Odd="1"/>
+		<Item Id="ItemList_HeroGenGauntletBase" Odd="1"/>
+		<Item Id="ItemList_HeroGenManaFlowerBase" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenMagicWandBase">
+		<Item Id="MagicWand0" Odd="3"/>
+		<Item Id="MagicWand1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenMagicScepterBase">
+		<Item Id="MagicScepter0" Odd="3"/>
+		<Item Id="MagicScepter1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenMagicOrbBase">
+		<Item Id="MagicOrb0" Odd="3"/>
+		<Item Id="MagicOrb1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenMagicStaffBase">
+		<Item Id="MagicStaff0" Odd="3"/>
+		<Item Id="MagicStaff1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenTomeOfMagicBase">
+		<Item Id="TomeOfMagic0" Odd="3"/>
+		<Item Id="TomeOfMagic1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenDruidicStaffBase">
+		<Item Id="DruidicStaff0" Odd="3"/>
+		<Item Id="DruidicStaff1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenGauntletBase"  DLCId="Dwarves">
+		<Item Id="Gauntlet0" Odd="3"/>
+		<Item Id="Gauntlet1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenManaFlowerBase"  DLCId="Elves">
+		<Item Id="ManaFlower0" Odd="3"/>
+		<Item Id="ManaFlower1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenMagicWeaponsVariations">
+		<Item Id="ItemList_MagicWandVariations" Odd="1"/>
+		<Item Id="ItemList_MagicScepterVariations" Odd="1"/>
+		<Item Id="ItemList_MagicOrbVariations" Odd="1"/>
+		<Item Id="ItemList_MagicStaffVariations" Odd="1"/>
+		<Item Id="ItemList_TomeOfMagicVariations" Odd="1"/>
+		<Item Id="ItemList_DruidicStaffVariations" Odd="1"/>
+		<Item Id="ItemList_GauntletVariations" Odd="1"/>
+		<Item Id="ItemList_ManaFlowerVariations" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenRangedWeapons">
+		<Item Id="ItemList_HeroGenHandCrossbowBase" Odd="1"/>
+		<Item Id="ItemList_HeroGenPistolBase" Odd="1"/>
+		<Item Id="ItemList_HeroGenShortbowBase" Odd="1"/>
+		<Item Id="ItemList_HeroGenLongbowBase" Odd="1"/>
+		<Item Id="ItemList_HeroGenCrossbowBase" Odd="1"/>
+		<Item Id="ItemList_HeroGenRifleBase" Odd="1"/>
+		<Item Id="ItemList_HeroGenCannonBase" Odd="1"/>
+		<Item Id="ItemList_HeroGenBoomerangBase" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenHandCrossbowBase">
+		<Item Id="HandCrossbow0" Odd="3"/>
+		<Item Id="HandCrossbow1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenPistolBase">
+		<Item Id="Pistol0" Odd="3"/>
+		<Item Id="Pistol1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenShortbowBase">
+		<Item Id="Shortbow0" Odd="3"/>
+		<Item Id="Shortbow1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenLongbowBase">
+		<Item Id="Longbow0" Odd="3"/>
+		<Item Id="Longbow1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenCrossbowBase">
+		<Item Id="Crossbow0" Odd="3"/>
+		<Item Id="Crossbow1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenRifleBase">
+		<Item Id="Rifle0" Odd="3"/>
+		<Item Id="Rifle1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenBoomerangBase"  DLCId="Elves">
+		<Item Id="Boomerang0" Odd="3"/>
+		<Item Id="Boomerang1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenCannonBase"  DLCId="Dwarves">
+		<Item Id="Cannon0" Odd="3"/>
+		<Item Id="Cannon1" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenRangedWeaponsVariations">
+		<Item Id="ItemList_HandCrossbowVariations" Odd="1"/>
+		<Item Id="ItemList_PistolVariations" Odd="1"/>
+		<Item Id="ItemList_ShortbowVariations" Odd="1"/>
+		<Item Id="ItemList_LongbowVariations" Odd="1"/>
+		<Item Id="ItemList_CrossbowVariations" Odd="1"/>
+		<Item Id="ItemList_RifleVariations" Odd="1"/>
+		<Item Id="ItemList_CannonVariations" Odd="1"/>
+		<Item Id="ItemList_BoomerangVariations" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenOffhand">
+		<Item Id="ItemList_HeroGenShield" Odd="7"/>
+		<Item Id="ItemList_HeroGenOffhandWeapon" Odd="3"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenShield">
+		<Item Id="ItemList_Shield" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenOffhandWeapon">
+		<Item Id="ParryingDagger0" Odd="1"/>
+		<Item Id="BattleMageSword0" Odd="1"/>
+		<Item Id="SwiftAxe0" Odd="1"/>
+		<Item Id="MysticHammer0" Odd="1"/>
+		<Item Id="PreciseHandCrossbow0" Odd="1"/>
+		<Item Id="DuelingPistol0" Odd="1"/>
+		<Item Id="BattleMageMagicWand0" Odd="1"/>
+		<Item Id="ReliableMagicScepter0" Odd="1"/>
+		<Item Id="TransferMagicOrb0" Odd="1"/>
+		<Item Id="GauntletOffhand0" Odd="1"/>
+		<Item Id="BoomerangOffhand0" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenClothBodyArmor">
+		<Item Id="ItemList_ClothArmorBase" Odd="7"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenLightBodyArmor">
+		<Item Id="ItemList_LightArmorBase" Odd="7"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenMediumBodyArmor">
+		<Item Id="ItemList_MediumArmorBase" Odd=""/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenHeavyBodyArmor">
+		<Item Id="ItemList_HeavyArmorBase" Odd="7"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenClothPants">
+		<Item Id="ItemList_ClothPantsBase" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenLightPants">
+		<Item Id="ItemList_LightPantsBase" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenMediumPants">
+		<Item Id="ItemList_MediumPantsBase" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenHeavyPants">
+		<Item Id="ItemList_HeavyPantsBase" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenHelmet">
+		<Item Id="Helmet0" Odd="1"/>
+		<Item Id="Helmet1" Odd="1"/>
+		<Item Id="Helmet2" Odd="1"/>
+		<Item Id="Helmet3" Odd="1"/>
+		<Item Id="Helmet4" Odd="1"/>
+		<Item Id="Helmet5" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenTrinket">
+		<Item Id="RunningShoes1" Odd="1"/>
+		<Item Id="RunningShoes2" Odd="1"/>
+		<Item Id="RunningShoes3" Odd="1"/>
+		<Item Id="DodgeBoots0" Odd="1"/>
+		<Item Id="DodgeBoots2" Odd="1"/>
+		<Item Id="DodgeBoots3" Odd="1"/>
+		<Item Id="EvasionCape3" Odd="1"/>
+		<Item Id="DefensiveCharm0" Odd="1"/>
+		<Item Id="DefensiveCharm2" Odd="1"/>
+		<Item Id="DefensiveCharm3" Odd="1"/>
+		<Item Id="MagicAmulet0" Odd="1"/>
+		<Item Id="MagicAmulet2" Odd="1"/>
+		<Item Id="MagicAmulet3" Odd="1"/>
+		<Item Id="TurtleShell0" Odd="1"/>
+		<Item Id="TurtleShell1" Odd="1"/>
+		<Item Id="TurtleShell2" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenUsable">
+		<Item Id="ItemList_HeroGenPotion" Odd="6"/>
+		<Item Id="ItemList_HeroGenScroll" Odd="4"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenPotion">
+		<Item Id="HealthPotion" Odd="2"/>
+		<Item Id="ManaPotion" Odd="1"/>
+		<Item Id="EnergyPotion" Odd="1"/>
+		<Item Id="SpeedPotion" Odd="2"/>
+		<Item Id="InvisibilityPotion" Odd="2"/>
+		<Item Id="StonePotion" Odd="2"/>
+		<Item Id="StrengthPotion" Odd="2"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_HeroGenScroll">
+		<Item Id="AxeBoomerangScroll" Odd="1"/>
+		<Item Id="ThrowingDaggersScroll" Odd="1"/>
+		<Item Id="ChargeScroll" Odd="1"/>
+		<Item Id="SwordBlastScroll" Odd="1"/>
+		<Item Id="SuperSpinScroll" Odd="1"/>
+		<Item Id="GroundSmashScroll" Odd="1"/>
+		<Item Id="TripleSwipeScroll" Odd="1"/>
+		<Item Id="GrapeshotScroll" Odd="1"/>
+		<Item Id="RainOfArrowsScroll" Odd="1"/>
+		<Item Id="ExplosiveBoltScroll" Odd="1"/>
+		<Item Id="AssassinateScroll" Odd="1"/>
+		<Item Id="MagicMissilesScroll" Odd="1"/>
+		<Item Id="HammerOfFaithScroll" Odd="1"/>
+		<Item Id="DeathRayScroll" Odd="1"/>
+		<Item Id="FireThrowerScroll" Odd="1"/>
+		<Item Id="FireballScroll" Odd="1"/>
+		<Item Id="LightningStrikeScroll" Odd="1"/>
+		<Item Id="BeeStingScroll" Odd="1"/>
+	</ItemsListDefinition>
+
+	<ItemsListDefinition Id="ItemList_DwarfGenUsable"  DLCId="Dwarves">
+		<Item Id="ItemList_HeroGenPotion" Odd="2"/>
+		<Item Id="ItemList_HeroGenScroll" Odd="1"/>
+		<Item Id="ItemList_Beer" Odd="3"/>
+	</ItemsListDefinition>
+
+</ItemsListDefinitions>

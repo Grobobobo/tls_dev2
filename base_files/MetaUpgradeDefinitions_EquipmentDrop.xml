@@ -1,0 +1,661 @@
+﻿<MetaUpgradeDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:noNamespaceSchemaLocation="../MetaUpgradeDefinitions.xsd">
+
+   <!--REWARD REROLLS-->
+   <MetaUpgradeDefinition Id="UnlockRerollReward" Price="3100">
+      <Categories>
+         <Category Value="Weapon"/>
+         <Category Value="Equipment"/>
+      </Categories>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ItemsProducedCount" B="20"/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockLakeburgCity" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockRerollReward>1</UnlockRerollReward>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="AdditionalRerollReward1" Price="5700">
+      <Categories>
+         <Category Value="Weapon"/>
+         <Category Value="Equipment"/>
+      </Categories>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ItemsProducedCount" B="30"/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockGlenwaldCity" B="1"/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockRerollReward" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <AdditionalRerollReward>1</AdditionalRerollReward>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   
+   <!--ITEM RARITY UPGRADES-->
+   <MetaUpgradeDefinition Id="UnlockEpicItems">
+      <Categories>
+         <Category Value="Weapon"/>
+         <Category Value="Equipment"/>
+      </Categories>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ItemsBoughtOrProducedCount" B="10"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ItemsBoughtOrProducedCount" B="50"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <ItemRaritiesModifier Id="BuildingProduction">
+            <Probability Weight="6">4</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="ShopProduction">
+            <Probability Weight="5">4</Probability>
+         </ItemRaritiesModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   <MetaUpgradeDefinition Id="UpgradeUncommonRarity1" Price="1100">
+      <Categories>
+         <Category Value="Weapon"/>
+         <Category Value="Equipment"/>
+      </Categories>
+      <IconName>UpgradeUncommonRarity</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockEpicItems" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <ItemRaritiesModifier Id="BuildingProduction">
+            <Probability Weight="6">2</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="ShopProduction">
+            <Probability Weight="4">2</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="PanicRewardBasic">
+            <Probability Weight="4">2</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="HeroGeneration">
+            <Probability Weight="5">2</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="BonePile">
+            <Probability Weight="3">2</Probability>
+         </ItemRaritiesModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeUncommonRarity2" Price="2300">
+      <Categories>
+         <Category Value="Weapon"/>
+         <Category Value="Equipment"/>
+      </Categories>
+      <IconName>UpgradeUncommonRarity</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeUncommonRarity1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <ItemRaritiesModifier Id="BuildingProduction">
+            <Probability Weight="6">2</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="ShopProduction">
+            <Probability Weight="4">2</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="PanicRewardBasic">
+            <Probability Weight="4">2</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="HeroGeneration">
+            <Probability Weight="5">2</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="BonePile">
+            <Probability Weight="3">2</Probability>
+         </ItemRaritiesModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeUncommonRarity3" Price="3400">
+      <Categories>
+         <Category Value="Weapon"/>
+         <Category Value="Equipment"/>
+      </Categories>
+      <IconName>UpgradeUncommonRarity</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeUncommonRarity2" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <ItemRaritiesModifier Id="BuildingProduction">
+            <Probability Weight="6">2</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="ShopProduction">
+            <Probability Weight="4">2</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="PanicRewardBasic">
+            <Probability Weight="4">2</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="HeroGeneration">
+            <Probability Weight="5">2</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="BonePile">
+            <Probability Weight="3">2</Probability>
+         </ItemRaritiesModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeUncommonRarity4" Price="4600">
+      <Categories>
+         <Category Value="Weapon"/>
+         <Category Value="Equipment"/>
+      </Categories>
+      <IconName>UpgradeUncommonRarity</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeUncommonRarity3" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <ItemRaritiesModifier Id="BuildingProduction">
+            <Probability Weight="6">2</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="ShopProduction">
+            <Probability Weight="4">2</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="PanicRewardBasic">
+            <Probability Weight="4">2</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="HeroGeneration">
+            <Probability Weight="5">2</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="BonePile">
+            <Probability Weight="3">2</Probability>
+         </ItemRaritiesModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeUncommonRarity5" Price="5700">
+      <Categories>
+         <Category Value="Weapon"/>
+         <Category Value="Equipment"/>
+      </Categories>
+      <IconName>UpgradeUncommonRarity</IconName>
+      <UnlockConditions>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeUncommonRarity4" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <ItemRaritiesModifier Id="BuildingProduction">
+            <Probability Weight="6">2</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="ShopProduction">
+            <Probability Weight="4">2</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="PanicRewardBasic">
+            <Probability Weight="4">2</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="HeroGeneration">
+            <Probability Weight="5">2</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="BonePile">
+            <Probability Weight="3">2</Probability>
+         </ItemRaritiesModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeRareRarity1" Price="7100">
+      <Categories>
+         <Category Value="Weapon"/>
+         <Category Value="Equipment"/>
+      </Categories>
+      <IconName>UpgradeRareRarity</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeUncommonRarity5" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <ItemRaritiesModifier Id="BuildingProduction">
+            <Probability Weight="4">3</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="ShopProduction">
+            <Probability Weight="2">3</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="PanicRewardBasic">
+            <Probability Weight="3">3</Probability>
+         </ItemRaritiesModifier>
+         <!--<ItemRaritiesModifier Id="PanicRewardHigh">
+            <Probability Weight="5">3</Probability>
+         </ItemRaritiesModifier>-->
+         <ItemRaritiesModifier Id="HeroGeneration">
+            <Probability Weight="5">3</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="BonePile">
+            <Probability Weight="3">3</Probability>
+         </ItemRaritiesModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeRareRarity2" Price="8500">
+      <Categories>
+         <Category Value="Weapon"/>
+         <Category Value="Equipment"/>
+      </Categories>
+      <IconName>UpgradeRareRarity</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeRareRarity1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <ItemRaritiesModifier Id="BuildingProduction">
+            <Probability Weight="4">3</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="ShopProduction">
+            <Probability Weight="2">3</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="PanicRewardBasic">
+            <Probability Weight="3">3</Probability>
+         </ItemRaritiesModifier>
+         <!--<ItemRaritiesModifier Id="PanicRewardHigh">
+            <Probability Weight="5">3</Probability>
+         </ItemRaritiesModifier>-->
+         <ItemRaritiesModifier Id="HeroGeneration">
+            <Probability Weight="5">3</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="BonePile">
+            <Probability Weight="3">3</Probability>
+         </ItemRaritiesModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeRareRarity3" Price="9900">
+      <Categories>
+         <Category Value="Weapon"/>
+         <Category Value="Equipment"/>
+      </Categories>
+      <IconName>UpgradeRareRarity</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeRareRarity2" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <ItemRaritiesModifier Id="BuildingProduction">
+            <Probability Weight="4">3</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="ShopProduction">
+            <Probability Weight="2">3</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="PanicRewardBasic">
+            <Probability Weight="3">3</Probability>
+         </ItemRaritiesModifier>
+         <!--<ItemRaritiesModifier Id="PanicRewardHigh">
+            <Probability Weight="5">3</Probability>
+         </ItemRaritiesModifier>-->
+         <ItemRaritiesModifier Id="HeroGeneration">
+            <Probability Weight="5">3</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="BonePile">
+            <Probability Weight="3">3</Probability>
+         </ItemRaritiesModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeRareRarity4" Price="11400">
+      <Categories>
+         <Category Value="Weapon"/>
+         <Category Value="Equipment"/>
+      </Categories>
+      <IconName>UpgradeRareRarity</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeRareRarity3" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <ItemRaritiesModifier Id="BuildingProduction">
+            <Probability Weight="4">3</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="ShopProduction">
+            <Probability Weight="2">3</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="PanicRewardBasic">
+            <Probability Weight="3">3</Probability>
+         </ItemRaritiesModifier>
+         <!--<ItemRaritiesModifier Id="PanicRewardHigh">
+            <Probability Weight="5">3</Probability>
+         </ItemRaritiesModifier>-->
+         <ItemRaritiesModifier Id="HeroGeneration">
+            <Probability Weight="5">3</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="BonePile">
+            <Probability Weight="3">3</Probability>
+         </ItemRaritiesModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeEpicRarity1" Price="12800">
+      <Categories>
+         <Category Value="Weapon"/>
+         <Category Value="Equipment"/>
+      </Categories>
+      <IconName>UpgradeEpicRarity</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeRareRarity4" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <ItemRaritiesModifier Id="BuildingProduction">
+            <Probability Weight="2">4</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="ShopProduction">
+            <Probability Weight="1">4</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="PanicRewardHigh">
+            <Probability Weight="20">4</Probability>
+         </ItemRaritiesModifier>
+         <!--<ItemRaritiesModifier Id="BonePile">
+            <Probability Weight="2">4</Probability>
+         </ItemRaritiesModifier>-->
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeEpicRarity2" Price="14200">
+      <Categories>
+         <Category Value="Weapon"/>
+         <Category Value="Equipment"/>
+      </Categories>
+      <IconName>UpgradeEpicRarity</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeEpicRarity1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <ItemRaritiesModifier Id="BuildingProduction">
+            <Probability Weight="2">4</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="ShopProduction">
+            <Probability Weight="1">4</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="PanicRewardHigh">
+            <Probability Weight="20">4</Probability>
+         </ItemRaritiesModifier>
+         <!--<ItemRaritiesModifier Id="BonePile">
+            <Probability Weight="2">4</Probability>
+         </ItemRaritiesModifier>-->
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeEpicRarity3" Price="15600">
+      <Categories>
+         <Category Value="Weapon"/>
+         <Category Value="Equipment"/>
+      </Categories>
+      <IconName>UpgradeEpicRarity</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeEpicRarity2" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <ItemRaritiesModifier Id="BuildingProduction">
+            <Probability Weight="2">4</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="ShopProduction">
+            <Probability Weight="1">4</Probability>
+         </ItemRaritiesModifier>
+         <ItemRaritiesModifier Id="PanicRewardHigh">
+            <Probability Weight="20">4</Probability>
+         </ItemRaritiesModifier>
+         <!--<ItemRaritiesModifier Id="BonePile">
+            <Probability Weight="2">4</Probability>
+         </ItemRaritiesModifier>-->
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   
+   <!--ITEM GENERATION AT START-->
+   <MetaUpgradeDefinition Id="UnlockWeaponsVariationsGeneration">
+      <Categories>
+         <Category Value="Weapon"/>
+         <Category Value="Hero"/>
+      </Categories>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockSwordVariations1" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockAxeVariations1" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockDaggerVariations1" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockHammerVariations1" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade Unlock2HSwordVariations1" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade Unlock2HAxeVariations1" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade Unlock2HHammerVariations1" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockSpearVariations1" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockHandCrossbowVariations1" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockCrossbowVariations1" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockPistolVariations1" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockRifleVariations1" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockShortbowVariations1" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockLongbowVariations1" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockMagicWandVariations1" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockMagicOrbVariations1" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockMagicScepterVariations1" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockMagicStaffVariations1" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockTomeOfMagicVariations1" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockDruidicStaffVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ItemsBoughtOrProducedOfCategory Weapon" B="100"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockEquipmentGeneration Id="Melee_Variations"/>
+         <UnlockEquipmentGeneration Id="Range_Variations"/>
+         <UnlockEquipmentGeneration Id="Magic_Variations"/>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockTrinketHeroGeneration">
+      <Categories>
+         <Category Value="Equipment"/>
+         <Category Value="Hero"/>
+      </Categories>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ItemsBoughtOrProducedOfCategory Trinket" B="10"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ItemsBoughtOrProducedOfCategory Trinket" B="30"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockEquipmentGeneration Id="Trinket"/>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockHelmetHeroGeneration">
+      <Categories>
+         <Category Value="Equipment"/>
+         <Category Value="Hero"/>
+      </Categories>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ItemsBoughtOrProducedOfCategory Helm" B="7"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ItemsBoughtOrProducedOfCategory Helm" B="20"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockEquipmentGeneration Id="Helmet"/>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockUsableHeroGeneration">
+      <Categories>
+         <Category Value="Equipment"/>
+         <Category Value="Hero"/>
+      </Categories>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ItemsBoughtOrProducedOfCategory Usable" B="7"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ItemsBoughtOrProducedOfCategory Usable" B="20"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockEquipmentGeneration Id="Usables"/>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   
+</MetaUpgradeDefinitions>
