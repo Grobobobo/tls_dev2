@@ -36,7 +36,7 @@
 
       <StunResistance>15</StunResistance>
 
-      <Accuracy>-30</Accuracy>
+      <Accuracy>-25</Accuracy>
 
       <DamageSkillId>ArcherAttack</DamageSkillId>
 
@@ -346,7 +346,7 @@
 
          <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">20</StatProgression>
 
-         <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">5</StatProgression>
+         <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">8</StatProgression>
 
          <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">3</StatProgression>
 
@@ -404,7 +404,7 @@
 
       <StunResistance>15</StunResistance>
 
-      <Accuracy>0</Accuracy>
+      <Accuracy>-10</Accuracy>
 
       <DamageSkillId>LumberjackAttackSingle</DamageSkillId>
 
@@ -688,7 +688,7 @@
 
          <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">20</StatProgression>
 
-         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="3">5</StatProgression>
+         <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">8</StatProgression>
 
          <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">3</StatProgression>
 
@@ -750,7 +750,7 @@
 
       <StunResistance>15</StunResistance>
 
-      <Accuracy>0</Accuracy>
+      <Accuracy>-15</Accuracy>
 
       <DamageSkillId>GargoyleAttack</DamageSkillId>
 
@@ -1035,6 +1035,8 @@
          <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">37</StatProgression>
 
          <StatProgression Id="MovePointsTotal" Delay="5" IncreaseEveryXDay="3">1</StatProgression>
+
+         <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">8</StatProgression>
 
       </StatsProgressions>
 
@@ -1446,7 +1448,7 @@
 
          <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">20</StatProgression>
 
-         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="5">5</StatProgression>
+         <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">8</StatProgression>
 
          <StatProgression Id="Dodge" Delay="2" IncreaseEveryXDay="3">7</StatProgression>
 
@@ -1506,7 +1508,7 @@
 
       <StunResistance>15</StunResistance>
 
-      <Accuracy>-25</Accuracy>
+      <Accuracy>-20</Accuracy>
 
       <DamageSkillId>PoisonFrogAttack</DamageSkillId>
 
@@ -1848,7 +1850,7 @@
 
          <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">20</StatProgression>
 
-         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="4">5</StatProgression>
+         <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">8</StatProgression>
 
          <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">4</StatProgression>
 

@@ -686,13 +686,13 @@
          XXX
       </AreaOfEffect>
     <ActionPointsCost>2</ActionPointsCost>
-    <ManaCost>6</ManaCost>
+    <ManaCost>7</ManaCost>
     <Range Min="1" Max="2" CardinalDirectionOnly="true" />
     <UsesPerTurnCount>1</UsesPerTurnCount>
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.55</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
           <Inaccurate>
             <Malus>2</Malus>
@@ -2257,12 +2257,12 @@
   <SkillDefinition Id="GeoCannonScroll" TemplateId="GeoCannon">
     <OverrideLocalizationId>GeoCannonScroll</OverrideLocalizationId>
     <ActionPointsCost>0</ActionPointsCost>
-    <ManaCost>6</ManaCost>
+    <ManaCost>7</ManaCost>
     <UsesPerTurnCount>1</UsesPerTurnCount>
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.55</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
           <Inaccurate>
             <Malus>2</Malus>
@@ -2273,10 +2273,10 @@
     </SkillAction>
   </SkillDefinition>
   <SkillDefinition Id="GeoCannonScroll1" TemplateId="GeoCannonScroll">
-    <ManaCost>6</ManaCost>
+    <ManaCost>7</ManaCost>
   </SkillDefinition>
   <SkillDefinition Id="GeoCannonScroll2" TemplateId="GeoCannonScroll">
-    <ManaCost>6</ManaCost>
+    <ManaCost>7</ManaCost>
   </SkillDefinition>
   <SkillDefinition Id="MovingWallScroll" TemplateId="MovingWall">
     <OverrideLocalizationId>MovingWallScroll</OverrideLocalizationId>

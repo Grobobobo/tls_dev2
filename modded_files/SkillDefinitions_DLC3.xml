@@ -445,8 +445,8 @@
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
               <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
               <Stat Id="MovePointsTotal" />
-              <Bonus>2</Bonus>
-              <TurnsCount>3</TurnsCount>
+              <Bonus>1</Bonus>
+              <TurnsCount>4</TurnsCount>
             </Buff>
           </CasterEffect>
           <Maneuver />
@@ -513,11 +513,11 @@
   </SkillDefinition>
   <SkillDefinition Id="PlayerHeadSplash">
     <OverrideArtId>NessieBossHeadSplash</OverrideArtId>
-    <Range Min="1" Max="6" Modifiable="true" />
+    <Range Min="1" Max="4" Modifiable="true" />
     <CanRotate />
     <ActionPointsCost>1</ActionPointsCost>
     <MovePointsCost>1</MovePointsCost>
-    <UsesPerTurnCount>1</UsesPerTurnCount>
+    <UsesPerTurnCount>2</UsesPerTurnCount>
     <AreaOfEffect OriginX="1" OriginY="1">
             XXX
             XMX
@@ -1651,7 +1651,7 @@
           <NoDodge />
           <NoBlock />
           <SurroundingEffect>
-            <Damage Multiplier="0.35" />
+            <Damage Multiplier="0.44"/>
             <Stun>
               <BaseChance>1</BaseChance>
             </Stun>

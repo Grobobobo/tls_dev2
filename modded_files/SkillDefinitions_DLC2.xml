@@ -398,11 +398,11 @@
 
       </AreaOfEffect>
     <ActionPointsCost>1</ActionPointsCost>
-    <ManaCost>2</ManaCost>
+    <ManaCost>1</ManaCost>
     <Range Min="4" Max="10" CardinalDirectionOnly="false" Modifiable="true" />
     <CanRotate />
     <CanFlip />
-    <UsesPerTurnCount>2</UsesPerTurnCount>
+    <UsesPerTurnCount>3</UsesPerTurnCount>
     <AffectedUnits>
       <CanAffectCaster>false</CanAffectCaster>
     </AffectedUnits>
@@ -415,7 +415,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>30</Malus>
+            <Malus>12</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <SurroundingEffect>
@@ -423,7 +423,7 @@
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
               <Stat Id="Accuracy" />
-              <Malus>15</Malus>
+              <Malus>10</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
           </SurroundingEffect>
@@ -478,7 +478,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>30</Malus>
+            <Malus>12</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
@@ -495,7 +495,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>32</Malus>
+            <Malus>13</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <SurroundingEffect>
@@ -503,7 +503,7 @@
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
               <Stat Id="Accuracy" />
-              <Malus>17</Malus>
+              <Malus>11</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
           </SurroundingEffect>
@@ -534,7 +534,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>32</Malus>
+            <Malus>13</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
@@ -551,7 +551,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>34</Malus>
+            <Malus>14</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <SurroundingEffect>
@@ -559,7 +559,7 @@
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
               <Stat Id="Accuracy" />
-              <Malus>19</Malus>
+              <Malus>12</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
           </SurroundingEffect>
@@ -590,7 +590,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>34</Malus>
+            <Malus>14</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
@@ -607,7 +607,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>36</Malus>
+            <Malus>15</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <SurroundingEffect>
@@ -615,7 +615,7 @@
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
               <Stat Id="Accuracy" />
-              <Malus>21</Malus>
+              <Malus>13</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
           </SurroundingEffect>
@@ -646,7 +646,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>36</Malus>
+            <Malus>15</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
@@ -663,7 +663,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>38</Malus>
+            <Malus>16</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <SurroundingEffect>
@@ -671,7 +671,7 @@
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
               <Stat Id="Accuracy" />
-              <Malus>23</Malus>
+              <Malus>14</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
           </SurroundingEffect>
@@ -702,7 +702,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>38</Malus>
+            <Malus>16</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
@@ -719,7 +719,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>40</Malus>
+            <Malus>18</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <SurroundingEffect>
@@ -727,7 +727,7 @@
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
               <Stat Id="Accuracy" />
-              <Malus>25</Malus>
+              <Malus>15</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
           </SurroundingEffect>
@@ -758,7 +758,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>40</Malus>
+            <Malus>18</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
@@ -786,7 +786,7 @@
 
       </AreaOfEffect>
     <ActionPointsCost>2</ActionPointsCost>
-    <ManaCost>5</ManaCost>
+    <ManaCost>8</ManaCost>
     <Range Min="4" Max="10" CardinalDirectionOnly="true" Modifiable="true" />
     <UsesPerTurnCount>1</UsesPerTurnCount>
     <AffectedUnits>
@@ -889,7 +889,7 @@
 
       </AreaOfEffect>
     <ActionPointsCost>2</ActionPointsCost>
-    <ManaCost>5</ManaCost>
+    <ManaCost>8</ManaCost>
     <Range Min="4" Max="10" CardinalDirectionOnly="true" Modifiable="true" />
     <UsesPerTurnCount>2</UsesPerTurnCount>
     <AffectedUnits>
@@ -1255,7 +1255,7 @@
   <SkillDefinition Id="PainfulSpinScroll" TemplateId="PainfulSpin">
     <OverrideLocalizationId>PainfulSpinScroll</OverrideLocalizationId>
     <ActionPointsCost>0</ActionPointsCost>
-    <ManaCost>5</ManaCost>
+    <ManaCost>8</ManaCost>
     <UsesPerTurnCount>1</UsesPerTurnCount>
     <AffectedUnits>
       <CanAffectCaster>false</CanAffectCaster>
@@ -1278,13 +1278,13 @@
     </SkillAction>
   </SkillDefinition>
   <SkillDefinition Id="PainfulSpinScroll1" TemplateId="PainfulSpinScroll">
-    <ManaCost>5</ManaCost>
+    <ManaCost>8</ManaCost>
     <AffectedUnits>
       <CanAffectCaster>false</CanAffectCaster>
     </AffectedUnits>
   </SkillDefinition>
   <SkillDefinition Id="PainfulSpinScroll2" TemplateId="PainfulSpinScroll">
-    <ManaCost>5</ManaCost>
+    <ManaCost>8</ManaCost>
     <AffectedUnits>
       <CanAffectCaster>false</CanAffectCaster>
     </AffectedUnits>

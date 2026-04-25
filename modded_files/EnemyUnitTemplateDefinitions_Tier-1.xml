@@ -183,7 +183,7 @@
 			<StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">9</StatProgression>
 			<StatProgression Id="Resistance" Delay="3" IncreaseEveryXDay="5">10</StatProgression>
 			<StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">56</StatProgression>
-         <StatProgression Id="Accuracy" Delay="0" IncreaseEveryXDay="2">5</StatProgression>
+         <StatProgression Id="Accuracy" Delay="0" IncreaseEveryXDay="2">8</StatProgression>
       </StatsProgressions>
 
       <Injuries>
@@ -582,7 +582,7 @@
 
          <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">20</StatProgression>
 
-         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="3">5</StatProgression>
+         <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">8</StatProgression>
 
          <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">3</StatProgression>
 
@@ -773,7 +773,7 @@
 
       <StatsProgressions>
          <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">15</StatProgression>
-         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="5">6</StatProgression>
+         <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">9</StatProgression>
       </StatsProgressions>
       <SpawnCutscene Id="UnnamedSpawn"/>
    </EnemyUnitTemplateDefinition>
@@ -880,7 +880,7 @@
 
       <StatsProgressions>
          <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">15</StatProgression>
-         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="5">6</StatProgression>
+         <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">9</StatProgression>
       </StatsProgressions>
 
 	  <SpawnCutscene Id="UnnamedSpawn"/>
@@ -983,7 +983,7 @@
 
       <StatsProgressions>
          <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">15</StatProgression>
-         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="5">4</StatProgression>
+         <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">6</StatProgression>
       </StatsProgressions>
 	  
 	  <SpawnCutscene Id="UnnamedSpawn"/>
@@ -1100,7 +1100,7 @@
 
       <StatsProgressions>
          <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">17</StatProgression>
-         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="5">3</StatProgression>
+         <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">4</StatProgression>
       </StatsProgressions>
 	  
 	  <SpawnCutscene Id="UnnamedSpawn"/>
@@ -1213,7 +1213,7 @@
 
       <StatsProgressions>
          <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">17</StatProgression>
-         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="5">4</StatProgression>
+         <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">6</StatProgression>
       </StatsProgressions>
 
 	  <SpawnCutscene Id="UnnamedSpawn"/>
@@ -1312,7 +1312,7 @@
 
       <StatsProgressions>
          <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">17</StatProgression>
-         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="5">4</StatProgression>
+         <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">6</StatProgression>
       </StatsProgressions>
 	  
 	  <SpawnCutscene Id="UnnamedSpawn"/>
@@ -2038,7 +2038,7 @@
 			<StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">9</StatProgression>
 			<StatProgression Id="Resistance" Delay="3" IncreaseEveryXDay="5">10</StatProgression>
 			<StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">56</StatProgression>
-         <StatProgression Id="Accuracy" Delay="0" IncreaseEveryXDay="2">5</StatProgression>
+         <StatProgression Id="Accuracy" Delay="0" IncreaseEveryXDay="2">8</StatProgression>
       </StatsProgressions>
 
       <SpawnCutscene Id="CocoonSpawn2"/>
