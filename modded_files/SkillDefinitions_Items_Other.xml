@@ -1551,17 +1551,6 @@
             </SkillEffects>
          </Attack>
       </SkillAction>
-
-      <CastFXs TotalDuration="0.2">
-         <SoundEffect>
-            <Path>00_Others/Punch/SFX_Skill_Punch</Path>
-            <Delay>0</Delay>
-         </SoundEffect>
-         <CamShake>
-            <Id>Soft Hit-CamShake</Id>
-            <Delay>0.2</Delay>
-         </CamShake>
-      </CastFXs>
    </SkillDefinition>
 
 
@@ -1651,12 +1640,11 @@
          <PlayableUnits/>
       </ValidTargets>
       <ActionPointsCost>1</ActionPointsCost>
-      <UsesPerTurnCount>4</UsesPerTurnCount>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
       <Range Min="0" Max="8" Modifiable="true"/>
       <SkillAction>
          <Generic>
             <SkillEffects>
-               <CasterEffect>
                   <RegenStat>
                      <Stat Id="MovePoints"/>
                      <Bonus>4</Bonus>
@@ -1669,7 +1657,6 @@
                      <Bonus>5</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>
-               </CasterEffect>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -1707,12 +1694,11 @@
       </ValidTargets>
       <ActionPointsCost>1</ActionPointsCost>
       <ManaCost>1</ManaCost>
-      <UsesPerTurnCount>3</UsesPerTurnCount>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
       <Range Min="0" Max="8" Modifiable="true"/>
       <SkillAction>
          <Generic>
             <SkillEffects>
-               <CasterEffect>
                   <RegenStat>
                      <Stat Id="MovePoints"/>
                      <Bonus>6</Bonus>
@@ -1725,7 +1711,6 @@
                      <Bonus>10</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>
-               </CasterEffect>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -2002,12 +1987,10 @@
       <SkillAction>
          <Generic>
             <SkillEffects>
-               <CasterEffect>
                   <RegenStat>
                      <Stat Id="Mana"/>
                      <Bonus>6</Bonus>
                   </RegenStat>
-               </CasterEffect>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -2183,12 +2166,10 @@
       <SkillAction>
          <Generic>
             <SkillEffects>
-               <CasterEffect>
                   <RegenStat>
                      <Stat Id="Mana"/>
                      <Bonus>9</Bonus>
                   </RegenStat>
-               </CasterEffect>
             </SkillEffects>
          </Generic>
       </SkillAction>
