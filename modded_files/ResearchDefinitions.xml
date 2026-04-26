@@ -1259,7 +1259,7 @@
    
     <ResearchDefinition Id="RepelLumberjacksResearch">
         <TokenVariables>
-            <TokenVariable Key="DamageValue" Value="5"/>
+            <TokenVariable Key="DamageValue" Value="10"/>
             <TokenVariable Key="MeleeArmorShreddingBonusMultiplierValue" Value="2"/>
         </TokenVariables>
         <LocArguments>
@@ -1279,7 +1279,7 @@
    
     <ResearchDefinition Id="RepelArchersResearch">
         <TokenVariables>
-            <TokenVariable Key="DamageValue" Value="5"/>
+            <TokenVariable Key="DamageValue" Value="10"/>
             <TokenVariable Key="PlayableUnitTargetsDodgeModifierValue" Value="-50"/>
         </TokenVariables>
         <LocArguments>

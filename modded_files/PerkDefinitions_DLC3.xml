@@ -121,25 +121,28 @@
          <TokenVariable Key="BonusMultiplier" Value="Floor(Owner.Block / BlockThreshold)"/>
          <TokenVariable Key="NextThreshold" Value="(NumberOfStepsReached + 1) * BlockThreshold"/>
          <TokenVariable Key="NumberOfStepsReached" Value="Floor(Owner.Block / BlockThreshold)"/>
-         <TokenVariable Key="PhysDamageBonus" Value="5"/>
+         <TokenVariable Key="DamageBonus" Value="4"/>
          <TokenVariable Key="BlockThreshold" Value="7"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="BlockThreshold" Style="GoodNb"/>
          <StatArgument Stat="Block"/>
-         <StatArgument Stat="PhysicalDamage" Value="PhysDamageBonus"/>
-         <StatArgument Stat="PhysicalDamage" Value="PhysDamageBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="PhysicalDamage" Value="DamageBonus"/>
+         <StatArgument Stat="MagicalDamage" Value="DamageBonus"/>
+         <StatArgument Stat="PhysicalDamage" Value="DamageBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="MagicalDamage" Value="DamageBonus * BonusMultiplier" Interpreted="true"/>
          <StatArgument Stat="Block" Value="NextThreshold" Interpreted="true" DisplaySign="false"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
-            <Bonus Value="PhysDamageBonus * BonusMultiplier"/>
+            <Bonus Value="DamageBonus * BonusMultiplier"/>
          </DisplayInHUD>
       </View>
       <Modules>
          <BufferModule>
             <Effects>
-               <StatModifier Stat="PhysicalDamage" Value="PhysDamageBonus * BonusMultiplier"/>
+               <StatModifier Stat="PhysicalDamage" Value="DamageBonus * BonusMultiplier"/>
+               <StatModifier Stat="MagicalDamage" Value="DamageBonus * BonusMultiplier"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -150,24 +153,28 @@
          <TokenVariable Key="BonusMultiplier" Value="Floor(Owner.Dodge / DodgeThreshold)"/>
          <TokenVariable Key="NextThreshold" Value="(NumberOfStepsReached + 1) * DodgeThreshold"/>
          <TokenVariable Key="NumberOfStepsReached" Value="Floor(Owner.Dodge / DodgeThreshold)"/>
-         <TokenVariable Key="RangedDamageBonus" Value="5"/>
+         <TokenVariable Key="DamageBonus" Value="4"/>
          <TokenVariable Key="DodgeThreshold" Value="9"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="DodgeThreshold" Style="GoodNb"/>
          <StatArgument Stat="Dodge"/>
-         <StatArgument Stat="RangedDamage" Value="RangedDamageBonus"/>
-         <StatArgument Stat="RangedDamage" Value="RangedDamageBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="PhysicalDamage" Value="DamageBonus"/>
+         <StatArgument Stat="RangedDamage" Value="DamageBonus"/>
+         <StatArgument Stat="PhysicalDamage" Value="DamageBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="RangedDamage" Value="DamageBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="Dodge" Value="NextThreshold" Interpreted="true" DisplaySign="false"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
-            <Bonus Value="RangedDamageBonus * BonusMultiplier"/>
+            <Bonus Value="DamageBonus * BonusMultiplier"/>
          </DisplayInHUD>
       </View>
       <Modules>
          <BufferModule>
             <Effects>
-               <StatModifier Stat="RangedDamage" Value="RangedDamageBonus * BonusMultiplier"/>
+               <StatModifier Stat="PhysicalDamage" Value="DamageBonus * BonusMultiplier"/>
+               <StatModifier Stat="RangedDamage" Value="DamageBonus * BonusMultiplier"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -178,25 +185,28 @@
          <TokenVariable Key="BonusMultiplier" Value="Floor(Owner.ManaRegen / ManaRegenThreshold)"/>
          <TokenVariable Key="NextThreshold" Value="(NumberOfStepsReached + 1) * ManaRegenThreshold"/>
          <TokenVariable Key="NumberOfStepsReached" Value="Floor(Owner.ManaRegen / ManaRegenThreshold)"/>
-         <TokenVariable Key="MagicDamageBonus" Value="5"/>
+         <TokenVariable Key="DamageBonus" Value="4"/>
          <TokenVariable Key="ManaRegenThreshold" Value="4"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="ManaRegenThreshold" Style="GoodNb"/>
          <StatArgument Stat="ManaRegen"/>
-         <StatArgument Stat="MagicalDamage" Value="MagicDamageBonus"/>
-         <StatArgument Stat="MagicalDamage" Value="MagicDamageBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="RangedDamage" Value="DamageBonus"/>
+         <StatArgument Stat="MagicalDamage" Value="DamageBonus"/>
+         <StatArgument Stat="RangedDamage" Value="DamageBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="MagicalDamage" Value="DamageBonus * BonusMultiplier" Interpreted="true"/>
          <StatArgument Stat="ManaRegen" Value="NextThreshold" Interpreted="true" DisplaySign="false"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
-            <Bonus Value="MagicDamageBonus * BonusMultiplier"/>
+            <Bonus Value="DamageBonus * BonusMultiplier"/>
          </DisplayInHUD>
       </View>
       <Modules>
          <BufferModule>
             <Effects>
-               <StatModifier Stat="MagicalDamage" Value="MagicDamageBonus * BonusMultiplier"/>
+               <StatModifier Stat="RangedDamage" Value="DamageBonus * BonusMultiplier"/>
+               <StatModifier Stat="MagicalDamage" Value="DamageBonus * BonusMultiplier"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -3582,9 +3592,15 @@
       </TokenVariables>
       <LocArguments>
          <LocalizedArgument Prefix="SkillName_" Value="SharpenClaws" Style="Skill"/>
+         <LocalizedArgument Value="ItemFamily_ItemList_Claws" Style="KeyWordNb"/>
          <LocalizedArgument Value="SkillEffectName_MultiHit" Style="MultiHit"/>
          <LocArgument Value="3" Style="DamageNb" Prefix=" x"/>
          <LocalizedArgument Prefix="SkillName_" Value="PiercingClaws" Style="Skill"/>
+         <LocArgument Value="DebuffDamage" Suffix="%" Style="BadNb"/>
+         <LocalizedArgument Prefix="SkillName_" Value="TearingGrasp" Style="Skill"/>
+         <StatArgument Stat="SkillRangeModifier" Value="AddedRange" DisplaySign="true"/>
+         <StatArgument Stat="SkillRangeModifier"/>
+         <LocalizedArgument Prefix="SkillName_" Value="ShadowSteps" Style="Skill"/>
       </LocArguments>
       <View>
          <CompendiumEntries>

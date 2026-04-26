@@ -1387,7 +1387,8 @@
 				<BaseDamage Min="100" Max="200"/>
 				<BasePrice>18</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">4</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">4</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>MeteorShower</Skill>
@@ -1397,7 +1398,8 @@
 				<BaseDamage Min="110" Max="220"/>
 				<BasePrice>25</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">5</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">5</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>MeteorShower</Skill>
@@ -1407,7 +1409,8 @@
 				<BaseDamage Min="121" Max="242"/>
 				<BasePrice>36</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">6</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">6</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>MeteorShower</Skill>
@@ -1417,7 +1420,8 @@
 				<BaseDamage Min="133" Max="266"/>
 				<BasePrice>52</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">8</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">8</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>MeteorShower</Skill>
@@ -1428,6 +1432,7 @@
 				<BasePrice>74</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">10</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>MeteorShower</Skill>
@@ -1437,7 +1442,8 @@
 				<BaseDamage Min="161" Max="322"/>
 				<BasePrice>104</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="MagicalDamage">10</BaseStatBonus>
+					<BaseStatBonus Stat="MagicalDamage">12</BaseStatBonus>
+					<BaseStatBonus Stat="ManaRegen">12</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>MeteorShower</Skill>

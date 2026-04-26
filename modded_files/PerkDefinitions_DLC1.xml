@@ -1451,24 +1451,21 @@
 
    <PerkDefinition Id="LikeAShark">
       <TokenVariables>
-         <TokenVariable Key="IsTargetInjured" Value="TargetUnit.InjuryStage > 0"/>
          <TokenVariable Key="ReliabilityBonus" Value="100"/>
-         <TokenVariable Key="PerkDamageBonus" Value="35"/>
       </TokenVariables>
       <LocArguments>
-         <LocArgument Value="PerkDamageBonus" Prefix="+" Suffix="%" Style="GoodNb"/>
          <StatArgument Stat="Reliability" Value="ReliabilityBonus"/>
+         <AttackTypeArgument InterpretedAttackType="Owner.LastSkillType"/>
+         <LocalizedArgument Value="SkillEffectName_NoBlock" Style="NoBlock"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
             <Highlight>
-               <IsTrue Value="HasPerkData"/>
-               <IsTrue Value="IsTargetEnemyUnit"/>
-               <IsTrue Value="IsTargetInjured"/>
+               <IsTrue Value="Skill.DamageTypeDiffersFromOwnerLastSkill"/>
             </Highlight>
          </DisplayInHUD>
          <CompendiumEntries>
-            <CompendiumEntry Id="GameConcept_Wounds"/>
+            <CompendiumEntry Id="SkillEffect_NoBlock"/>
          </CompendiumEntries>
       </View>
       <Modules>
@@ -1476,18 +1473,20 @@
             <Effects>
                <SkillModifier ComputationStat="Reliability" Value="ReliabilityBonus">
                   <Conditions>
-                     <IsTrue Value="HasPerkData"/>
-                     <IsTrue Value="IsTargetEnemyUnit"/>
-                     <IsTrue Value="IsTargetInjured"/>
+                     <IsTrue Value="Skill.DamageTypeDiffersFromOwnerLastSkill"/>
                   </Conditions>
                </SkillModifier>
-               <SkillModifier ComputationStat="OverallDamage" Value="PerkDamageBonus">
+               <AddSkillEffect>
                   <Conditions>
                      <IsTrue Value="HasPerkData"/>
-                     <IsTrue Value="IsTargetEnemyUnit"/>
-                     <IsTrue Value="IsTargetInjured"/>
+                     <IsTrue Value="HasSkill"/>
+                     <IsTrue Value="Skill.DamageTypeDiffersFromOwnerLastSkill"/>
+                     <IsTrue Value="Skill.IsAttack"/>
                   </Conditions>
-               </SkillModifier>
+                  <SkillEffects>
+                     <NoBlock/>
+                  </SkillEffects>
+               </AddSkillEffect>
             </Effects>
          </BufferModule>
       </Modules>

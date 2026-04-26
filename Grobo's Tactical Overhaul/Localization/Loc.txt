@@ -670,40 +670,43 @@ PerkDescription_FearOfDeath,"Whenever an enemy is <style=""KeyWord"">hit</style>
 <style=critical>치명타</style>가 <style=""KeyWord"">적중</style>하면 해당 보너스 <style=""KeyWord"">초기화</style>
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
 PerkEffectInformations_FearOfDeath,{1}. {3},{1} {3},{1} {3},{1} {3},{1} {3},{1} {3},{1} {3},{1} {3},{1} {3},{1} {3},{1} {3}
-PerkDescription_LikeAShark,"When attacking a <style=""Wound"">wounded</style> <style=Keyword>enemy</style>, the attack gets:
-{0} <style=PerkDamage>Perk Damage</style>.
-{1}.
-<style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","En attaquant un <style=Keyword>ennemi</style> <style=Wound>blessé</style>, l'attaque obtient<nbsp>:
-{0} <style=PerkDamage>Perk Damage</style>.
-{1}.
-<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","攻击 <style=""Wound"">已受伤</style> 的 <style=Keyword>敌人</style> 时, 该次攻击获得:
-{0} <style=PerkDamage>Perk Damage</style>.
-{1}.
-<style=""DwarfIcon""></style><style=""DwarfText"">卢恩堡的矮人DLC</style>","攻擊 <style=""Wound"">已受傷</style> 的 <style=Keyword>敵人</style> 時, 該次攻擊獲得:
-{0} <style=PerkDamage>Perk Damage</style>.
-{1}.
-<style=""DwarfIcon""></style><style=""DwarfText"">盧恩堡的矮人DLC</style>","<style=""Wound"">負傷した</style><style=Keyword>エネミー</style>を攻撃する毎に、その攻撃は以下を獲得:
-{0} <style=PerkDamage>Perk Damage</style>。
-{1}。
-<style=""DwarfIcon""></style><style=""DwarfText"">ルーネンベルクのドワーフDLC</style>","При атаке <style=""Wound"">раненого</style> <style=Keyword>врага</style> атака получает:
-{0} <style=PerkDamage>Perk Damage</style>.
-{1}.
-<style=""DwarfIcon""></style><style=""DwarfText"">Дополнительный контент ""Dwarves of Runenberg""</style>","Якщо ви атакуєте <style=""Wound"">пораненого</style> <style=Keyword>ворога</style>, атака отримує:
-{0} <style=PerkDamage>Perk Damage</style>.
-{1}.
-<style=""DwarfIcon""></style><style=""DwarfText"">DLC «Dwarves of Runenberg»</style>","Wenn du einen <style=""Wound"">verwundeten</style> <style=Keyword>Gegner</style> angreifst, erhält der Angriff:
-{0} <style=PerkDamage>Perk Damage</style>.
-{1}.
-<style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Al atacar a un <style=Keyword>enemigo</style> <style=""Wound"">herido</style>, el ataque obtiene:
-{0} <style=PerkDamage>Perk Damage</style>.
-{1}.
-<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","Quando atacar um <style=Keyword>inimigo</style> <style=""Wound"">ferido</style>, o ataque recebe:
-{0} <style=PerkDamage>Perk Damage</style>.
-{1}.
-<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","<style=""Wound"">부상</style>당한 <style=Keyword>적</style> 공격 시, 해당 공격에 부여:
-{0} <style=PerkDamage>Perk Damage</style>
-{1}
+PerkName_LikeAShark,Versatility,Polyvalence,变通,變通,万能性,Универсальность,Універсальність,Vielseitigkeit,Versatilidad,Versatilidade,다재다능
+ItemName_MedalPerkLikeAShark,"<style=""DwarfIconItem""></style>Medal of Versatility","<style=""DwarfIconItem""></style>Médaille de Polyvalence","<style=""DwarfIconItem""></style>变通徽章","<style=""DwarfIconItem""></style>變通徽章","<style=""DwarfIconItem""></style>万能性のメダル","<style=""DwarfIconItem""></style>Медаль за универсальность","<style=""DwarfIconItem""></style>Медаль за універсальність","<style=""DwarfIconItem""></style>Medaille der Vielseitigkeit","<style=""DwarfIconItem""></style>Medalla de Versatilidad","<style=""DwarfIconItem""></style>Medalha de Versatilidade","<style=""DwarfIconItem""></style>다재다능 메달"
+PerkDescription_LikeAShark,"When attacking with a <style=KeyWord>damage type</style> that <style=KeyWord>differs</style> from the previous one, the attack gets:
+{0}.
+{2}.
+<style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Lorsque le Héros attaque avec un <style=KeyWord>type de dégâts</style> qui <style=KeyWord>diffère</style> du précédent, l'attaque obtient<nbsp>:
+{0}.
+{2}.
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","当此次攻击的<style=KeyWord>伤害类型</style>和上一次<style=KeyWord>不同</style>时，可获得：
+{0}。
+{2}。
+<style=""DwarfIcon""></style><style=""DwarfText"">卢恩堡的矮人DLC</style>","當此次攻擊的<style=KeyWord>傷害類型</style>和上一次<style=KeyWord>不同</style>時，可獲得：
+{0}。
+{2}。
+<style=""DwarfIcon""></style><style=""DwarfText"">盧恩堡的矮人DLC</style>","前と<style=KeyWord>異なる</style><style=KeyWord>ダメージタイプ</style>で攻撃する際、攻撃は以下の効果を得る:
+{0}。
+{2}。
+<style=""DwarfIcon""></style><style=""DwarfText"">ルーネンベルクのドワーフDLC</style>","Если герой использует атаку, <style=KeyWord>тип урона</style> которой <style=KeyWord>отличается</style> от типа урона предыдущей атаки, новая атака получает бонус:
+{0}.
+{2}.
+<style=""DwarfIcon""></style><style=""DwarfText"">Дополнительный контент ""Dwarves of Runenberg""</style>","Під час атаки з <style=KeyWord>типом шкоди</style>, <style=KeyWord>відмінним</style> від попереднього, атака отримує:
+{0}.
+{2}.
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC «Dwarves of Runenberg»</style>","Beim Angriff mit einem <style=KeyWord>Schadenstyp</style> der sich vom Vorherigen <style=KeyWord>unterscheidet</style>, erhält der Angriff:
+{0}.
+{2}.
+<style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Al atacar con un <style=KeyWord>tipo de daño</style> <style=KeyWord>distinto</style> al anterior, el ataque obtiene:
+{0}.
+{2}.
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","Quando atacar com um <style=KeyWord>tipo de dano</style> <style=KeyWord>diferente</style> do anterior, o ataque recebe:
+{0}.
+{2}.
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","이전 공격과 <style=KeyWord>다른</style> <style=KeyWord>피해 유형</style>으로 공격할 경우:
+{0}
+{2}
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
+PerkEffectInformations_LikeAShark,Previous damage type: {1},Type de dégâts précédents<nbsp>: {1},上一次的伤害类型：{1},上一次的傷害類型：{1},前回のダメージタイプ: {1},Пред. тип урона: {1},Попередній тип шкоди: {1},Vorheriger Schadenstyp: {1},Tipo de daño anterior: {1},Tipo do dano anterior: {1}.,이전 피해 유형: {1}
 PerkDescription_EarthquakeStrike,"Every {1} enemies <style=KeyWord>hit</style>: Next skill Applies {0} to all <style=KeyWord>adjacent</style> enemies around the primary target.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Tous les {1} ennemis <style=KeyWord>touchés</style><nbsp>: Prochaine compétence applique {0} à tous les ennemis <style=KeyWord>adjacents</style>.
 <style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","每 <style=KeyWord>击中</style> {1} 名敌人: 
