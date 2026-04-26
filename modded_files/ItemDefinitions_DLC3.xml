@@ -33,7 +33,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="120 * (1 + PlayableUnitLevel/13)" Max="150 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="126 * (1 + PlayableUnitLevel/13)" Max="158 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
           <Skill>Bash5</Skill>
@@ -81,7 +81,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="80 * (1 + PlayableUnitLevel/13)" Max="100 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="86 * (1 + PlayableUnitLevel/13)" Max="107 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
           <Skill>Backstab</Skill>
@@ -129,7 +129,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="90 * (1 + PlayableUnitLevel/13)" Max="180 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="94 * (1 + PlayableUnitLevel/13)" Max="188 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
           <Skill>HammerStrike</Skill>
@@ -567,7 +567,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="58 * (1 + PlayableUnitLevel/13)" Max="116 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="63 * (1 + PlayableUnitLevel/13)" Max="126 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
           <Skill>TearingGrasp</Skill>
