@@ -796,7 +796,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>25</MaterialsCost>
+         <MaterialsCost>30</MaterialsCost>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
          </GroundCategories>
@@ -872,7 +872,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>35</MaterialsCost>
+         <MaterialsCost>40</MaterialsCost>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
          </GroundCategories>
@@ -983,7 +983,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>25</MaterialsCost>
+         <MaterialsCost>30</MaterialsCost>
          <BuildLimit>Gates</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -1320,7 +1320,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>60</MaterialsCost>
+         <MaterialsCost>50</MaterialsCost>
          <BuildLimit>Ballistas</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -1883,7 +1883,7 @@
       <Battle>
          <HasDisabledState>true</HasDisabledState>
          <Skills>
-            <Skill NightUsesCount="3">PoisonSeedSkill</Skill>
+            <Skill NightUsesCount="2">PoisonSeedSkill</Skill>
          </Skills>
          <SkillProgressions>
             <SkillProgression Id="Spe_PoisonSeedSkill" GlyphFlagUnlock="SpecializedTraps"/>
@@ -1928,7 +1928,7 @@
       <Battle>
          <HasDisabledState>true</HasDisabledState>
          <Skills>
-            <Skill NightUsesCount="3">IsolationSeedSkill</Skill>
+            <Skill NightUsesCount="2">IsolationSeedSkill</Skill>
          </Skills>
          <SkillProgressions>
             <SkillProgression Id="Spe_IsolationSeedSkill" GlyphFlagUnlock="SpecializedTraps"/>
@@ -1974,7 +1974,7 @@
       <Battle>
 		 <HasDisabledState>true</HasDisabledState>
          <Skills>
-            <Skill NightUsesCount="3">PurgingSeedSkill</Skill>
+            <Skill NightUsesCount="2">PurgingSeedSkill</Skill>
          </Skills>
          <SkillProgressions>
             <SkillProgression Id="Spe_PurgingSeedSkill" GlyphFlagUnlock="SpecializedTraps"/>
@@ -5047,7 +5047,7 @@
    <BuildingLimitGroupDefinition Id="Ballistas" Limit="22"/>
    <BuildingLimitGroupDefinition Id="Barricades" Limit="0" ResearchFlag="BarricadesLimit"/>
    <BuildingLimitGroupDefinition Id="ProdBuildings" Limit="4"/>
-   <BuildingLimitGroupDefinition Id="Seeds" Limit="8"/>
+   <BuildingLimitGroupDefinition Id="Seeds" Limit="12"/>
 
 
    <!-- ███████████████████████████████████████████████████████████████ -->

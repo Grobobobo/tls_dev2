@@ -492,9 +492,10 @@
                      <!--Reset buffer at the end of the night-->
                   </Actions>
                </Event>
-               <Event EffectTime="OnSkillStatusApplied">
+               <Event EffectTime="OnCastSkillBegin">
                   <Conditions>
-                     <IsTrue Value="AppliedBuff"/>
+                     <IsTrue Value="IsTargetPlayableUnit"/>
+                     <IsTrue Value="Skill.IsSingleTarget"/>
                   </Conditions>
                   <Actions>
                      <IncreaseBuffer BufferIndex="Buffer" Value="MaxHealthBonus"/>
@@ -3575,23 +3576,14 @@
    <PerkDefinition Id="BloodDrinkerUnique">
       <TokenVariables>
          <TokenVariable Key="PerkStack" Value="Max(0,Threshold - Module.Buffer)"/>
-         <TokenVariable Key="IsTargetIsolated" Value="TargetUnit.IsIsolated"/>
-         <TokenVariable Key="Threshold" Value="2"/>
-         <TokenVariable Key="DebuffDamage" Value="-35"/>
-         <TokenVariable Key="PerkCanBeClean" Value="Module.Buffer2"/>
-         <TokenVariable Key="TargetWasHit" Value="Module.Buffer3"/>
-         <!--Unique perk bonus-->
-         <TokenVariable Key="AddedRange" Value="1"/>
+         <TokenVariable Key="DebuffDamage" Value="-20"/>
+         <TokenVariable Key="Threshold" Value="1"/>
       </TokenVariables>
       <LocArguments>
-         <LocArgument Value="Threshold" Style="KeyWordNb"/>
+         <LocalizedArgument Prefix="SkillName_" Value="SharpenClaws" Style="Skill"/>
          <LocalizedArgument Value="SkillEffectName_MultiHit" Style="MultiHit"/>
          <LocArgument Value="3" Style="DamageNb" Prefix=" x"/>
-         <LocArgument Value="DebuffDamage" Suffix="%" Style="BadNb"/>
-         <!--Unique perk bonus-->
-         <LocalizedArgument Prefix="SkillName_" Value="TearingGrasp" Style="skill"/>
-         <StatArgument Stat="SkillRangeModifier" Value="AddedRange" DisplaySign="true"/>
-         <StatArgument Stat="SkillRangeModifier"/>
+         <LocalizedArgument Prefix="SkillName_" Value="PiercingClaws" Style="Skill"/>
       </LocArguments>
       <View>
          <CompendiumEntries>
@@ -3624,81 +3616,68 @@
                      <RefreshPerkActivationFeedback RefreshView="true"/>
                   </Actions>
                </Event>
-               <Event EffectTime="OnTargetHit">
+               <Event EffectTime="OnSkillCastEnd">
                   <Conditions>
-                     <IsTrue Value="Skill.IsFromItemWithTag('Claws')"/>
-                     <IsFalse Value="PerkStack = 0"/>
-                     <IsTrue Value="IsTargetUnit"/>
-                     <IsTrue Value="Skill.IsAttack"/>
-                     <IsTrue Value="IsTargetIsolated"/>
+                     <IsTrue Value="Skill.IsSkillID('SharpenClaws')"/>
                   </Conditions>
                   <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
-                     <RefreshPerkActivationFeedback RefreshView="true"/>
+                     <SetBufferTo BufferIndex="Buffer" Value="1"/>
                   </Actions>
                </Event>
-               <Event EffectTime="OnSkillCastBegin">
+               <Event EffectTime="OnSkillCastEnd">
                   <Conditions>
-                     <IsTrue Value="Skill.IsFromItemWithTag('Claws')"/>
+                     <IsTrue Value="Skill.IsSkillID('SharpenClaws1')"/>
                   </Conditions>
                   <Actions>
-                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer" Value="1"/>
                   </Actions>
                </Event>
-               <Event EffectTime="OnSkillCastBegin">
+               <Event EffectTime="OnSkillCastEnd">
                   <Conditions>
-                     <IsTrue Value="PerkStack = 0"/>
-                     <IsTrue Value="Skill.IsAttack"/>
+                     <IsTrue Value="Skill.IsSkillID('SharpenClaws2')"/>
                   </Conditions>
                   <Actions>
-                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
+                     <SetBufferTo BufferIndex="Buffer" Value="1"/>
                   </Actions>
                </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('SharpenClaws3')"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('SharpenClaws4')"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('SharpenClaws5')"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>               
                <!--At least one unit is hit when perk is active-->
-               <Event EffectTime="OnTargetHit">
-                  <Conditions>
-                     <IsTrue Value="PerkStack = 0"/>
-                     <IsTrue Value="IsTargetUnit"/>
-                     <IsTrue Value="Skill.IsAttack"/>
-                     <IsFalse Value="IsTargetIsolated"/>
-                  </Conditions>
-                  <Actions>
-                     <DecreaseBuffer BufferIndex="Buffer2" Value="1"/>
-                     <SetBufferTo BufferIndex="Buffer3" Value="1"/>
-                  </Actions>
-               </Event>
-               <!--Revert cleanse if injured target hit-->
-               <Event EffectTime="OnTargetHit">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsFromItemWithTag('Claws')"/>
-                     <IsTrue Value="PerkStack = 0"/>
-                     <IsTrue Value="IsTargetUnit"/>
-                     <IsTrue Value="Skill.IsAttack"/>
-                     <IsTrue Value="IsTargetIsolated"/>
-                  </Conditions>
-                  <Actions>
-                     <SetBufferTo BufferIndex="Buffer2" Value="99"/>
-                     <SetBufferTo BufferIndex="Buffer3" Value="1"/>
-                  </Actions>
-               </Event>
-               <!-- Data Reset-->
                <Event EffectTime="OnSkillCastEnd">
                   <Conditions>
                      <IsTrue Value="Skill.IsFromItemWithTag('Claws')"/>
                      <IsTrue Value="PerkStack = 0"/>
                      <IsTrue Value="Skill.IsAttack"/>
-                     <IsFalse Value="PerkCanBeClean > 0"/>
-                     <IsTrue Value="TargetWasHit = 1"/>
                   </Conditions>
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer" Value="0"/>
-                     <RefreshPerkActivationFeedback RefreshView="true"/>
                   </Actions>
                </Event>
                <Event EffectTime="OnStartProductionTurn">
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer" Value="0"/>
-                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
                   </Actions>
                </Event>
             </Events>
@@ -3715,9 +3694,8 @@
                </AddSkillEffect>
                <SkillModifier ComputationStat="OverallDamage" Value="DebuffDamage">
                   <Conditions>
-                     <IsTrue Value="Skill.IsFromItemWithTag('Claws')"/>
+                     <IsTrue Value="Skill.IsSkillID('PiercingClaws')"/>
                      <IsTrue Value="PerkStack = 0"/>
-                     <IsTrue Value="Skill.IsAttack"/>
                   </Conditions>
                </SkillModifier>
             </Effects>
@@ -3729,11 +3707,21 @@
                      <IsTrue Value="PerkStack = 0"/>
                   </Conditions>
                </ReplaceItemSkill>
+               <AddSkillEffect>
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('ShadowSteps')"/>
+                     <IsTrue Value="PerkStack = 0"/>
+                  </Conditions>
+                  <SkillEffects>
+                     <Isolated>
+                        <DamageMultiplier>1.25</DamageMultiplier>
+                     </Isolated>
+                  </SkillEffects>
+               </AddSkillEffect>
             </Effects>
          </BufferModule>
       </Modules>
    </PerkDefinition>
-
 
 
    <!--Boomerang-->

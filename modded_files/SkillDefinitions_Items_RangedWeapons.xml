@@ -1360,7 +1360,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.7</DamageMultiplier>
+        <DamageMultiplier>1.75</DamageMultiplier>
         <SkillEffects>
           <Inaccurate>
             <Malus>0.5</Malus>
@@ -1420,7 +1420,7 @@
     <ActionPointsCost>1</ActionPointsCost>
     <ManaCost>2</ManaCost>
     <UsesPerTurnCount>2</UsesPerTurnCount>
-    <Range Min="3" Max="10" CardinalDirectionOnly="true" Modifiable="true" />
+    <Range Min="1" Max="8" CardinalDirectionOnly="true" Modifiable="true" />
     <AreaOfEffect OriginX="0" OriginY="0">
          X
          X
