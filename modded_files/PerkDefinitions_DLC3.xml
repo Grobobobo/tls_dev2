@@ -495,7 +495,8 @@
                <Event EffectTime="OnCastSkillBegin">
                   <Conditions>
                      <IsTrue Value="IsTargetPlayableUnit"/>
-                     <IsTrue Value="Skill.IsSingleTarget"/>
+                     <IsTrue Value="Skill.IsSingleTarget"/>-
+                     <IsTrue Value="Skill.MaxRange > 0"/>
                   </Conditions>
                   <Actions>
                      <IncreaseBuffer BufferIndex="Buffer" Value="MaxHealthBonus"/>
