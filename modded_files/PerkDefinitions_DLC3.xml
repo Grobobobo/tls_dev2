@@ -466,7 +466,7 @@
 
    <PerkDefinition Id="StrongerAllies">
       <TokenVariables>
-         <TokenVariable Key="MaxHealthBonus" Value="15"/>
+         <TokenVariable Key="MaxHealthBonus" Value="25"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="HealthTotal" Value="MaxHealthBonus" DisplaySign="true"/>
