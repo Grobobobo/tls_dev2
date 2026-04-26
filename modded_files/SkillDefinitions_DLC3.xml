@@ -19,6 +19,16 @@
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
           <NoDodge />
+          <NoBlock />
+            <Debuff>
+            <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+            <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+            <CanAffectCaster>false</CanAffectCaster>
+            <BaseChance>1</BaseChance>
+            <Stat Id="OverallDamage" />
+            <Malus>10</Malus>
+            <TurnsCount>2</TurnsCount>
+          </Debuff>
         </SkillEffects>
       </Attack>
     </SkillAction>
@@ -48,6 +58,19 @@
         <BaseDamage Min="450" Max="550" />
         <AttackType>Physical</AttackType>
         <DamageMultiplier>1</DamageMultiplier>
+          <SkillEffects>
+          <NoDodge />
+            <Debuff>
+            <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+            <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+            <CanAffectCaster>false</CanAffectCaster>
+            <BaseChance>1</BaseChance>
+            <Stat Id="OverallDamage" />
+            <Malus>33</Malus>
+            <TurnsCount>2</TurnsCount>
+          </Debuff>
+        </SkillEffects>
+
       </Attack>
     </SkillAction>
     <CastFXs TotalDuration="0.25">
@@ -230,8 +253,8 @@
           <Buff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
-            <Stat Id="ActionPointsTotal" />
-            <Bonus>1</Bonus>
+            <Stat Id="PoisonDamageModifier" />
+            <Bonus>40</Bonus>
             <TurnsCount>-1</TurnsCount>
           </Buff>
         </SkillEffects>
@@ -267,7 +290,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
             <Stat Id="MovePointsTotal" />
-            <Bonus>3</Bonus>
+            <Bonus>4</Bonus>
             <TurnsCount>-1</TurnsCount>
           </Buff>
         </SkillEffects>
@@ -301,6 +324,15 @@
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
           <NoDodge />
+            <Debuff>
+            <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+            <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+            <CanAffectCaster>false</CanAffectCaster>
+            <BaseChance>1</BaseChance>
+            <Stat Id="OverallDamage" />
+            <Malus>5</Malus>
+            <TurnsCount>2</TurnsCount>
+          </Debuff>
         </SkillEffects>
       </Attack>
     </SkillAction>
@@ -336,6 +368,15 @@
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
           <NoDodge />
+          <Debuff>
+            <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+            <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+            <CanAffectCaster>false</CanAffectCaster>
+            <BaseChance>1</BaseChance>
+            <Stat Id="OverallDamage" />
+            <Malus>5</Malus>
+            <TurnsCount>2</TurnsCount>
+          </Debuff>
         </SkillEffects>
       </Attack>
     </SkillAction>
@@ -348,6 +389,15 @@
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
           <NoDodge />
+          <Debuff>
+            <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+            <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+            <CanAffectCaster>false</CanAffectCaster>
+            <BaseChance>1</BaseChance>
+            <Stat Id="OverallDamage" />
+            <Malus>5</Malus>
+            <TurnsCount>2</TurnsCount>
+          </Debuff>
         </SkillEffects>
       </Attack>
     </SkillAction>
@@ -360,6 +410,15 @@
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
           <NoDodge />
+          <Debuff>
+            <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+            <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+            <CanAffectCaster>false</CanAffectCaster>
+            <BaseChance>1</BaseChance>
+            <Stat Id="OverallDamage" />
+            <Malus>5</Malus>
+            <TurnsCount>2</TurnsCount>
+          </Debuff>
         </SkillEffects>
       </Attack>
     </SkillAction>
@@ -386,8 +445,8 @@
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
               <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
               <Stat Id="MovePointsTotal" />
-              <Bonus>2</Bonus>
-              <TurnsCount>3</TurnsCount>
+              <Bonus>1</Bonus>
+              <TurnsCount>4</TurnsCount>
             </Buff>
           </CasterEffect>
           <Maneuver />
@@ -454,11 +513,11 @@
   </SkillDefinition>
   <SkillDefinition Id="PlayerHeadSplash">
     <OverrideArtId>NessieBossHeadSplash</OverrideArtId>
-    <Range Min="1" Max="6" Modifiable="true" />
+    <Range Min="1" Max="4" Modifiable="true" />
     <CanRotate />
     <ActionPointsCost>1</ActionPointsCost>
     <MovePointsCost>1</MovePointsCost>
-    <UsesPerTurnCount>1</UsesPerTurnCount>
+    <UsesPerTurnCount>2</UsesPerTurnCount>
     <AreaOfEffect OriginX="1" OriginY="1">
             XXX
             XMX
@@ -775,7 +834,7 @@
           <CasterEffect>
             <Buff>
               <BaseChance>1</BaseChance>
-              <Bonus>200</Bonus>
+              <Bonus>150</Bonus>
               <Stat Id="OverallDamage" />
               <TurnsCount>1</TurnsCount>
             </Buff>
@@ -1207,7 +1266,7 @@
     </AffectedUnits>
     <SkillAction>
       <Attack>
-        <BaseDamage Min="120" Max="120" />
+        <BaseDamage Min="110 * (1 + Level/13)" Max="110 * (1 + Level/13)" />
         <AttackType>Magical</AttackType>
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
@@ -1247,7 +1306,7 @@
     </AffectedUnits>
     <SkillAction>
       <Attack>
-        <BaseDamage Min="100" Max="100" />
+        <BaseDamage Min="90 * (1 + Level/13)" Max="90 * (1 + Level/13)" />
         <AttackType>Physical</AttackType>
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
@@ -1592,7 +1651,7 @@
           <NoDodge />
           <NoBlock />
           <SurroundingEffect>
-            <Damage Multiplier="0.35" />
+            <Damage Multiplier="0.44"/>
             <Stun>
               <BaseChance>1</BaseChance>
             </Stun>

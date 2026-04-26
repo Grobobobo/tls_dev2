@@ -2927,7 +2927,7 @@
    <!-- T2 -->
    <PerkDefinition Id="AvidLearner">
       <TokenVariables>
-         <TokenVariable Key="ExperienceGainMultiplierBonus" Value="45"/>
+         <TokenVariable Key="ExperienceGainMultiplierBonus" Value="35"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="ExperienceGainMultiplier" Value="ExperienceGainMultiplierBonus"/>
@@ -2953,7 +2953,7 @@
          <TokenVariable Key="BonusDamagePerKill" Value="1"/> <!--gain X damage every...-->
          <TokenVariable Key="BonusDamageKillThreshold" Value="KillThresholdBaseValue + Floor(TotalBonusDamage / IncreaseThresholdEveryXBonusDamage)"/> <!--... every Y kills.-->
          <TokenVariable Key="KillThresholdBaseValue" Value="1"/>
-         <TokenVariable Key="IncreaseThresholdEveryXBonusDamage" Value="75"/> <!--where Y is increased by 1 every Z kills-->
+         <TokenVariable Key="IncreaseThresholdEveryXBonusDamage" Value="60"/> <!--where Y is increased by 1 every Z kills-->
          <TokenVariable Key="PunchKills" Value="Module.Buffer"/>
          <TokenVariable Key="TotalBonusDamage" Value="Module.Buffer2"/>
       </TokenVariables>
@@ -3038,7 +3038,7 @@
    <PerkDefinition Id="Nimble">
       <TokenVariables>
          <TokenVariable Key="MovePointsBonus" Value="4"/>
-         <TokenVariable Key="DodgeBonus" Value="25"/>
+         <TokenVariable Key="DodgeBonus" Value="20"/>
          <TokenVariable Key="CriticalBonus" Value="10"/>
          <TokenVariable Key="IsAtFullHealth" Value="Owner.Health = Owner.HealthTotal"/>
       </TokenVariables>

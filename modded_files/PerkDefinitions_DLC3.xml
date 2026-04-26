@@ -427,7 +427,7 @@
          <TokenVariable Key="RangeMalusPerStep" Value="1"/>
          <TokenVariable Key="AccuracyHealthStep" Value="12"/>
          <TokenVariable Key="RangeHealthStep" Value="40"/>
-         <TokenVariable Key="MinimumHealthThreshold" Value="125"/>
+         <TokenVariable Key="MinimumHealthThreshold" Value="150"/>
          <TokenVariable Key="MinMalusValue" Value="0"/>
       </TokenVariables>
       <LocArguments>
@@ -466,7 +466,7 @@
 
    <PerkDefinition Id="StrongerAllies">
       <TokenVariables>
-         <TokenVariable Key="MaxHealthBonus" Value="25"/>
+         <TokenVariable Key="MaxHealthBonus" Value="15"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="HealthTotal" Value="MaxHealthBonus" DisplaySign="true"/>

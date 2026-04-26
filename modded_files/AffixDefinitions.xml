@@ -190,13 +190,13 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="ManaTotal">7</Modifier>
+            <Modifier Stat="ManaTotal">6</Modifier>
          </Level>
          <Level Id="2">
-            <Modifier Stat="ManaTotal">9</Modifier>
+            <Modifier Stat="ManaTotal">7</Modifier>
          </Level>
          <Level Id="3">
-            <Modifier Stat="ManaTotal">11</Modifier>
+            <Modifier Stat="ManaTotal">9</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
@@ -670,10 +670,10 @@
    <AffixDefinition Id="PropagationBouncesBonus" Droppable = "true" MaxOccurrences="2">
       <ItemLevel Min="0" Max="10"/>
       <ItemCategories>
-         <ItemCategory Weight="0">BodyArmor</ItemCategory>
+         <ItemCategory Weight="5">BodyArmor</ItemCategory>
          <ItemCategory Weight="3">Shield</ItemCategory>
-         <ItemCategory Weight="0">Boots</ItemCategory>
-         <ItemCategory Weight="0">Helm</ItemCategory>
+         <ItemCategory Weight="5">Boots</ItemCategory>
+         <ItemCategory Weight="5">Helm</ItemCategory>
          <ItemCategory Weight="5">MeleeWeapon</ItemCategory>
          <ItemCategory Weight="5">RangeWeapon</ItemCategory>
          <ItemCategory Weight="5">MagicWeapon</ItemCategory>
@@ -738,6 +738,9 @@
        <ItemCategory Weight="5">Trinket</ItemCategory>
     </ItemCategories>
     <Levels>
+      <Level Id="2">
+         <Modifier Stat="MultiHitsCountModifier">1</Modifier>
+      </Level>
       <Level Id="3">
         <Modifier Stat="MultiHitsCountModifier">1</Modifier>
       </Level>
@@ -820,13 +823,13 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="OpportunisticAttacks">7</Modifier>
+            <Modifier Stat="OpportunisticAttacks">6</Modifier>
          </Level>
          <Level Id="2">
-            <Modifier Stat="OpportunisticAttacks">9</Modifier>
+            <Modifier Stat="OpportunisticAttacks">7</Modifier>
          </Level>
          <Level Id="3">
-            <Modifier Stat="OpportunisticAttacks">11</Modifier>
+            <Modifier Stat="OpportunisticAttacks">9</Modifier>
          </Level>
       </Levels>
       <EpicBonus>
@@ -849,13 +852,13 @@
       </ItemCategories>
       <Levels>
          <Level Id="1">
-            <Modifier Stat="IsolatedAttacks">10</Modifier>
+            <Modifier Stat="IsolatedAttacks">8</Modifier>
          </Level>
          <Level Id="2">
-            <Modifier Stat="IsolatedAttacks">12</Modifier>
+            <Modifier Stat="IsolatedAttacks">9</Modifier>
          </Level>
          <Level Id="3">
-            <Modifier Stat="IsolatedAttacks">15</Modifier>
+            <Modifier Stat="IsolatedAttacks">11</Modifier>
          </Level>
       </Levels>
       <EpicBonus>

@@ -459,7 +459,7 @@
   <SkillDefinition Id="ShockingTouch">
     <ActionPointsCost>1</ActionPointsCost>
     <ManaCost>1</ManaCost>
-    <UsesPerTurnCount>2</UsesPerTurnCount>
+    <UsesPerTurnCount>3</UsesPerTurnCount>
     <Range Min="1" Max="1" />
     <AreaOfEffect OriginX="1" OriginY="0">
          XXX
@@ -474,7 +474,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>15</Malus>
+            <Malus>16</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <CasterEffect>
@@ -536,7 +536,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>17</Malus>
+            <Malus>18</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <CasterEffect>
@@ -559,7 +559,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>19</Malus>
+            <Malus>20</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <CasterEffect>
@@ -582,7 +582,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>21</Malus>
+            <Malus>22</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <CasterEffect>
@@ -605,7 +605,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>23</Malus>
+            <Malus>24</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <CasterEffect>
@@ -628,7 +628,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>25</Malus>
+            <Malus>24</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <CasterEffect>
@@ -1181,7 +1181,7 @@
   <SkillDefinition Id="ScorchingWave">
     <ActionPointsCost>2</ActionPointsCost>
     <ManaCost>2</ManaCost>
-    <UsesPerTurnCount>1</UsesPerTurnCount>
+    <UsesPerTurnCount>2</UsesPerTurnCount>
     <Range Min="1" Max="3" CardinalDirectionOnly="false" Modifiable="true" />
     <AreaOfEffect OriginX="1" OriginY="0">
          XXX

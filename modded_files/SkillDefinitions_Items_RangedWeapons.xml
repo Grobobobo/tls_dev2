@@ -507,7 +507,7 @@
   <SkillDefinition Id="TightVolley">
     <ActionPointsCost>2</ActionPointsCost>
     <ManaCost>2</ManaCost>
-    <UsesPerTurnCount>1</UsesPerTurnCount>
+    <UsesPerTurnCount>2</UsesPerTurnCount>
     <Range Min="3" Max="8" CardinalDirectionOnly="false" Modifiable="true" />
     <AreaOfEffect OriginX="1" OriginY="1">
          XXX
@@ -708,7 +708,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
             <Stat Id="Dodge" />
-            <Bonus>40</Bonus>
+            <Bonus>30</Bonus>
             <TurnsCount>1</TurnsCount>
           </Buff>
           <Buff>

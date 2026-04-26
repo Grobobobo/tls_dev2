@@ -1,0 +1,1409 @@
+﻿<MetaUpgradeDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:noNamespaceSchemaLocation="../MetaUpgradeDefinitions.xsd">
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- MELEE WEAPONS -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!--1H SWORD-->
+   <MetaUpgradeDefinition Id="UnlockSword" Price="300">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesHealth1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Sword0</Item>
+            <Item>Sword1</Item>
+            <Item>BattleMageSword0</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockSwordVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+		  <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Sword" B="50"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Sword" B="200"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Sword2</Item>
+            <Item>Sword3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockSwordVariations2">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockSwordVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Sword" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Sword4</Item>
+            <Item>Sword5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>Sword0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+
+   <!--1H AXE-->
+   <MetaUpgradeDefinition Id="UnlockAxe" Price="300">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:MaxNightReachedInCity Felderland" B="4"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsFinishedCount" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Axe0</Item>
+            <Item>Axe1</Item>
+            <Item>SwiftAxe0</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockAxeVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Axe" B="50"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Axe" B="200"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Axe2</Item>
+            <Item>Axe3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockAxeVariations2">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockAxeVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Axe" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Axe4</Item>
+            <Item>Axe5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>Axe0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--DAGGER-->
+   <MetaUpgradeDefinition Id="UnlockDagger" Price="300">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockLakeburgCity" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsFinishedCount" B="2"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Dagger0</Item>
+            <Item>Dagger1</Item>
+            <Item>ParryingDagger0</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockDaggerVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Dagger" B="50"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Dagger" B="200"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Dagger2</Item>
+            <Item>Dagger3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockDaggerVariations2">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockDaggerVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Dagger" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Dagger4</Item>
+            <Item>Dagger5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>Dagger0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--HAMMER-->
+   <MetaUpgradeDefinition Id="UnlockHammerVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Hammer" B="50"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Hammer" B="200"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Hammer2</Item>
+            <Item>Hammer3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockHammerVariations2">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockHammerVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Hammer" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Hammer4</Item>
+            <Item>Hammer5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>Hammer0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--2H SWORD-->
+   <MetaUpgradeDefinition Id="Unlock2HSword" Price="300">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:MaxNightReachedInCity LakeBurg" B="2"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsFinishedCount" B="3"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>2HSword0</Item>
+            <Item>2HSword1</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="Unlock2HSwordVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag 2HSword" B="50"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag 2HSword" B="200"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>2HSword2</Item>
+            <Item>2HSword3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="Unlock2HSwordVariations2">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade Unlock2HSwordVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag 2HSword" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>2HSword4</Item>
+            <Item>2HSword5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>2HSword0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--2H AXE-->
+   <MetaUpgradeDefinition Id="Unlock2HAxe" Price="300">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:MaxNightReachedInCity LakeBurg" B="3"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsFinishedCount" B="4"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>2HAxe0</Item>
+            <Item>2HAxe1</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="Unlock2HAxeVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag 2HAxe" B="50"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag 2HAxe" B="200"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>2HAxe2</Item>
+            <Item>2HAxe3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="Unlock2HAxeVariations2">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade Unlock2HAxeVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag 2HAxe" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>2HAxe4</Item>
+            <Item>2HAxe5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>2HAxe0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--2H HAMMER-->
+   <MetaUpgradeDefinition Id="Unlock2HHammer" Price="300">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:MaxNightReachedInCity LakeBurg" B="5"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsFinishedCount" B="6"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>2HHammer0</Item>
+            <Item>2HHammer1</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="Unlock2HHammerVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag 2HHammer" B="50"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag 2HHammer" B="200"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>2HHammer2</Item>
+            <Item>2HHammer3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="Unlock2HHammerVariations2">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+		  <ConditionsGroup>
+			  <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade Unlock2HHammerVariations1" B="1"/>
+		  </ConditionsGroup>
+	  </UnlockConditions>
+	  <ActivationConditions>
+		  <ConditionsGroup>
+			  <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag 2HHammer" B="1000"/>
+		  </ConditionsGroup>
+	  </ActivationConditions>
+	  <UpgradeEffects>
+		  <UnlockItems>
+			  <Item>2HHammer4</Item>
+			  <Item>2HHammer5</Item>
+		  </UnlockItems>
+		  <LockItems>
+			  <Item>2HHammer0</Item>
+		  </LockItems>
+	  </UpgradeEffects>
+  </MetaUpgradeDefinition>
+
+
+  <!--SPEAR-->
+  <MetaUpgradeDefinition Id="UnlockSpear" Price="300">
+	  <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:MaxNightReachedInCity LakeBurg" B="4"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsFinishedCount" B="5"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Spear0</Item>
+            <Item>Spear1</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockSpearVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Spear" B="50"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Spear" B="200"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Spear2</Item>
+            <Item>Spear3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockSpearVariations2">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockSpearVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Spear" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Spear4</Item>
+            <Item>Spear5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>Spear0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- RANGED WEAPONS -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+   <!--HAND CROSSBOW-->
+   <MetaUpgradeDefinition Id="UnlockHandCrossbow" Price="300">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesHealth1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>HandCrossbow0</Item>
+            <Item>HandCrossbow1</Item>
+            <Item>PreciseHandCrossbow0</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockHandCrossbowVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag HandCrossbow" B="50"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag HandCrossbow" B="200"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>HandCrossbow2</Item>
+            <Item>HandCrossbow3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockHandCrossbowVariations2">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockHandCrossbowVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag HandCrossbow" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>HandCrossbow4</Item>
+            <Item>HandCrossbow5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>HandCrossbow0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--CROSSBOW-->
+   <MetaUpgradeDefinition Id="UnlockCrossbow" Price="300">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:MaxNightReachedInCity LakeBurg" B="2"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsFinishedCount" B="3"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Crossbow0</Item>
+            <Item>Crossbow1</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockCrossbowVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Crossbow" B="50"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Crossbow" B="200"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Crossbow2</Item>
+            <Item>Crossbow3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockCrossbowVariations2">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockCrossbowVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Crossbow" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Crossbow4</Item>
+            <Item>Crossbow5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>Crossbow0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--PISTOL-->
+   <MetaUpgradeDefinition Id="UnlockPistol" Price="300">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:MaxNightReachedInCity Felderland" B="4"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsFinishedCount" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Pistol0</Item>
+            <Item>Pistol1</Item>
+            <Item>DuelingPistol0</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockPistolVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Pistol" B="50"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Pistol" B="200"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Pistol2</Item>
+            <Item>Pistol3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockPistolVariations2">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockPistolVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Pistol" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Pistol4</Item>
+            <Item>Pistol5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>Pistol0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--RIFLE-->
+   <MetaUpgradeDefinition Id="UnlockRifle" Price="300">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:MaxNightReachedInCity LakeBurg" B="3"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsFinishedCount" B="4"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Rifle0</Item>
+            <Item>Rifle1</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockRifleVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Rifle" B="50"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Rifle" B="200"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Rifle2</Item>
+            <Item>Rifle3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockRifleVariations2">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockRifleVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Rifle" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Rifle4</Item>
+            <Item>Rifle5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>Rifle0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--SHORTBOW-->
+   <MetaUpgradeDefinition Id="UnlockShortbowVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Shortbow" B="50"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Shortbow" B="200"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Shortbow2</Item>
+            <Item>Shortbow3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockShortbowVariations2">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockShortbowVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Shortbow" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Shortbow4</Item>
+            <Item>Shortbow5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>Shortbow0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--LONGBOW-->
+   <MetaUpgradeDefinition Id="UnlockLongbow" Price="300">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockLakeburgCity" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsFinishedCount" B="2"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Longbow0</Item>
+            <Item>Longbow1</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockLongbowVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Longbow" B="50"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Longbow" B="200"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Longbow2</Item>
+            <Item>Longbow3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockLongbowVariations2">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockLongbowVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag Longbow" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>Longbow4</Item>
+            <Item>Longbow5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>Longbow0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- MAGIC WEAPONS -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+   <!--MAGIC WAND-->
+   <MetaUpgradeDefinition Id="UnlockMagicWandVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag MagicWand" B="50"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag MagicWand" B="200"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>MagicWand2</Item>
+            <Item>MagicWand3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockMagicWandVariations2">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockMagicWandVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag MagicWand" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>MagicWand4</Item>
+            <Item>MagicWand5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>MagicWand0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--MAGIC ORB-->
+   <MetaUpgradeDefinition Id="UnlockMagicOrb" Price="300">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockLakeburgCity" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsFinishedCount" B="2"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>MagicOrb0</Item>
+            <Item>MagicOrb1</Item>
+            <Item>TransferMagicOrb0</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockMagicOrbVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag MagicOrb" B="50"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag MagicOrb" B="200"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>MagicOrb2</Item>
+            <Item>MagicOrb3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockMagicOrbVariations2">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockMagicOrbVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag MagicOrb" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>MagicOrb4</Item>
+            <Item>MagicOrb5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>MagicOrb0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--MAGIC SCEPTER-->
+   <MetaUpgradeDefinition Id="UnlockMagicScepter" Price="300">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:MaxNightReachedInCity Felderland" B="4"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsFinishedCount" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>MagicScepter0</Item>
+            <Item>MagicScepter1</Item>
+            <Item>ReliableMagicScepter0</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockMagicScepterVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag MagicScepter" B="50"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag MagicScepter" B="200"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>MagicScepter2</Item>
+            <Item>MagicScepter3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockMagicScepterVariations2">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockMagicScepterVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag MagicScepter" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>MagicScepter4</Item>
+            <Item>MagicScepter5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>MagicScepter0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--MAGIC STAFF-->
+   <MetaUpgradeDefinition Id="UnlockMagicStaff" Price="300">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:MaxNightReachedInCity LakeBurg" B="2"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsFinishedCount" B="3"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>MagicStaff0</Item>
+            <Item>MagicStaff1</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockMagicStaffVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+		  <ConditionsGroup>
+			  <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag MagicStaff" B="50"/>
+		  </ConditionsGroup>
+	  </UnlockConditions>
+	  <ActivationConditions>
+		  <ConditionsGroup>
+			  <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag MagicStaff" B="200"/>
+		  </ConditionsGroup>
+	  </ActivationConditions>
+	  <UpgradeEffects>
+		  <UnlockItems>
+			  <Item>MagicStaff2</Item>
+			  <Item>MagicStaff3</Item>
+		  </UnlockItems>
+	  </UpgradeEffects>
+  </MetaUpgradeDefinition>
+
+  <MetaUpgradeDefinition Id="UnlockMagicStaffVariations2">
+	  <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockMagicStaffVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag MagicStaff" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>MagicStaff4</Item>
+            <Item>MagicStaff5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>MagicStaff0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--TOME OF MAGIC-->
+   <MetaUpgradeDefinition Id="UnlockTomeOfMagic" Price="300">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesHealth1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>TomeOfMagic0</Item>
+            <Item>TomeOfMagic1</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockTomeOfMagicVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag TomeOfMagic" B="50"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag TomeOfMagic" B="200"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>TomeOfMagic2</Item>
+            <Item>TomeOfMagic3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockTomeOfMagicVariations2">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockTomeOfMagicVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag TomeOfMagic" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>TomeOfMagic4</Item>
+            <Item>TomeOfMagic5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>TomeOfMagic0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--DRUIDIC STAFF-->
+   <MetaUpgradeDefinition Id="UnlockDruidicStaff" Price="300">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:MaxNightReachedInCity LakeBurg" B="3"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsFinishedCount" B="4"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>DruidicStaff0</Item>
+            <Item>DruidicStaff1</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockDruidicStaffVariations1">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag DruidicStaff" B="50"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag DruidicStaff" B="200"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>DruidicStaff2</Item>
+            <Item>DruidicStaff3</Item>
+         </UnlockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockDruidicStaffVariations2">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockDruidicStaffVariations1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ActionPointsSpentPerTag DruidicStaff" B="1000"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockItems>
+            <Item>DruidicStaff4</Item>
+            <Item>DruidicStaff5</Item>
+         </UnlockItems>
+         <LockItems>
+            <Item>DruidicStaff0</Item>
+         </LockItems>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   
+</MetaUpgradeDefinitions>

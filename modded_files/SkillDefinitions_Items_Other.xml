@@ -1119,7 +1119,7 @@
       </ValidTargets>
       <MovePointsCost>1</MovePointsCost>
       <ManaCost>2</ManaCost>
-      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
       <Range Min="0" Max="0"/>
       <SkillAction>
          <Generic>
@@ -1129,7 +1129,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="OverallDamage"/>
-                     <Bonus>8</Bonus>
+                     <Bonus>15</Bonus>
                      <TurnsCount>1</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1164,6 +1164,7 @@
 
 
    <SkillDefinition Id="Wrath1" TemplateId="Wrath">
+      <UsesPerTurnCount>2</UsesPerTurnCount>
       <SkillAction>
          <Generic>
             <SkillEffects>
@@ -1172,7 +1173,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="OverallDamage"/>
-                     <Bonus>11</Bonus>
+                     <Bonus>15</Bonus>
                      <TurnsCount>1</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1183,6 +1184,7 @@
 
 
    <SkillDefinition Id="Wrath2" TemplateId="Wrath">
+      <UsesPerTurnCount>2</UsesPerTurnCount>
       <SkillAction>
          <Generic>
             <SkillEffects>
@@ -1191,7 +1193,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="OverallDamage"/>
-                     <Bonus>14</Bonus>
+                     <Bonus>17</Bonus>
                      <TurnsCount>1</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1202,6 +1204,7 @@
 
 
    <SkillDefinition Id="Wrath3" TemplateId="Wrath">
+      <UsesPerTurnCount>3</UsesPerTurnCount>
       <SkillAction>
          <Generic>
             <SkillEffects>
@@ -1221,6 +1224,7 @@
 
 
    <SkillDefinition Id="Wrath4" TemplateId="Wrath">
+      <UsesPerTurnCount>3</UsesPerTurnCount>
       <SkillAction>
          <Generic>
             <SkillEffects>
@@ -1240,6 +1244,7 @@
 
 
    <SkillDefinition Id="Wrath5" TemplateId="Wrath">
+      <UsesPerTurnCount>4</UsesPerTurnCount>
       <SkillAction>
          <Generic>
             <SkillEffects>
@@ -1248,7 +1253,7 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="OverallDamage"/>
-                     <Bonus>23</Bonus>
+                     <Bonus>20</Bonus>
                      <TurnsCount>1</TurnsCount>
                   </Buff>
                </CasterEffect>
@@ -1274,7 +1279,14 @@
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="SkillRangeModifier"/>
                      <Bonus>1</Bonus>
-                     <TurnsCount>3</TurnsCount>
+                     <TurnsCount>2</TurnsCount>
+                  </Buff>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Reliability"/>
+                     <Bonus>10</Bonus>
+                     <TurnsCount>2</TurnsCount>
                   </Buff>
                </CasterEffect>
             </SkillEffects>
@@ -1316,8 +1328,15 @@
                      <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
                      <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
                      <Stat Id="SkillRangeModifier"/>
-                     <Bonus>2</Bonus>
-                     <TurnsCount>3</TurnsCount>
+                     <Bonus>1</Bonus>
+                     <TurnsCount>2</TurnsCount>
+                  </Buff>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Reliability"/>
+                     <Bonus>10</Bonus>
+                     <TurnsCount>2</TurnsCount>
                   </Buff>
                </CasterEffect>
             </SkillEffects>
@@ -1325,6 +1344,105 @@
       </SkillAction>
    </SkillDefinition>
 
+   <SkillDefinition Id="SharpEye2" TemplateId="SharpEye">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="SkillRangeModifier"/>
+                     <Bonus>1</Bonus>
+                     <TurnsCount>2</TurnsCount>
+                  </Buff>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Reliability"/>
+                     <Bonus>12</Bonus>
+                     <TurnsCount>2</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="SharpEye3" TemplateId="SharpEye">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="SkillRangeModifier"/>
+                     <Bonus>2</Bonus>
+                     <TurnsCount>2</TurnsCount>
+                  </Buff>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Reliability"/>
+                     <Bonus>12</Bonus>
+                     <TurnsCount>2</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="SharpEye4" TemplateId="SharpEye">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="SkillRangeModifier"/>
+                     <Bonus>2</Bonus>
+                     <TurnsCount>2</TurnsCount>
+                  </Buff>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Reliability"/>
+                     <Bonus>16</Bonus>
+                     <TurnsCount>2</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="SharpEye5" TemplateId="SharpEye">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="SkillRangeModifier"/>
+                     <Bonus>2</Bonus>
+                     <TurnsCount>2</TurnsCount>
+                  </Buff>
+                  <Buff>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Reliability"/>
+                     <Bonus>20</Bonus>
+                     <TurnsCount>2</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
 
    <!-- ███████████████████████████████████████████████████████████████ -->
    <!-- ███████████████████████████████████████████████████████████████ -->
@@ -1391,6 +1509,80 @@
       </CastFXs>
    </SkillDefinition>
 
+
+   <SkillDefinition Id="ShieldBash" TemplateId="ShieldUp">
+    <OverrideLocalizationId>ShieldBash</OverrideLocalizationId>
+   <OverrideArtId>QuickCuts</OverrideArtId>
+
+      <ActionPointsCost>1</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="1" Max="1" CardinalDirectionOnly="true" Modifiable="false"/>
+      <SkillAction>
+         <Attack>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1.0</DamageMultiplier>
+            <SkillEffects>
+               <Stun>
+                  <BaseChance>0.7</BaseChance>
+               </Stun>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="CripplingPunch" TemplateId="TankyAttack">
+      <ActionPointsCost>0</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="1" Max="1" CardinalDirectionOnly="true" Modifiable="false"/>
+      <SkillAction>
+         <Attack>
+            <AttackType>Physical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+            <SkillEffects>
+               <Debuff>
+                  <BaseChance>1</BaseChance>
+                  <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+                  <Malus>3</Malus>
+                  <Stat Id="MovePointsTotal"/>
+                  <TurnsCount>2</TurnsCount>
+               </Debuff>
+            </SkillEffects>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="Hemokinesis" TemplateId="BoomerAttackOnDeath">
+      <OverrideLocalizationId>Hemokinesis</OverrideLocalizationId>
+      <OverrideArtId>BoomerAttack</OverrideArtId>
+
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <AffectedUnits>
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+         <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+         <CanAffectCaster>false</CanAffectCaster>
+      </AffectedUnits>
+      <ActionPointsCost>1</ActionPointsCost>
+      <HealthCost>16</HealthCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="0"/>
+      <AreaOfEffect OriginX="1" OriginY="1">
+         XXX
+         X_X
+         XXX
+      </AreaOfEffect>
+      <SkillAction>
+         <Attack>
+            <AttackType>Magical</AttackType>
+            <DamageMultiplier>1</DamageMultiplier>
+         </Attack>
+      </SkillAction>
+   </SkillDefinition>
+
    
    <SkillDefinition Id="SuperEvasion">
       <ValidTargets>
@@ -1448,12 +1640,11 @@
          <PlayableUnits/>
       </ValidTargets>
       <ActionPointsCost>1</ActionPointsCost>
-      <UsesPerTurnCount>4</UsesPerTurnCount>
-      <Range Min="0" Max="0"/>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="8" Modifiable="true"/>
       <SkillAction>
          <Generic>
             <SkillEffects>
-               <CasterEffect>
                   <RegenStat>
                      <Stat Id="MovePoints"/>
                      <Bonus>4</Bonus>
@@ -1466,7 +1657,6 @@
                      <Bonus>5</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>
-               </CasterEffect>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -1504,12 +1694,11 @@
       </ValidTargets>
       <ActionPointsCost>1</ActionPointsCost>
       <ManaCost>1</ManaCost>
-      <UsesPerTurnCount>3</UsesPerTurnCount>
-      <Range Min="0" Max="0"/>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="8" Modifiable="true"/>
       <SkillAction>
          <Generic>
             <SkillEffects>
-               <CasterEffect>
                   <RegenStat>
                      <Stat Id="MovePoints"/>
                      <Bonus>6</Bonus>
@@ -1522,7 +1711,6 @@
                      <Bonus>10</Bonus>
                      <TurnsCount>3</TurnsCount>
                   </Buff>
-               </CasterEffect>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -1552,6 +1740,142 @@
             <Delay>0</Delay>
          </CasterAnim>
       </CastFXs>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="ArmorRun" TemplateId="WindWalk">
+    <OverrideLocalizationId>ArmorRun</OverrideLocalizationId>
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <ActionPointsCost>1</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="MovePoints"/>
+                     <Bonus>3</Bonus>
+                  </RegenStat>
+                  <Buff>
+                     <BaseChance>1</BaseChance>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Dodge"/>
+                     <Bonus>10</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="ArmorRun1" TemplateId="ArmorRun">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="MovePoints"/>
+                     <Bonus>3</Bonus>
+                  </RegenStat>
+                  <Buff>
+                     <Stat Id="Dodge"/>
+                     <Bonus>12</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="ArmorRun2" TemplateId="ArmorRun">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="MovePoints"/>
+                     <Bonus>3</Bonus>
+                  </RegenStat>
+                  <Buff>
+                     <Stat Id="Dodge"/>
+                     <Bonus>14</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="ArmorRun3" TemplateId="ArmorRun">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="MovePoints"/>
+                     <Bonus>3</Bonus>
+                  </RegenStat>
+                  <Buff>
+                     <Stat Id="Dodge"/>
+                     <Bonus>16</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="ArmorRun4" TemplateId="ArmorRun">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="MovePoints"/>
+                     <Bonus>3</Bonus>
+                  </RegenStat>
+                  <Buff>
+                     <Stat Id="Dodge"/>
+                     <Bonus>19</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="ArmorRun5" TemplateId="ArmorRun">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="MovePoints"/>
+                     <Bonus>3</Bonus>
+                  </RegenStat>
+                  <Buff>
+                     <Stat Id="Dodge"/>
+                     <Bonus>22</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
    </SkillDefinition>
 
 
@@ -1651,11 +1975,62 @@
 
 
    <SkillDefinition Id="Inspiration">
+      <OverrideArtId>GhostAttack</OverrideArtId>
       <ValidTargets>
          <PlayableUnits/>
       </ValidTargets>
-      <ActionPointsCost>2</ActionPointsCost>
+      <ActionPointsCost>0</ActionPointsCost>
       <MovePointsCost>1</MovePointsCost>
+      <HealthCost>18</HealthCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="8" Modifiable="true"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+                  <RegenStat>
+                     <Stat Id="Mana"/>
+                     <Bonus>6</Bonus>
+                  </RegenStat>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+
+      <CastFXs TotalDuration="0.5">
+         <VisualEffect>
+            <Paths>
+               <Path>00_Others/SelfBuff_CasterBefore</Path>
+            </Paths>
+            <SortingDepth>Before</SortingDepth>
+            <Target>HitTiles</Target>
+         </VisualEffect>
+
+         <SoundEffect>
+            <Path>00_Others/SFX_Skill_Bonus_02</Path>
+            <Delay>0</Delay>
+         </SoundEffect>
+
+         <CamShake>
+            <Id>Soft Hit-CamShake</Id>
+            <Delay>0.4</Delay>
+         </CamShake>
+
+         <CasterAnim>
+            <Path>Hero_CastSkill_Others_HelpBuilding_</Path>
+            <Delay>0</Delay>
+         </CasterAnim>
+      </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="ArmorInspiration" TemplateId="Inspiration">
+    <OverrideLocalizationId>ArmorInspiration</OverrideLocalizationId>
+      <OverrideArtId>SpawnEnemiesTier3</OverrideArtId>
+
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <ActionPointsCost>0</ActionPointsCost>
+      <MovePointsCost>4</MovePointsCost>
+      <HealthCost>12</HealthCost>
       <UsesPerTurnCount>1</UsesPerTurnCount>
       <Range Min="0" Max="0"/>
       <SkillAction>
@@ -1664,7 +2039,7 @@
                <CasterEffect>
                   <RegenStat>
                      <Stat Id="Mana"/>
-                     <Bonus>10</Bonus>
+                     <Bonus>5</Bonus>
                   </RegenStat>
                </CasterEffect>
             </SkillEffects>
@@ -1697,24 +2072,104 @@
       </CastFXs>
    </SkillDefinition>
 
-
-   <SkillDefinition Id="SuperInspiration">
-      <ValidTargets>
-         <PlayableUnits/>
-      </ValidTargets>
-      <ActionPointsCost>2</ActionPointsCost>
-      <MovePointsCost>3</MovePointsCost>
-      <UsesPerTurnCount>1</UsesPerTurnCount>
-      <Range Min="0" Max="0"/>
+   <SkillDefinition Id="ArmorInspiration1" TemplateId="ArmorInspiration">
+    <MovePointsCost>3</MovePointsCost>
       <SkillAction>
          <Generic>
             <SkillEffects>
                <CasterEffect>
                   <RegenStat>
                      <Stat Id="Mana"/>
-                     <Bonus>14</Bonus>
+                     <Bonus>5</Bonus>
                   </RegenStat>
                </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="ArmorInspiration2" TemplateId="ArmorInspiration">
+      <MovePointsCost>3</MovePointsCost>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="Mana"/>
+                     <Bonus>6</Bonus>
+                  </RegenStat>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="ArmorInspiration3" TemplateId="ArmorInspiration">
+      <MovePointsCost>2</MovePointsCost>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="Mana"/>
+                     <Bonus>6</Bonus>
+                  </RegenStat>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="ArmorInspiration4" TemplateId="ArmorInspiration">
+      <MovePointsCost>2</MovePointsCost>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="Mana"/>
+                     <Bonus>7</Bonus>
+                  </RegenStat>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="ArmorInspiration5" TemplateId="ArmorInspiration">
+      <MovePointsCost>1</MovePointsCost>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <CasterEffect>
+                  <RegenStat>
+                     <Stat Id="Mana"/>
+                     <Bonus>7</Bonus>
+                  </RegenStat>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="SuperInspiration">
+      <OverrideArtId>ShieldmanBuffSingle</OverrideArtId>
+
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <ActionPointsCost>0</ActionPointsCost>
+      <MovePointsCost>4</MovePointsCost>
+      <HealthCost>18</HealthCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="8" Modifiable="true"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+                  <RegenStat>
+                     <Stat Id="Mana"/>
+                     <Bonus>9</Bonus>
+                  </RegenStat>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -1889,8 +2344,8 @@
    
 
    <SkillDefinition Id="Vanish">
-      <MovePointsCost>1</MovePointsCost>
-      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <ManaCost>2</ManaCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
       <Range Min="1" Max="3" CardinalDirectionOnly="false"/>
       <AreaOfEffect OriginX="0" OriginY="0">
          M
@@ -1900,6 +2355,7 @@
             <SkillEffects>
                <IgnoreLineOfSight/>
                <Maneuver/>
+               <NoMomentum/>
             </SkillEffects>
          </Generic>
       </SkillAction>
@@ -1972,6 +2428,41 @@
          </CamShake>
       </CastFXs>
    </SkillDefinition>
+
+
+   <SkillDefinition Id="Vanish1" TemplateId="Vanish">
+      <ManaCost>2</ManaCost>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <Range Min="1" Max="3" CardinalDirectionOnly="false"/>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="Vanish2" TemplateId="Vanish">
+      <ManaCost>2</ManaCost>
+      <UsesPerTurnCount>2</UsesPerTurnCount>
+      <Range Min="1" Max="4" CardinalDirectionOnly="false"/>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="Vanish3" TemplateId="Vanish">
+      <ManaCost>2</ManaCost>
+      <UsesPerTurnCount>3</UsesPerTurnCount>
+      <Range Min="1" Max="4" CardinalDirectionOnly="false"/>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="Vanish4" TemplateId="Vanish">
+      <ManaCost>2</ManaCost>
+      <UsesPerTurnCount>3</UsesPerTurnCount>
+      <Range Min="1" Max="5" CardinalDirectionOnly="false"/>
+   </SkillDefinition>
+
+
+   <SkillDefinition Id="Vanish5" TemplateId="Vanish">
+      <ManaCost>2</ManaCost>
+      <UsesPerTurnCount>4</UsesPerTurnCount>
+      <Range Min="1" Max="5" CardinalDirectionOnly="false"/>
+   </SkillDefinition>
    
 
    <SkillDefinition Id="Cleanse">
@@ -1986,7 +2477,7 @@
             <SkillEffects>
                <NegativeStatusImmunityEffect>
                   <Type Id="AllNegative"/>
-                  <TurnsCount>1</TurnsCount>
+                  <TurnsCount>2</TurnsCount>
                </NegativeStatusImmunityEffect>
             </SkillEffects>
          </Generic>
@@ -2016,5 +2507,283 @@
             <Delay>0</Delay>
          </CasterAnim>
       </CastFXs>
+   </SkillDefinition>
+
+   <SkillDefinition Id="ArmorCleanse" TemplateId="Cleanse">
+    <OverrideLocalizationId>ArmorCleanse</OverrideLocalizationId>
+      <OverrideArtId>SupportCocoonSkill</OverrideArtId>
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <ActionPointsCost>1</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="0" Max="0"/>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <NegativeStatusImmunityEffect>
+                  <Type Id="AllNegative"/>
+                  <TurnsCount>1</TurnsCount>
+               </NegativeStatusImmunityEffect>
+               <CasterEffect>
+                  <Buff>
+                     <BaseChance>1</BaseChance>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Resistance"/>
+                     <Bonus>4</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="ArmorCleanse1" TemplateId="ArmorCleanse">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <NegativeStatusImmunityEffect>
+                  <Type Id="AllNegative"/>
+                  <TurnsCount>1</TurnsCount>
+               </NegativeStatusImmunityEffect>
+               <CasterEffect>
+                  <Buff>
+                     <BaseChance>1</BaseChance>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Resistance"/>
+                     <Bonus>6</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="ArmorCleanse2" TemplateId="ArmorCleanse">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <NegativeStatusImmunityEffect>
+                  <Type Id="AllNegative"/>
+                  <TurnsCount>1</TurnsCount>
+               </NegativeStatusImmunityEffect>
+               <CasterEffect>
+                  <Buff>
+                     <BaseChance>1</BaseChance>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Resistance"/>
+                     <Bonus>8</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="ArmorCleanse3" TemplateId="ArmorCleanse">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <NegativeStatusImmunityEffect>
+                  <Type Id="AllNegative"/>
+                  <TurnsCount>1</TurnsCount>
+               </NegativeStatusImmunityEffect>
+               <CasterEffect>
+                  <Buff>
+                     <BaseChance>1</BaseChance>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Resistance"/>
+                     <Bonus>9</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="ArmorCleanse4" TemplateId="ArmorCleanse">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <NegativeStatusImmunityEffect>
+                  <Type Id="AllNegative"/>
+                  <TurnsCount>1</TurnsCount>
+               </NegativeStatusImmunityEffect>
+               <CasterEffect>
+                  <Buff>
+                     <BaseChance>1</BaseChance>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Resistance"/>
+                     <Bonus>11</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="ArmorCleanse5" TemplateId="ArmorCleanse">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <NegativeStatusImmunityEffect>
+                  <Type Id="AllNegative"/>
+                  <TurnsCount>1</TurnsCount>
+               </NegativeStatusImmunityEffect>
+               <CasterEffect>
+                  <Buff>
+                     <BaseChance>1</BaseChance>
+                     <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                     <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                     <Stat Id="Resistance"/>
+                     <Bonus>12</Bonus>
+                     <TurnsCount>1</TurnsCount>
+                  </Buff>
+               </CasterEffect>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="Command" TemplateId="Watchout">
+    <OverrideLocalizationId>Command</OverrideLocalizationId>
+      <OverrideArtId>UnnamedBattleStance</OverrideArtId>
+
+      <ValidTargets>
+         <PlayableUnits/>
+      </ValidTargets>
+      <ActionPointsCost>1</ActionPointsCost>
+      <UsesPerTurnCount>1</UsesPerTurnCount>
+      <Range Min="1" Max="8" CardinalDirectionOnly="false" Modifiable="true"/>
+      <AreaOfEffect OriginX="0" OriginY="0">
+         X
+      </AreaOfEffect>
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <BaseChance>1</BaseChance>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="OverallDamage"/>
+                  <Bonus>15</Bonus>
+                  <TurnsCount>1</TurnsCount>
+               </Buff>
+               <Buff>
+                  <BaseChance>1</BaseChance>
+                  <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+                  <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
+                  <Stat Id="Accuracy"/>
+                  <Bonus>15</Bonus>
+                  <TurnsCount>1</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="Command1" TemplateId="Command">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <Stat Id="OverallDamage"/>
+                  <Bonus>18</Bonus>
+                  <TurnsCount>1</TurnsCount>
+               </Buff>
+               <Buff>
+                  <Stat Id="Accuracy"/>
+                  <Bonus>18</Bonus>
+                  <TurnsCount>1</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="Command2" TemplateId="Command">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <Stat Id="OverallDamage"/>
+                  <Bonus>21</Bonus>
+                  <TurnsCount>1</TurnsCount>
+               </Buff>
+               <Buff>
+                  <Stat Id="Accuracy"/>
+                  <Bonus>21</Bonus>
+                  <TurnsCount>1</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="Command3" TemplateId="Command">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <Stat Id="OverallDamage"/>
+                  <Bonus>24</Bonus>
+                  <TurnsCount>1</TurnsCount>
+               </Buff>
+               <Buff>
+                  <Stat Id="Accuracy"/>
+                  <Bonus>24</Bonus>
+                  <TurnsCount>1</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="Command4" TemplateId="Command">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <Stat Id="OverallDamage"/>
+                  <Bonus>27</Bonus>
+                  <TurnsCount>1</TurnsCount>
+               </Buff>
+               <Buff>
+                  <Stat Id="Accuracy"/>
+                  <Bonus>27</Bonus>
+                  <TurnsCount>1</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
+   </SkillDefinition>
+
+   <SkillDefinition Id="Command5" TemplateId="Command">
+      <SkillAction>
+         <Generic>
+            <SkillEffects>
+               <Buff>
+                  <Stat Id="OverallDamage"/>
+                  <Bonus>30</Bonus>
+                  <TurnsCount>1</TurnsCount>
+               </Buff>
+               <Buff>
+                  <Stat Id="Accuracy"/>
+                  <Bonus>30</Bonus>
+                  <TurnsCount>1</TurnsCount>
+               </Buff>
+            </SkillEffects>
+         </Generic>
+      </SkillAction>
    </SkillDefinition>
 </SkillDefinitions>

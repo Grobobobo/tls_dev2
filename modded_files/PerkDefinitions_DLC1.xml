@@ -1195,7 +1195,7 @@
          <TokenVariable Key="CritChanceCurrentBonus" Value="CritChanceBonus * NonCritHits"/>
          <TokenVariable Key="CritDamageCurrentBonus" Value="CritDamageBonus * NonCritHits"/>
          <TokenVariable Key="CritChanceBonus" Value="5"/>
-         <TokenVariable Key="CritDamageBonus" Value="5"/>
+         <TokenVariable Key="CritDamageBonus" Value="10"/>
          <TokenVariable Key="NonCritHits" Value="Module.Buffer"/>
          <TokenVariable Key="IsCrit" Value="AttackData.IsCrit"/>
       </TokenVariables>

@@ -32,7 +32,7 @@
 
       <StunResistance>50</StunResistance>
 
-      <Accuracy>10</Accuracy>
+      <Accuracy>-5</Accuracy>
 
       <DamageSkillId>ShieldmanAttack</DamageSkillId>
 
@@ -358,6 +358,7 @@
 
          <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">17</StatProgression>
 
+         <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">9</StatProgression>
       </StatsProgressions>
 
       <SkillProgressions>
@@ -916,7 +917,7 @@
 
          <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">25</StatProgression>
 
-         <StatProgression Id="Accuracy" Delay="3" IncreaseEveryXDay="2" MaxIncreases="4">5</StatProgression>
+         <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">9</StatProgression>
 
          <StatProgression Id="Dodge" Delay="2" IncreaseEveryXDay="3">9</StatProgression>
 
@@ -1200,7 +1201,7 @@
 
          <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">25</StatProgression>
 
-         <StatProgression Id="Accuracy" Delay="1" IncreaseEveryXDay="2" MaxIncreases="4">5</StatProgression>
+         <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">9</StatProgression>
 
          <StatProgression Id="ArmorTotal" Delay="0" IncreaseEveryXDay="2">102</StatProgression>
 
@@ -1594,7 +1595,7 @@
 
          <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">25</StatProgression>
 
-         <StatProgression Id="Accuracy" Delay="3" IncreaseEveryXDay="1" MaxIncreases="10">5</StatProgression>
+         <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="1" MaxIncreases="4">9</StatProgression>
 
          <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">7</StatProgression>
 
@@ -1656,7 +1657,7 @@
 
       <StunResistance>50</StunResistance>
 
-      <Accuracy>20</Accuracy>
+      <Accuracy>-10</Accuracy>
 
       <DamageSkillId>GhostAttack</DamageSkillId>
 
@@ -1920,7 +1921,7 @@
 
          <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">25</StatProgression>
 
-         <StatProgression Id="Accuracy" Delay="3" IncreaseEveryXDay="3" MaxIncreases="5">5</StatProgression>
+         <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">9</StatProgression>
 
          <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">7</StatProgression>
 

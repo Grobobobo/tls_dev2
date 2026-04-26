@@ -321,7 +321,7 @@
    <BuildingUpgradeDefinition Id="UpgradeFillGaugeGoldMine">
       <UpgradeLevels>
          <UpgradeLevel>
-            <GoldCost>60</GoldCost>
+            <GoldCost>75</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="ImproveGaugeEffect" UpgradedBonusValue="25"/>
             </UpgradeEffects>
@@ -413,7 +413,7 @@
    <BuildingUpgradeDefinition Id="UpgradeFillGaugeScavenger">
       <UpgradeLevels>
          <UpgradeLevel>
-            <GoldCost>60</GoldCost>
+            <GoldCost>75</GoldCost>
             <UpgradeEffects>
                <UpgradeEffect Id="ImproveGaugeEffect" UpgradedBonusValue="50"/>
             </UpgradeEffects>
