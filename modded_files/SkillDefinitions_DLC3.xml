@@ -20,7 +20,7 @@
         <SkillEffects>
           <NoDodge />
           <NoBlock />
-            <Debuff>
+          <Debuff>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
             <CanAffectCaster>false</CanAffectCaster>
@@ -58,9 +58,9 @@
         <BaseDamage Min="450" Max="550" />
         <AttackType>Physical</AttackType>
         <DamageMultiplier>1</DamageMultiplier>
-          <SkillEffects>
+        <SkillEffects>
           <NoDodge />
-            <Debuff>
+          <Debuff>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
             <CanAffectCaster>false</CanAffectCaster>
@@ -70,7 +70,6 @@
             <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
-
       </Attack>
     </SkillAction>
     <CastFXs TotalDuration="0.25">
@@ -324,7 +323,7 @@
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
           <NoDodge />
-            <Debuff>
+          <Debuff>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
             <CanAffectCaster>false</CanAffectCaster>
@@ -1651,7 +1650,7 @@
           <NoDodge />
           <NoBlock />
           <SurroundingEffect>
-            <Damage Multiplier="0.44"/>
+            <Damage Multiplier="0.44" />
             <Stun>
               <BaseChance>1</BaseChance>
             </Stun>

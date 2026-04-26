@@ -1,4 +1,4 @@
-﻿ ,English,Français,简体中文,繁體中文,日本語,Русский,Українська,Deutsch,Español,Português (Brasil),한국어
+ ,English,Français,简体中文,繁體中文,日本語,Русский,Українська,Deutsch,Español,Português (Brasil),한국어
 BuildingDescription_PotionMaker,"Crafts 2 <style=KeyWord>Consumables</style> every <style=Production>Production Phase</style>.
 Additional <style=KeyWord>Consumables</style> can be crafted with the help of <style=Workers>Workers</style>.","Fabrique 2 <style=KeyWord>Consommables</style> à chaque <style=Production>Phase de Production</style>.
 Des <style=KeyWord>Consommables</style> supplémentaires peuvent être fabriqués avec l'aide d'<style=Workers>Ouvriers</style>.","在每个<style=Production>整备阶段</style>产出2个<style=KeyWord>消耗品</style>。
@@ -3035,3 +3035,193 @@ Anões possuem uma <style=KeyWord>coleção exclusiva de vantagens</style> focad
 <style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
 ApocalypseModifierTitle_InnLevelModifier,Worse Inn Heroes,Réduction du Niveau des Héros de la Taverne,旅店英雄等级降低,旅店英雄等級降低,宿の英雄レベル低下,Ниже уровень героев в таверне,Зменште рівень героїв корчми,Reduziertes Heldenlevel im Gasthaus,Reducción del nivel de los héroes de la posada,Nível Reduzido de Heróis na Estalagem,여관 영웅 레벨 감소
 ApocalypseModifierDescription_InnLevelModifier,<style=Keyword>Reduces</style> the level of Heroes in the <style=Keyword>Inn</style> by <style=keywordnb>2</style> And Increases their price by <style=keywordnb>2</style> levels. ,<style=Keyword>Réduit</style> le niveau des Héros de la <style=Keyword>Taverne</style> par <style=keywordNb>2</style>.,<style=Keyword>旅店</style>英雄的等级<style=Keyword>降低</style><style=keywordnb>2</style>级。,<style=Keyword>旅店</style>中英雄的等級<style=Keyword>降低</style><style=keywordnb>2</style>。,<style=Keyword>宿</style>の英雄レベルが<style=keywordnb>2</style><style=Keyword>低下</style>する。,"Уровень героев, нанятых в <style=Keyword>таверне</style>, будет <style=Keyword>ниже</style> на <style=keywordnb>2</style>.",<style=Keyword>Зменшує</style> рівень героїв у <style=Keyword>корчмі</style> на <style=keywordnb>2</style>.,<style=Keyword>Reduziert</style> das Level der Helden im <style=Keyword>Gasthaus</style> um <style=keywordnb>2</style>.,<style=Keyword>Reduce</style> en <style=keywordnb>2</style> el nivel de los héroes de la <style=Keyword>posada</style>.,<style=Keyword>Reduz</style> o nível de Heróis na <style=Keyword>Estalagem</style> em <style=keywordnb>2</style>.,<style=Keyword>여관</style>의 영웅 레벨이 <style=keywordnb>2</style> <style=Keyword>감소합니다</style>.
+PerkDescription_BloodDrinker,"After using {0}, Your next {1} skill gets:
+{1}{2}
+If {3} : {4}","Après avoir utilisé {0}, votre prochaine compétence {1} obtient :
+{1}{2}
+Si {3} : {4}","使用{0}后，下一个{1}技能获得：
+{1}{2}
+若{3}：{4}","使用{0}後，下一個{1}技能獲得：
+{1}{2}
+若{3}：{4}","{0}の使用後、次の{1}スキルが以下を得る:
+{1}{2}
+{3}の場合：{4}","После использования {0} следующий навык {1} получает:
+{1}{2}
+Если {3}: {4}","Після використання {0} наступна навичка {1} отримує:
+{1}{2}
+Якщо {3}: {4}","Nach dem Einsatz von {0} erhält deine nächste {1}-Fähigkeit:
+{1}{2}
+Wenn {3}: {4}","Después de usar {0}, tu siguiente habilidad {1} recibe:
+{1}{2}
+Si {3}: {4}","Após usar {0}, sua próxima habilidade {1} recebe:
+{1}{2}
+Se {3}: {4}","{0} 사용 후, 다음 {1} 스킬에 적용:
+{1}{2}
+{3}일 경우: {4}"
+PerkDescription_BloodDrinkerUnique,"After using {0}, Your next {1} skill gets:
+{1}{2}
+If {3} : {4}
+
+<style=Perk>Corrupted Bonus: Frenzy</style>
+While <style=Perk>Feral Instinct</style> is active, {5} gets:
+{6}.
+{7} becomes <style=KeyWord>modifiable</style>.
+{8} gets: <style=""Isolated"">Isolation 1.25x</style>
+{9} damage penalty is lower.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Après avoir utilisé {0}, votre prochaine compétence {1} obtient :
+{1}{2}
+Si {3} : {4}
+
+<style=Perk>Bonus de Corruption : Frénésie</style>
+Tant que <style=Perk>Instinct Sauvage</style> est actif, {5} obtient :
+{6}.
+{7} devient <style=KeyWord>modifiable</style>.
+{8} obtient : <style=""Isolated"">Isolation 1.25x</style>
+Pénalité de dégâts de {9} réduite.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","使用{0}后，下一个{1}技能获得：
+{1}{2}
+若{3}：{4}
+
+<style=Perk>腐化加成：癫疯狂暴</style>
+<style=Perk>野性本能</style>激活时，{5}获得：
+{6}。
+{7}变为<style=KeyWord>可变化</style>。
+{8}获得：<style=""Isolated"">落单 1.25x</style>
+{9}伤害惩罚降低。
+
+<style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","使用{0}後，下一個{1}技能獲得：
+{1}{2}
+若{3}：{4}
+
+<style=Perk>腐化加成：狂暴</style>
+<style=Perk>野性本能</style>期間，{5}獲得：
+{6}。
+{7}成為<style=KeyWord>可變化</style>狀態。
+{8}獲得：<style=""Isolated"">落單 1.25x</style>
+{9}傷害懲罰降低。
+
+<style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","{0}の使用後、次の{1}スキルが以下を得る:
+{1}{2}
+{3}の場合：{4}
+
+<style=Perk>腐敗ボーナス: 激高</style>
+<style=Perk>野生の本能</style>発動中、{5}が以下を得る:
+{6}。
+{7}が<style=KeyWord>変更可能</style>になる。
+{8}が獲得: <style=""Isolated"">孤立 1.25x</style>
+{9}のダメージペナルティが軽減される。
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","После использования {0} следующий навык {1} получает:
+{1}{2}
+Если {3}: {4}
+
+<style=Perk>Бонус от порчи: Бешенство</style>
+Пока действуют <style=Perk>животные инстинкты</style>, навык ""{5}"" получает:
+{6}.
+{7} получает <style=KeyWord>изменяемую дальность</style>.
+{8} получает: <style=""Isolated"">Изоляция 1.25x</style>
+Штраф к урону {9} снижен.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Після використання {0} наступна навичка {1} отримує:
+{1}{2}
+Якщо {3}: {4}
+
+<style=Perk>Бонус спотворення: Буяння</style>
+Поки активний <style=Perk>інстинкт хижака</style>, навичка «{5}» отримує:
+{6}.
+{7} можна <style=KeyWord>змінювати</style>.
+{8} отримує: <style=""Isolated"">Ізоляція 1.25x</style>
+Штраф до шкоди {9} зменшений.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Nach dem Einsatz von {0} erhält deine nächste {1}-Fähigkeit:
+{1}{2}
+Wenn {3}: {4}
+
+<style=Perk>Verdorben-Bonus: Raserei</style>
+Solange <style=Perk>Urinstinkt</style> aktiv ist, erhält {5}:
+{6}.
+{7} wird <style=KeyWord>modifizierbar</style>.
+{8} erhält: <style=""Isolated"">Isolation 1.25x</style>
+Schadensmalus von {9} ist geringer.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Después de usar {0}, tu siguiente habilidad {1} recibe:
+{1}{2}
+Si {3}: {4}
+
+<style=Perk>Bonificación de corrupción: Exaltación</style>
+Mientras <style=Perk>Instinto salvaje</style> está activo, {5} recibe:
+{6}.
+{7} pasa a ser <style=KeyWord>modificable</style>.
+{8} recibe: <style=""Isolated"">Aislamiento 1.25x</style>
+La penalización de daño de {9} es menor.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","Após usar {0}, sua próxima habilidade {1} recebe:
+{1}{2}
+Se {3}: {4}
+
+<style=Perk>Bonificação Corrompida: Furor</style>
+Enquanto <style=Perk>Instinto Selvagem</style> estiver ativo, {5} recebe:
+{6}.
+{7} se torna <style=KeyWord>modificável</style>.
+{8} recebe: <style=""Isolated"">Isolamento 1.25x</style>
+Penalidade de dano de {9} é menor.
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","{0} 사용 후, 다음 {1} 스킬에 적용:
+{1}{2}
+{3}일 경우: {4}
+
+<style=Perk>오염된 보너스: 광란</style>
+<style=Perk>야생 본능</style>이 활성화되어 있는 동안 {5}에 적용:
+{6}.
+{7}에 <style=KeyWord>보정치 적용 가능</style>
+{8}에 적용: <style=""Isolated"">고립 1.25x</style>
+{9} 피해 패널티 감소
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
+PerkDescription_StrongerAllies,"Whenever the Hero casts a <style=skill>skill</style> on <style=KeyWord>another</style> Hero, get:
+{0}.
+<style=Attenuated>This modifier is reset every morning.</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Quand le Héros utilise une <style=skill>compétence</style> sur un <style=KeyWord>autre</style> Héros, obtient<nbsp>:
+{0}.
+<style=Attenuated>Ce modificateur est réinitialisé chaque matin.</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","每当英雄对<style=KeyWord>另一位</style>英雄使用<style=skill>技能</style>时：
+{0}。
+<style=Attenuated>该加成每天早上会重置。</style>
+
+<style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","當英雄對<style=KeyWord>另一位</style>英雄使用<style=skill>技能</style>時，獲得：
+{0}。
+<style=Attenuated>此加成在每個白天重置。</style>
+
+<style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","英雄が<style=KeyWord>別の</style>英雄に<style=skill>スキル</style>を使用するたびに以下を獲得:
+{0}。
+<style=Attenuated>この効果は毎朝リセットされる。</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","Когда герой применяет <style=skill>навык</style> на <style=KeyWord>другого</style> героя, он получает:
+{0}.
+<style=Attenuated>Этот эффект сбрасывается каждое утро.</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Коли герой застосовує <style=skill>навичку</style> на <style=KeyWord>іншого</style> героя, отримує:
+{0}.
+<style=Attenuated>Щоранку цей модифікатор скидається.</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Wenn der Held eine <style=skill>Fähigkeit</style> auf einen <style=KeyWord>anderen</style> Helden anwendet, erhältst du:
+{0}.
+<style=Attenuated>Dieser Modifikator wird jeden Morgen zurückgesetzt.</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Cuando el héroe lanza una <style=skill>habilidad</style> sobre <style=KeyWord>otro</style> héroe, obtienes:
+{0}.
+<style=Attenuated>Este modificador se reinicia cada mañana.</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","Sempre que um Herói lança uma <style=skill>habilidade</style> em <style=KeyWord>outro</style> Herói, ele recebe:
+{0}.
+<style=Attenuated>Este modificador é redefinido todas as manhãs.</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","영웅이 <style=KeyWord>다른</style> 영웅에게 <style=skill>스킬</style>을 사용할 때마다 획득:
+{0}.
+<style=Attenuated>보정치는 매일 아침 초기화</style>
+
+<style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
