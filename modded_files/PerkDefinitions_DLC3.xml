@@ -3589,10 +3589,12 @@
          <TokenVariable Key="PerkStack" Value="Max(0,Threshold - Module.Buffer)"/>
          <TokenVariable Key="DebuffDamage" Value="-20"/>
          <TokenVariable Key="Threshold" Value="1"/>
+                  <!--Unique perk bonus-->
+         <TokenVariable Key="AddedRange" Value="1"/>
       </TokenVariables>
       <LocArguments>
          <LocalizedArgument Prefix="SkillName_" Value="SharpenClaws" Style="Skill"/>
-         <LocalizedArgument Value="ItemFamily_ItemList_Claws" Style="KeyWordNb"/>
+         <LocalizedArgument Value="ItemName_NoDLCTag_ClawsUnique" Style="Unique"/>
          <LocalizedArgument Value="SkillEffectName_MultiHit" Style="MultiHit"/>
          <LocArgument Value="3" Style="DamageNb" Prefix=" x"/>
          <LocalizedArgument Prefix="SkillName_" Value="PiercingClaws" Style="Skill"/>
