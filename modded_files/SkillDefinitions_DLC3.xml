@@ -1922,6 +1922,29 @@
       </Attack>
     </SkillAction>
   </SkillDefinition>
+    <SkillDefinition Id="SharpenClawsUnique" TemplateId="SharpenClaws">
+    <SkillAction>
+      <Generic>
+        <SkillEffects>
+          <CasterEffect>
+            <Buff>
+              <CanAffectCaster>true</CanAffectCaster>
+              <Bonus>15</Bonus>
+              <Stat Id="PhysicalDamage" />
+              <TurnsCount>2</TurnsCount>
+            </Buff>
+            <Buff>
+              <CanAffectCaster>true</CanAffectCaster>
+              <Bonus>24</Bonus>
+              <Stat Id="Reliability" />
+              <TurnsCount>2</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Generic>
+    </SkillAction>
+  </SkillDefinition>
+
   <SkillDefinition Id="Assassinate_Unique" TemplateId="Assassinate" GroupId="Assassinate_Unique">
     <UsesPerTurnCount>3</UsesPerTurnCount>
     <SkillAction>
@@ -2200,7 +2223,13 @@
       </CamShake>
     </CastFXs>
   </SkillDefinition>
+  <SkillDefinition Id="PiercingClawsUnique" TemplateId="PiercingClaws">
+  </SkillDefinition>
+  <SkillDefinition Id="ShadowStepsUnique" TemplateId="ShadowSteps">
+  </SkillDefinition>
   <SkillDefinition Id="TearingGraspUnique" TemplateId="TearingGrasp">
+  </SkillDefinition>
+  <SkillDefinition Id="TearingGraspUnique2" TemplateId="TearingGrasp">
     <Range Min="1" Max="3" Modifiable="true" />
   </SkillDefinition>
   <SkillDefinition Id="PreciseTargettingUnique" TemplateId="PreciseTargetting">

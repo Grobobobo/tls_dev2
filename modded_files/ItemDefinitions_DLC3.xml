@@ -570,10 +570,10 @@
         <BaseDamage Min="58 * (1 + PlayableUnitLevel/13)" Max="116 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
-          <Skill>TearingGrasp</Skill>
-          <Skill>ShadowSteps</Skill>
-          <Skill>SharpenClaws5</Skill>
-          <Skill>PiercingClaws</Skill>
+          <Skill>TearingGraspUnique</Skill>
+          <Skill>ShadowStepsUnique</Skill>
+          <Skill>SharpenClawsUnique</Skill>
+          <Skill>PiercingClawsUnique</Skill>
         </Skills>
         <Perks>
           <Perk>BloodDrinkerUnique</Perk>

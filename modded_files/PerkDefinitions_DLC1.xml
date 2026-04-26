@@ -1642,9 +1642,56 @@
             </Conditions>
             <Effects>
                <StatModifier Stat="OverallDamage" Value="TotalDamageBonus"/>
-               <StatModifier Stat="Armor" Value="TotalArmorBonus"/>
             </Effects>
          </BufferModule>
+         <GaugeModule DefaultBufferValue="-1" GaugeStat="Armor" GaugeValue="TotalArmorBonus">
+            <Events>
+               <Event EffectTime="OnStartNightTurnPlayable">
+                  <Actions>
+                     <RefillGauge/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnCreationAfterViewInitialized">
+                  <Conditions>
+                     <IsTrue Value="Module.IsActive"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo Value="IsPerkActive"/>
+                     <InstantiateStatEffectDisplay Value="EffectDisplayValue" Stat="Armor"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnBuildingConstructed">
+                  <Conditions>
+                     <IsTrue Value="PerkNeedUpdate"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo Value="IsPerkActive"/>
+                     <InstantiateStatEffectDisplay Value="EffectDisplayValue" Stat="Armor"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnBuildingDestroyed">
+                  <Conditions>
+                     <IsTrue Value="PerkNeedUpdate"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo Value="IsPerkActive"/>
+                     <InstantiateStatEffectDisplay Value="EffectDisplayValue" Stat="Armor"/>
+                  </Actions>
+               </Event>
+               <Event EffectTime="OnMovementEnd">
+                  <Conditions>
+                     <IsTrue Value="PerkNeedUpdate"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo Value="IsPerkActive"/>
+                     <InstantiateStatEffectDisplay Value="EffectDisplayValue" Stat="Armor"/>
+                  </Actions>
+               </Event>
+            </Events>
+            <Conditions>
+               <IsTrue Value="IsPerkActive = 1"/>
+            </Conditions>
+         </GaugeModule>
       </Modules>
    </PerkDefinition>
 

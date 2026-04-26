@@ -3618,47 +3618,7 @@
                </Event>
                <Event EffectTime="OnSkillCastEnd">
                   <Conditions>
-                     <IsTrue Value="Skill.IsSkillID('SharpenClaws')"/>
-                  </Conditions>
-                  <Actions>
-                     <SetBufferTo BufferIndex="Buffer" Value="1"/>
-                  </Actions>
-               </Event>
-               <Event EffectTime="OnSkillCastEnd">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsSkillID('SharpenClaws1')"/>
-                  </Conditions>
-                  <Actions>
-                     <SetBufferTo BufferIndex="Buffer" Value="1"/>
-                  </Actions>
-               </Event>
-               <Event EffectTime="OnSkillCastEnd">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsSkillID('SharpenClaws2')"/>
-                  </Conditions>
-                  <Actions>
-                     <SetBufferTo BufferIndex="Buffer" Value="1"/>
-                  </Actions>
-               </Event>
-               <Event EffectTime="OnSkillCastEnd">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsSkillID('SharpenClaws3')"/>
-                  </Conditions>
-                  <Actions>
-                     <SetBufferTo BufferIndex="Buffer" Value="1"/>
-                  </Actions>
-               </Event>
-               <Event EffectTime="OnSkillCastEnd">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsSkillID('SharpenClaws4')"/>
-                  </Conditions>
-                  <Actions>
-                     <SetBufferTo BufferIndex="Buffer" Value="1"/>
-                  </Actions>
-               </Event>
-               <Event EffectTime="OnSkillCastEnd">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsSkillID('SharpenClaws5')"/>
+                     <IsTrue Value="Skill.IsSkillID('SharpenClawsUnique')"/>
                   </Conditions>
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer" Value="1"/>
@@ -3684,7 +3644,7 @@
             <Effects>
                <AddSkillEffect>
                   <Conditions>
-                     <IsTrue Value="Skill.IsFromItemWithTag('Claws')"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('ClawsUnique')"/>
                      <IsTrue Value="PerkStack = 0"/>
                      <IsTrue Value="Skill.IsAttack"/>
                   </Conditions>
@@ -3694,7 +3654,7 @@
                </AddSkillEffect>
                <SkillModifier ComputationStat="OverallDamage" Value="DebuffDamage">
                   <Conditions>
-                     <IsTrue Value="Skill.IsSkillID('PiercingClaws')"/>
+                     <IsTrue Value="Skill.IsSkillID('PiercingClawsUnique')"/>
                      <IsTrue Value="PerkStack = 0"/>
                   </Conditions>
                </SkillModifier>
@@ -3702,14 +3662,14 @@
          </BufferModule>
          <BufferModule>
             <Effects>
-               <ReplaceItemSkill SkillIdToReplace="TearingGrasp" SkillIdReplacement="TearingGraspUnique" LinkedSkillIdForUsesPerTurn="TearingGrasp">
+               <ReplaceItemSkill SkillIdToReplace="TearingGraspUnique" SkillIdReplacement="TearingGraspUnique2" LinkedSkillIdForUsesPerTurn="TearingGraspUnique">
                   <Conditions>
                      <IsTrue Value="PerkStack = 0"/>
                   </Conditions>
                </ReplaceItemSkill>
                <AddSkillEffect>
                   <Conditions>
-                     <IsTrue Value="Skill.IsSkillID('ShadowSteps')"/>
+                     <IsTrue Value="Skill.IsSkillID('ShadowStepsUnique')"/>
                      <IsTrue Value="PerkStack = 0"/>
                   </Conditions>
                   <SkillEffects>
