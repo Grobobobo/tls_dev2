@@ -2838,72 +2838,116 @@ Modifiziert, um <style=KeyWord>bis zu 3 Ziele</style> zu treffen.","<style=KeyWo
 Modificada para que impacte a <style=KeyWord>un máximo de 3 objetivos</style>.","<style=KeyWord>Atira automaticamente</style> contra a horda, mirando as flechas nos inimigos <style=KeyWord>mais próximos</style>.
 Modificada para atingir <style=KeyWord>até 3 alvos</style>.","몰려오는 군단을 대상으로 <style=KeyWord>가장 가까운</style> 적에게 볼트를 <style=KeyWord>자동 발사</style>합니다.
 변형되어 <style=KeyWord>최대 3개의 대상</style>에 공격이 적중합니다."
+BuildingUpgradeTooltipDescription_UpgradeBallistaToBallistaTower0,"Becomes a <style=KeyWord>Mounted Ballista</style>:
+• <style=SkillRangeModifier>Range</style> <style=""Number"">2-7</style> > <style=""GoodNbOutlined"">2-10</style>.
+• Has <style=Vision>Vision</style>.
+• <style=""Bad"">Blocks</style> <style=LineOfSight>Line of Sight</style>.
+<style=Attenuated>Incompatible with upgrades Heavy Ballista and Split Ballista</style>","Devient une <style=KeyWord>Baliste montée</style><nbsp>:
+• <style=SkillRangeModifier>Porté</style> <style=""Number"">2-7</style> > <style=""GoodNbOutlined"">2-10</style>.
+• Bénéficie de <style=Vision>Vision</style>.
+• <style=""Bad"">Bloque</style> la <style=LineOfSight>Ligne de Vue</style>.","升级为<style=KeyWord>加高弩车</style>：
+• <style=SkillRangeModifier>技能范围</style> <style=""Number"">2-7</style> > <style=""GoodNbOutlined"">2-10</style>。
+• 获得<style=Vision>视野</style>。
+• 会<style=""Bad"">阻挡</style><style=LineOfSight>视线</style>。
+<style=Attenuated>无法与升级为重型弩车或散射弩车兼容</style>","升級為<style=KeyWord>加高弩車</style>：
+• <style=SkillRangeModifier>範圍</style><style=""Number"">2-7</style> > <style=""GoodNbOutlined"">2-10</style>。
+• 擁有良<style=Vision>好視野</style>。
+• 會<style=""Bad"">阻擋</style><style=LineOfSight>視線</style>。
+<style=Attenuated>此升級、「重型弩車」、「多發弩車」只能擇一使用</style>","<style=KeyWord>固定バリスタ</style>になる:
+・<style=SkillRangeModifier>射程</style> <style=""Number"">2-7</style> > <style=""GoodNbOutlined"">2-10</style>。
+・<style=Vision>ヴィジョン</style>を持つ。
+・<style=LineOfSight>視界</style>を<style=""Bad"">遮る</style>。
+<style=Attenuated>ヘビーバリスタとスプリットバリスタの強化とは両立できない。</style>","Улучшает до <style=KeyWord>высокой баллисты</style>:
+• <style=SkillRangeModifier>дальность</style> <style=""Number"">2–7</style> > <style=""GoodNbOutlined"">2–10</style> яч.;
+• получает <style=Vision>обзор</style>;
+• <style=""Bad"">блокирует</style> <style=LineOfSight>линию видимости</style>.
+<style=Attenuated>Несовместимо с улучшениями ""Тяжёлая баллиста"" и ""Залповая баллиста""</style>","Стане <style=KeyWord>балістою на опорі</style>:
+• <style=SkillRangeModifier>Дальність</style> <style=""Number"">2-7</style> > <style=""GoodNbOutlined"">2-10</style>.
+• Має <style=Vision>видимість</style>.
+• <style=""Bad"">Блокує</style> <style=LineOfSight>лінію видимості</style>.
+<style=Attenuated>Несумісно з поліпшеннями «Важка баліста» й «Рознесена баліста»</style>","Wird zu <style=KeyWord>Erhöhte Balliste</style>:
+ • <style=SkillRangeModifier>Reichweite</style> <style=""Number"">2–7</style> > <style=""GoodNbOutlined"">2–10</style>
+ • Hat <style=Vision>Sicht</style>.
+ • <style=""Bad"">Blockiert</style> die <style=LineOfSight>Sichtlinie</style>.
+<style=Attenuated>Nicht kompatibel mit den Verbesserungen „Schwere Balliste“ und „Dreischuss-Balliste“</style>.","Se convierte en una <style=KeyWord>balista elevada</style>:
+• <style=SkillRangeModifier>Alcance</style> <style=""Number"">2-7</style> > <style=""GoodNbOutlined"">2-10</style>.
+• Dispone de <style=Vision>visión</style>.
+• <style=""Bad"">Obstaculiza el</style> <style=LineOfSight>campo visual</style>.
+<style=Attenuated>Incompatible con las siguientes mejoras: balista pesada y balista triple</style>.","Vira uma <style=KeyWord>Balista Montada</style>:
+• <style=SkillRangeModifier>Alcance</style> <style=""Number"">2-7</style> > <style=""GoodNbOutlined"">2-10</style>.
+• Tem <style=Vision>Visão</style>.
+• <style=""Bad"">Bloqueia</style> a <style=LineOfSight>Linha de Visão</style>.
+<style=Attenuated>Incompatível com as melhorias Balista Pesada e Balista Dividida</style>","<style=KeyWord>증축 노포</style>로 강화:
+• <style=SkillRangeModifier>범위</style> <style=""Number"">2-7</style> > <style=""GoodNbOutlined"">2-10</style>
+• <style=Vision>시야</style> 확보
+• <style=LineOfSight>조준선</style>을 <style=""Bad"">가로막습니다</style>.
+<style=Attenuated>중형 노포 및 분할 노포 강화와 호환 불가</style>"
 BuildingUpgradeTooltipDescription_UpgradeBallistaToBallistaHeavy0,"Becomes a <style=KeyWord>Heavy Ballista</style>:
-• <style=OverallDamage>Damage</style> <style=""Number"">124-190</style> > <style=""GoodNbOutlined"">220-280</style>.
+• <style=OverallDamage>Damage</style> <style=""Number"">152-190</style> > <style=""GoodNbOutlined"">220-280</style>.
 • Gains <style=ArmorPiercing>Armor Piercing</style>.
 <style=Attenuated>Incompatible with upgrades Mounted Ballista and Split Ballista</style>","Améliorer en <style=KeyWord>Balliste Lourde</style>:
-• <style=OverallDamage>Dégâts</style> <style=""Number"">124-190</style> > <style=""GoodNbOutlined"">220-280</style>.
+• <style=OverallDamage>Dégâts</style> <style=""Number"">152-190</style> > <style=""GoodNbOutlined"">220-280</style>.
 • Gagne <style=ArmorPiercing>Perce-armure</style>.
 <style=Attenuated>Incompatible avec les améliorations Balliste Montée et Balliste à multiple projectile</style>","升级为<style=KeyWord>重型弩车</style>：
-• <style=OverallDamage>伤害</style> <style=""Number"">124-190</style> > <style=""GoodNbOutlined"">220-280</style>。
+• <style=OverallDamage>伤害</style> <style=""Number"">152-190</style> > <style=""GoodNbOutlined"">220-280</style>。
 • 获得<style=ArmorPiercing>穿透护甲</style>的能力。
 <style=Attenuated>无法与升级为加高弩车或散射弩车兼容</style>","升級為<style=KeyWord>重型弩車</style>：
-• <style=OverallDamage>傷害</style><style=""Number"">124-190</style> > <style=""GoodNbOutlined"">220-280</style>。
+• <style=OverallDamage>傷害</style><style=""Number"">152-190</style> > <style=""GoodNbOutlined"">220-280</style>。
 • 獲得<style=ArmorPiercing>穿透護甲</style>效果。
 <style=Attenuated>此升級、「加高弩車」、「多發弩車」只能擇一使用</style>","<style=KeyWord>ヘビーバリスタ</style>になる:
-・<style=OverallDamage>ダメージ</style><style=""Number"">124-190</style> > <style=""GoodNbOutlined"">220-280</style>
+・<style=OverallDamage>ダメージ</style><style=""Number"">152-190</style> > <style=""GoodNbOutlined"">220-280</style>
 ・<style=ArmorPiercing>鎧穿ち</style>を得る。
 <style=Attenuated>固定バリスタとスプリットバリスタの強化とは両立できない。</style>","Улучшает до <style=KeyWord>тяжёлой баллисты</style>:
-• наносит <style=""Number"">120–140</style> > <style=""GoodNbOutlined"">220–280</style> <style=OverallDamage>урона</style>;
+• наносит <style=""Number"">152-190</style> > <style=""GoodNbOutlined"">220–280</style> <style=OverallDamage>урона</style>;
 • получает <style=ArmorPiercing>бронебойность</style>;
 <style=Attenuated>Несовместимо с улучшениями ""Высокая баллиста"" и ""Залповая баллиста""</style>","Стане <style=KeyWord>важкою балістою</style>:
-• <style=OverallDamage>Шкода</style> <style=""Number"">124-190</style> > <style=""GoodNbOutlined"">220-280</style>.
+• <style=OverallDamage>Шкода</style> <style=""Number"">152-190</style> > <style=""GoodNbOutlined"">220-280</style>.
 • Має <style=ArmorPiercing>бронепроникність</style>.
 <style=Attenuated>Несумісно з поліпшеннями «Балiста на опорi» й «Рознесена баліста»</style>","Wird zu <style=KeyWord>Schwere Balliste</style>:
- • <style=OverallDamage>Schaden</style> <style=""Number"">120–140</style> > <style=""GoodNbOutlined"">220–280</style>.
+ • <style=OverallDamage>Schaden</style> <style=""Number"">152-190</style> > <style=""GoodNbOutlined"">220–280</style>.
  • <style=ArmorPiercing>Ignoriert Rüstung</style>.
 <style=Attenuated>Nicht kompatibel mit den Verbesserungen „Erhöhte Balliste“ und „Dreischuss-Balliste“</style>.","Se convierte en una <style=KeyWord>balista pesada</style>:
-• <style=OverallDamage>Daño</style> <style=""Number"">124-190</style> > <style=""GoodNbOutlined"">220-280</style>.
+• <style=OverallDamage>Daño</style> <style=""Number"">152-190</style> > <style=""GoodNbOutlined"">220-280</style>.
 • Obtiene <style=ArmorPiercing>perforación de armadura</style>.
 <style=Attenuated>Incompatible con las siguientes mejoras: balista elevada y balista triple</style>.","Vira uma <style=KeyWord>Balista Pesada</style>:
-• <style=OverallDamage>Dano</style> <style=""Number"">124-190</style> > <style=""GoodNbOutlined"">220-280</style>.
+• <style=OverallDamage>Dano</style> <style=""Number"">152-190</style> > <style=""GoodNbOutlined"">220-280</style>.
 • Recebe <style=ArmorPiercing>Perfuração de Armadura</style>.
 <style=Attenuated>Incompatível com as melhorias Balista Montada e Balista Dividida</style>","<style=KeyWord>중형 노포</style>로 강화:
-• <style=OverallDamage>피해</style> <style=""Number"">124-190</style> > <style=""GoodNbOutlined"">220-280</style>.
+• <style=OverallDamage>피해</style> <style=""Number"">152-190</style> > <style=""GoodNbOutlined"">220-280</style>.
 • <style=ArmorPiercing>장갑 관통</style> 획득
 <style=Attenuated>증축 노포 및 분할 노포 강화와 호환 불가</style>"
 BuildingUpgradeTooltipDescription_UpgradeBallistaToBallistaSplit0,"Becomes a <style=KeyWord>Split Ballista</style>:
-• <style=OverallDamage>Damage</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• <style=OverallDamage>Damage</style> <style=""Number"">152-190</style> > <style=""BadNbOutlined"">100-140</style>
 • <style=KeyWord>Fires</style> <style=""GoodNbOutlined"">3 times</style> per turn, assuming targets are available (<style=KeyWord>can't shoot the same target twice</style>).
 <style=Attenuated>Incompatible with upgrades Mounted Ballista and Heavy Ballista</style>","Améliorer en <style=KeyWord>Balliste à multiple projectile</style>:
-• <style=OverallDamage>Dégâts</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• <style=OverallDamage>Dégâts</style> <style=""Number"">152-190</style> > <style=""BadNbOutlined"">100-140</style>
 • <style=KeyWord>Tire</style> <style=""GoodNbOutlined"">3 fois</style> par tour, s'il y a des cibles valide (<style=KeyWord>ne peut pas tirer deux fois sur la même cible</style>).
 <style=Attenuated>Incompatible avec les améliorations Balliste Montée et Balliste Lourde</style>","升级为<style=KeyWord>散射弩车</style>：
-• <style=OverallDamage>伤害</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• <style=OverallDamage>伤害</style> <style=""Number"">152-190</style> > <style=""BadNbOutlined"">100-140</style>
 • 有符合条件目标的情况下每回合可<style=KeyWord>发射</style><style=""GoodNbOutlined"">3次</style>（<style=KeyWord>无法重复攻击同一个目标</style>）。
 <style=Attenuated>无法与兼容升级价高弩车或重型弩车兼容</style>","升級為<style=KeyWord>多發弩車</style>：
-• <style=OverallDamage>傷害</style><style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>。
+• <style=OverallDamage>傷害</style><style=""Number"">152-190</style> > <style=""BadNbOutlined"">100-140</style>。
 • 目標足夠時，每回合最多可<style=KeyWord>發射</style><style=""GoodNbOutlined"">3次</style>（<style=KeyWord>單一回合無法重複射擊同一目標</style>）。
 <style=Attenuated>此升級、「加高弩車」、「重型弩車」只能擇一使用</style>","<style=KeyWord>スプリットバリスタ</style>になる:
-・<style=OverallDamage>ダメージ</style><style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+・<style=OverallDamage>ダメージ</style><style=""Number"">152-190</style> > <style=""BadNbOutlined"">100-140</style>
 ・有効なターゲットがいる場合、1ターンに<style=""GoodNbOutlined"">3回</style><style=KeyWord>発射</style>する(<style=KeyWord>同じターゲットを2回以上撃つことはない</style>)。
 <style=Attenuated>固定バリスタとヘビーバリスタの強化とは両立できない。</style>","Улучшает до <style=KeyWord>залповой баллисты</style>:
-• наносит <style=""Number"">124–190</style> > <style=""BadNbOutlined"">100–140</style> <style=OverallDamage>урона</style>;
+• наносит <style=""Number"">152-190</style> > <style=""BadNbOutlined"">100–140</style> <style=OverallDamage>урона</style>;
 • <style=KeyWord>стреляет</style> <style=""GoodNbOutlined"">трижды</style> за ход, если есть цели;<style=KeyWord>не стреляет дважды в одну цель</style>;
 <style=Attenuated>Несовместимо с улучшениями ""Высокая баллиста"" и ""Тяжёлая баллиста""</style>","Стане <style=KeyWord>рознесеною балістою</style>:
-• <style=OverallDamage>Шкода</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• <style=OverallDamage>Шкода</style> <style=""Number"">152-190</style> > <style=""BadNbOutlined"">100-140</style>
 • <style=KeyWord>Стріляє</style> <style=""GoodNbOutlined"">3 рази</style> за хід, якщо є цілі (<style=KeyWord>не може вразити одну ціль двічі</style>).
 <style=Attenuated>Несумісно з поліпшеннями «Балiста на опорi» й «Важка баліста»</style>","Wird zu <style=KeyWord>Dreischuss-Balliste</style>:
- • <style=OverallDamage>Schaden</style> <style=""Number"">124–190</style> > <style=""BadNbOutlined"">100–140</style>
+ • <style=OverallDamage>Schaden</style> <style=""Number"">152-190</style> > <style=""BadNbOutlined"">100–140</style>
  • <style=KeyWord>Schießt</style> <style=""GoodNbOutlined"">dreimal</style> pro Runde, vorausgesetzt Ziele sind verfügbar (<style=KeyWord>kann nicht zweimal auf das gleiche Ziel schießen</style>).
 <style=Attenuated>Nicht kompatibel mit den Verbesserungen „Erhöhte Balliste“ und „Schwere Balliste“</style>.","Se convierte en una <style=KeyWord>balista triple</style>:
-• <style=OverallDamage>Daño</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• <style=OverallDamage>Daño</style> <style=""Number"">152-190</style> > <style=""BadNbOutlined"">100-140</style>
 • <style=KeyWord>Dispara</style> <style=""GoodNbOutlined"">3 veces</style> por turno mientras haya objetivos disponibles (<style=KeyWord>no puede disparar dos veces al mismo objetivo</style>).
 <style=Attenuated>Incompatible con las siguientes mejoras: balista elevada y balista pesada</style>.","Vira uma <style=KeyWord>Balista Dividida</style>:
-• <style=OverallDamage>Dano</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• <style=OverallDamage>Dano</style> <style=""Number"">152-190</style> > <style=""BadNbOutlined"">100-140</style>
 • <style=KeyWord>Dispara</style> <style=""GoodNbOutlined"">3 vezes</style> por turno, desde que haja alvos disponíveis (<style=KeyWord>não atira no mesmo alvo duas vezes</style>).
 <style=Attenuated>Incompatível com as melhorias Balista Montada e Balista Pesada</style>","<style=KeyWord>분할 노포</style>로 강화:
-• <style=OverallDamage>피해</style> <style=""Number"">124-190</style> > <style=""BadNbOutlined"">100-140</style>
+• <style=OverallDamage>피해</style> <style=""Number"">152-190</style> > <style=""BadNbOutlined"">100-140</style>
 • 표적을 전부 확보한 경우 한 턴에 <style=""GoodNbOutlined"">3번</style> <style=KeyWord>발사</style>합니다(<style=KeyWord>한 대상에 2번 발사하지는 않습니다</style>).
 <style=Attenuated>증축 노포 및 중형 노포 강화와 호환 불가</style>"
 ResearchName_PerkPanicMovePointResearch,Embrace Chaos,Étreindre le Chaos,拥抱混乱,擁抱混沌,混沌を抱く,Объять Хаос,Прийняти Хаос,Chaos Umarmen,Abrazar el Caos,Abraçar o Caos,혼돈 수용
@@ -3039,148 +3083,148 @@ Anões possuem uma <style=KeyWord>coleção exclusiva de vantagens</style> focad
 ApocalypseModifierTitle_InnLevelModifier,Worse Inn Heroes,Réduction du Niveau des Héros de la Taverne,旅店英雄等级降低,旅店英雄等級降低,宿の英雄レベル低下,Ниже уровень героев в таверне,Зменште рівень героїв корчми,Reduziertes Heldenlevel im Gasthaus,Reducción del nivel de los héroes de la posada,Nível Reduzido de Heróis na Estalagem,여관 영웅 레벨 감소
 ApocalypseModifierDescription_InnLevelModifier,<style=Keyword>Reduces</style> the level of Heroes in the <style=Keyword>Inn</style> by <style=keywordnb>2</style> And Increases their price by <style=keywordnb>2</style> levels. ,<style=Keyword>Réduit</style> le niveau des Héros de la <style=Keyword>Taverne</style> par <style=keywordNb>2</style>.,<style=Keyword>旅店</style>英雄的等级<style=Keyword>降低</style><style=keywordnb>2</style>级。,<style=Keyword>旅店</style>中英雄的等級<style=Keyword>降低</style><style=keywordnb>2</style>。,<style=Keyword>宿</style>の英雄レベルが<style=keywordnb>2</style><style=Keyword>低下</style>する。,"Уровень героев, нанятых в <style=Keyword>таверне</style>, будет <style=Keyword>ниже</style> на <style=keywordnb>2</style>.",<style=Keyword>Зменшує</style> рівень героїв у <style=Keyword>корчмі</style> на <style=keywordnb>2</style>.,<style=Keyword>Reduziert</style> das Level der Helden im <style=Keyword>Gasthaus</style> um <style=keywordnb>2</style>.,<style=Keyword>Reduce</style> en <style=keywordnb>2</style> el nivel de los héroes de la <style=Keyword>posada</style>.,<style=Keyword>Reduz</style> o nível de Heróis na <style=Keyword>Estalagem</style> em <style=keywordnb>2</style>.,<style=Keyword>여관</style>의 영웅 레벨이 <style=keywordnb>2</style> <style=Keyword>감소합니다</style>.
 PerkDescription_BloodDrinker,"After using {0}, Your next {1} skill gets:
-{1}{2}
-If {3} : {4}","Après avoir utilisé {0}, votre prochaine compétence {1} obtient :
-{1}{2}
-Si {3} : {4}","使用{0}后，下一个{1}技能获得：
-{1}{2}
-若{3}：{4}","使用{0}後，下一個{1}技能獲得：
-{1}{2}
-若{3}：{4}","{0}の使用後、次の{1}スキルが以下を得る:
-{1}{2}
+{2}{3}
+If {4} : {5} <style=PerkDamage>Perk Damage</style>.","Après avoir utilisé {0}, votre prochaine compétence {1} obtient :
+{2}{3}
+Si {4} : {5}","使用{0}后，下一个{1}技能获得：
+{2}{3}
+若{4}：{5}","使用{0}後，下一個{1}技能獲得：
+{2}{3}
+若{4}：{5}","{0}の使用後、次の{1}スキルが以下を得る:
+{2}{3}
 {3}の場合：{4}","После использования {0} следующий навык {1} получает:
-{1}{2}
-Если {3}: {4}","Після використання {0} наступна навичка {1} отримує:
-{1}{2}
-Якщо {3}: {4}","Nach dem Einsatz von {0} erhält deine nächste {1}-Fähigkeit:
-{1}{2}
-Wenn {3}: {4}","Después de usar {0}, tu siguiente habilidad {1} recibe:
-{1}{2}
-Si {3}: {4}","Após usar {0}, sua próxima habilidade {1} recebe:
-{1}{2}
-Se {3}: {4}","{0} 사용 후, 다음 {1} 스킬에 적용:
-{1}{2}
-{3}일 경우: {4}"
+{2}{3}
+Если {4}: {5}","Після використання {0} наступна навичка {1} отримує:
+{2}{3}
+Якщо {4}: {5}","Nach dem Einsatz von {0} erhält deine nächste {1}-Fähigkeit:
+{2}{3}
+Wenn {4}: {5}","Después de usar {0}, tu siguiente habilidad {1} recibe:
+{2}{3}
+Si {4}: {5}","Após usar {0}, sua próxima habilidade {1} recebe:
+{2}{3}
+Se {4}: {5}","{0} 사용 후, 다음 {1} 스킬에 적용:
+{2}{3}
+{4}일 경우: {5}"
 PerkDescription_BloodDrinkerUnique,"After using {0}, Your next {1} skill gets:
-{1}{2}
-If {3} : {4}
+{2}{3}
+If {4} : {5}
 
 <style=Perk>Corrupted Bonus: Frenzy</style>
-While <style=Perk>Feral Instinct</style> is active, {5} gets:
-{6}.
-{7} becomes <style=KeyWord>modifiable</style>.
-{8} gets: <style=""Isolated"">Isolation 1.25x</style>
-{9} damage penalty is lower.
+While <style=Perk>Feral Instinct</style> is active, {6} gets:
+{7}.
+{8} becomes <style=KeyWord>modifiable</style>.
+{9} gets: <style=""Isolated"">Isolation 1.25x</style>
+{4} damage penalty is lower.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Après avoir utilisé {0}, votre prochaine compétence {1} obtient :
-{1}{2}
-Si {3} : {4}
+{2}{3}
+Si {4} : {5}
 
 <style=Perk>Bonus de Corruption : Frénésie</style>
-Tant que <style=Perk>Instinct Sauvage</style> est actif, {5} obtient :
-{6}.
-{7} devient <style=KeyWord>modifiable</style>.
-{8} obtient : <style=""Isolated"">Isolation 1.25x</style>
-Pénalité de dégâts de {9} réduite.
+Tant que <style=Perk>Instinct Sauvage</style> est actif, {6} obtient :
+{7}.
+{8} devient <style=KeyWord>modifiable</style>.
+{9} obtient : <style=""Isolated"">Isolation 1.25x</style>
+Pénalité de dégâts de {4} réduite.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","使用{0}后，下一个{1}技能获得：
-{1}{2}
-若{3}：{4}
+{2}{3}
+若{4}：{5}
 
 <style=Perk>腐化加成：癫疯狂暴</style>
-<style=Perk>野性本能</style>激活时，{5}获得：
-{6}。
-{7}变为<style=KeyWord>可变化</style>。
-{8}获得：<style=""Isolated"">落单 1.25x</style>
-{9}伤害惩罚降低。
+<style=Perk>野性本能</style>激活时，{6}获得：
+{7}。
+{8}变为<style=KeyWord>可变化</style>。
+{9}获得：<style=""Isolated"">落单 1.25x</style>
+{4}伤害惩罚降低。
 
 <style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","使用{0}後，下一個{1}技能獲得：
-{1}{2}
-若{3}：{4}
+{2}{3}
+若{4}：{5}
 
 <style=Perk>腐化加成：狂暴</style>
-<style=Perk>野性本能</style>期間，{5}獲得：
-{6}。
-{7}成為<style=KeyWord>可變化</style>狀態。
-{8}獲得：<style=""Isolated"">落單 1.25x</style>
-{9}傷害懲罰降低。
+<style=Perk>野性本能</style>期間，{6}獲得：
+{7}。
+{8}成為<style=KeyWord>可變化</style>狀態。
+{9}獲得：<style=""Isolated"">落單 1.25x</style>
+{4}傷害懲罰降低。
 
 <style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","{0}の使用後、次の{1}スキルが以下を得る:
-{1}{2}
+{2}{3}
 {3}の場合：{4}
 
 <style=Perk>腐敗ボーナス: 激高</style>
-<style=Perk>野生の本能</style>発動中、{5}が以下を得る:
-{6}。
-{7}が<style=KeyWord>変更可能</style>になる。
-{8}が獲得: <style=""Isolated"">孤立 1.25x</style>
-{9}のダメージペナルティが軽減される。
+<style=Perk>野生の本能</style>発動中、{6}が以下を得る:
+{7}。
+{8}が<style=KeyWord>変更可能</style>になる。
+{9}が獲得: <style=""Isolated"">孤立 1.25x</style>
+{4}のダメージペナルティが軽減される。
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","После использования {0} следующий навык {1} получает:
-{1}{2}
-Если {3}: {4}
+{2}{3}
+Если {4}: {5}
 
 <style=Perk>Бонус от порчи: Бешенство</style>
-Пока действуют <style=Perk>животные инстинкты</style>, навык ""{5}"" получает:
-{6}.
-{7} получает <style=KeyWord>изменяемую дальность</style>.
-{8} получает: <style=""Isolated"">Изоляция 1.25x</style>
-Штраф к урону {9} снижен.
+Пока действуют <style=Perk>животные инстинкты</style>, навык ""{6}"" получает:
+{7}.
+{8} получает <style=KeyWord>изменяемую дальность</style>.
+{9} получает: <style=""Isolated"">Изоляция 1.25x</style>
+Штраф к урону {4} снижен.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Після використання {0} наступна навичка {1} отримує:
-{1}{2}
-Якщо {3}: {4}
+{2}{3}
+Якщо {4}: {5}
 
 <style=Perk>Бонус спотворення: Буяння</style>
-Поки активний <style=Perk>інстинкт хижака</style>, навичка «{5}» отримує:
-{6}.
-{7} можна <style=KeyWord>змінювати</style>.
-{8} отримує: <style=""Isolated"">Ізоляція 1.25x</style>
-Штраф до шкоди {9} зменшений.
+Поки активний <style=Perk>інстинкт хижака</style>, навичка «{6}» отримує:
+{7}.
+{8} можна <style=KeyWord>змінювати</style>.
+{9} отримує: <style=""Isolated"">Ізоляція 1.25x</style>
+Штраф до шкоди {4} зменшений.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Nach dem Einsatz von {0} erhält deine nächste {1}-Fähigkeit:
-{1}{2}
-Wenn {3}: {4}
+{2}{3}
+Wenn {4}: {5}
 
 <style=Perk>Verdorben-Bonus: Raserei</style>
-Solange <style=Perk>Urinstinkt</style> aktiv ist, erhält {5}:
-{6}.
-{7} wird <style=KeyWord>modifizierbar</style>.
-{8} erhält: <style=""Isolated"">Isolation 1.25x</style>
-Schadensmalus von {9} ist geringer.
+Solange <style=Perk>Urinstinkt</style> aktiv ist, erhält {6}:
+{7}.
+{8} wird <style=KeyWord>modifizierbar</style>.
+{9} erhält: <style=""Isolated"">Isolation 1.25x</style>
+Schadensmalus von {4} ist geringer.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Después de usar {0}, tu siguiente habilidad {1} recibe:
-{1}{2}
-Si {3}: {4}
+{2}{3}
+Si {4}: {5}
 
 <style=Perk>Bonificación de corrupción: Exaltación</style>
-Mientras <style=Perk>Instinto salvaje</style> está activo, {5} recibe:
-{6}.
-{7} pasa a ser <style=KeyWord>modificable</style>.
-{8} recibe: <style=""Isolated"">Aislamiento 1.25x</style>
-La penalización de daño de {9} es menor.
+Mientras <style=Perk>Instinto salvaje</style> está activo, {6} recibe:
+{7}.
+{8} pasa a ser <style=KeyWord>modificable</style>.
+{9} recibe: <style=""Isolated"">Aislamiento 1.25x</style>
+La penalización de daño de {4} es menor.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","Após usar {0}, sua próxima habilidade {1} recebe:
-{1}{2}
-Se {3}: {4}
+{2}{3}
+Se {4}: {5}
 
 <style=Perk>Bonificação Corrompida: Furor</style>
-Enquanto <style=Perk>Instinto Selvagem</style> estiver ativo, {5} recebe:
-{6}.
-{7} se torna <style=KeyWord>modificável</style>.
-{8} recebe: <style=""Isolated"">Isolamento 1.25x</style>
-Penalidade de dano de {9} é menor.
+Enquanto <style=Perk>Instinto Selvagem</style> estiver ativo, {6} recebe:
+{7}.
+{8} se torna <style=KeyWord>modificável</style>.
+{9} recebe: <style=""Isolated"">Isolamento 1.25x</style>
+Penalidade de dano de {4} é menor.
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","{0} 사용 후, 다음 {1} 스킬에 적용:
-{1}{2}
-{3}일 경우: {4}
+{2}{3}
+{4}일 경우: {5}
 
 <style=Perk>오염된 보너스: 광란</style>
-<style=Perk>야생 본능</style>이 활성화되어 있는 동안 {5}에 적용:
-{6}.
-{7}에 <style=KeyWord>보정치 적용 가능</style>
-{8}에 적용: <style=""Isolated"">고립 1.25x</style>
-{9} 피해 패널티 감소
+<style=Perk>야생 본능</style>이 활성화되어 있는 동안 {6}에 적용:
+{7}.
+{8}에 <style=KeyWord>보정치 적용 가능</style>
+{9}에 적용: <style=""Isolated"">고립 1.25x</style>
+{4} 피해 패널티 감소
 
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
 PerkDescription_StrongerAllies,"Whenever the Hero casts a <style=skill>skill</style> on <style=KeyWord>another</style> Hero, get:
