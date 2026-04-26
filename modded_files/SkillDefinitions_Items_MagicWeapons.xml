@@ -15,7 +15,7 @@
               <BaseChance>1</BaseChance>
               <CanAffectCaster>true</CanAffectCaster>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-              <Bonus>7</Bonus>
+              <Bonus>8</Bonus>
               <Stat Id="OverallDamage" />
               <TurnsCount>1</TurnsCount>
             </Buff>
@@ -52,6 +52,111 @@
         <Delay>0.73</Delay>
       </CamShake>
     </CastFXs>
+  </SkillDefinition>
+  <SkillDefinition Id="SwordOfDamocles1" TemplateId="SwordOfDamocles">
+    <SkillAction>
+      <Attack>
+        <AttackType>Magical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoDodge />
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>9</Bonus>
+              <Stat Id="OverallDamage" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="SwordOfDamocles2" TemplateId="SwordOfDamocles">
+    <SkillAction>
+      <Attack>
+        <AttackType>Magical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoDodge />
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>10</Bonus>
+              <Stat Id="OverallDamage" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="SwordOfDamocles3" TemplateId="SwordOfDamocles">
+    <SkillAction>
+      <Attack>
+        <AttackType>Magical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoDodge />
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>11</Bonus>
+              <Stat Id="OverallDamage" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="SwordOfDamocles4" TemplateId="SwordOfDamocles">
+    <SkillAction>
+      <Attack>
+        <AttackType>Magical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoDodge />
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>10</Bonus>
+              <Stat Id="OverallDamage" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="SwordOfDamocles5" TemplateId="SwordOfDamocles">
+    <SkillAction>
+      <Attack>
+        <AttackType>Magical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoDodge />
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>10</Bonus>
+              <Stat Id="OverallDamage" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
   </SkillDefinition>
   <SkillDefinition Id="Transfer">
     <ValidTargets>
@@ -392,7 +497,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
             <Stat Id="Dodge" />
-            <Bonus>12</Bonus>
+            <Bonus>10</Bonus>
             <TurnsCount>1</TurnsCount>
           </Buff>
         </SkillEffects>
@@ -718,7 +823,7 @@
               <BaseChance>1</BaseChance>
               <CanAffectCaster>true</CanAffectCaster>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-              <Bonus>12</Bonus>
+              <Bonus>10</Bonus>
               <Stat Id="PoisonDamageModifier" />
               <TurnsCount>1</TurnsCount>
             </Buff>
@@ -726,6 +831,7 @@
         </SkillEffects>
       </Attack>
     </SkillAction>
+  </SkillDefinition>
     <CastFXs TotalDuration="1.2">
       <VisualEffect>
         <Paths>
@@ -755,6 +861,121 @@
         <Delay>1.1</Delay>
       </CasterAnim>
     </CastFXs>
+  </SkillDefinition>
+  <SkillDefinition Id="Infect1" TemplateId="Infect">
+    <SkillAction>
+      <Attack>
+        <AttackType>Magical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <Isolated>
+            <DamageMultiplier>1.75</DamageMultiplier>
+          </Isolated>
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>11</Bonus>
+              <Stat Id="PoisonDamageModifier" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="Infect2" TemplateId="Infect">
+    <SkillAction>
+      <Attack>
+        <AttackType>Magical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <Isolated>
+            <DamageMultiplier>1.75</DamageMultiplier>
+          </Isolated>
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>12</Bonus>
+              <Stat Id="PoisonDamageModifier" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="Infect3" TemplateId="Infect">
+    <SkillAction>
+      <Attack>
+        <AttackType>Magical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <Isolated>
+            <DamageMultiplier>1.75</DamageMultiplier>
+          </Isolated>
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>13</Bonus>
+              <Stat Id="PoisonDamageModifier" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="Infect4" TemplateId="Infect">
+    <SkillAction>
+      <Attack>
+        <AttackType>Magical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <Isolated>
+            <DamageMultiplier>1.75</DamageMultiplier>
+          </Isolated>
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>14</Bonus>
+              <Stat Id="PoisonDamageModifier" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="Infect5" TemplateId="Infect">
+    <SkillAction>
+      <Attack>
+        <AttackType>Magical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <Isolated>
+            <DamageMultiplier>1.75</DamageMultiplier>
+          </Isolated>
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>15</Bonus>
+              <Stat Id="PoisonDamageModifier" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
   </SkillDefinition>
   <SkillDefinition Id="PutridBall">
     <ActionPointsCost>2</ActionPointsCost>
@@ -897,6 +1118,111 @@
     <ActionPointsCost>0</ActionPointsCost>
     <UsesPerTurnCount>1</UsesPerTurnCount>
   </SkillDefinition>
+  <SkillDefinition Id="SwordOfDamoclesOffhand1" TemplateId="SwordOfDamoclesOffhand">
+    <SkillAction>
+      <Attack>
+        <AttackType>Magical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoDodge />
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>9</Bonus>
+              <Stat Id="OverallDamage" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="SwordOfDamoclesOffhand2" TemplateId="SwordOfDamoclesOffhand">
+    <SkillAction>
+      <Attack>
+        <AttackType>Magical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoDodge />
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>10</Bonus>
+              <Stat Id="OverallDamage" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="SwordOfDamoclesOffhand3" TemplateId="SwordOfDamoclesOffhand">
+    <SkillAction>
+      <Attack>
+        <AttackType>Magical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoDodge />
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>11</Bonus>
+              <Stat Id="OverallDamage" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="SwordOfDamoclesOffhand4" TemplateId="SwordOfDamoclesOffhand">
+    <SkillAction>
+      <Attack>
+        <AttackType>Magical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoDodge />
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>10</Bonus>
+              <Stat Id="OverallDamage" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="SwordOfDamoclesOffhand5" TemplateId="SwordOfDamoclesOffhand">
+    <SkillAction>
+      <Attack>
+        <AttackType>Magical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoDodge />
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>10</Bonus>
+              <Stat Id="OverallDamage" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
   <SkillDefinition Id="MagicBashOffhand" TemplateId="MagicBash">
     <OverrideLocalizationId>MagicBashOffhand</OverrideLocalizationId>
     <ActionPointsCost>0</ActionPointsCost>
@@ -907,10 +1233,130 @@
     <ActionPointsCost>0</ActionPointsCost>
     <UsesPerTurnCount>1</UsesPerTurnCount>
   </SkillDefinition>
+  <SkillDefinition Id="InfectOffhand1" TemplateId="InfectOffhand">
+    <OverrideLocalizationId>InfectOffhand1</OverrideLocalizationId>
+    <SkillAction>
+      <Attack>
+        <AttackType>Magical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <Isolated>
+            <DamageMultiplier>1.75</DamageMultiplier>
+          </Isolated>
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>11</Bonus>
+              <Stat Id="PoisonDamageModifier" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="InfectOffhand2" TemplateId="InfectOffhand">
+    <OverrideLocalizationId>InfectOffhand2</OverrideLocalizationId>
+    <SkillAction>
+      <Attack>
+        <AttackType>Magical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <Isolated>
+            <DamageMultiplier>1.75</DamageMultiplier>
+          </Isolated>
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>12</Bonus>
+              <Stat Id="PoisonDamageModifier" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="InfectOffhand3" TemplateId="InfectOffhand">
+    <OverrideLocalizationId>InfectOffhand3</OverrideLocalizationId>
+    <SkillAction>
+      <Attack>
+        <AttackType>Magical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <Isolated>
+            <DamageMultiplier>1.75</DamageMultiplier>
+          </Isolated>
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>13</Bonus>
+              <Stat Id="PoisonDamageModifier" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="InfectOffhand4" TemplateId="InfectOffhand">
+    <OverrideLocalizationId>InfectOffhand4</OverrideLocalizationId>
+    <SkillAction>
+      <Attack>
+        <AttackType>Magical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <Isolated>
+            <DamageMultiplier>1.75</DamageMultiplier>
+          </Isolated>
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>14</Bonus>
+              <Stat Id="PoisonDamageModifier" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="InfectOffhand5" TemplateId="InfectOffhand">
+    <OverrideLocalizationId>InfectOffhand5</OverrideLocalizationId>
+    <SkillAction>
+      <Attack>
+        <AttackType>Magical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <Isolated>
+            <DamageMultiplier>1.75</DamageMultiplier>
+          </Isolated>
+          <CasterEffect>
+            <Buff>
+              <BaseChance>1</BaseChance>
+              <CanAffectCaster>true</CanAffectCaster>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <Bonus>15</Bonus>
+              <Stat Id="PoisonDamageModifier" />
+              <TurnsCount>1</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
   <SkillDefinition Id="PillarOfLight">
     <ActionPointsCost>1</ActionPointsCost>
     <UsesPerTurnCount>4</UsesPerTurnCount>
-    <Range Min="1" Max="3" CardinalDirectionOnly="false" Modifiable="true" />
+    <Range Min="1" Max="4" CardinalDirectionOnly="false" Modifiable="true" />
     <AreaOfEffect OriginX="1" OriginY="1">
          eee
          eXe
@@ -1182,7 +1628,7 @@
     <ActionPointsCost>2</ActionPointsCost>
     <ManaCost>2</ManaCost>
     <UsesPerTurnCount>2</UsesPerTurnCount>
-    <Range Min="1" Max="3" CardinalDirectionOnly="false" Modifiable="true" />
+    <Range Min="1" Max="4" CardinalDirectionOnly="false" Modifiable="true" />
     <AreaOfEffect OriginX="1" OriginY="0">
          XXX
          XXX

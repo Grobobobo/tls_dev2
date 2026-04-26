@@ -167,12 +167,12 @@
           <Debuff>
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
-            <Malus>15</Malus>
+            <Malus>12</Malus>
             <TurnsCount>1</TurnsCount>
           </Debuff>
         </SkillEffects>
       </Attack>
-    </SkillAction>
+        </SkillAction>
     <CastFXs TotalDuration="0.4">
       <VisualEffect>
         <Paths>
@@ -204,6 +204,91 @@
         <Delay>0.4</Delay>
       </CamShake>
     </CastFXs>
+  </SkillDefinition>
+  <SkillDefinition Id="Bash1" TemplateId="Bash">
+    <SkillAction>
+      <Attack>
+        <AttackType>Physical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoBlock />
+          <Debuff>
+            <BaseChance>1</BaseChance>
+            <Stat Id="Resistance" />
+            <Malus>13</Malus>
+            <TurnsCount>1</TurnsCount>
+          </Debuff>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="Bash2" TemplateId="Bash">
+    <SkillAction>
+      <Attack>
+        <AttackType>Physical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoBlock />
+          <Debuff>
+            <BaseChance>1</BaseChance>
+            <Stat Id="Resistance" />
+            <Malus>14</Malus>
+            <TurnsCount>1</TurnsCount>
+          </Debuff>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="Bash3" TemplateId="Bash">
+    <SkillAction>
+      <Attack>
+        <AttackType>Physical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoBlock />
+          <Debuff>
+            <BaseChance>1</BaseChance>
+            <Stat Id="Resistance" />
+            <Malus>15</Malus>
+            <TurnsCount>1</TurnsCount>
+          </Debuff>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="Bash4" TemplateId="Bash">
+    <SkillAction>
+      <Attack>
+        <AttackType>Physical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoBlock />
+          <Debuff>
+            <BaseChance>1</BaseChance>
+            <Stat Id="Resistance" />
+            <Malus>16</Malus>
+            <TurnsCount>1</TurnsCount>
+          </Debuff>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="Bash5" TemplateId="Bash">
+    <SkillAction>
+      <Attack>
+        <AttackType>Physical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoBlock />
+          <Debuff>
+            <BaseChance>1</BaseChance>
+            <Stat Id="Resistance" />
+            <Malus>18</Malus>
+            <TurnsCount>1</TurnsCount>
+          </Debuff>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
   </SkillDefinition>
   <SkillDefinition Id="Crush">
     <ActionPointsCost>1</ActionPointsCost>
@@ -597,6 +682,106 @@
     <ActionPointsCost>0</ActionPointsCost>
     <UsesPerTurnCount>1</UsesPerTurnCount>
   </SkillDefinition>
+  <SkillDefinition Id="BashOffhand1" TemplateId="BashOffhand">
+    <OverrideLocalizationId>BashOffhand1</OverrideLocalizationId>
+    <ActionPointsCost>0</ActionPointsCost>
+    <UsesPerTurnCount>1</UsesPerTurnCount>
+    <SkillAction>
+      <Attack>
+        <AttackType>Physical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoBlock />
+          <Debuff>
+            <BaseChance>1</BaseChance>
+            <Stat Id="Resistance" />
+            <Malus>13</Malus>
+            <TurnsCount>1</TurnsCount>
+          </Debuff>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="BashOffhand2" TemplateId="BashOffhand">
+    <OverrideLocalizationId>BashOffhand2</OverrideLocalizationId>
+    <ActionPointsCost>0</ActionPointsCost>
+    <UsesPerTurnCount>1</UsesPerTurnCount>
+    <SkillAction>
+      <Attack>
+        <AttackType>Physical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoBlock />
+          <Debuff>
+            <BaseChance>1</BaseChance>
+            <Stat Id="Resistance" />
+            <Malus>14</Malus>
+            <TurnsCount>1</TurnsCount>
+          </Debuff>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="BashOffhand3" TemplateId="BashOffhand">
+    <OverrideLocalizationId>BashOffhand3</OverrideLocalizationId>
+    <ActionPointsCost>0</ActionPointsCost>
+    <UsesPerTurnCount>1</UsesPerTurnCount>
+    <SkillAction>
+      <Attack>
+        <AttackType>Physical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoBlock />
+          <Debuff>
+            <BaseChance>1</BaseChance>
+            <Stat Id="Resistance" />
+            <Malus>15</Malus>
+            <TurnsCount>1</TurnsCount>
+          </Debuff>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="BashOffhand4" TemplateId="BashOffhand">
+    <OverrideLocalizationId>BashOffhand4</OverrideLocalizationId>
+    <ActionPointsCost>0</ActionPointsCost>
+    <UsesPerTurnCount>1</UsesPerTurnCount>
+    <SkillAction>
+      <Attack>
+        <AttackType>Physical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoBlock />
+          <Debuff>
+            <BaseChance>1</BaseChance>
+            <Stat Id="Resistance" />
+            <Malus>16</Malus>
+            <TurnsCount>1</TurnsCount>
+          </Debuff>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="BashOffhand5" TemplateId="BashOffhand">
+    <OverrideLocalizationId>BashOffhand5</OverrideLocalizationId>
+    <ActionPointsCost>0</ActionPointsCost>
+    <UsesPerTurnCount>1</UsesPerTurnCount>
+    <SkillAction>
+      <Attack>
+        <AttackType>Physical</AttackType>
+        <DamageMultiplier>1</DamageMultiplier>
+        <SkillEffects>
+          <NoBlock />
+          <Debuff>
+            <BaseChance>1</BaseChance>
+            <Stat Id="Resistance" />
+            <Malus>18</Malus>
+            <TurnsCount>1</TurnsCount>
+          </Debuff>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
   <SkillDefinition Id="ShredOffhand" TemplateId="Shred">
     <OverrideLocalizationId>ShredOffhand</OverrideLocalizationId>
     <ActionPointsCost>0</ActionPointsCost>
@@ -798,7 +983,7 @@
           </Momentum>
         </SkillEffects>
       </Attack>
-    </SkillAction>
+        </SkillAction>
     <CastFXs TotalDuration="0.4">
       <VisualEffect>
         <Paths>

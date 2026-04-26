@@ -20,7 +20,8 @@
          <LocalizedArgument Value="SkillEffectName_MultiHit" Style="MultiHit"/>
          <LocArgument Value="3" Style="DamageNb" Prefix=" x"/>
          <LocalizedArgument Prefix="SkillName_" Value="PiercingClaws" Style="Skill"/>
-      </LocArguments>
+         <LocArgument Value="DebuffDamage" Suffix="%" Style="BadNb"/>
+         </LocArguments>
       <View>
          <CompendiumEntries>
             <CompendiumEntry Id="SkillEffect_MultiHit"/>
