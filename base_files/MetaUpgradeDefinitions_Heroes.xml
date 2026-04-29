@@ -1,0 +1,675 @@
+﻿<MetaUpgradeDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:noNamespaceSchemaLocation="../MetaUpgradeDefinitions.xsd">
+
+   <!--ATTRIBUTES UPGRADES-->
+   <MetaUpgradeDefinition Id="UpgradeHeroesActionPoints">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsCompletedInCity LakeBurg" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsCompletedInCity LakeBurg" B="1"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <PlayableUnitAttributeModifier>
+            <Archetype>All</Archetype>
+            <StatsBonus>
+               <StatBonus>
+                  <Stat Id="ActionPointsTotal"/>
+                  <Bonus Min="1" Max="1"/>
+               </StatBonus>
+            </StatsBonus>
+         </PlayableUnitAttributeModifier>
+      </UpgradeEffects>
+      <!--INCOMPLETE ! Add priority to put it top of the list ?-->
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeHeroesHealth1" Price="200">
+      <IconName>UpgradeHeroesHealth</IconName>
+      <UpgradeEffects>
+         <PlayableUnitAttributeModifier>
+            <Archetype>All</Archetype>
+            <StatsBonus>
+               <StatBonus>
+                  <Stat Id="HealthTotal"/>
+                  <Bonus Min="15" Max="15"/>
+               </StatBonus>
+            </StatsBonus>
+         </PlayableUnitAttributeModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeHeroesHealth2" Price="800">
+      <IconName>UpgradeHeroesHealth</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesHealth1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <PlayableUnitAttributeModifier>
+            <Archetype>All</Archetype>
+            <StatsBonus>
+               <StatBonus>
+                  <Stat Id="HealthTotal"/>
+                  <Bonus Min="15" Max="15"/>
+               </StatBonus>
+            </StatsBonus>
+         </PlayableUnitAttributeModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeHeroesHealth3" Price="1600">
+      <IconName>UpgradeHeroesHealth</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesHealth2" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <PlayableUnitAttributeModifier>
+            <Archetype>All</Archetype>
+            <StatsBonus>
+               <StatBonus>
+                  <Stat Id="HealthTotal"/>
+                  <Bonus Min="15" Max="15"/>
+               </StatBonus>
+            </StatsBonus>
+         </PlayableUnitAttributeModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeHeroesMana1" Price="200">
+      <IconName>UpgradeHeroesMana</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesHealth1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <PlayableUnitAttributeModifier>
+            <Archetype>All</Archetype>
+            <StatsBonus>
+               <StatBonus>
+                  <Stat Id="ManaTotal"/>
+                  <Bonus Min="3" Max="3"/>
+               </StatBonus>
+            </StatsBonus>
+         </PlayableUnitAttributeModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeHeroesMana2" Price="800">
+      <IconName>UpgradeHeroesMana</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesMana1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <PlayableUnitAttributeModifier>
+            <Archetype>All</Archetype>
+            <StatsBonus>
+               <StatBonus>
+                  <Stat Id="ManaTotal"/>
+                  <Bonus Min="3" Max="3"/>
+               </StatBonus>
+            </StatsBonus>
+         </PlayableUnitAttributeModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeHeroesMana3" Price="1600">
+      <IconName>UpgradeHeroesMana</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesMana2" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <PlayableUnitAttributeModifier>
+            <Archetype>All</Archetype>
+            <StatsBonus>
+               <StatBonus>
+                  <Stat Id="ManaTotal"/>
+                  <Bonus Min="3" Max="3"/>
+               </StatBonus>
+            </StatsBonus>
+         </PlayableUnitAttributeModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeHeroesRegens1" Price="900">
+      <IconName>UpgradeHeroesRegens</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesMana2" B="1"/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesHealth2" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <PlayableUnitAttributeModifier>
+            <Archetype>All</Archetype>
+            <StatsBonus>
+               <StatBonus>
+                  <Stat Id="ManaRegen"/>
+                  <Bonus Min="1" Max="1"/>
+               </StatBonus>
+               <StatBonus>
+                  <Stat Id="HealthRegen"/>
+                  <Bonus Min="3" Max="3"/>
+               </StatBonus>
+            </StatsBonus>
+         </PlayableUnitAttributeModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeHeroesRegens2" Price="1600">
+      <IconName>UpgradeHeroesRegens</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesRegens1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <PlayableUnitAttributeModifier>
+            <Archetype>All</Archetype>
+            <StatsBonus>
+               <StatBonus>
+                  <Stat Id="ManaRegen"/>
+                  <Bonus Min="1" Max="1"/>
+               </StatBonus>
+               <StatBonus>
+                  <Stat Id="HealthRegen"/>
+                  <Bonus Min="3" Max="3"/>
+               </StatBonus>
+            </StatsBonus>
+         </PlayableUnitAttributeModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeHeroesRegens3" Price="2600">
+      <IconName>UpgradeHeroesRegens</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesRegens2" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <PlayableUnitAttributeModifier>
+            <Archetype>All</Archetype>
+            <StatsBonus>
+               <StatBonus>
+                  <Stat Id="ManaRegen"/>
+                  <Bonus Min="1" Max="1"/>
+               </StatBonus>
+               <StatBonus>
+                  <Stat Id="HealthRegen"/>
+                  <Bonus Min="3" Max="3"/>
+               </StatBonus>
+            </StatsBonus>
+         </PlayableUnitAttributeModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeHeroesOverallDamage1" Price="300">
+      <IconName>UpgradeHeroesOverallDamage</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:NightsPlayedInCity Felderland" B="4"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <PlayableUnitAttributeModifier>
+            <Archetype>All</Archetype>
+            <StatsBonus>
+               <StatBonus>
+                  <Stat Id="OverallDamage"/>
+                  <Bonus Min="3" Max="3"/>
+               </StatBonus>
+            </StatsBonus>
+         </PlayableUnitAttributeModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeHeroesOverallDamage2" Price="1200">
+      <IconName>UpgradeHeroesOverallDamage</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesOverallDamage1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <PlayableUnitAttributeModifier>
+            <Archetype>All</Archetype>
+            <StatsBonus>
+               <StatBonus>
+                  <Stat Id="OverallDamage"/>
+                  <Bonus Min="3" Max="3"/>
+               </StatBonus>
+            </StatsBonus>
+         </PlayableUnitAttributeModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeHeroesOverallDamage3" Price="2400">
+      <IconName>UpgradeHeroesOverallDamage</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesOverallDamage2" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <PlayableUnitAttributeModifier>
+            <Archetype>All</Archetype>
+            <StatsBonus>
+               <StatBonus>
+                  <Stat Id="OverallDamage"/>
+                  <Bonus Min="3" Max="3"/>
+               </StatBonus>
+            </StatsBonus>
+         </PlayableUnitAttributeModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeHeroesArmor1" Price="300">
+      <IconName>UpgradeHeroesArmor</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:NightsPlayedInCity Felderland" B="4"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <PlayableUnitAttributeModifier>
+            <Archetype>All</Archetype>
+            <StatsBonus>
+               <StatBonus>
+                  <Stat Id="ArmorTotal"/>
+                  <Bonus Min="10" Max="10"/>
+               </StatBonus>
+            </StatsBonus>
+         </PlayableUnitAttributeModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeHeroesArmor2" Price="1200">
+      <IconName>UpgradeHeroesArmor</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+		  <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesArmor1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <PlayableUnitAttributeModifier>
+            <Archetype>All</Archetype>
+            <StatsBonus>
+               <StatBonus>
+                  <Stat Id="ArmorTotal"/>
+                  <Bonus Min="10" Max="10"/>
+               </StatBonus>
+            </StatsBonus>
+         </PlayableUnitAttributeModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeHeroesArmor3" Price="2400">
+      <IconName>UpgradeHeroesArmor</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesArmor2" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <PlayableUnitAttributeModifier>
+            <Archetype>All</Archetype>
+            <StatsBonus>
+               <StatBonus>
+                  <Stat Id="ArmorTotal"/>
+                  <Bonus Min="10" Max="10"/>
+               </StatBonus>
+            </StatsBonus>
+         </PlayableUnitAttributeModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeHeroesExpGain1" Price="2100">
+      <IconName>UpgradeHeroesExpGain</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:NightsPlayedInCity LakeBurg" B="3"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <PlayableUnitAttributeModifier>
+            <Archetype>All</Archetype>
+            <StatsBonus>
+               <StatBonus>
+                  <Stat Id="ExperienceGainMultiplier"/>
+                  <Bonus Min="5" Max="5"/>
+               </StatBonus>
+            </StatsBonus>
+         </PlayableUnitAttributeModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeHeroesExpGain2" Price="4200">
+      <IconName>UpgradeHeroesExpGain</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesExpGain1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <PlayableUnitAttributeModifier>
+            <Archetype>All</Archetype>
+            <StatsBonus>
+               <StatBonus>
+                  <Stat Id="ExperienceGainMultiplier"/>
+                  <Bonus Min="5" Max="5"/>
+               </StatBonus>
+            </StatsBonus>
+         </PlayableUnitAttributeModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeHeroesExpGain3" Price="8300">
+      <IconName>UpgradeHeroesExpGain</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesExpGain2" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <PlayableUnitAttributeModifier>
+            <Archetype>All</Archetype>
+            <StatsBonus>
+               <StatBonus>
+                  <Stat Id="ExperienceGainMultiplier"/>
+                  <Bonus Min="5" Max="5"/>
+               </StatBonus>
+            </StatsBonus>
+         </PlayableUnitAttributeModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   
+   <!--TRAITS-->
+   <MetaUpgradeDefinition Id="UnlockGoodBackgroundsTraits">
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RecruitedHeroesCount" B="3"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RecruitedHeroesCount" B="15"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <TraitsParameters>
+            <StartTraitTotalPointsModifier>6</StartTraitTotalPointsModifier>
+            <UnitTraitPointsBoundariesModifiers>
+               <Min>2</Min>
+               <Max>2</Max>
+            </UnitTraitPointsBoundariesModifiers>
+         </TraitsParameters>
+         <UnlockTraits>
+            <Trait>Wise</Trait>
+            <Trait>Genius</Trait>
+            <Trait>Methodical</Trait>
+            <Trait>Energetic</Trait>
+            <Trait>Aristocratic</Trait>
+            <Trait>Versatile</Trait>
+            <Trait>FeyBlood</Trait>
+            <Trait>DragonBlood</Trait>
+            <Trait>DemonBlood</Trait>
+            <Trait>AngelicBlood</Trait>
+            <Trait>GiantBlood</Trait>
+           
+            <Trait>Knight</Trait>
+            <Trait>Gladiator</Trait>
+            <Trait>MartialArtist</Trait>
+            <Trait>Archmage</Trait>
+            <Trait>Warlock</Trait>
+            <Trait>Sniper</Trait>
+            <Trait>Paladin</Trait>
+            <Trait>OccultHunter</Trait>
+            <Trait>RoyalGuard</Trait>
+            <Trait>Hero</Trait>
+            <Trait>Prophet</Trait>
+            <Trait>Surgeon</Trait>
+            <Trait>Inquisitor</Trait>
+            <Trait>Assassin</Trait>
+         </UnlockTraits>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--LEVELUP RARITY-->
+   <MetaUpgradeDefinition Id="UpgradeLevelupUncommonRarity1" Price="4200">
+      <Categories>
+         <Category Value="Hero"/>
+      </Categories>
+      <IconName>UpgradeLevelupUncommonRarity</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeHeroesExpGain2" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <ItemRaritiesModifier Id="LevelUp">
+            <Probability Weight="3">2</Probability>
+         </ItemRaritiesModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeLevelupUncommonRarity2" Price="6200">
+      <Categories>
+         <Category Value="Hero"/>
+      </Categories>
+      <IconName>UpgradeLevelupUncommonRarity</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeLevelupUncommonRarity1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <ItemRaritiesModifier Id="LevelUp">
+            <Probability Weight="3">2</Probability>
+         </ItemRaritiesModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeLevelupUncommonRarity3" Price="7100">
+      <Categories>
+         <Category Value="Hero"/>
+      </Categories>
+      <IconName>UpgradeLevelupUncommonRarity</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeLevelupUncommonRarity2" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <ItemRaritiesModifier Id="LevelUp">
+            <Probability Weight="3">2</Probability>
+         </ItemRaritiesModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeLevelupUncommonRarity4" Price="8500">
+      <Categories>
+         <Category Value="Hero"/>
+      </Categories>
+      <IconName>UpgradeLevelupUncommonRarity</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeLevelupUncommonRarity3" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <ItemRaritiesModifier Id="LevelUp">
+            <Probability Weight="3">2</Probability>
+         </ItemRaritiesModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeLevelupRareRarity1" Price="9900">
+      <Categories>
+         <Category Value="Hero"/>
+      </Categories>
+      <IconName>UpgradeLevelupRareRarity</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeLevelupUncommonRarity4" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <ItemRaritiesModifier Id="LevelUp">
+            <Probability Weight="2">3</Probability>
+         </ItemRaritiesModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeLevelupRareRarity2" Price="11400">
+      <Categories>
+         <Category Value="Hero"/>
+      </Categories>
+      <IconName>UpgradeLevelupRareRarity</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeLevelupRareRarity1" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <ItemRaritiesModifier Id="LevelUp">
+            <Probability Weight="2">3</Probability>
+         </ItemRaritiesModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UpgradeLevelupRareRarity3" Price="12800">
+      <Categories>
+         <Category Value="Hero"/>
+      </Categories>
+      <IconName>UpgradeLevelupRareRarity</IconName>
+      <UnlockConditions>		  
+		 <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UpgradeLevelupRareRarity2" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <ItemRaritiesModifier Id="LevelUp">
+            <Probability Weight="2">3</Probability>
+         </ItemRaritiesModifier>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+</MetaUpgradeDefinitions>
