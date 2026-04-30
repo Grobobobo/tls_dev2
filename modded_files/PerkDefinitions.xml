@@ -590,7 +590,7 @@
          <TokenVariable Key="RemainingEnemiesToKill" Value="EnemiesToKill - Module.Buffer"/>         
          <TokenVariable Key="EnemiesToKill" Value="4"/>
          <TokenVariable Key="ManaRegenBonus" Value="1"/>
-         <TokenVariable Key="BonusMax" Value="Floor(Owner.ManaTotal * (ManaPercentage/100))"/>
+         <TokenVariable Key="BonusMax" Value="15"/>
          <TokenVariable Key="ManaPercentage" Value="50"/>
       </TokenVariables>
       <LocArguments>
@@ -599,7 +599,7 @@
          <StatArgument Stat="ManaRegen" Value="CurrentManaRegenBonus" Interpreted="true"/>
          <LocArgument Value="RemainingEnemiesToKill" Interpreted="true" Style="KeyWordNb"/>
          <LocArgument Value="BonusMax" Interpreted="true" Style="KeyWordNb"/>
-         <LocArgument Value="ManaPercentage" Suffix="%" Style="KeyWordNb"/>
+         <LocArgument Value="BonusMax" Interpreted="true" Style="KeyWordNb"/>
          <StatArgument Stat="ManaTotal"/>
       </LocArguments>
       <View>
@@ -3873,7 +3873,7 @@
          <TokenVariable Key="RemainingEnemiesToKill" Value="EnemiesToKill - Module.Buffer"/>
          <TokenVariable Key="EnemiesToKill" Value="4"/>
          <TokenVariable Key="HealthRegenBonus" Value="6"/>
-         <TokenVariable Key="BonusMax" Value="Floor(Owner.HealthTotal * (HealthPercentage/100))"/>
+         <TokenVariable Key="BonusMax" Value="100"/>
          <TokenVariable Key="HealthPercentage" Value="50"/>
       </TokenVariables>
       <LocArguments>
@@ -3882,7 +3882,7 @@
          <StatArgument Stat="HealthRegen" Value="CurrentHealthRegenBonus" Interpreted="true"/>
          <LocArgument Value="RemainingEnemiesToKill" Interpreted="true" Style="KeyWordNb"/>
          <LocArgument Value="BonusMax" Interpreted="true" Style="KeyWordNb"/>
-         <LocArgument Value="HealthPercentage" Suffix="%" Style="KeyWordNb"/>
+         <LocArgument Value="BonusMax" Interpreted="true" Style="KeyWordNb"/>
          <StatArgument Stat="HealthTotal"/>
       </LocArguments>
       <View>
