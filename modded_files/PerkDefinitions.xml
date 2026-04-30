@@ -2706,8 +2706,8 @@
       <View>
          <DisplayInHUD/>
          <SkillsToShow>
-            <SkillToShow Id="ResupplyTraps" OverallUses="3"/> <!-- TODO use "SkillId" TokenVariable if ever implemented-->
-            <SkillToShow Id="ResupplyCata" OverallUses="3"/> <!-- TODO use "SkillId" TokenVariable if ever implemented-->
+            <SkillToShow Id="ResupplyTraps" OverallUses="2"/> <!-- TODO use "SkillId" TokenVariable if ever implemented-->
+            <SkillToShow Id="ResupplyCata" OverallUses="2"/> <!-- TODO use "SkillId" TokenVariable if ever implemented-->
          </SkillsToShow>
       </View>
       <Modules>
@@ -2725,6 +2725,7 @@
       <TokenVariables>
          <TokenVariable Key="TargetAmount" Value="3"/>
          <TokenVariable Key="SkillId" Value="HumanBallistaPerkSkill"/>
+         <TokenVariable Key="IsInsideHaven" Value="BooleanChoice(Owner.IsInCity, 1, 0)"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="TargetAmount" Style="KeyWordNb"/>
@@ -2744,6 +2745,9 @@
          <BufferModule>
             <Events>
                <Event EffectTime="OnEnemyMovementEnd">
+                  <Conditions>
+                     <IsTrue Value="IsInsideHaven = 1"/><!-- OUT OF HAVEN-->
+                  </Conditions>
                   <Actions>
                      <TriggerEffects/>
                   </Actions>
