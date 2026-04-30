@@ -186,7 +186,7 @@
          <TokenVariable Key="NextThreshold" Value="(NumberOfStepsReached + 1) * ManaRegenThreshold"/>
          <TokenVariable Key="NumberOfStepsReached" Value="Floor(Owner.UnlockedManaRegen / ManaRegenThreshold)"/>
          <TokenVariable Key="DamageBonus" Value="4"/>
-         <TokenVariable Key="ManaRegenThreshold" Value="4"/>
+         <TokenVariable Key="ManaRegenThreshold" Value="5"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="ManaRegenThreshold" Style="GoodNb"/>

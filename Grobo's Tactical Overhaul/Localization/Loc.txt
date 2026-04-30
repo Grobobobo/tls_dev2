@@ -3401,3 +3401,41 @@ Desbloqueia a habilidade {1}, permitindo <style=RegenStat>restaurar</style> <sty
 
 {1} 스킬 잠금 해제: 주변 투석기의 <style=UsePerNight>하룻밤 사용 횟수</style> <style=GoodNb>2</style> <style=RegenStat>회복</style>
 "
+PerkDescription_HumanBallista,"At the end of the enemy movement phase, If the Hero is <style=KeyWord>inside</style> the <style=KeyWord>Haven</style>, the Hero <style=KeyWord>automatically</style> attacks the {0} <style=KeyWord>closest</style> enemies with the {1} skill.","À la fin de la phase de mouvement des ennemis, si le Héros est <style=KeyWord>à l'intérieur</style> du <style=KeyWord>Bastion</style>, le Héros attaque <style=KeyWord>automatiquement</style> les {0} ennemis les <style=KeyWord>plus proches</style> avec la compétence {1}.",在敌方回合结束时，如果英雄<style=KeyWord>在</style><style=KeyWord>城镇</style><style=KeyWord>范围内</style>，英雄将会使用{1}技能<style=KeyWord>自动</style>攻击{0}个<style=KeyWord>距离最近</style>的敌人。,在敵方回合結束時，如果英雄<style=KeyWord>在</style><style=KeyWord>城鎮</style><style=KeyWord>內</style>，英雄將會使用{1}技能<style=KeyWord>自動</style>攻擊{0}個<style=KeyWord>距離最近</style>的敵人。,エネミーの移動フェーズ終了時、英雄が<style=KeyWord>町</style>の<style=KeyWord>中</style>にいる場合、英雄が<style=KeyWord>自動で</style><style=KeyWord>近くの</style>エネミー{0}体へ{1}スキルを使用する。,"В конце каждого перемещения врагов если герой находится <style=KeyWord>на</style> земле <style=KeyWord>Убежища</style>, герой <style=KeyWord>автоматически</style> атакует <style=KeyWord>ближайших</style> врагов навыком ""{1}"" {0} р.","Наприкінці фази ходу ворога якщо герой <style=KeyWord>у</style> <style=KeyWord>Прихистку</style>, герой <style=KeyWord>автоматично</style> атакує {0} <style=KeyWord>найближчих</style> ворогів навичкою {1}.","Am Ende der Gegnerischen Bewegungsphase wenn sich der Held <style=KeyWord>innerhalb</style> der <style=KeyWord>Stadt</style> befindet, greift der Held <style=KeyWord>automatisch</style> die {0} <style=KeyWord>nächsten</style> Gegner mit seiner Fähigkeit {1} an.","Al finalizar la fase de movimiento, si el héroe está <style=KeyWord>dentro</style> del <style=KeyWord>Refugio</style>, el héroe ataca <style=KeyWord>automáticamente</style> a los {0} enemigos <style=KeyWord>más cercanos</style> con la habilidad {1}.","No final da fase de movimento inimigo, se o Herói estiver <style=KeyWord>dentro</style> do <style=KeyWord>Abrigo</style>, o Herói ataca <style=KeyWord>automaticamente</style> os {0} inimigos <style=KeyWord>mais próximos</style> com a habilidade {1}.","적 이동 단계가 끝날 때마다 영웅이 <style=KeyWord>피난처</style> <style=KeyWord>안에</style> 있을 경우, 영웅이 {1} 스킬로 <style=KeyWord>가장 가까운</style> 적 {0}명을 <style=KeyWord>자동</style> 공격"
+PerkDescription_Harvester,"Every {0} enemies <style=KeyWord>killed</style> (including <style=Poison>Poison</style> kills):
+{1}, up to {5}.
+<style=Attenuated>This modifier is reset every morning.</style>","Tous les {0} ennemis <style=KeyWord>tués</style><nbsp> (incluant les victimes de <style=Poison>Poison</style>):
+{1}, jusqu'à un maximum de {5}.
+<style=Attenuated>Ce modificateur est réinitialisé tous les matins.</style>","每<style=KeyWord>击杀</style>{0}个敌人（包括死于<style=Poison>中毒</style>）：
+{1}，上限为{5}。
+<style=Attenuated>此加成在每个白天重置。</style>","每<style=KeyWord>擊殺</style>{0}個敵人（包括死於<style=Poison>中毒</style>）：
+{1}，上限為{5}。
+<style=Attenuated>此加成在每個白天重置。</style>","{0}体のエネミーを<style=KeyWord>倒す</style>度に(<style=Poison>毒</style>による死も可）、以下の効果を付与: 
+{1}（{5}まで）。
+<style=Attenuated>この効果は毎朝リセットされる</style>。","За каждого {0}-го врага, <style=KeyWord>убитого</style> героем (включая смерти от <style=Poison>яда</style>):
+{1}, до {5}.
+<style=Attenuated>Эффект сбрасывается каждое утро.</style>","За кожних {0} <style=KeyWord>вбитих</style> ворогів (включно з убивством <style=Poison>отрутою</style>):
+{1}, не більше {5}.
+<style=Attenuated>Щоранку цей модифікатор скидається.</style>","Pro {0} <style=KeyWord>getötete</style> Gegner (einschließlich <style=Poison>Gift</style>-Kills):
+{1}, bis zu {5}.
+<style=Attenuated>Dieser Modifikator wird jeden Morgen zurückgesetzt.</style>","Cada {0} enemigos <style=KeyWord>muertos</style> (incluyendo muertes por <style=Poison>envenenamiento</style>):
+ {1} hasta {5}.
+ <style=Attenuated>Este modificador se reinicia cada mañana.</style>","A cada {0} inimigos <style=KeyWord>abatidos</style> (incluindo abates por <style=Poison>Envenenamento</style>):
+{1}, até {5}.
+<style=Attenuated>Este modificador é redefinido todas as manhãs.</style>","적을 {0}명만큼 <style=KeyWord>처치</style>할 때마다 (<style=Poison>중독</style> 처치 포함):
+{1} (최대: {5})
+<style=Attenuated>보정치는 매일 아침 초기화</style>"
+PerkDescription_MagicFuel,"{1} is increased by {0} of the Hero's current {2}, up to {4} {5}.","{1} augmentés de {0} du <style=KeyWord>{2} actuel</style> du Héros, jusqu'à un maximum de {4} {5}.",按英雄<style=KeyWord>当前{2}</style>的{0}提升{1}，上限为{4}{5}。,按英雄<style=KeyWord>當前{2}</style>的{0}提升{1}，上限為{4}{5}。,{1}が<style=KeyWord>英雄の{2}</style>の{0}分上昇する（{4}{5}まで）。,"{1} увеличится на {0} от <style=KeyWord>текущего уровня маны героя</style>, до {4} {5}.","{1} збільшується на {0} від <style=KeyWord>поточного значення параметра {2}</style> героя, не більше {4} {5}.","Der {1} wird um {0} des <style=KeyWord>derzeitigen {2}</style> des Helden erhöht, bis zu {4} {5}.","{1} aumenta un {0} de la cantidad de {2} <style=KeyWord>actual</style> del héroe, hasta {4} {5}.","{1} recebe aumento equivalente a {0} do <style=KeyWord>{2} atual</style> do Herói, até {4} {5}.",{1} 능력치가 영웅이 지닌 <style=KeyWord>현재 {2}</style>의 {0}만큼 증가 (최대: {4} {5})
+PerkDescription_Bodybuilder,"Every {0} <style=KeyWord>max {1}</style> after {2}:
+{3}, up to {6} {7}.","Tous les {0} <style=KeyWord>{1} max</style> après {2}<nbsp>:
+{3}, jusqu'à un maximum de {6} {7}.","<style=KeyWord>最大{1}</style>超过{2}时，每超过{0}可带来：
+{3}，上限为{6}{7}","<style=KeyWord>最大{1}</style>超過{2}時，每超過{0}可帶來：
+{3}，上限為{6}{7}","<style=KeyWord>最大{1}</style>が{2}以上に{0}ごと増えるたびに：
+{3}（{6}{7}まで）。","Герой получает бонус за каждые {0} ед. <style=KeyWord>макс. здоровья</style> сверх {2} ед.:
+{3}, до {6} {7}.","За кожні {0} від <style=KeyWord>максимального {1}</style> після {2}:
+{3}, не більше {6} {7}.","Alle {0} <style=KeyWord>max {1}</style> nach {2}:
+{3}, bis zu {6} {7}.","Cada {0} de <style=KeyWord>{1} máx.</style> por encima de {2}:
+{3}, hasta {6} {7}.","A cada {0} de <style=KeyWord>{1} máxima</style> após {2}:
+{3}, até {6} {7}.","<style=KeyWord>최대 {1}</style>이 {2} 이후 {0}만큼 증가할 때마다:
+{3} (최대: {6} {7})"
+PerkDescription_SanguineFuel,"{1} is increased by {0} of the Hero's <style=KeyWord>current {2}</style>, up to {4} {5}.","{1} est augmenté de {0} de <style=KeyWord>{2} actuelle</style> du Héros, jusqu'à un maximum de {4} {5}.",按英雄<style=KeyWord>当前{2}</style>的{0}的提升{1}，上限为{4}{5}。,按英雄<style=KeyWord>當前{2}</style>的{0}的提升{1}，上限為{4}{5}。,英雄の<style=KeyWord>現在の{2}</style>の{0}分{1}が上昇する（{4}{5}まで）。,"{1} увеличивается на {0} от текущего <style=KeyWord>{2} героя</style>, до {4} {5}.","{1} збільшується на {0} від <style=KeyWord>поточного значення параметра {2}</style> героя, не більше {4} {5}.","{1} wird um {0} des <style=KeyWord>aktuellen {2}</style> des Helden erhöht, bis zu {4} {5}.","{1} aumenta un {0} de la cantidad de {2} <style=KeyWord>actual</style> del héroe, hasta {4} {5}.","{1} recebe aumento equivalente a {0} da <style=KeyWord>{2} atual</style> do Herói, até {4} {5}.",{1} 능력치가 영웅이 지닌 <style=KeyWord>현재 {2}</style>의 {0}만큼 증가 (최대: {4} {5})

@@ -59,13 +59,14 @@
    <!-- T2 -->
    <PerkDefinition Id="Bodybuilder">
       <TokenVariables>
-         <TokenVariable Key="PhysicalDamageBonus" Value="NumberOfStepsReached * PhysicalDamagePercentage"/>
+         <TokenVariable Key="PhysicalDamageBonus" Value="Min(NumberOfStepsReached * PhysicalDamagePercentage, DamageCapPercentage)"/>
          <TokenVariable Key="PhysicalDamagePercentage" Value="1"/>
          <TokenVariable Key="NextThreshold" Value="MinimumHealthThreshold + (NumberOfStepsReached + 1) * HealthStep"/>
          <TokenVariable Key="NumberOfStepsReached" Value="Floor(CurrentHealthOverThreshold / HealthStep)"/>
          <TokenVariable Key="HealthStep" Value="10"/>
          <TokenVariable Key="CurrentHealthOverThreshold" Value="Max(0, Owner.HealthTotal - MinimumHealthThreshold)"/>
          <TokenVariable Key="MinimumHealthThreshold" Value="100"/>
+         <TokenVariable Key="DamageCapPercentage" Value="30"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="HealthStep" Style="KeyWordNb"/>
@@ -74,6 +75,8 @@
          <StatArgument Stat="PhysicalDamage" Value="PhysicalDamagePercentage"/>
          <StatArgument Stat="PhysicalDamage" Value="PhysicalDamageBonus" Interpreted="true"/>
          <StatArgument Stat="HealthTotal" Value="NextThreshold" Interpreted="true" DisplaySign="false" Style="KeyWordNb"/>
+         <LocArgument Value="DamageCapPercentage" Suffix="%" Style="KeyWordNb"/>
+         <StatArgument Stat="PhysicalDamage"/>
       </LocArguments>
       <View>
          <DisplayBonusBeforePurchase/>
@@ -426,7 +429,7 @@
    
    <PerkDefinition Id="OrganicArmor">
       <TokenVariables>
-         <TokenVariable Key="HealingReceivedBonus" Value="50"/>
+         <TokenVariable Key="HealingReceivedBonus" Value="100"/>
          <TokenVariable Key="TransformedArmorValue" Value="Floor(Owner.UnlockedArmorTotal * TransformedArmorPercentage / 100)"/>
          <TokenVariable Key="TransformedArmorPercentage" Value="150"/>
       </TokenVariables>
@@ -702,14 +705,17 @@
    <!-- T2 -->
    <PerkDefinition Id="MagicFuel">
       <TokenVariables>
-         <TokenVariable Key="MagicalDamageBonus" Value="Floor(Owner.Mana * (ManaPercentage / 100))"/>
+         <TokenVariable Key="MagicalDamageBonus" Value="Min(Floor(Owner.Mana * (ManaPercentage / 100)), DamageCapPercentage)"/>
          <TokenVariable Key="ManaPercentage" Value="40"/>
+         <TokenVariable Key="DamageCapPercentage" Value="30"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="ManaPercentage" Suffix="%" Style="KeyWordNb"/>
          <StatArgument Stat="MagicalDamage"/>
          <StatArgument Stat="ManaTotal"/>
          <StatArgument Stat="MagicalDamage" Value="MagicalDamageBonus" Interpreted="true"/>
+         <LocArgument Value="DamageCapPercentage" Suffix="%" Style="KeyWordNb"/>
+         <StatArgument Stat="MagicalDamage"/>
       </LocArguments>
       <View>
          <DisplayBonusBeforePurchase/>
@@ -3962,14 +3968,17 @@
 
    <PerkDefinition Id="SanguineFuel">
       <TokenVariables>
-         <TokenVariable Key="MagicalDamageBonus" Value="Floor(Owner.Health * (HealthPercentage / 100))"/>
+         <TokenVariable Key="MagicalDamageBonus" Value="Min(Floor(Owner.Health * (HealthPercentage / 100)), DamageCapPercentage)"/>
          <TokenVariable Key="HealthPercentage" Value="8"/>
+         <TokenVariable Key="DamageCapPercentage" Value="30"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="HealthPercentage" Suffix="%" Style="KeyWordNb"/>
          <StatArgument Stat="MagicalDamage"/>
          <StatArgument Stat="HealthTotal"/>
          <StatArgument Stat="MagicalDamage" Value="MagicalDamageBonus" Interpreted="true"/>
+         <LocArgument Value="DamageCapPercentage" Suffix="%" Style="KeyWordNb"/>
+         <StatArgument Stat="MagicalDamage"/>
       </LocArguments>
       <View>
          <DisplayBonusBeforePurchase/>
