@@ -1,0 +1,171 @@
+﻿<FogDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:noNamespaceSchemaLocation="FogDefinitions.xsd">
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- TEST -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   
+   <!--<FogDefinition Id="Test" TemplateId="Default">
+      <IncreaseEveryXDays>5</IncreaseEveryXDays>
+      <FogDensities>
+         <FogDensity Name="VeryThin" Value="4"/>
+      </FogDensities>
+   </FogDefinition>-->
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- END TEST -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   
+   <FogDefinition Id="Lakeburg">
+      <IncreaseEveryXDays>2</IncreaseEveryXDays>
+      <InitialDensityIndex>2</InitialDensityIndex>
+      
+      <FogDensities>
+         <FogDensity Name="VeryThin" Value="22"/>
+         <FogDensity Name="Thin" Value="20"/>
+         <FogDensity Name="Average" Value="18"/>
+         <FogDensity Name="Dense" Value="16"/>
+         <FogDensity Name="VeryDense" Value="14"/>
+      </FogDensities> 
+      
+      <DayExceptions>
+         <DayException DayId="11">
+            <FogDensity>VeryThin</FogDensity>
+         </DayException>
+      </DayExceptions>
+   </FogDefinition>
+
+   
+   <FogDefinition Id="Glenwald" TemplateId="Lakeburg">
+      <InitialDensityIndex>2</InitialDensityIndex>
+      
+      <FogDensities>
+         <FogDensity Name="VeryThin" Value="23"/>
+         <FogDensity Name="Thin" Value="21"/>
+         <FogDensity Name="Average" Value="19"/>
+         <FogDensity Name="Dense" Value="17"/>
+         <FogDensity Name="VeryDense" Value="15"/> 
+      </FogDensities>
+      
+      <DayExceptions>
+         <DayException DayId="9">
+            <FogDensity>VeryThin</FogDensity>
+         </DayException>
+      </DayExceptions>
+   </FogDefinition>
+   
+
+  <FogDefinition Id="TutorialMap">
+    <IncreaseEveryXDays>1</IncreaseEveryXDays>
+    <InitialDensityIndex>2</InitialDensityIndex>
+     
+    <FogDensities>
+      <FogDensity Name="VeryThin" Value="21"/>
+      <FogDensity Name="Thin" Value="21"/>
+      <FogDensity Name="Average" Value="21"/>
+      <FogDensity Name="Dense" Value="15"/>
+      <FogDensity Name="VeryDense" Value="4"/>
+    </FogDensities>
+  </FogDefinition>
+
+   
+  <FogDefinition Id="Felderland">
+    <IncreaseEveryXDays>2</IncreaseEveryXDays>
+    <InitialDensityIndex>2</InitialDensityIndex>
+     
+    <FogDensities>
+      <FogDensity Name="VeryThin" Value="23"/>
+      <FogDensity Name="Thin" Value="21"/>
+      <FogDensity Name="Average" Value="19"/>
+      <FogDensity Name="Dense" Value="17"/>
+      <FogDensity Name="VeryDense" Value="15"/>
+    </FogDensities>
+     
+     <DayExceptions>
+        <DayException DayId="6">
+           <FogDensity>VeryThin</FogDensity>
+        </DayException>
+     </DayExceptions>
+  </FogDefinition>
+
+
+
+   <FogDefinition Id="Elderlicht" TemplateId="Lakeburg">
+      <InitialDensityIndex>2</InitialDensityIndex>
+
+      <FogDensities>
+         <FogDensity Name="VeryThin" Value="27"/>
+         <FogDensity Name="Thin" Value="25"/>
+         <FogDensity Name="Average" Value="22"/>
+         <FogDensity Name="Dense" Value="19"/>
+         <FogDensity Name="VeryDense" Value="16"/>
+      </FogDensities>
+
+      <DayExceptions>
+         <DayException DayId="13">
+            <FogDensity>VeryThin</FogDensity>
+         </DayException>
+      </DayExceptions>
+   </FogDefinition>
+
+
+
+   <FogDefinition Id="Glintfein" TemplateId="Lakeburg">
+      <IncreaseEveryXDays>2</IncreaseEveryXDays>
+      <InitialDensityIndex>2</InitialDensityIndex>
+
+      <FogDensities>
+         <FogDensity Name="VeryThin" Value="27"/>
+         <FogDensity Name="Thin" Value="24"/>
+         <FogDensity Name="Average" Value="21"/>
+         <FogDensity Name="Dense" Value="18"/>
+         <FogDensity Name="VeryDense" Value="15"/>
+      </FogDensities>
+
+      <DayExceptions>
+         <DayException DayId="6">
+            <FogDensity>VeryThin</FogDensity>
+         </DayException>
+      </DayExceptions>
+   </FogDefinition>
+
+	<FogDefinition Id="GildenbergRedux">
+		<IncreaseEveryXDays>2</IncreaseEveryXDays>
+		<InitialDensityIndex>2</InitialDensityIndex>
+
+		<FogDensities>
+			<FogDensity Name="VeryThin" Value="26" />
+			<FogDensity Name="Thin" Value="23"/>
+			<FogDensity Name="Average" Value="20"/>
+			<FogDensity Name="Dense" Value="17"/>
+			<FogDensity Name="VeryDense" Value="14"/>
+		</FogDensities>
+
+		<DayExceptions>
+			<DayException DayId="7">
+				<FogDensity>VeryThin</FogDensity>
+			</DayException>
+		</DayExceptions>
+	</FogDefinition>
+
+   <FogDefinition Id="GlenwaldRedux">
+      <IncreaseEveryXDays>2</IncreaseEveryXDays>
+      <InitialDensityIndex>2</InitialDensityIndex>
+
+      <FogDensities>
+         <FogDensity Name="VeryThin" Value="28" />
+         <FogDensity Name="Thin" Value="25"/>
+         <FogDensity Name="Average" Value="22"/>
+         <FogDensity Name="Dense" Value="19"/>
+         <FogDensity Name="VeryDense" Value="16"/>
+      </FogDensities>
+
+      <DayExceptions>
+         <DayException DayId="9">
+            <FogDensity>VeryThin</FogDensity>
+         </DayException>
+      </DayExceptions>
+   </FogDefinition>
+
+</FogDefinitions>
