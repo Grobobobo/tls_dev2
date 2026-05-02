@@ -784,8 +784,8 @@
          __X__
 
       </AreaOfEffect>
-    <ActionPointsCost>2</ActionPointsCost>
-    <ManaCost>8</ManaCost>
+    <ActionPointsCost>3</ActionPointsCost>
+    <ManaCost>4</ManaCost>
     <Range Min="4" Max="10" CardinalDirectionOnly="true" Modifiable="true" />
     <UsesPerTurnCount>1</UsesPerTurnCount>
     <AffectedUnits>
@@ -1151,7 +1151,7 @@
     </CastFXs>
   </SkillDefinition>
   <SkillDefinition Id="PetalStorm">
-    <ActionPointsCost>3</ActionPointsCost>
+    <ActionPointsCost>2</ActionPointsCost>
     <ManaCost>8</ManaCost>
     <AreaOfEffect OriginX="3" OriginY="4">
 

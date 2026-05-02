@@ -2011,17 +2011,29 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.15</DamageMultiplier>
+        <DamageMultiplier>0.8</DamageMultiplier>
         <SkillEffects>
+          <Poison>
+            <BaseChance>1</BaseChance>
+            <DamagePerTurn>25</DamagePerTurn>
+            <TurnsCount>3</TurnsCount>
+          </Poison>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="MovePointsTotal" />
-            <Malus>3</Malus>
-            <TurnsCount>2</TurnsCount>
+            <Malus>2</Malus>
+            <TurnsCount>1</TurnsCount>
           </Debuff>
           <SurroundingEffect>
-            <Damage Multiplier="0.55" />
+            <Damage Multiplier="0.4" />
+          <Debuff>
+            <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+            <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+            <Stat Id="MovePointsTotal" />
+            <Malus>2</Malus>
+            <TurnsCount>1</TurnsCount>
+          </Debuff>
           </SurroundingEffect>
         </SkillEffects>
       </Attack>

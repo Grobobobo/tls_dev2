@@ -3246,8 +3246,8 @@
          <!--<TokenVariable Key="SkillUsed" Value="Min(Module.Buffer, OverheatThreshold)"/>-->
          <!--A decommenter si limite haute-->
          <TokenVariable Key="SkillUsed" Value="Module.Buffer"/>
-         <TokenVariable Key="OverheatThreshold" Value="7"/>
-			<TokenVariable Key="CooldownPerTurn" Value="4"/>
+         <TokenVariable Key="OverheatThreshold" Value="6"/>
+			<TokenVariable Key="CooldownPerTurn" Value="3"/>
 			<TokenVariable Key="SkillId" Value="OverheatUniqueSkill"/>
 			<TokenVariable Key="BastHealthCost" Value="9"/>
 			<TokenVariable Key="HeatlCostPerPoint" Value="1"/>
@@ -3877,7 +3877,7 @@
          <TokenVariable Key="PoisonScalingOnLevel" Value="(Floor(PlayableUnitLevel/PerLevelHeroScale) * PoisonScalingLevelMultiplicative)"/>
          <TokenVariable Key="PlayableUnitLevel" Value="(BooleanChoice(HasOwner,Owner.Level,1))"/>
          <TokenVariable Key="PlayerPoisonScalingOnHit" Value="0.25"/>
-         <TokenVariable Key="PerLevelHeroScale" Value="4"/>
+         <TokenVariable Key="PerLevelHeroScale" Value="5"/>
 
          <TokenVariable Key="ApplyStatusRange" Value="4"/>
          <TokenVariable Key="PoisonPlayerDuration" Value="3"/>

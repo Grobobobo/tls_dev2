@@ -517,14 +517,19 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.15</DamageMultiplier>
+        <DamageMultiplier>0.8</DamageMultiplier>
         <SkillEffects>
+          <Poison>
+            <BaseChance>1</BaseChance>
+            <DamagePerTurn>25</DamagePerTurn>
+            <TurnsCount>3</TurnsCount>
+          </Poison>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="MovePointsTotal" />
-            <Malus>3</Malus>
-            <TurnsCount>2</TurnsCount>
+            <Malus>2</Malus>
+            <TurnsCount>1</TurnsCount>
           </Debuff>
         </SkillEffects>
       </Attack>
@@ -889,7 +894,7 @@
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectBossUnits>true</CanAffectBossUnits>
             <Stat Id="Block" />
-            <Malus>30</Malus>
+            <Malus>40</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <RemoveStatus>
@@ -961,7 +966,7 @@
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectBossUnits>true</CanAffectBossUnits>
             <Stat Id="Block" />
-            <Malus>33</Malus>
+            <Malus>44</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <RemoveStatus>
@@ -990,7 +995,7 @@
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectBossUnits>true</CanAffectBossUnits>
             <Stat Id="Block" />
-            <Malus>35</Malus>
+            <Malus>48</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <RemoveStatus>
@@ -1019,7 +1024,7 @@
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectBossUnits>true</CanAffectBossUnits>
             <Stat Id="Block" />
-            <Malus>38</Malus>
+            <Malus>52</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <RemoveStatus>
@@ -1048,7 +1053,7 @@
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectBossUnits>true</CanAffectBossUnits>
             <Stat Id="Block" />
-            <Malus>41</Malus>
+            <Malus>56</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <RemoveStatus>
@@ -1077,7 +1082,7 @@
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectBossUnits>true</CanAffectBossUnits>
             <Stat Id="Block" />
-            <Malus>45</Malus>
+            <Malus>60</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <RemoveStatus>

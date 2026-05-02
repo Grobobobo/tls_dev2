@@ -833,8 +833,8 @@
 		<TokenVariables>
          <!--<TokenVariable Key="SkillUsed" Value="Min(Module.Buffer, OverheatThreshold)"/>--> <!--A decommenter si limite haute-->
          <TokenVariable Key="SkillUsed" Value="Module.Buffer"/>
-         <TokenVariable Key="OverheatThreshold" Value="7"/>
-			<TokenVariable Key="CooldownPerTurn" Value="4"/>
+         <TokenVariable Key="OverheatThreshold" Value="6"/>
+			<TokenVariable Key="CooldownPerTurn" Value="3"/>
 			<TokenVariable Key="SkillId" Value="OverheatSkill"/>
 			<TokenVariable Key="BastHealthCost" Value="9"/>
 			<TokenVariable Key="HeatlCostPerPoint" Value="1"/>
