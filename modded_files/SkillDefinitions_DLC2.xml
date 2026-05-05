@@ -411,10 +411,11 @@
         <AttackType>Ranged</AttackType>
         <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>12</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -422,8 +423,8 @@
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-              <Stat Id="Accuracy" />
-              <Malus>10</Malus>
+              <Stat Id="Dodge" />
+              <Malus>12</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
           </SurroundingEffect>
@@ -476,10 +477,11 @@
         <AttackType>Ranged</AttackType>
         <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>12</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -493,10 +495,11 @@
         <AttackType>Ranged</AttackType>
         <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>13</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -504,8 +507,8 @@
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-              <Stat Id="Accuracy" />
-              <Malus>11</Malus>
+              <Stat Id="Dodge" />
+              <Malus>13</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
           </SurroundingEffect>
@@ -534,10 +537,11 @@
         <AttackType>Ranged</AttackType>
         <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>13</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -551,10 +555,11 @@
         <AttackType>Ranged</AttackType>
         <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>14</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -562,8 +567,8 @@
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-              <Stat Id="Accuracy" />
-              <Malus>12</Malus>
+              <Stat Id="Dodge" />
+              <Malus>14</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
           </SurroundingEffect>
@@ -592,10 +597,11 @@
         <AttackType>Ranged</AttackType>
         <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>14</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -609,10 +615,11 @@
         <AttackType>Ranged</AttackType>
         <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>15</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -620,8 +627,8 @@
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-              <Stat Id="Accuracy" />
-              <Malus>13</Malus>
+              <Stat Id="Dodge" />
+              <Malus>15</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
           </SurroundingEffect>
@@ -650,10 +657,11 @@
         <AttackType>Ranged</AttackType>
         <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>15</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -667,10 +675,11 @@
         <AttackType>Ranged</AttackType>
         <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>16</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -678,8 +687,8 @@
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-              <Stat Id="Accuracy" />
-              <Malus>14</Malus>
+              <Stat Id="Dodge" />
+              <Malus>16</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
           </SurroundingEffect>
@@ -708,10 +717,11 @@
         <AttackType>Ranged</AttackType>
         <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>16</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -725,10 +735,11 @@
         <AttackType>Ranged</AttackType>
         <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>18</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -736,8 +747,8 @@
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-              <Stat Id="Accuracy" />
-              <Malus>15</Malus>
+              <Stat Id="Dodge" />
+              <Malus>18</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
           </SurroundingEffect>
@@ -766,10 +777,11 @@
         <AttackType>Ranged</AttackType>
         <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>18</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>

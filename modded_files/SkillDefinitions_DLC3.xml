@@ -66,8 +66,8 @@
             <CanAffectCaster>false</CanAffectCaster>
             <BaseChance>1</BaseChance>
             <Stat Id="OverallDamage" />
-            <Malus>33</Malus>
-            <TurnsCount>2</TurnsCount>
+            <Malus>66</Malus>
+            <TurnsCount>1</TurnsCount>
           </Debuff>
         </SkillEffects>
       </Attack>
@@ -1265,7 +1265,7 @@
     </AffectedUnits>
     <SkillAction>
       <Attack>
-        <BaseDamage Min="110 * (1 + Level/13)" Max="110 * (1 + Level/13)" />
+        <BaseDamage Min="160 * (1 + Level/13)" Max="160 * (1 + Level/13)" />
         <AttackType>Magical</AttackType>
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>

@@ -1090,7 +1090,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Physical</AttackType>
-        <DamageMultiplier>0.7</DamageMultiplier>
+        <DamageMultiplier>0.85</DamageMultiplier>
         <SkillEffects>
           <Follow />
           <Opportunistic>
@@ -1342,11 +1342,12 @@
         <DamageMultiplier>1.2</DamageMultiplier>
         <SkillEffects>
           <Maneuver />
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Dodge" />
-            <Malus>10</Malus>
+            <Malus>12</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <SurroundingEffect>
@@ -1354,7 +1355,7 @@
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
               <Stat Id="Dodge" />
-              <Malus>10</Malus>
+              <Malus>12</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
           </SurroundingEffect>
@@ -1430,60 +1431,7 @@
         <DamageMultiplier>1.2</DamageMultiplier>
         <SkillEffects>
           <Maneuver />
-          <Debuff>
-            <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-            <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Dodge" />
-            <Malus>11</Malus>
-            <TurnsCount>2</TurnsCount>
-          </Debuff>
-          <SurroundingEffect>
-            <Debuff>
-              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-              <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-              <Stat Id="Dodge" />
-              <Malus>11</Malus>
-              <TurnsCount>2</TurnsCount>
-            </Debuff>
-          </SurroundingEffect>
-        </SkillEffects>
-      </Attack>
-    </SkillAction>
-  </SkillDefinition>
-  <SkillDefinition Id="Leap2" TemplateId="Leap">
-    <SkillAction>
-      <Attack>
-        <AttackType>Physical</AttackType>
-        <DamageMultiplier>1.2</DamageMultiplier>
-        <SkillEffects>
-          <Maneuver />
-          <Debuff>
-            <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-            <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Dodge" />
-            <Malus>12</Malus>
-            <TurnsCount>2</TurnsCount>
-          </Debuff>
-          <SurroundingEffect>
-            <Debuff>
-              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-              <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-              <Stat Id="Dodge" />
-              <Malus>12</Malus>
-              <TurnsCount>2</TurnsCount>
-            </Debuff>
-          </SurroundingEffect>
-        </SkillEffects>
-      </Attack>
-    </SkillAction>
-  </SkillDefinition>
-  <SkillDefinition Id="Leap3" TemplateId="Leap">
-    <SkillAction>
-      <Attack>
-        <AttackType>Physical</AttackType>
-        <DamageMultiplier>1.2</DamageMultiplier>
-        <SkillEffects>
-          <Maneuver />
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
@@ -1504,13 +1452,14 @@
       </Attack>
     </SkillAction>
   </SkillDefinition>
-  <SkillDefinition Id="Leap4" TemplateId="Leap">
+  <SkillDefinition Id="Leap2" TemplateId="Leap">
     <SkillAction>
       <Attack>
         <AttackType>Physical</AttackType>
         <DamageMultiplier>1.2</DamageMultiplier>
         <SkillEffects>
           <Maneuver />
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
@@ -1531,13 +1480,14 @@
       </Attack>
     </SkillAction>
   </SkillDefinition>
-  <SkillDefinition Id="Leap5" TemplateId="Leap">
+  <SkillDefinition Id="Leap3" TemplateId="Leap">
     <SkillAction>
       <Attack>
         <AttackType>Physical</AttackType>
         <DamageMultiplier>1.2</DamageMultiplier>
         <SkillEffects>
           <Maneuver />
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
@@ -1551,6 +1501,62 @@
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
               <Stat Id="Dodge" />
               <Malus>15</Malus>
+              <TurnsCount>2</TurnsCount>
+            </Debuff>
+          </SurroundingEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="Leap4" TemplateId="Leap">
+    <SkillAction>
+      <Attack>
+        <AttackType>Physical</AttackType>
+        <DamageMultiplier>1.2</DamageMultiplier>
+        <SkillEffects>
+          <Maneuver />
+          <NoDodge />
+          <Debuff>
+            <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+            <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+            <Stat Id="Dodge" />
+            <Malus>16</Malus>
+            <TurnsCount>2</TurnsCount>
+          </Debuff>
+          <SurroundingEffect>
+            <Debuff>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+              <Stat Id="Dodge" />
+              <Malus>16</Malus>
+              <TurnsCount>2</TurnsCount>
+            </Debuff>
+          </SurroundingEffect>
+        </SkillEffects>
+      </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="Leap5" TemplateId="Leap">
+    <SkillAction>
+      <Attack>
+        <AttackType>Physical</AttackType>
+        <DamageMultiplier>1.2</DamageMultiplier>
+        <SkillEffects>
+          <Maneuver />
+          <NoDodge />
+          <Debuff>
+            <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+            <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+            <Stat Id="Dodge" />
+            <Malus>18</Malus>
+            <TurnsCount>2</TurnsCount>
+          </Debuff>
+          <SurroundingEffect>
+            <Debuff>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+              <Stat Id="Dodge" />
+              <Malus>18</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
           </SurroundingEffect>
