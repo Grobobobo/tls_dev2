@@ -368,7 +368,7 @@ ItemName_MedalPerkAgainstTheWall,"<style=""DwarfIconItem""></style>Medal of Resu
 PerkDescription_Overheat,"Whenever a <style=KeyWord>Cannon</style> <style=Skill>skills</style> is cast:
 {7} <style=Bad>Heat</style> for each {8} and {9} base cost.
 Whenever <style=Bad>Heat</style> reaches {0}, every <style=KeyWord>Cannon</style> <style=Skill>skill</style> gets:
-{1} {2} <style=KeyWord>cost</style>, increased by {3} for each {8} and {9} base cost.
+{1} {2} <style=KeyWord>cost</style>, increased by {3} for each <style=Bad>Heat</style> above {0}.
 {4} is <style=KeyWord>automatically</style> cast on the Hero.
 Afterwards, set <style=Bad>Heat</style> to <style=Bad>0</style>.
 At the <style=KeyWord>end</style> of the Heroes' turn:
@@ -810,7 +810,8 @@ Aumenta {6} <style=KeyWord>Máx.</style> em {5}.
 <style=""DwarfIcon""></style> <style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
 PerkDescription_StrongThrow,"Every {0} enemies <style=KeyWord>damaged</style> with a <style=KeyWord>Boomerang</style> skill, the next <style=KeyWord>Boomerang</style> <style=Skill>skill</style> gets:
 <color=#549EE4>Secondary</color> tiles now count as <style=bad>Primary</style> tiles.
-<style=Skill>Precise Targeting</style> gets: {1}{2}.
+<style=good>-2</style> <style=Mana>Mana</style> cost.
+{4} gets: {1}{2} and {5}{6}.
 <style=Attenuated>This modifier is reset every morning.</style>
 <style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","Pour chaque {0} ennemis <style=KeyWord>endommagés</style> par une compétence <style=KeyWord>Boomerang</style>, la prochaine compétence <style=KeyWord>Boomerang</style> <style=Skill>compétence</style> obtient:
 Les cases <color=#549EE4>Secondaires</color> comptent désormais comme des cases <style=bad>Primaires</style>.
@@ -1216,7 +1217,7 @@ O herói <style=KeyWord>automaticamente</style> ataca os {3} inimigos <style=Key
 PerkDescription_OverheatUniquePerk,"Whenever a <style=KeyWord>Cannon</style> <style=Skill>skill</style> is cast:
 {7} <style=Bad>Heat</style> for each {8} and {9} base cost.
 Whenever <style=Bad>Heat</style> reaches {0}, every <style=KeyWord>Cannon</style> <style=Skill>skill</style> gets:
-{1} {2} <style=KeyWord>cost</style>, increased by {3} for each {8} and {9} base cost.
+{1} {2} <style=KeyWord>cost</style>, increased by {3} for each <style=Bad>Heat</style> above {0}.
 {4} is <style=KeyWord>automatically</style> cast on the Hero.
 Afterwards, set <style=Bad>Heat</style> to <style=Bad>0</style>.
 At the <style=KeyWord>end</style> of the Heroes' turn:
@@ -1337,7 +1338,8 @@ No <style=KeyWord>fim</style> do turno dos Heróis:
 <style=""WaltyIcon""></style> <style=""WaltyText"">고통의 이야기 DLC</style>"
 PerkDescription_StrongThrowUnique,"Every {0} enemies <style=KeyWord>damaged</style> with a <style=KeyWord>Boomerang</style> skill, the next <style=KeyWord>Boomerang</style> <style=Skill>skill</style> gets:
 <color=#549EE4>Secondary</color> tiles now count as <style=bad>Primary</style> tiles.
-<style=Skill>Precise Targeting</style> gets: {1}{2}.
+<style=good>-2</style> <style=Mana>Mana</style> cost.
+{4} gets: {1}{2} and {5}{6}.
 <style=Attenuated>This modifier is reset every morning.</style>
 <style=Perk>Corrupted Bonus: Whiplash</style>
 Strong Throw activates more often.

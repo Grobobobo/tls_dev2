@@ -211,7 +211,7 @@
    <ApocalypseModifierStepDefinition Id="BossUnitHealthModifier_1">
       <ApocalypseLevel>2</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="HealthModifier" Value="125"/>
+         <TokenVariable Key="HealthModifier" Value="50"/>
          <TokenVariable Key="ArmorModifier" Value="50"/>
       </TokenVariables>
       <Effects>
@@ -231,7 +231,7 @@
    <ApocalypseModifierStepDefinition Id="BossUnitHealthModifier_2" TemplateId="BossUnitHealthModifier_1">
       <ApocalypseLevel>4</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="HealthModifier" Value="250"/>
+         <TokenVariable Key="HealthModifier" Value="100"/>
          <TokenVariable Key="ArmorModifier" Value="100"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
@@ -239,7 +239,7 @@
    <ApocalypseModifierStepDefinition Id="BossUnitHealthModifier_3" TemplateId="BossUnitHealthModifier_1">
       <ApocalypseLevel>6</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="HealthModifier" Value="375"/>
+         <TokenVariable Key="HealthModifier" Value="150"/>
          <TokenVariable Key="ArmorModifier" Value="150"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>

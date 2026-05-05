@@ -1713,7 +1713,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Physical</AttackType>
-        <BaseDamage Min="70 * (1 + Level/13)" Max="108 * (1 + Level/13)" Interpreted="true" />
+        <BaseDamage Min="72 * (1 + Level/13)" Max="110 * (1 + Level/13)" Interpreted="true" />
         <DamageMultiplier>1.5</DamageMultiplier>
         <SkillEffects>
           <IgnoreLineOfSight />
@@ -1921,7 +1921,7 @@
       </Attack>
     </SkillAction>
   </SkillDefinition>
-    <SkillDefinition Id="SharpenClawsUnique" TemplateId="SharpenClaws">
+  <SkillDefinition Id="SharpenClawsUnique" TemplateId="SharpenClaws">
     <SkillAction>
       <Generic>
         <SkillEffects>
@@ -1943,7 +1943,6 @@
       </Generic>
     </SkillAction>
   </SkillDefinition>
-
   <SkillDefinition Id="Assassinate_Unique" TemplateId="Assassinate" GroupId="Assassinate_Unique">
     <UsesPerTurnCount>3</UsesPerTurnCount>
     <SkillAction>
@@ -2026,14 +2025,14 @@
             <TurnsCount>1</TurnsCount>
           </Debuff>
           <SurroundingEffect>
-            <Damage Multiplier="0.4" />
-          <Debuff>
-            <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-            <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="MovePointsTotal" />
-            <Malus>2</Malus>
-            <TurnsCount>1</TurnsCount>
-          </Debuff>
+            <Damage Multiplier="0.8" />
+            <Debuff>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+              <Stat Id="MovePointsTotal" />
+              <Malus>2</Malus>
+              <TurnsCount>1</TurnsCount>
+            </Debuff>
           </SurroundingEffect>
         </SkillEffects>
       </Attack>
@@ -2072,10 +2071,10 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.4</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
           <Stun>
-            <BaseChance>0.7</BaseChance>
+            <BaseChance>0.65</BaseChance>
           </Stun>
         </SkillEffects>
       </Attack>

@@ -573,7 +573,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.2</DamageMultiplier>
+        <DamageMultiplier>1.3</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -635,7 +635,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.2</DamageMultiplier>
+        <DamageMultiplier>1.3</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -658,7 +658,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.2</DamageMultiplier>
+        <DamageMultiplier>1.3</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -681,7 +681,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.2</DamageMultiplier>
+        <DamageMultiplier>1.3</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -704,7 +704,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.2</DamageMultiplier>
+        <DamageMultiplier>1.3</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -727,7 +727,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.2</DamageMultiplier>
+        <DamageMultiplier>1.3</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -754,10 +754,10 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.4</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
           <Stun>
-            <BaseChance>0.7</BaseChance>
+            <BaseChance>0.65</BaseChance>
           </Stun>
           <Propagation PropagationsCount="6" />
         </SkillEffects>
@@ -1676,7 +1676,7 @@
   </SkillDefinition>
   <SkillDefinition Id="FireThrower">
     <ActionPointsCost>2</ActionPointsCost>
-    <ManaCost>5</ManaCost>
+    <ManaCost>6</ManaCost>
     <UsesPerTurnCount>1</UsesPerTurnCount>
     <Range Min="1" Max="1" CardinalDirectionOnly="true" />
     <AreaOfEffect OriginX="2" OriginY="0">
@@ -1687,7 +1687,13 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.1</DamageMultiplier>
+        <DamageMultiplier>1.25</DamageMultiplier>
+        <SkillEffects>
+          <RemoveStatus>
+            <BaseChance>1</BaseChance>
+            <Status>RemovablePositive</Status>
+          </RemoveStatus>
+        </SkillEffects>
       </Attack>
     </SkillAction>
     <CastFXs TotalDuration="0.9">
@@ -1844,7 +1850,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.4</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
           <ArmorPiercing />
         </SkillEffects>
@@ -1907,7 +1913,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.6</DamageMultiplier>
+        <DamageMultiplier>1.5</DamageMultiplier>
         <SkillEffects>
           <Propagation PropagationsCount="9" />
         </SkillEffects>
@@ -2146,7 +2152,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Block" />
-            <Malus>44</Malus>
+            <Malus>48</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <Debuff>
@@ -2173,7 +2179,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Block" />
-            <Malus>48</Malus>
+            <Malus>56</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <Debuff>
@@ -2200,7 +2206,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Block" />
-            <Malus>52</Malus>
+            <Malus>64</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <Debuff>
@@ -2227,7 +2233,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Block" />
-            <Malus>56</Malus>
+            <Malus>72</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <Debuff>
@@ -2254,7 +2260,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Block" />
-            <Malus>60</Malus>
+            <Malus>80</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <Debuff>

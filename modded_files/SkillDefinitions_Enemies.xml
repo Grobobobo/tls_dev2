@@ -4107,7 +4107,7 @@
 
    <SkillDefinition Id="CorruptedMageCharge">
 
-      <Range Min="1" Max="8" CardinalDirectionOnly="false"/>
+      <Range Min="1" Max="6" CardinalDirectionOnly="false"/>
 
       <SkillAction>
 
@@ -4289,7 +4289,7 @@
 
                   <BaseChance>1</BaseChance>
 
-                  <Malus>100</Malus>
+                  <Malus>35</Malus>
 
                   <Stat Id="Resistance"/>
 

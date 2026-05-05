@@ -51,7 +51,7 @@
   </SkillDefinition>
   <SkillDefinition Id="SlowDeath">
     <ActionPointsCost>1</ActionPointsCost>
-    <UsesPerTurnCount>4</UsesPerTurnCount>
+    <UsesPerTurnCount>5</UsesPerTurnCount>
     <Range Min="1" Max="6" CardinalDirectionOnly="false" Modifiable="true" />
     <SkillAction>
       <Attack>
@@ -966,7 +966,7 @@
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectBossUnits>true</CanAffectBossUnits>
             <Stat Id="Block" />
-            <Malus>44</Malus>
+            <Malus>48</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <RemoveStatus>
@@ -995,7 +995,7 @@
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectBossUnits>true</CanAffectBossUnits>
             <Stat Id="Block" />
-            <Malus>48</Malus>
+            <Malus>56</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <RemoveStatus>
@@ -1024,7 +1024,7 @@
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectBossUnits>true</CanAffectBossUnits>
             <Stat Id="Block" />
-            <Malus>52</Malus>
+            <Malus>64</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <RemoveStatus>
@@ -1053,7 +1053,7 @@
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectBossUnits>true</CanAffectBossUnits>
             <Stat Id="Block" />
-            <Malus>56</Malus>
+            <Malus>72</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <RemoveStatus>
@@ -1082,7 +1082,7 @@
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectBossUnits>true</CanAffectBossUnits>
             <Stat Id="Block" />
-            <Malus>60</Malus>
+            <Malus>80</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <RemoveStatus>
@@ -1483,18 +1483,23 @@
   </SkillDefinition>
   <SkillDefinition Id="ExplosiveBolt">
     <ActionPointsCost>2</ActionPointsCost>
-    <ManaCost>3</ManaCost>
+    <ManaCost>4</ManaCost>
     <UsesPerTurnCount>1</UsesPerTurnCount>
     <Range Min="3" Max="10" CardinalDirectionOnly="false" Modifiable="true" />
     <AreaOfEffect OriginX="1" OriginY="1">
-         _X_
-         XXX
-         _X_
+         _e_
+         eXe
+         _e_
       </AreaOfEffect>
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.45</DamageMultiplier>
+        <DamageMultiplier>3</DamageMultiplier>
+        <SkillEffects>
+          <SurroundingEffect>
+            <Damage Multiplier="1.5" />
+          </SurroundingEffect>
+        </SkillEffects>
       </Attack>
     </SkillAction>
     <CastFXs TotalDuration="1.2">

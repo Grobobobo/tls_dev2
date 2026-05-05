@@ -320,7 +320,7 @@
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
           <Stun>
-            <BaseChance>0.7</BaseChance>
+            <BaseChance>0.80</BaseChance>
           </Stun>
         </SkillEffects>
       </Attack>
@@ -375,9 +375,10 @@
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
           <Stun>
-            <BaseChance>0.7</BaseChance>
+            <BaseChance>0.80</BaseChance>
           </Stun>
-          <Propagation PropagationsCount="3" />
+          <MultiHit HitsCount="2" />
+          <Propagation PropagationsCount="2" />
         </SkillEffects>
       </Attack>
     </SkillAction>
@@ -397,7 +398,7 @@
 
       </AreaOfEffect>
     <ActionPointsCost>1</ActionPointsCost>
-    <ManaCost>1</ManaCost>
+    <ManaCost>2</ManaCost>
     <Range Min="4" Max="10" CardinalDirectionOnly="false" Modifiable="true" />
     <CanRotate />
     <CanFlip />
@@ -408,7 +409,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -468,10 +469,12 @@
          _X___
 
       </AreaOfEffect>
+    <ActionPointsCost>1</ActionPointsCost>
+    <ManaCost>0</ManaCost>
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -488,7 +491,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -524,10 +527,12 @@
          _X___
 
       </AreaOfEffect>
+    <ActionPointsCost>1</ActionPointsCost>
+    <ManaCost>0</ManaCost>
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -544,7 +549,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -580,10 +585,12 @@
          _X___
 
       </AreaOfEffect>
+    <ActionPointsCost>1</ActionPointsCost>
+    <ManaCost>0</ManaCost>
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -600,7 +607,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -636,10 +643,12 @@
          _X___
 
       </AreaOfEffect>
+    <ActionPointsCost>1</ActionPointsCost>
+    <ManaCost>0</ManaCost>
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -656,7 +665,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -692,10 +701,12 @@
          _X___
 
       </AreaOfEffect>
+    <ActionPointsCost>1</ActionPointsCost>
+    <ManaCost>0</ManaCost>
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -712,7 +723,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -748,10 +759,12 @@
          _X___
 
       </AreaOfEffect>
+    <ActionPointsCost>1</ActionPointsCost>
+    <ManaCost>0</ManaCost>
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
@@ -794,14 +807,14 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.5</DamageMultiplier>
+        <DamageMultiplier>1.7</DamageMultiplier>
         <SkillEffects>
           <Stun>
-            <BaseChance>0.6</BaseChance>
+            <BaseChance>0.85</BaseChance>
           </Stun>
           <SurroundingEffect>
             <Stun>
-              <BaseChance>0.6</BaseChance>
+              <BaseChance>0.85</BaseChance>
             </Stun>
           </SurroundingEffect>
         </SkillEffects>
@@ -887,8 +900,8 @@
          __X__
 
       </AreaOfEffect>
-    <ActionPointsCost>2</ActionPointsCost>
-    <ManaCost>8</ManaCost>
+    <ActionPointsCost>3</ActionPointsCost>
+    <ManaCost>2</ManaCost>
     <Range Min="4" Max="10" CardinalDirectionOnly="true" Modifiable="true" />
     <UsesPerTurnCount>2</UsesPerTurnCount>
     <AffectedUnits>
@@ -897,10 +910,10 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.5</DamageMultiplier>
+        <DamageMultiplier>1.7</DamageMultiplier>
         <SkillEffects>
           <Stun>
-            <BaseChance>0.6</BaseChance>
+            <BaseChance>0.85</BaseChance>
           </Stun>
         </SkillEffects>
       </Attack>
@@ -928,7 +941,7 @@
           </Momentum>
           <SurroundingEffect>
             <Poison>
-              <DamagePerTurn>35</DamagePerTurn>
+              <DamagePerTurn>40</DamagePerTurn>
               <TurnsCount>3</TurnsCount>
             </Poison>
           </SurroundingEffect>
@@ -1179,7 +1192,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.5</DamageMultiplier>
         <SkillEffects>
           <RemoveStatus>
             <BaseChance>1</BaseChance>
@@ -1262,14 +1275,14 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.5</DamageMultiplier>
+        <DamageMultiplier>1.7</DamageMultiplier>
         <SkillEffects>
           <Stun>
-            <BaseChance>0.6</BaseChance>
+            <BaseChance>0.85</BaseChance>
           </Stun>
           <SurroundingEffect>
             <Stun>
-              <BaseChance>0.6</BaseChance>
+              <BaseChance>0.85</BaseChance>
             </Stun>
           </SurroundingEffect>
         </SkillEffects>
@@ -1296,7 +1309,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.5</DamageMultiplier>
         <SkillEffects>
           <RemoveStatus>
             <BaseChance>1</BaseChance>

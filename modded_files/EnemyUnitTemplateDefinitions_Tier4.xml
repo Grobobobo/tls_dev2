@@ -109,7 +109,7 @@
 
                <SkillId Value="TankyStun"/>
 
-               <Cooldown Value="3"/>
+               <Cooldown Value="1"/>
 
                <Preconditions>
 
@@ -484,13 +484,55 @@
 
             </Goal>
 
-            <!-- Cast buff : If possible, try to cast buff. Minimum of 3 targets to seem intelligent (update : min = 2). Use furthest target instead of optimal so that multiple mages don't all target the same group of enemies.-->
+            <!--Charge death ray : If hero in 2-8 tile range and this enemy has no Ă˘â‚¬Ĺ›ChargedĂ˘â‚¬ĹĄ Flag, skip turn and gain Ă˘â‚¬Ĺ›ChargedĂ˘â‚¬ĹĄ flag-->
 
-            <Goal Id="02_CorruptedMageBuff">
+            <Goal Id="03_CorruptedMageCharge">
+
+               <SkillId Value="CorruptedMageCharge"/>
+               <Cooldown Value="1"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition NbTurns="1"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="15"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+            
+            <!-- Cast buff : If possible, try to cast buff. Minimum of 3 targets to seem intelligent (update : min = 2). Use furthest target instead of optimal so that multiple mages don't all target the same group of enemies.-->
+            <Goal Id="03_CorruptedMageBuff">
 
                <SkillId Value="CorruptedMageBuff"/>
 
-               <Cooldown Value="2"/>
+               <Cooldown Value="1"/>
 
                <Preconditions>
 
@@ -536,47 +578,6 @@
 
             </Goal>
 
-            <!--Charge death ray : If hero in 2-8 tile range and this enemy has no Ă˘â‚¬Ĺ›ChargedĂ˘â‚¬ĹĄ Flag, skip turn and gain Ă˘â‚¬Ĺ›ChargedĂ˘â‚¬ĹĄ flag-->
-
-            <Goal Id="03_CorruptedMageCharge">
-
-               <SkillId Value="CorruptedMageCharge"/>
-
-               <Preconditions>
-
-                  <ConditionsGroup>
-
-                     <NotInFogCondition/>
-
-                  </ConditionsGroup>
-
-               </Preconditions>
-
-               <TargetTypes>
-
-                  <PlayableUnit>
-
-                     <TargetConditions>
-
-                        <ConditionsGroup>
-
-                           <TargetInRangeCondition Max="15"/>
-
-                        </ConditionsGroup>
-
-                     </TargetConditions>
-
-                  </PlayableUnit>
-
-               </TargetTypes>
-
-               <TargetingMethod>
-
-                  <Closest/>
-
-               </TargetingMethod>
-
-            </Goal>
 
             <!--Attack MagicCircle: default goal-->
 

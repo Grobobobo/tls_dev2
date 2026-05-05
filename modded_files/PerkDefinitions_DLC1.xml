@@ -572,7 +572,7 @@
 		<TokenVariables>
 			<TokenVariable Key="DamagePerStack" Value="4"/>
 			<TokenVariable Key="PerkStacks" Value="Min(Max(0,Module.Buffer), MaxStacks)"/>
-         <TokenVariable Key="MaxStacks" Value="15"/>
+         <TokenVariable Key="MaxStacks" Value="20"/>
          <TokenVariable Key="WasAttackedThisTurn" Value="Module.Buffer2"/>
          <TokenVariable Key="StackPerEnemy" Value="3"/>
          <TokenVariable Key="StackLoosePerSkill" Value="1"/>
@@ -833,11 +833,11 @@
 		<TokenVariables>
          <!--<TokenVariable Key="SkillUsed" Value="Min(Module.Buffer, OverheatThreshold)"/>--> <!--A decommenter si limite haute-->
          <TokenVariable Key="SkillUsed" Value="Module.Buffer"/>
-         <TokenVariable Key="OverheatThreshold" Value="6"/>
-			<TokenVariable Key="CooldownPerTurn" Value="3"/>
+         <TokenVariable Key="OverheatThreshold" Value="7"/>
+			<TokenVariable Key="CooldownPerTurn" Value="4"/>
 			<TokenVariable Key="SkillId" Value="OverheatSkill"/>
-			<TokenVariable Key="BastHealthCost" Value="9"/>
-			<TokenVariable Key="HeatlCostPerPoint" Value="1"/>
+			<TokenVariable Key="BastHealthCost" Value="20"/>
+			<TokenVariable Key="HeatlCostPerPoint" Value="4"/>
          <TokenVariable Key="HeatIncrease" Value="1"/>
          <TokenVariable Key="CanTriggerOverheat" Value ="Module.Buffer3"/>
       </TokenVariables>
@@ -962,7 +962,7 @@
 					</Event>
 				</Events>
 				<Effects>
-               <SkillModifier ComputationStat="HealthCost" Value=" BastHealthCost * -1 + (Skill.BaseActionPointsCost + Skill.BaseManaCost) * (HeatlCostPerPoint * -1)">
+               <SkillModifier ComputationStat="HealthCost" Value=" BastHealthCost * -1 + (SkillUsed - OverheatThreshold) * (HeatlCostPerPoint * -1)">
                   <Conditions>
                      <IsTrue Value="Skill.IsFromItemWithTag('Cannon')"/>
                      <!--<IsTrue Value="SkillUsed = OverheatThreshold"/>--> <!-- A décommenter si on veut mettre une limite haute-->

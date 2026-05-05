@@ -168,7 +168,7 @@
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
             <Malus>12</Malus>
-            <TurnsCount>1</TurnsCount>
+            <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
       </Attack>
@@ -216,7 +216,7 @@
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
             <Malus>13</Malus>
-            <TurnsCount>1</TurnsCount>
+            <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
       </Attack>
@@ -233,7 +233,7 @@
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
             <Malus>14</Malus>
-            <TurnsCount>1</TurnsCount>
+            <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
       </Attack>
@@ -250,7 +250,7 @@
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
             <Malus>15</Malus>
-            <TurnsCount>1</TurnsCount>
+            <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
       </Attack>
@@ -267,7 +267,7 @@
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
             <Malus>16</Malus>
-            <TurnsCount>1</TurnsCount>
+            <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
       </Attack>
@@ -284,7 +284,7 @@
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
             <Malus>18</Malus>
-            <TurnsCount>1</TurnsCount>
+            <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
       </Attack>
@@ -696,7 +696,7 @@
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
             <Malus>13</Malus>
-            <TurnsCount>1</TurnsCount>
+            <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
       </Attack>
@@ -716,7 +716,7 @@
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
             <Malus>14</Malus>
-            <TurnsCount>1</TurnsCount>
+            <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
       </Attack>
@@ -736,7 +736,7 @@
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
             <Malus>15</Malus>
-            <TurnsCount>1</TurnsCount>
+            <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
       </Attack>
@@ -756,7 +756,7 @@
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
             <Malus>16</Malus>
-            <TurnsCount>1</TurnsCount>
+            <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
       </Attack>
@@ -776,7 +776,7 @@
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
             <Malus>18</Malus>
-            <TurnsCount>1</TurnsCount>
+            <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
       </Attack>
@@ -1199,20 +1199,24 @@
   </SkillDefinition>
   <SkillDefinition Id="GroundSmash">
     <ActionPointsCost>2</ActionPointsCost>
-    <ManaCost>3</ManaCost>
+    <ManaCost>4</ManaCost>
     <UsesPerTurnCount>1</UsesPerTurnCount>
-    <Range Min="2" Max="3" CardinalDirectionOnly="false" Modifiable="true" />
-    <AreaOfEffect OriginX="1" OriginY="1">
-         _X_
-         XXX
-         _X_
+    <Range Min="3" Max="3" CardinalDirectionOnly="false" Modifiable="true" />
+    <AreaOfEffect OriginX="2" OriginY="2">
+        __e__
+        _eXe_
+        eXXXe
+        _eXe_
+        __e__
       </AreaOfEffect>
     <SkillAction>
       <Attack>
         <AttackType>Physical</AttackType>
-        <DamageMultiplier>1.1</DamageMultiplier>
+        <DamageMultiplier>1.2</DamageMultiplier>
         <SkillEffects>
-          <NoDodge />
+          <SurroundingEffect>
+            <Damage Multiplier="0.6" />
+          </SurroundingEffect>
         </SkillEffects>
       </Attack>
     </SkillAction>
@@ -1326,7 +1330,7 @@
     <ActionPointsCost>1</ActionPointsCost>
     <MovePointsCost>1</MovePointsCost>
     <UsesPerTurnCount>2</UsesPerTurnCount>
-    <Range Min="3" Max="5" CardinalDirectionOnly="true" Modifiable="true" />
+    <Range Min="2" Max="4" CardinalDirectionOnly="true" Modifiable="true" />
     <AreaOfEffect OriginX="1" OriginY="2">
          eXe
          eMe
