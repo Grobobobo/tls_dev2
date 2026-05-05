@@ -376,7 +376,7 @@ At the <style=KeyWord>end</style> of the Heroes' turn:
 <style=Attenuated>Heat is reset every morning.</style>","Quand une <style=Skill>compétence</style> de <style=KeyWord>Canon</style> est utilisée<nbsp>:
 {7} <style=Bad>Chaleur</style> pour chaque coût de base en {8} et {9}.
 Quand la <style=Bad>Chaleur</style> atteint {0}, chaque <style=Skill>compétence</style> de <style=KeyWord>Canon</style> obtient<nbsp>:
-{1} {2} au <style=KeyWord>coût</style>, augmenté de {3} pour chaque coût de base en {8} et {9}.
+{1} {2} au <style=KeyWord>coût</style>, augmenté de {3} pour chaque <style=Bad>Chaleur</style> au-dessus de {0}.
 {4} est <style=KeyWord>automatiquement</style> utilisée sur le Héros.
 Ensuite, la <style=Bad>Chaleur</style> est réinitialisée à <style=Bad>0</style>.
 À la <style=KeyWord>fin</style> du tour des Héros<nbsp>:
@@ -384,7 +384,7 @@ Ensuite, la <style=Bad>Chaleur</style> est réinitialisée à <style=Bad>0</styl
 <style=Attenuated>La Chaleur est réinitialisée chaque matin.</style>","每当施放<style=KeyWord>加农炮</style><style=Skill>技能</style>时：
 每有1点{8}和{9}基础消耗，{7}<style=Bad>热量</style>。
 当<style=Bad>热量</style>达到{0}时，所有<style=KeyWord>加农炮</style><style=Skill>技能</style>获得：
-{1}{2}<style=KeyWord>消耗</style>，每多1点{8}和{9}基础消耗增加{3}。
+{1}{2}<style=KeyWord>消耗</style>，每超过{0}的<style=Bad>热量</style>增加{3}。
 对英雄<style=KeyWord>自动</style>施放{4}。
 之后，将<style=Bad>热量</style>设为<style=Bad>0</style>。
 在英雄回合<style=KeyWord>结束</style>时：
@@ -392,7 +392,7 @@ Ensuite, la <style=Bad>Chaleur</style> est réinitialisée à <style=Bad>0</styl
 <style=Attenuated>热量在每天早上会重置。</style>","施放<style=KeyWord>加農炮</style><style=Skill>技能</style>時：
 每消耗1點{8}和{9}基礎消耗，{7}<style=Bad>熱量</style>。
 當<style=Bad>熱量</style>達到{0}時，所有<style=KeyWord>加農炮</style><style=Skill>技能</style>獲得：
-{1}{2}<style=KeyWord>消耗</style>，每多消耗1點{8}和{9}基礎消耗時增加{3}。
+{1}{2}<style=KeyWord>消耗</style>，每超過{0}的<style=Bad>熱量</style>增加{3}。
 對英雄<style=KeyWord>自動</style>施放{4}。
 之後，將<style=Bad>熱量</style>設為<style=Bad>0</style>。
 在英雄回合<style=KeyWord>結束</style>時：
@@ -400,7 +400,7 @@ Ensuite, la <style=Bad>Chaleur</style> est réinitialisée à <style=Bad>0</styl
 <style=Attenuated>熱量在每天早上會重置。</style>","<style=KeyWord>大砲</style><style=Skill>スキル</style>を使用するたびに：
 {8}と{9}のベースコストごとに{7}<style=Bad>ヒート</style>。
 <style=Bad>ヒート</style>が{0}に達すると、すべての<style=KeyWord>大砲</style><style=Skill>スキル</style>は以下を獲得する：
-{1} {2}<style=KeyWord>コスト</style>、{8}と{9}のベースコストごとに{3}増加。
+{1} {2}<style=KeyWord>コスト</style>、{0}を超える<style=Bad>ヒート</style>ごとに{3}増加。
 {4}が英雄に<style=KeyWord>自動的に</style>使用される。
 その後、<style=Bad>ヒート</style>を<style=Bad>0</style>に設定。
 英雄のターンの<style=KeyWord>終了時</style>：
@@ -408,7 +408,7 @@ Ensuite, la <style=Bad>Chaleur</style> est réinitialisée à <style=Bad>0</styl
 <style=Attenuated>ヒートは毎朝リセットされる。</style>","Каждый раз, когда используется <style=Skill>навык</style> <style=KeyWord>пушки</style>:
 {7} к <style=Bad>жару</style> за каждое {8} и {9} базовой стоимости.
 Каждый раз, когда <style=Bad>жар</style> достигает {0}, каждый <style=Skill>навык</style> <style=KeyWord>пушки</style> получает:
-{1} {2} <style=KeyWord>стоимости</style>, увеличивается на {3} за каждое {8} и {9} базовой стоимости.
+{1} {2} <style=KeyWord>стоимости</style>, увеличивается на {3} за каждую <style=Bad>жар</style> свыше {0}.
 {4} <style=KeyWord>автоматически</style> применяется на героя.
 После этого <style=Bad>жар</style> сбрасывается до <style=Bad>0</style>.
 В <style=KeyWord>конце</style> хода героя:
@@ -416,7 +416,7 @@ Ensuite, la <style=Bad>Chaleur</style> est réinitialisée à <style=Bad>0</styl
 <style=Attenuated>Жар сбрасывается каждое утро.</style>","Після кожного використання <style=Skill>вміння</style> <style=KeyWord>гармати</style>:
 {7} <style=Bad>жару</style> за кожну витрату {8} та {9} базової вартості.
 Якщо <style=Bad>жар</style> досягне {0}, кожне <style=Skill>вміння</style> <style=KeyWord>гармати</style> отримує:
-{1} <style=KeyWord>вартість</style> {2}, що зростає на {3} за кожну витрату {8} та {9} базової вартості.
+{1} <style=KeyWord>вартість</style> {2}, що зростає на {3} за кожну <style=Bad>жар</style> понад {0}.
 {4} <style=KeyWord>автоматично</style> застосовується на героя.
 Після цього <style=Bad>жар</style> скидається до <style=Bad>0</style>.
 <style=KeyWord>Наприкінці</style> ходу героїв:
@@ -424,7 +424,7 @@ Ensuite, la <style=Bad>Chaleur</style> est réinitialisée à <style=Bad>0</styl
 <style=Attenuated>Щоранку жар скидається.</style>","Immer wenn eine <style=KeyWord>Kanone</style>-<style=Skill>Fähigkeit</style> gewirkt wird:
 {7} <style=Bad>Hitze</style> für jede {8} und {9} Basiskosten.
 Immer wenn die <style=Bad>Hitze</style> {0} erreicht, erhält jede <style=KeyWord>Kanone</style>-<style=Skill>Fähigkeit</style>:
-{1} {2} <style=KeyWord>Kosten</style>, erhöht um {3} für jede {8} und {9} Basiskosten.
+{1} {2} <style=KeyWord>Kosten</style>, erhöht um {3} für jede <style=Bad>Hitze</style> über {0}.
 {4} wird <style=KeyWord>automatisch</style> auf den Helden gewirkt.
 Danach wird die <style=Bad>Hitze</style> auf <style=Bad>0</style> gesetzt.
 Am <style=KeyWord>Ende</style> des Zuges der Helden:
@@ -432,7 +432,7 @@ Am <style=KeyWord>Ende</style> des Zuges der Helden:
 <style=Attenuated>Hitze wird jeden Morgen zurückgesetzt.</style>","Cuando se use una <style=Skill>habilidad</style> de <style=KeyWord>cañón</style>:
 {7} de <style=Bad>temperatura</style> por cada {8} y {9} de coste base.
 Cuando la <style=Bad>temperatura</style> alcance {0}, todas las <style=Skill>habilidades</style> de <style=KeyWord>cañón</style> obtienen:
-{1} de <style=KeyWord>coste</style> de {2}, que aumenta en {3} por cada {8} y {9} de coste base.
+{1} de <style=KeyWord>coste</style> de {2}, que aumenta en {3} por cada <style=Bad>temperatura</style> por encima de {0}.
 {4} se usa <style=KeyWord>automáticamente</style> sobre el héroe.
 Después, la <style=Bad>temperatura</style> se pone a <style=Bad>0</style>.
 Al <style=KeyWord>final</style> del turno de los héroes:
@@ -440,7 +440,7 @@ Al <style=KeyWord>final</style> del turno de los héroes:
 <style=Attenuated>La temperatura se reinicia cada mañana.</style>","Sempre que uma <style=Skill>habilidade</style> <style=KeyWord>Canhão</style> for lançada:
 {7} de <style=Bad>Calor</style> para cada custo base de {8} e {9}.
 Sempre que <style=Bad>Calor</style> atingir {0}, todas as <style=Skill>habilidades</style> de <style=KeyWord>Canhão</style> recebem:
-{1} de <style=KeyWord>custo</style> de {2}, aumentado em {3} para cada custo base de {8} e {9}.
+{1} de <style=KeyWord>custo</style> de {2}, aumentado em {3} para cada <style=Bad>Calor</style> acima de {0}.
 O Herói lança {4} <style=KeyWord>automaticamente</style>.
 Depois, o <style=Bad>Calor</style> é redefinido para <style=Bad>0</style>.
 No <style=KeyWord>fim</style> do turno dos Heróis:
@@ -448,7 +448,7 @@ No <style=KeyWord>fim</style> do turno dos Heróis:
 <style=Attenuated>O Calor é redefinido todas as manhãs.</style>","<style=KeyWord>대포</style> <style=Skill>스킬</style>을 시전할 때마다:
 {8}, {9} 기본 비용마다 {7} <style=Bad>열기</style>.
 <style=Bad>열기</style>가 {0}에 도달할 때마다 모든 <style=KeyWord>대포</style> <style=Skill>스킬</style>:
-{1} {2} <style=KeyWord>소모</style> ({8}, {9} 기본 비용마다 {3} 증가).
+{1} {2} <style=KeyWord>소모</style> ({0} 이상의 <style=Bad>열기</style>마다 {3} 증가).
 영웅에게 {4} <style=KeyWord>자동</style> 시전.
 그 후, <style=Bad>열기</style>를 <style=Bad>0</style>으로 설정.
 영웅 턴이 <style=KeyWord>종료</style>될 때:
@@ -815,43 +815,53 @@ PerkDescription_StrongThrow,"Every {0} enemies <style=KeyWord>damaged</style> wi
 <style=Attenuated>This modifier is reset every morning.</style>
 <style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","Pour chaque {0} ennemis <style=KeyWord>endommagés</style> par une compétence <style=KeyWord>Boomerang</style>, la prochaine compétence <style=KeyWord>Boomerang</style> <style=Skill>compétence</style> obtient:
 Les cases <color=#549EE4>Secondaires</color> comptent désormais comme des cases <style=bad>Primaires</style>.
-<style=Skill>Ciblage Précis</style> obtient: {1}{2}.
+<style=good>-2</style> de coût en <style=Mana>Mana</style>.
+{4} obtient : {1}{2} et {5}{6}.
 <style=Attenuated>Ce modificateur est réinitialisé chaque matin.</style>
 <style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","每使用 <style=KeyWord> 回旋镖</style><style=Skill> 技能</style>对 {0} 名敌人 <style=KeyWord> 造成伤害</style>后，下一次 <style=KeyWord> 回旋镖</style><style=Skill> 技能</style>将获得：
 <color=#549EE4> 次要</color>格子现在视为 <style=bad> 主要</style>格子。
-<style=Skill> 精准锁定</style>获得：{1}{2}。
+<style=good>-2</style> <style=Mana>法力</style>消耗。
+{4}获得：{1}{2}和{5}{6}。
 <style=Attenuated> 该加成每天清晨重置。</style>
 <style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","每使用 <style=KeyWord> 迴旋鏢</style><style=Skill> 技能</style>對 {0} 名敵人 <style=KeyWord> 造成傷害</style>後，下一次 <style=KeyWord> 迴旋鏢</style><style=Skill> 技能</style>將獲得：
 <color=#549EE4> 次要</color>格子現在視為 <style=bad> 主要</style>格子。
-<style=Skill> 精確瞄準</style>獲得：{1}{2}。
+<style=good>-2</style> <style=Mana>法力</style>消耗。
+{4}獲得：{1}{2}和{5}{6}。
 <style=Attenuated> 該加成每天清晨重置。</style>
 <style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","<style=KeyWord> ブーメラン</style><style=Skill> スキル</style>で {0} 体の敵に <style=KeyWord> ダメージを与える</style>ごとに、次の <style=KeyWord> ブーメラン</style><style=Skill> スキル</style>が以下を獲得します：
 <color=#549EE4> 二次</color>タイルが <style=bad> 一次</color>タイルとして扱われるようになります。
-<style=Skill> 精密なる狙い</style>が獲得: {1}{2}。
+<style=good>-2</style> <style=Mana>マナ</style>コスト。
+{4}が獲得: {1}{2}、{5}{6}。
 <style=Attenuated> この補正は毎朝リセットされます。</style>
 <style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","Каждые {0} врагов, <style=KeyWord>получающих урон</style> от <style=KeyWord>бумеранга</style> <style=Skill>умения</style>, следующее <style=KeyWord>бумеранг</style> <style=Skill>умение</style> получает:
 <color=#549EE4>Вторичные</color> плитки считаются <style=bad>Основными</style> плитками.
-<style=Skill>Точное прицеливание</style> получает: {1}{2}.
+<style=good>-2</style> к стоимости <style=Mana>маны</style>.
+{4} получает: {1}{2} и {5}{6}.
 <style=Attenuated>Этот модификатор сбрасывается каждое утро.</style>
 <style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","Кожні {0} ворогів, <style=KeyWord>отримуючі ушкодження</style> від <style=KeyWord>бумерангу</style> <style=Skill>навику</style>, наступний <style=KeyWord>бумеранг</style> <style=Skill>навик</style> отримує:
 <color=#549EE4>Вторинні</color> плитки вважаються <style=bad>Основними</style> плитками.
-<style=Skill>Точне прицілювання</style> отримує: {1}{2}.
+<style=good>-2</style> до вартості <style=Mana>мани</style>.
+{4} отримує: {1}{2} та {5}{6}.
 <style=Attenuated>Цей модифікатор скидається кожного ранку.</style>
 <style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","Für je {0} Feinde, die durch eine <style=KeyWord>Boomerang</style>-<style=Skill>Fertigkeit</style> <style=KeyWord>beschädigt</style> werden, erhält die nächste <style=KeyWord>Boomerang</style>-<style=Skill>Fertigkeit</style>:
 <color=#549EE4>Sekundäre</color> Felder zählen als <style=bad>Primäre</style> Felder.
-<style=Skill>Präzises Zielen</style> erhält: {1}{2}.
+<style=good>-2</style> <style=Mana>Mana</style>-Kosten.
+{4} erhält: {1}{2} und {5}{6}.
 <style=Attenuated>Dieser Modifikator wird jeden Morgen zurückgesetzt.</style>
 <style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","Por cada {0} enemigos <style=KeyWord>dañados</style> por una habilidad <style=KeyWord>Bumerán</style>, la siguiente habilidad <style=KeyWord>Bumerán</style> <style=Skill>habilidad</style> obtiene:
 Las casillas <color=#549EE4>Secundarias</color> cuentan como casillas <style=bad>Primarias</style>.
-<style=Skill>Apuntado preciso</style> obtiene: {1}{2}.
+<style=good>-2</style> de coste de <style=Mana>maná</style>.
+{4} obtiene: {1}{2} y {5}{6}.
 <style=Attenuated>Este modificador se reinicia cada mañana.</style>
 <style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","Para cada {0} inimigos <style=KeyWord>danificados</style> por uma habilidade de <style=KeyWord>Bumerangue</style>, a próxima habilidade de <style=KeyWord>Bumerangue</style> <style=Skill>habilidade</style> ganha:
 As casas <color=#549EE4>Secundárias</color> contam como casas <style=bad>Primárias</style>.
-<style=Skill>Mira Precisa</style> ganha: {1}{2}.
+<style=good>-2</style> de custo de <style=Mana>Mana</style>.
+{4} ganha: {1}{2} e {5}{6}.
 <style=Attenuated>Este modificador é redefinido todas as manhãs.</style>
 <style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>","<style=KeyWord>부메랑</style><style=Skill>스킬</style>로{0}명의 적에게<style=KeyWord>대미지를 입힐</style>때마다 다음<style=KeyWord>부메랑</style><style=Skill>스킬</style>이 다음을 얻습니다：
 <color=#549EE4>보조</color>타일이<style=bad>주</color>타일로 간주됩니다.
-<style=Skill>정밀 대상 지정</style> 획득: {1}{2}.
+<style=good>-2</style> <style=Mana>마나</style> 소모.
+{4} 획득: {1}{2}, {5}{6}.
 <style=Attenuated>이 보정은 매일 아침 초기화됩니다.</style>
 <style=ElfIcon></style><style=ElfText>Elves of Amberwald DLC</style>"
 PerkEffectInformations_StrongThrow,Enemies to hit: {3},Ennemis à toucher<nbsp>: {3},还需击中敌人数：{3},還需擊中敵人數：{3},命中させるエネミー: {3},Ещё попаданий: {3},Залишилося ударити ворогів: {3}.,Zu treffende Gegner: {3},Enemigos por golpear: {3},Inimigos a serem golpeados: {3},명중해야 하는 적: {3}
@@ -1228,7 +1238,7 @@ At the <style=KeyWord>end</style> of the Heroes' turn:
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Quand un <style=Skill>compétence</style> de <style=KeyWord>Canon</style> est utilisée<nbsp>:
 {7} <style=Bad>Chaleur</style>, pour chaque coût de base en {8} et {9}.
 Quand la <style=Bad>Chaleur</style> atteint {0}, chaque <style=Skill>compétence</style> du <style=KeyWord>Canon</style> obtient<nbsp>:
-{1} {2} au <style=KeyWord>coût</style>, augmenté de {3} pour chaque coût de base en {8} et en {9}.
+{1} {2} au <style=KeyWord>coût</style>, augmenté de {3} pour chaque <style=Bad>Chaleur</style> au-dessus de {0}.
 Utilise <style=KeyWord>automatiquement</style> {4} sur le Héros.
 Ensuite, réinitialise la <style=Bad>Chaleur</style> à <style=Bad>0</style>.
 À la <style=KeyWord>fin</style> du tour des Héros<nbsp>:
@@ -1239,7 +1249,7 @@ Ensuite, réinitialise la <style=Bad>Chaleur</style> à <style=Bad>0</style>.
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","每当施放<style=KeyWord>加农炮</style><style=Skill>技能</style>时：
 每有1点基础的{8}和{9}消耗，{7}<style=Bad>热量</style>。
 当<style=Bad>热量</style>达到{0}时，所有<style=KeyWord>加农炮</style><style=Skill>技能</style>：
-{1}{2}<style=KeyWord>消耗</style>，每多1点{8}和{9}基础消耗，增加{3}。
+{1}{2}<style=KeyWord>消耗</style>，每超过{0}的<style=Bad>热量</style>增加{3}。
 <style=KeyWord>自动</style>对英雄施放{4}。
 之后，将<style=Bad>热量</style>设置为<style=Bad>0</style>。
 英雄回合<style=KeyWord>结束</style>时：
@@ -1250,7 +1260,7 @@ Ensuite, réinitialise la <style=Bad>Chaleur</style> à <style=Bad>0</style>.
 <style=""WaltyIcon""></style><style=""WaltyText"">《痛苦的传说》DLC</style>","施放<style=KeyWord>加農炮</style><style=Skill>技能</style>時：
 每消耗1點基礎{8}和{9}，{7}<style=Bad>熱量</style>。
 當<style=Bad>熱量</style>達到{0}時，所有<style=KeyWord>加農炮</style><style=Skill>技能</style>將會：
-<style=KeyWord>消耗</style>{1}{2}，每多消耗1點基礎{8}和{9}時增加{3}。
+<style=KeyWord>消耗</style>{1}{2}，每超過{0}的<style=Bad>熱量</style>增加{3}。
 對英雄<style=KeyWord>自動</style>施放{4}。
 之後，將<style=Bad>熱量</style>設置為<style=Bad>0</style>。
 在英雄回合<style=KeyWord>結束</style>時：
@@ -1261,7 +1271,7 @@ Ensuite, réinitialise la <style=Bad>Chaleur</style> à <style=Bad>0</style>.
 <style=""WaltyIcon""></style><style=""WaltyText"">〈苦痛傳說〉DLC</style>","<style=KeyWord>大砲</style><style=Skill>スキル</style>を使用すると:
 {8}と{9}のベースコストに応じた{7}<style=Bad>ヒート</style>が加算される。
 <style=Bad>ヒート</style>が{0}になると、各<style=KeyWord>大砲</style><style=Skill>スキル</style>は以下を獲得する:
-{1} {2}<style=KeyWord>コスト</style>。{8}と {9}のベースコスト毎に{3}増加する。
+{1} {2}<style=KeyWord>コスト</style>。{0}を超える<style=Bad>ヒート</style>ごとに{3}増加。
 {4}が英雄に<style=KeyWord>自動的に</style>使用される。
 その後、<style=Bad>ヒート</style>を<style=Bad>0</style>に設定する。
 英雄のターンの<style=KeyWord>終了時</style>:
@@ -1272,7 +1282,7 @@ Ensuite, réinitialise la <style=Bad>Chaleur</style> à <style=Bad>0</style>.
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC『苦悩の物語』</style>","Каждый раз, когда используется <style=Skill>навык</style> <style=KeyWord>пушки</style>:
 {7} к <style=Bad>жару</style> за каждое {8} и когда тратится {9}.
 Каждый раз, когда <style=Bad>жар</style> достигает {0}, каждый <style=Skill>навык</style> <style=KeyWord>пушек</style> получает:
-{2} <style=KeyWord>тратится</style>: {1} ({3} за каждое {8} и когда тратится {9}).
+{1} {2} <style=KeyWord>стоимости</style>, увеличивается на {3} за каждую <style=Bad>жар</style> свыше {0}.
 {4} <style=KeyWord>автоматически</style> распространяется на героя.
 После этого <style=Bad>жар</style> сбрасывается до <style=Bad>0</style>.
 В <style=KeyWord>конце</style> хода героя:
@@ -1283,7 +1293,7 @@ Ensuite, réinitialise la <style=Bad>Chaleur</style> à <style=Bad>0</style>.
 <style=""WaltyIcon""></style> <style=""WaltyText"">Дополнительный контент ""Tales of Torment""</style>","Після кожного використання <style=Skill>вмінь</style> <style=KeyWord>гармати</style>:
 {7} <style=Bad>жару</style> за кожну витрату {8} та {9} (базова вартість).
 Якщо <style=Bad>жар</style> досягне {0}, кожне <style=Skill>вміння</style> <style=KeyWord>гармати</style> отримує:
-{1} <style=KeyWord>вартість</style> {2}, що зростає на {3} за кожну витрату {8} та {9} (базова вартість).
+{1} <style=KeyWord>вартість</style> {2}, що зростає на {3} за кожну <style=Bad>жар</style> понад {0}.
 {4} <style=KeyWord>автоматично</style> застосовується на героя.
 Після цього <style=Bad>жар</style> скидається до <style=Bad>0</style>.
  <style=KeyWord>Наприкінці</style> ходу героїв:
@@ -1294,7 +1304,7 @@ Ensuite, réinitialise la <style=Bad>Chaleur</style> à <style=Bad>0</style>.
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Immer wenn eine <style=KeyWord>Kanonen</style>-<style=Skill>Fähigkeit</style> gewirkt wird:
 {7} <style=Bad>Hitze</style> pro Punkt der Basiskosten von {8} + {9}.
 Immer wenn die <style=Bad>Hitze</style> {0} erreicht, erhält jede <style=KeyWord>Kanonen</style>-<style=Skill>Fähigkeit</style>:
-{1} {2}s<style=KeyWord>kosten</style>, erhöht um {3} pro {8} und {9}-Basiskosten.
+{1} {2}s<style=KeyWord>kosten</style>, erhöht um {3} für jede <style=Bad>Hitze</style> über {0}.
 {4} wird <style=KeyWord>automatisch</style> auf den Helden gewirkt.
 Danach wird die <style=Bad>Hitze</style> auf <style=Bad>0</style> zurückgesetzt.
 Am <style=KeyWord>Ende</style> der Runde des Helden:
@@ -1305,7 +1315,7 @@ Am <style=KeyWord>Ende</style> der Runde des Helden:
 <style=""WaltyIcon""></style> <style=""WaltyText"">Tales of Torment DLC</style>","Cuando se use una <style=Skill>habilidad</style> de <style=KeyWord>cañón</style>:
 {7} de <style=Bad>temperatura</style> por cada {8} y {9} de coste base.
 Cuando la <style=Bad>temperatura</style> alcance {0}, todas las <style=Skill>habilidades</style> de <style=KeyWord>cañón</style> obtienen:
-{1} de <style=KeyWord>coste</style> de {2}, que aumenta en {3} por cada {8} y {9} de coste base.
+{1} de <style=KeyWord>coste</style> de {2}, que aumenta en {3} por cada <style=Bad>temperatura</style> por encima de {0}.
 {4} se usa <style=KeyWord>automáticamente</style> sobre el héroe.
 Después, la <style=Bad>temperatura</style> se establece en <style=Bad>0</style>.
 Al <style=KeyWord>final</style> del turno de los héroes:
@@ -1316,7 +1326,7 @@ Al <style=KeyWord>final</style> del turno de los héroes:
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","Sempre que uma <style=Skill>habilidade</style> <style=KeyWord>Canhão</style> for lançada:
 {7} de <style=Bad>Calor</style> para cada custo base de {8} e {9}.
 Sempre que <style=Bad>Calor</style> atingir {0}, todas as <style=Skill>habilidades</style> de <style=KeyWord>Canhão</style> recebem:
-{1} de <style=KeyWord>custo</style> de {2}, aumentado em {3} para cada custo base de {8} e {9}.
+{1} de <style=KeyWord>custo</style> de {2}, aumentado em {3} para cada <style=Bad>Calor</style> acima de {0}.
 O Herói lança {4} <style=KeyWord>automaticamente</style>.
 Depois, define <style=Bad>Calor</style> para <style=Bad>0</style>.
 No <style=KeyWord>fim</style> do turno dos Heróis:
@@ -1327,7 +1337,7 @@ No <style=KeyWord>fim</style> do turno dos Heróis:
 <style=""WaltyIcon""></style> <style=""WaltyText"">DLC Tales of Torment</style>","<style=KeyWord>대포</style> <style=Skill>스킬</style>을 시전할 때마다:
 {8}, {9} 기본 비용마다 {7} <style=Bad>열기</style>
 <style=Bad>열기</style>가 {0}에 도달할 때마다 모든 <style=KeyWord>대포</style> <style=Skill>스킬</style>:
-{2} <style=KeyWord>소모</style> {1} ({8}, {9} 기본 비용마다 {3} 증가)
+{1} {2} <style=KeyWord>소모</style> ({0} 이상의 <style=Bad>열기</style>마다 {3} 증가)
 영웅에게 {4} <style=KeyWord>자동</style> 시전
 그 후, <style=Bad>열기</style>를 <style=Bad>0</style>으로 설정
 영웅의 턴이 <style=KeyWord>종료</style>될 때:
@@ -1343,63 +1353,73 @@ PerkDescription_StrongThrowUnique,"Every {0} enemies <style=KeyWord>damaged</sty
 <style=Attenuated>This modifier is reset every morning.</style>
 <style=Perk>Corrupted Bonus: Whiplash</style>
 Strong Throw activates more often.
-<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","For every {0} enemies <style=KeyWord>damaged</style> by a <style=KeyWord>Boomerang</style> <style=Skill>skill</style>, the next <style=KeyWord>Boomerang</style> <style=Skill>skill</style> gains:
-<color=#549EE4>Secondary</color> tiles count as <style=bad>Primary</style> tiles.
-<style=Skill>Ciblage Précis</style> gains: {1}{2}.
+<style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Pour chaque {0} ennemis <style=KeyWord>endommagés</style> par une compétence <style=KeyWord>Boomerang</style>, la prochaine <style=Skill>compétence</style> <style=KeyWord>Boomerang</style> obtient :
+Les cases <color=#549EE4>Secondaires</color> comptent désormais comme des cases <style=bad>Primaires</style>.
+<style=good>-2</style> de coût en <style=Mana>Mana</style>.
+{4} obtient : {1}{2} et {5}{6}.
 <style=Attenuated>Ce modificateur est réinitialisé chaque matin.</style>
 <style=Perk>Bonus corrompu : Whiplash</style>
 Lancer Puissant s'active plus fréquemment.
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","每使用 <style=KeyWord> 回旋镖</style><style=Skill> 技能</style>对 {0} 名敌人 <style=KeyWord> 造成伤害</style>后，下一次 <style=KeyWord> 回旋镖</style><style=Skill> 技能</style>将获得：
 <color=#549EE4> 次要</color>格子现在视为 <style=bad> 主要</style>格子。
-<style=Skill> 精准锁定</style>获得：{1}{2}。
+<style=good>-2</style> <style=Mana>法力</style>消耗。
+{4}获得：{1}{2}和{5}{6}。
 <style=Attenuated> 该加成每天清晨重置。</style>
 <style=Perk> 腐化加成：鞭击</style>
 强力投掷触发频率更高。
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","每使用 <style=KeyWord> 迴旋鏢</style><style=Skill> 技能</style>對 {0} 名敵人 <style=KeyWord> 造成傷害</style>後，下一次 <style=KeyWord> 迴旋鏢</style><style=Skill> 技能</style>將獲得：
 <color=#549EE4> 次要</color>格子現在視為 <style=bad> 主要</style>格子。
-<style=Skill> 精確瞄準</style>獲得：{1}{2}。
+<style=good>-2</style> <style=Mana>法力</style>消耗。
+{4}獲得：{1}{2}和{5}{6}。
 <style=Attenuated> 該加成每天清晨重置。</style>
 <style=Perk> 腐化加成：鞭擊</style>
 強力投擲觸發頻率更高。
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","<style=KeyWord> ブーメラン</style><style=Skill> スキル</style>で {0} 体の敵に <style=KeyWord> ダメージを与える</style>ごとに、次の <style=KeyWord> ブーメラン</style><style=Skill> スキル</style>が以下を獲得します：
 <color=#549EE4> 二次</color>タイルが <style=bad> 一次</color>タイルとして扱われるようになります。
-<style=Skill> 精密なる狙い</style>が獲得: {1}{2}。
+<style=good>-2</style> <style=Mana>マナ</style>コスト。
+{4}が獲得: {1}{2}、{5}{6}。
 <style=Attenuated> この補正は毎朝リセットされます。</style>
 <style=Perk> 堕落ボーナス：ウィップラッシュ</style>
 強力投げの発動頻度が上がります。
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Каждые {0} враги, <style=KeyWord>получающие урон</style> от <style=KeyWord>бумеранга</style> <style=Skill>умения</style>, следующее <style=KeyWord>бумеранг</style> <style=Skill>умение</style> получает:
 <color=#549EE4>Вторичные</color> плитки считаются <style=bad>Основными</style> плитками.
-<style=Skill>Точное прицеливание</style> получает: {1}{2}.
+<style=good>-2</style> к стоимости <style=Mana>маны</style>.
+{4} получает: {1}{2} и {5}{6}.
 <style=Attenuated>Этот модификатор сбрасывается каждое утро.</style>
 <style=Perk>Испорченный бонус: Хлыст</style>
 Сильный бросок срабатывает чаще.
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Кожні {0} вороги, <style=KeyWord>отримуючі ушкодження</style> від <style=KeyWord>бумерангу</style> <style=Skill>навику</style>, наступний <style=KeyWord>бумеранг</style> <style=Skill>навик</style> отримує:
 <color=#549EE4>Вторинні</color> плитки вважаються <style=bad>Основними</style> плитками.
-<style=Skill>Точне прицілювання</style> отримує: {1}{2}.
+<style=good>-2</style> до вартості <style=Mana>мани</style>.
+{4} отримує: {1}{2} та {5}{6}.
 <style=Attenuated>Цей модифікатор скидається кожного ранку.</style>
 <style=Perk>Порочений бонус: Хипляш</style>
 Сильний кидок спрацьовує частіше.
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Für je {0} Feinde, die durch eine <style=KeyWord>Boomerang</style>-<style=Skill>Fertigkeit</style> <style=KeyWord>beschädigt</style> werden, erhält die nächste <style=KeyWord>Boomerang</style>-<style=Skill>Fertigkeit</style>:
 <color=#549EE4>Sekundäre</color> Felder zählen als <style=bad>Primäre</style> Felder.
-<style=Skill>Präzises Zielen</style> erhält: {1}{2}.
+<style=good>-2</style> <style=Mana>Mana</style>-Kosten.
+{4} erhält: {1}{2} und {5}{6}.
 <style=Attenuated>Dieser Modifikator wird jeden Morgen zurückgesetzt.</style>
 <style=Perk>Verderbter Bonus: Peitschenhieb</style>
 Starker Wurf wird häufiger aktiviert.
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Por cada {0} enemigos <style=KeyWord>dañados</style> por un <style=KeyWord>Bumerán</style> <style=Skill>habilidad</style>, la siguiente <style=KeyWord>Bumerán</style> <style=Skill>habilidad</style> obtiene:
 Las casillas <color=#549EE4>Secundarias</color> cuentan como casillas <style=bad>Primarias</style>.
-<style=Skill>Apuntado preciso</style> obtiene: {1}{2}.
+<style=good>-2</style> de coste de <style=Mana>maná</style>.
+{4} obtiene: {1}{2} y {5}{6}.
 <style=Attenuated>Este modificador se reinicia cada mañana.</style>
 <style=Perk>Bonus corrupto: Latigazo</style>
 Lanzamiento Fuerte se activa más a menudo.
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","Para cada {0} inimigos <style=KeyWord>danificados</style> por uma <style=Skill>habilidade</style> de <style=KeyWord>Bumerangue</style>, a próxima <style=Skill>habilidade</style> de <style=KeyWord>Bumerangue</style> ganha:
 As casas <color=#549EE4>Secundárias</color> contam como casas <style=bad>Primárias</style>.
-<style=Skill>Mira Precisa</style> ganha: {1}{2}.
+<style=good>-2</style> de custo de <style=Mana>Mana</style>.
+{4} ganha: {1}{2} e {5}{6}.
 <style=Attenuated>Este modificador é redefinido todas as manhãs.</style>
 <style=Perk>Bônus corrompido: Chicote</style>
 Lançamento Forte é ativado com mais frequência.
 <style=WaltyIcon></style> <style=WaltyText>Tales of Torment DLC</style>","<style=KeyWord>부메랑</style><style=Skill>스킬</style>로{0}명의 적에게<style=KeyWord>대미지를 입힐</style>때마다 다음<style=KeyWord>부메랑</style><style=Skill>스킬</style>이 다음을 얻습니다：
 <color=#549EE4>보조</color>타일이<style=bad>주</color>타일로 간주됩니다.
-<style=Skill>정밀 대상 지정</style> 획득: {1}{2}.
+<style=good>-2</style> <style=Mana>마나</style> 소모.
+{4} 획득: {1}{2}, {5}{6}.
 <style=Attenuated>이 보정은 매일 아침 초기화됩니다.</style>
 <style=Perk>부패 보너스: 휘플래시</style>
 강력 던지기의 발동 빈도가 증가합니다.
@@ -3446,21 +3466,21 @@ PerkDescription_Bloodthirst,"Every {0} enemies <style=KeyWord>killed</style> (in
 <style=Attenuated>This modifier is reset every morning.</style>","Tous les {0} ennemis <style=KeyWord>tués</style> (incluant les victimes de <style=Poison>Poison</style>) :
 {1}, jusqu'à {5}.
 <style=Attenuated>Ce modificateur est réinitialisé tous les matins.</style>","每<style=KeyWord>击杀</style>{0}个敌人（包括死于<style=Poison>中毒</style>）：
-{1}，上限为英雄{6}的{5}。
+{1}，上限为{5}。
 <style=Attenuated>此加成在每个白天重置。</style>","每<style=KeyWord>擊殺</style>{0}個敵人（包括死於<style=Poison>中毒</style>）：
-{1}，上限為英雄{6}的{5}。
+{1}，上限為{5}。
 <style=Attenuated>此加成在每個白天重置。</style>","{0}体のエネミーが<style=KeyWord>倒れる</style>度に (<style=Poison>毒</style>を含む)以下の効果をもたらす:
-{1}、英雄の{6}が最大{5}。
+{1}（{5}まで）。
 <style=Attenuated>この効果は毎朝リセットされる。</style>","Каждые {0} <style=KeyWord>убитых</style> врагов (включая убийства <style=Poison>ядом</style>): 
-{1}, до {5} от {6} героя.
+{1}, до {5}.
 <style=Attenuated>Этот модификатор сбрасывается каждое утро.</style>","За кожних {0} <style=KeyWord>вбитих</style> ворогів (включно з убивством <style=Poison>отрутою</style>):
-{1}, не більше {5} від {6} героя.
+{1}, не більше {5}.
 <style=Attenuated>Щоранку цей модифікатор скидається.</style>","Jeder {0} getötete Feind <style=KeyWord> (einschließlich <style=Poison>Gift</style>-Kills):
-{1}, bis zu {5} der {6} des Helden.
+{1}, bis zu {5}.
 <style=Attenuated>Dieser Modifikator wird jeden Morgen zurückgesetzt.</style>","Cada {0} enemigos <style=KeyWord>muertos</style> (incluyendo las muertes por <style=Poison>envenenamiento</style>):
- {1} hasta el {5} de {6} del héroe.
+ {1} hasta {5}.
  <style=Attenuated>Este modificador se reinicia cada mañana.</style>","A cada {0} inimigos <style=KeyWord>abatidos</style> (incluindo abates por <style=Poison>Envenenamento</style>):
-{1}, até {5} da {6} do Herói.
+{1}, até {5}.
 <style=Attenuated>Este modificador é redefinido todas as manhãs.</style>","적을 {0}명만큼 <style=KeyWord>처치</style>할 때마다 (<style=Poison>중독</style> 처치 포함):
-{1} (최대: 영웅의 {6} 중 {5})
+{1} (최대: {5})
 <style=Attenuated>보정치는 매일 아침 초기화</style>"
