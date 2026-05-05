@@ -1,4 +1,4 @@
-﻿<SkillDefinitions xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+<SkillDefinitions xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
                   xs:noNamespaceSchemaLocation="SkillDefinitions.xsd">
 
    <!-- ███████████████████████████████████████████████████████████████ -->
@@ -84,9 +84,9 @@
    </SkillDefinition>
 
 
-   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ��������������������������������������������������������������� -->
    <!-- TRAPS SKILLS -->
-   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ��������������������������������������������������������������� -->
 
    <SkillDefinition Id="StunTrapTriggered" GroupId="SkillGroup_StunTrapTriggered">
       <ValidTargets>
@@ -110,6 +110,7 @@
                   <BaseChance>1.5</BaseChance>
                </Stun>
                <NoDodge/>
+               <NoBlock/>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -166,6 +167,7 @@
                   <BaseChance>1.5</BaseChance>
                </Stun>
                <NoDodge/>
+               <NoBlock/>
                <SurroundingEffect>
                   <Stun>
                      <BaseChance>1</BaseChance>
@@ -225,6 +227,7 @@
                   <BaseChance>1.5</BaseChance>
                </Stun>
                <NoDodge/>
+               <NoBlock/>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -281,6 +284,7 @@
                   <BaseChance>1.5</BaseChance>
                </Stun>
                <NoDodge/>
+               <NoBlock/>
                <SurroundingEffect>
                   <Stun>
                      <BaseChance>1</BaseChance>
@@ -345,6 +349,7 @@
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <NoDodge/>
+               <NoBlock/>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -403,6 +408,7 @@
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <NoDodge/>
+               <NoBlock/>
                <SurroundingEffect>
                   <Debuff>
                      <Stat Id="MovePointsTotal"/>
@@ -468,6 +474,7 @@
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <NoDodge/>
+               <NoBlock/>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -526,6 +533,7 @@
                   <TurnsCount>2</TurnsCount>
                </Debuff>
                <NoDodge/>
+               <NoBlock/>
                <SurroundingEffect>
                   <Debuff>
                      <Stat Id="MovePointsTotal"/>
@@ -588,6 +596,7 @@
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <NoDodge/>
+               <NoBlock/>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -647,6 +656,7 @@
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <NoDodge/>
+               <NoBlock/>
                <SurroundingEffect>
                   <Damage Multiplier="1"/>
                </SurroundingEffect>
@@ -707,6 +717,7 @@
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <NoDodge/>
+               <NoBlock/>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -766,6 +777,7 @@
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <NoDodge/>
+               <NoBlock/>
                <SurroundingEffect>
                   <Damage Multiplier="1"/>
                </SurroundingEffect>
@@ -805,9 +817,9 @@
    </SkillDefinition>
 
 
-   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ��������������������������������������������������������������� -->
    <!-- ACTIVE DEFENSES SKILLS -->
-   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ��������������������������������������������������������������� -->
 
    <SkillDefinition Id="UseCatapult" GroupId="SkillGroup_UseCatapult">
       <!--<UsesPerTurnCount>1</UsesPerTurnCount>-->
@@ -1068,9 +1080,9 @@
    </SkillDefinition>
 
 
-   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ��������������������������������������������������������������� -->
    <!-- TURRET SKILLS -->
-   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ��������������������������������������������������������������� -->
 
    <SkillDefinition Id="BallistaSkill" GroupId="SkillGroup_Ballista">
       <OverrideArtId>StraightShot</OverrideArtId>
@@ -1609,9 +1621,9 @@
       </CastFXs>
    </SkillDefinition>
    
-   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ��������������������������������������������������������������� -->
    <!-- EXPLODING BONE PILES -->
-   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ��������������������������������������������������������������� -->
 
    <SkillDefinition Id="BonePileAttackOnDeath">
       <OverrideArtId>DamnedBombAttack</OverrideArtId>
@@ -1628,10 +1640,12 @@
       <SkillAction>
          <Attack>
             <BaseDamage Min="200" Max="200"/>
-            <AttackType>Physical</AttackType>
+            <AttackType>Magical</AttackType>
             <DamageMultiplier>1</DamageMultiplier>
             <SkillEffects>
                <NoDodge/>
+               <ArmorPiercing/>
+               <NoBlock/>
             </SkillEffects>
          </Attack>
       </SkillAction>
@@ -1658,9 +1672,9 @@
       </CastFXs>
    </SkillDefinition>
 
-   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ��������������������������������������������������������������� -->
    <!-- HEALING BONE PILES -->
-   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- ��������������������������������������������������������������� -->
 
    <SkillDefinition Id="BonePileHealing" GroupId="SkillGroup_BonePileHealing">
       <OverrideArtId>SlowDeath</OverrideArtId>
