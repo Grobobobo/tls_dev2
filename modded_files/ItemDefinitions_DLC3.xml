@@ -421,7 +421,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="99 * (1 + PlayableUnitLevel/13)" Max="152 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="104 * (1 + PlayableUnitLevel/13)" Max="160 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
           <Skill>PillarOfLight5</Skill>
@@ -469,7 +469,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="71 * (1 + PlayableUnitLevel/13)" Max="89 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="76 * (1 + PlayableUnitLevel/13)" Max="95 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
           <Skill>Flytrap</Skill>
