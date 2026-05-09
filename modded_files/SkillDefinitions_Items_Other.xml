@@ -42,7 +42,7 @@
    <!-- ███████████████████████████████████████████████████████████████ -->
 
    <SkillDefinition Id="Teleportation">
-      <ManaCost>4</ManaCost>
+      <ManaCost>3</ManaCost>
       <UsesPerTurnCount>3</UsesPerTurnCount>
       <Range Min="1" Max="8" CardinalDirectionOnly="false"/>
       <AreaOfEffect OriginX="0" OriginY="0">

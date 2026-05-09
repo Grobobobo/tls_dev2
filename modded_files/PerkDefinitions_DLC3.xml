@@ -1929,7 +1929,7 @@
          <TokenVariable Key="ReductionIsActive" Value="UnitsToKillLeft = 0"/>
          <TokenVariable Key="UnitsToKillLeft" Value="Max(0, RemainingUnitsToKill)"/>
          <TokenVariable Key="RemainingUnitsToKill" Value="UnitKilledThreshold - Module.Buffer"/>
-         <TokenVariable Key="UnitKilledThreshold" Value="12"/>
+         <TokenVariable Key="UnitKilledThreshold" Value="8"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="UnitKilledThreshold" Style="KeyWordNb"/>

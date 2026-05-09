@@ -1717,13 +1717,19 @@
         <DamageMultiplier>1.5</DamageMultiplier>
         <SkillEffects>
           <IgnoreLineOfSight />
+          <RemoveStatus>
+            <BaseChance>1</BaseChance>
+            <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+            <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+            <Status>Buff</Status>
+          </RemoveStatus>
           <Debuff>
             <BaseChance>1</BaseChance>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="OverallDamage" />
-            <Malus>33</Malus>
-            <TurnsCount>1</TurnsCount>
+            <Malus>35</Malus>
+            <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
       </Attack>

@@ -1169,11 +1169,11 @@
     <OverrideLocalizationId>TeleportationScroll</OverrideLocalizationId>
     <ActionPointsCost>0</ActionPointsCost>
     <ManaCost>3</ManaCost>
-    <Range Min="1" Max="5" CardinalDirectionOnly="false" />
+    <Range Min="1" Max="9" CardinalDirectionOnly="false" />
   </SkillDefinition>
   <SkillDefinition Id="TeleportationScroll1" TemplateId="TeleportationScroll">
     <ManaCost>3</ManaCost>
-    <Range Min="1" Max="7" CardinalDirectionOnly="false" />
+    <Range Min="1" Max="9" CardinalDirectionOnly="false" />
   </SkillDefinition>
   <SkillDefinition Id="TeleportationScroll2" TemplateId="TeleportationScroll">
     <ManaCost>3</ManaCost>
