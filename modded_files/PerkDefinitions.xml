@@ -2118,11 +2118,11 @@
       <TokenVariables>
          <TokenVariable Key="PoisonedEnnemiesCount" Value="Module.Buffer"/>
          <TokenVariable Key="PerkPoisonModified" Value="Round(PerkPoisonDamage * (Owner.PoisonDamageModifier/100))"/>
-         <TokenVariable Key="PerkPoisonDuration" Value="2"/>
+         <TokenVariable Key="PerkPoisonDuration" Value="4"/>
          <TokenVariable Key="PerkPoisonDamage" Value="80"/>
          <TokenVariable Key="PerkRange" Value="10"/>
-         <TokenVariable Key="ContagionThreshold" Value="8"/>
-         <TokenVariable Key="ContagionDuration" Value="2"/>
+         <TokenVariable Key="ContagionThreshold" Value="6"/>
+         <TokenVariable Key="ContagionDuration" Value="1"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="ContagionThreshold" Style="KeyWordNb" Interpreted="true"/>
@@ -2719,8 +2719,8 @@
       <Modules>
          <BufferModule>
             <Effects>
-               <UnlockContextualSkill ContextualSkillId="ResupplyTraps" OverallUses="3"/> <!-- TODO use "SkillId" TokenVariable if ever implemented-->
-               <UnlockContextualSkill ContextualSkillId="ResupplyCata" OverallUses="3"/> <!-- TODO use "SkillId" TokenVariable if ever implemented-->
+               <UnlockContextualSkill ContextualSkillId="ResupplyTraps" OverallUses="2"/> <!-- TODO use "SkillId" TokenVariable if ever implemented-->
+               <UnlockContextualSkill ContextualSkillId="ResupplyCata" OverallUses="2"/> <!-- TODO use "SkillId" TokenVariable if ever implemented-->
             </Effects>
          </BufferModule>
       </Modules>

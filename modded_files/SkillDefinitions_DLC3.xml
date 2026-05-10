@@ -252,8 +252,8 @@
           <Buff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>false</CanAffectEnemyUnits>
-            <Stat Id="PoisonDamageModifier" />
-            <Bonus>40</Bonus>
+            <Stat Id="ActionPointsTotal" />
+            <Bonus>1</Bonus>
             <TurnsCount>-1</TurnsCount>
           </Buff>
         </SkillEffects>

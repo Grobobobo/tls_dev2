@@ -1267,45 +1267,23 @@
 
    <PerkDefinition Id="PlagueDoctor">
       <TokenVariables>
-         <TokenVariable Key="BuffDuration" Value="2"/>
-         <TokenVariable Key="BuffBaseValue" Value="5"/>
-         <TokenVariable Key="TargetTouch" Value="Module.Buffer"/>
+         <TokenVariable Key="SkillId" Value="PoisonCloud"/>
       </TokenVariables>
       <LocArguments>
+         <LocalizedArgument Prefix="SkillName_" Value="SkillId" Style="Skill"/>
          <StatusArgument Status="Contagion"/>
-         <StatusArgument Status="Buff" Stat="PoisonDamageModifier" Value="BuffBaseValue" TurnsCount="BuffDuration" Interpreted="true"/>
+         <StatusArgument Status="Poison"/>
       </LocArguments>
       <View>
          <DisplayInHUD/>
+         <SkillsToShow>
+            <SkillToShow Id="PoisonCloud"/>
+         </SkillsToShow>
       </View>
       <Modules>
          <BufferModule>
-            <Events>
-               <Event EffectTime="OnStatusApplied">
-                  <Conditions>
-                     <IsTrue Value="IsPlayableTurn"/>
-                     <IsTrue Value="IsTargetEnemyUnit"/>
-                     <IsTrue Value="AppliedContagion"/>
-                     <IsFalse Value="OwnerIsCaster"/>
-                  </Conditions>
-                  <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
-                  </Actions>
-               </Event>
-               <Event EffectTime="OnSkillCastEnd">
-                  <Conditions>
-                     <IsTrue Value="TargetTouch > 0"/>
-                  </Conditions>
-                  <Actions>
-                     <TriggerEffects/>
-                     <SetBufferTo BufferIndex="Buffer" Value="0"/>
-                  </Actions>
-               </Event>
-            </Events>
             <Effects>
-               <ApplyStatus Chance="100" Status="Buff" Stat="PoisonDamageModifier" TurnsCount="BuffDuration" Value="BuffBaseValue * TargetTouch">
-                  <PerkTargeting Range="0" TargetingReference="Owner" TargetingMethod="Self"/>
-               </ApplyStatus>
+               <UnlockContextualSkill ContextualSkillId="PoisonCloud"/>
             </Effects>
          </BufferModule>
       </Modules>

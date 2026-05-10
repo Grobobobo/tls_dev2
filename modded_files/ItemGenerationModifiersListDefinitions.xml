@@ -18,13 +18,13 @@
    <!-- END TESTS-->
 
    <ItemGenerationModifiersListDefinition Id="BuildingProduction">
-      <Probability Weight="100">0</Probability>
-      <Probability Weight="35">1</Probability>
+      <Probability Weight="75">0</Probability>
+      <Probability Weight="25">1</Probability>
    </ItemGenerationModifiersListDefinition>
 
    <ItemGenerationModifiersListDefinition Id="ShopProduction">
-      <Probability Weight="100">-1</Probability>
-      <Probability Weight="25">0</Probability>
+      <Probability Weight="70">-1</Probability>
+      <Probability Weight="30">0</Probability>
    </ItemGenerationModifiersListDefinition>
 
    <!--<ItemGenerationModifiersListDefinition Id="ShopConsumables">

@@ -2432,4 +2432,30 @@
       </CasterAnim>
     </CastFXs>
   </SkillDefinition>
+  <SkillDefinition Id="PoisonCloud" TemplateId="SlowDeath">
+    <OverrideArtId>PoisonCloud</OverrideArtId>
+    <OverrideLocalizationId>PoisonCloud</OverrideLocalizationId>
+    <ActionPointsCost>0</ActionPointsCost>
+    <UsesPerTurnCount>1</UsesPerTurnCount>
+    <ValidTargets>
+      <EnemyUnits />
+    </ValidTargets>
+    <InvalidCastDisplayBehaviour>DisplayedUnavailable</InvalidCastDisplayBehaviour>
+    <Range Min="1" Max="9" CardinalDirectionOnly="false" Modifiable="true" />
+    <SkillAction>
+      <Generic>
+        <SkillEffects>
+          <Poison>
+            <BaseChance>1</BaseChance>
+            <DamagePerTurn>60</DamagePerTurn>
+            <TurnsCount>4</TurnsCount>
+          </Poison>
+          <Contagion>
+            <BaseChance>1</BaseChance>
+            <TurnsCount>4</TurnsCount>
+          </Contagion>
+        </SkillEffects>
+      </Generic>
+    </SkillAction>
+  </SkillDefinition>
 </SkillDefinitions>

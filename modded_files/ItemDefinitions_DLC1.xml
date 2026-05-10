@@ -1904,7 +1904,7 @@
         </Perks>
       </Level>
       <Level Id="4">
-        <MainStatBonus Stat="Accuracy">12</MainStatBonus>
+        <MainStatBonus Stat="Accuracy">6</MainStatBonus>
         <BasePrice>83</BasePrice>
         <Perks>
           <Perk>ForgeMastery</Perk>
@@ -2140,21 +2140,21 @@
         </Perks>
       </Level>
       <Level Id="3">
-        <MainStatBonus Stat="ResistanceReduction">7</MainStatBonus>
+        <MainStatBonus Stat="ArmorTotal">30</MainStatBonus>
         <BasePrice>59</BasePrice>
         <Perks>
           <Perk>Resupply</Perk>
         </Perks>
       </Level>
       <Level Id="4">
-        <MainStatBonus Stat="ResistanceReduction">14</MainStatBonus>
+        <MainStatBonus Stat="ArmorTotal">60</MainStatBonus>
         <BasePrice>83</BasePrice>
         <Perks>
           <Perk>Resupply</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="ResistanceReduction">21</MainStatBonus>
+        <MainStatBonus Stat="ArmorTotal">90</MainStatBonus>
         <BasePrice>115</BasePrice>
         <Perks>
           <Perk>Resupply</Perk>
@@ -2199,14 +2199,14 @@
         </Perks>
       </Level>
       <Level Id="4">
-        <MainStatBonus Stat="ArmorTotal">30</MainStatBonus>
+        <MainStatBonus Stat="HealthTotal">40</MainStatBonus>
         <BasePrice>83</BasePrice>
         <Perks>
           <Perk>Aggressiveness</Perk>
         </Perks>
       </Level>
       <Level Id="5">
-        <MainStatBonus Stat="ArmorTotal">60</MainStatBonus>
+        <MainStatBonus Stat="HealthTotal">80</MainStatBonus>
         <BasePrice>115</BasePrice>
         <Perks>
           <Perk>Aggressiveness</Perk>

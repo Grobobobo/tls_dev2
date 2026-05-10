@@ -234,7 +234,7 @@
       <Modules>
          <BufferModule>
             <Effects>
-               <UnlockContextualSkill ContextualSkillId="BloodyResearchSkill" OverallUses="2"/>
+               <UnlockContextualSkill ContextualSkillId="BloodyResearchSkill" OverallUses="3"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -2887,6 +2887,7 @@
          <LocalizedArgument Prefix="SkillName_" Value="StunningEntrance" Style="Skill"/>
          <LocalizedArgument Prefix="SkillName_" Value="ScorchingWave" Style="Skill"/>
          <LocalizedArgument Prefix="SkillName_" Value="FireThrower" Style="Skill"/>
+         <StatArgument Stat="Critical" Value="PerkDamageBonus"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -2930,6 +2931,13 @@
             </Events>
             <Effects>
                <SkillModifier ComputationStat="OverallDamage" Value="PerkDamageBonus">
+                <Conditions>
+                  <IsTrue Value="Module.Buffer2 = 0"/>
+                  <IsTrue Value="Skill.IsFromItemWithTag('MagicStaffUnique')"/>
+                  <IsTrue Value="TriggerCondition"/>
+                </Conditions>
+               </SkillModifier>
+               <SkillModifier ComputationStat="Critical" Value="PerkDamageBonus">
                 <Conditions>
                   <IsTrue Value="Module.Buffer2 = 0"/>
                   <IsTrue Value="Skill.IsFromItemWithTag('MagicStaffUnique')"/>

@@ -989,7 +989,7 @@
 
    <PerkDefinition Id="ForgeMastery">
       <TokenVariables>
-         <TokenVariable Key="DamageBonus" Value="75" />
+         <TokenVariable Key="DamageBonus" Value="100" />
          <TokenVariable Key="RelBonus" Value="100" />
          <TokenVariable Key="IsFirstAttack" Value="Module.Buffer"/>
       </TokenVariables>
@@ -1194,8 +1194,8 @@
       <TokenVariables>
          <TokenVariable Key="CritChanceCurrentBonus" Value="CritChanceBonus * NonCritHits"/>
          <TokenVariable Key="CritDamageCurrentBonus" Value="CritDamageBonus * NonCritHits"/>
-         <TokenVariable Key="CritChanceBonus" Value="8"/>
-         <TokenVariable Key="CritDamageBonus" Value="12"/>
+         <TokenVariable Key="CritChanceBonus" Value="10"/>
+         <TokenVariable Key="CritDamageBonus" Value="15"/>
          <TokenVariable Key="NonCritHits" Value="Module.Buffer"/>
          <TokenVariable Key="IsCrit" Value="AttackData.IsCrit"/>
       </TokenVariables>
