@@ -51,7 +51,7 @@
   </SkillDefinition>
   <SkillDefinition Id="SlowDeath">
     <ActionPointsCost>1</ActionPointsCost>
-    <UsesPerTurnCount>4</UsesPerTurnCount>
+    <UsesPerTurnCount>5</UsesPerTurnCount>
     <Range Min="1" Max="6" CardinalDirectionOnly="false" Modifiable="true" />
     <SkillAction>
       <Attack>
@@ -517,14 +517,19 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.15</DamageMultiplier>
+        <DamageMultiplier>0.8</DamageMultiplier>
         <SkillEffects>
+          <Poison>
+            <BaseChance>1</BaseChance>
+            <DamagePerTurn>25</DamagePerTurn>
+            <TurnsCount>3</TurnsCount>
+          </Poison>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="MovePointsTotal" />
-            <Malus>3</Malus>
-            <TurnsCount>2</TurnsCount>
+            <Malus>2</Malus>
+            <TurnsCount>1</TurnsCount>
           </Debuff>
         </SkillEffects>
       </Attack>
@@ -889,7 +894,7 @@
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectBossUnits>true</CanAffectBossUnits>
             <Stat Id="Block" />
-            <Malus>30</Malus>
+            <Malus>40</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <RemoveStatus>
@@ -961,7 +966,7 @@
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectBossUnits>true</CanAffectBossUnits>
             <Stat Id="Block" />
-            <Malus>33</Malus>
+            <Malus>48</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <RemoveStatus>
@@ -990,7 +995,7 @@
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectBossUnits>true</CanAffectBossUnits>
             <Stat Id="Block" />
-            <Malus>35</Malus>
+            <Malus>56</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <RemoveStatus>
@@ -1019,7 +1024,7 @@
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectBossUnits>true</CanAffectBossUnits>
             <Stat Id="Block" />
-            <Malus>38</Malus>
+            <Malus>64</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <RemoveStatus>
@@ -1048,7 +1053,7 @@
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectBossUnits>true</CanAffectBossUnits>
             <Stat Id="Block" />
-            <Malus>41</Malus>
+            <Malus>72</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <RemoveStatus>
@@ -1077,7 +1082,7 @@
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectBossUnits>true</CanAffectBossUnits>
             <Stat Id="Block" />
-            <Malus>45</Malus>
+            <Malus>80</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
           <RemoveStatus>
@@ -1360,7 +1365,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.7</DamageMultiplier>
+        <DamageMultiplier>1.75</DamageMultiplier>
         <SkillEffects>
           <Inaccurate>
             <Malus>0.5</Malus>
@@ -1420,7 +1425,7 @@
     <ActionPointsCost>1</ActionPointsCost>
     <ManaCost>2</ManaCost>
     <UsesPerTurnCount>2</UsesPerTurnCount>
-    <Range Min="3" Max="10" CardinalDirectionOnly="true" Modifiable="true" />
+    <Range Min="1" Max="8" CardinalDirectionOnly="true" Modifiable="true" />
     <AreaOfEffect OriginX="0" OriginY="0">
          X
          X
@@ -1478,18 +1483,23 @@
   </SkillDefinition>
   <SkillDefinition Id="ExplosiveBolt">
     <ActionPointsCost>2</ActionPointsCost>
-    <ManaCost>3</ManaCost>
+    <ManaCost>4</ManaCost>
     <UsesPerTurnCount>1</UsesPerTurnCount>
     <Range Min="3" Max="10" CardinalDirectionOnly="false" Modifiable="true" />
     <AreaOfEffect OriginX="1" OriginY="1">
-         _X_
-         XXX
-         _X_
+         _e_
+         eXe
+         _e_
       </AreaOfEffect>
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.45</DamageMultiplier>
+        <DamageMultiplier>3</DamageMultiplier>
+        <SkillEffects>
+          <SurroundingEffect>
+            <Damage Multiplier="1.5" />
+          </SurroundingEffect>
+        </SkillEffects>
       </Attack>
     </SkillAction>
     <CastFXs TotalDuration="1.2">
@@ -1730,7 +1740,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>42</Malus>
+            <Malus>44</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
@@ -1755,7 +1765,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>44</Malus>
+            <Malus>48</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
@@ -1780,7 +1790,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>46</Malus>
+            <Malus>52</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
@@ -1805,7 +1815,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>48</Malus>
+            <Malus>56</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
@@ -1830,7 +1840,7 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="Accuracy" />
-            <Malus>50</Malus>
+            <Malus>60</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>

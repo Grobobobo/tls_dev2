@@ -122,7 +122,7 @@
 
    <!-- Wave Size Modifier Steps -->
    <ApocalypseModifierStepDefinition Id="WaveSizeModifier_1">
-      <ApocalypseLevel>2</ApocalypseLevel>
+      <ApocalypseLevel>3</ApocalypseLevel>
       <TokenVariables>
          <TokenVariable Key="WavesSizeModifier" Value="10"/>
       </TokenVariables>
@@ -138,14 +138,14 @@
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="WaveSizeModifier_2" TemplateId="WaveSizeModifier_1">
-      <ApocalypseLevel>4</ApocalypseLevel>
+      <ApocalypseLevel>6</ApocalypseLevel>
       <TokenVariables>
          <TokenVariable Key="WavesSizeModifier" Value="20"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="WaveSizeModifier_3" TemplateId="WaveSizeModifier_1">
-      <ApocalypseLevel>6</ApocalypseLevel>
+      <ApocalypseLevel>9</ApocalypseLevel>
       <TokenVariables>
          <TokenVariable Key="WavesSizeModifier" Value="30"/>
       </TokenVariables>
@@ -211,7 +211,7 @@
    <ApocalypseModifierStepDefinition Id="BossUnitHealthModifier_1">
       <ApocalypseLevel>2</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="HealthModifier" Value="125"/>
+         <TokenVariable Key="HealthModifier" Value="50"/>
          <TokenVariable Key="ArmorModifier" Value="50"/>
       </TokenVariables>
       <Effects>
@@ -231,7 +231,7 @@
    <ApocalypseModifierStepDefinition Id="BossUnitHealthModifier_2" TemplateId="BossUnitHealthModifier_1">
       <ApocalypseLevel>4</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="HealthModifier" Value="250"/>
+         <TokenVariable Key="HealthModifier" Value="100"/>
          <TokenVariable Key="ArmorModifier" Value="100"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
@@ -239,7 +239,7 @@
    <ApocalypseModifierStepDefinition Id="BossUnitHealthModifier_3" TemplateId="BossUnitHealthModifier_1">
       <ApocalypseLevel>6</ApocalypseLevel>
       <TokenVariables>
-         <TokenVariable Key="HealthModifier" Value="375"/>
+         <TokenVariable Key="HealthModifier" Value="150"/>
          <TokenVariable Key="ArmorModifier" Value="150"/>
       </TokenVariables>
    </ApocalypseModifierStepDefinition>
@@ -441,7 +441,7 @@
    
    <!-- Enemy Progression Offset Modifier Steps -->
    <ApocalypseModifierStepDefinition Id="EnemyProgressionOffsetModifier_1">
-      <ApocalypseLevel>3</ApocalypseLevel>
+      <ApocalypseLevel>4</ApocalypseLevel>
       <TokenVariables>
          <TokenVariable Key="ProgressionMultiplier" Value="1.15"/>
          <TokenVariable Key="ExcludeStatMovePoints" Value="MovePointsTotal"/>
@@ -463,7 +463,7 @@
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="EnemyProgressionOffsetModifier_2" TemplateId="EnemyProgressionOffsetModifier_1">
-      <ApocalypseLevel>6</ApocalypseLevel>
+      <ApocalypseLevel>8</ApocalypseLevel>
       <TokenVariables>
          <TokenVariable Key="ProgressionMultiplier" Value="1.30"/>
          <TokenVariable Key="ExcludeStatMovePoints" Value="MovePointsTotal"/>
@@ -473,7 +473,7 @@
    </ApocalypseModifierStepDefinition>
 
    <ApocalypseModifierStepDefinition Id="EnemyProgressionOffsetModifier_3" TemplateId="EnemyProgressionOffsetModifier_1">
-      <ApocalypseLevel>9</ApocalypseLevel>
+      <ApocalypseLevel>12</ApocalypseLevel>
       <TokenVariables>
          <TokenVariable Key="ProgressionMultiplier" Value="1.45"/>
          <TokenVariable Key="ExcludeStatMovePoints" Value="MovePointsTotal"/>
@@ -484,7 +484,7 @@
 
    <!-- Faster Enemies Steps -->
    <ApocalypseModifierStepDefinition Id="FasterEnemiesModifier_1">
-      <ApocalypseLevel>6</ApocalypseLevel>
+      <ApocalypseLevel>7</ApocalypseLevel>
       <TokenVariables>
          <TokenVariable Key="MovePointsSmallModifier" Value="1"/>
          <TokenVariable Key="MovePointBigModifier" Value="2"/>
@@ -528,7 +528,7 @@
 
    <!-- Lone Wolf Modifier Steps -->
    <ApocalypseModifierStepDefinition Id="LoneWolfModifier_1">
-      <ApocalypseLevel>4</ApocalypseLevel>
+      <ApocalypseLevel>5</ApocalypseLevel>
       <TokenVariables>
          <TokenVariable Key="RemovedStartingHeroes" Value="1"/>
       </TokenVariables>

@@ -2217,7 +2217,7 @@
 
                      <Stat Id="Health"/>
 
-                     <Bonus>100</Bonus>
+                     <Bonus>300</Bonus>
 
                   </RegenStat>
 
@@ -2253,7 +2253,7 @@
 
                      <Stat Id="Health"/>
 
-                     <Bonus>150</Bonus>
+                     <Bonus>450</Bonus>
 
                   </RegenStat>
 
@@ -2289,7 +2289,7 @@
 
                      <Stat Id="Health"/>
 
-                     <Bonus>200</Bonus>
+                     <Bonus>600</Bonus>
 
                   </RegenStat>
 
@@ -3357,7 +3357,7 @@
 
                   <BaseChance>1</BaseChance>
 
-                  <Malus>100</Malus>
+                  <Malus>50</Malus>
 
                   <Stat Id="ArmorTotal"/>
 
@@ -3393,7 +3393,7 @@
 
                   <BaseChance>1</BaseChance>
 
-                  <Malus>150</Malus>
+                  <Malus>75</Malus>
 
                   <Stat Id="ArmorTotal"/>
 
@@ -3429,7 +3429,7 @@
 
                   <BaseChance>1</BaseChance>
 
-                  <Malus>200</Malus>
+                  <Malus>100</Malus>
 
                   <Stat Id="ArmorTotal"/>
 
@@ -4107,7 +4107,7 @@
 
    <SkillDefinition Id="CorruptedMageCharge">
 
-      <Range Min="1" Max="8" CardinalDirectionOnly="false"/>
+      <Range Min="1" Max="6" CardinalDirectionOnly="false"/>
 
       <SkillAction>
 
@@ -4289,7 +4289,7 @@
 
                   <BaseChance>1</BaseChance>
 
-                  <Malus>100</Malus>
+                  <Malus>35</Malus>
 
                   <Stat Id="Resistance"/>
 

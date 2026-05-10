@@ -36,7 +36,7 @@
       </TokenVariables>
       <LocArguments>
          <LocalizedArgument Prefix="SkillName_" Value="SkillId" Style="Skill"/>
-         <LocArgument Value="2" Style="KeywordNb"/>
+         <LocArgument Value="1" Style="KeywordNb"/>
       </LocArguments>
       <View>
          <SkillsToShow>
@@ -59,13 +59,14 @@
    <!-- T2 -->
    <PerkDefinition Id="Bodybuilder">
       <TokenVariables>
-         <TokenVariable Key="PhysicalDamageBonus" Value="NumberOfStepsReached * PhysicalDamagePercentage"/>
+         <TokenVariable Key="PhysicalDamageBonus" Value="Min(NumberOfStepsReached * PhysicalDamagePercentage, DamageCapPercentage)"/>
          <TokenVariable Key="PhysicalDamagePercentage" Value="1"/>
          <TokenVariable Key="NextThreshold" Value="MinimumHealthThreshold + (NumberOfStepsReached + 1) * HealthStep"/>
          <TokenVariable Key="NumberOfStepsReached" Value="Floor(CurrentHealthOverThreshold / HealthStep)"/>
          <TokenVariable Key="HealthStep" Value="10"/>
          <TokenVariable Key="CurrentHealthOverThreshold" Value="Max(0, Owner.HealthTotal - MinimumHealthThreshold)"/>
          <TokenVariable Key="MinimumHealthThreshold" Value="100"/>
+         <TokenVariable Key="DamageCapPercentage" Value="30"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="HealthStep" Style="KeyWordNb"/>
@@ -74,6 +75,8 @@
          <StatArgument Stat="PhysicalDamage" Value="PhysicalDamagePercentage"/>
          <StatArgument Stat="PhysicalDamage" Value="PhysicalDamageBonus" Interpreted="true"/>
          <StatArgument Stat="HealthTotal" Value="NextThreshold" Interpreted="true" DisplaySign="false" Style="KeyWordNb"/>
+         <LocArgument Value="DamageCapPercentage" Suffix="%" Style="KeyWordNb"/>
+         <StatArgument Stat="PhysicalDamage"/>
       </LocArguments>
       <View>
          <DisplayBonusBeforePurchase/>
@@ -426,7 +429,7 @@
    
    <PerkDefinition Id="OrganicArmor">
       <TokenVariables>
-         <TokenVariable Key="HealingReceivedBonus" Value="50"/>
+         <TokenVariable Key="HealingReceivedBonus" Value="100"/>
          <TokenVariable Key="TransformedArmorValue" Value="Floor(Owner.UnlockedArmorTotal * TransformedArmorPercentage / 100)"/>
          <TokenVariable Key="TransformedArmorPercentage" Value="150"/>
       </TokenVariables>
@@ -590,7 +593,7 @@
          <TokenVariable Key="RemainingEnemiesToKill" Value="EnemiesToKill - Module.Buffer"/>         
          <TokenVariable Key="EnemiesToKill" Value="4"/>
          <TokenVariable Key="ManaRegenBonus" Value="1"/>
-         <TokenVariable Key="BonusMax" Value="Floor(Owner.ManaTotal * (ManaPercentage/100))"/>
+         <TokenVariable Key="BonusMax" Value="15"/>
          <TokenVariable Key="ManaPercentage" Value="50"/>
       </TokenVariables>
       <LocArguments>
@@ -599,7 +602,7 @@
          <StatArgument Stat="ManaRegen" Value="CurrentManaRegenBonus" Interpreted="true"/>
          <LocArgument Value="RemainingEnemiesToKill" Interpreted="true" Style="KeyWordNb"/>
          <LocArgument Value="BonusMax" Interpreted="true" Style="KeyWordNb"/>
-         <LocArgument Value="ManaPercentage" Suffix="%" Style="KeyWordNb"/>
+         <LocArgument Value="BonusMax" Interpreted="true" Style="KeyWordNb"/>
          <StatArgument Stat="ManaTotal"/>
       </LocArguments>
       <View>
@@ -702,14 +705,17 @@
    <!-- T2 -->
    <PerkDefinition Id="MagicFuel">
       <TokenVariables>
-         <TokenVariable Key="MagicalDamageBonus" Value="Floor(Owner.Mana * (ManaPercentage / 100))"/>
+         <TokenVariable Key="MagicalDamageBonus" Value="Min(Floor(Owner.Mana * (ManaPercentage / 100)), DamageCapPercentage)"/>
          <TokenVariable Key="ManaPercentage" Value="40"/>
+         <TokenVariable Key="DamageCapPercentage" Value="30"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="ManaPercentage" Suffix="%" Style="KeyWordNb"/>
          <StatArgument Stat="MagicalDamage"/>
          <StatArgument Stat="ManaTotal"/>
          <StatArgument Stat="MagicalDamage" Value="MagicalDamageBonus" Interpreted="true"/>
+         <LocArgument Value="DamageCapPercentage" Suffix="%" Style="KeyWordNb"/>
+         <StatArgument Stat="MagicalDamage"/>
       </LocArguments>
       <View>
          <DisplayBonusBeforePurchase/>
@@ -2706,8 +2712,8 @@
       <View>
          <DisplayInHUD/>
          <SkillsToShow>
-            <SkillToShow Id="ResupplyTraps" OverallUses="3"/> <!-- TODO use "SkillId" TokenVariable if ever implemented-->
-            <SkillToShow Id="ResupplyCata" OverallUses="3"/> <!-- TODO use "SkillId" TokenVariable if ever implemented-->
+            <SkillToShow Id="ResupplyTraps" OverallUses="2"/> <!-- TODO use "SkillId" TokenVariable if ever implemented-->
+            <SkillToShow Id="ResupplyCata" OverallUses="2"/> <!-- TODO use "SkillId" TokenVariable if ever implemented-->
          </SkillsToShow>
       </View>
       <Modules>
@@ -2725,6 +2731,7 @@
       <TokenVariables>
          <TokenVariable Key="TargetAmount" Value="3"/>
          <TokenVariable Key="SkillId" Value="HumanBallistaPerkSkill"/>
+         <TokenVariable Key="IsInsideHaven" Value="BooleanChoice(Owner.IsInCity, 1, 0)"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="TargetAmount" Style="KeyWordNb"/>
@@ -2744,6 +2751,9 @@
          <BufferModule>
             <Events>
                <Event EffectTime="OnEnemyMovementEnd">
+                  <Conditions>
+                     <IsTrue Value="IsInsideHaven = 1"/><!-- OUT OF HAVEN-->
+                  </Conditions>
                   <Actions>
                      <TriggerEffects/>
                   </Actions>
@@ -3873,7 +3883,7 @@
          <TokenVariable Key="RemainingEnemiesToKill" Value="EnemiesToKill - Module.Buffer"/>
          <TokenVariable Key="EnemiesToKill" Value="4"/>
          <TokenVariable Key="HealthRegenBonus" Value="6"/>
-         <TokenVariable Key="BonusMax" Value="Floor(Owner.HealthTotal * (HealthPercentage/100))"/>
+         <TokenVariable Key="BonusMax" Value="100"/>
          <TokenVariable Key="HealthPercentage" Value="50"/>
       </TokenVariables>
       <LocArguments>
@@ -3882,7 +3892,7 @@
          <StatArgument Stat="HealthRegen" Value="CurrentHealthRegenBonus" Interpreted="true"/>
          <LocArgument Value="RemainingEnemiesToKill" Interpreted="true" Style="KeyWordNb"/>
          <LocArgument Value="BonusMax" Interpreted="true" Style="KeyWordNb"/>
-         <LocArgument Value="HealthPercentage" Suffix="%" Style="KeyWordNb"/>
+         <LocArgument Value="BonusMax" Interpreted="true" Style="KeyWordNb"/>
          <StatArgument Stat="HealthTotal"/>
       </LocArguments>
       <View>
@@ -3958,14 +3968,17 @@
 
    <PerkDefinition Id="SanguineFuel">
       <TokenVariables>
-         <TokenVariable Key="MagicalDamageBonus" Value="Floor(Owner.Health * (HealthPercentage / 100))"/>
+         <TokenVariable Key="MagicalDamageBonus" Value="Min(Floor(Owner.Health * (HealthPercentage / 100)), DamageCapPercentage)"/>
          <TokenVariable Key="HealthPercentage" Value="8"/>
+         <TokenVariable Key="DamageCapPercentage" Value="30"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="HealthPercentage" Suffix="%" Style="KeyWordNb"/>
          <StatArgument Stat="MagicalDamage"/>
          <StatArgument Stat="HealthTotal"/>
          <StatArgument Stat="MagicalDamage" Value="MagicalDamageBonus" Interpreted="true"/>
+         <LocArgument Value="DamageCapPercentage" Suffix="%" Style="KeyWordNb"/>
+         <StatArgument Stat="MagicalDamage"/>
       </LocArguments>
       <View>
          <DisplayBonusBeforePurchase/>

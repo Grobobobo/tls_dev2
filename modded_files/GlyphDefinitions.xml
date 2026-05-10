@@ -1892,7 +1892,7 @@
 
       <TokenVariables>
 
-         <TokenVariable Key="OpportunismBonus" Value="15"/>
+         <TokenVariable Key="OpportunismBonus" Value="12"/>
 
       </TokenVariables>
 
@@ -1920,7 +1920,7 @@
 
       <TokenVariables>
 
-         <TokenVariable Key="IsolationBonus" Value="20"/>
+         <TokenVariable Key="IsolationBonus" Value="15"/>
 
       </TokenVariables>
 
@@ -2060,7 +2060,7 @@
 
       <TokenVariables>
 
-         <TokenVariable Key="BlockBonus" Value="10"/>
+         <TokenVariable Key="BlockBonus" Value="12"/>
 
       </TokenVariables>
 
@@ -2116,7 +2116,7 @@
 
       <TokenVariables>
 
-         <TokenVariable Key="ResistanceBonus" Value="12"/>
+         <TokenVariable Key="ResistanceBonus" Value="10"/>
 
       </TokenVariables>
 
@@ -2232,7 +2232,7 @@
 
       <TokenVariables>
 
-         <TokenVariable Key="RerollsBonus" Value="5"/>
+         <TokenVariable Key="RerollsBonus" Value="2"/>
 
       </TokenVariables>
 
@@ -2526,7 +2526,7 @@
 
    <!-- ADDITIONAL STARTING HERO -->
 
-   <GlyphDefinition Id="AdditionalStartingHero" Cost="3">
+   <GlyphDefinition Id="AdditionalStartingHero" Cost="4">
 
       <LocArguments>
 
@@ -2570,7 +2570,7 @@
 
       <TokenVariables>
 
-         <TokenVariable Key="RerollsBonus" Value="5"/>
+         <TokenVariable Key="RerollsBonus" Value="3"/>
 
       </TokenVariables>
 

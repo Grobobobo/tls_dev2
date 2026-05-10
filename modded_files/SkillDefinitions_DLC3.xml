@@ -20,7 +20,7 @@
         <SkillEffects>
           <NoDodge />
           <NoBlock />
-            <Debuff>
+          <Debuff>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
             <CanAffectCaster>false</CanAffectCaster>
@@ -58,19 +58,18 @@
         <BaseDamage Min="450" Max="550" />
         <AttackType>Physical</AttackType>
         <DamageMultiplier>1</DamageMultiplier>
-          <SkillEffects>
+        <SkillEffects>
           <NoDodge />
-            <Debuff>
+          <Debuff>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
             <CanAffectCaster>false</CanAffectCaster>
             <BaseChance>1</BaseChance>
             <Stat Id="OverallDamage" />
-            <Malus>33</Malus>
-            <TurnsCount>2</TurnsCount>
+            <Malus>66</Malus>
+            <TurnsCount>1</TurnsCount>
           </Debuff>
         </SkillEffects>
-
       </Attack>
     </SkillAction>
     <CastFXs TotalDuration="0.25">
@@ -324,7 +323,7 @@
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
           <NoDodge />
-            <Debuff>
+          <Debuff>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
             <CanAffectCaster>false</CanAffectCaster>
@@ -1266,7 +1265,7 @@
     </AffectedUnits>
     <SkillAction>
       <Attack>
-        <BaseDamage Min="110 * (1 + Level/13)" Max="110 * (1 + Level/13)" />
+        <BaseDamage Min="160 * (1 + Level/13)" Max="160 * (1 + Level/13)" />
         <AttackType>Magical</AttackType>
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
@@ -1651,7 +1650,7 @@
           <NoDodge />
           <NoBlock />
           <SurroundingEffect>
-            <Damage Multiplier="0.44"/>
+            <Damage Multiplier="0.44" />
             <Stun>
               <BaseChance>1</BaseChance>
             </Stun>
@@ -1714,17 +1713,23 @@
     <SkillAction>
       <Attack>
         <AttackType>Physical</AttackType>
-        <BaseDamage Min="70 * (1 + Level/13)" Max="108 * (1 + Level/13)" Interpreted="true" />
+        <BaseDamage Min="72 * (1 + Level/13)" Max="110 * (1 + Level/13)" Interpreted="true" />
         <DamageMultiplier>1.5</DamageMultiplier>
         <SkillEffects>
           <IgnoreLineOfSight />
+          <RemoveStatus>
+            <BaseChance>1</BaseChance>
+            <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+            <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+            <Status>Buff</Status>
+          </RemoveStatus>
           <Debuff>
             <BaseChance>1</BaseChance>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="OverallDamage" />
-            <Malus>33</Malus>
-            <TurnsCount>1</TurnsCount>
+            <Malus>35</Malus>
+            <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
       </Attack>
@@ -1913,13 +1918,35 @@
               <BaseChance>1</BaseChance>
               <CanAffectCaster>true</CanAffectCaster>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
-              <Bonus>12</Bonus>
+              <Bonus>15</Bonus>
               <Stat Id="PoisonDamageModifier" />
               <TurnsCount>1</TurnsCount>
             </Buff>
           </CasterEffect>
         </SkillEffects>
       </Attack>
+    </SkillAction>
+  </SkillDefinition>
+  <SkillDefinition Id="SharpenClawsUnique" TemplateId="SharpenClaws">
+    <SkillAction>
+      <Generic>
+        <SkillEffects>
+          <CasterEffect>
+            <Buff>
+              <CanAffectCaster>true</CanAffectCaster>
+              <Bonus>15</Bonus>
+              <Stat Id="PhysicalDamage" />
+              <TurnsCount>2</TurnsCount>
+            </Buff>
+            <Buff>
+              <CanAffectCaster>true</CanAffectCaster>
+              <Bonus>24</Bonus>
+              <Stat Id="Reliability" />
+              <TurnsCount>2</TurnsCount>
+            </Buff>
+          </CasterEffect>
+        </SkillEffects>
+      </Generic>
     </SkillAction>
   </SkillDefinition>
   <SkillDefinition Id="Assassinate_Unique" TemplateId="Assassinate" GroupId="Assassinate_Unique">
@@ -1989,17 +2016,29 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.15</DamageMultiplier>
+        <DamageMultiplier>0.8</DamageMultiplier>
         <SkillEffects>
+          <Poison>
+            <BaseChance>1</BaseChance>
+            <DamagePerTurn>25</DamagePerTurn>
+            <TurnsCount>3</TurnsCount>
+          </Poison>
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
             <Stat Id="MovePointsTotal" />
-            <Malus>3</Malus>
-            <TurnsCount>2</TurnsCount>
+            <Malus>2</Malus>
+            <TurnsCount>1</TurnsCount>
           </Debuff>
           <SurroundingEffect>
-            <Damage Multiplier="0.55" />
+            <Damage Multiplier="0.8" />
+            <Debuff>
+              <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
+              <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+              <Stat Id="MovePointsTotal" />
+              <Malus>2</Malus>
+              <TurnsCount>1</TurnsCount>
+            </Debuff>
           </SurroundingEffect>
         </SkillEffects>
       </Attack>
@@ -2038,10 +2077,10 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.4</DamageMultiplier>
+        <DamageMultiplier>1.7</DamageMultiplier>
         <SkillEffects>
           <Stun>
-            <BaseChance>0.7</BaseChance>
+            <BaseChance>0.65</BaseChance>
           </Stun>
         </SkillEffects>
       </Attack>
@@ -2200,7 +2239,13 @@
       </CamShake>
     </CastFXs>
   </SkillDefinition>
+  <SkillDefinition Id="PiercingClawsUnique" TemplateId="PiercingClaws">
+  </SkillDefinition>
+  <SkillDefinition Id="ShadowStepsUnique" TemplateId="ShadowSteps">
+  </SkillDefinition>
   <SkillDefinition Id="TearingGraspUnique" TemplateId="TearingGrasp">
+  </SkillDefinition>
+  <SkillDefinition Id="TearingGraspUnique2" TemplateId="TearingGrasp">
     <Range Min="1" Max="3" Modifiable="true" />
   </SkillDefinition>
   <SkillDefinition Id="PreciseTargettingUnique" TemplateId="PreciseTargetting">

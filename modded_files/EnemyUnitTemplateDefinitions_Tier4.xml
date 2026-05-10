@@ -49,7 +49,6 @@
       </SkillsToDisplay>
 
       <ExperienceGain>60</ExperienceGain>
-
       <DamnedSoulsEarned>22</DamnedSoulsEarned>
 
       <Panic Value="7"/>
@@ -109,7 +108,7 @@
 
                <SkillId Value="TankyStun"/>
 
-               <Cooldown Value="3"/>
+               <Cooldown Value="1"/>
 
                <Preconditions>
 
@@ -484,13 +483,114 @@
 
             </Goal>
 
-            <!-- Cast buff : If possible, try to cast buff. Minimum of 3 targets to seem intelligent (update : min = 2). Use furthest target instead of optimal so that multiple mages don't all target the same group of enemies.-->
+            <!--Charge death ray : If hero in 2-8 tile range and this enemy has no Ă˘â‚¬Ĺ›ChargedĂ˘â‚¬ĹĄ Flag, skip turn and gain Ă˘â‚¬Ĺ›ChargedĂ˘â‚¬ĹĄ flag-->
 
-            <Goal Id="02_CorruptedMageBuff">
+            <Goal Id="02_CorruptedMageCharge">
+
+               <SkillId Value="CorruptedMageCharge"/>
+               <Cooldown Value="1"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition NbTurns="1"/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="15"/>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+
+
+            <Goal Id="03_CorruptedMageAttack">
+
+               <SkillId Value="CorruptedMageAttack"/>
+
+               <Preconditions>
+
+                  <ConditionsGroup>
+
+                     <NotInFogCondition/>
+
+                  </ConditionsGroup>
+
+               </Preconditions>
+
+               <TargetTypes>
+
+                  <PlayableUnit>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetInRangeCondition Max="Clamp(MovePoints+1,2,30)"/><!--Added MovePoints so the tanky can run toward hero if he has some buffs-->
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </PlayableUnit>
+
+                  <Building>
+
+                     <TargetConditions>
+
+                        <ConditionsGroup>
+
+                           <TargetIdCondition Exclude="true">
+
+                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
+
+                           </TargetIdCondition>
+
+                        </ConditionsGroup>
+
+                     </TargetConditions>
+
+                  </Building>
+
+               </TargetTypes>
+
+               <TargetingMethod>
+
+                  <Closest/>
+
+               </TargetingMethod>
+
+            </Goal>
+            
+            <!-- Cast buff : If possible, try to cast buff. Minimum of 3 targets to seem intelligent (update : min = 2). Use furthest target instead of optimal so that multiple mages don't all target the same group of enemies.-->
+            <Goal Id="04_CorruptedMageBuff">
 
                <SkillId Value="CorruptedMageBuff"/>
 
-               <Cooldown Value="2"/>
+               <Cooldown Value="1"/>
 
                <Preconditions>
 
@@ -536,51 +636,10 @@
 
             </Goal>
 
-            <!--Charge death ray : If hero in 2-8 tile range and this enemy has no Ă˘â‚¬Ĺ›ChargedĂ˘â‚¬ĹĄ Flag, skip turn and gain Ă˘â‚¬Ĺ›ChargedĂ˘â‚¬ĹĄ flag-->
-
-            <Goal Id="03_CorruptedMageCharge">
-
-               <SkillId Value="CorruptedMageCharge"/>
-
-               <Preconditions>
-
-                  <ConditionsGroup>
-
-                     <NotInFogCondition/>
-
-                  </ConditionsGroup>
-
-               </Preconditions>
-
-               <TargetTypes>
-
-                  <PlayableUnit>
-
-                     <TargetConditions>
-
-                        <ConditionsGroup>
-
-                           <TargetInRangeCondition Max="15"/>
-
-                        </ConditionsGroup>
-
-                     </TargetConditions>
-
-                  </PlayableUnit>
-
-               </TargetTypes>
-
-               <TargetingMethod>
-
-                  <Closest/>
-
-               </TargetingMethod>
-
-            </Goal>
 
             <!--Attack MagicCircle: default goal-->
 
-            <Goal Id="04_CorruptedMageAttack">
+            <Goal Id="05_CorruptedMageAttack">
 
                <SkillId Value="CorruptedMageAttack"/>
 
@@ -625,64 +684,6 @@
             </Goal>
 
             <!-- Attack heroes in range : no aggro, just hit hero or building if they happen to be in range after moving-->
-
-            <Goal Id="05_CorruptedMageAttack">
-
-               <SkillId Value="CorruptedMageAttack"/>
-
-               <Preconditions>
-
-                  <ConditionsGroup>
-
-                     <NotInFogCondition/>
-
-                  </ConditionsGroup>
-
-               </Preconditions>
-
-               <TargetTypes>
-
-                  <PlayableUnit>
-
-                     <TargetConditions>
-
-                        <ConditionsGroup>
-
-                           <TargetInRangeCondition Max="3"/>
-
-                        </ConditionsGroup>
-
-                     </TargetConditions>
-
-                  </PlayableUnit>
-
-                  <Building>
-
-                     <TargetConditions>
-
-                        <ConditionsGroup>
-
-                           <TargetIdCondition Exclude="true">
-
-                              <TargetsListId Value="EnemiesIgnoredObstacles"/>
-
-                           </TargetIdCondition>
-
-                        </ConditionsGroup>
-
-                     </TargetConditions>
-
-                  </Building>
-
-               </TargetTypes>
-
-               <TargetingMethod>
-
-                  <Closest/>
-
-               </TargetingMethod>
-
-            </Goal>
 
          </Goals>
 

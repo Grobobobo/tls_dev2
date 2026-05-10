@@ -1037,7 +1037,7 @@
       <UpgradeLevels>
          <UpgradeLevel>
             <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
-            <MaterialCost>5</MaterialCost>
+            <MaterialCost>10</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="ReplaceBuilding" NewBuildingId="StoneWall"/>
             </UpgradeEffects>
@@ -1106,7 +1106,7 @@
     <UpgradeLevels>
       <UpgradeLevel>
         <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
-        <MaterialCost>13</MaterialCost>
+        <MaterialCost>18</MaterialCost>
         <UpgradeEffects>
           <UpgradeEffect Id="ReplaceBuilding" NewBuildingId="Gate"/>
         </UpgradeEffects>
@@ -1178,7 +1178,7 @@
     <UpgradeLevels>
       <UpgradeLevel>
         <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
-        <MaterialCost>40</MaterialCost>
+        <MaterialCost>50</MaterialCost>
         <UpgradeEffects>
           <UpgradeEffect Id="ReplaceBuilding" NewBuildingId="BallistaTower"/>
         </UpgradeEffects>
@@ -1210,7 +1210,7 @@
       <UpgradeLevels>
          <UpgradeLevel>
             <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
-            <MaterialCost>40</MaterialCost>
+            <MaterialCost>50</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="ReplaceBuilding" NewBuildingId="BallistaHeavy"/>
             </UpgradeEffects>
@@ -1242,7 +1242,7 @@
       <UpgradeLevels>
          <UpgradeLevel>
             <!--Maybe use an interpreter to do something like NewBuildingCost - CurrentBuildingCost-->
-            <MaterialCost>40</MaterialCost>
+            <MaterialCost>50</MaterialCost>
             <UpgradeEffects>
                <UpgradeEffect Id="ReplaceBuilding" NewBuildingId="BallistaSplit"/>
             </UpgradeEffects>

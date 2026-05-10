@@ -33,10 +33,10 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="120 * (1 + PlayableUnitLevel/13)" Max="150 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="128 * (1 + PlayableUnitLevel/13)" Max="160 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
-          <Skill>Bash</Skill>
+          <Skill>Bash5</Skill>
           <Skill>Crush</Skill>
           <Skill>Stomp</Skill>
         </Skills>
@@ -57,7 +57,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="70 * (1 + PlayableUnitLevel/13)" Max="108 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="72 * (1 + PlayableUnitLevel/13)" Max="110 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>58</BasePrice>
         <Skills>
           <Skill>Shred</Skill>
@@ -81,7 +81,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="80 * (1 + PlayableUnitLevel/13)" Max="100 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="90 * (1 + PlayableUnitLevel/13)" Max="112 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
           <Skill>Backstab</Skill>
@@ -104,7 +104,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="113 * (1 + PlayableUnitLevel/13)" Max="174 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="118 * (1 + PlayableUnitLevel/13)" Max="182 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
           <Skill>Thrust</Skill>
@@ -129,7 +129,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="90 * (1 + PlayableUnitLevel/13)" Max="180 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="96 * (1 + PlayableUnitLevel/13)" Max="192 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
           <Skill>HammerStrike</Skill>
@@ -179,7 +179,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="107 * (1 + PlayableUnitLevel/13)" Max="134 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="112 * (1 + PlayableUnitLevel/13)" Max="140 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
           <Skill>Impale</Skill>
@@ -353,7 +353,7 @@
         <BaseDamage Min="72 * (1 + PlayableUnitLevel/13)" Max="110 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
-          <Skill>SwordOfDamocles</Skill>
+          <Skill>SwordOfDamocles5</Skill>
           <Skill>Transfer5</Skill>
           <Skill>MagicMissilesUnique</Skill>
         </Skills>
@@ -400,7 +400,7 @@
         <BaseDamage Min="74 * (1 + PlayableUnitLevel/13)" Max="93 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
-          <Skill>Infect</Skill>
+          <Skill>Infect5</Skill>
           <Skill>PutridBall</Skill>
           <Skill>DeathRay</Skill>
         </Skills>
@@ -421,7 +421,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="99 * (1 + PlayableUnitLevel/13)" Max="152 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="104 * (1 + PlayableUnitLevel/13)" Max="160 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
           <Skill>PillarOfLight5</Skill>
@@ -469,7 +469,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="71 * (1 + PlayableUnitLevel/13)" Max="89 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="76 * (1 + PlayableUnitLevel/13)" Max="95 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
           <Skill>Flytrap</Skill>
@@ -519,7 +519,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="66 * (1 + PlayableUnitLevel/13)" Max="132 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="87 * (1 + PlayableUnitLevel/13)" Max="173 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
           <Skill>CannonBall</Skill>
@@ -561,19 +561,19 @@
   <ItemDefinition Id="ClawsUnique">
     <Category>MeleeWeapon</Category>
     <Tags>
-      <Tag>Claws</Tag>
+      <Tag>ClawsUnique</Tag>
     </Tags>
     <Hands>TwoHands</Hands>
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="58 * (1 + PlayableUnitLevel/13)" Max="116 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="63 * (1 + PlayableUnitLevel/13)" Max="126 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
-          <Skill>TearingGrasp</Skill>
-          <Skill>SharpenClaws5</Skill>
-          <Skill>ShadowSteps</Skill>
-          <Skill>PiercingClaws</Skill>
+          <Skill>TearingGraspUnique</Skill>
+          <Skill>ShadowStepsUnique</Skill>
+          <Skill>SharpenClawsUnique</Skill>
+          <Skill>PiercingClawsUnique</Skill>
         </Skills>
         <Perks>
           <Perk>BloodDrinkerUnique</Perk>

@@ -860,23 +860,25 @@
   <SkillDefinition Id="GroundSmashScroll" TemplateId="GroundSmash">
     <OverrideLocalizationId>GroundSmashScroll</OverrideLocalizationId>
     <ActionPointsCost>0</ActionPointsCost>
-    <ManaCost>3</ManaCost>
+    <ManaCost>4</ManaCost>
     <UsesPerTurnCount>1</UsesPerTurnCount>
     <SkillAction>
       <Attack>
         <AttackType>Physical</AttackType>
-        <DamageMultiplier>1.1</DamageMultiplier>
+        <DamageMultiplier>1.2</DamageMultiplier>
         <SkillEffects>
-          <NoDodge />
+          <SurroundingEffect>
+            <Damage Multiplier="0.6" />
+          </SurroundingEffect>
         </SkillEffects>
       </Attack>
     </SkillAction>
   </SkillDefinition>
   <SkillDefinition Id="GroundSmashScroll1" TemplateId="GroundSmashScroll">
-    <ManaCost>3</ManaCost>
+    <ManaCost>4</ManaCost>
   </SkillDefinition>
   <SkillDefinition Id="GroundSmashScroll2" TemplateId="GroundSmashScroll">
-    <ManaCost>3</ManaCost>
+    <ManaCost>4</ManaCost>
   </SkillDefinition>
   <SkillDefinition Id="TripleSwipeScroll" TemplateId="TripleSwipe">
     <OverrideLocalizationId>TripleSwipeScroll</OverrideLocalizationId>
@@ -941,20 +943,25 @@
   <SkillDefinition Id="ExplosiveBoltScroll" TemplateId="ExplosiveBolt">
     <OverrideLocalizationId>ExplosiveBoltScroll</OverrideLocalizationId>
     <ActionPointsCost>0</ActionPointsCost>
-    <ManaCost>3</ManaCost>
+    <ManaCost>4</ManaCost>
     <UsesPerTurnCount>1</UsesPerTurnCount>
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.45</DamageMultiplier>
+        <DamageMultiplier>3</DamageMultiplier>
+        <SkillEffects>
+          <SurroundingEffect>
+            <Damage Multiplier="1.5" />
+          </SurroundingEffect>
+        </SkillEffects>
       </Attack>
     </SkillAction>
   </SkillDefinition>
   <SkillDefinition Id="ExplosiveBoltScroll1" TemplateId="ExplosiveBoltScroll">
-    <ManaCost>3</ManaCost>
+    <ManaCost>4</ManaCost>
   </SkillDefinition>
   <SkillDefinition Id="ExplosiveBoltScroll2" TemplateId="ExplosiveBoltScroll">
-    <ManaCost>3</ManaCost>
+    <ManaCost>4</ManaCost>
   </SkillDefinition>
   <SkillDefinition Id="AssassinateScroll" TemplateId="Assassinate">
     <OverrideLocalizationId>AssassinateScroll</OverrideLocalizationId>
@@ -1012,10 +1019,10 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.4</DamageMultiplier>
+        <DamageMultiplier>1.7</DamageMultiplier>
         <SkillEffects>
           <Stun>
-            <BaseChance>0.7</BaseChance>
+            <BaseChance>0.65</BaseChance>
           </Stun>
           <Propagation PropagationsCount="6" />
         </SkillEffects>
@@ -1069,20 +1076,26 @@
   <SkillDefinition Id="FireThrowerScroll" TemplateId="FireThrower">
     <OverrideLocalizationId>FireThrowerScroll</OverrideLocalizationId>
     <ActionPointsCost>0</ActionPointsCost>
-    <ManaCost>5</ManaCost>
+    <ManaCost>6</ManaCost>
     <UsesPerTurnCount>1</UsesPerTurnCount>
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.1</DamageMultiplier>
+        <DamageMultiplier>1.25</DamageMultiplier>
+        <SkillEffects>
+          <RemoveStatus>
+            <BaseChance>1</BaseChance>
+            <Status>RemovablePositive</Status>
+          </RemoveStatus>
+        </SkillEffects>
       </Attack>
     </SkillAction>
   </SkillDefinition>
   <SkillDefinition Id="FireThrowerScroll1" TemplateId="FireThrowerScroll">
-    <ManaCost>5</ManaCost>
+    <ManaCost>6</ManaCost>
   </SkillDefinition>
   <SkillDefinition Id="FireThrowerScroll2" TemplateId="FireThrowerScroll">
-    <ManaCost>5</ManaCost>
+    <ManaCost>6</ManaCost>
   </SkillDefinition>
   <SkillDefinition Id="FireballScroll" TemplateId="Fireball">
     <OverrideLocalizationId>FireballScroll</OverrideLocalizationId>
@@ -1092,7 +1105,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.4</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
           <ArmorPiercing />
         </SkillEffects>
@@ -1113,7 +1126,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.6</DamageMultiplier>
+        <DamageMultiplier>1.5</DamageMultiplier>
         <SkillEffects>
           <Propagation PropagationsCount="9" />
         </SkillEffects>
@@ -1156,11 +1169,11 @@
     <OverrideLocalizationId>TeleportationScroll</OverrideLocalizationId>
     <ActionPointsCost>0</ActionPointsCost>
     <ManaCost>3</ManaCost>
-    <Range Min="1" Max="5" CardinalDirectionOnly="false" />
+    <Range Min="1" Max="9" CardinalDirectionOnly="false" />
   </SkillDefinition>
   <SkillDefinition Id="TeleportationScroll1" TemplateId="TeleportationScroll">
     <ManaCost>3</ManaCost>
-    <Range Min="1" Max="7" CardinalDirectionOnly="false" />
+    <Range Min="1" Max="9" CardinalDirectionOnly="false" />
   </SkillDefinition>
   <SkillDefinition Id="TeleportationScroll2" TemplateId="TeleportationScroll">
     <ManaCost>3</ManaCost>

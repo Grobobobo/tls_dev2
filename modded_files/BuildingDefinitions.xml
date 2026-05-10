@@ -70,7 +70,7 @@
 
       <Damageable>
          <HealthTotal>100</HealthTotal>
-         <TotalPanicValue>2</TotalPanicValue>
+         <TotalPanicValue>1.6</TotalPanicValue>
          <FlameAnchorPoints>
             <FlameAnchorPoint PositionX="-0.49" PositionY="0.33"/>
             <FlameAnchorPoint PositionX="0.91" PositionY="0.99"/>
@@ -108,7 +108,7 @@
 
       <Damageable>
          <HealthTotal>150</HealthTotal>
-         <TotalPanicValue>3</TotalPanicValue>
+         <TotalPanicValue>2.4</TotalPanicValue>
          <FlameAnchorPoints>
             <FlameAnchorPoint PositionX="-0.17" PositionY="3.98"/>
             <FlameAnchorPoint PositionX="-1.02" PositionY="3.21"/>
@@ -147,7 +147,7 @@
 
       <Damageable>
          <HealthTotal>200</HealthTotal>
-         <TotalPanicValue>4</TotalPanicValue>
+         <TotalPanicValue>3.2</TotalPanicValue>
          <FlameAnchorPoints>
             <FlameAnchorPoint PositionX="0.39" PositionY="2.31"/>
             <FlameAnchorPoint PositionX="-0.38" PositionY="1.57"/>
@@ -197,7 +197,7 @@
 
       <Damageable>
          <HealthTotal>50</HealthTotal>
-         <TotalPanicValue>0.5</TotalPanicValue>
+         <TotalPanicValue>0.4</TotalPanicValue>
          <DamagedParticles Id="Damaged_Particles_Enemy"/>
          <!-- <NoSmokeFXOnDestruction/> -->
       </Damageable>
@@ -286,7 +286,7 @@
 
       <Damageable>
          <HealthTotal>125</HealthTotal>
-         <TotalPanicValue>0.5</TotalPanicValue>
+         <TotalPanicValue>0.4</TotalPanicValue>
          <DamagedParticles Id="Damaged_Particles_Enemy"/>
          <!-- <NoSmokeFXOnDestruction/> -->
       </Damageable>
@@ -375,7 +375,7 @@
 
       <Damageable>
          <HealthTotal>250</HealthTotal>
-         <TotalPanicValue>0.5</TotalPanicValue>
+         <TotalPanicValue>0.4</TotalPanicValue>
          <DamagedParticles Id="Damaged_Particles_Enemy"/>
          <!-- <NoSmokeFXOnDestruction/> -->
       </Damageable>
@@ -464,7 +464,7 @@
 
       <Damageable>
          <HealthTotal>125</HealthTotal>
-         <TotalPanicValue>0.5</TotalPanicValue>
+         <TotalPanicValue>0.4</TotalPanicValue>
          <DamagedParticles Id="Damaged_Particles_Enemy"/>
          <!-- <NoSmokeFXOnDestruction/> -->
       </Damageable>
@@ -559,7 +559,7 @@
 
       <Damageable>
          <HealthTotal>35</HealthTotal>
-         <TotalPanicValue>0.5</TotalPanicValue>
+         <TotalPanicValue>0.2</TotalPanicValue>
          <DamagedParticles Id="Damaged_Particles_Wood"/>
          <NoSmokeFXOnDestruction/>
       </Damageable>
@@ -796,7 +796,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>25</MaterialsCost>
+         <MaterialsCost>30</MaterialsCost>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
          </GroundCategories>
@@ -872,7 +872,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>35</MaterialsCost>
+         <MaterialsCost>40</MaterialsCost>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
          </GroundCategories>
@@ -983,7 +983,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>25</MaterialsCost>
+         <MaterialsCost>30</MaterialsCost>
          <BuildLimit>Gates</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -1111,7 +1111,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>11</MaterialsCost>
+         <MaterialsCost>10</MaterialsCost>
          <BuildLimit>27</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -1180,7 +1180,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>9</MaterialsCost>
+         <MaterialsCost>8</MaterialsCost>
          <BuildLimit>29</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -1249,7 +1249,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>13</MaterialsCost>
+         <MaterialsCost>12</MaterialsCost>
          <BuildLimit>25</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -1320,7 +1320,7 @@
       </Blueprint>
 
       <Construction>
-         <MaterialsCost>60</MaterialsCost>
+         <MaterialsCost>50</MaterialsCost>
          <BuildLimit>Ballistas</BuildLimit>
          <GroundCategories>
             <GroundCategory>City</GroundCategory>
@@ -1883,7 +1883,7 @@
       <Battle>
          <HasDisabledState>true</HasDisabledState>
          <Skills>
-            <Skill NightUsesCount="3">PoisonSeedSkill</Skill>
+            <Skill NightUsesCount="2">PoisonSeedSkill</Skill>
          </Skills>
          <SkillProgressions>
             <SkillProgression Id="Spe_PoisonSeedSkill" GlyphFlagUnlock="SpecializedTraps"/>
@@ -1928,7 +1928,7 @@
       <Battle>
          <HasDisabledState>true</HasDisabledState>
          <Skills>
-            <Skill NightUsesCount="3">IsolationSeedSkill</Skill>
+            <Skill NightUsesCount="2">IsolationSeedSkill</Skill>
          </Skills>
          <SkillProgressions>
             <SkillProgression Id="Spe_IsolationSeedSkill" GlyphFlagUnlock="SpecializedTraps"/>
@@ -1974,7 +1974,7 @@
       <Battle>
 		 <HasDisabledState>true</HasDisabledState>
          <Skills>
-            <Skill NightUsesCount="3">PurgingSeedSkill</Skill>
+            <Skill NightUsesCount="2">PurgingSeedSkill</Skill>
          </Skills>
          <SkillProgressions>
             <SkillProgression Id="Spe_PurgingSeedSkill" GlyphFlagUnlock="SpecializedTraps"/>
@@ -5047,7 +5047,7 @@
    <BuildingLimitGroupDefinition Id="Ballistas" Limit="22"/>
    <BuildingLimitGroupDefinition Id="Barricades" Limit="0" ResearchFlag="BarricadesLimit"/>
    <BuildingLimitGroupDefinition Id="ProdBuildings" Limit="4"/>
-   <BuildingLimitGroupDefinition Id="Seeds" Limit="8"/>
+   <BuildingLimitGroupDefinition Id="Seeds" Limit="12"/>
 
 
    <!-- ███████████████████████████████████████████████████████████████ -->

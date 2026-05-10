@@ -50,6 +50,7 @@
   </SkillDefinition>
   <SkillDefinition Id="SharpenClaws">
     <ActionPointsCost>1</ActionPointsCost>
+    <ManaCost>2</ManaCost>
     <UsesPerTurnCount>2</UsesPerTurnCount>
     <AffectedUnits>
       <CanAffectCaster>true</CanAffectCaster>
@@ -206,8 +207,6 @@
   </SkillDefinition>
   <SkillDefinition Id="ShadowSteps">
     <ActionPointsCost>1</ActionPointsCost>
-    <ManaCost>1</ManaCost>
-    <MovePointsCost>1</MovePointsCost>
     <UsesPerTurnCount>2</UsesPerTurnCount>
     <Range Min="1" Max="5" Modifiable="true" />
     <AffectedUnits>
@@ -223,7 +222,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Physical</AttackType>
-        <DamageMultiplier>1.5</DamageMultiplier>
+        <DamageMultiplier>1.25</DamageMultiplier>
         <SkillEffects>
           <Maneuver />
         </SkillEffects>
@@ -264,7 +263,7 @@
   </SkillDefinition>
   <SkillDefinition Id="PiercingClaws">
     <ActionPointsCost>2</ActionPointsCost>
-    <ManaCost>4</ManaCost>
+    <ManaCost>3</ManaCost>
     <UsesPerTurnCount>1</UsesPerTurnCount>
     <Range Min="1" Max="6" CardinalDirectionOnly="true" Modifiable="true" />
     <AffectedUnits>
@@ -282,7 +281,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Physical</AttackType>
-        <DamageMultiplier>1.8</DamageMultiplier>
+        <DamageMultiplier>1.9</DamageMultiplier>
       </Attack>
     </SkillAction>
     <OverrideSoundId>SuperSpin</OverrideSoundId>
@@ -321,7 +320,7 @@
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
           <Stun>
-            <BaseChance>0.7</BaseChance>
+            <BaseChance>0.80</BaseChance>
           </Stun>
         </SkillEffects>
       </Attack>
@@ -376,9 +375,10 @@
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
           <Stun>
-            <BaseChance>0.7</BaseChance>
+            <BaseChance>0.80</BaseChance>
           </Stun>
-          <Propagation PropagationsCount="3" />
+          <MultiHit HitsCount="2" />
+          <Propagation PropagationsCount="2" />
         </SkillEffects>
       </Attack>
     </SkillAction>
@@ -398,7 +398,7 @@
 
       </AreaOfEffect>
     <ActionPointsCost>1</ActionPointsCost>
-    <ManaCost>1</ManaCost>
+    <ManaCost>2</ManaCost>
     <Range Min="4" Max="10" CardinalDirectionOnly="false" Modifiable="true" />
     <CanRotate />
     <CanFlip />
@@ -409,12 +409,13 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>12</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -422,8 +423,8 @@
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-              <Stat Id="Accuracy" />
-              <Malus>10</Malus>
+              <Stat Id="Dodge" />
+              <Malus>12</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
           </SurroundingEffect>
@@ -469,15 +470,18 @@
          _X___
 
       </AreaOfEffect>
+    <ActionPointsCost>1</ActionPointsCost>
+    <ManaCost>0</ManaCost>
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>12</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -489,12 +493,13 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>13</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -502,8 +507,8 @@
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-              <Stat Id="Accuracy" />
-              <Malus>11</Malus>
+              <Stat Id="Dodge" />
+              <Malus>13</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
           </SurroundingEffect>
@@ -525,15 +530,18 @@
          _X___
 
       </AreaOfEffect>
+    <ActionPointsCost>1</ActionPointsCost>
+    <ManaCost>0</ManaCost>
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>13</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -545,12 +553,13 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>14</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -558,8 +567,8 @@
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-              <Stat Id="Accuracy" />
-              <Malus>12</Malus>
+              <Stat Id="Dodge" />
+              <Malus>14</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
           </SurroundingEffect>
@@ -581,15 +590,18 @@
          _X___
 
       </AreaOfEffect>
+    <ActionPointsCost>1</ActionPointsCost>
+    <ManaCost>0</ManaCost>
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>14</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -601,12 +613,13 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>15</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -614,8 +627,8 @@
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-              <Stat Id="Accuracy" />
-              <Malus>13</Malus>
+              <Stat Id="Dodge" />
+              <Malus>15</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
           </SurroundingEffect>
@@ -637,15 +650,18 @@
          _X___
 
       </AreaOfEffect>
+    <ActionPointsCost>1</ActionPointsCost>
+    <ManaCost>0</ManaCost>
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>15</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -657,12 +673,13 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>16</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -670,8 +687,8 @@
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-              <Stat Id="Accuracy" />
-              <Malus>14</Malus>
+              <Stat Id="Dodge" />
+              <Malus>16</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
           </SurroundingEffect>
@@ -693,15 +710,18 @@
          _X___
 
       </AreaOfEffect>
+    <ActionPointsCost>1</ActionPointsCost>
+    <ManaCost>0</ManaCost>
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>16</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -713,12 +733,13 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>18</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -726,8 +747,8 @@
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-              <Stat Id="Accuracy" />
-              <Malus>15</Malus>
+              <Stat Id="Dodge" />
+              <Malus>18</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
           </SurroundingEffect>
@@ -749,15 +770,18 @@
          _X___
 
       </AreaOfEffect>
+    <ActionPointsCost>1</ActionPointsCost>
+    <ManaCost>0</ManaCost>
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.6</DamageMultiplier>
         <SkillEffects>
+          <NoDodge />
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Accuracy" />
+            <Stat Id="Dodge" />
             <Malus>18</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -785,8 +809,8 @@
          __X__
 
       </AreaOfEffect>
-    <ActionPointsCost>2</ActionPointsCost>
-    <ManaCost>8</ManaCost>
+    <ActionPointsCost>3</ActionPointsCost>
+    <ManaCost>4</ManaCost>
     <Range Min="4" Max="10" CardinalDirectionOnly="true" Modifiable="true" />
     <UsesPerTurnCount>1</UsesPerTurnCount>
     <AffectedUnits>
@@ -795,14 +819,14 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.5</DamageMultiplier>
+        <DamageMultiplier>1.8</DamageMultiplier>
         <SkillEffects>
           <Stun>
-            <BaseChance>0.6</BaseChance>
+            <BaseChance>0.85</BaseChance>
           </Stun>
           <SurroundingEffect>
             <Stun>
-              <BaseChance>0.6</BaseChance>
+              <BaseChance>0.85</BaseChance>
             </Stun>
           </SurroundingEffect>
         </SkillEffects>
@@ -888,8 +912,8 @@
          __X__
 
       </AreaOfEffect>
-    <ActionPointsCost>2</ActionPointsCost>
-    <ManaCost>8</ManaCost>
+    <ActionPointsCost>3</ActionPointsCost>
+    <ManaCost>2</ManaCost>
     <Range Min="4" Max="10" CardinalDirectionOnly="true" Modifiable="true" />
     <UsesPerTurnCount>2</UsesPerTurnCount>
     <AffectedUnits>
@@ -898,10 +922,10 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.5</DamageMultiplier>
+        <DamageMultiplier>1.8</DamageMultiplier>
         <SkillEffects>
           <Stun>
-            <BaseChance>0.6</BaseChance>
+            <BaseChance>0.85</BaseChance>
           </Stun>
         </SkillEffects>
       </Attack>
@@ -929,7 +953,7 @@
           </Momentum>
           <SurroundingEffect>
             <Poison>
-              <DamagePerTurn>35</DamagePerTurn>
+              <DamagePerTurn>40</DamagePerTurn>
               <TurnsCount>3</TurnsCount>
             </Poison>
           </SurroundingEffect>
@@ -1152,7 +1176,7 @@
     </CastFXs>
   </SkillDefinition>
   <SkillDefinition Id="PetalStorm">
-    <ActionPointsCost>3</ActionPointsCost>
+    <ActionPointsCost>2</ActionPointsCost>
     <ManaCost>8</ManaCost>
     <AreaOfEffect OriginX="3" OriginY="4">
 
@@ -1180,7 +1204,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.5</DamageMultiplier>
         <SkillEffects>
           <RemoveStatus>
             <BaseChance>1</BaseChance>
@@ -1242,7 +1266,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Physical</AttackType>
-        <DamageMultiplier>1.8</DamageMultiplier>
+        <DamageMultiplier>1.9</DamageMultiplier>
       </Attack>
     </SkillAction>
   </SkillDefinition>
@@ -1263,14 +1287,14 @@
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
-        <DamageMultiplier>1.5</DamageMultiplier>
+        <DamageMultiplier>1.8</DamageMultiplier>
         <SkillEffects>
           <Stun>
-            <BaseChance>0.6</BaseChance>
+            <BaseChance>0.85</BaseChance>
           </Stun>
           <SurroundingEffect>
             <Stun>
-              <BaseChance>0.6</BaseChance>
+              <BaseChance>0.85</BaseChance>
             </Stun>
           </SurroundingEffect>
         </SkillEffects>
@@ -1297,7 +1321,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.3</DamageMultiplier>
+        <DamageMultiplier>1.5</DamageMultiplier>
         <SkillEffects>
           <RemoveStatus>
             <BaseChance>1</BaseChance>
@@ -1701,18 +1725,18 @@
           <IgnoreLineOfSight />
           <Contagion>
             <BaseChance>100</BaseChance>
-            <TurnsCount>4</TurnsCount>
+            <TurnsCount>3</TurnsCount>
           </Contagion>
           <Poison>
             <BaseChance>1</BaseChance>
             <DamagePerTurn>75</DamagePerTurn>
-            <TurnsCount>4</TurnsCount>
+            <TurnsCount>3</TurnsCount>
           </Poison>
           <SurroundingEffect>
             <Poison>
               <BaseChance>1</BaseChance>
               <DamagePerTurn>75</DamagePerTurn>
-              <TurnsCount>4</TurnsCount>
+              <TurnsCount>3</TurnsCount>
             </Poison>
           </SurroundingEffect>
         </SkillEffects>
@@ -1733,18 +1757,18 @@
           <IgnoreLineOfSight />
           <Contagion>
             <BaseChance>100</BaseChance>
-            <TurnsCount>4</TurnsCount>
+            <TurnsCount>3</TurnsCount>
           </Contagion>
           <Poison>
             <BaseChance>1</BaseChance>
             <DamagePerTurn>75</DamagePerTurn>
-            <TurnsCount>4</TurnsCount>
+            <TurnsCount>3</TurnsCount>
           </Poison>
           <SurroundingEffect>
             <Poison>
               <BaseChance>1</BaseChance>
               <DamagePerTurn>75</DamagePerTurn>
-              <TurnsCount>4</TurnsCount>
+              <TurnsCount>3</TurnsCount>
             </Poison>
           </SurroundingEffect>
         </SkillEffects>
@@ -1897,17 +1921,11 @@
   <SkillDefinition Id="PurgingSeedSkill">
     <Range Min="0" Max="6" />
     <AreaOfEffect OriginX="2" OriginY="2">
-
-         __X__
-
          _XXX_
-
          XXXXX
-
+         XXXXX
+         XXXXX
          _XXX_
-
-         __X__
-
       </AreaOfEffect>
     <AffectedUnits>
       <CanAffectBuildings>false</CanAffectBuildings>
@@ -1920,7 +1938,7 @@
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
             <TurnsCount>2</TurnsCount>
-            <Malus>10</Malus>
+            <Malus>20</Malus>
             <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
           </Debuff>
           <RemoveStatus>
@@ -1966,12 +1984,14 @@
   </SkillDefinition>
   <SkillDefinition Id="Spe_PurgingSeedSkill" TemplateId="PurgingSeedSkill">
     <Range Min="0" Max="6" />
-    <AreaOfEffect OriginX="2" OriginY="2">
-         _XXX_
-         XXXXX
-         XXXXX
-         XXXXX
-         _XXX_
+    <AreaOfEffect OriginX="3" OriginY="3">
+         __XXX__
+         _XXXXX_
+         XXXXXXX
+         XXXXXXX
+         XXXXXXX
+         _XXXXX_
+         __XXX__
       </AreaOfEffect>
     <AffectedUnits>
       <CanAffectBuildings>false</CanAffectBuildings>
@@ -1984,7 +2004,7 @@
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
             <TurnsCount>2</TurnsCount>
-            <Malus>10</Malus>
+            <Malus>20</Malus>
             <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
           </Debuff>
           <RemoveStatus>
@@ -1999,17 +2019,11 @@
   <SkillDefinition Id="PurgingSeedSkill2" TemplateId="PurgingSeedSkill">
     <Range Min="0" Max="6" />
     <AreaOfEffect OriginX="2" OriginY="2">
-
-         __X__
-
          _XXX_
-
          XXXXX
-
+         XXXXX
+         XXXXX
          _XXX_
-
-         __X__
-
       </AreaOfEffect>
     <AffectedUnits>
       <CanAffectBuildings>false</CanAffectBuildings>
@@ -2022,7 +2036,7 @@
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
             <TurnsCount>2</TurnsCount>
-            <Malus>20</Malus>
+            <Malus>30</Malus>
             <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
           </Debuff>
           <RemoveStatus>
@@ -2037,11 +2051,13 @@
   <SkillDefinition Id="Spe_PurgingSeedSkill2" TemplateId="PurgingSeedSkill">
     <Range Min="0" Max="6" />
     <AreaOfEffect OriginX="2" OriginY="2">
-         _XXX_
-         XXXXX
-         XXXXX
-         XXXXX
-         _XXX_
+         __XXX__
+         _XXXXX_
+         XXXXXXX
+         XXXXXXX
+         XXXXXXX
+         _XXXXX_
+         __XXX__
       </AreaOfEffect>
     <AffectedUnits>
       <CanAffectBuildings>false</CanAffectBuildings>
@@ -2054,7 +2070,7 @@
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
             <TurnsCount>2</TurnsCount>
-            <Malus>20</Malus>
+            <Malus>30</Malus>
             <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
           </Debuff>
           <RemoveStatus>
@@ -2077,7 +2093,7 @@
     <Range Min="1" Max="4" />
     <SkillAction>
       <Attack>
-        <BaseDamage Min="100" Max="130" />
+        <BaseDamage Min="152" Max="190" />
         <AttackType>Physical</AttackType>
         <DamageMultiplier>1</DamageMultiplier>
         <SkillEffects>
@@ -2085,7 +2101,7 @@
           <NoDodge />
           <Debuff>
             <BaseChance>1</BaseChance>
-            <Malus>15</Malus>
+            <Malus>25</Malus>
             <Stat Id="OverallDamage" />
           </Debuff>
         </SkillEffects>

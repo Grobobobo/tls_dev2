@@ -121,25 +121,28 @@
          <TokenVariable Key="BonusMultiplier" Value="Floor(Owner.Block / BlockThreshold)"/>
          <TokenVariable Key="NextThreshold" Value="(NumberOfStepsReached + 1) * BlockThreshold"/>
          <TokenVariable Key="NumberOfStepsReached" Value="Floor(Owner.Block / BlockThreshold)"/>
-         <TokenVariable Key="PhysDamageBonus" Value="5"/>
+         <TokenVariable Key="DamageBonus" Value="4"/>
          <TokenVariable Key="BlockThreshold" Value="7"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="BlockThreshold" Style="GoodNb"/>
          <StatArgument Stat="Block"/>
-         <StatArgument Stat="PhysicalDamage" Value="PhysDamageBonus"/>
-         <StatArgument Stat="PhysicalDamage" Value="PhysDamageBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="PhysicalDamage" Value="DamageBonus"/>
+         <StatArgument Stat="MagicalDamage" Value="DamageBonus"/>
+         <StatArgument Stat="PhysicalDamage" Value="DamageBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="MagicalDamage" Value="DamageBonus * BonusMultiplier" Interpreted="true"/>
          <StatArgument Stat="Block" Value="NextThreshold" Interpreted="true" DisplaySign="false"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
-            <Bonus Value="PhysDamageBonus * BonusMultiplier"/>
+            <Bonus Value="DamageBonus * BonusMultiplier"/>
          </DisplayInHUD>
       </View>
       <Modules>
          <BufferModule>
             <Effects>
-               <StatModifier Stat="PhysicalDamage" Value="PhysDamageBonus * BonusMultiplier"/>
+               <StatModifier Stat="PhysicalDamage" Value="DamageBonus * BonusMultiplier"/>
+               <StatModifier Stat="MagicalDamage" Value="DamageBonus * BonusMultiplier"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -150,24 +153,28 @@
          <TokenVariable Key="BonusMultiplier" Value="Floor(Owner.Dodge / DodgeThreshold)"/>
          <TokenVariable Key="NextThreshold" Value="(NumberOfStepsReached + 1) * DodgeThreshold"/>
          <TokenVariable Key="NumberOfStepsReached" Value="Floor(Owner.Dodge / DodgeThreshold)"/>
-         <TokenVariable Key="RangedDamageBonus" Value="5"/>
+         <TokenVariable Key="DamageBonus" Value="4"/>
          <TokenVariable Key="DodgeThreshold" Value="9"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="DodgeThreshold" Style="GoodNb"/>
          <StatArgument Stat="Dodge"/>
-         <StatArgument Stat="RangedDamage" Value="RangedDamageBonus"/>
-         <StatArgument Stat="RangedDamage" Value="RangedDamageBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="PhysicalDamage" Value="DamageBonus"/>
+         <StatArgument Stat="RangedDamage" Value="DamageBonus"/>
+         <StatArgument Stat="PhysicalDamage" Value="DamageBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="RangedDamage" Value="DamageBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="Dodge" Value="NextThreshold" Interpreted="true" DisplaySign="false"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
-            <Bonus Value="RangedDamageBonus * BonusMultiplier"/>
+            <Bonus Value="DamageBonus * BonusMultiplier"/>
          </DisplayInHUD>
       </View>
       <Modules>
          <BufferModule>
             <Effects>
-               <StatModifier Stat="RangedDamage" Value="RangedDamageBonus * BonusMultiplier"/>
+               <StatModifier Stat="PhysicalDamage" Value="DamageBonus * BonusMultiplier"/>
+               <StatModifier Stat="RangedDamage" Value="DamageBonus * BonusMultiplier"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -175,28 +182,31 @@
 
    <PerkDefinition Id="HeroesManaRegMagicDamagePerk">
       <TokenVariables>
-         <TokenVariable Key="BonusMultiplier" Value="Floor(Owner.ManaRegen / ManaRegenThreshold)"/>
+         <TokenVariable Key="BonusMultiplier" Value="Floor(Owner.UnlockedManaRegen / ManaRegenThreshold)"/>
          <TokenVariable Key="NextThreshold" Value="(NumberOfStepsReached + 1) * ManaRegenThreshold"/>
-         <TokenVariable Key="NumberOfStepsReached" Value="Floor(Owner.ManaRegen / ManaRegenThreshold)"/>
-         <TokenVariable Key="MagicDamageBonus" Value="5"/>
-         <TokenVariable Key="ManaRegenThreshold" Value="4"/>
+         <TokenVariable Key="NumberOfStepsReached" Value="Floor(Owner.UnlockedManaRegen / ManaRegenThreshold)"/>
+         <TokenVariable Key="DamageBonus" Value="4"/>
+         <TokenVariable Key="ManaRegenThreshold" Value="5"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="ManaRegenThreshold" Style="GoodNb"/>
          <StatArgument Stat="ManaRegen"/>
-         <StatArgument Stat="MagicalDamage" Value="MagicDamageBonus"/>
-         <StatArgument Stat="MagicalDamage" Value="MagicDamageBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="RangedDamage" Value="DamageBonus"/>
+         <StatArgument Stat="MagicalDamage" Value="DamageBonus"/>
+         <StatArgument Stat="RangedDamage" Value="DamageBonus * BonusMultiplier" Interpreted="true"/>
+         <StatArgument Stat="MagicalDamage" Value="DamageBonus * BonusMultiplier" Interpreted="true"/>
          <StatArgument Stat="ManaRegen" Value="NextThreshold" Interpreted="true" DisplaySign="false"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
-            <Bonus Value="MagicDamageBonus * BonusMultiplier"/>
+            <Bonus Value="DamageBonus * BonusMultiplier"/>
          </DisplayInHUD>
       </View>
       <Modules>
          <BufferModule>
             <Effects>
-               <StatModifier Stat="MagicalDamage" Value="MagicDamageBonus * BonusMultiplier"/>
+               <StatModifier Stat="RangedDamage" Value="DamageBonus * BonusMultiplier"/>
+               <StatModifier Stat="MagicalDamage" Value="DamageBonus * BonusMultiplier"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -466,7 +476,7 @@
 
    <PerkDefinition Id="StrongerAllies">
       <TokenVariables>
-         <TokenVariable Key="MaxHealthBonus" Value="15"/>
+         <TokenVariable Key="MaxHealthBonus" Value="25"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="HealthTotal" Value="MaxHealthBonus" DisplaySign="true"/>
@@ -492,9 +502,11 @@
                      <!--Reset buffer at the end of the night-->
                   </Actions>
                </Event>
-               <Event EffectTime="OnSkillStatusApplied">
+               <Event EffectTime="OnCastSkillBegin">
                   <Conditions>
-                     <IsTrue Value="AppliedBuff"/>
+                     <IsTrue Value="IsTargetPlayableUnit"/>
+                     <IsTrue Value="Skill.IsSingleTarget"/>-
+                     <IsTrue Value="Skill.MaxRange > 0"/>
                   </Conditions>
                   <Actions>
                      <IncreaseBuffer BufferIndex="Buffer" Value="MaxHealthBonus"/>
@@ -1917,7 +1929,7 @@
          <TokenVariable Key="ReductionIsActive" Value="UnitsToKillLeft = 0"/>
          <TokenVariable Key="UnitsToKillLeft" Value="Max(0, RemainingUnitsToKill)"/>
          <TokenVariable Key="RemainingUnitsToKill" Value="UnitKilledThreshold - Module.Buffer"/>
-         <TokenVariable Key="UnitKilledThreshold" Value="12"/>
+         <TokenVariable Key="UnitKilledThreshold" Value="8"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="UnitKilledThreshold" Style="KeyWordNb"/>
@@ -3063,7 +3075,7 @@
       <TokenVariables>
          <TokenVariable Key="DamagePerStack" Value="4"/>
          <TokenVariable Key="PerkStacks" Value="Min(Max(0,Module.Buffer), MaxStacks)"/>
-         <TokenVariable Key="MaxStacks" Value="15"/>
+         <TokenVariable Key="MaxStacks" Value="20"/>
          <TokenVariable Key="WasAttackedThisTurn" Value="Module.Buffer2"/>
          <TokenVariable Key="StackPerEnemy" Value="3"/>
          <TokenVariable Key="StackLoosePerSkill" Value="1"/>
@@ -3237,8 +3249,8 @@
          <TokenVariable Key="OverheatThreshold" Value="7"/>
 			<TokenVariable Key="CooldownPerTurn" Value="4"/>
 			<TokenVariable Key="SkillId" Value="OverheatUniqueSkill"/>
-			<TokenVariable Key="BastHealthCost" Value="9"/>
-			<TokenVariable Key="HeatlCostPerPoint" Value="1"/>
+			<TokenVariable Key="BastHealthCost" Value="20"/>
+			<TokenVariable Key="HeatlCostPerPoint" Value="4"/>
          <TokenVariable Key="HeatIncrease" Value="1"/>
          <TokenVariable Key="CanTriggerOverheat" Value ="Module.Buffer3"/>
       </TokenVariables>
@@ -3374,7 +3386,7 @@
                </Event>
             </Events>
             <Effects>
-               <SkillModifier ComputationStat="HealthCost" Value=" BastHealthCost * -1 + (Skill.BaseActionPointsCost + Skill.BaseManaCost) * (HeatlCostPerPoint * -1)">
+               <SkillModifier ComputationStat="HealthCost" Value=" BastHealthCost * -1 + (SkillUsed - OverheatThreshold) * (HeatlCostPerPoint * -1)">
                   <Conditions>
                      <IsTrue Value="Skill.IsFromItemWithTag('Cannon')"/>
                      <!--<IsTrue Value="SkillUsed = OverheatThreshold"/>-->
@@ -3575,23 +3587,22 @@
    <PerkDefinition Id="BloodDrinkerUnique">
       <TokenVariables>
          <TokenVariable Key="PerkStack" Value="Max(0,Threshold - Module.Buffer)"/>
-         <TokenVariable Key="IsTargetIsolated" Value="TargetUnit.IsIsolated"/>
-         <TokenVariable Key="Threshold" Value="2"/>
-         <TokenVariable Key="DebuffDamage" Value="-35"/>
-         <TokenVariable Key="PerkCanBeClean" Value="Module.Buffer2"/>
-         <TokenVariable Key="TargetWasHit" Value="Module.Buffer3"/>
-         <!--Unique perk bonus-->
+         <TokenVariable Key="DebuffDamage" Value="-20"/>
+         <TokenVariable Key="Threshold" Value="1"/>
+                  <!--Unique perk bonus-->
          <TokenVariable Key="AddedRange" Value="1"/>
       </TokenVariables>
       <LocArguments>
-         <LocArgument Value="Threshold" Style="KeyWordNb"/>
+         <LocalizedArgument Prefix="SkillName_" Value="SharpenClaws" Style="Skill"/>
+         <LocalizedArgument Value="ItemName_NoDLCTag_ClawsUnique" Style="Unique"/>
          <LocalizedArgument Value="SkillEffectName_MultiHit" Style="MultiHit"/>
          <LocArgument Value="3" Style="DamageNb" Prefix=" x"/>
+         <LocalizedArgument Prefix="SkillName_" Value="PiercingClaws" Style="Skill"/>
          <LocArgument Value="DebuffDamage" Suffix="%" Style="BadNb"/>
-         <!--Unique perk bonus-->
-         <LocalizedArgument Prefix="SkillName_" Value="TearingGrasp" Style="skill"/>
+         <LocalizedArgument Prefix="SkillName_" Value="TearingGrasp" Style="Skill"/>
          <StatArgument Stat="SkillRangeModifier" Value="AddedRange" DisplaySign="true"/>
          <StatArgument Stat="SkillRangeModifier"/>
+         <LocalizedArgument Prefix="SkillName_" Value="ShadowSteps" Style="Skill"/>
       </LocArguments>
       <View>
          <CompendiumEntries>
@@ -3602,7 +3613,7 @@
             <Buffer Value="PerkStack"/>
             <Highlight>
                <IsTrue Value="PerkStack = 0"/>
-               <IsTrue Value="Skill.IsFromItemWithTag('Claws')"/>
+               <IsTrue Value="Skill.IsFromItemWithTag('ClawsUnique')"/>
             </Highlight>
             <GreyOut>
                <IsFalse Value="PerkStack = 0"/>
@@ -3624,88 +3635,35 @@
                      <RefreshPerkActivationFeedback RefreshView="true"/>
                   </Actions>
                </Event>
-               <Event EffectTime="OnTargetHit">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsFromItemWithTag('Claws')"/>
-                     <IsFalse Value="PerkStack = 0"/>
-                     <IsTrue Value="IsTargetUnit"/>
-                     <IsTrue Value="Skill.IsAttack"/>
-                     <IsTrue Value="IsTargetIsolated"/>
-                  </Conditions>
-                  <Actions>
-                     <IncreaseBuffer BufferIndex="Buffer" Value="1"/>
-                     <RefreshPerkActivationFeedback RefreshView="true"/>
-                  </Actions>
-               </Event>
-               <Event EffectTime="OnSkillCastBegin">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsFromItemWithTag('Claws')"/>
-                  </Conditions>
-                  <Actions>
-                     <SetBufferTo BufferIndex="Buffer3" Value="0"/>
-                  </Actions>
-               </Event>
-               <Event EffectTime="OnSkillCastBegin">
-                  <Conditions>
-                     <IsTrue Value="PerkStack = 0"/>
-                     <IsTrue Value="Skill.IsAttack"/>
-                  </Conditions>
-                  <Actions>
-                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
-                  </Actions>
-               </Event>
-               <!--At least one unit is hit when perk is active-->
-               <Event EffectTime="OnTargetHit">
-                  <Conditions>
-                     <IsTrue Value="PerkStack = 0"/>
-                     <IsTrue Value="IsTargetUnit"/>
-                     <IsTrue Value="Skill.IsAttack"/>
-                     <IsFalse Value="IsTargetIsolated"/>
-                  </Conditions>
-                  <Actions>
-                     <DecreaseBuffer BufferIndex="Buffer2" Value="1"/>
-                     <SetBufferTo BufferIndex="Buffer3" Value="1"/>
-                  </Actions>
-               </Event>
-               <!--Revert cleanse if injured target hit-->
-               <Event EffectTime="OnTargetHit">
-                  <Conditions>
-                     <IsTrue Value="Skill.IsFromItemWithTag('Claws')"/>
-                     <IsTrue Value="PerkStack = 0"/>
-                     <IsTrue Value="IsTargetUnit"/>
-                     <IsTrue Value="Skill.IsAttack"/>
-                     <IsTrue Value="IsTargetIsolated"/>
-                  </Conditions>
-                  <Actions>
-                     <SetBufferTo BufferIndex="Buffer2" Value="99"/>
-                     <SetBufferTo BufferIndex="Buffer3" Value="1"/>
-                  </Actions>
-               </Event>
-               <!-- Data Reset-->
                <Event EffectTime="OnSkillCastEnd">
                   <Conditions>
-                     <IsTrue Value="Skill.IsFromItemWithTag('Claws')"/>
+                     <IsTrue Value="Skill.IsSkillID('SharpenClawsUnique')"/>
+                  </Conditions>
+                  <Actions>
+                     <SetBufferTo BufferIndex="Buffer" Value="1"/>
+                  </Actions>
+               </Event>               
+               <!--At least one unit is hit when perk is active-->
+               <Event EffectTime="OnSkillCastEnd">
+                  <Conditions>
+                     <IsTrue Value="Skill.IsFromItemWithTag('ClawsUnique')"/>
                      <IsTrue Value="PerkStack = 0"/>
                      <IsTrue Value="Skill.IsAttack"/>
-                     <IsFalse Value="PerkCanBeClean > 0"/>
-                     <IsTrue Value="TargetWasHit = 1"/>
                   </Conditions>
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer" Value="0"/>
-                     <RefreshPerkActivationFeedback RefreshView="true"/>
                   </Actions>
                </Event>
                <Event EffectTime="OnStartProductionTurn">
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer" Value="0"/>
-                     <SetBufferTo BufferIndex="Buffer2" Value="0"/>
                   </Actions>
                </Event>
             </Events>
             <Effects>
                <AddSkillEffect>
                   <Conditions>
-                     <IsTrue Value="Skill.IsFromItemWithTag('Claws')"/>
+                     <IsTrue Value="Skill.IsFromItemWithTag('ClawsUnique')"/>
                      <IsTrue Value="PerkStack = 0"/>
                      <IsTrue Value="Skill.IsAttack"/>
                   </Conditions>
@@ -3715,25 +3673,34 @@
                </AddSkillEffect>
                <SkillModifier ComputationStat="OverallDamage" Value="DebuffDamage">
                   <Conditions>
-                     <IsTrue Value="Skill.IsFromItemWithTag('Claws')"/>
+                     <IsTrue Value="Skill.IsSkillID('PiercingClawsUnique')"/>
                      <IsTrue Value="PerkStack = 0"/>
-                     <IsTrue Value="Skill.IsAttack"/>
                   </Conditions>
                </SkillModifier>
             </Effects>
          </BufferModule>
          <BufferModule>
             <Effects>
-               <ReplaceItemSkill SkillIdToReplace="TearingGrasp" SkillIdReplacement="TearingGraspUnique" LinkedSkillIdForUsesPerTurn="TearingGrasp">
+               <ReplaceItemSkill SkillIdToReplace="TearingGraspUnique" SkillIdReplacement="TearingGraspUnique2" LinkedSkillIdForUsesPerTurn="TearingGraspUnique">
                   <Conditions>
                      <IsTrue Value="PerkStack = 0"/>
                   </Conditions>
                </ReplaceItemSkill>
+               <AddSkillEffect>
+                  <Conditions>
+                     <IsTrue Value="Skill.IsSkillID('ShadowStepsUnique')"/>
+                     <IsTrue Value="PerkStack = 0"/>
+                  </Conditions>
+                  <SkillEffects>
+                     <Isolated>
+                        <DamageMultiplier>1.25</DamageMultiplier>
+                     </Isolated>
+                  </SkillEffects>
+               </AddSkillEffect>
             </Effects>
          </BufferModule>
       </Modules>
    </PerkDefinition>
-
 
 
    <!--Boomerang-->
@@ -3747,12 +3714,12 @@
 		<LocArguments>
              <LocArgument Value="EnemiesHitThreshold" Style="KeyWordNb"/>
                <LocalizedArgument Value="SkillEffectName_Propagation" Style="Propagation"/>
-               <LocArgument Value="3" Style="DamageNb" Prefix=" x"/>
+               <LocArgument Value="2" Style="DamageNb" Prefix=" x"/>
              <!--<LocArgument Prefix="+" Value="OverallDamageBonus" Suffix="%" Style="GoodNb"/>-->
              <LocArgument Value="PerkStacks" Interpreted="true" Style="KeyWordNb"/>
             <LocalizedArgument Prefix="SkillName_" Value="PreciseTargetting" Style="Skill"/>
-            <StatArgument Stat="StunChanceModifier" Value="UniqueBonusStunChance" DisplaySign="false"/>
-
+            <LocalizedArgument Value="SkillEffectName_MultiHit" Style="MultiHit"/>
+            <LocArgument Value="2" Style="DamageNb" Prefix=" x"/>
       </LocArguments>
 		<View>
 			<DisplayInHUD>
@@ -3910,7 +3877,7 @@
          <TokenVariable Key="PoisonScalingOnLevel" Value="(Floor(PlayableUnitLevel/PerLevelHeroScale) * PoisonScalingLevelMultiplicative)"/>
          <TokenVariable Key="PlayableUnitLevel" Value="(BooleanChoice(HasOwner,Owner.Level,1))"/>
          <TokenVariable Key="PlayerPoisonScalingOnHit" Value="0.25"/>
-         <TokenVariable Key="PerLevelHeroScale" Value="4"/>
+         <TokenVariable Key="PerLevelHeroScale" Value="5"/>
 
          <TokenVariable Key="ApplyStatusRange" Value="4"/>
          <TokenVariable Key="PoisonPlayerDuration" Value="3"/>

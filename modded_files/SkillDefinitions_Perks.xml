@@ -23,7 +23,7 @@
       <ContextualConditions>
          <MinTargetInjuryStage>2</MinTargetInjuryStage>
       </ContextualConditions>
-      <Range Min="1" Max="2"/>
+      <Range Min="1" Max="1"/>
       <SkillAction>
          <Generic>
             <SkillEffects>
@@ -336,6 +336,13 @@
       <ValidTargets>
          <EnemyUnits/>
       </ValidTargets>
+      <AffectedUnits>
+         <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
+         <CanAffectPlayableUnits>false</CanAffectPlayableUnits>
+         <CanAffectCaster>false</CanAffectCaster>
+         <CanAffectBossUnits>true</CanAffectBossUnits>
+      </AffectedUnits>
+
       <UsesPerTurnCount>3</UsesPerTurnCount>
       <Range Min="2" Max="10" Modifiable="true"/>
 
@@ -412,7 +419,7 @@
       </AffectedUnits>
       <InvalidCastDisplayBehaviour>DisplayedUnavailable</InvalidCastDisplayBehaviour>
       <UsesPerTurnCount>2</UsesPerTurnCount>
-      <Range Min="1" Max="6"/>
+      <Range Min="1" Max="2"/>
       <SkillAction>
          <Resupply>
             <SkillEffects>
@@ -420,7 +427,7 @@
                   <Targets>
                      <TargetsListId Value="HandledDefenses"/>
                   </Targets>
-                  <Amount>3</Amount>
+                  <Amount>2</Amount>
                </ResupplyOverallUses>
                <IgnoreLineOfSight/>
             </SkillEffects>
@@ -475,7 +482,7 @@
          <CanAffectCaster>false</CanAffectCaster>
       </AffectedUnits>
       <UsesPerTurnCount>1</UsesPerTurnCount>
-      <Range Min="1" Max="6"/>
+      <Range Min="1" Max="2"/>
       <AreaOfEffect OriginX="1" OriginY="1">
          XXX
          XXX
