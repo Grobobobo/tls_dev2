@@ -3563,3 +3563,98 @@ BuildingUpgradeTooltipDescription_UpgradeStoneWallToStoneWallReinforced0,"Become
  • <style=Health>체력</style> <style=""Number"">320</style> > <style=""GoodNbOutlined"">480</style>"
 SkillName_PoisonCloud,Noxious Blast,Contamination,污染源,污染源,汚染,Заражение,Зараження,Kontamination,Contaminación,Contaminação,오염원
 PerkDescription_PlagueDoctor,"Unlocks the {0} skill, allowing to apply {1} and {2} to the target.","Débloque la compétence {0}, donnant la possibilité d'appliquer {1} à une cible.",解锁{0}技能，可以向目标施加{1}和{2}。,解鎖{0}技能，可以向目標施加{1}和{2}。,{0}スキルを解放し、{1}と{2}を対象に付与できるようになる。,"Даёт герою навык ""{0}"". {1} и {2} помогают распространять негативные эффекты.","Розблоковує вміння {0}, яке дає змогу застосувати {1} та {2} до цілі.","Schaltet die Fähigkeit {0} frei und ermöglicht es, {1} und {2} auf das Ziel anzuwenden.","Desbloquea la habilidad {0}, que permite provocar {1} y {2} al objetivo.","Desbloqueia a habilidade {0}, permitindo a aplicação de {1} e {2} ao alvo.",{0} 스킬 잠금 해제: 대상에 {1}과 {2} 유발
+Meta_UpgradeDescription_UnlockShieldVariations2,"<sprite name=""LightShopDot""> New <style=LightShopKW>items</style> can now appear in your runs.
+<sprite name=""LightShopDot""> The <style=LightShopKW>Rusty Shield</style> will not appear in your runs anymore.","<sprite name=""LightShopDot""> De nouveaux <style=LightShopKW>objets</style> peuvent maintenant apparaître dans vos parties.
+<sprite name=""LightShopDot""> Le <style=LightShopKW>Bouclier rouillé</style> n'apparaîtra plus dans vos parties.","<sprite name=""LightShopDot"">在战斗中将会出现新的<style=LightShopKW>装备</style>。
+<sprite name=""LightShopDot""> <style=LightShopKW>锈盾牌</style> 不会再出现了。","<sprite name=""LightShopDot"">在戰鬥中將會出現新的<style=LightShopKW>裝備</style>。
+<sprite name=""LightShopDot""> <style=LightShopKW>鏽盾牌</style> 不會再出現了。","<sprite name=""LightShopDot"">新しい<style=LightShopKW>アイテム</style>が出現するようになる。
+<sprite name=""LightShopDot""> <style=LightShopKW>錆びたシールド</style>がプレイ中にこれ以上出現しなくなる。","<sprite name=""LightShopDot""> Вам будут встречаться <style=LightShopKW>предметы</style> новых типов.
+<sprite name=""LightShopDot""> <style=LightShopKW>Ржавый щит</style> больше не будет появляться в вашей игре.","<sprite name=""LightShopDot""> У ваших виживаннях тепер з'являтимуться нові <style=LightShopKW>речі</style>.
+<sprite name=""LightShopDot""> <style=LightShopKW>Іржавий щит</style> більше не траплятиметься у ваших виживаннях.","<sprite name=""LightShopDot""> Neue <style=LightShopKW>Gegenstände</style> können jetzt in deinen Läufen erscheinen.
+<sprite name=""LightShopDot""> Das <style=LightShopKW>Rostiger Schild</style> wird nicht mehr in deinen Läufen erscheinen.","<sprite name=""LightShopDot""> Ahora pueden aparecer nuevos <style=LightShopKW>objetos</style> en tus partidas.
+<sprite name=""LightShopDot""> El <style=LightShopKW>Escudo oxidado</style> ya no aparecerá en tus partidas.","<sprite name=""LightShopDot""> Agora, novos <style=LightShopKW>itens</style> podem aparecer em suas partidas.
+<sprite name=""LightShopDot""> O <style=LightShopKW>Escudo Enferrujado</style> não vai mais aparecer em suas partidas.","<sprite name=""LightShopDot""> 플레이 도중 신규 <style=LightShopKW>아이템</style>이 등장합니다.
+<sprite name=""LightShopDot""> <style=LightShopKW>녹슨 방패</style>가 더 이상 등장하지 않습니다."
+PerkDescription_Elusive,"{0}.
+{1}.
+<style=keyword>After</style> being <style=keyword>attacked</style> by enemies, for every attack <style=dodge>dodged</style>:
+<style=keyword>Automatically</style> cast {4} on a random enemy in a range of {5}, with a base damage equal to {6} + {7} of the Hero's {1}.
+For the <style=keyword>last</style> dodge, cast {8} instead, with a base damage equal to {9} + {10} of the Hero's {1}.
+<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","{0}.
+{1}.
+<style=keyword>Après</style> avoir été <style=keyword>attaqué</style> par des ennemis, pour chaque attaque <style=dodge>esquivée</style><nbsp>:
+Utilise <style=keyword>automatiquement</style> {4} sur un ennemi aléatoire dans une portée de {5}, avec des dégâts de base égaux à {6} + {7} de l'{1} du Héros.
+Pour la <style=keyword>dernière</style> esquive, utilise {8} à la place, avec des dégâts de base égaux à {9} + {10} de l'{1} du Héros.
+<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","{0}。
+{1}。
+
+在遭到敌人<style=keyword>攻击</style><style=keyword>后</style>，每<style=dodge>闪避</style>一次攻击：
+<style=keyword>自动</style>对{5}格范围内的一名随机敌人施放{4}，基础伤害等于{6}+英雄{1}的{7}。
+
+<style=keyword>最后一次</style>闪避会转为施放{8}，基础伤害等于{9}+英雄{1}的{10}。
+
+<style=""ElfIcon""></style><style=""ElfText"">《琥珀幽森的精灵》DLC</style>","{0}。
+{1}。
+
+受到敵人<style=keyword>攻擊</style><style=keyword>後</style>，每<style=dodge>閃避</style>一個攻擊：
+<style=keyword>自動</style>對{5}格範圍內的一個隨機敵人施放{4}，基礎傷害等於{6}+英雄{1}的{7}。
+
+<style=keyword>最後一次</style>閃避時，改為施放{8}，基礎傷害等於{9}+英雄{1}的{10}。
+
+<style=""ElfIcon""></style><style=""ElfText"">〈琥珀幽森的精靈〉DLC</style>","{0}。
+{1}。
+
+エネミーの<style=keyword>攻撃を受けた</style><style=keyword>後</style>、<style=dodge>ドッジ成功</style>1回につき、以下の効果を得る:
+距離{5}内のランダムなエネミーに対し{4}が<style=keyword>自動的に</style>発動する(基本ダメージ: 英雄の{1}{6}+{7})。
+
+<style=keyword>最後</style>のドッジで、代わりに{8}が発動する(基本ダメージ: 英雄の{1}{9}+{10})。
+
+<style=""ElfIcon""></style><style=""ElfText"">アンバーワルドのエルフDLC</style>","{0}.
+{1}.
+
+<style=keyword>После</style> вражеских <style=keyword>атак</style> за каждое <style=dodge>уклонение</style>:
+<style=keyword>автоматически</style> применяет навык ""{4}"" против случайного врага в пределах {5} яч.; базовый урон атаки составит {6} плюс {7} характеристики героя ""{1}"".
+
+С <style=keyword>последним</style> уклонением герой применяет не ""{4}"", а ""{8}""; базовый урон атаки составит {9} плюс {10} от характеристики героя ""{1}"".
+
+<style=""ElfIcon""></style><style=""ElfText"">Дополнительный контент ""Elves of Amberwald""</style>","{0}.
+{1}.
+
+<style=keyword>Після</style> початку <style=keyword>нападу</style> ворогів, за кожну атаку, від якої вдалося <style=dodge>ухилитися</style>:
+<style=keyword>автоматично</style> застосовує «{4}» на випадкового ворога в радіусі {5}, базова шкода дорівнює {6} + {7} від {1} героя.
+
+При <style=keyword>останньому</style> ухилянні натомість застосовує «{8}», а базова шкода дорівнює {9} + {10} від {1} героя.
+
+<style=""ElfIcon""></style><style=""ElfText"">Доповнення Elves of Amberwald</style>","{0}.
+{1}.
+
+<style=keyword>Nachdem</style> der Held von Gegnern <style=keyword>angegriffen</style> worden ist, geschieht bei jedem <style=dodge>Ausweichen</style> vor einem Angriff Folgendes:
+Es wird <style=keyword>automatisch</style> {4} auf einen zufälligen Gegner innerhalb einer Reichweite von {5} gewirkt, und zwar mit einem Basisschaden von {6} + {7} des {1}s des Helden.
+
+Beim <style=keyword>letzten</style> Ausweichen wird stattdessen {8} gewirkt, und zwar mit einem Basisschaden von {9} + {10} des {1}s des Helden.
+
+<style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","{0}.
+{1}.
+
+<style=keyword>Al</style> recibir <style=keyword>ataques</style> de enemigos, por cada ataque <style=dodge>evadido</style>:
+<style=keyword>Automáticamente</style> lanza {4} a un enemigo aleatorio que se encuentre a una distancia de {5}, con un daño base equivalente al {6} + {7} de la {1} del héroe.
+
+En la <style=keyword>última</style> evasión, lanza {8}, con un daño base equivalente al {9} + {10} de la {1} del héroe.
+
+<style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","{0}.
+{1}.
+
+<style=keyword>Após</style> sofrer <style=keyword>ataques</style> de inimigos, para cada ataque <style=dodge>esquivado</style>:
+Lança <style=keyword>automaticamente</style> {4} em um inimigo aleatório em uma distância de até {5}, com um dano base igual a {6} + {7} da {1} do Herói.
+
+Na <style=keyword>última</style> esquiva, porém, lança {8}, com dano base igual a {9} + {10} da {1} do Herói.
+
+<style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","{0}
+{1}
+
+적에게 <style=keyword>공격받은</style> <style=keyword>후</style> <style=dodge>회피</style>한 공격 하나당:
+{5}타일 내 무작위 적에게 <style=keyword>자동으로</style> {4} 시전, 기본 피해는 영웅의 {1}의 {6} + {7}
+
+<style=keyword>마지막</style> 회피 시 대신 {8} 시전, 기본 피해는 영웅의 {1}의 {9} + {10}
+
+<style=""ElfIcon""></style><style=""ElfText"">암버발트의 엘프 DLC</style>"
