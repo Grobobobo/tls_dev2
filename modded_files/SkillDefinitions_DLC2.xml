@@ -281,7 +281,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Physical</AttackType>
-        <DamageMultiplier>1.9</DamageMultiplier>
+        <DamageMultiplier>2</DamageMultiplier>
       </Attack>
     </SkillAction>
     <OverrideSoundId>SuperSpin</OverrideSoundId>
@@ -953,7 +953,7 @@
           </Momentum>
           <SurroundingEffect>
             <Poison>
-              <DamagePerTurn>40</DamagePerTurn>
+              <DamagePerTurn>50</DamagePerTurn>
               <TurnsCount>3</TurnsCount>
             </Poison>
           </SurroundingEffect>
@@ -1098,14 +1098,13 @@
     <Range Min="1" Max="6" Modifiable="true" />
     <AreaOfEffect OriginX="1" OriginY="1">
 
-         __e
+         e_e
 
          _X_
 
-         e__
+         e_e
 
       </AreaOfEffect>
-    <CanFlip />
     <UsesPerTurnCount>3</UsesPerTurnCount>
     <SkillAction>
       <Attack>
@@ -1145,8 +1144,14 @@
         <Paths>
           <Path Orientation="SN">ManaFlower/ContagiousPollen/ContagiousPollen_Target_Behind_S</Path>
           <Path Orientation="EW">ManaFlower/ContagiousPollen/ContagiousPollen_Target_Behind_SFlip</Path>
-          <Path Orientation="SN" Flipped="true">ManaFlower/ContagiousPollen/ContagiousPollen_Target_Behind_SFlip</Path>
-          <Path Orientation="EW" Flipped="true">ManaFlower/ContagiousPollen/ContagiousPollen_Target_Behind_S</Path>
+        </Paths>
+        <SortingDepth>Behind</SortingDepth>
+        <Target>AoeOrigin</Target>
+      </VisualEffect>
+      <VisualEffect>
+        <Paths>
+          <Path Orientation="SN">ManaFlower/ContagiousPollen/ContagiousPollen_Target_Behind_SFlip</Path>
+          <Path Orientation="EW">ManaFlower/ContagiousPollen/ContagiousPollen_Target_Behind_S</Path>
         </Paths>
         <SortingDepth>Behind</SortingDepth>
         <Target>AoeOrigin</Target>
@@ -1155,8 +1160,14 @@
         <Paths>
           <Path Orientation="SN">ManaFlower/ContagiousPollen/ContagiousPollen_Target_Before_S</Path>
           <Path Orientation="EW">ManaFlower/ContagiousPollen/ContagiousPollen_Target_Before_SFlip</Path>
-          <Path Orientation="SN" Flipped="true">ManaFlower/ContagiousPollen/ContagiousPollen_Target_Before_SFlip</Path>
-          <Path Orientation="EW" Flipped="true">ManaFlower/ContagiousPollen/ContagiousPollen_Target_Before_S</Path>
+        </Paths>
+        <SortingDepth>Before</SortingDepth>
+        <Target>AoeOrigin</Target>
+      </VisualEffect>
+      <VisualEffect>
+        <Paths>
+          <Path Orientation="SN">ManaFlower/ContagiousPollen/ContagiousPollen_Target_Before_SFlip</Path>
+          <Path Orientation="EW">ManaFlower/ContagiousPollen/ContagiousPollen_Target_Before_S</Path>
         </Paths>
         <SortingDepth>Before</SortingDepth>
         <Target>AoeOrigin</Target>
@@ -1204,7 +1215,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.5</DamageMultiplier>
+        <DamageMultiplier>1.4</DamageMultiplier>
         <SkillEffects>
           <RemoveStatus>
             <BaseChance>1</BaseChance>
@@ -1266,7 +1277,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Physical</AttackType>
-        <DamageMultiplier>1.9</DamageMultiplier>
+        <DamageMultiplier>2</DamageMultiplier>
       </Attack>
     </SkillAction>
   </SkillDefinition>
@@ -1321,7 +1332,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>1.5</DamageMultiplier>
+        <DamageMultiplier>1.4</DamageMultiplier>
         <SkillEffects>
           <RemoveStatus>
             <BaseChance>1</BaseChance>

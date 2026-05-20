@@ -614,7 +614,7 @@
     <IsUnique>true</IsUnique>
     <LevelVariations>
       <Level Id="5">
-        <BaseDamage Min="75 * (1 + PlayableUnitLevel/13)" Max="150 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
+        <BaseDamage Min="85 * (1 + PlayableUnitLevel/13)" Max="170 * (1 + PlayableUnitLevel/13)" Interpreted="true" />
         <BasePrice>10</BasePrice>
         <Skills>
           <Skill>DeathFlower</Skill>

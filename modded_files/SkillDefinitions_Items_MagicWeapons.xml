@@ -330,7 +330,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>0.8</DamageMultiplier>
+        <DamageMultiplier>0.9</DamageMultiplier>
         <SkillEffects>
           <MultiHit HitsCount="5" />
         </SkillEffects>
@@ -1364,7 +1364,7 @@
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Dodge" />
+            <Stat Id="Accuracy" />
             <Malus>12</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -1372,7 +1372,7 @@
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-              <Stat Id="Dodge" />
+              <Stat Id="Accuracy" />
               <Malus>12</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
@@ -1431,7 +1431,7 @@
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Dodge" />
+            <Stat Id="Accuracy" />
             <Malus>13</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -1439,7 +1439,7 @@
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-              <Stat Id="Dodge" />
+              <Stat Id="Accuracy" />
               <Malus>13</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
@@ -1457,7 +1457,7 @@
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Dodge" />
+            <Stat Id="Accuracy" />
             <Malus>14</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -1465,7 +1465,7 @@
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-              <Stat Id="Dodge" />
+              <Stat Id="Accuracy" />
               <Malus>14</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
@@ -1483,7 +1483,7 @@
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Dodge" />
+            <Stat Id="Accuracy" />
             <Malus>15</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -1491,7 +1491,7 @@
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-              <Stat Id="Dodge" />
+              <Stat Id="Accuracy" />
               <Malus>15</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
@@ -1509,7 +1509,7 @@
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Dodge" />
+            <Stat Id="Accuracy" />
             <Malus>16</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -1517,7 +1517,7 @@
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-              <Stat Id="Dodge" />
+              <Stat Id="Accuracy" />
               <Malus>16</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>
@@ -1535,7 +1535,7 @@
           <Debuff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-            <Stat Id="Dodge" />
+            <Stat Id="Accuracy" />
             <Malus>18</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
@@ -1543,7 +1543,7 @@
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
-              <Stat Id="Dodge" />
+              <Stat Id="Accuracy" />
               <Malus>18</Malus>
               <TurnsCount>2</TurnsCount>
             </Debuff>

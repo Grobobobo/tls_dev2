@@ -790,7 +790,7 @@
     <ActionPointsCost>0</ActionPointsCost>
     <MovePointsCost>0</MovePointsCost>
     <ManaCost>1</ManaCost>
-    <UsesPerTurnCount>1</UsesPerTurnCount>
+    <UsesPerTurnCount>2</UsesPerTurnCount>
     <SkillAction>
       <Attack>
         <AttackType>Physical</AttackType>
@@ -802,10 +802,10 @@
     </SkillAction>
   </SkillDefinition>
   <SkillDefinition Id="ChargeScroll1" TemplateId="ChargeScroll">
-    <ManaCost>2</ManaCost>
+    <ManaCost>1</ManaCost>
   </SkillDefinition>
   <SkillDefinition Id="ChargeScroll2" TemplateId="ChargeScroll">
-    <ManaCost>3</ManaCost>
+    <ManaCost>1</ManaCost>
   </SkillDefinition>
   <SkillDefinition Id="SwordBlastScroll" TemplateId="SwordBlast">
     <OverrideLocalizationId>SwordBlastScroll</OverrideLocalizationId>
@@ -967,8 +967,8 @@
     <OverrideLocalizationId>AssassinateScroll</OverrideLocalizationId>
     <ActionPointsCost>0</ActionPointsCost>
     <MovePointsCost>0</MovePointsCost>
-    <ManaCost>3</ManaCost>
-    <UsesPerTurnCount>1</UsesPerTurnCount>
+    <ManaCost>1</ManaCost>
+    <UsesPerTurnCount>2</UsesPerTurnCount>
     <SkillAction>
       <Attack>
         <AttackType>Ranged</AttackType>
@@ -985,10 +985,10 @@
     </SkillAction>
   </SkillDefinition>
   <SkillDefinition Id="AssassinateScroll1" TemplateId="AssassinateScroll">
-    <ManaCost>3</ManaCost>
+    <ManaCost>1</ManaCost>
   </SkillDefinition>
   <SkillDefinition Id="AssassinateScroll2" TemplateId="AssassinateScroll">
-    <ManaCost>3</ManaCost>
+    <ManaCost>1</ManaCost>
   </SkillDefinition>
   <SkillDefinition Id="MagicMissilesScroll" TemplateId="MagicMissiles">
     <OverrideLocalizationId>MagicMissilesScroll</OverrideLocalizationId>
@@ -998,7 +998,7 @@
     <SkillAction>
       <Attack>
         <AttackType>Magical</AttackType>
-        <DamageMultiplier>0.8</DamageMultiplier>
+        <DamageMultiplier>0.9</DamageMultiplier>
         <SkillEffects>
           <MultiHit HitsCount="5" />
         </SkillEffects>

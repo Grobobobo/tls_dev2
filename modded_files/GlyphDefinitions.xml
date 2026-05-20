@@ -2303,19 +2303,19 @@
       <TokenVariables>
 
          <TokenVariable Key="PerkId" Value="Leapfrog"/>
+         <TokenVariable Key="Perk2Id" Value="TossMeAway"/>
 
       </TokenVariables>
 
       <LocArguments>
 
          <LocalizedArgument Prefix="PerkName_" Value="PerkId"/>
+         <LocalizedArgument Prefix="PerkName_" Value="Perk2Id"/>
 
       </LocArguments>
 
       <GlyphEffects>
-
          <NativePerk PerkId="PerkId"/>
-
       </GlyphEffects>
 
    </GlyphDefinition>
@@ -2800,7 +2800,7 @@
 
    <!-- ITEMS -->
 
-   <GlyphDefinition Id="ItemBetterLevel" Cost="2">
+   <GlyphDefinition Id="ItemBetterLevel" Cost="1">
 
       <GlyphEffects>
 

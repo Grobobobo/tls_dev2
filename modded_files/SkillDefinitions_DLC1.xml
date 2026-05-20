@@ -1101,7 +1101,7 @@
     </CastFXs>
   </SkillDefinition>
   <SkillDefinition Id="TossMeSkillCatapult" IsContextual="true" IsLockedByPerk="true">
-    <HealthCost>20</HealthCost>
+    <HealthCost>10</HealthCost>
     <UsesPerTurnCount>1</UsesPerTurnCount>
     <Range Min="5" Max="14" />
     <AreaOfEffect OriginX="0" OriginY="0">
