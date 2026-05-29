@@ -1,0 +1,293 @@
+﻿<PanicDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PanicDefinition.xsd">
+   <ValueMax Value="100"/>
+   <PanicAttackMultiplier Value="1.5"/>
+
+   <RewardValues>
+      <RewardValue Index="1">
+         <Gold>95</Gold>
+         <Material>95</Material>
+      </RewardValue>
+      <RewardValue Index="2">
+         <Gold>105</Gold>
+         <Material>110</Material>
+      </RewardValue>
+      <RewardValue Index="3">
+         <Gold>120</Gold>
+         <Material>135</Material>
+      </RewardValue>
+      <RewardValue Index="4">
+         <Gold>150</Gold>
+         <Material>170</Material>
+      </RewardValue>
+      <RewardValue Index="5">
+         <Gold>190</Gold>
+         <Material>215</Material>
+      </RewardValue>
+      <RewardValue Index="6">
+         <Gold>240</Gold>
+         <Material>270</Material>
+      </RewardValue>
+      <RewardValue Index="7">
+         <Gold>310</Gold> 
+         <Material>360</Material>
+      </RewardValue>
+      <RewardValue Index="8">
+         <Gold>370</Gold> 
+         <Material>435</Material>
+      </RewardValue>
+      <RewardValue Index="9">
+         <Gold>420</Gold> 
+         <Material>500</Material>
+      </RewardValue>
+      <RewardValue Index="10">
+         <Gold>465</Gold> 
+         <Material>555</Material>
+      </RewardValue>
+      <RewardValue Index="11">
+         <Gold>500</Gold> 
+         <Material>605</Material>
+      </RewardValue>
+      <RewardValue Index="12">
+         <Gold>540</Gold> 
+         <Material>650</Material>
+      </RewardValue>
+      <RewardValue Index="13">
+         <Gold>570</Gold> 
+         <Material>690</Material>
+      </RewardValue>
+      <RewardValue Index="14">
+         <Gold>600</Gold> 
+         <Material>730</Material>
+      </RewardValue>
+      <RewardValue Index="15">
+         <Gold>625</Gold> 
+         <Material>765</Material>
+      </RewardValue>
+   </RewardValues>
+
+   <!-- Panic Levels -->
+   <Levels>
+      <!-- Level 0 (S) -->
+      <Level>
+         <PanicValueNeeded Value="0"/>
+         <Reward>
+            <Gold Value="Ceil(RewardValue * 1.1)"/>
+            <Materials Value="Ceil(RewardValue * 1.05)"/>
+            <Items>
+               <ItemsData>
+                  <ItemData Id="Item_Reward_High">
+                     <BaseLevel>1</BaseLevel>
+                     <ItemGenerationModifiersList Id="PanicReward"/>
+                     <ItemRaritiesList Id="PanicRewardHigh"/>
+                     <ItemsList Id="ItemList_NightReward"/>
+                  </ItemData>
+               </ItemsData>
+               <ItemRewardsByDay>
+                  <ItemReward DayNumber="1">
+                     <ItemData Id="Item_Reward_High" OverrideItemRaritiesList="Rank_S_0"/>
+                     <ItemData Id="Item_Reward_High" OverrideItemsList="ItemList_AllWeapons" OverrideItemRaritiesList="Rank_S_0"/>
+				      </ItemReward>
+                  <ItemReward DayNumber="3">
+                     <ItemData Id="Item_Reward_High" OverrideBaseLevel="2" OverrideItemRaritiesList="Rank_S_1"/>
+                     <ItemData Id="Item_Reward_High" OverrideBaseLevel="1" OverrideItemsList="ItemList_AllWeapons" OverrideItemRaritiesList="Rank_S_1"/>
+                  </ItemReward>
+                  <ItemReward DayNumber="5">
+                     <ItemData Id="Item_Reward_High" OverrideBaseLevel="3" OverrideItemRaritiesList="Rank_S_2"/>
+                     <ItemData Id="Item_Reward_High" OverrideBaseLevel="2" OverrideItemsList="ItemList_AllWeapons" OverrideItemRaritiesList="Rank_S_2"/>
+                  </ItemReward>
+                  <ItemReward DayNumber="7">
+                     <ItemData Id="Item_Reward_High" OverrideBaseLevel="3" OverrideItemRaritiesList="Rank_S_3"/>
+                     <ItemData Id="Item_Reward_High" OverrideBaseLevel="3" OverrideItemsList="ItemList_AllWeapons" OverrideItemRaritiesList="Rank_S_3"/>
+                  </ItemReward>
+                  <ItemReward DayNumber="10">
+                     <ItemData Id="Item_Reward_High" OverrideBaseLevel="3" OverrideItemGenerationModifiersList="PanicRewardImproved" OverrideItemRaritiesList="Rank_S_4"/>
+                     <ItemData Id="Item_Reward_High" OverrideBaseLevel="3" OverrideItemGenerationModifiersList="PanicRewardImproved" OverrideItemsList="ItemList_AllWeapons" OverrideItemRaritiesList="Rank_S_4"/>
+                  </ItemReward>
+               </ItemRewardsByDay>
+               <!--<ItemsLists>
+                  <Reward Index="1">
+                     <BaseLevel>0</BaseLevel>
+                     <ItemGenerationModifiersList Id="PanicReward"/>
+                     <ItemRaritiesList Id="PanicRewardHigh"/>
+                     <ItemsList Id="ItemList_NightReward"/>
+                  </Reward>
+                  <Reward Index="3">
+                     <BaseLevel>1</BaseLevel>
+                     <ItemGenerationModifiersList Id="PanicReward"/>
+                     <ItemRaritiesList Id="PanicRewardHigh"/>
+                     <ItemsList Id="ItemList_NightReward"/>
+                  </Reward>
+                  <Reward Index="5">
+                     <BaseLevel>2</BaseLevel>
+                     <ItemGenerationModifiersList Id="PanicReward"/>
+                     <ItemRaritiesList Id="PanicRewardHigh"/>
+                     <ItemsList Id="ItemList_NightReward"/>
+                  </Reward>
+                  <Reward Index="7">
+                     <BaseLevel>3</BaseLevel>
+                     <ItemGenerationModifiersList Id="PanicReward"/>
+                     <ItemRaritiesList Id="PanicRewardHigh"/>
+                     <ItemsList Id="ItemList_NightReward"/>
+                  </Reward>
+                  <Reward Index="10">
+                     <BaseLevel>3</BaseLevel>
+                     <ItemGenerationModifiersList Id="PanicRewardImproved"/>
+                     <ItemRaritiesList Id="PanicRewardHigh"/>
+                     <ItemsList Id="ItemList_NightReward"/>
+                  </Reward>
+               </ItemsLists>-->
+            </Items>
+         </Reward>
+      </Level>
+      <!-- Level 1 (A) -->
+      <Level>
+         <PanicValueNeeded Value="6"/>
+         <Reward>
+            <Gold Value="RewardValue"/>
+            <Materials Value="RewardValue"/>
+            <Items>
+               <ItemsData>
+                  <ItemData Id="Item_Reward_High">
+                     <BaseLevel>1</BaseLevel>
+                     <ItemGenerationModifiersList Id="PanicReward"/>
+                     <ItemRaritiesList Id="PanicRewardHigh"/>
+                     <ItemsList Id="ItemList_NightReward"/>
+                  </ItemData>
+               </ItemsData>
+               <ItemRewardsByDay>
+                  <ItemReward DayNumber="1">
+                     <ItemData Id="Item_Reward_High" OverrideItemRaritiesList="Rank_S_0"/>
+                  </ItemReward>
+                  <ItemReward DayNumber="3">
+                     <ItemData Id="Item_Reward_High" OverrideBaseLevel="2" OverrideItemRaritiesList="Rank_S_1"/>
+                  </ItemReward>
+                  <ItemReward DayNumber="5">
+                     <ItemData Id="Item_Reward_High" OverrideBaseLevel="3" OverrideItemRaritiesList="Rank_S_2"/>
+                  </ItemReward>
+                  <ItemReward DayNumber="7">
+                     <ItemData Id="Item_Reward_High" OverrideBaseLevel="3" OverrideItemRaritiesList="Rank_S_3"/>
+                  </ItemReward>
+                  <ItemReward DayNumber="10">
+                     <ItemData Id="Item_Reward_High" OverrideBaseLevel="3" OverrideItemGenerationModifiersList="PanicRewardImproved" OverrideItemRaritiesList="Rank_S_4"/>
+                  </ItemReward>
+               </ItemRewardsByDay>
+            </Items>
+            <!--<ItemsLists>
+               <Reward Index="1">
+                  <BaseLevel>0</BaseLevel>
+                  <ItemGenerationModifiersList Id="PanicReward"/>
+                  <ItemRaritiesList Id="PanicRewardHigh"/>
+                  <ItemsList Id="ItemList_NightReward"/>
+               </Reward>
+               <Reward Index="3">
+                  <BaseLevel>1</BaseLevel>
+                  <ItemGenerationModifiersList Id="PanicReward"/>
+                  <ItemRaritiesList Id="PanicRewardHigh"/>
+                  <ItemsList Id="ItemList_NightReward"/>
+               </Reward>
+               <Reward Index="5">
+                  <BaseLevel>2</BaseLevel>
+                  <ItemGenerationModifiersList Id="PanicReward"/>
+                  <ItemRaritiesList Id="PanicRewardHigh"/>
+                  <ItemsList Id="ItemList_NightReward"/>
+               </Reward>
+               <Reward Index="7">
+                  <BaseLevel>3</BaseLevel>
+                  <ItemGenerationModifiersList Id="PanicReward"/>
+                  <ItemRaritiesList Id="PanicRewardHigh"/>
+                  <ItemsList Id="ItemList_NightReward"/>
+               </Reward>
+               <Reward Index="10">
+                  <BaseLevel>3</BaseLevel>
+                  <ItemGenerationModifiersList Id="PanicRewardImproved"/>
+                  <ItemRaritiesList Id="PanicRewardHigh"/>
+                  <ItemsList Id="ItemList_NightReward"/>
+               </Reward>
+            </ItemsLists>-->
+         </Reward>
+      </Level>
+      <!-- Level 2 (B) -->
+      <Level>
+         <PanicValueNeeded Value="21"/>
+         <Reward>
+            <Gold Value="Ceil(RewardValue * 0.9)"/>
+            <Materials Value="Ceil(RewardValue * 0.95)"/>
+            <Items>
+               <ItemsData>
+                  <ItemData Id="Item_Reward_Low">
+                     <BaseLevel>0</BaseLevel>
+                     <ItemGenerationModifiersList Id="PanicRewardLow"/>
+                     <ItemRaritiesList Id="PanicRewardBasic"/>
+                     <ItemsList Id="ItemList_NightReward"/>
+                  </ItemData>
+               </ItemsData>
+               <ItemRewardsByDay>
+                  <ItemReward DayNumber="1">
+                     <ItemData Id="Item_Reward_Low" OverrideItemRaritiesList="Rank_B_0"/>
+                  </ItemReward>
+                  <ItemReward DayNumber="2">
+                     <ItemData Id="Item_Reward_Low" OverrideBaseLevel="1" OverrideItemRaritiesList="Rank_B_1"/>
+                  </ItemReward>
+                  <ItemReward DayNumber="4">
+                     <ItemData Id="Item_Reward_Low" OverrideBaseLevel="2" OverrideItemRaritiesList="Rank_B_2"/>
+                  </ItemReward>
+                  <ItemReward DayNumber="7">
+                     <ItemData Id="Item_Reward_Low" OverrideBaseLevel="3" OverrideItemRaritiesList="Rank_B_3"/>
+                  </ItemReward>
+                  <ItemReward DayNumber="10">
+                     <ItemData Id="Item_Reward_Low" OverrideBaseLevel="3" OverrideItemGenerationModifiersList="PanicReward" OverrideItemRaritiesList="Rank_B_4"/>
+                  </ItemReward>
+               </ItemRewardsByDay>
+            </Items>
+            <!--<ItemsLists>
+               <Reward Index="1">
+                  <BaseLevel>0</BaseLevel>
+                  <ItemGenerationModifiersList Id="PanicRewardLow"/>
+                  <ItemRaritiesList Id="PanicRewardBasic"/>
+                  <ItemsList Id="ItemList_NightReward"/>
+               </Reward>
+               <Reward Index="2">
+                  <BaseLevel>1</BaseLevel>
+                  <ItemGenerationModifiersList Id="PanicRewardLow"/>
+                  <ItemRaritiesList Id="PanicRewardBasic"/>
+                  <ItemsList Id="ItemList_NightReward"/>
+               </Reward>
+               <Reward Index="4">
+                  <BaseLevel>2</BaseLevel>
+                  <ItemGenerationModifiersList Id="PanicRewardLow"/>
+                  <ItemRaritiesList Id="PanicRewardBasic"/>
+                  <ItemsList Id="ItemList_NightReward"/>
+               </Reward>
+               <Reward Index="7">
+                  <BaseLevel>3</BaseLevel>
+                  <ItemGenerationModifiersList Id="PanicRewardLow"/>
+                  <ItemRaritiesList Id="PanicRewardBasic"/>
+                  <ItemsList Id="ItemList_NightReward"/>
+               </Reward>
+               <Reward Index="10">
+                  <BaseLevel>3</BaseLevel>
+                  <ItemGenerationModifiersList Id="PanicReward"/>
+                  <ItemRaritiesList Id="PanicRewardBasic"/>
+                  <ItemsList Id="ItemList_NightReward"/>
+               </Reward>
+            </ItemsLists>-->
+         </Reward>
+      </Level>
+      <!-- Level 3 (C) -->
+      <Level>
+         <PanicValueNeeded Value="51"/>
+         <Reward>
+            <Gold Value="Ceil(RewardValue * 0.8)"/>
+            <Materials Value="Ceil(RewardValue * 0.85)"/>
+         </Reward>
+      </Level>
+      <!-- Level 4 (D) -->
+      <Level>
+         <PanicValueNeeded Value="100"/>
+         <Reward>
+            <Gold Value="Ceil(RewardValue * 0.7)"/>
+            <Materials Value="Ceil(RewardValue * 0.75)"/>
+         </Reward>
+      </Level>
+   </Levels>
+</PanicDefinition>
