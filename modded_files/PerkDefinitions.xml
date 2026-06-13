@@ -39,14 +39,10 @@
          <LocArgument Value="1" Style="KeywordNb"/>
       </LocArguments>
       <View>
+         <DisplayInHUD/>
          <SkillsToShow>
             <SkillToShow Id="FinishHim"/>
          </SkillsToShow>
-         <DisplayInHUD>
-            <GreyOut>
-               <IsFalse Value="ContextualSkillActive"/>
-            </GreyOut>
-         </DisplayInHUD>
       </View>
       <Modules>
          <BufferModule>
@@ -1060,7 +1056,7 @@
    <!-- T1 -->
    <PerkDefinition Id="SteadyAim">
       <TokenVariables>
-         <TokenVariable Key="OverallDamageBonus" Value="15"/>
+         <TokenVariable Key="OverallDamageBonus" Value="20"/>
          <TokenVariable Key="SkillRangeModifier" Value="1"/>
       </TokenVariables>
       <LocArguments>
@@ -1284,12 +1280,14 @@
                      <NoBlock/>
                   </SkillEffects>
                </AddSkillEffect>
-               <SkillModifier ComputationStat="RangedDamage" Value="RangedDamageBonus">
+               <StatModifier Stat="RangedDamage" Value="RangedDamageBonus">
                   <Conditions>
+                     <IsTrue Value="HasPerkData"/>
+                     <IsTrue Value="HasSkill"/>
                      <IsTrue Value="Skill.IsAttack"/>
                      <IsTrue Value="ThresholdIsReached"/>
                   </Conditions>
-               </SkillModifier>
+               </StatModifier>
             </Effects>
          </BufferModule>
       </Modules>

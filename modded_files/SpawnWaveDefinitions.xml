@@ -2068,7 +2068,7 @@
    <SpawnWaveDefinition Id="Wave_GildenbergRedux_02_Tanky">
       <EnemyUnitTemplateDefinitions>
          <EnemyUnitTemplateDefinition Id="Clawer" Weight="90"/>
-         <EnemyUnitTemplateDefinition Id="Shieldman" Weight="4"/>
+         <EnemyUnitTemplateDefinition Id="Armored" Weight="2"/>
          <EnemyUnitTemplateDefinition Id="Boomer" Weight="2"/>
       </EnemyUnitTemplateDefinitions>
       <TemporalDistribution>
@@ -2146,9 +2146,9 @@
 		
    <SpawnWaveDefinition Id="Wave_GildenbergRedux_02_Buffer">
       <EnemyUnitTemplateDefinitions>
-         <EnemyUnitTemplateDefinition Id="Clawer" Weight="80"/>
-         <EnemyUnitTemplateDefinition Id="PoisonFrog" Weight="7"/>
-		   <EnemyUnitTemplateDefinition Id="Shieldman" Weight="4"/>
+         <EnemyUnitTemplateDefinition Id="Clawer" Weight="90"/>
+         <EnemyUnitTemplateDefinition Id="PoisonFrog" Weight="6"/>
+		   <EnemyUnitTemplateDefinition Id="Shieldman" Weight="3"/>
 		   <EnemyUnitTemplateDefinition Id="DodgyClawer" Weight="15"/>
       </EnemyUnitTemplateDefinitions>
       <TemporalDistribution>

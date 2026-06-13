@@ -284,7 +284,7 @@
    <PerkDefinition Id="Warcry">
       <TokenVariables>
          <TokenVariable Key="TotalDmgBonus" Value="Min(DmgBonusFromArmor + DmgBonusFromHealth, DamageThreshold)"/>
-         <TokenVariable Key="DamageThreshold" Value="45"/>
+         <TokenVariable Key="DamageThreshold" Value="60"/>
          <TokenVariable Key="DmgBonusFromArmor" Value="Floor(MissingArmor / ArmorThreshold) * BonusDmgPerArmorStep"/>
          <TokenVariable Key="DmgBonusFromHealth" Value="Floor(MissingHealth / HealthThreshold) * BonusDmgPerHealthStep"/>
          <TokenVariable Key="ArmorThreshold" Value="12"/>
@@ -1763,7 +1763,7 @@
          <TokenVariable Key="TotalHealth" Value="Owner.HealthTotal"/>
          <TokenVariable Key="DepletedHealth" Value="(Owner.HealthTotal - Owner.Health)"/>
          <TokenVariable Key="DamageConversionRate" Value="3"/>
-         <TokenVariable Key="DamageThreshold" Value="45"/>
+         <TokenVariable Key="DamageThreshold" Value="60"/>
          <TokenVariable Key="HealthConversionRate" Value="10"/>
          <TokenVariable Key="BuffDuration" Value="1"/>
       </TokenVariables>

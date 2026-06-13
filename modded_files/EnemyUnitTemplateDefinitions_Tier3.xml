@@ -20,7 +20,7 @@
 
       <Weight>5</Weight>
 
-      <HealthTotal>230</HealthTotal>
+      <HealthTotal>260</HealthTotal>
 
       <MovePointsTotal>4</MovePointsTotal>
 
@@ -314,7 +314,7 @@
 
             <BaseRatio>0.8</BaseRatio>
 
-            <RatioMultiplier>0.48</RatioMultiplier>
+            <RatioMultiplier>0.60</RatioMultiplier>
 
             <StatModifiers>
 
@@ -330,7 +330,7 @@
 
             <BaseRatio>0.4</BaseRatio>
 
-            <RatioMultiplier>0.16</RatioMultiplier>
+            <RatioMultiplier>0.20</RatioMultiplier>
 
             <StatModifiers>
 
@@ -346,17 +346,17 @@
 
       <StatsProgressions>
 
-         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">25</StatProgression>
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">28</StatProgression>
 
-         <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">4</StatProgression>
+         <StatProgression Id="Dodge" Delay="1" IncreaseEveryXDay="2">1</StatProgression>
 
-         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">58</StatProgression>
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">64</StatProgression>
 
          <StatProgression Id="MovePointsTotal" Delay="8" IncreaseEveryXDay="6">1</StatProgression>
 
          <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">6</StatProgression>
 
-         <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">17</StatProgression>
+         <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">19</StatProgression>
 
          <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">9</StatProgression>
       </StatsProgressions>
@@ -403,7 +403,7 @@
 
       <Weight>5</Weight>
 
-      <HealthTotal>518</HealthTotal>
+      <HealthTotal>585</HealthTotal>
 
       <HealthGaugeSize>Large</HealthGaugeSize>
 
@@ -655,7 +655,7 @@
 
             <BaseRatio>0.65</BaseRatio>
 
-            <RatioMultiplier>0.39</RatioMultiplier>
+            <RatioMultiplier>0.4875</RatioMultiplier>
 
             <StatModifiers>
 
@@ -669,7 +669,7 @@
 
             <BaseRatio>0.2</BaseRatio>
 
-            <RatioMultiplier>0.08</RatioMultiplier>
+            <RatioMultiplier>0.10</RatioMultiplier>
 
             <StatModifiers>
 
@@ -693,13 +693,13 @@
 
       <StatsProgressions>
 
-         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">25</StatProgression>
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">28</StatProgression>
 
-         <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">3</StatProgression>
+         <StatProgression Id="Dodge" Delay="1" IncreaseEveryXDay="2">1</StatProgression>
 
          <StatProgression Id="Resistance" Delay="2" IncreaseEveryXDay="3">5</StatProgression>
 
-         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">131</StatProgression>
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">145</StatProgression>
 
          <StatProgression Id="MovePointsTotal" Delay="8" IncreaseEveryXDay="6">1</StatProgression>        
 
@@ -735,7 +735,7 @@
 
       <Weight>5</Weight>
 
-      <HealthTotal>241</HealthTotal>
+      <HealthTotal>272</HealthTotal>
 
       <HealthGaugeSize>Large</HealthGaugeSize>
 
@@ -883,7 +883,7 @@
 
             <BaseRatio>0.8</BaseRatio>
 
-            <RatioMultiplier>0.48</RatioMultiplier>
+            <RatioMultiplier>0.60</RatioMultiplier>
 
             <StatModifiers>
 
@@ -899,7 +899,7 @@
 
             <BaseRatio>0.4</BaseRatio>
 
-            <RatioMultiplier>0.16</RatioMultiplier>
+            <RatioMultiplier>0.20</RatioMultiplier>
 
             <StatModifiers>
 
@@ -915,17 +915,17 @@
 
       <StatsProgressions>
 
-         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">25</StatProgression>
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">28</StatProgression>
 
          <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">9</StatProgression>
 
-         <StatProgression Id="Dodge" Delay="2" IncreaseEveryXDay="3">9</StatProgression>
+         <StatProgression Id="Dodge" Delay="2" IncreaseEveryXDay="3">10</StatProgression>
 
-         <StatProgression Id="ArmorTotal" Delay="1" IncreaseEveryXDay="2">28</StatProgression>
+         <StatProgression Id="ArmorTotal" Delay="1" IncreaseEveryXDay="2">31</StatProgression>
 
          <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">6</StatProgression>
 
-         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">62</StatProgression>
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">69</StatProgression>
 
          <StatProgression Id="MovePointsTotal" Delay="5" IncreaseEveryXDay="3">1</StatProgression>
 
@@ -959,7 +959,7 @@
 
       <Weight>5</Weight>
 
-      <HealthTotal>155</HealthTotal>
+      <HealthTotal>175</HealthTotal>
 
       <HealthGaugeSize>Large</HealthGaugeSize>
 
@@ -1167,7 +1167,7 @@
 
             <BaseRatio>0.8</BaseRatio>
 
-            <RatioMultiplier>0.48</RatioMultiplier>
+            <RatioMultiplier>0.60</RatioMultiplier>
 
             <StatModifiers>
 
@@ -1183,7 +1183,7 @@
 
             <BaseRatio>0.4</BaseRatio>
 
-            <RatioMultiplier>0.16</RatioMultiplier>
+            <RatioMultiplier>0.20</RatioMultiplier>
 
             <StatModifiers>
 
@@ -1199,17 +1199,17 @@
 
       <StatsProgressions>
 
-         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">25</StatProgression>
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">28</StatProgression>
 
          <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">9</StatProgression>
 
-         <StatProgression Id="ArmorTotal" Delay="0" IncreaseEveryXDay="2">102</StatProgression>
+         <StatProgression Id="ArmorTotal" Delay="0" IncreaseEveryXDay="2">113</StatProgression>
 
-         <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">4</StatProgression>
+         <StatProgression Id="Dodge" Delay="1" IncreaseEveryXDay="2">1</StatProgression>
 
          <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">6</StatProgression>
 
-         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">40</StatProgression>
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">44</StatProgression>
 
          <StatProgression Id="MovePointsTotal" Delay="6" IncreaseEveryXDay="6">1</StatProgression>
 
@@ -1243,7 +1243,7 @@
 
       <Weight>5</Weight>
 
-      <HealthTotal>621</HealthTotal>
+      <HealthTotal>702</HealthTotal>
 
       <HealthGaugeSize>Large</HealthGaugeSize>
 
@@ -1563,7 +1563,7 @@
 
             <BaseRatio>0.7</BaseRatio>
 
-            <RatioMultiplier>0.42</RatioMultiplier>
+            <RatioMultiplier>0.525</RatioMultiplier>
 
             <StatModifiers>
 
@@ -1577,7 +1577,7 @@
 
             <BaseRatio>0.3</BaseRatio>
 
-            <RatioMultiplier>0.12</RatioMultiplier>
+            <RatioMultiplier>0.15</RatioMultiplier>
 
             <StatModifiers>
 
@@ -1593,15 +1593,15 @@
 
       <StatsProgressions>
 
-         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">25</StatProgression>
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">28</StatProgression>
 
          <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="1" MaxIncreases="4">9</StatProgression>
 
-         <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">7</StatProgression>
+         <StatProgression Id="Dodge" Delay="1" IncreaseEveryXDay="2">4</StatProgression>
 
          <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">6</StatProgression>
 
-         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">158</StatProgression>
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">175</StatProgression>
 
          <StatProgression Id="MovePointsTotal" Delay="8" IncreaseEveryXDay="6">1</StatProgression>
 
@@ -1643,7 +1643,7 @@
 
       <Weight>5</Weight>
 
-      <HealthTotal>238</HealthTotal>
+      <HealthTotal>269</HealthTotal>
 
       <HealthGaugeSize>Large</HealthGaugeSize>
 
@@ -1883,7 +1883,7 @@
 
             <BaseRatio>0.8</BaseRatio>
 
-            <RatioMultiplier>0.48</RatioMultiplier>
+            <RatioMultiplier>0.60</RatioMultiplier>
 
             <StatModifiers>
 
@@ -1897,7 +1897,7 @@
 
             <BaseRatio>0.4</BaseRatio>
 
-            <RatioMultiplier>0.16</RatioMultiplier>
+            <RatioMultiplier>0.20</RatioMultiplier>
 
             <StatModifiers>
 
@@ -1919,15 +1919,15 @@
 
       <StatsProgressions>
 
-         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">25</StatProgression>
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">28</StatProgression>
 
          <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">9</StatProgression>
 
-         <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">7</StatProgression>
+         <StatProgression Id="Dodge" Delay="1" IncreaseEveryXDay="2">4</StatProgression>
 
          <StatProgression Id="Resistance" Delay="3" IncreaseEveryXDay="5">10</StatProgression>
 
-         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">66</StatProgression>
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">73</StatProgression>
 
          <StatProgression Id="MovePointsTotal" Delay="8" IncreaseEveryXDay="6">1</StatProgression>
 

@@ -10,7 +10,7 @@
       <MoveSoundFolderName Value="Cocoons"/>
       <Tier>-1</Tier>
       <Weight>1</Weight>
-      <HealthTotal>138</HealthTotal>
+      <HealthTotal>156</HealthTotal>
       <HealthGaugeSize>Small</HealthGaugeSize>
       <ArmorTotal>300</ArmorTotal>
       <MovePointsTotal>0</MovePointsTotal>
@@ -76,7 +76,7 @@
       </Behavior>
       <StatsProgressions>
          <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">4</StatProgression>
-         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">39</StatProgression>
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">43</StatProgression>
       </StatsProgressions>
 
       <Injuries>
@@ -93,7 +93,7 @@
       <MoveSoundFolderName Value="Cocoons"/>
       <Tier>-1</Tier>
       <Weight>1</Weight>
-      <HealthTotal>310</HealthTotal>
+      <HealthTotal>350</HealthTotal>
       <HealthGaugeSize>Small</HealthGaugeSize>
       <MovePointsTotal>0</MovePointsTotal>
       <Block>0</Block>
@@ -180,9 +180,9 @@
          </Goals>
       </Behavior>
             <StatsProgressions>
-			<StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">9</StatProgression>
+			<StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">10</StatProgression>
 			<StatProgression Id="Resistance" Delay="3" IncreaseEveryXDay="5">10</StatProgression>
-			<StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">56</StatProgression>
+			<StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">62</StatProgression>
          <StatProgression Id="Accuracy" Delay="0" IncreaseEveryXDay="2">8</StatProgression>
       </StatsProgressions>
 
@@ -200,7 +200,7 @@
       <MoveSoundFolderName Value="Cocoons"/>
       <Tier>-1</Tier>
       <Weight>15</Weight>
-      <HealthTotal>276</HealthTotal>
+      <HealthTotal>312</HealthTotal>
       <HealthGaugeSize>Small</HealthGaugeSize>
       <ArmorTotal>0</ArmorTotal>
       <MovePointsTotal>0</MovePointsTotal>
@@ -333,7 +333,7 @@
       </Injuries>
       <StatsProgressions>
 			<StatProgression Id="Resistance" Delay="3" IncreaseEveryXDay="5">10</StatProgression>
-			<StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">67</StatProgression>
+			<StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">74</StatProgression>
       </StatsProgressions>
       <VisualEvolutions>
          <VisualId Id="01"/>
@@ -352,7 +352,7 @@
       <Tier>-1</Tier>
       <Weight>10</Weight>
       <MoveMethod Method="Flying"/>
-      <HealthTotal>276</HealthTotal>
+      <HealthTotal>312</HealthTotal>
       <HealthGaugeSize>Large</HealthGaugeSize>
       <ArmorTotal>0</ArmorTotal>
       <MovePointsTotal>6</MovePointsTotal>
@@ -451,14 +451,14 @@
       <Injuries>
          <Injury>
             <BaseRatio>0.7</BaseRatio>
-            <RatioMultiplier>0.42</RatioMultiplier>
+            <RatioMultiplier>0.525</RatioMultiplier>
             <StatModifiers>
                <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
             </StatModifiers>
          </Injury>
          <Injury>
             <BaseRatio>0.3</BaseRatio>
-            <RatioMultiplier>0.12</RatioMultiplier>
+            <RatioMultiplier>0.15</RatioMultiplier>
             <StatModifiers>
                <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
             </StatModifiers>
@@ -468,10 +468,10 @@
          </Injury>
       </Injuries>
       <StatsProgressions>
-			<StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">25</StatProgression>
-			<StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">9</StatProgression>
+			<StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">28</StatProgression>
+			<StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">10</StatProgression>
 			<StatProgression Id="Resistance" Delay="3" IncreaseEveryXDay="5">10</StatProgression>
-			<StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">67</StatProgression>
+			<StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">74</StatProgression>
 			<StatProgression Id="MovePointsTotal" Delay="8" IncreaseEveryXDay="3">1</StatProgression>
 		</StatsProgressions>
    </EnemyUnitTemplateDefinition>
@@ -485,7 +485,7 @@
       <MoveSoundFolderName Value="NessieOffspring"/>
       <Tier>-1</Tier>
       <Weight>10</Weight>
-      <HealthTotal>724</HealthTotal>
+      <HealthTotal>818</HealthTotal>
       <HealthGaugeSize>Large</HealthGaugeSize>
       <ArmorTotal>120</ArmorTotal>
       <MovePointsTotal>7</MovePointsTotal>
@@ -563,14 +563,14 @@
       <Injuries>
          <Injury>
             <BaseRatio>0.7</BaseRatio>
-            <RatioMultiplier>0.42</RatioMultiplier>
+            <RatioMultiplier>0.525</RatioMultiplier>
             <StatModifiers>
                <StatModifier Id="MovePointsTotal" Multiplier="ThreeQuarter"/>
             </StatModifiers>
          </Injury>
          <Injury>
             <BaseRatio>0.3</BaseRatio>
-            <RatioMultiplier>0.12</RatioMultiplier>
+            <RatioMultiplier>0.15</RatioMultiplier>
             <StatModifiers>
                <StatModifier Id="MovePointsTotal" Multiplier="Half"/>
                <StatModifier Id="InjuryDamageMultiplier" Offset="-30"/>
@@ -580,19 +580,19 @@
       <AppearanceDelay>0</AppearanceDelay>
       <StatsProgressions>
 
-         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">20</StatProgression>
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">22</StatProgression>
 
          <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">8</StatProgression>
 
-         <StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">3</StatProgression>
+         <StatProgression Id="Dodge" Delay="1" IncreaseEveryXDay="2">1</StatProgression>
 
-         <StatProgression Id="ArmorTotal" Delay="1" IncreaseEveryXDay="2">29</StatProgression>
+         <StatProgression Id="ArmorTotal" Delay="1" IncreaseEveryXDay="2">32</StatProgression>
 
          <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">6</StatProgression>
 
-         <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">13</StatProgression>
+         <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">14</StatProgression>
 
-         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">53</StatProgression>
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">59</StatProgression>
 
          <StatProgression Id="MovePointsTotal" Delay="5" IncreaseEveryXDay="6">1</StatProgression>
 
@@ -609,7 +609,7 @@
       <DeathSoundFolderName Value="NessieEgg"/>
       <Tier>-1</Tier>
       <Weight>15</Weight>
-      <HealthTotal>218</HealthTotal>
+      <HealthTotal>246</HealthTotal>
       <HealthGaugeSize>Large</HealthGaugeSize>
       <ArmorTotal>560</ArmorTotal>
       <MovePointsTotal>0</MovePointsTotal>
@@ -656,15 +656,15 @@
       </Behavior>
          <StatsProgressions>
 
-         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">20</StatProgression>
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">22</StatProgression>
 
-         <StatProgression Id="ArmorTotal" Delay="1" IncreaseEveryXDay="2">29</StatProgression>
+         <StatProgression Id="ArmorTotal" Delay="1" IncreaseEveryXDay="2">32</StatProgression>
 
          <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">6</StatProgression>
 
-         <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">13</StatProgression>
+         <StatProgression Id="Block" Delay="1" IncreaseEveryXDay="2">14</StatProgression>
 
-         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">53</StatProgression>
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">59</StatProgression>
 
          <StatProgression Id="MovePointsTotal" Delay="5" IncreaseEveryXDay="6">1</StatProgression>
 
@@ -691,7 +691,7 @@
       <Tier>-1</Tier>
       <Weight>15</Weight>
 
-      <HealthTotal>10</HealthTotal>
+      <HealthTotal>11</HealthTotal>
       <HealthGaugeSize>Small</HealthGaugeSize>
       <MovePointsTotal>3</MovePointsTotal>
       <Block>0</Block>
@@ -772,7 +772,7 @@
       <HideInNightReport/>
 
       <StatsProgressions>
-         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">15</StatProgression>
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">17</StatProgression>
          <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">9</StatProgression>
       </StatsProgressions>
       <SpawnCutscene Id="UnnamedSpawn"/>
@@ -788,7 +788,7 @@
       <Tier>-1</Tier>
       <Weight>15</Weight>
 
-      <HealthTotal>10</HealthTotal>
+      <HealthTotal>11</HealthTotal>
       <HealthGaugeSize>Small</HealthGaugeSize>
       <MovePointsTotal>4</MovePointsTotal>
       <Block>0</Block>
@@ -879,7 +879,7 @@
       <HideInNightReport/>
 
       <StatsProgressions>
-         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">15</StatProgression>
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">17</StatProgression>
          <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">9</StatProgression>
       </StatsProgressions>
 
@@ -901,7 +901,7 @@
       <Tier>-1</Tier>
       <Weight>15</Weight>
 
-      <HealthTotal>10</HealthTotal>
+      <HealthTotal>11</HealthTotal>
       <HealthGaugeSize>Small</HealthGaugeSize>
       <MovePointsTotal>3</MovePointsTotal>
       <Block>0</Block>
@@ -982,7 +982,7 @@
       <HideInNightReport/>
 
       <StatsProgressions>
-         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">15</StatProgression>
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">17</StatProgression>
          <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">6</StatProgression>
       </StatsProgressions>
 	  
@@ -999,7 +999,7 @@
       <Tier>-1</Tier>
       <Weight>15</Weight>
 
-      <HealthTotal>10</HealthTotal>
+      <HealthTotal>11</HealthTotal>
       <HealthGaugeSize>Small</HealthGaugeSize>
       <MovePointsTotal>3</MovePointsTotal>
       <Block>0</Block>
@@ -1099,7 +1099,7 @@
       <HideInNightReport/>
 
       <StatsProgressions>
-         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">17</StatProgression>
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">19</StatProgression>
          <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">4</StatProgression>
       </StatsProgressions>
 	  
@@ -1121,7 +1121,7 @@
       <Tier>-1</Tier>
       <Weight>15</Weight>
 
-      <HealthTotal>10</HealthTotal>
+      <HealthTotal>11</HealthTotal>
       <HealthGaugeSize>Small</HealthGaugeSize>
       <MovePointsTotal>3</MovePointsTotal>
       <Block>0</Block>
@@ -1212,7 +1212,7 @@
       <HideInNightReport/>
 
       <StatsProgressions>
-         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">17</StatProgression>
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">19</StatProgression>
          <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">6</StatProgression>
       </StatsProgressions>
 
@@ -1230,7 +1230,7 @@
       <Tier>-1</Tier>
       <Weight>15</Weight>
 
-      <HealthTotal>10</HealthTotal>
+      <HealthTotal>11</HealthTotal>
       <HealthGaugeSize>Small</HealthGaugeSize>
       <MovePointsTotal>3</MovePointsTotal>
       <Block>0</Block>
@@ -1311,7 +1311,7 @@
       <HideInNightReport/>
 
       <StatsProgressions>
-         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">17</StatProgression>
+         <StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">19</StatProgression>
          <StatProgression Id="Accuracy" Delay="2" IncreaseEveryXDay="2" MaxIncreases="4">6</StatProgression>
       </StatsProgressions>
 	  
@@ -1335,7 +1335,7 @@
       <Tier>-1</Tier>
       <Weight>15</Weight>
 
-      <HealthTotal>10</HealthTotal>
+      <HealthTotal>11</HealthTotal>
       <HealthGaugeSize>Small</HealthGaugeSize>
       <MovePointsTotal>4</MovePointsTotal>
       <Block>0</Block>
@@ -1431,7 +1431,7 @@
       <Tier>-1</Tier>
       <Weight>15</Weight>
 
-      <HealthTotal>10</HealthTotal>
+      <HealthTotal>11</HealthTotal>
       <HealthGaugeSize>Small</HealthGaugeSize>
       <MovePointsTotal>3</MovePointsTotal>
       <Block>0</Block>
@@ -1534,7 +1534,7 @@
       <Tier>-1</Tier>
       <Weight>15</Weight>
 
-      <HealthTotal>10</HealthTotal>
+      <HealthTotal>11</HealthTotal>
       <HealthGaugeSize>Small</HealthGaugeSize>
       <MovePointsTotal>3</MovePointsTotal>
       <Block>0</Block>
@@ -1651,7 +1651,7 @@
       <Tier>-1</Tier>
       <Weight>15</Weight>
       <MoveMethod Method="Flying"/>
-      <HealthTotal>115</HealthTotal>
+      <HealthTotal>130</HealthTotal>
       <HealthGaugeSize>Small</HealthGaugeSize>
       <MovePointsTotal>0</MovePointsTotal>
       <Block>0</Block>
@@ -1749,7 +1749,7 @@
       <Tier>-1</Tier>
       <Weight>15</Weight>
       <MoveMethod Method="Flying"/>
-      <HealthTotal>115</HealthTotal>
+      <HealthTotal>130</HealthTotal>
       <HealthGaugeSize>Small</HealthGaugeSize>
       <MovePointsTotal>3</MovePointsTotal>
       <Block>0</Block>
@@ -1860,7 +1860,7 @@
       <Tier>-1</Tier>
       <Weight>15</Weight>
       <MoveMethod Method="Flying"/>
-      <HealthTotal>10</HealthTotal>
+      <HealthTotal>11</HealthTotal>
       <HealthGaugeSize>Small</HealthGaugeSize>
       <MovePointsTotal>0</MovePointsTotal>
       <Block>0</Block>
@@ -1944,7 +1944,7 @@
       <Tier>-1</Tier>
       <Weight>15</Weight>
       <MoveMethod Method="Flying"/>
-      <HealthTotal>10</HealthTotal>
+      <HealthTotal>11</HealthTotal>
       <HealthGaugeSize>Small</HealthGaugeSize>
       <MovePointsTotal>0</MovePointsTotal>
       <Block>0</Block>
@@ -2004,10 +2004,10 @@
 		<ExperienceGain>30</ExperienceGain>
 
 		<StatsProgressions>
-			<StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">25</StatProgression>
-			<StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">9</StatProgression>
+			<StatProgression Id="EnemyEvolutionDamageMultiplier" Delay="1" IncreaseEveryXDay="1">28</StatProgression>
+			<StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">10</StatProgression>
 			<StatProgression Id="Resistance" Delay="3" IncreaseEveryXDay="5">10</StatProgression>
-			<StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">67</StatProgression>
+			<StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">74</StatProgression>
 			<StatProgression Id="MovePointsTotal" Delay="8" IncreaseEveryXDay="3">1</StatProgression>
 		</StatsProgressions>
 		
@@ -2025,7 +2025,7 @@
 
       <StatsProgressions>
          <StatProgression Id="Resistance" Delay="0" IncreaseEveryXDay="4">4</StatProgression>
-         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">39</StatProgression>
+         <StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">43</StatProgression>
       </StatsProgressions>
 
       <SpawnCutscene Id="CocoonSpawn"/>
@@ -2035,9 +2035,9 @@
       <ExperienceGain>5</ExperienceGain>
 
       <StatsProgressions>
-			<StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">9</StatProgression>
+			<StatProgression Id="Dodge" Delay="3" IncreaseEveryXDay="5">10</StatProgression>
 			<StatProgression Id="Resistance" Delay="3" IncreaseEveryXDay="5">10</StatProgression>
-			<StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">56</StatProgression>
+			<StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">62</StatProgression>
          <StatProgression Id="Accuracy" Delay="0" IncreaseEveryXDay="2">8</StatProgression>
       </StatsProgressions>
 
@@ -2049,7 +2049,7 @@
       
       <StatsProgressions>
 			<StatProgression Id="Resistance" Delay="3" IncreaseEveryXDay="5">10</StatProgression>
-			<StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">67</StatProgression>
+			<StatProgression Id="HealthTotal" Delay="0" IncreaseEveryXDay="2">74</StatProgression>
       </StatsProgressions>
 
       <SpawnCutscene Id="CocoonSpawn3"/>

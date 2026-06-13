@@ -10,8 +10,6 @@
       <Tier>1</Tier>
       <Steps>
          <Step>EnemyHealthModifier_1</Step>
-         <Step>EnemyHealthModifier_2</Step>
-         <Step>EnemyHealthModifier_3</Step>
       </Steps>
       <FilterIds>
          <FilterId>Enemies</FilterId>
@@ -52,22 +50,6 @@
          <FilterId>Enemies</FilterId>
       </FilterIds>
    </ApocalypseModifierDefinition>
-
-   
-   <!-- ====== -->
-   <!-- Tier 2 -->
-   <!-- ====== -->
-
-   <!-- Starting Magic Circle Health
-   <ApocalypseModifierDefinition Id="StartingMagicCircleHealthModifier">
-      <Tier>2</Tier>
-      <Steps>
-         <Step>StartingMagicCircleHealthModifier_1</Step>
-      </Steps>
-      <FilterIds>
-         <FilterId>Haven</FilterId>
-      </FilterIds>
-   </ApocalypseModifierDefinition> -->
    
    <!-- Wave Size -->
    <ApocalypseModifierDefinition Id="WaveSizeModifier">
@@ -177,7 +159,7 @@
    </ApocalypseModifierDefinition>
 
    <!-- Enemy Late Buff -->
-   <ApocalypseModifierDefinition Id="EnemyLateBuffModifier">
+   <ApocalypseModifierDefinition Id="StartingMagicCircleHealthModifier">
       <Tier>1</Tier>
       <Steps>
          <Step>EnemyLateBuffModifier_1</Step>

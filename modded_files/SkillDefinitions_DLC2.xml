@@ -821,12 +821,13 @@
         <AttackType>Ranged</AttackType>
         <DamageMultiplier>1.8</DamageMultiplier>
         <SkillEffects>
+          <IgnoreLineOfSight />
           <Stun>
-            <BaseChance>0.85</BaseChance>
+            <BaseChance>0.9</BaseChance>
           </Stun>
           <SurroundingEffect>
             <Stun>
-              <BaseChance>0.85</BaseChance>
+              <BaseChance>0.9</BaseChance>
             </Stun>
           </SurroundingEffect>
         </SkillEffects>
@@ -924,8 +925,9 @@
         <AttackType>Ranged</AttackType>
         <DamageMultiplier>1.8</DamageMultiplier>
         <SkillEffects>
+          <IgnoreLineOfSight />
           <Stun>
-            <BaseChance>0.85</BaseChance>
+            <BaseChance>0.9</BaseChance>
           </Stun>
         </SkillEffects>
       </Attack>
@@ -1300,12 +1302,13 @@
         <AttackType>Ranged</AttackType>
         <DamageMultiplier>1.8</DamageMultiplier>
         <SkillEffects>
+          <IgnoreLineOfSight />
           <Stun>
-            <BaseChance>0.85</BaseChance>
+            <BaseChance>0.9</BaseChance>
           </Stun>
           <SurroundingEffect>
             <Stun>
-              <BaseChance>0.85</BaseChance>
+              <BaseChance>0.9</BaseChance>
             </Stun>
           </SurroundingEffect>
         </SkillEffects>

@@ -71,7 +71,7 @@
       <Level>
          <PanicValueNeeded Value="0"/>
          <Reward>
-            <Gold Value="Ceil(RewardValue * 1.1)"/>
+            <Gold Value="Ceil(RewardValue * 1.05)"/>
             <Materials Value="Ceil(RewardValue * 1.05)"/>
             <Items>
                <ItemsData>
@@ -100,8 +100,8 @@
                      <ItemData Id="Item_Reward_High" OverrideBaseLevel="3" OverrideItemsList="ItemList_AllWeapons" OverrideItemRaritiesList="Rank_S_3"/>
                   </ItemReward>
                   <ItemReward DayNumber="10">
-                     <ItemData Id="Item_Reward_High" OverrideBaseLevel="3" OverrideItemGenerationModifiersList="PanicRewardImproved" OverrideItemRaritiesList="Rank_S_4"/>
-                     <ItemData Id="Item_Reward_High" OverrideBaseLevel="3" OverrideItemGenerationModifiersList="PanicRewardImproved" OverrideItemsList="ItemList_AllWeapons" OverrideItemRaritiesList="Rank_S_4"/>
+                     <ItemData Id="Item_Reward_High" OverrideBaseLevel="4" OverrideItemGenerationModifiersList="PanicRewardImproved" OverrideItemRaritiesList="Rank_S_4"/>
+                     <ItemData Id="Item_Reward_High" OverrideBaseLevel="4" OverrideItemGenerationModifiersList="PanicRewardImproved" OverrideItemsList="ItemList_AllWeapons" OverrideItemRaritiesList="Rank_S_4"/>
                   </ItemReward>
                </ItemRewardsByDay>
                <!--<ItemsLists>
@@ -168,7 +168,7 @@
                      <ItemData Id="Item_Reward_High" OverrideBaseLevel="3" OverrideItemRaritiesList="Rank_S_3"/>
                   </ItemReward>
                   <ItemReward DayNumber="10">
-                     <ItemData Id="Item_Reward_High" OverrideBaseLevel="3" OverrideItemGenerationModifiersList="PanicRewardImproved" OverrideItemRaritiesList="Rank_S_4"/>
+                     <ItemData Id="Item_Reward_High" OverrideBaseLevel="4" OverrideItemGenerationModifiersList="PanicRewardImproved" OverrideItemRaritiesList="Rank_S_4"/>
                   </ItemReward>
                </ItemRewardsByDay>
             </Items>
@@ -210,7 +210,7 @@
       <Level>
          <PanicValueNeeded Value="21"/>
          <Reward>
-            <Gold Value="Ceil(RewardValue * 0.9)"/>
+            <Gold Value="Ceil(RewardValue * 0.95)"/>
             <Materials Value="Ceil(RewardValue * 0.95)"/>
             <Items>
                <ItemsData>
@@ -235,7 +235,7 @@
                      <ItemData Id="Item_Reward_Low" OverrideBaseLevel="3" OverrideItemRaritiesList="Rank_B_3"/>
                   </ItemReward>
                   <ItemReward DayNumber="10">
-                     <ItemData Id="Item_Reward_Low" OverrideBaseLevel="3" OverrideItemGenerationModifiersList="PanicReward" OverrideItemRaritiesList="Rank_B_4"/>
+                     <ItemData Id="Item_Reward_Low" OverrideBaseLevel="4" OverrideItemGenerationModifiersList="PanicReward" OverrideItemRaritiesList="Rank_B_4"/>
                   </ItemReward>
                </ItemRewardsByDay>
             </Items>
@@ -277,16 +277,16 @@
       <Level>
          <PanicValueNeeded Value="51"/>
          <Reward>
-            <Gold Value="Ceil(RewardValue * 0.8)"/>
-            <Materials Value="Ceil(RewardValue * 0.85)"/>
+            <Gold Value="Ceil(RewardValue * 0.9)"/>
+            <Materials Value="Ceil(RewardValue * 0.9)"/>
          </Reward>
       </Level>
       <!-- Level 4 (D) -->
       <Level>
          <PanicValueNeeded Value="100"/>
          <Reward>
-            <Gold Value="Ceil(RewardValue * 0.7)"/>
-            <Materials Value="Ceil(RewardValue * 0.75)"/>
+            <Gold Value="Ceil(RewardValue * 0.85)"/>
+            <Materials Value="Ceil(RewardValue * 0.85)"/>
          </Reward>
       </Level>
    </Levels>

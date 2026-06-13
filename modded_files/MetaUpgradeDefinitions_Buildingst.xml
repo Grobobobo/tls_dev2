@@ -1,0 +1,525 @@
+﻿<MetaUpgradeDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:noNamespaceSchemaLocation="../MetaUpgradeDefinitions.xsd">
+
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- MAGIC CIRCLE -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <MetaUpgradeDefinition Id="UnlockNewMage1">
+      <Categories>
+         <Category Value="City"/>
+      </Categories>
+      <IconName>UnlockNewMage</IconName>
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsLostCount" B="2"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsLostCount" B="2"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <AdditionalInitMages>1</AdditionalInitMages>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockNewMage2">
+      <Categories>
+         <Category Value="City"/>
+      </Categories>
+      <IconName>UnlockNewMage</IconName>
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsCompletedCount" B="3"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsCompletedCount" B="3"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <AdditionalInitMages>1</AdditionalInitMages>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockNewMage3">
+      <Categories>
+         <Category Value="City"/>
+      </Categories>
+      <IconName>UnlockNewMage</IconName>
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsFinishedCount" B="10"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsFinishedCount" B="10"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <AdditionalInitMages>1</AdditionalInitMages>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- CITY BUILDINGS -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+
+   <!--INN-->
+   <MetaUpgradeDefinition Id="UnlockInn">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockHouse" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:MaxNightReachedInCity Felderland" B="4"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockBuilding>Inn</UnlockBuilding>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockInnUpgradeHeroCapacity">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockLakeburgCity" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:MaxNightReachedInCity LakeBurg" B="6"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockBuildingUpgrade>UpgradePlayableUnitLimit</UnlockBuildingUpgrade>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   
+   <!--SEER-->
+   <MetaUpgradeDefinition Id="UnlockSeer">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockLakeburgCity" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:MaxNightReachedInCity LakeBurg" B="4"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockBuilding>Seer</UnlockBuilding>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockGuessAgain" Price="1800">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:NightsPlayedWithBuildingCount Seer 1" B="10"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockBuildingAction Id="GuessAgain"/>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   
+   <!--HOUSES-->
+   <MetaUpgradeDefinition Id="UnlockHouse">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockFelderlandCity" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <ActivationConditions>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:MaxNightReachedInCity Felderland" B="2"/>
+         </ConditionsGroup>
+      </ActivationConditions>
+      <UpgradeEffects>
+         <UnlockBuilding>House</UnlockBuilding>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   
+   <!--GOLD & MATERIAL PRODUCTION-->
+   <MetaUpgradeDefinition Id="UnlockGoldMine" Price="700">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:MaxNightReachedInCity Felderland" B="3"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockBuilding>GoldMine</UnlockBuilding>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockScavengerCamp" Price="700">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:MaxNightReachedInCity Felderland" B="3"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockBuilding>ScavengerCamp</UnlockBuilding>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+
+   <!--ITEM PRODUCTION-->
+   <MetaUpgradeDefinition Id="UnlockArmorMaker" Price="1100">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsFinishedCount" B="1"/>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:NightsPlayed" B="6"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockBuilding>ArmorMaker</UnlockBuilding>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockProductionWeapons" Price="1400">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockLakeburgCity" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:NightsPlayed" B="10"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockBuilding>Blacksmith</UnlockBuilding>
+         <UnlockBuilding>Bowyer</UnlockBuilding>
+         <UnlockBuilding>MagicShop</UnlockBuilding>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockTrinketMaker" Price="4500">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:NightsPlayedInCity LakeBurg" B="18"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockGlenwaldCity" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockBuilding>TrinketMaker</UnlockBuilding>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockPotionMaker" Price="4500">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:NightsPlayedInCity LakeBurg" B="21"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockGlenwaldCity" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockBuilding>PotionMaker</UnlockBuilding>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- DEFENSES -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <!--WALLS-->
+   <MetaUpgradeDefinition Id="UnlockStoneWalls" Price="900">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockLakeburgCity" B="1"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:NightsPlayed" B="8"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockBuilding>StoneWall</UnlockBuilding>
+         <UnlockBuilding>StoneWallReinforced</UnlockBuilding>
+         <UnlockBuilding>Gate</UnlockBuilding>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--BALLISTAS-->
+   <MetaUpgradeDefinition Id="UnlockBallista" Price="800">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:RunsFinishedCount" B="1"/>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:NightsPlayed" B="4"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockBuilding>Ballista</UnlockBuilding>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockBallistaTower" Price="1200">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockBallista" B="1"/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockStoneWalls" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockBuilding>BallistaTower</UnlockBuilding>
+         <UnlockBuilding>BallistaHeavy</UnlockBuilding>
+         <UnlockBuilding>BallistaSplit</UnlockBuilding>
+         <UnlockBuildingUpgrade>UpgradeBallistaToBallistaTower</UnlockBuildingUpgrade>
+         <UnlockBuildingUpgrade>UpgradeBallistaToBallistaHeavy</UnlockBuildingUpgrade>
+         <UnlockBuildingUpgrade>UpgradeBallistaToBallistaSplit</UnlockBuildingUpgrade>
+      </UpgradeEffects>
+      <ForceHideTooltips>
+         <BuildingUpgradeTooltip Id="UpgradeBallistaToBallistaTower"/>
+         <BuildingUpgradeTooltip Id="UpgradeBallistaToBallistaHeavy"/>
+         <BuildingUpgradeTooltip Id="UpgradeBallistaToBallistaSplit"/>
+      </ForceHideTooltips>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockSeasonedOperator" Price="900">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:NightsPlayedWithBuildingCount Ballista 1" B="5"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockBuildingUpgrade>UpgradeBallistaDamageGlobal</UnlockBuildingUpgrade>
+         <UnlockBuildingUpgrade>UpgradeCatapultDamageGlobal</UnlockBuildingUpgrade>
+         <UnlockBuildingUpgrade>UpgradeSlowTrap</UnlockBuildingUpgrade>
+         <UnlockBuildingUpgrade>UpgradeDamageTrap</UnlockBuildingUpgrade>
+         <UnlockBuildingUpgrade>UpgradeStunTrap</UnlockBuildingUpgrade>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--CATAPULT-->
+   <MetaUpgradeDefinition Id="UnlockCatapult" Price="1400">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:NightsPlayedInCity LakeBurg" B="6"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockBuilding>Catapult</UnlockBuilding>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--TRAPS-->
+   <MetaUpgradeDefinition Id="UnlockSlowTrap" Price="700">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:NightsPlayedInCity LakeBurg" B="9"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockBuilding>SlowTrap</UnlockBuilding>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockDamageTrap" Price="700">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:NightsPlayedInCity LakeBurg" B="9"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockBuilding>DamageTrap</UnlockBuilding>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockStunTrap" Price="700">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:NightsPlayedInCity LakeBurg" B="9"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockBuilding>StunTrap</UnlockBuilding>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--WATCHTOWER-->
+   <MetaUpgradeDefinition Id="UnlockWatchtower" Price="1400">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:NightsPlayedInCity LakeBurg" B="6"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockBuilding>Watchtower</UnlockBuilding>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+
+   <!--WARPGATE-->
+   <MetaUpgradeDefinition Id="UnlockWarpGate" Price="6000">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:NightsPlayedInCity LakeBurg" B="24"/>
+         </ConditionsGroup>
+         <ConditionsGroup>
+            <Hidden/>
+            <NumberAEqualToB A="ENVIRONMENT:HasActivatedMetaUpgrade UnlockGlenwaldCity" B="1"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockBuilding>Teleporter</UnlockBuilding>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <!-- ███████████████████████████████████████████████████████████████ -->
+   <!-- SHOP UPGRADES -->
+   <!-- ███████████████████████████████████████████████████████████████ -->
+
+   <MetaUpgradeDefinition Id="UnlockUpgradeSellRatio" Price="1800">
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:GetDouble SoldItems" B="20"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockBuildingUpgrade>UpgradeSellRatio</UnlockBuildingUpgrade>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+
+   <MetaUpgradeDefinition Id="UnlockShopReroll" Price="900">
+      <Categories>
+         <Category Value="Building"/>
+      </Categories>
+      <UnlockConditions>
+		  <ConditionsGroup>
+			  <Hidden/>
+			  <NumberALowerThanOrEqualToB A="ENVIRONMENT:VanillaNotActivatedMetaUpgradesOtherThan UnlockSinkTaintedEssence" B="10" />
+		  </ConditionsGroup>
+         <ConditionsGroup>
+            <NumberAGreaterThanOrEqualToB A="CAMPAIGN:ItemsBoughtCount" B="5"/>
+         </ConditionsGroup>
+      </UnlockConditions>
+      <UpgradeEffects>
+         <UnlockShopReroll/>
+      </UpgradeEffects>
+   </MetaUpgradeDefinition>
+   
+   
+</MetaUpgradeDefinitions>

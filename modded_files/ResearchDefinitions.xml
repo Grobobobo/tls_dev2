@@ -1889,7 +1889,7 @@
             <AddBuildingModifiers Id="Temple">
                 <ActionHealModifier>100</ActionHealModifier>
             </AddBuildingModifiers>
-            <ModifyBuildingActionsCostPerDay EffectId="BonePilesActionsCostReduction" ActionsUsePerDay="99" CostReductionValue="WorkerCostReduction">
+            <ModifyBuildingActionsCostPerDay EffectId="HavenGlintActionsCostReduction" ActionsUsePerDay="99" CostReductionValue="WorkerCostReduction">
                 <AvailableBuildingAction Id="Blessing"/>
                 <AvailableBuildingAction Id="Blessing_1"/>
                 <AvailableBuildingAction Id="Heal"/>

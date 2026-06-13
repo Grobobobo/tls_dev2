@@ -1666,6 +1666,7 @@ PerkDescription_Fatality,"Unlocks the {0} skill, allowing to <style=Execute>Exec
 ","Desbloqueia a habilidade {0}, permitindo <style=Execute>Executar</style> qualquer unidade em uma distância de até {1} e que está com um <size=14><sprite name=""Wound2""></size><style=""Bad"">ferimento grave</style>.
 ","{0} 스킬 잠금 해제: {1}타일 이내의 <size=14><sprite name=""Wound2""></size><style=""Bad"">심한 부상</style>을 당한 모든 유닛 <style=Execute>처형</style> 가능.
 "
+PerkEffectInformations_Fatality, , , , , , , , , , ,
 PerkDescription_ViciousKiller,"Unlocks the {0} skill, allowing to <style=Execute>Execute</style> any units in range of {1} who is <size=14><sprite name=""Wound1""></size><style=""Bad"">Wounded</style>.
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","Débloque la compétence {0}, donnant la possibilité d'<style=Execute>Exécuter</style> n'importe quelle unité <size=14><sprite name=""Wound1""></size><style=""Bad"">Blessé</style> dans une portée de {1}.
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","解锁{0}技能，该技能可<style=Execute>处决</style>{1}格范围内任何处于<size=14><sprite name=""Wound1""></size><style=""Bad"">受伤</style>状态的单位。
@@ -2953,7 +2954,7 @@ BuildingUpgradeTooltipDescription_UpgradeStunTrap0,"• <style=TrapUse>Uses per 
 <#F35934>Melhora de uma vez só <b>TODAS</b> as Armadilhas Atordoantes.</color>","• <style=TrapUse>하룻밤 사용 횟수</style> <style=Number>1</style> > <style=GoodNbOutlined>2</style>
 • <style=OverallDamage>피해</style> <style=""Number"">80-130</style> > <style=GoodNbOutlined>120-195</style>
 <#F35934><b>모든</b> 기절 함정을 동시에 강화합니다.</color>"
-ApocalypseModifierTitle_EnemyLateBuffModifier,Last-Ditch Charge,Charge Désespérée,背水一战,背水一戰,最後の突撃,Отчаянный Натиск,Відчайдушний Натиск,Verzweifelter Ansturm,Carga Desesperada,Investida Desesperada,최후의 돌격
+ApocalypseModifierTitle_StartingMagicCircleHealthModifier,Last-Ditch Charge,Charge Désespérée,背水一战,背水一戰,最後の突撃,Отчаянный Натиск,Відчайдушний Натиск,Verzweifelter Ansturm,Carga Desesperada,Investida Desesperada,최후의 돌격
 BuildingDescription_BallistaHeavy,"<style=KeyWord>Automatically fires</style> bolts at the incoming horde, targeting the <style=KeyWord>closest</style> enemy.
 Strengthened for improved <style=OverallDamage>Damage</style> and <style=ArmorPiercing>Armor Piercing</style>.","<style=KeyWord>Tire automatiquement</style> des carreaux sur les cibles en approche, ciblant l'ennemi <style=KeyWord>le plus proche</style>.
 Renforcé pour de meilleurs <style=OverallDamage>Dégât</style> et <style=ArmorPiercing>Perce-armure</style>.","向来袭怪物<style=KeyWord>自动发射</style>弩箭，以<style=KeyWord>最近的</style>敌人为目标。
@@ -3678,7 +3679,9 @@ PerkDescription_Leapfrog,"Upgrades the {0} skill:
 Cuesta <style=GoodNb>-1</style> <style=MovePoints>puntos de movimiento</style>.
 <style=GoodNb>+1</style> de <style=KeyWord>alcance</style>.","Melhora a habilidade {0}:
 Custo de <style=GoodNb>-1</style> <style=MovePoints>Ponto de Movimento</style>.
-<style=GoodNb>+1</style> de <style=KeyWord>Distância</style>."
+<style=GoodNb>+1</style> de <style=KeyWord>Distância</style>.","{0} 스킬 강화:
+<style=GoodNb>-1</style> <style=MovePoints>이동력</style> 비용
+<style=GoodNb>+1</style> <style=KeyWord>범위</style>"
 GlyphDescription_HeroPerkNativeLeapFrog,"Heroes have the <style=DarkShopKW>{0}</style> (or <style=DarkShopKW>{1}</style>) Perk enabled.
 <style=Attenuated>It will thus never appear in their Perk Tree.</style>","Les Héros ont le Talent <style=DarkShopKW>{0}</style> (ou <style=DarkShopKW>{1}</style>) activé.
 <style=Attenuated>En conséquence, il n'apparaîtra pas dans l'arbre de Talents.</style>","英雄拥有<style=DarkShopKW>{0}</style>（或 <style=DarkShopKW>{1}</style>）天赋。
@@ -3692,3 +3695,15 @@ GlyphDescription_HeroPerkNativeLeapFrog,"Heroes have the <style=DarkShopKW>{0}</
 <style=Attenuated>No entanto, ela nunca aparecerá nas suas Árvores de Vantagens.</style>","영웅들이 <style=DarkShopKW>{0}</style> (또는 <style=DarkShopKW>{1}</style>) 특전을 사용할 수 있게 됩니다.
 <style=Attenuated>영웅의 특전 트리에 따로 등장하지 않습니다.</style>"
 SkillDescription_JumpOverWall,"Jump over a nearby obstacle or enemy to engage the enemies faster, or execute a tactical retreat.","Saute par-dessus un obstacle ou un ennemi pour initier rapidement le combat, ou effectuer une retraite tactique.",翻越邻近的围墙，以更快地与敌人交战，或进行战术撤离。,翻越鄰近的圍牆，以更快地與敵人交戰，或進行戰術撤離。,隣り合う物体やエネミーを飛び越して交戦したり、その場から戦略的逃走を選ぶ。,Герой перепрыгнет препятствие или врага на смежной ячейке. Полезно в бою и при тактическом отходе.,"Перестрибнути через сусідню перешкоду або ворога, щоб швидше дістатися до ворогів, або здійснити тактичний відступ.","Spring über Hindernisse, um schneller beim Gegner zu sein oder einen taktischen Rückzug einzuleiten.",Salta sobre un obstáculo o enemigo cercanos para alcanzar antes a tus enemigos o realizar una retirada táctica.,Pula por cima de um obstáculo ou inimigo próximo para enfrentar os inimigos mais rapidamente ou executar uma retirada tática.,주변 장애물 또는 적을 뛰어넘어 적과 더 빠르게 교전하거나 전술적 후퇴 차원에서 도주합니다.
+ApocalypseModifierDescription_StartingMagicCircleHealthModifier,"Each <style=Night>Night</style>, after turn {0}, <style=KeyWord>Enemies</style> get:
+{1}","Chaque <style=Night>Nuit</style>, après le tour {0}, les <style=KeyWord>Ennemis</style> obtiennent<nbsp>:
+{1}","在每个<style=Night>夜晚</style>的第{0}回合后，<style=KeyWord>敌人</style>会获得：
+{1}","每個<style=Night>黑夜</style>，從{0}回合開始，<style=KeyWord>敵人</style>獲得：
+{1}","<style=Night>毎夜</style>、{0}ターン後に<style=KeyWord>エネミー</style>が以下の効果を得る:
+{1}","Каждую <style=Night>ночь</style> начиная с {0} хода все <style=KeyWord>враги</style> будут получать следующие бонусы:
+{1}","Кожну <style=Night>ніч</style> після ходу {0} <style=KeyWord>вороги</style> отримують:
+{1}","Ab Runde {0} erhalten die <style=KeyWord>Gegner</style> jede <style=Night>Nacht</style>:
+{1}","Cada <style=Night>noche</style>, después del turno {0}, los <style=KeyWord>enemigos</style> obtienen:
+{1}","A cada <style=Night>Noite</style>, após o turno {0}, <style=KeyWord>Inimigos</style> recebem:
+{1}","<style=Night>밤</style>마다 {0}턴 후 <style=KeyWord>적들</style>에게 적용:
+{1}"
