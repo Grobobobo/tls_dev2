@@ -3577,17 +3577,17 @@ Meta_UpgradeDescription_UnlockShieldVariations2,"<sprite name=""LightShopDot""> 
 <sprite name=""LightShopDot""> O <style=LightShopKW>Escudo Enferrujado</style> não vai mais aparecer em suas partidas.","<sprite name=""LightShopDot""> 플레이 도중 신규 <style=LightShopKW>아이템</style>이 등장합니다.
 <sprite name=""LightShopDot""> <style=LightShopKW>녹슨 방패</style>가 더 이상 등장하지 않습니다."
 PerkDescription_Elusive,"{0}.
-{1}.
+{2}.
 <style=keyword>After</style> being <style=keyword>attacked</style> by enemies, for every attack <style=dodge>dodged</style>:
 <style=keyword>Automatically</style> cast {4} on a random enemy in a range of {5}, with a base damage equal to {6} + {7} of the Hero's {1}.
 For the <style=keyword>last</style> dodge, cast {8} instead, with a base damage equal to {9} + {10} of the Hero's {1}.
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","{0}.
-{1}.
+{2}.
 <style=keyword>Après</style> avoir été <style=keyword>attaqué</style> par des ennemis, pour chaque attaque <style=dodge>esquivée</style><nbsp>:
 Utilise <style=keyword>automatiquement</style> {4} sur un ennemi aléatoire dans une portée de {5}, avec des dégâts de base égaux à {6} + {7} de l'{1} du Héros.
 Pour la <style=keyword>dernière</style> esquive, utilise {8} à la place, avec des dégâts de base égaux à {9} + {10} de l'{1} du Héros.
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","{0}。
-{1}。
+{2}。
 
 在遭到敌人<style=keyword>攻击</style><style=keyword>后</style>，每<style=dodge>闪避</style>一次攻击：
 <style=keyword>自动</style>对{5}格范围内的一名随机敌人施放{4}，基础伤害等于{6}+英雄{1}的{7}。
@@ -3595,7 +3595,7 @@ Pour la <style=keyword>dernière</style> esquive, utilise {8} à la place, avec 
 <style=keyword>最后一次</style>闪避会转为施放{8}，基础伤害等于{9}+英雄{1}的{10}。
 
 <style=""ElfIcon""></style><style=""ElfText"">《琥珀幽森的精灵》DLC</style>","{0}。
-{1}。
+{2}。
 
 受到敵人<style=keyword>攻擊</style><style=keyword>後</style>，每<style=dodge>閃避</style>一個攻擊：
 <style=keyword>自動</style>對{5}格範圍內的一個隨機敵人施放{4}，基礎傷害等於{6}+英雄{1}的{7}。
@@ -3603,7 +3603,7 @@ Pour la <style=keyword>dernière</style> esquive, utilise {8} à la place, avec 
 <style=keyword>最後一次</style>閃避時，改為施放{8}，基礎傷害等於{9}+英雄{1}的{10}。
 
 <style=""ElfIcon""></style><style=""ElfText"">〈琥珀幽森的精靈〉DLC</style>","{0}。
-{1}。
+{2}。
 
 エネミーの<style=keyword>攻撃を受けた</style><style=keyword>後</style>、<style=dodge>ドッジ成功</style>1回につき、以下の効果を得る:
 距離{5}内のランダムなエネミーに対し{4}が<style=keyword>自動的に</style>発動する(基本ダメージ: 英雄の{1}{6}+{7})。
@@ -3611,7 +3611,7 @@ Pour la <style=keyword>dernière</style> esquive, utilise {8} à la place, avec 
 <style=keyword>最後</style>のドッジで、代わりに{8}が発動する(基本ダメージ: 英雄の{1}{9}+{10})。
 
 <style=""ElfIcon""></style><style=""ElfText"">アンバーワルドのエルフDLC</style>","{0}.
-{1}.
+{2}.
 
 <style=keyword>После</style> вражеских <style=keyword>атак</style> за каждое <style=dodge>уклонение</style>:
 <style=keyword>автоматически</style> применяет навык ""{4}"" против случайного врага в пределах {5} яч.; базовый урон атаки составит {6} плюс {7} характеристики героя ""{1}"".
@@ -3619,7 +3619,7 @@ Pour la <style=keyword>dernière</style> esquive, utilise {8} à la place, avec 
 С <style=keyword>последним</style> уклонением герой применяет не ""{4}"", а ""{8}""; базовый урон атаки составит {9} плюс {10} от характеристики героя ""{1}"".
 
 <style=""ElfIcon""></style><style=""ElfText"">Дополнительный контент ""Elves of Amberwald""</style>","{0}.
-{1}.
+{2}.
 
 <style=keyword>Після</style> початку <style=keyword>нападу</style> ворогів, за кожну атаку, від якої вдалося <style=dodge>ухилитися</style>:
 <style=keyword>автоматично</style> застосовує «{4}» на випадкового ворога в радіусі {5}, базова шкода дорівнює {6} + {7} від {1} героя.
@@ -3627,7 +3627,7 @@ Pour la <style=keyword>dernière</style> esquive, utilise {8} à la place, avec 
 При <style=keyword>останньому</style> ухилянні натомість застосовує «{8}», а базова шкода дорівнює {9} + {10} від {1} героя.
 
 <style=""ElfIcon""></style><style=""ElfText"">Доповнення Elves of Amberwald</style>","{0}.
-{1}.
+{2}.
 
 <style=keyword>Nachdem</style> der Held von Gegnern <style=keyword>angegriffen</style> worden ist, geschieht bei jedem <style=dodge>Ausweichen</style> vor einem Angriff Folgendes:
 Es wird <style=keyword>automatisch</style> {4} auf einen zufälligen Gegner innerhalb einer Reichweite von {5} gewirkt, und zwar mit einem Basisschaden von {6} + {7} des {1}s des Helden.
@@ -3635,7 +3635,7 @@ Es wird <style=keyword>automatisch</style> {4} auf einen zufälligen Gegner inne
 Beim <style=keyword>letzten</style> Ausweichen wird stattdessen {8} gewirkt, und zwar mit einem Basisschaden von {9} + {10} des {1}s des Helden.
 
 <style=""ElfIcon""></style><style=""ElfText"">Elves of Amberwald DLC</style>","{0}.
-{1}.
+{2}.
 
 <style=keyword>Al</style> recibir <style=keyword>ataques</style> de enemigos, por cada ataque <style=dodge>evadido</style>:
 <style=keyword>Automáticamente</style> lanza {4} a un enemigo aleatorio que se encuentre a una distancia de {5}, con un daño base equivalente al {6} + {7} de la {1} del héroe.
@@ -3643,7 +3643,7 @@ Beim <style=keyword>letzten</style> Ausweichen wird stattdessen {8} gewirkt, und
 En la <style=keyword>última</style> evasión, lanza {8}, con un daño base equivalente al {9} + {10} de la {1} del héroe.
 
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","{0}.
-{1}.
+{2}.
 
 <style=keyword>Após</style> sofrer <style=keyword>ataques</style> de inimigos, para cada ataque <style=dodge>esquivado</style>:
 Lança <style=keyword>automaticamente</style> {4} em um inimigo aleatório em uma distância de até {5}, com um dano base igual a {6} + {7} da {1} do Herói.
@@ -3651,7 +3651,7 @@ Lança <style=keyword>automaticamente</style> {4} em um inimigo aleatório em um
 Na <style=keyword>última</style> esquiva, porém, lança {8}, com dano base igual a {9} + {10} da {1} do Herói.
 
 <style=""ElfIcon""></style><style=""ElfText"">DLC Elves of Amberwald</style>","{0}
-{1}
+{2}
 
 적에게 <style=keyword>공격받은</style> <style=keyword>후</style> <style=dodge>회피</style>한 공격 하나당:
 {5}타일 내 무작위 적에게 <style=keyword>자동으로</style> {4} 시전, 기본 피해는 영웅의 {1}의 {6} + {7}

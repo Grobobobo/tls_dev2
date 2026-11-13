@@ -932,7 +932,7 @@
       </TokenVariables>
       <LocArguments>
          <StatArgument Stat="Block" Value="BlockMalus"/>
-         <StatArgument Stat="Dodge" Value="DodgeBonus"/>
+         <StatArgument Stat="Dodge"/>
          <StatArgument Stat="Dodge" Value="DodgeBonus" Interpreted="true"/>
          <LocArgument Value="TransformedPercentage" Suffix="%" Style="KeyWordNb"/>
          <LocalizedArgument Prefix="SkillName_" Value="ElusiveSkill" Style="Skill"/>
@@ -984,7 +984,8 @@
                </Event>
             </Events>
             <Effects>
-               <StatModifier Stat="Dodge" Value="TransformedValue"/>
+               <StatModifier Stat="Dodge" Value="DodgeBonus"/>
+               <StatModifier Stat="Block" Value="BlockMalus"/>
                <CastSkill SkillId="ElusiveSkill2"> <!-- TODO use "SkillId" TokenVariable if ever implemented-->
                   <PerkTargeting TargetingReference="Owner" TargetingMethod="DamageablesInRange" Amount="Module.Buffer" Range="ElusiveSkillRange">
                      <DamageableTarget Type="Enemy"/>

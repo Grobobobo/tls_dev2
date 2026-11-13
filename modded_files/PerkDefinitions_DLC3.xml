@@ -1993,7 +1993,7 @@
          <TokenVariable Key="RemainingUnitsToKill" Value="UnitKilledThreshold - Module.Buffer"/>
          <TokenVariable Key="HasKilledEnoughUnits" Value="Module.Buffer > UnitKilledThreshold - 1"/>
          <TokenVariable Key="UnitKilledThreshold" Value="5"/>
-         <TokenVariable Key="PerkDamageBonus" Value="300"/>
+         <TokenVariable Key="PerkDamageBonus" Value="200"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="UnitKilledThreshold" Interpreted="true" Style="KeywordNb"/>
@@ -2030,6 +2030,7 @@
                      <IsTrue Value="IsTargetUnit"/>
                      <IsTrue Value="TargetUnit.IsIsolated"/>
                      <IsFalse Value="HasKilledEnoughUnits"/>
+                     <IsFalse Value="TargetUnit.IsPoisoned"/>
                      <IsTrue Value="Skill.IsSkillID('ThrowingDaggers')"/>
                   </Conditions>
                   <Actions>
@@ -2215,7 +2216,7 @@
 
       <TokenVariables>
          <TokenVariable Key="TotalMoveIncrease" Value="Stacks* MovePointsBuffValue"/>
-         <TokenVariable Key="MovePointsBuffValue" Value="3"/>
+         <TokenVariable Key="MovePointsBuffValue" Value="2"/>
          <TokenVariable Key="EnemyHitThreshold" Value="6"/>
          <TokenVariable Key="Stacks" Value="Module.Buffer2"/>
       </TokenVariables>
@@ -2663,7 +2664,7 @@
          <TokenVariable Key="RemainingUnitsToKill" Value="UnitKilledThreshold - Module.Buffer"/>
          <TokenVariable Key="HasKilledEnoughUnits" Value="Module.Buffer > UnitKilledThreshold - 1"/>
          <TokenVariable Key="UnitKilledThreshold" Value="4"/>
-         <TokenVariable Key="MultiHitSkillBaseValue" Value="4"/>
+         <TokenVariable Key="MultiHitSkillBaseValue" Value="5"/>
          <TokenVariable Key="MultiHitBonus" Value="Module.Buffer2"/>
          <TokenVariable Key="MultiHitStep" Value="1"/>
       </TokenVariables>
@@ -3793,7 +3794,7 @@
 					</Event>
 				</Events>
 				<Effects>
-               <ReplaceItemSkill SkillIdReplacement="PreciseTargettingUniqueStrongThrow" SkillIdToReplace="PreciseTargettingUnique" LinkedSkillIdForUsesPerTurn="PreciseTargettingUnique">
+               <ReplaceItemSkill SkillIdReplacement="PreciseTargettingStrongThrow" SkillIdToReplace="PreciseTargetting" LinkedSkillIdForUsesPerTurn="PreciseTargetting">
 
                   <Conditions>
 

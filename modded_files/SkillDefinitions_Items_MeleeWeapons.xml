@@ -167,7 +167,7 @@
           <Debuff>
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
-            <Malus>12</Malus>
+            <Malus>20</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
@@ -215,7 +215,7 @@
           <Debuff>
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
-            <Malus>13</Malus>
+            <Malus>20</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
@@ -232,7 +232,7 @@
           <Debuff>
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
-            <Malus>14</Malus>
+            <Malus>20</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
@@ -249,7 +249,7 @@
           <Debuff>
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
-            <Malus>15</Malus>
+            <Malus>20</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
@@ -266,7 +266,7 @@
           <Debuff>
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
-            <Malus>16</Malus>
+            <Malus>20</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
@@ -283,7 +283,7 @@
           <Debuff>
             <BaseChance>1</BaseChance>
             <Stat Id="Resistance" />
-            <Malus>18</Malus>
+            <Malus>20</Malus>
             <TurnsCount>2</TurnsCount>
           </Debuff>
         </SkillEffects>
@@ -974,7 +974,7 @@
     <ActionPointsCost>2</ActionPointsCost>
     <ManaCost>3</ManaCost>
     <MovePointsCost>0</MovePointsCost>
-    <UsesPerTurnCount>1</UsesPerTurnCount>
+    <UsesPerTurnCount>2</UsesPerTurnCount>
     <Range Min="1" Max="1" CardinalDirectionOnly="true" />
     <AreaOfEffect OriginX="1" OriginY="0">
          XXX
@@ -986,7 +986,7 @@
         <DamageMultiplier>0.75</DamageMultiplier>
         <SkillEffects>
           <Momentum>
-            <DamageBonusPerTile>0.15</DamageBonusPerTile>
+            <DamageBonusPerTile>0.2</DamageBonusPerTile>
           </Momentum>
         </SkillEffects>
       </Attack>

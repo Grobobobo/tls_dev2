@@ -393,12 +393,12 @@
             <DamageMultiplier>1.4</DamageMultiplier>
           </Opportunistic>
           <SurroundingEffect>
-            <Damage Multiplier="0.3" />
+            <Damage Multiplier="0.35" />
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
               <BaseChance>1</BaseChance>
-              <Malus>8</Malus>
+              <Malus>12</Malus>
               <Stat Id="Resistance" />
               <TurnsCount>2</TurnsCount>
             </Debuff>
@@ -458,12 +458,12 @@
             <DamageMultiplier>1.4</DamageMultiplier>
           </Opportunistic>
           <SurroundingEffect>
-            <Damage Multiplier="0.3" />
+            <Damage Multiplier="0.35" />
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
               <BaseChance>1</BaseChance>
-              <Malus>9</Malus>
+              <Malus>12</Malus>
               <Stat Id="Resistance" />
               <TurnsCount>2</TurnsCount>
             </Debuff>
@@ -483,12 +483,12 @@
             <DamageMultiplier>1.4</DamageMultiplier>
           </Opportunistic>
           <SurroundingEffect>
-            <Damage Multiplier="0.3" />
+            <Damage Multiplier="0.35" />
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
               <BaseChance>1</BaseChance>
-              <Malus>10</Malus>
+              <Malus>12</Malus>
               <Stat Id="Resistance" />
               <TurnsCount>2</TurnsCount>
             </Debuff>
@@ -508,7 +508,7 @@
             <DamageMultiplier>1.4</DamageMultiplier>
           </Opportunistic>
           <SurroundingEffect>
-            <Damage Multiplier="0.3" />
+            <Damage Multiplier="0.35" />
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
@@ -533,12 +533,12 @@
             <DamageMultiplier>1.4</DamageMultiplier>
           </Opportunistic>
           <SurroundingEffect>
-            <Damage Multiplier="0.3" />
+            <Damage Multiplier="0.35" />
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
               <BaseChance>1</BaseChance>
-              <Malus>14</Malus>
+              <Malus>12</Malus>
               <Stat Id="Resistance" />
               <TurnsCount>2</TurnsCount>
             </Debuff>
@@ -558,12 +558,12 @@
             <DamageMultiplier>1.4</DamageMultiplier>
           </Opportunistic>
           <SurroundingEffect>
-            <Damage Multiplier="0.3" />
+            <Damage Multiplier="0.35" />
             <Debuff>
               <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
               <CanAffectEnemyUnits>true</CanAffectEnemyUnits>
               <BaseChance>1</BaseChance>
-              <Malus>16</Malus>
+              <Malus>12</Malus>
               <Stat Id="Resistance" />
               <TurnsCount>2</TurnsCount>
             </Debuff>
@@ -2087,14 +2087,14 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectCaster>true</CanAffectCaster>
             <Stat Id="Critical" />
-            <Bonus>10</Bonus>
+            <Bonus>8</Bonus>
             <TurnsCount>1</TurnsCount>
           </Buff>
           <Buff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectCaster>true</CanAffectCaster>
             <Stat Id="Accuracy" />
-            <Bonus>6</Bonus>
+            <Bonus>8</Bonus>
             <TurnsCount>1</TurnsCount>
           </Buff>
         </SkillEffects>
@@ -2130,14 +2130,14 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectCaster>true</CanAffectCaster>
             <Stat Id="Critical" />
-            <Bonus>10</Bonus>
+            <Bonus>9</Bonus>
             <TurnsCount>1</TurnsCount>
           </Buff>
           <Buff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectCaster>true</CanAffectCaster>
             <Stat Id="Accuracy" />
-            <Bonus>6</Bonus>
+            <Bonus>9</Bonus>
             <TurnsCount>1</TurnsCount>
           </Buff>
         </SkillEffects>
@@ -2152,14 +2152,14 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectCaster>true</CanAffectCaster>
             <Stat Id="Critical" />
-            <Bonus>14</Bonus>
+            <Bonus>10</Bonus>
             <TurnsCount>1</TurnsCount>
           </Buff>
           <Buff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectCaster>true</CanAffectCaster>
             <Stat Id="Accuracy" />
-            <Bonus>8</Bonus>
+            <Bonus>10</Bonus>
             <TurnsCount>1</TurnsCount>
           </Buff>
         </SkillEffects>
@@ -2174,14 +2174,14 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectCaster>true</CanAffectCaster>
             <Stat Id="Critical" />
-            <Bonus>15</Bonus>
+            <Bonus>12</Bonus>
             <TurnsCount>1</TurnsCount>
           </Buff>
           <Buff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectCaster>true</CanAffectCaster>
             <Stat Id="Accuracy" />
-            <Bonus>9</Bonus>
+            <Bonus>12</Bonus>
             <TurnsCount>1</TurnsCount>
           </Buff>
         </SkillEffects>
@@ -2196,14 +2196,14 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectCaster>true</CanAffectCaster>
             <Stat Id="Critical" />
-            <Bonus>18</Bonus>
+            <Bonus>14</Bonus>
             <TurnsCount>1</TurnsCount>
           </Buff>
           <Buff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectCaster>true</CanAffectCaster>
             <Stat Id="Accuracy" />
-            <Bonus>10</Bonus>
+            <Bonus>14</Bonus>
             <TurnsCount>1</TurnsCount>
           </Buff>
         </SkillEffects>
@@ -2218,14 +2218,14 @@
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectCaster>true</CanAffectCaster>
             <Stat Id="Critical" />
-            <Bonus>20</Bonus>
+            <Bonus>16</Bonus>
             <TurnsCount>1</TurnsCount>
           </Buff>
           <Buff>
             <CanAffectPlayableUnits>true</CanAffectPlayableUnits>
             <CanAffectCaster>true</CanAffectCaster>
             <Stat Id="Accuracy" />
-            <Bonus>12</Bonus>
+            <Bonus>16</Bonus>
             <TurnsCount>1</TurnsCount>
           </Buff>
         </SkillEffects>

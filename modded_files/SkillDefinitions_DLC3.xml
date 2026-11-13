@@ -1934,13 +1934,13 @@
           <CasterEffect>
             <Buff>
               <CanAffectCaster>true</CanAffectCaster>
-              <Bonus>15</Bonus>
+              <Bonus>12</Bonus>
               <Stat Id="PhysicalDamage" />
               <TurnsCount>2</TurnsCount>
             </Buff>
             <Buff>
               <CanAffectCaster>true</CanAffectCaster>
-              <Bonus>24</Bonus>
+              <Bonus>18</Bonus>
               <Stat Id="Reliability" />
               <TurnsCount>2</TurnsCount>
             </Buff>
@@ -1957,10 +1957,10 @@
         <DamageMultiplier>1.25</DamageMultiplier>
         <SkillEffects>
           <Isolated>
-            <DamageMultiplier>2</DamageMultiplier>
+            <DamageMultiplier>1.75</DamageMultiplier>
           </Isolated>
           <Opportunistic>
-            <DamageMultiplier>2</DamageMultiplier>
+            <DamageMultiplier>1.75</DamageMultiplier>
           </Opportunistic>
         </SkillEffects>
       </Attack>
