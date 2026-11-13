@@ -2312,7 +2312,7 @@
          <TokenVariable Key="DamageDeltaEachHit" Value="Module.Buffer2"/>
          <TokenVariable Key="OverallDamageBonus" Value="Min(BonusMax, Module.Buffer)"/>
          <TokenVariable Key="DefaultMultiplierValue" Value="10"/>
-         <TokenVariable Key="BonusMax" Value="60"/>
+         <TokenVariable Key="BonusMax" Value="50"/>
          <TokenVariable Key="MalusValue" Value="3"/>
       </TokenVariables>
       <LocArguments>
@@ -2467,8 +2467,8 @@
       <TokenVariables>
          <TokenVariable Key="RemainingUnitsToKill" Value="UnitKilledThreshold - Module.Buffer"/>
          <TokenVariable Key="ActionPointsTotalRestoreValue" Value="ActionPointsRestoreValue * Floor(Module.Buffer / UnitKilledThreshold)"/>
-         <TokenVariable Key="UnitKilledThreshold" Value="3"/>
-         <TokenVariable Key="ActionPointsRestoreValue" Value="1"/>
+         <TokenVariable Key="UnitKilledThreshold" Value="6"/>
+         <TokenVariable Key="ActionPointsRestoreValue" Value="2"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="UnitKilledThreshold" Style="KeyWordNb"/>
