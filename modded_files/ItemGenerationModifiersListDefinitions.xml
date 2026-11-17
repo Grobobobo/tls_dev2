@@ -18,12 +18,12 @@
    <!-- END TESTS-->
 
    <ItemGenerationModifiersListDefinition Id="BuildingProduction">
-      <Probability Weight="75">0</Probability>
+      <Probability Weight="100">0</Probability>
       <Probability Weight="25">1</Probability>
    </ItemGenerationModifiersListDefinition>
 
    <ItemGenerationModifiersListDefinition Id="ShopProduction">
-      <Probability Weight="65">-1</Probability>
+      <Probability Weight="100">-1</Probability>
       <Probability Weight="35">0</Probability>
    </ItemGenerationModifiersListDefinition>
 
@@ -34,22 +34,22 @@
    </ItemGenerationModifiersListDefinition>-->
 
    <ItemGenerationModifiersListDefinition Id="PanicRewardLow">
-      <Probability Weight="65">0</Probability>
+      <Probability Weight="100">0</Probability>
       <Probability Weight="35">1</Probability>
    </ItemGenerationModifiersListDefinition>
 
    <ItemGenerationModifiersListDefinition Id="PanicReward">
-      <Probability Weight="65">0</Probability>
+      <Probability Weight="100">0</Probability>
       <Probability Weight="35">1</Probability>
    </ItemGenerationModifiersListDefinition>
 
    <ItemGenerationModifiersListDefinition Id="PanicRewardImproved">
-      <Probability Weight="65">0</Probability>
+      <Probability Weight="100">0</Probability>
       <Probability Weight="35">1</Probability>
    </ItemGenerationModifiersListDefinition>
 
    <ItemGenerationModifiersListDefinition Id="BonePile">
-      <Probability Weight="50">-1</Probability>
+      <Probability Weight="100">-1</Probability>
       <Probability Weight="50">0</Probability>
    </ItemGenerationModifiersListDefinition>
    

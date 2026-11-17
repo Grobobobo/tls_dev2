@@ -53,7 +53,7 @@
    <PerkDefinition Id="EnemiesInsideHavenPerk">
       <TokenVariables>
          <TokenVariable Key="ActualDamageBonus" Value="BooleanChoice(IsEnemyInsideHavenThisNight=0,DamageGain,0)"/>
-         <TokenVariable Key="DamageGain" Value="20"/>
+         <TokenVariable Key="DamageGain" Value="15"/>
          <TokenVariable Key="IsEnemyInsideHavenThisNight" Value="Module.Buffer"/>
       </TokenVariables>
       <LocArguments>
@@ -122,7 +122,7 @@
          <TokenVariable Key="NextThreshold" Value="(NumberOfStepsReached + 1) * BlockThreshold"/>
          <TokenVariable Key="NumberOfStepsReached" Value="Floor(Owner.Block / BlockThreshold)"/>
          <TokenVariable Key="DamageBonus" Value="4"/>
-         <TokenVariable Key="BlockThreshold" Value="7"/>
+         <TokenVariable Key="BlockThreshold" Value="9"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="BlockThreshold" Style="GoodNb"/>
@@ -154,7 +154,7 @@
          <TokenVariable Key="NextThreshold" Value="(NumberOfStepsReached + 1) * DodgeThreshold"/>
          <TokenVariable Key="NumberOfStepsReached" Value="Floor(Owner.Dodge / DodgeThreshold)"/>
          <TokenVariable Key="DamageBonus" Value="4"/>
-         <TokenVariable Key="DodgeThreshold" Value="9"/>
+         <TokenVariable Key="DodgeThreshold" Value="10"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="DodgeThreshold" Style="GoodNb"/>
@@ -186,7 +186,7 @@
          <TokenVariable Key="NextThreshold" Value="(NumberOfStepsReached + 1) * ManaRegenThreshold"/>
          <TokenVariable Key="NumberOfStepsReached" Value="Floor(Owner.UnlockedManaRegen / ManaRegenThreshold)"/>
          <TokenVariable Key="DamageBonus" Value="4"/>
-         <TokenVariable Key="ManaRegenThreshold" Value="5"/>
+         <TokenVariable Key="ManaRegenThreshold" Value="6"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="ManaRegenThreshold" Style="GoodNb"/>
@@ -2606,11 +2606,10 @@
    <PerkDefinition Id="RifleUniquePerk">
       <TokenVariables>
          <TokenVariable Key="HasPerkAlreadyActivatedThisTurn" Value="Module.Buffer > 0"/>
-         <TokenVariable Key="MoveDebuffValue" Value="3"/>
+         <TokenVariable Key="MoveDebuffValue" Value="2"/>
          <TokenVariable Key="AccDebuffValue" Value="50"/>
          <TokenVariable Key="DebuffDuration" Value="1"/>
       </TokenVariables>
-
       <LocArguments>
          <LocalizedArgument Value="ItemName_NoDLCTag_PistolUnique" Style="Unique"/>
          <StatusArgument Status="Debuff" Stat="MovePointsTotal" Value="-1 * MoveDebuffValue" TurnsCount="DebuffDuration" Interpreted="true"/>

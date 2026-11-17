@@ -2877,37 +2877,37 @@ Al <style=KeyWord>atacar</style> a una unidad <style=Stun>aturdida</style>: {1} 
 Quando <style=KeyWord>atacar</style> uma unidade <style=Stun>atordoada</style>: {1} de <style=PerkDamage>Dano de Vantagem</style>.","{0}
 <style=Stun>기절</style> 상태인 유닛을 <style=KeyWord>공격</style>할 경우: {1}"
 PerkDescription_Warcry,"Every {0} <style=KeyWord>missing</style> {1} or {2}:
-{3}, up to {8}, to <style=KeyWord>all</style> Heroes at the <style=KeyWord>start</style> of the Heroes' turn.
+{3}, up to {8}, to <style=KeyWord>other</style> Heroes in a <style=KeyWord>range of</style> {9} at the <style=KeyWord>start</style> of the Heroes' turn.
 <style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Tous les {0} de {1} ou {2} <style=KeyWord>manquants</style><nbsp>:
-{3}, jusqu'à un maximum de {8}, à <style=KeyWord>tous</style> les Héros au <style=KeyWord>début</style> du tour des Héros.
-<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","{1} or {2} 每 <style=KeyWord>缺少</style> {0}  :
-在英雄回合<style=KeyWord>开始</style>时，<style=KeyWord>所有</style>英雄获得 {3}，上限为 {8}。
+{3}, jusqu'à un maximum de {8}, à <style=KeyWord>autres</style> Héros dans un <style=KeyWord>rayon</style> de {9} au <style=KeyWord>début</style> du tour des Héros.
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","每<style=KeyWord>缺少</style> {0} 点 {1} 或 {2}：
+在英雄回合<style=KeyWord>开始</style>时，位于<style=KeyWord>{9}格范围</style>内的<style=KeyWord>其他</style>英雄获得 {3}，上限为 {8}。
 
-<style=""DwarfIcon""></style><style=""DwarfText"">卢恩堡的矮人DLC</style>","{1} or {2} 每 <style=KeyWord>缺少</style> {0} :
-在英雄回合<style=KeyWord>開始</style>時，<style=KeyWord>所有</style>英雄獲得 {3}，上限為 {8}。
+<style=""DwarfIcon""></style><style=""DwarfText"">卢恩堡的矮人DLC</style>","每<style=KeyWord>缺少</style> {0} 點 {1} 或 {2}：
+在英雄回合<style=KeyWord>開始</style>時，位於<style=KeyWord>{9}格範圍</style>內的<style=KeyWord>其他</style>英雄獲得 {3}，上限為 {8}。
 
-<style=""DwarfIcon""></style><style=""DwarfText"">盧恩堡的矮人DLC</style>","{0}<style=KeyWord>失う</style>毎に{1}または{2}:
-英雄のターン<style=KeyWord>開始</style>時に<style=KeyWord>すべての</style>英雄に{3}（{8}まで）。
+<style=""DwarfIcon""></style><style=""DwarfText"">盧恩堡的矮人DLC</style>","{1}または{2}を{0}<style=KeyWord>失う</style>毎に:
+英雄のターン<style=KeyWord>開始</style>時に{9}の<style=KeyWord>範囲内</style>にいる<style=KeyWord>他の</style>英雄に{3}（{8}まで）。
 
 <style=""DwarfIcon""></style><style=""DwarfText"">ルーネンベルクのドワーフDLC</style>","За каждые <style=KeyWord>недостающие </style> {0} ед. ({1} или {2}):
-{3} (но не более {8}) <style=KeyWord>всем</style> героям в <style=KeyWord>начале</style> хода.
+{3} (но не более {8}) <style=KeyWord>остальным</style> героям в <style=KeyWord>радиусе</style> {9} в <style=KeyWord>начале</style> хода.
 
-<style=""DwarfIcon""></style><style=""DwarfText"">Дополнительный контент ""Dwarves of Runenberg""</style>","За кожні {0} <style=KeyWord> браку параметра </style> {1} чи {2}:
-{3}, але не більше {8}, <style=KeyWord>всім</style> героям <style=KeyWord>на початку</style> ходу героїв.
+<style=""DwarfIcon""></style> <style=""DwarfText"">Дополнительный контент ""Dwarves of Runenberg""</style>","За кожні {0} <style=KeyWord> браку параметра </style> {1} чи {2}:
+{3}, але не більше {8}, <style=KeyWord>іншим</style> героям у <style=KeyWord>радіусі</style> {9} <style=KeyWord>на початку</style> ходу героїв.
 
-<style=""DwarfIcon""></style><style=""DwarfText"">DLC «Dwarves of Runenberg»</style>","Jede {0} <style=KeyWord>, die</style> {1} oder {2} <style=KeyWord>verbraucht</style>:
-{3}, bis zu {8}, für <style=KeyWord>alle</style> Helden zu <style=KeyWord>Beginn</style>des Zuges der Helden.
+<style=""DwarfIcon""></style> <style=""DwarfText"">DLC «Dwarves of Runenberg»</style>","Für jeweils {0} <style=KeyWord>fehlende</style> {1} oder {2}:
+{3}, bis zu {8}, für <style=KeyWord>andere</style> Helden in einer <style=KeyWord>Reichweite</style> von {9} zu <style=KeyWord>Beginn</style> des Zuges der Helden.
 
-<style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Por cada {0} de {1} o {2} <style=KeyWord>que hayas perdido</style>:
-{3}, hasta un máximo de {8}, a <style=KeyWord>todos</style> los héroes al <style=KeyWord>comienzo</style> del turno de los héroes.
+<style=""DwarfIcon""></style> <style=""DwarfText"">Dwarves of Runenberg DLC</style>","Por cada {0} de {1} o {2} <style=KeyWord>que hayas perdido</style>:
+{3}, hasta un máximo de {8}, a <style=KeyWord>los demás</style> héroes dentro del <style=KeyWord>alcance</style> de {9} al <style=KeyWord>comienzo</style> del turno de los héroes.
 
-<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","A cada {0} de {1} ou {2} a <style=KeyWord>menos</style>:
-{3}, até no máximo {8}, para <style=KeyWord>todos</style> os Heróis no <style=KeyWord>início</style> do turno dos Heróis.
+<style=""DwarfIcon""></style> <style=""DwarfText"">DLC Dwarves of Runenberg</style>","A cada {0} de {1} ou {2} a <style=KeyWord>menos</style>:
+{3}, até no máximo {8}, para <style=KeyWord>os demais</style> Heróis dentro do <style=KeyWord>alcance</style> de {9} no <style=KeyWord>início</style> do turno dos Heróis.
 
-<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","{0} {1} 또는 {2}을 <style=KeyWord>상실</style>할 때마다:
-영웅의 턴이 <style=KeyWord>시작</style>될 때 <style=KeyWord>모든</style> 영웅에 {3}(최대 {8}) 효과 부여
+<style=""DwarfIcon""></style> <style=""DwarfText"">DLC Dwarves of Runenberg</style>","{0} {1} 또는 {2}을 <style=KeyWord>상실</style>할 때마다:
+영웅의 턴이 <style=KeyWord>시작</style>될 때 <style=KeyWord>{9} 범위 내</style>의 <style=KeyWord>다른</style> 영웅에게 {3}(최대 {8}) 효과 부여
 
-<style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
+<style=""DwarfIcon""></style> <style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
 BuildingUpgradeTooltipDescription_UpgradeSlowTrap0,"• <style=MovePoints>Move Points</style> <style=Debuff>Debuff</style> <style=Number>-2</style> > <style=GoodNbOutlined>-3</style>
 • <style=OverallDamage>Damage</style> <style=""Number"">40-70</style> > <style=GoodNbOutlined>60-105</style>
 <#F35934>This will upgrade <b>every</b> Slow Trap at once.</color>","• <style=Debuff>Atténuation</style> des <style=MovePoints>Points de Mouvement</style> <style=Number>-2</style> > <style=GoodNbOutlined>-3</style>
@@ -3707,3 +3707,113 @@ ApocalypseModifierDescription_StartingMagicCircleHealthModifier,"Each <style=Nig
 {1}","A cada <style=Night>Noite</style>, após o turno {0}, <style=KeyWord>Inimigos</style> recebem:
 {1}","<style=Night>밤</style>마다 {0}턴 후 <style=KeyWord>적들</style>에게 적용:
 {1}"
+PerkDescription_Aggressiveness,"Every {0} of <style=KeyWord>missing {1}</style>:
+{2}.
+<style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Tous les {0} de <style=KeyWord>{1} manquants</style><nbsp>:
+{2}.
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","每<style=KeyWord>缺少{0}{1}</style>：
+{2}。
+
+<style=""DwarfIcon""></style><style=""DwarfText"">卢恩堡的矮人DLC</style>","每<style=KeyWord>缺少{0}{1}</style>：
+{2}。
+
+<style=""""DwarfIcon""""></style><style=""""DwarfText"""">盧恩堡的矮人DLC</style>""","<style=KeyWord>失った{1}</style>の{0}分:
+{2}。
+
+<style=""DwarfIcon""></style><style=""DwarfText"">ルーネンベルクのドワーフDLC</style>","За каждые {0} от <style=KeyWord>потерянного {1}</style>:
+{2}.
+
+<style=""DwarfIcon""></style><style=""DwarfText"">Дополнительный контент ""Dwarves of Runenberg""</style>","За кожні {0} від <style=KeyWord>витраченого {1}</style>:
+{2}.
+
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC «Dwarves of Runenberg»</style>","Jede {0} von <style=KeyWord>fehlende {1}</style>:
+{2}.
+
+<style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Cada {0} de {1} <style=KeyWord>que se haya gastado</style>:
+{2}.
+
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","A cada {0} de <style=KeyWord>{1} a menos</style>:
+{2}.
+
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","<style=KeyWord>상실한 {1}</style> {0}마다:
+{2}.
+
+<style=""DwarfIcon""></style><style=""DwarfText"">루넨베르크의 드워프 DLC</style>"
+PerkEffectInformations_Aggressiveness,"Missing {1}: {3}
+{4}","{1} manquante : {3}
+{4}","已损失{1}：{3}
+{4}","已損失{1}：{3}
+{4}","失った{1}: {3}
+{4}","Потеряно {1}: {3}
+{4}","Витрачено {1}: {3}
+{4}","Fehlend {1}: {3}
+{4}","Se ha gastado: {3} de {1}
+ {4}","{1} a menos: {3}
+{4}","상실한 {1}: {3}
+{4}"
+PerkDescription_HeartOfTheParty,"Every {0} <style=KeyWord>damage inflicted</style> (excluding overkill damage) to enemies this turn:
+{1} to <style=KeyWord>other</style> Heroes in a <style=KeyWord>range of</style> {5}.
+<style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Tous les {0} <style=KeyWord>dégâts infligés</style> (excluant des dégâts superflus) aux ennemis durant ce tour<nbsp>:
+{1} à <style=KeyWord>autres</style> Héros dans un <style=KeyWord>rayon</style> de {5}.
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","在该回合中中每有 {0} 点对敌方已 <style=KeyWord>造成的伤害</style>（除了过量伤害）:
+位于<style=KeyWord>{5}格范围</style>内的<style=KeyWord>其他</style>英雄获得 {1}。
+
+<style=""DwarfIcon""></style><style=""DwarfText"">卢恩堡的矮人DLC</style>","在該回合中中每有 {0} 點對敵方已 <style=KeyWord>造成的傷害</style>（除了過量傷害）:
+位於<style=KeyWord>{5}格範圍</style>內的<style=KeyWord>其他</style>英雄獲得 {1}。
+
+<style=""DwarfIcon""></style><style=""DwarfText"">盧恩堡的矮人DLC</style>","このターンでエネミーに{0}<style=KeyWord>ダメージ与える</style>（オーバーキル以外）毎に:
+{5}の<style=KeyWord>範囲内</style>にいる<style=KeyWord>他の</style>英雄に{1}。
+
+<style=""DwarfIcon""></style><style=""DwarfText"">ルーネンベルクのドワーフDLC</style>","За каждые {0} ед. <style=KeyWord>причинённого урона</style> врагам за этот ход (исключая чрезмерный урон):
+{1} <style=KeyWord>остальным</style> героям в <style=KeyWord>радиусе</style> {5}.
+
+<style=""DwarfIcon""></style><style=""DwarfText"">Дополнительный контент ""Dwarves of Runenberg""</style>","За кожні {0} <style=KeyWord>шкоди, завданої</style> ворогам (окрім надлишкової шкоди) під час ходу:
+{1} <style=KeyWord>іншим</style> героям у <style=KeyWord>радіусі</style> {5}.
+
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC «Dwarves of Runenberg»</style>","Jeder {0} <style=KeyWord>Schaden, der Feinden in diesem Zug <style=KeyWord>zugefügt wird</style> (ohne Overkill-Schaden):
+{1} für <style=KeyWord>andere</style> Helden in einer <style=KeyWord>Reichweite</style> von {5}.
+
+<style=""DwarfIcon""></style><style=""DwarfText"">Dwarves of Runenberg DLC</style>","Cada vez que <style=KeyWord>se inflija un daño</style> de {0} (sin contar el daño restante) a los enemigos este turno:
+{1} a <style=KeyWord>los demás</style> héroes dentro del <style=KeyWord>alcance</style> de {5}.
+
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","A cada {0} de <style=KeyWord>dano causado</style> aos inimigos neste turno (excluindo-se o dano excessivo):
+{1} para <style=KeyWord>os demais</style> Heróis dentro do <style=KeyWord>alcance</style> de {5}.
+
+<style=""DwarfIcon""></style><style=""DwarfText"">DLC Dwarves of Runenberg</style>","이번 턴에 적에게 {0} <style=KeyWord>피해를 유발</style>할 때마다:
+<style=KeyWord>{5} 범위 내</style>의 <style=KeyWord>다른</style> 영웅에게 {1} 효과 부여
+
+<style=""DwarfIcon""></style><style=""DwarfText"">루넨베르그의 드워프 DLC</style>"
+GlyphDescription_HeroAttributeMoreMove,All Heroes have {0} and {1}.,Tous les Héros ont {0} et {1}.,所有英雄拥有{0}和{1}。,所有英雄擁有{0}和{1}。,全英雄に{0}と{1}。,Все герои получат преимущество: {0} и {1}.,Всі герої отримують {0} та {1}.,Alle Helden haben {0} und {1}.,Todos los héroes tienen {0} y {1}.,Todos os Heróis recebem {0} e {1}.,모든 영웅에게 {0} 및 {1} 효과가 적용됩니다.
+GlyphDescription_HeroAttributeMoreMove2,All Heroes have {0} and {1}.,Tous les Héros ont {0} et {1}.,所有英雄拥有{0}和{1}。,所有英雄擁有{0}和{1}。,全英雄に{0}と{1}。,Все герои получат преимущество: {0} и {1}.,Всі герої отримують {0} та {1}.,Alle Helden haben {0} und {1}.,Todos los héroes tienen {0} y {1}.,Todos os Heróis recebem {0} e {1}.,모든 영웅에게 {0} 및 {1} 효과가 적용됩니다.
+GlyphDescription_HeroAttributeMoreReliability,All Heroes have {0} and {1}.,Tous les Héros ont {0} et {1}.,所有英雄拥有{0}和{1}。,所有英雄擁有{0}和{1}。,全英雄に{0}と{1}。,Все герои получат преимущество: {0} и {1}.,Всі герої отримують {0} та {1}.,Alle Helden haben {0} und {1}.,Todos los héroes tienen {0} y {1}.,Todos os Heróis recebem {0} e {1}.,모든 영웅에게 {0} 및 {1} 효과가 적용됩니다.
+PerkDescription_SurgicalStrike,"After <style=KeyWord>attacking and killing</style> an enemy unit that was <style=KeyWord>at full {0}</style> and at a range of {1} or more :
+Hero's next skill costs {2} instead of {3}, at {5} the initial cost.
+<style=Attenuated>While the Hero has {4}</style> {2}<style=Attenuated> or less, the perk has no effect.","Après avoir <style=KeyWord>attaqué et tué</style> une unité ennemie qui avais <style=KeyWord>toute sa {0}</style> et à une portée de {1} ou plus :
+La prochaine compétence du héros coûte {2} au lieu de {3}, à {5} du coût initial.
+<style=Attenuated>Tant que le Héros a {4}</style> {2}<style=Attenuated> ou moins, le talent n'a aucun effet</style>.","<style=KeyWord>攻击并击杀</style><style=KeyWord>满{0}</style>且距离{1}格或以外的敌方单位后：
+英雄的下一个技能消耗{2}而非{3}，且消耗量为原来的{5}倍。
+
+<style=Attenuated>英雄的</style>{2}<style=Attenuated>不高于{4}时，天赋效果无效。</style>","<style=KeyWord>攻擊並擊殺</style><style=KeyWord>{0}全滿</style>且距離{1}格（含）以外的敵方單位後：
+英雄的下一次技能改為消耗{2}，而非{3}，消耗量變為原本的{5}。
+
+<style=Attenuated>當英雄的{2}</style><style=Attenuated>不高於{4}時，天賦效果無效</style>。","<style=KeyWord>{0}が100%</style>および距離が{1}以上離れたエネミーを<style=KeyWord>攻撃して撃破</style>すると、以下の効果を得る:
+英雄の次のスキルが{3}ではなく{2}を消費する(消費量: 初期コストの{5})。
+
+<style=Attenuated>英雄の</style>{2}<style=Attenuated>が{4}以下の場合、パークは効果を発揮しない。</style>","Если у врага <style=KeyWord>полное {0}</style> и он находится на расстоянии {1} яч. и дальше, <style=KeyWord>атаковав и убив его</style>, герой получает бонус:
+следующий его навык расходует {2}, а не {3}, и стоимость применения изменяется в {5} раза.
+
+<style=Attenuated>Если у героя</style> {2}<style=Attenuated> не больше {4}, перк не действует</style>.","Після <style=KeyWord>атаки й убивства</style> ворога, що був <style=KeyWord>із повним показником {0}</style> та на відстані {1} чи більше:
+наступне вміння героя коштуватиме {2} замість {3}, {5} від початкової вартості.
+<style=Attenuated>Якщо в героя</style> {2}<style=Attenuated> не більше за {4}, риса не діє</style>.","Wenn in einer Entfernung von {1} oder mehr eine gegnerische Einheit <style=KeyWord>angegriffen und getötet</style> wird, die <style=KeyWord>bei voller {0}</style> war, geschieht Folgendes:
+Die nächste Fähigkeit des Helden kostet {2} anstatt {3}, und zwar zu {5} der Anfangskosten.
+
+<style=Attenuated>Solange der Held {4}</style> {2}<style=Attenuated> oder weniger hat, ist der Vorteil wirkungslos</style>.","Tras <style=KeyWord>atacar y matar</style> a una unidad enemiga con <style=KeyWord>la {0} al máximo</style> y a una distancia de {1} o más:
+La siguiente habilidad del héroe cuesta {2} en vez de {3}, {5} veces el coste inicial.
+
+<style=Attenuated>Mientras el héroe tenga {4}</style> {2}<style=Attenuated> o menos, el beneficio no tiene efecto</style>.","Após <style=KeyWord>atacar e abater</style> uma unidade inimiga que estava <style=KeyWord>com a {0} cheia</style> e em uma distância de até {1} ou mais:
+A próxima habilidade do Herói custa {2} em vez de {3}, por {5} do custo inicial.
+
+<style=Attenuated>Enquanto o Herói possuir {4}</style> {2}<style=Attenuated> ou menos, a vantagem não tem efeito</style>.","<style=KeyWord>{0}이(가) 가득 찬</style> 적 유닛을 {1}타일 이상의 범위에서 <style=KeyWord>공격하여 처치</style>한 후:
+영웅의 다음 스킬이 {3} 대신 {2}을(를) 최초 소모량의 {5}만큼 소모.
+
+<style=Attenuated>영웅의 {2}이(가) {4} 이하인 경우, 특전 효과가 발동하지 않음</style>"

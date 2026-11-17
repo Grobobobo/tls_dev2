@@ -388,31 +388,31 @@
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="IsolatedAttacks">17</MainStatBonus>
+				<MainStatBonus Stat="IsolatedAttacks">16</MainStatBonus>
 				<BasePrice>30</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OpportunisticAttacks">10</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">9</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="IsolatedAttacks">20</MainStatBonus>
+				<MainStatBonus Stat="IsolatedAttacks">18</MainStatBonus>
 				<BasePrice>45</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OpportunisticAttacks">13</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">12</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="IsolatedAttacks">23</MainStatBonus>
+				<MainStatBonus Stat="IsolatedAttacks">21</MainStatBonus>
 				<BasePrice>66</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OpportunisticAttacks">15</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">14</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="IsolatedAttacks">26</MainStatBonus>
+				<MainStatBonus Stat="IsolatedAttacks">24</MainStatBonus>
 				<BasePrice>94</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="OpportunisticAttacks">18</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">16</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
@@ -478,21 +478,21 @@
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="OpportunisticAttacks">18</MainStatBonus>
+				<MainStatBonus Stat="OpportunisticAttacks">17</MainStatBonus>
 				<BasePrice>45</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="PoisonDamageModifier">33</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="OpportunisticAttacks">22</MainStatBonus>
+				<MainStatBonus Stat="OpportunisticAttacks">20</MainStatBonus>
 				<BasePrice>66</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="PoisonDamageModifier">39</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="OpportunisticAttacks">26</MainStatBonus>
+				<MainStatBonus Stat="OpportunisticAttacks">23</MainStatBonus>
 				<BasePrice>94</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="PoisonDamageModifier">45</BaseStatBonus>
@@ -1144,7 +1144,7 @@
 				<BasePrice>20</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="OverallDamage">-10</BaseStatBonus>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">15</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">13</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1155,7 +1155,7 @@
 				<BasePrice>30</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="OverallDamage">-8</BaseStatBonus>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">20</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">16</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1166,7 +1166,7 @@
 				<BasePrice>45</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="OverallDamage">-6</BaseStatBonus>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">26</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">19</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1177,7 +1177,7 @@
 				<BasePrice>66</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="OverallDamage">-4</BaseStatBonus>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">32</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">21</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1188,7 +1188,7 @@
 				<BasePrice>94</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="OverallDamage">-2</BaseStatBonus>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">38</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">24</BaseStatBonus>
 				</BaseStatBonuses>
 				<Skills>
 					<Skill>Concentration</Skill>
@@ -1640,7 +1640,7 @@
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
-				<MainStatBonus Stat="ExperienceGainMultiplier">20</MainStatBonus>
+				<MainStatBonus Stat="ExperienceGainMultiplier">18</MainStatBonus>
 				<BasePrice>20</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Reliability">18</BaseStatBonus>
@@ -1648,7 +1648,7 @@
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
-				<MainStatBonus Stat="ExperienceGainMultiplier">25</MainStatBonus>
+				<MainStatBonus Stat="ExperienceGainMultiplier">21</MainStatBonus>
 				<BasePrice>30</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Reliability">21</BaseStatBonus>
@@ -1656,7 +1656,7 @@
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
-				<MainStatBonus Stat="ExperienceGainMultiplier">31</MainStatBonus>
+				<MainStatBonus Stat="ExperienceGainMultiplier">24</MainStatBonus>
 				<BasePrice>45</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Reliability">24</BaseStatBonus>
@@ -1664,7 +1664,7 @@
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
-				<MainStatBonus Stat="ExperienceGainMultiplier">37</MainStatBonus>
+				<MainStatBonus Stat="ExperienceGainMultiplier">27</MainStatBonus>
 				<BasePrice>66</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Reliability">27</BaseStatBonus>
@@ -1672,7 +1672,7 @@
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
-				<MainStatBonus Stat="ExperienceGainMultiplier">43</MainStatBonus>
+				<MainStatBonus Stat="ExperienceGainMultiplier">30</MainStatBonus>
 				<BasePrice>94</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Reliability">30</BaseStatBonus>
@@ -2298,42 +2298,42 @@
 				<MainStatBonus Stat="Critical">10</MainStatBonus>
 				<BasePrice>12</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="IsolatedAttacks">8</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">7</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
 				<MainStatBonus Stat="Critical">14</MainStatBonus>
 				<BasePrice>17</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="IsolatedAttacks">11</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">9</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
 				<MainStatBonus Stat="Critical">18</MainStatBonus>
 				<BasePrice>26</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="IsolatedAttacks">14</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">12</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
 				<MainStatBonus Stat="Critical">22</MainStatBonus>
 				<BasePrice>40</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="IsolatedAttacks">17</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">15</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
 				<MainStatBonus Stat="Critical">26</MainStatBonus>
 				<BasePrice>60</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="IsolatedAttacks">20</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">18</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
 				<MainStatBonus Stat="Critical">30</MainStatBonus>
 				<BasePrice>87</BasePrice>
 				<BaseStatBonuses>
-					<BaseStatBonus Stat="IsolatedAttacks">24</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">21</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">

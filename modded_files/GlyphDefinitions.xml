@@ -1777,12 +1777,14 @@
       <TokenVariables>
 
          <TokenVariable Key="MoveBonus" Value="1"/>
+         <TokenVariable Key="MomentumBonus" Value="3"/>
 
       </TokenVariables>
 
       <LocArguments>
 
          <StatArgument Stat="MovePointsTotal" Value="MoveBonus" DisplaySign="true"/>
+         <StatArgument Stat="MomentumAttacks" Value="MomentumBonus" DisplaySign="false"/>
 
       </LocArguments>
 
@@ -1791,6 +1793,7 @@
          <ModifyPlayableUnitsStats>
 
             <StatToModify Stat="MovePointsTotal" Value="MoveBonus"/>
+            <StatToModify Stat="MomentumAttacks" Value="MomentumBonus"/>
 
          </ModifyPlayableUnitsStats>
 
@@ -1805,12 +1808,14 @@
       <TokenVariables>
 
          <TokenVariable Key="MoveBonus" Value="3"/>
+         <TokenVariable Key="MomentumBonus" Value="3"/>
 
       </TokenVariables>
 
       <LocArguments>
 
          <StatArgument Stat="MovePointsTotal" Value="MoveBonus" DisplaySign="true"/>
+         <StatArgument Stat="MomentumAttacks" Value="MomentumBonus" DisplaySign="false"/>
 
       </LocArguments>
 
@@ -1819,6 +1824,7 @@
          <ModifyPlayableUnitsStats>
 
             <StatToModify Stat="MovePointsTotal" Value="MoveBonus"/>
+            <StatToModify Stat="MomentumAttacks" Value="MomentumBonus"/>
 
          </ModifyPlayableUnitsStats>
 
@@ -1860,11 +1866,11 @@
 
       <TokenVariables>
 
-         <TokenVariable Key="DamageBonusBeforeThreshold" Value="3"/>
+         <TokenVariable Key="DamageBonusBeforeThreshold" Value="4"/>
 
          <TokenVariable Key="DamageBonusAfterThreshold" Value="2"/>
 
-         <TokenVariable Key="DayThreshold" Value="6"/>
+         <TokenVariable Key="DayThreshold" Value="5"/>
 
       </TokenVariables>
 
@@ -2172,13 +2178,15 @@
 
       <TokenVariables>
 
-         <TokenVariable Key="ReliabilityBonus" Value="30"/>
+         <TokenVariable Key="ReliabilityBonus" Value="20"/>
+         <TokenVariable Key="StunChanceBonus" Value="10"/>
 
       </TokenVariables>
 
       <LocArguments>
 
          <StatArgument Stat="Reliability" Value="ReliabilityBonus" DisplaySign="true"/>
+         <StatArgument Stat="StunChanceModifier" Value="StunChanceBonus" DisplaySign="true"/>
 
       </LocArguments>
 
@@ -2274,7 +2282,7 @@
 
    <!-- PERKS -->
 
-   <GlyphDefinition Id="HeroPerkMorePoint" Cost="3">
+   <GlyphDefinition Id="HeroPerkMorePoint" Cost="4">
 
       <TokenVariables>
 

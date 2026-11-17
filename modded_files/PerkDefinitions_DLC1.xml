@@ -284,16 +284,17 @@
    <PerkDefinition Id="Warcry">
       <TokenVariables>
          <TokenVariable Key="TotalDmgBonus" Value="Min(DmgBonusFromArmor + DmgBonusFromHealth, DamageThreshold)"/>
-         <TokenVariable Key="DamageThreshold" Value="60"/>
+         <TokenVariable Key="DamageThreshold" Value="30"/>
          <TokenVariable Key="DmgBonusFromArmor" Value="Floor(MissingArmor / ArmorThreshold) * BonusDmgPerArmorStep"/>
          <TokenVariable Key="DmgBonusFromHealth" Value="Floor(MissingHealth / HealthThreshold) * BonusDmgPerHealthStep"/>
-         <TokenVariable Key="ArmorThreshold" Value="12"/>
-         <TokenVariable Key="HealthThreshold" Value="12"/>
+         <TokenVariable Key="ArmorThreshold" Value="18"/>
+         <TokenVariable Key="HealthThreshold" Value="18"/>
          <TokenVariable Key="BonusDmgPerArmorStep" Value="1"/>
          <TokenVariable Key="BonusDmgPerHealthStep" Value="1"/>
-         <TokenVariable Key="BuffDuration" Value="1"/>
+         <TokenVariable Key="BuffDuration" Value="2"/>
          <TokenVariable Key="MissingArmor" Value="(Owner.ArmorTotal - Owner.Armor)"/>
          <TokenVariable Key="MissingHealth" Value="(Owner.HealthTotal - Owner.Health)"/>
+         <TokenVariable Key="AllyRange" Value="12"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="ArmorThreshold" Style="KeyWordNb"/>
@@ -305,10 +306,14 @@
          <LocArgument Value="MissingArmor" Interpreted="true" Style="KeyWordNb"/>
          <LocArgument Value="MissingHealth" Interpreted="true" Style="KeyWordNb"/>
          <LocArgument Value="DamageThreshold" Interpreted="true" Style="GoodNb" Prefix="+"/>
+         <LocArgument Value="AllyRange" Style="KeyWordNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
             <Bonus Value="TotalDmgBonus"/>
+            <HoverDisplay>
+               <HoverRange Range="AllyRange"/>
+            </HoverDisplay>
          </DisplayInHUD>
       </View>
       <Modules>
@@ -330,10 +335,7 @@
             </Events>
             <Effects>
                <ApplyStatus Status="Buff" Stat="OverallDamage" TurnsCount="BuffDuration" Value="Module.Buffer">
-                  <PerkTargeting Amount="10" Range="100" TargetingMethod="PlayableUnitsInRange" TargetingReference="Owner"/>
-               </ApplyStatus>
-               <ApplyStatus Status="Buff" Stat="OverallDamage" Value="Module.Buffer" TurnsCount="BuffDuration">
-                  <PerkTargeting Amount="1" Range="0" TargetingMethod="Self" TargetingReference="Owner"/>
+                  <PerkTargeting Amount="10" Range="AllyRange" TargetingMethod="PlayableUnitsInRange" TargetingReference="Owner"/>
                </ApplyStatus>
             </Effects>
          </BufferModule>
@@ -345,9 +347,10 @@
          <TokenVariable Key="DmgToInflict" Value="DmgInflictedThreshold - TotalDmgInflicted"/>
          <TokenVariable Key="TotalArmorBonus" Value="Floor((TotalDmgInflicted / DmgInflictedThreshold)) * ArmorGain"/>
          <TokenVariable Key="TotalDmgInflicted" Value="Module.Buffer"/>
-         <TokenVariable Key="BuffDuration" Value="1"/>
-         <TokenVariable Key="ArmorGain" Value="7"/>
+         <TokenVariable Key="BuffDuration" Value="2"/>
+         <TokenVariable Key="ArmorGain" Value="5"/>
          <TokenVariable Key="DmgInflictedThreshold" Value="200"/>
+         <TokenVariable Key="AllyRange" Value="16"/>
       </TokenVariables>
       <LocArguments>
          <LocArgument Value="DmgInflictedThreshold" Style="KeyWordNb"/>
@@ -356,6 +359,7 @@
          <LocArgument Value="TotalArmorBonus" Interpreted="true" Style="GoodNb" Prefix="+"/>
          <!--<StatusArgument Stat="ArmorTotal" Status="Buff" Value="TotalArmorBonus" Interpreted="true"/>-->
          <LocArgument Value="DmgToInflict" Interpreted="true" Style="KeyWordNb"/>
+         <LocArgument Value="AllyRange" Style="KeyWordNb"/>
       </LocArguments>
       <View>
          <DisplayInHUD>
@@ -364,6 +368,9 @@
                <IsTrue Value="IsTargetUnit"/>
             </Highlight>
             <Buffer Value="DmgToInflict"/>
+            <HoverDisplay>
+               <HoverRange Range="AllyRange"/>
+            </HoverDisplay>
          </DisplayInHUD>
       </View>
       <Modules>
@@ -396,9 +403,8 @@
             </Events>
             <Effects>
                <ApplyStatus Status="Buff" Stat="ArmorTotal" TurnsCount="BuffDuration" Value="TotalArmorBonus">
-                  <PerkTargeting Range="100" TargetingMethod="PlayableUnitsInRange" TargetingReference="Owner"/> <!--Even though Amount=10, max number of Heroes is 6 (without boundless) and 7 (with boundless)-->
+                  <PerkTargeting Range="AllyRange" TargetingMethod="PlayableUnitsInRange" TargetingReference="Owner"/> <!--Even though Amount=10, max number of Heroes is 6 (without boundless) and 7 (with boundless)-->
                </ApplyStatus>
-               <ApplyStatus Status="Buff" Stat="ArmorTotal" TurnsCount="BuffDuration" Value="TotalArmorBonus"/>
             </Effects>
          </BufferModule>
       </Modules>
@@ -1759,51 +1765,34 @@
 
    <PerkDefinition Id="Aggressiveness">
       <TokenVariables>
-         <TokenVariable Key="DamageBonus" Value="Min(Floor((DepletedHealth/HealthConversionRate)) * DamageConversionRate, DamageThreshold)"/>
-         <TokenVariable Key="TotalHealth" Value="Owner.HealthTotal"/>
-         <TokenVariable Key="DepletedHealth" Value="(Owner.HealthTotal - Owner.Health)"/>
-         <TokenVariable Key="DamageConversionRate" Value="3"/>
-         <TokenVariable Key="DamageThreshold" Value="60"/>
-         <TokenVariable Key="HealthConversionRate" Value="10"/>
-         <TokenVariable Key="BuffDuration" Value="1"/>
+         <TokenVariable Key="DamageBonus" Value="DamageMultiplier * NumberOfStepsReached"/>
+         <TokenVariable Key="DamageMultiplier" Value="9"/>
+         <TokenVariable Key="NumberOfStepsReached" Value="Floor(CurrentHealthMissingPercentage / PercentageStep)"/>
+         <TokenVariable Key="PercentageStep" Value="10"/>
+         <TokenVariable Key="CurrentHealthMissingPercentage" Value="(100 - CurrentHealthPercentage)"/>
+         <TokenVariable Key="CurrentHealthPercentage" Value="Clamp(BooleanChoice(Owner.HealthTotal > 0, Owner.Health / Owner.HealthTotal, 1) * 100, 0, 100)"/>
       </TokenVariables>
       <LocArguments>
-         <LocArgument Value="HealthConversionRate" Style="KeyWordNb"/>
+         <LocArgument Value="PercentageStep" Suffix="%" Style="KeyWordNb"/>
          <StatArgument Stat="HealthTotal"/>
-         <StatusArgument Status="Buff" Stat="OverallDamage" Value="DamageConversionRate" TurnsCount="BuffDuration"/>
-         <LocArgument Value="DamageThreshold" Style="KeyWordNb"/>
-         <StatusArgument Status="Buff"/>
-         <LocArgument Value="DamageBonus" Interpreted="true" Style="GoodNb" Prefix="+"/>
-         <LocArgument Value="DepletedHealth" Interpreted="true" Style="KeyWordNb"/>
+         <StatArgument Stat="OverallDamage" Value="DamageMultiplier"/>
+         <LocArgument Value="Floor(CurrentHealthMissingPercentage)" Suffix="%" Interpreted="true" Style="KeyWordNb"/>
+         <StatArgument Stat="OverallDamage" Value="DamageBonus" Interpreted="true"/>
       </LocArguments>
       <View>
-         <DisplayInHUD/>
+         <DisplayBonusBeforePurchase/>
+         <DisplayInHUD>
+            <Bonus Value="DamageBonus"/>
+         </DisplayInHUD>
       </View>
       <Modules>
          <BufferModule>
-            <Events>
-               <Event EffectTime="OnEndNightTurnEnemy">
-                  <Actions>
-                     <SetBufferTo BufferIndex="Buffer" Value="DamageBonus"/>
-                  </Actions>
-               </Event>
-            <Event EffectTime="OnStartNightTurnPlayable">
-               <Conditions>
-                  <IsTrue Value="Module.Buffer > 0"/>
-               </Conditions>
-                  <Actions>
-                     <TriggerEffects/>
-                  </Actions>
-            </Event>
-            </Events>
             <Effects>
-               <ApplyStatus Status="Buff" Stat="OverallDamage" Value="Module.Buffer" TurnsCount="BuffDuration">
-                  <PerkTargeting Amount="1" Range="0" TargetingMethod="Self" TargetingReference="Owner"/>
-               </ApplyStatus>
+               <StatModifier Stat="OverallDamage" Value="DamageBonus"/>
             </Effects>
          </BufferModule>
       </Modules>
-   </PerkDefinition>
+</PerkDefinition>
 
    <PerkDefinition Id="FYouInParticular">
       <TokenVariables>

@@ -530,7 +530,7 @@
 				<BasePrice>22</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Resistance">2</BaseStatBonus>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">16</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">14</BaseStatBonus>
 					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
@@ -539,7 +539,7 @@
 				<BasePrice>32</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Resistance">3</BaseStatBonus>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">20</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">17</BaseStatBonus>
 					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
@@ -548,7 +548,7 @@
 				<BasePrice>47</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Resistance">3</BaseStatBonus>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">24</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">19</BaseStatBonus>
 					<BaseStatBonus Stat="SkillRangeModifier">1</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
@@ -557,7 +557,7 @@
 				<BasePrice>68</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Resistance">4</BaseStatBonus>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">28</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">22</BaseStatBonus>
 					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
@@ -566,7 +566,7 @@
 				<BasePrice>97</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Resistance">4</BaseStatBonus>
-					<BaseStatBonus Stat="ExperienceGainMultiplier">32</BaseStatBonus>
+					<BaseStatBonus Stat="ExperienceGainMultiplier">24</BaseStatBonus>
 					<BaseStatBonus Stat="SkillRangeModifier">2</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
@@ -926,7 +926,7 @@
 				<BasePrice>16</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Dodge">3</BaseStatBonus>
-					<BaseStatBonus Stat="IsolatedAttacks">5</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">6</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="1">
@@ -942,7 +942,7 @@
 				<BasePrice>32</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Dodge">5</BaseStatBonus>
-					<BaseStatBonus Stat="IsolatedAttacks">9</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">8</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
@@ -950,7 +950,7 @@
 				<BasePrice>47</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Dodge">6</BaseStatBonus>
-					<BaseStatBonus Stat="IsolatedAttacks">11</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">9</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
@@ -958,7 +958,7 @@
 				<BasePrice>68</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Dodge">7</BaseStatBonus>
-					<BaseStatBonus Stat="IsolatedAttacks">13</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">10</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
@@ -966,7 +966,7 @@
 				<BasePrice>97</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Dodge">8</BaseStatBonus>
-					<BaseStatBonus Stat="IsolatedAttacks">15</BaseStatBonus>
+					<BaseStatBonus Stat="IsolatedAttacks">12</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">
@@ -1224,7 +1224,7 @@
 				<BasePrice>22</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Resistance">5</BaseStatBonus>
-					<BaseStatBonus Stat="OpportunisticAttacks">7</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">6</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="2">
@@ -1232,7 +1232,7 @@
 				<BasePrice>32</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Resistance">6</BaseStatBonus>
-					<BaseStatBonus Stat="OpportunisticAttacks">9</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">7</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="3">
@@ -1240,7 +1240,7 @@
 				<BasePrice>47</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Resistance">7</BaseStatBonus>
-					<BaseStatBonus Stat="OpportunisticAttacks">11</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">8</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="4">
@@ -1248,7 +1248,7 @@
 				<BasePrice>68</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Resistance">8</BaseStatBonus>
-					<BaseStatBonus Stat="OpportunisticAttacks">13</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">9</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="5">
@@ -1256,7 +1256,7 @@
 				<BasePrice>97</BasePrice>
 				<BaseStatBonuses>
 					<BaseStatBonus Stat="Resistance">9</BaseStatBonus>
-					<BaseStatBonus Stat="OpportunisticAttacks">15</BaseStatBonus>
+					<BaseStatBonus Stat="OpportunisticAttacks">10</BaseStatBonus>
 				</BaseStatBonuses>
 			</Level>
 			<Level Id="6">

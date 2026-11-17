@@ -1583,7 +1583,7 @@
          <TokenVariable Key="IsModifierActive" Value="Module.Buffer > 0"/>
          <TokenVariable Key="IsMoveAboveZero" Value="Owner.MovePoints > MovePointsValueToCancelActivation"/>
          <TokenVariable Key="SkillHasMoveCost" Value="Skill.MovePointsCost > 0"/>
-         <TokenVariable Key="TargetMinDistanceToActivate" Value="5"/>
+         <TokenVariable Key="TargetMinDistanceToActivate" Value="7"/>
          <TokenVariable Key="MovePointsValueToCancelActivation" Value="4"/>
          <TokenVariable Key="MovePointsMultiplier" Value="2"/>
       </TokenVariables>
@@ -1625,9 +1625,6 @@
                   </Actions>
                </Event>
                <Event EffectTime="OnSkillCastBegin">
-                  <Conditions>
-                     <IsTrue Value="Module.Buffer2 > 0"/>
-                  </Conditions>
                   <Actions>
                      <SetBufferTo BufferIndex="Buffer" Value="0"/>
                      <SetBufferTo BufferIndex="Buffer2" Value="0"/>
@@ -2467,7 +2464,7 @@
       <TokenVariables>
          <TokenVariable Key="RemainingUnitsToKill" Value="UnitKilledThreshold - Module.Buffer"/>
          <TokenVariable Key="ActionPointsTotalRestoreValue" Value="ActionPointsRestoreValue * Floor(Module.Buffer / UnitKilledThreshold)"/>
-         <TokenVariable Key="UnitKilledThreshold" Value="6"/>
+         <TokenVariable Key="UnitKilledThreshold" Value="7"/>
          <TokenVariable Key="ActionPointsRestoreValue" Value="2"/>
       </TokenVariables>
       <LocArguments>
@@ -3996,7 +3993,7 @@
    <PerkDefinition Id="CriticalCarvings">
       <TokenVariables>
          <TokenVariable Key="CriticalBonus" Value="CriticalMultiplier * NumberOfStepsReached"/>
-         <TokenVariable Key="CriticalMultiplier" Value="4"/>
+         <TokenVariable Key="CriticalMultiplier" Value="3"/>
          <TokenVariable Key="NumberOfStepsReached" Value="Floor(CurrentHealthMissingPercentage / PercentageStep)"/>
          <TokenVariable Key="PercentageStep" Value="5"/>
          <TokenVariable Key="CurrentHealthMissingPercentage" Value="(100 - CurrentHealthPercentage)"/>
@@ -4398,8 +4395,8 @@
          <TokenVariable Key="AtLeastOneBonusPending" Value="CurrentActionPointsBonus + CurrentMovePointsBonus > 0"/>
          <TokenVariable Key="CurrentActionPointsBonus" Value="Min(Module.Buffer, MaxActionPointsBonus)"/>
          <TokenVariable Key="CurrentMovePointsBonus" Value="Min(Module.Buffer2, MaxMovePointsBonus)"/>
-         <TokenVariable Key="MaxActionPointsBonus" Value="2"/>
-         <TokenVariable Key="MaxMovePointsBonus" Value="4"/>
+         <TokenVariable Key="MaxActionPointsBonus" Value="1"/>
+         <TokenVariable Key="MaxMovePointsBonus" Value="3"/>
       </TokenVariables>
       <LocArguments>
          <StatArgument  Stat="ActionPointsTotal" Value="MaxActionPointsBonus" DisplaySign="false" Style="KeyWordNb"/>
@@ -4459,9 +4456,9 @@
    <PerkDefinition Id="MoreDamage">
       <TokenVariables>
          <TokenVariable Key="SpecificDamageBonus" Value="BooleanChoice(EarlyBonusThreshold > Module.Buffer, EarlyDailyDamageBonus, LateDailyDamageBonus)"/>
-         <TokenVariable Key="EarlyDailyDamageBonus" Value="3"/>
+         <TokenVariable Key="EarlyDailyDamageBonus" Value="4"/>
          <TokenVariable Key="LateDailyDamageBonus" Value="2"/>
-         <TokenVariable Key="EarlyBonusThreshold" Value="6"/>
+         <TokenVariable Key="EarlyBonusThreshold" Value="5"/>
       </TokenVariables>
       <Modules>
          <BufferModule>

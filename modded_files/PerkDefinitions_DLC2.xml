@@ -1073,7 +1073,7 @@
 
          <!--Poison bonus calculation-->
          <TokenVariable Key="PoisonBonusTotal" Value="(PoisonBonusBase+(NumberOfStepsReached*PoisonBonusPerStep))"/>
-         <TokenVariable Key="PoisonBonusPerStep" Value="30"/>
+         <TokenVariable Key="PoisonBonusPerStep" Value="25"/>
          <TokenVariable Key="PoisonBonusBase" Value="0"/> <!--Unused ! If set to 1 or more, needs to be added back to the localization key !-->
          <TokenVariable Key="PoisonAppliedDuration" Value="2"/>
          
